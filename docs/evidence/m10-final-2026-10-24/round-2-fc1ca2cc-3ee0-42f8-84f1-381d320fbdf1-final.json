@@ -1,0 +1,4222 @@
+{
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6399.5,
+          "y": 617.3735656738281
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 150.78009033203125,
+          "w": 920,
+          "x": 5939.5,
+          "y": 541.9835205078125
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5248,
+      "y": -128
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": -64
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": -64
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5599.5,
+      "y": 133.37356567382812
+    },
+    "zoom": 0.25
+  },
+  "clock": 63.583333333331005,
+  "error": "BAD_ARGUMENT: ballistic angleStep must be 0.25..30",
+  "events": [
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 0.016666666666666666,
+      "completedChunks": 700,
+      "family": "maze",
+      "kind": "terrain-source",
+      "parameters": {
+        "cellSize": 48
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "bunker-grid",
+      "seed": 1792873708739,
+      "totalChunks": 4000,
+      "turn": 0,
+      "version": 1
+    },
+    {
+      "clock": 1.5833333333333326,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 5959.5,
+        "y": 525.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 1.6833333333333322,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Alpha",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 5959.5,
+        "y": 533.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 1.6833333333333322,
+      "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "kind": "deployed",
+      "name": "M10F Oct24 Alpha",
+      "turn": 0
+    },
+    {
+      "clock": 1.866666666666665,
+      "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 3.2333333333333267,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 97,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 3,
+        "maxHealth": 100,
+        "name": "Aris Redholm",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6252.5,
+        "y": 620.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.3333333333333264,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 97,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 3,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Bravo",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6252.5,
+        "y": 627.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 3.3333333333333264,
+      "id": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "kind": "deployed",
+      "name": "M10F Oct24 Bravo",
+      "turn": 0
+    },
+    {
+      "clock": 3.5333333333333257,
+      "id": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 4.883333333333321,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 102,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 5,
+        "maxHealth": 100,
+        "name": "Branic Stonedale",
+        "residency": "live",
+        "slot": null,
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6546.5,
+        "y": 620.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.983333333333321,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 102,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 5,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Charlie",
+        "residency": "live",
+        "slot": null,
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6546.5,
+        "y": 627.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 4.983333333333321,
+      "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "kind": "deployed",
+      "name": "M10F Oct24 Charlie",
+      "turn": 0
+    },
+    {
+      "clock": 5.18333333333332,
+      "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 6.5333333333333155,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 7,
+        "maxHealth": 100,
+        "name": "Calis Ironstone",
+        "residency": "live",
+        "slot": null,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6839.5,
+        "y": 572.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.633333333333315,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 7,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Delta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6839.5,
+        "y": 579.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 6.633333333333315,
+      "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "kind": "deployed",
+      "name": "M10F Oct24 Delta",
+      "turn": 0
+    },
+    {
+      "clock": 6.633333333333315,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 261,
+      "clock": 6.633333333333315,
+      "item": "shield",
+      "kind": "purchase",
+      "name": "M10F Oct24 Alpha",
+      "price": 250,
+      "quantity": 1,
+      "turn": 0
+    },
+    {
+      "clock": 6.833333333333314,
+      "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 20.33333333333346,
+      "color": "#ffd447",
+      "eyebrow": "SCORCHED TERRA",
+      "id": 1,
+      "kind": "arcade-start",
+      "long": true,
+      "radar": false,
+      "receipt": false,
+      "score": "",
+      "seconds": 2.5,
+      "sub": "Round 2 \u00b7 Seed 1792873708739",
+      "title": "BATTLE STATIONS",
+      "turn": 0
+    },
+    {
+      "clock": 21.58333333333339,
+      "elapsed": 2.5166666666666626,
+      "id": 1,
+      "kind": "arcade-ended",
+      "turn": 0
+    },
+    {
+      "clock": 21.783333333333378,
+      "color": "#EC4787",
+      "eyebrow": "TURN 1 / COMMAND CARTRIDGE",
+      "id": 2,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Heavy Weather \u00b7 regular",
+      "title": "M10F Oct24 Alpha",
+      "turn": 1
+    },
+    {
+      "clock": 22.28333333333335,
+      "elapsed": 1.000000000000001,
+      "id": 2,
+      "kind": "arcade-ended",
+      "turn": 1
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 22.28333333333335,
+      "kind": "cash",
+      "name": "M10F Oct24 Alpha",
+      "total": 10,
+      "turn": 1
+    },
+    {
+      "clock": 22.28333333333335,
+      "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "kind": "turn",
+      "name": "M10F Oct24 Alpha",
+      "turn": 1
+    },
+    {
+      "active": true,
+      "clock": 22.28333333333335,
+      "item": "shield",
+      "kind": "utility",
+      "name": "M10F Oct24 Alpha",
+      "remaining": 60,
+      "turn": 1
+    },
+    {
+      "budgetRemaining": 43,
+      "clock": 22.466666666666672,
+      "item": "nuke",
+      "kind": "cpu-decision",
+      "memory": 0,
+      "persona": "kiloton",
+      "risk": 0.6,
+      "skill": "regular",
+      "tactic": "High arc over obstruction",
+      "target": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "trials": [
+        {
+          "reason": "clear",
+          "target": "M10F Oct24 Bravo",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "nuke",
+          "work": {
+            "candidates": 5,
+            "cells": 14942,
+            "chunks": 11,
+            "steps": 41130
+          }
+        }
+      ],
+      "turn": 1
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 22.500000000000004,
+      "kind": "cash",
+      "name": "M10F Oct24 Alpha",
+      "total": 13,
+      "turn": 1
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 22.500000000000004,
+      "kind": "cash",
+      "name": "M10F Oct24 Alpha",
+      "total": 16,
+      "turn": 1
+    },
+    {
+      "angle": 64.72059210343288,
+      "clock": 22.500000000000004,
+      "kind": "cpu-aimed",
+      "name": "M10F Oct24 Alpha",
+      "origin": {
+        "x": 5959.5,
+        "y": 561.4998779296875
+      },
+      "plan": {
+        "candidates": [
+          {
+            "angle": -1.129587426045146,
+            "obstruction": null,
+            "power": 0.20634272766765208,
+            "reason": "clear"
+          }
+        ],
+        "obstruction": null,
+        "reason": "clear",
+        "solution": {
+          "angle": -1.129587426045146,
+          "childImpacts": "not-planned",
+          "coverage": "impact",
+          "end": {
+            "x": 6246.398119032101,
+            "y": 602.5433838816051
+          },
+          "origin": {
+            "x": 5974.873184706754,
+            "y": 528.9475009872968
+          },
+          "path": [
+            {
+              "x": 5974.873184706754,
+              "y": 528.9475009872968
+            },
+            {
+              "x": 5978.081501716817,
+              "y": 522.2667827710811
+            },
+            {
+              "x": 5981.28981872688,
+              "y": 515.7666201104211
+            },
+            {
+              "x": 5984.498135736943,
+              "y": 509.4470130053165
+            },
+            {
+              "x": 5987.706452747007,
+              "y": 503.3079614557675
+            },
+            {
+              "x": 5990.91476975707,
+              "y": 497.34946546177406
+            },
+            {
+              "x": 5994.123086767133,
+              "y": 491.57152502333616
+            },
+            {
+              "x": 5997.331403777196,
+              "y": 485.9741401404538
+            },
+            {
+              "x": 6000.539720787259,
+              "y": 480.557310813127
+            },
+            {
+              "x": 6003.7480377973225,
+              "y": 475.3210370413558
+            },
+            {
+              "x": 6006.956354807386,
+              "y": 470.2653188251401
+            },
+            {
+              "x": 6010.164671817449,
+              "y": 465.39015616448
+            },
+            {
+              "x": 6013.372988827512,
+              "y": 460.6955490593754
+            },
+            {
+              "x": 6016.581305837575,
+              "y": 456.1814975098264
+            },
+            {
+              "x": 6019.789622847638,
+              "y": 451.84800151583295
+            },
+            {
+              "x": 6022.997939857702,
+              "y": 447.69506107739505
+            },
+            {
+              "x": 6026.206256867765,
+              "y": 443.7226761945127
+            },
+            {
+              "x": 6029.414573877828,
+              "y": 439.9308468671859
+            },
+            {
+              "x": 6032.622890887891,
+              "y": 436.3195730954147
+            },
+            {
+              "x": 6035.831207897954,
+              "y": 432.888854879199
+            },
+            {
+              "x": 6039.0395249080175,
+              "y": 429.6386922185389
+            },
+            {
+              "x": 6042.247841918081,
+              "y": 426.5690851134343
+            },
+            {
+              "x": 6045.456158928144,
+              "y": 423.6800335638853
+            },
+            {
+              "x": 6048.664475938207,
+              "y": 420.97153756989184
+            },
+            {
+              "x": 6051.87279294827,
+              "y": 418.44359713145394
+            },
+            {
+              "x": 6055.081109958333,
+              "y": 416.0962122485716
+            },
+            {
+              "x": 6058.289426968397,
+              "y": 413.9293829212448
+            },
+            {
+              "x": 6061.49774397846,
+              "y": 411.9431091494736
+            },
+            {
+              "x": 6064.706060988523,
+              "y": 410.1373909332579
+            },
+            {
+              "x": 6067.914377998586,
+              "y": 408.5122282725978
+            },
+            {
+              "x": 6071.122695008649,
+              "y": 407.0676211674932
+            },
+            {
+              "x": 6074.3310120187125,
+              "y": 405.80356961794416
+            },
+            {
+              "x": 6077.539329028776,
+              "y": 404.7200736239507
+            },
+            {
+              "x": 6080.747646038839,
+              "y": 403.8171331855128
+            },
+            {
+              "x": 6083.955963048902,
+              "y": 403.0947483026305
+            },
+            {
+              "x": 6087.164280058965,
+              "y": 402.55291897530367
+            },
+            {
+              "x": 6090.372597069028,
+              "y": 402.19164520353246
+            },
+            {
+              "x": 6093.580914079092,
+              "y": 402.0109269873168
+            },
+            {
+              "x": 6096.789231089155,
+              "y": 402.0107643266566
+            },
+            {
+              "x": 6099.997548099218,
+              "y": 402.1911572215521
+            },
+            {
+              "x": 6103.205865109281,
+              "y": 402.55210567200305
+            },
+            {
+              "x": 6106.414182119344,
+              "y": 403.0936096780096
+            },
+            {
+              "x": 6109.6224991294075,
+              "y": 403.8156692395717
+            },
+            {
+              "x": 6112.830816139471,
+              "y": 404.71828435668937
+            },
+            {
+              "x": 6116.039133149534,
+              "y": 405.80145502936256
+            },
+            {
+              "x": 6119.247450159597,
+              "y": 407.06518125759135
+            },
+            {
+              "x": 6122.45576716966,
+              "y": 408.5094630413757
+            },
+            {
+              "x": 6125.664084179723,
+              "y": 410.1343003807155
+            },
+            {
+              "x": 6128.872401189787,
+              "y": 411.939693275611
+            },
+            {
+              "x": 6132.08071819985,
+              "y": 413.92564172606194
+            },
+            {
+              "x": 6135.289035209913,
+              "y": 416.0921457320685
+            },
+            {
+              "x": 6138.497352219976,
+              "y": 418.4392052936306
+            },
+            {
+              "x": 6141.705669230039,
+              "y": 420.96682041074826
+            },
+            {
+              "x": 6144.9139862401025,
+              "y": 423.67499108342145
+            },
+            {
+              "x": 6148.122303250166,
+              "y": 426.56371731165024
+            },
+            {
+              "x": 6151.330620260229,
+              "y": 429.63299909543457
+            },
+            {
+              "x": 6154.538937270292,
+              "y": 432.8828364347745
+            },
+            {
+              "x": 6157.747254280355,
+              "y": 436.31322932966987
+            },
+            {
+              "x": 6160.955571290418,
+              "y": 439.9241777801209
+            },
+            {
+              "x": 6164.163888300482,
+              "y": 443.71568178612745
+            },
+            {
+              "x": 6167.372205310545,
+              "y": 447.6877413476895
+            },
+            {
+              "x": 6170.580522320608,
+              "y": 451.8403564648072
+            },
+            {
+              "x": 6173.788839330671,
+              "y": 456.1735271374804
+            },
+            {
+              "x": 6176.997156340734,
+              "y": 460.6872533657092
+            },
+            {
+              "x": 6180.205473350798,
+              "y": 465.3815351494935
+            },
+            {
+              "x": 6183.413790360861,
+              "y": 470.2563724888334
+            },
+            {
+              "x": 6186.622107370924,
+              "y": 475.3117653837288
+            },
+            {
+              "x": 6189.830424380987,
+              "y": 480.5477138341798
+            },
+            {
+              "x": 6193.03874139105,
+              "y": 485.96421784018634
+            },
+            {
+              "x": 6196.2470584011135,
+              "y": 491.5612774017485
+            },
+            {
+              "x": 6199.455375411177,
+              "y": 497.3388925188661
+            },
+            {
+              "x": 6202.66369242124,
+              "y": 503.2970631915393
+            },
+            {
+              "x": 6205.872009431303,
+              "y": 509.43578941976807
+            },
+            {
+              "x": 6209.080326441366,
+              "y": 515.7550712035523
+            },
+            {
+              "x": 6212.288643451429,
+              "y": 522.2549085428923
+            },
+            {
+              "x": 6215.496960461493,
+              "y": 528.9353014377878
+            },
+            {
+              "x": 6218.705277471556,
+              "y": 535.7962498882388
+            },
+            {
+              "x": 6221.913594481619,
+              "y": 542.8377538942453
+            },
+            {
+              "x": 6225.121911491682,
+              "y": 550.0598134558074
+            },
+            {
+              "x": 6228.330228501745,
+              "y": 557.4624285729251
+            },
+            {
+              "x": 6231.5385455118085,
+              "y": 565.0455992455983
+            },
+            {
+              "x": 6234.746862521872,
+              "y": 572.809325473827
+            },
+            {
+              "x": 6237.955179531935,
+              "y": 580.7536072576113
+            },
+            {
+              "x": 6241.163496541998,
+              "y": 588.8784445969511
+            },
+            {
+              "x": 6244.371813552061,
+              "y": 597.1838374918466
+            },
+            {
+              "x": 6246.398119032101,
+              "y": 602.5433838816051
+            }
+          ],
+          "power": 0.20634272766765208,
+          "speed": 450.7826370350085,
+          "time": 1.4105263157894736,
+          "velocity": {
+            "x": 192.49902060379387,
+            "y": -407.6139263062738
+          }
+        },
+        "status": "clear",
+        "warnings": [
+          "evolving-air-fields-not-predicted"
+        ],
+        "work": {
+          "candidates": 5,
+          "cells": 14942,
+          "chunks": 11,
+          "steps": 41130
+        }
+      },
+      "power": 20.634272766765207,
+      "tactic": "High arc over obstruction",
+      "target": {
+        "bodyId": 3,
+        "x": 6252.5,
+        "y": 657.5
+      },
+      "turn": 1,
+      "weapon": {
+        "ammo": {
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 1,
+          "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+          "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+          "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+          "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 2,
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+          "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+          "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+          "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+          "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+          "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+          "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 0,
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+          "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+          "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+          "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+          "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+        },
+        "angle": -1.1295874260451462,
+        "equipped": "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+        "gravityScale": 1,
+        "items": [
+          "219d46ea-fa7c-4578-b119-bba07279e6f0",
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+          "9dd9a83c-66b3-4720-a798-b7ce47372022",
+          "fa168217-924a-4b95-b7f2-025d856f5b88",
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+          "70446b65-1a75-4950-840a-443f28dc58a6",
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+          "2ee512d3-c721-4978-a1a5-b97d42255b13",
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+          "a80f054a-6235-4746-b050-8d5cd248dd57",
+          "b4474e78-1c10-4d79-994d-d900ed050664",
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+          "173004dc-1907-43e3-9e01-10f4b7084523",
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+          "1a4d56f6-0058-471f-a4bf-77548338012c",
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+          "e1a46386-8976-4b3c-9408-0159b3f64235",
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+          "2e0a754f-eb50-487b-b90a-907a3a43159a",
+          "780f5cdb-7252-4a69-987b-b908477015ad",
+          "815021a5-49a0-4790-91dd-b5b61a3c5050",
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+          "bb0da974-5d0f-4644-a6da-278758d07d9f",
+          "9cb680d4-3edf-451b-81da-ebbb514808bb",
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc"
+        ],
+        "kind": "rigid-body",
+        "localAngle": -1.1295874260451462,
+        "pinned": true,
+        "power": 0.20634272766765208,
+        "speed": {
+          "current": 450.7826370350085,
+          "max": 1800,
+          "min": 100
+        }
+      }
+    },
+    {
+      "clock": 23.933333333333255,
+      "kind": "presentation-centered",
+      "owner": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "speechKind": "shooting",
+      "turn": 1,
+      "x": 5959.5,
+      "y": 561.4998779296875
+    },
+    {
+      "clock": 23.933333333333255,
+      "id": "[\"terra-heavy-weather\",null,\"taunt\",\"neutral\",\"One serving of humble pie, family size.\"]",
+      "kind": "quip",
+      "name": "M10F Oct24 Alpha",
+      "owner": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "speechKind": "shooting",
+      "text": "One serving of humble pie, family size.",
+      "turn": 1
+    },
+    {
+      "clock": 26.94999999999975,
+      "elapsed": 3.016666666666495,
+      "kind": "presentation-ended",
+      "owner": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "speechKind": "shooting",
+      "turn": 1
+    },
+    {
+      "angle": 64.72059210343288,
+      "clock": 26.94999999999975,
+      "kind": "fire-request",
+      "owner": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "power": 20.634272766765207,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 26.94999999999975,
+      "kind": "cash",
+      "name": "M10F Oct24 Alpha",
+      "total": 36,
+      "turn": 1
+    },
+    {
+      "clock": 26.94999999999975,
+      "item": "nuke",
+      "kind": "ammo-spent",
+      "name": "M10F Oct24 Alpha",
+      "remaining": 1,
+      "turn": 1
+    },
+    {
+      "clock": 26.94999999999975,
+      "depth": 0,
+      "id": 1,
+      "kind": "launch",
+      "owner": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 1,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+        "vx": 192.4990234375,
+        "vy": -407.6139221191406,
+        "x": 5974.5,
+        "y": 528.5
+      },
+      "turn": 1,
+      "weapon": "nuke"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 28.433333333333,
+      "kind": "cash",
+      "name": "M10F Oct24 Alpha",
+      "total": 51,
+      "turn": 1
+    },
+    {
+      "clock": 28.433333333333,
+      "element": "IRON",
+      "id": 1,
+      "kind": "collision",
+      "turn": 1,
+      "with": "body",
+      "x": 6257.068359375,
+      "y": 641.623291015625
+    },
+    {
+      "action": "death",
+      "amount": 100,
+      "clock": 28.433333333333,
+      "kind": "cash",
+      "name": "M10F Oct24 Bravo",
+      "total": 100,
+      "turn": 1
+    },
+    {
+      "action": "kill",
+      "amount": 100,
+      "clock": 28.433333333333,
+      "kind": "cash",
+      "name": "M10F Oct24 Alpha",
+      "total": 151,
+      "turn": 1
+    },
+    {
+      "clock": 28.433333333333,
+      "kind": "death-pose-held",
+      "owner": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "seconds": 4,
+      "turn": 1
+    },
+    {
+      "clock": 28.433333333333,
+      "killer": "M10F Oct24 Alpha",
+      "kind": "eliminated",
+      "name": "M10F Oct24 Bravo",
+      "reason": "destroyed",
+      "turn": 1
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 28.433333333333,
+      "kind": "cash",
+      "name": "M10F Oct24 Alpha",
+      "total": 171,
+      "turn": 1
+    },
+    {
+      "action": "damage",
+      "amount": 300,
+      "clock": 28.433333333333,
+      "kind": "cash",
+      "name": "M10F Oct24 Alpha",
+      "total": 471,
+      "turn": 1
+    },
+    {
+      "action": "hurt",
+      "amount": 100,
+      "clock": 28.433333333333,
+      "kind": "cash",
+      "name": "M10F Oct24 Bravo",
+      "total": 200,
+      "turn": 1
+    },
+    {
+      "amount": 100,
+      "clock": 28.433333333333,
+      "direct": true,
+      "killed": true,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "projectileId": 1,
+      "targetEntityId": 3,
+      "targetStableId": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "turn": 1
+    },
+    {
+      "clock": 28.433333333333,
+      "damageBefore": 0,
+      "dx": 4.568359375,
+      "dy": -15.876708984375,
+      "impact": {
+        "x": 6257.068359375,
+        "y": 641.623291015625
+      },
+      "kind": "cpu-observation",
+      "origin": {
+        "x": 5959.5,
+        "y": 561.5
+      },
+      "power": 20.634272766765207,
+      "reason": "detonated",
+      "target": {
+        "x": 6252.5,
+        "y": 657.5
+      },
+      "targetId": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "turn": 1,
+      "weapon": "nuke"
+    },
+    {
+      "clock": 28.433333333333,
+      "id": 1,
+      "kind": "end",
+      "owner": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "reason": "detonated",
+      "shooterResidency": "live",
+      "turn": 1,
+      "x": 6257.068359375,
+      "y": 641.623291015625
+    },
+    {
+      "clock": 28.449999999999665,
+      "kind": "presentation-centered",
+      "owner": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "speechKind": "death",
+      "turn": 1,
+      "x": 6252.5,
+      "y": 657.5
+    },
+    {
+      "clock": 28.449999999999665,
+      "id": "[\"terra-gravity-office\",null,\"death\",\"neutral\",\"My fault tolerance has found its limit.\"]",
+      "kind": "quip",
+      "name": "M10F Oct24 Bravo",
+      "owner": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "speechKind": "death",
+      "text": "My fault tolerance has found its limit.",
+      "turn": 1
+    },
+    {
+      "clock": 28.449999999999665,
+      "ended": 1,
+      "kind": "attack-resolved",
+      "launched": 1,
+      "turn": 1,
+      "weapon": "nuke"
+    },
+    {
+      "clock": 29.433333333332943,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6065.068359375,
+        "y": 513.623291015625
+      },
+      "ticks": 60,
+      "timedOut": false,
+      "turn": 1,
+      "watchId": 1
+    },
+    {
+      "clock": 31.46666666666616,
+      "elapsed": 3.016666666666495,
+      "kind": "presentation-ended",
+      "owner": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "speechKind": "death",
+      "turn": 1
+    },
+    {
+      "clock": 31.46666666666616,
+      "kind": "death-pose-released",
+      "owner": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "turn": 1
+    },
+    {
+      "clock": 31.46666666666616,
+      "effect": "nuke",
+      "id": 1,
+      "kind": "chaos-queued",
+      "owner": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "turn": 1,
+      "x": 6252.5,
+      "y": 657.5
+    },
+    {
+      "clock": 31.46666666666616,
+      "effect": "nuke",
+      "id": 1,
+      "kind": "chaos-started",
+      "turn": 1,
+      "x": 6252.5,
+      "y": 657.5
+    },
+    {
+      "clock": 31.46666666666616,
+      "color": "#EC4787",
+      "eyebrow": "TURN 1 COMPLETE",
+      "id": 3,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "1 kills (+1) \u00b7 Turn cash +$471.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M10F Oct24 Alpha",
+      "turn": 1
+    },
+    {
+      "clock": 31.46666666666616,
+      "effect": "nuke",
+      "element": "FIRE",
+      "id": 1,
+      "kind": "chaos-material",
+      "radius": 227,
+      "receipt": {
+        "accepted": 145947,
+        "added": 145947,
+        "evaluated": 206116,
+        "id": 1,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 15945,
+        "status": "completed",
+        "work": 145947
+      },
+      "turn": 1,
+      "x": 6253,
+      "y": 658
+    },
+    {
+      "clock": 31.46666666666616,
+      "effect": "nuke",
+      "elapsed": 0.016666666666666666,
+      "id": 1,
+      "kind": "chaos-emission-ended",
+      "launched": 0,
+      "livePulses": 0,
+      "particles": 145947,
+      "turn": 1
+    },
+    {
+      "clock": 31.483333333332823,
+      "effect": "nuke",
+      "elapsed": 0.03333333333333333,
+      "ended": 0,
+      "id": 1,
+      "kind": "chaos-ended",
+      "launched": 0,
+      "livePulses": 0,
+      "particles": 145947,
+      "turn": 1
+    },
+    {
+      "clock": 31.733333333332812,
+      "elapsed": 1.0150955192258244,
+      "id": 3,
+      "kind": "arcade-ended",
+      "turn": 1
+    },
+    {
+      "clock": 31.9333333333328,
+      "color": "#B083CF",
+      "eyebrow": "TURN 2 / COMMAND CARTRIDGE",
+      "id": 4,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Gravity Office \u00b7 hard",
+      "title": "M10F Oct24 Charlie",
+      "turn": 2
+    },
+    {
+      "clock": 32.433333333332776,
+      "elapsed": 1.000000000000001,
+      "id": 4,
+      "kind": "arcade-ended",
+      "turn": 2
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 32.433333333332776,
+      "kind": "cash",
+      "name": "M10F Oct24 Charlie",
+      "total": 10,
+      "turn": 2
+    },
+    {
+      "clock": 32.433333333332776,
+      "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "kind": "turn",
+      "name": "M10F Oct24 Charlie",
+      "turn": 2
+    },
+    {
+      "clock": 32.44999999999944,
+      "item": "digger",
+      "kind": "utility",
+      "name": "M10F Oct24 Charlie",
+      "receipt": {
+        "accepted": 36,
+        "added": 0,
+        "evaluated": 252,
+        "id": 2,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 36,
+        "skipped": 216,
+        "status": "completed",
+        "work": 108
+      },
+      "remaining": 4.9865,
+      "seconds": 0.0135,
+      "turn": 2
+    },
+    {
+      "clock": 32.79999999999942,
+      "item": "digger",
+      "kind": "utility",
+      "name": "M10F Oct24 Charlie",
+      "receipt": {
+        "accepted": 6,
+        "added": 0,
+        "evaluated": 252,
+        "id": 5,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6,
+        "skipped": 246,
+        "status": "completed",
+        "work": 18
+      },
+      "remaining": 4.98425,
+      "seconds": 0.00225,
+      "turn": 2
+    },
+    {
+      "budgetRemaining": 48,
+      "clock": 33.84999999999936,
+      "item": "standard",
+      "kind": "cpu-decision",
+      "memory": 0,
+      "persona": "faultline",
+      "risk": 0.25,
+      "skill": "hard",
+      "tactic": "High arc over obstruction",
+      "target": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "trials": [
+        {
+          "reason": "obstructed",
+          "target": "M10F Oct24 Delta",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "crumble",
+          "work": {
+            "candidates": 22,
+            "cells": 41382,
+            "chunks": 24,
+            "steps": 58732
+          }
+        },
+        {
+          "reason": "clear",
+          "target": "M10F Oct24 Delta",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "standard",
+          "work": {
+            "candidates": 2,
+            "cells": 31165,
+            "chunks": 21,
+            "steps": 21156
+          }
+        }
+      ],
+      "turn": 2
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 33.86666666666603,
+      "kind": "cash",
+      "name": "M10F Oct24 Charlie",
+      "total": 13,
+      "turn": 2
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 33.86666666666603,
+      "kind": "cash",
+      "name": "M10F Oct24 Charlie",
+      "total": 16,
+      "turn": 2
+    },
+    {
+      "angle": 81.3190025546588,
+      "clock": 33.86666666666603,
+      "kind": "cpu-aimed",
+      "name": "M10F Oct24 Charlie",
+      "origin": {
+        "x": 6546.5,
+        "y": 659.476806640625
+      },
+      "plan": {
+        "candidates": [
+          {
+            "angle": -1.4192843390164762,
+            "obstruction": null,
+            "power": 0.40542464103363457,
+            "reason": "clear"
+          }
+        ],
+        "obstruction": null,
+        "reason": "clear",
+        "solution": {
+          "angle": -1.4192843390164762,
+          "childImpacts": "not-planned",
+          "coverage": "impact",
+          "end": {
+            "x": 6827.417525624219,
+            "y": 560.6200116344638
+          },
+          "origin": {
+            "x": 6551.933586951453,
+            "y": 623.5305800922304
+          },
+          "path": [
+            {
+              "x": 6551.933586951453,
+              "y": 623.5305800922304
+            },
+            {
+              "x": 6553.918913693114,
+              "y": 610.6404179288468
+            },
+            {
+              "x": 6555.904240434774,
+              "y": 597.9308113210188
+            },
+            {
+              "x": 6557.889567176434,
+              "y": 585.4017602687464
+            },
+            {
+              "x": 6559.874893918094,
+              "y": 573.0532647720296
+            },
+            {
+              "x": 6561.860220659754,
+              "y": 560.8853248308683
+            },
+            {
+              "x": 6563.8455474014145,
+              "y": 548.8979404452625
+            },
+            {
+              "x": 6565.830874143075,
+              "y": 537.0911116152123
+            },
+            {
+              "x": 6567.816200884735,
+              "y": 525.4648383407176
+            },
+            {
+              "x": 6569.801527626395,
+              "y": 514.0191206217785
+            },
+            {
+              "x": 6571.786854368055,
+              "y": 502.75395845839495
+            },
+            {
+              "x": 6573.772181109715,
+              "y": 491.66935185056695
+            },
+            {
+              "x": 6575.7575078513755,
+              "y": 480.7653007982945
+            },
+            {
+              "x": 6577.742834593036,
+              "y": 470.04180530157765
+            },
+            {
+              "x": 6579.728161334696,
+              "y": 459.49886536041635
+            },
+            {
+              "x": 6581.713488076356,
+              "y": 449.1364809748106
+            },
+            {
+              "x": 6583.698814818016,
+              "y": 438.9546521447603
+            },
+            {
+              "x": 6585.684141559676,
+              "y": 428.95337887026574
+            },
+            {
+              "x": 6587.669468301337,
+              "y": 419.13266115132666
+            },
+            {
+              "x": 6589.654795042997,
+              "y": 409.4924989879431
+            },
+            {
+              "x": 6591.640121784657,
+              "y": 400.03289238011513
+            },
+            {
+              "x": 6593.625448526317,
+              "y": 390.7538413278427
+            },
+            {
+              "x": 6595.610775267977,
+              "y": 381.6553458311258
+            },
+            {
+              "x": 6597.596102009637,
+              "y": 372.7374058899645
+            },
+            {
+              "x": 6599.581428751298,
+              "y": 364.0000215043587
+            },
+            {
+              "x": 6601.566755492958,
+              "y": 355.44319267430853
+            },
+            {
+              "x": 6603.552082234618,
+              "y": 347.0669193998139
+            },
+            {
+              "x": 6605.537408976278,
+              "y": 338.87120168087483
+            },
+            {
+              "x": 6607.522735717938,
+              "y": 330.8560395174913
+            },
+            {
+              "x": 6609.5080624595985,
+              "y": 323.0214329096633
+            },
+            {
+              "x": 6611.493389201259,
+              "y": 315.36738185739085
+            },
+            {
+              "x": 6613.478715942919,
+              "y": 307.893886360674
+            },
+            {
+              "x": 6615.464042684579,
+              "y": 300.6009464195127
+            },
+            {
+              "x": 6617.449369426239,
+              "y": 293.48856203390693
+            },
+            {
+              "x": 6619.434696167899,
+              "y": 286.5567332038567
+            },
+            {
+              "x": 6621.4200229095595,
+              "y": 279.8054599293621
+            },
+            {
+              "x": 6623.40534965122,
+              "y": 273.234742210423
+            },
+            {
+              "x": 6625.39067639288,
+              "y": 266.84458004703947
+            },
+            {
+              "x": 6627.37600313454,
+              "y": 260.6349734392115
+            },
+            {
+              "x": 6629.3613298762,
+              "y": 254.60592238693903
+            },
+            {
+              "x": 6631.34665661786,
+              "y": 248.75742689022215
+            },
+            {
+              "x": 6633.331983359521,
+              "y": 243.08948694906087
+            },
+            {
+              "x": 6635.317310101181,
+              "y": 237.6021025634551
+            },
+            {
+              "x": 6637.302636842841,
+              "y": 232.2952737334049
+            },
+            {
+              "x": 6639.287963584501,
+              "y": 227.16900045891023
+            },
+            {
+              "x": 6641.273290326161,
+              "y": 222.22328273997115
+            },
+            {
+              "x": 6643.258617067821,
+              "y": 217.4581205765876
+            },
+            {
+              "x": 6645.243943809482,
+              "y": 212.8735139687596
+            },
+            {
+              "x": 6647.229270551142,
+              "y": 208.4694629164872
+            },
+            {
+              "x": 6649.214597292802,
+              "y": 204.24596741977032
+            },
+            {
+              "x": 6651.199924034462,
+              "y": 200.20302747860904
+            },
+            {
+              "x": 6653.185250776122,
+              "y": 196.34064309300325
+            },
+            {
+              "x": 6655.1705775177825,
+              "y": 192.65881426295303
+            },
+            {
+              "x": 6657.155904259443,
+              "y": 189.1575409884584
+            },
+            {
+              "x": 6659.141231001103,
+              "y": 185.8368232695193
+            },
+            {
+              "x": 6661.126557742763,
+              "y": 182.69666110613576
+            },
+            {
+              "x": 6663.111884484423,
+              "y": 179.73705449830777
+            },
+            {
+              "x": 6665.097211226083,
+              "y": 176.95800344603535
+            },
+            {
+              "x": 6667.0825379677435,
+              "y": 174.35950794931847
+            },
+            {
+              "x": 6669.067864709404,
+              "y": 171.94156800815716
+            },
+            {
+              "x": 6671.053191451064,
+              "y": 169.7041836225514
+            },
+            {
+              "x": 6673.038518192724,
+              "y": 167.6473547925012
+            },
+            {
+              "x": 6675.023844934384,
+              "y": 165.77108151800655
+            },
+            {
+              "x": 6677.009171676044,
+              "y": 164.07536379906745
+            },
+            {
+              "x": 6678.994498417705,
+              "y": 162.5602016356839
+            },
+            {
+              "x": 6680.979825159365,
+              "y": 161.22559502785592
+            },
+            {
+              "x": 6682.965151901025,
+              "y": 160.0715439755835
+            },
+            {
+              "x": 6684.950478642685,
+              "y": 159.09804847886662
+            },
+            {
+              "x": 6686.935805384345,
+              "y": 158.3051085377053
+            },
+            {
+              "x": 6688.921132126005,
+              "y": 157.69272415209954
+            },
+            {
+              "x": 6690.906458867666,
+              "y": 157.26089532204935
+            },
+            {
+              "x": 6692.891785609326,
+              "y": 157.0096220475547
+            },
+            {
+              "x": 6694.877112350986,
+              "y": 156.9389043286156
+            },
+            {
+              "x": 6696.862439092646,
+              "y": 157.04874216523206
+            },
+            {
+              "x": 6698.847765834306,
+              "y": 157.33913555740406
+            },
+            {
+              "x": 6700.8330925759665,
+              "y": 157.81008450513164
+            },
+            {
+              "x": 6702.818419317627,
+              "y": 158.46158900841476
+            },
+            {
+              "x": 6704.803746059287,
+              "y": 159.29364906725343
+            },
+            {
+              "x": 6706.789072800947,
+              "y": 160.3062646816477
+            },
+            {
+              "x": 6708.774399542607,
+              "y": 161.4994358515975
+            },
+            {
+              "x": 6710.759726284267,
+              "y": 162.87316257710285
+            },
+            {
+              "x": 6712.7450530259275,
+              "y": 164.42744485816374
+            },
+            {
+              "x": 6714.730379767588,
+              "y": 166.1622826947802
+            },
+            {
+              "x": 6716.715706509248,
+              "y": 168.0776760869522
+            },
+            {
+              "x": 6718.701033250908,
+              "y": 170.1736250346798
+            },
+            {
+              "x": 6720.686359992568,
+              "y": 172.4501295379629
+            },
+            {
+              "x": 6722.671686734228,
+              "y": 174.9071895968016
+            },
+            {
+              "x": 6724.657013475889,
+              "y": 177.54480521119584
+            },
+            {
+              "x": 6726.642340217549,
+              "y": 180.36297638114564
+            },
+            {
+              "x": 6728.627666959209,
+              "y": 183.361703106651
+            },
+            {
+              "x": 6730.612993700869,
+              "y": 186.54098538771188
+            },
+            {
+              "x": 6732.598320442529,
+              "y": 189.90082322432835
+            },
+            {
+              "x": 6734.583647184189,
+              "y": 193.44121661650036
+            },
+            {
+              "x": 6736.56897392585,
+              "y": 197.16216556422793
+            },
+            {
+              "x": 6738.55430066751,
+              "y": 201.06367006751103
+            },
+            {
+              "x": 6740.53962740917,
+              "y": 205.14573012634975
+            },
+            {
+              "x": 6742.52495415083,
+              "y": 209.408345740744
+            },
+            {
+              "x": 6744.51028089249,
+              "y": 213.8515169106938
+            },
+            {
+              "x": 6746.4956076341505,
+              "y": 218.4752436361991
+            },
+            {
+              "x": 6748.480934375811,
+              "y": 223.27952591726003
+            },
+            {
+              "x": 6750.466261117471,
+              "y": 228.2643637538765
+            },
+            {
+              "x": 6752.451587859131,
+              "y": 233.4297571460485
+            },
+            {
+              "x": 6754.436914600791,
+              "y": 238.77570609377608
+            },
+            {
+              "x": 6756.422241342451,
+              "y": 244.3022105970592
+            },
+            {
+              "x": 6758.4075680841115,
+              "y": 250.0092706558979
+            },
+            {
+              "x": 6760.392894825772,
+              "y": 255.89688627029213
+            },
+            {
+              "x": 6762.378221567432,
+              "y": 261.96505744024194
+            },
+            {
+              "x": 6764.363548309092,
+              "y": 268.21378416574726
+            },
+            {
+              "x": 6766.348875050752,
+              "y": 274.6430664468082
+            },
+            {
+              "x": 6768.334201792412,
+              "y": 281.25290428342464
+            },
+            {
+              "x": 6770.319528534073,
+              "y": 288.04329767559665
+            },
+            {
+              "x": 6772.304855275733,
+              "y": 295.0142466233242
+            },
+            {
+              "x": 6774.290182017393,
+              "y": 302.16575112660735
+            },
+            {
+              "x": 6776.275508759053,
+              "y": 309.49781118544604
+            },
+            {
+              "x": 6778.260835500713,
+              "y": 317.0104267998403
+            },
+            {
+              "x": 6780.246162242373,
+              "y": 324.70359796979005
+            },
+            {
+              "x": 6782.231488984034,
+              "y": 332.5773246952954
+            },
+            {
+              "x": 6784.216815725694,
+              "y": 340.6316069763563
+            },
+            {
+              "x": 6786.202142467354,
+              "y": 348.86644481297276
+            },
+            {
+              "x": 6788.187469209014,
+              "y": 357.28183820514477
+            },
+            {
+              "x": 6790.172795950674,
+              "y": 365.8777871528723
+            },
+            {
+              "x": 6792.1581226923345,
+              "y": 374.65429165615546
+            },
+            {
+              "x": 6794.143449433995,
+              "y": 383.61135171499416
+            },
+            {
+              "x": 6796.128776175655,
+              "y": 392.7489673293884
+            },
+            {
+              "x": 6798.114102917315,
+              "y": 402.06713849933817
+            },
+            {
+              "x": 6800.099429658975,
+              "y": 411.5658652248435
+            },
+            {
+              "x": 6802.084756400635,
+              "y": 421.2451475059044
+            },
+            {
+              "x": 6804.0700831422955,
+              "y": 431.1049853425209
+            },
+            {
+              "x": 6806.055409883956,
+              "y": 441.1453787346929
+            },
+            {
+              "x": 6808.040736625616,
+              "y": 451.3663276824204
+            },
+            {
+              "x": 6810.026063367276,
+              "y": 461.7678321857036
+            },
+            {
+              "x": 6812.011390108936,
+              "y": 472.3498922445423
+            },
+            {
+              "x": 6813.996716850596,
+              "y": 483.1125078589365
+            },
+            {
+              "x": 6815.982043592257,
+              "y": 494.0556790288863
+            },
+            {
+              "x": 6817.967370333917,
+              "y": 505.17940575439167
+            },
+            {
+              "x": 6819.952697075577,
+              "y": 516.4836880354526
+            },
+            {
+              "x": 6821.938023817237,
+              "y": 527.968525872069
+            },
+            {
+              "x": 6823.923350558897,
+              "y": 539.6339192642411
+            },
+            {
+              "x": 6825.908677300557,
+              "y": 551.4798682119687
+            },
+            {
+              "x": 6827.417525624219,
+              "y": 560.6200116344638
+            }
+          ],
+          "power": 0.40542464103363457,
+          "speed": 789.2218897571788,
+          "time": 2.3126666666666633,
+          "velocity": {
+            "x": 119.11960449962078,
+            "y": -780.1805631363462
+          }
+        },
+        "status": "clear",
+        "warnings": [
+          "evolving-air-fields-not-predicted"
+        ],
+        "work": {
+          "candidates": 2,
+          "cells": 31165,
+          "chunks": 21,
+          "steps": 21156
+        }
+      },
+      "power": 40.54246410336346,
+      "tactic": "High arc over obstruction",
+      "target": {
+        "bodyId": 7,
+        "x": 6839.5,
+        "y": 609.4998779296875
+      },
+      "turn": 2,
+      "weapon": {
+        "ammo": {
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 0,
+          "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+          "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+          "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+          "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 0,
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 2,
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+          "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+          "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+          "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+          "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+          "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+          "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 0,
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+          "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+          "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+          "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+          "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+        },
+        "angle": -1.419284339016476,
+        "equipped": "219d46ea-fa7c-4578-b119-bba07279e6f0",
+        "gravityScale": 1,
+        "items": [
+          "219d46ea-fa7c-4578-b119-bba07279e6f0",
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+          "9dd9a83c-66b3-4720-a798-b7ce47372022",
+          "fa168217-924a-4b95-b7f2-025d856f5b88",
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+          "70446b65-1a75-4950-840a-443f28dc58a6",
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+          "2ee512d3-c721-4978-a1a5-b97d42255b13",
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+          "a80f054a-6235-4746-b050-8d5cd248dd57",
+          "b4474e78-1c10-4d79-994d-d900ed050664",
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+          "173004dc-1907-43e3-9e01-10f4b7084523",
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+          "1a4d56f6-0058-471f-a4bf-77548338012c",
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+          "e1a46386-8976-4b3c-9408-0159b3f64235",
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+          "2e0a754f-eb50-487b-b90a-907a3a43159a",
+          "780f5cdb-7252-4a69-987b-b908477015ad",
+          "815021a5-49a0-4790-91dd-b5b61a3c5050",
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+          "bb0da974-5d0f-4644-a6da-278758d07d9f",
+          "9cb680d4-3edf-451b-81da-ebbb514808bb",
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc"
+        ],
+        "kind": "rigid-body",
+        "localAngle": -1.419284339016476,
+        "pinned": true,
+        "power": 0.40542464103363457,
+        "speed": {
+          "current": 789.2218897571788,
+          "max": 1800,
+          "min": 100
+        }
+      }
+    },
+    {
+      "clock": 35.29999999999928,
+      "kind": "presentation-centered",
+      "owner": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "speechKind": "shooting",
+      "turn": 2,
+      "x": 6546.5,
+      "y": 659.46630859375
+    },
+    {
+      "clock": 35.29999999999928,
+      "id": "[\"terra-gravity-office\",null,\"taunt\",\"neutral\",\"I have a good feeling and a bad firing angle.\"]",
+      "kind": "quip",
+      "name": "M10F Oct24 Charlie",
+      "owner": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "speechKind": "shooting",
+      "text": "I have a good feeling and a bad firing angle.",
+      "turn": 2
+    },
+    {
+      "clock": 38.316666666665775,
+      "elapsed": 3.016666666666495,
+      "kind": "presentation-ended",
+      "owner": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "speechKind": "shooting",
+      "turn": 2
+    },
+    {
+      "angle": 81.3190025546588,
+      "clock": 38.316666666665775,
+      "kind": "fire-request",
+      "owner": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "power": 40.54246410336346,
+      "turn": 2
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 38.316666666665775,
+      "kind": "cash",
+      "name": "M10F Oct24 Charlie",
+      "total": 36,
+      "turn": 2
+    },
+    {
+      "clock": 38.316666666665775,
+      "depth": 0,
+      "id": 2,
+      "kind": "launch",
+      "owner": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 2,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+        "vx": 119.1196060180664,
+        "vy": -780.1805419921875,
+        "x": 6551.5,
+        "y": 623.5
+      },
+      "turn": 2,
+      "weapon": "standard"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 40.66666666666564,
+      "kind": "cash",
+      "name": "M10F Oct24 Charlie",
+      "total": 51,
+      "turn": 2
+    },
+    {
+      "clock": 40.66666666666564,
+      "id": 2,
+      "kind": "collision",
+      "turn": 2,
+      "with": "body",
+      "x": 6827.4345703125,
+      "y": 593.373291015625
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 40.66666666666564,
+      "kind": "cash",
+      "name": "M10F Oct24 Charlie",
+      "total": 71,
+      "turn": 2
+    },
+    {
+      "action": "damage",
+      "amount": 182,
+      "clock": 40.66666666666564,
+      "kind": "cash",
+      "name": "M10F Oct24 Charlie",
+      "total": 253,
+      "turn": 2
+    },
+    {
+      "action": "hurt",
+      "amount": 61,
+      "clock": 40.66666666666564,
+      "kind": "cash",
+      "name": "M10F Oct24 Delta",
+      "total": 61,
+      "turn": 2
+    },
+    {
+      "amount": 60.693114418820656,
+      "clock": 40.66666666666564,
+      "direct": true,
+      "killed": false,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "projectileId": 2,
+      "targetEntityId": 7,
+      "targetStableId": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "turn": 2
+    },
+    {
+      "clock": 40.66666666666564,
+      "damageBefore": 0,
+      "dx": -12.0654296875,
+      "dy": -16.126708984375,
+      "impact": {
+        "x": 6827.4345703125,
+        "y": 593.373291015625
+      },
+      "kind": "cpu-observation",
+      "origin": {
+        "x": 6546.5,
+        "y": 659.4442138671875
+      },
+      "power": 40.54246410336346,
+      "reason": "detonated",
+      "target": {
+        "x": 6839.5,
+        "y": 609.5
+      },
+      "targetId": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "turn": 2,
+      "weapon": "standard"
+    },
+    {
+      "clock": 40.66666666666564,
+      "id": 2,
+      "kind": "end",
+      "owner": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "reason": "detonated",
+      "shooterResidency": "live",
+      "turn": 2,
+      "x": 6827.4345703125,
+      "y": 593.373291015625
+    },
+    {
+      "clock": 40.68333333333231,
+      "ended": 1,
+      "kind": "attack-resolved",
+      "launched": 1,
+      "turn": 2,
+      "weapon": "standard"
+    },
+    {
+      "clock": 41.666666666665584,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6635.4345703125,
+        "y": 465.373291015625
+      },
+      "ticks": 60,
+      "timedOut": false,
+      "turn": 2,
+      "watchId": 2
+    },
+    {
+      "clock": 41.666666666665584,
+      "color": "#B083CF",
+      "eyebrow": "TURN 2 COMPLETE",
+      "id": 5,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "0 kills (+0) \u00b7 Turn cash +$253.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M10F Oct24 Charlie",
+      "turn": 2
+    },
+    {
+      "clock": 42.16666666666555,
+      "elapsed": 1.000000000000001,
+      "id": 5,
+      "kind": "arcade-ended",
+      "turn": 2
+    },
+    {
+      "clock": 42.366666666665544,
+      "color": "#FF6150",
+      "eyebrow": "TURN 3 / COMMAND CARTRIDGE",
+      "id": 6,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Lucky Fuses \u00b7 rookie",
+      "title": "M10F Oct24 Delta",
+      "turn": 3
+    },
+    {
+      "clock": 42.86666666666552,
+      "elapsed": 1.000000000000001,
+      "id": 6,
+      "kind": "arcade-ended",
+      "turn": 3
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 42.86666666666552,
+      "kind": "cash",
+      "name": "M10F Oct24 Delta",
+      "total": 71,
+      "turn": 3
+    },
+    {
+      "clock": 42.86666666666552,
+      "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "kind": "turn",
+      "name": "M10F Oct24 Delta",
+      "turn": 3
+    },
+    {
+      "action": "utility",
+      "amount": 15,
+      "clock": 42.86666666666552,
+      "kind": "cash",
+      "name": "M10F Oct24 Delta",
+      "total": 86,
+      "turn": 3
+    },
+    {
+      "clock": 42.86666666666552,
+      "healed": 30,
+      "item": "battery",
+      "kind": "utility",
+      "name": "M10F Oct24 Delta",
+      "turn": 3
+    },
+    {
+      "budgetRemaining": 10,
+      "clock": 43.34999999999882,
+      "item": "standard",
+      "kind": "cpu-decision",
+      "memory": 0,
+      "persona": "lucky",
+      "risk": 0.8,
+      "skill": "rookie",
+      "tactic": "High arc over obstruction",
+      "target": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "trials": [
+        {
+          "reason": "obstructed",
+          "target": "M10F Oct24 Charlie",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "machine-gun",
+          "work": {
+            "candidates": 1,
+            "cells": 349,
+            "chunks": 7,
+            "steps": 24
+          }
+        },
+        {
+          "reason": "clear",
+          "target": "M10F Oct24 Charlie",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "standard",
+          "work": {
+            "candidates": 1,
+            "cells": 33213,
+            "chunks": 21,
+            "steps": 15407
+          }
+        }
+      ],
+      "turn": 3
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 43.36666666666549,
+      "kind": "cash",
+      "name": "M10F Oct24 Delta",
+      "total": 89,
+      "turn": 3
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 43.36666666666549,
+      "kind": "cash",
+      "name": "M10F Oct24 Delta",
+      "total": 92,
+      "turn": 3
+    },
+    {
+      "angle": 98.72834787191825,
+      "clock": 43.36666666666549,
+      "kind": "cpu-aimed",
+      "name": "M10F Oct24 Delta",
+      "origin": {
+        "x": 6839.5,
+        "y": 618.54931640625
+      },
+      "plan": {
+        "candidates": [
+          {
+            "angle": -1.72313473541931,
+            "obstruction": null,
+            "power": 0.4007503871060908,
+            "reason": "clear"
+          }
+        ],
+        "obstruction": null,
+        "reason": "clear",
+        "solution": {
+          "angle": -1.72313473541931,
+          "childImpacts": "not-planned",
+          "coverage": "impact",
+          "end": {
+            "x": 6549.7893857738645,
+            "y": 602.9374792829516
+          },
+          "origin": {
+            "x": 6834.037004586135,
+            "y": 582.9689205645201
+          },
+          "path": [
+            {
+              "x": 6834.037004586135,
+              "y": 582.9689205645201
+            },
+            {
+              "x": 6832.061029893052,
+              "y": 570.2113069865529
+            },
+            {
+              "x": 6830.08505519997,
+              "y": 557.6342489641413
+            },
+            {
+              "x": 6828.109080506888,
+              "y": 545.2377464972852
+            },
+            {
+              "x": 6826.133105813806,
+              "y": 533.0217995859847
+            },
+            {
+              "x": 6824.1571311207235,
+              "y": 520.9864082302397
+            },
+            {
+              "x": 6822.181156427641,
+              "y": 509.13157243005026
+            },
+            {
+              "x": 6820.205181734559,
+              "y": 497.4572921854164
+            },
+            {
+              "x": 6818.229207041477,
+              "y": 485.9635674963381
+            },
+            {
+              "x": 6816.253232348395,
+              "y": 474.65039836281534
+            },
+            {
+              "x": 6814.2772576553125,
+              "y": 463.5177847848481
+            },
+            {
+              "x": 6812.30128296223,
+              "y": 452.5657267624365
+            },
+            {
+              "x": 6810.325308269148,
+              "y": 441.7942242955804
+            },
+            {
+              "x": 6808.349333576066,
+              "y": 431.2032773842799
+            },
+            {
+              "x": 6806.373358882984,
+              "y": 420.7928860285349
+            },
+            {
+              "x": 6804.3973841899015,
+              "y": 410.5630502283455
+            },
+            {
+              "x": 6802.421409496819,
+              "y": 400.51376998371165
+            },
+            {
+              "x": 6800.445434803737,
+              "y": 390.64504529463335
+            },
+            {
+              "x": 6798.469460110655,
+              "y": 380.9568761611106
+            },
+            {
+              "x": 6796.493485417573,
+              "y": 371.4492625831434
+            },
+            {
+              "x": 6794.51751072449,
+              "y": 362.1222045607318
+            },
+            {
+              "x": 6792.541536031408,
+              "y": 352.9757020938757
+            },
+            {
+              "x": 6790.565561338326,
+              "y": 344.0097551825752
+            },
+            {
+              "x": 6788.589586645244,
+              "y": 335.2243638268302
+            },
+            {
+              "x": 6786.613611952162,
+              "y": 326.6195280266408
+            },
+            {
+              "x": 6784.637637259079,
+              "y": 318.19524778200696
+            },
+            {
+              "x": 6782.661662565997,
+              "y": 309.95152309292865
+            },
+            {
+              "x": 6780.685687872915,
+              "y": 301.8883539594059
+            },
+            {
+              "x": 6778.709713179833,
+              "y": 294.0057403814387
+            },
+            {
+              "x": 6776.733738486751,
+              "y": 286.3036823590271
+            },
+            {
+              "x": 6774.757763793668,
+              "y": 278.78217989217103
+            },
+            {
+              "x": 6772.781789100586,
+              "y": 271.4412329808705
+            },
+            {
+              "x": 6770.805814407504,
+              "y": 264.2808416251255
+            },
+            {
+              "x": 6768.829839714422,
+              "y": 257.3010058249361
+            },
+            {
+              "x": 6766.8538650213395,
+              "y": 250.50172558030224
+            },
+            {
+              "x": 6764.877890328257,
+              "y": 243.88300089122396
+            },
+            {
+              "x": 6762.901915635175,
+              "y": 237.4448317577012
+            },
+            {
+              "x": 6760.925940942093,
+              "y": 231.18721817973403
+            },
+            {
+              "x": 6758.949966249011,
+              "y": 225.1101601573224
+            },
+            {
+              "x": 6756.9739915559285,
+              "y": 219.2136576904663
+            },
+            {
+              "x": 6754.998016862846,
+              "y": 213.4977107791658
+            },
+            {
+              "x": 6753.022042169764,
+              "y": 207.96231942342084
+            },
+            {
+              "x": 6751.046067476682,
+              "y": 202.60748362323145
+            },
+            {
+              "x": 6749.0700927836,
+              "y": 197.43320337859757
+            },
+            {
+              "x": 6747.094118090517,
+              "y": 192.4394786895193
+            },
+            {
+              "x": 6745.118143397435,
+              "y": 187.62630955599653
+            },
+            {
+              "x": 6743.142168704353,
+              "y": 182.99369597802936
+            },
+            {
+              "x": 6741.166194011271,
+              "y": 178.5416379556177
+            },
+            {
+              "x": 6739.190219318189,
+              "y": 174.2701354887616
+            },
+            {
+              "x": 6737.214244625106,
+              "y": 170.17918857746108
+            },
+            {
+              "x": 6735.238269932024,
+              "y": 166.2687972217161
+            },
+            {
+              "x": 6733.262295238942,
+              "y": 162.5389614215267
+            },
+            {
+              "x": 6731.28632054586,
+              "y": 158.98968117689284
+            },
+            {
+              "x": 6729.310345852778,
+              "y": 155.62095648781454
+            },
+            {
+              "x": 6727.334371159695,
+              "y": 152.4327873542918
+            },
+            {
+              "x": 6725.358396466613,
+              "y": 149.4251737763246
+            },
+            {
+              "x": 6723.382421773531,
+              "y": 146.59811575391296
+            },
+            {
+              "x": 6721.406447080449,
+              "y": 143.9516132870569
+            },
+            {
+              "x": 6719.4304723873665,
+              "y": 141.48566637575635
+            },
+            {
+              "x": 6717.454497694284,
+              "y": 139.2002750200114
+            },
+            {
+              "x": 6715.478523001202,
+              "y": 137.09543921982197
+            },
+            {
+              "x": 6713.50254830812,
+              "y": 135.17115897518812
+            },
+            {
+              "x": 6711.526573615038,
+              "y": 133.4274342861098
+            },
+            {
+              "x": 6709.5505989219555,
+              "y": 131.86426515258708
+            },
+            {
+              "x": 6707.574624228873,
+              "y": 130.4816515746199
+            },
+            {
+              "x": 6705.598649535791,
+              "y": 129.27959355220824
+            },
+            {
+              "x": 6703.622674842709,
+              "y": 128.25809108535216
+            },
+            {
+              "x": 6701.646700149627,
+              "y": 127.41714417405164
+            },
+            {
+              "x": 6699.6707254565445,
+              "y": 126.75675281830668
+            },
+            {
+              "x": 6697.694750763462,
+              "y": 126.27691701811727
+            },
+            {
+              "x": 6695.71877607038,
+              "y": 125.9776367734834
+            },
+            {
+              "x": 6693.742801377298,
+              "y": 125.8589120844051
+            },
+            {
+              "x": 6691.766826684216,
+              "y": 125.92074295088236
+            },
+            {
+              "x": 6689.790851991133,
+              "y": 126.16312937291517
+            },
+            {
+              "x": 6687.814877298051,
+              "y": 126.58607135050352
+            },
+            {
+              "x": 6685.838902604969,
+              "y": 127.18956888364744
+            },
+            {
+              "x": 6683.862927911887,
+              "y": 127.97362197234692
+            },
+            {
+              "x": 6681.886953218805,
+              "y": 128.93823061660197
+            },
+            {
+              "x": 6679.910978525722,
+              "y": 130.08339481641255
+            },
+            {
+              "x": 6677.93500383264,
+              "y": 131.4091145717787
+            },
+            {
+              "x": 6675.959029139558,
+              "y": 132.9153898827004
+            },
+            {
+              "x": 6673.983054446476,
+              "y": 134.60222074917766
+            },
+            {
+              "x": 6672.007079753394,
+              "y": 136.46960717121047
+            },
+            {
+              "x": 6670.031105060311,
+              "y": 138.51754914879882
+            },
+            {
+              "x": 6668.055130367229,
+              "y": 140.74604668194274
+            },
+            {
+              "x": 6666.079155674147,
+              "y": 143.1550997706422
+            },
+            {
+              "x": 6664.103180981065,
+              "y": 145.74470841489725
+            },
+            {
+              "x": 6662.1272062879825,
+              "y": 148.51487261470783
+            },
+            {
+              "x": 6660.1512315949,
+              "y": 151.46559237007398
+            },
+            {
+              "x": 6658.175256901818,
+              "y": 154.59686768099567
+            },
+            {
+              "x": 6656.199282208736,
+              "y": 157.90869854747294
+            },
+            {
+              "x": 6654.223307515654,
+              "y": 161.40108496950575
+            },
+            {
+              "x": 6652.2473328225715,
+              "y": 165.07402694709413
+            },
+            {
+              "x": 6650.271358129489,
+              "y": 168.92752448023805
+            },
+            {
+              "x": 6648.295383436407,
+              "y": 172.9615775689375
+            },
+            {
+              "x": 6646.319408743325,
+              "y": 177.17618621319255
+            },
+            {
+              "x": 6644.343434050243,
+              "y": 181.57135041300313
+            },
+            {
+              "x": 6642.36745935716,
+              "y": 186.14707016836928
+            },
+            {
+              "x": 6640.391484664078,
+              "y": 190.90334547929095
+            },
+            {
+              "x": 6638.415509970996,
+              "y": 195.84017634576824
+            },
+            {
+              "x": 6636.439535277914,
+              "y": 200.95756276780105
+            },
+            {
+              "x": 6634.463560584832,
+              "y": 206.2555047453894
+            },
+            {
+              "x": 6632.487585891749,
+              "y": 211.73400227853332
+            },
+            {
+              "x": 6630.511611198667,
+              "y": 217.3930553672328
+            },
+            {
+              "x": 6628.535636505585,
+              "y": 223.23266401148783
+            },
+            {
+              "x": 6626.559661812503,
+              "y": 229.2528282112984
+            },
+            {
+              "x": 6624.583687119421,
+              "y": 235.45354796666456
+            },
+            {
+              "x": 6622.607712426338,
+              "y": 241.83482327758625
+            },
+            {
+              "x": 6620.631737733256,
+              "y": 248.39665414406352
+            },
+            {
+              "x": 6618.655763040174,
+              "y": 255.13904056609633
+            },
+            {
+              "x": 6616.679788347092,
+              "y": 262.0619825436847
+            },
+            {
+              "x": 6614.7038136540095,
+              "y": 269.1654800768286
+            },
+            {
+              "x": 6612.727838960927,
+              "y": 276.44953316552807
+            },
+            {
+              "x": 6610.751864267845,
+              "y": 283.9141418097831
+            },
+            {
+              "x": 6608.775889574763,
+              "y": 291.5593060095937
+            },
+            {
+              "x": 6606.799914881681,
+              "y": 299.38502576495983
+            },
+            {
+              "x": 6604.8239401885985,
+              "y": 307.39130107588153
+            },
+            {
+              "x": 6602.847965495516,
+              "y": 315.57813194235877
+            },
+            {
+              "x": 6600.871990802434,
+              "y": 323.94551836439155
+            },
+            {
+              "x": 6598.896016109352,
+              "y": 332.4934603419799
+            },
+            {
+              "x": 6596.92004141627,
+              "y": 341.22195787512385
+            },
+            {
+              "x": 6594.9440667231875,
+              "y": 350.1310109638233
+            },
+            {
+              "x": 6592.968092030105,
+              "y": 359.2206196080783
+            },
+            {
+              "x": 6590.992117337023,
+              "y": 368.490783807889
+            },
+            {
+              "x": 6589.016142643941,
+              "y": 377.9415035632551
+            },
+            {
+              "x": 6587.040167950859,
+              "y": 387.5727788741768
+            },
+            {
+              "x": 6585.064193257776,
+              "y": 397.384609740654
+            },
+            {
+              "x": 6583.088218564694,
+              "y": 407.3769961626868
+            },
+            {
+              "x": 6581.112243871612,
+              "y": 417.5499381402752
+            },
+            {
+              "x": 6579.13626917853,
+              "y": 427.9034356734191
+            },
+            {
+              "x": 6577.160294485448,
+              "y": 438.43748876211856
+            },
+            {
+              "x": 6575.184319792365,
+              "y": 449.1520974063736
+            },
+            {
+              "x": 6573.208345099283,
+              "y": 460.0472616061842
+            },
+            {
+              "x": 6571.232370406201,
+              "y": 471.12298136155033
+            },
+            {
+              "x": 6569.256395713119,
+              "y": 482.379256672472
+            },
+            {
+              "x": 6567.280421020037,
+              "y": 493.81608753894926
+            },
+            {
+              "x": 6565.304446326954,
+              "y": 505.4334739609821
+            },
+            {
+              "x": 6563.328471633872,
+              "y": 517.2314159385704
+            },
+            {
+              "x": 6561.35249694079,
+              "y": 529.2099134717143
+            },
+            {
+              "x": 6559.376522247708,
+              "y": 541.3689665604138
+            },
+            {
+              "x": 6557.4005475546255,
+              "y": 553.7085752046688
+            },
+            {
+              "x": 6555.424572861543,
+              "y": 566.2287394044794
+            },
+            {
+              "x": 6553.448598168461,
+              "y": 578.9294591598455
+            },
+            {
+              "x": 6551.472623475379,
+              "y": 591.8107344707672
+            },
+            {
+              "x": 6549.7893857738645,
+              "y": 602.9374792829516
+            }
+          ],
+          "power": 0.4007503871060908,
+          "speed": 781.2756580803543,
+          "time": 2.397530864197527,
+          "velocity": {
+            "x": -118.55848158493654,
+            "y": -772.2276480113653
+          }
+        },
+        "status": "clear",
+        "warnings": [
+          "evolving-air-fields-not-predicted"
+        ],
+        "work": {
+          "candidates": 1,
+          "cells": 33213,
+          "chunks": 21,
+          "steps": 15407
+        }
+      },
+      "power": 40.07503871060908,
+      "tactic": "High arc over obstruction",
+      "target": {
+        "bodyId": 5,
+        "x": 6546.5,
+        "y": 659.590576171875
+      },
+      "turn": 3,
+      "weapon": {
+        "ammo": {
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 0,
+          "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+          "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+          "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+          "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 0,
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+          "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+          "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+          "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+          "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+          "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+          "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 0,
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+          "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+          "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+          "e1a46386-8976-4b3c-9408-0159b3f64235": 4,
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+          "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+        },
+        "angle": -1.72313473541931,
+        "equipped": "219d46ea-fa7c-4578-b119-bba07279e6f0",
+        "gravityScale": 1,
+        "items": [
+          "219d46ea-fa7c-4578-b119-bba07279e6f0",
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+          "9dd9a83c-66b3-4720-a798-b7ce47372022",
+          "fa168217-924a-4b95-b7f2-025d856f5b88",
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+          "70446b65-1a75-4950-840a-443f28dc58a6",
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+          "2ee512d3-c721-4978-a1a5-b97d42255b13",
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+          "a80f054a-6235-4746-b050-8d5cd248dd57",
+          "b4474e78-1c10-4d79-994d-d900ed050664",
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+          "173004dc-1907-43e3-9e01-10f4b7084523",
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+          "1a4d56f6-0058-471f-a4bf-77548338012c",
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+          "e1a46386-8976-4b3c-9408-0159b3f64235",
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+          "2e0a754f-eb50-487b-b90a-907a3a43159a",
+          "780f5cdb-7252-4a69-987b-b908477015ad",
+          "815021a5-49a0-4790-91dd-b5b61a3c5050",
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+          "bb0da974-5d0f-4644-a6da-278758d07d9f",
+          "9cb680d4-3edf-451b-81da-ebbb514808bb",
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc"
+        ],
+        "kind": "rigid-body",
+        "localAngle": -1.4674203189154038,
+        "pinned": true,
+        "power": 0.4007503871060908,
+        "speed": {
+          "current": 781.2756580803543,
+          "max": 1800,
+          "min": 100
+        }
+      }
+    },
+    {
+      "clock": 44.79999999999874,
+      "kind": "presentation-centered",
+      "owner": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "speechKind": "shooting",
+      "turn": 3,
+      "x": 6839.5,
+      "y": 618.538818359375
+    },
+    {
+      "clock": 44.79999999999874,
+      "id": "[\"terra-lucky-fuses\",null,\"taunt\",\"neutral\",\"I have a permit for most of this.\"]",
+      "kind": "quip",
+      "name": "M10F Oct24 Delta",
+      "owner": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "speechKind": "shooting",
+      "text": "I have a permit for most of this.",
+      "turn": 3
+    },
+    {
+      "clock": 47.816666666665235,
+      "elapsed": 3.016666666666495,
+      "kind": "presentation-ended",
+      "owner": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "speechKind": "shooting",
+      "turn": 3
+    },
+    {
+      "angle": 98.72834787191825,
+      "clock": 47.816666666665235,
+      "kind": "fire-request",
+      "owner": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "power": 40.07503871060908,
+      "turn": 3
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 47.816666666665235,
+      "kind": "cash",
+      "name": "M10F Oct24 Delta",
+      "total": 112,
+      "turn": 3
+    },
+    {
+      "clock": 47.816666666665235,
+      "depth": 0,
+      "id": 3,
+      "kind": "launch",
+      "owner": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 3,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+        "vx": -118.55847930908205,
+        "vy": -772.2276611328125,
+        "x": 6833.5,
+        "y": 582.5
+      },
+      "turn": 3,
+      "weapon": "standard"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 50.24999999999843,
+      "kind": "cash",
+      "name": "M10F Oct24 Delta",
+      "total": 127,
+      "turn": 3
+    },
+    {
+      "clock": 50.24999999999843,
+      "element": "IRON",
+      "id": 3,
+      "kind": "collision",
+      "turn": 3,
+      "with": "body",
+      "x": 6552.3330078125,
+      "y": 643.410888671875
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 50.24999999999843,
+      "kind": "cash",
+      "name": "M10F Oct24 Delta",
+      "total": 147,
+      "turn": 3
+    },
+    {
+      "action": "damage",
+      "amount": 189,
+      "clock": 50.24999999999843,
+      "kind": "cash",
+      "name": "M10F Oct24 Delta",
+      "total": 336,
+      "turn": 3
+    },
+    {
+      "action": "hurt",
+      "amount": 63,
+      "clock": 50.24999999999843,
+      "kind": "cash",
+      "name": "M10F Oct24 Charlie",
+      "total": 316,
+      "turn": 3
+    },
+    {
+      "amount": 62.966789969769806,
+      "clock": 50.24999999999843,
+      "direct": true,
+      "killed": false,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "projectileId": 3,
+      "targetEntityId": 5,
+      "targetStableId": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "turn": 3
+    },
+    {
+      "clock": 50.24999999999843,
+      "damageBefore": 0,
+      "dx": 5.8330078125,
+      "dy": -16.12646484375,
+      "impact": {
+        "x": 6552.3330078125,
+        "y": 643.410888671875
+      },
+      "kind": "cpu-observation",
+      "origin": {
+        "x": 6839.5,
+        "y": 618.5167236328125
+      },
+      "power": 40.07503871060908,
+      "reason": "detonated",
+      "target": {
+        "x": 6546.5,
+        "y": 659.537353515625
+      },
+      "targetId": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "turn": 3,
+      "weapon": "standard"
+    },
+    {
+      "clock": 50.24999999999843,
+      "id": 3,
+      "kind": "end",
+      "owner": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "reason": "detonated",
+      "shooterResidency": "live",
+      "turn": 3,
+      "x": 6552.3330078125,
+      "y": 643.410888671875
+    },
+    {
+      "clock": 50.266666666665095,
+      "ended": 1,
+      "kind": "attack-resolved",
+      "launched": 1,
+      "turn": 3,
+      "weapon": "standard"
+    },
+    {
+      "clock": 50.29999999999843,
+      "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "kind": "land",
+      "turn": 3
+    },
+    {
+      "clock": 53.24999999999826,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6360.3330078125,
+        "y": 515.410888671875
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 3,
+      "watchId": 3
+    },
+    {
+      "clock": 53.24999999999826,
+      "color": "#FF6150",
+      "eyebrow": "TURN 3 COMPLETE",
+      "id": 7,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "0 kills (+0) \u00b7 Turn cash +$275.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M10F Oct24 Delta",
+      "turn": 3
+    },
+    {
+      "clock": 53.74999999999823,
+      "elapsed": 1.000000000000001,
+      "id": 7,
+      "kind": "arcade-ended",
+      "turn": 3
+    },
+    {
+      "clock": 53.94999999999822,
+      "color": "#EC4787",
+      "eyebrow": "TURN 4 / COMMAND CARTRIDGE",
+      "id": 8,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Heavy Weather \u00b7 regular",
+      "title": "M10F Oct24 Alpha",
+      "turn": 4
+    },
+    {
+      "clock": 54.44999999999819,
+      "elapsed": 1.000000000000001,
+      "id": 8,
+      "kind": "arcade-ended",
+      "turn": 4
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 54.44999999999819,
+      "kind": "cash",
+      "name": "M10F Oct24 Alpha",
+      "total": 481,
+      "turn": 4
+    },
+    {
+      "clock": 54.44999999999819,
+      "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "kind": "turn",
+      "name": "M10F Oct24 Alpha",
+      "turn": 4
+    },
+    {
+      "clock": 56.733333333331394,
+      "kind": "cpu-decision-refused",
+      "name": "M10F Oct24 Alpha",
+      "trials": [
+        {
+          "reason": "obstructed",
+          "target": "M10F Oct24 Charlie",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "nuke",
+          "work": {
+            "candidates": 15,
+            "cells": 17027,
+            "chunks": 39,
+            "steps": 77964
+          }
+        },
+        {
+          "reason": "obstructed",
+          "target": "M10F Oct24 Charlie",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "heavy",
+          "work": {
+            "candidates": 15,
+            "cells": 17545,
+            "chunks": 39,
+            "steps": 77964
+          }
+        },
+        {
+          "reason": "obstructed",
+          "target": "M10F Oct24 Charlie",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "standard",
+          "work": {
+            "candidates": 15,
+            "cells": 16610,
+            "chunks": 39,
+            "steps": 77964
+          }
+        },
+        {
+          "reason": "obstructed",
+          "target": "M10F Oct24 Delta",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "nuke",
+          "work": {
+            "candidates": 3,
+            "cells": 1489,
+            "chunks": 20,
+            "steps": 7960
+          }
+        }
+      ],
+      "turn": 4
+    },
+    {
+      "action": "pass",
+      "amount": 10,
+      "clock": 56.733333333331394,
+      "kind": "cash",
+      "name": "M10F Oct24 Alpha",
+      "total": 491,
+      "turn": 4
+    },
+    {
+      "clock": 56.733333333331394,
+      "color": "#EC4787",
+      "eyebrow": "TURN 4 COMPLETE",
+      "id": 9,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "1 kills (+0) \u00b7 Turn cash +$20.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M10F Oct24 Alpha",
+      "turn": 4
+    },
+    {
+      "clock": 57.233333333331366,
+      "elapsed": 1.000000000000001,
+      "id": 9,
+      "kind": "arcade-ended",
+      "turn": 4
+    },
+    {
+      "clock": 57.433333333331355,
+      "color": "#B083CF",
+      "eyebrow": "TURN 5 / COMMAND CARTRIDGE",
+      "id": 10,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Gravity Office \u00b7 hard",
+      "title": "M10F Oct24 Charlie",
+      "turn": 5
+    },
+    {
+      "clock": 57.933333333331326,
+      "elapsed": 1.000000000000001,
+      "id": 10,
+      "kind": "arcade-ended",
+      "turn": 5
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 57.933333333331326,
+      "kind": "cash",
+      "name": "M10F Oct24 Charlie",
+      "total": 326,
+      "turn": 5
+    },
+    {
+      "clock": 57.933333333331326,
+      "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "kind": "turn",
+      "name": "M10F Oct24 Charlie",
+      "turn": 5
+    },
+    {
+      "clock": 57.94999999999799,
+      "item": "digger",
+      "kind": "utility",
+      "name": "M10F Oct24 Charlie",
+      "receipt": {
+        "accepted": 28,
+        "added": 0,
+        "evaluated": 252,
+        "id": 8,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 28,
+        "skipped": 224,
+        "status": "completed",
+        "work": 84
+      },
+      "remaining": 4.97375,
+      "seconds": 0.0105,
+      "turn": 5
+    },
+    {
+      "action": "utility",
+      "amount": 15,
+      "clock": 58.599999999997955,
+      "kind": "cash",
+      "name": "M10F Oct24 Charlie",
+      "total": 341,
+      "turn": 5
+    },
+    {
+      "clock": 58.599999999997955,
+      "healed": 30,
+      "item": "battery",
+      "kind": "utility",
+      "name": "M10F Oct24 Charlie",
+      "turn": 5
+    },
+    {
+      "clock": 61.43333333333113,
+      "kind": "cpu-decision-refused",
+      "name": "M10F Oct24 Charlie",
+      "trials": [
+        {
+          "reason": "obstructed",
+          "target": "M10F Oct24 Delta",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "crumble",
+          "work": {
+            "candidates": 22,
+            "cells": 13824,
+            "chunks": 15,
+            "steps": 59251
+          }
+        },
+        {
+          "reason": "obstructed",
+          "target": "M10F Oct24 Delta",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "standard",
+          "work": {
+            "candidates": 22,
+            "cells": 16824,
+            "chunks": 23,
+            "steps": 60825
+          }
+        },
+        {
+          "reason": "obstructed",
+          "target": "M10F Oct24 Alpha",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "crumble",
+          "work": {
+            "candidates": 22,
+            "cells": 21584,
+            "chunks": 75,
+            "steps": 102625
+          }
+        },
+        {
+          "reason": "obstructed",
+          "target": "M10F Oct24 Alpha",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "standard",
+          "work": {
+            "candidates": 6,
+            "cells": 10958,
+            "chunks": 57,
+            "steps": 41476
+          }
+        }
+      ],
+      "turn": 5
+    },
+    {
+      "action": "pass",
+      "amount": 10,
+      "clock": 61.43333333333113,
+      "kind": "cash",
+      "name": "M10F Oct24 Charlie",
+      "total": 351,
+      "turn": 5
+    },
+    {
+      "clock": 61.43333333333113,
+      "color": "#B083CF",
+      "eyebrow": "TURN 5 COMPLETE",
+      "id": 11,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "0 kills (+0) \u00b7 Turn cash +$35.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M10F Oct24 Charlie",
+      "turn": 5
+    },
+    {
+      "clock": 61.9333333333311,
+      "elapsed": 1.000000000000001,
+      "id": 11,
+      "kind": "arcade-ended",
+      "turn": 5
+    },
+    {
+      "clock": 62.13333333333109,
+      "color": "#FF6150",
+      "eyebrow": "TURN 6 / COMMAND CARTRIDGE",
+      "id": 12,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Lucky Fuses \u00b7 rookie",
+      "title": "M10F Oct24 Delta",
+      "turn": 6
+    },
+    {
+      "clock": 62.63333333333106,
+      "elapsed": 1.000000000000001,
+      "id": 12,
+      "kind": "arcade-ended",
+      "turn": 6
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 62.63333333333106,
+      "kind": "cash",
+      "name": "M10F Oct24 Delta",
+      "total": 346,
+      "turn": 6
+    },
+    {
+      "clock": 62.63333333333106,
+      "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "kind": "turn",
+      "name": "M10F Oct24 Delta",
+      "turn": 6
+    },
+    {
+      "action": "utility",
+      "amount": 15,
+      "clock": 62.63333333333106,
+      "kind": "cash",
+      "name": "M10F Oct24 Delta",
+      "total": 361,
+      "turn": 6
+    },
+    {
+      "clock": 62.63333333333106,
+      "healed": 30,
+      "item": "battery",
+      "kind": "utility",
+      "name": "M10F Oct24 Delta",
+      "turn": 6
+    },
+    {
+      "clock": 63.18333333333103,
+      "kind": "fault",
+      "message": "BAD_ARGUMENT: ballistic angleStep must be 0.25..30",
+      "turn": 6
+    }
+  ],
+  "live": [
+    {
+      "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "live": true,
+      "position": {
+        "x": 5959.5,
+        "y": 561.9805908203125
+      }
+    },
+    {
+      "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "live": true,
+      "position": {
+        "x": 6546.5,
+        "y": 672.7606811523438
+      }
+    },
+    {
+      "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "live": true,
+      "position": {
+        "x": 6839.5,
+        "y": 619.7325439453125
+      }
+    }
+  ],
+  "match": {
+    "attack": null,
+    "autoDefenseChecked": true,
+    "baseGeneration": {
+      "parameters": {},
+      "recipe": "brush"
+    },
+    "biome": "bunker-grid",
+    "biomeCycle": false,
+    "biomeRounds": 1,
+    "bounds": {
+      "h": 1280,
+      "w": 960,
+      "x": 5920,
+      "y": 0
+    },
+    "cashNotice": "M10F Oct24 Delta +$15 \u00b7 utility",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "M10F Oct24 Bravo: Extremely poor reactor design!",
+      "quiet": 31.69999999999948,
+      "rng": 3906511967,
+      "serial": 1
+    },
+    "computers": 4,
+    "cpuSkill": "persona",
+    "details": 0,
+    "focusIndex": 3,
+    "frameNotice": "",
+    "generated": 0,
+    "generation": "bunker-grid",
+    "generationChoice": "random",
+    "humans": 0,
+    "impact": null,
+    "lastCardTurn": 5,
+    "lastHit": "M10F Oct24 Charlie \u221263 HP \u00b7 DIRECT HIT",
+    "livingSites": 0,
+    "message": "BAD_ARGUMENT: ballistic angleStep must be 0.25..30",
+    "pendingTurn": null,
+    "personaSeed": "2533504",
+    "phase": "fault",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "remaining": 29.45000000000003,
+    "roster": [
+      {
+        "aiRng": 2173265041,
+        "aimedTurn": 1,
+        "autoAimTurn": null,
+        "cashBreakdown": {
+          "aim": 3,
+          "damage": 300,
+          "hit": 20,
+          "kill": 100,
+          "landing": 15,
+          "pass": 10,
+          "power": 3,
+          "shoot": 20,
+          "turn": 20
+        },
+        "cashEarned": 491,
+        "color": "#EC4787",
+        "control": "cpu",
+        "damage": 100,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+        "hits": 1,
+        "impacts": [
+          {
+            "damageBefore": 0,
+            "dx": 4.568359375,
+            "dy": -15.876708984375,
+            "impact": {
+              "x": 6257.068359375,
+              "y": 641.623291015625
+            },
+            "origin": {
+              "x": 5959.5,
+              "y": 561.5
+            },
+            "power": 20.634272766765207,
+            "reason": "detonated",
+            "target": {
+              "x": 6252.5,
+              "y": 657.5
+            },
+            "targetId": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+            "turn": 1,
+            "weapon": "nuke"
+          }
+        ],
+        "index": 0,
+        "kills": 1,
+        "lastMoveX": 5959.5,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Alpha",
+        "personaId": "kiloton",
+        "placementReady": true,
+        "plannedTurn": 1,
+        "preparedTurn": 4,
+        "shotFrom": {
+          "x": 5959.5,
+          "y": 561.5
+        },
+        "shots": 1,
+        "spawnX": 5960,
+        "surfaceY": 576,
+        "tactic": "No supported clear shot; conserve ammunition",
+        "targetId": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "turnStartCash": 471,
+        "turnStartKills": 1,
+        "weaponId": "nuke"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {
+          "death": 100,
+          "hurt": 100
+        },
+        "cashEarned": 200,
+        "chaosId": 1,
+        "color": "#A574F4",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 100,
+        "deathEffect": "nuke",
+        "eliminated": true,
+        "entityId": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+        "hits": 0,
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Bravo",
+        "personaId": "faultline",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6253,
+        "surfaceY": 672,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "weaponId": "standard"
+      },
+      {
+        "aiRng": 1588912944,
+        "aimedTurn": 2,
+        "autoAimTurn": null,
+        "cashBreakdown": {
+          "aim": 3,
+          "damage": 182,
+          "hit": 20,
+          "hurt": 63,
+          "landing": 15,
+          "pass": 10,
+          "power": 3,
+          "shoot": 20,
+          "turn": 20,
+          "utility": 15
+        },
+        "cashEarned": 351,
+        "color": "#B083CF",
+        "control": "cpu",
+        "damage": 60.693114418820656,
+        "damageTaken": 62.966789969769806,
+        "eliminated": false,
+        "entityId": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+        "hits": 1,
+        "impacts": [
+          {
+            "damageBefore": 0,
+            "dx": -12.0654296875,
+            "dy": -16.126708984375,
+            "impact": {
+              "x": 6827.4345703125,
+              "y": 593.373291015625
+            },
+            "origin": {
+              "x": 6546.5,
+              "y": 659.4442138671875
+            },
+            "power": 40.54246410336346,
+            "reason": "detonated",
+            "target": {
+              "x": 6839.5,
+              "y": 609.5
+            },
+            "targetId": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+            "turn": 2,
+            "weapon": "standard"
+          }
+        ],
+        "index": 2,
+        "kills": 0,
+        "lastMoveX": 6546.5,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Charlie",
+        "personaId": "faultline",
+        "placementReady": true,
+        "plannedTurn": 2,
+        "preparedTurn": 5,
+        "shotFrom": {
+          "x": 6546.5,
+          "y": 659.4442138671875
+        },
+        "shots": 1,
+        "spawnX": 6547,
+        "surfaceY": 672,
+        "tactic": "No supported clear shot; conserve ammunition",
+        "targetId": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "turnStartCash": 316,
+        "turnStartKills": 0,
+        "weaponId": "standard"
+      },
+      {
+        "aiRng": 4294648900,
+        "aimedTurn": 3,
+        "autoAimTurn": null,
+        "cashBreakdown": {
+          "aim": 3,
+          "damage": 189,
+          "hit": 20,
+          "hurt": 61,
+          "landing": 15,
+          "power": 3,
+          "shoot": 20,
+          "turn": 20,
+          "utility": 30
+        },
+        "cashEarned": 361,
+        "color": "#FF6150",
+        "control": "cpu",
+        "damage": 62.966789969769806,
+        "damageTaken": 60.693114418820656,
+        "eliminated": false,
+        "entityId": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+        "hits": 1,
+        "impacts": [
+          {
+            "damageBefore": 0,
+            "dx": 5.8330078125,
+            "dy": -16.12646484375,
+            "impact": {
+              "x": 6552.3330078125,
+              "y": 643.410888671875
+            },
+            "origin": {
+              "x": 6839.5,
+              "y": 618.5167236328125
+            },
+            "power": 40.07503871060908,
+            "reason": "detonated",
+            "target": {
+              "x": 6546.5,
+              "y": 659.537353515625
+            },
+            "targetId": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+            "turn": 3,
+            "weapon": "standard"
+          }
+        ],
+        "index": 3,
+        "kills": 0,
+        "lastMoveX": 6839.5,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Delta",
+        "personaId": "lucky",
+        "placementReady": true,
+        "plannedTurn": 3,
+        "preparedTurn": 6,
+        "shotFrom": {
+          "x": 6839.5,
+          "y": 618.5167236328125
+        },
+        "shots": 1,
+        "spawnX": 6840,
+        "surfaceY": 624,
+        "tactic": "High arc over obstruction",
+        "targetId": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "turnStartCash": 336,
+        "turnStartKills": 0,
+        "weaponId": "standard"
+      }
+    ],
+    "round": 2,
+    "seed": 1792873708739,
+    "seriesId": "04621717-2bbb-4958-bddc-d64eb8bee652",
+    "seriesLength": 3,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 700,
+      "family": "maze",
+      "parameters": {
+        "cellSize": 48
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "bunker-grid",
+      "seed": 1792873708739,
+      "totalChunks": 4000,
+      "version": 1
+    },
+    "turnNumber": 6,
+    "turnSeconds": 30,
+    "version": 9,
+    "waitTicks": 146,
+    "winner": null
+  },
+  "paused": false,
+  "save": {
+    "allowed": true,
+    "blockers": []
+  },
+  "world": "fc1ca2cc-3ee0-42f8-84f1-381d320fbdf1"
+}

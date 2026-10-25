@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/talus-m10-navigation/accept.py", line 88, in <module>
+    if m.get('match',{}).get('phase')=='ready' and menu().get('file')=='Menus/shop.html':break
+       ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

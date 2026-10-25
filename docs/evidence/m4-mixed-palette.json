@@ -1,0 +1,236 @@
+{
+  "recipe": "assets/mixed-earth-brush.json",
+  "source": "assets/mixed-earth-swatch.svg",
+  "tiles": [
+    {
+      "tile": "sky",
+      "sockets": "sky sky sky sky",
+      "counts": {
+        "EMPTY": 65536
+      }
+    },
+    {
+      "tile": "bedrock",
+      "sockets": "bedrock bedrock bedrock bedrock",
+      "counts": {
+        "STONE": 65536
+      }
+    },
+    {
+      "tile": "interior-0",
+      "sockets": "mixed bedrock mixed mixed",
+      "counts": {
+        "SAND": 21473,
+        "DIRT": 29183,
+        "STONE": 14880
+      }
+    },
+    {
+      "tile": "interior-1",
+      "sockets": "mixed bedrock mixed mixed",
+      "counts": {
+        "DIRT": 29331,
+        "SAND": 21543,
+        "STONE": 14662
+      }
+    },
+    {
+      "tile": "interior-2",
+      "sockets": "mixed bedrock mixed mixed",
+      "counts": {
+        "DIRT": 29598,
+        "SAND": 21032,
+        "STONE": 14906
+      }
+    },
+    {
+      "tile": "interior-3",
+      "sockets": "mixed bedrock mixed mixed",
+      "counts": {
+        "DIRT": 30011,
+        "SAND": 21063,
+        "STONE": 14462
+      }
+    },
+    {
+      "tile": "ground-64-64-0",
+      "sockets": "sky mixed h64 h64",
+      "counts": {
+        "EMPTY": 13824,
+        "DIRT": 23060,
+        "SAND": 17045,
+        "STONE": 11607
+      }
+    },
+    {
+      "tile": "ground-64-64-32",
+      "sockets": "sky mixed h64 h64",
+      "counts": {
+        "EMPTY": 18944,
+        "SAND": 15441,
+        "STONE": 10343,
+        "DIRT": 20808
+      }
+    },
+    {
+      "tile": "ground-64-128-0",
+      "sockets": "sky mixed h128 h64",
+      "counts": {
+        "EMPTY": 22016,
+        "DIRT": 19842,
+        "SAND": 13720,
+        "STONE": 9958
+      }
+    },
+    {
+      "tile": "ground-64-128-32",
+      "sockets": "sky mixed h128 h64",
+      "counts": {
+        "EMPTY": 27136,
+        "DIRT": 17486,
+        "SAND": 12783,
+        "STONE": 8131
+      }
+    },
+    {
+      "tile": "ground-64-192-0",
+      "sockets": "sky mixed h192 h64",
+      "counts": {
+        "EMPTY": 30208,
+        "DIRT": 15668,
+        "SAND": 11752,
+        "STONE": 7908
+      }
+    },
+    {
+      "tile": "ground-64-192-32",
+      "sockets": "sky mixed h192 h64",
+      "counts": {
+        "EMPTY": 35328,
+        "SAND": 9763,
+        "DIRT": 13125,
+        "STONE": 7320
+      }
+    },
+    {
+      "tile": "ground-128-64-0",
+      "sockets": "sky mixed h64 h128",
+      "counts": {
+        "EMPTY": 22016,
+        "DIRT": 19735,
+        "SAND": 13637,
+        "STONE": 10148
+      }
+    },
+    {
+      "tile": "ground-128-64-32",
+      "sockets": "sky mixed h64 h128",
+      "counts": {
+        "EMPTY": 27136,
+        "STONE": 8210,
+        "DIRT": 17057,
+        "SAND": 13133
+      }
+    },
+    {
+      "tile": "ground-128-128-0",
+      "sockets": "sky mixed h128 h128",
+      "counts": {
+        "EMPTY": 30208,
+        "STONE": 8007,
+        "SAND": 11779,
+        "DIRT": 15542
+      }
+    },
+    {
+      "tile": "ground-128-128-32",
+      "sockets": "sky mixed h128 h128",
+      "counts": {
+        "EMPTY": 35328,
+        "DIRT": 13681,
+        "SAND": 9458,
+        "STONE": 7069
+      }
+    },
+    {
+      "tile": "ground-128-192-0",
+      "sockets": "sky mixed h192 h128",
+      "counts": {
+        "EMPTY": 38400,
+        "DIRT": 12263,
+        "SAND": 8682,
+        "STONE": 6191
+      }
+    },
+    {
+      "tile": "ground-128-192-32",
+      "sockets": "sky mixed h192 h128",
+      "counts": {
+        "EMPTY": 43520,
+        "DIRT": 9875,
+        "SAND": 7269,
+        "STONE": 4872
+      }
+    },
+    {
+      "tile": "ground-192-64-0",
+      "sockets": "sky mixed h64 h192",
+      "counts": {
+        "EMPTY": 30208,
+        "SAND": 11704,
+        "DIRT": 15538,
+        "STONE": 8086
+      }
+    },
+    {
+      "tile": "ground-192-64-32",
+      "sockets": "sky mixed h64 h192",
+      "counts": {
+        "EMPTY": 35328,
+        "DIRT": 13651,
+        "SAND": 9460,
+        "STONE": 7097
+      }
+    },
+    {
+      "tile": "ground-192-128-0",
+      "sockets": "sky mixed h128 h192",
+      "counts": {
+        "EMPTY": 38400,
+        "SAND": 8598,
+        "DIRT": 12363,
+        "STONE": 6175
+      }
+    },
+    {
+      "tile": "ground-192-128-32",
+      "sockets": "sky mixed h128 h192",
+      "counts": {
+        "EMPTY": 43520,
+        "DIRT": 10216,
+        "SAND": 7327,
+        "STONE": 4473
+      }
+    },
+    {
+      "tile": "ground-192-192-0",
+      "sockets": "sky mixed h192 h192",
+      "counts": {
+        "EMPTY": 46592,
+        "SAND": 6462,
+        "STONE": 4373,
+        "DIRT": 8109
+      }
+    },
+    {
+      "tile": "ground-192-192-32",
+      "sockets": "sky mixed h192 h192",
+      "counts": {
+        "EMPTY": 51712,
+        "DIRT": 6183,
+        "SAND": 4331,
+        "STONE": 3310
+      }
+    }
+  ]
+}

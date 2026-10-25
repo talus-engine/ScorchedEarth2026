@@ -1,0 +1,413 @@
+{
+  "version": 1,
+  "foundation": {
+    "id": "indigo-m9-foundation",
+    "name": "Solid foundation",
+    "description": "Permanent bottom tile row",
+    "tags": [
+      "stone"
+    ],
+    "macro": {
+      "mode": "volumetric",
+      "support": "none",
+      "strata": [
+        {
+          "element": "STONE",
+          "thickness": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    "micro": {
+      "noise": {
+        "algorithm": "value",
+        "frequency": 0.02,
+        "octaves": 1,
+        "persistence": 0.5,
+        "lacunarity": 2
+      }
+    }
+  },
+  "fill": {
+    "description": "Noise brush for artillery terrain: loose dirt and sand with stone pockets. The bottom WFC row is authored separately as solid stone.",
+    "group": "Indigo",
+    "id": "indigo-m9-fill",
+    "macro": {
+      "mode": "volumetric",
+      "strata": [
+        {
+          "element": "DIRT",
+          "thickness": [
+            512,
+            512
+          ]
+        }
+      ],
+      "support": "none"
+    },
+    "micro": {
+      "noise": {
+        "algorithm": "simplex",
+        "bands": [
+          {
+            "element": "STONE",
+            "endPos": 0.38
+          },
+          {
+            "element": "SAND",
+            "endPos": 0.52
+          },
+          {
+            "element": "DIRT",
+            "endPos": 1
+          }
+        ],
+        "frequency": 0.035,
+        "lacunarity": 2,
+        "octaves": 3,
+        "persistence": 0.5
+      }
+    },
+    "name": "Indigo mixed earth",
+    "tags": [
+      "terrain",
+      "indigo",
+      "noise",
+      "powder"
+    ]
+  },
+  "surface": {
+    "description": "Noise brush for artillery terrain: loose dirt and sand with stone pockets. The bottom WFC row is authored separately as solid stone.",
+    "group": "Indigo",
+    "id": "indigo-m9-ridge",
+    "macro": {
+      "mode": "surface",
+      "strata": [
+        {
+          "element": "DIRT",
+          "thickness": [
+            512,
+            512
+          ]
+        }
+      ],
+      "support": "fill-below",
+      "surface": {
+        "amplitude": 144,
+        "frequency": 0.006,
+        "octaves": 3,
+        "blendWidth": 0,
+        "directions": [
+          "s"
+        ]
+      }
+    },
+    "micro": {
+      "noise": {
+        "algorithm": "simplex",
+        "bands": [
+          {
+            "element": "STONE",
+            "endPos": 0.38
+          },
+          {
+            "element": "SAND",
+            "endPos": 0.52
+          },
+          {
+            "element": "DIRT",
+            "endPos": 1
+          }
+        ],
+        "frequency": 0.035,
+        "lacunarity": 2,
+        "octaves": 3,
+        "persistence": 0.5
+      }
+    },
+    "name": "Indigo mixed earth",
+    "tags": [
+      "terrain",
+      "indigo",
+      "noise",
+      "powder"
+    ]
+  },
+  "details": [
+    {
+      "description": "Rolling green hills with grassy meadows over deep earth and bedrock",
+      "group": "Forests & Wilds",
+      "id": "builtin-brush-hills",
+      "macro": {
+        "mode": "volumetric",
+        "strata": [
+          {
+            "element": "GRASS",
+            "thickness": [
+              2,
+              3
+            ]
+          },
+          {
+            "element": "DIRT",
+            "thickness": [
+              10,
+              16
+            ]
+          },
+          {
+            "element": "STONE",
+            "thickness": [
+              16,
+              16
+            ]
+          }
+        ],
+        "support": "none"
+      },
+      "micro": {
+        "noise": {
+          "algorithm": "simplex",
+          "cellularDistanceFn": "euclidean",
+          "cellularJitter": 1,
+          "cellularReturnType": "f2_minus_f1",
+          "frequency": 0.02,
+          "lacunarity": 2,
+          "octaves": 4,
+          "persistence": 0.5,
+          "ridgedGain": 2
+        },
+        "tint": {
+          "ramp": [
+            "#34542b",
+            "#76a449",
+            "#a6bc61"
+          ],
+          "strength": 0.3
+        }
+      },
+      "name": "Rolling green hills",
+      "tags": [
+        "meadow",
+        "pasture",
+        "downs",
+        "grassland"
+      ]
+    },
+    {
+      "description": "A rocky cliff face with a layered stone backdrop and hanging roots",
+      "group": "Arctic & Alpine",
+      "id": "builtin-brush-cliffside",
+      "macro": {
+        "mode": "volumetric",
+        "strata": [
+          {
+            "element": "STONE",
+            "thickness": [
+              8,
+              14
+            ]
+          }
+        ],
+        "support": "none"
+      },
+      "micro": {
+        "noise": {
+          "algorithm": "ridged",
+          "cellularDistanceFn": "euclidean",
+          "cellularJitter": 1,
+          "cellularReturnType": "f2_minus_f1",
+          "frequency": 0.03,
+          "lacunarity": 2,
+          "octaves": 4,
+          "persistence": 0.5,
+          "ridgedGain": 2
+        }
+      },
+      "name": "Cliffside",
+      "tags": [
+        "cliff",
+        "ledge",
+        "roots",
+        "rockface"
+      ]
+    },
+    {
+      "description": "A deep forest floor of leaf litter over rooty dark earth, with tree trunks and foliage behind",
+      "group": "Forests & Wilds",
+      "id": "builtin-brush-forest-floor",
+      "macro": {
+        "mode": "volumetric",
+        "strata": [
+          {
+            "element": "LEAF",
+            "thickness": [
+              1,
+              2
+            ]
+          },
+          {
+            "bands": [
+              {
+                "element": "DIRT",
+                "endPos": 0.85
+              },
+              {
+                "element": "ROOTS_STEM",
+                "endPos": 1
+              }
+            ],
+            "element": "DIRT",
+            "thickness": [
+              8,
+              12
+            ]
+          },
+          {
+            "element": "STONE",
+            "thickness": [
+              16,
+              16
+            ]
+          }
+        ],
+        "support": "none"
+      },
+      "micro": {
+        "noise": {
+          "algorithm": "simplex",
+          "cellularDistanceFn": "euclidean",
+          "cellularJitter": 1,
+          "cellularReturnType": "f2_minus_f1",
+          "frequency": 0.03,
+          "lacunarity": 2,
+          "octaves": 4,
+          "persistence": 0.5,
+          "ridgedGain": 2
+        },
+        "tint": {
+          "ramp": [
+            "#2a3a1c",
+            "#4e6a30",
+            "#86a050"
+          ],
+          "strength": 0.35
+        }
+      },
+      "name": "Deep forest floor",
+      "neural": {
+        "anchors": [
+          {
+            "anchorId": "builtin-brush-hills",
+            "w": 0.8
+          },
+          {
+            "anchorId": "builtin-brush-cliffside",
+            "w": 0.2
+          }
+        ]
+      },
+      "tags": [
+        "forest floor",
+        "leaf litter",
+        "woodland",
+        "roots",
+        "undergrowth"
+      ]
+    }
+  ],
+  "neural": {
+    "modelId": "builtin-nca-eight",
+    "steps": 24,
+    "tintStrength": 0.75,
+    "every": 3
+  },
+  "living": {
+    "sites": 50,
+    "brushSizes": [
+      64,
+      128
+    ],
+    "regionSize": 512,
+    "clearCombatMargin": 256,
+    "steps": 4096,
+    "jobs": 64,
+    "fragments": 262144,
+    "presets": [
+      {
+        "id": "indigo-m9-oak",
+        "base": "builtin-oak-sapling",
+        "name": "Indigo living oak",
+        "sheet": {}
+      },
+      {
+        "id": "indigo-m9-bramble",
+        "base": "builtin-living-bramble",
+        "name": "Indigo living bramble",
+        "sheet": {
+          "azimuthMin": 0,
+          "azimuthMax": 0,
+          "brushWidth": 0
+        }
+      }
+    ]
+  },
+  "semantic": {
+    "temperature": 0.08,
+    "topK": 3,
+    "selectionFrequency": 0.012
+  },
+  "hybrid": {
+    "recipes": [
+      "verdant-reach"
+    ]
+  },
+  "clearance": {
+    "radius": [
+      128,
+      192
+    ],
+    "emptyWeight": 0.88,
+    "empty": {
+      "id": "indigo-open-space",
+      "name": "Open-space semantic brush",
+      "description": "Native EMPTY matter gently clears foreground above the original ground after all landscape passes.",
+      "tags": [
+        "air",
+        "clearance"
+      ],
+      "macro": {
+        "mode": "volumetric",
+        "support": "none",
+        "strata": [
+          {
+            "element": "EMPTY",
+            "thickness": [
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      "micro": {
+        "noise": {
+          "algorithm": "simplex",
+          "frequency": 0.012,
+          "octaves": 2,
+          "persistence": 0.5,
+          "lacunarity": 2
+        }
+      }
+    },
+    "spacing": 256,
+    "groundBuffer": 32
+  },
+  "catalog": {
+    "id": "procedural-m11",
+    "hash": "2b6e76aee7840f8b7bd706b3fbaea1e3f783806cf0b959cc151c76b33754b36a",
+    "storyFile": "Game/landscape-stories.json",
+    "structures": 25
+  }
+}

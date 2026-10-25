@@ -1,0 +1,151 @@
+{
+  "allowedTabs": {
+    "char": true,
+    "equip": true,
+    "inv": true,
+    "map": true
+  },
+  "cameraFollow": "off",
+  "customCss": "",
+  "inputActions": [
+    {
+      "id": "tank_angle_up",
+      "keys": [
+        "ArrowLeft"
+      ],
+      "label": "Tank aim left",
+      "pad": [
+        "Pad:Left",
+        "Pad:RStickLeft"
+      ]
+    },
+    {
+      "id": "tank_angle_down",
+      "keys": [
+        "ArrowRight"
+      ],
+      "label": "Tank aim right",
+      "pad": [
+        "Pad:Right",
+        "Pad:RStickRight"
+      ]
+    },
+    {
+      "id": "tank_power_up",
+      "keys": [
+        "ArrowUp"
+      ],
+      "label": "Tank power up",
+      "pad": [
+        "Pad:Up",
+        "Pad:RStickUp"
+      ]
+    },
+    {
+      "id": "tank_power_down",
+      "keys": [
+        "ArrowDown"
+      ],
+      "label": "Tank power down",
+      "pad": [
+        "Pad:Down",
+        "Pad:RStickDown"
+      ]
+    },
+    {
+      "id": "tank_fire",
+      "keys": [
+        " "
+      ],
+      "label": "Fire cannon",
+      "pad": [
+        "Pad:A"
+      ]
+    },
+    {
+      "id": "tank_pass",
+      "keys": [
+        "Enter"
+      ],
+      "label": "Pass turn",
+      "pad": [
+        "Pad:Y"
+      ]
+    },
+    {
+      "id": "tank_move_left",
+      "keys": [
+        "a"
+      ],
+      "label": "Tank move left",
+      "pad": [
+        "Pad:LStickLeft"
+      ]
+    },
+    {
+      "id": "tank_move_right",
+      "keys": [
+        "d"
+      ],
+      "label": "Tank move right",
+      "pad": [
+        "Pad:LStickRight"
+      ]
+    },
+    {
+      "id": "tank_levitate",
+      "label": "Hold jetpack thrust",
+      "keys": [
+        "w"
+      ],
+      "pad": [
+        "Pad:RT"
+      ]
+    },
+    {
+      "id": "tank_dig_left",
+      "label": "Burrow left",
+      "keys": [
+        "q"
+      ],
+      "pad": [
+        "Pad:LB"
+      ]
+    },
+    {
+      "id": "tank_dig_right",
+      "label": "Burrow right",
+      "keys": [
+        "e"
+      ],
+      "pad": [
+        "Pad:RB"
+      ]
+    },
+    {
+      "id": "tank_flip",
+      "keys": [
+        "r"
+      ],
+      "label": "Flip tank upright",
+      "pad": [
+        "Pad:B"
+      ]
+    },
+    {
+      "id": "tank_target",
+      "label": "Next homing target",
+      "keys": [
+        "t"
+      ],
+      "pad": [
+        "Pad:X"
+      ]
+    }
+  ],
+  "maxLocalPlayers": 1,
+  "showEnergy": false,
+  "showGold": false,
+  "showLevelXp": false,
+  "tabMenuEnabled": false
+}

@@ -1,0 +1,2716 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 3,
+  "ok": true,
+  "value": {
+    "events": [
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "none",
+        "kind": "residency",
+        "reason": null,
+        "time": 2.716666666666662,
+        "to": "live"
+      },
+      {
+        "kind": "spawned",
+        "shooter": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "snapshot": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 0,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9911499023438
+        },
+        "time": 4.716666666666655,
+        "weapon": {
+          "ammo": {},
+          "angle": 0,
+          "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+          "gravityScale": 1,
+          "items": [
+            "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+          ],
+          "kind": "rigid-body",
+          "pinned": false,
+          "power": 1,
+          "speed": {
+            "current": 1800,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "kind": "fire-request",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 0,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9899291992188
+        },
+        "shotNumber": 1,
+        "time": 14.483333333333633,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.5235987755982988,
+          "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+          "gravityScale": 1,
+          "items": [
+            "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 1,
+          "speed": {
+            "current": 1800,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "position": {
+          "x": 3230.5,
+          "y": 607.5
+        },
+        "rawOwner": "0",
+        "shotNumber": 1,
+        "time": 14.483333333333633
+      },
+      {
+        "kind": "flight",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 0,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9900512695312
+        },
+        "shot": {
+          "age": 0.5166666666666666,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "0",
+          "vx": 1547.900390625,
+          "vy": -558.9920654296875,
+          "x": 4032.98828125,
+          "y": 231.4398498535156
+        },
+        "shotNumber": 1,
+        "time": 15.000000000000323
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 9
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 15.36666666666701,
+        "to": "stored"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9912719726562
+        },
+        "shot": {
+          "age": 1.5166666666666662,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "0",
+          "vx": 1526.93359375,
+          "vy": 94.2412109375,
+          "x": 5570.21240234375,
+          "y": 1.1877225637435913
+        },
+        "shotNumber": 1,
+        "time": 16.000000000000373
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9912719726562
+        },
+        "shot": {
+          "age": 2.5166666666666626,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "0",
+          "vx": 1506.250732421875,
+          "vy": 738.625,
+          "x": 7086.60693359375,
+          "y": 419.660888671875
+        },
+        "shotNumber": 1,
+        "time": 17.000000000000316
+      },
+      {
+        "cause": "terrain",
+        "id": 1,
+        "kind": "rigid-body",
+        "ownerEntityId": "0",
+        "projectileId": 1,
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9912719726562
+        },
+        "shotNumber": 1,
+        "targetEntityId": null,
+        "time": 17.266666666666968,
+        "x": 7482.27880859375,
+        "y": 640
+      },
+      {
+        "kind": "rigid-body",
+        "ownerEntityId": "0",
+        "projectileId": 1,
+        "reason": "detonated",
+        "shotNumber": 1,
+        "time": 17.266666666666968,
+        "x": 7482.27880859375,
+        "y": 640
+      },
+      {
+        "carve": "erase",
+        "carveRadius": 48,
+        "carvedCells": 3624,
+        "damage": 80,
+        "hits": [],
+        "kind": "explosion",
+        "radius": 100,
+        "shotNumber": 1,
+        "sourceEntityId": "0",
+        "time": 17.283333333333633,
+        "x": 7482.27880859375,
+        "y": 640
+      },
+      {
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 320,
+          "x": 7322.27880859375,
+          "y": 512
+        },
+        "shotNumber": 1,
+        "ticks": 24,
+        "time": 17.666666666666945,
+        "timedOut": false,
+        "watchId": 1
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "none",
+        "kind": "residency",
+        "reason": null,
+        "time": 34.066666666666016,
+        "to": "live"
+      },
+      {
+        "kind": "target-spawned",
+        "target": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 115,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 2,
+          "maxHealth": 100,
+          "name": "M1 Target",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 7411.5,
+          "y": 625.9907836914062
+        },
+        "time": 36.0666666666659
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 37.69999999999914,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 115,
+          "y": 9
+        },
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 38.199999999999115,
+        "to": "stored"
+      },
+      {
+        "kind": "returned",
+        "markerAfter": "shooter-survives-streaming",
+        "markerBefore": "shooter-survives-streaming",
+        "parked": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9912719726562
+        },
+        "restored": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 3,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9910278320312
+        },
+        "settled": true,
+        "time": 39.19999999999906,
+        "weapon": {
+          "ammo": {},
+          "angle": 0,
+          "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+          "gravityScale": 1,
+          "items": [
+            "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+          ],
+          "kind": "rigid-body",
+          "pinned": false,
+          "power": 1,
+          "speed": {
+            "current": 1800,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "kind": "fire-request",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 3,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9910278320312
+        },
+        "shotNumber": 2,
+        "time": 44.53333333333209,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.5235987755982988,
+          "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+          "gravityScale": 1,
+          "items": [
+            "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 1,
+          "speed": {
+            "current": 1800,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "id": 2,
+        "kind": "launch",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "position": {
+          "x": 3230.5,
+          "y": 607.5
+        },
+        "rawOwner": "3",
+        "shotNumber": 2,
+        "time": 44.53333333333209
+      },
+      {
+        "kind": "flight",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 3,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9915161132812
+        },
+        "shot": {
+          "age": 0.4666666666666666,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "3",
+          "vx": 1548.956298828125,
+          "vy": -591.8878784179688,
+          "x": 3955.57421875,
+          "y": 260.1407470703125
+        },
+        "shotNumber": 2,
+        "time": 44.99999999999873
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 9
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 45.41666666666537,
+        "to": "stored"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9904174804688
+        },
+        "shot": {
+          "age": 1.4666666666666663,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "3",
+          "vx": 1527.9752197265625,
+          "vy": 61.79068756103515,
+          "x": 5493.84716796875,
+          "y": -2.7804527282714844
+        },
+        "shotNumber": 2,
+        "time": 45.99999999999867
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 46.63333333333197,
+        "to": "live"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9904174804688
+        },
+        "shot": {
+          "age": 2.466666666666663,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "3",
+          "vx": 1507.2781982421875,
+          "vy": 706.6143188476562,
+          "x": 7011.27880859375,
+          "y": 383.4661865234375
+        },
+        "shotNumber": 2,
+        "time": 46.999999999998614
+      },
+      {
+        "cause": "terrain",
+        "id": 2,
+        "kind": "rigid-body",
+        "ownerEntityId": "3",
+        "projectileId": 2,
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9904174804688
+        },
+        "shotNumber": 2,
+        "targetEntityId": null,
+        "time": 47.349999999998595,
+        "x": 7524,
+        "y": 663
+      },
+      {
+        "kind": "rigid-body",
+        "ownerEntityId": "3",
+        "projectileId": 2,
+        "reason": "detonated",
+        "shotNumber": 2,
+        "time": 47.349999999998595,
+        "x": 7524,
+        "y": 663
+      },
+      {
+        "carve": "erase",
+        "carveRadius": 48,
+        "carvedCells": 3738,
+        "damage": 80,
+        "hits": [],
+        "kind": "explosion",
+        "radius": 100,
+        "shotNumber": 2,
+        "sourceEntityId": "3",
+        "time": 47.36666666666526,
+        "x": 7524,
+        "y": 663
+      },
+      {
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 320,
+          "x": 7364,
+          "y": 535
+        },
+        "shotNumber": 2,
+        "target": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 115,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 5,
+          "maxHealth": 100,
+          "name": "M1 Target",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 7411.5,
+          "y": 625.9907836914062
+        },
+        "ticks": 30,
+        "time": 47.849999999998566,
+        "timedOut": false,
+        "watchId": 2
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 63.26666666666436,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 115,
+          "y": 9
+        },
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 63.79999999999766,
+        "to": "stored"
+      },
+      {
+        "kind": "fire-request",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 6,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9927978515625
+        },
+        "shotNumber": 3,
+        "time": 64.2666666666643,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.5235987755982988,
+          "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+          "gravityScale": 1,
+          "items": [
+            "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.99,
+          "speed": {
+            "current": 1783,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "id": 3,
+        "kind": "launch",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "position": {
+          "x": 3230.5,
+          "y": 607.5
+        },
+        "rawOwner": "6",
+        "shotNumber": 3,
+        "time": 64.2666666666643
+      },
+      {
+        "kind": "flight",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 6,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9912719726562
+        },
+        "shot": {
+          "age": 0.733333333333334,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": "6",
+          "vx": 1528.7572021484375,
+          "vy": -408.28607177734375,
+          "x": 4357.0791015625,
+          "y": 132.2542724609375
+        },
+        "shotNumber": 3,
+        "time": 64.9999999999976
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 9
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 65.23333333333092,
+        "to": "stored"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9915161132812
+        },
+        "shot": {
+          "age": 1.733333333333332,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": "6",
+          "vx": 1508.0496826171875,
+          "vy": 242.90565490722656,
+          "x": 5875.2900390625,
+          "y": 51.66828155517578
+        },
+        "shotNumber": 3,
+        "time": 65.99999999999754
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 66.38333333333085,
+        "to": "live"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9915161132812
+        },
+        "shot": {
+          "age": 2.7333333333333285,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": "6",
+          "vx": 1487.62255859375,
+          "vy": 885.2745361328125,
+          "x": 7372.9326171875,
+          "y": 617.77978515625
+        },
+        "shotNumber": 3,
+        "time": 66.99999999999748
+      },
+      {
+        "cause": "body",
+        "id": 3,
+        "kind": "rigid-body",
+        "ownerEntityId": "6",
+        "projectileId": 3,
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9915161132812
+        },
+        "shotNumber": 3,
+        "targetEntityId": 8,
+        "time": 67.01666666666415,
+        "x": 7391.25,
+        "y": 625.5648803710938
+      },
+      {
+        "kind": "rigid-body",
+        "ownerEntityId": "6",
+        "projectileId": 3,
+        "reason": "detonated",
+        "shotNumber": 3,
+        "time": 67.01666666666415,
+        "x": 7391.25,
+        "y": 625.5648803710938
+      },
+      {
+        "amount": 60.6065983968767,
+        "baseAmount": 63.79641936513337,
+        "blocked": false,
+        "category": "explosive",
+        "crit": false,
+        "killed": false,
+        "kind": "damage",
+        "shotNumber": 3,
+        "sourceEntityId": "6",
+        "target": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "targetEntityId": "8",
+        "targetStableId": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "time": 67.03333333333082,
+        "type": "blast",
+        "x": 7411.5,
+        "y": 625.9906616210938
+      },
+      {
+        "carve": "erase",
+        "carveRadius": 48,
+        "carvedCells": 2243,
+        "damage": 80,
+        "hits": [
+          {
+            "amount": 60.6065983968767,
+            "entityId": 8,
+            "killed": false
+          }
+        ],
+        "kind": "explosion",
+        "radius": 100,
+        "shotNumber": 3,
+        "sourceEntityId": "6",
+        "time": 67.03333333333082,
+        "x": 7391.25,
+        "y": 625.5648803710938
+      },
+      {
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 320,
+          "x": 7231.25,
+          "y": 497.56488037109375
+        },
+        "shotNumber": 3,
+        "target": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 115,
+            "y": 9
+          },
+          "faction": null,
+          "health": 39.3934016031233,
+          "id": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 8,
+          "maxHealth": 100,
+          "name": "M1 Target",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 7411.5,
+          "y": 637.9899291992188
+        },
+        "ticks": 30,
+        "time": 67.51666666666412,
+        "timedOut": false,
+        "watchId": 3
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 89.33333333332955,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 115,
+          "y": 9
+        },
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 89.81666666666285,
+        "to": "stored"
+      },
+      {
+        "kind": "fire-request",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 9,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9927978515625
+        },
+        "shotNumber": 4,
+        "time": 90.33333333332948,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.5235987755982988,
+          "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+          "gravityScale": 1,
+          "items": [
+            "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.99,
+          "speed": {
+            "current": 1783,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "id": 4,
+        "kind": "launch",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "position": {
+          "x": 3230.5,
+          "y": 607.5
+        },
+        "rawOwner": "9",
+        "shotNumber": 4,
+        "time": 90.33333333332948
+      },
+      {
+        "kind": "flight",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 9,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9917602539062
+        },
+        "shot": {
+          "age": 0.6666666666666671,
+          "held": false,
+          "id": 4,
+          "kind": "rigid-body",
+          "ownerId": "9",
+          "vx": 1530.1478271484375,
+          "vy": -452.01556396484375,
+          "x": 4255.1298828125,
+          "y": 160.8372039794922
+        },
+        "shotNumber": 4,
+        "time": 90.99999999999612
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 9
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 91.3499999999961,
+        "to": "stored"
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 91.36666666666277,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 9
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 91.51666666666276,
+        "to": "stored"
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 91.53333333332942,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 9
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 91.66666666666276,
+        "to": "stored"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9909057617188
+        },
+        "shot": {
+          "age": 1.6666666666666656,
+          "held": false,
+          "id": 4,
+          "kind": "rigid-body",
+          "ownerId": "9",
+          "vx": 1509.42138671875,
+          "vy": 199.76870727539065,
+          "x": 5774.7177734375,
+          "y": 36.8236198425293
+        },
+        "shotNumber": 4,
+        "time": 91.99999999999606
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 92.43333333332936,
+        "to": "live"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9909057617188
+        },
+        "shot": {
+          "age": 2.666666666666662,
+          "held": false,
+          "id": 4,
+          "kind": "rigid-body",
+          "ownerId": "9",
+          "vx": 1488.9757080078125,
+          "vy": 842.72216796875,
+          "x": 7273.7255859375,
+          "y": 560.0958251953125
+        },
+        "shotNumber": 4,
+        "time": 92.999999999996
+      },
+      {
+        "cause": "body",
+        "id": 4,
+        "kind": "rigid-body",
+        "ownerEntityId": "9",
+        "projectileId": 4,
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9909057617188
+        },
+        "shotNumber": 4,
+        "targetEntityId": 13,
+        "time": 93.08333333332934,
+        "x": 7391.25,
+        "y": 625.5648803710938
+      },
+      {
+        "kind": "rigid-body",
+        "ownerEntityId": "9",
+        "projectileId": 4,
+        "reason": "detonated",
+        "shotNumber": 4,
+        "time": 93.08333333332934,
+        "x": 7391.25,
+        "y": 625.5648803710938
+      },
+      {
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityId": "13",
+        "killerEntityId": "9",
+        "kind": "death",
+        "shotNumber": 4,
+        "slot": null,
+        "stableId": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "time": 93.099999999996,
+        "type": "blast",
+        "x": 7411.5,
+        "y": 638.1659545898438
+      },
+      {
+        "amount": 57.87356867778384,
+        "baseAmount": 60.919545976614565,
+        "blocked": false,
+        "category": "explosive",
+        "crit": false,
+        "killed": true,
+        "kind": "damage",
+        "shotNumber": 4,
+        "sourceEntityId": "9",
+        "target": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "targetEntityId": "13",
+        "targetStableId": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "time": 93.099999999996,
+        "type": "blast",
+        "x": 7411.5,
+        "y": 638.1659545898438
+      },
+      {
+        "carve": "erase",
+        "carveRadius": 48,
+        "carvedCells": 0,
+        "damage": 80,
+        "hits": [
+          {
+            "amount": 57.87356867778384,
+            "entityId": 13,
+            "killed": true
+          }
+        ],
+        "kind": "explosion",
+        "radius": 100,
+        "shotNumber": 4,
+        "sourceEntityId": "9",
+        "time": 93.099999999996,
+        "x": 7391.25,
+        "y": 625.5648803710938
+      },
+      {
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 320,
+          "x": 7231.25,
+          "y": 497.56488037109375
+        },
+        "shotNumber": 4,
+        "target": {
+          "alive": false,
+          "angle": 0,
+          "chunk": {
+            "x": 115,
+            "y": 9
+          },
+          "faction": null,
+          "health": 0,
+          "id": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 13,
+          "maxHealth": 100,
+          "name": "M1 Target",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 7411.5,
+          "y": 638.1624145507812
+        },
+        "ticks": 30,
+        "time": 93.5833333333293,
+        "timedOut": false,
+        "watchId": 4
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 117.83333333332791,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 115,
+          "y": 9
+        },
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 118.2833333333279,
+        "to": "stored"
+      },
+      {
+        "kind": "fire-request",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 14,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9927978515625
+        },
+        "shotNumber": 5,
+        "time": 118.83333333332789,
+        "weapon": {
+          "ammo": {},
+          "angle": -1.0471975511965976,
+          "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+          "gravityScale": 1,
+          "items": [
+            "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 1,
+          "speed": {
+            "current": 1800,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "id": 5,
+        "kind": "launch",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "position": {
+          "x": 3217.5,
+          "y": 594.5
+        },
+        "rawOwner": "14",
+        "shotNumber": 5,
+        "time": 118.83333333332789
+      },
+      {
+        "kind": "flight",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 14,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 625.9915771484375
+        },
+        "shot": {
+          "age": 0.16666666666666666,
+          "held": false,
+          "id": 5,
+          "kind": "rigid-body",
+          "ownerId": "14",
+          "vx": 897.9566650390625,
+          "vy": -1447.082275390625,
+          "x": 3367.314453125,
+          "y": 344.2638244628906
+        },
+        "shotNumber": 5,
+        "time": 118.99999999999451
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 9
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 119.63333333332784,
+        "to": "stored"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 626
+        },
+        "shot": {
+          "age": 1.1666666666666674,
+          "held": false,
+          "id": 5,
+          "kind": "rigid-body",
+          "ownerId": "14",
+          "vx": 885.7935791015625,
+          "vy": -781.8157348632812,
+          "x": 4259.07421875,
+          "y": -767.9462890625
+        },
+        "shotNumber": 5,
+        "time": 119.99999999999449
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 626
+        },
+        "shot": {
+          "age": 2.166666666666664,
+          "held": false,
+          "id": 5,
+          "kind": "rigid-body",
+          "ownerId": "14",
+          "vx": 873.7952880859375,
+          "vy": -125.56597137451172,
+          "x": 5138.751953125,
+          "y": -1219.48583984375
+        },
+        "shotNumber": 5,
+        "time": 120.99999999999442
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 626
+        },
+        "shot": {
+          "age": 3.1666666666666603,
+          "held": false,
+          "id": 5,
+          "kind": "rigid-body",
+          "ownerId": "14",
+          "vx": 861.9594116210938,
+          "vy": 521.7966918945312,
+          "x": 6006.517578125,
+          "y": -1019.3027954101562
+        },
+        "shotNumber": 5,
+        "time": 121.99999999999436
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 626
+        },
+        "shot": {
+          "age": 4.166666666666657,
+          "held": false,
+          "id": 5,
+          "kind": "rigid-body",
+          "ownerId": "14",
+          "vx": 850.2838134765625,
+          "vy": 1160.38818359375,
+          "x": 6862.52734375,
+          "y": -176.22695922851562
+        },
+        "shotNumber": 5,
+        "time": 122.9999999999943
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 123.11666666666096,
+        "to": "live"
+      },
+      {
+        "cause": "terrain",
+        "id": 5,
+        "kind": "rigid-body",
+        "ownerEntityId": "14",
+        "projectileId": 5,
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 626
+        },
+        "shotNumber": 5,
+        "targetEntityId": null,
+        "time": 123.6333333333276,
+        "x": 7389,
+        "y": 672.75
+      },
+      {
+        "kind": "rigid-body",
+        "ownerEntityId": "14",
+        "projectileId": 5,
+        "reason": "detonated",
+        "shotNumber": 5,
+        "time": 123.6333333333276,
+        "x": 7389,
+        "y": 672.75
+      },
+      {
+        "carve": "erase",
+        "carveRadius": 48,
+        "carvedCells": 4353,
+        "damage": 80,
+        "hits": [],
+        "kind": "explosion",
+        "radius": 100,
+        "shotNumber": 5,
+        "sourceEntityId": "14",
+        "time": 123.64999999999426,
+        "x": 7389,
+        "y": 672.75
+      },
+      {
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 320,
+          "x": 7229,
+          "y": 544.75
+        },
+        "shotNumber": 5,
+        "target": {
+          "alive": false,
+          "angle": 0,
+          "chunk": {
+            "x": 115,
+            "y": 10
+          },
+          "faction": null,
+          "health": 0,
+          "id": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 16,
+          "maxHealth": 100,
+          "name": "M1 Target",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 7411.5,
+          "y": 680.9899291992188
+        },
+        "ticks": 30,
+        "time": 124.13333333332756,
+        "timedOut": false,
+        "watchId": 5
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 127.83333333332736,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 115,
+          "y": 10
+        },
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 128.31666666666092,
+        "to": "stored"
+      },
+      {
+        "kind": "returned",
+        "markerAfter": "shooter-survives-streaming",
+        "markerBefore": "shooter-survives-streaming",
+        "parked": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 626
+        },
+        "restored": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 17,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 689.9900512695312
+        },
+        "settled": true,
+        "time": 129.3333333333284,
+        "weapon": {
+          "ammo": {},
+          "angle": 0,
+          "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+          "gravityScale": 1,
+          "items": [
+            "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+          ],
+          "kind": "rigid-body",
+          "pinned": false,
+          "power": 1,
+          "speed": {
+            "current": 1800,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 193.5333333333795,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 10
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 193.91666666671313,
+        "to": "stored"
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 195.55000000004776,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 115,
+          "y": 10
+        },
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 195.90000000004804,
+        "to": "stored"
+      },
+      {
+        "kind": "fire-request",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 19,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 689.9902954101562
+        },
+        "shotNumber": 6,
+        "time": 269.6833333334167,
+        "weapon": {
+          "ammo": {},
+          "angle": -1.0471975511965976,
+          "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+          "gravityScale": 1,
+          "items": [
+            "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 1,
+          "speed": {
+            "current": 1800,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "id": 6,
+        "kind": "launch",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "position": {
+          "x": 3217.5,
+          "y": 658.5
+        },
+        "rawOwner": "19",
+        "shotNumber": 6,
+        "time": 269.6833333334167
+      },
+      {
+        "kind": "flight",
+        "owner": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 19,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 689.9899291992188
+        },
+        "shot": {
+          "age": 0.31666666666666665,
+          "held": false,
+          "id": 6,
+          "kind": "rigid-body",
+          "ownerId": "19",
+          "vx": 896.12158203125,
+          "vy": -1346.712158203125,
+          "x": 3501.85546875,
+          "y": 198.9587860107422
+        },
+        "shotNumber": 6,
+        "time": 270.0000000000831
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 10
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 270.73333333341577,
+        "to": "stored"
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 270.7500000000824,
+        "to": "live"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 21,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 690
+        },
+        "shot": {
+          "age": 1.3166666666666669,
+          "held": false,
+          "id": 6,
+          "kind": "rigid-body",
+          "ownerId": "19",
+          "vx": 883.9833984375,
+          "vy": -682.8074951171875,
+          "x": 4391.791015625,
+          "y": -813.57470703125
+        },
+        "shotNumber": 6,
+        "time": 271.0000000000822
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 10
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 271.08333333341545,
+        "to": "stored"
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 271.1000000000821,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 10
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 271.43333333341513,
+        "to": "stored"
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 271.4500000000818,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 10
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 271.76666666674816,
+        "to": "stored"
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 271.7833333334148,
+        "to": "live"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 24,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 32.5,
+          "x": 3199.5,
+          "y": 691.0833129882812
+        },
+        "shot": {
+          "age": 2.3166666666666633,
+          "held": false,
+          "id": 6,
+          "kind": "rigid-body",
+          "ownerId": "19",
+          "vx": 872.0095825195312,
+          "vy": -27.89792251586914,
+          "x": 5269.673828125,
+          "y": -1166.7882080078125
+        },
+        "shotNumber": 6,
+        "time": 272.0000000000813
+      },
+      {
+        "chunk": {
+          "x": 49,
+          "y": 10
+        },
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 272.0666666667479,
+        "to": "stored"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 692.7083129882812
+        },
+        "shot": {
+          "age": 3.31666666666666,
+          "held": false,
+          "id": 6,
+          "kind": "rigid-body",
+          "ownerId": "19",
+          "vx": 860.1978759765625,
+          "vy": 618.1409912109375,
+          "x": 6135.6640625,
+          "y": -869.611328125
+        },
+        "shotNumber": 6,
+        "time": 273.0000000000804
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 273.93333333341286,
+        "to": "live"
+      },
+      {
+        "kind": "flight",
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 692.7083129882812
+        },
+        "shot": {
+          "age": 4.316666666666657,
+          "held": false,
+          "id": 6,
+          "kind": "rigid-body",
+          "ownerId": "19",
+          "vx": 848.5462036132812,
+          "vy": 1255.4298095703125,
+          "x": 6989.92578125,
+          "y": 69.14483642578125
+        },
+        "shotNumber": 6,
+        "time": 274.00000000007947
+      },
+      {
+        "cause": "terrain",
+        "id": 6,
+        "kind": "rigid-body",
+        "ownerEntityId": "19",
+        "projectileId": 6,
+        "shooter": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 692.7083129882812
+        },
+        "shotNumber": 6,
+        "targetEntityId": null,
+        "time": 274.41666666674575,
+        "x": 7334.966796875,
+        "y": 640
+      },
+      {
+        "kind": "rigid-body",
+        "ownerEntityId": "19",
+        "projectileId": 6,
+        "reason": "detonated",
+        "shotNumber": 6,
+        "time": 274.41666666674575,
+        "x": 7334.966796875,
+        "y": 640
+      },
+      {
+        "carve": "erase",
+        "carveRadius": 48,
+        "carvedCells": 2208,
+        "damage": 80,
+        "hits": [],
+        "kind": "explosion",
+        "radius": 100,
+        "shotNumber": 6,
+        "sourceEntityId": "19",
+        "time": 274.4333333334124,
+        "x": 7334.966796875,
+        "y": 640
+      },
+      {
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 320,
+          "x": 7174.966796875,
+          "y": 512
+        },
+        "shotNumber": 6,
+        "target": {
+          "alive": false,
+          "angle": 0,
+          "chunk": {
+            "x": 115,
+            "y": 10
+          },
+          "faction": null,
+          "health": 0,
+          "id": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 25,
+          "maxHealth": 100,
+          "name": "M1 Target",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 7411.5,
+          "y": 681.3275756835938
+        },
+        "ticks": 24,
+        "time": 274.8166666667454,
+        "timedOut": false,
+        "watchId": 6
+      },
+      {
+        "chunk": null,
+        "entity": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "entityKey": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "from": "stored",
+        "kind": "residency",
+        "reason": null,
+        "time": 317.25000000004013,
+        "to": "live"
+      },
+      {
+        "chunk": {
+          "x": 115,
+          "y": 10
+        },
+        "entity": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "entityKey": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+        "from": "live",
+        "kind": "residency",
+        "reason": null,
+        "time": 317.68333333337307,
+        "to": "stored"
+      },
+      {
+        "kind": "returned",
+        "markerAfter": "shooter-survives-streaming",
+        "markerBefore": "shooter-survives-streaming",
+        "parked": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 692.7083129882812
+        },
+        "restored": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 49,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 26,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 3199.5,
+          "y": 689.9916381835938
+        },
+        "settled": true,
+        "time": 318.75000000003877,
+        "weapon": {
+          "ammo": {},
+          "angle": 0,
+          "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+          "gravityScale": 1,
+          "items": [
+            "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+          ],
+          "kind": "rigid-body",
+          "pinned": false,
+          "power": 1,
+          "speed": {
+            "current": 1800,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      }
+    ],
+    "restoration": {
+      "markerAfter": "shooter-survives-streaming",
+      "markerBefore": "shooter-survives-streaming",
+      "parked": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 49,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "M1 Shooter",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+        "vx": 0,
+        "vy": 0,
+        "x": 3199.5,
+        "y": 692.7083129882812
+      },
+      "restored": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 49,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 26,
+        "maxHealth": 100,
+        "name": "M1 Shooter",
+        "residency": "live",
+        "slot": null,
+        "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+        "vx": 0,
+        "vy": 0,
+        "x": 3199.5,
+        "y": 689.9916381835938
+      },
+      "settled": true,
+      "weapon": {
+        "ammo": {},
+        "angle": 0,
+        "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+        "gravityScale": 1,
+        "items": [
+          "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+        ],
+        "kind": "rigid-body",
+        "pinned": false,
+        "power": 1,
+        "speed": {
+          "current": 1800,
+          "max": 1800,
+          "min": 100
+        }
+      }
+    },
+    "shooter": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 49,
+        "y": 10
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-c0e04cfe-fdea-4ec9-ad7e-a70a6ab1f642",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 26,
+      "maxHealth": 100,
+      "name": "M1 Shooter",
+      "residency": "live",
+      "slot": null,
+      "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+      "vx": 0,
+      "vy": 0,
+      "x": 3199.5,
+      "y": 689.9912719726562
+    },
+    "shooterMarker": "shooter-survives-streaming",
+    "status": "M1 shooter restored",
+    "target": {
+      "alive": false,
+      "angle": 0,
+      "chunk": {
+        "x": 115,
+        "y": 10
+      },
+      "faction": null,
+      "health": 0,
+      "id": "instance@spawn-3c6bdfb5-f95f-4920-80f9-57032446d7e7",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": null,
+      "maxHealth": 100,
+      "name": "M1 Target",
+      "residency": "stored",
+      "slot": null,
+      "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+      "vx": 0,
+      "vy": 0,
+      "x": 7411.5,
+      "y": 681.0138549804688
+    },
+    "targetMarker": "target-survives-streaming",
+    "weapon": {
+      "ammo": {},
+      "angle": 0,
+      "equipped": "48923acf-e2e6-4045-8e95-f18e0b2738b5",
+      "gravityScale": 1,
+      "items": [
+        "48923acf-e2e6-4045-8e95-f18e0b2738b5"
+      ],
+      "kind": "rigid-body",
+      "pinned": false,
+      "power": 1,
+      "speed": {
+        "current": 1800,
+        "max": 1800,
+        "min": 100
+      }
+    }
+  }
+}

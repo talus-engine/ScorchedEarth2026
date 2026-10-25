@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "areaId": "terra-reach-v2",
+  "tileSizePixels": 256,
+  "interpretation": "Filled bridge span. Sky is a full EMPTY edge. Fractions run left-to-right on N/S and top-to-bottom on E/W.",
+  "sockets": {
+    "sky": {
+      "a": 0,
+      "b": 1
+    },
+    "earth": {
+      "a": 0,
+      "b": 1
+    },
+    "stone": {
+      "a": 0,
+      "b": 1
+    },
+    "h64": {
+      "a": 0.25,
+      "b": 1
+    },
+    "h128": {
+      "a": 0.5,
+      "b": 1
+    },
+    "h192": {
+      "a": 0.75,
+      "b": 1
+    }
+  },
+  "alternatives": "Not used in this scaffold. Every face is one exact connector.",
+  "template": "WFC/template.json"
+}

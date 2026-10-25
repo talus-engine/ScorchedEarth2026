@@ -1,0 +1,7382 @@
+{
+  "version": 1,
+  "kind": "growth-preset",
+  "presets": [
+    {
+      "id": "builtin-bramble",
+      "name": "Bramble",
+      "description": "Thorny dead wood that splits twice and carries a few leaves.",
+      "tags": [
+        "builtin",
+        "plants",
+        "thicket"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 6,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.5,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 14,
+        "lengthMin": 14,
+        "lengthMax": 24,
+        "tubeWidth1": 2,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0.3,
+        "elevationMax": 0.7,
+        "azimuthMin": -180,
+        "azimuthMax": 180,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 2,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 40,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.8,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 5,
+        "leafDropout": 0,
+        "leafLocation": "secondaryBranches",
+        "leafLength": 2,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0.25,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0.08,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": false,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.3,
+          0.2,
+          0.12
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.36,
+          0.25,
+          0.14
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 2,
+        "front": "nearestParticleInFront",
+        "behind": "nearestParticleBehind"
+      },
+      "materials": {
+        "tube": "DEADWOOD",
+        "leaf": "TREE_LEAF"
+      },
+      "pacing": "withStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-coral",
+      "name": "Coral",
+      "description": "Space-colonised coral that fills the brush footprint.",
+      "tags": [
+        "builtin",
+        "sea",
+        "colonize"
+      ],
+      "model": "colonize",
+      "sheet": {
+        "brushWidth": 4,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.2,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 60,
+        "lengthMin": 120,
+        "lengthMax": 120,
+        "tubeWidth1": 3,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0,
+        "elevationMax": 0.2,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 0,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 4,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0,
+        "surfaceCollide": true,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 1,
+        "attractRadiusScale": 0,
+        "attractRadiusOffset": 12,
+        "occupyRadiusScale": 0,
+        "occupyRadiusOffset": 3,
+        "surfaceSampleDensity": 18,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.85,
+          0.42,
+          0.45
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.98,
+          0.7,
+          0.62
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 2,
+        "front": "nearestParticleInFront",
+        "behind": "nearestParticleBehind"
+      },
+      "materials": {
+        "tube": "CORAL_BRANCH",
+        "variants": {
+          "tube": "frozen"
+        }
+      },
+      "pacing": "afterStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-creeping-vine",
+      "name": "Creeping vine",
+      "description": "Ivy-style tips that crawl over nearby stone and flower as they go.",
+      "tags": [
+        "builtin",
+        "plants",
+        "vines"
+      ],
+      "model": "ivy",
+      "sheet": {
+        "brushWidth": 4,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.3,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 40,
+        "lengthMin": 30,
+        "lengthMax": 60,
+        "tubeWidth1": 1,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0.85,
+        "elevationMax": 1,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 0,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 4,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 4,
+        "numFlowers": 3,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 1.5,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 1,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0.4,
+        "maxAttractDistance": 12,
+        "random": 0.3,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0.2,
+        "surfaceCollide": true,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.22,
+          0.4,
+          0.15
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.3,
+          0.5,
+          0.2
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 6,
+        "front": "nearestParticleInFront",
+        "behind": "nearestParticleBehind"
+      },
+      "materials": {
+        "tube": "VINE_STEM",
+        "bud": "VINE_TIP",
+        "petal": "VINE_FLOWER",
+        "variants": {
+          "bud": "frozen"
+        }
+      },
+      "pacing": "afterStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 6,
+        "branchProbability": 0.06
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-flower-bed",
+      "name": "Flower bed",
+      "description": "Short stems each carrying a five-petal flower.",
+      "tags": [
+        "builtin",
+        "plants",
+        "flowers"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 8,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.8,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 5,
+        "lengthMin": 5,
+        "lengthMax": 9,
+        "tubeWidth1": 1,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0,
+        "elevationMax": 0.2,
+        "azimuthMin": -180,
+        "azimuthMax": 180,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 0,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 4,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 1,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 2,
+        "petalBaseWidth": 0.4,
+        "petalTipWidth": 0.8,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": true,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0.3,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": false,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.24,
+          0.52,
+          0.18
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.52,
+          0.72,
+          0.3
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scatter",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 2,
+        "front": "nearestParticleInFront",
+        "behind": "nearestParticleBehind"
+      },
+      "materials": {
+        "tube": "GRASS_BLADE_STEM",
+        "petal": "VINE_FLOWER"
+      },
+      "pacing": "withStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-hair",
+      "name": "Hair",
+      "description": "Long view-plane strands with a streaked texture.",
+      "tags": [
+        "builtin",
+        "hair",
+        "textured"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 10,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 4,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 12,
+        "lengthMin": 14,
+        "lengthMax": 22,
+        "tubeWidth1": 1,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongPath",
+        "elevationMin": 0.1,
+        "elevationMax": 0.3,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 0,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 4,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0.8,
+        "noiseFrequency": 3,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0.2,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0.15,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.4,
+          0.28,
+          0.16
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.6,
+          0.45,
+          0.3
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": true,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "uRamp",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          0.3,
+          0.2,
+          0.12
+        ],
+        "texColor2": [
+          0.55,
+          0.4,
+          0.25
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 3,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "viewPlane",
+        "sizeMode": "scatter",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 2,
+        "front": "nearestParticleInFront",
+        "behind": "nearestParticleBehind"
+      },
+      "materials": {
+        "tube": "BARK"
+      },
+      "pacing": "withStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-icicles",
+      "name": "Icicles",
+      "description": "Tapering ice that starts into the ledge (elevation 2) and hangs straight down under gravity.",
+      "tags": [
+        "builtin",
+        "ice",
+        "winter"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 4,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.7,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 8,
+        "lengthMin": 4,
+        "lengthMax": 14,
+        "tubeWidth1": 2.5,
+        "tubeWidth2": 0,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 2,
+        "elevationMax": 2,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 0,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 4,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 4,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 0,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": false,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.72,
+          0.86,
+          0.95
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.9,
+          0.97,
+          1
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 2,
+        "front": "nearestParticleInFront",
+        "behind": "nearestParticleBehind"
+      },
+      "materials": {
+        "tube": "ICE"
+      },
+      "pacing": "withStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-ivy-wall",
+      "name": "Ivy wall",
+      "description": "Leafy ivy that climbs the target plane's walls.",
+      "tags": [
+        "builtin",
+        "plants",
+        "vines"
+      ],
+      "model": "ivy",
+      "sheet": {
+        "brushWidth": 4,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.3,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 60,
+        "lengthMin": 40,
+        "lengthMax": 90,
+        "tubeWidth1": 1,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0,
+        "elevationMax": 0.2,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 12,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 2.5,
+        "leafBaseWidth": 0.6,
+        "leafTipWidth": 0.3,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": true,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.16,
+          0.42,
+          0.16
+        ],
+        "leafColor2": [
+          0.24,
+          0.52,
+          0.2
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0.4,
+        "maxAttractDistance": 16,
+        "random": 0.25,
+        "uniformForce": [
+          0,
+          0.5,
+          0
+        ],
+        "gravity": 0.1,
+        "surfaceCollide": true,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.28,
+          0.25,
+          0.14
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.28,
+          0.3,
+          0.14
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 6,
+        "front": "nearestParticleInFront",
+        "behind": "nearestParticleBehind"
+      },
+      "materials": {
+        "tube": "VINE_STEM",
+        "leaf": "TREE_LEAF"
+      },
+      "pacing": "afterStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 4,
+        "branchProbability": 0.08
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-lightning",
+      "name": "Lightning",
+      "description": "A colonised bolt of light-emitting cells that clears itself 0.3 s after it lands.",
+      "tags": [
+        "builtin",
+        "weather",
+        "effects",
+        "colonize"
+      ],
+      "model": "colonize",
+      "sheet": {
+        "brushWidth": 4,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.1,
+        "tubeRand": 1,
+        "startTubes": 1,
+        "segments": 40,
+        "lengthMin": 120,
+        "lengthMax": 120,
+        "tubeWidth1": 1,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0,
+        "elevationMax": 0.2,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 0,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 4,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0.6,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0.5,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 0.4,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 1,
+        "attractRadiusScale": 0,
+        "attractRadiusOffset": 24,
+        "occupyRadiusScale": 0,
+        "occupyRadiusOffset": 3,
+        "surfaceSampleDensity": 24,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": true,
+        "startTime": 0,
+        "endTime": 0.3,
+        "color1": [
+          0.85,
+          0.9,
+          1
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          1,
+          1,
+          1
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "viewPlane",
+        "sizeMode": "attribute",
+        "sizeReference": 3,
+        "sizeAttribute": "lengthMax"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 2,
+        "front": "nearestParticleInFront",
+        "behind": "nearestParticleBehind"
+      },
+      "materials": {
+        "tube": "FLASH"
+      },
+      "pacing": "afterStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-living-bramble",
+      "name": "Living bramble",
+      "description": "A thorny living-wood thicket adopted by the native organism; oak physiology supplies leafing, thickening and decay.",
+      "tags": [
+        "builtin",
+        "plants",
+        "thicket",
+        "living"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 6,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.5,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 14,
+        "lengthMin": 14,
+        "lengthMax": 24,
+        "tubeWidth1": 2,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0.3,
+        "elevationMax": 0.7,
+        "azimuthMin": -180,
+        "azimuthMax": 180,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 2,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 40,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.8,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 5,
+        "leafDropout": 0,
+        "leafLocation": "secondaryBranches",
+        "leafLength": 2,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0.25,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0.08,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": false,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.3,
+          0.2,
+          0.12
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.36,
+          0.25,
+          0.14
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "world",
+        "slabHalfDepth": 2,
+        "front": "drop",
+        "behind": "drop"
+      },
+      "materials": {
+        "tube": "LIVING_WOOD",
+        "leaf": "TREE_LEAF"
+      },
+      "pacing": "withStroke",
+      "output": "living",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "oak"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-meadow-grass",
+      "name": "Meadow grass",
+      "description": "Blades planted across the stroke and into depth; the ones behind the ground line land in Midground, the ones in front in Occlusion.",
+      "tags": [
+        "builtin",
+        "grass",
+        "plants"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 12,
+        "softness": 0,
+        "flatness1": 0.7,
+        "flatness2": 0.7,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 3,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 6,
+        "lengthMin": 4,
+        "lengthMax": 11,
+        "tubeWidth1": 1,
+        "tubeWidth2": 0.5,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0,
+        "elevationMax": 0.35,
+        "azimuthMin": -180,
+        "azimuthMax": 180,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 0,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 4,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 1,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0.08,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0.04,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.24,
+          0.52,
+          0.18
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0.15,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.52,
+          0.72,
+          0.3
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0.05,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scatter",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 2,
+        "front": "nearestParticleInFront",
+        "behind": "nearestParticleBehind"
+      },
+      "materials": {
+        "tube": "GRASS_BLADE_STEM",
+        "bud": "GRASS_BLADE_TIP",
+        "variants": {
+          "bud": "frozen"
+        }
+      },
+      "pacing": "withStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-oak-sapling",
+      "name": "Oak sapling",
+      "description": "A sapling adopted by the tree organism: it keeps thickening, leafing and swaying.",
+      "tags": [
+        "builtin",
+        "trees",
+        "living"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 4,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.05,
+        "tubeRand": 1,
+        "startTubes": 1,
+        "segments": 16,
+        "lengthMin": 32,
+        "lengthMax": 32,
+        "tubeWidth1": 2,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0,
+        "elevationMax": 0,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 2,
+        "numTwigClusters": 4,
+        "twigDropout": 0,
+        "twigLength": 13,
+        "twigBaseWidth": 0.8,
+        "twigTipWidth": 0.5,
+        "twigStart": 0.17,
+        "twigAngle1": 50,
+        "twigAngle2": 25,
+        "twigTwist": 0,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 2,
+        "numLeafClusters": 2,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 2,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.35,
+          0.25,
+          0.12
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.5,
+          0.38,
+          0.2
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "world",
+        "slabHalfDepth": 2,
+        "front": "drop",
+        "behind": "drop"
+      },
+      "materials": {
+        "tube": "LIVING_WOOD",
+        "leaf": "TREE_LEAF"
+      },
+      "pacing": "afterStroke",
+      "output": "living",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "oak"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-roots",
+      "name": "Roots",
+      "description": "Space-colonised roots that stay inside the soil.",
+      "tags": [
+        "builtin",
+        "plants",
+        "underground",
+        "colonize"
+      ],
+      "model": "colonize",
+      "sheet": {
+        "brushWidth": 4,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.2,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 60,
+        "lengthMin": 120,
+        "lengthMax": 120,
+        "tubeWidth1": 2,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 2,
+        "elevationMax": 2,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 0,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 4,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 1,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0.1,
+        "surfaceCollide": true,
+        "collideMethod": "inside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 1,
+        "attractRadiusScale": 0,
+        "attractRadiusOffset": 10,
+        "occupyRadiusScale": 0,
+        "occupyRadiusOffset": 2.5,
+        "surfaceSampleDensity": 20,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.45,
+          0.33,
+          0.2
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.55,
+          0.42,
+          0.28
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 2,
+        "front": "drop",
+        "behind": "drop"
+      },
+      "materials": {
+        "tube": "ROOTS_STEM",
+        "replaces": [
+          "DIRT",
+          "MUD",
+          "SAND"
+        ]
+      },
+      "pacing": "afterStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-vine-ledge",
+      "name": "Vine ledge",
+      "description": "Ivy grown in Midground whatever layer is active: standable semisolid ledges behind the world.",
+      "tags": [
+        "builtin",
+        "plants",
+        "vines",
+        "platforms"
+      ],
+      "model": "ivy",
+      "sheet": {
+        "brushWidth": 4,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.3,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 50,
+        "lengthMin": 30,
+        "lengthMax": 70,
+        "tubeWidth1": 2,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongPath",
+        "elevationMin": 0,
+        "elevationMax": 0.2,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 8,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 2,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 1,
+        "maxAttractDistance": 12,
+        "random": 0.2,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0.05,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.2,
+          0.38,
+          0.14
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.26,
+          0.46,
+          0.18
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": {
+          "name": "Midground"
+        },
+        "slabHalfDepth": 4,
+        "front": "drop",
+        "behind": "drop"
+      },
+      "materials": {
+        "tube": "VINE_STEM",
+        "leaf": "TREE_LEAF"
+      },
+      "pacing": "afterStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 10,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-wheat",
+      "name": "Wheat",
+      "description": "Tall stalks with a seed head at every tip.",
+      "tags": [
+        "builtin",
+        "grass",
+        "crops"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 8,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 2,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 8,
+        "lengthMin": 12,
+        "lengthMax": 18,
+        "tubeWidth1": 1,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0,
+        "elevationMax": 0.12,
+        "azimuthMin": -180,
+        "azimuthMax": 180,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 0,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 4,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 2.5,
+        "budColor": [
+          0.9,
+          0.78,
+          0.38
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0.02,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.62,
+          0.55,
+          0.25
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.86,
+          0.76,
+          0.4
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scatter",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 2,
+        "front": "nearestParticleInFront",
+        "behind": "nearestParticleBehind"
+      },
+      "materials": {
+        "tube": "GRASS_BLADE_STEM",
+        "bud": "GRASS_BLADE_SEED"
+      },
+      "pacing": "withStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "builtin-worm-tunnels",
+      "name": "Worm tunnels",
+      "description": "Erase brush: wandering tubes carve tunnels through whatever they cross.",
+      "tags": [
+        "builtin",
+        "carve",
+        "underground"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 4,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "erase",
+        "tubesPerStep": 0.3,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 20,
+        "lengthMin": 20,
+        "lengthMax": 40,
+        "tubeWidth1": 3,
+        "tubeWidth2": 2,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongPath",
+        "elevationMin": 0,
+        "elevationMax": 0.4,
+        "azimuthMin": -40,
+        "azimuthMax": 40,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 0,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 4,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0.5,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1.5,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.35,
+          0.25,
+          0.12
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.5,
+          0.38,
+          0.2
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "viewPlane",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "active",
+        "slabHalfDepth": 2,
+        "front": "nearestParticleInFront",
+        "behind": "nearestParticleBehind"
+      },
+      "materials": {
+        "tube": "DIRT"
+      },
+      "pacing": "withStroke",
+      "output": "cells",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "default"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 0,
+      "modifiedAt": 0
+    },
+    {
+      "id": "indigo-m9-bramble",
+      "name": "Indigo living bramble",
+      "description": "A thorny living-wood thicket adopted by the native organism; oak physiology supplies leafing, thickening and decay.",
+      "tags": [
+        "plants",
+        "thicket",
+        "living"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 0,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.5,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 14,
+        "lengthMin": 14,
+        "lengthMax": 24,
+        "tubeWidth1": 2,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0.3,
+        "elevationMax": 0.7,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 2,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 40,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.8,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 5,
+        "leafDropout": 0,
+        "leafLocation": "secondaryBranches",
+        "leafLength": 2,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0.25,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0.08,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": false,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.3,
+          0.2,
+          0.12
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.36,
+          0.25,
+          0.14
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "world",
+        "slabHalfDepth": 2,
+        "front": "drop",
+        "behind": "drop"
+      },
+      "materials": {
+        "tube": "LIVING_WOOD",
+        "leaf": "TREE_LEAF"
+      },
+      "pacing": "withStroke",
+      "output": "living",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "oak"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 1792790453917,
+      "modifiedAt": 1792790453917
+    },
+    {
+      "id": "indigo-m9-oak",
+      "name": "Indigo living oak",
+      "description": "A sapling adopted by the tree organism: it keeps thickening, leafing and swaying.",
+      "tags": [
+        "trees",
+        "living"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 4,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.05,
+        "tubeRand": 1,
+        "startTubes": 1,
+        "segments": 16,
+        "lengthMin": 32,
+        "lengthMax": 32,
+        "tubeWidth1": 2,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0,
+        "elevationMax": 0,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 0,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 30,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.7,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 2,
+        "numTwigClusters": 4,
+        "twigDropout": 0,
+        "twigLength": 13,
+        "twigBaseWidth": 0.8,
+        "twigTipWidth": 0.5,
+        "twigStart": 0.17,
+        "twigAngle1": 50,
+        "twigAngle2": 25,
+        "twigTwist": 0,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 2,
+        "numLeafClusters": 2,
+        "leafDropout": 0,
+        "leafLocation": "all",
+        "leafLength": 2,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": true,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.35,
+          0.25,
+          0.12
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.5,
+          0.38,
+          0.2
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "world",
+        "slabHalfDepth": 2,
+        "front": "drop",
+        "behind": "drop"
+      },
+      "materials": {
+        "tube": "LIVING_WOOD",
+        "leaf": "TREE_LEAF"
+      },
+      "pacing": "afterStroke",
+      "output": "living",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "oak"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 1792789459449,
+      "modifiedAt": 1792789459449
+    },
+    {
+      "id": "m9-planar-bramble-probe",
+      "name": "M9 planar bramble diagnostic",
+      "description": "A thorny living-wood thicket adopted by the native organism; oak physiology supplies leafing, thickening and decay.",
+      "tags": [
+        "plants",
+        "thicket",
+        "living"
+      ],
+      "model": "tube",
+      "sheet": {
+        "brushWidth": 6,
+        "softness": 0,
+        "flatness1": 0,
+        "flatness2": 0,
+        "stampDensity": 0,
+        "brushType": "paint",
+        "tubesPerStep": 0.5,
+        "tubeRand": 1,
+        "startTubes": 0,
+        "segments": 14,
+        "lengthMin": 14,
+        "lengthMax": 24,
+        "tubeWidth1": 2,
+        "tubeWidth2": 1,
+        "widthRand": 0,
+        "widthBias": 0,
+        "segmentLengthBias": 0,
+        "segmentWidthBias": 0,
+        "surfaceSnap": false,
+        "widthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "tubeDirection": "alongNormal",
+        "elevationMin": 0.3,
+        "elevationMax": 0.7,
+        "azimuthMin": 0,
+        "azimuthMax": 0,
+        "startBranches": 0,
+        "numBranches": 2,
+        "splitMaxDepth": 2,
+        "branchDropout": 0,
+        "splitRand": 0,
+        "splitAngle": 40,
+        "splitTwist": 0.5,
+        "splitSizeDecay": 0.8,
+        "splitBias": 0,
+        "minSize": 0,
+        "middleBranch": false,
+        "twigsInCluster": 1,
+        "numTwigClusters": 0,
+        "twigDropout": 0,
+        "twigLength": 6,
+        "twigBaseWidth": 0.4,
+        "twigTipWidth": 0.2,
+        "twigStart": 0.5,
+        "twigAngle1": 90,
+        "twigAngle2": 60,
+        "twigTwist": 0.25,
+        "twigStiffness": 0.5,
+        "branchAfterTwigs": false,
+        "twigLengthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leavesInCluster": 1,
+        "numLeafClusters": 5,
+        "leafDropout": 0,
+        "leafLocation": "secondaryBranches",
+        "leafLength": 2,
+        "leafBaseWidth": 0.2,
+        "leafTipWidth": 0.1,
+        "leafWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "leafStart": 0.5,
+        "leafAngle1": 75,
+        "leafAngle2": 25,
+        "leafTwist": 0.25,
+        "leafForwardTwist": false,
+        "leafBend": 0,
+        "leafCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "leafFaceSun": 0,
+        "leafTwirl": 0,
+        "leafSegments": 4,
+        "leafFlatness": 1,
+        "leafSizeDecay": 0.9,
+        "leafSizeRand": 0,
+        "leafStiffness": 0.5,
+        "leafTranslucence": 0.7,
+        "leafSpecular": 0,
+        "leafColor1": [
+          0.2,
+          0.55,
+          0.22
+        ],
+        "leafColor2": [
+          0.35,
+          0.68,
+          0.3
+        ],
+        "leafHueRand": 0,
+        "leafSatRand": 0,
+        "leafValRand": 0,
+        "leafUseBranchTex": false,
+        "leafTexture": null,
+        "terminalLeaf": false,
+        "petalsInFlower": 5,
+        "numFlowers": 0,
+        "petalDropout": 0,
+        "flowerLocation": "all",
+        "petalLength": 3,
+        "petalBaseWidth": 0.2,
+        "petalTipWidth": 0.5,
+        "petalWidthScale": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "flowerStart": 1,
+        "flowerAngle1": 60,
+        "flowerAngle2": 60,
+        "flowerTwist": 0.23,
+        "petalForwardTwist": false,
+        "petalBend": 0,
+        "petalCurl": {
+          "interp": "linear",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "flowerFaceSun": 0,
+        "petalTwirl": 0,
+        "petalSegments": 3,
+        "petalFlatness": 1,
+        "flowerSizeDecay": 1,
+        "flowerSizeRand": 0,
+        "flowerStiffness": 0.5,
+        "flowerTranslucence": 0.5,
+        "flowerSpecular": 0,
+        "petalColor1": [
+          0.9,
+          0.3,
+          0.4
+        ],
+        "petalColor2": [
+          1,
+          0.85,
+          0.9
+        ],
+        "flowerHueRand": 0,
+        "flowerSatRand": 0,
+        "flowerValRand": 0,
+        "flowerUseBranchTex": false,
+        "flowerTexture": null,
+        "budSize": 0,
+        "budColor": [
+          0.45,
+          0.7,
+          0.2
+        ],
+        "sunDirection": [
+          0,
+          1,
+          0.5
+        ],
+        "displacementDelay": 0.2,
+        "noise": 0,
+        "noiseFrequency": 4,
+        "noiseOffset": 0,
+        "wiggle": 0,
+        "wiggleFrequency": 3,
+        "wiggleOffset": 0,
+        "curl": 0,
+        "curlFrequency": 1,
+        "curlOffset": 0,
+        "pathFollow": 0,
+        "pathAttract": 0,
+        "curveFollow": 0,
+        "curveAttract": 0,
+        "curveMaxDist": 0,
+        "surfaceAttract": 0,
+        "maxAttractDistance": 16,
+        "random": 0.25,
+        "uniformForce": [
+          0,
+          0,
+          0
+        ],
+        "gravity": 0.08,
+        "surfaceCollide": false,
+        "collideMethod": "outside",
+        "deflection": false,
+        "deflectionMin": 0,
+        "deflectionMax": 4,
+        "momentum": 1,
+        "lengthFlex": 0,
+        "turbulenceType": "off",
+        "interpolation": "linear",
+        "turbulence": 0,
+        "turbulenceFrequency": 0.05,
+        "turbulenceSpeed": 0.5,
+        "turbulenceOffset": [
+          0,
+          0,
+          0
+        ],
+        "spiralMin": 0,
+        "spiralMax": 0,
+        "spiralDecay": 0,
+        "bend": 0,
+        "bendBias": 0,
+        "twist": 0,
+        "twistRate": 0,
+        "twistRand": 0,
+        "occupyAttraction": 0,
+        "attractRadiusScale": 1,
+        "attractRadiusOffset": 8,
+        "occupyRadiusScale": 1,
+        "occupyRadiusOffset": 2,
+        "surfaceSampleDensity": 16,
+        "occupyBranchTermination": false,
+        "gapSize": 0,
+        "gapSpacing": 0,
+        "gapRand": 0,
+        "flowSpeed": 0,
+        "textureFlow": true,
+        "strokeTime": false,
+        "timeClip": false,
+        "startTime": 0,
+        "endTime": 1000,
+        "color1": [
+          0.3,
+          0.2,
+          0.12
+        ],
+        "incandescence1": 0,
+        "transparency1": 0,
+        "shadingHueRand": 0,
+        "shadingSatRand": 0,
+        "shadingValRand": 0,
+        "brightnessRand": 0,
+        "rootFade": 0,
+        "tipFade": 0,
+        "color2": [
+          0.36,
+          0.25,
+          0.14
+        ],
+        "incandescence2": 0,
+        "transparency2": 0,
+        "tubeShadingHueRand": 0,
+        "tubeShadingSatRand": 0,
+        "tubeShadingValRand": 0,
+        "mapColor": false,
+        "texColorScale": 1,
+        "texColorOffset": 0,
+        "mapOpacity": false,
+        "texOpacityScale": 1,
+        "texOpacityOffset": 0,
+        "mapDisplacement": false,
+        "displacementScale": 0.5,
+        "displacementOffset": 0,
+        "bumpIntensity": 1,
+        "bumpBlur": 0.5,
+        "useLuminance": false,
+        "textureType": "checker",
+        "mapMethod": "tube2d",
+        "texColor1": [
+          1,
+          1,
+          1
+        ],
+        "texColor2": [
+          0,
+          0,
+          0
+        ],
+        "texAlpha1": 1,
+        "texAlpha2": 0,
+        "texUniformity": 0.5,
+        "repeatU": 1,
+        "repeatV": 1,
+        "offsetU": 0,
+        "offsetV": 0,
+        "blurMult": 0,
+        "smear": 0.1,
+        "smearU": 0,
+        "smearV": 0,
+        "tubeTexture": null,
+        "useFrameExtension": false,
+        "frameExtension": 0,
+        "fractalAmplitude": 1,
+        "fractalRatio": 0.7,
+        "fractalThreshold": 0,
+        "mapElement": false,
+        "illuminated": false,
+        "realLights": false,
+        "lightingBasedWidth": 0,
+        "lightDirection": [
+          -0.5,
+          0.5,
+          0.5
+        ],
+        "translucence": 0.2,
+        "specular": 0,
+        "specularPower": 10,
+        "specularColor": [
+          1,
+          1,
+          1
+        ],
+        "fakeShadow": "none",
+        "shadowDiffusion": 1,
+        "shadowOffset": 2,
+        "shadowTransp": 0.8,
+        "backShadow": 0,
+        "centerShadow": 0,
+        "depthShadowType": "surfaceDepth",
+        "depthShadow": 0,
+        "depthShadowDepth": 8
+      },
+      "stroke": {
+        "paintOn": "surface",
+        "sizeMode": "scale",
+        "sizeReference": 3,
+        "sizeAttribute": "tubesPerStep"
+      },
+      "depth": {
+        "target": "world",
+        "slabHalfDepth": 2,
+        "front": "drop",
+        "behind": "drop"
+      },
+      "materials": {
+        "tube": "LIVING_WOOD",
+        "leaf": "TREE_LEAF"
+      },
+      "pacing": "withStroke",
+      "output": "living",
+      "body": {
+        "kinematic": false
+      },
+      "living": {
+        "species": "oak"
+      },
+      "ivy": {
+        "maxFloatLength": 8,
+        "branchProbability": 0.05
+      },
+      "createdAt": 1792787527569,
+      "modifiedAt": 1792787527569
+    }
+  ]
+}

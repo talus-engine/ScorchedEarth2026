@@ -1,0 +1,374 @@
+{
+  "setup": {
+    "frame": null,
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5312,
+      "y": -1728
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5376,
+      "y": -1664
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5376,
+      "y": -1664
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5600,
+      "y": -1484
+    },
+    "zoom": 0.25
+  },
+  "courses": [
+    {
+      "events": [
+        {
+          "event": "projectile.collision",
+          "kind": "rigid-body",
+          "otherEntityId": null,
+          "ownerEntityId": "",
+          "projectileId": 3,
+          "speed": 570.45458984375,
+          "with": "particle",
+          "x": 10440.5,
+          "y": -1200.5
+        },
+        {
+          "cause": "particle",
+          "event": "projectile.detonate",
+          "kind": "rigid-body",
+          "ownerEntityId": "",
+          "projectileId": 3,
+          "targetEntityId": null,
+          "x": 10440.5,
+          "y": -1200.5
+        },
+        {
+          "event": "projectile.end",
+          "kind": "rigid-body",
+          "ownerEntityId": "",
+          "projectileId": 3,
+          "reason": "detonated",
+          "x": 10440.5,
+          "y": -1200.5
+        }
+      ],
+      "filtered": false,
+      "id": 3,
+      "receipts": [
+        {
+          "accepted": 64,
+          "added": 64,
+          "evaluated": 64,
+          "id": 1,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 64
+        },
+        {
+          "accepted": 256,
+          "added": 256,
+          "evaluated": 256,
+          "id": 2,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 256
+        }
+      ],
+      "rows": [
+        {
+          "age": 0.05,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": null,
+          "vx": 600,
+          "vy": 0,
+          "x": 10439.5,
+          "y": -1200.5
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "view": {
+        "frame": null,
+        "loadedBounds": {
+          "h": 1472,
+          "w": 2240,
+          "x": 5312,
+          "y": -1728
+        },
+        "simulationBounds": {
+          "h": 1344,
+          "w": 2112,
+          "x": 5376,
+          "y": -1664
+        },
+        "targetSimulationBounds": {
+          "h": 1344,
+          "w": 2112,
+          "x": 5376,
+          "y": -1664
+        },
+        "viewport": {
+          "h": 968,
+          "w": 1600,
+          "x": 5600,
+          "y": -1484
+        },
+        "zoom": 0.25
+      },
+      "x": 10400
+    },
+    {
+      "events": [
+        {
+          "event": "projectile.collision",
+          "kind": "rigid-body",
+          "otherEntityId": null,
+          "ownerEntityId": "",
+          "projectileId": 4,
+          "speed": 72.69117969330996,
+          "with": "terrain",
+          "x": 10910,
+          "y": -1198.48193359375
+        },
+        {
+          "cause": "terrain",
+          "event": "projectile.detonate",
+          "kind": "rigid-body",
+          "ownerEntityId": "",
+          "projectileId": 4,
+          "targetEntityId": null,
+          "x": 10910,
+          "y": -1198.48193359375
+        },
+        {
+          "event": "projectile.end",
+          "kind": "rigid-body",
+          "ownerEntityId": "",
+          "projectileId": 4,
+          "reason": "detonated",
+          "x": 10910,
+          "y": -1198.48193359375
+        }
+      ],
+      "filtered": true,
+      "id": 4,
+      "receipts": [
+        {
+          "accepted": 64,
+          "added": 64,
+          "evaluated": 64,
+          "id": 3,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 64
+        },
+        {
+          "accepted": 256,
+          "added": 256,
+          "evaluated": 256,
+          "id": 4,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 256
+        }
+      ],
+      "rows": [
+        {
+          "age": 0.05,
+          "held": false,
+          "id": 4,
+          "kind": "rigid-body",
+          "ownerId": null,
+          "vx": 600,
+          "vy": 0,
+          "x": 10839.5,
+          "y": -1200.5
+        },
+        {
+          "age": 0.13333333333333333,
+          "held": false,
+          "id": 4,
+          "kind": "rigid-body",
+          "ownerId": null,
+          "vx": 460.1824951171875,
+          "vy": 0.2589111626148224,
+          "x": 10883.1181640625,
+          "y": -1200.484130859375
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "view": {
+        "frame": null,
+        "loadedBounds": {
+          "h": 1472,
+          "w": 2240,
+          "x": 5312,
+          "y": -1728
+        },
+        "simulationBounds": {
+          "h": 1344,
+          "w": 2112,
+          "x": 5376,
+          "y": -1664
+        },
+        "targetSimulationBounds": {
+          "h": 1344,
+          "w": 2112,
+          "x": 5376,
+          "y": -1664
+        },
+        "viewport": {
+          "h": 968,
+          "w": 1600,
+          "x": 5600,
+          "y": -1484
+        },
+        "zoom": 0.25
+      },
+      "x": 10800
+    }
+  ],
+  "checks": {
+    "unfiltered remote liquid trigger": true,
+    "filtered remote solid trigger": true,
+    "one completion each": true,
+    "camera unchanged": true
+  }
+}

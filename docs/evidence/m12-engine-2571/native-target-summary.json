@@ -1,0 +1,65 @@
+{
+  "version": "0.0.2571",
+  "world": "50f3948a-b07a-4618-af70-cd751b9d609c",
+  "clearStoredTarget": true,
+  "readOnlySurvey": true,
+  "storedObstacleRefusal": true,
+  "geometryWork": {
+    "candidates": 1,
+    "cells": 69524,
+    "chunks": 98,
+    "geometry": {
+      "catalogRows": 1,
+      "chunks": 3,
+      "colliders": 2,
+      "records": 2
+    },
+    "steps": 18939
+  },
+  "predictedContact": {
+    "bodyRef": "rigid@d5bbb01f-e78b-4baa-8488-1f447f567df5",
+    "kind": "body",
+    "time": 1.5947154471544709,
+    "x": 1972.5,
+    "y": -5827.5
+  },
+  "actualContact": {
+    "event": "projectile.collision",
+    "hitBodyId": 6,
+    "kind": "rigid-body",
+    "otherEntityId": 6,
+    "ownerEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+    "projectileId": 1,
+    "speed": 318.3571898060987,
+    "with": "body",
+    "x": 1972.5,
+    "y": -5811.1943359375
+  },
+  "contactDelta": {
+    "x": 0.0,
+    "y": 16.3056640625
+  },
+  "homingEventCounts": {
+    "projectile.launch": 1,
+    "projectile.hit": 1,
+    "projectile.end": 1,
+    "damage": 1,
+    "death": 1
+  },
+  "durableStoredShooterCredit": true,
+  "targetRestoredLiveId": 11,
+  "cleanup": {
+    "allowed": true,
+    "blockers": []
+  },
+  "pan": {
+    "frames": 138,
+    "seconds": 2.2999999999999967,
+    "maxStep": 40.000000000000355,
+    "phase": "arrived"
+  },
+  "limits": [
+    "Isolated native fixture, not a complete parked Scorched Terra volley/reward flow",
+    "Nominal forecast contact y differs from actual by recorded amount; no evolving air prediction claimed"
+  ]
+}

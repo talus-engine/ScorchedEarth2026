@@ -1,0 +1,418 @@
+{
+  "audit": null,
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6399.5,
+          "y": 625.4999389648438
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 40.0001220703125,
+          "w": 920,
+          "x": 5939.5,
+          "y": 605.4998779296875
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5248,
+      "y": -128
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": -64
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": -64
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5599.5,
+      "y": 141.49993896484375
+    },
+    "zoom": 0.25
+  },
+  "clock": 59.733333333331224,
+  "error": "",
+  "events": [
+    {
+      "clock": 1.899999999999998,
+      "id": "instance@spawn-164fd025-63a9-4fdf-95ba-bd4d25cf9fcc",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 3.1166666666666605,
+      "id": "instance@spawn-164fd025-63a9-4fdf-95ba-bd4d25cf9fcc",
+      "kind": "deployed",
+      "name": "M9 Aim Alpha",
+      "turn": 0
+    },
+    {
+      "clock": 4.966666666666654,
+      "id": "instance@spawn-9cd71a46-0bf6-42f4-99ca-98964736cd1d",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 6.16666666666665,
+      "id": "instance@spawn-9cd71a46-0bf6-42f4-99ca-98964736cd1d",
+      "kind": "deployed",
+      "name": "M9 Aim Beta",
+      "turn": 0
+    },
+    {
+      "clock": 6.16666666666665,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 200,
+      "clock": 6.16666666666665,
+      "item": "mirv",
+      "kind": "purchase",
+      "name": "M9 Aim Alpha",
+      "price": 400,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 20,
+      "clock": 6.16666666666665,
+      "item": "jetpack",
+      "kind": "purchase",
+      "name": "M9 Aim Alpha",
+      "price": 180,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 0,
+      "clock": 6.16666666666665,
+      "item": "nuke",
+      "kind": "purchase",
+      "name": "M9 Aim Beta",
+      "price": 600,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "clock": 6.2333333333333165,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 59.34999999999791,
+      "kind": "cash",
+      "name": "M9 Aim Alpha",
+      "total": 10,
+      "turn": 1
+    },
+    {
+      "clock": 59.34999999999791,
+      "id": "instance@spawn-164fd025-63a9-4fdf-95ba-bd4d25cf9fcc",
+      "kind": "turn",
+      "name": "M9 Aim Alpha",
+      "turn": 1
+    },
+    {
+      "clock": 59.649999999997895,
+      "distance": 880,
+      "elevation": -0.0001220703125,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M9 Aim Alpha",
+      "rise": 0,
+      "target": "M9 Aim Beta",
+      "turn": 1
+    },
+    {
+      "action": "utility",
+      "amount": 15,
+      "clock": 59.649999999997895,
+      "kind": "cash",
+      "name": "M9 Aim Alpha",
+      "total": 25,
+      "turn": 1
+    },
+    {
+      "angle": -0.7853981633974483,
+      "clock": 59.649999999997895,
+      "item": "lazy-boy",
+      "kind": "utility",
+      "name": "M9 Aim Alpha",
+      "power": 0.38606280211267,
+      "turn": 1
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 59.649999999997895,
+      "kind": "cash",
+      "name": "M9 Aim Alpha",
+      "total": 28,
+      "turn": 1
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 59.649999999997895,
+      "kind": "cash",
+      "name": "M9 Aim Alpha",
+      "total": 31,
+      "turn": 1
+    },
+    {
+      "angle": 45,
+      "clock": 59.649999999997895,
+      "kind": "cpu-aimed",
+      "name": "M9 Aim Alpha",
+      "origin": {
+        "x": 5959.5,
+        "y": 625.4998779296875
+      },
+      "power": 38.606280211267,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 6839.5,
+        "y": 625.5
+      },
+      "turn": 1,
+      "weapon": {
+        "ammo": {
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 0,
+          "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+          "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+          "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+          "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 0,
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+          "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+          "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+          "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+          "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+          "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 0,
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+          "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+          "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+          "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+        },
+        "angle": -0.7853981633974483,
+        "equipped": "219d46ea-fa7c-4578-b119-bba07279e6f0",
+        "gravityScale": 1,
+        "items": [
+          "219d46ea-fa7c-4578-b119-bba07279e6f0",
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+          "9dd9a83c-66b3-4720-a798-b7ce47372022",
+          "fa168217-924a-4b95-b7f2-025d856f5b88",
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+          "70446b65-1a75-4950-840a-443f28dc58a6",
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+          "2ee512d3-c721-4978-a1a5-b97d42255b13",
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+          "a80f054a-6235-4746-b050-8d5cd248dd57",
+          "b4474e78-1c10-4d79-994d-d900ed050664",
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+          "173004dc-1907-43e3-9e01-10f4b7084523",
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+          "1a4d56f6-0058-471f-a4bf-77548338012c",
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+          "e1a46386-8976-4b3c-9408-0159b3f64235",
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+          "2e0a754f-eb50-487b-b90a-907a3a43159a",
+          "780f5cdb-7252-4a69-987b-b908477015ad",
+          "815021a5-49a0-4790-91dd-b5b61a3c5050"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.38606280211267,
+        "speed": {
+          "current": 756.3067635915389,
+          "max": 1800,
+          "min": 100
+        }
+      }
+    }
+  ],
+  "match": {
+    "attack": null,
+    "autoDefenseChecked": true,
+    "biome": "mixed-reach",
+    "bounds": {
+      "h": 1280,
+      "w": 960,
+      "x": 5920,
+      "y": 0
+    },
+    "cashNotice": "M9 Aim Alpha +$3 \u00b7 power",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 53.499999999998245,
+      "rng": 793893465,
+      "serial": 0
+    },
+    "computers": 2,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "generated": 0,
+    "generation": "wfc",
+    "humans": 0,
+    "impact": null,
+    "message": "Lazy Boy set your angle and power. Fire when ready.",
+    "pendingTurn": null,
+    "phase": "turn",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "remaining": 29.600000000000023,
+    "roster": [
+      {
+        "aimedTurn": 1,
+        "autoAimTurn": null,
+        "cashBreakdown": {
+          "aim": 3,
+          "power": 3,
+          "turn": 10,
+          "utility": 15
+        },
+        "cashEarned": 31,
+        "color": "#bcb1ff",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-164fd025-63a9-4fdf-95ba-bd4d25cf9fcc",
+        "index": 0,
+        "kills": 0,
+        "lastMoveX": 5959.5,
+        "moveDistance": 0,
+        "name": "M9 Aim Alpha",
+        "plannedTurn": 1,
+        "preparedTurn": 1,
+        "spawnX": 5960,
+        "surfaceY": 640,
+        "tactic": "Elevation-adjusted shot",
+        "targetId": "instance@spawn-9cd71a46-0bf6-42f4-99ca-98964736cd1d",
+        "weaponId": "standard"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#ffbd82",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-9cd71a46-0bf6-42f4-99ca-98964736cd1d",
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M9 Aim Beta",
+        "spawnX": 6840,
+        "surfaceY": 640,
+        "weaponId": "nuke"
+      }
+    ],
+    "round": 1,
+    "seed": 9029,
+    "shotId": null,
+    "turnNumber": 1,
+    "turnSeconds": 30,
+    "version": 9,
+    "winner": null
+  },
+  "paused": false,
+  "roster": [
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 93,
+        "y": 9
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-164fd025-63a9-4fdf-95ba-bd4d25cf9fcc",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 0,
+      "maxHealth": 100,
+      "name": "M9 Aim Alpha",
+      "residency": "live",
+      "slot": null,
+      "templateId": "b6653dd5-74e8-416b-beac-4a1a7d325cc7",
+      "vx": 0,
+      "vy": 0,
+      "x": 5959.5,
+      "y": 625.5
+    },
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 106,
+        "y": 9
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-9cd71a46-0bf6-42f4-99ca-98964736cd1d",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 2,
+      "maxHealth": 100,
+      "name": "M9 Aim Beta",
+      "residency": "live",
+      "slot": null,
+      "templateId": "b6653dd5-74e8-416b-beac-4a1a7d325cc7",
+      "vx": 0,
+      "vy": 0,
+      "x": 6839.5,
+      "y": 625.4998779296875
+    }
+  ],
+  "world": "49dbd740-735c-4ac6-836c-eff412d0abf4"
+}

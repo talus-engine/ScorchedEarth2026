@@ -1,0 +1,28 @@
+{
+  "world": "51b7df01-64b9-44d6-ab26-f3886aedfddb",
+  "params": {
+    "computers": 2,
+    "deploy": "yes",
+    "humans": 0,
+    "namesText": "M8 Shuffle A\nM8 Shuffle BTony\nCopper",
+    "seed": "7",
+    "turnSeconds": 2030
+  },
+  "preferencesAfterNavigation": {
+    "computers": 2,
+    "humans": 0,
+    "namesText": "M8 Shuffle A\nM8 Shuffle B",
+    "turnSeconds": 20
+  },
+  "diagnosticAccountsStillPresent": [
+    "m8 alpha",
+    "m8 bravo",
+    "m8 charlie",
+    "m8 native a",
+    "m8 native b",
+    "m8 native c",
+    "m8 shuffle a",
+    "m8 shuffle b"
+  ],
+  "observation": "Initial preview restoration was attempted as editor identity became visible; installed writes were not retained through the following navigation. Exact timing/binding cause is unconfirmed. The form submit appended 30 to 20 and names to old values; validation refused the 2030-second turn. No invalid match deployed. Recovery uses the fully booted original ready game, confirms the restored accounts in the installed-state database, and uses already-populated preferences."
+}

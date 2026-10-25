@@ -1,0 +1,411 @@
+{
+  "installed": {
+    "installedBy": "assistant",
+    "version": "0.0.2530",
+    "commit": "7c55ffbb125891b5be680bce1100e1c085d3e49a",
+    "sha256": "503b8e83576ae88107b13dcc85e14d090b4834c611eb62d4f8e1632c8bce1e6e",
+    "rollback": "/private/tmp/indigo-m9-collapse/Talus-2529.app",
+    "accepted": false
+  },
+  "navigate": {
+    "action": "continue",
+    "navigating": true,
+    "next": "The page reloads into the new session; the MCP connection drops and re-attaches. Poll engine_describe_context until world.worldId (or isEditorMode) shows the new session.",
+    "ok": true,
+    "templateId": "d9fa0363-0172-a96e-9b10-0b0c3d9a1f58",
+    "worldId": "1685f5ff-52f6-4e39-bd21-29df56838535",
+    "worldName": "indigo 23/10/26/20:02"
+  },
+  "before": {
+    "bank": {
+      "cpuShops": {
+        "1685f5ff-52f6-4e39-bd21-29df56838535:ready": {
+          "wfc blast": true,
+          "wfc dirt": true,
+          "wfc earth": true,
+          "wfc riot": true
+        },
+        "4127394f-e6b2-40f1-ae5c-0dc0241d7c00:finished": {
+          "copper": true,
+          "tony": true
+        },
+        "4127394f-e6b2-40f1-ae5c-0dc0241d7c00:ready": {
+          "copper": true,
+          "tony": true
+        },
+        "d3fe7d92-cdd9-475e-940f-f5b48e1725a8:ready": {
+          "copper": true,
+          "tony": true
+        }
+      },
+      "players": {
+        "copper": {
+          "cash": 116,
+          "earned": 916,
+          "name": "Copper",
+          "revision": 22,
+          "selected": "nuke",
+          "spent": 1400,
+          "stock": {
+            "battery": 2,
+            "crumble": 1,
+            "digger": 9.923625,
+            "nuke": 2
+          }
+        },
+        "tony": {
+          "cash": 428,
+          "earned": 1008,
+          "name": "Tony",
+          "revision": 131,
+          "selected": "mirv",
+          "spent": 1180,
+          "stock": {
+            "battery": 3,
+            "heavy": 0,
+            "jetpack": 9.999999999999966,
+            "mirv": 3
+          }
+        },
+        "wfc blast": {
+          "cash": 740,
+          "earned": 0,
+          "name": "WFC Blast",
+          "revision": 5,
+          "selected": "riot-blast",
+          "spent": 690,
+          "stock": {
+            "riot-blast": 3
+          }
+        },
+        "wfc dirt": {
+          "cash": 840,
+          "earned": 0,
+          "name": "WFC Dirt",
+          "revision": 5,
+          "selected": "dirt-charge",
+          "spent": 530,
+          "stock": {
+            "dirt-charge": 3
+          }
+        },
+        "wfc earth": {
+          "cash": 680,
+          "earned": 0,
+          "name": "WFC Earth",
+          "revision": 4,
+          "selected": "earth-disrupter",
+          "spent": 860,
+          "stock": {
+            "earth-disrupter": 3
+          }
+        },
+        "wfc riot": {
+          "cash": 850,
+          "earned": 0,
+          "name": "WFC Riot",
+          "revision": 4,
+          "selected": "riot-charge",
+          "spent": 670,
+          "stock": {
+            "riot-charge": 3
+          }
+        }
+      },
+      "rounds": {
+        "4127394f-e6b2-40f1-ae5c-0dc0241d7c00": {
+          "paid": {
+            "copper": 916,
+            "tony": 1008
+          },
+          "round": 1,
+          "seed": 1792769054690
+        }
+      },
+      "version": 1
+    },
+    "error": "",
+    "phase": "ready",
+    "roster": [
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#bcb1ff",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-b9d05994-41c2-4074-8a17-c067a2ee1270",
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "WFC Riot",
+        "placementReady": true,
+        "spawnX": 5960,
+        "surfaceY": 588,
+        "weaponId": "riot-charge"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#ffbd82",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-21a80ad3-ba03-4370-a291-63bc97a41312",
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "WFC Blast",
+        "placementReady": true,
+        "spawnX": 6253,
+        "surfaceY": 720,
+        "weaponId": "riot-blast"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#8ae0ca",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-8146fa16-28e8-4326-8aa2-4cee1e5c8e1a",
+        "index": 2,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "WFC Dirt",
+        "placementReady": true,
+        "spawnX": 6547,
+        "surfaceY": 688,
+        "weaponId": "dirt-charge"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#f7a5c4",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-77ee602d-9e5a-47d5-9534-b2ec202949d9",
+        "index": 3,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "WFC Earth",
+        "placementReady": true,
+        "spawnX": 6840,
+        "surfaceY": 636,
+        "weaponId": "earth-disrupter"
+      }
+    ],
+    "world": "1685f5ff-52f6-4e39-bd21-29df56838535"
+  },
+  "files": {
+    "Game/shop.json": {
+      "bytes": 58653,
+      "hostPath": "/Users/tonygermaneri/Talus/Worlds/indigo 23 10 26 20 02/Game/shop.json",
+      "ok": true,
+      "path": "Game/shop.json",
+      "reloaded": null,
+      "worldId": "1685f5ff-52f6-4e39-bd21-29df56838535"
+    },
+    "Scripts/terrain-observer.ts": {
+      "bytes": 2742,
+      "hostPath": "/Users/tonygermaneri/Talus/Worlds/indigo 23 10 26 20 02/Scripts/terrain-observer.ts",
+      "ok": true,
+      "path": "Scripts/terrain-observer.ts",
+      "reloaded": "script",
+      "worldId": "1685f5ff-52f6-4e39-bd21-29df56838535"
+    },
+    "Scripts/match.ts": {
+      "bytes": 91293,
+      "hostPath": "/Users/tonygermaneri/Talus/Worlds/indigo 23 10 26 20 02/Scripts/match.ts",
+      "ok": true,
+      "path": "Scripts/match.ts",
+      "reloaded": "script",
+      "worldId": "1685f5ff-52f6-4e39-bd21-29df56838535"
+    }
+  },
+  "after": {
+    "bank": {
+      "cpuShops": {
+        "1685f5ff-52f6-4e39-bd21-29df56838535:ready": {
+          "wfc blast": true,
+          "wfc dirt": true,
+          "wfc earth": true,
+          "wfc riot": true
+        },
+        "4127394f-e6b2-40f1-ae5c-0dc0241d7c00:finished": {
+          "copper": true,
+          "tony": true
+        },
+        "4127394f-e6b2-40f1-ae5c-0dc0241d7c00:ready": {
+          "copper": true,
+          "tony": true
+        },
+        "d3fe7d92-cdd9-475e-940f-f5b48e1725a8:ready": {
+          "copper": true,
+          "tony": true
+        }
+      },
+      "players": {
+        "copper": {
+          "cash": 116,
+          "earned": 916,
+          "name": "Copper",
+          "revision": 22,
+          "selected": "nuke",
+          "spent": 1400,
+          "stock": {
+            "battery": 2,
+            "crumble": 1,
+            "digger": 9.923625,
+            "nuke": 2
+          }
+        },
+        "tony": {
+          "cash": 428,
+          "earned": 1008,
+          "name": "Tony",
+          "revision": 131,
+          "selected": "mirv",
+          "spent": 1180,
+          "stock": {
+            "battery": 3,
+            "heavy": 0,
+            "jetpack": 9.999999999999966,
+            "mirv": 3
+          }
+        },
+        "wfc blast": {
+          "cash": 740,
+          "earned": 0,
+          "name": "WFC Blast",
+          "revision": 5,
+          "selected": "riot-blast",
+          "spent": 690,
+          "stock": {
+            "riot-blast": 3
+          }
+        },
+        "wfc dirt": {
+          "cash": 840,
+          "earned": 0,
+          "name": "WFC Dirt",
+          "revision": 5,
+          "selected": "dirt-charge",
+          "spent": 530,
+          "stock": {
+            "dirt-charge": 3
+          }
+        },
+        "wfc earth": {
+          "cash": 680,
+          "earned": 0,
+          "name": "WFC Earth",
+          "revision": 4,
+          "selected": "earth-disrupter",
+          "spent": 860,
+          "stock": {
+            "earth-disrupter": 3
+          }
+        },
+        "wfc riot": {
+          "cash": 850,
+          "earned": 0,
+          "name": "WFC Riot",
+          "revision": 4,
+          "selected": "riot-charge",
+          "spent": 670,
+          "stock": {
+            "riot-charge": 3
+          }
+        }
+      },
+      "rounds": {
+        "4127394f-e6b2-40f1-ae5c-0dc0241d7c00": {
+          "paid": {
+            "copper": 916,
+            "tony": 1008
+          },
+          "round": 1,
+          "seed": 1792769054690
+        }
+      },
+      "version": 1
+    },
+    "error": "",
+    "phase": "ready",
+    "roster": [
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#bcb1ff",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-b9d05994-41c2-4074-8a17-c067a2ee1270",
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "WFC Riot",
+        "placementReady": true,
+        "spawnX": 5960,
+        "surfaceY": 588,
+        "weaponId": "riot-charge"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#ffbd82",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-21a80ad3-ba03-4370-a291-63bc97a41312",
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "WFC Blast",
+        "placementReady": true,
+        "spawnX": 6253,
+        "surfaceY": 720,
+        "weaponId": "riot-blast"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#8ae0ca",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-8146fa16-28e8-4326-8aa2-4cee1e5c8e1a",
+        "index": 2,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "WFC Dirt",
+        "placementReady": true,
+        "spawnX": 6547,
+        "surfaceY": 688,
+        "weaponId": "dirt-charge"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#f7a5c4",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-77ee602d-9e5a-47d5-9534-b2ec202949d9",
+        "index": 3,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "WFC Earth",
+        "placementReady": true,
+        "spawnX": 6840,
+        "surfaceY": 636,
+        "weaponId": "earth-disrupter"
+      }
+    ],
+    "world": "1685f5ff-52f6-4e39-bd21-29df56838535"
+  },
+  "purchasesOn": "0.0.2529",
+  "physicalReplayOn": "0.0.2530"
+}

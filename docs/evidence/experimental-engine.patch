@@ -1,0 +1,202 @@
+diff --git a/src/ai/providers/ChatGptEntityProvider.ts b/src/ai/providers/ChatGptEntityProvider.ts
+index 19fa740e1..b0ed8afe8 100644
+--- a/src/ai/providers/ChatGptEntityProvider.ts
++++ b/src/ai/providers/ChatGptEntityProvider.ts
+@@ -450,7 +450,7 @@ const CHROMA_KEY_LAB_DIST_SQ = 700
+ 
+ async function renderPart(
+   plan: EntityPartPlan,
+-  _partIndex: number,
++  partIndex: number,
+   fullPlan: EntityGenerationPlan,
+   req: EntityGenerationRequest,
+ ): Promise<EntityBodyDef> {
+@@ -515,7 +515,7 @@ async function renderPart(
+   const kinematic = !plan.isRoot  // cosmetic parts are kinematic
+ 
+   return {
+-    bodyIndex:   0,   // parent assigns final indices
++    bodyIndex:   partIndex,
+     name:        plan.name,
+     isStatic:    false,
+     isKinematic: kinematic,
+diff --git a/src/menus/menuDocs.ts b/src/menus/menuDocs.ts
+index 5f3f7ac8d..e9acd2695 100644
+--- a/src/menus/menuDocs.ts
++++ b/src/menus/menuDocs.ts
+@@ -11,6 +11,9 @@
+  * (empty = the built-in behavior, so untouched worlds change nothing);
+  * title is shown before any world exists (menuGameFlow), and hud is the
+  * click-through overlay shown during play.
++ * A new-game button submits named inputs as launch params. A named `seed`
++ * input selects the world's seed before generation; blank requests a new
++ * random seed. Omitting it uses Settings → World, as the built-in menu does.
+  *
+  * TRUST MODEL: menu HTML is markup + CSS + Talus components +
+  * data-talus-action attributes.  <script> is stripped — all logic goes
+diff --git a/src/menus/menuGameFlow.ts b/src/menus/menuGameFlow.ts
+index 6bd1b9c2e..256b7e368 100644
+--- a/src/menus/menuGameFlow.ts
++++ b/src/menus/menuGameFlow.ts
+@@ -20,6 +20,7 @@
+ import { getDatabaseWorker } from '@/workers/databaseWorkerHandle'
+ import { uiDatabase } from '@/app/engine/uiDatabase'
+ import { resolveNewGameSeed } from '@/app/state/newGameSeed'
++import { resolveMenuLaunchSeed } from './menuLaunchSeed'
+ import { loadMenuSlots } from './menuDocs'
+ import { openTitleMenu } from './menuOverlayState'
+ import { IS_PLAYER_BUILD } from '@/player/playerBuild'
+@@ -80,12 +81,13 @@ function db() {
+ const sessionNav = () => import('@/app/composables/useSessionNav')
+ 
+ export async function newGameFromMenu(templateId: string, params: Record<string, unknown> = {}): Promise<void> {
++  const seed = resolveMenuLaunchSeed(params, resolveNewGameSeed)
+   const tpl = await db().getWorldTemplateById(templateId) as { templateName?: string } | null
+   if (!tpl) throw new Error(`no game template ${templateId}`)
+   await (await sessionNav()).handleMenuNewWorld({
+     name: newWorldName(tpl.templateName ?? ''),
+     template: templateId,
+-    seed: resolveNewGameSeed(),
++    seed,
+     params,
+   })
+ }
+diff --git a/tests/e2e/title-screen.spec.ts b/tests/e2e/title-screen.spec.ts
+index 260ae30ea..99e6dadc0 100644
+--- a/tests/e2e/title-screen.spec.ts
++++ b/tests/e2e/title-screen.spec.ts
+@@ -43,12 +43,14 @@ const TITLE_HTML = `
+   <div data-testid="title-saves">saves: <span data-talus-bind="saves"></span></div>
+   <input data-testid="title-p1" name="p1" placeholder="Player 1">
+   <input data-testid="title-rounds" name="rounds" type="number" value="3">
++  <input data-testid="title-seed" name="seed" type="number" placeholder="Random">
+   <button data-testid="title-new" data-talus-action="new-game">New Game</button>
+   <button data-talus-action="continue">Continue</button>
+ </div>`
+ 
+ const PROBE = `
+ talus.on('world.game-started', (e) => {
++  talus.state.set('judge.seed', e.seed)
+   talus.state.set('judge.startParams', e.params ? e.params.p1 + ':' + e.params.rounds : 'none')
+   const p = talus.game.params
+   talus.state.set('judge.gameParams', p ? p.p1 : 'none')
+@@ -97,6 +99,7 @@ test('an authored title screen shows installed scores and starts a game with its
+   // ── New Game with the typed inputs ──
+   await page.getByTestId('title-p1').fill('Zed')
+   await page.getByTestId('title-rounds').fill('7')
++  await page.getByTestId('title-seed').fill('0')
+   await page.getByTestId('title-new').click()
+   await page.waitForURL(/\/game\//, { timeout: 120_000 })
+   await waitForEngine(page)
+@@ -104,6 +107,7 @@ test('an authored title screen shows installed scores and starts a game with its
+     (await facadeRpc<{ value: unknown }>(page, 'scriptsStateGet', 'judge.startParams')).value,
+   { timeout: 90_000, message: 'world.game-started carried the launch params' }).toBe('Zed:7')
+   expect((await facadeRpc<{ value: unknown }>(page, 'scriptsStateGet', 'judge.gameParams')).value).toBe('Zed')
++  expect((await facadeRpc<{ value: unknown }>(page, 'scriptsStateGet', 'judge.seed')).value).toBe(0)
+ 
+   // The hand-off key was consumed (taken once).
+   const leftover = await page.evaluate(async (tid) => {
+diff --git a/src/menus/menuLaunchSeed.ts b/src/menus/menuLaunchSeed.ts
+new file mode 100644
+index 000000000..5177e1ca0
+--- /dev/null
++++ b/src/menus/menuLaunchSeed.ts
+@@ -0,0 +1,17 @@
++/** An authored new-game form may submit `seed`: blank means a fresh roll.
++ * Omitting the field preserves the engine's configured new-game seed.
++ * Keep this decision before world creation: changing a seed after chunks
++ * generate would leave a world containing two different maps.
++ */
++export function resolveMenuLaunchSeed(
++  params: Record<string, unknown>,
++  configured: () => number,
++  random: () => number = Date.now,
++): number {
++  if (!Object.hasOwn(params, 'seed')) return configured()
++  const value = params.seed
++  if (value === null || (typeof value === 'string' && value.trim() === '')) return random()
++  const seed = typeof value === 'number' || typeof value === 'string' ? Number(value) : NaN
++  if (!Number.isSafeInteger(seed)) throw new Error('Game seed must be a whole number, or blank for a random map.')
++  return seed
++}
+diff --git a/tests/unit/MenuLaunchSeed.test.ts b/tests/unit/MenuLaunchSeed.test.ts
+new file mode 100644
+index 000000000..e0d8ac246
+--- /dev/null
++++ b/tests/unit/MenuLaunchSeed.test.ts
+@@ -0,0 +1,24 @@
++import { describe, expect, it, vi } from 'vitest'
++import { resolveMenuLaunchSeed } from '@/menus/menuLaunchSeed'
++
++describe('authored menu launch seed', () => {
++  it('uses a submitted seed, including zero, without consulting settings', () => {
++    const configured = vi.fn(() => 999)
++    for (const [value, expected] of [[0, 0], ['0', 0], [' 42 ', 42], [-17, -17]] as const) {
++      expect(resolveMenuLaunchSeed({ seed: value }, configured)).toBe(expected)
++    }
++    expect(configured).not.toHaveBeenCalled()
++  })
++  it('blank explicitly requests randomness even with a fixed settings seed', () => {
++    const random = vi.fn().mockReturnValueOnce(101).mockReturnValueOnce(102).mockReturnValueOnce(103)
++    for (const [value, expected] of [['', 101], ['  ', 102], [null, 103]] as const) {
++      expect(resolveMenuLaunchSeed({ seed: value }, () => 42, random)).toBe(expected)
++    }
++  })
++  it('preserves settings for menus with no seed field', () => {
++    expect(resolveMenuLaunchSeed({ players: 4 }, () => 42)).toBe(42)
++  })
++  it.each([true, {}, [], 'not a seed', 'Infinity', 0.5, Number.MAX_SAFE_INTEGER + 1])('refuses invalid input %j before world creation', seed => {
++    expect(() => resolveMenuLaunchSeed({ seed }, () => 42)).toThrow('Game seed')
++  })
++})
+diff --git a/tests/unit/EntityGenerationParts.test.ts b/tests/unit/EntityGenerationParts.test.ts
+new file mode 100644
+index 000000000..1713467b7
+--- /dev/null
++++ b/tests/unit/EntityGenerationParts.test.ts
+@@ -0,0 +1,45 @@
++import { afterEach, beforeEach, expect, it, vi } from 'vitest'
++import { generateEntity, redrawPartsWithPlan, type EntityGenerationPlan, type EntityGenerationRequest } from '@/ai/providers/ChatGptEntityProvider'
++import { callChat } from '@/ai/aiHttpClient'
++
++vi.mock('@/ai/aiHttpClient', () => ({
++  assertChatReady: vi.fn(), assertImageReady: vi.fn(), callChat: vi.fn(),
++  callImage: vi.fn(async () => ({ data: [{ b64_json: 'fixture' }] })),
++}))
++
++const plan: EntityGenerationPlan = {
++  totalWidth: 6, totalHeight: 4,
++  parts: ['Hull', 'Turret', 'Antenna'].map((name, i) => ({
++    name, elementId: 9, boxX: i * 2, boxY: 0, boxW: 2, boxH: 2, isRoot: i === 0,
++  })),
++  joints: [1, 2].map(i => ({ partA: 0, partB: i, type: 'hinge', anchorAX: 0, anchorAY: 0, anchorBX: 0, anchorBY: 0 })),
++}
++const request = {
++  userPrompt: 'three-part tank', targetHeight: 4,
++  elements: [{ id: 9, name: 'STONE', color: [0.5, 0.5, 0.5, 1] }],
++  config: { conversation: {}, image: {} },
++} as EntityGenerationRequest
++
++beforeEach(() => {
++  vi.stubGlobal('Image', class {
++    naturalWidth = 1; naturalHeight = 1; crossOrigin = ''
++    onload: (() => void) | null = null
++    set src(_value: string) { queueMicrotask(() => this.onload?.()) }
++  })
++  vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue({
++    drawImage() {},
++    getImageData: () => ({ width: 1, height: 1, data: new Uint8ClampedArray([128, 128, 128, 255]) }),
++  } as unknown as CanvasRenderingContext2D)
++  vi.mocked(callChat).mockResolvedValue({ choices: [{ message: { content: JSON.stringify(plan) } }] })
++})
++afterEach(() => { vi.restoreAllMocks(); vi.unstubAllGlobals() })
++
++it.each(['generate', 'redraw'] as const)('%s returns distinct body indices matching every joint endpoint', async mode => {
++  const result = mode === 'generate' ? await generateEntity(request) : await redrawPartsWithPlan(plan, request)
++  expect(result.bodies.map(b => b.bodyIndex)).toEqual([0, 1, 2])
++  for (const joint of result.joints) {
++    expect(result.bodies.find(b => b.bodyIndex === joint.bodyA)?.name).toBe('Hull')
++    expect(result.bodies.find(b => b.bodyIndex === joint.bodyB)?.name).toBe(plan.parts[joint.bodyB].name)
++  }
++  expect(result.bodies.every(b => b.pixels.length > 0)).toBe(true)
++})

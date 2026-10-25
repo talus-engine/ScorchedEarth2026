@@ -1,0 +1,108 @@
+{
+  "camera": {
+    "centerX": 6400,
+    "centerY": 768,
+    "visibleChunks": {
+      "h": 16,
+      "w": 26,
+      "x": 87,
+      "y": 4
+    },
+    "visiblePixels": {
+      "h": 968,
+      "w": 1600,
+      "x": 5600,
+      "y": 284
+    },
+    "zoom": 0.25
+  },
+  "chunkSize": 64,
+  "conventions": {
+    "chunkToPixel": "chunk c covers pixels [c * 64, c * 64 + 63]",
+    "coordinates": "Every paint and sample verb takes WORLD PIXEL coordinates, not chunks.",
+    "elements": "Element ids are catalog-assigned and NOT stable across worlds \u2014 resolve them with engine_list_elements.",
+    "verification": "Paint verbs read back what they painted; engine_sample_points inspects any point on demand."
+  },
+  "files": {
+    "hostMount": {
+      "dir": "/Users/tonygermaneri/Talus",
+      "mounted": true
+    },
+    "note": "The page's file tree is mounted at /Users/tonygermaneri/Talus. Read, write, list, move and delete files there with your own file tools; worlds are in Worlds/<world name>/. A script saved there reloads, but check engine_script_status for its compile error. The database is not on the mount \u2014 use the SQL and asset tools.",
+    "preferred": "host-mount",
+    "worldDir": "/Users/tonygermaneri/Talus/Worlds/WFC artist template QA 256201",
+    "worldPath": "Worlds/8c791171-2cbc-48f8-a0ab-65ea50ac330f"
+  },
+  "ok": true,
+  "paint": {
+    "activeElement": {
+      "hex": "#808085",
+      "id": 9,
+      "name": "STONE"
+    },
+    "activeLayer": "foreground",
+    "elementCount": 228,
+    "layers": [
+      {
+        "active": false,
+        "id": "background",
+        "name": "Background",
+        "type": "raster"
+      },
+      {
+        "active": false,
+        "id": "midground",
+        "name": "Midground",
+        "type": "particle"
+      },
+      {
+        "active": true,
+        "id": "foreground",
+        "name": "Foreground",
+        "type": "particle"
+      },
+      {
+        "active": false,
+        "id": "bodies",
+        "name": "Bodies",
+        "type": "group"
+      },
+      {
+        "active": false,
+        "id": "debris",
+        "name": "Debris",
+        "type": "group"
+      },
+      {
+        "active": false,
+        "id": "entities",
+        "name": "Entities",
+        "type": "group"
+      },
+      {
+        "active": false,
+        "id": "projectiles",
+        "name": "Projectiles",
+        "type": "group"
+      },
+      {
+        "active": false,
+        "id": "lights",
+        "name": "Lights",
+        "type": "group"
+      },
+      {
+        "active": false,
+        "id": "occlusion",
+        "name": "Occlusion",
+        "type": "particle"
+      }
+    ]
+  },
+  "world": {
+    "engineBooted": true,
+    "isEditorMode": false,
+    "templateId": null,
+    "worldId": "8c791171-2cbc-48f8-a0ab-65ea50ac330f"
+  }
+}

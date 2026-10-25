@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "status": "Native factions and shuffled voices active; bounded persona shopping, native collision-aware planning and observed impact memory enabled",
+  "shoutTypes": [
+    {
+      "id": "taunt",
+      "label": "Before firing",
+      "presentation": "shot-intro"
+    },
+    {
+      "id": "death",
+      "label": "Last words",
+      "presentation": "death-intro"
+    },
+    {
+      "id": "hit",
+      "label": "Direct hit"
+    },
+    {
+      "id": "miss",
+      "label": "Missed shot"
+    },
+    {
+      "id": "buy",
+      "label": "Purchase"
+    },
+    {
+      "id": "victory",
+      "label": "Victory"
+    },
+    {
+      "id": "chain_reaction",
+      "label": "Chain reaction"
+    }
+  ],
+  "missingShoutType": "silence",
+  "personas": [
+    {
+      "id": "lucky",
+      "name": "Buck \u2018Lucky\u2019 Fuse",
+      "factionId": "terra-lucky-fuses",
+      "factionName": "Lucky Fuses",
+      "skill": "rookie",
+      "palette": {
+        "body": "#FF783C",
+        "turret": "#FFF1C1",
+        "accent": "#FFD447",
+        "tracks": "#191925"
+      },
+      "strategy": {
+        "primary": "cheap-direct-fire",
+        "risk": 0.8,
+        "saveFraction": 0.1,
+        "weaponPreferences": [
+          "standard",
+          "machine-gun",
+          "heavy"
+        ],
+        "utilityPreferences": [
+          "battery",
+          "fuel-tank"
+        ],
+        "impactMemory": 1,
+        "candidateBudget": 12,
+        "angleErrorDegrees": 5,
+        "powerErrorPercent": 6
+      },
+      "voice": "Cheerful, spectacularly overconfident amateur. Bureaucratic excuses and accidental success."
+    },
+    {
+      "id": "mole",
+      "name": "Molly \u2018Mole\u2019 Morgan",
+      "factionId": "terra-burrow-union",
+      "factionName": "Burrow Union",
+      "skill": "easy",
+      "palette": {
+        "body": "#70F8A0",
+        "turret": "#79503A",
+        "accent": "#FFD447",
+        "tracks": "#191925"
+      },
+      "strategy": {
+        "primary": "excavate-firing-lanes",
+        "risk": 0.4,
+        "saveFraction": 0.2,
+        "weaponPreferences": [
+          "riot",
+          "crumble",
+          "heavy-riot",
+          "standard"
+        ],
+        "utilityPreferences": [
+          "digger",
+          "fuel-tank",
+          "battery"
+        ],
+        "impactMemory": 2,
+        "candidateBudget": 24,
+        "angleErrorDegrees": 3,
+        "powerErrorPercent": 4
+      },
+      "voice": "Proud union tunneler. Foundations, permits, shifts, soil and a deep distrust of ceilings."
+    },
+    {
+      "id": "kiloton",
+      "name": "Captain Kiloton",
+      "factionId": "terra-heavy-weather",
+      "factionName": "Heavy Weather",
+      "skill": "regular",
+      "palette": {
+        "body": "#EC3555",
+        "turret": "#FFD447",
+        "accent": "#FFF1C1",
+        "tracks": "#191925"
+      },
+      "strategy": {
+        "primary": "large-area-damage",
+        "risk": 0.6,
+        "saveFraction": 0.35,
+        "weaponPreferences": [
+          "nuke",
+          "mirv",
+          "heavy",
+          "standard"
+        ],
+        "utilityPreferences": [
+          "shield",
+          "battery",
+          "parachute"
+        ],
+        "impactMemory": 3,
+        "candidateBudget": 48,
+        "angleErrorDegrees": 1.5,
+        "powerErrorPercent": 2.5
+      },
+      "voice": "Bombastic officer who solves small inconveniences with impossibly large ammunition."
+    },
+    {
+      "id": "faultline",
+      "name": "Vera \u2018Faultline\u2019 Voss",
+      "factionId": "terra-gravity-office",
+      "factionName": "Gravity Office",
+      "skill": "hard",
+      "palette": {
+        "body": "#A574F4",
+        "turret": "#86D8FF",
+        "accent": "#FFF1C1",
+        "tracks": "#191925"
+      },
+      "strategy": {
+        "primary": "remove-support-cause-falls",
+        "risk": 0.25,
+        "saveFraction": 0.25,
+        "weaponPreferences": [
+          "crumble",
+          "earth-disrupter",
+          "riot",
+          "standard"
+        ],
+        "utilityPreferences": [
+          "parachute",
+          "digger",
+          "battery"
+        ],
+        "impactMemory": 5,
+        "candidateBudget": 72,
+        "angleErrorDegrees": 0.7,
+        "powerErrorPercent": 1.2
+      },
+      "voice": "Dry structural engineer. Gravity is a colleague, falling is an administrative procedure."
+    },
+    {
+      "id": "domino",
+      "name": "Dr. Domino",
+      "factionId": "terra-cascade-institute",
+      "factionName": "Cascade Institute",
+      "skill": "expert",
+      "palette": {
+        "body": "#35D9FF",
+        "turret": "#FF4FA3",
+        "accent": "#FFF1C1",
+        "tracks": "#191925"
+      },
+      "strategy": {
+        "primary": "chain-reactions",
+        "risk": 0.35,
+        "saveFraction": 0.3,
+        "weaponPreferences": [
+          "napalm",
+          "mirv",
+          "nuke",
+          "crumble",
+          "standard"
+        ],
+        "utilityPreferences": [
+          "magnet",
+          "shield",
+          "jetpack",
+          "battery"
+        ],
+        "impactMemory": 8,
+        "candidateBudget": 96,
+        "angleErrorDegrees": 0.25,
+        "powerErrorPercent": 0.5
+      },
+      "voice": "Polite experimental scientist. Predicts consequences confidently, regrets them academically."
+    }
+  ]
+}

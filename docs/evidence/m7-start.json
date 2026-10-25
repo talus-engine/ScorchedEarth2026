@@ -1,0 +1,169 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 3,
+  "ok": true,
+  "value": {
+    "camera": {
+      "frame": {
+        "result": {
+          "center": {
+            "x": 6399.5,
+            "y": 667.5
+          },
+          "clamped": false,
+          "fitsSimulation": true,
+          "fitsViewport": true
+        },
+        "spec": {
+          "bounds": {
+            "h": 68,
+            "w": 1192,
+            "x": 5803.5,
+            "y": 633.5
+          },
+          "padding": 32,
+          "preferVisible": true
+        }
+      },
+      "loadedBounds": {
+        "h": 1472,
+        "w": 2240,
+        "x": 5248,
+        "y": -64
+      },
+      "simulationBounds": {
+        "h": 1344,
+        "w": 2112,
+        "x": 5312,
+        "y": 0
+      },
+      "targetSimulationBounds": {
+        "h": 1344,
+        "w": 2112,
+        "x": 5312,
+        "y": 0
+      },
+      "viewport": {
+        "h": 968,
+        "w": 1600,
+        "x": 5599.5,
+        "y": 183.5
+      },
+      "zoom": 0.25
+    },
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 1280,
+        "x": 5760,
+        "y": 0
+      },
+      "chaos": {
+        "jobs": [],
+        "notice": "",
+        "quiet": 0,
+        "rng": 839689206,
+        "serial": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "frameNotice": "",
+      "humans": 0,
+      "impact": null,
+      "message": "Tanks ready \u2014 begin when your crew is ready",
+      "phase": "ready",
+      "remaining": 30,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-b6be0171-1fa5-47ad-8e8b-3dc0ed1b994d",
+          "index": 0,
+          "kills": 0,
+          "name": "Tony",
+          "spawnX": 5824,
+          "surfaceY": 672
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-ef98ac78-3c25-4d31-8124-8c57375a9e8e",
+          "index": 1,
+          "kills": 0,
+          "name": "Copper",
+          "spawnX": 6976,
+          "surfaceY": 693
+        }
+      ],
+      "seed": 7,
+      "shotId": null,
+      "turnNumber": 0,
+      "turnSeconds": 30,
+      "version": 6,
+      "winner": null
+    },
+    "paused": false,
+    "preferences": {
+      "computers": 2,
+      "humans": 0,
+      "namesText": "Tony\nCopper",
+      "turnSeconds": 30
+    },
+    "scores": {
+      "matches": {},
+      "players": {}
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": true,
+      "chaosCount": 0,
+      "chaosNotice": "",
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 100,
+        "name": "Tony",
+        "power": 70
+      },
+      "finished": false,
+      "frameNotice": "",
+      "human": false,
+      "lastHit": "",
+      "phase": "ready",
+      "ready": true,
+      "remaining": 30,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "Tony",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 100,
+          "kills": 0,
+          "name": "Copper",
+          "status": "WAITING"
+        }
+      ],
+      "seed": 7,
+      "shotDirection": "RIGHT \u2192",
+      "status": "Tanks ready \u2014 begin when your crew is ready",
+      "tactic": "",
+      "tankCount": 2,
+      "target": "",
+      "turnNumber": 0,
+      "turnSeconds": 30,
+      "winner": "Draw"
+    },
+    "world": "6b416563-7443-48ef-ae75-cc34ef246416"
+  }
+}

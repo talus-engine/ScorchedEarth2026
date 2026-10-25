@@ -1,0 +1,3421 @@
+{
+  "checks": [
+    {
+      "name": "human turn starts with keyboard enabled",
+      "passed": true
+    },
+    {
+      "name": "human positioning moves the tank",
+      "passed": true
+    },
+    {
+      "name": "power input updates blackboard and HUD",
+      "passed": true
+    },
+    {
+      "name": "fire launches one shell and locks human input",
+      "passed": true
+    },
+    {
+      "name": "impact settles before the next tank turn",
+      "passed": true
+    },
+    {
+      "name": "NPC command graph plans and fires the computer shot",
+      "passed": true
+    },
+    {
+      "name": "camera returns after computer impact and shooter can park",
+      "passed": true
+    },
+    {
+      "name": "Enter passes the human turn without pausing",
+      "passed": true
+    },
+    {
+      "name": "turn timer expires and advances without firing",
+      "passed": true
+    },
+    {
+      "name": "no script faults",
+      "passed": true
+    }
+  ],
+  "snapshots": {
+    "ready": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "deployed",
+          "name": "M3 Test Human",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "deployed",
+          "name": "M3 Test CPU",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": false
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Tanks ready \u2014 begin when your crew is ready",
+        "phase": "ready",
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 0,
+        "turnSeconds": 15,
+        "version": 3,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 81,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 2,
+            "maxHealth": 100,
+            "name": "M3 Test Human",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5247.5,
+            "y": 705.9912719726562
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974475,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": false,
+            "power": 1,
+            "speed": {
+              "current": 1800,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "M3 Test CPU",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9910278320312
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": true,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 100,
+          "name": "M3 Test Human",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "ready",
+        "ready": true,
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Tanks ready \u2014 begin when your crew is ready",
+        "tankCount": 2,
+        "turnNumber": 0,
+        "turnSeconds": 15,
+        "winner": "Draw"
+      },
+      "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+    },
+    "humanStart": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "deployed",
+          "name": "M3 Test Human",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "deployed",
+          "name": "M3 Test CPU",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 10.133333333333416,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 1
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": true
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Position, aim and fire",
+        "phase": "turn",
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 1,
+        "turnSeconds": 15,
+        "version": 3,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 81,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 2,
+            "maxHealth": 100,
+            "name": "M3 Test Human",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5247.5,
+            "y": 705.9910278320312
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.7,
+            "speed": {
+              "current": 1290,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "M3 Test CPU",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9910278320312
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 100,
+          "name": "M3 Test Human",
+          "power": 70
+        },
+        "finished": false,
+        "human": true,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Position, aim and fire",
+        "tankCount": 2,
+        "turnNumber": 1,
+        "turnSeconds": 15,
+        "winner": "Draw"
+      },
+      "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+    },
+    "moved": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "deployed",
+          "name": "M3 Test Human",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "deployed",
+          "name": "M3 Test CPU",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 10.133333333333416,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 1
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": true
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Position, aim and fire",
+        "phase": "turn",
+        "remaining": 14.416666666666638,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 1,
+        "turnSeconds": 15,
+        "version": 3,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 2,
+            "maxHealth": 100,
+            "name": "M3 Test Human",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 35,
+            "vy": 0,
+            "x": 5262.98974609375,
+            "y": 705.99267578125
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.7,
+            "speed": {
+              "current": 1290,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "M3 Test CPU",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9910278320312
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 100,
+          "name": "M3 Test Human",
+          "power": 70
+        },
+        "finished": false,
+        "human": true,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Position, aim and fire",
+        "tankCount": 2,
+        "turnNumber": 1,
+        "turnSeconds": 15,
+        "winner": "Draw"
+      },
+      "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+    },
+    "aimed": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "deployed",
+          "name": "M3 Test Human",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "deployed",
+          "name": "M3 Test CPU",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 10.133333333333416,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 1
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": true
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Position, aim and fire",
+        "phase": "turn",
+        "remaining": 14.216666666666628,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 1,
+        "turnSeconds": 15,
+        "version": 3,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 75.5,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 2,
+            "maxHealth": 100,
+            "name": "M3 Test Human",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5262.98974609375,
+            "y": 705.9913940429688
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.755,
+            "speed": {
+              "current": 1383.5,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "M3 Test CPU",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9910278320312
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 100,
+          "name": "M3 Test Human",
+          "power": 75.5
+        },
+        "finished": false,
+        "human": true,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Position, aim and fire",
+        "tankCount": 2,
+        "turnNumber": 1,
+        "turnSeconds": 15,
+        "winner": "Draw"
+      },
+      "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+    },
+    "flight": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "deployed",
+          "name": "M3 Test Human",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "deployed",
+          "name": "M3 Test CPU",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 10.133333333333416,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 10.950000000000124,
+          "kind": "fire-request",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "power": 75.5,
+          "turn": 1
+        },
+        {
+          "clock": 10.966666666666791,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "turn": 1
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": false
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Shell in flight",
+        "phase": "flight",
+        "remaining": 14.183333333333293,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "shotFrom": {
+              "x": 5262.98974609375,
+              "y": 705.9912719726562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": 1,
+        "turnNumber": 1,
+        "turnSeconds": 15,
+        "version": 3,
+        "waitTicks": 0,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 75.5,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 2,
+            "maxHealth": 100,
+            "name": "M3 Test Human",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5262.98974609375,
+            "y": 705.9913940429688
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.755,
+            "speed": {
+              "current": 1383.5,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "M3 Test CPU",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9910278320312
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 100,
+          "name": "M3 Test Human",
+          "power": 75.5
+        },
+        "finished": false,
+        "human": false,
+        "phase": "flight",
+        "ready": false,
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Shell in flight",
+        "tankCount": 2,
+        "turnNumber": 1,
+        "turnSeconds": 15,
+        "winner": "Draw"
+      },
+      "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+    },
+    "cpuStart": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "deployed",
+          "name": "M3 Test Human",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "deployed",
+          "name": "M3 Test CPU",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 10.133333333333416,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 10.950000000000124,
+          "kind": "fire-request",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "power": 75.5,
+          "turn": 1
+        },
+        {
+          "clock": 10.966666666666791,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "turn": 1
+        },
+        {
+          "clock": 13.96666666666694,
+          "kind": "end",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 8137,
+          "y": 667.75
+        },
+        {
+          "clock": 14.466666666666963,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7945,
+            "y": 539.75
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 14.466666666666963,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "turn",
+          "name": "M3 Test CPU",
+          "turn": 2
+        },
+        {
+          "clock": 14.483333333333633,
+          "kind": "cpu-plan",
+          "name": "M3 Test CPU",
+          "power": 70,
+          "target": "M3 Test Human",
+          "turn": 2
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": false
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 1,
+        "humans": 1,
+        "impact": null,
+        "message": "Computer is choosing its shot",
+        "phase": "turn",
+        "remaining": 14.949999999999998,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "shotFrom": {
+              "x": 5262.98974609375,
+              "y": 705.9912719726562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "plannedTurn": 2,
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 2,
+        "turnSeconds": 15,
+        "version": 3,
+        "waitTicks": 180,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 75.5,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "M3 Test Human",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5262.98974609375,
+            "y": 705.9912719726562
+          },
+          "weapon": null
+        },
+        {
+          "angle": 135,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 4,
+            "maxHealth": 100,
+            "name": "M3 Test CPU",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9905395507812
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -2.356194490192345,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.7,
+            "speed": {
+              "current": 1290,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 135,
+          "color": "#ffbd82",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test CPU",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "status": "WAITING"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "status": "CURRENT"
+          }
+        ],
+        "seed": 0,
+        "status": "Computer is choosing its shot",
+        "tankCount": 2,
+        "turnNumber": 2,
+        "turnSeconds": 15,
+        "winner": "Draw"
+      },
+      "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+    },
+    "cpuFlight": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "deployed",
+          "name": "M3 Test Human",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "deployed",
+          "name": "M3 Test CPU",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 10.133333333333416,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 10.950000000000124,
+          "kind": "fire-request",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "power": 75.5,
+          "turn": 1
+        },
+        {
+          "clock": 10.966666666666791,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "turn": 1
+        },
+        {
+          "clock": 13.96666666666694,
+          "kind": "end",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 8137,
+          "y": 667.75
+        },
+        {
+          "clock": 14.466666666666963,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7945,
+            "y": 539.75
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 14.466666666666963,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "turn",
+          "name": "M3 Test CPU",
+          "turn": 2
+        },
+        {
+          "clock": 14.483333333333633,
+          "kind": "cpu-plan",
+          "name": "M3 Test CPU",
+          "power": 70,
+          "target": "M3 Test Human",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 15.683333333333692,
+          "kind": "fire-request",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 15.683333333333692,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "turn": 2
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": false
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 1,
+        "humans": 1,
+        "impact": null,
+        "message": "Shell in flight",
+        "phase": "flight",
+        "remaining": 13.783333333333273,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "shotFrom": {
+              "x": 5262.98974609375,
+              "y": 705.9912719726562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "plannedTurn": 2,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 609.9900512695312
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d"
+          }
+        ],
+        "seed": 0,
+        "shotId": 2,
+        "turnNumber": 2,
+        "turnSeconds": 15,
+        "version": 3,
+        "waitTicks": 0,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 75.5,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "M3 Test Human",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5262.98974609375,
+            "y": 705.9912719726562
+          },
+          "weapon": null
+        },
+        {
+          "angle": 135,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 4,
+            "maxHealth": 100,
+            "name": "M3 Test CPU",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9921264648438
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -2.356194490192345,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.7,
+            "speed": {
+              "current": 1290,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 135,
+          "color": "#ffbd82",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test CPU",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "flight",
+        "ready": false,
+        "remaining": 14,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "status": "WAITING"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "status": "CURRENT"
+          }
+        ],
+        "seed": 0,
+        "status": "Shell in flight",
+        "tankCount": 2,
+        "turnNumber": 2,
+        "turnSeconds": 15,
+        "winner": "Draw"
+      },
+      "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+    },
+    "humanReturn": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "deployed",
+          "name": "M3 Test Human",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "deployed",
+          "name": "M3 Test CPU",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 10.133333333333416,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 10.950000000000124,
+          "kind": "fire-request",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "power": 75.5,
+          "turn": 1
+        },
+        {
+          "clock": 10.966666666666791,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "turn": 1
+        },
+        {
+          "clock": 13.96666666666694,
+          "kind": "end",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 8137,
+          "y": 667.75
+        },
+        {
+          "clock": 14.466666666666963,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7945,
+            "y": 539.75
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 14.466666666666963,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "turn",
+          "name": "M3 Test CPU",
+          "turn": 2
+        },
+        {
+          "clock": 14.483333333333633,
+          "kind": "cpu-plan",
+          "name": "M3 Test CPU",
+          "power": 70,
+          "target": "M3 Test Human",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 15.683333333333692,
+          "kind": "fire-request",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 15.683333333333692,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "turn": 2
+        },
+        {
+          "clock": 18.566666666666897,
+          "kind": "end",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4969.6767578125,
+          "y": 655.75
+        },
+        {
+          "clock": 19.066666666666865,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4777.6767578125,
+            "y": 527.75
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 19.066666666666865,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 3
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": true
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Position, aim and fire",
+        "phase": "turn",
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "shotFrom": {
+              "x": 5262.98974609375,
+              "y": 705.9912719726562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "plannedTurn": 2,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 609.9900512695312
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 3,
+        "turnSeconds": 15,
+        "version": 3,
+        "waitTicks": 173,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 75.5,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 6,
+            "maxHealth": 100,
+            "name": "M3 Test Human",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5262.98974609375,
+            "y": 705.9913940429688
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.755,
+            "speed": {
+              "current": 1383.5,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 135,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "M3 Test CPU",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9924926757812
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 100,
+          "name": "M3 Test Human",
+          "power": 75.5
+        },
+        "finished": false,
+        "human": true,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Position, aim and fire",
+        "tankCount": 2,
+        "turnNumber": 3,
+        "turnSeconds": 15,
+        "winner": "Draw"
+      },
+      "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+    },
+    "passed": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "deployed",
+          "name": "M3 Test Human",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "deployed",
+          "name": "M3 Test CPU",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 10.133333333333416,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 10.950000000000124,
+          "kind": "fire-request",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "power": 75.5,
+          "turn": 1
+        },
+        {
+          "clock": 10.966666666666791,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "turn": 1
+        },
+        {
+          "clock": 13.96666666666694,
+          "kind": "end",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 8137,
+          "y": 667.75
+        },
+        {
+          "clock": 14.466666666666963,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7945,
+            "y": 539.75
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 14.466666666666963,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "turn",
+          "name": "M3 Test CPU",
+          "turn": 2
+        },
+        {
+          "clock": 14.483333333333633,
+          "kind": "cpu-plan",
+          "name": "M3 Test CPU",
+          "power": 70,
+          "target": "M3 Test Human",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 15.683333333333692,
+          "kind": "fire-request",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 15.683333333333692,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "turn": 2
+        },
+        {
+          "clock": 18.566666666666897,
+          "kind": "end",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4969.6767578125,
+          "y": 655.75
+        },
+        {
+          "clock": 19.066666666666865,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4777.6767578125,
+            "y": 527.75
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 19.066666666666865,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 3
+        },
+        {
+          "clock": 19.08333333333353,
+          "kind": "pass",
+          "turn": 3
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": false
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 1,
+        "humans": 1,
+        "impact": null,
+        "message": "Loading M3 Test CPU",
+        "phase": "focusing",
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "shotFrom": {
+              "x": 5262.98974609375,
+              "y": 705.9912719726562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "plannedTurn": 2,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 609.9900512695312
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 4,
+        "turnSeconds": 15,
+        "version": 3,
+        "waitTicks": 173,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 75.5,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 6,
+            "maxHealth": 100,
+            "name": "M3 Test Human",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5262.98974609375,
+            "y": 705.9913940429688
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.755,
+            "speed": {
+              "current": 1383.5,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 135,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "M3 Test CPU",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9924926757812
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 135,
+          "color": "#ffbd82",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test CPU",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "focusing",
+        "ready": false,
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "status": "WAITING"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "status": "CURRENT"
+          }
+        ],
+        "seed": 0,
+        "status": "Loading M3 Test CPU",
+        "tankCount": 2,
+        "turnNumber": 4,
+        "turnSeconds": 15,
+        "winner": "Draw"
+      },
+      "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+    },
+    "humanTimeoutStart": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "deployed",
+          "name": "M3 Test Human",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "deployed",
+          "name": "M3 Test CPU",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 10.133333333333416,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 10.950000000000124,
+          "kind": "fire-request",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "power": 75.5,
+          "turn": 1
+        },
+        {
+          "clock": 10.966666666666791,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "turn": 1
+        },
+        {
+          "clock": 13.96666666666694,
+          "kind": "end",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 8137,
+          "y": 667.75
+        },
+        {
+          "clock": 14.466666666666963,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7945,
+            "y": 539.75
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 14.466666666666963,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "turn",
+          "name": "M3 Test CPU",
+          "turn": 2
+        },
+        {
+          "clock": 14.483333333333633,
+          "kind": "cpu-plan",
+          "name": "M3 Test CPU",
+          "power": 70,
+          "target": "M3 Test Human",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 15.683333333333692,
+          "kind": "fire-request",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 15.683333333333692,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "turn": 2
+        },
+        {
+          "clock": 18.566666666666897,
+          "kind": "end",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4969.6767578125,
+          "y": 655.75
+        },
+        {
+          "clock": 19.066666666666865,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4777.6767578125,
+            "y": 527.75
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 19.066666666666865,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 3
+        },
+        {
+          "clock": 19.08333333333353,
+          "kind": "pass",
+          "turn": 3
+        },
+        {
+          "clock": 19.13333333333353,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "turn",
+          "name": "M3 Test CPU",
+          "turn": 4
+        },
+        {
+          "clock": 19.15000000000019,
+          "kind": "cpu-plan",
+          "name": "M3 Test CPU",
+          "power": 65.55970680438193,
+          "target": "M3 Test Human",
+          "turn": 4
+        },
+        {
+          "angle": 135,
+          "clock": 20.36666666666679,
+          "kind": "fire-request",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "power": 66,
+          "turn": 4
+        },
+        {
+          "clock": 20.36666666666679,
+          "id": 3,
+          "kind": "launch",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "turn": 4
+        },
+        {
+          "amount": 5.953690976546323,
+          "clock": 23.166666666666632,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "projectileId": 3,
+          "targetEntityId": 9,
+          "targetStableId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "turn": 4
+        },
+        {
+          "clock": 23.166666666666632,
+          "kind": "end",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "shooterResidency": "stored",
+          "turn": 4,
+          "x": 5171,
+          "y": 711.6917724609375
+        },
+        {
+          "clock": 23.666666666666604,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4979,
+            "y": 583.6917724609375
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 4,
+          "watchId": 3
+        },
+        {
+          "clock": 23.666666666666604,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 5
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": true
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Position, aim and fire",
+        "phase": "turn",
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "shotFrom": {
+              "x": 5262.98974609375,
+              "y": 705.9912719726562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "plannedTurn": 4,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 609.9910888671875
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 5,
+        "turnSeconds": 15,
+        "version": 3,
+        "waitTicks": 168,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 75.5,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 94.04630902345367,
+            "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 9,
+            "maxHealth": 100,
+            "name": "M3 Test Human",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5262.98974609375,
+            "y": 705.9913940429688
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.755,
+            "speed": {
+              "current": 1383.5,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 135,
+          "power": 66,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "M3 Test CPU",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9901733398438
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 94,
+          "name": "M3 Test Human",
+          "power": 75.5
+        },
+        "finished": false,
+        "human": true,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 94,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Position, aim and fire",
+        "tankCount": 2,
+        "turnNumber": 5,
+        "turnSeconds": 15,
+        "winner": "Draw"
+      },
+      "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+    },
+    "timeoutTurn": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "deployed",
+          "name": "M3 Test Human",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "deployed",
+          "name": "M3 Test CPU",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 10.133333333333416,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 10.950000000000124,
+          "kind": "fire-request",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "power": 75.5,
+          "turn": 1
+        },
+        {
+          "clock": 10.966666666666791,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "turn": 1
+        },
+        {
+          "clock": 13.96666666666694,
+          "kind": "end",
+          "owner": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 8137,
+          "y": 667.75
+        },
+        {
+          "clock": 14.466666666666963,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7945,
+            "y": 539.75
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 14.466666666666963,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "turn",
+          "name": "M3 Test CPU",
+          "turn": 2
+        },
+        {
+          "clock": 14.483333333333633,
+          "kind": "cpu-plan",
+          "name": "M3 Test CPU",
+          "power": 70,
+          "target": "M3 Test Human",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 15.683333333333692,
+          "kind": "fire-request",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 15.683333333333692,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "turn": 2
+        },
+        {
+          "clock": 18.566666666666897,
+          "kind": "end",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4969.6767578125,
+          "y": 655.75
+        },
+        {
+          "clock": 19.066666666666865,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4777.6767578125,
+            "y": 527.75
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 19.066666666666865,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 3
+        },
+        {
+          "clock": 19.08333333333353,
+          "kind": "pass",
+          "turn": 3
+        },
+        {
+          "clock": 19.13333333333353,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "turn",
+          "name": "M3 Test CPU",
+          "turn": 4
+        },
+        {
+          "clock": 19.15000000000019,
+          "kind": "cpu-plan",
+          "name": "M3 Test CPU",
+          "power": 65.55970680438193,
+          "target": "M3 Test Human",
+          "turn": 4
+        },
+        {
+          "angle": 135,
+          "clock": 20.36666666666679,
+          "kind": "fire-request",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "power": 66,
+          "turn": 4
+        },
+        {
+          "clock": 20.36666666666679,
+          "id": 3,
+          "kind": "launch",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "turn": 4
+        },
+        {
+          "amount": 5.953690976546323,
+          "clock": 23.166666666666632,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "projectileId": 3,
+          "targetEntityId": 9,
+          "targetStableId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "turn": 4
+        },
+        {
+          "clock": 23.166666666666632,
+          "kind": "end",
+          "owner": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "shooterResidency": "stored",
+          "turn": 4,
+          "x": 5171,
+          "y": 711.6917724609375
+        },
+        {
+          "clock": 23.666666666666604,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4979,
+            "y": 583.6917724609375
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 4,
+          "watchId": 3
+        },
+        {
+          "clock": 23.666666666666604,
+          "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+          "kind": "turn",
+          "name": "M3 Test Human",
+          "turn": 5
+        },
+        {
+          "clock": 38.666666666665755,
+          "kind": "timeout",
+          "turn": 5
+        },
+        {
+          "clock": 38.71666666666575,
+          "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+          "kind": "turn",
+          "name": "M3 Test CPU",
+          "turn": 6
+        },
+        {
+          "clock": 38.73333333333242,
+          "kind": "cpu-plan",
+          "name": "M3 Test CPU",
+          "power": 64.59744055861503,
+          "target": "M3 Test Human",
+          "turn": 6
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": false
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 1,
+        "humans": 1,
+        "impact": null,
+        "message": "Computer is choosing its shot",
+        "phase": "turn",
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "shotFrom": {
+              "x": 5262.98974609375,
+              "y": 705.9912719726562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "plannedTurn": 4,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 609.9910888671875
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 6,
+        "turnSeconds": 15,
+        "version": 3,
+        "waitTicks": 168,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 75.5,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 94.04630902345367,
+            "id": "instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 9,
+            "maxHealth": 100,
+            "name": "M3 Test Human",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5262.98974609375,
+            "y": 705.9912719726562
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.755,
+            "speed": {
+              "current": 1383.5,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 135,
+          "power": 65,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 10,
+            "maxHealth": 100,
+            "name": "M3 Test CPU",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9996337890625
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -2.356194490192345,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.65,
+            "speed": {
+              "current": 1205,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 135,
+          "color": "#ffbd82",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test CPU",
+          "power": 65
+        },
+        "finished": false,
+        "human": false,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 15,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 94,
+            "kills": 0,
+            "name": "M3 Test Human",
+            "status": "WAITING"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test CPU",
+            "status": "CURRENT"
+          }
+        ],
+        "seed": 0,
+        "status": "Computer is choosing its shot",
+        "tankCount": 2,
+        "turnNumber": 6,
+        "turnSeconds": 15,
+        "winner": "Draw"
+      },
+      "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+    }
+  },
+  "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd",
+  "scriptStatus": {
+    "faulted": [],
+    "generation": 2,
+    "ok": true,
+    "root": "Worlds/84d937d4-f1dc-4c25-a86d-195aaa0b85bd/Scripts",
+    "scripts": [
+      {
+        "avgUs": 244,
+        "enabled": true,
+        "entries": 2546,
+        "handlers": 22,
+        "id": "match",
+        "logTail": [
+          "land {\"id\":\"instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d\"}",
+          "deployed {\"name\":\"M3 Test Human\",\"id\":\"instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d\"}",
+          "land {\"id\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\"}",
+          "deployed {\"name\":\"M3 Test CPU\",\"id\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\"}",
+          "match-ready {\"phase\":\"ready\"}",
+          "turn {\"name\":\"M3 Test Human\",\"id\":\"instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d\"}",
+          "fire-request {\"owner\":\"instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d\",\"angle\":45,\"power\":75.5}",
+          "launch {\"id\":1,\"owner\":\"instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d\"}",
+          "end {\"x\":8137,\"y\":667.75,\"owner\":\"instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d\",\"shooterResidency\":\"stored\"}",
+          "settled {\"watchId\":1,\"rect\":{\"x\":7945,\"y\":539.75,\"w\":384,\"h\":384},\"ticks\":30,\"timedOut\":false}",
+          "turn {\"name\":\"M3 Test CPU\",\"id\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\"}",
+          "cpu-plan {\"name\":\"M3 Test CPU\",\"target\":\"M3 Test Human\",\"power\":70}",
+          "fire-request {\"owner\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\",\"angle\":135,\"power\":70}",
+          "launch {\"id\":2,\"owner\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\"}",
+          "end {\"x\":4969.6767578125,\"y\":655.75,\"owner\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\",\"shooterResidency\":\"stored\"}",
+          "settled {\"watchId\":2,\"rect\":{\"x\":4777.6767578125,\"y\":527.75,\"w\":384,\"h\":384},\"ticks\":30,\"timedOut\":false}",
+          "turn {\"name\":\"M3 Test Human\",\"id\":\"instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d\"}",
+          "pass {}",
+          "turn {\"name\":\"M3 Test CPU\",\"id\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\"}",
+          "cpu-plan {\"name\":\"M3 Test CPU\",\"target\":\"M3 Test Human\",\"power\":65.55970680438193}",
+          "fire-request {\"owner\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\",\"angle\":135,\"power\":66}",
+          "launch {\"id\":3,\"owner\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\"}",
+          "hit {\"targetEntityId\":9,\"amount\":5.953690976546323,\"killed\":false,\"direct\":false,\"targetStableId\":\"instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d\",\"projectileId\":3,\"kind\":\"rigid-body\",\"ownerEntityId\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\"}",
+          "end {\"x\":5171,\"y\":711.6917724609375,\"owner\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\",\"shooterResidency\":\"stored\"}",
+          "settled {\"watchId\":3,\"rect\":{\"x\":4979,\"y\":583.6917724609375,\"w\":384,\"h\":384},\"ticks\":30,\"timedOut\":false}",
+          "turn {\"name\":\"M3 Test Human\",\"id\":\"instance@spawn-6917aafe-4963-44b3-ba28-7abddb32a29d\"}",
+          "timeout {}",
+          "turn {\"name\":\"M3 Test CPU\",\"id\":\"instance@spawn-861c1f3b-4009-43e1-8fec-846366acca6c\"}",
+          "cpu-plan {\"name\":\"M3 Test CPU\",\"target\":\"M3 Test Human\",\"power\":64.59744055861503}"
+        ],
+        "path": "match.ts",
+        "suspended": null
+      }
+    ],
+    "worldId": "84d937d4-f1dc-4c25-a86d-195aaa0b85bd"
+  },
+  "accepted": true
+}

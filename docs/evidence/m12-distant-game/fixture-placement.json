@@ -1,0 +1,155 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 100,
+  "ok": true,
+  "value": {
+    "after": {
+      "shooter": {
+        "alive": true,
+        "angle": 0.25571441650390625,
+        "chunk": {
+          "x": 93,
+          "y": 10
+        },
+        "faction": "terra-heavy-weather",
+        "health": 100,
+        "id": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M12V Distant Alpha",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 0,
+        "x": 5999.435546875,
+        "y": 643.1119995117188
+      },
+      "target": {
+        "alive": true,
+        "angle": 0.1936219781637192,
+        "chunk": {
+          "x": 133,
+          "y": 9
+        },
+        "faction": "terra-cascade-institute",
+        "health": 100,
+        "id": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M12V Distant Beta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 0,
+        "x": 8559,
+        "y": 604
+      }
+    },
+    "before": {
+      "shooter": {
+        "alive": true,
+        "angle": 0.25571441650390625,
+        "chunk": {
+          "x": 93,
+          "y": 10
+        },
+        "faction": "terra-heavy-weather",
+        "health": 100,
+        "id": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M12V Distant Alpha",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 0,
+        "x": 5999.435546875,
+        "y": 643.1119995117188
+      },
+      "target": {
+        "alive": true,
+        "angle": 0.1936219781637192,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": "terra-cascade-institute",
+        "health": 100,
+        "id": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M12V Distant Beta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 0,
+        "x": 6839.5,
+        "y": 614.4850463867188
+      }
+    },
+    "camera": {
+      "frame": null,
+      "loadedBounds": {
+        "h": 1472,
+        "w": 2240,
+        "x": 4864,
+        "y": -64
+      },
+      "simulationBounds": {
+        "h": 1344,
+        "w": 2112,
+        "x": 4928,
+        "y": 0
+      },
+      "targetSimulationBounds": {
+        "h": 1344,
+        "w": 2112,
+        "x": 4928,
+        "y": 0
+      },
+      "viewport": {
+        "h": 968,
+        "w": 1600,
+        "x": 5199.435546875008,
+        "y": 158.6002854184802
+      },
+      "zoom": 0.25
+    },
+    "clock": 11.1666666666668,
+    "kind": "controlled-pre-Begin-placement",
+    "note": "Only the diagnostic target was placed, 48px above surveyed terrain, to settle naturally when resident. Native teleport zeros its velocity. No terrain, health, ammunition, reward or camera override.",
+    "placement": {
+      "surfaceMax": 656,
+      "surfaceMin": 652,
+      "x": 8559,
+      "y": 604
+    },
+    "separation": 2559.564453125,
+    "surveyed": [
+      {
+        "x": 8559,
+        "ys": [
+          652,
+          655,
+          656,
+          656,
+          656
+        ]
+      }
+    ],
+    "world": "6fdecc45-4adb-4c8e-a952-ed9fa48cbbb1"
+  }
+}

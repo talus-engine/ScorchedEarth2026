@@ -1,0 +1,156 @@
+{
+  "actorHealth": 100,
+  "cameraAfter": {
+    "frame": null,
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5056,
+      "y": -320
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5120,
+      "y": -256
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5120,
+      "y": -256
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5400,
+      "y": -84
+    },
+    "zoom": 0.25
+  },
+  "cameraBefore": {
+    "frame": null,
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5056,
+      "y": -320
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5120,
+      "y": -256
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5120,
+      "y": -256
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5400,
+      "y": -84
+    },
+    "zoom": 0.25
+  },
+  "first": {
+    "accepted": 1280,
+    "added": 0,
+    "evaluated": 4500,
+    "id": 2,
+    "reason": "ok",
+    "rejected": 0,
+    "removed": 1280,
+    "skipped": 3220,
+    "status": "completed",
+    "work": 3840
+  },
+  "near": {
+    "accepted": 1126,
+    "added": 1126,
+    "evaluated": 2304,
+    "id": 4,
+    "reason": "ok",
+    "rejected": 0,
+    "removed": 0,
+    "skipped": 665,
+    "status": "completed",
+    "work": 1126
+  },
+  "placed": 1280,
+  "refused": {
+    "accepted": 0,
+    "added": 0,
+    "evaluated": 1280,
+    "id": 1,
+    "reason": "budget-or-capacity",
+    "rejected": 1280,
+    "removed": 0,
+    "skipped": 0,
+    "status": "refused",
+    "work": 0
+  },
+  "sand": 11,
+  "second": {
+    "accepted": 0,
+    "added": 0,
+    "evaluated": 1280,
+    "id": 3,
+    "reason": "ok",
+    "rejected": 0,
+    "removed": 0,
+    "skipped": 1280,
+    "status": "completed",
+    "work": 0
+  },
+  "start": {
+    "alive": true,
+    "angle": 0,
+    "chunk": {
+      "x": 97,
+      "y": 6
+    },
+    "faction": null,
+    "health": 100,
+    "id": "instance@spawn-8a05ee3f-a0fd-4159-9a5b-2727a18702ba",
+    "keepLiveOffscreen": false,
+    "launchedBy": null,
+    "liveId": 0,
+    "maxHealth": 100,
+    "name": "Feris Blackmere",
+    "residency": "live",
+    "slot": null,
+    "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+    "vx": 0,
+    "vy": 0,
+    "x": 6260,
+    "y": 385.4999084472656
+  },
+  "stone": 9,
+  "walked": {
+    "alive": true,
+    "angle": 0,
+    "chunk": {
+      "x": 98,
+      "y": 6
+    },
+    "faction": null,
+    "health": 100,
+    "id": "instance@spawn-8a05ee3f-a0fd-4159-9a5b-2727a18702ba",
+    "keepLiveOffscreen": false,
+    "launchedBy": null,
+    "liveId": 0,
+    "maxHealth": 100,
+    "name": "Feris Blackmere",
+    "residency": "live",
+    "slot": null,
+    "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+    "vx": 35,
+    "vy": 0,
+    "x": 6306.6796875,
+    "y": 385.6722106933594
+  }
+}

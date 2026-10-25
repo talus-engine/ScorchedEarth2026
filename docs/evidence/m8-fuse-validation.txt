@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/tonygermaneri/gh/indigo/tools/bridge.py", line 40, in <module>
+    result = call(a.tool, json.loads(raw))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tonygermaneri/gh/indigo/tools/bridge.py", line 25, in call
+    raise RuntimeError(f"{name}: HTTP {error.code}: {error.read().decode()}") from None
+RuntimeError: save_entity_template: HTTP 422: {"error":"{\n  \"ok\": false,\n  \"error\": \"the patch does not fit the template\",\n  \"saved\": false,\n  \"errors\": [\n    \"itemData.modSpec.projectile.detonate.fuse: expected boolean, got number\"\n  ]\n}"}

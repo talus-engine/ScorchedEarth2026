@@ -1,0 +1,4780 @@
+{
+  "version": 1,
+  "note": "These references are inventoried, not yet materialized as portable game assets. Native dependency closure and scoped runtime registration are engine follow-up E43.",
+  "references": [
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-ancient-ruins",
+      "uses": [
+        "semantic.json/recipes/65/neural/anchors/0/anchorId",
+        "semantic.json/recipes/73/neural/anchors/1/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-castle-dungeon",
+      "uses": [
+        "semantic.json/recipes/1/neural/anchors/1/anchorId",
+        "semantic.json/recipes/9/neural/anchors/0/anchorId",
+        "semantic.json/recipes/39/neural/anchors/0/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-castle-wall",
+      "uses": [
+        "semantic.json/recipes/35/neural/anchors/0/anchorId",
+        "semantic.json/recipes/73/neural/anchors/0/anchorId",
+        "semantic.json/recipes/86/neural/anchors/0/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-catacombs",
+      "uses": [
+        "semantic.json/recipes/2/neural/anchors/0/anchorId",
+        "semantic.json/recipes/9/neural/anchors/1/anchorId",
+        "semantic.json/recipes/39/neural/anchors/1/anchorId",
+        "semantic.json/recipes/46/neural/anchors/0/anchorId",
+        "semantic.json/recipes/65/neural/anchors/1/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-cliffside",
+      "uses": [
+        "semantic.json/recipes/4/neural/anchors/0/anchorId",
+        "semantic.json/recipes/41/neural/anchors/1/anchorId",
+        "semantic.json/recipes/55/neural/anchors/1/anchorId",
+        "semantic.json/recipes/60/neural/anchors/1/anchorId",
+        "semantic.json/recipes/69/neural/anchors/1/anchorId",
+        "semantic.json/recipes/71/neural/anchors/0/anchorId",
+        "semantic.json/recipes/85/neural/anchors/0/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-coal",
+      "uses": [
+        "semantic.json/recipes/0/neural/anchors/1/anchorId",
+        "semantic.json/recipes/6/neural/anchors/2/anchorId",
+        "semantic.json/recipes/16/neural/anchors/0/anchorId",
+        "semantic.json/recipes/26/neural/anchors/1/anchorId",
+        "semantic.json/recipes/28/neural/anchors/0/anchorId",
+        "semantic.json/recipes/49/neural/anchors/1/anchorId",
+        "semantic.json/recipes/61/neural/anchors/0/anchorId",
+        "semantic.json/recipes/66/neural/anchors/1/anchorId",
+        "semantic.json/recipes/75/neural/anchors/2/anchorId",
+        "semantic.json/recipes/79/neural/anchors/1/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-dark-dungeon",
+      "uses": [
+        "semantic.json/recipes/46/neural/anchors/1/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-dunes",
+      "uses": [
+        "semantic.json/recipes/7/neural/anchors/1/anchorId",
+        "semantic.json/recipes/10/neural/anchors/1/anchorId",
+        "semantic.json/recipes/12/neural/anchors/1/anchorId",
+        "semantic.json/recipes/21/neural/anchors/1/anchorId",
+        "semantic.json/recipes/23/neural/anchors/0/anchorId",
+        "semantic.json/recipes/31/neural/anchors/0/anchorId",
+        "semantic.json/recipes/33/neural/anchors/1/anchorId",
+        "semantic.json/recipes/60/neural/anchors/0/anchorId",
+        "semantic.json/recipes/63/neural/anchors/0/anchorId",
+        "semantic.json/recipes/69/neural/anchors/0/anchorId",
+        "semantic.json/recipes/71/neural/anchors/1/anchorId",
+        "semantic.json/recipes/74/neural/anchors/0/anchorId",
+        "semantic.json/recipes/75/neural/anchors/1/anchorId",
+        "semantic.json/recipes/79/neural/anchors/0/anchorId",
+        "semantic.json/recipes/88/neural/anchors/1/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-engine-room",
+      "uses": [
+        "semantic.json/recipes/29/neural/anchors/1/anchorId",
+        "semantic.json/recipes/35/neural/anchors/1/anchorId",
+        "semantic.json/recipes/54/neural/anchors/1/anchorId",
+        "semantic.json/recipes/68/neural/anchors/1/anchorId",
+        "semantic.json/recipes/76/neural/anchors/0/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-factory-floor",
+      "uses": [
+        "semantic.json/recipes/11/neural/anchors/1/anchorId",
+        "semantic.json/recipes/17/neural/anchors/1/anchorId",
+        "semantic.json/recipes/22/neural/anchors/1/anchorId",
+        "semantic.json/recipes/54/neural/anchors/0/anchorId",
+        "semantic.json/recipes/67/neural/anchors/0/anchorId",
+        "semantic.json/recipes/76/neural/anchors/1/anchorId",
+        "semantic.json/recipes/91/neural/anchors/1/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-gold",
+      "uses": [
+        "semantic.json/recipes/3/neural/anchors/1/anchorId",
+        "semantic.json/recipes/21/neural/anchors/0/anchorId",
+        "semantic.json/recipes/25/neural/anchors/0/anchorId",
+        "semantic.json/recipes/28/neural/anchors/1/anchorId",
+        "semantic.json/recipes/32/neural/anchors/0/anchorId",
+        "semantic.json/recipes/36/neural/anchors/1/anchorId",
+        "semantic.json/recipes/45/neural/anchors/1/anchorId",
+        "semantic.json/recipes/53/neural/anchors/1/anchorId",
+        "semantic.json/recipes/64/neural/anchors/1/anchorId",
+        "semantic.json/recipes/80/neural/anchors/0/anchorId",
+        "semantic.json/recipes/95/neural/anchors/1/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-great-hall",
+      "uses": [
+        "semantic.json/recipes/59/neural/anchors/0/anchorId",
+        "semantic.json/recipes/86/neural/anchors/1/anchorId",
+        "semantic.json/recipes/90/neural/anchors/0/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-hellscape",
+      "uses": [
+        "semantic.json/recipes/0/neural/anchors/0/anchorId",
+        "semantic.json/recipes/3/neural/anchors/2/anchorId",
+        "semantic.json/recipes/6/neural/anchors/0/anchorId",
+        "semantic.json/recipes/12/neural/anchors/0/anchorId",
+        "semantic.json/recipes/16/neural/anchors/2/anchorId",
+        "semantic.json/recipes/23/neural/anchors/1/anchorId",
+        "semantic.json/recipes/57/neural/anchors/0/anchorId",
+        "semantic.json/recipes/64/neural/anchors/0/anchorId",
+        "semantic.json/recipes/75/neural/anchors/0/anchorId",
+        "semantic.json/recipes/85/neural/anchors/1/anchorId",
+        "semantic.json/recipes/88/neural/anchors/0/anchorId",
+        "semantic.json/recipes/92/neural/anchors/1/anchorId",
+        "semantic.json/recipes/94/neural/anchors/0/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-hills",
+      "uses": [
+        "semantic.json/recipes/3/neural/anchors/0/anchorId",
+        "semantic.json/recipes/7/neural/anchors/0/anchorId",
+        "semantic.json/recipes/8/neural/anchors/0/anchorId",
+        "semantic.json/recipes/16/neural/anchors/1/anchorId",
+        "semantic.json/recipes/19/neural/anchors/1/anchorId",
+        "semantic.json/recipes/36/neural/anchors/0/anchorId",
+        "semantic.json/recipes/41/neural/anchors/0/anchorId",
+        "semantic.json/recipes/43/neural/anchors/1/anchorId",
+        "semantic.json/recipes/49/neural/anchors/0/anchorId",
+        "semantic.json/recipes/55/neural/anchors/0/anchorId",
+        "semantic.json/recipes/58/neural/anchors/0/anchorId",
+        "semantic.json/recipes/62/neural/anchors/0/anchorId",
+        "semantic.json/recipes/63/neural/anchors/1/anchorId",
+        "semantic.json/recipes/66/neural/anchors/0/anchorId",
+        "semantic.json/recipes/81/neural/anchors/1/anchorId",
+        "semantic.json/recipes/89/neural/anchors/0/anchorId",
+        "semantic.json/recipes/92/neural/anchors/0/anchorId",
+        "semantic.json/recipes/95/neural/anchors/0/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-keep-library",
+      "uses": [
+        "semantic.json/recipes/1/neural/anchors/0/anchorId",
+        "semantic.json/recipes/59/neural/anchors/1/anchorId",
+        "semantic.json/recipes/90/neural/anchors/1/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-research-lab",
+      "uses": [
+        "semantic.json/recipes/17/neural/anchors/0/anchorId",
+        "semantic.json/recipes/24/neural/anchors/0/anchorId",
+        "semantic.json/recipes/68/neural/anchors/0/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-rubble",
+      "uses": [
+        "semantic.json/recipes/10/neural/anchors/0/anchorId",
+        "semantic.json/recipes/25/neural/anchors/1/anchorId",
+        "semantic.json/recipes/26/neural/anchors/0/anchorId",
+        "semantic.json/recipes/28/neural/anchors/2/anchorId",
+        "semantic.json/recipes/31/neural/anchors/1/anchorId",
+        "semantic.json/recipes/33/neural/anchors/0/anchorId",
+        "semantic.json/recipes/40/neural/anchors/0/anchorId",
+        "semantic.json/recipes/42/neural/anchors/1/anchorId",
+        "semantic.json/recipes/43/neural/anchors/0/anchorId",
+        "semantic.json/recipes/45/neural/anchors/0/anchorId",
+        "semantic.json/recipes/49/neural/anchors/2/anchorId",
+        "semantic.json/recipes/52/neural/anchors/1/anchorId",
+        "semantic.json/recipes/57/neural/anchors/1/anchorId",
+        "semantic.json/recipes/58/neural/anchors/1/anchorId",
+        "semantic.json/recipes/61/neural/anchors/1/anchorId",
+        "semantic.json/recipes/77/neural/anchors/0/anchorId",
+        "semantic.json/recipes/79/neural/anchors/2/anchorId",
+        "semantic.json/recipes/89/neural/anchors/1/anchorId",
+        "semantic.json/recipes/92/neural/anchors/2/anchorId",
+        "semantic.json/recipes/95/neural/anchors/2/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-sewer-tunnel",
+      "uses": [
+        "semantic.json/recipes/2/neural/anchors/1/anchorId",
+        "semantic.json/recipes/11/neural/anchors/0/anchorId",
+        "semantic.json/recipes/22/neural/anchors/0/anchorId",
+        "semantic.json/recipes/29/neural/anchors/2/anchorId",
+        "semantic.json/recipes/87/neural/anchors/0/anchorId",
+        "semantic.json/recipes/91/neural/anchors/0/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-starship-corridor",
+      "uses": [
+        "semantic.json/recipes/24/neural/anchors/1/anchorId",
+        "semantic.json/recipes/29/neural/anchors/0/anchorId",
+        "semantic.json/recipes/82/neural/anchors/1/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-station-deck",
+      "uses": [
+        "semantic.json/recipes/67/neural/anchors/1/anchorId",
+        "semantic.json/recipes/82/neural/anchors/0/anchorId",
+        "semantic.json/recipes/87/neural/anchors/1/anchorId"
+      ]
+    },
+    {
+      "kind": "anchorId",
+      "id": "builtin-brush-tundra",
+      "uses": [
+        "semantic.json/recipes/4/neural/anchors/1/anchorId",
+        "semantic.json/recipes/6/neural/anchors/1/anchorId",
+        "semantic.json/recipes/19/neural/anchors/0/anchorId",
+        "semantic.json/recipes/40/neural/anchors/1/anchorId",
+        "semantic.json/recipes/42/neural/anchors/0/anchorId",
+        "semantic.json/recipes/44/neural/anchors/0/anchorId",
+        "semantic.json/recipes/52/neural/anchors/0/anchorId",
+        "semantic.json/recipes/53/neural/anchors/0/anchorId",
+        "semantic.json/recipes/74/neural/anchors/1/anchorId",
+        "semantic.json/recipes/77/neural/anchors/1/anchorId",
+        "semantic.json/recipes/80/neural/anchors/1/anchorId",
+        "semantic.json/recipes/81/neural/anchors/0/anchorId"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BIGDOOR_1A.PNG",
+      "uses": [
+        "noise.json/presets/1/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BIGDOOR_1B.PNG",
+      "uses": [
+        "noise.json/presets/1/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_1A.PNG",
+      "uses": [
+        "noise.json/presets/11/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_1B.PNG",
+      "uses": [
+        "noise.json/presets/11/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_1C.PNG",
+      "uses": [
+        "noise.json/presets/11/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_1D.PNG",
+      "uses": [
+        "noise.json/presets/11/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_1E.PNG",
+      "uses": [
+        "noise.json/presets/11/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_1F.PNG",
+      "uses": [
+        "noise.json/presets/12/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_1G.PNG",
+      "uses": [
+        "noise.json/presets/12/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_2A.PNG",
+      "uses": [
+        "noise.json/presets/3/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_2B.PNG",
+      "uses": [
+        "noise.json/presets/3/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_2C.PNG",
+      "uses": [
+        "noise.json/presets/3/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_2D.PNG",
+      "uses": [
+        "noise.json/presets/3/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_2E.PNG",
+      "uses": [
+        "noise.json/presets/3/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_3A.PNG",
+      "uses": [
+        "noise.json/presets/4/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOCK_3B.PNG",
+      "uses": [
+        "noise.json/presets/4/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOOD_1A.PNG",
+      "uses": [
+        "noise.json/presets/5/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOOD_1B.PNG",
+      "uses": [
+        "noise.json/presets/5/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BLOOD_1C.PNG",
+      "uses": [
+        "noise.json/presets/5/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_1A.PNG",
+      "uses": [
+        "noise.json/presets/6/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_1B.PNG",
+      "uses": [
+        "noise.json/presets/6/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_2A.PNG",
+      "uses": [
+        "noise.json/presets/7/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_2B.PNG",
+      "uses": [
+        "noise.json/presets/7/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_3A.PNG",
+      "uses": [
+        "noise.json/presets/8/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_3B.PNG",
+      "uses": [
+        "noise.json/presets/8/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_3C.PNG",
+      "uses": [
+        "noise.json/presets/8/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_3D.PNG",
+      "uses": [
+        "noise.json/presets/8/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_3E.PNG",
+      "uses": [
+        "noise.json/presets/8/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_3F.PNG",
+      "uses": [
+        "noise.json/presets/8/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_4A.PNG",
+      "uses": [
+        "noise.json/presets/9/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_4B.PNG",
+      "uses": [
+        "noise.json/presets/9/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_4C.PNG",
+      "uses": [
+        "noise.json/presets/9/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_4D.PNG",
+      "uses": [
+        "noise.json/presets/9/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_4E.PNG",
+      "uses": [
+        "noise.json/presets/9/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_4F.PNG",
+      "uses": [
+        "noise.json/presets/9/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_6A.PNG",
+      "uses": [
+        "noise.json/presets/10/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_6B.PNG",
+      "uses": [
+        "noise.json/presets/10/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/BRICK_6C.PNG",
+      "uses": [
+        "noise.json/presets/10/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CHESS_1A.PNG",
+      "uses": [
+        "noise.json/presets/13/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CHESS_1B.PNG",
+      "uses": [
+        "noise.json/presets/13/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CLADDING_1A.PNG",
+      "uses": [
+        "noise.json/presets/15/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CLADDING_1B.PNG",
+      "uses": [
+        "noise.json/presets/15/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CLADDING_1C.PNG",
+      "uses": [
+        "noise.json/presets/15/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CLADDING_1D.PNG",
+      "uses": [
+        "noise.json/presets/15/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CLADDING_2A.PNG",
+      "uses": [
+        "noise.json/presets/16/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CLADDING_2B.PNG",
+      "uses": [
+        "noise.json/presets/16/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CLADDING_2C.PNG",
+      "uses": [
+        "noise.json/presets/16/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CLADDING_2D.PNG",
+      "uses": [
+        "noise.json/presets/16/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_1A.PNG",
+      "uses": [
+        "noise.json/presets/17/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_1B.PNG",
+      "uses": [
+        "noise.json/presets/17/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_1C.PNG",
+      "uses": [
+        "noise.json/presets/17/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_1D.PNG",
+      "uses": [
+        "noise.json/presets/17/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_1E.PNG",
+      "uses": [
+        "noise.json/presets/17/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_2A.PNG",
+      "uses": [
+        "noise.json/presets/18/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_2B.PNG",
+      "uses": [
+        "noise.json/presets/18/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_2C.PNG",
+      "uses": [
+        "noise.json/presets/18/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_2D.PNG",
+      "uses": [
+        "noise.json/presets/18/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_2E.PNG",
+      "uses": [
+        "noise.json/presets/18/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_3A.PNG",
+      "uses": [
+        "noise.json/presets/19/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_3B.PNG",
+      "uses": [
+        "noise.json/presets/19/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_3C.PNG",
+      "uses": [
+        "noise.json/presets/19/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_4A.PNG",
+      "uses": [
+        "noise.json/presets/20/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_4B.PNG",
+      "uses": [
+        "noise.json/presets/20/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/COBBLES_4C.PNG",
+      "uses": [
+        "noise.json/presets/20/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_1A.PNG",
+      "uses": [
+        "noise.json/presets/21/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_1B.PNG",
+      "uses": [
+        "noise.json/presets/21/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_1C.PNG",
+      "uses": [
+        "noise.json/presets/21/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_1D.PNG",
+      "uses": [
+        "noise.json/presets/21/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_2A.PNG",
+      "uses": [
+        "noise.json/presets/22/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_2B.PNG",
+      "uses": [
+        "noise.json/presets/22/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_2C.PNG",
+      "uses": [
+        "noise.json/presets/22/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_2D.PNG",
+      "uses": [
+        "noise.json/presets/22/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_2E.PNG",
+      "uses": [
+        "noise.json/presets/22/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_2F.PNG",
+      "uses": [
+        "noise.json/presets/22/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_2G.PNG",
+      "uses": [
+        "noise.json/presets/22/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_2H.PNG",
+      "uses": [
+        "noise.json/presets/22/spec/bands/7/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_3A.PNG",
+      "uses": [
+        "noise.json/presets/26/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_3B.PNG",
+      "uses": [
+        "noise.json/presets/26/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_3C.PNG",
+      "uses": [
+        "noise.json/presets/26/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_3D.PNG",
+      "uses": [
+        "noise.json/presets/26/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_4A.PNG",
+      "uses": [
+        "noise.json/presets/23/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_4B.PNG",
+      "uses": [
+        "noise.json/presets/23/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_4C.PNG",
+      "uses": [
+        "noise.json/presets/23/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_4D.PNG",
+      "uses": [
+        "noise.json/presets/23/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_4E.PNG",
+      "uses": [
+        "noise.json/presets/23/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_5A.PNG",
+      "uses": [
+        "noise.json/presets/101/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_5B.PNG",
+      "uses": [
+        "noise.json/presets/101/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_5C.PNG",
+      "uses": [
+        "noise.json/presets/14/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_5D.PNG",
+      "uses": [
+        "noise.json/presets/14/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_6A.PNG",
+      "uses": [
+        "noise.json/presets/50/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_6B.PNG",
+      "uses": [
+        "noise.json/presets/2/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_6C.PNG",
+      "uses": [
+        "noise.json/presets/2/spec/bands/1/visualSource/ref",
+        "noise.json/presets/50/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_7A.PNG",
+      "uses": [
+        "noise.json/presets/24/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_7B.PNG",
+      "uses": [
+        "noise.json/presets/24/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_7C.PNG",
+      "uses": [
+        "noise.json/presets/24/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_8A.PNG",
+      "uses": [
+        "noise.json/presets/25/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONCRETE_8B.PNG",
+      "uses": [
+        "noise.json/presets/25/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONSOLE_1A.PNG",
+      "uses": [
+        "noise.json/presets/27/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONSOLE_1B.PNG",
+      "uses": [
+        "noise.json/presets/27/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONSOLE_1C.PNG",
+      "uses": [
+        "noise.json/presets/27/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONSOLE_1D.PNG",
+      "uses": [
+        "noise.json/presets/27/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONSOLE_2A.PNG",
+      "uses": [
+        "noise.json/presets/28/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONSOLE_2B.PNG",
+      "uses": [
+        "noise.json/presets/28/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONSOLE_2C.PNG",
+      "uses": [
+        "noise.json/presets/28/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CONSOLE_2D.PNG",
+      "uses": [
+        "noise.json/presets/28/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CORRUGAT_1A.PNG",
+      "uses": [
+        "noise.json/presets/29/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CORRUGAT_1B.PNG",
+      "uses": [
+        "noise.json/presets/29/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CORRUGAT_1C.PNG",
+      "uses": [
+        "noise.json/presets/29/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CORRUGAT_2A.PNG",
+      "uses": [
+        "noise.json/presets/30/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CORRUGAT_2B.PNG",
+      "uses": [
+        "noise.json/presets/30/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CORRUGAT_2C.PNG",
+      "uses": [
+        "noise.json/presets/30/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1A.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1B.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1C.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1D.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1E.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1F.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1G.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1H.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/7/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1I.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/8/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1J.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/9/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1K.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/10/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1L.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/11/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1M.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/12/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_1N.PNG",
+      "uses": [
+        "noise.json/presets/31/spec/bands/13/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2A.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2B.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2C.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2D.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2E.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2F.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2G.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2H.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/7/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2I.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/8/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2J.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/9/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2K.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/10/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2L.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/11/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2M.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/12/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_2N.PNG",
+      "uses": [
+        "noise.json/presets/32/spec/bands/13/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_3A.PNG",
+      "uses": [
+        "noise.json/presets/33/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_3B.PNG",
+      "uses": [
+        "noise.json/presets/33/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_3C.PNG",
+      "uses": [
+        "noise.json/presets/33/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CRATE_3D.PNG",
+      "uses": [
+        "noise.json/presets/33/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CUBE_1A.PNG",
+      "uses": [
+        "noise.json/presets/34/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CUBE_1B.PNG",
+      "uses": [
+        "noise.json/presets/34/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CUBE_1C.PNG",
+      "uses": [
+        "noise.json/presets/34/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CUBE_1D.PNG",
+      "uses": [
+        "noise.json/presets/34/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CUBE_2A.PNG",
+      "uses": [
+        "noise.json/presets/35/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CUBE_2B.PNG",
+      "uses": [
+        "noise.json/presets/35/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/CUBE_2C.PNG",
+      "uses": [
+        "noise.json/presets/35/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DIRT_1A.PNG",
+      "uses": [
+        "noise.json/presets/36/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DIRT_1B.PNG",
+      "uses": [
+        "noise.json/presets/36/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DIRT_1C.PNG",
+      "uses": [
+        "noise.json/presets/36/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_1A.PNG",
+      "uses": [
+        "noise.json/presets/45/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_1B.PNG",
+      "uses": [
+        "noise.json/presets/45/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_1C.PNG",
+      "uses": [
+        "noise.json/presets/45/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_1D.PNG",
+      "uses": [
+        "noise.json/presets/45/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_2A.PNG",
+      "uses": [
+        "noise.json/presets/46/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_2B.PNG",
+      "uses": [
+        "noise.json/presets/46/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_2C.PNG",
+      "uses": [
+        "noise.json/presets/46/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_2D.PNG",
+      "uses": [
+        "noise.json/presets/46/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_3A.PNG",
+      "uses": [
+        "noise.json/presets/47/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_3B.PNG",
+      "uses": [
+        "noise.json/presets/47/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_3C.PNG",
+      "uses": [
+        "noise.json/presets/47/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOORTRIM_3D.PNG",
+      "uses": [
+        "noise.json/presets/47/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_1A.PNG",
+      "uses": [
+        "noise.json/presets/37/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_1B.PNG",
+      "uses": [
+        "noise.json/presets/37/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_1C.PNG",
+      "uses": [
+        "noise.json/presets/37/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_1D.PNG",
+      "uses": [
+        "noise.json/presets/37/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_1E.PNG",
+      "uses": [
+        "noise.json/presets/37/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_1F.PNG",
+      "uses": [
+        "noise.json/presets/37/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_1G.PNG",
+      "uses": [
+        "noise.json/presets/37/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_1H.PNG",
+      "uses": [
+        "noise.json/presets/37/spec/bands/7/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_2A.PNG",
+      "uses": [
+        "noise.json/presets/38/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_2B.PNG",
+      "uses": [
+        "noise.json/presets/38/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_2C.PNG",
+      "uses": [
+        "noise.json/presets/38/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_2D.PNG",
+      "uses": [
+        "noise.json/presets/38/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_2E.PNG",
+      "uses": [
+        "noise.json/presets/38/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_2F.PNG",
+      "uses": [
+        "noise.json/presets/38/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_2G.PNG",
+      "uses": [
+        "noise.json/presets/38/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_2H.PNG",
+      "uses": [
+        "noise.json/presets/38/spec/bands/7/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_3A.PNG",
+      "uses": [
+        "noise.json/presets/39/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_3B.PNG",
+      "uses": [
+        "noise.json/presets/39/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_4A.PNG",
+      "uses": [
+        "noise.json/presets/40/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_4B.PNG",
+      "uses": [
+        "noise.json/presets/40/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_5A.PNG",
+      "uses": [
+        "noise.json/presets/41/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_5B.PNG",
+      "uses": [
+        "noise.json/presets/41/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_7A.PNG",
+      "uses": [
+        "noise.json/presets/42/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_7B.PNG",
+      "uses": [
+        "noise.json/presets/42/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_7C.PNG",
+      "uses": [
+        "noise.json/presets/42/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_7D.PNG",
+      "uses": [
+        "noise.json/presets/42/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_7E.PNG",
+      "uses": [
+        "noise.json/presets/42/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_8A.PNG",
+      "uses": [
+        "noise.json/presets/43/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_8B.PNG",
+      "uses": [
+        "noise.json/presets/43/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_8C.PNG",
+      "uses": [
+        "noise.json/presets/43/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_9A.PNG",
+      "uses": [
+        "noise.json/presets/44/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_9B.PNG",
+      "uses": [
+        "noise.json/presets/44/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_9C.PNG",
+      "uses": [
+        "noise.json/presets/44/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_9D.PNG",
+      "uses": [
+        "noise.json/presets/44/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_9E.PNG",
+      "uses": [
+        "noise.json/presets/44/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DOOR_9F.PNG",
+      "uses": [
+        "noise.json/presets/44/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DRAIN_1A.PNG",
+      "uses": [
+        "noise.json/presets/48/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DRAIN_1B.PNG",
+      "uses": [
+        "noise.json/presets/48/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DRAIN_1C.PNG",
+      "uses": [
+        "noise.json/presets/48/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DRYWALL_1A.PNG",
+      "uses": [
+        "noise.json/presets/49/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DRYWALL_1B.PNG",
+      "uses": [
+        "noise.json/presets/49/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DRYWALL_1C.PNG",
+      "uses": [
+        "noise.json/presets/49/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DRYWALL_1D.PNG",
+      "uses": [
+        "noise.json/presets/49/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/DRYWALL_1E.PNG",
+      "uses": [
+        "noise.json/presets/49/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_1A.PNG",
+      "uses": [
+        "noise.json/presets/51/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_1B.PNG",
+      "uses": [
+        "noise.json/presets/51/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_1C.PNG",
+      "uses": [
+        "noise.json/presets/51/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_2A.PNG",
+      "uses": [
+        "noise.json/presets/52/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_2B.PNG",
+      "uses": [
+        "noise.json/presets/52/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_3A.PNG",
+      "uses": [
+        "noise.json/presets/53/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_3B.PNG",
+      "uses": [
+        "noise.json/presets/53/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_3C.PNG",
+      "uses": [
+        "noise.json/presets/53/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_3D.PNG",
+      "uses": [
+        "noise.json/presets/53/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_4A.PNG",
+      "uses": [
+        "noise.json/presets/54/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_4B.PNG",
+      "uses": [
+        "noise.json/presets/54/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_4C.PNG",
+      "uses": [
+        "noise.json/presets/54/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FENCE_4D.PNG",
+      "uses": [
+        "noise.json/presets/54/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_1A.PNG",
+      "uses": [
+        "noise.json/presets/55/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_1B.PNG",
+      "uses": [
+        "noise.json/presets/55/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_1C.PNG",
+      "uses": [
+        "noise.json/presets/55/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_1D.PNG",
+      "uses": [
+        "noise.json/presets/55/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_1E.PNG",
+      "uses": [
+        "noise.json/presets/55/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_2A.PNG",
+      "uses": [
+        "noise.json/presets/56/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_2B.PNG",
+      "uses": [
+        "noise.json/presets/56/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_2C.PNG",
+      "uses": [
+        "noise.json/presets/56/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_2D.PNG",
+      "uses": [
+        "noise.json/presets/56/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_2E.PNG",
+      "uses": [
+        "noise.json/presets/56/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_2F.PNG",
+      "uses": [
+        "noise.json/presets/56/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_2G.PNG",
+      "uses": [
+        "noise.json/presets/56/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_3A.PNG",
+      "uses": [
+        "noise.json/presets/57/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_3B.PNG",
+      "uses": [
+        "noise.json/presets/57/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_3C.PNG",
+      "uses": [
+        "noise.json/presets/57/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_4A.PNG",
+      "uses": [
+        "noise.json/presets/58/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_4B.PNG",
+      "uses": [
+        "noise.json/presets/58/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_4C.PNG",
+      "uses": [
+        "noise.json/presets/58/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/FLOOR_4D.PNG",
+      "uses": [
+        "noise.json/presets/58/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_1A.PNG",
+      "uses": [
+        "noise.json/presets/59/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_1B.PNG",
+      "uses": [
+        "noise.json/presets/59/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_1C.PNG",
+      "uses": [
+        "noise.json/presets/59/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_1D.PNG",
+      "uses": [
+        "noise.json/presets/59/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_1E.PNG",
+      "uses": [
+        "noise.json/presets/59/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_1F.PNG",
+      "uses": [
+        "noise.json/presets/59/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_1G.PNG",
+      "uses": [
+        "noise.json/presets/59/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_2A.PNG",
+      "uses": [
+        "noise.json/presets/60/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_2B.PNG",
+      "uses": [
+        "noise.json/presets/60/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_2C.PNG",
+      "uses": [
+        "noise.json/presets/60/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_2D.PNG",
+      "uses": [
+        "noise.json/presets/60/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_2E.PNG",
+      "uses": [
+        "noise.json/presets/60/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_2F.PNG",
+      "uses": [
+        "noise.json/presets/60/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_2G.PNG",
+      "uses": [
+        "noise.json/presets/60/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_3A.PNG",
+      "uses": [
+        "noise.json/presets/61/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_3B.PNG",
+      "uses": [
+        "noise.json/presets/61/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_4A.PNG",
+      "uses": [
+        "noise.json/presets/62/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRASS_4B.PNG",
+      "uses": [
+        "noise.json/presets/62/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRAVEL_1A.PNG",
+      "uses": [
+        "noise.json/presets/63/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRAVEL_1B.PNG",
+      "uses": [
+        "noise.json/presets/63/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRAVEL_1C.PNG",
+      "uses": [
+        "noise.json/presets/63/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_1A.PNG",
+      "uses": [
+        "noise.json/presets/64/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_1B.PNG",
+      "uses": [
+        "noise.json/presets/64/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_1C.PNG",
+      "uses": [
+        "noise.json/presets/64/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_2A.PNG",
+      "uses": [
+        "noise.json/presets/65/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_2B.PNG",
+      "uses": [
+        "noise.json/presets/65/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_2C.PNG",
+      "uses": [
+        "noise.json/presets/65/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_3A.PNG",
+      "uses": [
+        "noise.json/presets/66/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_3B.PNG",
+      "uses": [
+        "noise.json/presets/66/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_4A.PNG",
+      "uses": [
+        "noise.json/presets/67/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_4B.PNG",
+      "uses": [
+        "noise.json/presets/67/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_4C.PNG",
+      "uses": [
+        "noise.json/presets/67/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_4D.PNG",
+      "uses": [
+        "noise.json/presets/67/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_5A.PNG",
+      "uses": [
+        "noise.json/presets/68/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_5B.PNG",
+      "uses": [
+        "noise.json/presets/68/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_6A.PNG",
+      "uses": [
+        "noise.json/presets/69/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/GRID_6B.PNG",
+      "uses": [
+        "noise.json/presets/69/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/HEDGE_1A.PNG",
+      "uses": [
+        "noise.json/presets/70/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/HEDGE_1B.PNG",
+      "uses": [
+        "noise.json/presets/70/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/HEDGE_1C.PNG",
+      "uses": [
+        "noise.json/presets/70/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/HEDGE_1D.PNG",
+      "uses": [
+        "noise.json/presets/70/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/HEDGE_1E.PNG",
+      "uses": [
+        "noise.json/presets/70/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/HEDGE_2A.PNG",
+      "uses": [
+        "noise.json/presets/71/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/HEDGE_2B.PNG",
+      "uses": [
+        "noise.json/presets/71/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_1A.PNG",
+      "uses": [
+        "noise.json/presets/72/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_1B.PNG",
+      "uses": [
+        "noise.json/presets/72/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_1C.PNG",
+      "uses": [
+        "noise.json/presets/72/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_2A.PNG",
+      "uses": [
+        "noise.json/presets/73/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_2B.PNG",
+      "uses": [
+        "noise.json/presets/73/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_2C.PNG",
+      "uses": [
+        "noise.json/presets/73/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_2D.PNG",
+      "uses": [
+        "noise.json/presets/73/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_3A.PNG",
+      "uses": [
+        "noise.json/presets/74/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_3B.PNG",
+      "uses": [
+        "noise.json/presets/74/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_4A.PNG",
+      "uses": [
+        "noise.json/presets/75/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_4B.PNG",
+      "uses": [
+        "noise.json/presets/75/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_4C.PNG",
+      "uses": [
+        "noise.json/presets/75/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_5A.PNG",
+      "uses": [
+        "noise.json/presets/76/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LAB_5B.PNG",
+      "uses": [
+        "noise.json/presets/76/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_1A.PNG",
+      "uses": [
+        "noise.json/presets/77/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_1B.PNG",
+      "uses": [
+        "noise.json/presets/77/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_1C.PNG",
+      "uses": [
+        "noise.json/presets/77/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_1D.PNG",
+      "uses": [
+        "noise.json/presets/77/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_2A.PNG",
+      "uses": [
+        "noise.json/presets/78/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_2B.PNG",
+      "uses": [
+        "noise.json/presets/78/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_2C.PNG",
+      "uses": [
+        "noise.json/presets/78/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_2D.PNG",
+      "uses": [
+        "noise.json/presets/78/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_3A.PNG",
+      "uses": [
+        "noise.json/presets/79/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_3B.PNG",
+      "uses": [
+        "noise.json/presets/79/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_3C.PNG",
+      "uses": [
+        "noise.json/presets/79/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_3D.PNG",
+      "uses": [
+        "noise.json/presets/79/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_4A.PNG",
+      "uses": [
+        "noise.json/presets/80/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_4B.PNG",
+      "uses": [
+        "noise.json/presets/80/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_5A.PNG",
+      "uses": [
+        "noise.json/presets/81/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_5B.PNG",
+      "uses": [
+        "noise.json/presets/81/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_6A.PNG",
+      "uses": [
+        "noise.json/presets/82/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_6B.PNG",
+      "uses": [
+        "noise.json/presets/82/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/LIGHT_6C.PNG",
+      "uses": [
+        "noise.json/presets/82/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/MARBLE_1A.PNG",
+      "uses": [
+        "noise.json/presets/83/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/MARBLE_1B.PNG",
+      "uses": [
+        "noise.json/presets/83/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_1A.PNG",
+      "uses": [
+        "noise.json/presets/84/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_1B.PNG",
+      "uses": [
+        "noise.json/presets/84/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_1C.PNG",
+      "uses": [
+        "noise.json/presets/84/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_1D.PNG",
+      "uses": [
+        "noise.json/presets/84/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_1E.PNG",
+      "uses": [
+        "noise.json/presets/84/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_1F.PNG",
+      "uses": [
+        "noise.json/presets/84/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_1G.PNG",
+      "uses": [
+        "noise.json/presets/84/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_1H.PNG",
+      "uses": [
+        "noise.json/presets/84/spec/bands/7/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_2A.PNG",
+      "uses": [
+        "noise.json/presets/85/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_2B.PNG",
+      "uses": [
+        "noise.json/presets/85/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_2C.PNG",
+      "uses": [
+        "noise.json/presets/85/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_2D.PNG",
+      "uses": [
+        "noise.json/presets/85/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_3A.PNG",
+      "uses": [
+        "noise.json/presets/86/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_3B.PNG",
+      "uses": [
+        "noise.json/presets/86/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_3C.PNG",
+      "uses": [
+        "noise.json/presets/86/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_3D.PNG",
+      "uses": [
+        "noise.json/presets/86/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_4A.PNG",
+      "uses": [
+        "noise.json/presets/87/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_4B.PNG",
+      "uses": [
+        "noise.json/presets/87/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_5A.PNG",
+      "uses": [
+        "noise.json/presets/88/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_5B.PNG",
+      "uses": [
+        "noise.json/presets/88/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_5C.PNG",
+      "uses": [
+        "noise.json/presets/88/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_5D.PNG",
+      "uses": [
+        "noise.json/presets/88/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_5E.PNG",
+      "uses": [
+        "noise.json/presets/88/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_6A.PNG",
+      "uses": [
+        "noise.json/presets/89/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_6B.PNG",
+      "uses": [
+        "noise.json/presets/89/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_6C.PNG",
+      "uses": [
+        "noise.json/presets/89/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_6D.PNG",
+      "uses": [
+        "noise.json/presets/89/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_7A.PNG",
+      "uses": [
+        "noise.json/presets/90/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_7B.PNG",
+      "uses": [
+        "noise.json/presets/90/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_7C.PNG",
+      "uses": [
+        "noise.json/presets/90/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/METAL_7D.PNG",
+      "uses": [
+        "noise.json/presets/90/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/OOZE_1A.PNG",
+      "uses": [
+        "noise.json/presets/91/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/OOZE_1B.PNG",
+      "uses": [
+        "noise.json/presets/91/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/OOZE_1C.PNG",
+      "uses": [
+        "noise.json/presets/91/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_1A.PNG",
+      "uses": [
+        "noise.json/presets/92/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_1B.PNG",
+      "uses": [
+        "noise.json/presets/92/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_1C.PNG",
+      "uses": [
+        "noise.json/presets/92/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_2A.PNG",
+      "uses": [
+        "noise.json/presets/93/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_2B.PNG",
+      "uses": [
+        "noise.json/presets/93/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_2C.PNG",
+      "uses": [
+        "noise.json/presets/93/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_2D.PNG",
+      "uses": [
+        "noise.json/presets/93/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_2E.PNG",
+      "uses": [
+        "noise.json/presets/93/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_3A.PNG",
+      "uses": [
+        "noise.json/presets/94/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_3B.PNG",
+      "uses": [
+        "noise.json/presets/94/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_3C.PNG",
+      "uses": [
+        "noise.json/presets/94/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_4A.PNG",
+      "uses": [
+        "noise.json/presets/95/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_4B.PNG",
+      "uses": [
+        "noise.json/presets/95/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_4C.PNG",
+      "uses": [
+        "noise.json/presets/95/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_4D.PNG",
+      "uses": [
+        "noise.json/presets/95/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_4E.PNG",
+      "uses": [
+        "noise.json/presets/95/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_5A.PNG",
+      "uses": [
+        "noise.json/presets/96/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_5B.PNG",
+      "uses": [
+        "noise.json/presets/96/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_5C.PNG",
+      "uses": [
+        "noise.json/presets/96/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_5D.PNG",
+      "uses": [
+        "noise.json/presets/96/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_5E.PNG",
+      "uses": [
+        "noise.json/presets/96/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_6A.PNG",
+      "uses": [
+        "noise.json/presets/97/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_6B.PNG",
+      "uses": [
+        "noise.json/presets/97/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_6C.PNG",
+      "uses": [
+        "noise.json/presets/97/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_7A.PNG",
+      "uses": [
+        "noise.json/presets/98/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_7B.PNG",
+      "uses": [
+        "noise.json/presets/98/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_8A.PNG",
+      "uses": [
+        "noise.json/presets/99/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_8B.PNG",
+      "uses": [
+        "noise.json/presets/99/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_8C.PNG",
+      "uses": [
+        "noise.json/presets/99/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PANEL_8D.PNG",
+      "uses": [
+        "noise.json/presets/99/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PAPER_1A.PNG",
+      "uses": [
+        "noise.json/presets/100/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PAPER_1B.PNG",
+      "uses": [
+        "noise.json/presets/100/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PAPER_1C.PNG",
+      "uses": [
+        "noise.json/presets/100/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PAPER_1D.PNG",
+      "uses": [
+        "noise.json/presets/100/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PAPER_1E.PNG",
+      "uses": [
+        "noise.json/presets/100/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PAPER_1F.PNG",
+      "uses": [
+        "noise.json/presets/100/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PAPER_1G.PNG",
+      "uses": [
+        "noise.json/presets/100/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PAPER_1H.PNG",
+      "uses": [
+        "noise.json/presets/100/spec/bands/7/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PAPER_1I.PNG",
+      "uses": [
+        "noise.json/presets/100/spec/bands/8/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PAPER_1J.PNG",
+      "uses": [
+        "noise.json/presets/100/spec/bands/9/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PAPER_1K.PNG",
+      "uses": [
+        "noise.json/presets/100/spec/bands/10/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PIPES_1A.PNG",
+      "uses": [
+        "noise.json/presets/102/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PIPES_1B.PNG",
+      "uses": [
+        "noise.json/presets/102/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PIPES_2A.PNG",
+      "uses": [
+        "noise.json/presets/103/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PIPES_2B.PNG",
+      "uses": [
+        "noise.json/presets/103/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PIPES_3A.PNG",
+      "uses": [
+        "noise.json/presets/104/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/PIPES_3B.PNG",
+      "uses": [
+        "noise.json/presets/104/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RIVET_1A.PNG",
+      "uses": [
+        "noise.json/presets/105/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RIVET_1B.PNG",
+      "uses": [
+        "noise.json/presets/105/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RIVET_1C.PNG",
+      "uses": [
+        "noise.json/presets/105/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RIVET_2A.PNG",
+      "uses": [
+        "noise.json/presets/106/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RIVET_2B.PNG",
+      "uses": [
+        "noise.json/presets/106/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RIVET_2C.PNG",
+      "uses": [
+        "noise.json/presets/106/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RIVET_3A.PNG",
+      "uses": [
+        "noise.json/presets/107/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RIVET_3B.PNG",
+      "uses": [
+        "noise.json/presets/107/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RUSTY_1A.PNG",
+      "uses": [
+        "noise.json/presets/108/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RUSTY_1B.PNG",
+      "uses": [
+        "noise.json/presets/108/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RUSTY_1C.PNG",
+      "uses": [
+        "noise.json/presets/108/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RUSTY_1D.PNG",
+      "uses": [
+        "noise.json/presets/108/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RUSTY_2A.PNG",
+      "uses": [
+        "noise.json/presets/109/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RUSTY_2B.PNG",
+      "uses": [
+        "noise.json/presets/109/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RUSTY_3A.PNG",
+      "uses": [
+        "noise.json/presets/110/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RUSTY_3B.PNG",
+      "uses": [
+        "noise.json/presets/110/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RUSTY_4A.PNG",
+      "uses": [
+        "noise.json/presets/111/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RUSTY_4B.PNG",
+      "uses": [
+        "noise.json/presets/111/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/RUSTY_4C.PNG",
+      "uses": [
+        "noise.json/presets/111/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SAND_1A.PNG",
+      "uses": [
+        "noise.json/presets/112/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SAND_1B.PNG",
+      "uses": [
+        "noise.json/presets/112/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SAND_2A.PNG",
+      "uses": [
+        "noise.json/presets/113/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SAND_2B.PNG",
+      "uses": [
+        "noise.json/presets/113/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SAND_2C.PNG",
+      "uses": [
+        "noise.json/presets/113/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SIDEWALK_1A.PNG",
+      "uses": [
+        "noise.json/presets/114/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SIDEWALK_1B.PNG",
+      "uses": [
+        "noise.json/presets/114/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SIDEWALK_1C.PNG",
+      "uses": [
+        "noise.json/presets/114/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SIDEWALK_1D.PNG",
+      "uses": [
+        "noise.json/presets/114/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SKULLS_1A.PNG",
+      "uses": [
+        "noise.json/presets/115/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SKULLS_1B.PNG",
+      "uses": [
+        "noise.json/presets/115/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SKULLS_1C.PNG",
+      "uses": [
+        "noise.json/presets/115/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SKULTRIM_1A.PNG",
+      "uses": [
+        "noise.json/presets/116/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SKULTRIM_1B.PNG",
+      "uses": [
+        "noise.json/presets/116/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SKULTRIM_1C.PNG",
+      "uses": [
+        "noise.json/presets/116/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SKULTRIM_2A.PNG",
+      "uses": [
+        "noise.json/presets/117/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SKULTRIM_2B.PNG",
+      "uses": [
+        "noise.json/presets/117/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SLIME_1A.PNG",
+      "uses": [
+        "noise.json/presets/118/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SLIME_1B.PNG",
+      "uses": [
+        "noise.json/presets/118/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SLUDGE_1A.PNG",
+      "uses": [
+        "noise.json/presets/119/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SLUDGE_1B.PNG",
+      "uses": [
+        "noise.json/presets/119/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SLUDGE_1C.PNG",
+      "uses": [
+        "noise.json/presets/119/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SQDOOR_5A.PNG",
+      "uses": [
+        "noise.json/presets/120/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SQDOOR_5B.PNG",
+      "uses": [
+        "noise.json/presets/120/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SQDOOR_7A.PNG",
+      "uses": [
+        "noise.json/presets/121/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SQDOOR_7B.PNG",
+      "uses": [
+        "noise.json/presets/121/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SQDOOR_7C.PNG",
+      "uses": [
+        "noise.json/presets/121/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SQDOOR_7D.PNG",
+      "uses": [
+        "noise.json/presets/121/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SQDOOR_7E.PNG",
+      "uses": [
+        "noise.json/presets/121/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SQDOOR_8A.PNG",
+      "uses": [
+        "noise.json/presets/122/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SQDOOR_8B.PNG",
+      "uses": [
+        "noise.json/presets/122/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SQDOOR_8C.PNG",
+      "uses": [
+        "noise.json/presets/122/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_1A.PNG",
+      "uses": [
+        "noise.json/presets/123/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_1B.PNG",
+      "uses": [
+        "noise.json/presets/123/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_1C.PNG",
+      "uses": [
+        "noise.json/presets/123/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_1D.PNG",
+      "uses": [
+        "noise.json/presets/123/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_2A.PNG",
+      "uses": [
+        "noise.json/presets/124/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_2B.PNG",
+      "uses": [
+        "noise.json/presets/124/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_2C.PNG",
+      "uses": [
+        "noise.json/presets/124/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_2D.PNG",
+      "uses": [
+        "noise.json/presets/124/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_3A.PNG",
+      "uses": [
+        "noise.json/presets/125/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_3B.PNG",
+      "uses": [
+        "noise.json/presets/125/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_3C.PNG",
+      "uses": [
+        "noise.json/presets/125/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_4A.PNG",
+      "uses": [
+        "noise.json/presets/126/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_4B.PNG",
+      "uses": [
+        "noise.json/presets/126/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_4C.PNG",
+      "uses": [
+        "noise.json/presets/126/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_5A.PNG",
+      "uses": [
+        "noise.json/presets/127/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STEEL_5B.PNG",
+      "uses": [
+        "noise.json/presets/127/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STUCCO_1A.PNG",
+      "uses": [
+        "noise.json/presets/128/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STUCCO_1B.PNG",
+      "uses": [
+        "noise.json/presets/128/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STUCCO_1C.PNG",
+      "uses": [
+        "noise.json/presets/128/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STUCCO_2A.PNG",
+      "uses": [
+        "noise.json/presets/129/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STUCCO_2B.PNG",
+      "uses": [
+        "noise.json/presets/129/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STUCCO_2C.PNG",
+      "uses": [
+        "noise.json/presets/129/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STUCCO_3A.PNG",
+      "uses": [
+        "noise.json/presets/130/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STUCCO_3B.PNG",
+      "uses": [
+        "noise.json/presets/130/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/STUCCO_3C.PNG",
+      "uses": [
+        "noise.json/presets/130/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_1A.PNG",
+      "uses": [
+        "noise.json/presets/131/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_1B.PNG",
+      "uses": [
+        "noise.json/presets/131/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_1C.PNG",
+      "uses": [
+        "noise.json/presets/131/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_1D.PNG",
+      "uses": [
+        "noise.json/presets/131/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_1E.PNG",
+      "uses": [
+        "noise.json/presets/131/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_2A.PNG",
+      "uses": [
+        "noise.json/presets/132/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_2B.PNG",
+      "uses": [
+        "noise.json/presets/132/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_2C.PNG",
+      "uses": [
+        "noise.json/presets/132/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_2D.PNG",
+      "uses": [
+        "noise.json/presets/132/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_3A.PNG",
+      "uses": [
+        "noise.json/presets/133/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_3B.PNG",
+      "uses": [
+        "noise.json/presets/133/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_3C.PNG",
+      "uses": [
+        "noise.json/presets/133/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_3D.PNG",
+      "uses": [
+        "noise.json/presets/133/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_4A.PNG",
+      "uses": [
+        "noise.json/presets/134/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_4B.PNG",
+      "uses": [
+        "noise.json/presets/134/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_4C.PNG",
+      "uses": [
+        "noise.json/presets/134/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_4D.PNG",
+      "uses": [
+        "noise.json/presets/134/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_5A.PNG",
+      "uses": [
+        "noise.json/presets/135/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_5B.PNG",
+      "uses": [
+        "noise.json/presets/135/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_5C.PNG",
+      "uses": [
+        "noise.json/presets/135/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_5D.PNG",
+      "uses": [
+        "noise.json/presets/135/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_6A.PNG",
+      "uses": [
+        "noise.json/presets/136/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_6B.PNG",
+      "uses": [
+        "noise.json/presets/136/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_6C.PNG",
+      "uses": [
+        "noise.json/presets/136/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_6D.PNG",
+      "uses": [
+        "noise.json/presets/136/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_7A.PNG",
+      "uses": [
+        "noise.json/presets/137/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_7B.PNG",
+      "uses": [
+        "noise.json/presets/137/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_7C.PNG",
+      "uses": [
+        "noise.json/presets/137/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SUPPORT_7D.PNG",
+      "uses": [
+        "noise.json/presets/137/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SWITCH_1A.PNG",
+      "uses": [
+        "noise.json/presets/138/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SWITCH_1B.PNG",
+      "uses": [
+        "noise.json/presets/138/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SWITCH_1C.PNG",
+      "uses": [
+        "noise.json/presets/138/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/SWITCH_1D.PNG",
+      "uses": [
+        "noise.json/presets/138/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_1A.PNG",
+      "uses": [
+        "noise.json/presets/139/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_1B.PNG",
+      "uses": [
+        "noise.json/presets/139/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_1C.PNG",
+      "uses": [
+        "noise.json/presets/139/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_2A.PNG",
+      "uses": [
+        "noise.json/presets/140/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_2B.PNG",
+      "uses": [
+        "noise.json/presets/140/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_2C.PNG",
+      "uses": [
+        "noise.json/presets/140/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_3A.PNG",
+      "uses": [
+        "noise.json/presets/0/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_3B.PNG",
+      "uses": [
+        "noise.json/presets/0/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_4A.PNG",
+      "uses": [
+        "noise.json/presets/141/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_4B.PNG",
+      "uses": [
+        "noise.json/presets/141/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_4C.PNG",
+      "uses": [
+        "noise.json/presets/141/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TARMAC_4D.PNG",
+      "uses": [
+        "noise.json/presets/141/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_1A.PNG",
+      "uses": [
+        "noise.json/presets/142/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_1B.PNG",
+      "uses": [
+        "noise.json/presets/142/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_1C.PNG",
+      "uses": [
+        "noise.json/presets/142/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_1D.PNG",
+      "uses": [
+        "noise.json/presets/142/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_1E.PNG",
+      "uses": [
+        "noise.json/presets/142/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_1F.PNG",
+      "uses": [
+        "noise.json/presets/142/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_1G.PNG",
+      "uses": [
+        "noise.json/presets/142/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_2A.PNG",
+      "uses": [
+        "noise.json/presets/143/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_2B.PNG",
+      "uses": [
+        "noise.json/presets/143/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_2C.PNG",
+      "uses": [
+        "noise.json/presets/143/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_2D.PNG",
+      "uses": [
+        "noise.json/presets/143/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_2E.PNG",
+      "uses": [
+        "noise.json/presets/143/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_2F.PNG",
+      "uses": [
+        "noise.json/presets/143/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_3A.PNG",
+      "uses": [
+        "noise.json/presets/144/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_3B.PNG",
+      "uses": [
+        "noise.json/presets/144/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_3C.PNG",
+      "uses": [
+        "noise.json/presets/144/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_4A.PNG",
+      "uses": [
+        "noise.json/presets/145/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_4B.PNG",
+      "uses": [
+        "noise.json/presets/145/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_4C.PNG",
+      "uses": [
+        "noise.json/presets/145/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_4D.PNG",
+      "uses": [
+        "noise.json/presets/145/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_4E.PNG",
+      "uses": [
+        "noise.json/presets/145/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_4F.PNG",
+      "uses": [
+        "noise.json/presets/145/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_4G.PNG",
+      "uses": [
+        "noise.json/presets/145/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_4H.PNG",
+      "uses": [
+        "noise.json/presets/145/spec/bands/7/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_4I.PNG",
+      "uses": [
+        "noise.json/presets/145/spec/bands/8/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_4J.PNG",
+      "uses": [
+        "noise.json/presets/145/spec/bands/9/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_4K.PNG",
+      "uses": [
+        "noise.json/presets/145/spec/bands/10/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_5A.PNG",
+      "uses": [
+        "noise.json/presets/146/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_5B.PNG",
+      "uses": [
+        "noise.json/presets/146/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_5C.PNG",
+      "uses": [
+        "noise.json/presets/146/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_5D.PNG",
+      "uses": [
+        "noise.json/presets/146/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_5E.PNG",
+      "uses": [
+        "noise.json/presets/146/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_5F.PNG",
+      "uses": [
+        "noise.json/presets/146/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_6A.PNG",
+      "uses": [
+        "noise.json/presets/147/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_6B.PNG",
+      "uses": [
+        "noise.json/presets/147/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_6C.PNG",
+      "uses": [
+        "noise.json/presets/147/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TECH_6D.PNG",
+      "uses": [
+        "noise.json/presets/147/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_1A.PNG",
+      "uses": [
+        "noise.json/presets/148/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_1B.PNG",
+      "uses": [
+        "noise.json/presets/148/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_1C.PNG",
+      "uses": [
+        "noise.json/presets/148/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_1D.PNG",
+      "uses": [
+        "noise.json/presets/148/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_1E.PNG",
+      "uses": [
+        "noise.json/presets/148/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_1F.PNG",
+      "uses": [
+        "noise.json/presets/148/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_1G.PNG",
+      "uses": [
+        "noise.json/presets/148/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_1H.PNG",
+      "uses": [
+        "noise.json/presets/148/spec/bands/7/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_2A.PNG",
+      "uses": [
+        "noise.json/presets/149/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_2B.PNG",
+      "uses": [
+        "noise.json/presets/149/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_2C.PNG",
+      "uses": [
+        "noise.json/presets/149/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_2D.PNG",
+      "uses": [
+        "noise.json/presets/149/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_2E.PNG",
+      "uses": [
+        "noise.json/presets/149/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_2F.PNG",
+      "uses": [
+        "noise.json/presets/149/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_3A.PNG",
+      "uses": [
+        "noise.json/presets/150/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_3B.PNG",
+      "uses": [
+        "noise.json/presets/150/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_3C.PNG",
+      "uses": [
+        "noise.json/presets/150/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_3D.PNG",
+      "uses": [
+        "noise.json/presets/150/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_3E.PNG",
+      "uses": [
+        "noise.json/presets/150/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_3F.PNG",
+      "uses": [
+        "noise.json/presets/150/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_3G.PNG",
+      "uses": [
+        "noise.json/presets/150/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_4A.PNG",
+      "uses": [
+        "noise.json/presets/151/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_4B.PNG",
+      "uses": [
+        "noise.json/presets/151/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_4C.PNG",
+      "uses": [
+        "noise.json/presets/151/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_4D.PNG",
+      "uses": [
+        "noise.json/presets/151/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_4E.PNG",
+      "uses": [
+        "noise.json/presets/151/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_5A.PNG",
+      "uses": [
+        "noise.json/presets/152/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_5B.PNG",
+      "uses": [
+        "noise.json/presets/152/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_5C.PNG",
+      "uses": [
+        "noise.json/presets/152/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_5D.PNG",
+      "uses": [
+        "noise.json/presets/152/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_5E.PNG",
+      "uses": [
+        "noise.json/presets/152/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_6A.PNG",
+      "uses": [
+        "noise.json/presets/153/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_6B.PNG",
+      "uses": [
+        "noise.json/presets/153/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_6C.PNG",
+      "uses": [
+        "noise.json/presets/153/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_6D.PNG",
+      "uses": [
+        "noise.json/presets/153/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_6E.PNG",
+      "uses": [
+        "noise.json/presets/153/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_7A.PNG",
+      "uses": [
+        "noise.json/presets/154/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_7B.PNG",
+      "uses": [
+        "noise.json/presets/154/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_7C.PNG",
+      "uses": [
+        "noise.json/presets/154/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_7D.PNG",
+      "uses": [
+        "noise.json/presets/154/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_7E.PNG",
+      "uses": [
+        "noise.json/presets/154/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_7F.PNG",
+      "uses": [
+        "noise.json/presets/154/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_7G.PNG",
+      "uses": [
+        "noise.json/presets/154/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_8A.PNG",
+      "uses": [
+        "noise.json/presets/155/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_8B.PNG",
+      "uses": [
+        "noise.json/presets/155/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_8C.PNG",
+      "uses": [
+        "noise.json/presets/155/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_8D.PNG",
+      "uses": [
+        "noise.json/presets/155/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_8E.PNG",
+      "uses": [
+        "noise.json/presets/155/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/TILE_8F.PNG",
+      "uses": [
+        "noise.json/presets/155/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/VENT_1A.PNG",
+      "uses": [
+        "noise.json/presets/156/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/VENT_1B.PNG",
+      "uses": [
+        "noise.json/presets/156/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/VENT_2A.PNG",
+      "uses": [
+        "noise.json/presets/157/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/VENT_2B.PNG",
+      "uses": [
+        "noise.json/presets/157/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/VENT_2C.PNG",
+      "uses": [
+        "noise.json/presets/157/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/VENT_2D.PNG",
+      "uses": [
+        "noise.json/presets/157/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WARN_1A.PNG",
+      "uses": [
+        "noise.json/presets/158/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WARN_1B.PNG",
+      "uses": [
+        "noise.json/presets/158/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WARN_2A.PNG",
+      "uses": [
+        "noise.json/presets/159/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WARN_2B.PNG",
+      "uses": [
+        "noise.json/presets/159/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WARN_3A.PNG",
+      "uses": [
+        "noise.json/presets/160/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WARN_3B.PNG",
+      "uses": [
+        "noise.json/presets/160/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WATER_1A.PNG",
+      "uses": [
+        "noise.json/presets/161/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WATER_1B.PNG",
+      "uses": [
+        "noise.json/presets/161/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_1A.PNG",
+      "uses": [
+        "noise.json/presets/162/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_1B.PNG",
+      "uses": [
+        "noise.json/presets/162/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_1C.PNG",
+      "uses": [
+        "noise.json/presets/162/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_1D.PNG",
+      "uses": [
+        "noise.json/presets/162/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_1E.PNG",
+      "uses": [
+        "noise.json/presets/162/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_1F.PNG",
+      "uses": [
+        "noise.json/presets/162/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_1G.PNG",
+      "uses": [
+        "noise.json/presets/162/spec/bands/6/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_2A.PNG",
+      "uses": [
+        "noise.json/presets/163/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_2B.PNG",
+      "uses": [
+        "noise.json/presets/163/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_2C.PNG",
+      "uses": [
+        "noise.json/presets/163/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_2D.PNG",
+      "uses": [
+        "noise.json/presets/163/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_3A.PNG",
+      "uses": [
+        "noise.json/presets/164/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/WOOD_3B.PNG",
+      "uses": [
+        "noise.json/presets/164/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/ZINC_1A.PNG",
+      "uses": [
+        "noise.json/presets/165/spec/bands/0/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/ZINC_1B.PNG",
+      "uses": [
+        "noise.json/presets/165/spec/bands/1/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/ZINC_1C.PNG",
+      "uses": [
+        "noise.json/presets/165/spec/bands/2/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/ZINC_1D.PNG",
+      "uses": [
+        "noise.json/presets/165/spec/bands/3/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/ZINC_1E.PNG",
+      "uses": [
+        "noise.json/presets/165/spec/bands/4/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/ZINC_1F.PNG",
+      "uses": [
+        "noise.json/presets/165/spec/bands/5/visualSource/ref"
+      ]
+    },
+    {
+      "kind": "ref",
+      "id": "sprite-image:retro__textures_v25/TEXTURES/ZINC_1G.PNG",
+      "uses": [
+        "noise.json/presets/165/spec/bands/6/visualSource/ref"
+      ]
+    }
+  ]
+}

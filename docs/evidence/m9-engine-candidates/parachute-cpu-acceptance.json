@@ -1,0 +1,46 @@
+{
+  "world": "17b7b38b-b57a-4a36-ab54-715ee9ad48b2",
+  "build": 2500,
+  "sourceCommit": "bbc3acbd8",
+  "installedAsarSha256": "affec8f84d108d966e1ecd4595c7df4264619b1140bba1416ac284c583c85f4b",
+  "checks": {
+    "finished actual CPU match": true,
+    "one paid native deployment": true,
+    "unused charges retained": true,
+    "survivor healthy": true,
+    "no sampled survivor residency violation": true,
+    "exact original accounts restored": true
+  },
+  "samples": 398,
+  "deployment": [
+    {
+      "clock": 19.13333333333353,
+      "item": "parachute",
+      "kind": "utility",
+      "name": "M9 Chute Alpha",
+      "receipt": {
+        "accepted": true,
+        "added": 0,
+        "consumed": 1,
+        "reason": "ok"
+      },
+      "state": {
+        "braking": false,
+        "charges": 2,
+        "config": {
+          "capacity": 20,
+          "deceleration": 1800,
+          "duration": 20,
+          "terminalSpeed": 45
+        },
+        "deployed": true,
+        "remaining": 20
+      },
+      "turn": 1
+    }
+  ],
+  "limitations": [
+    "Observer retained a bounded rolling tail, not a continuous recording. Its dead-entity transition predicate was corrected for future runs.",
+    "Ground-fuel engine API is separate ongoing E25 work; full M9 acceptance remains open."
+  ]
+}

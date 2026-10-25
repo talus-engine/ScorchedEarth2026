@@ -1,0 +1,21 @@
+talus.sim.resume();talus.ui.closeMenu();
+talus.camera.centerOn(6200,400);await talus.sleepTicks(60);
+let floor=0;for(let x=6016;x<6400;x+=128)floor+=talus.world.fill({x,y:400,w:128,h:16},'STONE');
+const ceiling=talus.world.fill({x:6060,y:280,w:128,h:8},'STONE');
+const wall=talus.world.fill({x:6180,y:280,w:8,h:120},'STONE');
+const e=await talus.entities.spawn("349e05b7-6c16-464d-aa07-c97c6b848730",6110,350);
+if(!e||!await e.whenLive({timeoutTicks:600}))throw new Error('Probe entity not ready');
+talus.state.set('m8.native.actor',e.id);await talus.sleepTicks(60);
+const start={snapshot:e.snapshot(),controller:e.controller.state};
+const buys=[e.controller.addFuel(6),e.controller.addFuel(9),e.controller.addFuel(1)];
+const held=e.controller.levitate(true),samples=[];
+for(let n=0;n<120;n++){const s=e.snapshot();e.setVelocity(55,s.vy);if(n%12===0)samples.push({tick:n,...s,controller:e.controller.state});await talus.sleepTicks(1)}
+const ceilingHit={snapshot:e.snapshot(),controller:e.controller.state};
+e.controller.levitate(false);e.setVelocity(0,0);await talus.sleepTicks(60);
+const released={snapshot:e.snapshot(),controller:e.controller.state};
+e.controller.levitate(true);await talus.sleepTicks(650);
+const exhausted=e.controller.state;
+const partial=e.controller.addFuel(.25);await talus.sleepTicks(20);
+const afterPartial=e.controller.state;
+e.controller.levitate(false);e.controller.addFuel(3);
+return {floor,ceiling,wall,start,buys,held,samples,ceilingHit,released,exhausted,partial,afterPartial,final:{snapshot:e.snapshot(),controller:e.controller.state}};

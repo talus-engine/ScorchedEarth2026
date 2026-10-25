@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/private/tmp/indigo-m9-collapse/enable_terrain_items_2530.py", line 28, in <module>
+    assert hashlib.sha256(call('read_world_file',{'worldId':WORLD_ID,'path':path})['content'].encode()).hexdigest()==digest,'Template changed: '+path
+AssertionError: Template changed: Scripts/match.ts

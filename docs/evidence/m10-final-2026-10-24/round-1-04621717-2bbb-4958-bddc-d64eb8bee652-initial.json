@@ -1,0 +1,4826 @@
+{
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 22783.4755859375,
+          "y": 625.0396728515625
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 158.673828125,
+          "w": 919.955078125,
+          "x": 22323.498046875,
+          "y": 545.7027587890625
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 21632,
+      "y": -128
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 21696,
+      "y": -64
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 21696,
+      "y": -64
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 21983.4755859375,
+      "y": 141.0396728515625
+    },
+    "zoom": 0.25
+  },
+  "clock": 67.44999999999746,
+  "error": "",
+  "events": [
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 16384,
+        "y": 0
+      },
+      "clock": 0.016666666666666666,
+      "completedChunks": 0,
+      "family": "template",
+      "kind": "terrain-source",
+      "parameters": {},
+      "phase": "complete",
+      "reason": null,
+      "recipeId": "brush",
+      "seed": 2533504,
+      "totalChunks": 0,
+      "turn": 0,
+      "version": 1
+    },
+    {
+      "clock": 1.4499999999999995,
+      "kind": "generation-stamp",
+      "n": 0,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 1,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 16384,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 1.6166666666666658,
+      "kind": "generation-stamp",
+      "n": 1,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 2,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 16896,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 1.816666666666665,
+      "kind": "generation-stamp",
+      "n": 2,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 3,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 17408,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 1.9999999999999976,
+      "kind": "generation-stamp",
+      "n": 3,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 4,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 17920,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 2.1833333333333305,
+      "kind": "generation-stamp",
+      "n": 4,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 5,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 18432,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 2.3999999999999964,
+      "kind": "generation-stamp",
+      "n": 5,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 6,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 18944,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 2.583333333333329,
+      "kind": "generation-stamp",
+      "n": 6,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 7,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 19456,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 2.7833333333333283,
+      "kind": "generation-stamp",
+      "n": 7,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 8,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 19968,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 2.966666666666661,
+      "kind": "generation-stamp",
+      "n": 8,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 9,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 20480,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.1499999999999937,
+      "kind": "generation-stamp",
+      "n": 9,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 10,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 20992,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.2499999999999933,
+      "kind": "generation-stamp",
+      "n": 10,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 11,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 21504,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.2499999999999933,
+      "kind": "generation-stamp",
+      "n": 11,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 12,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 22016,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.2499999999999933,
+      "kind": "generation-stamp",
+      "n": 12,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 13,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 22528,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.2499999999999933,
+      "kind": "generation-stamp",
+      "n": 13,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 14,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 23040,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.349999999999993,
+      "kind": "generation-stamp",
+      "n": 14,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 15,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 23552,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.4999999999999925,
+      "kind": "generation-stamp",
+      "n": 15,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 16,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 24064,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.649999999999992,
+      "kind": "generation-stamp",
+      "n": 16,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 17,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 24576,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.7833333333333248,
+      "kind": "generation-stamp",
+      "n": 17,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 18,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 25088,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.9166666666666576,
+      "kind": "generation-stamp",
+      "n": 18,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 19,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 25600,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.0666666666666575,
+      "kind": "generation-stamp",
+      "n": 19,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 20,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 26112,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.183333333333324,
+      "kind": "generation-stamp",
+      "n": 20,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 21,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 26624,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.316666666666657,
+      "kind": "generation-stamp",
+      "n": 21,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 22,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 27136,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.466666666666656,
+      "kind": "generation-stamp",
+      "n": 22,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 23,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 27648,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.599999999999989,
+      "kind": "generation-stamp",
+      "n": 23,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 24,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 28160,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.7499999999999885,
+      "kind": "generation-stamp",
+      "n": 24,
+      "receipt": {
+        "accepted": 131072,
+        "added": 131072,
+        "evaluated": 131072,
+        "id": 25,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131072
+      },
+      "shape": {
+        "h": 256,
+        "w": 512,
+        "x": 28672,
+        "y": 1024
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.883333333333321,
+      "kind": "generation-stamp",
+      "n": 25,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 26,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 16384,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 5.116666666666654,
+      "kind": "generation-stamp",
+      "n": 26,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 27,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 16896,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 5.266666666666653,
+      "kind": "generation-stamp",
+      "n": 27,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 28,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 17408,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 5.433333333333319,
+      "kind": "generation-stamp",
+      "n": 28,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 29,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 17920,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 5.583333333333319,
+      "kind": "generation-stamp",
+      "n": 29,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 30,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 18432,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 5.716666666666652,
+      "kind": "generation-stamp",
+      "n": 30,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 31,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 18944,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 5.866666666666651,
+      "kind": "generation-stamp",
+      "n": 31,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 32,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 19456,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 5.999999999999984,
+      "kind": "generation-stamp",
+      "n": 32,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 33,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 19968,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.1499999999999835,
+      "kind": "generation-stamp",
+      "n": 33,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 34,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 20480,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.283333333333316,
+      "kind": "generation-stamp",
+      "n": 34,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 35,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 20992,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.349999999999983,
+      "kind": "generation-stamp",
+      "n": 35,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 36,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 21504,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.366666666666649,
+      "kind": "generation-stamp",
+      "n": 36,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 37,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 22016,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.383333333333316,
+      "kind": "generation-stamp",
+      "n": 37,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 38,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 22528,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.383333333333316,
+      "kind": "generation-stamp",
+      "n": 38,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 39,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 23040,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.466666666666649,
+      "kind": "generation-stamp",
+      "n": 39,
+      "receipt": {
+        "accepted": 65468,
+        "added": 65468,
+        "evaluated": 65536,
+        "id": 40,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 68,
+        "status": "completed",
+        "work": 65468
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 23552,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.6166666666666485,
+      "kind": "generation-stamp",
+      "n": 40,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 41,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 24064,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.749999999999981,
+      "kind": "generation-stamp",
+      "n": 41,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 42,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 24576,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.916666666666647,
+      "kind": "generation-stamp",
+      "n": 42,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 43,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 25088,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 7.066666666666647,
+      "kind": "generation-stamp",
+      "n": 43,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 44,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 25600,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 7.19999999999998,
+      "kind": "generation-stamp",
+      "n": 44,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 45,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 26112,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 7.349999999999979,
+      "kind": "generation-stamp",
+      "n": 45,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 46,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 26624,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 7.483333333333312,
+      "kind": "generation-stamp",
+      "n": 46,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 47,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 27136,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 7.616666666666645,
+      "kind": "generation-stamp",
+      "n": 47,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 48,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 27648,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 7.749999999999978,
+      "kind": "generation-stamp",
+      "n": 48,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 49,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 28160,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 7.883333333333311,
+      "kind": "generation-stamp",
+      "n": 49,
+      "receipt": {
+        "accepted": 65536,
+        "added": 65536,
+        "evaluated": 65536,
+        "id": 50,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 65536
+      },
+      "shape": {
+        "h": 128,
+        "w": 512,
+        "x": 28672,
+        "y": 896
+      },
+      "turn": 0
+    },
+    {
+      "clock": 8.11666666666665,
+      "kind": "generation-stamp",
+      "n": 50,
+      "receipt": {
+        "accepted": 118750,
+        "added": 118750,
+        "evaluated": 262144,
+        "id": 51,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 118750
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 16384,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 8.366666666666662,
+      "kind": "generation-stamp",
+      "n": 51,
+      "receipt": {
+        "accepted": 125697,
+        "added": 125697,
+        "evaluated": 262144,
+        "id": 52,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 125697
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 16896,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 8.550000000000004,
+      "kind": "generation-stamp",
+      "n": 52,
+      "receipt": {
+        "accepted": 127473,
+        "added": 127473,
+        "evaluated": 262144,
+        "id": 53,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 127473
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 17408,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 8.750000000000014,
+      "kind": "generation-stamp",
+      "n": 53,
+      "receipt": {
+        "accepted": 123721,
+        "added": 123721,
+        "evaluated": 262144,
+        "id": 54,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 123721
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 17920,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 8.966666666666692,
+      "kind": "generation-stamp",
+      "n": 54,
+      "receipt": {
+        "accepted": 128142,
+        "added": 128142,
+        "evaluated": 262144,
+        "id": 55,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 128142
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 18432,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 9.166666666666702,
+      "kind": "generation-stamp",
+      "n": 55,
+      "receipt": {
+        "accepted": 134196,
+        "added": 134196,
+        "evaluated": 262144,
+        "id": 56,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 134196
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 18944,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 9.400000000000048,
+      "kind": "generation-stamp",
+      "n": 56,
+      "receipt": {
+        "accepted": 135868,
+        "added": 135868,
+        "evaluated": 262144,
+        "id": 57,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 135868
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 19456,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 9.633333333333391,
+      "kind": "generation-stamp",
+      "n": 57,
+      "receipt": {
+        "accepted": 130991,
+        "added": 130991,
+        "evaluated": 262144,
+        "id": 58,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 130991
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 19968,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 9.8333333333334,
+      "kind": "generation-stamp",
+      "n": 58,
+      "receipt": {
+        "accepted": 129566,
+        "added": 129566,
+        "evaluated": 262144,
+        "id": 59,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 129566
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 20480,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 10.016666666666744,
+      "kind": "generation-stamp",
+      "n": 59,
+      "receipt": {
+        "accepted": 124177,
+        "added": 124177,
+        "evaluated": 262144,
+        "id": 60,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 124177
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 20992,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 10.133333333333416,
+      "kind": "generation-stamp",
+      "n": 60,
+      "receipt": {
+        "accepted": 134391,
+        "added": 134391,
+        "evaluated": 262144,
+        "id": 61,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6,
+        "status": "completed",
+        "work": 134391
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 21504,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 10.133333333333416,
+      "kind": "generation-stamp",
+      "n": 61,
+      "receipt": {
+        "accepted": 137388,
+        "added": 137388,
+        "evaluated": 262144,
+        "id": 62,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 15,
+        "status": "completed",
+        "work": 137388
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 22016,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 10.133333333333416,
+      "kind": "generation-stamp",
+      "n": 62,
+      "receipt": {
+        "accepted": 140927,
+        "added": 140927,
+        "evaluated": 262144,
+        "id": 63,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 7,
+        "status": "completed",
+        "work": 140927
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 22528,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 10.150000000000084,
+      "kind": "generation-stamp",
+      "n": 63,
+      "receipt": {
+        "accepted": 123053,
+        "added": 123053,
+        "evaluated": 262144,
+        "id": 64,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 5,
+        "status": "completed",
+        "work": 123053
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 23040,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 10.23333333333342,
+      "kind": "generation-stamp",
+      "n": 64,
+      "receipt": {
+        "accepted": 134779,
+        "added": 134779,
+        "evaluated": 262144,
+        "id": 65,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 153,
+        "status": "completed",
+        "work": 134779
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 23552,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 10.36666666666676,
+      "kind": "generation-stamp",
+      "n": 65,
+      "receipt": {
+        "accepted": 135417,
+        "added": 135417,
+        "evaluated": 262144,
+        "id": 66,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 135417
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 24064,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 10.566666666666771,
+      "kind": "generation-stamp",
+      "n": 66,
+      "receipt": {
+        "accepted": 133303,
+        "added": 133303,
+        "evaluated": 262144,
+        "id": 67,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 133303
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 24576,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 10.750000000000114,
+      "kind": "generation-stamp",
+      "n": 67,
+      "receipt": {
+        "accepted": 133358,
+        "added": 133358,
+        "evaluated": 262144,
+        "id": 68,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 133358
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 25088,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 10.966666666666791,
+      "kind": "generation-stamp",
+      "n": 68,
+      "receipt": {
+        "accepted": 142143,
+        "added": 142143,
+        "evaluated": 262144,
+        "id": 69,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 142143
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 25600,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 11.1666666666668,
+      "kind": "generation-stamp",
+      "n": 69,
+      "receipt": {
+        "accepted": 137739,
+        "added": 137739,
+        "evaluated": 262144,
+        "id": 70,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 137739
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 26112,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 11.350000000000144,
+      "kind": "generation-stamp",
+      "n": 70,
+      "receipt": {
+        "accepted": 138035,
+        "added": 138035,
+        "evaluated": 262144,
+        "id": 71,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 138035
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 26624,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 11.516666666666818,
+      "kind": "generation-stamp",
+      "n": 71,
+      "receipt": {
+        "accepted": 131584,
+        "added": 131584,
+        "evaluated": 262144,
+        "id": 72,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131584
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 27136,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 11.666666666666826,
+      "kind": "generation-stamp",
+      "n": 72,
+      "receipt": {
+        "accepted": 139331,
+        "added": 139331,
+        "evaluated": 262144,
+        "id": 73,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 139331
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 27648,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 11.850000000000168,
+      "kind": "generation-stamp",
+      "n": 73,
+      "receipt": {
+        "accepted": 131740,
+        "added": 131740,
+        "evaluated": 262144,
+        "id": 74,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 131740
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 28160,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 11.983333333333508,
+      "kind": "generation-stamp",
+      "n": 74,
+      "receipt": {
+        "accepted": 132691,
+        "added": 132691,
+        "evaluated": 262144,
+        "id": 75,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 132691
+      },
+      "shape": {
+        "h": 512,
+        "w": 512,
+        "x": 28672,
+        "y": 384
+      },
+      "turn": 0
+    },
+    {
+      "clock": 12.266666666666856,
+      "kind": "generation-detail",
+      "n": 0,
+      "receipt": {
+        "accepted": 1916,
+        "added": 1916,
+        "evaluated": 8464,
+        "id": 76,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4752,
+        "status": "completed",
+        "work": 1916
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 92,
+      "turn": 0,
+      "x": 16550,
+      "y": 676
+    },
+    {
+      "clock": 12.383333333333528,
+      "kind": "generation-detail",
+      "n": 1,
+      "receipt": {
+        "accepted": 2259,
+        "added": 2259,
+        "evaluated": 11342,
+        "id": 77,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6559,
+        "status": "completed",
+        "work": 2259
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 106,
+      "turn": 0,
+      "x": 16825,
+      "y": 682.5
+    },
+    {
+      "clock": 12.483333333333531,
+      "kind": "generation-detail",
+      "n": 2,
+      "receipt": {
+        "accepted": 445,
+        "added": 445,
+        "evaluated": 4096,
+        "id": 78,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 2783,
+        "status": "completed",
+        "work": 445
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 64,
+      "turn": 0,
+      "x": 17024,
+      "y": 669
+    },
+    {
+      "clock": 12.850000000000218,
+      "kind": "generation-detail",
+      "n": 3,
+      "receipt": {
+        "accepted": 1005,
+        "added": 1005,
+        "evaluated": 6162,
+        "id": 79,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3765,
+        "status": "completed",
+        "work": 1005
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 78,
+      "turn": 0,
+      "x": 17299,
+      "y": 730.5
+    },
+    {
+      "clock": 12.96666666666689,
+      "kind": "generation-detail",
+      "n": 4,
+      "receipt": {
+        "accepted": 2710,
+        "added": 2710,
+        "evaluated": 7056,
+        "id": 80,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 2688,
+        "status": "completed",
+        "work": 2710
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 83,
+      "turn": 0,
+      "x": 17570,
+      "y": 593.75
+    },
+    {
+      "clock": 13.083333333333565,
+      "kind": "generation-detail",
+      "n": 5,
+      "receipt": {
+        "accepted": 1581,
+        "added": 1581,
+        "evaluated": 9604,
+        "id": 81,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 5805,
+        "status": "completed",
+        "work": 1581
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 97,
+      "turn": 0,
+      "x": 17845,
+      "y": 660.25
+    },
+    {
+      "clock": 13.43333333333358,
+      "kind": "generation-detail",
+      "n": 6,
+      "receipt": {
+        "accepted": 880,
+        "added": 880,
+        "evaluated": 14400,
+        "id": 82,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 10424,
+        "status": "completed",
+        "work": 880
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 120,
+      "turn": 0,
+      "x": 18124,
+      "y": 664
+    },
+    {
+      "clock": 13.583333333333588,
+      "kind": "generation-detail",
+      "n": 7,
+      "receipt": {
+        "accepted": 1425,
+        "added": 1425,
+        "evaluated": 4900,
+        "id": 83,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 2305,
+        "status": "completed",
+        "work": 1425
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 69,
+      "turn": 0,
+      "x": 18319,
+      "y": 614.25
+    },
+    {
+      "clock": 13.716666666666928,
+      "kind": "generation-detail",
+      "n": 8,
+      "receipt": {
+        "accepted": 657,
+        "added": 657,
+        "evaluated": 5550,
+        "id": 84,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3641,
+        "status": "completed",
+        "work": 657
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 74,
+      "turn": 0,
+      "x": 18590,
+      "y": 712.5
+    },
+    {
+      "clock": 14.03333333333361,
+      "kind": "generation-detail",
+      "n": 9,
+      "receipt": {
+        "accepted": 2767,
+        "added": 2767,
+        "evaluated": 7744,
+        "id": 85,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3325,
+        "status": "completed",
+        "work": 2767
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 88,
+      "turn": 0,
+      "x": 18865,
+      "y": 629
+    },
+    {
+      "clock": 14.150000000000285,
+      "kind": "generation-detail",
+      "n": 10,
+      "receipt": {
+        "accepted": 636,
+        "added": 636,
+        "evaluated": 4624,
+        "id": 86,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3004,
+        "status": "completed",
+        "work": 636
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 68,
+      "turn": 0,
+      "x": 19131,
+      "y": 642
+    },
+    {
+      "clock": 14.30000000000029,
+      "kind": "generation-detail",
+      "n": 11,
+      "receipt": {
+        "accepted": 1512,
+        "added": 1512,
+        "evaluated": 14400,
+        "id": 87,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 9598,
+        "status": "completed",
+        "work": 1512
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 119,
+      "turn": 0,
+      "x": 19368,
+      "y": 710.75
+    },
+    {
+      "clock": 14.63333333333364,
+      "kind": "generation-detail",
+      "n": 12,
+      "receipt": {
+        "accepted": 2889,
+        "added": 2889,
+        "evaluated": 9216,
+        "id": 88,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4343,
+        "status": "completed",
+        "work": 2889
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 96,
+      "turn": 0,
+      "x": 19601,
+      "y": 657
+    },
+    {
+      "clock": 14.733333333333643,
+      "kind": "generation-detail",
+      "n": 13,
+      "receipt": {
+        "accepted": 785,
+        "added": 785,
+        "evaluated": 6806,
+        "id": 89,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4493,
+        "status": "completed",
+        "work": 785
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 82,
+      "turn": 0,
+      "x": 19918,
+      "y": 630.5
+    },
+    {
+      "clock": 14.866666666666983,
+      "kind": "generation-detail",
+      "n": 14,
+      "receipt": {
+        "accepted": 928,
+        "added": 928,
+        "evaluated": 15376,
+        "id": 90,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 11168,
+        "status": "completed",
+        "work": 928
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 124,
+      "turn": 0,
+      "x": 20151,
+      "y": 719
+    },
+    {
+      "clock": 15.183333333333668,
+      "kind": "generation-detail",
+      "n": 15,
+      "receipt": {
+        "accepted": 3137,
+        "added": 3137,
+        "evaluated": 12210,
+        "id": 91,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6365,
+        "status": "completed",
+        "work": 3137
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 110,
+      "turn": 0,
+      "x": 20388,
+      "y": 698.5
+    },
+    {
+      "clock": 15.283333333333672,
+      "kind": "generation-detail",
+      "n": 16,
+      "receipt": {
+        "accepted": 2433,
+        "added": 2433,
+        "evaluated": 7744,
+        "id": 92,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3501,
+        "status": "completed",
+        "work": 2433
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 87,
+      "turn": 0,
+      "x": 20621,
+      "y": 655.75
+    },
+    {
+      "clock": 15.383333333333676,
+      "kind": "generation-detail",
+      "n": 17,
+      "receipt": {
+        "accepted": 248,
+        "added": 248,
+        "evaluated": 5476,
+        "id": 93,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3928,
+        "status": "completed",
+        "work": 248
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 73,
+      "turn": 0,
+      "x": 20938,
+      "y": 735.25
+    },
+    {
+      "clock": 15.716666666667027,
+      "kind": "generation-detail",
+      "n": 18,
+      "receipt": {
+        "accepted": 1110,
+        "added": 1110,
+        "evaluated": 7482,
+        "id": 94,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4700,
+        "status": "completed",
+        "work": 1110
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 86,
+      "turn": 0,
+      "x": 21187,
+      "y": 723.5
+    },
+    {
+      "clock": 15.750000000000362,
+      "kind": "generation-detail",
+      "n": 19,
+      "receipt": {
+        "accepted": 320,
+        "added": 320,
+        "evaluated": 5184,
+        "id": 95,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3740,
+        "status": "completed",
+        "work": 320
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 72,
+      "turn": 0,
+      "x": 21424,
+      "y": 749
+    },
+    {
+      "clock": 15.76666666666703,
+      "kind": "generation-detail",
+      "n": 20,
+      "receipt": {
+        "accepted": 1674,
+        "added": 1674,
+        "evaluated": 10000,
+        "id": 96,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6186,
+        "status": "completed",
+        "work": 1674
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 100,
+      "turn": 0,
+      "x": 21648,
+      "y": 691
+    },
+    {
+      "clock": 16.16666666666703,
+      "kind": "generation-detail",
+      "n": 21,
+      "receipt": {
+        "accepted": 1423,
+        "added": 1423,
+        "evaluated": 13110,
+        "id": 97,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 8771,
+        "status": "completed",
+        "work": 1423
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 114,
+      "turn": 0,
+      "x": 21923,
+      "y": 663.5
+    },
+    {
+      "clock": 16.16666666666703,
+      "kind": "generation-detail",
+      "n": 22,
+      "receipt": {
+        "accepted": 2437,
+        "added": 2437,
+        "evaluated": 16384,
+        "id": 98,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 10455,
+        "status": "completed",
+        "work": 2437
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 128,
+      "turn": 0,
+      "x": 22198,
+      "y": 676
+    },
+    {
+      "clock": 16.16666666666703,
+      "kind": "generation-detail",
+      "n": 23,
+      "receipt": {
+        "accepted": 1468,
+        "added": 1468,
+        "evaluated": 6084,
+        "id": 99,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3178,
+        "status": "completed",
+        "work": 1468
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 77,
+      "turn": 0,
+      "x": 22473,
+      "y": 626.25
+    },
+    {
+      "clock": 16.48333333333368,
+      "kind": "generation-detail",
+      "n": 24,
+      "receipt": {
+        "accepted": 690,
+        "added": 690,
+        "evaluated": 8464,
+        "id": 100,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 5804,
+        "status": "completed",
+        "work": 690
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 91,
+      "turn": 0,
+      "x": 22668,
+      "y": 661.75
+    },
+    {
+      "clock": 16.500000000000345,
+      "kind": "generation-detail",
+      "n": 25,
+      "receipt": {
+        "accepted": 3811,
+        "added": 3811,
+        "evaluated": 11236,
+        "id": 101,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4835,
+        "status": "completed",
+        "work": 3811
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 105,
+      "turn": 0,
+      "x": 22943,
+      "y": 639.25
+    },
+    {
+      "clock": 16.500000000000345,
+      "kind": "generation-detail",
+      "n": 26,
+      "receipt": {
+        "accepted": 623,
+        "added": 623,
+        "evaluated": 14400,
+        "id": 102,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 10487,
+        "status": "completed",
+        "work": 623
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 119,
+      "turn": 0,
+      "x": 23218,
+      "y": 759.75
+    },
+    {
+      "clock": 16.716666666667,
+      "kind": "generation-detail",
+      "n": 27,
+      "receipt": {
+        "accepted": 683,
+        "added": 683,
+        "evaluated": 4624,
+        "id": 103,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 2957,
+        "status": "completed",
+        "work": 683
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 68,
+      "turn": 0,
+      "x": 23493,
+      "y": 693
+    },
+    {
+      "clock": 16.716666666667,
+      "kind": "generation-detail",
+      "n": 28,
+      "receipt": {
+        "accepted": 229,
+        "added": 229,
+        "evaluated": 6806,
+        "id": 104,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 5049,
+        "status": "completed",
+        "work": 229
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 82,
+      "turn": 0,
+      "x": 23688,
+      "y": 699.5
+    },
+    {
+      "clock": 16.733333333333665,
+      "kind": "generation-detail",
+      "n": 29,
+      "receipt": {
+        "accepted": 3236,
+        "added": 3236,
+        "evaluated": 9216,
+        "id": 105,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3996,
+        "status": "completed",
+        "work": 3236
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 96,
+      "turn": 0,
+      "x": 23963,
+      "y": 593
+    },
+    {
+      "clock": 17.033333333333648,
+      "kind": "generation-detail",
+      "n": 30,
+      "receipt": {
+        "accepted": 588,
+        "added": 588,
+        "evaluated": 9216,
+        "id": 106,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6488,
+        "status": "completed",
+        "work": 588
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 95,
+      "turn": 0,
+      "x": 24233,
+      "y": 702.75
+    },
+    {
+      "clock": 17.150000000000308,
+      "kind": "generation-detail",
+      "n": 31,
+      "receipt": {
+        "accepted": 444,
+        "added": 444,
+        "evaluated": 6724,
+        "id": 107,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4700,
+        "status": "completed",
+        "work": 444
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 81,
+      "turn": 0,
+      "x": 24470,
+      "y": 689.25
+    },
+    {
+      "clock": 17.233333333333636,
+      "kind": "generation-detail",
+      "n": 32,
+      "receipt": {
+        "accepted": 869,
+        "added": 869,
+        "evaluated": 4624,
+        "id": 108,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 2647,
+        "status": "completed",
+        "work": 869
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 67,
+      "turn": 0,
+      "x": 24707,
+      "y": 621.75
+    },
+    {
+      "clock": 17.550000000000285,
+      "kind": "generation-detail",
+      "n": 33,
+      "receipt": {
+        "accepted": 5942,
+        "added": 5942,
+        "evaluated": 14042,
+        "id": 109,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4976,
+        "status": "completed",
+        "work": 5942
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 118,
+      "turn": 0,
+      "x": 25024,
+      "y": 612.5
+    },
+    {
+      "clock": 17.716666666666942,
+      "kind": "generation-detail",
+      "n": 34,
+      "receipt": {
+        "accepted": 1343,
+        "added": 1343,
+        "evaluated": 7482,
+        "id": 110,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4467,
+        "status": "completed",
+        "work": 1343
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 86,
+      "turn": 0,
+      "x": 25253,
+      "y": 666.5
+    },
+    {
+      "clock": 17.833333333333602,
+      "kind": "generation-detail",
+      "n": 35,
+      "receipt": {
+        "accepted": 1280,
+        "added": 1280,
+        "evaluated": 5184,
+        "id": 111,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 2780,
+        "status": "completed",
+        "work": 1280
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 72,
+      "turn": 0,
+      "x": 25490,
+      "y": 643
+    },
+    {
+      "clock": 18.250000000000245,
+      "kind": "generation-detail",
+      "n": 36,
+      "receipt": {
+        "accepted": 1007,
+        "added": 1007,
+        "evaluated": 15376,
+        "id": 112,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 10869,
+        "status": "completed",
+        "work": 1007
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 123,
+      "turn": 0,
+      "x": 25807,
+      "y": 678.75
+    },
+    {
+      "clock": 18.35000000000024,
+      "kind": "generation-detail",
+      "n": 37,
+      "receipt": {
+        "accepted": 2423,
+        "added": 2423,
+        "evaluated": 12100,
+        "id": 113,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6899,
+        "status": "completed",
+        "work": 2423
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 109,
+      "turn": 0,
+      "x": 26044,
+      "y": 669.25
+    },
+    {
+      "clock": 18.450000000000234,
+      "kind": "generation-detail",
+      "n": 38,
+      "receipt": {
+        "accepted": 702,
+        "added": 702,
+        "evaluated": 6084,
+        "id": 114,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3944,
+        "status": "completed",
+        "work": 702
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 77,
+      "turn": 0,
+      "x": 26273,
+      "y": 654.25
+    },
+    {
+      "clock": 18.800000000000217,
+      "kind": "generation-detail",
+      "n": 39,
+      "receipt": {
+        "accepted": 807,
+        "added": 807,
+        "evaluated": 16384,
+        "id": 115,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 12085,
+        "status": "completed",
+        "work": 807
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 128,
+      "turn": 0,
+      "x": 26510,
+      "y": 766
+    },
+    {
+      "clock": 18.883333333333542,
+      "kind": "generation-detail",
+      "n": 40,
+      "receipt": {
+        "accepted": 5037,
+        "added": 5037,
+        "evaluated": 10816,
+        "id": 116,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3455,
+        "status": "completed",
+        "work": 5037
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 104,
+      "turn": 0,
+      "x": 26822,
+      "y": 604
+    },
+    {
+      "clock": 19.000000000000203,
+      "kind": "generation-detail",
+      "n": 41,
+      "receipt": {
+        "accepted": 1236,
+        "added": 1236,
+        "evaluated": 14042,
+        "id": 117,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 9682,
+        "status": "completed",
+        "work": 1236
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 118,
+      "turn": 0,
+      "x": 27017,
+      "y": 750.5
+    },
+    {
+      "clock": 19.31666666666685,
+      "kind": "generation-detail",
+      "n": 42,
+      "receipt": {
+        "accepted": 1411,
+        "added": 1411,
+        "evaluated": 5776,
+        "id": 118,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3137,
+        "status": "completed",
+        "work": 1411
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 76,
+      "turn": 0,
+      "x": 27296,
+      "y": 655
+    },
+    {
+      "clock": 19.416666666666845,
+      "kind": "generation-detail",
+      "n": 43,
+      "receipt": {
+        "accepted": 854,
+        "added": 854,
+        "evaluated": 8190,
+        "id": 119,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 5500,
+        "status": "completed",
+        "work": 854
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 90,
+      "turn": 0,
+      "x": 27571,
+      "y": 685.5
+    },
+    {
+      "clock": 19.51666666666684,
+      "kind": "generation-detail",
+      "n": 44,
+      "receipt": {
+        "accepted": 2934,
+        "added": 2934,
+        "evaluated": 9216,
+        "id": 120,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4142,
+        "status": "completed",
+        "work": 2934
+      },
+      "recipe": "builtin-brush-hills",
+      "size": 95,
+      "turn": 0,
+      "x": 27842,
+      "y": 620.75
+    },
+    {
+      "clock": 19.78333333333349,
+      "kind": "generation-detail",
+      "n": 45,
+      "receipt": {
+        "accepted": 4647,
+        "added": 4647,
+        "evaluated": 12100,
+        "id": 121,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4675,
+        "status": "completed",
+        "work": 4647
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 109,
+      "turn": 0,
+      "x": 28037,
+      "y": 592.25
+    },
+    {
+      "clock": 19.88333333333349,
+      "kind": "generation-detail",
+      "n": 46,
+      "receipt": {
+        "accepted": 667,
+        "added": 667,
+        "evaluated": 4624,
+        "id": 122,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 2849,
+        "status": "completed",
+        "work": 667
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 67,
+      "turn": 0,
+      "x": 28316,
+      "y": 613.75
+    },
+    {
+      "clock": 19.98333333333348,
+      "kind": "generation-detail",
+      "n": 47,
+      "receipt": {
+        "accepted": 1166,
+        "added": 1166,
+        "evaluated": 6724,
+        "id": 123,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3978,
+        "status": "completed",
+        "work": 1166
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 81,
+      "turn": 0,
+      "x": 28591,
+      "y": 644.25
+    },
+    {
+      "clock": 20.283333333333463,
+      "kind": "generation-detail",
+      "n": 48,
+      "receipt": {
+        "accepted": 1938,
+        "added": 1938,
+        "evaluated": 7482,
+        "id": 124,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 3872,
+        "status": "completed",
+        "work": 1938
+      },
+      "recipe": "builtin-brush-forest-floor",
+      "size": 86,
+      "turn": 0,
+      "x": 28862,
+      "y": 665.5
+    },
+    {
+      "clock": 20.383333333333457,
+      "kind": "generation-detail",
+      "n": 49,
+      "receipt": {
+        "accepted": 2602,
+        "added": 2602,
+        "evaluated": 10000,
+        "id": 125,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 5258,
+        "status": "completed",
+        "work": 2602
+      },
+      "recipe": "builtin-brush-cliffside",
+      "size": 100,
+      "turn": 0,
+      "x": 29057,
+      "y": 628
+    },
+    {
+      "clock": 20.616666666666777,
+      "ground": 631,
+      "kind": "generation-living",
+      "n": 0,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15625,
+        "added": 15625,
+        "evaluated": 262144,
+        "id": 126,
+        "organisms": [
+          1
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15625
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 16512
+    },
+    {
+      "clock": 20.83333333333343,
+      "ground": 728,
+      "kind": "generation-living",
+      "n": 1,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 539,
+        "added": 539,
+        "evaluated": 262144,
+        "id": 127,
+        "organisms": [
+          2
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 26,
+        "status": "completed",
+        "work": 539
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 16768
+    },
+    {
+      "clock": 21.083333333333417,
+      "ground": 637,
+      "kind": "generation-living",
+      "n": 2,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15627,
+        "added": 15627,
+        "evaluated": 262144,
+        "id": 128,
+        "organisms": [
+          3
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15627
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 17024
+    },
+    {
+      "clock": 21.26666666666674,
+      "ground": 696,
+      "kind": "generation-living",
+      "n": 3,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 11043,
+        "added": 11043,
+        "evaluated": 262144,
+        "id": 129,
+        "organisms": [
+          4
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 127,
+        "status": "completed",
+        "work": 11043
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 17280
+    },
+    {
+      "clock": 21.51666666666673,
+      "ground": 569,
+      "kind": "generation-living",
+      "n": 4,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14662,
+        "added": 14662,
+        "evaluated": 262144,
+        "id": 130,
+        "organisms": [
+          5
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 14662
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 17536
+    },
+    {
+      "clock": 21.716666666666715,
+      "ground": 635,
+      "kind": "generation-living",
+      "n": 5,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 4922,
+        "added": 4922,
+        "evaluated": 262144,
+        "id": 131,
+        "organisms": [
+          6
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 24,
+        "status": "completed",
+        "work": 4922
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 17792
+    },
+    {
+      "clock": 21.90000000000004,
+      "ground": 702,
+      "kind": "generation-living",
+      "n": 6,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15510,
+        "added": 15510,
+        "evaluated": 262144,
+        "id": 132,
+        "organisms": [
+          7
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 19,
+        "status": "completed",
+        "work": 15510
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 18048
+    },
+    {
+      "clock": 22.13333333333336,
+      "ground": 583,
+      "kind": "generation-living",
+      "n": 7,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 9678,
+        "added": 9678,
+        "evaluated": 262144,
+        "id": 133,
+        "organisms": [
+          8
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 9678
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 18304
+    },
+    {
+      "clock": 22.36666666666668,
+      "ground": 690,
+      "kind": "generation-living",
+      "n": 8,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15293,
+        "added": 15293,
+        "evaluated": 262144,
+        "id": 134,
+        "organisms": [
+          9
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 65,
+        "status": "completed",
+        "work": 15293
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 18560
+    },
+    {
+      "clock": 22.583333333333332,
+      "ground": 698,
+      "kind": "generation-living",
+      "n": 9,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 7999,
+        "added": 7999,
+        "evaluated": 262144,
+        "id": 135,
+        "organisms": [
+          10
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 119,
+        "status": "completed",
+        "work": 7999
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 18816
+    },
+    {
+      "clock": 22.816666666666652,
+      "ground": 700,
+      "kind": "generation-living",
+      "n": 10,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14140,
+        "added": 14140,
+        "evaluated": 262144,
+        "id": 136,
+        "organisms": [
+          11
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 14,
+        "status": "completed",
+        "work": 14140
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 19072
+    },
+    {
+      "clock": 23.01666666666664,
+      "ground": 666,
+      "kind": "generation-living",
+      "n": 11,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 5098,
+        "added": 5098,
+        "evaluated": 262144,
+        "id": 137,
+        "organisms": [
+          12
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 1,
+        "status": "completed",
+        "work": 5098
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 19328
+    },
+    {
+      "clock": 23.266666666666627,
+      "ground": 612,
+      "kind": "generation-living",
+      "n": 12,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15623,
+        "added": 15623,
+        "evaluated": 262144,
+        "id": 138,
+        "organisms": [
+          13
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15623
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 19584
+    },
+    {
+      "clock": 23.466666666666615,
+      "ground": 640,
+      "kind": "generation-living",
+      "n": 13,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 9815,
+        "added": 9815,
+        "evaluated": 262144,
+        "id": 139,
+        "organisms": [
+          14
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 62,
+        "status": "completed",
+        "work": 9815
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 19840
+    },
+    {
+      "clock": 23.849999999999927,
+      "ground": 592,
+      "kind": "generation-living",
+      "n": 14,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14675,
+        "added": 14675,
+        "evaluated": 262144,
+        "id": 140,
+        "organisms": [
+          15
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4,
+        "status": "completed",
+        "work": 14675
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 20096
+    },
+    {
+      "clock": 24.049999999999915,
+      "ground": 656,
+      "kind": "generation-living",
+      "n": 15,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 8657,
+        "added": 8657,
+        "evaluated": 262144,
+        "id": 141,
+        "organisms": [
+          16
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 20,
+        "status": "completed",
+        "work": 8657
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 20352
+    },
+    {
+      "clock": 24.23333333333324,
+      "ground": 614,
+      "kind": "generation-living",
+      "n": 16,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15217,
+        "added": 15217,
+        "evaluated": 262144,
+        "id": 142,
+        "organisms": [
+          17
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15217
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 20608
+    },
+    {
+      "clock": 24.433333333333227,
+      "ground": 584,
+      "kind": "generation-living",
+      "n": 17,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 4680,
+        "added": 4680,
+        "evaluated": 262144,
+        "id": 143,
+        "organisms": [
+          18
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 8,
+        "status": "completed",
+        "work": 4680
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 20864
+    },
+    {
+      "clock": 24.69999999999988,
+      "ground": 655,
+      "kind": "generation-living",
+      "n": 18,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15541,
+        "added": 15541,
+        "evaluated": 262144,
+        "id": 144,
+        "organisms": [
+          19
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 20,
+        "status": "completed",
+        "work": 15541
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 21120
+    },
+    {
+      "clock": 24.84999999999987,
+      "ground": 732,
+      "kind": "generation-living",
+      "n": 19,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 3513,
+        "added": 3513,
+        "evaluated": 262144,
+        "id": 145,
+        "organisms": [
+          20
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 218,
+        "status": "completed",
+        "work": 3513
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 21376
+    },
+    {
+      "clock": 24.899999999999867,
+      "ground": 643,
+      "kind": "generation-living",
+      "n": 20,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15403,
+        "added": 15403,
+        "evaluated": 262144,
+        "id": 146,
+        "organisms": [
+          21
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15403
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 21632
+    },
+    {
+      "clock": 24.949999999999864,
+      "ground": 618,
+      "kind": "generation-living",
+      "n": 21,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 9437,
+        "added": 9437,
+        "evaluated": 262144,
+        "id": 147,
+        "organisms": [
+          22
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 9437
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 21888
+    },
+    {
+      "clock": 24.949999999999864,
+      "kind": "generation-living-skipped",
+      "n": 22,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 24.949999999999864,
+      "kind": "generation-living-skipped",
+      "n": 23,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 24.949999999999864,
+      "kind": "generation-living-skipped",
+      "n": 24,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 24.949999999999864,
+      "kind": "generation-living-skipped",
+      "n": 25,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 24.949999999999864,
+      "kind": "generation-living-skipped",
+      "n": 26,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 24.949999999999864,
+      "kind": "generation-living-skipped",
+      "n": 27,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 25.016666666666527,
+      "ground": 648,
+      "kind": "generation-living",
+      "n": 28,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15533,
+        "added": 15533,
+        "evaluated": 262144,
+        "id": 148,
+        "organisms": [
+          23
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 2,
+        "status": "completed",
+        "work": 15533
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 23680
+    },
+    {
+      "clock": 25.149999999999853,
+      "ground": 553,
+      "kind": "generation-living",
+      "n": 29,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 8383,
+        "added": 8383,
+        "evaluated": 262144,
+        "id": 149,
+        "organisms": [
+          24
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 8383
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 23936
+    },
+    {
+      "clock": 25.249999999999847,
+      "ground": 638,
+      "kind": "generation-living",
+      "n": 30,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15625,
+        "added": 15625,
+        "evaluated": 262144,
+        "id": 150,
+        "organisms": [
+          25
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15625
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 24192
+    },
+    {
+      "clock": 25.366666666666507,
+      "ground": 641,
+      "kind": "generation-living",
+      "n": 31,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 10257,
+        "added": 10257,
+        "evaluated": 262144,
+        "id": 151,
+        "organisms": [
+          26
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 18,
+        "status": "completed",
+        "work": 10257
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 24448
+    },
+    {
+      "clock": 25.63333333333316,
+      "ground": 588,
+      "kind": "generation-living",
+      "n": 32,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15581,
+        "added": 15581,
+        "evaluated": 262144,
+        "id": 152,
+        "organisms": [
+          27
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 1,
+        "status": "completed",
+        "work": 15581
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 24704
+    },
+    {
+      "clock": 25.849999999999813,
+      "ground": 619,
+      "kind": "generation-living",
+      "n": 33,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 13254,
+        "added": 13254,
+        "evaluated": 262144,
+        "id": 153,
+        "organisms": [
+          28
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 66,
+        "status": "completed",
+        "work": 13254
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 24960
+    },
+    {
+      "clock": 25.98333333333314,
+      "ground": 644,
+      "kind": "generation-living",
+      "n": 34,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15225,
+        "added": 15225,
+        "evaluated": 262144,
+        "id": 154,
+        "organisms": [
+          29
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 5,
+        "status": "completed",
+        "work": 15225
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 25216
+    },
+    {
+      "clock": 26.0999999999998,
+      "ground": 610,
+      "kind": "generation-living",
+      "n": 35,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 16110,
+        "added": 16110,
+        "evaluated": 262144,
+        "id": 155,
+        "organisms": [
+          30
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 1,
+        "status": "completed",
+        "work": 16110
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 25472
+    },
+    {
+      "clock": 26.316666666666453,
+      "ground": 613,
+      "kind": "generation-living",
+      "n": 36,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14953,
+        "added": 14953,
+        "evaluated": 262144,
+        "id": 156,
+        "organisms": [
+          31
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 11,
+        "status": "completed",
+        "work": 14953
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 25728
+    },
+    {
+      "clock": 26.416666666666448,
+      "ground": 660,
+      "kind": "generation-living",
+      "n": 37,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 8174,
+        "added": 8174,
+        "evaluated": 262144,
+        "id": 157,
+        "organisms": [
+          32
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 29,
+        "status": "completed",
+        "work": 8174
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 25984
+    },
+    {
+      "clock": 26.699999999999765,
+      "ground": 597,
+      "kind": "generation-living",
+      "n": 38,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14661,
+        "added": 14661,
+        "evaluated": 262144,
+        "id": 158,
+        "organisms": [
+          33
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 36,
+        "status": "completed",
+        "work": 14661
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 26240
+    },
+    {
+      "clock": 26.966666666666416,
+      "ground": 703,
+      "kind": "generation-living",
+      "n": 39,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 1414,
+        "added": 1414,
+        "evaluated": 262144,
+        "id": 159,
+        "organisms": [
+          34
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 72,
+        "status": "completed",
+        "work": 1414
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 26496
+    },
+    {
+      "clock": 27.249999999999737,
+      "ground": 611,
+      "kind": "generation-living",
+      "n": 40,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15499,
+        "added": 15499,
+        "evaluated": 262144,
+        "id": 160,
+        "organisms": [
+          35
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 14,
+        "status": "completed",
+        "work": 15499
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 26752
+    },
+    {
+      "clock": 27.49999999999972,
+      "ground": 692,
+      "kind": "generation-living",
+      "n": 41,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 6212,
+        "added": 6212,
+        "evaluated": 262144,
+        "id": 161,
+        "organisms": [
+          36
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 226,
+        "status": "completed",
+        "work": 6212
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 27008
+    },
+    {
+      "clock": 27.76666666666637,
+      "ground": 630,
+      "kind": "generation-living",
+      "n": 42,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14794,
+        "added": 14794,
+        "evaluated": 262144,
+        "id": 162,
+        "organisms": [
+          37
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 27,
+        "status": "completed",
+        "work": 14794
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 27264
+    },
+    {
+      "clock": 27.866666666666365,
+      "ground": 647,
+      "kind": "generation-living",
+      "n": 43,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 6229,
+        "added": 6229,
+        "evaluated": 262144,
+        "id": 163,
+        "organisms": [
+          38
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 15,
+        "status": "completed",
+        "work": 6229
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 27520
+    },
+    {
+      "clock": 28.133333333333017,
+      "ground": 699,
+      "kind": "generation-living",
+      "n": 44,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14164,
+        "added": 14164,
+        "evaluated": 262144,
+        "id": 164,
+        "organisms": [
+          39
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 70,
+        "status": "completed",
+        "work": 14164
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 27776
+    },
+    {
+      "clock": 28.383333333333,
+      "ground": 538,
+      "kind": "generation-living",
+      "n": 45,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 7057,
+        "added": 7057,
+        "evaluated": 262144,
+        "id": 165,
+        "organisms": [
+          40
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 7057
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 28032
+    },
+    {
+      "clock": 28.616666666666323,
+      "ground": 594,
+      "kind": "generation-living",
+      "n": 46,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15321,
+        "added": 15321,
+        "evaluated": 262144,
+        "id": 166,
+        "organisms": [
+          41
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 16,
+        "status": "completed",
+        "work": 15321
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 28288
+    },
+    {
+      "clock": 28.86666666666631,
+      "ground": 708,
+      "kind": "generation-living",
+      "n": 47,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 499,
+        "added": 499,
+        "evaluated": 262144,
+        "id": 167,
+        "organisms": [
+          42
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 77,
+        "status": "completed",
+        "work": 499
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 28544
+    },
+    {
+      "clock": 29.16666666666629,
+      "ground": 639,
+      "kind": "generation-living",
+      "n": 48,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15415,
+        "added": 15415,
+        "evaluated": 262144,
+        "id": 168,
+        "organisms": [
+          43
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 17,
+        "status": "completed",
+        "work": 15415
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 28800
+    },
+    {
+      "clock": 29.39999999999961,
+      "ground": 578,
+      "kind": "generation-living",
+      "n": 49,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 9893,
+        "added": 9893,
+        "evaluated": 262144,
+        "id": 169,
+        "organisms": [
+          44
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 9893
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 29056
+    },
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 16384,
+        "y": 0
+      },
+      "clock": 29.39999999999961,
+      "kind": "generation-living-complete",
+      "sites": 50,
+      "turn": 0
+    },
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 16384,
+        "y": 0
+      },
+      "clock": 29.39999999999961,
+      "jobs": 175,
+      "kind": "generation-complete",
+      "mode": "brush",
+      "turn": 0
+    },
+    {
+      "clock": 30.99999999999952,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-568ca720-c97d-4369-9884-dc7d74c9c7ad",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 349,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-568ca720-c97d-4369-9884-dc7d74c9c7ad",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 5,
+        "maxHealth": 100,
+        "name": "Branic Stonedale",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 65,
+        "x": 22343.5,
+        "y": 555.168212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 31.099999999999515,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-568ca720-c97d-4369-9884-dc7d74c9c7ad",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 349,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-568ca720-c97d-4369-9884-dc7d74c9c7ad",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 5,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Alpha",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 130,
+        "x": 22343.498046875,
+        "y": 565.4598388671875
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 7,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 31.099999999999515,
+      "id": "instance@spawn-568ca720-c97d-4369-9884-dc7d74c9c7ad",
+      "kind": "deployed",
+      "name": "M10F Oct24 Alpha",
+      "turn": 0
+    },
+    {
+      "clock": 31.183333333332843,
+      "id": "instance@spawn-568ca720-c97d-4369-9884-dc7d74c9c7ad",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 32.68333333333276,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-1c5e4ff1-fd66-4dfd-94a9-7f6beba5f650",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 353,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-1c5e4ff1-fd66-4dfd-94a9-7f6beba5f650",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 7,
+        "maxHealth": 100,
+        "name": "Calis Ironstone",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "vx": 0,
+        "vy": 54.16666793823242,
+        "x": 22636.5,
+        "y": 578.0848999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 32.783333333332756,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-1c5e4ff1-fd66-4dfd-94a9-7f6beba5f650",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 353,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-1c5e4ff1-fd66-4dfd-94a9-7f6beba5f650",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 7,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Bravo",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "vx": 0,
+        "vy": 119.16666412353516,
+        "x": 22636.5,
+        "y": 587.293212890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 32.783333333332756,
+      "id": "instance@spawn-1c5e4ff1-fd66-4dfd-94a9-7f6beba5f650",
+      "kind": "deployed",
+      "name": "M10F Oct24 Bravo",
+      "turn": 0
+    },
+    {
+      "clock": 32.91666666666608,
+      "id": "instance@spawn-1c5e4ff1-fd66-4dfd-94a9-7f6beba5f650",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 34.366666666666,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-dd6d482d-b522-472b-ab2e-661ba0211827",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 358,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-dd6d482d-b522-472b-ab2e-661ba0211827",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 9,
+        "maxHealth": 100,
+        "name": "Edan Goldmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "vx": 0,
+        "vy": 54.16666793823242,
+        "x": 22930.5,
+        "y": 538.0848999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 34.46666666666599,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-dd6d482d-b522-472b-ab2e-661ba0211827",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 358,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-dd6d482d-b522-472b-ab2e-661ba0211827",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 9,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Charlie",
+        "residency": "live",
+        "slot": null,
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "vx": 0,
+        "vy": 119.16666412353516,
+        "x": 22930.5,
+        "y": 547.293212890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 34.46666666666599,
+      "id": "instance@spawn-dd6d482d-b522-472b-ab2e-661ba0211827",
+      "kind": "deployed",
+      "name": "M10F Oct24 Charlie",
+      "turn": 0
+    },
+    {
+      "clock": 34.616666666665985,
+      "id": "instance@spawn-dd6d482d-b522-472b-ab2e-661ba0211827",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 36.04999999999924,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-0755d3d1-afca-405c-8cdb-66c3c4555af8",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 362,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-0755d3d1-afca-405c-8cdb-66c3c4555af8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 11,
+        "maxHealth": 100,
+        "name": "Edus Stonestone",
+        "residency": "live",
+        "slot": null,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "vx": 0,
+        "vy": 54.16666793823242,
+        "x": 23223.5,
+        "y": 651.0848999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 36.14999999999923,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-0755d3d1-afca-405c-8cdb-66c3c4555af8",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 362,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-0755d3d1-afca-405c-8cdb-66c3c4555af8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 11,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Delta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "vx": 0,
+        "vy": 119.16666412353516,
+        "x": 23223.5,
+        "y": 660.293212890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 36.14999999999923,
+      "id": "instance@spawn-0755d3d1-afca-405c-8cdb-66c3c4555af8",
+      "kind": "deployed",
+      "name": "M10F Oct24 Delta",
+      "turn": 0
+    },
+    {
+      "clock": 36.14999999999923,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 360,
+      "clock": 36.14999999999923,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "M10F Oct24 Alpha",
+      "price": 240,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 36.14999999999923,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10F Oct24 Alpha",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 420,
+      "clock": 36.14999999999923,
+      "item": "crumble",
+      "kind": "purchase",
+      "name": "M10F Oct24 Bravo",
+      "price": 180,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 300,
+      "clock": 36.14999999999923,
+      "item": "parachute",
+      "kind": "purchase",
+      "name": "M10F Oct24 Bravo",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 210,
+      "clock": 36.14999999999923,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10F Oct24 Bravo",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 420,
+      "clock": 36.14999999999923,
+      "item": "crumble",
+      "kind": "purchase",
+      "name": "M10F Oct24 Charlie",
+      "price": 180,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 300,
+      "clock": 36.14999999999923,
+      "item": "parachute",
+      "kind": "purchase",
+      "name": "M10F Oct24 Charlie",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 210,
+      "clock": 36.14999999999923,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10F Oct24 Charlie",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 440,
+      "clock": 36.14999999999923,
+      "item": "machine-gun",
+      "kind": "purchase",
+      "name": "M10F Oct24 Delta",
+      "price": 160,
+      "quantity": 4,
+      "turn": 0
+    },
+    {
+      "cash": 350,
+      "clock": 36.14999999999923,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10F Oct24 Delta",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 230,
+      "clock": 36.14999999999923,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "M10F Oct24 Delta",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "clock": 36.29999999999922,
+      "id": "instance@spawn-0755d3d1-afca-405c-8cdb-66c3c4555af8",
+      "kind": "land",
+      "turn": 0
+    }
+  ],
+  "live": [
+    {
+      "id": "instance@spawn-568ca720-c97d-4369-9884-dc7d74c9c7ad",
+      "live": true,
+      "position": {
+        "x": 22343.498046875,
+        "y": 565.7027587890625
+      }
+    },
+    {
+      "id": "instance@spawn-1c5e4ff1-fd66-4dfd-94a9-7f6beba5f650",
+      "live": true,
+      "position": {
+        "x": 22636.5,
+        "y": 609.706298828125
+      }
+    },
+    {
+      "id": "instance@spawn-dd6d482d-b522-472b-ab2e-661ba0211827",
+      "live": true,
+      "position": {
+        "x": 22930.5,
+        "y": 581.1307983398438
+      }
+    },
+    {
+      "id": "instance@spawn-0755d3d1-afca-405c-8cdb-66c3c4555af8",
+      "live": true,
+      "position": {
+        "x": 23223.453125,
+        "y": 684.3765869140625
+      }
+    }
+  ],
+  "match": {
+    "attack": null,
+    "baseGeneration": {
+      "parameters": {},
+      "recipe": "brush"
+    },
+    "biome": "brush-reach",
+    "biomeCycle": false,
+    "biomeRounds": 1,
+    "bounds": {
+      "h": 1280,
+      "w": 960,
+      "x": 22304,
+      "y": 0
+    },
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0,
+      "rng": 1992919093,
+      "serial": 0
+    },
+    "computers": 4,
+    "cpuSkill": "persona",
+    "details": 50,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "generated": 75,
+    "generation": "brush",
+    "generationChoice": "brush",
+    "humans": 0,
+    "impact": null,
+    "livingSites": 50,
+    "message": "Tanks ready \u2014 begin when your crew is ready",
+    "pendingTurn": null,
+    "personaSeed": "2533504",
+    "phase": "ready",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "remaining": 30,
+    "roster": [
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#EC4787",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-568ca720-c97d-4369-9884-dc7d74c9c7ad",
+        "hits": 0,
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Alpha",
+        "personaId": "kiloton",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 22344,
+        "surfaceY": 604,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "weaponId": "heavy"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#A574F4",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-1c5e4ff1-fd66-4dfd-94a9-7f6beba5f650",
+        "hits": 0,
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Bravo",
+        "personaId": "faultline",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 22637,
+        "surfaceY": 628,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "weaponId": "crumble"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#B083CF",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-dd6d482d-b522-472b-ab2e-661ba0211827",
+        "hits": 0,
+        "index": 2,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Charlie",
+        "personaId": "faultline",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 22931,
+        "surfaceY": 588,
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "weaponId": "crumble"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#FF6150",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-0755d3d1-afca-405c-8cdb-66c3c4555af8",
+        "hits": 0,
+        "index": 3,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Delta",
+        "personaId": "lucky",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 23224,
+        "surfaceY": 701,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "weaponId": "machine-gun"
+      }
+    ],
+    "round": 1,
+    "seed": 2533504,
+    "seriesId": "04621717-2bbb-4958-bddc-d64eb8bee652",
+    "seriesLength": 3,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 16384,
+        "y": 0
+      },
+      "completedChunks": 0,
+      "family": "template",
+      "parameters": {},
+      "phase": "complete",
+      "reason": null,
+      "recipeId": "brush",
+      "seed": 2533504,
+      "totalChunks": 0,
+      "version": 1
+    },
+    "turnNumber": 0,
+    "turnSeconds": 30,
+    "version": 9,
+    "winner": null
+  },
+  "paused": false,
+  "save": {
+    "allowed": true,
+    "blockers": []
+  },
+  "world": "04621717-2bbb-4958-bddc-d64eb8bee652"
+}

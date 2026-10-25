@@ -1,0 +1,6232 @@
+{
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6400,
+          "y": 656
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 40,
+          "w": 920,
+          "x": 5940,
+          "y": 636
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5312,
+      "y": -64
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5376,
+      "y": 0
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5376,
+      "y": 0
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5600,
+      "y": 172
+    },
+    "zoom": 0.25
+  },
+  "clock": 32.48333333333277,
+  "error": "Error: growth 0: Error: Growth planting exceeds job budget",
+  "events": [
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 0,
+      "completedChunks": 700,
+      "family": "zone",
+      "kind": "terrain-source",
+      "parameters": {
+        "airDepth": 744,
+        "blend": 4,
+        "frequency": 0.005,
+        "height": 110,
+        "octaves": 3
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "verdant-reach",
+      "seed": 2541102,
+      "totalChunks": 4000,
+      "turn": 0,
+      "version": 1
+    },
+    {
+      "catalog": "procedural-m11",
+      "choices": {
+        "growth": [
+          "builtin-hair",
+          "builtin-vine-ledge",
+          "builtin-icicles",
+          "builtin-ivy-wall",
+          "builtin-living-bramble",
+          "builtin-bramble",
+          "indigo-m9-oak",
+          "builtin-worm-tunnels",
+          "builtin-flower-bed",
+          "builtin-lightning",
+          "builtin-meadow-grass",
+          "builtin-oak-sapling",
+          "m9-planar-bramble-probe",
+          "builtin-roots",
+          "builtin-creeping-vine",
+          "indigo-m9-bramble",
+          "builtin-coral",
+          "builtin-wheat",
+          "builtin-oak-sapling",
+          "indigo-m9-oak",
+          "builtin-wheat",
+          "builtin-ivy-wall",
+          "builtin-coral",
+          "builtin-creeping-vine",
+          "builtin-lightning",
+          "builtin-worm-tunnels",
+          "builtin-living-bramble",
+          "builtin-icicles",
+          "builtin-vine-ledge",
+          "m9-planar-bramble-probe",
+          "builtin-hair",
+          "builtin-roots",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "builtin-flower-bed",
+          "builtin-meadow-grass",
+          "builtin-roots",
+          "builtin-hair",
+          "builtin-wheat",
+          "m9-planar-bramble-probe",
+          "builtin-icicles",
+          "builtin-flower-bed",
+          "builtin-living-bramble",
+          "builtin-creeping-vine",
+          "builtin-worm-tunnels",
+          "builtin-oak-sapling",
+          "builtin-meadow-grass",
+          "builtin-lightning",
+          "indigo-m9-bramble",
+          "builtin-coral"
+        ],
+        "neural": [
+          "builtin-nca-four",
+          "builtin-nca-stations",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-eight",
+          "builtin-nca-four",
+          "builtin-nca-stations",
+          "builtin-nca-masonry",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-eight",
+          "builtin-nca-stations",
+          "builtin-nca-masonry",
+          "builtin-nca-four",
+          "builtin-nca-eight"
+        ],
+        "neuralRecipe": [
+          "builtin-brush-hellscape",
+          "builtin-brush-station-deck",
+          "builtin-brush-tundra",
+          "builtin-brush-castle-dungeon",
+          "builtin-brush-gold",
+          "builtin-brush-dunes",
+          "builtin-brush-engine-room",
+          "builtin-brush-keep-library",
+          "builtin-brush-tundra",
+          "builtin-brush-rubble",
+          "builtin-brush-catacombs",
+          "builtin-brush-factory-floor",
+          "builtin-brush-gold",
+          "builtin-brush-engine-room",
+          "builtin-brush-castle-dungeon",
+          "builtin-brush-hills",
+          "builtin-brush-tundra"
+        ],
+        "noise": [
+          "builtin-tile-7",
+          "builtin-panel-4",
+          "builtin-sqdoor-8",
+          "builtin-lab-2",
+          "builtin-light-5",
+          "builtin-water-1",
+          "builtin-tech-1",
+          "builtin-light-3",
+          "builtin-tile-4",
+          "builtin-cladding-2",
+          "builtin-panel-8",
+          "builtin-panel-3",
+          "builtin-door-8",
+          "builtin-wood-3",
+          "builtin-biocrete",
+          "builtin-crate-1",
+          "builtin-electriccrete",
+          "builtin-door-5",
+          "builtin-sqdoor-5",
+          "builtin-pipes-1",
+          "builtin-tile-3",
+          "builtin-drain-1",
+          "builtin-metal-3",
+          "builtin-tech-6",
+          "builtin-lab-4",
+          "builtin-sidewalk-1",
+          "builtin-cobbles-1",
+          "builtin-cobbles-4",
+          "builtin-panel-1",
+          "builtin-cobbles-3",
+          "builtin-door-1",
+          "builtin-tile-2",
+          "builtin-lab-5",
+          "builtin-vent-1",
+          "builtin-block-3",
+          "builtin-corrugat-2",
+          "builtin-floor-4",
+          "builtin-steel-4",
+          "builtin-vent-2",
+          "builtin-bigdoor-1",
+          "builtin-metal-2",
+          "builtin-brick-4",
+          "builtin-brickwood",
+          "builtin-lab-1",
+          "builtin-doortrim-3",
+          "builtin-rusty-3",
+          "builtin-support-3",
+          "builtin-grass-4",
+          "builtin-sand-2",
+          "builtin-gravel-1"
+        ],
+        "semantic": [
+          "builtin-brush-industrial-pipeworks",
+          "builtin-brush-autumn-woodland",
+          "builtin-brush-starship-corridor",
+          "builtin-brush-keep-library",
+          "builtin-brush-power-substation",
+          "builtin-brush-hills",
+          "builtin-brush-scrapyard",
+          "builtin-brush-ice-cave",
+          "builtin-brush-great-hall",
+          "builtin-brush-flooded-dungeon",
+          "builtin-brush-rocky-shore",
+          "builtin-brush-brimstone-pits",
+          "builtin-brush-snowy-pines",
+          "builtin-brush-cryo-bay",
+          "builtin-brush-obsidian-spires",
+          "builtin-brush-toxic-marsh",
+          "builtin-brush-coral-reef",
+          "builtin-brush-goblin-warren",
+          "builtin-brush-salt",
+          "builtin-brush-sea-cave",
+          "builtin-brush-dunes",
+          "builtin-brush-stronghold-rampart",
+          "builtin-brush-bone-pit",
+          "builtin-brush-dry-cave",
+          "builtin-brush-coal",
+          "builtin-brush-volcanic-caldera",
+          "builtin-brush-ice-moon",
+          "builtin-brush-enchanted-forest",
+          "builtin-brush-marble-shrine",
+          "builtin-brush-station-deck",
+          "builtin-brush-cracked-asphalt",
+          "builtin-brush-cliffside",
+          "builtin-brush-jungle-undergrowth",
+          "builtin-brush-haunted-wood",
+          "builtin-brush-frozen-lake",
+          "builtin-brush-throne-hall",
+          "builtin-brush-charred",
+          "builtin-brush-xeno-fungal-overgrowth",
+          "builtin-brush-dwarven-forge",
+          "builtin-brush-catacombs",
+          "builtin-brush-fungal-grotto",
+          "builtin-brush-toxic-dump",
+          "builtin-brush-blood-cellar",
+          "builtin-brush-subway-tunnel",
+          "builtin-brush-bamboo-thicket",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-peat-bog",
+          "builtin-brush-abyssal-void",
+          "builtin-brush-mossy-glade",
+          "builtin-brush-glowworm-cavern"
+        ],
+        "structureTexture": [
+          "builtin-wood-3",
+          "builtin-concrete-7",
+          "builtin-tarmac-4",
+          "builtin-corrugat-2",
+          "builtin-crate-3",
+          "builtin-metal-5",
+          "builtin-metal-3",
+          "builtin-concrete-1",
+          "builtin-brick-2",
+          "builtin-steel-3",
+          "builtin-crate-2",
+          "builtin-brick-3",
+          "builtin-wood-2",
+          "builtin-metal-4",
+          "builtin-concrete-4",
+          "builtin-brick-6",
+          "builtin-marble-1",
+          "builtin-metal-1",
+          "builtin-steel-5",
+          "builtin-brick2",
+          "builtin-brick-1",
+          "builtin-crate-1",
+          "builtin-metal-7",
+          "builtin-tarmac-2",
+          "builtin-tarmac-1"
+        ],
+        "vector": [
+          "builtin:diamond",
+          "builtin:checkmark",
+          "builtin:leaf",
+          "builtin:fire",
+          "builtin:star",
+          "builtin:triangle",
+          "builtin:burst",
+          "builtin:sun",
+          "builtin:cross",
+          "builtin:flower",
+          "builtin:heart",
+          "builtin:crescent",
+          "builtin:snowflake",
+          "builtin:right-triangle",
+          "builtin:club",
+          "builtin:cloud",
+          "builtin:drop",
+          "builtin:ellipse",
+          "builtin:key",
+          "builtin:octagon",
+          "builtin:lightning",
+          "builtin:arrow-right",
+          "builtin:pentagon",
+          "builtin:chevron-right",
+          "builtin:hexagon"
+        ]
+      },
+      "clock": 0.7666666666666674,
+      "hash": "2b6e76aee7840f8b7bd706b3fbaea1e3f783806cf0b959cc151c76b33754b36a",
+      "kind": "generation-catalog",
+      "turn": 0
+    },
+    {
+      "clock": 1.35,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 0,
+      "preset": "builtin-tile-7",
+      "receipt": {
+        "accepted": 8699,
+        "added": 8699,
+        "evaluated": 36864,
+        "id": 1,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4248,
+        "sampledCells": 46181,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 8699
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 150
+    },
+    {
+      "clock": 1.6333333333333324,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 1,
+      "preset": "builtin-panel-4",
+      "receipt": {
+        "accepted": 3679,
+        "added": 3679,
+        "evaluated": 36864,
+        "id": 2,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1772,
+        "sampledCells": 18509,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 3679
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 387
+    },
+    {
+      "clock": 1.8833333333333315,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 2,
+      "preset": "builtin-sqdoor-8",
+      "receipt": {
+        "accepted": 6631,
+        "added": 6631,
+        "evaluated": 36864,
+        "id": 3,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3477,
+        "sampledCells": 26973,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 6631
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 651
+    },
+    {
+      "clock": 2.166666666666664,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 3,
+      "preset": "builtin-lab-2",
+      "receipt": {
+        "accepted": 8762,
+        "added": 8762,
+        "evaluated": 36864,
+        "id": 4,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4650,
+        "sampledCells": 36925,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 8762
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 888
+    },
+    {
+      "clock": 2.416666666666663,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 4,
+      "preset": "builtin-light-5",
+      "receipt": {
+        "accepted": 7611,
+        "added": 7611,
+        "evaluated": 36864,
+        "id": 5,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4658,
+        "sampledCells": 53957,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7611
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 1152
+    },
+    {
+      "clock": 2.6833333333333287,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 5,
+      "preset": "builtin-water-1",
+      "receipt": {
+        "accepted": 10890,
+        "added": 10890,
+        "evaluated": 36864,
+        "id": 6,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5141,
+        "sampledCells": 53565,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 10890
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 1389
+    },
+    {
+      "clock": 2.9499999999999944,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 6,
+      "preset": "builtin-tech-1",
+      "receipt": {
+        "accepted": 3476,
+        "added": 3476,
+        "evaluated": 36864,
+        "id": 7,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1952,
+        "sampledCells": 28725,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 3476
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 1653
+    },
+    {
+      "clock": 3.21666666666666,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 7,
+      "preset": "builtin-light-3",
+      "receipt": {
+        "accepted": 4845,
+        "added": 4845,
+        "evaluated": 36864,
+        "id": 8,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2027,
+        "sampledCells": 36213,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 4845
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 1939
+    },
+    {
+      "clock": 3.4999999999999925,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 8,
+      "preset": "builtin-tile-4",
+      "receipt": {
+        "accepted": 11484,
+        "added": 11484,
+        "evaluated": 36864,
+        "id": 9,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5923,
+        "sampledCells": 45685,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 11484
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 2154
+    },
+    {
+      "clock": 3.733333333333325,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 9,
+      "preset": "builtin-cladding-2",
+      "receipt": {
+        "accepted": 10763,
+        "added": 10763,
+        "evaluated": 36864,
+        "id": 10,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5956,
+        "sampledCells": 43093,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 10763
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 2440
+    },
+    {
+      "clock": 3.9999999999999902,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 10,
+      "preset": "builtin-panel-8",
+      "receipt": {
+        "accepted": 8900,
+        "added": 8900,
+        "evaluated": 36864,
+        "id": 11,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4150,
+        "sampledCells": 32805,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 8900
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 2691
+    },
+    {
+      "clock": 4.24999999999999,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 11,
+      "preset": "builtin-panel-3",
+      "receipt": {
+        "accepted": 5657,
+        "added": 5657,
+        "evaluated": 36864,
+        "id": 12,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2142,
+        "sampledCells": 26221,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 5657
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 2966
+    },
+    {
+      "clock": 4.483333333333323,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 12,
+      "preset": "builtin-door-8",
+      "receipt": {
+        "accepted": 7130,
+        "added": 7130,
+        "evaluated": 36864,
+        "id": 13,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3196,
+        "sampledCells": 48509,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7130
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 3192
+    },
+    {
+      "clock": 4.7499999999999885,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 13,
+      "preset": "builtin-wood-3",
+      "receipt": {
+        "accepted": 9311,
+        "added": 9311,
+        "evaluated": 36864,
+        "id": 14,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2585,
+        "sampledCells": 45245,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 9311
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 3467
+    },
+    {
+      "clock": 4.983333333333321,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 14,
+      "preset": "builtin-biocrete",
+      "receipt": {
+        "accepted": 7048,
+        "added": 7048,
+        "evaluated": 36864,
+        "id": 15,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4241,
+        "sampledCells": 33501,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7048
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 3693
+    },
+    {
+      "clock": 5.2166666666666535,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 15,
+      "preset": "builtin-crate-1",
+      "receipt": {
+        "accepted": 7522,
+        "added": 7522,
+        "evaluated": 36864,
+        "id": 16,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3870,
+        "sampledCells": 27205,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7522
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 3968
+    },
+    {
+      "clock": 5.483333333333319,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 16,
+      "preset": "builtin-electriccrete",
+      "receipt": {
+        "accepted": 10914,
+        "added": 10914,
+        "evaluated": 36864,
+        "id": 17,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 7009,
+        "sampledCells": 50637,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 10914
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 4243
+    },
+    {
+      "clock": 5.733333333333318,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 17,
+      "preset": "builtin-door-5",
+      "receipt": {
+        "accepted": 15971,
+        "added": 15971,
+        "evaluated": 36864,
+        "id": 18,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 8400,
+        "sampledCells": 47029,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 15971
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 4469
+    },
+    {
+      "clock": 6.016666666666651,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 18,
+      "preset": "builtin-sqdoor-5",
+      "receipt": {
+        "accepted": 9890,
+        "added": 9890,
+        "evaluated": 36864,
+        "id": 19,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3270,
+        "sampledCells": 37549,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 9890
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 4744
+    },
+    {
+      "clock": 6.283333333333316,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 19,
+      "preset": "builtin-pipes-1",
+      "receipt": {
+        "accepted": 12401,
+        "added": 12401,
+        "evaluated": 36864,
+        "id": 20,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6288,
+        "sampledCells": 39253,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 12401
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 4970
+    },
+    {
+      "clock": 6.433333333333316,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 20,
+      "preset": "builtin-tile-3",
+      "receipt": {
+        "accepted": 7249,
+        "added": 7249,
+        "evaluated": 36864,
+        "id": 21,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3501,
+        "sampledCells": 58933,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7249
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 5272
+    },
+    {
+      "clock": 6.466666666666649,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 21,
+      "preset": "builtin-drain-1",
+      "receipt": {
+        "accepted": 8433,
+        "added": 8433,
+        "evaluated": 36864,
+        "id": 22,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4578,
+        "sampledCells": 46253,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 8433
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 5509
+    },
+    {
+      "clock": 6.499999999999982,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 22,
+      "preset": "builtin-metal-3",
+      "receipt": {
+        "accepted": 8839,
+        "added": 8839,
+        "evaluated": 36864,
+        "id": 23,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5130,
+        "sampledCells": 24869,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 8839
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 5773
+    },
+    {
+      "clock": 6.5333333333333155,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 23,
+      "preset": "builtin-tech-6",
+      "receipt": {
+        "accepted": 6279,
+        "added": 6279,
+        "evaluated": 36864,
+        "id": 24,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3206,
+        "sampledCells": 33389,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 6279
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 6010
+    },
+    {
+      "clock": 6.566666666666649,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 24,
+      "preset": "builtin-lab-4",
+      "receipt": {
+        "accepted": 11783,
+        "added": 11783,
+        "evaluated": 36864,
+        "id": 25,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5636,
+        "sampledCells": 34917,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 11783
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 6274
+    },
+    {
+      "clock": 6.599999999999982,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 25,
+      "preset": "builtin-sidewalk-1",
+      "receipt": {
+        "accepted": 9091,
+        "added": 9091,
+        "evaluated": 36864,
+        "id": 26,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4196,
+        "sampledCells": 47661,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 9091
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 6511
+    },
+    {
+      "clock": 6.633333333333315,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 26,
+      "preset": "builtin-cobbles-1",
+      "receipt": {
+        "accepted": 4222,
+        "added": 4222,
+        "evaluated": 36864,
+        "id": 27,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2588,
+        "sampledCells": 26709,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 4222
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 6775
+    },
+    {
+      "clock": 6.666666666666648,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 27,
+      "preset": "builtin-cobbles-4",
+      "receipt": {
+        "accepted": 7620,
+        "added": 7620,
+        "evaluated": 36864,
+        "id": 28,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3417,
+        "sampledCells": 29821,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7620
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 7061
+    },
+    {
+      "clock": 6.6999999999999815,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 28,
+      "preset": "builtin-panel-1",
+      "receipt": {
+        "accepted": 8384,
+        "added": 8384,
+        "evaluated": 36864,
+        "id": 29,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5906,
+        "sampledCells": 38189,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 8384
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 7315
+    },
+    {
+      "clock": 6.849999999999981,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 29,
+      "preset": "builtin-cobbles-3",
+      "receipt": {
+        "accepted": 7051,
+        "added": 7051,
+        "evaluated": 36864,
+        "id": 30,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2710,
+        "sampledCells": 48277,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7051
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 7552
+    },
+    {
+      "clock": 7.133333333333313,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 30,
+      "preset": "builtin-door-1",
+      "receipt": {
+        "accepted": 7392,
+        "added": 7392,
+        "evaluated": 36864,
+        "id": 31,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4556,
+        "sampledCells": 34213,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7392
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 7819
+    },
+    {
+      "clock": 7.466666666666645,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 31,
+      "preset": "builtin-tile-2",
+      "receipt": {
+        "accepted": 3349,
+        "added": 3349,
+        "evaluated": 36864,
+        "id": 32,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1391,
+        "sampledCells": 29661,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 3349
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 8045
+    },
+    {
+      "clock": 7.699999999999978,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 32,
+      "preset": "builtin-lab-5",
+      "receipt": {
+        "accepted": 3315,
+        "added": 3315,
+        "evaluated": 36864,
+        "id": 33,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2328,
+        "sampledCells": 23077,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 3315
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 8342
+    },
+    {
+      "clock": 7.966666666666644,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 33,
+      "preset": "builtin-vent-1",
+      "receipt": {
+        "accepted": 14016,
+        "added": 14016,
+        "evaluated": 36864,
+        "id": 34,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 7079,
+        "sampledCells": 60805,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 14016
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 8568
+    },
+    {
+      "clock": 8.31666666666666,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 34,
+      "preset": "builtin-block-3",
+      "receipt": {
+        "accepted": 9925,
+        "added": 9925,
+        "evaluated": 36864,
+        "id": 35,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6445,
+        "sampledCells": 38061,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 9925
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 8816
+    },
+    {
+      "clock": 8.600000000000007,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 35,
+      "preset": "builtin-corrugat-2",
+      "receipt": {
+        "accepted": 7224,
+        "added": 7224,
+        "evaluated": 36864,
+        "id": 36,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3812,
+        "sampledCells": 23141,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7224
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 9091
+    },
+    {
+      "clock": 8.883333333333354,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 36,
+      "preset": "builtin-floor-4",
+      "receipt": {
+        "accepted": 5504,
+        "added": 5504,
+        "evaluated": 36864,
+        "id": 37,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2499,
+        "sampledCells": 21789,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 5504
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 9339
+    },
+    {
+      "clock": 9.183333333333367,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 37,
+      "preset": "builtin-steel-4",
+      "receipt": {
+        "accepted": 7006,
+        "added": 7006,
+        "evaluated": 36864,
+        "id": 38,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3490,
+        "sampledCells": 43773,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7006
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 9614
+    },
+    {
+      "clock": 9.466666666666717,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 38,
+      "preset": "builtin-vent-2",
+      "receipt": {
+        "accepted": 7586,
+        "added": 7586,
+        "evaluated": 36864,
+        "id": 39,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5770,
+        "sampledCells": 31621,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7586
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 9872
+    },
+    {
+      "clock": 9.7833333333334,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 39,
+      "preset": "builtin-bigdoor-1",
+      "receipt": {
+        "accepted": 6924,
+        "added": 6924,
+        "evaluated": 36864,
+        "id": 40,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4470,
+        "sampledCells": 27949,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 6924
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 10098
+    },
+    {
+      "clock": 10.133333333333416,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 40,
+      "preset": "builtin-metal-2",
+      "receipt": {
+        "accepted": 7944,
+        "added": 7944,
+        "evaluated": 36864,
+        "id": 41,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4092,
+        "sampledCells": 22045,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 7944
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 10369
+    },
+    {
+      "clock": 10.4500000000001,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 41,
+      "preset": "builtin-brick-4",
+      "receipt": {
+        "accepted": 6818,
+        "added": 6818,
+        "evaluated": 36864,
+        "id": 42,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3080,
+        "sampledCells": 24173,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 6818
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 10606
+    },
+    {
+      "clock": 10.783333333333449,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 42,
+      "preset": "builtin-brickwood",
+      "receipt": {
+        "accepted": 13057,
+        "added": 13057,
+        "evaluated": 36864,
+        "id": 43,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6808,
+        "sampledCells": 53341,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 13057
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 10892
+    },
+    {
+      "clock": 11.050000000000129,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 43,
+      "preset": "builtin-lab-1",
+      "receipt": {
+        "accepted": 10251,
+        "added": 10251,
+        "evaluated": 36864,
+        "id": 44,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5771,
+        "sampledCells": 45573,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 10251
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 11129
+    },
+    {
+      "clock": 11.266666666666806,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 44,
+      "preset": "builtin-doortrim-3",
+      "receipt": {
+        "accepted": 16689,
+        "added": 16689,
+        "evaluated": 36864,
+        "id": 45,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 8171,
+        "sampledCells": 50933,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 16689
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 11415
+    },
+    {
+      "clock": 11.500000000000153,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 45,
+      "preset": "builtin-rusty-3",
+      "receipt": {
+        "accepted": 3918,
+        "added": 3918,
+        "evaluated": 36864,
+        "id": 46,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1706,
+        "sampledCells": 26981,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 3918
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 11652
+    },
+    {
+      "clock": 11.750000000000163,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 46,
+      "preset": "builtin-support-3",
+      "receipt": {
+        "accepted": 8381,
+        "added": 8381,
+        "evaluated": 36864,
+        "id": 47,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3246,
+        "sampledCells": 40525,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 8381
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 11889
+    },
+    {
+      "clock": 11.983333333333508,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 47,
+      "preset": "builtin-grass-4",
+      "receipt": {
+        "accepted": 11938,
+        "added": 11938,
+        "evaluated": 36864,
+        "id": 48,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6470,
+        "sampledCells": 43765,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 11938
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 12175
+    },
+    {
+      "clock": 12.23333333333352,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 48,
+      "preset": "builtin-sand-2",
+      "receipt": {
+        "accepted": 10416,
+        "added": 10416,
+        "evaluated": 36864,
+        "id": 49,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5605,
+        "sampledCells": 52021,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 10416
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 12412
+    },
+    {
+      "clock": 12.450000000000198,
+      "family": "noise",
+      "kind": "generation-native",
+      "n": 49,
+      "preset": "builtin-gravel-1",
+      "receipt": {
+        "accepted": 6204,
+        "added": 6204,
+        "evaluated": 36864,
+        "id": 50,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3320,
+        "sampledCells": 15565,
+        "skipped": 0,
+        "stamps": 5,
+        "status": "completed",
+        "work": 6204
+      },
+      "size": 192,
+      "turn": 0,
+      "x": 12649
+    },
+    {
+      "clock": 12.583333333333538,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 0,
+      "preset": "builtin-brush-industrial-pipeworks",
+      "receipt": {
+        "accepted": 15879,
+        "added": 15879,
+        "evaluated": 11236,
+        "id": 51,
+        "pixels": 11236,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2927,
+        "skipped": 7677,
+        "status": "completed",
+        "work": 27115
+      },
+      "size": 106,
+      "turn": 0,
+      "x": 150
+    },
+    {
+      "clock": 12.666666666666876,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 1,
+      "preset": "builtin-brush-autumn-woodland",
+      "receipt": {
+        "accepted": 8317,
+        "added": 8317,
+        "evaluated": 8464,
+        "id": 52,
+        "pixels": 8464,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3627,
+        "skipped": 565,
+        "status": "completed",
+        "work": 16781
+      },
+      "size": 92,
+      "turn": 0,
+      "x": 387
+    },
+    {
+      "clock": 12.733333333333546,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 2,
+      "preset": "builtin-brush-starship-corridor",
+      "receipt": {
+        "accepted": 5593,
+        "added": 5593,
+        "evaluated": 4761,
+        "id": 53,
+        "pixels": 4761,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 691,
+        "skipped": 3949,
+        "status": "completed",
+        "work": 10354
+      },
+      "size": 69,
+      "turn": 0,
+      "x": 651
+    },
+    {
+      "clock": 12.850000000000218,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 3,
+      "preset": "builtin-brush-keep-library",
+      "receipt": {
+        "accepted": 22096,
+        "added": 22096,
+        "evaluated": 14400,
+        "id": 54,
+        "pixels": 14400,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6772,
+        "skipped": 6966,
+        "status": "completed",
+        "work": 36496
+      },
+      "size": 120,
+      "turn": 0,
+      "x": 888
+    },
+    {
+      "clock": 12.916666666666888,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 4,
+      "preset": "builtin-brush-power-substation",
+      "receipt": {
+        "accepted": 13137,
+        "added": 13137,
+        "evaluated": 9409,
+        "id": 55,
+        "pixels": 9409,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2627,
+        "skipped": 6339,
+        "status": "completed",
+        "work": 22546
+      },
+      "size": 97,
+      "turn": 0,
+      "x": 1152
+    },
+    {
+      "clock": 12.983333333333558,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 5,
+      "preset": "builtin-brush-hills",
+      "receipt": {
+        "accepted": 1725,
+        "added": 1725,
+        "evaluated": 6889,
+        "id": 56,
+        "pixels": 6889,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1725,
+        "skipped": 1652,
+        "status": "completed",
+        "work": 8614
+      },
+      "size": 83,
+      "turn": 0,
+      "x": 1389
+    },
+    {
+      "clock": 13.10000000000023,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 6,
+      "preset": "builtin-brush-scrapyard",
+      "receipt": {
+        "accepted": 29186,
+        "added": 29186,
+        "evaluated": 15625,
+        "id": 57,
+        "pixels": 15625,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 9025,
+        "skipped": 3474,
+        "status": "completed",
+        "work": 44811
+      },
+      "size": 125,
+      "turn": 0,
+      "x": 1653
+    },
+    {
+      "clock": 13.23333333333357,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 7,
+      "preset": "builtin-brush-ice-cave",
+      "receipt": {
+        "accepted": 20818,
+        "added": 20818,
+        "evaluated": 12321,
+        "id": 58,
+        "pixels": 12321,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6048,
+        "skipped": 4646,
+        "status": "completed",
+        "work": 33139
+      },
+      "size": 111,
+      "turn": 0,
+      "x": 1939
+    },
+    {
+      "clock": 13.30000000000024,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 8,
+      "preset": "builtin-brush-great-hall",
+      "receipt": {
+        "accepted": 9718,
+        "added": 9718,
+        "evaluated": 7744,
+        "id": 59,
+        "pixels": 7744,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 920,
+        "skipped": 6353,
+        "status": "completed",
+        "work": 17462
+      },
+      "size": 88,
+      "turn": 0,
+      "x": 2154
+    },
+    {
+      "clock": 13.36666666666691,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 9,
+      "preset": "builtin-brush-flooded-dungeon",
+      "receipt": {
+        "accepted": 3715,
+        "added": 3715,
+        "evaluated": 5476,
+        "id": 60,
+        "pixels": 5476,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 556,
+        "skipped": 2228,
+        "status": "completed",
+        "work": 9191
+      },
+      "size": 74,
+      "turn": 0,
+      "x": 2440
+    },
+    {
+      "clock": 13.450000000000248,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 10,
+      "preset": "builtin-brush-rocky-shore",
+      "receipt": {
+        "accepted": 7672,
+        "added": 7672,
+        "evaluated": 10000,
+        "id": 61,
+        "pixels": 10000,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2653,
+        "skipped": 2280,
+        "status": "completed",
+        "work": 17672
+      },
+      "size": 100,
+      "turn": 0,
+      "x": 2691
+    },
+    {
+      "clock": 13.616666666666925,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 11,
+      "preset": "builtin-brush-brimstone-pits",
+      "receipt": {
+        "accepted": 20832,
+        "added": 20832,
+        "evaluated": 12996,
+        "id": 62,
+        "pixels": 12996,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6909,
+        "skipped": 5444,
+        "status": "completed",
+        "work": 33828
+      },
+      "size": 114,
+      "turn": 0,
+      "x": 2966
+    },
+    {
+      "clock": 13.683333333333591,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 12,
+      "preset": "builtin-brush-snowy-pines",
+      "receipt": {
+        "accepted": 15988,
+        "added": 15988,
+        "evaluated": 16384,
+        "id": 63,
+        "pixels": 16384,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 7012,
+        "skipped": 1228,
+        "status": "completed",
+        "work": 32372
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 3192
+    },
+    {
+      "clock": 13.750000000000265,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 13,
+      "preset": "builtin-brush-cryo-bay",
+      "receipt": {
+        "accepted": 7652,
+        "added": 7652,
+        "evaluated": 5929,
+        "id": 64,
+        "pixels": 5929,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1542,
+        "skipped": 4379,
+        "status": "completed",
+        "work": 13581
+      },
+      "size": 77,
+      "turn": 0,
+      "x": 3467
+    },
+    {
+      "clock": 13.850000000000268,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 14,
+      "preset": "builtin-brush-obsidian-spires",
+      "receipt": {
+        "accepted": 16562,
+        "added": 16562,
+        "evaluated": 8281,
+        "id": 65,
+        "pixels": 8281,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 7937,
+        "skipped": 0,
+        "status": "completed",
+        "work": 24843
+      },
+      "size": 91,
+      "turn": 0,
+      "x": 3693
+    },
+    {
+      "clock": 13.950000000000273,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 15,
+      "preset": "builtin-brush-toxic-marsh",
+      "receipt": {
+        "accepted": 9542,
+        "added": 9542,
+        "evaluated": 11025,
+        "id": 66,
+        "pixels": 11025,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3879,
+        "skipped": 1548,
+        "status": "completed",
+        "work": 20567
+      },
+      "size": 105,
+      "turn": 0,
+      "x": 3968
+    },
+    {
+      "clock": 14.016666666666945,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 16,
+      "preset": "builtin-brush-coral-reef",
+      "receipt": {
+        "accepted": 30291,
+        "added": 30291,
+        "evaluated": 14161,
+        "id": 67,
+        "pixels": 14161,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 13536,
+        "skipped": 0,
+        "status": "completed",
+        "work": 44452
+      },
+      "size": 119,
+      "turn": 0,
+      "x": 4243
+    },
+    {
+      "clock": 14.133333333333615,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 17,
+      "preset": "builtin-brush-goblin-warren",
+      "receipt": {
+        "accepted": 5063,
+        "added": 5063,
+        "evaluated": 4624,
+        "id": 68,
+        "pixels": 4624,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4624,
+        "status": "completed",
+        "work": 9687
+      },
+      "size": 68,
+      "turn": 0,
+      "x": 4469
+    },
+    {
+      "clock": 14.200000000000284,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 18,
+      "preset": "builtin-brush-salt",
+      "receipt": {
+        "accepted": 925,
+        "added": 925,
+        "evaluated": 6724,
+        "id": 69,
+        "pixels": 6724,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 916,
+        "skipped": 2487,
+        "status": "completed",
+        "work": 7649
+      },
+      "size": 82,
+      "turn": 0,
+      "x": 4744
+    },
+    {
+      "clock": 14.30000000000029,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 19,
+      "preset": "builtin-brush-sea-cave",
+      "receipt": {
+        "accepted": 10416,
+        "added": 10416,
+        "evaluated": 9216,
+        "id": 70,
+        "pixels": 9216,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1189,
+        "skipped": 8016,
+        "status": "completed",
+        "work": 19632
+      },
+      "size": 96,
+      "turn": 0,
+      "x": 4970
+    },
+    {
+      "clock": 14.316666666666958,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 20,
+      "preset": "builtin-brush-dunes",
+      "receipt": {
+        "accepted": 428,
+        "added": 428,
+        "evaluated": 4096,
+        "id": 71,
+        "pixels": 4096,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 428,
+        "skipped": 1848,
+        "status": "completed",
+        "work": 4524
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 5272
+    },
+    {
+      "clock": 14.350000000000293,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 21,
+      "preset": "builtin-brush-stronghold-rampart",
+      "receipt": {
+        "accepted": 11060,
+        "added": 11060,
+        "evaluated": 13225,
+        "id": 72,
+        "pixels": 13225,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4424,
+        "skipped": 2147,
+        "status": "completed",
+        "work": 24285
+      },
+      "size": 115,
+      "turn": 0,
+      "x": 5509
+    },
+    {
+      "clock": 14.36666666666696,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 22,
+      "preset": "builtin-brush-bone-pit",
+      "receipt": {
+        "accepted": 11174,
+        "added": 11174,
+        "evaluated": 8464,
+        "id": 73,
+        "pixels": 8464,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1647,
+        "skipped": 6644,
+        "status": "completed",
+        "work": 19638
+      },
+      "size": 92,
+      "turn": 0,
+      "x": 5773
+    },
+    {
+      "clock": 14.400000000000295,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 23,
+      "preset": "builtin-brush-dry-cave",
+      "receipt": {
+        "accepted": 7985,
+        "added": 7985,
+        "evaluated": 6084,
+        "id": 74,
+        "pixels": 6084,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1790,
+        "skipped": 4237,
+        "status": "completed",
+        "work": 14069
+      },
+      "size": 78,
+      "turn": 0,
+      "x": 6010
+    },
+    {
+      "clock": 14.416666666666965,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 24,
+      "preset": "builtin-brush-coal",
+      "receipt": {
+        "accepted": 4218,
+        "added": 4218,
+        "evaluated": 14400,
+        "id": 75,
+        "pixels": 14400,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3938,
+        "skipped": 10182,
+        "status": "completed",
+        "work": 18618
+      },
+      "size": 120,
+      "turn": 0,
+      "x": 6274
+    },
+    {
+      "clock": 14.43333333333363,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 25,
+      "preset": "builtin-brush-volcanic-caldera",
+      "receipt": {
+        "accepted": 12492,
+        "added": 12492,
+        "evaluated": 11236,
+        "id": 76,
+        "pixels": 11236,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6246,
+        "skipped": 0,
+        "status": "completed",
+        "work": 23728
+      },
+      "size": 106,
+      "turn": 0,
+      "x": 6511
+    },
+    {
+      "clock": 14.450000000000298,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 26,
+      "preset": "builtin-brush-ice-moon",
+      "receipt": {
+        "accepted": 13926,
+        "added": 13926,
+        "evaluated": 6889,
+        "id": 77,
+        "pixels": 6889,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5822,
+        "skipped": 0,
+        "status": "completed",
+        "work": 20815
+      },
+      "size": 83,
+      "turn": 0,
+      "x": 6775
+    },
+    {
+      "clock": 14.483333333333633,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 27,
+      "preset": "builtin-brush-enchanted-forest",
+      "receipt": {
+        "accepted": 4993,
+        "added": 4993,
+        "evaluated": 4761,
+        "id": 78,
+        "pixels": 4761,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2290,
+        "skipped": 0,
+        "status": "completed",
+        "work": 9754
+      },
+      "size": 69,
+      "turn": 0,
+      "x": 7061
+    },
+    {
+      "clock": 14.516666666666968,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 28,
+      "preset": "builtin-brush-marble-shrine",
+      "receipt": {
+        "accepted": 8833,
+        "added": 8833,
+        "evaluated": 6724,
+        "id": 79,
+        "pixels": 6724,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 749,
+        "skipped": 5184,
+        "status": "completed",
+        "work": 15557
+      },
+      "size": 82,
+      "turn": 0,
+      "x": 7315
+    },
+    {
+      "clock": 14.533333333333635,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 29,
+      "preset": "builtin-brush-station-deck",
+      "receipt": {
+        "accepted": 9317,
+        "added": 9317,
+        "evaluated": 4624,
+        "id": 80,
+        "pixels": 4624,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4624,
+        "skipped": 0,
+        "status": "completed",
+        "work": 13941
+      },
+      "size": 68,
+      "turn": 0,
+      "x": 7552
+    },
+    {
+      "clock": 14.600000000000303,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 30,
+      "preset": "builtin-brush-cracked-asphalt",
+      "receipt": {
+        "accepted": 8756,
+        "added": 8756,
+        "evaluated": 12100,
+        "id": 81,
+        "pixels": 12100,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2706,
+        "skipped": 3344,
+        "status": "completed",
+        "work": 20856
+      },
+      "size": 110,
+      "turn": 0,
+      "x": 7819
+    },
+    {
+      "clock": 14.666666666666975,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 31,
+      "preset": "builtin-brush-cliffside",
+      "receipt": {
+        "accepted": 14649,
+        "added": 14649,
+        "evaluated": 15376,
+        "id": 82,
+        "pixels": 15376,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6724,
+        "skipped": 478,
+        "status": "completed",
+        "work": 30025
+      },
+      "size": 124,
+      "turn": 0,
+      "x": 8045
+    },
+    {
+      "clock": 14.750000000000313,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 32,
+      "preset": "builtin-brush-jungle-undergrowth",
+      "receipt": {
+        "accepted": 11440,
+        "added": 11440,
+        "evaluated": 6724,
+        "id": 83,
+        "pixels": 6724,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2645,
+        "skipped": 3088,
+        "status": "completed",
+        "work": 18164
+      },
+      "size": 82,
+      "turn": 0,
+      "x": 8342
+    },
+    {
+      "clock": 14.816666666666984,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 33,
+      "preset": "builtin-brush-haunted-wood",
+      "receipt": {
+        "accepted": 6828,
+        "added": 6828,
+        "evaluated": 9216,
+        "id": 84,
+        "pixels": 9216,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1087,
+        "skipped": 3423,
+        "status": "completed",
+        "work": 16044
+      },
+      "size": 96,
+      "turn": 0,
+      "x": 8568
+    },
+    {
+      "clock": 14.916666666666988,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 34,
+      "preset": "builtin-brush-frozen-lake",
+      "receipt": {
+        "accepted": 7026,
+        "added": 7026,
+        "evaluated": 14161,
+        "id": 85,
+        "pixels": 14161,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 7026,
+        "skipped": 0,
+        "status": "completed",
+        "work": 21187
+      },
+      "size": 119,
+      "turn": 0,
+      "x": 8816
+    },
+    {
+      "clock": 15.000000000000323,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 35,
+      "preset": "builtin-brush-throne-hall",
+      "receipt": {
+        "accepted": 5397,
+        "added": 5397,
+        "evaluated": 4624,
+        "id": 86,
+        "pixels": 4624,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 380,
+        "skipped": 4244,
+        "status": "completed",
+        "work": 10021
+      },
+      "size": 68,
+      "turn": 0,
+      "x": 9091
+    },
+    {
+      "clock": 15.066666666666997,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 36,
+      "preset": "builtin-brush-charred",
+      "receipt": {
+        "accepted": 3747,
+        "added": 3747,
+        "evaluated": 8281,
+        "id": 87,
+        "pixels": 8281,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3747,
+        "skipped": 278,
+        "status": "completed",
+        "work": 12028
+      },
+      "size": 91,
+      "turn": 0,
+      "x": 9339
+    },
+    {
+      "clock": 15.166666666667,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 37,
+      "preset": "builtin-brush-xeno-fungal-overgrowth",
+      "receipt": {
+        "accepted": 17790,
+        "added": 17790,
+        "evaluated": 11025,
+        "id": 88,
+        "pixels": 11025,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4631,
+        "skipped": 5816,
+        "status": "completed",
+        "work": 28815
+      },
+      "size": 105,
+      "turn": 0,
+      "x": 9614
+    },
+    {
+      "clock": 15.250000000000338,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 38,
+      "preset": "builtin-brush-dwarven-forge",
+      "receipt": {
+        "accepted": 11046,
+        "added": 11046,
+        "evaluated": 8464,
+        "id": 89,
+        "pixels": 8464,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1146,
+        "skipped": 6009,
+        "status": "completed",
+        "work": 19510
+      },
+      "size": 92,
+      "turn": 0,
+      "x": 9872
+    },
+    {
+      "clock": 15.316666666667007,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 39,
+      "preset": "builtin-brush-catacombs",
+      "receipt": {
+        "accepted": 17195,
+        "added": 17195,
+        "evaluated": 11236,
+        "id": 90,
+        "pixels": 11236,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3505,
+        "skipped": 6266,
+        "status": "completed",
+        "work": 28431
+      },
+      "size": 106,
+      "turn": 0,
+      "x": 10098
+    },
+    {
+      "clock": 15.450000000000347,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 40,
+      "preset": "builtin-brush-fungal-grotto",
+      "receipt": {
+        "accepted": 14878,
+        "added": 14878,
+        "evaluated": 10404,
+        "id": 91,
+        "pixels": 10404,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3027,
+        "skipped": 7185,
+        "status": "completed",
+        "work": 25282
+      },
+      "size": 102,
+      "turn": 0,
+      "x": 10369
+    },
+    {
+      "clock": 15.533333333333683,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 41,
+      "preset": "builtin-brush-toxic-dump",
+      "receipt": {
+        "accepted": 15901,
+        "added": 15901,
+        "evaluated": 7744,
+        "id": 92,
+        "pixels": 7744,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 7727,
+        "skipped": 0,
+        "status": "completed",
+        "work": 23645
+      },
+      "size": 88,
+      "turn": 0,
+      "x": 10606
+    },
+    {
+      "clock": 15.600000000000357,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 42,
+      "preset": "builtin-brush-blood-cellar",
+      "receipt": {
+        "accepted": 11102,
+        "added": 11102,
+        "evaluated": 5476,
+        "id": 93,
+        "pixels": 5476,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5476,
+        "skipped": 0,
+        "status": "completed",
+        "work": 16578
+      },
+      "size": 74,
+      "turn": 0,
+      "x": 10892
+    },
+    {
+      "clock": 15.716666666667027,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 43,
+      "preset": "builtin-brush-subway-tunnel",
+      "receipt": {
+        "accepted": 13455,
+        "added": 13455,
+        "evaluated": 15625,
+        "id": 94,
+        "pixels": 15625,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5517,
+        "skipped": 2358,
+        "status": "completed",
+        "work": 29080
+      },
+      "size": 125,
+      "turn": 0,
+      "x": 11129
+    },
+    {
+      "clock": 15.850000000000367,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 44,
+      "preset": "builtin-brush-bamboo-thicket",
+      "receipt": {
+        "accepted": 16821,
+        "added": 16821,
+        "evaluated": 12321,
+        "id": 95,
+        "pixels": 12321,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2462,
+        "skipped": 9859,
+        "status": "completed",
+        "work": 29142
+      },
+      "size": 111,
+      "turn": 0,
+      "x": 11415
+    },
+    {
+      "clock": 15.916666666667036,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 45,
+      "preset": "builtin-brush-ancient-ruins",
+      "receipt": {
+        "accepted": 9734,
+        "added": 9734,
+        "evaluated": 9409,
+        "id": 96,
+        "pixels": 9409,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3916,
+        "skipped": 779,
+        "status": "completed",
+        "work": 19143
+      },
+      "size": 97,
+      "turn": 0,
+      "x": 11652
+    },
+    {
+      "clock": 15.983333333333707,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 46,
+      "preset": "builtin-brush-peat-bog",
+      "receipt": {
+        "accepted": 8377,
+        "added": 8377,
+        "evaluated": 6889,
+        "id": 97,
+        "pixels": 6889,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1016,
+        "skipped": 5611,
+        "status": "completed",
+        "work": 15266
+      },
+      "size": 83,
+      "turn": 0,
+      "x": 11889
+    },
+    {
+      "clock": 16.066666666667036,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 47,
+      "preset": "builtin-brush-abyssal-void",
+      "receipt": {
+        "accepted": 4916,
+        "added": 4916,
+        "evaluated": 4761,
+        "id": 98,
+        "pixels": 4761,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 155,
+        "skipped": 4606,
+        "status": "completed",
+        "work": 9677
+      },
+      "size": 69,
+      "turn": 0,
+      "x": 12175
+    },
+    {
+      "clock": 16.1333333333337,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 48,
+      "preset": "builtin-brush-mossy-glade",
+      "receipt": {
+        "accepted": 15267,
+        "added": 15267,
+        "evaluated": 14400,
+        "id": 99,
+        "pixels": 14400,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 7288,
+        "skipped": 0,
+        "status": "completed",
+        "work": 29667
+      },
+      "size": 120,
+      "turn": 0,
+      "x": 12412
+    },
+    {
+      "clock": 16.25000000000036,
+      "family": "semantic",
+      "kind": "generation-native",
+      "n": 49,
+      "preset": "builtin-brush-glowworm-cavern",
+      "receipt": {
+        "accepted": 16733,
+        "added": 16733,
+        "evaluated": 11236,
+        "id": 100,
+        "pixels": 11236,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3947,
+        "skipped": 5865,
+        "status": "completed",
+        "work": 27969
+      },
+      "size": 106,
+      "turn": 0,
+      "x": 12649
+    },
+    {
+      "clock": 16.63333333333367,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-four",
+      "n": 0,
+      "preset": "builtin-brush-hellscape",
+      "receipt": {
+        "accepted": 0,
+        "added": 0,
+        "evaluated": 11236,
+        "id": 101,
+        "pixels": 11236,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6733,
+        "status": "completed",
+        "work": 11236
+      },
+      "size": 106,
+      "turn": 0,
+      "x": 150
+    },
+    {
+      "clock": 17.433333333333625,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-stations",
+      "n": 1,
+      "preset": "builtin-brush-station-deck",
+      "receipt": {
+        "accepted": 677,
+        "added": 677,
+        "evaluated": 14400,
+        "id": 102,
+        "pixels": 14400,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 464,
+        "skipped": 28342,
+        "status": "completed",
+        "work": 15077
+      },
+      "size": 120,
+      "turn": 0,
+      "x": 888
+    },
+    {
+      "clock": 17.76666666666694,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-eight",
+      "n": 2,
+      "preset": "builtin-brush-tundra",
+      "receipt": {
+        "accepted": 114,
+        "added": 114,
+        "evaluated": 15625,
+        "id": 103,
+        "pixels": 15625,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 114,
+        "skipped": 7995,
+        "status": "completed",
+        "work": 15739
+      },
+      "size": 125,
+      "turn": 0,
+      "x": 1653
+    },
+    {
+      "clock": 18.483333333333565,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-masonry",
+      "n": 3,
+      "preset": "builtin-brush-castle-dungeon",
+      "receipt": {
+        "accepted": 6377,
+        "added": 6377,
+        "evaluated": 5476,
+        "id": 104,
+        "pixels": 5476,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3287,
+        "skipped": 5000,
+        "status": "completed",
+        "work": 11853
+      },
+      "size": 74,
+      "turn": 0,
+      "x": 2440
+    },
+    {
+      "clock": 18.81666666666688,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-eight",
+      "n": 4,
+      "preset": "builtin-brush-gold",
+      "receipt": {
+        "accepted": 9728,
+        "added": 9728,
+        "evaluated": 16384,
+        "id": 105,
+        "pixels": 16384,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 7460,
+        "skipped": 6656,
+        "status": "completed",
+        "work": 26112
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 3192
+    },
+    {
+      "clock": 19.100000000000197,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-four",
+      "n": 5,
+      "preset": "builtin-brush-dunes",
+      "receipt": {
+        "accepted": 3625,
+        "added": 3625,
+        "evaluated": 11025,
+        "id": 106,
+        "pixels": 11025,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3625,
+        "skipped": 1472,
+        "status": "completed",
+        "work": 14650
+      },
+      "size": 105,
+      "turn": 0,
+      "x": 3968
+    },
+    {
+      "clock": 19.83333333333349,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-stations",
+      "n": 6,
+      "preset": "builtin-brush-engine-room",
+      "receipt": {
+        "accepted": 8059,
+        "added": 8059,
+        "evaluated": 6724,
+        "id": 107,
+        "pixels": 6724,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 804,
+        "skipped": 5912,
+        "status": "completed",
+        "work": 14783
+      },
+      "size": 82,
+      "turn": 0,
+      "x": 4744
+    },
+    {
+      "clock": 20.500000000000117,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-masonry",
+      "n": 7,
+      "preset": "builtin-brush-keep-library",
+      "receipt": {
+        "accepted": 18773,
+        "added": 18773,
+        "evaluated": 13225,
+        "id": 108,
+        "pixels": 13225,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 11096,
+        "skipped": 7893,
+        "status": "completed",
+        "work": 31998
+      },
+      "size": 115,
+      "turn": 0,
+      "x": 5509
+    },
+    {
+      "clock": 20.750000000000103,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-four",
+      "n": 8,
+      "preset": "builtin-brush-tundra",
+      "receipt": {
+        "accepted": 1599,
+        "added": 1599,
+        "evaluated": 14400,
+        "id": 109,
+        "pixels": 14400,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1599,
+        "skipped": 6023,
+        "status": "completed",
+        "work": 15999
+      },
+      "size": 120,
+      "turn": 0,
+      "x": 6274
+    },
+    {
+      "clock": 20.983333333333423,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-eight",
+      "n": 9,
+      "preset": "builtin-brush-rubble",
+      "receipt": {
+        "accepted": 4557,
+        "added": 4557,
+        "evaluated": 4761,
+        "id": 110,
+        "pixels": 4761,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4557,
+        "skipped": 204,
+        "status": "completed",
+        "work": 9318
+      },
+      "size": 69,
+      "turn": 0,
+      "x": 7061
+    },
+    {
+      "clock": 21.85000000000004,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-masonry",
+      "n": 10,
+      "preset": "builtin-brush-catacombs",
+      "receipt": {
+        "accepted": 11668,
+        "added": 11668,
+        "evaluated": 12100,
+        "id": 111,
+        "pixels": 12100,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2647,
+        "skipped": 13539,
+        "status": "completed",
+        "work": 23768
+      },
+      "size": 110,
+      "turn": 0,
+      "x": 7819
+    },
+    {
+      "clock": 22.799999999999983,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-stations",
+      "n": 11,
+      "preset": "builtin-brush-factory-floor",
+      "receipt": {
+        "accepted": 8049,
+        "added": 8049,
+        "evaluated": 9216,
+        "id": 112,
+        "pixels": 9216,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2936,
+        "skipped": 10710,
+        "status": "completed",
+        "work": 17265
+      },
+      "size": 96,
+      "turn": 0,
+      "x": 8568
+    },
+    {
+      "clock": 23.1333333333333,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-eight",
+      "n": 12,
+      "preset": "builtin-brush-gold",
+      "receipt": {
+        "accepted": 7874,
+        "added": 7874,
+        "evaluated": 8281,
+        "id": 113,
+        "pixels": 8281,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 7199,
+        "skipped": 407,
+        "status": "completed",
+        "work": 16155
+      },
+      "size": 91,
+      "turn": 0,
+      "x": 9339
+    },
+    {
+      "clock": 23.866666666666593,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-stations",
+      "n": 13,
+      "preset": "builtin-brush-engine-room",
+      "receipt": {
+        "accepted": 11724,
+        "added": 11724,
+        "evaluated": 11236,
+        "id": 114,
+        "pixels": 11236,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 11060,
+        "skipped": 11487,
+        "status": "completed",
+        "work": 22960
+      },
+      "size": 106,
+      "turn": 0,
+      "x": 10098
+    },
+    {
+      "clock": 24.599999999999884,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-masonry",
+      "n": 14,
+      "preset": "builtin-brush-castle-dungeon",
+      "receipt": {
+        "accepted": 8743,
+        "added": 8743,
+        "evaluated": 5476,
+        "id": 115,
+        "pixels": 5476,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 8267,
+        "skipped": 2704,
+        "status": "completed",
+        "work": 14219
+      },
+      "size": 74,
+      "turn": 0,
+      "x": 10892
+    },
+    {
+      "clock": 24.899999999999867,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-four",
+      "n": 15,
+      "preset": "builtin-brush-hills",
+      "receipt": {
+        "accepted": 3831,
+        "added": 3831,
+        "evaluated": 9409,
+        "id": 116,
+        "pixels": 9409,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3831,
+        "skipped": 853,
+        "status": "completed",
+        "work": 13240
+      },
+      "size": 97,
+      "turn": 0,
+      "x": 11652
+    },
+    {
+      "clock": 25.183333333333184,
+      "family": "neural",
+      "kind": "generation-native",
+      "model": "builtin-nca-eight",
+      "n": 16,
+      "preset": "builtin-brush-tundra",
+      "receipt": {
+        "accepted": 7203,
+        "added": 7203,
+        "evaluated": 14400,
+        "id": 117,
+        "pixels": 14400,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 7189,
+        "skipped": 426,
+        "status": "completed",
+        "work": 21603
+      },
+      "size": 120,
+      "turn": 0,
+      "x": 12412
+    },
+    {
+      "clock": 25.416666666666504,
+      "family": "structures",
+      "geometry": {
+        "kind": "line",
+        "points": [
+          {
+            "x": 124.5,
+            "y": 621
+          },
+          {
+            "x": 175.5,
+            "y": 637
+          }
+        ],
+        "width": 16
+      },
+      "kind": "generation-native",
+      "material": "WOOD",
+      "n": 0,
+      "receipt": {
+        "accepted": 922,
+        "added": 922,
+        "bodies": [
+          "rigid@ca799c92-e5bf-4421-ab29-3e9d7708b06c"
+        ],
+        "evaluated": 65536,
+        "id": 118,
+        "materialCounts": {
+          "WOOD": 922
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 922
+      },
+      "texture": "builtin-wood-3",
+      "turn": 0
+    },
+    {
+      "clock": 25.833333333333147,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 651,
+          "y": 604
+        },
+        "height": 32,
+        "id": "builtin:square",
+        "kind": "vector",
+        "rotationDeg": 9,
+        "width": 134
+      },
+      "kind": "generation-native",
+      "material": "CONCRETE",
+      "n": 1,
+      "receipt": {
+        "accepted": 4451,
+        "added": 4451,
+        "bodies": [
+          "rigid@c988f66e-f96f-4fa9-8219-df9dcbc56f5c"
+        ],
+        "evaluated": 65536,
+        "id": 119,
+        "materialCounts": {
+          "CONCRETE": 4451
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 4451
+      },
+      "texture": "builtin-concrete-7",
+      "turn": 0
+    },
+    {
+      "clock": 26.199999999999793,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 1152,
+          "y": 613
+        },
+        "height": 59,
+        "id": "builtin:leaf",
+        "kind": "vector",
+        "rotationDeg": 26,
+        "width": 120
+      },
+      "kind": "generation-native",
+      "material": "STONE",
+      "n": 2,
+      "receipt": {
+        "accepted": 4323,
+        "added": 4323,
+        "bodies": [
+          "rigid@ca8a65f6-192e-4a8e-88cd-0e33b67f25fe"
+        ],
+        "evaluated": 65536,
+        "id": 120,
+        "materialCounts": {
+          "STONE": 4323
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 4323
+      },
+      "texture": "builtin-tarmac-4",
+      "turn": 0
+    },
+    {
+      "clock": 26.466666666666445,
+      "family": "structures",
+      "geometry": {
+        "kind": "line",
+        "points": [
+          {
+            "x": 1582.5,
+            "y": 590.5
+          },
+          {
+            "x": 1723.5,
+            "y": 633.5
+          }
+        ],
+        "width": 24
+      },
+      "kind": "generation-native",
+      "material": "IRON",
+      "n": 3,
+      "receipt": {
+        "accepted": 3685,
+        "added": 3685,
+        "bodies": [
+          "rigid@bb87bd5d-6144-4be5-bb5d-233435d8fe3f"
+        ],
+        "evaluated": 65536,
+        "id": 121,
+        "materialCounts": {
+          "IRON": 3685
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 3685
+      },
+      "texture": "builtin-corrugat-2",
+      "turn": 0
+    },
+    {
+      "clock": 26.6833333333331,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 2154,
+          "y": 603
+        },
+        "height": 12,
+        "id": "builtin:square",
+        "kind": "vector",
+        "rotationDeg": 15,
+        "width": 107
+      },
+      "kind": "generation-native",
+      "material": "WOOD",
+      "n": 4,
+      "receipt": {
+        "accepted": 1439,
+        "added": 1439,
+        "bodies": [
+          "rigid@c1ba7a34-4579-4d21-b62c-ca074b00edec"
+        ],
+        "evaluated": 65536,
+        "id": 122,
+        "materialCounts": {
+          "WOOD": 1439
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 1439
+      },
+      "texture": "builtin-crate-3",
+      "turn": 0
+    },
+    {
+      "clock": 26.999999999999748,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 2691,
+          "y": 613
+        },
+        "height": 57,
+        "id": "builtin:triangle",
+        "kind": "vector",
+        "rotationDeg": 32,
+        "width": 93
+      },
+      "kind": "generation-native",
+      "material": "IRON",
+      "n": 5,
+      "receipt": {
+        "accepted": 2800,
+        "added": 2800,
+        "bodies": [
+          "rigid@4f3a3efb-b9ba-4bff-aed8-d7301b59d1e6"
+        ],
+        "evaluated": 65536,
+        "id": 123,
+        "materialCounts": {
+          "IRON": 2800
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 2800
+      },
+      "texture": "builtin-metal-5",
+      "turn": 0
+    },
+    {
+      "clock": 27.2166666666664,
+      "family": "structures",
+      "geometry": {
+        "kind": "line",
+        "points": [
+          {
+            "x": 3152.5,
+            "y": 589.5
+          },
+          {
+            "x": 3231.5,
+            "y": 628.5
+          }
+        ],
+        "width": 20
+      },
+      "kind": "generation-native",
+      "material": "IRON",
+      "n": 6,
+      "receipt": {
+        "accepted": 1909,
+        "added": 1909,
+        "bodies": [
+          "rigid@bc664159-93e8-4304-ab31-59d309344c01"
+        ],
+        "evaluated": 65536,
+        "id": 124,
+        "materialCounts": {
+          "IRON": 1909
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 1909
+      },
+      "texture": "builtin-metal-3",
+      "turn": 0
+    },
+    {
+      "clock": 27.41666666666639,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 3693,
+          "y": 654
+        },
+        "height": 67,
+        "id": "builtin:square",
+        "kind": "vector",
+        "rotationDeg": -25,
+        "width": 65
+      },
+      "kind": "generation-native",
+      "material": "CONCRETE",
+      "n": 7,
+      "receipt": {
+        "accepted": 4502,
+        "added": 4502,
+        "bodies": [
+          "rigid@4167ad32-10e8-4663-a754-6b249a2e67fa"
+        ],
+        "evaluated": 65536,
+        "id": 125,
+        "materialCounts": {
+          "CONCRETE": 4502
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 4502
+      },
+      "texture": "builtin-concrete-1",
+      "turn": 0
+    },
+    {
+      "clock": 27.61666666666638,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 4243,
+          "y": 631
+        },
+        "height": 55,
+        "id": "builtin:cross",
+        "kind": "vector",
+        "rotationDeg": 38,
+        "width": 66
+      },
+      "kind": "generation-native",
+      "material": "CONCRETE",
+      "n": 8,
+      "receipt": {
+        "accepted": 1581,
+        "added": 1581,
+        "bodies": [
+          "rigid@08ab4f79-fd88-4688-afcf-77017e1fdaf4"
+        ],
+        "evaluated": 65536,
+        "id": 126,
+        "materialCounts": {
+          "CONCRETE": 1581
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 1581
+      },
+      "texture": "builtin-brick-2",
+      "turn": 0
+    },
+    {
+      "clock": 27.866666666666365,
+      "family": "structures",
+      "geometry": {
+        "kind": "line",
+        "points": [
+          {
+            "x": 4718,
+            "y": 588.5
+          },
+          {
+            "x": 4770,
+            "y": 625.5
+          }
+        ],
+        "width": 17
+      },
+      "kind": "generation-native",
+      "material": "IRON",
+      "n": 9,
+      "receipt": {
+        "accepted": 1254,
+        "added": 1254,
+        "bodies": [
+          "rigid@9554e5ec-4ca3-4396-b5d7-3ae577f0ac1a"
+        ],
+        "evaluated": 65536,
+        "id": 127,
+        "materialCounts": {
+          "IRON": 1254
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 1254
+      },
+      "texture": "builtin-steel-3",
+      "turn": 0
+    },
+    {
+      "clock": 27.96666666666636,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 5272,
+          "y": 621
+        },
+        "height": 17,
+        "id": "builtin:square",
+        "kind": "vector",
+        "rotationDeg": -22,
+        "width": 89
+      },
+      "kind": "generation-native",
+      "material": "WOOD",
+      "n": 10,
+      "receipt": {
+        "accepted": 1637,
+        "added": 1637,
+        "bodies": [
+          "rigid@fcc3a2b0-57ea-4dec-ad5c-cbb0027757a5"
+        ],
+        "evaluated": 65536,
+        "id": 128,
+        "materialCounts": {
+          "WOOD": 1637
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 1637
+      },
+      "texture": "builtin-crate-2",
+      "turn": 0
+    },
+    {
+      "clock": 27.99999999999969,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 5773,
+          "y": 623
+        },
+        "height": 38,
+        "id": "builtin:crescent",
+        "kind": "vector",
+        "rotationDeg": -39,
+        "width": 103
+      },
+      "kind": "generation-native",
+      "material": "CONCRETE",
+      "n": 11,
+      "receipt": {
+        "accepted": 1839,
+        "added": 1839,
+        "bodies": [
+          "rigid@95e507e9-b2d6-4cd8-8a23-bc2c80123217"
+        ],
+        "evaluated": 65536,
+        "id": 129,
+        "materialCounts": {
+          "CONCRETE": 1839
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 1839
+      },
+      "texture": "builtin-brick-3",
+      "turn": 0
+    },
+    {
+      "clock": 28.033333333333022,
+      "family": "structures",
+      "geometry": {
+        "kind": "line",
+        "points": [
+          {
+            "x": 6243.5,
+            "y": 623
+          },
+          {
+            "x": 6304.5,
+            "y": 635
+          }
+        ],
+        "width": 12
+      },
+      "kind": "generation-native",
+      "material": "WOOD",
+      "n": 12,
+      "receipt": {
+        "accepted": 753,
+        "added": 753,
+        "bodies": [
+          "rigid@afc76510-85e3-44d3-b472-a08a93f1d1a6"
+        ],
+        "evaluated": 65536,
+        "id": 130,
+        "materialCounts": {
+          "WOOD": 753
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 753
+      },
+      "texture": "builtin-wood-2",
+      "turn": 0
+    },
+    {
+      "clock": 28.06666666666635,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 6775,
+          "y": 643
+        },
+        "height": 48,
+        "id": "builtin:square",
+        "kind": "vector",
+        "rotationDeg": -5,
+        "width": 75
+      },
+      "kind": "generation-native",
+      "material": "IRON",
+      "n": 13,
+      "receipt": {
+        "accepted": 3740,
+        "added": 3740,
+        "bodies": [
+          "rigid@7adcdcff-1bda-4d60-8e19-ecb938ae89ff"
+        ],
+        "evaluated": 65536,
+        "id": 131,
+        "materialCounts": {
+          "IRON": 3740
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 3740
+      },
+      "texture": "builtin-metal-4",
+      "turn": 0
+    },
+    {
+      "clock": 28.099999999999685,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 7315,
+          "y": 613
+        },
+        "height": 40,
+        "id": "builtin:club",
+        "kind": "vector",
+        "rotationDeg": -45,
+        "width": 130
+      },
+      "kind": "generation-native",
+      "material": "CONCRETE",
+      "n": 14,
+      "receipt": {
+        "accepted": 2413,
+        "added": 2413,
+        "bodies": [
+          "rigid@80110040-81a3-4119-b48f-6ee555f6c2de"
+        ],
+        "evaluated": 65536,
+        "id": 132,
+        "materialCounts": {
+          "CONCRETE": 2413
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 2413
+      },
+      "texture": "builtin-concrete-4",
+      "turn": 0
+    },
+    {
+      "clock": 28.23333333333301,
+      "family": "structures",
+      "geometry": {
+        "kind": "line",
+        "points": [
+          {
+            "x": 7747,
+            "y": 556
+          },
+          {
+            "x": 7891,
+            "y": 614
+          }
+        ],
+        "width": 20
+      },
+      "kind": "generation-native",
+      "material": "CONCRETE",
+      "n": 15,
+      "receipt": {
+        "accepted": 3171,
+        "added": 3171,
+        "bodies": [
+          "rigid@c819ce3f-aa10-4715-88e8-acf52bfba71d"
+        ],
+        "evaluated": 65536,
+        "id": 133,
+        "materialCounts": {
+          "CONCRETE": 3171
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 3171
+      },
+      "texture": "builtin-brick-6",
+      "turn": 0
+    },
+    {
+      "clock": 28.599999999999657,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 8342,
+          "y": 642
+        },
+        "height": 50,
+        "id": "builtin:square",
+        "kind": "vector",
+        "rotationDeg": -11,
+        "width": 102
+      },
+      "kind": "generation-native",
+      "material": "STONE",
+      "n": 16,
+      "receipt": {
+        "accepted": 5260,
+        "added": 5260,
+        "bodies": [
+          "rigid@a8200626-bc80-4745-aef6-973955d4d2e3"
+        ],
+        "evaluated": 65536,
+        "id": 134,
+        "materialCounts": {
+          "STONE": 5260
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 5260
+      },
+      "texture": "builtin-marble-1",
+      "turn": 0
+    },
+    {
+      "clock": 28.93333333333297,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 8816,
+          "y": 606
+        },
+        "height": 67,
+        "id": "builtin:ellipse",
+        "kind": "vector",
+        "rotationDeg": -28,
+        "width": 116
+      },
+      "kind": "generation-native",
+      "material": "IRON",
+      "n": 17,
+      "receipt": {
+        "accepted": 6397,
+        "added": 6397,
+        "bodies": [
+          "rigid@b7a05f05-db1d-40ca-b554-4b0a75b3b215"
+        ],
+        "evaluated": 65536,
+        "id": 135,
+        "materialCounts": {
+          "IRON": 6397
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 6397
+      },
+      "texture": "builtin-metal-1",
+      "turn": 0
+    },
+    {
+      "clock": 29.16666666666629,
+      "family": "structures",
+      "geometry": {
+        "kind": "line",
+        "points": [
+          {
+            "x": 9287,
+            "y": 601.5
+          },
+          {
+            "x": 9391,
+            "y": 672.5
+          }
+        ],
+        "width": 27
+      },
+      "kind": "generation-native",
+      "material": "IRON",
+      "n": 18,
+      "receipt": {
+        "accepted": 3892,
+        "added": 3892,
+        "bodies": [
+          "rigid@1784bfc1-3354-4963-881a-2141c177bc6a"
+        ],
+        "evaluated": 65536,
+        "id": 136,
+        "materialCounts": {
+          "IRON": 3892
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 3892
+      },
+      "texture": "builtin-steel-5",
+      "turn": 0
+    },
+    {
+      "clock": 29.383333333332946,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 9872,
+          "y": 627
+        },
+        "height": 43,
+        "id": "builtin:square",
+        "kind": "vector",
+        "rotationDeg": 7,
+        "width": 118
+      },
+      "kind": "generation-native",
+      "material": "CONCRETE",
+      "n": 19,
+      "receipt": {
+        "accepted": 5253,
+        "added": 5253,
+        "bodies": [
+          "rigid@88cb768b-1bca-4ce9-92a0-f27d800bd22f"
+        ],
+        "evaluated": 65536,
+        "id": 137,
+        "materialCounts": {
+          "CONCRETE": 5253
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 5253
+      },
+      "texture": "builtin-brick2",
+      "turn": 0
+    },
+    {
+      "clock": 29.73333333333293,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 10369,
+          "y": 633
+        },
+        "height": 61,
+        "id": "builtin:lightning",
+        "kind": "vector",
+        "rotationDeg": -22,
+        "width": 110
+      },
+      "kind": "generation-native",
+      "material": "CONCRETE",
+      "n": 20,
+      "receipt": {
+        "accepted": 2096,
+        "added": 2096,
+        "bodies": [
+          "rigid@72b15ceb-55a6-4f72-9c04-7bcaee9f987d"
+        ],
+        "evaluated": 65536,
+        "id": 138,
+        "materialCounts": {
+          "CONCRETE": 2096
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 2096
+      },
+      "texture": "builtin-brick-1",
+      "turn": 0
+    },
+    {
+      "clock": 29.999999999999577,
+      "family": "structures",
+      "geometry": {
+        "kind": "line",
+        "points": [
+          {
+            "x": 10844,
+            "y": 613
+          },
+          {
+            "x": 10940,
+            "y": 623
+          }
+        ],
+        "width": 10
+      },
+      "kind": "generation-native",
+      "material": "WOOD",
+      "n": 21,
+      "receipt": {
+        "accepted": 913,
+        "added": 913,
+        "bodies": [
+          "rigid@00682a57-f8bb-4d47-b6d1-bdc753dcb59b"
+        ],
+        "evaluated": 65536,
+        "id": 139,
+        "materialCounts": {
+          "WOOD": 913
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 913
+      },
+      "texture": "builtin-crate-1",
+      "turn": 0
+    },
+    {
+      "clock": 30.26666666666623,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 11415,
+          "y": 613
+        },
+        "height": 71,
+        "id": "builtin:square",
+        "kind": "vector",
+        "rotationDeg": 12,
+        "width": 82
+      },
+      "kind": "generation-native",
+      "material": "IRON",
+      "n": 22,
+      "receipt": {
+        "accepted": 5994,
+        "added": 5994,
+        "bodies": [
+          "rigid@6a1d4e01-a898-4458-8724-834f1b000131"
+        ],
+        "evaluated": 65536,
+        "id": 140,
+        "materialCounts": {
+          "IRON": 5994
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 5994
+      },
+      "texture": "builtin-metal-7",
+      "turn": 0
+    },
+    {
+      "clock": 30.633333333332875,
+      "family": "structures",
+      "geometry": {
+        "center": {
+          "x": 11889,
+          "y": 620
+        },
+        "height": 53,
+        "id": "builtin:chevron-right",
+        "kind": "vector",
+        "rotationDeg": 29,
+        "width": 68
+      },
+      "kind": "generation-native",
+      "material": "STONE",
+      "n": 23,
+      "receipt": {
+        "accepted": 1453,
+        "added": 1453,
+        "bodies": [
+          "rigid@eaac5267-e999-4526-8aee-95773c9f42da"
+        ],
+        "evaluated": 65536,
+        "id": 141,
+        "materialCounts": {
+          "STONE": 1453
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 1453
+      },
+      "texture": "builtin-tarmac-2",
+      "turn": 0
+    },
+    {
+      "clock": 30.916666666666192,
+      "family": "structures",
+      "geometry": {
+        "kind": "line",
+        "points": [
+          {
+            "x": 12377.5,
+            "y": 603.5
+          },
+          {
+            "x": 12446.5,
+            "y": 644.5
+          }
+        ],
+        "width": 24
+      },
+      "kind": "generation-native",
+      "material": "STONE",
+      "n": 24,
+      "receipt": {
+        "accepted": 2185,
+        "added": 2185,
+        "bodies": [
+          "rigid@f9abff43-422e-4d73-ab12-987c12d1e7ac"
+        ],
+        "evaluated": 65536,
+        "id": 142,
+        "materialCounts": {
+          "STONE": 2185
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 2185
+      },
+      "texture": "builtin-tarmac-1",
+      "turn": 0
+    },
+    {
+      "clock": 31.78333333333281,
+      "kind": "fault",
+      "message": "Error: growth 0: Error: Growth planting exceeds job budget",
+      "turn": 0
+    }
+  ],
+  "live": [
+    {
+      "id": null,
+      "live": false,
+      "position": null
+    },
+    {
+      "id": null,
+      "live": false,
+      "position": null
+    }
+  ],
+  "match": {
+    "attack": null,
+    "baseGeneration": {
+      "recipe": "verdant-reach"
+    },
+    "biome": "verdant-reach",
+    "biomeCycle": true,
+    "biomeRounds": 1,
+    "bounds": {
+      "h": 1280,
+      "w": 960,
+      "x": 5920,
+      "y": 0
+    },
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0,
+      "rng": 301070908,
+      "serial": 0
+    },
+    "clearancePath": [
+      {
+        "x": 5664,
+        "y": 744
+      },
+      {
+        "x": 5920,
+        "y": 744
+      },
+      {
+        "x": 6176,
+        "y": 746
+      },
+      {
+        "x": 6432,
+        "y": 744
+      },
+      {
+        "x": 6688,
+        "y": 744
+      },
+      {
+        "x": 6944,
+        "y": 739
+      },
+      {
+        "x": 7136,
+        "y": 738
+      }
+    ],
+    "computers": 2,
+    "cpuSkill": "persona",
+    "details": 50,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "generated": 0,
+    "generation": "verdant-reach",
+    "generationChoice": "verdant-reach",
+    "generationVersion": 12,
+    "humans": 0,
+    "impact": null,
+    "livingSites": 0,
+    "message": "Error: growth 0: Error: Growth planting exceeds job budget",
+    "pendingTurn": null,
+    "personaSeed": "M12B-20261025",
+    "phase": "fault",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "procedural": {
+      "catalog": "procedural-m11",
+      "choices": {
+        "growth": [
+          "builtin-hair",
+          "builtin-vine-ledge",
+          "builtin-icicles",
+          "builtin-ivy-wall",
+          "builtin-living-bramble",
+          "builtin-bramble",
+          "indigo-m9-oak",
+          "builtin-worm-tunnels",
+          "builtin-flower-bed",
+          "builtin-lightning",
+          "builtin-meadow-grass",
+          "builtin-oak-sapling",
+          "m9-planar-bramble-probe",
+          "builtin-roots",
+          "builtin-creeping-vine",
+          "indigo-m9-bramble",
+          "builtin-coral",
+          "builtin-wheat",
+          "builtin-oak-sapling",
+          "indigo-m9-oak",
+          "builtin-wheat",
+          "builtin-ivy-wall",
+          "builtin-coral",
+          "builtin-creeping-vine",
+          "builtin-lightning",
+          "builtin-worm-tunnels",
+          "builtin-living-bramble",
+          "builtin-icicles",
+          "builtin-vine-ledge",
+          "m9-planar-bramble-probe",
+          "builtin-hair",
+          "builtin-roots",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "builtin-flower-bed",
+          "builtin-meadow-grass",
+          "builtin-roots",
+          "builtin-hair",
+          "builtin-wheat",
+          "m9-planar-bramble-probe",
+          "builtin-icicles",
+          "builtin-flower-bed",
+          "builtin-living-bramble",
+          "builtin-creeping-vine",
+          "builtin-worm-tunnels",
+          "builtin-oak-sapling",
+          "builtin-meadow-grass",
+          "builtin-lightning",
+          "indigo-m9-bramble",
+          "builtin-coral"
+        ],
+        "neural": [
+          "builtin-nca-four",
+          "builtin-nca-stations",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-eight",
+          "builtin-nca-four",
+          "builtin-nca-stations",
+          "builtin-nca-masonry",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-eight",
+          "builtin-nca-stations",
+          "builtin-nca-masonry",
+          "builtin-nca-four",
+          "builtin-nca-eight"
+        ],
+        "neuralRecipe": [
+          "builtin-brush-hellscape",
+          "builtin-brush-station-deck",
+          "builtin-brush-tundra",
+          "builtin-brush-castle-dungeon",
+          "builtin-brush-gold",
+          "builtin-brush-dunes",
+          "builtin-brush-engine-room",
+          "builtin-brush-keep-library",
+          "builtin-brush-tundra",
+          "builtin-brush-rubble",
+          "builtin-brush-catacombs",
+          "builtin-brush-factory-floor",
+          "builtin-brush-gold",
+          "builtin-brush-engine-room",
+          "builtin-brush-castle-dungeon",
+          "builtin-brush-hills",
+          "builtin-brush-tundra"
+        ],
+        "noise": [
+          "builtin-tile-7",
+          "builtin-panel-4",
+          "builtin-sqdoor-8",
+          "builtin-lab-2",
+          "builtin-light-5",
+          "builtin-water-1",
+          "builtin-tech-1",
+          "builtin-light-3",
+          "builtin-tile-4",
+          "builtin-cladding-2",
+          "builtin-panel-8",
+          "builtin-panel-3",
+          "builtin-door-8",
+          "builtin-wood-3",
+          "builtin-biocrete",
+          "builtin-crate-1",
+          "builtin-electriccrete",
+          "builtin-door-5",
+          "builtin-sqdoor-5",
+          "builtin-pipes-1",
+          "builtin-tile-3",
+          "builtin-drain-1",
+          "builtin-metal-3",
+          "builtin-tech-6",
+          "builtin-lab-4",
+          "builtin-sidewalk-1",
+          "builtin-cobbles-1",
+          "builtin-cobbles-4",
+          "builtin-panel-1",
+          "builtin-cobbles-3",
+          "builtin-door-1",
+          "builtin-tile-2",
+          "builtin-lab-5",
+          "builtin-vent-1",
+          "builtin-block-3",
+          "builtin-corrugat-2",
+          "builtin-floor-4",
+          "builtin-steel-4",
+          "builtin-vent-2",
+          "builtin-bigdoor-1",
+          "builtin-metal-2",
+          "builtin-brick-4",
+          "builtin-brickwood",
+          "builtin-lab-1",
+          "builtin-doortrim-3",
+          "builtin-rusty-3",
+          "builtin-support-3",
+          "builtin-grass-4",
+          "builtin-sand-2",
+          "builtin-gravel-1"
+        ],
+        "semantic": [
+          "builtin-brush-industrial-pipeworks",
+          "builtin-brush-autumn-woodland",
+          "builtin-brush-starship-corridor",
+          "builtin-brush-keep-library",
+          "builtin-brush-power-substation",
+          "builtin-brush-hills",
+          "builtin-brush-scrapyard",
+          "builtin-brush-ice-cave",
+          "builtin-brush-great-hall",
+          "builtin-brush-flooded-dungeon",
+          "builtin-brush-rocky-shore",
+          "builtin-brush-brimstone-pits",
+          "builtin-brush-snowy-pines",
+          "builtin-brush-cryo-bay",
+          "builtin-brush-obsidian-spires",
+          "builtin-brush-toxic-marsh",
+          "builtin-brush-coral-reef",
+          "builtin-brush-goblin-warren",
+          "builtin-brush-salt",
+          "builtin-brush-sea-cave",
+          "builtin-brush-dunes",
+          "builtin-brush-stronghold-rampart",
+          "builtin-brush-bone-pit",
+          "builtin-brush-dry-cave",
+          "builtin-brush-coal",
+          "builtin-brush-volcanic-caldera",
+          "builtin-brush-ice-moon",
+          "builtin-brush-enchanted-forest",
+          "builtin-brush-marble-shrine",
+          "builtin-brush-station-deck",
+          "builtin-brush-cracked-asphalt",
+          "builtin-brush-cliffside",
+          "builtin-brush-jungle-undergrowth",
+          "builtin-brush-haunted-wood",
+          "builtin-brush-frozen-lake",
+          "builtin-brush-throne-hall",
+          "builtin-brush-charred",
+          "builtin-brush-xeno-fungal-overgrowth",
+          "builtin-brush-dwarven-forge",
+          "builtin-brush-catacombs",
+          "builtin-brush-fungal-grotto",
+          "builtin-brush-toxic-dump",
+          "builtin-brush-blood-cellar",
+          "builtin-brush-subway-tunnel",
+          "builtin-brush-bamboo-thicket",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-peat-bog",
+          "builtin-brush-abyssal-void",
+          "builtin-brush-mossy-glade",
+          "builtin-brush-glowworm-cavern"
+        ],
+        "structureTexture": [
+          "builtin-wood-3",
+          "builtin-concrete-7",
+          "builtin-tarmac-4",
+          "builtin-corrugat-2",
+          "builtin-crate-3",
+          "builtin-metal-5",
+          "builtin-metal-3",
+          "builtin-concrete-1",
+          "builtin-brick-2",
+          "builtin-steel-3",
+          "builtin-crate-2",
+          "builtin-brick-3",
+          "builtin-wood-2",
+          "builtin-metal-4",
+          "builtin-concrete-4",
+          "builtin-brick-6",
+          "builtin-marble-1",
+          "builtin-metal-1",
+          "builtin-steel-5",
+          "builtin-brick2",
+          "builtin-brick-1",
+          "builtin-crate-1",
+          "builtin-metal-7",
+          "builtin-tarmac-2",
+          "builtin-tarmac-1"
+        ],
+        "vector": [
+          "builtin:diamond",
+          "builtin:checkmark",
+          "builtin:leaf",
+          "builtin:fire",
+          "builtin:star",
+          "builtin:triangle",
+          "builtin:burst",
+          "builtin:sun",
+          "builtin:cross",
+          "builtin:flower",
+          "builtin:heart",
+          "builtin:crescent",
+          "builtin:snowflake",
+          "builtin:right-triangle",
+          "builtin:club",
+          "builtin:cloud",
+          "builtin:drop",
+          "builtin:ellipse",
+          "builtin:key",
+          "builtin:octagon",
+          "builtin:lightning",
+          "builtin:arrow-right",
+          "builtin:pentagon",
+          "builtin:chevron-right",
+          "builtin:hexagon"
+        ]
+      },
+      "completed": {
+        "neural": 17,
+        "noise": 50,
+        "semantic": 50,
+        "structures": 25
+      },
+      "hash": "2b6e76aee7840f8b7bd706b3fbaea1e3f783806cf0b959cc151c76b33754b36a",
+      "receipts": [
+        {
+          "accepted": 8699,
+          "bodies": [],
+          "family": "noise",
+          "id": 1,
+          "liveGrowth": null,
+          "n": 0,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 3679,
+          "bodies": [],
+          "family": "noise",
+          "id": 2,
+          "liveGrowth": null,
+          "n": 1,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 6631,
+          "bodies": [],
+          "family": "noise",
+          "id": 3,
+          "liveGrowth": null,
+          "n": 2,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 8762,
+          "bodies": [],
+          "family": "noise",
+          "id": 4,
+          "liveGrowth": null,
+          "n": 3,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7611,
+          "bodies": [],
+          "family": "noise",
+          "id": 5,
+          "liveGrowth": null,
+          "n": 4,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 10890,
+          "bodies": [],
+          "family": "noise",
+          "id": 6,
+          "liveGrowth": null,
+          "n": 5,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 3476,
+          "bodies": [],
+          "family": "noise",
+          "id": 7,
+          "liveGrowth": null,
+          "n": 6,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 4845,
+          "bodies": [],
+          "family": "noise",
+          "id": 8,
+          "liveGrowth": null,
+          "n": 7,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 11484,
+          "bodies": [],
+          "family": "noise",
+          "id": 9,
+          "liveGrowth": null,
+          "n": 8,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 10763,
+          "bodies": [],
+          "family": "noise",
+          "id": 10,
+          "liveGrowth": null,
+          "n": 9,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 8900,
+          "bodies": [],
+          "family": "noise",
+          "id": 11,
+          "liveGrowth": null,
+          "n": 10,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 5657,
+          "bodies": [],
+          "family": "noise",
+          "id": 12,
+          "liveGrowth": null,
+          "n": 11,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7130,
+          "bodies": [],
+          "family": "noise",
+          "id": 13,
+          "liveGrowth": null,
+          "n": 12,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 9311,
+          "bodies": [],
+          "family": "noise",
+          "id": 14,
+          "liveGrowth": null,
+          "n": 13,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7048,
+          "bodies": [],
+          "family": "noise",
+          "id": 15,
+          "liveGrowth": null,
+          "n": 14,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7522,
+          "bodies": [],
+          "family": "noise",
+          "id": 16,
+          "liveGrowth": null,
+          "n": 15,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 10914,
+          "bodies": [],
+          "family": "noise",
+          "id": 17,
+          "liveGrowth": null,
+          "n": 16,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 15971,
+          "bodies": [],
+          "family": "noise",
+          "id": 18,
+          "liveGrowth": null,
+          "n": 17,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 9890,
+          "bodies": [],
+          "family": "noise",
+          "id": 19,
+          "liveGrowth": null,
+          "n": 18,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 12401,
+          "bodies": [],
+          "family": "noise",
+          "id": 20,
+          "liveGrowth": null,
+          "n": 19,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7249,
+          "bodies": [],
+          "family": "noise",
+          "id": 21,
+          "liveGrowth": null,
+          "n": 20,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 8433,
+          "bodies": [],
+          "family": "noise",
+          "id": 22,
+          "liveGrowth": null,
+          "n": 21,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 8839,
+          "bodies": [],
+          "family": "noise",
+          "id": 23,
+          "liveGrowth": null,
+          "n": 22,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 6279,
+          "bodies": [],
+          "family": "noise",
+          "id": 24,
+          "liveGrowth": null,
+          "n": 23,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 11783,
+          "bodies": [],
+          "family": "noise",
+          "id": 25,
+          "liveGrowth": null,
+          "n": 24,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 9091,
+          "bodies": [],
+          "family": "noise",
+          "id": 26,
+          "liveGrowth": null,
+          "n": 25,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 4222,
+          "bodies": [],
+          "family": "noise",
+          "id": 27,
+          "liveGrowth": null,
+          "n": 26,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7620,
+          "bodies": [],
+          "family": "noise",
+          "id": 28,
+          "liveGrowth": null,
+          "n": 27,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 8384,
+          "bodies": [],
+          "family": "noise",
+          "id": 29,
+          "liveGrowth": null,
+          "n": 28,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7051,
+          "bodies": [],
+          "family": "noise",
+          "id": 30,
+          "liveGrowth": null,
+          "n": 29,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7392,
+          "bodies": [],
+          "family": "noise",
+          "id": 31,
+          "liveGrowth": null,
+          "n": 30,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 3349,
+          "bodies": [],
+          "family": "noise",
+          "id": 32,
+          "liveGrowth": null,
+          "n": 31,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 3315,
+          "bodies": [],
+          "family": "noise",
+          "id": 33,
+          "liveGrowth": null,
+          "n": 32,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 14016,
+          "bodies": [],
+          "family": "noise",
+          "id": 34,
+          "liveGrowth": null,
+          "n": 33,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 9925,
+          "bodies": [],
+          "family": "noise",
+          "id": 35,
+          "liveGrowth": null,
+          "n": 34,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7224,
+          "bodies": [],
+          "family": "noise",
+          "id": 36,
+          "liveGrowth": null,
+          "n": 35,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 5504,
+          "bodies": [],
+          "family": "noise",
+          "id": 37,
+          "liveGrowth": null,
+          "n": 36,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7006,
+          "bodies": [],
+          "family": "noise",
+          "id": 38,
+          "liveGrowth": null,
+          "n": 37,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7586,
+          "bodies": [],
+          "family": "noise",
+          "id": 39,
+          "liveGrowth": null,
+          "n": 38,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 6924,
+          "bodies": [],
+          "family": "noise",
+          "id": 40,
+          "liveGrowth": null,
+          "n": 39,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 7944,
+          "bodies": [],
+          "family": "noise",
+          "id": 41,
+          "liveGrowth": null,
+          "n": 40,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 6818,
+          "bodies": [],
+          "family": "noise",
+          "id": 42,
+          "liveGrowth": null,
+          "n": 41,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 13057,
+          "bodies": [],
+          "family": "noise",
+          "id": 43,
+          "liveGrowth": null,
+          "n": 42,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 10251,
+          "bodies": [],
+          "family": "noise",
+          "id": 44,
+          "liveGrowth": null,
+          "n": 43,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 16689,
+          "bodies": [],
+          "family": "noise",
+          "id": 45,
+          "liveGrowth": null,
+          "n": 44,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 3918,
+          "bodies": [],
+          "family": "noise",
+          "id": 46,
+          "liveGrowth": null,
+          "n": 45,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 8381,
+          "bodies": [],
+          "family": "noise",
+          "id": 47,
+          "liveGrowth": null,
+          "n": 46,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 11938,
+          "bodies": [],
+          "family": "noise",
+          "id": 48,
+          "liveGrowth": null,
+          "n": 47,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 10416,
+          "bodies": [],
+          "family": "noise",
+          "id": 49,
+          "liveGrowth": null,
+          "n": 48,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 6204,
+          "bodies": [],
+          "family": "noise",
+          "id": 50,
+          "liveGrowth": null,
+          "n": 49,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 15879,
+          "bodies": [],
+          "family": "semantic",
+          "id": 51,
+          "liveGrowth": null,
+          "n": 0,
+          "organisms": [],
+          "pixels": 11236
+        },
+        {
+          "accepted": 8317,
+          "bodies": [],
+          "family": "semantic",
+          "id": 52,
+          "liveGrowth": null,
+          "n": 1,
+          "organisms": [],
+          "pixels": 8464
+        },
+        {
+          "accepted": 5593,
+          "bodies": [],
+          "family": "semantic",
+          "id": 53,
+          "liveGrowth": null,
+          "n": 2,
+          "organisms": [],
+          "pixels": 4761
+        },
+        {
+          "accepted": 22096,
+          "bodies": [],
+          "family": "semantic",
+          "id": 54,
+          "liveGrowth": null,
+          "n": 3,
+          "organisms": [],
+          "pixels": 14400
+        },
+        {
+          "accepted": 13137,
+          "bodies": [],
+          "family": "semantic",
+          "id": 55,
+          "liveGrowth": null,
+          "n": 4,
+          "organisms": [],
+          "pixels": 9409
+        },
+        {
+          "accepted": 1725,
+          "bodies": [],
+          "family": "semantic",
+          "id": 56,
+          "liveGrowth": null,
+          "n": 5,
+          "organisms": [],
+          "pixels": 6889
+        },
+        {
+          "accepted": 29186,
+          "bodies": [],
+          "family": "semantic",
+          "id": 57,
+          "liveGrowth": null,
+          "n": 6,
+          "organisms": [],
+          "pixels": 15625
+        },
+        {
+          "accepted": 20818,
+          "bodies": [],
+          "family": "semantic",
+          "id": 58,
+          "liveGrowth": null,
+          "n": 7,
+          "organisms": [],
+          "pixels": 12321
+        },
+        {
+          "accepted": 9718,
+          "bodies": [],
+          "family": "semantic",
+          "id": 59,
+          "liveGrowth": null,
+          "n": 8,
+          "organisms": [],
+          "pixels": 7744
+        },
+        {
+          "accepted": 3715,
+          "bodies": [],
+          "family": "semantic",
+          "id": 60,
+          "liveGrowth": null,
+          "n": 9,
+          "organisms": [],
+          "pixels": 5476
+        },
+        {
+          "accepted": 7672,
+          "bodies": [],
+          "family": "semantic",
+          "id": 61,
+          "liveGrowth": null,
+          "n": 10,
+          "organisms": [],
+          "pixels": 10000
+        },
+        {
+          "accepted": 20832,
+          "bodies": [],
+          "family": "semantic",
+          "id": 62,
+          "liveGrowth": null,
+          "n": 11,
+          "organisms": [],
+          "pixels": 12996
+        },
+        {
+          "accepted": 15988,
+          "bodies": [],
+          "family": "semantic",
+          "id": 63,
+          "liveGrowth": null,
+          "n": 12,
+          "organisms": [],
+          "pixels": 16384
+        },
+        {
+          "accepted": 7652,
+          "bodies": [],
+          "family": "semantic",
+          "id": 64,
+          "liveGrowth": null,
+          "n": 13,
+          "organisms": [],
+          "pixels": 5929
+        },
+        {
+          "accepted": 16562,
+          "bodies": [],
+          "family": "semantic",
+          "id": 65,
+          "liveGrowth": null,
+          "n": 14,
+          "organisms": [],
+          "pixels": 8281
+        },
+        {
+          "accepted": 9542,
+          "bodies": [],
+          "family": "semantic",
+          "id": 66,
+          "liveGrowth": null,
+          "n": 15,
+          "organisms": [],
+          "pixels": 11025
+        },
+        {
+          "accepted": 30291,
+          "bodies": [],
+          "family": "semantic",
+          "id": 67,
+          "liveGrowth": null,
+          "n": 16,
+          "organisms": [],
+          "pixels": 14161
+        },
+        {
+          "accepted": 5063,
+          "bodies": [],
+          "family": "semantic",
+          "id": 68,
+          "liveGrowth": null,
+          "n": 17,
+          "organisms": [],
+          "pixels": 4624
+        },
+        {
+          "accepted": 925,
+          "bodies": [],
+          "family": "semantic",
+          "id": 69,
+          "liveGrowth": null,
+          "n": 18,
+          "organisms": [],
+          "pixels": 6724
+        },
+        {
+          "accepted": 10416,
+          "bodies": [],
+          "family": "semantic",
+          "id": 70,
+          "liveGrowth": null,
+          "n": 19,
+          "organisms": [],
+          "pixels": 9216
+        },
+        {
+          "accepted": 428,
+          "bodies": [],
+          "family": "semantic",
+          "id": 71,
+          "liveGrowth": null,
+          "n": 20,
+          "organisms": [],
+          "pixels": 4096
+        },
+        {
+          "accepted": 11060,
+          "bodies": [],
+          "family": "semantic",
+          "id": 72,
+          "liveGrowth": null,
+          "n": 21,
+          "organisms": [],
+          "pixels": 13225
+        },
+        {
+          "accepted": 11174,
+          "bodies": [],
+          "family": "semantic",
+          "id": 73,
+          "liveGrowth": null,
+          "n": 22,
+          "organisms": [],
+          "pixels": 8464
+        },
+        {
+          "accepted": 7985,
+          "bodies": [],
+          "family": "semantic",
+          "id": 74,
+          "liveGrowth": null,
+          "n": 23,
+          "organisms": [],
+          "pixels": 6084
+        },
+        {
+          "accepted": 4218,
+          "bodies": [],
+          "family": "semantic",
+          "id": 75,
+          "liveGrowth": null,
+          "n": 24,
+          "organisms": [],
+          "pixels": 14400
+        },
+        {
+          "accepted": 12492,
+          "bodies": [],
+          "family": "semantic",
+          "id": 76,
+          "liveGrowth": null,
+          "n": 25,
+          "organisms": [],
+          "pixels": 11236
+        },
+        {
+          "accepted": 13926,
+          "bodies": [],
+          "family": "semantic",
+          "id": 77,
+          "liveGrowth": null,
+          "n": 26,
+          "organisms": [],
+          "pixels": 6889
+        },
+        {
+          "accepted": 4993,
+          "bodies": [],
+          "family": "semantic",
+          "id": 78,
+          "liveGrowth": null,
+          "n": 27,
+          "organisms": [],
+          "pixels": 4761
+        },
+        {
+          "accepted": 8833,
+          "bodies": [],
+          "family": "semantic",
+          "id": 79,
+          "liveGrowth": null,
+          "n": 28,
+          "organisms": [],
+          "pixels": 6724
+        },
+        {
+          "accepted": 9317,
+          "bodies": [],
+          "family": "semantic",
+          "id": 80,
+          "liveGrowth": null,
+          "n": 29,
+          "organisms": [],
+          "pixels": 4624
+        },
+        {
+          "accepted": 8756,
+          "bodies": [],
+          "family": "semantic",
+          "id": 81,
+          "liveGrowth": null,
+          "n": 30,
+          "organisms": [],
+          "pixels": 12100
+        },
+        {
+          "accepted": 14649,
+          "bodies": [],
+          "family": "semantic",
+          "id": 82,
+          "liveGrowth": null,
+          "n": 31,
+          "organisms": [],
+          "pixels": 15376
+        },
+        {
+          "accepted": 11440,
+          "bodies": [],
+          "family": "semantic",
+          "id": 83,
+          "liveGrowth": null,
+          "n": 32,
+          "organisms": [],
+          "pixels": 6724
+        },
+        {
+          "accepted": 6828,
+          "bodies": [],
+          "family": "semantic",
+          "id": 84,
+          "liveGrowth": null,
+          "n": 33,
+          "organisms": [],
+          "pixels": 9216
+        },
+        {
+          "accepted": 7026,
+          "bodies": [],
+          "family": "semantic",
+          "id": 85,
+          "liveGrowth": null,
+          "n": 34,
+          "organisms": [],
+          "pixels": 14161
+        },
+        {
+          "accepted": 5397,
+          "bodies": [],
+          "family": "semantic",
+          "id": 86,
+          "liveGrowth": null,
+          "n": 35,
+          "organisms": [],
+          "pixels": 4624
+        },
+        {
+          "accepted": 3747,
+          "bodies": [],
+          "family": "semantic",
+          "id": 87,
+          "liveGrowth": null,
+          "n": 36,
+          "organisms": [],
+          "pixels": 8281
+        },
+        {
+          "accepted": 17790,
+          "bodies": [],
+          "family": "semantic",
+          "id": 88,
+          "liveGrowth": null,
+          "n": 37,
+          "organisms": [],
+          "pixels": 11025
+        },
+        {
+          "accepted": 11046,
+          "bodies": [],
+          "family": "semantic",
+          "id": 89,
+          "liveGrowth": null,
+          "n": 38,
+          "organisms": [],
+          "pixels": 8464
+        },
+        {
+          "accepted": 17195,
+          "bodies": [],
+          "family": "semantic",
+          "id": 90,
+          "liveGrowth": null,
+          "n": 39,
+          "organisms": [],
+          "pixels": 11236
+        },
+        {
+          "accepted": 14878,
+          "bodies": [],
+          "family": "semantic",
+          "id": 91,
+          "liveGrowth": null,
+          "n": 40,
+          "organisms": [],
+          "pixels": 10404
+        },
+        {
+          "accepted": 15901,
+          "bodies": [],
+          "family": "semantic",
+          "id": 92,
+          "liveGrowth": null,
+          "n": 41,
+          "organisms": [],
+          "pixels": 7744
+        },
+        {
+          "accepted": 11102,
+          "bodies": [],
+          "family": "semantic",
+          "id": 93,
+          "liveGrowth": null,
+          "n": 42,
+          "organisms": [],
+          "pixels": 5476
+        },
+        {
+          "accepted": 13455,
+          "bodies": [],
+          "family": "semantic",
+          "id": 94,
+          "liveGrowth": null,
+          "n": 43,
+          "organisms": [],
+          "pixels": 15625
+        },
+        {
+          "accepted": 16821,
+          "bodies": [],
+          "family": "semantic",
+          "id": 95,
+          "liveGrowth": null,
+          "n": 44,
+          "organisms": [],
+          "pixels": 12321
+        },
+        {
+          "accepted": 9734,
+          "bodies": [],
+          "family": "semantic",
+          "id": 96,
+          "liveGrowth": null,
+          "n": 45,
+          "organisms": [],
+          "pixels": 9409
+        },
+        {
+          "accepted": 8377,
+          "bodies": [],
+          "family": "semantic",
+          "id": 97,
+          "liveGrowth": null,
+          "n": 46,
+          "organisms": [],
+          "pixels": 6889
+        },
+        {
+          "accepted": 4916,
+          "bodies": [],
+          "family": "semantic",
+          "id": 98,
+          "liveGrowth": null,
+          "n": 47,
+          "organisms": [],
+          "pixels": 4761
+        },
+        {
+          "accepted": 15267,
+          "bodies": [],
+          "family": "semantic",
+          "id": 99,
+          "liveGrowth": null,
+          "n": 48,
+          "organisms": [],
+          "pixels": 14400
+        },
+        {
+          "accepted": 16733,
+          "bodies": [],
+          "family": "semantic",
+          "id": 100,
+          "liveGrowth": null,
+          "n": 49,
+          "organisms": [],
+          "pixels": 11236
+        },
+        {
+          "accepted": 0,
+          "bodies": [],
+          "family": "neural",
+          "id": 101,
+          "liveGrowth": null,
+          "n": 0,
+          "organisms": [],
+          "pixels": 11236
+        },
+        {
+          "accepted": 677,
+          "bodies": [],
+          "family": "neural",
+          "id": 102,
+          "liveGrowth": null,
+          "n": 1,
+          "organisms": [],
+          "pixels": 14400
+        },
+        {
+          "accepted": 114,
+          "bodies": [],
+          "family": "neural",
+          "id": 103,
+          "liveGrowth": null,
+          "n": 2,
+          "organisms": [],
+          "pixels": 15625
+        },
+        {
+          "accepted": 6377,
+          "bodies": [],
+          "family": "neural",
+          "id": 104,
+          "liveGrowth": null,
+          "n": 3,
+          "organisms": [],
+          "pixels": 5476
+        },
+        {
+          "accepted": 9728,
+          "bodies": [],
+          "family": "neural",
+          "id": 105,
+          "liveGrowth": null,
+          "n": 4,
+          "organisms": [],
+          "pixels": 16384
+        },
+        {
+          "accepted": 3625,
+          "bodies": [],
+          "family": "neural",
+          "id": 106,
+          "liveGrowth": null,
+          "n": 5,
+          "organisms": [],
+          "pixels": 11025
+        },
+        {
+          "accepted": 8059,
+          "bodies": [],
+          "family": "neural",
+          "id": 107,
+          "liveGrowth": null,
+          "n": 6,
+          "organisms": [],
+          "pixels": 6724
+        },
+        {
+          "accepted": 18773,
+          "bodies": [],
+          "family": "neural",
+          "id": 108,
+          "liveGrowth": null,
+          "n": 7,
+          "organisms": [],
+          "pixels": 13225
+        },
+        {
+          "accepted": 1599,
+          "bodies": [],
+          "family": "neural",
+          "id": 109,
+          "liveGrowth": null,
+          "n": 8,
+          "organisms": [],
+          "pixels": 14400
+        },
+        {
+          "accepted": 4557,
+          "bodies": [],
+          "family": "neural",
+          "id": 110,
+          "liveGrowth": null,
+          "n": 9,
+          "organisms": [],
+          "pixels": 4761
+        },
+        {
+          "accepted": 11668,
+          "bodies": [],
+          "family": "neural",
+          "id": 111,
+          "liveGrowth": null,
+          "n": 10,
+          "organisms": [],
+          "pixels": 12100
+        },
+        {
+          "accepted": 8049,
+          "bodies": [],
+          "family": "neural",
+          "id": 112,
+          "liveGrowth": null,
+          "n": 11,
+          "organisms": [],
+          "pixels": 9216
+        },
+        {
+          "accepted": 7874,
+          "bodies": [],
+          "family": "neural",
+          "id": 113,
+          "liveGrowth": null,
+          "n": 12,
+          "organisms": [],
+          "pixels": 8281
+        },
+        {
+          "accepted": 11724,
+          "bodies": [],
+          "family": "neural",
+          "id": 114,
+          "liveGrowth": null,
+          "n": 13,
+          "organisms": [],
+          "pixels": 11236
+        },
+        {
+          "accepted": 8743,
+          "bodies": [],
+          "family": "neural",
+          "id": 115,
+          "liveGrowth": null,
+          "n": 14,
+          "organisms": [],
+          "pixels": 5476
+        },
+        {
+          "accepted": 3831,
+          "bodies": [],
+          "family": "neural",
+          "id": 116,
+          "liveGrowth": null,
+          "n": 15,
+          "organisms": [],
+          "pixels": 9409
+        },
+        {
+          "accepted": 7203,
+          "bodies": [],
+          "family": "neural",
+          "id": 117,
+          "liveGrowth": null,
+          "n": 16,
+          "organisms": [],
+          "pixels": 14400
+        },
+        {
+          "accepted": 922,
+          "bodies": [
+            "rigid@ca799c92-e5bf-4421-ab29-3e9d7708b06c"
+          ],
+          "family": "structures",
+          "id": 118,
+          "liveGrowth": null,
+          "n": 0,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 4451,
+          "bodies": [
+            "rigid@c988f66e-f96f-4fa9-8219-df9dcbc56f5c"
+          ],
+          "family": "structures",
+          "id": 119,
+          "liveGrowth": null,
+          "n": 1,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 4323,
+          "bodies": [
+            "rigid@ca8a65f6-192e-4a8e-88cd-0e33b67f25fe"
+          ],
+          "family": "structures",
+          "id": 120,
+          "liveGrowth": null,
+          "n": 2,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 3685,
+          "bodies": [
+            "rigid@bb87bd5d-6144-4be5-bb5d-233435d8fe3f"
+          ],
+          "family": "structures",
+          "id": 121,
+          "liveGrowth": null,
+          "n": 3,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 1439,
+          "bodies": [
+            "rigid@c1ba7a34-4579-4d21-b62c-ca074b00edec"
+          ],
+          "family": "structures",
+          "id": 122,
+          "liveGrowth": null,
+          "n": 4,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 2800,
+          "bodies": [
+            "rigid@4f3a3efb-b9ba-4bff-aed8-d7301b59d1e6"
+          ],
+          "family": "structures",
+          "id": 123,
+          "liveGrowth": null,
+          "n": 5,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 1909,
+          "bodies": [
+            "rigid@bc664159-93e8-4304-ab31-59d309344c01"
+          ],
+          "family": "structures",
+          "id": 124,
+          "liveGrowth": null,
+          "n": 6,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 4502,
+          "bodies": [
+            "rigid@4167ad32-10e8-4663-a754-6b249a2e67fa"
+          ],
+          "family": "structures",
+          "id": 125,
+          "liveGrowth": null,
+          "n": 7,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 1581,
+          "bodies": [
+            "rigid@08ab4f79-fd88-4688-afcf-77017e1fdaf4"
+          ],
+          "family": "structures",
+          "id": 126,
+          "liveGrowth": null,
+          "n": 8,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 1254,
+          "bodies": [
+            "rigid@9554e5ec-4ca3-4396-b5d7-3ae577f0ac1a"
+          ],
+          "family": "structures",
+          "id": 127,
+          "liveGrowth": null,
+          "n": 9,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 1637,
+          "bodies": [
+            "rigid@fcc3a2b0-57ea-4dec-ad5c-cbb0027757a5"
+          ],
+          "family": "structures",
+          "id": 128,
+          "liveGrowth": null,
+          "n": 10,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 1839,
+          "bodies": [
+            "rigid@95e507e9-b2d6-4cd8-8a23-bc2c80123217"
+          ],
+          "family": "structures",
+          "id": 129,
+          "liveGrowth": null,
+          "n": 11,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 753,
+          "bodies": [
+            "rigid@afc76510-85e3-44d3-b472-a08a93f1d1a6"
+          ],
+          "family": "structures",
+          "id": 130,
+          "liveGrowth": null,
+          "n": 12,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 3740,
+          "bodies": [
+            "rigid@7adcdcff-1bda-4d60-8e19-ecb938ae89ff"
+          ],
+          "family": "structures",
+          "id": 131,
+          "liveGrowth": null,
+          "n": 13,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 2413,
+          "bodies": [
+            "rigid@80110040-81a3-4119-b48f-6ee555f6c2de"
+          ],
+          "family": "structures",
+          "id": 132,
+          "liveGrowth": null,
+          "n": 14,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 3171,
+          "bodies": [
+            "rigid@c819ce3f-aa10-4715-88e8-acf52bfba71d"
+          ],
+          "family": "structures",
+          "id": 133,
+          "liveGrowth": null,
+          "n": 15,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 5260,
+          "bodies": [
+            "rigid@a8200626-bc80-4745-aef6-973955d4d2e3"
+          ],
+          "family": "structures",
+          "id": 134,
+          "liveGrowth": null,
+          "n": 16,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 6397,
+          "bodies": [
+            "rigid@b7a05f05-db1d-40ca-b554-4b0a75b3b215"
+          ],
+          "family": "structures",
+          "id": 135,
+          "liveGrowth": null,
+          "n": 17,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 3892,
+          "bodies": [
+            "rigid@1784bfc1-3354-4963-881a-2141c177bc6a"
+          ],
+          "family": "structures",
+          "id": 136,
+          "liveGrowth": null,
+          "n": 18,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 5253,
+          "bodies": [
+            "rigid@88cb768b-1bca-4ce9-92a0-f27d800bd22f"
+          ],
+          "family": "structures",
+          "id": 137,
+          "liveGrowth": null,
+          "n": 19,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 2096,
+          "bodies": [
+            "rigid@72b15ceb-55a6-4f72-9c04-7bcaee9f987d"
+          ],
+          "family": "structures",
+          "id": 138,
+          "liveGrowth": null,
+          "n": 20,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 913,
+          "bodies": [
+            "rigid@00682a57-f8bb-4d47-b6d1-bdc753dcb59b"
+          ],
+          "family": "structures",
+          "id": 139,
+          "liveGrowth": null,
+          "n": 21,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 5994,
+          "bodies": [
+            "rigid@6a1d4e01-a898-4458-8724-834f1b000131"
+          ],
+          "family": "structures",
+          "id": 140,
+          "liveGrowth": null,
+          "n": 22,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 1453,
+          "bodies": [
+            "rigid@eaac5267-e999-4526-8aee-95773c9f42da"
+          ],
+          "family": "structures",
+          "id": 141,
+          "liveGrowth": null,
+          "n": 23,
+          "organisms": [],
+          "pixels": 0
+        },
+        {
+          "accepted": 2185,
+          "bodies": [
+            "rigid@f9abff43-422e-4d73-ab12-987c12d1e7ac"
+          ],
+          "family": "structures",
+          "id": 142,
+          "liveGrowth": null,
+          "n": 24,
+          "organisms": [],
+          "pixels": 0
+        }
+      ],
+      "sites": [
+        {
+          "ground": 738,
+          "size": 106,
+          "x": 150
+        },
+        {
+          "ground": 742,
+          "size": 92,
+          "x": 387
+        },
+        {
+          "ground": 745,
+          "size": 69,
+          "x": 651
+        },
+        {
+          "ground": 774,
+          "size": 120,
+          "x": 888
+        },
+        {
+          "ground": 761,
+          "size": 97,
+          "x": 1152
+        },
+        {
+          "ground": 745,
+          "size": 83,
+          "x": 1389
+        },
+        {
+          "ground": 752,
+          "size": 125,
+          "x": 1653
+        },
+        {
+          "ground": 742,
+          "size": 111,
+          "x": 1939
+        },
+        {
+          "ground": 739,
+          "size": 88,
+          "x": 2154
+        },
+        {
+          "ground": 751,
+          "size": 74,
+          "x": 2440
+        },
+        {
+          "ground": 738,
+          "size": 100,
+          "x": 2691
+        },
+        {
+          "ground": 738,
+          "size": 114,
+          "x": 2966
+        },
+        {
+          "ground": 742,
+          "size": 128,
+          "x": 3192
+        },
+        {
+          "ground": 720,
+          "size": 77,
+          "x": 3467
+        },
+        {
+          "ground": 774,
+          "size": 91,
+          "x": 3693
+        },
+        {
+          "ground": 735,
+          "size": 105,
+          "x": 3968
+        },
+        {
+          "ground": 753,
+          "size": 119,
+          "x": 4243
+        },
+        {
+          "ground": 754,
+          "size": 68,
+          "x": 4469
+        },
+        {
+          "ground": 714,
+          "size": 82,
+          "x": 4744
+        },
+        {
+          "ground": 763,
+          "size": 96,
+          "x": 4970
+        },
+        {
+          "ground": 740,
+          "size": 64,
+          "x": 5272
+        },
+        {
+          "ground": 732,
+          "size": 115,
+          "x": 5509
+        },
+        {
+          "ground": 743,
+          "size": 92,
+          "x": 5773
+        },
+        {
+          "ground": 744,
+          "size": 78,
+          "x": 6010
+        },
+        {
+          "ground": 745,
+          "size": 120,
+          "x": 6274
+        },
+        {
+          "ground": 743,
+          "size": 106,
+          "x": 6511
+        },
+        {
+          "ground": 743,
+          "size": 83,
+          "x": 6775
+        },
+        {
+          "ground": 742,
+          "size": 69,
+          "x": 7061
+        },
+        {
+          "ground": 745,
+          "size": 82,
+          "x": 7315
+        },
+        {
+          "ground": 737,
+          "size": 68,
+          "x": 7552
+        },
+        {
+          "ground": 737,
+          "size": 110,
+          "x": 7819
+        },
+        {
+          "ground": 722,
+          "size": 124,
+          "x": 8045
+        },
+        {
+          "ground": 754,
+          "size": 82,
+          "x": 8342
+        },
+        {
+          "ground": 747,
+          "size": 96,
+          "x": 8568
+        },
+        {
+          "ground": 752,
+          "size": 119,
+          "x": 8816
+        },
+        {
+          "ground": 747,
+          "size": 68,
+          "x": 9091
+        },
+        {
+          "ground": 763,
+          "size": 91,
+          "x": 9339
+        },
+        {
+          "ground": 758,
+          "size": 105,
+          "x": 9614
+        },
+        {
+          "ground": 745,
+          "size": 92,
+          "x": 9872
+        },
+        {
+          "ground": 745,
+          "size": 106,
+          "x": 10098
+        },
+        {
+          "ground": 759,
+          "size": 102,
+          "x": 10369
+        },
+        {
+          "ground": 741,
+          "size": 88,
+          "x": 10606
+        },
+        {
+          "ground": 747,
+          "size": 74,
+          "x": 10892
+        },
+        {
+          "ground": 757,
+          "size": 125,
+          "x": 11129
+        },
+        {
+          "ground": 756,
+          "size": 111,
+          "x": 11415
+        },
+        {
+          "ground": 736,
+          "size": 97,
+          "x": 11652
+        },
+        {
+          "ground": 738,
+          "size": 83,
+          "x": 11889
+        },
+        {
+          "ground": 750,
+          "size": 69,
+          "x": 12175
+        },
+        {
+          "ground": 749,
+          "size": 120,
+          "x": 12412
+        },
+        {
+          "ground": 718,
+          "size": 106,
+          "x": 12649
+        }
+      ],
+      "version": 1
+    },
+    "remaining": 20,
+    "roster": [
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#FF783C",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": null,
+        "hits": 0,
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M12B Oct25 Alpha",
+        "personaId": "lucky",
+        "shots": 0,
+        "spawnX": 5960,
+        "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+        "weaponId": "standard"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#7EF88F",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": null,
+        "hits": 0,
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M12B Oct25 Beta",
+        "personaId": "mole",
+        "shots": 0,
+        "spawnX": 6840,
+        "templateId": "12d67315-11d7-421d-8e2f-6dca94335d32",
+        "weaponId": "standard"
+      }
+    ],
+    "round": 1,
+    "seed": 2541102,
+    "seriesId": "433b2723-3cd3-49b6-9200-9f13cd2d92cb",
+    "seriesLength": 3,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 700,
+      "family": "zone",
+      "parameters": {
+        "airDepth": 744,
+        "blend": 4,
+        "frequency": 0.005,
+        "height": 110,
+        "octaves": 3
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "verdant-reach",
+      "seed": 2541102,
+      "totalChunks": 4000,
+      "version": 1
+    },
+    "turnNumber": 0,
+    "turnSeconds": 20,
+    "version": 9,
+    "winner": null
+  },
+  "paused": false,
+  "save": {
+    "allowed": true,
+    "blockers": []
+  },
+  "world": "433b2723-3cd3-49b6-9200-9f13cd2d92cb"
+}

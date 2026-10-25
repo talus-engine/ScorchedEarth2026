@@ -1,0 +1,442 @@
+{
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6399.5,
+          "y": 766.6187744140625
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 450.23779296875,
+          "w": 920,
+          "x": 5939.5,
+          "y": 541.4998779296875
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5248,
+      "y": 0
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 64
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 64
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5599.5,
+      "y": 282.6187744140625
+    },
+    "zoom": 0.25
+  },
+  "error": "",
+  "events": [
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 0.016666666666666666,
+      "completedChunks": 700,
+      "family": "maze",
+      "kind": "terrain-source",
+      "parameters": {
+        "cellSize": 48
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "bunker-grid",
+      "seed": 2533410,
+      "totalChunks": 4000,
+      "turn": 0,
+      "version": 1
+    },
+    {
+      "clock": 1.5833333333333326,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-bf68aac7-803b-44d6-bcd2-c059c2e64d23",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 15
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-bf68aac7-803b-44d6-bcd2-c059c2e64d23",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+        "vx": 0,
+        "vy": 0,
+        "x": 5959.5,
+        "y": 971.55712890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 1.6833333333333322,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-bf68aac7-803b-44d6-bcd2-c059c2e64d23",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 15
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-bf68aac7-803b-44d6-bcd2-c059c2e64d23",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "2535 Ember",
+        "residency": "live",
+        "slot": null,
+        "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+        "vx": 0,
+        "vy": 0,
+        "x": 5959.5,
+        "y": 971.7376708984376
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "blocked",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 1.6833333333333322,
+      "id": "instance@spawn-bf68aac7-803b-44d6-bcd2-c059c2e64d23",
+      "kind": "deployed",
+      "name": "2535 Ember",
+      "turn": 0
+    },
+    {
+      "clock": 3.26666666666666,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-93fc0801-d38c-4315-b931-69b317073ec0",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-93fc0801-d38c-4315-b931-69b317073ec0",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "Arig Silverhaven",
+        "residency": "live",
+        "slot": null,
+        "templateId": "df3e8da4-084c-4989-80c1-638805529db9",
+        "vx": 0,
+        "vy": 54.16666793823242,
+        "x": 6839.5,
+        "y": 526.0848999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.3666666666666596,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-93fc0801-d38c-4315-b931-69b317073ec0",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-93fc0801-d38c-4315-b931-69b317073ec0",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "2535 Mint",
+        "residency": "live",
+        "slot": null,
+        "templateId": "df3e8da4-084c-4989-80c1-638805529db9",
+        "vx": 0,
+        "vy": 119.16666412353516,
+        "x": 6839.5,
+        "y": 535.293212890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 3.3666666666666596,
+      "id": "instance@spawn-93fc0801-d38c-4315-b931-69b317073ec0",
+      "kind": "deployed",
+      "name": "2535 Mint",
+      "turn": 0
+    },
+    {
+      "clock": 3.3666666666666596,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 480,
+      "clock": 3.3666666666666596,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "2535 Ember",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 80,
+      "clock": 3.3666666666666596,
+      "item": "mirv",
+      "kind": "purchase",
+      "name": "2535 Ember",
+      "price": 400,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 480,
+      "clock": 3.3666666666666596,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "2535 Mint",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 260,
+      "clock": 3.3666666666666596,
+      "item": "digger",
+      "kind": "purchase",
+      "name": "2535 Mint",
+      "price": 220,
+      "quantity": 5,
+      "turn": 0
+    },
+    {
+      "cash": 170,
+      "clock": 3.3666666666666596,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "2535 Mint",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "clock": 3.5333333333333257,
+      "id": "instance@spawn-93fc0801-d38c-4315-b931-69b317073ec0",
+      "kind": "land",
+      "turn": 0
+    }
+  ],
+  "generation": {
+    "bounds": {
+      "h": 1280,
+      "w": 12800,
+      "x": 0,
+      "y": 0
+    },
+    "completedChunks": 720,
+    "family": "maze",
+    "parameters": {
+      "cellSize": 48
+    },
+    "phase": "ready",
+    "reason": null,
+    "recipeId": "bunker-grid",
+    "seed": 2533410,
+    "totalChunks": 4000,
+    "version": 1
+  },
+  "match": {
+    "attack": null,
+    "biome": "bunker-grid",
+    "bounds": {
+      "h": 1280,
+      "w": 960,
+      "x": 5920,
+      "y": 0
+    },
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0,
+      "rng": 424088455,
+      "serial": 0
+    },
+    "computers": 2,
+    "details": 0,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "generated": 0,
+    "generation": "bunker-grid",
+    "generationChoice": "bunker-grid",
+    "humans": 0,
+    "impact": null,
+    "livingSites": 0,
+    "message": "Tanks ready \u2014 begin when your crew is ready",
+    "pendingTurn": null,
+    "phase": "ready",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "remaining": 30,
+    "roster": [
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#FF783C",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-bf68aac7-803b-44d6-bcd2-c059c2e64d23",
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "2535 Ember",
+        "personaId": "lucky",
+        "placementReady": true,
+        "spawnX": 5960,
+        "surfaceY": 1024,
+        "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+        "weaponId": "mirv"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#70F8A0",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-93fc0801-d38c-4315-b931-69b317073ec0",
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "2535 Mint",
+        "personaId": "mole",
+        "placementReady": true,
+        "spawnX": 6840,
+        "surfaceY": 576,
+        "templateId": "df3e8da4-084c-4989-80c1-638805529db9",
+        "weaponId": "standard"
+      }
+    ],
+    "round": 1,
+    "seed": 2533410,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 700,
+      "family": "maze",
+      "parameters": {
+        "cellSize": 48
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "bunker-grid",
+      "seed": 2533410,
+      "totalChunks": 4000,
+      "version": 1
+    },
+    "turnNumber": 0,
+    "turnSeconds": 30,
+    "version": 9,
+    "winner": null
+  },
+  "params": {
+    "computers": 2,
+    "deploy": "yes",
+    "generation": {
+      "recipe": "bunker-grid"
+    },
+    "humans": 0,
+    "namesText": "2535 Ember\n2535 Mint",
+    "turnSeconds": 30
+  },
+  "paused": false,
+  "seed": 2533410,
+  "world": "c4bd4d88-8ed7-4722-b270-b1855f73db39"
+}

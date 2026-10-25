@@ -1,0 +1,965 @@
+{
+  "installed": {
+    "computers": 2,
+    "humans": 0,
+    "namesText": "Copper\nSlate",
+    "turnSeconds": 15
+  },
+  "match": {
+    "biome": "slate-reach",
+    "bounds": {
+      "h": 1280,
+      "w": 12800,
+      "x": 0,
+      "y": 0
+    },
+    "computers": 2,
+    "focusIndex": 0,
+    "humans": 0,
+    "phase": "ready",
+    "roster": [
+      {
+        "color": "#bcb1ff",
+        "control": "cpu",
+        "entityId": "instance@spawn-5078cbc4-0b21-4031-a3bf-5105ab345d00",
+        "index": 0,
+        "name": "Copper",
+        "spawnX": 5248,
+        "surfaceY": 656
+      },
+      {
+        "color": "#ffbd82",
+        "control": "cpu",
+        "entityId": "instance@spawn-63940fa9-ca7e-4f89-9fdd-b955ba6d075d",
+        "index": 1,
+        "name": "Slate",
+        "spawnX": 7552,
+        "surfaceY": 656
+      }
+    ],
+    "seed": 1,
+    "turnSeconds": 15
+  },
+  "params": {
+    "computers": 2,
+    "deploy": "yes",
+    "humans": 0,
+    "namesText": "Copper\nSlate",
+    "seed": "1",
+    "turnSeconds": 15
+  },
+  "roster": [
+    {
+      "angle": 45,
+      "control": "cpu",
+      "index": 0,
+      "name": "Copper",
+      "power": 70,
+      "snapshot": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 81,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-5078cbc4-0b21-4031-a3bf-5105ab345d00",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "Copper",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+        "vx": 0,
+        "vy": 0,
+        "x": 5247.5,
+        "y": 641.9921875
+      },
+      "weapon": {
+        "ammo": {},
+        "angle": -0.7853981633974475,
+        "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+        "gravityScale": 1,
+        "items": [
+          "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+        ],
+        "kind": "rigid-body",
+        "pinned": false,
+        "power": 1,
+        "speed": {
+          "current": 1800,
+          "max": 1800,
+          "min": 100
+        }
+      },
+      "liveInspection": {
+        "becameLive": true,
+        "snapshot": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-5078cbc4-0b21-4031-a3bf-5105ab345d00",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 2,
+          "maxHealth": 100,
+          "name": "Copper",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 641.9912109375
+        },
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974475,
+          "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+          "gravityScale": 1,
+          "items": [
+            "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+          ],
+          "kind": "rigid-body",
+          "pinned": false,
+          "power": 1,
+          "speed": {
+            "current": 1800,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      }
+    },
+    {
+      "angle": 45,
+      "control": "cpu",
+      "index": 1,
+      "name": "Slate",
+      "power": 70,
+      "snapshot": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 117,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-63940fa9-ca7e-4f89-9fdd-b955ba6d075d",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "Slate",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+        "vx": 0,
+        "vy": 0,
+        "x": 7551.5,
+        "y": 641.9910278320312
+      },
+      "weapon": null,
+      "liveInspection": {
+        "becameLive": true,
+        "snapshot": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 10
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-63940fa9-ca7e-4f89-9fdd-b955ba6d075d",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 3,
+          "maxHealth": 100,
+          "name": "Slate",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 641.9901733398438
+        },
+        "weapon": {
+          "ammo": {},
+          "angle": 0,
+          "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+          "gravityScale": 1,
+          "items": [
+            "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+          ],
+          "kind": "rigid-body",
+          "pinned": false,
+          "power": 1,
+          "speed": {
+            "current": 1800,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      }
+    }
+  ],
+  "seed": 1,
+  "worldId": "f45ab2a5-173d-4951-9971-316a9b1e207f",
+  "profileSampleDx": [
+    0,
+    64,
+    96,
+    160,
+    192,
+    255
+  ],
+  "profile": [
+    {
+      "column": 0,
+      "floor": 1279,
+      "heights": [
+        640,
+        629,
+        624,
+        624,
+        629,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 1,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 2,
+      "floor": 1279,
+      "heights": [
+        640,
+        629,
+        624,
+        624,
+        629,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 3,
+      "floor": 1279,
+      "heights": [
+        640,
+        629,
+        624,
+        624,
+        629,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 4,
+      "floor": 1279,
+      "heights": [
+        640,
+        629,
+        624,
+        624,
+        629,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 5,
+      "floor": 1279,
+      "heights": [
+        640,
+        629,
+        624,
+        624,
+        629,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 6,
+      "floor": 1279,
+      "heights": [
+        640,
+        629,
+        624,
+        624,
+        629,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 7,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 8,
+      "floor": 1279,
+      "heights": [
+        640,
+        672,
+        688,
+        688,
+        693,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 9,
+      "floor": 1279,
+      "heights": [
+        704,
+        693,
+        688,
+        688,
+        693,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 10,
+      "floor": 1279,
+      "heights": [
+        704,
+        672,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 11,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 12,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        672,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 13,
+      "floor": 1279,
+      "heights": [
+        704,
+        693,
+        688,
+        688,
+        693,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 14,
+      "floor": 1279,
+      "heights": [
+        704,
+        693,
+        688,
+        688,
+        693,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 15,
+      "floor": 1279,
+      "heights": [
+        704,
+        672,
+        656,
+        656,
+        629,
+        576
+      ],
+      "sky": null
+    },
+    {
+      "column": 16,
+      "floor": 1279,
+      "heights": [
+        576,
+        587,
+        592,
+        592,
+        587,
+        576
+      ],
+      "sky": null
+    },
+    {
+      "column": 17,
+      "floor": 1279,
+      "heights": [
+        576,
+        587,
+        592,
+        592,
+        608,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 18,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 19,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 20,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        672,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 21,
+      "floor": 1279,
+      "heights": [
+        704,
+        693,
+        688,
+        688,
+        693,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 22,
+      "floor": 1279,
+      "heights": [
+        704,
+        715,
+        720,
+        720,
+        715,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 23,
+      "floor": 1279,
+      "heights": [
+        704,
+        715,
+        720,
+        720,
+        715,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 24,
+      "floor": 1279,
+      "heights": [
+        704,
+        715,
+        720,
+        720,
+        715,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 25,
+      "floor": 1279,
+      "heights": [
+        704,
+        715,
+        720,
+        720,
+        715,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 26,
+      "floor": 1279,
+      "heights": [
+        704,
+        693,
+        688,
+        688,
+        672,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 27,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 28,
+      "floor": 1279,
+      "heights": [
+        640,
+        629,
+        624,
+        624,
+        629,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 29,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 30,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 31,
+      "floor": 1279,
+      "heights": [
+        640,
+        629,
+        624,
+        624,
+        629,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 32,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 33,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 34,
+      "floor": 1279,
+      "heights": [
+        640,
+        629,
+        624,
+        624,
+        629,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 35,
+      "floor": 1279,
+      "heights": [
+        640,
+        629,
+        624,
+        624,
+        629,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 36,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 37,
+      "floor": 1279,
+      "heights": [
+        640,
+        651,
+        656,
+        656,
+        651,
+        640
+      ],
+      "sky": null
+    },
+    {
+      "column": 38,
+      "floor": 1279,
+      "heights": [
+        640,
+        629,
+        624,
+        624,
+        608,
+        576
+      ],
+      "sky": null
+    },
+    {
+      "column": 39,
+      "floor": 1279,
+      "heights": [
+        576,
+        587,
+        592,
+        592,
+        587,
+        576
+      ],
+      "sky": null
+    },
+    {
+      "column": 40,
+      "floor": 1279,
+      "heights": [
+        576,
+        630,
+        656,
+        656,
+        672,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 41,
+      "floor": 1279,
+      "heights": [
+        704,
+        715,
+        720,
+        720,
+        715,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 42,
+      "floor": 1279,
+      "heights": [
+        704,
+        715,
+        720,
+        720,
+        715,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 43,
+      "floor": 1279,
+      "heights": [
+        704,
+        715,
+        720,
+        720,
+        715,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 44,
+      "floor": 1279,
+      "heights": [
+        704,
+        650,
+        624,
+        624,
+        608,
+        576
+      ],
+      "sky": null
+    },
+    {
+      "column": 45,
+      "floor": 1279,
+      "heights": [
+        576,
+        565,
+        560,
+        560,
+        565,
+        576
+      ],
+      "sky": null
+    },
+    {
+      "column": 46,
+      "floor": 1279,
+      "heights": [
+        576,
+        630,
+        656,
+        656,
+        672,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 47,
+      "floor": 1279,
+      "heights": [
+        704,
+        693,
+        688,
+        688,
+        693,
+        704
+      ],
+      "sky": null
+    },
+    {
+      "column": 48,
+      "floor": 1279,
+      "heights": [
+        704,
+        672,
+        656,
+        656,
+        629,
+        576
+      ],
+      "sky": null
+    },
+    {
+      "column": 49,
+      "floor": 1279,
+      "heights": [
+        576,
+        608,
+        624,
+        624,
+        629,
+        640
+      ],
+      "sky": null
+    }
+  ],
+  "outside": [
+    null,
+    null
+  ],
+  "scriptStatus": {
+    "faulted": [],
+    "ok": true,
+    "root": "Worlds/f45ab2a5-173d-4951-9971-316a9b1e207f/Scripts",
+    "scripts": [
+      {
+        "avgUs": 907,
+        "enabled": true,
+        "entries": 21,
+        "handlers": 6,
+        "id": "match",
+        "logTail": [
+          "deployed {\"index\":0,\"name\":\"Copper\",\"id\":\"instance@spawn-5078cbc4-0b21-4031-a3bf-5105ab345d00\",\"at\":{\"x\":5247.5,\"y\":641.9923095703125}}",
+          "deployed {\"index\":1,\"name\":\"Slate\",\"id\":\"instance@spawn-63940fa9-ca7e-4f89-9fdd-b955ba6d075d\",\"at\":{\"x\":7551.5,\"y\":641.9922485351562}}",
+          "match ready {\"seed\":1,\"players\":2}"
+        ],
+        "path": "match.ts",
+        "suspended": null
+      }
+    ],
+    "worldId": "f45ab2a5-173d-4951-9971-316a9b1e207f"
+  },
+  "checks": [
+    {
+      "name": "50 by 5 tile bounds",
+      "passed": true
+    },
+    {
+      "name": "all 50 surface tiles generated",
+      "passed": true
+    },
+    {
+      "name": "all 49 surface seams join",
+      "passed": true
+    },
+    {
+      "name": "sky rows are empty",
+      "passed": true
+    },
+    {
+      "name": "bottom row is solid",
+      "passed": true
+    },
+    {
+      "name": "no horizontal wrapping",
+      "passed": true
+    },
+    {
+      "name": "terrain varies",
+      "passed": true
+    },
+    {
+      "name": "requested human and computer roster",
+      "passed": true
+    },
+    {
+      "name": "unique durable tank identities",
+      "passed": true
+    },
+    {
+      "name": "tanks alive and standing on plateaus",
+      "passed": true
+    },
+    {
+      "name": "blackboards retain names roles and aiming",
+      "passed": true
+    },
+    {
+      "name": "each tank restores with a cannon",
+      "passed": true
+    },
+    {
+      "name": "names remembered outside the save",
+      "passed": true
+    },
+    {
+      "name": "no script faults",
+      "passed": true
+    }
+  ],
+  "profileSha256": "ef69d18763308e22cea777ac001b3c65bb5c9b1707706b748af4e3c1757544ef",
+  "accepted": true
+}

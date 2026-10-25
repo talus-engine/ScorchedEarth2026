@@ -1,0 +1,409 @@
+{
+  "checks": {
+    "neighbor has one HP before blast": true,
+    "physical chain reaction finishes as a draw": true,
+    "both deaths emit 100 real shells": true,
+    "already dead tank receives its posthumous kill": true,
+    "draw is recorded after the chain and bounded aftermath": true,
+    "no projectile remains after the chain": true
+  },
+  "worldId": "8592274e-16d7-42b3-8d4b-998d2f8372a6",
+  "arranged": {
+    "a": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 90,
+        "y": 10
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-24d66dad-3bb0-483a-8834-ad5ea947da6d",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 0,
+      "maxHealth": 100,
+      "name": "M6 Chain A",
+      "residency": "live",
+      "slot": null,
+      "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+      "vx": 0,
+      "vy": 0,
+      "x": 5823.5,
+      "y": 653.5
+    },
+    "b": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 91,
+        "y": 10
+      },
+      "faction": null,
+      "health": 1,
+      "id": "instance@spawn-a1be0e42-ebea-4274-b1e5-b0078555868a",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 2,
+      "maxHealth": 100,
+      "name": "M6 Chain B",
+      "residency": "live",
+      "slot": null,
+      "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+      "vx": 0,
+      "vy": 130,
+      "x": 5867.5,
+      "y": 667.5833129882812
+    }
+  },
+  "final": {
+    "clock": 9.616666666666724,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.816666666666665,
+        "id": "instance@spawn-24d66dad-3bb0-483a-8834-ad5ea947da6d",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 2.9999999999999942,
+        "id": "instance@spawn-24d66dad-3bb0-483a-8834-ad5ea947da6d",
+        "kind": "deployed",
+        "name": "M6 Chain A",
+        "turn": 0
+      },
+      {
+        "clock": 4.8333333333333215,
+        "id": "instance@spawn-a1be0e42-ebea-4274-b1e5-b0078555868a",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 5.999999999999984,
+        "id": "instance@spawn-a1be0e42-ebea-4274-b1e5-b0078555868a",
+        "kind": "deployed",
+        "name": "M6 Chain B",
+        "turn": 0
+      },
+      {
+        "clock": 5.999999999999984,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 6.083333333333317,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 6.466666666666649,
+        "effect": "magazine",
+        "id": 1,
+        "kind": "chaos-queued",
+        "owner": "instance@spawn-24d66dad-3bb0-483a-8834-ad5ea947da6d",
+        "turn": 0,
+        "x": 5823.5,
+        "y": 653.5
+      },
+      {
+        "clock": 6.466666666666649,
+        "killer": null,
+        "kind": "eliminated",
+        "name": "M6 Chain A",
+        "reason": "destroyed",
+        "turn": 0
+      },
+      {
+        "clock": 6.483333333333316,
+        "effect": "magazine",
+        "id": 1,
+        "kind": "chaos-started",
+        "turn": 0,
+        "x": 5823.4990234375,
+        "y": 653.6063232421875
+      },
+      {
+        "clock": 6.483333333333316,
+        "effect": "magazine",
+        "id": 2,
+        "kind": "chaos-queued",
+        "owner": "instance@spawn-a1be0e42-ebea-4274-b1e5-b0078555868a",
+        "turn": 0,
+        "x": 5867.5,
+        "y": 670.4999389648438
+      },
+      {
+        "clock": 6.483333333333316,
+        "killer": "M6 Chain A",
+        "kind": "eliminated",
+        "name": "M6 Chain B",
+        "reason": "destroyed",
+        "turn": 0
+      },
+      {
+        "clock": 6.483333333333316,
+        "effect": "magazine",
+        "elapsed": 0.016666666666666666,
+        "id": 1,
+        "kind": "chaos-emission-ended",
+        "launched": 100,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 0
+      },
+      {
+        "clock": 6.483333333333316,
+        "effect": "magazine",
+        "elapsed": 0.016666666666666666,
+        "ended": 100,
+        "id": 1,
+        "kind": "chaos-ended",
+        "launched": 100,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 0
+      },
+      {
+        "clock": 6.499999999999982,
+        "effect": "magazine",
+        "id": 2,
+        "kind": "chaos-started",
+        "turn": 0,
+        "x": 5867.5,
+        "y": 671.176513671875
+      },
+      {
+        "clock": 6.499999999999982,
+        "effect": "magazine",
+        "elapsed": 0.016666666666666666,
+        "id": 2,
+        "kind": "chaos-emission-ended",
+        "launched": 100,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 0
+      },
+      {
+        "clock": 6.499999999999982,
+        "effect": "magazine",
+        "elapsed": 0.016666666666666666,
+        "ended": 100,
+        "id": 2,
+        "kind": "chaos-ended",
+        "launched": 100,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 0
+      },
+      {
+        "clock": 9.51666666666672,
+        "kind": "finished",
+        "turn": 0,
+        "winner": null
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 1280,
+        "x": 5760,
+        "y": 0
+      },
+      "chaos": {
+        "jobs": [],
+        "notice": "M6 Chain B: One hundred bad decisions!",
+        "quiet": 3.016666666666661,
+        "rng": 1327909703,
+        "serial": 2
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "frameNotice": "",
+      "humans": 0,
+      "impact": null,
+      "message": "No tanks remain \u2014 draw",
+      "phase": "finished",
+      "remaining": 5,
+      "roster": [
+        {
+          "chaosId": 1,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "deathEffect": "magazine",
+          "eliminated": true,
+          "entityId": "instance@spawn-24d66dad-3bb0-483a-8834-ad5ea947da6d",
+          "index": 0,
+          "kills": 1,
+          "name": "M6 Chain A",
+          "spawnX": 5824,
+          "surfaceY": 672
+        },
+        {
+          "chaosId": 2,
+          "color": "#ffbd82",
+          "control": "cpu",
+          "deathEffect": "magazine",
+          "eliminated": true,
+          "entityId": "instance@spawn-a1be0e42-ebea-4274-b1e5-b0078555868a",
+          "index": 1,
+          "kills": 0,
+          "name": "M6 Chain B",
+          "spawnX": 6976,
+          "surfaceY": 693
+        }
+      ],
+      "seed": 7,
+      "shotId": null,
+      "turnNumber": 0,
+      "turnSeconds": 5,
+      "version": 6,
+      "winner": null
+    },
+    "paused": false,
+    "roster": [
+      null,
+      null
+    ],
+    "scores": {
+      "matches": {
+        "37cdce95-ef52-4524-abcb-4e4b0289d980": {
+          "seed": 7,
+          "winner": "M5 Verify 4"
+        },
+        "8592274e-16d7-42b3-8d4b-998d2f8372a6": {
+          "seed": 7,
+          "winner": null
+        }
+      },
+      "players": {
+        "m5 verify 1": {
+          "games": 1,
+          "kills": 1,
+          "name": "M5 Verify 1",
+          "wins": 0
+        },
+        "m5 verify 2": {
+          "games": 1,
+          "kills": 0,
+          "name": "M5 Verify 2",
+          "wins": 0
+        },
+        "m5 verify 3": {
+          "games": 1,
+          "kills": 1,
+          "name": "M5 Verify 3",
+          "wins": 0
+        },
+        "m5 verify 4": {
+          "games": 1,
+          "kills": 1,
+          "name": "M5 Verify 4",
+          "wins": 1
+        },
+        "m6 chain a": {
+          "games": 1,
+          "kills": 1,
+          "name": "M6 Chain A",
+          "wins": 0
+        },
+        "m6 chain b": {
+          "games": 1,
+          "kills": 0,
+          "name": "M6 Chain B",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": true,
+      "chaosCount": 0,
+      "chaosNotice": "M6 Chain B: One hundred bad decisions!",
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": "\u2026",
+        "name": "M6 Chain A",
+        "power": 70
+      },
+      "finished": true,
+      "frameNotice": "",
+      "human": false,
+      "lastHit": "",
+      "phase": "finished",
+      "ready": false,
+      "remaining": 5,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 0,
+          "kills": 1,
+          "name": "M6 Chain A",
+          "status": "OUT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 0,
+          "kills": 0,
+          "name": "M6 Chain B",
+          "status": "OUT"
+        }
+      ],
+      "scores": [
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M5 Verify 1",
+          "wins": 0
+        },
+        {
+          "games": 1,
+          "kills": 0,
+          "name": "M5 Verify 2",
+          "wins": 0
+        },
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M5 Verify 3",
+          "wins": 0
+        },
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M5 Verify 4",
+          "wins": 1
+        },
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M6 Chain A",
+          "wins": 0
+        },
+        {
+          "games": 1,
+          "kills": 0,
+          "name": "M6 Chain B",
+          "wins": 0
+        }
+      ],
+      "seed": 7,
+      "shotDirection": "RIGHT \u2192",
+      "status": "No tanks remain \u2014 draw",
+      "tactic": "",
+      "tankCount": 2,
+      "target": "",
+      "turnNumber": 0,
+      "turnSeconds": 5,
+      "winner": "Draw"
+    },
+    "worldId": "8592274e-16d7-42b3-8d4b-998d2f8372a6"
+  },
+  "remainingProjectiles": []
+}

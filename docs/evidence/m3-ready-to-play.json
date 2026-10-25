@@ -1,0 +1,150 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 3,
+  "ok": true,
+  "value": {
+    "error": "",
+    "match": {
+      "biome": "slate-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 1,
+      "focusIndex": 0,
+      "humans": 1,
+      "impact": null,
+      "message": "Tanks ready \u2014 begin when your crew is ready",
+      "phase": "ready",
+      "remaining": 30,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "control": "human",
+          "eliminated": false,
+          "entityId": "instance@spawn-4137dcb9-5c91-4a64-a9eb-7695b337fa02",
+          "index": 0,
+          "kills": 0,
+          "name": "Tony",
+          "spawnX": 5248,
+          "surfaceY": 720
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-f58a6c79-f5e1-4c0f-a0b3-5f0fe1d73a55",
+          "index": 1,
+          "kills": 0,
+          "name": "Copper",
+          "spawnX": 7552,
+          "surfaceY": 624
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 0,
+      "turnSeconds": 30,
+      "version": 3,
+      "winner": null
+    },
+    "preferences": {
+      "computers": 1,
+      "humans": 1,
+      "namesText": "Tony\nCopper",
+      "turnSeconds": 30
+    },
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 81,
+          "y": 11
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-4137dcb9-5c91-4a64-a9eb-7695b337fa02",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "Tony",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+        "vx": 0,
+        "vy": 0,
+        "x": 5247.5,
+        "y": 705.9911499023438
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 117,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-f58a6c79-f5e1-4c0f-a0b3-5f0fe1d73a55",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "Copper",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+        "vx": 0,
+        "vy": 0,
+        "x": 7551.5,
+        "y": 609.9911499023438
+      }
+    ],
+    "scores": null,
+    "ui": {
+      "biome": "Slate Reach",
+      "canSetup": true,
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Human",
+        "health": 100,
+        "name": "Tony",
+        "power": 70
+      },
+      "finished": false,
+      "human": false,
+      "phase": "ready",
+      "ready": true,
+      "remaining": 30,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "Tony",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 100,
+          "kills": 0,
+          "name": "Copper",
+          "status": "WAITING"
+        }
+      ],
+      "seed": 0,
+      "status": "Tanks ready \u2014 begin when your crew is ready",
+      "tankCount": 2,
+      "turnNumber": 0,
+      "turnSeconds": 30,
+      "winner": "Draw"
+    },
+    "worldId": "763aeab1-5c63-4a1a-b22d-479b9e3e4af7"
+  }
+}

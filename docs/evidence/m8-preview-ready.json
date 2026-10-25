@@ -1,0 +1,580 @@
+{
+  "clock": 7.683333333333311,
+  "error": "",
+  "events": [
+    {
+      "clock": 1.866666666666665,
+      "id": "instance@spawn-30f6c650-c5bb-4293-a7c1-0dd11d36e459",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 3.0666666666666607,
+      "id": "instance@spawn-30f6c650-c5bb-4293-a7c1-0dd11d36e459",
+      "kind": "deployed",
+      "name": "Tony",
+      "turn": 0
+    },
+    {
+      "clock": 4.933333333333321,
+      "id": "instance@spawn-f35bf7d4-4392-4a29-a459-e5792a7ba0db",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 6.083333333333317,
+      "id": "instance@spawn-f35bf7d4-4392-4a29-a459-e5792a7ba0db",
+      "kind": "deployed",
+      "name": "Copper",
+      "turn": 0
+    },
+    {
+      "clock": 6.083333333333317,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 360,
+      "clock": 6.083333333333317,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "Tony",
+      "price": 240,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 6.083333333333317,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "Tony",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 420,
+      "clock": 6.083333333333317,
+      "item": "crumble",
+      "kind": "purchase",
+      "name": "Copper",
+      "price": 180,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 330,
+      "clock": 6.083333333333317,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "Copper",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "clock": 7.649999999999978,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    }
+  ],
+  "match": {
+    "biome": "mixed-reach",
+    "bounds": {
+      "h": 1280,
+      "w": 1280,
+      "x": 5760,
+      "y": 0
+    },
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0,
+      "rng": 839689206,
+      "serial": 0
+    },
+    "computers": 2,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "humans": 0,
+    "impact": null,
+    "message": "Tanks ready \u2014 begin when your crew is ready",
+    "phase": "ready",
+    "remaining": 30,
+    "roster": [
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#bcb1ff",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-30f6c650-c5bb-4293-a7c1-0dd11d36e459",
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "Tony",
+        "spawnX": 5824,
+        "surfaceY": 672,
+        "weaponId": "heavy"
+      },
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#ffbd82",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-f35bf7d4-4392-4a29-a459-e5792a7ba0db",
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "Copper",
+        "spawnX": 6976,
+        "surfaceY": 693,
+        "weaponId": "crumble"
+      }
+    ],
+    "round": 1,
+    "seed": 7,
+    "shotId": null,
+    "turnNumber": 0,
+    "turnSeconds": 30,
+    "version": 8,
+    "winner": null
+  },
+  "paused": false,
+  "roster": [
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 90,
+        "y": 10
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-30f6c650-c5bb-4293-a7c1-0dd11d36e459",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 0,
+      "maxHealth": 100,
+      "name": "Tony",
+      "residency": "live",
+      "slot": null,
+      "templateId": "10887eef-ab35-4c6a-92cc-fee00b78d234",
+      "vx": 0,
+      "vy": 0,
+      "x": 5823.5,
+      "y": 653.5
+    },
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 108,
+        "y": 10
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-f35bf7d4-4392-4a29-a459-e5792a7ba0db",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 2,
+      "maxHealth": 100,
+      "name": "Copper",
+      "residency": "live",
+      "slot": null,
+      "templateId": "10887eef-ab35-4c6a-92cc-fee00b78d234",
+      "vx": 0,
+      "vy": 0,
+      "x": 6975.5,
+      "y": 682.5
+    }
+  ],
+  "scores": {
+    "matches": {},
+    "players": {}
+  },
+  "ui": {
+    "aimRotation": "rotate(-45deg)",
+    "batteries": 2,
+    "biome": "Mixed Reach",
+    "canEquip": false,
+    "canSetup": true,
+    "canShop": true,
+    "cash": 270,
+    "cashNotice": "",
+    "chaosCount": 0,
+    "chaosNotice": "",
+    "current": {
+      "angle": 45,
+      "color": "#bcb1ff",
+      "control": "Computer",
+      "health": 100,
+      "name": "Tony",
+      "power": 70
+    },
+    "finished": false,
+    "frameNotice": "",
+    "human": false,
+    "lastHit": "",
+    "loadout": [
+      {
+        "action": "equip-standard",
+        "disabled": false,
+        "name": "Field cannon",
+        "selected": false,
+        "stock": "\u221e"
+      },
+      {
+        "action": "equip-heavy",
+        "disabled": false,
+        "name": "Heavy howitzer",
+        "selected": true,
+        "stock": 3
+      },
+      {
+        "action": "equip-crumble",
+        "disabled": true,
+        "name": "Crumble cannon",
+        "selected": false,
+        "stock": 0
+      },
+      {
+        "action": "equip-riot",
+        "disabled": true,
+        "name": "Excavator cannon",
+        "selected": false,
+        "stock": 0
+      }
+    ],
+    "phase": "ready",
+    "ready": true,
+    "remaining": 30,
+    "roster": [
+      {
+        "cash": 270,
+        "color": "#bcb1ff",
+        "earned": 0,
+        "health": 100,
+        "kills": 0,
+        "name": "Tony",
+        "status": "CURRENT"
+      },
+      {
+        "cash": 330,
+        "color": "#ffbd82",
+        "earned": 0,
+        "health": 100,
+        "kills": 0,
+        "name": "Copper",
+        "status": "WAITING"
+      }
+    ],
+    "round": 1,
+    "roundCash": 0,
+    "seed": 7,
+    "shop": {
+      "account": "tony",
+      "cash": 270,
+      "color": "#bcb1ff",
+      "computers": 2,
+      "count": 2,
+      "earned": 0,
+      "finished": false,
+      "humans": 0,
+      "index": 1,
+      "items": [
+        {
+          "action": "buy-standard",
+          "button": "Included",
+          "category": "WEAPON",
+          "description": "Reliable explosive shell. Unlimited ammunition.",
+          "disabled": true,
+          "id": "standard",
+          "name": "Field cannon",
+          "price": "Always available",
+          "stock": "Unlimited"
+        },
+        {
+          "action": "buy-heavy",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three heavy shells. Wider blasts, deeper craters, 120 peak damage.",
+          "disabled": false,
+          "id": "heavy",
+          "name": "Heavy howitzer",
+          "price": "$240 / 3",
+          "stock": "3"
+        },
+        {
+          "action": "buy-crumble",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three shells that crumble solid ground into falling debris. 65 peak damage.",
+          "disabled": false,
+          "id": "crumble",
+          "name": "Crumble cannon",
+          "price": "$180 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-riot",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three terrain-clearing riot shells. A broad crater with no blast damage.",
+          "disabled": false,
+          "id": "riot",
+          "name": "Excavator cannon",
+          "price": "$120 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-battery",
+          "button": "Buy bundle",
+          "category": "UTILITY",
+          "description": "Two repairs. Restore up to 30 hull each during your turn without ending it.",
+          "disabled": false,
+          "id": "battery",
+          "name": "Repair battery",
+          "price": "$90 / 2",
+          "stock": "2"
+        },
+        {
+          "action": "buy-ricochet",
+          "button": "In development",
+          "category": "WEAPON",
+          "description": "Three bouncing shells. A four-second fuse keeps them dangerous after landing.",
+          "disabled": true,
+          "id": "ricochet",
+          "name": "Bouncer cannon",
+          "price": "$180 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-jetpack",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "Six seconds of thrust using the tank's levitation controller.",
+          "disabled": true,
+          "id": "jetpack",
+          "name": "Jetpack fuel",
+          "price": "$180 / 6",
+          "stock": "0"
+        },
+        {
+          "action": "buy-digger",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "Five seconds of powered tunneling through the ground.",
+          "disabled": true,
+          "id": "digger",
+          "name": "Burrowing rig",
+          "price": "$220 / 5",
+          "stock": "0"
+        },
+        {
+          "action": "buy-sand",
+          "button": "In development",
+          "category": "WEAPON",
+          "description": "Charges release a seeded, noise-filled bank of real sand at impact.",
+          "disabled": true,
+          "id": "sand",
+          "name": "Sand charge cannon",
+          "price": "$180 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-magnet",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "A powered field that bends incoming metal shells away.",
+          "disabled": true,
+          "id": "magnet",
+          "name": "Mag deflector",
+          "price": "$350 / 1",
+          "stock": "0"
+        },
+        {
+          "action": "buy-shield",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "Absorbs incoming damage before it reaches the hull.",
+          "disabled": true,
+          "id": "shield",
+          "name": "Blast shield",
+          "price": "$250 / 1",
+          "stock": "0"
+        }
+      ],
+      "message": "Computer pilot: purchases made automatically. You can inspect or add supplies.",
+      "name": "Tony",
+      "namesText": "Tony\nCopper",
+      "ready": true,
+      "receipts": [],
+      "result": "New pilots get $600. Cash and supplies carry between rounds.",
+      "revision": 2,
+      "round": 2,
+      "title": "Opening armory",
+      "turnSeconds": 30
+    },
+    "shotDirection": "RIGHT \u2192",
+    "speech": [],
+    "status": "Tanks ready \u2014 begin when your crew is ready",
+    "tactic": "",
+    "tankCount": 2,
+    "target": "",
+    "turnNumber": 0,
+    "turnSeconds": 30,
+    "weaponAmmo": 3,
+    "weaponName": "Heavy howitzer",
+    "winner": "Draw"
+  },
+  "worldId": "d3fe7d92-cdd9-475e-940f-f5b48e1725a8",
+  "economy": {
+    "cpuShops": {
+      "d3fe7d92-cdd9-475e-940f-f5b48e1725a8:ready": {
+        "copper": true,
+        "tony": true
+      }
+    },
+    "players": {
+      "copper": {
+        "cash": 330,
+        "earned": 0,
+        "name": "Copper",
+        "revision": 2,
+        "selected": "crumble",
+        "spent": 270,
+        "stock": {
+          "battery": 2,
+          "crumble": 3
+        }
+      },
+      "tony": {
+        "cash": 270,
+        "earned": 0,
+        "name": "Tony",
+        "revision": 2,
+        "selected": "heavy",
+        "spent": 330,
+        "stock": {
+          "battery": 2,
+          "heavy": 3
+        }
+      }
+    },
+    "rounds": {},
+    "version": 1
+  },
+  "weapons": [
+    {
+      "name": "Tony",
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 3,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -0.7853981633974483,
+        "equipped": "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.7,
+        "speed": {
+          "current": 2124,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "name": "Copper",
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 3
+        },
+        "angle": 0,
+        "equipped": "d76c6450-350e-439b-a119-f62d4a106fb2",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": false,
+        "power": 1,
+        "speed": {
+          "current": 3000,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    }
+  ],
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6399.5,
+          "y": 668
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 69,
+          "w": 1192,
+          "x": 5803.5,
+          "y": 633.5
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5248,
+      "y": -64
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 0
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 0
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5599.5,
+      "y": 184
+    },
+    "zoom": 0.25
+  },
+  "explosions": null,
+  "frames": null
+}

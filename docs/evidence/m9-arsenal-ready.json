@@ -1,0 +1,692 @@
+{
+  "audit": null,
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6399.5,
+          "y": 622.5884399414062
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 46.1768798828125,
+          "w": 920,
+          "x": 5939.5,
+          "y": 599.5
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5248,
+      "y": -128
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": -64
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": -64
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5599.5,
+      "y": 138.58843994140625
+    },
+    "zoom": 0.25
+  },
+  "clock": 29.63333333333293,
+  "error": "",
+  "events": [
+    {
+      "clock": 1.899999999999998,
+      "id": "instance@spawn-45159ca2-09c0-4208-968a-02e741ec6459",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 3.1166666666666605,
+      "id": "instance@spawn-45159ca2-09c0-4208-968a-02e741ec6459",
+      "kind": "deployed",
+      "name": "M9 Gunner",
+      "turn": 0
+    },
+    {
+      "clock": 4.966666666666654,
+      "id": "instance@spawn-73a16d90-4942-482b-8d08-56755cf747c8",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 6.16666666666665,
+      "id": "instance@spawn-73a16d90-4942-482b-8d08-56755cf747c8",
+      "kind": "deployed",
+      "name": "M9 Burner",
+      "turn": 0
+    },
+    {
+      "clock": 8.016666666666644,
+      "id": "instance@spawn-93ba4b77-30cf-4409-8232-8046133d85ed",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 9.216666666666704,
+      "id": "instance@spawn-93ba4b77-30cf-4409-8232-8046133d85ed",
+      "kind": "deployed",
+      "name": "M9 Funk",
+      "turn": 0
+    },
+    {
+      "clock": 11.066666666666796,
+      "id": "instance@spawn-a25ce8e8-f706-4c72-a72e-2efb73444d13",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 12.266666666666856,
+      "id": "instance@spawn-a25ce8e8-f706-4c72-a72e-2efb73444d13",
+      "kind": "deployed",
+      "name": "M9 Oil",
+      "turn": 0
+    },
+    {
+      "clock": 14.116666666666948,
+      "id": "instance@spawn-5817873b-4214-4415-b770-16db0cc6e401",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 15.316666666667007,
+      "id": "instance@spawn-5817873b-4214-4415-b770-16db0cc6e401",
+      "kind": "deployed",
+      "name": "M9 Hydra",
+      "turn": 0
+    },
+    {
+      "clock": 17.166666666666973,
+      "id": "instance@spawn-564cb450-f2e9-4697-962c-9bf97ac60957",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 18.366666666666905,
+      "id": "instance@spawn-564cb450-f2e9-4697-962c-9bf97ac60957",
+      "kind": "deployed",
+      "name": "M9 Dirt",
+      "turn": 0
+    },
+    {
+      "clock": 20.200000000000134,
+      "id": "instance@spawn-06de34e1-b8ee-4c05-8a7a-806f4cf18614",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 21.416666666666732,
+      "id": "instance@spawn-06de34e1-b8ee-4c05-8a7a-806f4cf18614",
+      "kind": "deployed",
+      "name": "M9 Hopper",
+      "turn": 0
+    },
+    {
+      "clock": 23.266666666666627,
+      "id": "instance@spawn-eedff214-f0f9-4cef-b735-c81c51b0c116",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 24.46666666666656,
+      "id": "instance@spawn-eedff214-f0f9-4cef-b735-c81c51b0c116",
+      "kind": "deployed",
+      "name": "M9 Smoke",
+      "turn": 0
+    },
+    {
+      "clock": 24.46666666666656,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 200,
+      "clock": 24.46666666666656,
+      "item": "mirv",
+      "kind": "purchase",
+      "name": "M9 Gunner",
+      "price": 400,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 20,
+      "clock": 24.46666666666656,
+      "item": "jetpack",
+      "kind": "purchase",
+      "name": "M9 Gunner",
+      "price": 180,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 0,
+      "clock": 24.46666666666656,
+      "item": "nuke",
+      "kind": "purchase",
+      "name": "M9 Burner",
+      "price": 600,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 440,
+      "clock": 24.46666666666656,
+      "item": "machine-gun",
+      "kind": "purchase",
+      "name": "M9 Funk",
+      "price": 160,
+      "quantity": 4,
+      "turn": 0
+    },
+    {
+      "cash": 90,
+      "clock": 24.46666666666656,
+      "item": "magnet",
+      "kind": "purchase",
+      "name": "M9 Funk",
+      "price": 350,
+      "quantity": 1,
+      "turn": 0
+    },
+    {
+      "cash": 0,
+      "clock": 24.46666666666656,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M9 Funk",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 180,
+      "clock": 24.46666666666656,
+      "item": "funky",
+      "kind": "purchase",
+      "name": "M9 Oil",
+      "price": 420,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 90,
+      "clock": 24.46666666666656,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M9 Oil",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 320,
+      "clock": 24.46666666666656,
+      "item": "napalm",
+      "kind": "purchase",
+      "name": "M9 Hydra",
+      "price": 280,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 230,
+      "clock": 24.46666666666656,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M9 Hydra",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 320,
+      "clock": 24.46666666666656,
+      "item": "heavy-roller",
+      "kind": "purchase",
+      "name": "M9 Dirt",
+      "price": 280,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 140,
+      "clock": 24.46666666666656,
+      "item": "jetpack",
+      "kind": "purchase",
+      "name": "M9 Dirt",
+      "price": 180,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 50,
+      "clock": 24.46666666666656,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M9 Dirt",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 380,
+      "clock": 24.46666666666656,
+      "item": "digger",
+      "kind": "purchase",
+      "name": "M9 Hopper",
+      "price": 220,
+      "quantity": 5,
+      "turn": 0
+    },
+    {
+      "cash": 290,
+      "clock": 24.46666666666656,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M9 Hopper",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 430,
+      "clock": 24.46666666666656,
+      "item": "shotgun",
+      "kind": "purchase",
+      "name": "M9 Smoke",
+      "price": 170,
+      "quantity": 4,
+      "turn": 0
+    },
+    {
+      "cash": 80,
+      "clock": 24.46666666666656,
+      "item": "magnet",
+      "kind": "purchase",
+      "name": "M9 Smoke",
+      "price": 350,
+      "quantity": 1,
+      "turn": 0
+    },
+    {
+      "clock": 29.116666666666298,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    }
+  ],
+  "match": {
+    "attack": null,
+    "biome": "mixed-reach",
+    "bounds": {
+      "h": 1280,
+      "w": 960,
+      "x": 5920,
+      "y": 0
+    },
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0,
+      "rng": 843240584,
+      "serial": 0
+    },
+    "computers": 8,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "generated": 0,
+    "generation": "wfc",
+    "humans": 0,
+    "impact": null,
+    "message": "Tanks ready \u2014 begin when your crew is ready",
+    "pendingTurn": null,
+    "phase": "ready",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "remaining": 20,
+    "roster": [
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#bcb1ff",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-45159ca2-09c0-4208-968a-02e741ec6459",
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M9 Gunner",
+        "spawnX": 5960,
+        "surfaceY": 640,
+        "weaponId": "mirv"
+      },
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#ffbd82",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-73a16d90-4942-482b-8d08-56755cf747c8",
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M9 Burner",
+        "spawnX": 6086,
+        "surfaceY": 640,
+        "weaponId": "nuke"
+      },
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#8ae0ca",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-93ba4b77-30cf-4409-8232-8046133d85ed",
+        "index": 2,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M9 Funk",
+        "spawnX": 6211,
+        "surfaceY": 640,
+        "weaponId": "machine-gun"
+      },
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#f7a5c4",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-a25ce8e8-f706-4c72-a72e-2efb73444d13",
+        "index": 3,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M9 Oil",
+        "spawnX": 6337,
+        "surfaceY": 640,
+        "weaponId": "funky"
+      },
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#a4d2ff",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-5817873b-4214-4415-b770-16db0cc6e401",
+        "index": 4,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M9 Hydra",
+        "spawnX": 6463,
+        "surfaceY": 640,
+        "weaponId": "napalm"
+      },
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#ebd78a",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-564cb450-f2e9-4697-962c-9bf97ac60957",
+        "index": 5,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M9 Dirt",
+        "spawnX": 6589,
+        "surfaceY": 640,
+        "weaponId": "heavy-roller"
+      },
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#bcb1ff",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-06de34e1-b8ee-4c05-8a7a-806f4cf18614",
+        "index": 6,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M9 Hopper",
+        "spawnX": 6714,
+        "surfaceY": 635,
+        "weaponId": "standard"
+      },
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#ffbd82",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-eedff214-f0f9-4cef-b735-c81c51b0c116",
+        "index": 7,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M9 Smoke",
+        "spawnX": 6840,
+        "surfaceY": 640,
+        "weaponId": "shotgun"
+      }
+    ],
+    "round": 1,
+    "seed": 9040,
+    "shotId": null,
+    "turnNumber": 0,
+    "turnSeconds": 20,
+    "version": 9,
+    "winner": null
+  },
+  "paused": false,
+  "roster": [
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 93,
+        "y": 9
+      },
+      "faction": null,
+      "health": 10000,
+      "id": "instance@spawn-45159ca2-09c0-4208-968a-02e741ec6459",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 0,
+      "maxHealth": 10000,
+      "name": "M9 Gunner",
+      "residency": "live",
+      "slot": null,
+      "templateId": "b6653dd5-74e8-416b-beac-4a1a7d325cc7",
+      "vx": 0,
+      "vy": 0,
+      "x": 5959.5,
+      "y": 625.6768798828125
+    },
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 95,
+        "y": 9
+      },
+      "faction": null,
+      "health": 10000,
+      "id": "instance@spawn-73a16d90-4942-482b-8d08-56755cf747c8",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 2,
+      "maxHealth": 10000,
+      "name": "M9 Burner",
+      "residency": "live",
+      "slot": null,
+      "templateId": "b6653dd5-74e8-416b-beac-4a1a7d325cc7",
+      "vx": 0,
+      "vy": 0,
+      "x": 6085.5,
+      "y": 625.4998779296875
+    },
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 97,
+        "y": 9
+      },
+      "faction": null,
+      "health": 10000,
+      "id": "instance@spawn-93ba4b77-30cf-4409-8232-8046133d85ed",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 4,
+      "maxHealth": 10000,
+      "name": "M9 Funk",
+      "residency": "live",
+      "slot": null,
+      "templateId": "b6653dd5-74e8-416b-beac-4a1a7d325cc7",
+      "vx": 0,
+      "vy": 0,
+      "x": 6210.5,
+      "y": 625.5
+    },
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 99,
+        "y": 9
+      },
+      "faction": null,
+      "health": 10000,
+      "id": "instance@spawn-a25ce8e8-f706-4c72-a72e-2efb73444d13",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 6,
+      "maxHealth": 10000,
+      "name": "M9 Oil",
+      "residency": "live",
+      "slot": null,
+      "templateId": "b6653dd5-74e8-416b-beac-4a1a7d325cc7",
+      "vx": 0,
+      "vy": 0,
+      "x": 6336.5,
+      "y": 625.4998779296875
+    },
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 100,
+        "y": 9
+      },
+      "faction": null,
+      "health": 10000,
+      "id": "instance@spawn-5817873b-4214-4415-b770-16db0cc6e401",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 8,
+      "maxHealth": 10000,
+      "name": "M9 Hydra",
+      "residency": "live",
+      "slot": null,
+      "templateId": "b6653dd5-74e8-416b-beac-4a1a7d325cc7",
+      "vx": 0,
+      "vy": 0,
+      "x": 6462.5,
+      "y": 625.6435546875
+    },
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 102,
+        "y": 9
+      },
+      "faction": null,
+      "health": 10000,
+      "id": "instance@spawn-564cb450-f2e9-4697-962c-9bf97ac60957",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 10,
+      "maxHealth": 10000,
+      "name": "M9 Dirt",
+      "residency": "live",
+      "slot": null,
+      "templateId": "b6653dd5-74e8-416b-beac-4a1a7d325cc7",
+      "vx": 0,
+      "vy": 0,
+      "x": 6588.5,
+      "y": 625.6434326171875
+    },
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 104,
+        "y": 9
+      },
+      "faction": null,
+      "health": 10000,
+      "id": "instance@spawn-06de34e1-b8ee-4c05-8a7a-806f4cf18614",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 12,
+      "maxHealth": 10000,
+      "name": "M9 Hopper",
+      "residency": "live",
+      "slot": null,
+      "templateId": "b6653dd5-74e8-416b-beac-4a1a7d325cc7",
+      "vx": 0,
+      "vy": 0,
+      "x": 6713.5,
+      "y": 619.5
+    },
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 106,
+        "y": 9
+      },
+      "faction": null,
+      "health": 10000,
+      "id": "instance@spawn-eedff214-f0f9-4cef-b735-c81c51b0c116",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 14,
+      "maxHealth": 10000,
+      "name": "M9 Smoke",
+      "residency": "live",
+      "slot": null,
+      "templateId": "b6653dd5-74e8-416b-beac-4a1a7d325cc7",
+      "vx": 0,
+      "vy": 0,
+      "x": 6839.5,
+      "y": 625.4998779296875
+    }
+  ],
+  "world": "e2a954c5-c496-47b9-ad6e-5993b16d6ea7"
+}

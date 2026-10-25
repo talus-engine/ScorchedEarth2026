@@ -1,0 +1,427 @@
+{
+  "release": {
+    "installedBy": "assistant",
+    "version": "0.0.2530",
+    "commit": "7c55ffbb125891b5be680bce1100e1c085d3e49a",
+    "sha256": "503b8e83576ae88107b13dcc85e14d090b4834c611eb62d4f8e1632c8bce1e6e",
+    "rollback": "/private/tmp/indigo-m9-collapse/Talus-2529.app",
+    "accepted": true,
+    "scope": "Riot SMOKE replacement, Dirt Charge and Earth Disrupter; not full M9"
+  },
+  "gameSave": "1685f5ff-52f6-4e39-bd21-29df56838535",
+  "seed": 1729,
+  "humans": 0,
+  "computers": 4,
+  "finishedTurn": 20,
+  "observedTicks": 12114,
+  "residencyViolations": 0,
+  "projectileLaunches": 120,
+  "projectileEnds": 120,
+  "duplicateEnds": 0,
+  "foundationCells": 327680,
+  "checks": {
+    "freshFourCPU": true,
+    "actualPaidPurchases": true,
+    "paidStockConsumedExactly": true,
+    "threeNativePayloadsPerBundle": true,
+    "actualRiotSmoke": true,
+    "actualDirtReadback": true,
+    "actualFracturedBodies": true,
+    "allStructuralMaterialRetained": true,
+    "foundationIntact": true,
+    "survivorsContinuouslyLiveAt25Percent": true,
+    "allProjectilesEndOnce": true,
+    "matchFinishedAndSaveSafe": true,
+    "saveReopenBank": true,
+    "saveReopenRoster": true,
+    "saveReopenFoundation": true,
+    "noWeaponPickups": true,
+    "originalAccountsRestoredExactly": true
+  },
+  "payloads": [
+    {
+      "weapon": "riot-charge",
+      "receipt": {
+        "accepted": 5232,
+        "added": 5232,
+        "evaluated": 11346,
+        "id": 1,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5232,
+        "skipped": 146,
+        "status": "completed",
+        "work": 7725
+      },
+      "materialReadback": {
+        "DIRT": 10044,
+        "MUD": 54,
+        "SAND": 319,
+        "SMOKE": 5035,
+        "SOOT": 41,
+        "STONE": 3255
+      },
+      "bodyCells": 0
+    },
+    {
+      "weapon": "riot-blast",
+      "receipt": {
+        "accepted": 12564,
+        "added": 12564,
+        "evaluated": 35840,
+        "id": 2,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 12564,
+        "skipped": 4715,
+        "status": "completed",
+        "work": 21870
+      },
+      "materialReadback": {
+        "DIRT": 17556,
+        "MUD": 543,
+        "SAND": 2389,
+        "SMOKE": 12362,
+        "SOOT": 42,
+        "STEAM": 1,
+        "STONE": 6075
+      },
+      "bodyCells": 0
+    },
+    {
+      "weapon": "dirt-charge",
+      "receipt": {
+        "accepted": 395,
+        "added": 395,
+        "evaluated": 15260,
+        "id": 3,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6773,
+        "status": "completed",
+        "work": 395
+      },
+      "materialReadback": {
+        "DIRT": 17271,
+        "MUD": 145,
+        "SAND": 1054,
+        "STONE": 5699
+      },
+      "bodyCells": 0
+    },
+    {
+      "weapon": "earth-disrupter",
+      "receipt": {
+        "accepted": 2687,
+        "added": 0,
+        "evaluated": 26244,
+        "fractured": 2467,
+        "fragments": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43
+        ],
+        "id": 4,
+        "pulverized": 220,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 10748
+      },
+      "materialReadback": {},
+      "bodyCells": 2467
+    },
+    {
+      "weapon": "riot-charge",
+      "receipt": {
+        "accepted": 6,
+        "added": 6,
+        "evaluated": 11328,
+        "id": 5,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6,
+        "skipped": 5371,
+        "status": "completed",
+        "work": 24
+      },
+      "materialReadback": {
+        "DIRT": 2695,
+        "MUD": 14,
+        "SAND": 17,
+        "SMOKE": 6,
+        "SOOT": 842,
+        "STONE": 755,
+        "WATER": 2
+      },
+      "bodyCells": 0
+    },
+    {
+      "weapon": "riot-blast",
+      "receipt": {
+        "accepted": 4312,
+        "added": 4312,
+        "evaluated": 36024,
+        "id": 6,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4312,
+        "skipped": 12968,
+        "status": "completed",
+        "work": 5470
+      },
+      "materialReadback": {
+        "DIRT": 15734,
+        "MUD": 510,
+        "SAND": 6154,
+        "SMOKE": 993,
+        "SOOT": 2571,
+        "STEAM": 96,
+        "STONE": 7109,
+        "WATER": 68
+      },
+      "bodyCells": 0
+    },
+    {
+      "weapon": "dirt-charge",
+      "receipt": {
+        "accepted": 191,
+        "added": 191,
+        "evaluated": 14700,
+        "id": 7,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6978,
+        "status": "completed",
+        "work": 191
+      },
+      "materialReadback": {
+        "DIRT": 17150,
+        "MUD": 219,
+        "SAND": 877,
+        "STONE": 5577,
+        "WATER": 16
+      },
+      "bodyCells": 0
+    },
+    {
+      "weapon": "earth-disrupter",
+      "receipt": {
+        "accepted": 788,
+        "added": 0,
+        "evaluated": 26244,
+        "fractured": 788,
+        "fragments": [
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "id": 8,
+        "pulverized": 0,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6,
+        "status": "completed",
+        "work": 3152
+      },
+      "materialReadback": {},
+      "bodyCells": 788
+    },
+    {
+      "weapon": "riot-charge",
+      "receipt": {
+        "accepted": 560,
+        "added": 560,
+        "evaluated": 11346,
+        "id": 9,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 560,
+        "skipped": 4818,
+        "status": "completed",
+        "work": 560
+      },
+      "materialReadback": {
+        "DIRT": 9564,
+        "MUD": 60,
+        "SAND": 293,
+        "SMOKE": 165,
+        "SOOT": 1057,
+        "STEAM": 18,
+        "STONE": 3249,
+        "WATER": 131
+      },
+      "bodyCells": 0
+    },
+    {
+      "weapon": "riot-blast",
+      "receipt": {
+        "accepted": 8293,
+        "added": 8293,
+        "evaluated": 34881,
+        "id": 10,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 8293,
+        "skipped": 9038,
+        "status": "completed",
+        "work": 13999
+      },
+      "materialReadback": {
+        "DIRT": 11024,
+        "MUD": 148,
+        "SAND": 355,
+        "SMOKE": 8346,
+        "SOOT": 1139,
+        "STONE": 4134,
+        "WATER": 154
+      },
+      "bodyCells": 0
+    },
+    {
+      "weapon": "dirt-charge",
+      "receipt": {
+        "accepted": 567,
+        "added": 567,
+        "evaluated": 16740,
+        "id": 11,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6600,
+        "status": "completed",
+        "work": 567
+      },
+      "materialReadback": {
+        "DIRT": 17268,
+        "MUD": 169,
+        "SAND": 896,
+        "SOOT": 33,
+        "STONE": 5162,
+        "WATER": 11
+      },
+      "bodyCells": 0
+    },
+    {
+      "weapon": "earth-disrupter",
+      "receipt": {
+        "accepted": 1208,
+        "added": 0,
+        "evaluated": 26244,
+        "fractured": 1208,
+        "fragments": [
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "id": 12,
+        "pulverized": 0,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 24,
+        "status": "completed",
+        "work": 4832
+      },
+      "materialReadback": {},
+      "bodyCells": 1208
+    }
+  ],
+  "validation": {
+    "unitTestsPassed": 13935,
+    "expectedFail": 1,
+    "skipped": 17,
+    "typeErrors": 0,
+    "productionBuild": true,
+    "signedArm64Package": true,
+    "workerSmoke": true,
+    "loopbackSmoke": true,
+    "gameChecks": [
+      "M5 layout",
+      "M6",
+      "M7",
+      "M8",
+      "M9",
+      "terrain masks/replacement/completion"
+    ]
+  },
+  "limitations": [
+    "Full M9 remains open for the other documented contracts and acceptance matrices.",
+    "Material replacement initializes SMOKE normally; this is not E14 color-preserving wreck transmutation.",
+    "The first final editor-save call lost its bridge connection after file writes; exact readback and an isolated 1879 ms save then succeeded.",
+    "Local signed release, not notarized or publicly published."
+  ],
+  "preservation": {
+    "noProfileCopies": true,
+    "originalSavesPreserved": true,
+    "baseline": "fresh-account-records-2529.json",
+    "restoredSetup": "9410617e-2846-4921-b0a5-49b97a9fd2b2",
+    "rollback": "/private/tmp/indigo-m9-collapse/Talus-2529.app"
+  }
+}

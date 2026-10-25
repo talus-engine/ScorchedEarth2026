@@ -1,0 +1,119 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 2,
+  "ok": true,
+  "value": {
+    "clock": 445.68333333325666,
+    "phase": "turn",
+    "roster": [
+      {
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 0,
+          "grounded": true,
+          "held": false,
+          "recoveryPerSecond": 0,
+          "thrusting": false
+        },
+        "name": "M12D Oct25 Alpha",
+        "posture": {
+          "config": {
+            "angularSpeed": 2,
+            "liftLimit": 64,
+            "liftSpeed": 60,
+            "maxSlope": 1,
+            "mode": "passive",
+            "penetrationTolerance": 0.01,
+            "supportDepth": 32
+          },
+          "lifted": 0,
+          "status": "complete",
+          "supportSamples": 9,
+          "targetAngle": 0
+        },
+        "snapshot": {
+          "alive": true,
+          "angle": 1.1548399925231935e-07,
+          "chunk": {
+            "x": 92,
+            "y": 11
+          },
+          "faction": "terra-lucky-fuses",
+          "health": 93.99986843986702,
+          "id": "instance@spawn-94bb3fa9-3394-4eb3-92db-90c7a25e4afc",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 7,
+          "maxHealth": 100,
+          "name": "M12D Oct25 Alpha",
+          "residency": "live",
+          "slot": null,
+          "templateId": "54e88a24-0d0b-4fc6-962b-88e9da02870f",
+          "vx": 0,
+          "vy": 0,
+          "x": 5939.31201171875,
+          "y": 730.3765869140625
+        },
+        "spawnX": 5940,
+        "surfaceY": 744,
+        "template": "54e88a24-0d0b-4fc6-962b-88e9da02870f"
+      },
+      {
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 0,
+          "grounded": true,
+          "held": false,
+          "recoveryPerSecond": 0,
+          "thrusting": false
+        },
+        "name": "M12D Oct25 Beta",
+        "posture": {
+          "config": {
+            "angularSpeed": 2,
+            "liftLimit": 64,
+            "liftSpeed": 60,
+            "maxSlope": 1,
+            "mode": "passive",
+            "penetrationTolerance": 0.01,
+            "supportDepth": 32
+          },
+          "lifted": 0,
+          "status": "blocked",
+          "supportSamples": 9,
+          "targetAngle": 0
+        },
+        "snapshot": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 96,
+            "y": 14
+          },
+          "faction": "terra-cascade-institute",
+          "health": 100,
+          "id": "instance@spawn-51b49d4d-d9cd-4898-bb71-b69c6fb25025",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 8,
+          "maxHealth": 100,
+          "name": "M12D Oct25 Beta",
+          "residency": "live",
+          "slot": null,
+          "templateId": "2745d498-e5bd-441e-b1b4-3f805b00ef61",
+          "vx": 0,
+          "vy": 0,
+          "x": 6192.5,
+          "y": 953.0271606445312
+        },
+        "spawnX": 6193,
+        "surfaceY": 746,
+        "template": "2745d498-e5bd-441e-b1b4-3f805b00ef61"
+      }
+    ],
+    "world": "b4fc8fdb-2771-4b69-ad77-f6521cca51a3"
+  }
+}

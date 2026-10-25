@@ -1,0 +1,1866 @@
+{
+  "camera": {
+    "frame": null,
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 4864,
+      "y": -64
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 4928,
+      "y": 0
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 4928,
+      "y": 0
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5198.685608644624,
+      "y": 158.09324650197368
+    },
+    "zoom": 0.25
+  },
+  "clock": 10.816666666666784,
+  "error": "",
+  "events": [
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 0.016666666666666666,
+      "completedChunks": 0,
+      "family": "template",
+      "kind": "terrain-source",
+      "parameters": {},
+      "phase": "complete",
+      "reason": null,
+      "recipeId": "wfc",
+      "seed": 257001,
+      "totalChunks": 0,
+      "turn": 0,
+      "version": 1
+    },
+    {
+      "catalog": "procedural-m11",
+      "choices": {
+        "growth": [
+          "builtin-lightning",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "m9-planar-bramble-probe",
+          "builtin-worm-tunnels",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "builtin-creeping-vine",
+          "indigo-m9-oak",
+          "builtin-roots",
+          "builtin-meadow-grass",
+          "builtin-coral",
+          "builtin-ivy-wall",
+          "builtin-wheat",
+          "builtin-icicles",
+          "builtin-hair",
+          "builtin-flower-bed",
+          "builtin-vine-ledge",
+          "builtin-creeping-vine",
+          "indigo-m9-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-flower-bed",
+          "m9-planar-bramble-probe",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "indigo-m9-oak",
+          "builtin-ivy-wall",
+          "builtin-worm-tunnels",
+          "builtin-wheat",
+          "builtin-bramble",
+          "builtin-lightning",
+          "builtin-coral",
+          "builtin-icicles",
+          "builtin-meadow-grass",
+          "builtin-hair",
+          "builtin-creeping-vine",
+          "builtin-worm-tunnels",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "builtin-oak-sapling",
+          "builtin-ivy-wall",
+          "m9-planar-bramble-probe",
+          "builtin-icicles",
+          "builtin-coral",
+          "indigo-m9-oak",
+          "builtin-living-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-wheat"
+        ],
+        "neural": [
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four",
+          "builtin-nca-stations",
+          "builtin-nca-masonry",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four"
+        ],
+        "neuralRecipe": [
+          "builtin-brush-keep-library",
+          "builtin-brush-research-lab",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-station-deck",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-tundra",
+          "builtin-brush-great-hall",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-hellscape",
+          "builtin-brush-coal",
+          "builtin-brush-catacombs",
+          "builtin-brush-station-deck",
+          "builtin-brush-tundra",
+          "builtin-brush-gold",
+          "builtin-brush-hellscape"
+        ],
+        "noise": [
+          "builtin-brick-6",
+          "builtin-fence-2",
+          "builtin-rusty-3",
+          "builtin-brickwood",
+          "builtin-concrete-2",
+          "builtin-panel-8",
+          "builtin-chess-1",
+          "builtin-wood-1",
+          "builtin-brick-2",
+          "builtin-steel-1",
+          "builtin-bigdoor-1",
+          "builtin-grid-2",
+          "builtin-grid-1",
+          "builtin-pillwindow",
+          "builtin-lab-5",
+          "builtin-slime-1",
+          "builtin-sludge-1",
+          "builtin-rusty-2",
+          "builtin-pipes-1",
+          "builtin-skultrim-1",
+          "builtin-fence-3",
+          "builtin-brick-1",
+          "builtin-grass-1",
+          "builtin-ooze-1",
+          "builtin-panel-5",
+          "builtin-crate-1",
+          "builtin-warn-3",
+          "builtin-wood-3",
+          "builtin-circlewindow",
+          "builtin-support-2",
+          "builtin-warn-1",
+          "builtin-door-3",
+          "builtin-light-2",
+          "builtin-crate-3",
+          "builtin-sqdoor-7",
+          "builtin-wood-2",
+          "builtin-vent-2",
+          "builtin-floor-3",
+          "builtin-metal-7",
+          "builtin-metal-6",
+          "builtin-cube-1",
+          "builtin-zinc-1",
+          "builtin-grid-6",
+          "builtin-panel-3",
+          "builtin-paper-1",
+          "builtin-cube-2",
+          "builtin-dirt-1",
+          "builtin-panel-7",
+          "builtin-rusty-1",
+          "builtin-brick2"
+        ],
+        "semantic": [
+          "builtin-brush-mossy-glade",
+          "builtin-brush-gold",
+          "builtin-brush-scorched-wasteland",
+          "builtin-brush-jungle-undergrowth",
+          "builtin-brush-hills",
+          "builtin-brush-toxic-dump",
+          "builtin-brush-power-substation",
+          "builtin-brush-keep-library",
+          "builtin-brush-glacier",
+          "builtin-brush-subway-tunnel",
+          "builtin-brush-crimson-desert",
+          "builtin-brush-charred",
+          "builtin-brush-alien-jungle",
+          "builtin-brush-engine-room",
+          "builtin-brush-rubble",
+          "builtin-brush-goblin-warren",
+          "builtin-brush-great-hall",
+          "builtin-brush-deep-mine",
+          "builtin-brush-frozen-lake",
+          "builtin-brush-alien-hive",
+          "builtin-brush-research-lab",
+          "builtin-brush-enchanted-forest",
+          "builtin-brush-derelict-station",
+          "builtin-brush-ice-moon",
+          "builtin-brush-coal",
+          "builtin-brush-tundra",
+          "builtin-brush-industrial-pipeworks",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-haunted-wood",
+          "builtin-brush-mesa-badlands",
+          "builtin-brush-chemical-plant",
+          "builtin-brush-scrapyard",
+          "builtin-brush-catacombs",
+          "builtin-brush-dragon-graveyard",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-castle-wall",
+          "builtin-brush-spaceship-prison",
+          "builtin-brush-snowy-pines",
+          "builtin-brush-mine-shaft",
+          "builtin-brush-dunes",
+          "builtin-brush-dragon-hoard",
+          "builtin-brush-mangrove-shallows",
+          "builtin-brush-autumn-woodland",
+          "builtin-brush-red-rock-canyon",
+          "indigo-mixed-earth",
+          "builtin-brush-cliffside",
+          "builtin-brush-desecrated-chapel",
+          "builtin-brush-reactor-chamber",
+          "builtin-brush-cryo-bay",
+          "builtin-brush-ice-cave"
+        ],
+        "structureTexture": [
+          "builtin-crate-3",
+          "builtin-steel-1",
+          "builtin-tarmac-2",
+          "builtin-wood-2",
+          "builtin-concrete-8",
+          "builtin-brickwood",
+          "builtin-crate-1",
+          "builtin-concrete-7",
+          "builtin-metal-2",
+          "builtin-marble-1",
+          "builtin-metal-4",
+          "builtin-concrete-2",
+          "builtin-brick-2",
+          "builtin-metal-7",
+          "builtin-brick-1",
+          "builtin-tarmac-4",
+          "builtin-wood-3",
+          "builtin-metal-1",
+          "builtin-steel-3",
+          "builtin-steel-2",
+          "builtin-crate-2",
+          "builtin-brick-4",
+          "builtin-corrugat-1",
+          "builtin-wood-1",
+          "builtin-metal-6"
+        ],
+        "vector": [
+          "builtin:checkmark",
+          "builtin:sun",
+          "builtin:heart",
+          "builtin:arrow-up",
+          "builtin:spade",
+          "builtin:club",
+          "builtin:star-6",
+          "builtin:gear",
+          "builtin:hexagon",
+          "builtin:rounded-square",
+          "builtin:arrow-right",
+          "builtin:tree",
+          "builtin:crescent",
+          "builtin:triangle",
+          "builtin:right-triangle",
+          "builtin:octagon",
+          "builtin:chevron-right",
+          "builtin:circle",
+          "builtin:square",
+          "builtin:cross",
+          "builtin:fire",
+          "builtin:snowflake",
+          "builtin:drop",
+          "builtin:speech-bubble",
+          "builtin:shield"
+        ]
+      },
+      "clock": 1.016666666666668,
+      "hash": "2b6e76aee7840f8b7bd706b3fbaea1e3f783806cf0b959cc151c76b33754b36a",
+      "kind": "generation-catalog",
+      "story": {
+        "id": "world-beneath-landfill",
+        "version": 1
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.1166666666666605,
+      "kind": "deployment-surface",
+      "offset": 40,
+      "player": "M12T Scroll Alpha",
+      "requestedX": 5960,
+      "turn": 0,
+      "x": 6000,
+      "y": 656
+    },
+    {
+      "clock": 3.183333333333327,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-50bd1869-455f-4357-8ee7-f5e6ccb357f7",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-50bd1869-455f-4357-8ee7-f5e6ccb357f7",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 5999.5,
+        "y": 605.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.2833333333333266,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-50bd1869-455f-4357-8ee7-f5e6ccb357f7",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-50bd1869-455f-4357-8ee7-f5e6ccb357f7",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M12T Scroll Alpha",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 5999.5,
+        "y": 613.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 3.2833333333333266,
+      "id": "instance@spawn-50bd1869-455f-4357-8ee7-f5e6ccb357f7",
+      "kind": "deployed",
+      "name": "M12T Scroll Alpha",
+      "turn": 0
+    },
+    {
+      "clock": 3.4499999999999926,
+      "id": "instance@spawn-50bd1869-455f-4357-8ee7-f5e6ccb357f7",
+      "kind": "land",
+      "position": {
+        "x": 5999.5,
+        "y": 640.3765869140625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.799999999999988,
+      "kind": "deployment-surface",
+      "offset": 4,
+      "player": "M12T Scroll Beta",
+      "requestedX": 6253,
+      "turn": 0,
+      "x": 6257,
+      "y": 720
+    },
+    {
+      "clock": 4.883333333333321,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-a8dae328-c524-4158-8bcd-b6c3f40139ef",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 97,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-a8dae328-c524-4158-8bcd-b6c3f40139ef",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "Arig Silverhaven",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 6256.5,
+        "y": 669.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.983333333333321,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-a8dae328-c524-4158-8bcd-b6c3f40139ef",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 97,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-a8dae328-c524-4158-8bcd-b6c3f40139ef",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M12T Scroll Beta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 6256.5,
+        "y": 677.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 4.983333333333321,
+      "id": "instance@spawn-a8dae328-c524-4158-8bcd-b6c3f40139ef",
+      "kind": "deployed",
+      "name": "M12T Scroll Beta",
+      "turn": 0
+    },
+    {
+      "clock": 5.149999999999987,
+      "id": "instance@spawn-a8dae328-c524-4158-8bcd-b6c3f40139ef",
+      "kind": "land",
+      "position": {
+        "x": 6256.5,
+        "y": 703.4999389648438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.483333333333316,
+      "kind": "deployment-surface",
+      "offset": 0,
+      "player": "M12T Scroll Gamma",
+      "requestedX": 6547,
+      "turn": 0,
+      "x": 6547,
+      "y": 744
+    },
+    {
+      "clock": 6.549999999999982,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-ec882758-d57c-45e9-8d23-e3982549d4e8",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 102,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-ec882758-d57c-45e9-8d23-e3982549d4e8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 4,
+        "maxHealth": 100,
+        "name": "Aric Stonehaven",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 6546.5,
+        "y": 693.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.649999999999982,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-ec882758-d57c-45e9-8d23-e3982549d4e8",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 102,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-ec882758-d57c-45e9-8d23-e3982549d4e8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 4,
+        "maxHealth": 100,
+        "name": "M12T Scroll Gamma",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 6546.5,
+        "y": 701.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 6.649999999999982,
+      "id": "instance@spawn-ec882758-d57c-45e9-8d23-e3982549d4e8",
+      "kind": "deployed",
+      "name": "M12T Scroll Gamma",
+      "turn": 0
+    },
+    {
+      "clock": 6.833333333333314,
+      "id": "instance@spawn-ec882758-d57c-45e9-8d23-e3982549d4e8",
+      "kind": "land",
+      "position": {
+        "x": 6546.5,
+        "y": 729.3766479492188
+      },
+      "turn": 0
+    },
+    {
+      "clock": 8.149999999999984,
+      "kind": "deployment-surface",
+      "offset": 0,
+      "player": "M12T Scroll Delta",
+      "requestedX": 6840,
+      "turn": 0,
+      "x": 6840,
+      "y": 628
+    },
+    {
+      "clock": 8.216666666666654,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-6920a6e1-e471-483d-b6fd-8cbbdec05786",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6920a6e1-e471-483d-b6fd-8cbbdec05786",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 6,
+        "maxHealth": 100,
+        "name": "Daris Blackhaven",
+        "residency": "live",
+        "slot": null,
+        "templateId": "12d67315-11d7-421d-8e2f-6dca94335d32",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 6839.5,
+        "y": 577.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 8.31666666666666,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-6920a6e1-e471-483d-b6fd-8cbbdec05786",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6920a6e1-e471-483d-b6fd-8cbbdec05786",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 6,
+        "maxHealth": 100,
+        "name": "M12T Scroll Delta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "12d67315-11d7-421d-8e2f-6dca94335d32",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 6839.5,
+        "y": 585.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 8.31666666666666,
+      "id": "instance@spawn-6920a6e1-e471-483d-b6fd-8cbbdec05786",
+      "kind": "deployed",
+      "name": "M12T Scroll Delta",
+      "turn": 0
+    },
+    {
+      "clock": 8.31666666666666,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "clock": 8.500000000000002,
+      "id": "instance@spawn-6920a6e1-e471-483d-b6fd-8cbbdec05786",
+      "kind": "land",
+      "position": {
+        "x": 6839.5,
+        "y": 613.8477783203125
+      },
+      "turn": 0
+    },
+    {
+      "center": {
+        "x": 6010.3662820383215,
+        "y": 641.889408227666
+      },
+      "clock": 8.883333333333354,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-50bd1869-455f-4357-8ee7-f5e6ccb357f7",
+      "tracking": 1,
+      "turn": 0
+    },
+    {
+      "cash": 360,
+      "clock": 8.883333333333354,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "M12T Scroll Alpha",
+      "price": 240,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 8.883333333333354,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M12T Scroll Alpha",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 8.883333333333354,
+      "kind": "cpu-shopping",
+      "name": "M12T Scroll Alpha",
+      "purchases": [
+        "heavy",
+        "battery"
+      ],
+      "reserve": 210,
+      "selected": "heavy",
+      "skipped": [],
+      "stage": "5acd529f-69e6-4d5d-98b2-c05dbf8944af:ready",
+      "stock": {
+        "battery": 2,
+        "heavy": 3
+      },
+      "turn": 0
+    },
+    {
+      "cash": 320,
+      "clock": 8.883333333333354,
+      "item": "napalm",
+      "kind": "purchase",
+      "name": "M12T Scroll Beta",
+      "price": 280,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 320,
+      "clock": 8.883333333333354,
+      "kind": "cpu-shopping",
+      "name": "M12T Scroll Beta",
+      "purchases": [
+        "napalm"
+      ],
+      "reserve": 180,
+      "selected": "napalm",
+      "skipped": [],
+      "stage": "5acd529f-69e6-4d5d-98b2-c05dbf8944af:ready",
+      "stock": {
+        "napalm": 3
+      },
+      "turn": 0
+    },
+    {
+      "cash": 360,
+      "clock": 8.883333333333354,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "M12T Scroll Gamma",
+      "price": 240,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 8.883333333333354,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M12T Scroll Gamma",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 8.883333333333354,
+      "kind": "cpu-shopping",
+      "name": "M12T Scroll Gamma",
+      "purchases": [
+        "heavy",
+        "battery"
+      ],
+      "reserve": 210,
+      "selected": "heavy",
+      "skipped": [],
+      "stage": "5acd529f-69e6-4d5d-98b2-c05dbf8944af:ready",
+      "stock": {
+        "battery": 2,
+        "heavy": 3
+      },
+      "turn": 0
+    },
+    {
+      "cash": 480,
+      "clock": 8.883333333333354,
+      "item": "riot",
+      "kind": "purchase",
+      "name": "M12T Scroll Delta",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 260,
+      "clock": 8.883333333333354,
+      "item": "digger",
+      "kind": "purchase",
+      "name": "M12T Scroll Delta",
+      "price": 220,
+      "quantity": 5,
+      "turn": 0
+    },
+    {
+      "cash": 140,
+      "clock": 8.883333333333354,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "M12T Scroll Delta",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 140,
+      "clock": 8.883333333333354,
+      "kind": "cpu-shopping",
+      "name": "M12T Scroll Delta",
+      "purchases": [
+        "riot",
+        "digger",
+        "fuel-tank"
+      ],
+      "reserve": 120,
+      "selected": "riot",
+      "skipped": [],
+      "stage": "5acd529f-69e6-4d5d-98b2-c05dbf8944af:ready",
+      "stock": {
+        "digger": 5,
+        "fuel-tank": 6,
+        "riot": 3
+      },
+      "turn": 0
+    }
+  ],
+  "live": [
+    {
+      "health": 100,
+      "id": "instance@spawn-50bd1869-455f-4357-8ee7-f5e6ccb357f7",
+      "live": true,
+      "liveId": 0,
+      "position": {
+        "x": 5998.685546875,
+        "y": 642.0952758789062
+      },
+      "residency": "live"
+    },
+    {
+      "health": 100,
+      "id": "instance@spawn-a8dae328-c524-4158-8bcd-b6c3f40139ef",
+      "live": true,
+      "liveId": 2,
+      "position": {
+        "x": 6256.5,
+        "y": 705.852783203125
+      },
+      "residency": "live"
+    },
+    {
+      "health": 100,
+      "id": "instance@spawn-ec882758-d57c-45e9-8d23-e3982549d4e8",
+      "live": true,
+      "liveId": 4,
+      "position": {
+        "x": 6546.5,
+        "y": 729.3765869140625
+      },
+      "residency": "live"
+    },
+    {
+      "health": 100,
+      "id": "instance@spawn-6920a6e1-e471-483d-b6fd-8cbbdec05786",
+      "live": true,
+      "liveId": 6,
+      "position": {
+        "x": 6839.5,
+        "y": 613.9124755859375
+      },
+      "residency": "live"
+    }
+  ],
+  "match": {
+    "attack": null,
+    "baseGeneration": {
+      "recipe": "wfc"
+    },
+    "biome": "terra-reach-v2",
+    "biomeCycle": false,
+    "biomeRounds": 1,
+    "bounds": {
+      "h": 1280,
+      "w": 12800,
+      "x": 0,
+      "y": 0
+    },
+    "cameraPolicyVersion": 1,
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0.5666666666666668,
+      "rng": 1674153828,
+      "serial": 0
+    },
+    "computers": 4,
+    "cpuSkill": "expert",
+    "details": 0,
+    "focusIndex": 0,
+    "generated": 0,
+    "generation": "wfc",
+    "generationChoice": "wfc",
+    "generationVersion": 12,
+    "humans": 0,
+    "impact": null,
+    "livingSites": 0,
+    "message": "Tanks ready \u2014 begin when your crew is ready",
+    "pendingTurn": null,
+    "personaSeed": "257001",
+    "phase": "ready",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "procedural": {
+      "catalog": "procedural-m11",
+      "choices": {
+        "growth": [
+          "builtin-lightning",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "m9-planar-bramble-probe",
+          "builtin-worm-tunnels",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "builtin-creeping-vine",
+          "indigo-m9-oak",
+          "builtin-roots",
+          "builtin-meadow-grass",
+          "builtin-coral",
+          "builtin-ivy-wall",
+          "builtin-wheat",
+          "builtin-icicles",
+          "builtin-hair",
+          "builtin-flower-bed",
+          "builtin-vine-ledge",
+          "builtin-creeping-vine",
+          "indigo-m9-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-flower-bed",
+          "m9-planar-bramble-probe",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "indigo-m9-oak",
+          "builtin-ivy-wall",
+          "builtin-worm-tunnels",
+          "builtin-wheat",
+          "builtin-bramble",
+          "builtin-lightning",
+          "builtin-coral",
+          "builtin-icicles",
+          "builtin-meadow-grass",
+          "builtin-hair",
+          "builtin-creeping-vine",
+          "builtin-worm-tunnels",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "builtin-oak-sapling",
+          "builtin-ivy-wall",
+          "m9-planar-bramble-probe",
+          "builtin-icicles",
+          "builtin-coral",
+          "indigo-m9-oak",
+          "builtin-living-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-wheat"
+        ],
+        "neural": [
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four",
+          "builtin-nca-stations",
+          "builtin-nca-masonry",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four"
+        ],
+        "neuralRecipe": [
+          "builtin-brush-keep-library",
+          "builtin-brush-research-lab",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-station-deck",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-tundra",
+          "builtin-brush-great-hall",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-hellscape",
+          "builtin-brush-coal",
+          "builtin-brush-catacombs",
+          "builtin-brush-station-deck",
+          "builtin-brush-tundra",
+          "builtin-brush-gold",
+          "builtin-brush-hellscape"
+        ],
+        "noise": [
+          "builtin-brick-6",
+          "builtin-fence-2",
+          "builtin-rusty-3",
+          "builtin-brickwood",
+          "builtin-concrete-2",
+          "builtin-panel-8",
+          "builtin-chess-1",
+          "builtin-wood-1",
+          "builtin-brick-2",
+          "builtin-steel-1",
+          "builtin-bigdoor-1",
+          "builtin-grid-2",
+          "builtin-grid-1",
+          "builtin-pillwindow",
+          "builtin-lab-5",
+          "builtin-slime-1",
+          "builtin-sludge-1",
+          "builtin-rusty-2",
+          "builtin-pipes-1",
+          "builtin-skultrim-1",
+          "builtin-fence-3",
+          "builtin-brick-1",
+          "builtin-grass-1",
+          "builtin-ooze-1",
+          "builtin-panel-5",
+          "builtin-crate-1",
+          "builtin-warn-3",
+          "builtin-wood-3",
+          "builtin-circlewindow",
+          "builtin-support-2",
+          "builtin-warn-1",
+          "builtin-door-3",
+          "builtin-light-2",
+          "builtin-crate-3",
+          "builtin-sqdoor-7",
+          "builtin-wood-2",
+          "builtin-vent-2",
+          "builtin-floor-3",
+          "builtin-metal-7",
+          "builtin-metal-6",
+          "builtin-cube-1",
+          "builtin-zinc-1",
+          "builtin-grid-6",
+          "builtin-panel-3",
+          "builtin-paper-1",
+          "builtin-cube-2",
+          "builtin-dirt-1",
+          "builtin-panel-7",
+          "builtin-rusty-1",
+          "builtin-brick2"
+        ],
+        "semantic": [
+          "builtin-brush-mossy-glade",
+          "builtin-brush-gold",
+          "builtin-brush-scorched-wasteland",
+          "builtin-brush-jungle-undergrowth",
+          "builtin-brush-hills",
+          "builtin-brush-toxic-dump",
+          "builtin-brush-power-substation",
+          "builtin-brush-keep-library",
+          "builtin-brush-glacier",
+          "builtin-brush-subway-tunnel",
+          "builtin-brush-crimson-desert",
+          "builtin-brush-charred",
+          "builtin-brush-alien-jungle",
+          "builtin-brush-engine-room",
+          "builtin-brush-rubble",
+          "builtin-brush-goblin-warren",
+          "builtin-brush-great-hall",
+          "builtin-brush-deep-mine",
+          "builtin-brush-frozen-lake",
+          "builtin-brush-alien-hive",
+          "builtin-brush-research-lab",
+          "builtin-brush-enchanted-forest",
+          "builtin-brush-derelict-station",
+          "builtin-brush-ice-moon",
+          "builtin-brush-coal",
+          "builtin-brush-tundra",
+          "builtin-brush-industrial-pipeworks",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-haunted-wood",
+          "builtin-brush-mesa-badlands",
+          "builtin-brush-chemical-plant",
+          "builtin-brush-scrapyard",
+          "builtin-brush-catacombs",
+          "builtin-brush-dragon-graveyard",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-castle-wall",
+          "builtin-brush-spaceship-prison",
+          "builtin-brush-snowy-pines",
+          "builtin-brush-mine-shaft",
+          "builtin-brush-dunes",
+          "builtin-brush-dragon-hoard",
+          "builtin-brush-mangrove-shallows",
+          "builtin-brush-autumn-woodland",
+          "builtin-brush-red-rock-canyon",
+          "indigo-mixed-earth",
+          "builtin-brush-cliffside",
+          "builtin-brush-desecrated-chapel",
+          "builtin-brush-reactor-chamber",
+          "builtin-brush-cryo-bay",
+          "builtin-brush-ice-cave"
+        ],
+        "structureTexture": [
+          "builtin-crate-3",
+          "builtin-steel-1",
+          "builtin-tarmac-2",
+          "builtin-wood-2",
+          "builtin-concrete-8",
+          "builtin-brickwood",
+          "builtin-crate-1",
+          "builtin-concrete-7",
+          "builtin-metal-2",
+          "builtin-marble-1",
+          "builtin-metal-4",
+          "builtin-concrete-2",
+          "builtin-brick-2",
+          "builtin-metal-7",
+          "builtin-brick-1",
+          "builtin-tarmac-4",
+          "builtin-wood-3",
+          "builtin-metal-1",
+          "builtin-steel-3",
+          "builtin-steel-2",
+          "builtin-crate-2",
+          "builtin-brick-4",
+          "builtin-corrugat-1",
+          "builtin-wood-1",
+          "builtin-metal-6"
+        ],
+        "vector": [
+          "builtin:checkmark",
+          "builtin:sun",
+          "builtin:heart",
+          "builtin:arrow-up",
+          "builtin:spade",
+          "builtin:club",
+          "builtin:star-6",
+          "builtin:gear",
+          "builtin:hexagon",
+          "builtin:rounded-square",
+          "builtin:arrow-right",
+          "builtin:tree",
+          "builtin:crescent",
+          "builtin:triangle",
+          "builtin:right-triangle",
+          "builtin:octagon",
+          "builtin:chevron-right",
+          "builtin:circle",
+          "builtin:square",
+          "builtin:cross",
+          "builtin:fire",
+          "builtin:snowflake",
+          "builtin:drop",
+          "builtin:speech-bubble",
+          "builtin:shield"
+        ]
+      },
+      "completed": {},
+      "growthPolicies": {
+        "builtin-bramble": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        },
+        "builtin-coral": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.2
+        },
+        "builtin-creeping-vine": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "builtin-flower-bed": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.8
+        },
+        "builtin-hair": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "viewPlane",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 4
+        },
+        "builtin-icicles": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.7
+        },
+        "builtin-ivy-wall": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "builtin-lightning": {
+          "endTime": 0.3,
+          "flowing": false,
+          "startTubes": 1,
+          "stroke": {
+            "paintOn": "viewPlane",
+            "sizeAttribute": "lengthMax",
+            "sizeMode": "attribute",
+            "sizeReference": 3
+          },
+          "timed": true,
+          "tubesPerStep": 0.1
+        },
+        "builtin-living-bramble": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        },
+        "builtin-meadow-grass": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 3
+        },
+        "builtin-oak-sapling": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 1,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.05
+        },
+        "builtin-roots": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.2
+        },
+        "builtin-vine-ledge": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "builtin-wheat": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 2
+        },
+        "builtin-worm-tunnels": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "viewPlane",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "indigo-m9-bramble": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        },
+        "indigo-m9-oak": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 1,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.05
+        },
+        "m9-planar-bramble-probe": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        }
+      },
+      "hash": "2b6e76aee7840f8b7bd706b3fbaea1e3f783806cf0b959cc151c76b33754b36a",
+      "receipts": [],
+      "sites": [],
+      "story": {
+        "affinities": {
+          "growth": [
+            "roots",
+            "worm",
+            "living bramble",
+            "creeping vine",
+            "oak"
+          ],
+          "noise": [
+            "crate",
+            "paper",
+            "rusty",
+            "scrap",
+            "wood",
+            "dirt",
+            "sludge"
+          ],
+          "semantic": [
+            "scrapyard",
+            "toxic dump",
+            "goblin warren",
+            "mine shaft",
+            "derelict",
+            "sewer"
+          ],
+          "vector": [
+            "gear",
+            "square",
+            "circle",
+            "hexagon",
+            "triangle"
+          ]
+        },
+        "description": "A crust of soil and junk covers old machinery, timber braces and small fuel chambers. Shooting the right support exposes a cavity instead of merely digging another straight shaft.",
+        "id": "world-beneath-landfill",
+        "motifs": [
+          {
+            "central": true,
+            "id": "junk-slide",
+            "kind": "counterweight",
+            "name": "Junk slide",
+            "parameters": {
+              "deckMaterial": "WOOD",
+              "dimensions": {
+                "deckLength": 144,
+                "deckThickness": 10,
+                "height": 144,
+                "loadDiameter": 28,
+                "supportHeight": 44,
+                "supportWidth": 8,
+                "width": 192
+              },
+              "loadMaterial": "IRON",
+              "slopeDeg": 8,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-rigid-gravity",
+              "native-rigid-contact"
+            ],
+            "seed": 4074234570,
+            "siteIndex": 0
+          },
+          {
+            "central": false,
+            "id": "buried-fuel-route",
+            "kind": "fuel-cell",
+            "name": "Old fuel line",
+            "parameters": {
+              "deckMaterial": "CONCRETE",
+              "dimensions": {
+                "deckLength": 160,
+                "deckThickness": 12,
+                "gateWidth": 12,
+                "height": 176,
+                "ignitionGap": 24,
+                "lowerBasinDepth": 32,
+                "lowerBasinWidth": 88,
+                "reservoirDepth": 28,
+                "reservoirWidth": 64,
+                "separatorThickness": 12,
+                "supportHeight": 40,
+                "supportWidth": 10,
+                "wallThickness": 8,
+                "width": 224
+              },
+              "ignitionMaterial": "EMBER",
+              "liquidMaterial": "CRUDE_OIL",
+              "loadMaterial": "IRON",
+              "slopeDeg": 6,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-liquid-flow",
+              "native-combustion",
+              "native-rigid-gravity",
+              "active-region-thermal-acceptance"
+            ],
+            "seed": 4091012189,
+            "siteIndex": 1
+          },
+          {
+            "central": false,
+            "id": "buried-roof",
+            "kind": "counterweight",
+            "name": "The roof under the rubbish",
+            "parameters": {
+              "deckMaterial": "WOOD",
+              "dimensions": {
+                "deckLength": 144,
+                "deckThickness": 10,
+                "height": 144,
+                "loadDiameter": 28,
+                "supportHeight": 44,
+                "supportWidth": 8,
+                "width": 192
+              },
+              "loadMaterial": "IRON",
+              "looseMaterial": "DIRT",
+              "slopeDeg": 8,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-rigid-gravity",
+              "native-powder-fall"
+            ],
+            "seed": 4040679332,
+            "siteIndex": 2
+          },
+          {
+            "central": false,
+            "id": "junk-slide",
+            "kind": "counterweight",
+            "name": "Junk slide",
+            "parameters": {
+              "deckMaterial": "WOOD",
+              "dimensions": {
+                "deckLength": 144,
+                "deckThickness": 10,
+                "height": 144,
+                "loadDiameter": 28,
+                "supportHeight": 44,
+                "supportWidth": 8,
+                "width": 192
+              },
+              "loadMaterial": "IRON",
+              "slopeDeg": 8,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-rigid-gravity",
+              "native-rigid-contact"
+            ],
+            "seed": 4057456951,
+            "siteIndex": 3
+          },
+          {
+            "central": false,
+            "id": "buried-fuel-route",
+            "kind": "fuel-cell",
+            "name": "Old fuel line",
+            "parameters": {
+              "deckMaterial": "CONCRETE",
+              "dimensions": {
+                "deckLength": 160,
+                "deckThickness": 12,
+                "gateWidth": 12,
+                "height": 176,
+                "ignitionGap": 24,
+                "lowerBasinDepth": 32,
+                "lowerBasinWidth": 88,
+                "reservoirDepth": 28,
+                "reservoirWidth": 64,
+                "separatorThickness": 12,
+                "supportHeight": 40,
+                "supportWidth": 10,
+                "wallThickness": 8,
+                "width": 224
+              },
+              "ignitionMaterial": "EMBER",
+              "liquidMaterial": "CRUDE_OIL",
+              "loadMaterial": "IRON",
+              "slopeDeg": 6,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-liquid-flow",
+              "native-combustion",
+              "native-rigid-gravity",
+              "active-region-thermal-acceptance"
+            ],
+            "seed": 4007124094,
+            "siteIndex": 4
+          }
+        ],
+        "name": "World Beneath the Landfill",
+        "placement": {
+          "centralSites": 1,
+          "sitesPerMap": 5
+        },
+        "seed": 478062876,
+        "selection": {
+          "affinityBonus": 3,
+          "baseWeight": 1
+        },
+        "sourceFile": "Game/landscape-stories.json",
+        "version": 1
+      },
+      "version": 1
+    },
+    "remaining": 30,
+    "roster": [
+      {
+        "autoAimTurn": null,
+        "autoDefenseChecked": true,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#EC4787",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-50bd1869-455f-4357-8ee7-f5e6ccb357f7",
+        "hits": 0,
+        "index": 0,
+        "kills": 0,
+        "lastKnownPosition": {
+          "x": 5998.720703125,
+          "y": 641.9429321289062
+        },
+        "lastLandRecord": {
+          "clock": 3.4499999999999926,
+          "x": 5999.5,
+          "y": 640.3765869140625
+        },
+        "moveDistance": 0,
+        "name": "M12T Scroll Alpha",
+        "personaId": "kiloton",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6000,
+        "surfaceY": 656,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "weaponId": "heavy"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#35D9FF",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-a8dae328-c524-4158-8bcd-b6c3f40139ef",
+        "hits": 0,
+        "index": 1,
+        "kills": 0,
+        "lastKnownPosition": {
+          "x": 6256.5,
+          "y": 704.8193969726562
+        },
+        "lastLandRecord": {
+          "clock": 5.149999999999987,
+          "x": 6256.5,
+          "y": 703.4999389648438
+        },
+        "moveDistance": 0,
+        "name": "M12T Scroll Beta",
+        "personaId": "domino",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6257,
+        "surfaceY": 720,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "weaponId": "napalm"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#EC3555",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-ec882758-d57c-45e9-8d23-e3982549d4e8",
+        "hits": 0,
+        "index": 2,
+        "kills": 0,
+        "lastKnownPosition": {
+          "x": 6546.5,
+          "y": 729.3766479492188
+        },
+        "lastLandRecord": {
+          "clock": 6.833333333333314,
+          "x": 6546.5,
+          "y": 729.3766479492188
+        },
+        "moveDistance": 0,
+        "name": "M12T Scroll Gamma",
+        "personaId": "kiloton",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6547,
+        "surfaceY": 744,
+        "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+        "weaponId": "heavy"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#7EF88F",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-6920a6e1-e471-483d-b6fd-8cbbdec05786",
+        "hits": 0,
+        "index": 3,
+        "kills": 0,
+        "lastKnownPosition": {
+          "x": 6839.5,
+          "y": 613.8671875
+        },
+        "lastLandRecord": {
+          "clock": 8.500000000000002,
+          "x": 6839.5,
+          "y": 613.8477783203125
+        },
+        "moveDistance": 0,
+        "name": "M12T Scroll Delta",
+        "personaId": "mole",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6840,
+        "surfaceY": 628,
+        "templateId": "12d67315-11d7-421d-8e2f-6dca94335d32",
+        "weaponId": "riot"
+      }
+    ],
+    "round": 1,
+    "seed": 257001,
+    "seriesId": "5acd529f-69e6-4d5d-98b2-c05dbf8944af",
+    "seriesLength": 1,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 0,
+      "family": "template",
+      "parameters": {},
+      "phase": "complete",
+      "reason": null,
+      "recipeId": "wfc",
+      "seed": 257001,
+      "totalChunks": 0,
+      "version": 1
+    },
+    "turnNumber": 0,
+    "turnSeconds": 30,
+    "version": 9,
+    "winner": null
+  },
+  "paused": false,
+  "save": {
+    "allowed": true,
+    "blockers": []
+  },
+  "world": "5acd529f-69e6-4d5d-98b2-c05dbf8944af"
+}

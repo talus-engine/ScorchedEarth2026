@@ -1,0 +1,158 @@
+{
+  "worldId": "405bcbdf-3f91-4dc1-933a-58a53f4cdb35",
+  "spawn": {
+    "clock": 6.21666666666665,
+    "largeFill": "TalusError: world.fill: the simulation refused the fill (no simulation, or a malformed shape)",
+    "rows": [
+      {
+        "fill": 64,
+        "name": "FIRE",
+        "spray": 64,
+        "x": 6000,
+        "y": 260,
+        "sprayGpu": {
+          "ok": true,
+          "result": {
+            "count": 61,
+            "hot": 0,
+            "max": 325.1499938964844,
+            "mean": 325.0457223360656,
+            "min": 324.3746643066406,
+            "types": {
+              "5": 61
+            }
+          }
+        },
+        "fillGpu": {
+          "ok": true,
+          "result": {
+            "count": 64,
+            "hot": 0,
+            "max": 918.406982421875,
+            "mean": 885.3642873764038,
+            "min": 718.9439697265625,
+            "types": {
+              "5": 8,
+              "6": 56
+            }
+          }
+        }
+      },
+      {
+        "fill": 64,
+        "name": "LAVA",
+        "spray": 64,
+        "x": 6240,
+        "y": 260,
+        "sprayGpu": {
+          "ok": true,
+          "result": {
+            "count": 4,
+            "hot": 0,
+            "max": 298.1499938964844,
+            "mean": 298.0904312133789,
+            "min": 298.0299987792969,
+            "types": {
+              "14": 4
+            }
+          }
+        },
+        "fillGpu": {
+          "ok": true,
+          "result": {
+            "count": 64,
+            "hot": 0,
+            "max": 1400,
+            "mean": 1391.7806720733645,
+            "min": 1337.1329345703125,
+            "types": {
+              "13": 64
+            }
+          }
+        }
+      },
+      {
+        "fill": 64,
+        "name": "LIQUID_NITROGEN",
+        "spray": 64,
+        "x": 6480,
+        "y": 260,
+        "sprayGpu": {
+          "ok": true,
+          "result": {
+            "count": 64,
+            "hot": 0,
+            "max": 295.1499938964844,
+            "mean": 295.1499938964844,
+            "min": 295.1499938964844,
+            "types": {
+              "100": 64
+            }
+          }
+        },
+        "fillGpu": {
+          "ok": true,
+          "result": {
+            "count": 64,
+            "hot": 0,
+            "max": 117.65725708007812,
+            "mean": 83.98597145080566,
+            "min": 70,
+            "types": {
+              "100": 24,
+              "144": 40
+            }
+          }
+        }
+      }
+    ],
+    "view": {
+      "frame": {
+        "result": {
+          "center": {
+            "x": 6399.5,
+            "y": 667.5
+          },
+          "clamped": false,
+          "fitsSimulation": true,
+          "fitsViewport": true
+        },
+        "spec": {
+          "bounds": {
+            "h": 68,
+            "w": 1192,
+            "x": 5803.5,
+            "y": 633.5
+          },
+          "padding": 32,
+          "preferVisible": true
+        }
+      },
+      "loadedBounds": {
+        "h": 1472,
+        "w": 2240,
+        "x": 5248,
+        "y": -64
+      },
+      "simulationBounds": {
+        "h": 1344,
+        "w": 2112,
+        "x": 5312,
+        "y": 0
+      },
+      "targetSimulationBounds": {
+        "h": 1344,
+        "w": 2112,
+        "x": 5312,
+        "y": 0
+      },
+      "viewport": {
+        "h": 968,
+        "w": 1600,
+        "x": 5599.5,
+        "y": 183.5
+      },
+      "zoom": 0.25
+    }
+  }
+}

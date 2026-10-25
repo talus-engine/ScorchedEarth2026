@@ -1,0 +1,190 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 3970,
+  "ok": true,
+  "value": {
+    "after": {
+      "a": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": -1,
+          "y": -79
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+        "vx": 0,
+        "vy": 0,
+        "x": -0.5,
+        "y": -5000.5
+      },
+      "b": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 62,
+          "y": -77
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "Daran Ironmere",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+        "vx": 0,
+        "vy": 0,
+        "x": 3999.5,
+        "y": -4900.5
+      },
+      "blocker": {
+        "angle": 0,
+        "angularVelocity": 0,
+        "cells": 4608,
+        "chunk": {
+          "x": 31,
+          "y": -92
+        },
+        "id": "rigid@d5bbb01f-e78b-4baa-8488-1f447f567df5",
+        "kind": "static",
+        "liveId": 6,
+        "name": "Engine M12S survey obstacle",
+        "residency": "live",
+        "sleeping": false,
+        "vx": 0,
+        "vy": 0,
+        "x": 1996.5,
+        "y": -5826.5
+      }
+    },
+    "before": {
+      "a": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": -1,
+          "y": -79
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 4,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+        "vx": 0,
+        "vy": 0,
+        "x": -0.5,
+        "y": -5000.5
+      },
+      "b": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 62,
+          "y": -77
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "Daran Ironmere",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+        "vx": 0,
+        "vy": 0,
+        "x": 3999.5,
+        "y": -4900.5
+      },
+      "blocker": {
+        "angle": 0,
+        "angularVelocity": 0,
+        "cells": null,
+        "chunk": {
+          "x": 31,
+          "y": -92
+        },
+        "id": "rigid@d5bbb01f-e78b-4baa-8488-1f447f567df5",
+        "kind": "static",
+        "liveId": null,
+        "name": "Engine M12S survey obstacle",
+        "residency": "stored",
+        "sleeping": true,
+        "vx": 0,
+        "vy": 0,
+        "x": 1996.5,
+        "y": -5826.5
+      }
+    },
+    "events": [
+      {
+        "event": "projectile.collision",
+        "hitBodyId": 6,
+        "kind": "rigid-body",
+        "otherEntityId": 6,
+        "ownerEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "projectileId": 1,
+        "speed": 318.3571898060987,
+        "with": "body",
+        "x": 1972.5,
+        "y": -5811.1943359375
+      },
+      {
+        "event": "projectile.directHit",
+        "hitBodyId": 6,
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "projectileId": 1,
+        "speed": 318.3571898060987,
+        "targetEntityId": 6,
+        "targetStableId": "rigid@d5bbb01f-e78b-4baa-8488-1f447f567df5",
+        "x": 1972.5,
+        "y": -5811.1943359375
+      },
+      {
+        "cause": "body",
+        "event": "projectile.detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "projectileId": 1,
+        "targetEntityId": 6,
+        "targetStableId": "rigid@d5bbb01f-e78b-4baa-8488-1f447f567df5",
+        "x": 1972.5,
+        "y": -5811.1943359375
+      },
+      {
+        "event": "projectile.end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "projectileId": 1,
+        "reason": "detonated",
+        "x": 1972.5,
+        "y": -5811.1943359375
+      }
+    ],
+    "id": 1,
+    "stillFlying": false
+  }
+}

@@ -1,0 +1,3822 @@
+{
+  "baseline": {
+    "world": "b29dda01-c94c-4410-9d1f-a50ea1f51e94"
+  },
+  "cases": [
+    {
+      "effect": "furnace",
+      "worldId": "a4ff9dfe-1dad-4117-bd14-72ef5eb919e8",
+      "kill": true,
+      "final": {
+        "clock": 19.48333333333351,
+        "error": "",
+        "events": [
+          {
+            "clock": 1.8499999999999983,
+            "id": "instance@spawn-dc26f80f-fc9f-45f9-9a25-98a7f73049c1",
+            "kind": "land",
+            "turn": 0
+          },
+          {
+            "clock": 3.033333333333327,
+            "id": "instance@spawn-dc26f80f-fc9f-45f9-9a25-98a7f73049c1",
+            "kind": "deployed",
+            "name": "M6 QA A",
+            "turn": 0
+          },
+          {
+            "clock": 4.883333333333321,
+            "id": "instance@spawn-fb16e15c-8218-49b8-aa9d-ebac97cd1423",
+            "kind": "land",
+            "turn": 0
+          },
+          {
+            "clock": 6.033333333333317,
+            "id": "instance@spawn-fb16e15c-8218-49b8-aa9d-ebac97cd1423",
+            "kind": "deployed",
+            "name": "M6 QA B",
+            "turn": 0
+          },
+          {
+            "clock": 6.033333333333317,
+            "kind": "match-ready",
+            "phase": "ready",
+            "turn": 0
+          },
+          {
+            "clock": 6.199999999999983,
+            "kind": "match-ready",
+            "phase": "ready",
+            "turn": 0
+          },
+          {
+            "clock": 6.416666666666649,
+            "effect": "furnace",
+            "id": 1,
+            "kind": "chaos-queued",
+            "owner": "instance@spawn-fb16e15c-8218-49b8-aa9d-ebac97cd1423",
+            "turn": 0,
+            "x": 6975.5,
+            "y": 681.5
+          },
+          {
+            "clock": 6.416666666666649,
+            "killer": "M6 QA A",
+            "kind": "eliminated",
+            "name": "M6 QA B",
+            "reason": "destroyed",
+            "turn": 0
+          },
+          {
+            "clock": 6.433333333333316,
+            "effect": "furnace",
+            "id": 1,
+            "kind": "chaos-started",
+            "turn": 0,
+            "x": 6975.50048828125,
+            "y": 681.606201171875
+          },
+          {
+            "clock": 16.416666666667016,
+            "effect": "furnace",
+            "elapsed": 10.000000000000076,
+            "id": 1,
+            "kind": "chaos-emission-ended",
+            "launched": 0,
+            "livePulses": 100,
+            "particles": 3200,
+            "turn": 0
+          },
+          {
+            "clock": 16.416666666667016,
+            "effect": "furnace",
+            "elapsed": 10.000000000000076,
+            "ended": 0,
+            "id": 1,
+            "kind": "chaos-ended",
+            "launched": 0,
+            "livePulses": 100,
+            "particles": 3200,
+            "turn": 0
+          },
+          {
+            "clock": 19.43333333333351,
+            "kind": "finished",
+            "turn": 0,
+            "winner": "M6 QA A"
+          }
+        ],
+        "match": {
+          "biome": "mixed-reach",
+          "bounds": {
+            "h": 1280,
+            "w": 1280,
+            "x": 5760,
+            "y": 0
+          },
+          "chaos": {
+            "jobs": [],
+            "notice": "M6 QA B: Ten-second furnace!",
+            "quiet": 3.016666666666661,
+            "rng": 839689206,
+            "serial": 1
+          },
+          "computers": 2,
+          "focusIndex": 0,
+          "frameNotice": "",
+          "humans": 0,
+          "impact": null,
+          "message": "M6 QA A wins the match",
+          "phase": "finished",
+          "remaining": 5,
+          "roster": [
+            {
+              "color": "#bcb1ff",
+              "control": "cpu",
+              "eliminated": false,
+              "entityId": "instance@spawn-dc26f80f-fc9f-45f9-9a25-98a7f73049c1",
+              "index": 0,
+              "kills": 1,
+              "name": "M6 QA A",
+              "spawnX": 5824,
+              "surfaceY": 672
+            },
+            {
+              "chaosId": 1,
+              "color": "#ffbd82",
+              "control": "cpu",
+              "deathEffect": "furnace",
+              "eliminated": true,
+              "entityId": "instance@spawn-fb16e15c-8218-49b8-aa9d-ebac97cd1423",
+              "index": 1,
+              "kills": 0,
+              "name": "M6 QA B",
+              "spawnX": 6976,
+              "surfaceY": 693
+            }
+          ],
+          "seed": 7,
+          "shotId": null,
+          "turnNumber": 0,
+          "turnSeconds": 5,
+          "version": 6,
+          "winner": "M6 QA A"
+        },
+        "paused": false,
+        "roster": [
+          {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 90,
+              "y": 10
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-dc26f80f-fc9f-45f9-9a25-98a7f73049c1",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 0,
+            "maxHealth": 100,
+            "name": "M6 QA A",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+            "vx": 0,
+            "vy": 0,
+            "x": 5823.5,
+            "y": 653.5
+          },
+          null
+        ],
+        "scores": {
+          "matches": {
+            "37cdce95-ef52-4524-abcb-4e4b0289d980": {
+              "seed": 7,
+              "winner": "M5 Verify 4"
+            },
+            "9b08d2ab-ea3d-40c5-a777-79e3d431b89c": {
+              "seed": 7,
+              "winner": "M6 QA A"
+            },
+            "a4ff9dfe-1dad-4117-bd14-72ef5eb919e8": {
+              "seed": 7,
+              "winner": "M6 QA A"
+            }
+          },
+          "players": {
+            "m5 verify 1": {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 1",
+              "wins": 0
+            },
+            "m5 verify 2": {
+              "games": 1,
+              "kills": 0,
+              "name": "M5 Verify 2",
+              "wins": 0
+            },
+            "m5 verify 3": {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 3",
+              "wins": 0
+            },
+            "m5 verify 4": {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 4",
+              "wins": 1
+            },
+            "m6 qa a": {
+              "games": 2,
+              "kills": 2,
+              "name": "M6 QA A",
+              "wins": 2
+            },
+            "m6 qa b": {
+              "games": 2,
+              "kills": 0,
+              "name": "M6 QA B",
+              "wins": 0
+            }
+          }
+        },
+        "ui": {
+          "aimRotation": "rotate(-45deg)",
+          "biome": "Mixed Reach",
+          "canSetup": true,
+          "chaosCount": 0,
+          "chaosNotice": "M6 QA B: Ten-second furnace!",
+          "current": {
+            "angle": 45,
+            "color": "#bcb1ff",
+            "control": "Computer",
+            "health": 100,
+            "name": "M6 QA A",
+            "power": 70
+          },
+          "finished": true,
+          "frameNotice": "",
+          "human": false,
+          "lastHit": "",
+          "phase": "finished",
+          "ready": false,
+          "remaining": 5,
+          "roster": [
+            {
+              "color": "#bcb1ff",
+              "health": 100,
+              "kills": 1,
+              "name": "M6 QA A",
+              "status": "CURRENT"
+            },
+            {
+              "color": "#ffbd82",
+              "health": 0,
+              "kills": 0,
+              "name": "M6 QA B",
+              "status": "OUT"
+            }
+          ],
+          "scores": [
+            {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 1",
+              "wins": 0
+            },
+            {
+              "games": 1,
+              "kills": 0,
+              "name": "M5 Verify 2",
+              "wins": 0
+            },
+            {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 3",
+              "wins": 0
+            },
+            {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 4",
+              "wins": 1
+            },
+            {
+              "games": 2,
+              "kills": 2,
+              "name": "M6 QA A",
+              "wins": 2
+            },
+            {
+              "games": 2,
+              "kills": 0,
+              "name": "M6 QA B",
+              "wins": 0
+            }
+          ],
+          "seed": 7,
+          "shotDirection": "RIGHT \u2192",
+          "status": "M6 QA A wins the match",
+          "tactic": "",
+          "tankCount": 2,
+          "target": "",
+          "turnNumber": 0,
+          "turnSeconds": 5,
+          "winner": "M6 QA A"
+        },
+        "worldId": "a4ff9dfe-1dad-4117-bd14-72ef5eb919e8"
+      },
+      "audit": {
+        "events": [],
+        "samples": [
+          {
+            "active": true,
+            "clock": 6.299999999999983,
+            "jobs": 0,
+            "phase": "ready",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.399999999999983,
+            "jobs": 0,
+            "phase": "ready",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.499999999999982,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.599999999999982,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.6999999999999815,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.799999999999981,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.899999999999981,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.9999999999999805,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.09999999999998,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.19999999999998,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.299999999999979,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.399999999999979,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.499999999999979,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.599999999999978,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.699999999999978,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.799999999999978,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.899999999999977,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.999999999999977,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.099999999999982,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.199999999999987,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.299999999999992,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.399999999999997,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.500000000000002,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.600000000000007,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.700000000000012,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.800000000000017,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.900000000000022,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.000000000000027,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.100000000000032,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.200000000000037,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.300000000000042,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.400000000000048,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.500000000000052,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.600000000000056,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.70000000000006,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.800000000000066,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.900000000000071,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.000000000000076,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.10000000000008,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.200000000000086,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.300000000000091,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.400000000000096,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.5000000000001,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.600000000000106,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.700000000000111,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.800000000000116,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.90000000000012,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.000000000000126,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.100000000000133,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.200000000000136,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.30000000000014,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.400000000000146,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.500000000000153,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.600000000000156,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.70000000000016,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.800000000000166,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.90000000000017,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.000000000000176,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.10000000000018,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.200000000000186,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.30000000000019,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.400000000000196,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.5000000000002,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.600000000000206,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.70000000000021,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.800000000000216,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.90000000000022,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.000000000000226,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.10000000000023,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.200000000000236,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.30000000000024,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.400000000000244,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.50000000000025,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.600000000000255,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.70000000000026,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.800000000000264,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.90000000000027,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.000000000000275,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.10000000000028,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.200000000000284,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.30000000000029,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.400000000000295,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.5000000000003,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.600000000000303,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.70000000000031,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.800000000000315,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.90000000000032,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.000000000000323,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.10000000000033,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.200000000000337,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.30000000000034,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.400000000000343,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.50000000000035,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.600000000000357,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.70000000000036,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.800000000000365,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.90000000000037,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.000000000000373,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.100000000000367,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.20000000000036,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.300000000000356,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.40000000000035,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.500000000000345,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.60000000000034,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.700000000000333,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.800000000000328,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.900000000000322,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.000000000000316,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.10000000000031,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.200000000000305,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.3000000000003,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.400000000000293,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.500000000000288,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.600000000000282,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.700000000000276,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.80000000000027,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.900000000000265,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.00000000000026,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.100000000000257,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.200000000000248,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.30000000000024,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.400000000000237,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.50000000000023,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.600000000000225,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.70000000000022,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.800000000000217,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.900000000000208,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 19.000000000000203,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 19.100000000000197,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 19.20000000000019,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 19.300000000000185,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 19.40000000000018,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 19.500000000000178,
+            "jobs": 0,
+            "phase": "finished",
+            "turn": 0,
+            "zoom": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "effect": "magazine",
+      "worldId": "dea58dfd-e4cf-4be4-b5c6-c60516156cfc",
+      "kill": true,
+      "final": {
+        "clock": 9.500000000000052,
+        "error": "",
+        "events": [
+          {
+            "clock": 1.816666666666665,
+            "id": "instance@spawn-cbd166cd-aafc-4dee-b875-ac4130b33c13",
+            "kind": "land",
+            "turn": 0
+          },
+          {
+            "clock": 2.9999999999999942,
+            "id": "instance@spawn-cbd166cd-aafc-4dee-b875-ac4130b33c13",
+            "kind": "deployed",
+            "name": "M6 QA A",
+            "turn": 0
+          },
+          {
+            "clock": 4.849999999999988,
+            "id": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1",
+            "kind": "land",
+            "turn": 0
+          },
+          {
+            "clock": 5.999999999999984,
+            "id": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1",
+            "kind": "deployed",
+            "name": "M6 QA B",
+            "turn": 0
+          },
+          {
+            "clock": 5.999999999999984,
+            "kind": "match-ready",
+            "phase": "ready",
+            "turn": 0
+          },
+          {
+            "clock": 6.1499999999999835,
+            "kind": "match-ready",
+            "phase": "ready",
+            "turn": 0
+          },
+          {
+            "clock": 6.349999999999983,
+            "effect": "magazine",
+            "id": 1,
+            "kind": "chaos-queued",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1",
+            "turn": 0,
+            "x": 6975.5,
+            "y": 681.5
+          },
+          {
+            "clock": 6.349999999999983,
+            "killer": "M6 QA A",
+            "kind": "eliminated",
+            "name": "M6 QA B",
+            "reason": "destroyed",
+            "turn": 0
+          },
+          {
+            "clock": 6.366666666666649,
+            "effect": "magazine",
+            "id": 1,
+            "kind": "chaos-started",
+            "turn": 0,
+            "x": 6975.50048828125,
+            "y": 681.6052856445312
+          },
+          {
+            "clock": 6.366666666666649,
+            "effect": "magazine",
+            "elapsed": 0.016666666666666666,
+            "id": 1,
+            "kind": "chaos-emission-ended",
+            "launched": 100,
+            "livePulses": 0,
+            "particles": 0,
+            "turn": 0
+          },
+          {
+            "clock": 6.366666666666649,
+            "effect": "magazine",
+            "elapsed": 0.016666666666666666,
+            "ended": 100,
+            "id": 1,
+            "kind": "chaos-ended",
+            "launched": 100,
+            "livePulses": 0,
+            "particles": 0,
+            "turn": 0
+          },
+          {
+            "clock": 9.38333333333338,
+            "kind": "finished",
+            "turn": 0,
+            "winner": "M6 QA A"
+          }
+        ],
+        "match": {
+          "biome": "mixed-reach",
+          "bounds": {
+            "h": 1280,
+            "w": 1280,
+            "x": 5760,
+            "y": 0
+          },
+          "chaos": {
+            "jobs": [],
+            "notice": "M6 QA B: One hundred bad decisions!",
+            "quiet": 3.016666666666661,
+            "rng": 839689206,
+            "serial": 1
+          },
+          "computers": 2,
+          "focusIndex": 0,
+          "frameNotice": "",
+          "humans": 0,
+          "impact": null,
+          "message": "M6 QA A wins the match",
+          "phase": "finished",
+          "remaining": 5,
+          "roster": [
+            {
+              "color": "#bcb1ff",
+              "control": "cpu",
+              "eliminated": false,
+              "entityId": "instance@spawn-cbd166cd-aafc-4dee-b875-ac4130b33c13",
+              "index": 0,
+              "kills": 1,
+              "name": "M6 QA A",
+              "spawnX": 5824,
+              "surfaceY": 672
+            },
+            {
+              "chaosId": 1,
+              "color": "#ffbd82",
+              "control": "cpu",
+              "deathEffect": "magazine",
+              "eliminated": true,
+              "entityId": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1",
+              "index": 1,
+              "kills": 0,
+              "name": "M6 QA B",
+              "spawnX": 6976,
+              "surfaceY": 693
+            }
+          ],
+          "seed": 7,
+          "shotId": null,
+          "turnNumber": 0,
+          "turnSeconds": 5,
+          "version": 6,
+          "winner": "M6 QA A"
+        },
+        "paused": false,
+        "roster": [
+          {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 90,
+              "y": 10
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-cbd166cd-aafc-4dee-b875-ac4130b33c13",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 0,
+            "maxHealth": 100,
+            "name": "M6 QA A",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+            "vx": 0,
+            "vy": 0,
+            "x": 5823.5,
+            "y": 653.5
+          },
+          null
+        ],
+        "scores": {
+          "matches": {
+            "37cdce95-ef52-4524-abcb-4e4b0289d980": {
+              "seed": 7,
+              "winner": "M5 Verify 4"
+            },
+            "9b08d2ab-ea3d-40c5-a777-79e3d431b89c": {
+              "seed": 7,
+              "winner": "M6 QA A"
+            },
+            "a4ff9dfe-1dad-4117-bd14-72ef5eb919e8": {
+              "seed": 7,
+              "winner": "M6 QA A"
+            },
+            "dea58dfd-e4cf-4be4-b5c6-c60516156cfc": {
+              "seed": 7,
+              "winner": "M6 QA A"
+            }
+          },
+          "players": {
+            "m5 verify 1": {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 1",
+              "wins": 0
+            },
+            "m5 verify 2": {
+              "games": 1,
+              "kills": 0,
+              "name": "M5 Verify 2",
+              "wins": 0
+            },
+            "m5 verify 3": {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 3",
+              "wins": 0
+            },
+            "m5 verify 4": {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 4",
+              "wins": 1
+            },
+            "m6 qa a": {
+              "games": 3,
+              "kills": 3,
+              "name": "M6 QA A",
+              "wins": 3
+            },
+            "m6 qa b": {
+              "games": 3,
+              "kills": 0,
+              "name": "M6 QA B",
+              "wins": 0
+            }
+          }
+        },
+        "ui": {
+          "aimRotation": "rotate(-45deg)",
+          "biome": "Mixed Reach",
+          "canSetup": true,
+          "chaosCount": 0,
+          "chaosNotice": "M6 QA B: One hundred bad decisions!",
+          "current": {
+            "angle": 45,
+            "color": "#bcb1ff",
+            "control": "Computer",
+            "health": 100,
+            "name": "M6 QA A",
+            "power": 70
+          },
+          "finished": true,
+          "frameNotice": "",
+          "human": false,
+          "lastHit": "",
+          "phase": "finished",
+          "ready": false,
+          "remaining": 5,
+          "roster": [
+            {
+              "color": "#bcb1ff",
+              "health": 100,
+              "kills": 1,
+              "name": "M6 QA A",
+              "status": "CURRENT"
+            },
+            {
+              "color": "#ffbd82",
+              "health": 0,
+              "kills": 0,
+              "name": "M6 QA B",
+              "status": "OUT"
+            }
+          ],
+          "scores": [
+            {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 1",
+              "wins": 0
+            },
+            {
+              "games": 1,
+              "kills": 0,
+              "name": "M5 Verify 2",
+              "wins": 0
+            },
+            {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 3",
+              "wins": 0
+            },
+            {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 4",
+              "wins": 1
+            },
+            {
+              "games": 3,
+              "kills": 3,
+              "name": "M6 QA A",
+              "wins": 3
+            },
+            {
+              "games": 3,
+              "kills": 0,
+              "name": "M6 QA B",
+              "wins": 0
+            }
+          ],
+          "seed": 7,
+          "shotDirection": "RIGHT \u2192",
+          "status": "M6 QA A wins the match",
+          "tactic": "",
+          "tankCount": 2,
+          "target": "",
+          "turnNumber": 0,
+          "turnSeconds": 5,
+          "winner": "M6 QA A"
+        },
+        "worldId": "dea58dfd-e4cf-4be4-b5c6-c60516156cfc"
+      },
+      "audit": {
+        "events": [
+          {
+            "clock": 6.366666666666649,
+            "id": 1,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 1,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 1,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 2,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 2,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 2,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 3,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 3,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 3,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 4,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 4,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 4,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 5,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 5,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 5,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 6,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 6,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 6,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 7,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 7,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 7,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 8,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 8,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 8,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 9,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 9,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 9,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 10,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 10,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 10,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 11,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 11,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 11,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 12,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 12,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 12,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 13,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 13,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 13,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 14,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 14,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 14,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 15,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 15,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 15,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 16,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 16,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 16,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 17,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 17,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 17,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 18,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 18,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 18,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 19,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 19,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 19,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 20,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 20,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 20,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 21,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 21,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 21,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 22,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 22,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 22,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 23,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 23,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 23,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 24,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 24,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 24,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 25,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 25,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 25,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 26,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 26,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 26,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 27,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 27,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 27,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 28,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 28,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 28,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 29,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 29,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 29,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 30,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 30,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 30,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 31,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 31,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 31,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 32,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 32,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 32,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 33,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 33,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 33,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 34,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 34,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 34,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 35,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 35,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 35,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 36,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 36,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 36,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 37,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 37,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 37,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 38,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 38,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 38,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 39,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 39,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 39,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 40,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 40,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 40,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 41,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 41,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 41,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 42,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 42,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 42,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 43,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 43,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 43,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 44,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 44,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 44,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 45,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 45,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 45,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 46,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 46,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 46,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 47,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 47,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 47,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 48,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 48,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 48,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 49,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 49,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 49,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 50,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 50,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 50,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 51,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 51,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 51,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 52,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 52,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 52,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 53,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 53,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 53,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 54,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 54,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 54,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 55,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 55,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 55,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 56,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 56,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 56,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 57,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 57,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 57,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 58,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 58,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 58,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 59,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 59,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 59,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 60,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 60,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 60,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 61,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 61,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 61,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 62,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 62,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 62,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 63,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 63,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 63,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 64,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 64,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 64,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 65,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 65,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 65,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 66,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 66,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 66,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 67,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 67,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 67,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 68,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 68,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 68,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 69,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 69,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 69,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 70,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 70,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 70,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 71,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 71,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 71,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 72,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 72,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 72,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 73,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 73,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 73,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 74,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 74,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 74,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 75,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 75,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 75,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 76,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 76,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 76,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 77,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 77,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 77,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 78,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 78,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 78,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 79,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 79,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 79,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 80,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 80,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 80,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 81,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 81,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 81,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 82,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 82,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 82,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 83,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 83,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 83,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 84,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 84,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 84,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 85,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 85,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 85,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 86,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 86,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 86,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 87,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 87,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 87,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 88,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 88,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 88,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 89,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 89,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 89,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 90,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 90,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 90,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 91,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 91,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 91,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 92,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 92,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 92,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 93,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 93,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 93,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 94,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 94,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 94,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 95,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 95,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 95,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 96,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 96,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 96,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 97,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 97,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 97,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 98,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 98,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 98,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 99,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 99,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 99,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 100,
+            "kind": "launch",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 100,
+            "kind": "detonate",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          },
+          {
+            "clock": 6.366666666666649,
+            "id": 100,
+            "kind": "end",
+            "owner": "instance@spawn-1c4fc607-4679-43a6-b428-41dcd3918ab1"
+          }
+        ],
+        "samples": [
+          {
+            "active": true,
+            "clock": 6.249999999999983,
+            "jobs": 0,
+            "phase": "ready",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.349999999999983,
+            "jobs": 0,
+            "phase": "ready",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.449999999999982,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.549999999999982,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.649999999999982,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.749999999999981,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.849999999999981,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.949999999999981,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.04999999999998,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.14999999999998,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.24999999999998,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.349999999999979,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.449999999999979,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.549999999999979,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.649999999999978,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.749999999999978,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.849999999999977,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.949999999999977,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.04999999999998,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.149999999999984,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.24999999999999,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.349999999999994,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.45,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.550000000000004,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.65000000000001,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.750000000000014,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.85000000000002,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.950000000000024,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.05000000000003,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.150000000000034,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.25000000000004,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.350000000000044,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.450000000000047,
+            "jobs": 0,
+            "phase": "finished",
+            "turn": 0,
+            "zoom": 0.25
+          }
+        ]
+      },
+      "burstSeconds": 0.0
+    }
+  ],
+  "checks": {
+    "furnace: no script fault": true,
+    "furnace: one death, one selected effect, one completion": true,
+    "furnace: no premature victory": true,
+    "furnace: 25% camera and survivor active": true,
+    "furnace: duration honored": true,
+    "furnace: sustained physical emission": true,
+    "magazine: no script fault": true,
+    "magazine: one death, one selected effect, one completion": true,
+    "magazine: no premature victory": true,
+    "magazine: 25% camera and survivor active": true,
+    "magazine: duration honored": true,
+    "magazine: exact real shell count": true
+  },
+  "restoredWorld": "b29dda01-c94c-4410-9d1f-a50ea1f51e94"
+}

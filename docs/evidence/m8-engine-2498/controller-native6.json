@@ -1,0 +1,524 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 32401,
+  "ok": true,
+  "value": {
+    "afterPartial": {
+      "capacity": 12,
+      "enabled": true,
+      "fuel": 0,
+      "grounded": false,
+      "held": true,
+      "recoveryPerSecond": 0,
+      "thrusting": false
+    },
+    "buys": [
+      {
+        "accepted": true,
+        "addedSeconds": 6,
+        "reason": "ok"
+      },
+      {
+        "accepted": true,
+        "addedSeconds": 6,
+        "reason": "ok"
+      },
+      {
+        "accepted": false,
+        "addedSeconds": 0,
+        "reason": "full"
+      }
+    ],
+    "ceiling": 1024,
+    "ceilingHit": {
+      "controller": {
+        "capacity": 12,
+        "enabled": true,
+        "fuel": 10.000000000000073,
+        "grounded": false,
+        "held": true,
+        "recoveryPerSecond": 0,
+        "thrusting": true
+      },
+      "snapshot": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 96,
+          "y": 4
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "vx": 44,
+        "vy": 0,
+        "x": 6161.5,
+        "y": 302.5000915527344
+      }
+    },
+    "exhausted": {
+      "capacity": 12,
+      "enabled": true,
+      "fuel": 0,
+      "grounded": true,
+      "held": true,
+      "recoveryPerSecond": 0,
+      "thrusting": false
+    },
+    "final": {
+      "controller": {
+        "capacity": 12,
+        "enabled": true,
+        "fuel": 3,
+        "grounded": false,
+        "held": false,
+        "recoveryPerSecond": 0,
+        "thrusting": false
+      },
+      "snapshot": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 96,
+          "y": 5
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "vx": 0,
+        "vy": -65.83333587646484,
+        "x": 6161.49462890625,
+        "y": 361.6249084472656
+      }
+    },
+    "floor": 6144,
+    "held": {
+      "accepted": true,
+      "addedSeconds": 0,
+      "reason": "ok"
+    },
+    "partial": {
+      "accepted": true,
+      "addedSeconds": 0.25,
+      "reason": "ok"
+    },
+    "released": {
+      "controller": {
+        "capacity": 12,
+        "enabled": true,
+        "fuel": 10.000000000000073,
+        "grounded": true,
+        "held": false,
+        "recoveryPerSecond": 0,
+        "thrusting": false
+      },
+      "snapshot": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 96,
+          "y": 6
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "vx": 0,
+        "vy": 0,
+        "x": 6161.49462890625,
+        "y": 385.4999084472656
+      }
+    },
+    "samples": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 95,
+          "y": 6
+        },
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 12,
+          "grounded": true,
+          "held": true,
+          "recoveryPerSecond": 0,
+          "thrusting": false
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "tick": 0,
+        "vx": 0,
+        "vy": 0,
+        "x": 6109.5,
+        "y": 385.4999084472656
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 95,
+          "y": 5
+        },
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 11.800000000000008,
+          "grounded": false,
+          "held": true,
+          "recoveryPerSecond": 0,
+          "thrusting": true
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "tick": 12,
+        "vx": 44,
+        "vy": -100.00000762939452,
+        "x": 6117.85107421875,
+        "y": 374.6665954589844
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 95,
+          "y": 5
+        },
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 11.600000000000014,
+          "grounded": false,
+          "held": true,
+          "recoveryPerSecond": 0,
+          "thrusting": true
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "tick": 24,
+        "vx": 44,
+        "vy": -120,
+        "x": 6126.65185546875,
+        "y": 350.9165954589844
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 95,
+          "y": 5
+        },
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 11.400000000000022,
+          "grounded": false,
+          "held": true,
+          "recoveryPerSecond": 0,
+          "thrusting": true
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "tick": 36,
+        "vx": 44,
+        "vy": -120,
+        "x": 6135.45263671875,
+        "y": 326.9165954589844
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 96,
+          "y": 4
+        },
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 11.20000000000003,
+          "grounded": false,
+          "held": true,
+          "recoveryPerSecond": 0,
+          "thrusting": true
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "tick": 48,
+        "vx": 44,
+        "vy": -120,
+        "x": 6144.25341796875,
+        "y": 302.9165954589844
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 96,
+          "y": 4
+        },
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 11.000000000000036,
+          "grounded": false,
+          "held": true,
+          "recoveryPerSecond": 0,
+          "thrusting": true
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "tick": 60,
+        "vx": 44,
+        "vy": 0,
+        "x": 6153.05419921875,
+        "y": 302.5000915527344
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 96,
+          "y": 4
+        },
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 10.800000000000043,
+          "grounded": false,
+          "held": true,
+          "recoveryPerSecond": 0,
+          "thrusting": true
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "tick": 72,
+        "vx": 44,
+        "vy": 0,
+        "x": 6161.5,
+        "y": 302.5000915527344
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 96,
+          "y": 4
+        },
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 10.600000000000051,
+          "grounded": false,
+          "held": true,
+          "recoveryPerSecond": 0,
+          "thrusting": true
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "tick": 84,
+        "vx": 44,
+        "vy": 0,
+        "x": 6161.5,
+        "y": 302.5000915527344
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 96,
+          "y": 4
+        },
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 10.40000000000006,
+          "grounded": false,
+          "held": true,
+          "recoveryPerSecond": 0,
+          "thrusting": true
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "tick": 96,
+        "vx": 44,
+        "vy": 0,
+        "x": 6161.5,
+        "y": 302.5000915527344
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 96,
+          "y": 4
+        },
+        "controller": {
+          "capacity": 12,
+          "enabled": true,
+          "fuel": 10.200000000000063,
+          "grounded": false,
+          "held": true,
+          "recoveryPerSecond": 0,
+          "thrusting": true
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "tick": 108,
+        "vx": 44,
+        "vy": 0,
+        "x": 6161.5,
+        "y": 302.5000915527344
+      }
+    ],
+    "start": {
+      "controller": {
+        "capacity": 12,
+        "enabled": true,
+        "fuel": 0,
+        "grounded": true,
+        "held": false,
+        "recoveryPerSecond": 0,
+        "thrusting": false
+      },
+      "snapshot": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 95,
+          "y": 6
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "vx": 0,
+        "vy": 0,
+        "x": 6109.5,
+        "y": 385.4999084472656
+      }
+    },
+    "wall": 896
+  }
+}

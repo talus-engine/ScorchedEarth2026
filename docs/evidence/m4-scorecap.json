@@ -1,0 +1,1679 @@
+{
+  "before": {
+    "clock": 41.199999999998944,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8833333333333315,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.049999999999994,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 1",
+        "turn": 0
+      },
+      {
+        "clock": 4.9166666666666545,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.06666666666665,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 2",
+        "turn": 0
+      },
+      {
+        "clock": 6.16666666666665,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 6.21666666666665,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.483333333333316,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "turn",
+        "name": "M4 Test aimcap 1",
+        "turn": 1
+      },
+      {
+        "clock": 6.499999999999982,
+        "distance": 2304,
+        "elevation": -0.9990234375,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test aimcap 1",
+        "rise": 0,
+        "target": "M4 Test aimcap 2",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 6.499999999999982,
+        "kind": "cpu-aimed",
+        "name": "M4 Test aimcap 1",
+        "origin": {
+          "x": 5247.5,
+          "y": 577
+        },
+        "power": 39.16094023728531,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 7551.5,
+          "y": 577.9990234375
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.3916094023728531,
+          "speed": {
+            "current": 1223.499454928731,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "clock": 6.516666666666649,
+        "kind": "match-ready",
+        "phase": "turn",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 7.966666666666644,
+        "kind": "fire-request",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "power": 39.16094023728531,
+        "turn": 1
+      },
+      {
+        "clock": 7.966666666666644,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "vx": 865.144775390625,
+          "vy": -865.144775390625,
+          "x": 5272.5,
+          "y": 552.5
+        },
+        "turn": 1
+      },
+      {
+        "amount": 56.235185474509784,
+        "clock": 10.616666666666774,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "projectileId": 1,
+        "targetEntityId": 3,
+        "targetStableId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "turn": 1
+      },
+      {
+        "clock": 10.616666666666774,
+        "kind": "end",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "shooterResidency": "stored",
+        "turn": 1,
+        "x": 7530.90234375,
+        "y": 561.1234130859375
+      },
+      {
+        "clock": 13.616666666666925,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 7338.90234375,
+          "y": 433.1234130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 1,
+        "watchId": 1
+      },
+      {
+        "clock": 13.816666666666933,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "turn",
+        "name": "M4 Test aimcap 2",
+        "turn": 2
+      },
+      {
+        "clock": 13.816666666666933,
+        "distance": 2304,
+        "elevation": 1,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test aimcap 2",
+        "rise": 0,
+        "target": "M4 Test aimcap 1",
+        "turn": 2
+      },
+      {
+        "angle": 135,
+        "clock": 13.816666666666933,
+        "kind": "cpu-aimed",
+        "name": "M4 Test aimcap 2",
+        "origin": {
+          "x": 7551.5,
+          "y": 579.9998779296875
+        },
+        "power": 39.17912135878069,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 5247.5,
+          "y": 578.9998779296875
+        },
+        "turn": 2,
+        "weapon": {
+          "ammo": {},
+          "angle": -2.356194490192345,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.3917912135878068,
+          "speed": {
+            "current": 1224.030343676396,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "clock": 14.383333333333628,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 14.416666666666965,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 14.450000000000298,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 14.483333333333633,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 14.516666666666968,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "angle": 135,
+        "clock": 15.216666666667004,
+        "kind": "fire-request",
+        "owner": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "power": 39.17912135878069,
+        "turn": 2
+      },
+      {
+        "clock": 15.216666666667004,
+        "id": 2,
+        "kind": "launch",
+        "owner": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+          "vx": -865.5201416015625,
+          "vy": -865.5201416015625,
+          "x": 7525.5,
+          "y": 556.5
+        },
+        "turn": 2
+      },
+      {
+        "amount": 57.07940149183394,
+        "clock": 17.866666666666934,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "projectileId": 2,
+        "targetEntityId": 6,
+        "targetStableId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "turn": 2
+      },
+      {
+        "clock": 17.866666666666934,
+        "kind": "end",
+        "owner": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "shooterResidency": "stored",
+        "turn": 2,
+        "x": 5267.75,
+        "y": 562.5181274414062
+      },
+      {
+        "clock": 17.933333333333596,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 18.100000000000257,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 18.216666666666914,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 18.26666666666691,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 20.866666666666763,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 5075.75,
+          "y": 434.51812744140625
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 2,
+        "watchId": 2
+      },
+      {
+        "clock": 21.06666666666675,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "turn",
+        "name": "M4 Test aimcap 1",
+        "turn": 3
+      },
+      {
+        "clock": 21.06666666666675,
+        "distance": 2304,
+        "elevation": 0,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test aimcap 1",
+        "rise": 0,
+        "target": "M4 Test aimcap 2",
+        "turn": 3
+      },
+      {
+        "angle": 45,
+        "clock": 21.06666666666675,
+        "kind": "cpu-aimed",
+        "name": "M4 Test aimcap 1",
+        "origin": {
+          "x": 5247.5,
+          "y": 582
+        },
+        "power": 39.17002339939275,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 7551.5,
+          "y": 582
+        },
+        "turn": 3,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.39170023399392745,
+          "speed": {
+            "current": 1223.764683262268,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "clock": 21.28333333333341,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "angle": 45,
+        "clock": 22.483333333333334,
+        "kind": "fire-request",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "power": 39.17002339939275,
+        "turn": 3
+      },
+      {
+        "clock": 22.483333333333334,
+        "id": 3,
+        "kind": "launch",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "vx": 865.3323364257812,
+          "vy": -865.3323364257812,
+          "x": 5272.5,
+          "y": 559.5
+        },
+        "turn": 3
+      },
+      {
+        "clock": 24.216666666666573,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 24.26666666666657,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 24.2999999999999,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 24.333333333333233,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 24.366666666666564,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.16666666666652,
+        "killer": "M4 Test aimcap 1",
+        "kind": "eliminated",
+        "name": "M4 Test aimcap 2",
+        "reason": "destroyed",
+        "turn": 3
+      },
+      {
+        "amount": 57.978527915609845,
+        "clock": 25.16666666666652,
+        "direct": true,
+        "killed": true,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "projectileId": 3,
+        "targetEntityId": 9,
+        "targetStableId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "turn": 3
+      },
+      {
+        "clock": 25.16666666666652,
+        "kind": "end",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "shooterResidency": "stored",
+        "turn": 3,
+        "x": 7531.5,
+        "y": 569.2610473632812
+      },
+      {
+        "clock": 25.19999999999985,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.299999999999844,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.333333333333176,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.39999999999984,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.449999999999836,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.499999999999833,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.533333333333164,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.58333333333316,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.63333333333316,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.683333333333156,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.733333333333153,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.78333333333315,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.833333333333147,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.883333333333145,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.93333333333314,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.98333333333314,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 26.033333333333136,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 28.166666666666348,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 7339.5,
+          "y": 441.2610473632813
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 3,
+        "watchId": 3
+      },
+      {
+        "clock": 28.166666666666348,
+        "kind": "finished",
+        "turn": 3,
+        "winner": "M4 Test aimcap 1"
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "humans": 0,
+      "impact": {
+        "x": 7531.5,
+        "y": 569.2610473632812
+      },
+      "lastHit": "M4 Test aimcap 2 \u221258 HP \u00b7 ELIMINATED",
+      "message": "M4 Test aimcap 1 wins the match",
+      "phase": "finished",
+      "remaining": 18.566666666666748,
+      "roster": [
+        {
+          "aimedTurn": 3,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "index": 0,
+          "kills": 1,
+          "name": "M4 Test aimcap 1",
+          "plannedTurn": 3,
+          "shotFrom": {
+            "x": 5247.5,
+            "y": 585
+          },
+          "spawnX": 5248,
+          "surfaceY": 592,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead"
+        },
+        {
+          "aimedTurn": 2,
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": true,
+          "entityId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+          "index": 1,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "plannedTurn": 2,
+          "shotFrom": {
+            "x": 7551.5,
+            "y": 581.9998779296875
+          },
+          "spawnX": 7552,
+          "surfaceY": 592,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8"
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 3,
+      "turnSeconds": 20,
+      "version": 4,
+      "waitTicks": 161,
+      "winner": "M4 Test aimcap 1"
+    },
+    "paused": false,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 81,
+          "y": 9
+        },
+        "faction": null,
+        "health": 42.92059850816606,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 1",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 5247.5,
+        "y": 585
+      },
+      {
+        "alive": false,
+        "angle": 0,
+        "chunk": {
+          "x": 117,
+          "y": 9
+        },
+        "faction": null,
+        "health": 0,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 9,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 2",
+        "residency": "live",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 7551.5,
+        "y": 590.999755859375
+      }
+    ],
+    "scores": {
+      "matches": {
+        "431a92d8-0ebb-4197-96d7-ce04d6716b66": {
+          "seed": 0,
+          "winner": "M4 Test aimcap 1"
+        },
+        "9684759a-b4e6-4349-bd97-d95e7edf841e": {
+          "seed": 0,
+          "winner": "M4 Test resume-aiming 1"
+        }
+      },
+      "players": {
+        "m4 test aimcap 1": {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test aimcap 1",
+          "wins": 1
+        },
+        "m4 test aimcap 2": {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "wins": 0
+        },
+        "m4 test resume-aiming 1": {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "wins": 1
+        },
+        "m4 test resume-aiming 2": {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": true,
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 43,
+        "name": "M4 Test aimcap 1",
+        "power": 39.17002339939275
+      },
+      "finished": true,
+      "human": false,
+      "lastHit": "M4 Test aimcap 2 \u221258 HP \u00b7 ELIMINATED",
+      "phase": "finished",
+      "ready": false,
+      "remaining": 19,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 43,
+          "kills": 1,
+          "name": "M4 Test aimcap 1",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 0,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "status": "OUT"
+        }
+      ],
+      "scores": [
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "wins": 1
+        },
+        {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "wins": 0
+        },
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test aimcap 1",
+          "wins": 1
+        },
+        {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "wins": 0
+        }
+      ],
+      "seed": 0,
+      "shotDirection": "RIGHT \u2192",
+      "status": "M4 Test aimcap 1 wins the match",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M4 Test aimcap 2",
+      "turnNumber": 3,
+      "turnSeconds": 20,
+      "winner": "M4 Test aimcap 1"
+    },
+    "worldId": "431a92d8-0ebb-4197-96d7-ce04d6716b66"
+  },
+  "preferencesBefore": {
+    "computers": 2,
+    "humans": 0,
+    "namesText": "M4 Test aimcap 1\nM4 Test aimcap 2",
+    "turnSeconds": 20
+  },
+  "after": {
+    "clock": 43.86666666666546,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8833333333333315,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.049999999999994,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 1",
+        "turn": 0
+      },
+      {
+        "clock": 4.9166666666666545,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.06666666666665,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 2",
+        "turn": 0
+      },
+      {
+        "clock": 6.16666666666665,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 6.21666666666665,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.483333333333316,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "turn",
+        "name": "M4 Test aimcap 1",
+        "turn": 1
+      },
+      {
+        "clock": 6.499999999999982,
+        "distance": 2304,
+        "elevation": -0.9990234375,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test aimcap 1",
+        "rise": 0,
+        "target": "M4 Test aimcap 2",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 6.499999999999982,
+        "kind": "cpu-aimed",
+        "name": "M4 Test aimcap 1",
+        "origin": {
+          "x": 5247.5,
+          "y": 577
+        },
+        "power": 39.16094023728531,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 7551.5,
+          "y": 577.9990234375
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.3916094023728531,
+          "speed": {
+            "current": 1223.499454928731,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "clock": 6.516666666666649,
+        "kind": "match-ready",
+        "phase": "turn",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 7.966666666666644,
+        "kind": "fire-request",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "power": 39.16094023728531,
+        "turn": 1
+      },
+      {
+        "clock": 7.966666666666644,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "vx": 865.144775390625,
+          "vy": -865.144775390625,
+          "x": 5272.5,
+          "y": 552.5
+        },
+        "turn": 1
+      },
+      {
+        "amount": 56.235185474509784,
+        "clock": 10.616666666666774,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "projectileId": 1,
+        "targetEntityId": 3,
+        "targetStableId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "turn": 1
+      },
+      {
+        "clock": 10.616666666666774,
+        "kind": "end",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "shooterResidency": "stored",
+        "turn": 1,
+        "x": 7530.90234375,
+        "y": 561.1234130859375
+      },
+      {
+        "clock": 13.616666666666925,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 7338.90234375,
+          "y": 433.1234130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 1,
+        "watchId": 1
+      },
+      {
+        "clock": 13.816666666666933,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "turn",
+        "name": "M4 Test aimcap 2",
+        "turn": 2
+      },
+      {
+        "clock": 13.816666666666933,
+        "distance": 2304,
+        "elevation": 1,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test aimcap 2",
+        "rise": 0,
+        "target": "M4 Test aimcap 1",
+        "turn": 2
+      },
+      {
+        "angle": 135,
+        "clock": 13.816666666666933,
+        "kind": "cpu-aimed",
+        "name": "M4 Test aimcap 2",
+        "origin": {
+          "x": 7551.5,
+          "y": 579.9998779296875
+        },
+        "power": 39.17912135878069,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 5247.5,
+          "y": 578.9998779296875
+        },
+        "turn": 2,
+        "weapon": {
+          "ammo": {},
+          "angle": -2.356194490192345,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.3917912135878068,
+          "speed": {
+            "current": 1224.030343676396,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "clock": 14.383333333333628,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 14.416666666666965,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 14.450000000000298,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 14.483333333333633,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 14.516666666666968,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "angle": 135,
+        "clock": 15.216666666667004,
+        "kind": "fire-request",
+        "owner": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "power": 39.17912135878069,
+        "turn": 2
+      },
+      {
+        "clock": 15.216666666667004,
+        "id": 2,
+        "kind": "launch",
+        "owner": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+          "vx": -865.5201416015625,
+          "vy": -865.5201416015625,
+          "x": 7525.5,
+          "y": 556.5
+        },
+        "turn": 2
+      },
+      {
+        "amount": 57.07940149183394,
+        "clock": 17.866666666666934,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "projectileId": 2,
+        "targetEntityId": 6,
+        "targetStableId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "turn": 2
+      },
+      {
+        "clock": 17.866666666666934,
+        "kind": "end",
+        "owner": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "shooterResidency": "stored",
+        "turn": 2,
+        "x": 5267.75,
+        "y": 562.5181274414062
+      },
+      {
+        "clock": 17.933333333333596,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 18.100000000000257,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 18.216666666666914,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 18.26666666666691,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 20.866666666666763,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 5075.75,
+          "y": 434.51812744140625
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 2,
+        "watchId": 2
+      },
+      {
+        "clock": 21.06666666666675,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "turn",
+        "name": "M4 Test aimcap 1",
+        "turn": 3
+      },
+      {
+        "clock": 21.06666666666675,
+        "distance": 2304,
+        "elevation": 0,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test aimcap 1",
+        "rise": 0,
+        "target": "M4 Test aimcap 2",
+        "turn": 3
+      },
+      {
+        "angle": 45,
+        "clock": 21.06666666666675,
+        "kind": "cpu-aimed",
+        "name": "M4 Test aimcap 1",
+        "origin": {
+          "x": 5247.5,
+          "y": 582
+        },
+        "power": 39.17002339939275,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 7551.5,
+          "y": 582
+        },
+        "turn": 3,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.39170023399392745,
+          "speed": {
+            "current": 1223.764683262268,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "clock": 21.28333333333341,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "angle": 45,
+        "clock": 22.483333333333334,
+        "kind": "fire-request",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "power": 39.17002339939275,
+        "turn": 3
+      },
+      {
+        "clock": 22.483333333333334,
+        "id": 3,
+        "kind": "launch",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "vx": 865.3323364257812,
+          "vy": -865.3323364257812,
+          "x": 5272.5,
+          "y": 559.5
+        },
+        "turn": 3
+      },
+      {
+        "clock": 24.216666666666573,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 24.26666666666657,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 24.2999999999999,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 24.333333333333233,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 24.366666666666564,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.16666666666652,
+        "killer": "M4 Test aimcap 1",
+        "kind": "eliminated",
+        "name": "M4 Test aimcap 2",
+        "reason": "destroyed",
+        "turn": 3
+      },
+      {
+        "amount": 57.978527915609845,
+        "clock": 25.16666666666652,
+        "direct": true,
+        "killed": true,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "projectileId": 3,
+        "targetEntityId": 9,
+        "targetStableId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "turn": 3
+      },
+      {
+        "clock": 25.16666666666652,
+        "kind": "end",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "shooterResidency": "stored",
+        "turn": 3,
+        "x": 7531.5,
+        "y": 569.2610473632812
+      },
+      {
+        "clock": 25.19999999999985,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.299999999999844,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.333333333333176,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.39999999999984,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.449999999999836,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.499999999999833,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.533333333333164,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.58333333333316,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.63333333333316,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.683333333333156,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.733333333333153,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.78333333333315,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.833333333333147,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.883333333333145,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.93333333333314,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 25.98333333333314,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 26.033333333333136,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 28.166666666666348,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 7339.5,
+          "y": 441.2610473632813
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 3,
+        "watchId": 3
+      },
+      {
+        "clock": 28.166666666666348,
+        "kind": "finished",
+        "turn": 3,
+        "winner": "M4 Test aimcap 1"
+      },
+      {
+        "clock": 43.78333333333213,
+        "kind": "match-ready",
+        "phase": "finished",
+        "turn": 3
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "humans": 0,
+      "impact": {
+        "x": 7531.5,
+        "y": 569.2610473632812
+      },
+      "lastHit": "M4 Test aimcap 2 \u221258 HP \u00b7 ELIMINATED",
+      "message": "M4 Test aimcap 1 wins the match",
+      "phase": "finished",
+      "remaining": 18.566666666666748,
+      "roster": [
+        {
+          "aimedTurn": 3,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "index": 0,
+          "kills": 1,
+          "name": "M4 Test aimcap 1",
+          "plannedTurn": 3,
+          "shotFrom": {
+            "x": 5247.5,
+            "y": 585
+          },
+          "spawnX": 5248,
+          "surfaceY": 592,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead"
+        },
+        {
+          "aimedTurn": 2,
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": true,
+          "entityId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+          "index": 1,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "plannedTurn": 2,
+          "shotFrom": {
+            "x": 7551.5,
+            "y": 581.9998779296875
+          },
+          "spawnX": 7552,
+          "surfaceY": 592,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8"
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 3,
+      "turnSeconds": 20,
+      "version": 4,
+      "waitTicks": 161,
+      "winner": "M4 Test aimcap 1"
+    },
+    "paused": false,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 81,
+          "y": 9
+        },
+        "faction": null,
+        "health": 42.92059850816606,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 1",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 5247.5,
+        "y": 585
+      },
+      {
+        "alive": false,
+        "angle": 0,
+        "chunk": {
+          "x": 117,
+          "y": 9
+        },
+        "faction": null,
+        "health": 0,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 2",
+        "residency": "live",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 7551.5,
+        "y": 588.9998779296875
+      }
+    ],
+    "scores": {
+      "matches": {
+        "431a92d8-0ebb-4197-96d7-ce04d6716b66": {
+          "seed": 0,
+          "winner": "M4 Test aimcap 1"
+        },
+        "9684759a-b4e6-4349-bd97-d95e7edf841e": {
+          "seed": 0,
+          "winner": "M4 Test resume-aiming 1"
+        }
+      },
+      "players": {
+        "m4 test aimcap 1": {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test aimcap 1",
+          "wins": 1
+        },
+        "m4 test aimcap 2": {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "wins": 0
+        },
+        "m4 test resume-aiming 1": {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "wins": 1
+        },
+        "m4 test resume-aiming 2": {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": true,
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 43,
+        "name": "M4 Test aimcap 1",
+        "power": 39.17002339939275
+      },
+      "finished": true,
+      "human": false,
+      "lastHit": "M4 Test aimcap 2 \u221258 HP \u00b7 ELIMINATED",
+      "phase": "finished",
+      "ready": false,
+      "remaining": 19,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 43,
+          "kills": 1,
+          "name": "M4 Test aimcap 1",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 0,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "status": "OUT"
+        }
+      ],
+      "scores": [
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "wins": 1
+        },
+        {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "wins": 0
+        },
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test aimcap 1",
+          "wins": 1
+        },
+        {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "wins": 0
+        }
+      ],
+      "seed": 0,
+      "shotDirection": "RIGHT \u2192",
+      "status": "M4 Test aimcap 1 wins the match",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M4 Test aimcap 2",
+      "turnNumber": 3,
+      "turnSeconds": 20,
+      "winner": "M4 Test aimcap 1"
+    },
+    "worldId": "431a92d8-0ebb-4197-96d7-ce04d6716b66"
+  },
+  "preferencesAfter": {
+    "computers": 2,
+    "humans": 0,
+    "namesText": "M4 Test aimcap 1\nM4 Test aimcap 2",
+    "turnSeconds": 20
+  },
+  "checks": [
+    {
+      "name": "completed roster and winner retained",
+      "passed": true
+    },
+    {
+      "name": "score ledger unchanged by reopening",
+      "passed": true
+    },
+    {
+      "name": "remembered settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "scoreboard restored without fault",
+      "passed": true
+    }
+  ],
+  "accepted": true
+}

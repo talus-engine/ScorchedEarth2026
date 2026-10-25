@@ -1,0 +1,30 @@
+{
+  "scope": "NPC death inventory policy and reported pale bar pickups",
+  "release": {
+    "installedBy": "assistant",
+    "version": "0.0.2527",
+    "commit": "2b8743367",
+    "sha256": "da3da03bf6fe53ef9a7ef759751a1e933796a9e6a6e5262f604ccac9946d5cff",
+    "rollback": "/private/tmp/indigo-m9-collapse/Talus-2522.app",
+    "accepted": false
+  },
+  "sourceCommit": "2b87433674223bbaac97ee11c1e102a9b1f43959",
+  "accepted": true,
+  "checks": {
+    "savedPolicyFalse": true,
+    "nativeDeath": true,
+    "inventoryExact": true,
+    "noWeaponPickupEntities": true
+  },
+  "packagedWorker": true,
+  "packagedLoopback": true,
+  "typeErrors": 0,
+  "fullRegression": {
+    "passed": 13928,
+    "expectedFail": 1,
+    "skipped": 17
+  },
+  "signature": "codesign --verify --deep --strict passed outside sandbox",
+  "notarized": false,
+  "fullM9Accepted": false
+}

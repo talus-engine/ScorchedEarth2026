@@ -1,0 +1,224 @@
+{
+  "birth": {
+    "wall": 1.4499993994832039e-05,
+    "done": 0.041695832973346114
+  },
+  "mid": {
+    "wall": 0.29644462501164526,
+    "done": 0.3233349170186557
+  },
+  "expired": {
+    "wall": 1.1317039579735138,
+    "done": 1.1711480829981156
+  },
+  "result": {
+    "error": null,
+    "logs": [],
+    "ms": 15100,
+    "ok": true,
+    "value": {
+      "a": {
+        "alive": false,
+        "angle": -3.64572333637625e-05,
+        "chunk": {
+          "x": 102,
+          "y": 6
+        },
+        "faction": null,
+        "health": 0,
+        "id": "instance@spawn-776b173e-4d45-4606-8204-c00e6537554a",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 15,
+        "maxHealth": 100,
+        "name": "Edis Redfield",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "vx": 0,
+        "vy": 0,
+        "x": 6589.45849609375,
+        "y": 387.8782348632813
+      },
+      "b": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 104,
+          "y": 6
+        },
+        "faction": null,
+        "health": 83.50610384374869,
+        "id": "instance@spawn-faac5d07-3a52-45c4-8f02-158f2ebe2a54",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 17,
+        "maxHealth": 100,
+        "name": "Garon Goldmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+        "vx": 0,
+        "vy": 0,
+        "x": 6659.5,
+        "y": 385.4999084472656
+      },
+      "damage": [
+        {
+          "amount": 15,
+          "amountAbsorbed": 0,
+          "amountRequested": 39.17298439255675,
+          "baseAmount": 41.23472041321763,
+          "blocked": false,
+          "category": "explosive",
+          "crit": false,
+          "killed": true,
+          "sourceEntityId": "0",
+          "sourceStableId": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+          "targetEntityId": "15",
+          "targetStableId": "instance@spawn-776b173e-4d45-4606-8204-c00e6537554a",
+          "type": "blast",
+          "x": 6589.5,
+          "y": 385.4999084472656
+        },
+        {
+          "amount": 16.49389615625131,
+          "amountAbsorbed": 0,
+          "amountRequested": 16.49389615625131,
+          "baseAmount": 17.36199595394875,
+          "blocked": false,
+          "category": "explosive",
+          "crit": false,
+          "killed": false,
+          "sourceEntityId": "15",
+          "sourceStableId": "instance@spawn-776b173e-4d45-4606-8204-c00e6537554a",
+          "targetEntityId": "17",
+          "targetStableId": "instance@spawn-faac5d07-3a52-45c4-8f02-158f2ebe2a54",
+          "type": "blast",
+          "x": 6659.5,
+          "y": 385.4999084472656
+        }
+      ],
+      "events": [
+        {
+          "entityId": 19,
+          "event": "launch",
+          "kind": "rigid-body",
+          "ownerEntityId": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+          "projectileId": 4,
+          "vx": 300,
+          "vy": 0,
+          "weaponTemplateId": null,
+          "x": 6564.5,
+          "y": 385.4999084472656
+        },
+        {
+          "cause": "body",
+          "event": "detonate",
+          "kind": "rigid-body",
+          "ownerEntityId": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+          "projectileId": 4,
+          "targetEntityId": 15,
+          "targetStableId": "instance@spawn-776b173e-4d45-4606-8204-c00e6537554a",
+          "x": 6571.5,
+          "y": 383.503173828125
+        },
+        {
+          "entityId": 20,
+          "event": "launch",
+          "kind": "rigid-body",
+          "ownerEntityId": "instance@spawn-776b173e-4d45-4606-8204-c00e6537554a",
+          "projectileId": 5,
+          "vx": 300,
+          "vy": 0,
+          "weaponTemplateId": null,
+          "x": 6634.5,
+          "y": 385.4999084472656
+        },
+        {
+          "amount": 15,
+          "direct": true,
+          "event": "hit",
+          "killed": true,
+          "kind": "rigid-body",
+          "ownerEntityId": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+          "projectileId": 4,
+          "targetEntityId": 15,
+          "targetStableId": "instance@spawn-776b173e-4d45-4606-8204-c00e6537554a"
+        },
+        {
+          "event": "end",
+          "kind": "rigid-body",
+          "ownerEntityId": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+          "projectileId": 4,
+          "reason": "detonated",
+          "x": 6571.5,
+          "y": 383.503173828125
+        },
+        {
+          "cause": "body",
+          "event": "detonate",
+          "kind": "rigid-body",
+          "ownerEntityId": "instance@spawn-776b173e-4d45-4606-8204-c00e6537554a",
+          "projectileId": 5,
+          "targetEntityId": 17,
+          "targetStableId": "instance@spawn-faac5d07-3a52-45c4-8f02-158f2ebe2a54",
+          "x": 6641.5,
+          "y": 383.5032348632813
+        },
+        {
+          "amount": 16.49389615625131,
+          "direct": true,
+          "event": "hit",
+          "killed": false,
+          "kind": "rigid-body",
+          "ownerEntityId": "instance@spawn-776b173e-4d45-4606-8204-c00e6537554a",
+          "projectileId": 5,
+          "targetEntityId": 17,
+          "targetStableId": "instance@spawn-faac5d07-3a52-45c4-8f02-158f2ebe2a54"
+        },
+        {
+          "event": "end",
+          "kind": "rigid-body",
+          "ownerEntityId": "instance@spawn-776b173e-4d45-4606-8204-c00e6537554a",
+          "projectileId": 5,
+          "reason": "detonated",
+          "x": 6641.5,
+          "y": 383.5032348632813
+        }
+      ],
+      "shots": [
+        4,
+        5
+      ],
+      "view": {
+        "frame": null,
+        "loadedBounds": {
+          "h": 1472,
+          "w": 2240,
+          "x": 5248,
+          "y": -320
+        },
+        "simulationBounds": {
+          "h": 1344,
+          "w": 2112,
+          "x": 5312,
+          "y": -256
+        },
+        "targetSimulationBounds": {
+          "h": 1344,
+          "w": 2112,
+          "x": 5312,
+          "y": -256
+        },
+        "viewport": {
+          "h": 968,
+          "w": 1600,
+          "x": 5599.09656349836,
+          "y": -83.6816353606108
+        },
+        "zoom": 0.25
+      }
+    }
+  }
+}

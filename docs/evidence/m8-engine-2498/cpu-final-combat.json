@@ -1,0 +1,5776 @@
+{
+  "clock": 50.48333333333175,
+  "error": "",
+  "events": [
+    {
+      "clock": 1.866666666666665,
+      "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 3.0666666666666607,
+      "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "kind": "deployed",
+      "name": "M8 Release A",
+      "turn": 0
+    },
+    {
+      "clock": 4.9166666666666545,
+      "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 6.06666666666665,
+      "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "kind": "deployed",
+      "name": "M8 Release B",
+      "turn": 0
+    },
+    {
+      "clock": 6.06666666666665,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 420,
+      "clock": 6.06666666666665,
+      "item": "ricochet",
+      "kind": "purchase",
+      "name": "M8 Release A",
+      "price": 180,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 240,
+      "clock": 6.06666666666665,
+      "item": "jetpack",
+      "kind": "purchase",
+      "name": "M8 Release A",
+      "price": 180,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 150,
+      "clock": 6.06666666666665,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Release A",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 420,
+      "clock": 6.06666666666665,
+      "item": "sand",
+      "kind": "purchase",
+      "name": "M8 Release B",
+      "price": 180,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 200,
+      "clock": 6.06666666666665,
+      "item": "digger",
+      "kind": "purchase",
+      "name": "M8 Release B",
+      "price": 220,
+      "quantity": 5,
+      "turn": 0
+    },
+    {
+      "cash": 110,
+      "clock": 6.06666666666665,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Release B",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 6.483333333333316,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 10,
+      "turn": 1
+    },
+    {
+      "clock": 6.483333333333316,
+      "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "kind": "turn",
+      "name": "M8 Release A",
+      "turn": 1
+    },
+    {
+      "clock": 6.483333333333316,
+      "fuel": 6,
+      "held": true,
+      "item": "jetpack",
+      "kind": "utility",
+      "name": "M8 Release A",
+      "turn": 1
+    },
+    {
+      "clock": 7.1666666666666465,
+      "distance": 1152,
+      "elevation": -97.40283203125,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Release A",
+      "rise": 0,
+      "target": "M8 Release B",
+      "turn": 1
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 7.1666666666666465,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 13,
+      "turn": 1
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 7.1666666666666465,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 16,
+      "turn": 1
+    },
+    {
+      "angle": 45,
+      "clock": 7.1666666666666465,
+      "kind": "cpu-aimed",
+      "name": "M8 Release A",
+      "origin": {
+        "x": 5823.5,
+        "y": 585.09716796875
+      },
+      "power": 25.716353305062732,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 6975.5,
+        "y": 682.5
+      },
+      "turn": 1,
+      "weapon": {
+        "ammo": {
+          "2f1afa7e-f704-448b-a915-e87fff3e0427": 3,
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "a5ba2656-b214-450c-9618-fcb6778f7529": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -0.7853981633974483,
+        "equipped": "2f1afa7e-f704-448b-a915-e87fff3e0427",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7",
+          "2f1afa7e-f704-448b-a915-e87fff3e0427",
+          "a5ba2656-b214-450c-9618-fcb6778f7529"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.25716353305062734,
+        "speed": {
+          "current": 830.9175165078318,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "clock": 7.816666666666644,
+      "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "kind": "land",
+      "turn": 1
+    },
+    {
+      "angle": 45,
+      "clock": 8.566666666666672,
+      "kind": "fire-request",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "power": 25.716353305062732,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 8.566666666666672,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 36,
+      "turn": 1
+    },
+    {
+      "clock": 8.566666666666672,
+      "item": "ricochet",
+      "kind": "ammo-spent",
+      "name": "M8 Release A",
+      "remaining": 2,
+      "turn": 1
+    },
+    {
+      "clock": 8.566666666666672,
+      "id": "shooting-371",
+      "kind": "quip",
+      "name": "M8 Release A",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "speechKind": "shooting",
+      "text": "This is for the scratch on my paint.",
+      "turn": 1
+    },
+    {
+      "clock": 8.566666666666672,
+      "id": 1,
+      "kind": "launch",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 1,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "vx": 587.5474243164062,
+        "vy": -587.5474243164062,
+        "x": 5848.5,
+        "y": 626.5
+      },
+      "turn": 1,
+      "weapon": "ricochet"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 10.483333333333434,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 51,
+      "turn": 1
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 10.483333333333434,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 71,
+      "turn": 1
+    },
+    {
+      "action": "damage",
+      "amount": 220,
+      "clock": 10.483333333333434,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 291,
+      "turn": 1
+    },
+    {
+      "action": "hurt",
+      "amount": 73,
+      "clock": 10.483333333333434,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 73,
+      "turn": 1
+    },
+    {
+      "amount": 73.48997538572957,
+      "clock": 10.483333333333434,
+      "direct": true,
+      "killed": false,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "projectileId": 1,
+      "targetEntityId": 2,
+      "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "turn": 1
+    },
+    {
+      "clock": 10.483333333333434,
+      "kind": "end",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "shooterResidency": "live",
+      "turn": 1,
+      "x": 6957.5,
+      "y": 693.9930419921875
+    },
+    {
+      "clock": 13.483333333333585,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6765.5,
+        "y": 565.9930419921875
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 1,
+      "watchId": 1
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 13.683333333333591,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 83,
+      "turn": 2
+    },
+    {
+      "clock": 13.683333333333591,
+      "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "kind": "turn",
+      "name": "M8 Release B",
+      "turn": 2
+    },
+    {
+      "clock": 14.30000000000029,
+      "item": "digger",
+      "kind": "utility",
+      "name": "M8 Release B",
+      "receipt": {
+        "accepted": 45,
+        "added": 0,
+        "evaluated": 252,
+        "id": 7,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 45,
+        "skipped": 207,
+        "status": "completed",
+        "work": 45
+      },
+      "remaining": 4.994375,
+      "seconds": 0.005625,
+      "turn": 2
+    },
+    {
+      "action": "utility",
+      "amount": 15,
+      "clock": 14.333333333333623,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 98,
+      "turn": 2
+    },
+    {
+      "clock": 14.333333333333623,
+      "healed": 30,
+      "item": "battery",
+      "kind": "utility",
+      "name": "M8 Release B",
+      "turn": 2
+    },
+    {
+      "clock": 14.333333333333623,
+      "distance": 1132.078125,
+      "elevation": 44,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Release B",
+      "rise": 0,
+      "target": "M8 Release A",
+      "turn": 2
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 14.333333333333623,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 101,
+      "turn": 2
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 14.333333333333623,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 104,
+      "turn": 2
+    },
+    {
+      "angle": 135,
+      "clock": 14.333333333333623,
+      "kind": "cpu-aimed",
+      "name": "M8 Release B",
+      "origin": {
+        "x": 6955.578125,
+        "y": 696.5
+      },
+      "power": 27.225681325807084,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 5823.5,
+        "y": 652.5
+      },
+      "turn": 2,
+      "weapon": {
+        "ammo": {
+          "2f1afa7e-f704-448b-a915-e87fff3e0427": 0,
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "a5ba2656-b214-450c-9618-fcb6778f7529": 3,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -2.356194490192345,
+        "equipped": "a5ba2656-b214-450c-9618-fcb6778f7529",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7",
+          "2f1afa7e-f704-448b-a915-e87fff3e0427",
+          "a5ba2656-b214-450c-9618-fcb6778f7529"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.27225681325807083,
+        "speed": {
+          "current": 874.9898947135669,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 135,
+      "clock": 15.733333333333697,
+      "kind": "fire-request",
+      "owner": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "power": 27.225681325807084,
+      "turn": 2
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 15.733333333333697,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 124,
+      "turn": 2
+    },
+    {
+      "clock": 15.733333333333697,
+      "item": "sand",
+      "kind": "ammo-spent",
+      "name": "M8 Release B",
+      "remaining": 2,
+      "turn": 2
+    },
+    {
+      "clock": 15.733333333333697,
+      "id": "shooting-246",
+      "kind": "quip",
+      "name": "M8 Release B",
+      "owner": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "speechKind": "shooting",
+      "text": "I am implementing the loud option.",
+      "turn": 2
+    },
+    {
+      "clock": 15.733333333333697,
+      "id": 2,
+      "kind": "launch",
+      "owner": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 2,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "vx": -618.7113037109375,
+        "vy": -618.7113037109375,
+        "x": 6929.5,
+        "y": 670.5
+      },
+      "turn": 2,
+      "weapon": "sand"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 17.56666666666695,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 139,
+      "turn": 2
+    },
+    {
+      "clock": 17.56666666666695,
+      "kind": "end",
+      "owner": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "shooterResidency": "live",
+      "turn": 2,
+      "x": 5813.34619140625,
+      "y": 636.3734130859375
+    },
+    {
+      "clock": 19.61666666666683,
+      "kind": "sand-bank",
+      "receipt": {
+        "accepted": 8156,
+        "added": 8156,
+        "evaluated": 16641,
+        "id": 8,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4714,
+        "status": "completed",
+        "work": 8156
+      },
+      "shot": 2,
+      "turn": 2,
+      "x": 5813.34619140625,
+      "y": 612.3734130859375
+    },
+    {
+      "clock": 22.616666666666664,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 5621.34619140625,
+        "y": 508.3734130859375
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 2,
+      "watchId": 2
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 22.816666666666652,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 301,
+      "turn": 3
+    },
+    {
+      "clock": 22.816666666666652,
+      "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "kind": "turn",
+      "name": "M8 Release A",
+      "turn": 3
+    },
+    {
+      "clock": 22.816666666666652,
+      "fuel": 5.3333333333333215,
+      "held": true,
+      "item": "jetpack",
+      "kind": "utility",
+      "name": "M8 Release A",
+      "turn": 3
+    },
+    {
+      "clock": 23.48333333333328,
+      "distance": 1132.078125,
+      "elevation": -113.5833740234375,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Release A",
+      "rise": 0,
+      "target": "M8 Release B",
+      "turn": 3
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 23.48333333333328,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 304,
+      "turn": 3
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 23.48333333333328,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 307,
+      "turn": 3
+    },
+    {
+      "angle": 45,
+      "clock": 23.48333333333328,
+      "kind": "cpu-aimed",
+      "name": "M8 Release A",
+      "origin": {
+        "x": 5823.5,
+        "y": 582.9166259765625
+      },
+      "power": 25.266217245947708,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 6955.578125,
+        "y": 696.5
+      },
+      "turn": 3,
+      "weapon": {
+        "ammo": {
+          "2f1afa7e-f704-448b-a915-e87fff3e0427": 2,
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "a5ba2656-b214-450c-9618-fcb6778f7529": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -0.7853981633974483,
+        "equipped": "2f1afa7e-f704-448b-a915-e87fff3e0427",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7",
+          "2f1afa7e-f704-448b-a915-e87fff3e0427",
+          "a5ba2656-b214-450c-9618-fcb6778f7529"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.2526621724594771,
+        "speed": {
+          "current": 817.773543581673,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "clock": 23.68333333333327,
+      "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "kind": "land",
+      "turn": 3
+    },
+    {
+      "angle": 45,
+      "clock": 24.899999999999867,
+      "kind": "fire-request",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "power": 25.266217245947708,
+      "turn": 3
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 24.899999999999867,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 327,
+      "turn": 3
+    },
+    {
+      "clock": 24.899999999999867,
+      "item": "ricochet",
+      "kind": "ammo-spent",
+      "name": "M8 Release A",
+      "remaining": 1,
+      "turn": 3
+    },
+    {
+      "clock": 24.899999999999867,
+      "id": "shooting-168",
+      "kind": "quip",
+      "name": "M8 Release A",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "speechKind": "shooting",
+      "text": "This should tenderize the hillside.",
+      "turn": 3
+    },
+    {
+      "clock": 24.899999999999867,
+      "id": 3,
+      "kind": "launch",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 3,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "vx": 578.2532348632812,
+        "vy": -578.2532348632812,
+        "x": 5848.5,
+        "y": 553.5
+      },
+      "turn": 3,
+      "weapon": "ricochet"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 26.899999999999753,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 342,
+      "turn": 3
+    },
+    {
+      "action": "bounce",
+      "amount": 5,
+      "clock": 26.899999999999753,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 347,
+      "turn": 3
+    },
+    {
+      "action": "bounce",
+      "amount": 5,
+      "clock": 26.91666666666642,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 352,
+      "turn": 3
+    },
+    {
+      "action": "bounce",
+      "amount": 5,
+      "clock": 27.099999999999746,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 357,
+      "turn": 3
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 28.89999999999964,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 377,
+      "turn": 3
+    },
+    {
+      "action": "damage",
+      "amount": 162,
+      "clock": 28.89999999999964,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 539,
+      "turn": 3
+    },
+    {
+      "action": "hurt",
+      "amount": 54,
+      "clock": 28.89999999999964,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 193,
+      "turn": 3
+    },
+    {
+      "amount": 54.07733391485407,
+      "clock": 28.89999999999964,
+      "direct": false,
+      "killed": false,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "projectileId": 3,
+      "targetEntityId": 2,
+      "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "turn": 3
+    },
+    {
+      "clock": 28.89999999999964,
+      "kind": "end",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "shooterResidency": "live",
+      "turn": 3,
+      "x": 7001.025390625,
+      "y": 704.1859130859375
+    },
+    {
+      "clock": 31.883333333332804,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6809.025390625,
+        "y": 576.1859130859375
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 3,
+      "watchId": 3
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 32.083333333332796,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 203,
+      "turn": 4
+    },
+    {
+      "clock": 32.083333333332796,
+      "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "kind": "turn",
+      "name": "M8 Release B",
+      "turn": 4
+    },
+    {
+      "clock": 32.09999999999946,
+      "item": "digger",
+      "kind": "utility",
+      "name": "M8 Release B",
+      "receipt": {
+        "accepted": 59,
+        "added": 0,
+        "evaluated": 252,
+        "id": 9,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 59,
+        "skipped": 193,
+        "status": "completed",
+        "work": 59
+      },
+      "remaining": 4.987,
+      "seconds": 0.007375,
+      "turn": 4
+    },
+    {
+      "clock": 32.21666666666612,
+      "item": "digger",
+      "kind": "utility",
+      "name": "M8 Release B",
+      "receipt": {
+        "accepted": 75,
+        "added": 0,
+        "evaluated": 252,
+        "id": 10,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 75,
+        "skipped": 177,
+        "status": "completed",
+        "work": 75
+      },
+      "remaining": 4.977625,
+      "seconds": 0.009375,
+      "turn": 4
+    },
+    {
+      "clock": 32.33333333333278,
+      "item": "digger",
+      "kind": "utility",
+      "name": "M8 Release B",
+      "receipt": {
+        "accepted": 48,
+        "added": 0,
+        "evaluated": 252,
+        "id": 11,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 48,
+        "skipped": 204,
+        "status": "completed",
+        "work": 48
+      },
+      "remaining": 4.9716249999999995,
+      "seconds": 0.006,
+      "turn": 4
+    },
+    {
+      "clock": 32.46666666666611,
+      "item": "digger",
+      "kind": "utility",
+      "name": "M8 Release B",
+      "receipt": {
+        "accepted": 75,
+        "added": 0,
+        "evaluated": 252,
+        "id": 12,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 75,
+        "skipped": 177,
+        "status": "completed",
+        "work": 75
+      },
+      "remaining": 4.962249999999999,
+      "seconds": 0.009375,
+      "turn": 4
+    },
+    {
+      "clock": 32.5666666666661,
+      "item": "digger",
+      "kind": "utility",
+      "name": "M8 Release B",
+      "receipt": {
+        "accepted": 69,
+        "added": 0,
+        "evaluated": 252,
+        "id": 13,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 69,
+        "skipped": 183,
+        "status": "completed",
+        "work": 69
+      },
+      "remaining": 4.953624999999999,
+      "seconds": 0.008625,
+      "turn": 4
+    },
+    {
+      "clock": 32.68333333333276,
+      "item": "digger",
+      "kind": "utility",
+      "name": "M8 Release B",
+      "receipt": {
+        "accepted": 115,
+        "added": 0,
+        "evaluated": 252,
+        "id": 14,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 115,
+        "skipped": 137,
+        "status": "completed",
+        "work": 115
+      },
+      "remaining": 4.939249999999999,
+      "seconds": 0.014375,
+      "turn": 4
+    },
+    {
+      "action": "utility",
+      "amount": 15,
+      "clock": 32.749999999999424,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 218,
+      "turn": 4
+    },
+    {
+      "clock": 32.749999999999424,
+      "healed": 30,
+      "item": "battery",
+      "kind": "utility",
+      "name": "M8 Release B",
+      "turn": 4
+    },
+    {
+      "clock": 32.749999999999424,
+      "distance": 1112.73974609375,
+      "elevation": 123,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Release B",
+      "rise": 7.5,
+      "target": "M8 Release A",
+      "turn": 4
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 32.749999999999424,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 221,
+      "turn": 4
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 32.749999999999424,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 224,
+      "turn": 4
+    },
+    {
+      "angle": 135,
+      "clock": 32.749999999999424,
+      "kind": "cpu-aimed",
+      "name": "M8 Release B",
+      "origin": {
+        "x": 6936.23974609375,
+        "y": 716.5
+      },
+      "power": 28.142380895047346,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 5823.5,
+        "y": 593.5
+      },
+      "turn": 4,
+      "weapon": {
+        "ammo": {
+          "2f1afa7e-f704-448b-a915-e87fff3e0427": 0,
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "a5ba2656-b214-450c-9618-fcb6778f7529": 2,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -2.356194490192345,
+        "equipped": "a5ba2656-b214-450c-9618-fcb6778f7529",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7",
+          "2f1afa7e-f704-448b-a915-e87fff3e0427",
+          "a5ba2656-b214-450c-9618-fcb6778f7529"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.2814238089504735,
+        "speed": {
+          "current": 901.7575221353826,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 135,
+      "clock": 34.16666666666601,
+      "kind": "fire-request",
+      "owner": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "power": 28.142380895047346,
+      "turn": 4
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 34.16666666666601,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 244,
+      "turn": 4
+    },
+    {
+      "clock": 34.16666666666601,
+      "item": "sand",
+      "kind": "ammo-spent",
+      "name": "M8 Release B",
+      "remaining": 1,
+      "turn": 4
+    },
+    {
+      "clock": 34.16666666666601,
+      "id": "shooting-095",
+      "kind": "quip",
+      "name": "M8 Release B",
+      "owner": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "speechKind": "shooting",
+      "text": "Please hold still for the control group.",
+      "turn": 4
+    },
+    {
+      "clock": 34.16666666666601,
+      "id": 4,
+      "kind": "launch",
+      "owner": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 4,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "vx": -637.6388549804688,
+        "vy": -637.6388549804688,
+        "x": 6910.5,
+        "y": 687.5
+      },
+      "turn": 4,
+      "weapon": "sand"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 35.93333333333258,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 259,
+      "turn": 4
+    },
+    {
+      "clock": 35.93333333333258,
+      "kind": "end",
+      "owner": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "shooterResidency": "live",
+      "turn": 4,
+      "x": 5808.021484375,
+      "y": 578.3734130859375
+    },
+    {
+      "clock": 37.999999999999126,
+      "kind": "sand-bank",
+      "receipt": {
+        "accepted": 8649,
+        "added": 8649,
+        "evaluated": 16641,
+        "id": 15,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 4214,
+        "status": "completed",
+        "work": 8649
+      },
+      "shot": 4,
+      "turn": 4,
+      "x": 5808.021484375,
+      "y": 554.3734130859375
+    },
+    {
+      "clock": 40.99999999999896,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 5616.021484375,
+        "y": 450.3734130859375
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 4,
+      "watchId": 4
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 41.199999999998944,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 549,
+      "turn": 5
+    },
+    {
+      "clock": 41.199999999998944,
+      "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "kind": "turn",
+      "name": "M8 Release A",
+      "turn": 5
+    },
+    {
+      "clock": 41.199999999998944,
+      "fuel": 4.666666666666642,
+      "held": true,
+      "item": "jetpack",
+      "kind": "utility",
+      "name": "M8 Release A",
+      "turn": 5
+    },
+    {
+      "clock": 41.86666666666557,
+      "distance": 1112.73974609375,
+      "elevation": -185.5833740234375,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Release A",
+      "rise": 0,
+      "target": "M8 Release B",
+      "turn": 5
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 41.86666666666557,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 552,
+      "turn": 5
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 41.86666666666557,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 555,
+      "turn": 5
+    },
+    {
+      "angle": 45,
+      "clock": 41.86666666666557,
+      "kind": "cpu-aimed",
+      "name": "M8 Release A",
+      "origin": {
+        "x": 5823.5,
+        "y": 527.9166259765625
+      },
+      "power": 24.22375951811602,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 6936.23974609375,
+        "y": 713.5
+      },
+      "turn": 5,
+      "weapon": {
+        "ammo": {
+          "2f1afa7e-f704-448b-a915-e87fff3e0427": 1,
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "a5ba2656-b214-450c-9618-fcb6778f7529": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -0.7853981633974483,
+        "equipped": "2f1afa7e-f704-448b-a915-e87fff3e0427",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7",
+          "2f1afa7e-f704-448b-a915-e87fff3e0427",
+          "a5ba2656-b214-450c-9618-fcb6778f7529"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.2422375951811602,
+        "speed": {
+          "current": 787.3337779289877,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "clock": 42.06666666666556,
+      "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "kind": "land",
+      "turn": 5
+    },
+    {
+      "angle": 45,
+      "clock": 43.28333333333216,
+      "kind": "fire-request",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "power": 24.22375951811602,
+      "turn": 5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 43.28333333333216,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 575,
+      "turn": 5
+    },
+    {
+      "clock": 43.28333333333216,
+      "item": "ricochet",
+      "kind": "ammo-spent",
+      "name": "M8 Release A",
+      "remaining": 0,
+      "turn": 5
+    },
+    {
+      "clock": 43.28333333333216,
+      "id": "shooting-101",
+      "kind": "quip",
+      "name": "M8 Release A",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "speechKind": "shooting",
+      "text": "Special delivery! sign with your turret.",
+      "turn": 5
+    },
+    {
+      "clock": 43.28333333333216,
+      "id": 5,
+      "kind": "launch",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 5,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "vx": 556.7290649414062,
+        "vy": -556.7290649414062,
+        "x": 5848.5,
+        "y": 494.5
+      },
+      "turn": 5,
+      "weapon": "ricochet"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 45.29999999999871,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 590,
+      "turn": 5
+    },
+    {
+      "action": "death",
+      "amount": 100,
+      "clock": 45.31666666666538,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 359,
+      "turn": 5
+    },
+    {
+      "action": "kill",
+      "amount": 100,
+      "clock": 45.31666666666538,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 690,
+      "turn": 5
+    },
+    {
+      "clock": 45.31666666666538,
+      "id": "death-156",
+      "kind": "quip",
+      "name": "M8 Release B",
+      "owner": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "speechKind": "death",
+      "text": "Please remove me from the active mailing list.",
+      "turn": 5
+    },
+    {
+      "clock": 45.31666666666538,
+      "effect": "fireworks",
+      "id": 1,
+      "kind": "chaos-queued",
+      "owner": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "turn": 5,
+      "x": 6936.23974609375,
+      "y": 713.5
+    },
+    {
+      "clock": 45.31666666666538,
+      "killer": "M8 Release A",
+      "kind": "eliminated",
+      "name": "M8 Release B",
+      "reason": "destroyed",
+      "turn": 5
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 45.31666666666538,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 710,
+      "turn": 5
+    },
+    {
+      "action": "damage",
+      "amount": 97,
+      "clock": 45.31666666666538,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 807,
+      "turn": 5
+    },
+    {
+      "action": "hurt",
+      "amount": 32,
+      "clock": 45.31666666666538,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 391,
+      "turn": 5
+    },
+    {
+      "amount": 32.43269069941636,
+      "clock": 45.31666666666538,
+      "direct": true,
+      "killed": true,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "projectileId": 5,
+      "targetEntityId": 2,
+      "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+      "turn": 5
+    },
+    {
+      "clock": 45.31666666666538,
+      "kind": "end",
+      "owner": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "shooterResidency": "live",
+      "turn": 5,
+      "x": 6954.23974609375,
+      "y": 697.3734130859375
+    },
+    {
+      "clock": 45.33333333333204,
+      "effect": "fireworks",
+      "id": 1,
+      "kind": "chaos-started",
+      "turn": 5,
+      "x": 6936.24072265625,
+      "y": 713.6058959960938
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 45.33333333333204,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 411,
+      "turn": 5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 45.399999999998705,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 431,
+      "turn": 5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 45.483333333332034,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 451,
+      "turn": 5
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 45.516666666665365,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 466,
+      "turn": 5
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 45.5499999999987,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 481,
+      "turn": 5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 45.56666666666536,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 501,
+      "turn": 5
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 45.56666666666536,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 516,
+      "turn": 5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 45.64999999999869,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 536,
+      "turn": 5
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 45.68333333333202,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 551,
+      "turn": 5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 45.73333333333202,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 571,
+      "turn": 5
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 45.749999999998685,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 586,
+      "turn": 5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 45.79999999999868,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 606,
+      "turn": 5
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 45.84999999999868,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 621,
+      "turn": 5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 45.88333333333201,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 641,
+      "turn": 5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 45.96666666666534,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 661,
+      "turn": 5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 46.04999999999867,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 681,
+      "turn": 5
+    },
+    {
+      "clock": 46.11666666666533,
+      "effect": "fireworks",
+      "elapsed": 0.8000000000000008,
+      "id": 1,
+      "kind": "chaos-emission-ended",
+      "launched": 10,
+      "livePulses": 0,
+      "particles": 0,
+      "turn": 5
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 46.48333333333198,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 696,
+      "turn": 5
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 46.48333333333198,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 711,
+      "turn": 5
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 46.916666666665286,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 726,
+      "turn": 5
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 47.04999999999861,
+      "kind": "cash",
+      "name": "M8 Release B",
+      "total": 741,
+      "turn": 5
+    },
+    {
+      "clock": 47.06666666666528,
+      "effect": "fireworks",
+      "elapsed": 1.749999999999999,
+      "ended": 10,
+      "id": 1,
+      "kind": "chaos-ended",
+      "launched": 10,
+      "livePulses": 0,
+      "particles": 0,
+      "turn": 5
+    },
+    {
+      "clock": 48.316666666665206,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6762.23974609375,
+        "y": 569.3734130859375
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 5,
+      "watchId": 5
+    },
+    {
+      "action": "win",
+      "amount": 150,
+      "clock": 50.08333333333177,
+      "kind": "cash",
+      "name": "M8 Release A",
+      "total": 957,
+      "turn": 5
+    },
+    {
+      "clock": 50.08333333333177,
+      "kind": "cash-settled",
+      "paid": {
+        "m8 release a": 957,
+        "m8 release b": 741
+      },
+      "turn": 5
+    },
+    {
+      "clock": 50.08333333333177,
+      "kind": "finished",
+      "turn": 5,
+      "winner": "M8 Release A"
+    },
+    {
+      "cash": 927,
+      "clock": 50.08333333333177,
+      "item": "ricochet",
+      "kind": "purchase",
+      "name": "M8 Release A",
+      "price": 180,
+      "quantity": 3,
+      "turn": 5
+    },
+    {
+      "cash": 747,
+      "clock": 50.08333333333177,
+      "item": "jetpack",
+      "kind": "purchase",
+      "name": "M8 Release A",
+      "price": 180,
+      "quantity": 6,
+      "turn": 5
+    },
+    {
+      "cash": 671,
+      "clock": 50.08333333333177,
+      "item": "sand",
+      "kind": "purchase",
+      "name": "M8 Release B",
+      "price": 180,
+      "quantity": 3,
+      "turn": 5
+    },
+    {
+      "cash": 451,
+      "clock": 50.08333333333177,
+      "item": "digger",
+      "kind": "purchase",
+      "name": "M8 Release B",
+      "price": 220,
+      "quantity": 5,
+      "turn": 5
+    },
+    {
+      "cash": 361,
+      "clock": 50.08333333333177,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Release B",
+      "price": 90,
+      "quantity": 2,
+      "turn": 5
+    }
+  ],
+  "match": {
+    "biome": "mixed-reach",
+    "bounds": {
+      "h": 1280,
+      "w": 1280,
+      "x": 5760,
+      "y": 0
+    },
+    "cashNotice": "M8 Release A +$150 \u00b7 win",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "M8 Release B: Hostile fireworks!",
+      "quiet": 3.016666666666661,
+      "rng": 1748248879,
+      "serial": 1
+    },
+    "computers": 2,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "humans": 0,
+    "impact": {
+      "x": 6954.23974609375,
+      "y": 697.3734130859375
+    },
+    "impactShot": 5,
+    "impactWeapon": "ricochet",
+    "lastHit": "M8 Release B \u221232 HP \u00b7 ELIMINATED",
+    "message": "M8 Release A wins the match",
+    "phase": "finished",
+    "remaining": 12.899999999999896,
+    "roster": [
+      {
+        "aimedTurn": 5,
+        "cashBreakdown": {
+          "aim": 9,
+          "bounce": 15,
+          "damage": 479,
+          "hit": 60,
+          "kill": 100,
+          "landing": 45,
+          "power": 9,
+          "shoot": 60,
+          "turn": 30,
+          "win": 150
+        },
+        "cashEarned": 957,
+        "color": "#bcb1ff",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "index": 0,
+        "kills": 1,
+        "lastMoveX": 5823.5,
+        "moveDistance": 0,
+        "name": "M8 Release A",
+        "plannedTurn": 5,
+        "preparedTurn": 5,
+        "shotFrom": {
+          "x": 5823.5,
+          "y": 520.5
+        },
+        "spawnX": 5824,
+        "surfaceY": 672,
+        "tactic": "Elevation-adjusted shot",
+        "targetId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "weaponId": "ricochet"
+      },
+      {
+        "aimedTurn": 4,
+        "cashBreakdown": {
+          "aim": 6,
+          "death": 100,
+          "hurt": 159,
+          "landing": 180,
+          "power": 6,
+          "shoot": 240,
+          "turn": 20,
+          "utility": 30
+        },
+        "cashEarned": 741,
+        "chaosId": 1,
+        "color": "#ffbd82",
+        "control": "cpu",
+        "deathEffect": "fireworks",
+        "eliminated": true,
+        "entityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "index": 1,
+        "kills": 0,
+        "lastMoveX": 6955.578125,
+        "moveDistance": 0,
+        "name": "M8 Release B",
+        "plannedTurn": 4,
+        "preparedTurn": 4,
+        "shotFrom": {
+          "x": 6936.23974609375,
+          "y": 713.5
+        },
+        "spawnX": 6976,
+        "surfaceY": 693,
+        "tactic": "Elevation-adjusted shot",
+        "targetId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "weaponId": "sand"
+      }
+    ],
+    "round": 1,
+    "seed": 7,
+    "shotId": null,
+    "shotWeapon": "ricochet",
+    "turnNumber": 5,
+    "turnSeconds": 15,
+    "version": 8,
+    "waitTicks": 122,
+    "winner": "M8 Release A"
+  },
+  "paused": false,
+  "roster": [
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 90,
+        "y": 8
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 0,
+      "maxHealth": 100,
+      "name": "M8 Release A",
+      "residency": "live",
+      "slot": null,
+      "templateId": "10887eef-ab35-4c6a-92cc-fee00b78d234",
+      "vx": 0,
+      "vy": 0,
+      "x": 5823.5,
+      "y": 538.5
+    },
+    null
+  ],
+  "scores": {
+    "matches": {
+      "11e06129-fd29-4416-b653-6b74f03f8467": {
+        "seed": 1729,
+        "winner": "M8 Jet C"
+      },
+      "4bd70b6a-ed4f-462c-85ee-f0ab30531ca7": {
+        "seed": 7,
+        "winner": "M8 Release A"
+      }
+    },
+    "players": {
+      "m8 dig c": {
+        "games": 1,
+        "kills": 0,
+        "name": "M8 Dig C",
+        "wins": 0
+      },
+      "m8 jet c": {
+        "games": 1,
+        "kills": 1,
+        "name": "M8 Jet C",
+        "wins": 1
+      },
+      "m8 magnet c": {
+        "games": 1,
+        "kills": 1,
+        "name": "M8 Magnet C",
+        "wins": 0
+      },
+      "m8 release a": {
+        "games": 1,
+        "kills": 1,
+        "name": "M8 Release A",
+        "wins": 1
+      },
+      "m8 release b": {
+        "games": 1,
+        "kills": 0,
+        "name": "M8 Release B",
+        "wins": 0
+      },
+      "m8 shield c": {
+        "games": 1,
+        "kills": 2,
+        "name": "M8 Shield C",
+        "wins": 0
+      },
+      "m8 utility c": {
+        "games": 1,
+        "kills": 0,
+        "name": "M8 Utility C",
+        "wins": 0
+      }
+    }
+  },
+  "ui": {
+    "aimRotation": "rotate(-45deg)",
+    "batteries": 2,
+    "biome": "Mixed Reach",
+    "canEquip": false,
+    "canSetup": true,
+    "canShop": true,
+    "cash": 747,
+    "cashNotice": "M8 Release A +$150 \u00b7 win",
+    "chaosCount": 0,
+    "chaosNotice": "M8 Release B: Hostile fireworks!",
+    "current": {
+      "angle": 45,
+      "color": "#bcb1ff",
+      "control": "Computer",
+      "health": 100,
+      "name": "M8 Release A",
+      "power": 24.22375951811602
+    },
+    "finished": true,
+    "frameNotice": "",
+    "human": false,
+    "lastHit": "M8 Release B \u221232 HP \u00b7 ELIMINATED",
+    "loadout": [
+      {
+        "action": "equip-standard",
+        "disabled": false,
+        "name": "Field cannon",
+        "selected": false,
+        "stock": "\u221e"
+      },
+      {
+        "action": "equip-heavy",
+        "disabled": true,
+        "name": "Heavy howitzer",
+        "selected": false,
+        "stock": 0
+      },
+      {
+        "action": "equip-crumble",
+        "disabled": true,
+        "name": "Crumble cannon",
+        "selected": false,
+        "stock": 0
+      },
+      {
+        "action": "equip-riot",
+        "disabled": true,
+        "name": "Excavator cannon",
+        "selected": false,
+        "stock": 0
+      },
+      {
+        "action": "equip-ricochet",
+        "disabled": false,
+        "name": "Bouncer cannon",
+        "selected": true,
+        "stock": 3
+      },
+      {
+        "action": "equip-sand",
+        "disabled": true,
+        "name": "Sand charge cannon",
+        "selected": false,
+        "stock": 0
+      }
+    ],
+    "phase": "finished",
+    "ready": false,
+    "remaining": 13,
+    "roster": [
+      {
+        "cash": 747,
+        "color": "#bcb1ff",
+        "earned": 957,
+        "health": 100,
+        "kills": 1,
+        "name": "M8 Release A",
+        "status": "CURRENT"
+      },
+      {
+        "cash": 361,
+        "color": "#ffbd82",
+        "earned": 741,
+        "health": 0,
+        "kills": 0,
+        "name": "M8 Release B",
+        "status": "OUT"
+      }
+    ],
+    "round": 1,
+    "roundCash": 957,
+    "scores": [
+      {
+        "games": 1,
+        "kills": 1,
+        "name": "M8 Jet C",
+        "wins": 1
+      },
+      {
+        "games": 1,
+        "kills": 0,
+        "name": "M8 Dig C",
+        "wins": 0
+      },
+      {
+        "games": 1,
+        "kills": 1,
+        "name": "M8 Magnet C",
+        "wins": 0
+      },
+      {
+        "games": 1,
+        "kills": 2,
+        "name": "M8 Shield C",
+        "wins": 0
+      },
+      {
+        "games": 1,
+        "kills": 0,
+        "name": "M8 Utility C",
+        "wins": 0
+      },
+      {
+        "games": 1,
+        "kills": 1,
+        "name": "M8 Release A",
+        "wins": 1
+      },
+      {
+        "games": 1,
+        "kills": 0,
+        "name": "M8 Release B",
+        "wins": 0
+      }
+    ],
+    "seed": 7,
+    "shop": {
+      "account": "m8 release a",
+      "cash": 747,
+      "color": "#bcb1ff",
+      "computers": 2,
+      "count": 2,
+      "earned": 957,
+      "finished": true,
+      "humans": 0,
+      "index": 1,
+      "items": [
+        {
+          "action": "buy-standard",
+          "button": "Included",
+          "category": "WEAPON",
+          "description": "Reliable explosive shell. Unlimited ammunition.",
+          "disabled": true,
+          "id": "standard",
+          "name": "Field cannon",
+          "price": "Always available",
+          "stock": "Unlimited"
+        },
+        {
+          "action": "buy-heavy",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three heavy shells. Wider blasts, deeper craters, 120 peak damage.",
+          "disabled": false,
+          "id": "heavy",
+          "name": "Heavy howitzer",
+          "price": "$240 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-crumble",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three shells that crumble solid ground into falling debris. 65 peak damage.",
+          "disabled": false,
+          "id": "crumble",
+          "name": "Crumble cannon",
+          "price": "$180 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-riot",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three terrain-clearing riot shells. A broad crater with no blast damage.",
+          "disabled": false,
+          "id": "riot",
+          "name": "Excavator cannon",
+          "price": "$120 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-battery",
+          "button": "Buy bundle",
+          "category": "UTILITY",
+          "description": "Two repairs. Restore up to 30 hull each during your turn without ending it.",
+          "disabled": false,
+          "id": "battery",
+          "name": "Repair battery",
+          "price": "$90 / 2",
+          "stock": "2"
+        },
+        {
+          "action": "buy-ricochet",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three bouncing shells. A four-second fuse keeps them dangerous after landing.",
+          "disabled": false,
+          "id": "ricochet",
+          "name": "Bouncer cannon",
+          "price": "$180 / 3",
+          "stock": "3"
+        },
+        {
+          "action": "buy-jetpack",
+          "button": "Buy bundle",
+          "category": "UTILITY",
+          "description": "Six seconds of thrust using the tank's levitation controller.",
+          "disabled": false,
+          "id": "jetpack",
+          "name": "Jetpack fuel",
+          "price": "$180 / 6",
+          "stock": "9.999999999999966"
+        },
+        {
+          "action": "buy-digger",
+          "button": "Buy bundle",
+          "category": "UTILITY",
+          "description": "Five seconds of powered tunneling through the ground.",
+          "disabled": false,
+          "id": "digger",
+          "name": "Burrowing rig",
+          "price": "$220 / 5",
+          "stock": "0"
+        },
+        {
+          "action": "buy-sand",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Charges release a seeded, noise-filled bank of real sand at impact.",
+          "disabled": false,
+          "id": "sand",
+          "name": "Sand charge cannon",
+          "price": "$180 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-magnet",
+          "button": "Buy bundle",
+          "category": "UTILITY",
+          "description": "A powered field that bends incoming metal shells away.",
+          "disabled": false,
+          "id": "magnet",
+          "name": "Mag deflector",
+          "price": "$350 / 1",
+          "stock": "0"
+        },
+        {
+          "action": "buy-shield",
+          "button": "Buy bundle",
+          "category": "UTILITY",
+          "description": "Absorbs incoming damage before it reaches the hull.",
+          "disabled": false,
+          "id": "shield",
+          "name": "Blast shield",
+          "price": "$250 / 1",
+          "stock": "0"
+        }
+      ],
+      "message": "Computer pilot: purchases made automatically. You can inspect or add supplies.",
+      "name": "M8 Release A",
+      "namesText": "M8 Release A\nM8 Release B",
+      "ready": false,
+      "receipts": [
+        {
+          "action": "turn",
+          "amount": 30
+        },
+        {
+          "action": "aim",
+          "amount": 9
+        },
+        {
+          "action": "power",
+          "amount": 9
+        },
+        {
+          "action": "shoot",
+          "amount": 60
+        },
+        {
+          "action": "landing",
+          "amount": 45
+        },
+        {
+          "action": "hit",
+          "amount": 60
+        },
+        {
+          "action": "damage",
+          "amount": 479
+        },
+        {
+          "action": "bounce",
+          "amount": 15
+        },
+        {
+          "action": "kill",
+          "amount": 100
+        },
+        {
+          "action": "win",
+          "amount": 150
+        }
+      ],
+      "result": "M8 Release A wins the match",
+      "revision": 129,
+      "round": 2,
+      "title": "Between rounds",
+      "turnSeconds": 15
+    },
+    "shotDirection": "RIGHT \u2192",
+    "speech": [],
+    "status": "M8 Release A wins the match",
+    "supplies": {
+      "dig": "0.0",
+      "jet": "10.0",
+      "jetCapacity": 12,
+      "jetStock": "10.0",
+      "magnet": "0.0",
+      "magnetCapacity": 12,
+      "magnetOn": false,
+      "shield": 0,
+      "shieldCapacity": 120,
+      "shieldOn": false
+    },
+    "tactic": "Elevation-adjusted shot",
+    "tankCount": 2,
+    "target": "M8 Release B",
+    "turnNumber": 5,
+    "turnSeconds": 15,
+    "weaponAmmo": 3,
+    "weaponName": "Bouncer cannon",
+    "winner": "M8 Release A"
+  },
+  "worldId": "4bd70b6a-ed4f-462c-85ee-f0ab30531ca7",
+  "audit": {
+    "damage": [
+      {
+        "amount": 73.48997538572957,
+        "amountAbsorbed": 0,
+        "amountRequested": 73.48997538572957,
+        "baseAmount": 77.35786882708375,
+        "blocked": false,
+        "category": "explosive",
+        "clock": 10.483333333333434,
+        "crit": false,
+        "killed": false,
+        "sourceEntityId": "0",
+        "sourceStableId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "targetEntityId": "2",
+        "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "type": "blast",
+        "x": 6975.5,
+        "y": 682.5
+      },
+      {
+        "amount": 54.07733391485407,
+        "amountAbsorbed": 0,
+        "amountRequested": 54.07733391485407,
+        "baseAmount": 56.92350938405692,
+        "blocked": false,
+        "category": "explosive",
+        "clock": 28.89999999999964,
+        "crit": false,
+        "killed": false,
+        "sourceEntityId": "0",
+        "sourceStableId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "targetEntityId": "2",
+        "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "type": "blast",
+        "x": 6955.578125,
+        "y": 696.5
+      },
+      {
+        "amount": 32.43269069941636,
+        "amountAbsorbed": 0,
+        "amountRequested": 71.28378661198981,
+        "baseAmount": 75.03556485472612,
+        "blocked": false,
+        "category": "explosive",
+        "clock": 45.31666666666538,
+        "crit": false,
+        "killed": true,
+        "sourceEntityId": "0",
+        "sourceStableId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "targetEntityId": "2",
+        "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "type": "blast",
+        "x": 6936.23974609375,
+        "y": 713.5
+      }
+    ],
+    "defense": {},
+    "events": [
+      {
+        "clock": 8.566666666666672,
+        "entityId": 6,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 1,
+        "vx": 587.547410529373,
+        "vy": -587.5474105293729,
+        "weaponTemplateId": "2f1afa7e-f704-448b-a915-e87fff3e0427",
+        "x": 5848.9558441227155,
+        "y": 627.0441558772843
+      },
+      {
+        "clock": 10.483333333333434,
+        "event": "collision",
+        "hitBodyId": 2,
+        "kind": "rigid-body",
+        "otherEntityId": 2,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 1,
+        "speed": 656.3052579224819,
+        "with": "body",
+        "x": 6957.5,
+        "y": 693.9930419921875
+      },
+      {
+        "clock": 10.483333333333434,
+        "event": "directHit",
+        "hitBodyId": 2,
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 1,
+        "speed": 656.3052579224819,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "x": 6957.5,
+        "y": 693.9930419921875
+      },
+      {
+        "cause": "body",
+        "clock": 10.483333333333434,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 1,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "x": 6957.5,
+        "y": 693.9930419921875
+      },
+      {
+        "amount": 73.48997538572957,
+        "clock": 10.483333333333434,
+        "direct": true,
+        "event": "hit",
+        "killed": false,
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 1,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083"
+      },
+      {
+        "clock": 10.483333333333434,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 1,
+        "reason": "detonated",
+        "x": 6957.5,
+        "y": 693.9930419921875
+      },
+      {
+        "clock": 15.733333333333697,
+        "entityId": 7,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 2,
+        "vx": -618.7112880216663,
+        "vy": -618.7112880216664,
+        "weaponTemplateId": "a5ba2656-b214-450c-9618-fcb6778f7529",
+        "x": 6930.1222808772845,
+        "y": 671.0441558772843
+      },
+      {
+        "clock": 17.56666666666695,
+        "event": "collision",
+        "hitBodyId": 0,
+        "kind": "rigid-body",
+        "otherEntityId": 0,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 2,
+        "speed": 593.3398261059418,
+        "with": "body",
+        "x": 5813.34619140625,
+        "y": 636.3734130859375
+      },
+      {
+        "clock": 17.56666666666695,
+        "event": "directHit",
+        "hitBodyId": 0,
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 2,
+        "speed": 593.3398261059418,
+        "targetEntityId": 0,
+        "targetStableId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "x": 5813.34619140625,
+        "y": 636.3734130859375
+      },
+      {
+        "cause": "body",
+        "clock": 17.56666666666695,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 2,
+        "targetEntityId": 0,
+        "targetStableId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "x": 5813.34619140625,
+        "y": 636.3734130859375
+      },
+      {
+        "clock": 17.56666666666695,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 2,
+        "reason": "detonated",
+        "x": 5813.34619140625,
+        "y": 636.3734130859375
+      },
+      {
+        "clock": 24.899999999999867,
+        "entityId": 8,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "vx": 578.2532181415537,
+        "vy": -578.2532181415536,
+        "weaponTemplateId": "2f1afa7e-f704-448b-a915-e87fff3e0427",
+        "x": 5848.9558441227155,
+        "y": 554.0441558772843
+      },
+      {
+        "clock": 26.899999999999753,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 134.05152068246832,
+        "with": "terrain",
+        "x": 7003,
+        "y": 706
+      },
+      {
+        "bouncesLeft": 4,
+        "clock": 26.899999999999753,
+        "event": "bounce",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "with": "terrain",
+        "x": 7003,
+        "y": 706
+      },
+      {
+        "clock": 26.91666666666642,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 120.19324531822576,
+        "with": "terrain",
+        "x": 7005,
+        "y": 706
+      },
+      {
+        "bouncesLeft": 3,
+        "clock": 26.91666666666642,
+        "event": "bounce",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "with": "terrain",
+        "x": 7005,
+        "y": 706
+      },
+      {
+        "clock": 26.999999999999748,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 11.13732813412265,
+        "with": "terrain",
+        "x": 7009,
+        "y": 696
+      },
+      {
+        "clock": 27.099999999999746,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 44.10505186258763,
+        "with": "terrain",
+        "x": 7008.1025390625,
+        "y": 701.157470703125
+      },
+      {
+        "bouncesLeft": 2,
+        "clock": 27.099999999999746,
+        "event": "bounce",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "with": "terrain",
+        "x": 7008.1025390625,
+        "y": 701.157470703125
+      },
+      {
+        "clock": 27.116666666666408,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 58.60730210028671,
+        "with": "terrain",
+        "x": 7007,
+        "y": 702
+      },
+      {
+        "clock": 27.133333333333074,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 60.68788779125178,
+        "with": "terrain",
+        "x": 7005.08935546875,
+        "y": 705
+      },
+      {
+        "clock": 27.14999999999974,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 34.54238872266657,
+        "with": "terrain",
+        "x": 7004,
+        "y": 705
+      },
+      {
+        "clock": 27.199999999999736,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 20.01032309169877,
+        "with": "terrain",
+        "x": 7002.98876953125,
+        "y": 704.9837646484375
+      },
+      {
+        "clock": 27.233333333333068,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 2.971080912907112,
+        "with": "terrain",
+        "x": 6999.54248046875,
+        "y": 704.297607421875
+      },
+      {
+        "clock": 27.249999999999737,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 1.7188008458026958,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 27.29999999999973,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 2.0501838309320144,
+        "with": "terrain",
+        "x": 6998.99267578125,
+        "y": 705.0094604492188
+      },
+      {
+        "clock": 27.349999999999728,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 2.3808500296649773,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 27.399999999999725,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 2.658347547067511,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 27.44999999999972,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 2.8529962575550503,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 27.49999999999972,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 3.010735146042606,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 27.549999999999716,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 3.158937791889927,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 27.599999999999714,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 3.293872725848809,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 27.64999999999971,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 3.4924816567985704,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 27.699999999999708,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 3.5936848067024565,
+        "with": "terrain",
+        "x": 6998.9921875,
+        "y": 705.0095825195312
+      },
+      {
+        "clock": 27.749999999999705,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 3.6881762493711263,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 27.799999999999702,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.777896759031314,
+        "with": "terrain",
+        "x": 7003,
+        "y": 705
+      },
+      {
+        "clock": 27.8499999999997,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.144707183190859,
+        "with": "terrain",
+        "x": 7003.015625,
+        "y": 705.0140991210938
+      },
+      {
+        "clock": 27.899999999999697,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.171387353473323,
+        "with": "terrain",
+        "x": 7003.0126953125,
+        "y": 705.0122680664062
+      },
+      {
+        "clock": 27.949999999999697,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.1955213302838725,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 27.99999999999969,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.236170214767785,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 28.049999999999688,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.2747846499942055,
+        "with": "terrain",
+        "x": 7003.00634765625,
+        "y": 705.0064697265625
+      },
+      {
+        "clock": 28.099999999999685,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.283737167655346,
+        "with": "terrain",
+        "x": 7003.0087890625,
+        "y": 705.0079956054688
+      },
+      {
+        "clock": 28.14999999999968,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.281105359110816,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 28.19999999999968,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.304517927396825,
+        "with": "terrain",
+        "x": 6998.9921875,
+        "y": 705.0081787109375
+      },
+      {
+        "clock": 28.249999999999677,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.31501807039699,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 28.29999999999967,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.32496517758372,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 28.34999999999967,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.36357244305453,
+        "with": "terrain",
+        "x": 7003,
+        "y": 705
+      },
+      {
+        "clock": 28.399999999999668,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.335618153888607,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 28.449999999999665,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.37766538620027,
+        "with": "terrain",
+        "x": 7003,
+        "y": 705
+      },
+      {
+        "clock": 28.499999999999662,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.3486581479097834,
+        "with": "terrain",
+        "x": 6998.9931640625,
+        "y": 705.0077514648438
+      },
+      {
+        "clock": 28.54999999999966,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.356950553615765,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 28.599999999999657,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.360063510257103,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 28.649999999999658,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.393702923418857,
+        "with": "terrain",
+        "x": 7003.00634765625,
+        "y": 705.0059814453125
+      },
+      {
+        "clock": 28.69999999999965,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.361774412374778,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "clock": 28.74999999999965,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.397827010823945,
+        "with": "terrain",
+        "x": 7003,
+        "y": 705
+      },
+      {
+        "clock": 28.799999999999645,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.395766942628086,
+        "with": "terrain",
+        "x": 7003.00830078125,
+        "y": 705.0079956054688
+      },
+      {
+        "clock": 28.849999999999643,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "speed": 4.369205148411579,
+        "with": "terrain",
+        "x": 6999,
+        "y": 705
+      },
+      {
+        "cause": "fuse",
+        "clock": 28.89999999999964,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "targetEntityId": null,
+        "x": 7001.025390625,
+        "y": 704.1859130859375
+      },
+      {
+        "amount": 54.07733391485407,
+        "clock": 28.89999999999964,
+        "direct": false,
+        "event": "hit",
+        "killed": false,
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083"
+      },
+      {
+        "clock": 28.89999999999964,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 3,
+        "reason": "detonated",
+        "x": 7001.025390625,
+        "y": 704.1859130859375
+      },
+      {
+        "clock": 34.16666666666601,
+        "entityId": 9,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 4,
+        "vx": -637.6388588879072,
+        "vy": -637.6388588879073,
+        "weaponTemplateId": "a5ba2656-b214-450c-9618-fcb6778f7529",
+        "x": 6910.7839019710345,
+        "y": 688.0441558772843
+      },
+      {
+        "clock": 35.93333333333258,
+        "event": "collision",
+        "hitBodyId": 0,
+        "kind": "rigid-body",
+        "otherEntityId": 0,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 4,
+        "speed": 618.9819534630037,
+        "with": "body",
+        "x": 5808.021484375,
+        "y": 578.3734130859375
+      },
+      {
+        "clock": 35.93333333333258,
+        "event": "directHit",
+        "hitBodyId": 0,
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 4,
+        "speed": 618.9819534630037,
+        "targetEntityId": 0,
+        "targetStableId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "x": 5808.021484375,
+        "y": 578.3734130859375
+      },
+      {
+        "cause": "body",
+        "clock": 35.93333333333258,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 4,
+        "targetEntityId": 0,
+        "targetStableId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "x": 5808.021484375,
+        "y": 578.3734130859375
+      },
+      {
+        "clock": 35.93333333333258,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 4,
+        "reason": "detonated",
+        "x": 5808.021484375,
+        "y": 578.3734130859375
+      },
+      {
+        "clock": 43.28333333333216,
+        "entityId": 10,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 5,
+        "vx": 556.7290534308106,
+        "vy": -556.7290534308105,
+        "weaponTemplateId": "2f1afa7e-f704-448b-a915-e87fff3e0427",
+        "x": 5848.9558441227155,
+        "y": 495.0441558772843
+      },
+      {
+        "clock": 45.29999999999871,
+        "event": "collision",
+        "hitBodyId": 2,
+        "kind": "rigid-body",
+        "otherEntityId": 2,
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 5,
+        "speed": 547.0111195604445,
+        "with": "body",
+        "x": 6954.23974609375,
+        "y": 697.3734130859375
+      },
+      {
+        "clock": 45.29999999999871,
+        "event": "directHit",
+        "hitBodyId": 2,
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 5,
+        "speed": 547.0111195604445,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "x": 6954.23974609375,
+        "y": 697.3734130859375
+      },
+      {
+        "cause": "body",
+        "clock": 45.29999999999871,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 5,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "x": 6954.23974609375,
+        "y": 697.3734130859375
+      },
+      {
+        "amount": 32.43269069941636,
+        "clock": 45.31666666666538,
+        "direct": true,
+        "event": "hit",
+        "killed": true,
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 5,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083"
+      },
+      {
+        "clock": 45.31666666666538,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+        "projectileId": 5,
+        "reason": "detonated",
+        "x": 6954.23974609375,
+        "y": 697.3734130859375
+      },
+      {
+        "clock": 45.33333333333204,
+        "entityId": 11,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 6,
+        "vx": 340,
+        "vy": 0,
+        "weaponTemplateId": null,
+        "x": 6936.24072265625,
+        "y": 687.6058959960938
+      },
+      {
+        "clock": 45.399999999998705,
+        "entityId": 13,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 7,
+        "vx": 275.06577808748216,
+        "vy": 199.84698577944087,
+        "weaponTemplateId": null,
+        "x": 6936.15380859375,
+        "y": 689.6927490234375
+      },
+      {
+        "clock": 45.483333333332034,
+        "entityId": 14,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 8,
+        "vx": 105.06577808748212,
+        "vy": 323.3592155403521,
+        "weaponTemplateId": null,
+        "x": 6936.13427734375,
+        "y": 695.5607299804688
+      },
+      {
+        "clock": 45.516666666665365,
+        "event": "collision",
+        "hitBodyId": 12,
+        "kind": "rigid-body",
+        "otherEntityId": 12,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 7,
+        "speed": 111.67249739911924,
+        "with": "body",
+        "x": 6969.185546875,
+        "y": 718.8471069335938
+      },
+      {
+        "clock": 45.516666666665365,
+        "event": "directHit",
+        "hitBodyId": 12,
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 7,
+        "speed": 111.67249739911924,
+        "targetEntityId": 12,
+        "targetStableId": "instance@d840efa0-c4e4-449f-a76d-3583eabeace8",
+        "x": 6969.185546875,
+        "y": 718.8471069335938
+      },
+      {
+        "cause": "body",
+        "clock": 45.516666666665365,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 7,
+        "targetEntityId": 12,
+        "targetStableId": "instance@d840efa0-c4e4-449f-a76d-3583eabeace8",
+        "x": 6969.185546875,
+        "y": 718.8471069335938
+      },
+      {
+        "clock": 45.516666666665365,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 7,
+        "reason": "detonated",
+        "x": 6969.185546875,
+        "y": 718.8471069335938
+      },
+      {
+        "clock": 45.5499999999987,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 8,
+        "speed": 375.3337479324998,
+        "with": "particle",
+        "x": 6941.5,
+        "y": 714.5
+      },
+      {
+        "cause": "particle",
+        "clock": 45.5499999999987,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 8,
+        "targetEntityId": null,
+        "x": 6941.5,
+        "y": 714.5
+      },
+      {
+        "clock": 45.5499999999987,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 8,
+        "reason": "detonated",
+        "x": 6941.5,
+        "y": 714.5
+      },
+      {
+        "clock": 45.56666666666536,
+        "entityId": 15,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 9,
+        "vx": -105.0657780874821,
+        "vy": 323.35921554035224,
+        "weaponTemplateId": null,
+        "x": 6937.70068359375,
+        "y": 699.5614013671875
+      },
+      {
+        "clock": 45.56666666666536,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 6,
+        "speed": 291.18061550848194,
+        "with": "particle",
+        "x": 7013.5,
+        "y": 704.5
+      },
+      {
+        "cause": "particle",
+        "clock": 45.56666666666536,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 6,
+        "targetEntityId": null,
+        "x": 7013.5,
+        "y": 704.5
+      },
+      {
+        "clock": 45.56666666666536,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 6,
+        "reason": "detonated",
+        "x": 7013.5,
+        "y": 704.5
+      },
+      {
+        "clock": 45.64999999999869,
+        "entityId": 16,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 10,
+        "vx": -275.0657780874821,
+        "vy": 199.8469857794409,
+        "weaponTemplateId": null,
+        "x": 6939.490234375,
+        "y": 704.2042846679688
+      },
+      {
+        "clock": 45.68333333333202,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 9,
+        "speed": 90.49892366106228,
+        "with": "terrain",
+        "x": 6924.38623046875,
+        "y": 739.72509765625
+      },
+      {
+        "cause": "terrain",
+        "clock": 45.68333333333202,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 9,
+        "targetEntityId": null,
+        "x": 6924.38623046875,
+        "y": 739.72509765625
+      },
+      {
+        "clock": 45.68333333333202,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 9,
+        "reason": "detonated",
+        "x": 6924.38623046875,
+        "y": 739.72509765625
+      },
+      {
+        "clock": 45.73333333333202,
+        "entityId": 17,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 11,
+        "vx": -340,
+        "vy": 4.1637991171010013e-14,
+        "weaponTemplateId": null,
+        "x": 6940.17333984375,
+        "y": 705.1034545898438
+      },
+      {
+        "clock": 45.749999999998685,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 10,
+        "speed": 50.959980138501955,
+        "with": "terrain",
+        "x": 6912.16943359375,
+        "y": 725.794189453125
+      },
+      {
+        "cause": "terrain",
+        "clock": 45.749999999998685,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 10,
+        "targetEntityId": null,
+        "x": 6912.16943359375,
+        "y": 725.794189453125
+      },
+      {
+        "clock": 45.749999999998685,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 10,
+        "reason": "detonated",
+        "x": 6912.16943359375,
+        "y": 725.794189453125
+      },
+      {
+        "clock": 45.79999999999868,
+        "entityId": 18,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 12,
+        "vx": -275.0657780874821,
+        "vy": -199.8469857794409,
+        "weaponTemplateId": null,
+        "x": 6939.822265625,
+        "y": 706.121337890625
+      },
+      {
+        "clock": 45.84999999999868,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 11,
+        "speed": 112.32078359887804,
+        "with": "terrain",
+        "x": 6899,
+        "y": 711
+      },
+      {
+        "cause": "terrain",
+        "clock": 45.84999999999868,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 11,
+        "targetEntityId": null,
+        "x": 6899,
+        "y": 711
+      },
+      {
+        "clock": 45.84999999999868,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 11,
+        "reason": "detonated",
+        "x": 6899,
+        "y": 711
+      },
+      {
+        "clock": 45.88333333333201,
+        "entityId": 19,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 13,
+        "vx": -105.06577808748216,
+        "vy": -323.3592155403521,
+        "weaponTemplateId": null,
+        "x": 6938.1826171875,
+        "y": 708.14453125
+      },
+      {
+        "clock": 45.96666666666534,
+        "entityId": 20,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 14,
+        "vx": 105.06577808748207,
+        "vy": -323.35921554035224,
+        "weaponTemplateId": null,
+        "x": 6935.3486328125,
+        "y": 711.3585205078125
+      },
+      {
+        "clock": 46.04999999999867,
+        "entityId": 21,
+        "event": "launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 15,
+        "vx": 275.06577808748204,
+        "vy": -199.84698577944096,
+        "weaponTemplateId": null,
+        "x": 6932.33154296875,
+        "y": 715.9768676757812
+      },
+      {
+        "clock": 46.48333333333198,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 12,
+        "speed": 170.61074934522114,
+        "with": "terrain",
+        "x": 6755.4423828125,
+        "y": 720
+      },
+      {
+        "cause": "terrain",
+        "clock": 46.48333333333198,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 12,
+        "targetEntityId": null,
+        "x": 6755.4423828125,
+        "y": 720
+      },
+      {
+        "clock": 46.48333333333198,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 12,
+        "reason": "detonated",
+        "x": 6755.4423828125,
+        "y": 720
+      },
+      {
+        "clock": 46.48333333333198,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 15,
+        "speed": 154.8581023204102,
+        "with": "terrain",
+        "x": 7051,
+        "y": 692
+      },
+      {
+        "cause": "terrain",
+        "clock": 46.48333333333198,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 15,
+        "targetEntityId": null,
+        "x": 7051,
+        "y": 692
+      },
+      {
+        "clock": 46.48333333333198,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 15,
+        "reason": "detonated",
+        "x": 7051,
+        "y": 692
+      },
+      {
+        "clock": 46.916666666665286,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 13,
+        "speed": 146.30604281141615,
+        "with": "terrain",
+        "x": 6832.396484375,
+        "y": 716.75
+      },
+      {
+        "cause": "terrain",
+        "clock": 46.916666666665286,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 13,
+        "targetEntityId": null,
+        "x": 6832.396484375,
+        "y": 716.75
+      },
+      {
+        "clock": 46.916666666665286,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 13,
+        "reason": "detonated",
+        "x": 6832.396484375,
+        "y": 716.75
+      },
+      {
+        "clock": 47.04999999999861,
+        "event": "collision",
+        "kind": "rigid-body",
+        "otherEntityId": null,
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 14,
+        "speed": 34.4706895880536,
+        "with": "terrain",
+        "x": 7047.14404296875,
+        "y": 728
+      },
+      {
+        "cause": "terrain",
+        "clock": 47.04999999999861,
+        "event": "detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 14,
+        "targetEntityId": null,
+        "x": 7047.14404296875,
+        "y": 728
+      },
+      {
+        "clock": 47.04999999999861,
+        "event": "end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "projectileId": 14,
+        "reason": "detonated",
+        "x": 7047.14404296875,
+        "y": 728
+      }
+    ],
+    "frames": [
+      {
+        "clock": 6.633333333333315,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 647.25
+          },
+          {
+            "health": 100,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 682.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 7.133333333333313,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 588.9166259765625
+          },
+          {
+            "health": 100,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 682.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 7.633333333333312,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 607.458251953125
+          },
+          {
+            "health": 100,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 682.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 8.133333333333317,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 100,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 682.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 8.633333333333342,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 100,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 682.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 9.133333333333368,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 100,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 682.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 9.633333333333391,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 100,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 682.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 10.133333333333416,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 100,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 682.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 10.63333333333344,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 26.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 683.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 11.133333333333466,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 26.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 683.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 11.633333333333493,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 26.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 683.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 12.133333333333516,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 26.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 683.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 12.63333333333354,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 26.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 683.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 13.133333333333566,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 26.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 683.5
+          }
+        ],
+        "turn": 1,
+        "zoom": 0.25
+      },
+      {
+        "clock": 13.63333333333359,
+        "phase": "focusing",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 26.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6975.5,
+            "y": 683.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 14.133333333333615,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 26.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6961.6630859375,
+            "y": 687.8330078125
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 14.63333333333364,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 15.133333333333663,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 15.63333333333369,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 16.1333333333337,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 16.63333333333367,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 17.133333333333642,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 17.633333333333614,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 652.680419921875
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 18.133333333333585,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 649.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 18.633333333333557,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 649.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 19.13333333333353,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 649.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 19.6333333333335,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 649.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 20.13333333333347,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 649.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 20.633333333333443,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 649.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 21.133333333333415,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 649.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 21.633333333333383,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 649.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 22.13333333333336,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 649.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 2,
+        "zoom": 0.25
+      },
+      {
+        "clock": 22.63333333333333,
+        "phase": "focusing",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 649.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 23.1333333333333,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 624.9166259765625
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 23.633333333333272,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 573.0416259765625
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 24.133333333333244,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 574.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 24.633333333333216,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 575.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 25.133333333333187,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 582.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 25.63333333333316,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 590.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 26.13333333333313,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 26.633333333333105,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 27.133333333333074,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 27.633333333333045,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 28.133333333333017,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 28.63333333333299,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 56.510024614270435,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 29.13333333333296,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 2.432690699416362,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 696.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 29.63333333333293,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 2.432690699416362,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 700.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 30.133333333332903,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 2.432690699416362,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 700.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 30.633333333332875,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 2.432690699416362,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 701.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 31.13333333333285,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 2.432690699416362,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 701.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 31.633333333332818,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 2.432690699416362,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6955.578125,
+            "y": 701.5
+          }
+        ],
+        "turn": 3,
+        "zoom": 0.25
+      },
+      {
+        "clock": 32.13333333333279,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 2.432690699416362,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6954.4111328125,
+            "y": 698.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 32.633333333332764,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 2.432690699416362,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6939.99072265625,
+            "y": 716.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 33.133333333332736,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 33.63333333333271,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 34.13333333333268,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 593.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 34.63333333333265,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 35.13333333333262,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 35.633333333332594,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 36.133333333332565,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 36.63333333333254,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 37.13333333333251,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 37.63333333333248,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 38.13333333333245,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 38.63333333333242,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 39.133333333332395,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 39.63333333333237,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 40.13333333333234,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 40.63333333333231,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 4,
+        "zoom": 0.25
+      },
+      {
+        "clock": 41.13333333333228,
+        "phase": "focusing",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 594.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 41.63333333333225,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 555.9166259765625
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 42.133333333332224,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 517.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 42.63333333333219,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 517.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 43.13333333333217,
+        "phase": "turn",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 519.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 43.63333333333214,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 523.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 44.13333333333211,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 531.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 44.63333333333208,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 534.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 45.133333333332054,
+        "phase": "flight",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 534.5
+          },
+          {
+            "health": 32.43269069941636,
+            "id": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+            "x": 6936.23974609375,
+            "y": 713.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 45.633333333332025,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 534.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 46.133333333332,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 534.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 46.63333333333197,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 535.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 47.13333333333194,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 535.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 47.63333333333191,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 535.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 48.13333333333188,
+        "phase": "settling",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 536.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 48.633333333331855,
+        "phase": "aftermath",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 537.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 49.13333333333183,
+        "phase": "aftermath",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 537.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 49.6333333333318,
+        "phase": "aftermath",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 538.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      },
+      {
+        "clock": 50.13333333333177,
+        "phase": "finished",
+        "roster": [
+          {
+            "health": 100,
+            "id": "instance@spawn-69907cc4-e754-4a70-ae75-07920db43245",
+            "x": 5823.5,
+            "y": 538.5
+          }
+        ],
+        "turn": 5,
+        "zoom": 0.25
+      }
+    ],
+    "residency": [
+      {
+        "chunk": null,
+        "entityKey": "instance@spawn-8c5e3a2b-bd24-4021-ac62-5302ebc48083",
+        "from": "live",
+        "reason": "destroy-entity",
+        "to": "destroyed"
+      }
+    ],
+    "ticks": 2640,
+    "violations": []
+  },
+  "economy": {
+    "cpuShops": {
+      "11e06129-fd29-4416-b653-6b74f03f8467:finished": {
+        "m8 dig c": true,
+        "m8 jet c": true,
+        "m8 magnet c": true,
+        "m8 shield c": true,
+        "m8 utility c": true
+      },
+      "11e06129-fd29-4416-b653-6b74f03f8467:ready": {
+        "m8 dig c": true,
+        "m8 jet c": true,
+        "m8 magnet c": true,
+        "m8 shield c": true,
+        "m8 utility c": true
+      },
+      "367d649e-d5f2-4765-bfcb-5460a07950d5:ready": {
+        "m8 dig c": true,
+        "m8 jet c": true,
+        "m8 magnet c": true,
+        "m8 shield c": true,
+        "m8 utility c": true
+      },
+      "4bd70b6a-ed4f-462c-85ee-f0ab30531ca7:finished": {
+        "m8 release a": true,
+        "m8 release b": true
+      },
+      "4bd70b6a-ed4f-462c-85ee-f0ab30531ca7:ready": {
+        "m8 release a": true,
+        "m8 release b": true
+      },
+      "6f6f0508-0fc1-48ad-81ae-cd63489faae2:ready": {
+        "m8 dig b": true,
+        "m8 jet b": true,
+        "m8 magnet b": true,
+        "m8 shield b": true,
+        "m8 utility b": true
+      },
+      "9284c65d-0a53-4da8-beff-9c80a5271253:ready": {
+        "m8 dig pilot": true,
+        "m8 jet pilot": true,
+        "m8 magnet pilot": true,
+        "m8 shield pilot": true,
+        "m8 utility pilot": true
+      },
+      "d3fe7d92-cdd9-475e-940f-f5b48e1725a8:ready": {
+        "copper": true,
+        "tony": true
+      }
+    },
+    "players": {
+      "copper": {
+        "cash": 330,
+        "earned": 0,
+        "name": "Copper",
+        "revision": 2,
+        "selected": "crumble",
+        "spent": 270,
+        "stock": {
+          "battery": 2,
+          "crumble": 3
+        }
+      },
+      "m8 dig b": {
+        "cash": 110,
+        "earned": 0,
+        "name": "M8 Dig B",
+        "revision": 35,
+        "selected": "sand",
+        "spent": 490,
+        "stock": {
+          "battery": 0,
+          "digger": 4.441874999999998,
+          "sand": 0
+        }
+      },
+      "m8 dig c": {
+        "cash": 2326,
+        "earned": 3296,
+        "name": "M8 Dig C",
+        "revision": 17,
+        "selected": "heavy",
+        "spent": 1570,
+        "stock": {
+          "battery": 3,
+          "digger": 9.95625,
+          "heavy": 3,
+          "magnet": 1,
+          "sand": 5
+        }
+      },
+      "m8 dig pilot": {
+        "cash": 110,
+        "earned": 0,
+        "name": "M8 Dig Pilot",
+        "revision": 11,
+        "selected": "sand",
+        "spent": 490,
+        "stock": {
+          "battery": 1,
+          "digger": 4.9357500000000005,
+          "sand": 2
+        }
+      },
+      "m8 jet b": {
+        "cash": 150,
+        "earned": 0,
+        "name": "M8 Jet B",
+        "revision": 366,
+        "selected": "ricochet",
+        "spent": 450,
+        "stock": {
+          "battery": 2,
+          "jetpack": 0,
+          "ricochet": 0
+        }
+      },
+      "m8 jet c": {
+        "cash": 824,
+        "earned": 1764,
+        "name": "M8 Jet C",
+        "revision": 375,
+        "selected": "sand",
+        "spent": 1540,
+        "stock": {
+          "battery": 2,
+          "digger": 5,
+          "heavy": 3,
+          "jetpack": 6,
+          "ricochet": 3,
+          "sand": 3
+        }
+      },
+      "m8 jet pilot": {
+        "cash": 150,
+        "earned": 0,
+        "name": "M8 Jet Pilot",
+        "revision": 44,
+        "selected": "ricochet",
+        "spent": 450,
+        "stock": {
+          "battery": 2,
+          "jetpack": 5.3333333333333215,
+          "ricochet": 2
+        }
+      },
+      "m8 magnet b": {
+        "cash": 10,
+        "earned": 0,
+        "name": "M8 Magnet B",
+        "revision": 5,
+        "selected": "heavy",
+        "spent": 590,
+        "stock": {
+          "heavy": 0,
+          "magnet": 1
+        }
+      },
+      "m8 magnet c": {
+        "cash": 923,
+        "earned": 2023,
+        "name": "M8 Magnet C",
+        "revision": 371,
+        "selected": "crumble",
+        "spent": 1700,
+        "stock": {
+          "battery": 2,
+          "crumble": 3,
+          "heavy": 3,
+          "magnet": 1,
+          "shield": 1
+        }
+      },
+      "m8 magnet pilot": {
+        "cash": 10,
+        "earned": 0,
+        "name": "M8 Magnet Pilot",
+        "revision": 2,
+        "selected": "heavy",
+        "spent": 590,
+        "stock": {
+          "heavy": 3,
+          "magnet": 1
+        }
+      },
+      "m8 release a": {
+        "cash": 747,
+        "earned": 957,
+        "name": "M8 Release A",
+        "revision": 129,
+        "selected": "ricochet",
+        "spent": 810,
+        "stock": {
+          "battery": 2,
+          "jetpack": 9.999999999999966,
+          "ricochet": 3
+        }
+      },
+      "m8 release b": {
+        "cash": 361,
+        "earned": 741,
+        "name": "M8 Release B",
+        "revision": 18,
+        "selected": "sand",
+        "spent": 980,
+        "stock": {
+          "battery": 2,
+          "digger": 9.939249999999998,
+          "sand": 4
+        }
+      },
+      "m8 shield b": {
+        "cash": 80,
+        "earned": 0,
+        "name": "M8 Shield B",
+        "revision": 6,
+        "selected": "crumble",
+        "spent": 520,
+        "stock": {
+          "battery": 2,
+          "crumble": 0,
+          "shield": 1
+        }
+      },
+      "m8 shield c": {
+        "cash": 1218,
+        "earned": 1778,
+        "name": "M8 Shield C",
+        "revision": 15,
+        "selected": "riot",
+        "spent": 1160,
+        "stock": {
+          "battery": 2,
+          "crumble": 3,
+          "riot": 3,
+          "shield": 1
+        }
+      },
+      "m8 shield pilot": {
+        "cash": 80,
+        "earned": 0,
+        "name": "M8 Shield Pilot",
+        "revision": 3,
+        "selected": "crumble",
+        "spent": 520,
+        "stock": {
+          "battery": 2,
+          "crumble": 3,
+          "shield": 1
+        }
+      },
+      "m8 utility b": {
+        "cash": 390,
+        "earned": 0,
+        "name": "M8 Utility B",
+        "revision": 5,
+        "selected": "riot",
+        "spent": 210,
+        "stock": {
+          "battery": 2,
+          "riot": 0
+        }
+      },
+      "m8 utility c": {
+        "cash": 792,
+        "earned": 972,
+        "name": "M8 Utility C",
+        "revision": 12,
+        "selected": "ricochet",
+        "spent": 780,
+        "stock": {
+          "battery": 2,
+          "jetpack": 6,
+          "ricochet": 3,
+          "riot": 3
+        }
+      },
+      "m8 utility pilot": {
+        "cash": 390,
+        "earned": 0,
+        "name": "M8 Utility Pilot",
+        "revision": 2,
+        "selected": "riot",
+        "spent": 210,
+        "stock": {
+          "battery": 2,
+          "riot": 3
+        }
+      },
+      "tony": {
+        "cash": 270,
+        "earned": 0,
+        "name": "Tony",
+        "revision": 2,
+        "selected": "heavy",
+        "spent": 330,
+        "stock": {
+          "battery": 2,
+          "heavy": 3
+        }
+      }
+    },
+    "rounds": {
+      "11e06129-fd29-4416-b653-6b74f03f8467": {
+        "paid": {
+          "m8 dig c": 3296,
+          "m8 jet c": 1764,
+          "m8 magnet c": 2023,
+          "m8 shield c": 1778,
+          "m8 utility c": 972
+        },
+        "round": 1,
+        "seed": 1729
+      },
+      "4bd70b6a-ed4f-462c-85ee-f0ab30531ca7": {
+        "paid": {
+          "m8 release a": 957,
+          "m8 release b": 741
+        },
+        "round": 1,
+        "seed": 7
+      }
+    },
+    "version": 1
+  },
+  "components": [
+    {
+      "controller": {
+        "capacity": 12,
+        "enabled": true,
+        "fuel": 9.999999999999966,
+        "grounded": true,
+        "held": false,
+        "recoveryPerSecond": 0,
+        "thrusting": false
+      },
+      "defenses": {
+        "deflector": {
+          "active": false,
+          "remaining": 0,
+          "spec": {
+            "acceleration": 3000,
+            "capacity": 12,
+            "drainPerSecond": 1,
+            "elements": [
+              23,
+              91,
+              178,
+              103
+            ],
+            "kinds": [
+              "rigid-body"
+            ],
+            "owners": "others",
+            "radius": 180
+          }
+        },
+        "shield": {
+          "active": false,
+          "remaining": 0,
+          "spec": {
+            "capacity": 120,
+            "types": [
+              "kinetic",
+              "blast",
+              "fire",
+              "acid",
+              "electric",
+              "freeze",
+              "poison"
+            ]
+          }
+        }
+      },
+      "name": "M8 Release A",
+      "weapon": {
+        "ammo": {
+          "2f1afa7e-f704-448b-a915-e87fff3e0427": 0,
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "a5ba2656-b214-450c-9618-fcb6778f7529": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -0.7853981633974483,
+        "equipped": "2f1afa7e-f704-448b-a915-e87fff3e0427",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7",
+          "2f1afa7e-f704-448b-a915-e87fff3e0427",
+          "a5ba2656-b214-450c-9618-fcb6778f7529"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.2422375951811602,
+        "speed": {
+          "current": 787.3337779289877,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "controller": null,
+      "defenses": null,
+      "name": "M8 Release B",
+      "weapon": null
+    }
+  ]
+}

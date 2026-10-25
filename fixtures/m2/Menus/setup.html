@@ -1,0 +1,34 @@
+<style>
+.indigo-setup{box-sizing:border-box;width:min(900px,92vw);padding:38px;border:1px solid #41445d;border-radius:18px;background:linear-gradient(140deg,#22243a,#111521 65%);box-shadow:0 30px 110px #0009;color:#eeeef7;font:16px/1.45 system-ui,sans-serif}
+.indigo-setup *{box-sizing:border-box}.indigo-setup .eyebrow{font-size:12px;letter-spacing:.22em;color:#bcaeff;font-weight:700}.indigo-setup h1{font-size:54px;letter-spacing:.11em;margin:5px 0 0;font-weight:800;line-height:1.2}.indigo-setup .subtitle{color:#b3b8cb;margin:10px 0 28px}.indigo-setup .columns{display:grid;grid-template-columns:1fr 1.2fr;gap:34px}.indigo-setup .landscape{height:168px;position:relative;overflow:hidden;border-radius:10px;background:linear-gradient(#35324e,#73617b);margin:18px 0}.indigo-setup .hill{position:absolute;inset:75px -35px -30px;background:#282d40;transform:rotate(-12deg);border-top:2px solid #a695b1}.indigo-setup .hill.far{inset:60px -20px -20px;background:#51455e;transform:rotate(17deg);border:0}.indigo-setup .tank{position:absolute;left:110px;top:86px;width:60px;height:21px;background:#b6a7ea;border-radius:8px 8px 5px 5px;transform:rotate(-12deg);box-shadow:0 6px 0 #161d2f}.indigo-setup .tank:before{content:"";position:absolute;left:17px;top:-11px;width:27px;height:15px;background:#d5c5ff;border-radius:6px 6px 0 0}.indigo-setup .tank:after{content:"";position:absolute;left:32px;top:-16px;width:45px;height:6px;background:#d5c5ff;transform:rotate(-35deg);transform-origin:left center}.indigo-setup .caption{font-size:13px;color:#a7aec4}.indigo-setup .fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.indigo-setup label{display:block;font-size:13px;color:#c8cce0;font-weight:600}.indigo-setup input,.indigo-setup textarea{display:block;width:100%;border:1px solid #41475e;border-radius:7px;background:#0e1220;color:#f5f3ff;padding:11px 12px;font:15px system-ui;margin-top:7px;outline:none}.indigo-setup input:focus,.indigo-setup textarea:focus{border-color:#bcaeff;box-shadow:0 0 0 2px #bcaeff25}.indigo-setup textarea{resize:vertical;min-height:106px;line-height:1.6}.indigo-setup .wide{grid-column:1/-1}.indigo-setup small{display:block;color:#8f98b2;font-size:12px;margin-top:5px;font-weight:400}.indigo-setup .actions{display:flex;align-items:center;justify-content:space-between;margin-top:28px;gap:14px}.indigo-setup button{border:0;border-radius:8px;background:#c4b4ff;color:#171627;padding:13px 28px;font:700 15px system-ui;cursor:pointer}.indigo-setup button:hover{background:#d9cdff}.indigo-setup .secondary{background:transparent;color:#adb5d0;border:1px solid #41475e;padding:12px 18px}.indigo-setup .error{background:#602d3c;color:#ffe0df;padding:10px 14px;border-radius:6px;margin-top:14px}.indigo-setup [hidden]{display:none!important}
+@media(max-width:650px){.indigo-setup{padding:24px}.indigo-setup .columns{grid-template-columns:1fr;gap:12px}.indigo-setup .intro{display:none}.indigo-setup h1{font-size:38px}}
+</style>
+<main class="indigo-setup">
+  <div class="eyebrow">ARTILLERY · LOCAL HOTSEAT</div>
+  <h1>INDIGO</h1>
+  <p class="subtitle">Pick your crew. Shape the battlefield. Be the last tank standing.</p>
+  <div class="columns">
+    <section class="intro">
+      <div class="eyebrow">SLATE REACH</div>
+      <div class="landscape" aria-hidden="true"><div class="hill far"></div><div class="hill"></div><div class="tank"></div></div>
+      <p>A connected ridge of stone, carved by every shot.</p>
+      <p class="caption">Leave the seed blank for a new landscape. Use the same seed to return to familiar ground.</p>
+      <p class="caption">2–16 tanks · Humans share the keyboard.<br>Names are remembered for your next match.</p>
+    </section>
+    <section class="fields">
+      <input type="hidden" name="deploy" value="yes">
+      <label>Human players<input name="humans" type="number" min="0" max="16" step="1" value="1" data-talus-value="installed.indigo.humans"></label>
+      <label>Computer players<input name="computers" type="number" min="0" max="16" step="1" value="1" data-talus-value="installed.indigo.computers"></label>
+      <label>Turn length · seconds<input name="turnSeconds" type="number" min="5" max="120" step="1" value="30" data-talus-value="installed.indigo.turnSeconds"></label>
+      <label>World seed<input name="seed" type="text" inputmode="numeric" placeholder="Random every match" aria-label="World seed"></label>
+      <label class="wide">Tank names<textarea name="namesText" rows="3" maxlength="600" data-talus-value="installed.indigo.namesText">Player 1
+CPU 1</textarea><small>One name per line. Humans first, then computers. Missing names are filled in.</small></label>
+    </section>
+  </div>
+  <p class="error" data-talus-show="error" data-talus-bind="error" hidden></p>
+  <footer class="actions">
+    <button class="secondary" data-talus-action="continue" data-talus-show="!canResume">Continue</button>
+    <button class="secondary" data-talus-action="resume" data-talus-show="canResume" hidden>Return to match</button>
+    <button data-talus-action="new-game">Deploy tanks →</button>
+  </footer>
+</main>

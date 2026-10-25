@@ -1,0 +1,116 @@
+{
+  "before": {
+    "bank": "{\"version\":1,\"players\":{\"tony\":{\"name\":\"Tony\",\"cash\":428,\"earned\":1008,\"spent\":1180,\"stock\":{\"heavy\":0,\"battery\":3,\"jetpack\":9.999999999999966,\"mirv\":3},\"selected\":\"mirv\",\"revision\":131},\"copper\":{\"name\":\"Copper\",\"cash\":116,\"earned\":916,\"spent\":1400,\"stock\":{\"crumble\":1,\"battery\":2,\"digger\":9.923625,\"nuke\":2},\"selected\":\"nuke\",\"revision\":22},\"m9 contact alpha\":{\"name\":\"M9 Contact Alpha\",\"cash\":753,\"earned\":1343,\"spent\":1190,\"stock\":{\"fuel-tank\":5.216773429908239,\"mirv\":4,\"jetpack\":6,\"battery\":2},\"selected\":\"mirv\",\"revision\":57},\"m9 contact beta\":{\"name\":\"M9 Contact Beta\",\"cash\":109,\"earned\":849,\"spent\":1340,\"stock\":{\"fuel-tank\":3.5182718843374783,\"digger\":9.79225,\"battery\":2,\"nuke\":2},\"selected\":\"nuke\",\"revision\":168}},\"rounds\":{\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00\":{\"paid\":{\"tony\":1008,\"copper\":916},\"seed\":1792769054690,\"round\":1},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd\":{\"paid\":{\"m9 contact alpha\":1343,\"m9 contact beta\":849},\"seed\":1729,\"round\":1}},\"cpuShops\":{\"d3fe7d92-cdd9-475e-940f-f5b48e1725a8:ready\":{\"tony\":true,\"copper\":true},\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00:ready\":{\"tony\":true,\"copper\":true},\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00:finished\":{\"tony\":true,\"copper\":true},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd:ready\":{\"m9 contact alpha\":true,\"m9 contact beta\":true},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd:finished\":{\"m9 contact alpha\":true,\"m9 contact beta\":true}}}",
+    "error": "",
+    "phase": "finished",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "scores": "{\"matches\":{\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00\":{\"winner\":\"Tony\",\"seed\":1792769054690},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd\":{\"winner\":\"M9 Contact Beta\",\"seed\":1729}},\"players\":{\"tony\":{\"name\":\"Tony\",\"games\":1,\"wins\":1,\"kills\":1},\"copper\":{\"name\":\"Copper\",\"games\":1,\"wins\":0,\"kills\":0},\"m9 contact alpha\":{\"name\":\"M9 Contact Alpha\",\"games\":1,\"wins\":0,\"kills\":0},\"m9 contact beta\":{\"name\":\"M9 Contact Beta\",\"games\":1,\"wins\":1,\"kills\":1}}}",
+    "status": {
+      "allowed": true,
+      "blockers": []
+    },
+    "tanks": [
+      {
+        "dead": true,
+        "health": null,
+        "motor": null,
+        "name": "M9 Contact Alpha"
+      },
+      {
+        "dead": false,
+        "health": 33.07334265747458,
+        "motor": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 136.4950463614374,
+          "fuel": 3.5182718843374676,
+          "spent": 2.4817281156624937
+        },
+        "name": "M9 Contact Beta"
+      }
+    ],
+    "winner": "M9 Contact Beta",
+    "world": "b0d456a3-7589-4cce-bf1e-3afcca1343bd"
+  },
+  "awayRequest": {
+    "action": "continue",
+    "navigating": true,
+    "next": "The page reloads into the new session; the MCP connection drops and re-attaches. Poll engine_describe_context until world.worldId (or isEditorMode) shows the new session.",
+    "ok": true,
+    "templateId": "d9fa0363-0172-a96e-9b10-0b0c3d9a1f58",
+    "worldId": "312bccdb-81ef-4eb2-acef-53bf5d74e772",
+    "worldName": "Indigo M9 \u2014 choose your battlefield"
+  },
+  "away": {
+    "bank": "{\"version\":1,\"players\":{\"tony\":{\"name\":\"Tony\",\"cash\":428,\"earned\":1008,\"spent\":1180,\"stock\":{\"heavy\":0,\"battery\":3,\"jetpack\":9.999999999999966,\"mirv\":3},\"selected\":\"mirv\",\"revision\":131},\"copper\":{\"name\":\"Copper\",\"cash\":116,\"earned\":916,\"spent\":1400,\"stock\":{\"crumble\":1,\"battery\":2,\"digger\":9.923625,\"nuke\":2},\"selected\":\"nuke\",\"revision\":22},\"m9 contact alpha\":{\"name\":\"M9 Contact Alpha\",\"cash\":753,\"earned\":1343,\"spent\":1190,\"stock\":{\"fuel-tank\":5.216773429908239,\"mirv\":4,\"jetpack\":6,\"battery\":2},\"selected\":\"mirv\",\"revision\":57},\"m9 contact beta\":{\"name\":\"M9 Contact Beta\",\"cash\":109,\"earned\":849,\"spent\":1340,\"stock\":{\"fuel-tank\":3.5182718843374783,\"digger\":9.79225,\"battery\":2,\"nuke\":2},\"selected\":\"nuke\",\"revision\":168}},\"rounds\":{\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00\":{\"paid\":{\"tony\":1008,\"copper\":916},\"seed\":1792769054690,\"round\":1},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd\":{\"paid\":{\"m9 contact alpha\":1343,\"m9 contact beta\":849},\"seed\":1729,\"round\":1}},\"cpuShops\":{\"d3fe7d92-cdd9-475e-940f-f5b48e1725a8:ready\":{\"tony\":true,\"copper\":true},\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00:ready\":{\"tony\":true,\"copper\":true},\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00:finished\":{\"tony\":true,\"copper\":true},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd:ready\":{\"m9 contact alpha\":true,\"m9 contact beta\":true},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd:finished\":{\"m9 contact alpha\":true,\"m9 contact beta\":true}}}",
+    "error": null,
+    "scores": "{\"matches\":{\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00\":{\"winner\":\"Tony\",\"seed\":1792769054690},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd\":{\"winner\":\"M9 Contact Beta\",\"seed\":1729}},\"players\":{\"tony\":{\"name\":\"Tony\",\"games\":1,\"wins\":1,\"kills\":1},\"copper\":{\"name\":\"Copper\",\"games\":1,\"wins\":0,\"kills\":0},\"m9 contact alpha\":{\"name\":\"M9 Contact Alpha\",\"games\":1,\"wins\":0,\"kills\":0},\"m9 contact beta\":{\"name\":\"M9 Contact Beta\",\"games\":1,\"wins\":1,\"kills\":1}}}",
+    "status": {
+      "allowed": true,
+      "blockers": []
+    },
+    "world": "312bccdb-81ef-4eb2-acef-53bf5d74e772"
+  },
+  "returnRequest": {
+    "action": "continue",
+    "navigating": true,
+    "next": "The page reloads into the new session; the MCP connection drops and re-attaches. Poll engine_describe_context until world.worldId (or isEditorMode) shows the new session.",
+    "ok": true,
+    "templateId": "d9fa0363-0172-a96e-9b10-0b0c3d9a1f58",
+    "worldId": "b0d456a3-7589-4cce-bf1e-3afcca1343bd",
+    "worldName": "indigo 23/10/26/13:01"
+  },
+  "after": {
+    "bank": "{\"version\":1,\"players\":{\"tony\":{\"name\":\"Tony\",\"cash\":428,\"earned\":1008,\"spent\":1180,\"stock\":{\"heavy\":0,\"battery\":3,\"jetpack\":9.999999999999966,\"mirv\":3},\"selected\":\"mirv\",\"revision\":131},\"copper\":{\"name\":\"Copper\",\"cash\":116,\"earned\":916,\"spent\":1400,\"stock\":{\"crumble\":1,\"battery\":2,\"digger\":9.923625,\"nuke\":2},\"selected\":\"nuke\",\"revision\":22},\"m9 contact alpha\":{\"name\":\"M9 Contact Alpha\",\"cash\":753,\"earned\":1343,\"spent\":1190,\"stock\":{\"fuel-tank\":5.216773429908239,\"mirv\":4,\"jetpack\":6,\"battery\":2},\"selected\":\"mirv\",\"revision\":57},\"m9 contact beta\":{\"name\":\"M9 Contact Beta\",\"cash\":109,\"earned\":849,\"spent\":1340,\"stock\":{\"fuel-tank\":3.5182718843374783,\"digger\":9.79225,\"battery\":2,\"nuke\":2},\"selected\":\"nuke\",\"revision\":168}},\"rounds\":{\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00\":{\"paid\":{\"tony\":1008,\"copper\":916},\"seed\":1792769054690,\"round\":1},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd\":{\"paid\":{\"m9 contact alpha\":1343,\"m9 contact beta\":849},\"seed\":1729,\"round\":1}},\"cpuShops\":{\"d3fe7d92-cdd9-475e-940f-f5b48e1725a8:ready\":{\"tony\":true,\"copper\":true},\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00:ready\":{\"tony\":true,\"copper\":true},\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00:finished\":{\"tony\":true,\"copper\":true},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd:ready\":{\"m9 contact alpha\":true,\"m9 contact beta\":true},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd:finished\":{\"m9 contact alpha\":true,\"m9 contact beta\":true}}}",
+    "error": "",
+    "phase": "finished",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "scores": "{\"matches\":{\"4127394f-e6b2-40f1-ae5c-0dc0241d7c00\":{\"winner\":\"Tony\",\"seed\":1792769054690},\"b0d456a3-7589-4cce-bf1e-3afcca1343bd\":{\"winner\":\"M9 Contact Beta\",\"seed\":1729}},\"players\":{\"tony\":{\"name\":\"Tony\",\"games\":1,\"wins\":1,\"kills\":1},\"copper\":{\"name\":\"Copper\",\"games\":1,\"wins\":0,\"kills\":0},\"m9 contact alpha\":{\"name\":\"M9 Contact Alpha\",\"games\":1,\"wins\":0,\"kills\":0},\"m9 contact beta\":{\"name\":\"M9 Contact Beta\",\"games\":1,\"wins\":1,\"kills\":1}}}",
+    "status": {
+      "allowed": true,
+      "blockers": []
+    },
+    "tanks": [
+      {
+        "dead": true,
+        "health": null,
+        "motor": null,
+        "name": "M9 Contact Alpha"
+      },
+      {
+        "dead": false,
+        "health": 33.07334265747458,
+        "motor": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 136.4950463614374,
+          "fuel": 3.5182718843374676,
+          "spent": 2.4817281156624937
+        },
+        "name": "M9 Contact Beta"
+      }
+    ],
+    "winner": "M9 Contact Beta",
+    "world": "b0d456a3-7589-4cce-bf1e-3afcca1343bd"
+  },
+  "checks": {
+    "distinct world entered": true,
+    "finished game reopened": true,
+    "exact bank unchanged": true,
+    "exact scores unchanged": true,
+    "same winner": true,
+    "empty presentation": true,
+    "save allowed": true,
+    "survivor state retained": true
+  }
+}

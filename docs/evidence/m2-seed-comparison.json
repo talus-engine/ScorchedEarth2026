@@ -1,0 +1,38 @@
+{
+  "samplingNote": "Six x offsets per tile [0,64,96,160,192,255], outside the central tank footprint. Earlier seven-point reports included live body matter at x=128; that point is excluded from this terrain comparison.",
+  "runs": {
+    "seed0-audit": {
+      "worldId": "b6b67417-05fe-429d-a389-881a1202988e",
+      "seed": 0,
+      "terrainSha256": "bf169a785ba87cca81e3e3c56c50a760fc194adc18669454905b697d817549c4",
+      "all14DataChecksPassed": true
+    },
+    "seed0-repeat-four": {
+      "worldId": "a0eba9e7-156e-49e6-972f-5f442b52ec81",
+      "seed": 0,
+      "terrainSha256": "bf169a785ba87cca81e3e3c56c50a760fc194adc18669454905b697d817549c4",
+      "all14DataChecksPassed": true
+    },
+    "seed1-computers": {
+      "worldId": "f45ab2a5-173d-4951-9971-316a9b1e207f",
+      "seed": 1,
+      "terrainSha256": "ef69d18763308e22cea777ac001b3c65bb5c9b1707706b748af4e3c1757544ef",
+      "all14DataChecksPassed": true
+    },
+    "random-humans": {
+      "worldId": "95db4a54-184a-4cfd-9156-89d0cc25a717",
+      "seed": 1792658647906,
+      "terrainSha256": "75eb077f08062fee3895ba9f3fddf5e5e5edeab669030ae0ab473f43da798c48",
+      "all14DataChecksPassed": true
+    }
+  },
+  "checks": {
+    "same explicit seed reproduces terrain with different roster": true,
+    "different explicit seed changes terrain": true,
+    "blank seed chooses a new seed": true,
+    "random terrain differs": true,
+    "mixed roster accepted": true,
+    "computer-only roster accepted": true,
+    "human-only roster accepted": true
+  }
+}

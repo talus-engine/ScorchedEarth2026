@@ -1,0 +1,2454 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 1904,
+  "ok": true,
+  "value": {
+    "installed": true,
+    "rows": [
+      {
+        "basedOn": "PARTICLE_SPAWNER",
+        "existing": false,
+        "fields": {
+          "color": [
+            0.12,
+            0.65,
+            0.95
+          ],
+          "hardness": 16,
+          "params": {
+            "burst": 1,
+            "emitElement": 3,
+            "emitMode": 0,
+            "enabled": 1,
+            "framesPerSpawn": 12,
+            "shape": 0,
+            "speedAngle": 1.5708,
+            "speedMax": 0.1,
+            "speedMin": 0,
+            "temperature": 295.15
+          }
+        },
+        "id": 223,
+        "name": "TERRA_WATER_SOURCE",
+        "saved": {
+          "ambientSfxId": "builtin:adobe_foley/industry/Industry Motor Servo Spinning Long.ogg",
+          "caBehavior": "spawner",
+          "category": [
+            "Solids",
+            "Life"
+          ],
+          "collision": 0,
+          "color": [
+            0.12,
+            0.65,
+            0.95
+          ],
+          "diffusion": 0,
+          "falldown": 0,
+          "fireLife": 0,
+          "flammable": 0,
+          "gravity": 0,
+          "hardness": 16,
+          "heatConduct": 0,
+          "highTemperature": 5000,
+          "highTemperatureTransition": 0,
+          "id": 223,
+          "impactSfxId": "builtin:adobe_foley/impacts/Impact Metal Bang 01.ogg",
+          "initialTemp": 295.15,
+          "lowTemperature": 0,
+          "lowTemperatureTransition": 0,
+          "maxVelocity": 0,
+          "name": "TERRA_WATER_SOURCE",
+          "noiseSpec": {
+            "algorithm": "simplex",
+            "lacunarity": 2.1,
+            "layers": [
+              {
+                "color": [
+                  0.15600000000000003,
+                  0.663,
+                  0.4290000000000001
+                ],
+                "endPos": 0.3333333333333333,
+                "scale": 0.08,
+                "strength": 0.55,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/DRAIN_1A.PNG"
+                }
+              },
+              {
+                "color": [
+                  0.236,
+                  1,
+                  0.649
+                ],
+                "endPos": 0.6666666666666666,
+                "scale": 0.22,
+                "strength": 0.4,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/TECH_3A.PNG"
+                }
+              },
+              {
+                "color": [
+                  0.328,
+                  0.874,
+                  0.622
+                ],
+                "endPos": 1,
+                "scale": 0.55,
+                "strength": 0.22,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/GRID_1A.PNG"
+                }
+              }
+            ],
+            "noiseMix": 0.92,
+            "noiseVisualMode": "bands",
+            "octaves": 5,
+            "persistence": 0.55
+          },
+          "paramVariants": [
+            {
+              "name": "Fire",
+              "params": {
+                "burst": 2,
+                "emitElement": 6,
+                "emitMode": 0,
+                "framesPerSpawn": 2,
+                "speedAngle": 4.7124,
+                "speedJitter": 0.3,
+                "speedMax": 1.5,
+                "speedMin": 0.5
+              }
+            },
+            {
+              "name": "Oil",
+              "params": {
+                "burst": 1,
+                "emitElement": 17,
+                "emitMode": 0,
+                "framesPerSpawn": 4,
+                "speedAngle": 1.5708,
+                "speedJitter": 0,
+                "speedMax": 0.5,
+                "speedMin": 0
+              }
+            },
+            {
+              "name": "Methane",
+              "params": {
+                "burst": 2,
+                "emitElement": 33,
+                "emitMode": 0,
+                "framesPerSpawn": 3,
+                "speedAngle": 4.7124,
+                "speedJitter": 1,
+                "speedMax": 0.8,
+                "speedMin": 0.2
+              }
+            },
+            {
+              "name": "Pressure",
+              "params": {
+                "emitMode": 2,
+                "framesPerSpawn": 4,
+                "pressureAmount": 2
+              }
+            },
+            {
+              "name": "Heat",
+              "params": {
+                "emitMode": 1,
+                "framesPerSpawn": 4,
+                "heatAmount": 50
+              }
+            },
+            {
+              "name": "Charge",
+              "params": {
+                "chargeAmount": 30,
+                "emitMode": 3,
+                "framesPerSpawn": 4
+              }
+            }
+          ],
+          "params": {
+            "burst": 1,
+            "emitElement": 3,
+            "emitMode": 0,
+            "enabled": 1,
+            "framesPerSpawn": 12,
+            "shape": 0,
+            "speedAngle": 1.5708,
+            "speedMax": 0.1,
+            "speedMin": 0,
+            "temperature": 295.15
+          },
+          "paramsSchema": [
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Enabled",
+              "max": 1,
+              "min": 0,
+              "name": "enabled",
+              "offset": 0,
+              "step": 1
+            },
+            {
+              "allowNone": false,
+              "default": 3,
+              "kind": "elementRef",
+              "label": "Emit element",
+              "name": "emitElement",
+              "offset": 4
+            },
+            {
+              "default": 4,
+              "kind": "u32",
+              "label": "Frames per spawn",
+              "max": 1000,
+              "min": 1,
+              "name": "framesPerSpawn",
+              "offset": 8,
+              "step": 1,
+              "unit": "frames"
+            },
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Particles per fire",
+              "max": 16,
+              "min": 1,
+              "name": "burst",
+              "offset": 12,
+              "step": 1
+            },
+            {
+              "default": 0,
+              "kind": "enum",
+              "label": "Emission shape",
+              "name": "shape",
+              "offset": 16,
+              "options": [
+                {
+                  "label": "Point (1 cell forward)",
+                  "value": 0
+                },
+                {
+                  "label": "Disc",
+                  "value": 1
+                },
+                {
+                  "label": "Box",
+                  "value": 2
+                },
+                {
+                  "label": "Line",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Shape radius / half-len",
+              "max": 32,
+              "min": 0,
+              "name": "shapeRadius",
+              "offset": 20,
+              "step": 0.5,
+              "unit": "cells"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Shape aspect (box/line)",
+              "max": 10,
+              "min": 0.1,
+              "name": "shapeAspect",
+              "offset": 24,
+              "step": 0.1
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Shape angle",
+              "max": 6.2832,
+              "min": 0,
+              "name": "shapeAngle",
+              "offset": 28,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Speed min",
+              "max": 20,
+              "min": 0,
+              "name": "speedMin",
+              "offset": 32,
+              "step": 0.05,
+              "unit": "u/frame"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Speed max",
+              "max": 20,
+              "min": 0,
+              "name": "speedMax",
+              "offset": 36,
+              "step": 0.05,
+              "unit": "u/frame"
+            },
+            {
+              "default": 1.5708,
+              "kind": "f32",
+              "label": "Aim angle",
+              "max": 6.2832,
+              "min": 0,
+              "name": "speedAngle",
+              "offset": 40,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Aim jitter (\u00b1)",
+              "max": 3.1416,
+              "min": 0,
+              "name": "speedJitter",
+              "offset": 44,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 295.15,
+              "kind": "f32",
+              "label": "Initial temperature (override)",
+              "max": 5000,
+              "min": 0,
+              "name": "temperature",
+              "offset": 48,
+              "step": 1,
+              "unit": "K"
+            },
+            {
+              "default": 0,
+              "kind": "u32",
+              "label": "Initial life (0 = element lifetime)",
+              "max": 65535,
+              "min": 0,
+              "name": "life",
+              "offset": 52,
+              "step": 1
+            },
+            {
+              "default": 0,
+              "kind": "u32",
+              "label": "RNG seed",
+              "max": 4294967295,
+              "min": 0,
+              "name": "seed",
+              "offset": 56,
+              "step": 1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 1 \u2014 element",
+              "name": "emit1Element",
+              "offset": 60
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 1 \u2014 variant",
+              "name": "emit1Variant",
+              "offset": 64,
+              "pairedElementField": "emit1Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 1 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit1Weight",
+              "offset": 68,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 2 \u2014 element",
+              "name": "emit2Element",
+              "offset": 72
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 2 \u2014 variant",
+              "name": "emit2Variant",
+              "offset": 76,
+              "pairedElementField": "emit2Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 2 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit2Weight",
+              "offset": 80,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 3 \u2014 element",
+              "name": "emit3Element",
+              "offset": 84
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 3 \u2014 variant",
+              "name": "emit3Variant",
+              "offset": 88,
+              "pairedElementField": "emit3Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 3 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit3Weight",
+              "offset": 92,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 4 \u2014 element",
+              "name": "emit4Element",
+              "offset": 96
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 4 \u2014 variant",
+              "name": "emit4Variant",
+              "offset": 100,
+              "pairedElementField": "emit4Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 4 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit4Weight",
+              "offset": 104,
+              "step": 0.1
+            },
+            {
+              "default": 0,
+              "kind": "enum",
+              "label": "Emit mode",
+              "name": "emitMode",
+              "offset": 108,
+              "options": [
+                {
+                  "label": "Particles",
+                  "value": 0
+                },
+                {
+                  "label": "Heat",
+                  "value": 1
+                },
+                {
+                  "label": "Pressure",
+                  "value": 2
+                },
+                {
+                  "label": "Electricity",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "default": 50,
+              "kind": "f32",
+              "label": "Heat per pulse (mode: Heat)",
+              "max": 500,
+              "min": -500,
+              "name": "heatAmount",
+              "offset": 112,
+              "step": 1,
+              "unit": "K"
+            },
+            {
+              "default": 2,
+              "kind": "f32",
+              "label": "Pressure per pulse (mode: Pressure)",
+              "max": 20,
+              "min": -20,
+              "name": "pressureAmount",
+              "offset": 116,
+              "step": 0.1
+            },
+            {
+              "default": 30,
+              "kind": "f32",
+              "label": "Charge per pulse (mode: Electricity)",
+              "max": 200,
+              "min": 0,
+              "name": "chargeAmount",
+              "offset": 120,
+              "step": 1
+            },
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Spawn at the emitted element's own temperature",
+              "max": 1,
+              "min": 0,
+              "name": "useElementTemp",
+              "offset": 124,
+              "step": 1
+            }
+          ],
+          "renderMode": "noise",
+          "semisolidSupport": true,
+          "tags": [
+            "solid",
+            "utility"
+          ],
+          "textureAnchor": true,
+          "tptAdvection": 0,
+          "tptAirDrag": 0,
+          "tptAirLoss": 0.9,
+          "tptLoss": 0,
+          "weight": 200
+        }
+      },
+      {
+        "basedOn": "PARTICLE_SPAWNER",
+        "existing": false,
+        "fields": {
+          "color": [
+            0.55,
+            0.35,
+            0.1
+          ],
+          "hardness": 16,
+          "params": {
+            "burst": 1,
+            "emitElement": 17,
+            "emitMode": 0,
+            "enabled": 1,
+            "framesPerSpawn": 30,
+            "shape": 0,
+            "speedAngle": 1.5708,
+            "speedMax": 0.1,
+            "speedMin": 0,
+            "temperature": 295.15
+          }
+        },
+        "id": 224,
+        "name": "TERRA_OIL_SOURCE",
+        "saved": {
+          "ambientSfxId": "builtin:adobe_foley/industry/Industry Motor Servo Spinning Long.ogg",
+          "caBehavior": "spawner",
+          "category": [
+            "Solids",
+            "Life"
+          ],
+          "collision": 0,
+          "color": [
+            0.55,
+            0.35,
+            0.1
+          ],
+          "diffusion": 0,
+          "falldown": 0,
+          "fireLife": 0,
+          "flammable": 0,
+          "gravity": 0,
+          "hardness": 16,
+          "heatConduct": 0,
+          "highTemperature": 5000,
+          "highTemperatureTransition": 0,
+          "id": 224,
+          "impactSfxId": "builtin:adobe_foley/impacts/Impact Metal Bang 01.ogg",
+          "initialTemp": 295.15,
+          "lowTemperature": 0,
+          "lowTemperatureTransition": 0,
+          "maxVelocity": 0,
+          "name": "TERRA_OIL_SOURCE",
+          "noiseSpec": {
+            "algorithm": "simplex",
+            "lacunarity": 2.1,
+            "layers": [
+              {
+                "color": [
+                  0.15600000000000003,
+                  0.663,
+                  0.4290000000000001
+                ],
+                "endPos": 0.3333333333333333,
+                "scale": 0.08,
+                "strength": 0.55,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/DRAIN_1A.PNG"
+                }
+              },
+              {
+                "color": [
+                  0.236,
+                  1,
+                  0.649
+                ],
+                "endPos": 0.6666666666666666,
+                "scale": 0.22,
+                "strength": 0.4,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/TECH_3A.PNG"
+                }
+              },
+              {
+                "color": [
+                  0.328,
+                  0.874,
+                  0.622
+                ],
+                "endPos": 1,
+                "scale": 0.55,
+                "strength": 0.22,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/GRID_1A.PNG"
+                }
+              }
+            ],
+            "noiseMix": 0.92,
+            "noiseVisualMode": "bands",
+            "octaves": 5,
+            "persistence": 0.55
+          },
+          "paramVariants": [
+            {
+              "name": "Fire",
+              "params": {
+                "burst": 2,
+                "emitElement": 6,
+                "emitMode": 0,
+                "framesPerSpawn": 2,
+                "speedAngle": 4.7124,
+                "speedJitter": 0.3,
+                "speedMax": 1.5,
+                "speedMin": 0.5
+              }
+            },
+            {
+              "name": "Oil",
+              "params": {
+                "burst": 1,
+                "emitElement": 17,
+                "emitMode": 0,
+                "framesPerSpawn": 4,
+                "speedAngle": 1.5708,
+                "speedJitter": 0,
+                "speedMax": 0.5,
+                "speedMin": 0
+              }
+            },
+            {
+              "name": "Methane",
+              "params": {
+                "burst": 2,
+                "emitElement": 33,
+                "emitMode": 0,
+                "framesPerSpawn": 3,
+                "speedAngle": 4.7124,
+                "speedJitter": 1,
+                "speedMax": 0.8,
+                "speedMin": 0.2
+              }
+            },
+            {
+              "name": "Pressure",
+              "params": {
+                "emitMode": 2,
+                "framesPerSpawn": 4,
+                "pressureAmount": 2
+              }
+            },
+            {
+              "name": "Heat",
+              "params": {
+                "emitMode": 1,
+                "framesPerSpawn": 4,
+                "heatAmount": 50
+              }
+            },
+            {
+              "name": "Charge",
+              "params": {
+                "chargeAmount": 30,
+                "emitMode": 3,
+                "framesPerSpawn": 4
+              }
+            }
+          ],
+          "params": {
+            "burst": 1,
+            "emitElement": 17,
+            "emitMode": 0,
+            "enabled": 1,
+            "framesPerSpawn": 30,
+            "shape": 0,
+            "speedAngle": 1.5708,
+            "speedMax": 0.1,
+            "speedMin": 0,
+            "temperature": 295.15
+          },
+          "paramsSchema": [
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Enabled",
+              "max": 1,
+              "min": 0,
+              "name": "enabled",
+              "offset": 0,
+              "step": 1
+            },
+            {
+              "allowNone": false,
+              "default": 3,
+              "kind": "elementRef",
+              "label": "Emit element",
+              "name": "emitElement",
+              "offset": 4
+            },
+            {
+              "default": 4,
+              "kind": "u32",
+              "label": "Frames per spawn",
+              "max": 1000,
+              "min": 1,
+              "name": "framesPerSpawn",
+              "offset": 8,
+              "step": 1,
+              "unit": "frames"
+            },
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Particles per fire",
+              "max": 16,
+              "min": 1,
+              "name": "burst",
+              "offset": 12,
+              "step": 1
+            },
+            {
+              "default": 0,
+              "kind": "enum",
+              "label": "Emission shape",
+              "name": "shape",
+              "offset": 16,
+              "options": [
+                {
+                  "label": "Point (1 cell forward)",
+                  "value": 0
+                },
+                {
+                  "label": "Disc",
+                  "value": 1
+                },
+                {
+                  "label": "Box",
+                  "value": 2
+                },
+                {
+                  "label": "Line",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Shape radius / half-len",
+              "max": 32,
+              "min": 0,
+              "name": "shapeRadius",
+              "offset": 20,
+              "step": 0.5,
+              "unit": "cells"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Shape aspect (box/line)",
+              "max": 10,
+              "min": 0.1,
+              "name": "shapeAspect",
+              "offset": 24,
+              "step": 0.1
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Shape angle",
+              "max": 6.2832,
+              "min": 0,
+              "name": "shapeAngle",
+              "offset": 28,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Speed min",
+              "max": 20,
+              "min": 0,
+              "name": "speedMin",
+              "offset": 32,
+              "step": 0.05,
+              "unit": "u/frame"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Speed max",
+              "max": 20,
+              "min": 0,
+              "name": "speedMax",
+              "offset": 36,
+              "step": 0.05,
+              "unit": "u/frame"
+            },
+            {
+              "default": 1.5708,
+              "kind": "f32",
+              "label": "Aim angle",
+              "max": 6.2832,
+              "min": 0,
+              "name": "speedAngle",
+              "offset": 40,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Aim jitter (\u00b1)",
+              "max": 3.1416,
+              "min": 0,
+              "name": "speedJitter",
+              "offset": 44,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 295.15,
+              "kind": "f32",
+              "label": "Initial temperature (override)",
+              "max": 5000,
+              "min": 0,
+              "name": "temperature",
+              "offset": 48,
+              "step": 1,
+              "unit": "K"
+            },
+            {
+              "default": 0,
+              "kind": "u32",
+              "label": "Initial life (0 = element lifetime)",
+              "max": 65535,
+              "min": 0,
+              "name": "life",
+              "offset": 52,
+              "step": 1
+            },
+            {
+              "default": 0,
+              "kind": "u32",
+              "label": "RNG seed",
+              "max": 4294967295,
+              "min": 0,
+              "name": "seed",
+              "offset": 56,
+              "step": 1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 1 \u2014 element",
+              "name": "emit1Element",
+              "offset": 60
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 1 \u2014 variant",
+              "name": "emit1Variant",
+              "offset": 64,
+              "pairedElementField": "emit1Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 1 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit1Weight",
+              "offset": 68,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 2 \u2014 element",
+              "name": "emit2Element",
+              "offset": 72
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 2 \u2014 variant",
+              "name": "emit2Variant",
+              "offset": 76,
+              "pairedElementField": "emit2Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 2 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit2Weight",
+              "offset": 80,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 3 \u2014 element",
+              "name": "emit3Element",
+              "offset": 84
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 3 \u2014 variant",
+              "name": "emit3Variant",
+              "offset": 88,
+              "pairedElementField": "emit3Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 3 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit3Weight",
+              "offset": 92,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 4 \u2014 element",
+              "name": "emit4Element",
+              "offset": 96
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 4 \u2014 variant",
+              "name": "emit4Variant",
+              "offset": 100,
+              "pairedElementField": "emit4Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 4 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit4Weight",
+              "offset": 104,
+              "step": 0.1
+            },
+            {
+              "default": 0,
+              "kind": "enum",
+              "label": "Emit mode",
+              "name": "emitMode",
+              "offset": 108,
+              "options": [
+                {
+                  "label": "Particles",
+                  "value": 0
+                },
+                {
+                  "label": "Heat",
+                  "value": 1
+                },
+                {
+                  "label": "Pressure",
+                  "value": 2
+                },
+                {
+                  "label": "Electricity",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "default": 50,
+              "kind": "f32",
+              "label": "Heat per pulse (mode: Heat)",
+              "max": 500,
+              "min": -500,
+              "name": "heatAmount",
+              "offset": 112,
+              "step": 1,
+              "unit": "K"
+            },
+            {
+              "default": 2,
+              "kind": "f32",
+              "label": "Pressure per pulse (mode: Pressure)",
+              "max": 20,
+              "min": -20,
+              "name": "pressureAmount",
+              "offset": 116,
+              "step": 0.1
+            },
+            {
+              "default": 30,
+              "kind": "f32",
+              "label": "Charge per pulse (mode: Electricity)",
+              "max": 200,
+              "min": 0,
+              "name": "chargeAmount",
+              "offset": 120,
+              "step": 1
+            },
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Spawn at the emitted element's own temperature",
+              "max": 1,
+              "min": 0,
+              "name": "useElementTemp",
+              "offset": 124,
+              "step": 1
+            }
+          ],
+          "renderMode": "noise",
+          "semisolidSupport": true,
+          "tags": [
+            "solid",
+            "utility"
+          ],
+          "textureAnchor": true,
+          "tptAdvection": 0,
+          "tptAirDrag": 0,
+          "tptAirLoss": 0.9,
+          "tptLoss": 0,
+          "weight": 200
+        }
+      },
+      {
+        "basedOn": "PARTICLE_SPAWNER",
+        "existing": false,
+        "fields": {
+          "color": [
+            0.95,
+            0.3,
+            0.1
+          ],
+          "hardness": 16,
+          "params": {
+            "burst": 1,
+            "emitElement": 6,
+            "emitMode": 0,
+            "enabled": 1,
+            "framesPerSpawn": 12,
+            "shape": 0,
+            "speedAngle": 4.7124,
+            "speedJitter": 0.2,
+            "speedMax": 0.5,
+            "speedMin": 0.2,
+            "temperature": 1100
+          }
+        },
+        "id": 225,
+        "name": "TERRA_FIRE_SOURCE",
+        "saved": {
+          "ambientSfxId": "builtin:adobe_foley/industry/Industry Motor Servo Spinning Long.ogg",
+          "caBehavior": "spawner",
+          "category": [
+            "Solids",
+            "Life"
+          ],
+          "collision": 0,
+          "color": [
+            0.95,
+            0.3,
+            0.1
+          ],
+          "diffusion": 0,
+          "falldown": 0,
+          "fireLife": 0,
+          "flammable": 0,
+          "gravity": 0,
+          "hardness": 16,
+          "heatConduct": 0,
+          "highTemperature": 5000,
+          "highTemperatureTransition": 0,
+          "id": 225,
+          "impactSfxId": "builtin:adobe_foley/impacts/Impact Metal Bang 01.ogg",
+          "initialTemp": 295.15,
+          "lowTemperature": 0,
+          "lowTemperatureTransition": 0,
+          "maxVelocity": 0,
+          "name": "TERRA_FIRE_SOURCE",
+          "noiseSpec": {
+            "algorithm": "simplex",
+            "lacunarity": 2.1,
+            "layers": [
+              {
+                "color": [
+                  0.15600000000000003,
+                  0.663,
+                  0.4290000000000001
+                ],
+                "endPos": 0.3333333333333333,
+                "scale": 0.08,
+                "strength": 0.55,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/DRAIN_1A.PNG"
+                }
+              },
+              {
+                "color": [
+                  0.236,
+                  1,
+                  0.649
+                ],
+                "endPos": 0.6666666666666666,
+                "scale": 0.22,
+                "strength": 0.4,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/TECH_3A.PNG"
+                }
+              },
+              {
+                "color": [
+                  0.328,
+                  0.874,
+                  0.622
+                ],
+                "endPos": 1,
+                "scale": 0.55,
+                "strength": 0.22,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/GRID_1A.PNG"
+                }
+              }
+            ],
+            "noiseMix": 0.92,
+            "noiseVisualMode": "bands",
+            "octaves": 5,
+            "persistence": 0.55
+          },
+          "paramVariants": [
+            {
+              "name": "Fire",
+              "params": {
+                "burst": 2,
+                "emitElement": 6,
+                "emitMode": 0,
+                "framesPerSpawn": 2,
+                "speedAngle": 4.7124,
+                "speedJitter": 0.3,
+                "speedMax": 1.5,
+                "speedMin": 0.5
+              }
+            },
+            {
+              "name": "Oil",
+              "params": {
+                "burst": 1,
+                "emitElement": 17,
+                "emitMode": 0,
+                "framesPerSpawn": 4,
+                "speedAngle": 1.5708,
+                "speedJitter": 0,
+                "speedMax": 0.5,
+                "speedMin": 0
+              }
+            },
+            {
+              "name": "Methane",
+              "params": {
+                "burst": 2,
+                "emitElement": 33,
+                "emitMode": 0,
+                "framesPerSpawn": 3,
+                "speedAngle": 4.7124,
+                "speedJitter": 1,
+                "speedMax": 0.8,
+                "speedMin": 0.2
+              }
+            },
+            {
+              "name": "Pressure",
+              "params": {
+                "emitMode": 2,
+                "framesPerSpawn": 4,
+                "pressureAmount": 2
+              }
+            },
+            {
+              "name": "Heat",
+              "params": {
+                "emitMode": 1,
+                "framesPerSpawn": 4,
+                "heatAmount": 50
+              }
+            },
+            {
+              "name": "Charge",
+              "params": {
+                "chargeAmount": 30,
+                "emitMode": 3,
+                "framesPerSpawn": 4
+              }
+            }
+          ],
+          "params": {
+            "burst": 1,
+            "emitElement": 6,
+            "emitMode": 0,
+            "enabled": 1,
+            "framesPerSpawn": 12,
+            "shape": 0,
+            "speedAngle": 4.7124,
+            "speedJitter": 0.2,
+            "speedMax": 0.5,
+            "speedMin": 0.2,
+            "temperature": 1100
+          },
+          "paramsSchema": [
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Enabled",
+              "max": 1,
+              "min": 0,
+              "name": "enabled",
+              "offset": 0,
+              "step": 1
+            },
+            {
+              "allowNone": false,
+              "default": 3,
+              "kind": "elementRef",
+              "label": "Emit element",
+              "name": "emitElement",
+              "offset": 4
+            },
+            {
+              "default": 4,
+              "kind": "u32",
+              "label": "Frames per spawn",
+              "max": 1000,
+              "min": 1,
+              "name": "framesPerSpawn",
+              "offset": 8,
+              "step": 1,
+              "unit": "frames"
+            },
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Particles per fire",
+              "max": 16,
+              "min": 1,
+              "name": "burst",
+              "offset": 12,
+              "step": 1
+            },
+            {
+              "default": 0,
+              "kind": "enum",
+              "label": "Emission shape",
+              "name": "shape",
+              "offset": 16,
+              "options": [
+                {
+                  "label": "Point (1 cell forward)",
+                  "value": 0
+                },
+                {
+                  "label": "Disc",
+                  "value": 1
+                },
+                {
+                  "label": "Box",
+                  "value": 2
+                },
+                {
+                  "label": "Line",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Shape radius / half-len",
+              "max": 32,
+              "min": 0,
+              "name": "shapeRadius",
+              "offset": 20,
+              "step": 0.5,
+              "unit": "cells"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Shape aspect (box/line)",
+              "max": 10,
+              "min": 0.1,
+              "name": "shapeAspect",
+              "offset": 24,
+              "step": 0.1
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Shape angle",
+              "max": 6.2832,
+              "min": 0,
+              "name": "shapeAngle",
+              "offset": 28,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Speed min",
+              "max": 20,
+              "min": 0,
+              "name": "speedMin",
+              "offset": 32,
+              "step": 0.05,
+              "unit": "u/frame"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Speed max",
+              "max": 20,
+              "min": 0,
+              "name": "speedMax",
+              "offset": 36,
+              "step": 0.05,
+              "unit": "u/frame"
+            },
+            {
+              "default": 1.5708,
+              "kind": "f32",
+              "label": "Aim angle",
+              "max": 6.2832,
+              "min": 0,
+              "name": "speedAngle",
+              "offset": 40,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Aim jitter (\u00b1)",
+              "max": 3.1416,
+              "min": 0,
+              "name": "speedJitter",
+              "offset": 44,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 295.15,
+              "kind": "f32",
+              "label": "Initial temperature (override)",
+              "max": 5000,
+              "min": 0,
+              "name": "temperature",
+              "offset": 48,
+              "step": 1,
+              "unit": "K"
+            },
+            {
+              "default": 0,
+              "kind": "u32",
+              "label": "Initial life (0 = element lifetime)",
+              "max": 65535,
+              "min": 0,
+              "name": "life",
+              "offset": 52,
+              "step": 1
+            },
+            {
+              "default": 0,
+              "kind": "u32",
+              "label": "RNG seed",
+              "max": 4294967295,
+              "min": 0,
+              "name": "seed",
+              "offset": 56,
+              "step": 1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 1 \u2014 element",
+              "name": "emit1Element",
+              "offset": 60
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 1 \u2014 variant",
+              "name": "emit1Variant",
+              "offset": 64,
+              "pairedElementField": "emit1Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 1 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit1Weight",
+              "offset": 68,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 2 \u2014 element",
+              "name": "emit2Element",
+              "offset": 72
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 2 \u2014 variant",
+              "name": "emit2Variant",
+              "offset": 76,
+              "pairedElementField": "emit2Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 2 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit2Weight",
+              "offset": 80,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 3 \u2014 element",
+              "name": "emit3Element",
+              "offset": 84
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 3 \u2014 variant",
+              "name": "emit3Variant",
+              "offset": 88,
+              "pairedElementField": "emit3Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 3 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit3Weight",
+              "offset": 92,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 4 \u2014 element",
+              "name": "emit4Element",
+              "offset": 96
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 4 \u2014 variant",
+              "name": "emit4Variant",
+              "offset": 100,
+              "pairedElementField": "emit4Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 4 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit4Weight",
+              "offset": 104,
+              "step": 0.1
+            },
+            {
+              "default": 0,
+              "kind": "enum",
+              "label": "Emit mode",
+              "name": "emitMode",
+              "offset": 108,
+              "options": [
+                {
+                  "label": "Particles",
+                  "value": 0
+                },
+                {
+                  "label": "Heat",
+                  "value": 1
+                },
+                {
+                  "label": "Pressure",
+                  "value": 2
+                },
+                {
+                  "label": "Electricity",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "default": 50,
+              "kind": "f32",
+              "label": "Heat per pulse (mode: Heat)",
+              "max": 500,
+              "min": -500,
+              "name": "heatAmount",
+              "offset": 112,
+              "step": 1,
+              "unit": "K"
+            },
+            {
+              "default": 2,
+              "kind": "f32",
+              "label": "Pressure per pulse (mode: Pressure)",
+              "max": 20,
+              "min": -20,
+              "name": "pressureAmount",
+              "offset": 116,
+              "step": 0.1
+            },
+            {
+              "default": 30,
+              "kind": "f32",
+              "label": "Charge per pulse (mode: Electricity)",
+              "max": 200,
+              "min": 0,
+              "name": "chargeAmount",
+              "offset": 120,
+              "step": 1
+            },
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Spawn at the emitted element's own temperature",
+              "max": 1,
+              "min": 0,
+              "name": "useElementTemp",
+              "offset": 124,
+              "step": 1
+            }
+          ],
+          "renderMode": "noise",
+          "semisolidSupport": true,
+          "tags": [
+            "solid",
+            "utility"
+          ],
+          "textureAnchor": true,
+          "tptAdvection": 0,
+          "tptAirDrag": 0,
+          "tptAirLoss": 0.9,
+          "tptLoss": 0,
+          "weight": 200
+        }
+      },
+      {
+        "basedOn": "PARTICLE_SPAWNER",
+        "existing": false,
+        "fields": {
+          "color": [
+            0.8,
+            0.15,
+            0.05
+          ],
+          "hardness": 16,
+          "params": {
+            "burst": 1,
+            "emitElement": 13,
+            "emitMode": 0,
+            "enabled": 1,
+            "framesPerSpawn": 60,
+            "shape": 0,
+            "speedAngle": 1.5708,
+            "speedMax": 0.1,
+            "speedMin": 0,
+            "temperature": 1450
+          }
+        },
+        "id": 226,
+        "name": "TERRA_LAVA_SOURCE",
+        "saved": {
+          "ambientSfxId": "builtin:adobe_foley/industry/Industry Motor Servo Spinning Long.ogg",
+          "caBehavior": "spawner",
+          "category": [
+            "Solids",
+            "Life"
+          ],
+          "collision": 0,
+          "color": [
+            0.8,
+            0.15,
+            0.05
+          ],
+          "diffusion": 0,
+          "falldown": 0,
+          "fireLife": 0,
+          "flammable": 0,
+          "gravity": 0,
+          "hardness": 16,
+          "heatConduct": 0,
+          "highTemperature": 5000,
+          "highTemperatureTransition": 0,
+          "id": 226,
+          "impactSfxId": "builtin:adobe_foley/impacts/Impact Metal Bang 01.ogg",
+          "initialTemp": 295.15,
+          "lowTemperature": 0,
+          "lowTemperatureTransition": 0,
+          "maxVelocity": 0,
+          "name": "TERRA_LAVA_SOURCE",
+          "noiseSpec": {
+            "algorithm": "simplex",
+            "lacunarity": 2.1,
+            "layers": [
+              {
+                "color": [
+                  0.15600000000000003,
+                  0.663,
+                  0.4290000000000001
+                ],
+                "endPos": 0.3333333333333333,
+                "scale": 0.08,
+                "strength": 0.55,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/DRAIN_1A.PNG"
+                }
+              },
+              {
+                "color": [
+                  0.236,
+                  1,
+                  0.649
+                ],
+                "endPos": 0.6666666666666666,
+                "scale": 0.22,
+                "strength": 0.4,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/TECH_3A.PNG"
+                }
+              },
+              {
+                "color": [
+                  0.328,
+                  0.874,
+                  0.622
+                ],
+                "endPos": 1,
+                "scale": 0.55,
+                "strength": 0.22,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/GRID_1A.PNG"
+                }
+              }
+            ],
+            "noiseMix": 0.92,
+            "noiseVisualMode": "bands",
+            "octaves": 5,
+            "persistence": 0.55
+          },
+          "paramVariants": [
+            {
+              "name": "Fire",
+              "params": {
+                "burst": 2,
+                "emitElement": 6,
+                "emitMode": 0,
+                "framesPerSpawn": 2,
+                "speedAngle": 4.7124,
+                "speedJitter": 0.3,
+                "speedMax": 1.5,
+                "speedMin": 0.5
+              }
+            },
+            {
+              "name": "Oil",
+              "params": {
+                "burst": 1,
+                "emitElement": 17,
+                "emitMode": 0,
+                "framesPerSpawn": 4,
+                "speedAngle": 1.5708,
+                "speedJitter": 0,
+                "speedMax": 0.5,
+                "speedMin": 0
+              }
+            },
+            {
+              "name": "Methane",
+              "params": {
+                "burst": 2,
+                "emitElement": 33,
+                "emitMode": 0,
+                "framesPerSpawn": 3,
+                "speedAngle": 4.7124,
+                "speedJitter": 1,
+                "speedMax": 0.8,
+                "speedMin": 0.2
+              }
+            },
+            {
+              "name": "Pressure",
+              "params": {
+                "emitMode": 2,
+                "framesPerSpawn": 4,
+                "pressureAmount": 2
+              }
+            },
+            {
+              "name": "Heat",
+              "params": {
+                "emitMode": 1,
+                "framesPerSpawn": 4,
+                "heatAmount": 50
+              }
+            },
+            {
+              "name": "Charge",
+              "params": {
+                "chargeAmount": 30,
+                "emitMode": 3,
+                "framesPerSpawn": 4
+              }
+            }
+          ],
+          "params": {
+            "burst": 1,
+            "emitElement": 13,
+            "emitMode": 0,
+            "enabled": 1,
+            "framesPerSpawn": 60,
+            "shape": 0,
+            "speedAngle": 1.5708,
+            "speedMax": 0.1,
+            "speedMin": 0,
+            "temperature": 1450
+          },
+          "paramsSchema": [
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Enabled",
+              "max": 1,
+              "min": 0,
+              "name": "enabled",
+              "offset": 0,
+              "step": 1
+            },
+            {
+              "allowNone": false,
+              "default": 3,
+              "kind": "elementRef",
+              "label": "Emit element",
+              "name": "emitElement",
+              "offset": 4
+            },
+            {
+              "default": 4,
+              "kind": "u32",
+              "label": "Frames per spawn",
+              "max": 1000,
+              "min": 1,
+              "name": "framesPerSpawn",
+              "offset": 8,
+              "step": 1,
+              "unit": "frames"
+            },
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Particles per fire",
+              "max": 16,
+              "min": 1,
+              "name": "burst",
+              "offset": 12,
+              "step": 1
+            },
+            {
+              "default": 0,
+              "kind": "enum",
+              "label": "Emission shape",
+              "name": "shape",
+              "offset": 16,
+              "options": [
+                {
+                  "label": "Point (1 cell forward)",
+                  "value": 0
+                },
+                {
+                  "label": "Disc",
+                  "value": 1
+                },
+                {
+                  "label": "Box",
+                  "value": 2
+                },
+                {
+                  "label": "Line",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Shape radius / half-len",
+              "max": 32,
+              "min": 0,
+              "name": "shapeRadius",
+              "offset": 20,
+              "step": 0.5,
+              "unit": "cells"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Shape aspect (box/line)",
+              "max": 10,
+              "min": 0.1,
+              "name": "shapeAspect",
+              "offset": 24,
+              "step": 0.1
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Shape angle",
+              "max": 6.2832,
+              "min": 0,
+              "name": "shapeAngle",
+              "offset": 28,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Speed min",
+              "max": 20,
+              "min": 0,
+              "name": "speedMin",
+              "offset": 32,
+              "step": 0.05,
+              "unit": "u/frame"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Speed max",
+              "max": 20,
+              "min": 0,
+              "name": "speedMax",
+              "offset": 36,
+              "step": 0.05,
+              "unit": "u/frame"
+            },
+            {
+              "default": 1.5708,
+              "kind": "f32",
+              "label": "Aim angle",
+              "max": 6.2832,
+              "min": 0,
+              "name": "speedAngle",
+              "offset": 40,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Aim jitter (\u00b1)",
+              "max": 3.1416,
+              "min": 0,
+              "name": "speedJitter",
+              "offset": 44,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "default": 295.15,
+              "kind": "f32",
+              "label": "Initial temperature (override)",
+              "max": 5000,
+              "min": 0,
+              "name": "temperature",
+              "offset": 48,
+              "step": 1,
+              "unit": "K"
+            },
+            {
+              "default": 0,
+              "kind": "u32",
+              "label": "Initial life (0 = element lifetime)",
+              "max": 65535,
+              "min": 0,
+              "name": "life",
+              "offset": 52,
+              "step": 1
+            },
+            {
+              "default": 0,
+              "kind": "u32",
+              "label": "RNG seed",
+              "max": 4294967295,
+              "min": 0,
+              "name": "seed",
+              "offset": 56,
+              "step": 1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 1 \u2014 element",
+              "name": "emit1Element",
+              "offset": 60
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 1 \u2014 variant",
+              "name": "emit1Variant",
+              "offset": 64,
+              "pairedElementField": "emit1Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 1 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit1Weight",
+              "offset": 68,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 2 \u2014 element",
+              "name": "emit2Element",
+              "offset": 72
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 2 \u2014 variant",
+              "name": "emit2Variant",
+              "offset": 76,
+              "pairedElementField": "emit2Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 2 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit2Weight",
+              "offset": 80,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 3 \u2014 element",
+              "name": "emit3Element",
+              "offset": 84
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 3 \u2014 variant",
+              "name": "emit3Variant",
+              "offset": 88,
+              "pairedElementField": "emit3Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 3 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit3Weight",
+              "offset": 92,
+              "step": 0.1
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Emit 4 \u2014 element",
+              "name": "emit4Element",
+              "offset": 96
+            },
+            {
+              "default": 0,
+              "kind": "variantRef",
+              "label": "Emit 4 \u2014 variant",
+              "name": "emit4Variant",
+              "offset": 100,
+              "pairedElementField": "emit4Element"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Emit 4 \u2014 weight",
+              "max": 100,
+              "min": 0,
+              "name": "emit4Weight",
+              "offset": 104,
+              "step": 0.1
+            },
+            {
+              "default": 0,
+              "kind": "enum",
+              "label": "Emit mode",
+              "name": "emitMode",
+              "offset": 108,
+              "options": [
+                {
+                  "label": "Particles",
+                  "value": 0
+                },
+                {
+                  "label": "Heat",
+                  "value": 1
+                },
+                {
+                  "label": "Pressure",
+                  "value": 2
+                },
+                {
+                  "label": "Electricity",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "default": 50,
+              "kind": "f32",
+              "label": "Heat per pulse (mode: Heat)",
+              "max": 500,
+              "min": -500,
+              "name": "heatAmount",
+              "offset": 112,
+              "step": 1,
+              "unit": "K"
+            },
+            {
+              "default": 2,
+              "kind": "f32",
+              "label": "Pressure per pulse (mode: Pressure)",
+              "max": 20,
+              "min": -20,
+              "name": "pressureAmount",
+              "offset": 116,
+              "step": 0.1
+            },
+            {
+              "default": 30,
+              "kind": "f32",
+              "label": "Charge per pulse (mode: Electricity)",
+              "max": 200,
+              "min": 0,
+              "name": "chargeAmount",
+              "offset": 120,
+              "step": 1
+            },
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Spawn at the emitted element's own temperature",
+              "max": 1,
+              "min": 0,
+              "name": "useElementTemp",
+              "offset": 124,
+              "step": 1
+            }
+          ],
+          "renderMode": "noise",
+          "semisolidSupport": true,
+          "tags": [
+            "solid",
+            "utility"
+          ],
+          "textureAnchor": true,
+          "tptAdvection": 0,
+          "tptAirDrag": 0,
+          "tptAirLoss": 0.9,
+          "tptLoss": 0,
+          "weight": 200
+        }
+      },
+      {
+        "basedOn": "PARTICLE_DRAIN",
+        "existing": false,
+        "fields": {
+          "color": [
+            0.15,
+            0.25,
+            0.3
+          ],
+          "hardness": 16,
+          "params": {
+            "enabled": 1,
+            "filterClassMask": 4,
+            "framesPerDrain": 1,
+            "shape": 1,
+            "shapeRadius": 6
+          }
+        },
+        "id": 227,
+        "name": "TERRA_LIQUID_DRAIN",
+        "saved": {
+          "ambientSfxId": "builtin:adobe_foley/industry/Industry Motor Servo Spinning Long.ogg",
+          "caBehavior": "drain",
+          "category": [
+            "Solids",
+            "Life"
+          ],
+          "collision": 0,
+          "color": [
+            0.15,
+            0.25,
+            0.3
+          ],
+          "diffusion": 0,
+          "falldown": 0,
+          "fireLife": 0,
+          "flammable": 0,
+          "gravity": 0,
+          "hardness": 16,
+          "heatConduct": 0,
+          "highTemperature": 5000,
+          "highTemperatureTransition": 0,
+          "id": 227,
+          "impactSfxId": "builtin:adobe_foley/impacts/Impact Metal Bang 01.ogg",
+          "initialTemp": 295.15,
+          "lowTemperature": 0,
+          "lowTemperatureTransition": 0,
+          "maxVelocity": 0,
+          "name": "TERRA_LIQUID_DRAIN",
+          "noiseSpec": {
+            "algorithm": "simplex",
+            "lacunarity": 2.1,
+            "layers": [
+              {
+                "color": [
+                  0.663,
+                  0.234,
+                  0.4290000000000001
+                ],
+                "endPos": 0.3333333333333333,
+                "scale": 0.08,
+                "strength": 0.55,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/DRAIN_1B.PNG"
+                }
+              },
+              {
+                "color": [
+                  1,
+                  0.354,
+                  0.649
+                ],
+                "endPos": 0.6666666666666666,
+                "scale": 0.22,
+                "strength": 0.4,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/TECH_4A.PNG"
+                }
+              },
+              {
+                "color": [
+                  0.874,
+                  0.412,
+                  0.622
+                ],
+                "endPos": 1,
+                "scale": 0.55,
+                "strength": 0.22,
+                "visualSource": {
+                  "kind": "pattern",
+                  "ref": "sprite-image:retro__textures_v25/TEXTURES/GRID_2A.PNG"
+                }
+              }
+            ],
+            "noiseMix": 0.92,
+            "noiseVisualMode": "bands",
+            "octaves": 5,
+            "persistence": 0.55
+          },
+          "params": {
+            "enabled": 1,
+            "filterClassMask": 4,
+            "framesPerDrain": 1,
+            "shape": 1,
+            "shapeRadius": 6
+          },
+          "paramsSchema": [
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Enabled",
+              "max": 1,
+              "min": 0,
+              "name": "enabled",
+              "offset": 0,
+              "step": 1
+            },
+            {
+              "default": 100,
+              "kind": "u32",
+              "label": "Drain probability",
+              "max": 100,
+              "min": 0,
+              "name": "drainPercent",
+              "offset": 4,
+              "step": 1,
+              "unit": "%"
+            },
+            {
+              "default": 1,
+              "kind": "u32",
+              "label": "Frames between drain",
+              "max": 240,
+              "min": 1,
+              "name": "framesPerDrain",
+              "offset": 8,
+              "step": 1,
+              "unit": "frames"
+            },
+            {
+              "default": 0,
+              "kind": "enum",
+              "label": "Drain shape",
+              "name": "shape",
+              "offset": 12,
+              "options": [
+                {
+                  "label": "Point (4 neighbours)",
+                  "value": 0
+                },
+                {
+                  "label": "Disc",
+                  "value": 1
+                },
+                {
+                  "label": "Box",
+                  "value": 2
+                },
+                {
+                  "label": "Line",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Shape radius / half-len",
+              "max": 8,
+              "min": 0,
+              "name": "shapeRadius",
+              "offset": 16,
+              "step": 0.5,
+              "unit": "cells"
+            },
+            {
+              "default": 1,
+              "kind": "f32",
+              "label": "Shape aspect (box/line)",
+              "max": 10,
+              "min": 0.1,
+              "name": "shapeAspect",
+              "offset": 20,
+              "step": 0.1
+            },
+            {
+              "default": 0,
+              "kind": "f32",
+              "label": "Shape angle",
+              "max": 6.2832,
+              "min": 0,
+              "name": "shapeAngle",
+              "offset": 24,
+              "step": 0.01,
+              "unit": "rad"
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "Filter \u2014 exact element",
+              "name": "filterElement",
+              "offset": 28
+            },
+            {
+              "bitLabels": [
+                "solid",
+                "powder",
+                "liquid",
+                "gas",
+                "living"
+              ],
+              "bits": 5,
+              "default": 0,
+              "kind": "bitmask",
+              "label": "Filter \u2014 class mask",
+              "name": "filterClassMask",
+              "offset": 32
+            },
+            {
+              "default": 0,
+              "kind": "enum",
+              "label": "Drain pattern",
+              "name": "pattern",
+              "offset": 36,
+              "options": [
+                {
+                  "label": "Solid",
+                  "value": 0
+                },
+                {
+                  "label": "Checker",
+                  "value": 1
+                },
+                {
+                  "label": "Stripes (horizontal)",
+                  "value": 2
+                },
+                {
+                  "label": "Stripes (vertical)",
+                  "value": 3
+                },
+                {
+                  "label": "Dither (\u00bc)",
+                  "value": 4
+                }
+              ]
+            },
+            {
+              "allowNone": true,
+              "default": 4294967295,
+              "kind": "elementRef",
+              "label": "On-drain transform",
+              "name": "onDrainTransform",
+              "offset": 40
+            }
+          ],
+          "rb": {
+            "angularDamping": 0.995,
+            "density": 0.5,
+            "friction": 0.5,
+            "gravityScale": 1,
+            "linearDamping": 0.99,
+            "restitution": 0.05
+          },
+          "renderMode": "noise",
+          "semisolidSupport": true,
+          "tags": [
+            "solid",
+            "utility"
+          ],
+          "textureAnchor": true,
+          "tptAdvection": 0,
+          "tptAirDrag": 0,
+          "tptAirLoss": 0.9,
+          "tptLoss": 0,
+          "weight": 200
+        }
+      }
+    ]
+  }
+}

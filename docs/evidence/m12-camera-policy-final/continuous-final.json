@@ -1,0 +1,4443 @@
+{
+  "camera": {
+    "frame": null,
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5696,
+      "y": -128
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5760,
+      "y": -64
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5760,
+      "y": -64
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 6039.5000000024365,
+      "y": 130.01562500407442
+    },
+    "zoom": 0.25
+  },
+  "clock": 20.516666666666783,
+  "error": "",
+  "events": [
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 0.03333333333333333,
+      "completedChunks": 0,
+      "family": "template",
+      "kind": "terrain-source",
+      "parameters": {},
+      "phase": "complete",
+      "reason": null,
+      "recipeId": "wfc",
+      "seed": 257001,
+      "totalChunks": 0,
+      "turn": 0,
+      "version": 1
+    },
+    {
+      "catalog": "procedural-m11",
+      "choices": {
+        "growth": [
+          "builtin-lightning",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "m9-planar-bramble-probe",
+          "builtin-worm-tunnels",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "builtin-creeping-vine",
+          "indigo-m9-oak",
+          "builtin-roots",
+          "builtin-meadow-grass",
+          "builtin-coral",
+          "builtin-ivy-wall",
+          "builtin-wheat",
+          "builtin-icicles",
+          "builtin-hair",
+          "builtin-flower-bed",
+          "builtin-vine-ledge",
+          "builtin-creeping-vine",
+          "indigo-m9-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-flower-bed",
+          "m9-planar-bramble-probe",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "indigo-m9-oak",
+          "builtin-ivy-wall",
+          "builtin-worm-tunnels",
+          "builtin-wheat",
+          "builtin-bramble",
+          "builtin-lightning",
+          "builtin-coral",
+          "builtin-icicles",
+          "builtin-meadow-grass",
+          "builtin-hair",
+          "builtin-creeping-vine",
+          "builtin-worm-tunnels",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "builtin-oak-sapling",
+          "builtin-ivy-wall",
+          "m9-planar-bramble-probe",
+          "builtin-icicles",
+          "builtin-coral",
+          "indigo-m9-oak",
+          "builtin-living-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-wheat"
+        ],
+        "neural": [
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four",
+          "builtin-nca-stations",
+          "builtin-nca-masonry",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four"
+        ],
+        "neuralRecipe": [
+          "builtin-brush-keep-library",
+          "builtin-brush-research-lab",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-station-deck",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-tundra",
+          "builtin-brush-great-hall",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-hellscape",
+          "builtin-brush-coal",
+          "builtin-brush-catacombs",
+          "builtin-brush-station-deck",
+          "builtin-brush-tundra",
+          "builtin-brush-gold",
+          "builtin-brush-hellscape"
+        ],
+        "noise": [
+          "builtin-brick-6",
+          "builtin-fence-2",
+          "builtin-rusty-3",
+          "builtin-brickwood",
+          "builtin-concrete-2",
+          "builtin-panel-8",
+          "builtin-chess-1",
+          "builtin-wood-1",
+          "builtin-brick-2",
+          "builtin-steel-1",
+          "builtin-bigdoor-1",
+          "builtin-grid-2",
+          "builtin-grid-1",
+          "builtin-pillwindow",
+          "builtin-lab-5",
+          "builtin-slime-1",
+          "builtin-sludge-1",
+          "builtin-rusty-2",
+          "builtin-pipes-1",
+          "builtin-skultrim-1",
+          "builtin-fence-3",
+          "builtin-brick-1",
+          "builtin-grass-1",
+          "builtin-ooze-1",
+          "builtin-panel-5",
+          "builtin-crate-1",
+          "builtin-warn-3",
+          "builtin-wood-3",
+          "builtin-circlewindow",
+          "builtin-support-2",
+          "builtin-warn-1",
+          "builtin-door-3",
+          "builtin-light-2",
+          "builtin-crate-3",
+          "builtin-sqdoor-7",
+          "builtin-wood-2",
+          "builtin-vent-2",
+          "builtin-floor-3",
+          "builtin-metal-7",
+          "builtin-metal-6",
+          "builtin-cube-1",
+          "builtin-zinc-1",
+          "builtin-grid-6",
+          "builtin-panel-3",
+          "builtin-paper-1",
+          "builtin-cube-2",
+          "builtin-dirt-1",
+          "builtin-panel-7",
+          "builtin-rusty-1",
+          "builtin-brick2"
+        ],
+        "semantic": [
+          "builtin-brush-mossy-glade",
+          "builtin-brush-gold",
+          "builtin-brush-scorched-wasteland",
+          "builtin-brush-jungle-undergrowth",
+          "builtin-brush-hills",
+          "builtin-brush-toxic-dump",
+          "builtin-brush-power-substation",
+          "builtin-brush-keep-library",
+          "builtin-brush-glacier",
+          "builtin-brush-subway-tunnel",
+          "builtin-brush-crimson-desert",
+          "builtin-brush-charred",
+          "builtin-brush-alien-jungle",
+          "builtin-brush-engine-room",
+          "builtin-brush-rubble",
+          "builtin-brush-goblin-warren",
+          "builtin-brush-great-hall",
+          "builtin-brush-deep-mine",
+          "builtin-brush-frozen-lake",
+          "builtin-brush-alien-hive",
+          "builtin-brush-research-lab",
+          "builtin-brush-enchanted-forest",
+          "builtin-brush-derelict-station",
+          "builtin-brush-ice-moon",
+          "builtin-brush-coal",
+          "builtin-brush-tundra",
+          "builtin-brush-industrial-pipeworks",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-haunted-wood",
+          "builtin-brush-mesa-badlands",
+          "builtin-brush-chemical-plant",
+          "builtin-brush-scrapyard",
+          "builtin-brush-catacombs",
+          "builtin-brush-dragon-graveyard",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-castle-wall",
+          "builtin-brush-spaceship-prison",
+          "builtin-brush-snowy-pines",
+          "builtin-brush-mine-shaft",
+          "builtin-brush-dunes",
+          "builtin-brush-dragon-hoard",
+          "builtin-brush-mangrove-shallows",
+          "builtin-brush-autumn-woodland",
+          "builtin-brush-red-rock-canyon",
+          "indigo-mixed-earth",
+          "builtin-brush-cliffside",
+          "builtin-brush-desecrated-chapel",
+          "builtin-brush-reactor-chamber",
+          "builtin-brush-cryo-bay",
+          "builtin-brush-ice-cave"
+        ],
+        "structureTexture": [
+          "builtin-crate-3",
+          "builtin-steel-1",
+          "builtin-tarmac-2",
+          "builtin-wood-2",
+          "builtin-concrete-8",
+          "builtin-brickwood",
+          "builtin-crate-1",
+          "builtin-concrete-7",
+          "builtin-metal-2",
+          "builtin-marble-1",
+          "builtin-metal-4",
+          "builtin-concrete-2",
+          "builtin-brick-2",
+          "builtin-metal-7",
+          "builtin-brick-1",
+          "builtin-tarmac-4",
+          "builtin-wood-3",
+          "builtin-metal-1",
+          "builtin-steel-3",
+          "builtin-steel-2",
+          "builtin-crate-2",
+          "builtin-brick-4",
+          "builtin-corrugat-1",
+          "builtin-wood-1",
+          "builtin-metal-6"
+        ],
+        "vector": [
+          "builtin:checkmark",
+          "builtin:sun",
+          "builtin:heart",
+          "builtin:arrow-up",
+          "builtin:spade",
+          "builtin:club",
+          "builtin:star-6",
+          "builtin:gear",
+          "builtin:hexagon",
+          "builtin:rounded-square",
+          "builtin:arrow-right",
+          "builtin:tree",
+          "builtin:crescent",
+          "builtin:triangle",
+          "builtin:right-triangle",
+          "builtin:octagon",
+          "builtin:chevron-right",
+          "builtin:circle",
+          "builtin:square",
+          "builtin:cross",
+          "builtin:fire",
+          "builtin:snowflake",
+          "builtin:drop",
+          "builtin:speech-bubble",
+          "builtin:shield"
+        ]
+      },
+      "clock": 0.9833333333333348,
+      "hash": "2b6e76aee7840f8b7bd706b3fbaea1e3f783806cf0b959cc151c76b33754b36a",
+      "kind": "generation-catalog",
+      "story": {
+        "id": "world-beneath-landfill",
+        "version": 1
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.0833333333333273,
+      "kind": "deployment-surface",
+      "offset": 40,
+      "player": "M12R Final Alpha",
+      "requestedX": 5960,
+      "turn": 0,
+      "x": 6000,
+      "y": 656
+    },
+    {
+      "clock": 3.1666666666666603,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 54.16666793823242,
+        "x": 5999.5,
+        "y": 606.0848999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.26666666666666,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M12R Final Alpha",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 119.16666412353516,
+        "x": 5999.5,
+        "y": 615.293212890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 3.26666666666666,
+      "id": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "kind": "deployed",
+      "name": "M12R Final Alpha",
+      "turn": 0
+    },
+    {
+      "clock": 3.4166666666666594,
+      "id": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "kind": "land",
+      "position": {
+        "x": 5999.5,
+        "y": 640.0604858398438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.766666666666655,
+      "kind": "deployment-surface",
+      "offset": 0,
+      "player": "M12R Final Beta",
+      "requestedX": 6840,
+      "turn": 0,
+      "x": 6840,
+      "y": 628
+    },
+    {
+      "clock": 4.8333333333333215,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 3,
+        "maxHealth": 100,
+        "name": "Aris Redholm",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 6839.5,
+        "y": 577.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.933333333333321,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 3,
+        "maxHealth": 100,
+        "name": "M12R Final Beta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 6839.5,
+        "y": 585.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 4.933333333333321,
+      "id": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "kind": "deployed",
+      "name": "M12R Final Beta",
+      "turn": 0
+    },
+    {
+      "clock": 4.933333333333321,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "clock": 5.099999999999987,
+      "id": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "kind": "land",
+      "position": {
+        "x": 6839.5,
+        "y": 612.3424072265625
+      },
+      "turn": 0
+    },
+    {
+      "center": {
+        "x": 6010.780484746382,
+        "y": 641.638882320431
+      },
+      "clock": 5.499999999999986,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "tracking": 1,
+      "turn": 0
+    },
+    {
+      "cash": 362,
+      "clock": 5.499999999999986,
+      "item": "nuke",
+      "kind": "purchase",
+      "name": "M12R Final Alpha",
+      "price": 600,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 362,
+      "clock": 5.499999999999986,
+      "kind": "cpu-shopping",
+      "name": "M12R Final Alpha",
+      "purchases": [
+        "nuke"
+      ],
+      "reserve": 336,
+      "selected": "nuke",
+      "skipped": [],
+      "stage": "866e7bb2-3e6a-4b65-99f5-8bbdc4629125:ready",
+      "stock": {
+        "battery": 2,
+        "heavy": 1,
+        "nuke": 2
+      },
+      "turn": 0
+    },
+    {
+      "cash": 3190,
+      "clock": 5.499999999999986,
+      "item": "magnet",
+      "kind": "purchase",
+      "name": "M12R Final Beta",
+      "price": 350,
+      "quantity": 1,
+      "turn": 0
+    },
+    {
+      "cash": 2940,
+      "clock": 5.499999999999986,
+      "item": "shield",
+      "kind": "purchase",
+      "name": "M12R Final Beta",
+      "price": 250,
+      "quantity": 1,
+      "turn": 0
+    },
+    {
+      "cash": 2760,
+      "clock": 5.499999999999986,
+      "item": "jetpack",
+      "kind": "purchase",
+      "name": "M12R Final Beta",
+      "price": 180,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 2760,
+      "clock": 5.499999999999986,
+      "kind": "cpu-shopping",
+      "name": "M12R Final Beta",
+      "purchases": [
+        "magnet",
+        "shield",
+        "jetpack"
+      ],
+      "reserve": 1062,
+      "selected": "napalm",
+      "skipped": [],
+      "stage": "866e7bb2-3e6a-4b65-99f5-8bbdc4629125:ready",
+      "stock": {
+        "jetpack": 6,
+        "magnet": 1,
+        "napalm": 3,
+        "shield": 1
+      },
+      "turn": 0
+    },
+    {
+      "clock": 5.649999999999985,
+      "color": "#ffd447",
+      "eyebrow": "SCORCHED TERRA",
+      "id": 1,
+      "kind": "arcade-start",
+      "long": true,
+      "radar": false,
+      "receipt": false,
+      "score": "",
+      "seconds": 2.5,
+      "sub": "Round 1 \u00b7 Seed 257001",
+      "title": "BATTLE STATIONS",
+      "turn": 0
+    },
+    {
+      "clock": 6.916666666666647,
+      "elapsed": 2.5166666666666626,
+      "id": 1,
+      "kind": "arcade-ended",
+      "turn": 0
+    },
+    {
+      "center": {
+        "x": 5998.82500239689,
+        "y": 641.27097010353
+      },
+      "clock": 6.916666666666647,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "tracking": 1,
+      "turn": 1
+    },
+    {
+      "clock": 6.916666666666647,
+      "color": "#EC4787",
+      "eyebrow": "TURN 1 / COMMAND CARTRIDGE",
+      "id": 2,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Heavy Weather \u00b7 expert",
+      "title": "M12R Final Alpha",
+      "turn": 1
+    },
+    {
+      "clock": 7.416666666666646,
+      "elapsed": 1.000000000000001,
+      "id": 2,
+      "kind": "arcade-ended",
+      "turn": 1
+    },
+    {
+      "center": {
+        "x": 5998.82331560077,
+        "y": 641.2690829239725
+      },
+      "clock": 7.416666666666646,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "tracking": 1,
+      "turn": 1
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 7.416666666666646,
+      "kind": "cash",
+      "name": "M12R Final Alpha",
+      "total": 10,
+      "turn": 1
+    },
+    {
+      "clock": 7.416666666666646,
+      "id": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "kind": "turn",
+      "name": "M12R Final Alpha",
+      "turn": 1
+    },
+    {
+      "budgetRemaining": 95,
+      "clock": 7.749999999999978,
+      "item": "nuke",
+      "kind": "cpu-decision",
+      "memory": 0,
+      "persona": "kiloton",
+      "risk": 0.6,
+      "skill": "expert",
+      "skipped": [
+        {
+          "item": "escape-charge",
+          "reason": "local-terrain-tactic"
+        }
+      ],
+      "tactic": "Surveyed firing corridor",
+      "target": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "trials": [
+        {
+          "goal": "tank",
+          "obstruction": null,
+          "reason": "clear",
+          "target": "M12R Final Beta",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "nuke",
+          "work": {
+            "candidates": 1,
+            "cells": 29620,
+            "chunks": 19,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 2350
+          }
+        }
+      ],
+      "turn": 1
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 7.783333333333311,
+      "kind": "cash",
+      "name": "M12R Final Alpha",
+      "total": 13,
+      "turn": 1
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 7.783333333333311,
+      "kind": "cash",
+      "name": "M12R Final Alpha",
+      "total": 16,
+      "turn": 1
+    },
+    {
+      "angle": 43.912434427184046,
+      "clock": 7.783333333333311,
+      "kind": "cpu-aimed",
+      "name": "M12R Final Alpha",
+      "origin": {
+        "x": 5998.8232421875,
+        "y": 642.1353149414062
+      },
+      "plan": {
+        "candidates": [
+          {
+            "angle": -0.7664165633204718,
+            "obstruction": null,
+            "power": 0.3661642668140121,
+            "reason": "clear"
+          }
+        ],
+        "obstruction": null,
+        "reason": "clear",
+        "solution": {
+          "angle": -0.7664165633204718,
+          "childImpacts": "not-planned",
+          "coverage": "impact",
+          "end": {
+            "x": 6819.565592556344,
+            "y": 611.091127212658
+          },
+          "origin": {
+            "x": 6024.75766420053,
+            "y": 616.3004599494129
+          },
+          "path": [
+            {
+              "x": 6024.75766420053,
+              "y": 616.3004599494129
+            },
+            {
+              "x": 6033.432239134836,
+              "y": 608.0619504819207
+            },
+            {
+              "x": 6042.106814069142,
+              "y": 600.003996569984
+            },
+            {
+              "x": 6050.781389003449,
+              "y": 592.1265982136028
+            },
+            {
+              "x": 6059.455963937755,
+              "y": 584.4297554127772
+            },
+            {
+              "x": 6068.130538872061,
+              "y": 576.9134681675072
+            },
+            {
+              "x": 6076.805113806367,
+              "y": 569.5777364777927
+            },
+            {
+              "x": 6085.479688740674,
+              "y": 562.4225603436338
+            },
+            {
+              "x": 6094.15426367498,
+              "y": 555.4479397650305
+            },
+            {
+              "x": 6102.828838609286,
+              "y": 548.6538747419827
+            },
+            {
+              "x": 6111.503413543593,
+              "y": 542.0403652744905
+            },
+            {
+              "x": 6120.177988477899,
+              "y": 535.6074113625538
+            },
+            {
+              "x": 6128.852563412205,
+              "y": 529.3550130061726
+            },
+            {
+              "x": 6137.5271383465115,
+              "y": 523.283170205347
+            },
+            {
+              "x": 6146.201713280818,
+              "y": 517.3918829600769
+            },
+            {
+              "x": 6154.876288215124,
+              "y": 511.6811512703625
+            },
+            {
+              "x": 6163.55086314943,
+              "y": 506.1509751362035
+            },
+            {
+              "x": 6172.225438083737,
+              "y": 500.8013545576002
+            },
+            {
+              "x": 6180.900013018043,
+              "y": 495.6322895345524
+            },
+            {
+              "x": 6189.574587952349,
+              "y": 490.64378006706016
+            },
+            {
+              "x": 6198.2491628866555,
+              "y": 485.8358261551234
+            },
+            {
+              "x": 6206.923737820962,
+              "y": 481.2084277987423
+            },
+            {
+              "x": 6215.598312755268,
+              "y": 476.7615849979167
+            },
+            {
+              "x": 6224.272887689574,
+              "y": 472.4952977526467
+            },
+            {
+              "x": 6232.947462623881,
+              "y": 468.40956606293224
+            },
+            {
+              "x": 6241.622037558187,
+              "y": 464.5043899287733
+            },
+            {
+              "x": 6250.296612492493,
+              "y": 460.77976935016994
+            },
+            {
+              "x": 6258.9711874268,
+              "y": 457.23570432712216
+            },
+            {
+              "x": 6267.645762361106,
+              "y": 453.87219485962993
+            },
+            {
+              "x": 6276.320337295412,
+              "y": 450.6892409476933
+            },
+            {
+              "x": 6284.9949122297185,
+              "y": 447.6868425913121
+            },
+            {
+              "x": 6293.669487164025,
+              "y": 444.8649997904865
+            },
+            {
+              "x": 6302.344062098331,
+              "y": 442.2237125452165
+            },
+            {
+              "x": 6311.018637032637,
+              "y": 439.762980855502
+            },
+            {
+              "x": 6319.693211966944,
+              "y": 437.4828047213431
+            },
+            {
+              "x": 6328.36778690125,
+              "y": 435.3831841427397
+            },
+            {
+              "x": 6337.042361835556,
+              "y": 433.46411911969193
+            },
+            {
+              "x": 6345.7169367698625,
+              "y": 431.7256096521997
+            },
+            {
+              "x": 6354.391511704169,
+              "y": 430.167655740263
+            },
+            {
+              "x": 6363.066086638475,
+              "y": 428.79025738388185
+            },
+            {
+              "x": 6371.740661572781,
+              "y": 427.59341458305624
+            },
+            {
+              "x": 6380.415236507088,
+              "y": 426.57712733778624
+            },
+            {
+              "x": 6389.089811441394,
+              "y": 425.7413956480718
+            },
+            {
+              "x": 6397.7643863757,
+              "y": 425.08621951391285
+            },
+            {
+              "x": 6406.438961310007,
+              "y": 424.6115989353095
+            },
+            {
+              "x": 6415.113536244313,
+              "y": 424.3175339122617
+            },
+            {
+              "x": 6423.788111178619,
+              "y": 424.20402444476946
+            },
+            {
+              "x": 6432.462686112925,
+              "y": 424.2710705328328
+            },
+            {
+              "x": 6441.137261047232,
+              "y": 424.5186721764516
+            },
+            {
+              "x": 6449.811835981538,
+              "y": 424.946829375626
+            },
+            {
+              "x": 6458.486410915844,
+              "y": 425.555542130356
+            },
+            {
+              "x": 6467.160985850151,
+              "y": 426.34481044064154
+            },
+            {
+              "x": 6475.835560784457,
+              "y": 427.3146343064826
+            },
+            {
+              "x": 6484.510135718763,
+              "y": 428.4650137278792
+            },
+            {
+              "x": 6493.1847106530695,
+              "y": 429.79594870483146
+            },
+            {
+              "x": 6501.859285587376,
+              "y": 431.3074392373392
+            },
+            {
+              "x": 6510.533860521682,
+              "y": 432.9994853254026
+            },
+            {
+              "x": 6519.208435455988,
+              "y": 434.8720869690214
+            },
+            {
+              "x": 6527.883010390295,
+              "y": 436.9252441681958
+            },
+            {
+              "x": 6536.557585324601,
+              "y": 439.15895692292577
+            },
+            {
+              "x": 6545.232160258907,
+              "y": 441.5732252332113
+            },
+            {
+              "x": 6553.9067351932135,
+              "y": 444.1680490990524
+            },
+            {
+              "x": 6562.58131012752,
+              "y": 446.943428520449
+            },
+            {
+              "x": 6571.255885061826,
+              "y": 449.8993634974012
+            },
+            {
+              "x": 6579.930459996132,
+              "y": 453.035854029909
+            },
+            {
+              "x": 6588.605034930439,
+              "y": 456.3529001179723
+            },
+            {
+              "x": 6597.279609864745,
+              "y": 459.85050176159115
+            },
+            {
+              "x": 6605.954184799051,
+              "y": 463.52865896076554
+            },
+            {
+              "x": 6614.628759733358,
+              "y": 467.38737171549553
+            },
+            {
+              "x": 6623.303334667664,
+              "y": 471.426640025781
+            },
+            {
+              "x": 6631.97790960197,
+              "y": 475.64646389162215
+            },
+            {
+              "x": 6640.6524845362765,
+              "y": 480.0468433130188
+            },
+            {
+              "x": 6649.327059470583,
+              "y": 484.627778289971
+            },
+            {
+              "x": 6658.001634404889,
+              "y": 489.3892688224787
+            },
+            {
+              "x": 6666.676209339195,
+              "y": 494.33131491054206
+            },
+            {
+              "x": 6675.350784273502,
+              "y": 499.4539165541609
+            },
+            {
+              "x": 6684.025359207808,
+              "y": 504.7570737533353
+            },
+            {
+              "x": 6692.699934142114,
+              "y": 510.2407865080653
+            },
+            {
+              "x": 6701.3745090764205,
+              "y": 515.9050548183508
+            },
+            {
+              "x": 6710.049084010727,
+              "y": 521.7498786841919
+            },
+            {
+              "x": 6718.723658945033,
+              "y": 527.7752581055886
+            },
+            {
+              "x": 6727.398233879339,
+              "y": 533.9811930825408
+            },
+            {
+              "x": 6736.072808813646,
+              "y": 540.3676836150486
+            },
+            {
+              "x": 6744.747383747952,
+              "y": 546.9347297031119
+            },
+            {
+              "x": 6753.421958682258,
+              "y": 553.6823313467307
+            },
+            {
+              "x": 6762.096533616565,
+              "y": 560.6104885459051
+            },
+            {
+              "x": 6770.771108550871,
+              "y": 567.7192013006351
+            },
+            {
+              "x": 6779.445683485177,
+              "y": 575.0084696109205
+            },
+            {
+              "x": 6788.120258419483,
+              "y": 582.4782934767617
+            },
+            {
+              "x": 6796.79483335379,
+              "y": 590.1286728981584
+            },
+            {
+              "x": 6805.469408288096,
+              "y": 597.9596078751106
+            },
+            {
+              "x": 6814.143983222402,
+              "y": 605.9710984076183
+            },
+            {
+              "x": 6819.565592556344,
+              "y": 611.091127212658
+            }
+          ],
+          "power": 0.3661642668140121,
+          "speed": 722.4792535838205,
+          "time": 1.527083333333333,
+          "velocity": {
+            "x": 520.4744960583714,
+            "y": -501.0814013828679
+          }
+        },
+        "status": "clear",
+        "warnings": [
+          "evolving-air-fields-not-predicted"
+        ],
+        "work": {
+          "candidates": 1,
+          "cells": 29620,
+          "chunks": 19,
+          "geometry": {
+            "catalogRows": 0,
+            "chunks": 1,
+            "colliders": 1,
+            "records": 0
+          },
+          "steps": 2350
+        }
+      },
+      "power": 36.61642668140121,
+      "tactic": "Surveyed firing corridor",
+      "target": {
+        "bodyId": null,
+        "entityId": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+        "x": 6839.5,
+        "y": 614.0025024414062
+      },
+      "turn": 1,
+      "weapon": {
+        "ammo": {
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 1,
+          "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+          "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+          "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+          "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 2,
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+          "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+          "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+          "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+          "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+          "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+          "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 0,
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+          "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+          "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+          "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+          "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+        },
+        "angle": -0.7664165633204718,
+        "equipped": "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+        "gravityScale": 1,
+        "items": [
+          "219d46ea-fa7c-4578-b119-bba07279e6f0",
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+          "9dd9a83c-66b3-4720-a798-b7ce47372022",
+          "fa168217-924a-4b95-b7f2-025d856f5b88",
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+          "70446b65-1a75-4950-840a-443f28dc58a6",
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+          "2ee512d3-c721-4978-a1a5-b97d42255b13",
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+          "a80f054a-6235-4746-b050-8d5cd248dd57",
+          "b4474e78-1c10-4d79-994d-d900ed050664",
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+          "173004dc-1907-43e3-9e01-10f4b7084523",
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+          "1a4d56f6-0058-471f-a4bf-77548338012c",
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+          "e1a46386-8976-4b3c-9408-0159b3f64235",
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+          "2e0a754f-eb50-487b-b90a-907a3a43159a",
+          "780f5cdb-7252-4a69-987b-b908477015ad",
+          "815021a5-49a0-4790-91dd-b5b61a3c5050",
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+          "bb0da974-5d0f-4644-a6da-278758d07d9f",
+          "9cb680d4-3edf-451b-81da-ebbb514808bb",
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc",
+          "78ea7cb7-a3be-435a-be9f-5766f5f97a81"
+        ],
+        "kind": "rigid-body",
+        "localAngle": -1.0221310394290228,
+        "pinned": true,
+        "power": 0.3661642668140121,
+        "speed": {
+          "current": 722.4792535838205,
+          "max": 1800,
+          "min": 100
+        }
+      }
+    },
+    {
+      "clock": 9.200000000000037,
+      "kind": "presentation-centering",
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "speechKind": "shooting",
+      "turn": 1
+    },
+    {
+      "center": {
+        "x": 5998.823242188676,
+        "y": 642.4590105718776
+      },
+      "clock": 9.200000000000037,
+      "kind": "presentation-centered",
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "ready": true,
+      "speechKind": "shooting",
+      "tracking": 1,
+      "turn": 1,
+      "x": 5998.8232421875,
+      "y": 642.4591064453125
+    },
+    {
+      "clock": 9.200000000000037,
+      "id": "[\"terra-heavy-weather\",null,\"taunt\",\"neutral\",\"The office has adopted an open-crater plan.\"]",
+      "kind": "quip",
+      "name": "M12R Final Alpha",
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "speechKind": "shooting",
+      "text": "The office has adopted an open-crater plan.",
+      "turn": 1
+    },
+    {
+      "clock": 12.200000000000186,
+      "elapsed": 3.000000000000149,
+      "kind": "presentation-ended",
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "speechKind": "shooting",
+      "turn": 1
+    },
+    {
+      "actualEquipped": "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+      "angle": 43.912434427184046,
+      "clock": 12.200000000000186,
+      "item": "nuke",
+      "kind": "fire-request",
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "power": 36.61642668140121,
+      "stock": 2,
+      "template": "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 12.200000000000186,
+      "kind": "cash",
+      "name": "M12R Final Alpha",
+      "total": 36,
+      "turn": 1
+    },
+    {
+      "clock": 12.200000000000186,
+      "item": "nuke",
+      "kind": "ammo-spent",
+      "name": "M12R Final Alpha",
+      "remaining": 1,
+      "template": "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+      "turn": 1
+    },
+    {
+      "action": "accepted-cast",
+      "clock": 12.200000000000186,
+      "item": "nuke",
+      "kind": "cpu-progress",
+      "name": "M12R Final Alpha",
+      "previousPasses": 0,
+      "projectileId": 1,
+      "template": "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+      "turn": 1
+    },
+    {
+      "clock": 12.200000000000186,
+      "depth": 0,
+      "id": 1,
+      "kind": "launch",
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 1,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+        "vx": 520.4744873046875,
+        "vy": -501.0813903808594,
+        "x": 6024.5,
+        "y": 616.5
+      },
+      "template": "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+      "turn": 1,
+      "weapon": "nuke"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 13.750000000000265,
+      "kind": "cash",
+      "name": "M12R Final Alpha",
+      "total": 51,
+      "turn": 1
+    },
+    {
+      "clock": 13.750000000000265,
+      "element": "IRON",
+      "id": 1,
+      "kind": "collision",
+      "turn": 1,
+      "with": "body",
+      "x": 6819.33056640625,
+      "y": 622.62890625
+    },
+    {
+      "action": "death",
+      "amount": 100,
+      "clock": 13.76666666666693,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 100,
+      "turn": 1
+    },
+    {
+      "action": "kill",
+      "amount": 100,
+      "clock": 13.76666666666693,
+      "kind": "cash",
+      "name": "M12R Final Alpha",
+      "total": 151,
+      "turn": 1
+    },
+    {
+      "clock": 13.76666666666693,
+      "kind": "death-pose-held",
+      "owner": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "seconds": 120,
+      "turn": 1
+    },
+    {
+      "clock": 13.76666666666693,
+      "killer": "M12R Final Alpha",
+      "kind": "eliminated",
+      "name": "M12R Final Beta",
+      "reason": "destroyed",
+      "turn": 1
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 13.76666666666693,
+      "kind": "cash",
+      "name": "M12R Final Alpha",
+      "total": 171,
+      "turn": 1
+    },
+    {
+      "action": "damage",
+      "amount": 300,
+      "clock": 13.76666666666693,
+      "kind": "cash",
+      "name": "M12R Final Alpha",
+      "total": 471,
+      "turn": 1
+    },
+    {
+      "action": "hurt",
+      "amount": 100,
+      "clock": 13.76666666666693,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 200,
+      "turn": 1
+    },
+    {
+      "amount": 100,
+      "clock": 13.76666666666693,
+      "direct": true,
+      "killed": true,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "projectileId": 1,
+      "targetEntityId": 3,
+      "targetStableId": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "turn": 1
+    },
+    {
+      "clock": 13.76666666666693,
+      "damageBefore": 0,
+      "dx": -20.16943359375,
+      "dy": 8.61328125,
+      "impact": {
+        "x": 6819.33056640625,
+        "y": 622.62890625
+      },
+      "kind": "cpu-observation",
+      "origin": {
+        "x": 5998.8232421875,
+        "y": 642.4549560546875
+      },
+      "power": 36.61642668140121,
+      "reason": "detonated",
+      "target": {
+        "x": 6839.5,
+        "y": 614.015625
+      },
+      "targetId": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "turn": 1,
+      "weapon": "nuke"
+    },
+    {
+      "clock": 13.76666666666693,
+      "id": 1,
+      "kind": "end",
+      "owner": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "reason": "detonated",
+      "shooterResidency": "live",
+      "turn": 1,
+      "x": 6819.33056640625,
+      "y": 622.62890625
+    },
+    {
+      "clock": 13.783333333333598,
+      "kind": "presentation-centering",
+      "owner": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "speechKind": "death",
+      "turn": 1
+    },
+    {
+      "clock": 13.783333333333598,
+      "ended": 1,
+      "kind": "attack-resolved",
+      "launched": 1,
+      "turn": 1,
+      "weapon": "nuke"
+    },
+    {
+      "center": {
+        "x": 6829.600699269482,
+        "y": 607.877437557509
+      },
+      "clock": 14.066666666666944,
+      "kind": "presentation-centered",
+      "owner": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "ready": true,
+      "speechKind": "death",
+      "tracking": 1,
+      "turn": 1,
+      "x": 6839.5,
+      "y": 614.015625
+    },
+    {
+      "clock": 14.066666666666944,
+      "id": "[\"terra-cascade-institute\",null,\"death\",\"neutral\",\"The next noise is entirely your problem.\"]",
+      "kind": "quip",
+      "name": "M12R Final Beta",
+      "owner": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "speechKind": "death",
+      "text": "The next noise is entirely your problem.",
+      "turn": 1
+    },
+    {
+      "clock": 16.766666666666996,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6627.33056640625,
+        "y": 494.62890625
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 1,
+      "watchId": 1
+    },
+    {
+      "clock": 17.06666666666698,
+      "elapsed": 3.0000000000000338,
+      "kind": "presentation-ended",
+      "owner": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "speechKind": "death",
+      "turn": 1
+    },
+    {
+      "clock": 17.06666666666698,
+      "kind": "death-pose-released",
+      "owner": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "turn": 1
+    },
+    {
+      "clock": 17.06666666666698,
+      "effect": "magazine",
+      "id": 1,
+      "kind": "chaos-queued",
+      "owner": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "turn": 1,
+      "x": 6839.5,
+      "y": 614.015625
+    },
+    {
+      "clock": 17.06666666666698,
+      "kind": "death-watch-started",
+      "owner": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "seconds": 2.5,
+      "turn": 1
+    },
+    {
+      "clock": 17.06666666666698,
+      "effect": "magazine",
+      "id": 1,
+      "kind": "chaos-started",
+      "turn": 1,
+      "x": 6839.5,
+      "y": 614.015625
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 220,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 230,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 250,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 260,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 280,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 290,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 310,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 320,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 340,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 350,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 370,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 380,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 400,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 410,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 430,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 440,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 460,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 470,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 490,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 500,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 520,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 530,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 550,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 560,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 580,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 590,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 610,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 620,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 640,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 650,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 670,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 680,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 700,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 710,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 730,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 740,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 760,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 770,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 790,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 800,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 820,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 830,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 850,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 860,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 880,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 890,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 910,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 920,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 940,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 950,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 970,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 980,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1000,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1010,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1030,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1040,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1060,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1070,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1090,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1100,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1120,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1130,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1150,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1160,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1180,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1190,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1210,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1220,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1240,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1250,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1270,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1280,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1300,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1310,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1330,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1340,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1360,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1370,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1390,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1400,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1420,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1430,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1450,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1460,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1480,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1490,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1510,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1520,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1540,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1550,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1570,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1580,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1600,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1610,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1630,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1640,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1660,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1670,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1690,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1700,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1720,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1730,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1750,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1760,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1780,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1790,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1810,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1820,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1840,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1850,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1870,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1880,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1900,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1910,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1930,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1940,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1960,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1970,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 1990,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2000,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2020,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2030,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2050,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2060,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2080,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2090,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2110,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2120,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2140,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2150,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2170,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2180,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2200,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2210,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2230,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2240,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2260,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2270,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2290,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2300,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2320,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2330,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2350,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2360,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2380,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2390,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2410,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2420,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2440,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2450,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2470,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2480,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2500,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2510,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2530,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2540,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2560,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2570,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2590,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2600,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2620,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2630,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2650,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2660,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2680,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2690,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2710,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2720,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2740,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2750,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2770,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2780,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2800,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2810,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2830,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2840,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2860,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2870,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2890,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2900,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2920,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2930,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2950,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2960,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2980,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 2990,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3010,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3020,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3040,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3050,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3070,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3080,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3100,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3110,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3130,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3140,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3160,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3170,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3190,
+      "turn": 1
+    },
+    {
+      "action": "resolution",
+      "amount": 10,
+      "clock": 17.06666666666698,
+      "kind": "cash",
+      "name": "M12R Final Beta",
+      "total": 3200,
+      "turn": 1
+    },
+    {
+      "clock": 17.06666666666698,
+      "effect": "magazine",
+      "elapsed": 0.016666666666666666,
+      "id": 1,
+      "kind": "chaos-emission-ended",
+      "launched": 100,
+      "livePulses": 0,
+      "particles": 0,
+      "turn": 1
+    },
+    {
+      "clock": 17.06666666666698,
+      "effect": "magazine",
+      "elapsed": 0.016666666666666666,
+      "ended": 100,
+      "id": 1,
+      "kind": "chaos-ended",
+      "launched": 100,
+      "livePulses": 0,
+      "particles": 0,
+      "turn": 1
+    },
+    {
+      "clock": 19.583333333333503,
+      "elapsed": 2.5166666666665236,
+      "kind": "death-watch-ended",
+      "owner": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+      "turn": 1
+    },
+    {
+      "action": "win",
+      "amount": 150,
+      "clock": 20.08333333333347,
+      "kind": "cash",
+      "name": "M12R Final Alpha",
+      "total": 621,
+      "turn": 1
+    },
+    {
+      "clock": 20.08333333333347,
+      "kind": "cash-settled",
+      "paid": {
+        "m12r final alpha": 621,
+        "m12r final beta": 3200
+      },
+      "turn": 1
+    },
+    {
+      "clock": 20.08333333333347,
+      "kind": "finished",
+      "turn": 1,
+      "winner": "M12R Final Alpha"
+    },
+    {
+      "clock": 20.08333333333347,
+      "color": "#EC4787",
+      "eyebrow": "TURN 1 COMPLETE",
+      "id": 3,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "1 kills (+1) \u00b7 Turn cash +$621.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M12R Final Alpha",
+      "turn": 1
+    }
+  ],
+  "live": [
+    {
+      "health": 100,
+      "id": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+      "live": true,
+      "liveId": 0,
+      "position": {
+        "x": 5998.8232421875,
+        "y": 642.4205322265625
+      },
+      "residency": "live"
+    }
+  ],
+  "match": {
+    "attack": null,
+    "baseGeneration": {
+      "recipe": "wfc"
+    },
+    "biome": "terra-reach-v2",
+    "biomeCycle": false,
+    "biomeRounds": 1,
+    "bounds": {
+      "h": 1280,
+      "w": 12800,
+      "x": 0,
+      "y": 0
+    },
+    "cameraPolicyVersion": 1,
+    "cashNotice": "M12R Final Alpha +$150 \u00b7 win",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "M12R Final Beta: One hundred bad decisions!",
+      "quiet": 3.016666666666661,
+      "rng": 377612470,
+      "serial": 1
+    },
+    "computers": 2,
+    "cpuSkill": "expert",
+    "details": 0,
+    "focusIndex": 0,
+    "generated": 0,
+    "generation": "wfc",
+    "generationChoice": "wfc",
+    "generationVersion": 12,
+    "humans": 0,
+    "impact": {
+      "x": 6819.33056640625,
+      "y": 622.62890625
+    },
+    "lastHit": "M12R Final Beta \u2212100 HP \u00b7 ELIMINATED",
+    "livingSites": 0,
+    "message": "M12R Final Alpha wins the match",
+    "pendingTurn": null,
+    "personaSeed": "257001",
+    "phase": "finished",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "procedural": {
+      "catalog": "procedural-m11",
+      "choices": {
+        "growth": [
+          "builtin-lightning",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "m9-planar-bramble-probe",
+          "builtin-worm-tunnels",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "builtin-creeping-vine",
+          "indigo-m9-oak",
+          "builtin-roots",
+          "builtin-meadow-grass",
+          "builtin-coral",
+          "builtin-ivy-wall",
+          "builtin-wheat",
+          "builtin-icicles",
+          "builtin-hair",
+          "builtin-flower-bed",
+          "builtin-vine-ledge",
+          "builtin-creeping-vine",
+          "indigo-m9-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-flower-bed",
+          "m9-planar-bramble-probe",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "indigo-m9-oak",
+          "builtin-ivy-wall",
+          "builtin-worm-tunnels",
+          "builtin-wheat",
+          "builtin-bramble",
+          "builtin-lightning",
+          "builtin-coral",
+          "builtin-icicles",
+          "builtin-meadow-grass",
+          "builtin-hair",
+          "builtin-creeping-vine",
+          "builtin-worm-tunnels",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "builtin-oak-sapling",
+          "builtin-ivy-wall",
+          "m9-planar-bramble-probe",
+          "builtin-icicles",
+          "builtin-coral",
+          "indigo-m9-oak",
+          "builtin-living-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-wheat"
+        ],
+        "neural": [
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four",
+          "builtin-nca-stations",
+          "builtin-nca-masonry",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four"
+        ],
+        "neuralRecipe": [
+          "builtin-brush-keep-library",
+          "builtin-brush-research-lab",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-station-deck",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-tundra",
+          "builtin-brush-great-hall",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-hellscape",
+          "builtin-brush-coal",
+          "builtin-brush-catacombs",
+          "builtin-brush-station-deck",
+          "builtin-brush-tundra",
+          "builtin-brush-gold",
+          "builtin-brush-hellscape"
+        ],
+        "noise": [
+          "builtin-brick-6",
+          "builtin-fence-2",
+          "builtin-rusty-3",
+          "builtin-brickwood",
+          "builtin-concrete-2",
+          "builtin-panel-8",
+          "builtin-chess-1",
+          "builtin-wood-1",
+          "builtin-brick-2",
+          "builtin-steel-1",
+          "builtin-bigdoor-1",
+          "builtin-grid-2",
+          "builtin-grid-1",
+          "builtin-pillwindow",
+          "builtin-lab-5",
+          "builtin-slime-1",
+          "builtin-sludge-1",
+          "builtin-rusty-2",
+          "builtin-pipes-1",
+          "builtin-skultrim-1",
+          "builtin-fence-3",
+          "builtin-brick-1",
+          "builtin-grass-1",
+          "builtin-ooze-1",
+          "builtin-panel-5",
+          "builtin-crate-1",
+          "builtin-warn-3",
+          "builtin-wood-3",
+          "builtin-circlewindow",
+          "builtin-support-2",
+          "builtin-warn-1",
+          "builtin-door-3",
+          "builtin-light-2",
+          "builtin-crate-3",
+          "builtin-sqdoor-7",
+          "builtin-wood-2",
+          "builtin-vent-2",
+          "builtin-floor-3",
+          "builtin-metal-7",
+          "builtin-metal-6",
+          "builtin-cube-1",
+          "builtin-zinc-1",
+          "builtin-grid-6",
+          "builtin-panel-3",
+          "builtin-paper-1",
+          "builtin-cube-2",
+          "builtin-dirt-1",
+          "builtin-panel-7",
+          "builtin-rusty-1",
+          "builtin-brick2"
+        ],
+        "semantic": [
+          "builtin-brush-mossy-glade",
+          "builtin-brush-gold",
+          "builtin-brush-scorched-wasteland",
+          "builtin-brush-jungle-undergrowth",
+          "builtin-brush-hills",
+          "builtin-brush-toxic-dump",
+          "builtin-brush-power-substation",
+          "builtin-brush-keep-library",
+          "builtin-brush-glacier",
+          "builtin-brush-subway-tunnel",
+          "builtin-brush-crimson-desert",
+          "builtin-brush-charred",
+          "builtin-brush-alien-jungle",
+          "builtin-brush-engine-room",
+          "builtin-brush-rubble",
+          "builtin-brush-goblin-warren",
+          "builtin-brush-great-hall",
+          "builtin-brush-deep-mine",
+          "builtin-brush-frozen-lake",
+          "builtin-brush-alien-hive",
+          "builtin-brush-research-lab",
+          "builtin-brush-enchanted-forest",
+          "builtin-brush-derelict-station",
+          "builtin-brush-ice-moon",
+          "builtin-brush-coal",
+          "builtin-brush-tundra",
+          "builtin-brush-industrial-pipeworks",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-haunted-wood",
+          "builtin-brush-mesa-badlands",
+          "builtin-brush-chemical-plant",
+          "builtin-brush-scrapyard",
+          "builtin-brush-catacombs",
+          "builtin-brush-dragon-graveyard",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-castle-wall",
+          "builtin-brush-spaceship-prison",
+          "builtin-brush-snowy-pines",
+          "builtin-brush-mine-shaft",
+          "builtin-brush-dunes",
+          "builtin-brush-dragon-hoard",
+          "builtin-brush-mangrove-shallows",
+          "builtin-brush-autumn-woodland",
+          "builtin-brush-red-rock-canyon",
+          "indigo-mixed-earth",
+          "builtin-brush-cliffside",
+          "builtin-brush-desecrated-chapel",
+          "builtin-brush-reactor-chamber",
+          "builtin-brush-cryo-bay",
+          "builtin-brush-ice-cave"
+        ],
+        "structureTexture": [
+          "builtin-crate-3",
+          "builtin-steel-1",
+          "builtin-tarmac-2",
+          "builtin-wood-2",
+          "builtin-concrete-8",
+          "builtin-brickwood",
+          "builtin-crate-1",
+          "builtin-concrete-7",
+          "builtin-metal-2",
+          "builtin-marble-1",
+          "builtin-metal-4",
+          "builtin-concrete-2",
+          "builtin-brick-2",
+          "builtin-metal-7",
+          "builtin-brick-1",
+          "builtin-tarmac-4",
+          "builtin-wood-3",
+          "builtin-metal-1",
+          "builtin-steel-3",
+          "builtin-steel-2",
+          "builtin-crate-2",
+          "builtin-brick-4",
+          "builtin-corrugat-1",
+          "builtin-wood-1",
+          "builtin-metal-6"
+        ],
+        "vector": [
+          "builtin:checkmark",
+          "builtin:sun",
+          "builtin:heart",
+          "builtin:arrow-up",
+          "builtin:spade",
+          "builtin:club",
+          "builtin:star-6",
+          "builtin:gear",
+          "builtin:hexagon",
+          "builtin:rounded-square",
+          "builtin:arrow-right",
+          "builtin:tree",
+          "builtin:crescent",
+          "builtin:triangle",
+          "builtin:right-triangle",
+          "builtin:octagon",
+          "builtin:chevron-right",
+          "builtin:circle",
+          "builtin:square",
+          "builtin:cross",
+          "builtin:fire",
+          "builtin:snowflake",
+          "builtin:drop",
+          "builtin:speech-bubble",
+          "builtin:shield"
+        ]
+      },
+      "completed": {},
+      "growthPolicies": {
+        "builtin-bramble": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        },
+        "builtin-coral": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.2
+        },
+        "builtin-creeping-vine": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "builtin-flower-bed": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.8
+        },
+        "builtin-hair": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "viewPlane",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 4
+        },
+        "builtin-icicles": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.7
+        },
+        "builtin-ivy-wall": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "builtin-lightning": {
+          "endTime": 0.3,
+          "flowing": false,
+          "startTubes": 1,
+          "stroke": {
+            "paintOn": "viewPlane",
+            "sizeAttribute": "lengthMax",
+            "sizeMode": "attribute",
+            "sizeReference": 3
+          },
+          "timed": true,
+          "tubesPerStep": 0.1
+        },
+        "builtin-living-bramble": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        },
+        "builtin-meadow-grass": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 3
+        },
+        "builtin-oak-sapling": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 1,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.05
+        },
+        "builtin-roots": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.2
+        },
+        "builtin-vine-ledge": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "builtin-wheat": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 2
+        },
+        "builtin-worm-tunnels": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "viewPlane",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "indigo-m9-bramble": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        },
+        "indigo-m9-oak": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 1,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.05
+        },
+        "m9-planar-bramble-probe": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        }
+      },
+      "hash": "2b6e76aee7840f8b7bd706b3fbaea1e3f783806cf0b959cc151c76b33754b36a",
+      "receipts": [],
+      "sites": [],
+      "story": {
+        "affinities": {
+          "growth": [
+            "roots",
+            "worm",
+            "living bramble",
+            "creeping vine",
+            "oak"
+          ],
+          "noise": [
+            "crate",
+            "paper",
+            "rusty",
+            "scrap",
+            "wood",
+            "dirt",
+            "sludge"
+          ],
+          "semantic": [
+            "scrapyard",
+            "toxic dump",
+            "goblin warren",
+            "mine shaft",
+            "derelict",
+            "sewer"
+          ],
+          "vector": [
+            "gear",
+            "square",
+            "circle",
+            "hexagon",
+            "triangle"
+          ]
+        },
+        "description": "A crust of soil and junk covers old machinery, timber braces and small fuel chambers. Shooting the right support exposes a cavity instead of merely digging another straight shaft.",
+        "id": "world-beneath-landfill",
+        "motifs": [
+          {
+            "central": true,
+            "id": "junk-slide",
+            "kind": "counterweight",
+            "name": "Junk slide",
+            "parameters": {
+              "deckMaterial": "WOOD",
+              "dimensions": {
+                "deckLength": 144,
+                "deckThickness": 10,
+                "height": 144,
+                "loadDiameter": 28,
+                "supportHeight": 44,
+                "supportWidth": 8,
+                "width": 192
+              },
+              "loadMaterial": "IRON",
+              "slopeDeg": 8,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-rigid-gravity",
+              "native-rigid-contact"
+            ],
+            "seed": 4074234570,
+            "siteIndex": 0
+          },
+          {
+            "central": false,
+            "id": "buried-fuel-route",
+            "kind": "fuel-cell",
+            "name": "Old fuel line",
+            "parameters": {
+              "deckMaterial": "CONCRETE",
+              "dimensions": {
+                "deckLength": 160,
+                "deckThickness": 12,
+                "gateWidth": 12,
+                "height": 176,
+                "ignitionGap": 24,
+                "lowerBasinDepth": 32,
+                "lowerBasinWidth": 88,
+                "reservoirDepth": 28,
+                "reservoirWidth": 64,
+                "separatorThickness": 12,
+                "supportHeight": 40,
+                "supportWidth": 10,
+                "wallThickness": 8,
+                "width": 224
+              },
+              "ignitionMaterial": "EMBER",
+              "liquidMaterial": "CRUDE_OIL",
+              "loadMaterial": "IRON",
+              "slopeDeg": 6,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-liquid-flow",
+              "native-combustion",
+              "native-rigid-gravity",
+              "active-region-thermal-acceptance"
+            ],
+            "seed": 4091012189,
+            "siteIndex": 1
+          },
+          {
+            "central": false,
+            "id": "buried-roof",
+            "kind": "counterweight",
+            "name": "The roof under the rubbish",
+            "parameters": {
+              "deckMaterial": "WOOD",
+              "dimensions": {
+                "deckLength": 144,
+                "deckThickness": 10,
+                "height": 144,
+                "loadDiameter": 28,
+                "supportHeight": 44,
+                "supportWidth": 8,
+                "width": 192
+              },
+              "loadMaterial": "IRON",
+              "looseMaterial": "DIRT",
+              "slopeDeg": 8,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-rigid-gravity",
+              "native-powder-fall"
+            ],
+            "seed": 4040679332,
+            "siteIndex": 2
+          },
+          {
+            "central": false,
+            "id": "junk-slide",
+            "kind": "counterweight",
+            "name": "Junk slide",
+            "parameters": {
+              "deckMaterial": "WOOD",
+              "dimensions": {
+                "deckLength": 144,
+                "deckThickness": 10,
+                "height": 144,
+                "loadDiameter": 28,
+                "supportHeight": 44,
+                "supportWidth": 8,
+                "width": 192
+              },
+              "loadMaterial": "IRON",
+              "slopeDeg": 8,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-rigid-gravity",
+              "native-rigid-contact"
+            ],
+            "seed": 4057456951,
+            "siteIndex": 3
+          },
+          {
+            "central": false,
+            "id": "buried-fuel-route",
+            "kind": "fuel-cell",
+            "name": "Old fuel line",
+            "parameters": {
+              "deckMaterial": "CONCRETE",
+              "dimensions": {
+                "deckLength": 160,
+                "deckThickness": 12,
+                "gateWidth": 12,
+                "height": 176,
+                "ignitionGap": 24,
+                "lowerBasinDepth": 32,
+                "lowerBasinWidth": 88,
+                "reservoirDepth": 28,
+                "reservoirWidth": 64,
+                "separatorThickness": 12,
+                "supportHeight": 40,
+                "supportWidth": 10,
+                "wallThickness": 8,
+                "width": 224
+              },
+              "ignitionMaterial": "EMBER",
+              "liquidMaterial": "CRUDE_OIL",
+              "loadMaterial": "IRON",
+              "slopeDeg": 6,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-liquid-flow",
+              "native-combustion",
+              "native-rigid-gravity",
+              "active-region-thermal-acceptance"
+            ],
+            "seed": 4007124094,
+            "siteIndex": 4
+          }
+        ],
+        "name": "World Beneath the Landfill",
+        "placement": {
+          "centralSites": 1,
+          "sitesPerMap": 5
+        },
+        "seed": 478062876,
+        "selection": {
+          "affinityBonus": 3,
+          "baseWeight": 1
+        },
+        "sourceFile": "Game/landscape-stories.json",
+        "version": 1
+      },
+      "version": 1
+    },
+    "remaining": 28.233333333333434,
+    "roster": [
+      {
+        "aiRng": 249832341,
+        "aimedTurn": 1,
+        "autoAimTurn": null,
+        "autoDefenseChecked": true,
+        "cashBreakdown": {
+          "aim": 3,
+          "damage": 300,
+          "hit": 20,
+          "kill": 100,
+          "landing": 15,
+          "power": 3,
+          "shoot": 20,
+          "turn": 10,
+          "win": 150
+        },
+        "cashEarned": 621,
+        "color": "#EC4787",
+        "consecutivePasses": 0,
+        "control": "cpu",
+        "cpuStalled": null,
+        "damage": 100,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-d78cf76a-3d6d-487a-b798-5d3d844fda05",
+        "hits": 1,
+        "impacts": [
+          {
+            "damageBefore": 0,
+            "dx": -20.16943359375,
+            "dy": 8.61328125,
+            "impact": {
+              "x": 6819.33056640625,
+              "y": 622.62890625
+            },
+            "origin": {
+              "x": 5998.8232421875,
+              "y": 642.4549560546875
+            },
+            "power": 36.61642668140121,
+            "reason": "detonated",
+            "target": {
+              "x": 6839.5,
+              "y": 614.015625
+            },
+            "targetId": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+            "turn": 1,
+            "weapon": "nuke"
+          }
+        ],
+        "index": 0,
+        "kills": 1,
+        "lastKnownPosition": {
+          "x": 5998.8232421875,
+          "y": 642.42236328125
+        },
+        "lastLandRecord": {
+          "clock": 3.4166666666666594,
+          "x": 5999.5,
+          "y": 640.0604858398438
+        },
+        "lastMoveX": 5998.8232421875,
+        "moveDistance": 0,
+        "name": "M12R Final Alpha",
+        "personaId": "kiloton",
+        "placementReady": true,
+        "plannedTurn": 1,
+        "preparedTurn": 1,
+        "shotFrom": {
+          "x": 5998.8232421875,
+          "y": 642.4549560546875
+        },
+        "shots": 1,
+        "spawnX": 6000,
+        "surfaceY": 656,
+        "tactic": "Surveyed firing corridor",
+        "targetId": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "turnStartCash": 0,
+        "turnStartKills": 0,
+        "weaponId": "nuke"
+      },
+      {
+        "autoAimTurn": null,
+        "autoDefenseChecked": true,
+        "cashBreakdown": {
+          "death": 100,
+          "hurt": 100,
+          "resolution": 1000,
+          "shoot": 2000
+        },
+        "cashEarned": 3200,
+        "chaosId": 1,
+        "color": "#35D9FF",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 100,
+        "deathEffect": "magazine",
+        "eliminated": true,
+        "entityId": "instance@spawn-6eae8298-342a-43bb-849e-017fc239f6d8",
+        "hits": 0,
+        "index": 1,
+        "kills": 0,
+        "lastKnownPosition": {
+          "x": 6839.5,
+          "y": 614.015625
+        },
+        "lastLandRecord": {
+          "clock": 5.099999999999987,
+          "x": 6839.5,
+          "y": 612.3424072265625
+        },
+        "moveDistance": 0,
+        "name": "M12R Final Beta",
+        "personaId": "domino",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6840,
+        "surfaceY": 628,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "weaponId": "napalm"
+      }
+    ],
+    "round": 1,
+    "seed": 257001,
+    "series": {
+      "champion": "M12R Final Alpha",
+      "complete": true,
+      "standings": [
+        {
+          "damage": 100,
+          "earned": 621,
+          "hits": 1,
+          "kills": 1,
+          "name": "M12R Final Alpha",
+          "shots": 1,
+          "wins": 1
+        },
+        {
+          "damage": 0,
+          "earned": 3200,
+          "hits": 0,
+          "kills": 0,
+          "name": "M12R Final Beta",
+          "shots": 0,
+          "wins": 0
+        }
+      ]
+    },
+    "seriesId": "866e7bb2-3e6a-4b65-99f5-8bbdc4629125",
+    "seriesLength": 1,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 0,
+      "family": "template",
+      "parameters": {},
+      "phase": "complete",
+      "reason": null,
+      "recipeId": "wfc",
+      "seed": 257001,
+      "totalChunks": 0,
+      "version": 1
+    },
+    "turnNumber": 1,
+    "turnSeconds": 30,
+    "version": 9,
+    "waitTicks": 94,
+    "winner": "M12R Final Alpha"
+  },
+  "paused": false,
+  "save": {
+    "allowed": false,
+    "blockers": [
+      {
+        "count": 1,
+        "id": "match-sequence",
+        "kind": "script",
+        "owner": "match",
+        "reason": "Finish deployment, volley and death effects before saving"
+      }
+    ]
+  },
+  "world": "866e7bb2-3e6a-4b65-99f5-8bbdc4629125"
+}

@@ -1,0 +1,37 @@
+{
+  "biome": {
+    "id": "mixed-reach",
+    "name": "Mixed Reach",
+    "areaId": "indigo-mixed"
+  },
+  "tiles": {
+    "width": 50,
+    "height": 5,
+    "chunksPerTile": 4
+  },
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "w": 12800,
+    "h": 1280
+  },
+  "surfaceBand": {
+    "top": 512,
+    "height": 256
+  },
+  "tankTemplate": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+  "maxPlayers": 16,
+  "maxStartingGapTiles": 9,
+  "cpuGraph": "205b7779-ca29-40cf-9d3b-a0fad2fefe6b",
+  "moveSpeed": 55,
+  "terrain": {
+    "brushRecipe": "indigo-mixed-earth",
+    "materials": [
+      "DIRT",
+      "SAND",
+      "STONE"
+    ],
+    "solidBottomTileRow": 4
+  },
+  "impactWaitTicks": 180
+}

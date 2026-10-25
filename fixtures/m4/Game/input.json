@@ -1,0 +1,81 @@
+{
+  "allowedTabs": {
+    "char": true,
+    "equip": true,
+    "inv": true,
+    "map": true
+  },
+  "cameraFollow": "off",
+  "customCss": "",
+  "inputActions": [
+    {
+      "id": "tank_angle_up",
+      "keys": [
+        "ArrowLeft"
+      ],
+      "label": "Tank aim left",
+      "pad": []
+    },
+    {
+      "id": "tank_angle_down",
+      "keys": [
+        "ArrowRight"
+      ],
+      "label": "Tank aim right",
+      "pad": []
+    },
+    {
+      "id": "tank_power_up",
+      "keys": [
+        "ArrowUp"
+      ],
+      "label": "Tank power up",
+      "pad": []
+    },
+    {
+      "id": "tank_power_down",
+      "keys": [
+        "ArrowDown"
+      ],
+      "label": "Tank power down",
+      "pad": []
+    },
+    {
+      "id": "tank_fire",
+      "keys": [
+        " "
+      ],
+      "label": "Fire cannon",
+      "pad": []
+    },
+    {
+      "id": "tank_pass",
+      "keys": [
+        "Enter"
+      ],
+      "label": "Pass turn",
+      "pad": []
+    },
+    {
+      "id": "tank_move_left",
+      "keys": [
+        "a"
+      ],
+      "label": "Tank move left",
+      "pad": []
+    },
+    {
+      "id": "tank_move_right",
+      "keys": [
+        "d"
+      ],
+      "label": "Tank move right",
+      "pad": []
+    }
+  ],
+  "maxLocalPlayers": 1,
+  "showEnergy": false,
+  "showGold": false,
+  "showLevelXp": false,
+  "tabMenuEnabled": false
+}

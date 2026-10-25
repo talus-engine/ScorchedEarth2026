@@ -1,0 +1,184 @@
+{
+  "sourceCommit": "adf204861",
+  "installedVersion": "0.0.2494",
+  "combatWorldId": "5c0bd082-1ae1-4301-b719-fadeb0d7715a",
+  "passed": 22,
+  "total": 23,
+  "checks": [
+    {
+      "name": "resume untouched fresh M1 game",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normal x=400 start",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all starting ground cells are stone",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "long range flight",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "home survives shell-following return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "first crater survives round trip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two shots kill the target, one survivor",
+      "passed": true,
+      "detail": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 6,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-cdd10b8f-f03d-40fb-bc06-009b89d49a78",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 399.5,
+          "y": 625.9899291992188
+        },
+        {
+          "alive": false,
+          "angle": 0,
+          "chunk": {
+            "x": 72,
+            "y": 10
+          },
+          "faction": null,
+          "health": 0,
+          "id": "instance@spawn-7416c977-10d7-40e0-bec0-385f69efe4eb",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 10,
+          "maxHealth": 100,
+          "name": "M1 Target",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 4615.5,
+          "y": 640.1625366210938
+        }
+      ]
+    },
+    {
+      "name": "shooter parked during flight with durable owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "high arc above terrain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "both hit callbacks delivered with owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "damage and kill credit retain shooter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hits precede projectile end",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all four impacts settled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "camera-only ground return 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "camera-only ground return 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "camera-only ground return 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "former pit region contains full ground",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "name": "save/reopen retains survivor identity, health and marker",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "save/reopen retains cannon inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target remains dead after reopen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "home survives save/reopen exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "craters survive save/reopen exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "corridor contents survive save/reopen exactly",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "missingChunk": {
+    "x": 50,
+    "y": 10,
+    "absentStoneCells": 4096,
+    "worldPixelRect": {
+      "x": 3200,
+      "y": 640,
+      "w": 64,
+      "h": 64
+    }
+  },
+  "accepted": false,
+  "note": "The combat corridor was first audited after the four shots; fresh-game no-shot control is recorded separately. Navigation readiness interruptions in the Python runner are not counted as engine regressions."
+}

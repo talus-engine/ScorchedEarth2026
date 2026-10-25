@@ -1,0 +1,129 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 3,
+  "ok": true,
+  "value": {
+    "error": "",
+    "generation": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 720,
+      "family": "maze",
+      "parameters": {
+        "cellSize": 48
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "bunker-grid",
+      "seed": 2533410,
+      "totalChunks": 4000,
+      "version": 1
+    },
+    "match": {
+      "attack": null,
+      "biome": "bunker-grid",
+      "bounds": {
+        "h": 1280,
+        "w": 960,
+        "x": 5920,
+        "y": 0
+      },
+      "cashNotice": "",
+      "cashShots": {},
+      "chaos": {
+        "jobs": [],
+        "notice": "",
+        "quiet": 0,
+        "rng": 424088455,
+        "serial": 0
+      },
+      "computers": 2,
+      "details": 0,
+      "focusIndex": 0,
+      "frameNotice": "",
+      "generated": 0,
+      "generation": "bunker-grid",
+      "generationChoice": "bunker-grid",
+      "humans": 0,
+      "impact": null,
+      "livingSites": 0,
+      "message": "Tanks ready \u2014 begin when your crew is ready",
+      "pendingTurn": null,
+      "phase": "ready",
+      "presentation": {
+        "active": null,
+        "queue": []
+      },
+      "remaining": 20,
+      "roster": [
+        {
+          "autoAimTurn": null,
+          "cashBreakdown": {},
+          "cashEarned": 0,
+          "color": "#FF783C",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-1aa9fd08-fc4f-449a-a37f-17121258376e",
+          "index": 0,
+          "kills": 0,
+          "moveDistance": 0,
+          "name": "M10 Native Ember",
+          "placementReady": true,
+          "spawnX": 5960,
+          "surfaceY": 1024,
+          "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+          "weaponId": "mirv"
+        },
+        {
+          "autoAimTurn": null,
+          "cashBreakdown": {},
+          "cashEarned": 0,
+          "color": "#70F8A0",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-915ed576-15e9-4773-9232-7ca5eb5602c0",
+          "index": 1,
+          "kills": 0,
+          "moveDistance": 0,
+          "name": "M10 Native Mint",
+          "placementReady": true,
+          "spawnX": 6840,
+          "surfaceY": 576,
+          "templateId": "df3e8da4-084c-4989-80c1-638805529db9",
+          "weaponId": "standard"
+        }
+      ],
+      "round": 1,
+      "seed": 2533410,
+      "shotId": null,
+      "terrainSource": {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "completedChunks": 700,
+        "family": "maze",
+        "parameters": {
+          "cellSize": 48
+        },
+        "phase": "ready",
+        "reason": null,
+        "recipeId": "bunker-grid",
+        "seed": 2533410,
+        "totalChunks": 4000,
+        "version": 1
+      },
+      "turnNumber": 0,
+      "turnSeconds": 20,
+      "version": 9,
+      "winner": null
+    }
+  }
+}

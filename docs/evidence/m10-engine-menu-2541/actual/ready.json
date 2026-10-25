@@ -1,0 +1,122 @@
+{
+  "error": "",
+  "match": {
+    "attack": null,
+    "baseGeneration": {
+      "recipe": "wfc"
+    },
+    "biome": "mixed-reach",
+    "biomeCycle": false,
+    "biomeRounds": 1,
+    "bounds": {
+      "h": 1280,
+      "w": 960,
+      "x": 5920,
+      "y": 0
+    },
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0,
+      "rng": 4120641899,
+      "serial": 0
+    },
+    "computers": 2,
+    "cpuSkill": "persona",
+    "details": 0,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "generated": 0,
+    "generation": "wfc",
+    "generationChoice": "wfc",
+    "humans": 0,
+    "impact": null,
+    "livingSites": 0,
+    "message": "Tanks ready \u2014 begin when your crew is ready",
+    "pendingTurn": null,
+    "personaSeed": "2538002",
+    "phase": "ready",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "remaining": 30,
+    "roster": [
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#FF6150",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-e282de96-4263-493c-9ec6-331a0a9b8e7f",
+        "hits": 0,
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "Navigation CPU A",
+        "personaId": "lucky",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 5960,
+        "surfaceY": 716,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "weaponId": "machine-gun"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#82D3AF",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-de25b995-7acf-417b-9421-ade3656a6baa",
+        "hits": 0,
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "Navigation CPU B",
+        "personaId": "mole",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6840,
+        "surfaceY": 692,
+        "templateId": "eaf866a6-4216-405a-9a28-2e87df3d44eb",
+        "weaponId": "riot"
+      }
+    ],
+    "round": 1,
+    "seed": 2538002,
+    "seriesId": "0bb8884c-ff1c-4d23-bd0c-9dcbca52b395",
+    "seriesLength": 1,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 0,
+      "family": "template",
+      "parameters": {},
+      "phase": "complete",
+      "reason": null,
+      "recipeId": "wfc",
+      "seed": 2538002,
+      "totalChunks": 0,
+      "version": 1
+    },
+    "turnNumber": 0,
+    "turnSeconds": 30,
+    "version": 9,
+    "winner": null
+  },
+  "world": "0bb8884c-ff1c-4d23-bd0c-9dcbca52b395"
+}

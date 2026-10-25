@@ -1,0 +1,1552 @@
+{
+  "catalog": {
+    "defaultRecipe": "random",
+    "recipes": [
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "family": "template",
+        "id": "wfc",
+        "label": "Mixed Reach \u00b7 WFC",
+        "weight": 24
+      },
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 16384,
+          "y": 0
+        },
+        "family": "template",
+        "id": "brush",
+        "label": "Brush Reach \u00b7 semantic / neural / living",
+        "weight": 24
+      },
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "family": "zone",
+        "foundation": {
+          "element": 9,
+          "height": 256
+        },
+        "id": "dune-sea",
+        "label": "Dune sea",
+        "parameters": {
+          "airDepth": {
+            "label": "Open sky depth",
+            "max": 820,
+            "min": 680,
+            "path": "zones.0.terrain.surface.baseline"
+          },
+          "blend": {
+            "label": "Surface blend",
+            "max": 8,
+            "min": 0,
+            "path": "zones.0.terrain.surface.blendWidth"
+          },
+          "frequency": {
+            "label": "Ridge frequency",
+            "max": 0.02,
+            "min": 0.001,
+            "path": "zones.0.terrain.frequency"
+          },
+          "height": {
+            "label": "Ridge height",
+            "max": 160,
+            "min": 20,
+            "path": "zones.0.terrain.surface.amplitude"
+          },
+          "octaves": {
+            "integer": true,
+            "label": "Noise detail",
+            "max": 6,
+            "min": 1,
+            "path": "zones.0.terrain.octaves"
+          }
+        },
+        "weight": 6,
+        "zones": [
+          {
+            "features": [],
+            "id": "dune-sea",
+            "materials": [
+              {
+                "elementType": 9,
+                "maxValue": 0.15,
+                "minValue": 0
+              },
+              {
+                "elementType": 10,
+                "maxValue": 0.45,
+                "minValue": 0.15
+              },
+              {
+                "elementType": 11,
+                "maxValue": 1,
+                "minValue": 0.45
+              }
+            ],
+            "maxX": 12800,
+            "maxY": 1280,
+            "minX": 0,
+            "minY": 0,
+            "name": "Dune sea",
+            "priority": 1,
+            "terrain": {
+              "amplitude": 100,
+              "cellularJitter": 0.85,
+              "enabled": true,
+              "frequency": 0.004,
+              "lacunarity": 2,
+              "noiseType": "simplex",
+              "octaves": 3,
+              "persistence": 0.5,
+              "ridgedGain": 2,
+              "surface": {
+                "amplitude": 90,
+                "baseline": 744,
+                "blendWidth": 4,
+                "directions": [
+                  "s"
+                ]
+              }
+            }
+          },
+          {
+            "features": [],
+            "id": "dune-sea-combat",
+            "materials": [
+              {
+                "elementType": 9,
+                "maxValue": 0.15,
+                "minValue": 0
+              },
+              {
+                "elementType": 10,
+                "maxValue": 0.45,
+                "minValue": 0.15
+              },
+              {
+                "elementType": 11,
+                "maxValue": 1,
+                "minValue": 0.45
+              }
+            ],
+            "maxX": 7136,
+            "maxY": 1280,
+            "minX": 5664,
+            "minY": 0,
+            "name": "Connected combat basin",
+            "priority": 0,
+            "terrain": {
+              "amplitude": 100,
+              "cellularJitter": 0.85,
+              "enabled": true,
+              "frequency": 0.0015,
+              "lacunarity": 2,
+              "noiseType": "simplex",
+              "octaves": 2,
+              "persistence": 0.5,
+              "ridgedGain": 2,
+              "surface": {
+                "amplitude": 24,
+                "baseline": 744,
+                "blendWidth": 2,
+                "directions": [
+                  "s"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "family": "zone",
+        "foundation": {
+          "element": 9,
+          "height": 256
+        },
+        "id": "shattered-highlands",
+        "label": "Shattered highlands",
+        "parameters": {
+          "airDepth": {
+            "label": "Open sky depth",
+            "max": 820,
+            "min": 680,
+            "path": "zones.0.terrain.surface.baseline"
+          },
+          "blend": {
+            "label": "Surface blend",
+            "max": 8,
+            "min": 0,
+            "path": "zones.0.terrain.surface.blendWidth"
+          },
+          "frequency": {
+            "label": "Ridge frequency",
+            "max": 0.02,
+            "min": 0.001,
+            "path": "zones.0.terrain.frequency"
+          },
+          "height": {
+            "label": "Ridge height",
+            "max": 160,
+            "min": 20,
+            "path": "zones.0.terrain.surface.amplitude"
+          },
+          "octaves": {
+            "integer": true,
+            "label": "Noise detail",
+            "max": 6,
+            "min": 1,
+            "path": "zones.0.terrain.octaves"
+          }
+        },
+        "weight": 6,
+        "zones": [
+          {
+            "features": [],
+            "id": "shattered-highlands",
+            "materials": [
+              {
+                "elementType": 9,
+                "maxValue": 0.52,
+                "minValue": 0
+              },
+              {
+                "elementType": 10,
+                "maxValue": 0.85,
+                "minValue": 0.52
+              },
+              {
+                "elementType": 11,
+                "maxValue": 1,
+                "minValue": 0.85
+              }
+            ],
+            "maxX": 12800,
+            "maxY": 1280,
+            "minX": 0,
+            "minY": 0,
+            "name": "Shattered highlands",
+            "priority": 1,
+            "terrain": {
+              "amplitude": 100,
+              "cellularJitter": 0.85,
+              "enabled": true,
+              "frequency": 0.006,
+              "lacunarity": 2,
+              "noiseType": "ridged",
+              "octaves": 3,
+              "persistence": 0.5,
+              "ridgedGain": 2,
+              "surface": {
+                "amplitude": 155,
+                "baseline": 744,
+                "blendWidth": 4,
+                "directions": [
+                  "s"
+                ]
+              }
+            }
+          },
+          {
+            "features": [],
+            "id": "shattered-highlands-combat",
+            "materials": [
+              {
+                "elementType": 9,
+                "maxValue": 0.52,
+                "minValue": 0
+              },
+              {
+                "elementType": 10,
+                "maxValue": 0.85,
+                "minValue": 0.52
+              },
+              {
+                "elementType": 11,
+                "maxValue": 1,
+                "minValue": 0.85
+              }
+            ],
+            "maxX": 7136,
+            "maxY": 1280,
+            "minX": 5664,
+            "minY": 0,
+            "name": "Connected combat basin",
+            "priority": 0,
+            "terrain": {
+              "amplitude": 100,
+              "cellularJitter": 0.85,
+              "enabled": true,
+              "frequency": 0.0015,
+              "lacunarity": 2,
+              "noiseType": "ridged",
+              "octaves": 2,
+              "persistence": 0.5,
+              "ridgedGain": 2,
+              "surface": {
+                "amplitude": 24,
+                "baseline": 744,
+                "blendWidth": 2,
+                "directions": [
+                  "s"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "family": "zone",
+        "foundation": {
+          "element": 9,
+          "height": 256
+        },
+        "id": "bramble-badlands",
+        "label": "Bramble badlands",
+        "parameters": {
+          "airDepth": {
+            "label": "Open sky depth",
+            "max": 820,
+            "min": 680,
+            "path": "zones.0.terrain.surface.baseline"
+          },
+          "blend": {
+            "label": "Surface blend",
+            "max": 8,
+            "min": 0,
+            "path": "zones.0.terrain.surface.blendWidth"
+          },
+          "frequency": {
+            "label": "Ridge frequency",
+            "max": 0.02,
+            "min": 0.001,
+            "path": "zones.0.terrain.frequency"
+          },
+          "height": {
+            "label": "Ridge height",
+            "max": 160,
+            "min": 20,
+            "path": "zones.0.terrain.surface.amplitude"
+          },
+          "octaves": {
+            "integer": true,
+            "label": "Noise detail",
+            "max": 6,
+            "min": 1,
+            "path": "zones.0.terrain.octaves"
+          }
+        },
+        "weight": 6,
+        "zones": [
+          {
+            "features": [],
+            "id": "bramble-badlands",
+            "materials": [
+              {
+                "elementType": 9,
+                "maxValue": 0.28,
+                "minValue": 0
+              },
+              {
+                "elementType": 10,
+                "maxValue": 0.85,
+                "minValue": 0.28
+              },
+              {
+                "elementType": 11,
+                "maxValue": 1,
+                "minValue": 0.85
+              }
+            ],
+            "maxX": 12800,
+            "maxY": 1280,
+            "minX": 0,
+            "minY": 0,
+            "name": "Bramble badlands",
+            "priority": 1,
+            "terrain": {
+              "amplitude": 100,
+              "cellularJitter": 0.85,
+              "enabled": true,
+              "frequency": 0.005,
+              "lacunarity": 2,
+              "noiseType": "perlin",
+              "octaves": 3,
+              "persistence": 0.5,
+              "ridgedGain": 2,
+              "surface": {
+                "amplitude": 110,
+                "baseline": 744,
+                "blendWidth": 4,
+                "directions": [
+                  "s"
+                ]
+              }
+            }
+          },
+          {
+            "features": [],
+            "id": "bramble-badlands-combat",
+            "materials": [
+              {
+                "elementType": 9,
+                "maxValue": 0.28,
+                "minValue": 0
+              },
+              {
+                "elementType": 10,
+                "maxValue": 0.85,
+                "minValue": 0.28
+              },
+              {
+                "elementType": 11,
+                "maxValue": 1,
+                "minValue": 0.85
+              }
+            ],
+            "maxX": 7136,
+            "maxY": 1280,
+            "minX": 5664,
+            "minY": 0,
+            "name": "Connected combat basin",
+            "priority": 0,
+            "terrain": {
+              "amplitude": 100,
+              "cellularJitter": 0.85,
+              "enabled": true,
+              "frequency": 0.0015,
+              "lacunarity": 2,
+              "noiseType": "perlin",
+              "octaves": 2,
+              "persistence": 0.5,
+              "ridgedGain": 2,
+              "surface": {
+                "amplitude": 24,
+                "baseline": 744,
+                "blendWidth": 2,
+                "directions": [
+                  "s"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "family": "zone",
+        "foundation": {
+          "element": 9,
+          "height": 256
+        },
+        "id": "crater-country",
+        "label": "Crater country",
+        "parameters": {
+          "airDepth": {
+            "label": "Open sky depth",
+            "max": 820,
+            "min": 680,
+            "path": "zones.0.terrain.surface.baseline"
+          },
+          "blend": {
+            "label": "Surface blend",
+            "max": 8,
+            "min": 0,
+            "path": "zones.0.terrain.surface.blendWidth"
+          },
+          "frequency": {
+            "label": "Ridge frequency",
+            "max": 0.02,
+            "min": 0.001,
+            "path": "zones.0.terrain.frequency"
+          },
+          "height": {
+            "label": "Ridge height",
+            "max": 160,
+            "min": 20,
+            "path": "zones.0.terrain.surface.amplitude"
+          },
+          "octaves": {
+            "integer": true,
+            "label": "Noise detail",
+            "max": 6,
+            "min": 1,
+            "path": "zones.0.terrain.octaves"
+          }
+        },
+        "weight": 6,
+        "zones": [
+          {
+            "features": [],
+            "id": "crater-country",
+            "materials": [
+              {
+                "elementType": 9,
+                "maxValue": 0.35,
+                "minValue": 0
+              },
+              {
+                "elementType": 10,
+                "maxValue": 0.85,
+                "minValue": 0.35
+              },
+              {
+                "elementType": 11,
+                "maxValue": 1,
+                "minValue": 0.85
+              }
+            ],
+            "maxX": 12800,
+            "maxY": 1280,
+            "minX": 0,
+            "minY": 0,
+            "name": "Crater country",
+            "priority": 1,
+            "terrain": {
+              "amplitude": 100,
+              "cellularJitter": 0.85,
+              "enabled": true,
+              "frequency": 0.008,
+              "lacunarity": 2,
+              "noiseType": "cellular",
+              "octaves": 3,
+              "persistence": 0.5,
+              "ridgedGain": 2,
+              "surface": {
+                "amplitude": 135,
+                "baseline": 744,
+                "blendWidth": 4,
+                "directions": [
+                  "s"
+                ]
+              }
+            }
+          },
+          {
+            "features": [],
+            "id": "crater-country-combat",
+            "materials": [
+              {
+                "elementType": 9,
+                "maxValue": 0.35,
+                "minValue": 0
+              },
+              {
+                "elementType": 10,
+                "maxValue": 0.85,
+                "minValue": 0.35
+              },
+              {
+                "elementType": 11,
+                "maxValue": 1,
+                "minValue": 0.85
+              }
+            ],
+            "maxX": 7136,
+            "maxY": 1280,
+            "minX": 5664,
+            "minY": 0,
+            "name": "Connected combat basin",
+            "priority": 0,
+            "terrain": {
+              "amplitude": 100,
+              "cellularJitter": 0.85,
+              "enabled": true,
+              "frequency": 0.0015,
+              "lacunarity": 2,
+              "noiseType": "cellular",
+              "octaves": 2,
+              "persistence": 0.5,
+              "ridgedGain": 2,
+              "surface": {
+                "amplitude": 24,
+                "baseline": 744,
+                "blendWidth": 2,
+                "directions": [
+                  "s"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "clearances": [
+          {
+            "h": 448,
+            "w": 12800,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "h": 128,
+            "w": 1280,
+            "x": 5760,
+            "y": 448
+          }
+        ],
+        "family": "maze",
+        "foundation": {
+          "element": 9,
+          "height": 256
+        },
+        "id": "bunker-grid",
+        "label": "Bunker grid",
+        "maze": {
+          "algorithm": "recursive-division",
+          "cellSizePx": 48,
+          "generate": {
+            "doorCount": 0,
+            "doorPlacementMode": "off",
+            "entranceEast": true,
+            "entranceNorth": true,
+            "entranceSizeTiles": 3,
+            "entranceSouth": false,
+            "entranceWest": true,
+            "keysEnabled": false,
+            "secretDensity": 0
+          },
+          "mappings": [
+            {
+              "elementId": 9,
+              "kind": "noise",
+              "layerId": "world",
+              "materialElementId": 9,
+              "mazeKind": "wall",
+              "noiseSpec": {
+                "algorithm": "simplex",
+                "bands": [
+                  {
+                    "elementId": 9,
+                    "endPos": 0.4
+                  },
+                  {
+                    "elementId": 10,
+                    "endPos": 0.85
+                  },
+                  {
+                    "elementId": 11,
+                    "endPos": 1
+                  }
+                ],
+                "frequency": 0.035,
+                "lacunarity": 2,
+                "octaves": 3,
+                "persistence": 0.5
+              }
+            },
+            {
+              "elementId": 0,
+              "kind": "none",
+              "layerId": "world",
+              "materialElementId": 0,
+              "mazeKind": "floor"
+            }
+          ],
+          "seedSalt": "terra:bunker-grid",
+          "strokes": []
+        },
+        "parameters": {
+          "cellSize": {
+            "integer": true,
+            "label": "Cell size",
+            "max": 96,
+            "min": 40,
+            "path": "maze.cellSizePx"
+          }
+        },
+        "weight": 7
+      },
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "clearances": [
+          {
+            "h": 448,
+            "w": 12800,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "h": 128,
+            "w": 1280,
+            "x": 5760,
+            "y": 448
+          }
+        ],
+        "family": "maze",
+        "foundation": {
+          "element": 9,
+          "height": 256
+        },
+        "id": "rat-run",
+        "label": "Rat run",
+        "maze": {
+          "algorithm": "braid",
+          "cellSizePx": 48,
+          "generate": {
+            "braidChance": 0.65,
+            "doorCount": 0,
+            "doorPlacementMode": "off",
+            "entranceEast": true,
+            "entranceNorth": true,
+            "entranceSizeTiles": 3,
+            "entranceSouth": false,
+            "entranceWest": true,
+            "keysEnabled": false,
+            "secretDensity": 0
+          },
+          "mappings": [
+            {
+              "elementId": 9,
+              "kind": "noise",
+              "layerId": "world",
+              "materialElementId": 9,
+              "mazeKind": "wall",
+              "noiseSpec": {
+                "algorithm": "simplex",
+                "bands": [
+                  {
+                    "elementId": 9,
+                    "endPos": 0.4
+                  },
+                  {
+                    "elementId": 10,
+                    "endPos": 0.85
+                  },
+                  {
+                    "elementId": 11,
+                    "endPos": 1
+                  }
+                ],
+                "frequency": 0.035,
+                "lacunarity": 2,
+                "octaves": 3,
+                "persistence": 0.5
+              }
+            },
+            {
+              "elementId": 0,
+              "kind": "none",
+              "layerId": "world",
+              "materialElementId": 0,
+              "mazeKind": "floor"
+            }
+          ],
+          "seedSalt": "terra:rat-run",
+          "strokes": []
+        },
+        "parameters": {
+          "braidChance": {
+            "integer": false,
+            "label": "braidChance",
+            "max": 1,
+            "min": 0,
+            "path": "maze.generate.braidChance"
+          },
+          "cellSize": {
+            "integer": true,
+            "label": "Cell size",
+            "max": 96,
+            "min": 40,
+            "path": "maze.cellSizePx"
+          }
+        },
+        "weight": 7
+      },
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "clearances": [
+          {
+            "h": 448,
+            "w": 12800,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "h": 128,
+            "w": 1280,
+            "x": 5760,
+            "y": 448
+          }
+        ],
+        "family": "maze",
+        "foundation": {
+          "element": 9,
+          "height": 256
+        },
+        "id": "cavern-war",
+        "label": "Cavern war",
+        "maze": {
+          "algorithm": "cellular-cave",
+          "cellSizePx": 48,
+          "generate": {
+            "doorCount": 0,
+            "doorPlacementMode": "off",
+            "entranceEast": true,
+            "entranceNorth": true,
+            "entranceSizeTiles": 3,
+            "entranceSouth": false,
+            "entranceWest": true,
+            "fillProbability": 0.48,
+            "keysEnabled": false,
+            "secretDensity": 0,
+            "smoothSteps": 4
+          },
+          "mappings": [
+            {
+              "elementId": 9,
+              "kind": "noise",
+              "layerId": "world",
+              "materialElementId": 9,
+              "mazeKind": "wall",
+              "noiseSpec": {
+                "algorithm": "simplex",
+                "bands": [
+                  {
+                    "elementId": 9,
+                    "endPos": 0.4
+                  },
+                  {
+                    "elementId": 10,
+                    "endPos": 0.85
+                  },
+                  {
+                    "elementId": 11,
+                    "endPos": 1
+                  }
+                ],
+                "frequency": 0.035,
+                "lacunarity": 2,
+                "octaves": 3,
+                "persistence": 0.5
+              }
+            },
+            {
+              "elementId": 0,
+              "kind": "none",
+              "layerId": "world",
+              "materialElementId": 0,
+              "mazeKind": "floor"
+            }
+          ],
+          "seedSalt": "terra:cavern-war",
+          "strokes": []
+        },
+        "parameters": {
+          "cellSize": {
+            "integer": true,
+            "label": "Cell size",
+            "max": 96,
+            "min": 40,
+            "path": "maze.cellSizePx"
+          },
+          "fillProbability": {
+            "integer": false,
+            "label": "fillProbability",
+            "max": 1,
+            "min": 0,
+            "path": "maze.generate.fillProbability"
+          },
+          "smoothSteps": {
+            "integer": true,
+            "label": "smoothSteps",
+            "max": 6,
+            "min": 1,
+            "path": "maze.generate.smoothSteps"
+          }
+        },
+        "weight": 7
+      },
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "clearances": [
+          {
+            "h": 448,
+            "w": 12800,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "h": 128,
+            "w": 1280,
+            "x": 5760,
+            "y": 448
+          }
+        ],
+        "family": "maze",
+        "foundation": {
+          "element": 9,
+          "height": 256
+        },
+        "id": "terrace-siege",
+        "label": "Terrace siege",
+        "maze": {
+          "algorithm": "platform",
+          "cellSizePx": 48,
+          "generate": {
+            "doorCount": 0,
+            "doorPlacementMode": "off",
+            "entranceEast": true,
+            "entranceNorth": true,
+            "entranceSizeTiles": 3,
+            "entranceSouth": false,
+            "entranceWest": true,
+            "keysEnabled": false,
+            "platformDividerWallChance": 0.2,
+            "platformDropChance": 0.4,
+            "platformDropWidthTiles": 2,
+            "platformFilledBayChance": 0.1,
+            "platformFloorThicknessTiles": 1,
+            "platformGapChance": 0.2,
+            "platformMaxVerticalGapTiles": 5,
+            "platformMinVerticalGapTiles": 3,
+            "secretDensity": 0
+          },
+          "mappings": [
+            {
+              "elementId": 9,
+              "kind": "noise",
+              "layerId": "world",
+              "materialElementId": 9,
+              "mazeKind": "wall",
+              "noiseSpec": {
+                "algorithm": "simplex",
+                "bands": [
+                  {
+                    "elementId": 9,
+                    "endPos": 0.4
+                  },
+                  {
+                    "elementId": 10,
+                    "endPos": 0.85
+                  },
+                  {
+                    "elementId": 11,
+                    "endPos": 1
+                  }
+                ],
+                "frequency": 0.035,
+                "lacunarity": 2,
+                "octaves": 3,
+                "persistence": 0.5
+              }
+            },
+            {
+              "elementId": 0,
+              "kind": "none",
+              "layerId": "world",
+              "materialElementId": 0,
+              "mazeKind": "floor"
+            }
+          ],
+          "seedSalt": "terra:terrace-siege",
+          "strokes": []
+        },
+        "parameters": {
+          "cellSize": {
+            "integer": true,
+            "label": "Cell size",
+            "max": 96,
+            "min": 40,
+            "path": "maze.cellSizePx"
+          },
+          "platformDividerWallChance": {
+            "integer": false,
+            "label": "platformDividerWallChance",
+            "max": 1,
+            "min": 0,
+            "path": "maze.generate.platformDividerWallChance"
+          },
+          "platformDropChance": {
+            "integer": false,
+            "label": "platformDropChance",
+            "max": 1,
+            "min": 0,
+            "path": "maze.generate.platformDropChance"
+          },
+          "platformDropWidthTiles": {
+            "integer": true,
+            "label": "platformDropWidthTiles",
+            "max": 6,
+            "min": 1,
+            "path": "maze.generate.platformDropWidthTiles"
+          },
+          "platformFilledBayChance": {
+            "integer": false,
+            "label": "platformFilledBayChance",
+            "max": 1,
+            "min": 0,
+            "path": "maze.generate.platformFilledBayChance"
+          },
+          "platformFloorThicknessTiles": {
+            "integer": true,
+            "label": "platformFloorThicknessTiles",
+            "max": 6,
+            "min": 1,
+            "path": "maze.generate.platformFloorThicknessTiles"
+          },
+          "platformGapChance": {
+            "integer": false,
+            "label": "platformGapChance",
+            "max": 1,
+            "min": 0,
+            "path": "maze.generate.platformGapChance"
+          },
+          "platformMaxVerticalGapTiles": {
+            "integer": true,
+            "label": "platformMaxVerticalGapTiles",
+            "max": 6,
+            "min": 1,
+            "path": "maze.generate.platformMaxVerticalGapTiles"
+          },
+          "platformMinVerticalGapTiles": {
+            "integer": true,
+            "label": "platformMinVerticalGapTiles",
+            "max": 6,
+            "min": 1,
+            "path": "maze.generate.platformMinVerticalGapTiles"
+          }
+        },
+        "weight": 7
+      },
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "family": "zone",
+        "foundation": {
+          "element": 9,
+          "height": 256
+        },
+        "id": "verdant-reach",
+        "label": "Verdant Reach \u00b7 zone / semantic / neural / living",
+        "parameters": {
+          "airDepth": {
+            "label": "Open sky depth",
+            "max": 820,
+            "min": 680,
+            "path": "zones.0.terrain.surface.baseline"
+          },
+          "blend": {
+            "label": "Surface blend",
+            "max": 8,
+            "min": 0,
+            "path": "zones.0.terrain.surface.blendWidth"
+          },
+          "frequency": {
+            "label": "Ridge frequency",
+            "max": 0.02,
+            "min": 0.001,
+            "path": "zones.0.terrain.frequency"
+          },
+          "height": {
+            "label": "Ridge height",
+            "max": 160,
+            "min": 20,
+            "path": "zones.0.terrain.surface.amplitude"
+          },
+          "octaves": {
+            "integer": true,
+            "label": "Noise detail",
+            "max": 6,
+            "min": 1,
+            "path": "zones.0.terrain.octaves"
+          }
+        },
+        "weight": 6,
+        "zones": [
+          {
+            "features": [],
+            "id": "verdant-reach",
+            "materials": [
+              {
+                "elementType": 9,
+                "maxValue": 0.28,
+                "minValue": 0
+              },
+              {
+                "elementType": 10,
+                "maxValue": 0.85,
+                "minValue": 0.28
+              },
+              {
+                "elementType": 11,
+                "maxValue": 1,
+                "minValue": 0.85
+              }
+            ],
+            "maxX": 12800,
+            "maxY": 1280,
+            "minX": 0,
+            "minY": 0,
+            "name": "Verdant Reach",
+            "priority": 1,
+            "terrain": {
+              "amplitude": 100,
+              "cellularJitter": 0.85,
+              "enabled": true,
+              "frequency": 0.005,
+              "lacunarity": 2,
+              "noiseType": "perlin",
+              "octaves": 3,
+              "persistence": 0.5,
+              "ridgedGain": 2,
+              "surface": {
+                "amplitude": 110,
+                "baseline": 744,
+                "blendWidth": 4,
+                "directions": [
+                  "s"
+                ]
+              }
+            }
+          },
+          {
+            "features": [],
+            "id": "verdant-reach-combat",
+            "materials": [
+              {
+                "elementType": 9,
+                "maxValue": 0.28,
+                "minValue": 0
+              },
+              {
+                "elementType": 10,
+                "maxValue": 0.85,
+                "minValue": 0.28
+              },
+              {
+                "elementType": 11,
+                "maxValue": 1,
+                "minValue": 0.85
+              }
+            ],
+            "maxX": 7136,
+            "maxY": 1280,
+            "minX": 5664,
+            "minY": 0,
+            "name": "Connected combat basin",
+            "priority": 0,
+            "terrain": {
+              "amplitude": 100,
+              "cellularJitter": 0.85,
+              "enabled": true,
+              "frequency": 0.0015,
+              "lacunarity": 2,
+              "noiseType": "perlin",
+              "octaves": 2,
+              "persistence": 0.5,
+              "ridgedGain": 2,
+              "surface": {
+                "amplitude": 24,
+                "baseline": 744,
+                "blendWidth": 2,
+                "directions": [
+                  "s"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "version": 1
+  },
+  "mazeAlgorithms": [
+    "dfs",
+    "prim",
+    "kruskal",
+    "wilson",
+    "recursive-division",
+    "braid",
+    "cellular-cave",
+    "drunkard-cave",
+    "bsp-dungeon",
+    "housing-block",
+    "platform"
+  ],
+  "mazeOptions": {
+    "apartmentMaxSize": {
+      "appliesTo": [
+        "housing-block"
+      ],
+      "default": 10,
+      "help": "Largest apartment edge within a block.",
+      "integer": true,
+      "max": 256,
+      "min": 3
+    },
+    "apartmentMinSize": {
+      "appliesTo": [
+        "housing-block"
+      ],
+      "default": 5,
+      "help": "Smallest apartment edge within a block.",
+      "integer": true,
+      "max": 128,
+      "min": 3
+    },
+    "blockStride": {
+      "appliesTo": [
+        "housing-block"
+      ],
+      "default": 14,
+      "help": "Distance between block origins \u2014 the street grid pitch.",
+      "integer": true,
+      "max": 256,
+      "min": 6
+    },
+    "braidChance": {
+      "appliesTo": [
+        "braid"
+      ],
+      "default": 0.35,
+      "help": "Chance a dead end is opened into a loop."
+    },
+    "corridorWidth": {
+      "appliesTo": [
+        "bsp-dungeon",
+        "housing-block"
+      ],
+      "default": 2,
+      "help": "Width of the corridors joining rooms or blocks.",
+      "integer": true,
+      "max": 16,
+      "min": 1
+    },
+    "doorCount": {
+      "default": -1,
+      "help": "Exact separator-door count. -1 (the default) means use doorDensity instead.",
+      "integer": true,
+      "max": "area",
+      "min": 0
+    },
+    "doorDensity": {
+      "default": 0.025,
+      "help": "Fraction of eligible separator walls turned into doors."
+    },
+    "doorMaxBypassTiles": {
+      "default": 12,
+      "help": "A door is \"useful\" only if going around it costs more than this many tiles.",
+      "integer": true,
+      "max": 512,
+      "min": 0
+    },
+    "doorMinSeparatedAreaTiles": {
+      "default": 12,
+      "help": "Smallest area a door may separate before it counts as pointless.",
+      "integer": true,
+      "max": "area",
+      "min": 1
+    },
+    "doorMinSpacingTiles": {
+      "default": 4,
+      "help": "Minimum spacing between chosen doors.",
+      "integer": true,
+      "max": 256,
+      "min": 0
+    },
+    "doorPlacementMode": {
+      "default": "useful",
+      "help": "'useful' doors separate real areas; 'decorative' ignores topology; 'off' places none."
+    },
+    "doorStretchMaxTiles": {
+      "default": 2,
+      "help": "How far a door may widen along its wall run.",
+      "integer": true,
+      "max": 16,
+      "min": 0
+    },
+    "entranceEast": {
+      "default": true,
+      "help": "Carve an entrance in the east wall."
+    },
+    "entranceNorth": {
+      "default": true,
+      "help": "Carve an entrance in the north wall."
+    },
+    "entranceSizeTiles": {
+      "default": 3,
+      "help": "Width/height of each carved side entrance.",
+      "integer": true,
+      "max": 128,
+      "min": 1
+    },
+    "entranceSouth": {
+      "default": true,
+      "help": "Carve an entrance in the south wall."
+    },
+    "entranceWest": {
+      "default": true,
+      "help": "Carve an entrance in the west wall."
+    },
+    "fillProbability": {
+      "appliesTo": [
+        "cellular-cave"
+      ],
+      "default": 0.46,
+      "help": "Initial random wall fill before smoothing."
+    },
+    "keyCount": {
+      "default": 0,
+      "help": "Distinct keys to place (hard cap 7).",
+      "integer": true,
+      "max": 7,
+      "min": 0
+    },
+    "keyMode": {
+      "default": "one-to-one",
+      "help": "'one-to-one' locks one door per key; 'keyed-alike' shares one key across many doors."
+    },
+    "keyProgression": {
+      "default": "nested",
+      "help": "'nested' chains locks into possession phases; 'parallel' makes every key independently reachable."
+    },
+    "keysEnabled": {
+      "default": false,
+      "help": "Lock doors behind findable keys. Ignored where key support is \"none\"."
+    },
+    "lockedDoorChance": {
+      "default": 0.08,
+      "help": "Chance a placed door is locked (independent of the key system)."
+    },
+    "platformDividerWallChance": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 0.45,
+      "help": "Chance a bay boundary becomes a full divider wall."
+    },
+    "platformDropChance": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 0.24,
+      "help": "Chance a vertical shaft is carved between floors."
+    },
+    "platformDropMaxFloors": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 3,
+      "help": "Most floors a shaft spans.",
+      "integer": true,
+      "max": 96,
+      "min": 1
+    },
+    "platformDropMinFloors": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 1,
+      "help": "Fewest floors a shaft spans.",
+      "integer": true,
+      "max": 64,
+      "min": 1
+    },
+    "platformDropWidthTiles": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 2,
+      "help": "Shaft width.",
+      "integer": true,
+      "max": 64,
+      "min": 1
+    },
+    "platformFilledBayChance": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 0.18,
+      "help": "Chance a bay is filled solid instead of left open."
+    },
+    "platformFloorThicknessTiles": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 1,
+      "help": "Solid thickness of each platform band.",
+      "integer": true,
+      "max": 16,
+      "min": 1
+    },
+    "platformGapChance": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 0.12,
+      "help": "Chance a platform floor is broken by a gap."
+    },
+    "platformGapMaxTiles": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 3,
+      "help": "Widest carved gap.",
+      "integer": true,
+      "max": 128,
+      "min": 1
+    },
+    "platformGapMinTiles": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 1,
+      "help": "Narrowest carved gap.",
+      "integer": true,
+      "max": 64,
+      "min": 1
+    },
+    "platformMaxSpanTiles": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 14,
+      "help": "Maximum horizontal bay span between divider walls.",
+      "integer": true,
+      "max": 1024,
+      "min": 1
+    },
+    "platformMaxVerticalGapTiles": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 3,
+      "help": "Maximum empty tiles between horizontal floor bands.",
+      "integer": true,
+      "max": 96,
+      "min": 1
+    },
+    "platformMinSpanTiles": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 5,
+      "help": "Minimum horizontal bay span between divider walls.",
+      "integer": true,
+      "max": 512,
+      "min": 1
+    },
+    "platformMinVerticalGapTiles": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": 2,
+      "help": "Minimum empty tiles between horizontal floor bands.",
+      "integer": true,
+      "max": 64,
+      "min": 1
+    },
+    "platformReachabilityRepair": {
+      "appliesTo": [
+        "platform"
+      ],
+      "default": true,
+      "help": "Carve one deterministic service shaft so every band stays reachable."
+    },
+    "roomMaxSize": {
+      "appliesTo": [
+        "bsp-dungeon"
+      ],
+      "default": 13,
+      "help": "Largest BSP room edge.",
+      "integer": true,
+      "max": 256,
+      "min": 3
+    },
+    "roomMinSize": {
+      "appliesTo": [
+        "bsp-dungeon"
+      ],
+      "default": 5,
+      "help": "Smallest BSP room edge.",
+      "integer": true,
+      "max": 128,
+      "min": 3
+    },
+    "secretDensity": {
+      "default": 0.01,
+      "help": "Fraction of eligible separator walls turned into secret passages (drawn like wall on the layer the secret kind maps to, passable on the world layer)."
+    },
+    "secretMinHiddenAreaTiles": {
+      "default": 10,
+      "help": "Smallest area a secret may hide before it is not worth hiding.",
+      "integer": true,
+      "max": "area",
+      "min": 1
+    },
+    "smoothSteps": {
+      "appliesTo": [
+        "cellular-cave"
+      ],
+      "default": 4,
+      "help": "Cellular-automaton smoothing passes. More = rounder caverns.",
+      "integer": true,
+      "max": 12,
+      "min": 0
+    },
+    "targetFloorRatio": {
+      "appliesTo": [
+        "drunkard-cave"
+      ],
+      "default": 0.42,
+      "help": "Fraction of the grid the random walk carves before stopping."
+    }
+  },
+  "ok": true,
+  "resolved": null,
+  "templateId": "d9fa0363-0172-a96e-9b10-0b0c3d9a1f58"
+}

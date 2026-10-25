@@ -1,0 +1,1406 @@
+{
+  "baseline": {
+    "world": "b29dda01-c94c-4410-9d1f-a50ea1f51e94"
+  },
+  "cases": [
+    {
+      "effect": "furnace",
+      "worldId": "9b08d2ab-ea3d-40c5-a777-79e3d431b89c",
+      "kill": true,
+      "final": {
+        "clock": 19.350000000000183,
+        "error": "",
+        "events": [
+          {
+            "clock": 1.816666666666665,
+            "id": "instance@spawn-3e8820e7-769a-42e5-a242-84900da8ad08",
+            "kind": "land",
+            "turn": 0
+          },
+          {
+            "clock": 2.9999999999999942,
+            "id": "instance@spawn-3e8820e7-769a-42e5-a242-84900da8ad08",
+            "kind": "deployed",
+            "name": "M6 QA A",
+            "turn": 0
+          },
+          {
+            "clock": 4.849999999999988,
+            "id": "instance@spawn-331e5fac-6a54-4eee-a01f-c8f60e0edaa2",
+            "kind": "land",
+            "turn": 0
+          },
+          {
+            "clock": 5.999999999999984,
+            "id": "instance@spawn-331e5fac-6a54-4eee-a01f-c8f60e0edaa2",
+            "kind": "deployed",
+            "name": "M6 QA B",
+            "turn": 0
+          },
+          {
+            "clock": 5.999999999999984,
+            "kind": "match-ready",
+            "phase": "ready",
+            "turn": 0
+          },
+          {
+            "clock": 6.049999999999984,
+            "kind": "match-ready",
+            "phase": "ready",
+            "turn": 0
+          },
+          {
+            "clock": 6.249999999999983,
+            "effect": "furnace",
+            "id": 1,
+            "kind": "chaos-queued",
+            "owner": "instance@spawn-331e5fac-6a54-4eee-a01f-c8f60e0edaa2",
+            "turn": 0,
+            "x": 6975.5,
+            "y": 681.5
+          },
+          {
+            "clock": 6.249999999999983,
+            "killer": "M6 QA A",
+            "kind": "eliminated",
+            "name": "M6 QA B",
+            "reason": "destroyed",
+            "turn": 0
+          },
+          {
+            "clock": 6.26666666666665,
+            "effect": "furnace",
+            "id": 1,
+            "kind": "chaos-started",
+            "turn": 0,
+            "x": 6975.50048828125,
+            "y": 681.6060180664062
+          },
+          {
+            "clock": 16.25000000000036,
+            "effect": "furnace",
+            "elapsed": 10.000000000000076,
+            "id": 1,
+            "kind": "chaos-emission-ended",
+            "launched": 0,
+            "particles": 32,
+            "turn": 0
+          },
+          {
+            "clock": 16.25000000000036,
+            "effect": "furnace",
+            "elapsed": 10.000000000000076,
+            "ended": 0,
+            "id": 1,
+            "kind": "chaos-ended",
+            "launched": 0,
+            "particles": 32,
+            "turn": 0
+          },
+          {
+            "clock": 19.266666666666858,
+            "kind": "finished",
+            "turn": 0,
+            "winner": "M6 QA A"
+          }
+        ],
+        "match": {
+          "biome": "mixed-reach",
+          "bounds": {
+            "h": 1280,
+            "w": 1280,
+            "x": 5760,
+            "y": 0
+          },
+          "chaos": {
+            "jobs": [],
+            "notice": "M6 QA B: Ten-second furnace!",
+            "quiet": 3.016666666666661,
+            "rng": 839689206,
+            "serial": 1
+          },
+          "computers": 2,
+          "focusIndex": 0,
+          "frameNotice": "",
+          "humans": 0,
+          "impact": null,
+          "message": "M6 QA A wins the match",
+          "phase": "finished",
+          "remaining": 5,
+          "roster": [
+            {
+              "color": "#bcb1ff",
+              "control": "cpu",
+              "eliminated": false,
+              "entityId": "instance@spawn-3e8820e7-769a-42e5-a242-84900da8ad08",
+              "index": 0,
+              "kills": 1,
+              "name": "M6 QA A",
+              "spawnX": 5824,
+              "surfaceY": 672
+            },
+            {
+              "chaosId": 1,
+              "color": "#ffbd82",
+              "control": "cpu",
+              "deathEffect": "furnace",
+              "eliminated": true,
+              "entityId": "instance@spawn-331e5fac-6a54-4eee-a01f-c8f60e0edaa2",
+              "index": 1,
+              "kills": 0,
+              "name": "M6 QA B",
+              "spawnX": 6976,
+              "surfaceY": 693
+            }
+          ],
+          "seed": 7,
+          "shotId": null,
+          "turnNumber": 0,
+          "turnSeconds": 5,
+          "version": 6,
+          "winner": "M6 QA A"
+        },
+        "paused": false,
+        "roster": [
+          {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 90,
+              "y": 10
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-3e8820e7-769a-42e5-a242-84900da8ad08",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 0,
+            "maxHealth": 100,
+            "name": "M6 QA A",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+            "vx": 0,
+            "vy": 0,
+            "x": 5823.5,
+            "y": 653.5
+          },
+          null
+        ],
+        "scores": {
+          "matches": {
+            "37cdce95-ef52-4524-abcb-4e4b0289d980": {
+              "seed": 7,
+              "winner": "M5 Verify 4"
+            },
+            "9b08d2ab-ea3d-40c5-a777-79e3d431b89c": {
+              "seed": 7,
+              "winner": "M6 QA A"
+            }
+          },
+          "players": {
+            "m5 verify 1": {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 1",
+              "wins": 0
+            },
+            "m5 verify 2": {
+              "games": 1,
+              "kills": 0,
+              "name": "M5 Verify 2",
+              "wins": 0
+            },
+            "m5 verify 3": {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 3",
+              "wins": 0
+            },
+            "m5 verify 4": {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 4",
+              "wins": 1
+            },
+            "m6 qa a": {
+              "games": 1,
+              "kills": 1,
+              "name": "M6 QA A",
+              "wins": 1
+            },
+            "m6 qa b": {
+              "games": 1,
+              "kills": 0,
+              "name": "M6 QA B",
+              "wins": 0
+            }
+          }
+        },
+        "ui": {
+          "aimRotation": "rotate(-45deg)",
+          "biome": "Mixed Reach",
+          "canSetup": true,
+          "chaosCount": 0,
+          "chaosNotice": "M6 QA B: Ten-second furnace!",
+          "current": {
+            "angle": 45,
+            "color": "#bcb1ff",
+            "control": "Computer",
+            "health": 100,
+            "name": "M6 QA A",
+            "power": 70
+          },
+          "finished": true,
+          "frameNotice": "",
+          "human": false,
+          "lastHit": "",
+          "phase": "finished",
+          "ready": false,
+          "remaining": 5,
+          "roster": [
+            {
+              "color": "#bcb1ff",
+              "health": 100,
+              "kills": 1,
+              "name": "M6 QA A",
+              "status": "CURRENT"
+            },
+            {
+              "color": "#ffbd82",
+              "health": 0,
+              "kills": 0,
+              "name": "M6 QA B",
+              "status": "OUT"
+            }
+          ],
+          "scores": [
+            {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 1",
+              "wins": 0
+            },
+            {
+              "games": 1,
+              "kills": 0,
+              "name": "M5 Verify 2",
+              "wins": 0
+            },
+            {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 3",
+              "wins": 0
+            },
+            {
+              "games": 1,
+              "kills": 1,
+              "name": "M5 Verify 4",
+              "wins": 1
+            },
+            {
+              "games": 1,
+              "kills": 1,
+              "name": "M6 QA A",
+              "wins": 1
+            },
+            {
+              "games": 1,
+              "kills": 0,
+              "name": "M6 QA B",
+              "wins": 0
+            }
+          ],
+          "seed": 7,
+          "shotDirection": "RIGHT \u2192",
+          "status": "M6 QA A wins the match",
+          "tactic": "",
+          "tankCount": 2,
+          "target": "",
+          "turnNumber": 0,
+          "turnSeconds": 5,
+          "winner": "M6 QA A"
+        },
+        "worldId": "9b08d2ab-ea3d-40c5-a777-79e3d431b89c"
+      },
+      "audit": {
+        "events": [],
+        "samples": [
+          {
+            "active": true,
+            "clock": 6.1499999999999835,
+            "jobs": 0,
+            "phase": "ready",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.249999999999983,
+            "jobs": 0,
+            "phase": "ready",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.349999999999983,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.449999999999982,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.549999999999982,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.649999999999982,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.749999999999981,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.849999999999981,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 6.949999999999981,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.04999999999998,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.14999999999998,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.24999999999998,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.349999999999979,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.449999999999979,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.549999999999979,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.649999999999978,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.749999999999978,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.849999999999977,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 7.949999999999977,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.04999999999998,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.149999999999984,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.24999999999999,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.349999999999994,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.45,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.550000000000004,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.65000000000001,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.750000000000014,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.85000000000002,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 8.950000000000024,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.05000000000003,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.150000000000034,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.25000000000004,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.350000000000044,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.450000000000047,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.550000000000054,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.65000000000006,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.750000000000064,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.850000000000067,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 9.950000000000074,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.05000000000008,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.150000000000084,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.250000000000089,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.350000000000094,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.4500000000001,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.550000000000104,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.650000000000109,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.750000000000114,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.85000000000012,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 10.950000000000124,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.050000000000129,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.150000000000134,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.25000000000014,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.350000000000144,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.450000000000149,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.550000000000152,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.650000000000158,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.750000000000163,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.850000000000168,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 11.950000000000172,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.050000000000178,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.150000000000183,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.250000000000188,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.350000000000191,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.450000000000198,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.550000000000203,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.650000000000208,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.750000000000211,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.850000000000218,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 12.950000000000225,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.050000000000228,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.150000000000231,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.250000000000238,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.350000000000245,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.450000000000248,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.550000000000251,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.650000000000258,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.750000000000265,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.850000000000268,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 13.950000000000273,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.050000000000278,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.150000000000285,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.250000000000288,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.350000000000293,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.450000000000298,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.550000000000304,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.650000000000308,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.750000000000313,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.850000000000318,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 14.950000000000324,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.050000000000328,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.150000000000333,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.250000000000338,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.350000000000342,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.450000000000347,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.550000000000352,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.650000000000356,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.750000000000362,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.850000000000367,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 15.950000000000372,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.05000000000037,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.150000000000365,
+            "jobs": 1,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.25000000000036,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.350000000000353,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.450000000000347,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.55000000000034,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.650000000000336,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.75000000000033,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.850000000000325,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 16.95000000000032,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.050000000000313,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.150000000000308,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.250000000000302,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.350000000000296,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.45000000000029,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.550000000000285,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.65000000000028,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.750000000000274,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.850000000000268,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 17.950000000000262,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.050000000000257,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.15000000000025,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.250000000000245,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.35000000000024,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.450000000000234,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.550000000000228,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.650000000000222,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.750000000000217,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.85000000000021,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 18.950000000000205,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 19.0500000000002,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 19.15000000000019,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 19.25000000000019,
+            "jobs": 0,
+            "phase": "aftermath",
+            "turn": 0,
+            "zoom": 0.25
+          },
+          {
+            "active": true,
+            "clock": 19.350000000000183,
+            "jobs": 0,
+            "phase": "finished",
+            "turn": 0,
+            "zoom": 0.25
+          }
+        ]
+      }
+    }
+  ],
+  "checks": {
+    "furnace: no script fault": true,
+    "furnace: one death, one selected effect, one completion": true,
+    "furnace: no premature victory": true,
+    "furnace: 25% camera and survivor active": true,
+    "furnace: duration honored": true,
+    "furnace: actual matter emitted": true
+  }
+}

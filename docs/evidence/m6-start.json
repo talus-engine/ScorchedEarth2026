@@ -1,0 +1,1261 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 7,
+  "ok": true,
+  "value": {
+    "camera": {
+      "frame": {
+        "result": {
+          "center": {
+            "x": 6399.5,
+            "y": 665.5
+          },
+          "clamped": false,
+          "fitsSimulation": true,
+          "fitsViewport": true
+        },
+        "spec": {
+          "bounds": {
+            "h": 64,
+            "w": 1192,
+            "x": 5803.5,
+            "y": 633.5
+          },
+          "padding": 32,
+          "preferVisible": true
+        }
+      },
+      "loadedBounds": {
+        "h": 1472,
+        "w": 2240,
+        "x": 5248,
+        "y": -64
+      },
+      "simulationBounds": {
+        "h": 1344,
+        "w": 2112,
+        "x": 5312,
+        "y": 0
+      },
+      "targetSimulationBounds": {
+        "h": 1344,
+        "w": 2112,
+        "x": 5312,
+        "y": 0
+      },
+      "viewport": {
+        "h": 968,
+        "w": 1600,
+        "x": 5599.5,
+        "y": 181.5
+      },
+      "zoom": 0.25
+    },
+    "elements": [
+      {
+        "id": 0,
+        "name": "EMPTY",
+        "state": "empty"
+      },
+      {
+        "id": 1,
+        "name": "GOLD",
+        "state": "powder"
+      },
+      {
+        "id": 2,
+        "name": "STEAM",
+        "state": "gas"
+      },
+      {
+        "id": 3,
+        "name": "WATER",
+        "state": "liquid"
+      },
+      {
+        "id": 4,
+        "name": "ICE",
+        "state": "solid"
+      },
+      {
+        "id": 5,
+        "name": "SMOKE",
+        "state": "gas"
+      },
+      {
+        "id": 6,
+        "name": "FIRE",
+        "state": "gas"
+      },
+      {
+        "id": 7,
+        "name": "ASH",
+        "state": "powder"
+      },
+      {
+        "id": 8,
+        "name": "WOOD",
+        "state": "solid"
+      },
+      {
+        "id": 9,
+        "name": "STONE",
+        "state": "solid"
+      },
+      {
+        "id": 10,
+        "name": "DIRT",
+        "state": "powder"
+      },
+      {
+        "id": 11,
+        "name": "SAND",
+        "state": "powder"
+      },
+      {
+        "id": 12,
+        "name": "GRASS",
+        "state": "solid"
+      },
+      {
+        "id": 13,
+        "name": "LAVA",
+        "state": "liquid"
+      },
+      {
+        "id": 14,
+        "name": "BASALT",
+        "state": "solid"
+      },
+      {
+        "id": 15,
+        "name": "OBSIDIAN",
+        "state": "solid"
+      },
+      {
+        "id": 16,
+        "name": "HYDROCHLORIC_ACID",
+        "state": "liquid"
+      },
+      {
+        "id": 17,
+        "name": "CRUDE_OIL",
+        "state": "liquid"
+      },
+      {
+        "id": 18,
+        "name": "LIMESTONE",
+        "state": "solid"
+      },
+      {
+        "id": 19,
+        "name": "SALT",
+        "state": "powder"
+      },
+      {
+        "id": 20,
+        "name": "SALTWATER",
+        "state": "liquid"
+      },
+      {
+        "id": 21,
+        "name": "MUD",
+        "state": "liquid"
+      },
+      {
+        "id": 22,
+        "name": "LYE",
+        "state": "liquid"
+      },
+      {
+        "id": 23,
+        "name": "IRON",
+        "state": "solid"
+      },
+      {
+        "id": 24,
+        "name": "MOLTEN_IRON",
+        "state": "liquid"
+      },
+      {
+        "id": 25,
+        "name": "COPPER",
+        "state": "solid"
+      },
+      {
+        "id": 26,
+        "name": "MOLTEN_GOLD",
+        "state": "liquid"
+      },
+      {
+        "id": 27,
+        "name": "GLASS",
+        "state": "solid"
+      },
+      {
+        "id": 28,
+        "name": "MOLTEN_GLASS",
+        "state": "liquid"
+      },
+      {
+        "id": 29,
+        "name": "CLAY",
+        "state": "powder"
+      },
+      {
+        "id": 30,
+        "name": "CERAMIC",
+        "state": "solid"
+      },
+      {
+        "id": 31,
+        "name": "OXYGEN",
+        "state": "gas"
+      },
+      {
+        "id": 32,
+        "name": "HYDROGEN",
+        "state": "gas"
+      },
+      {
+        "id": 33,
+        "name": "METHANE",
+        "state": "gas"
+      },
+      {
+        "id": 34,
+        "name": "CO2",
+        "state": "gas"
+      },
+      {
+        "id": 35,
+        "name": "CHLORINE",
+        "state": "gas"
+      },
+      {
+        "id": 36,
+        "name": "CHARCOAL",
+        "state": "solid"
+      },
+      {
+        "id": 37,
+        "name": "COAL",
+        "state": "solid"
+      },
+      {
+        "id": 38,
+        "name": "SULFUR",
+        "state": "powder"
+      },
+      {
+        "id": 39,
+        "name": "GUNPOWDER",
+        "state": "powder"
+      },
+      {
+        "id": 40,
+        "name": "SPARK",
+        "state": "gas"
+      },
+      {
+        "id": 41,
+        "name": "SNOW",
+        "state": "powder"
+      },
+      {
+        "id": 42,
+        "name": "GRAVEL",
+        "state": "powder"
+      },
+      {
+        "id": 43,
+        "name": "PAPER",
+        "state": "solid"
+      },
+      {
+        "id": 44,
+        "name": "LEAF",
+        "state": "solid"
+      },
+      {
+        "id": 45,
+        "name": "POLYETHYLENE",
+        "state": "solid"
+      },
+      {
+        "id": 46,
+        "name": "MOLTEN_PLASTIC",
+        "state": "liquid"
+      },
+      {
+        "id": 47,
+        "name": "PVC",
+        "state": "solid"
+      },
+      {
+        "id": 48,
+        "name": "PHENOLIC",
+        "state": "solid"
+      },
+      {
+        "id": 49,
+        "name": "EPOXY_RESIN",
+        "state": "liquid"
+      },
+      {
+        "id": 50,
+        "name": "EPOXY",
+        "state": "solid"
+      },
+      {
+        "id": 51,
+        "name": "FIBERGLASS",
+        "state": "solid"
+      },
+      {
+        "id": 52,
+        "name": "CARBON_FIBER",
+        "state": "solid"
+      },
+      {
+        "id": 53,
+        "name": "STAINLESS_STEEL",
+        "state": "solid"
+      },
+      {
+        "id": 54,
+        "name": "MOLTEN_STAINLESS_STEEL",
+        "state": "liquid"
+      },
+      {
+        "id": 55,
+        "name": "INCONEL",
+        "state": "solid"
+      },
+      {
+        "id": 56,
+        "name": "MOLTEN_INCONEL",
+        "state": "liquid"
+      },
+      {
+        "id": 57,
+        "name": "QUICKLIME",
+        "state": "powder"
+      },
+      {
+        "id": 58,
+        "name": "SLAKED_LIME",
+        "state": "powder"
+      },
+      {
+        "id": 59,
+        "name": "CEMENT",
+        "state": "powder"
+      },
+      {
+        "id": 60,
+        "name": "WET_CONCRETE",
+        "state": "liquid"
+      },
+      {
+        "id": 61,
+        "name": "CONCRETE",
+        "state": "solid"
+      },
+      {
+        "id": 62,
+        "name": "ALUMINA",
+        "state": "powder"
+      },
+      {
+        "id": 63,
+        "name": "SALTPETER",
+        "state": "powder"
+      },
+      {
+        "id": 64,
+        "name": "AMMONIUM_NITRATE",
+        "state": "powder"
+      },
+      {
+        "id": 65,
+        "name": "AMMONIUM_PERCHLORATE",
+        "state": "powder"
+      },
+      {
+        "id": 66,
+        "name": "BLOOD",
+        "state": "liquid"
+      },
+      {
+        "id": 67,
+        "name": "SKIN",
+        "state": "solid"
+      },
+      {
+        "id": 68,
+        "name": "FLESH",
+        "state": "solid"
+      },
+      {
+        "id": 69,
+        "name": "APCP",
+        "state": "solid"
+      },
+      {
+        "id": 70,
+        "name": "BONE",
+        "state": "solid"
+      },
+      {
+        "id": 71,
+        "name": "KEROSENE",
+        "state": "liquid"
+      },
+      {
+        "id": 72,
+        "name": "LIQUID_HYDROGEN",
+        "state": "liquid"
+      },
+      {
+        "id": 73,
+        "name": "MOLTEN_SILICON",
+        "state": "liquid"
+      },
+      {
+        "id": 74,
+        "name": "HAIR",
+        "state": "solid"
+      },
+      {
+        "id": 75,
+        "name": "COTTON",
+        "state": "solid"
+      },
+      {
+        "id": 76,
+        "name": "NYLON",
+        "state": "solid"
+      },
+      {
+        "id": 77,
+        "name": "PET",
+        "state": "solid"
+      },
+      {
+        "id": 78,
+        "name": "LEATHER",
+        "state": "solid"
+      },
+      {
+        "id": 79,
+        "name": "MOLTEN_SULFUR",
+        "state": "liquid"
+      },
+      {
+        "id": 80,
+        "name": "RUBBER",
+        "state": "solid"
+      },
+      {
+        "id": 81,
+        "name": "SILK",
+        "state": "solid"
+      },
+      {
+        "id": 82,
+        "name": "SULFUR_DIOXIDE",
+        "state": "gas"
+      },
+      {
+        "id": 83,
+        "name": "MOLTEN_SALT",
+        "state": "liquid"
+      },
+      {
+        "id": 84,
+        "name": "SALT_VAPOR",
+        "state": "gas"
+      },
+      {
+        "id": 85,
+        "name": "SODIUM",
+        "state": "powder"
+      },
+      {
+        "id": 86,
+        "name": "POTASSIUM",
+        "state": "powder"
+      },
+      {
+        "id": 87,
+        "name": "MAGNESIUM",
+        "state": "solid"
+      },
+      {
+        "id": 88,
+        "name": "ALUMINUM",
+        "state": "solid"
+      },
+      {
+        "id": 89,
+        "name": "CALCIUM",
+        "state": "powder"
+      },
+      {
+        "id": 90,
+        "name": "TITANIUM",
+        "state": "solid"
+      },
+      {
+        "id": 91,
+        "name": "LEAD",
+        "state": "solid"
+      },
+      {
+        "id": 92,
+        "name": "ZINC",
+        "state": "solid"
+      },
+      {
+        "id": 93,
+        "name": "TIN",
+        "state": "solid"
+      },
+      {
+        "id": 94,
+        "name": "SILVER",
+        "state": "solid"
+      },
+      {
+        "id": 95,
+        "name": "PLATINUM",
+        "state": "solid"
+      },
+      {
+        "id": 96,
+        "name": "MERCURY",
+        "state": "liquid"
+      },
+      {
+        "id": 97,
+        "name": "GRAPHITE",
+        "state": "powder"
+      },
+      {
+        "id": 98,
+        "name": "SILICON",
+        "state": "solid"
+      },
+      {
+        "id": 99,
+        "name": "WHITE_PHOSPHORUS",
+        "state": "powder"
+      },
+      {
+        "id": 100,
+        "name": "NITROGEN",
+        "state": "gas"
+      },
+      {
+        "id": 101,
+        "name": "HELIUM",
+        "state": "gas"
+      },
+      {
+        "id": 102,
+        "name": "RUST",
+        "state": "powder"
+      },
+      {
+        "id": 103,
+        "name": "STEEL",
+        "state": "solid"
+      },
+      {
+        "id": 104,
+        "name": "BRONZE",
+        "state": "solid"
+      },
+      {
+        "id": 105,
+        "name": "THERMITE",
+        "state": "powder"
+      },
+      {
+        "id": 106,
+        "name": "ETHANOL",
+        "state": "liquid"
+      },
+      {
+        "id": 107,
+        "name": "DYNAMITE",
+        "state": "solid"
+      },
+      {
+        "id": 108,
+        "name": "TNT",
+        "state": "solid"
+      },
+      {
+        "id": 109,
+        "name": "C4",
+        "state": "solid"
+      },
+      {
+        "id": 110,
+        "name": "NITROGLYCERIN",
+        "state": "liquid"
+      },
+      {
+        "id": 111,
+        "name": "ANFO",
+        "state": "powder"
+      },
+      {
+        "id": 112,
+        "name": "BATTERY",
+        "state": "solid"
+      },
+      {
+        "id": 113,
+        "name": "LITHIUM",
+        "state": "powder"
+      },
+      {
+        "id": 114,
+        "name": "CAPACITOR",
+        "state": "solid"
+      },
+      {
+        "id": 115,
+        "name": "GROUND_PLANE",
+        "state": "solid"
+      },
+      {
+        "id": 116,
+        "name": "LED",
+        "state": "solid"
+      },
+      {
+        "id": 117,
+        "name": "SILICONE",
+        "state": "solid"
+      },
+      {
+        "id": 118,
+        "name": "GRASS_BLADE_TIP",
+        "state": "solid"
+      },
+      {
+        "id": 119,
+        "name": "GRASS_BLADE_STEM",
+        "state": "solid"
+      },
+      {
+        "id": 120,
+        "name": "GRASS_BLADE_SEED",
+        "state": "powder"
+      },
+      {
+        "id": 121,
+        "name": "ROOTS_TIP",
+        "state": "solid"
+      },
+      {
+        "id": 122,
+        "name": "ROOTS_STEM",
+        "state": "solid"
+      },
+      {
+        "id": 123,
+        "name": "VINE_TIP",
+        "state": "solid"
+      },
+      {
+        "id": 124,
+        "name": "VINE_STEM",
+        "state": "solid"
+      },
+      {
+        "id": 125,
+        "name": "VINE_FLOWER",
+        "state": "solid"
+      },
+      {
+        "id": 126,
+        "name": "VINE_SEED",
+        "state": "powder"
+      },
+      {
+        "id": 127,
+        "name": "MOLTEN_COPPER",
+        "state": "liquid"
+      },
+      {
+        "id": 128,
+        "name": "MYCELIUM_HYPHA",
+        "state": "solid"
+      },
+      {
+        "id": 129,
+        "name": "MUSHROOM",
+        "state": "solid"
+      },
+      {
+        "id": 130,
+        "name": "LOCUST",
+        "state": "solid"
+      },
+      {
+        "id": 131,
+        "name": "MOLTEN_ALUMINUM",
+        "state": "liquid"
+      },
+      {
+        "id": 132,
+        "name": "MOLTEN_LEAD",
+        "state": "liquid"
+      },
+      {
+        "id": 133,
+        "name": "MOLTEN_SILVER",
+        "state": "liquid"
+      },
+      {
+        "id": 134,
+        "name": "CORAL_LARVA",
+        "state": "liquid"
+      },
+      {
+        "id": 135,
+        "name": "CORAL_BRANCH",
+        "state": "solid"
+      },
+      {
+        "id": 136,
+        "name": "URANIUM_FUEL",
+        "state": "solid"
+      },
+      {
+        "id": 137,
+        "name": "ETHANOL_VAPOR",
+        "state": "gas"
+      },
+      {
+        "id": 138,
+        "name": "FUEL_VAPOR",
+        "state": "gas"
+      },
+      {
+        "id": 139,
+        "name": "HYDROGEN_CHLORIDE",
+        "state": "gas"
+      },
+      {
+        "id": 140,
+        "name": "DIODE",
+        "state": "solid"
+      },
+      {
+        "id": 141,
+        "name": "KEVLAR",
+        "state": "solid"
+      },
+      {
+        "id": 142,
+        "name": "MOLTEN_TIN",
+        "state": "liquid"
+      },
+      {
+        "id": 143,
+        "name": "MOLTEN_STEEL",
+        "state": "liquid"
+      },
+      {
+        "id": 144,
+        "name": "LIQUID_NITROGEN",
+        "state": "liquid"
+      },
+      {
+        "id": 145,
+        "name": "LIQUID_OXYGEN",
+        "state": "liquid"
+      },
+      {
+        "id": 146,
+        "name": "DRY_ICE",
+        "state": "solid"
+      },
+      {
+        "id": 147,
+        "name": "LAMP",
+        "state": "solid"
+      },
+      {
+        "id": 148,
+        "name": "CHITIN",
+        "state": "powder"
+      },
+      {
+        "id": 149,
+        "name": "MERCURY_VAPOR",
+        "state": "gas"
+      },
+      {
+        "id": 150,
+        "name": "SOOT",
+        "state": "powder"
+      },
+      {
+        "id": 151,
+        "name": "SAWDUST",
+        "state": "powder"
+      },
+      {
+        "id": 152,
+        "name": "BONE_MEAL",
+        "state": "powder"
+      },
+      {
+        "id": 153,
+        "name": "PARTICLE_SPAWNER",
+        "state": "solid"
+      },
+      {
+        "id": 154,
+        "name": "PARTICLE_DRAIN",
+        "state": "solid"
+      },
+      {
+        "id": 155,
+        "name": "EMBER",
+        "state": "gas"
+      },
+      {
+        "id": 156,
+        "name": "FLASH",
+        "state": "gas"
+      },
+      {
+        "id": 157,
+        "name": "SHOCKWAVE",
+        "state": "gas"
+      },
+      {
+        "id": 158,
+        "name": "PHOTOVOLTAIC_CELL",
+        "state": "solid"
+      },
+      {
+        "id": 159,
+        "name": "EJECTA",
+        "state": "gas"
+      },
+      {
+        "id": 160,
+        "name": "CLEAN_FIRE",
+        "state": "gas"
+      },
+      {
+        "id": 161,
+        "name": "PHOTON",
+        "state": "solid"
+      },
+      {
+        "id": 162,
+        "name": "ASPHALT",
+        "state": "solid"
+      },
+      {
+        "id": 163,
+        "name": "AMMONIA",
+        "state": "gas"
+      },
+      {
+        "id": 164,
+        "name": "SEED",
+        "state": "powder"
+      },
+      {
+        "id": 165,
+        "name": "LIVING_WOOD",
+        "state": "solid"
+      },
+      {
+        "id": 166,
+        "name": "ROOT",
+        "state": "solid"
+      },
+      {
+        "id": 167,
+        "name": "BARK",
+        "state": "solid"
+      },
+      {
+        "id": 168,
+        "name": "TREE_LEAF",
+        "state": "solid"
+      },
+      {
+        "id": 169,
+        "name": "DEADWOOD",
+        "state": "solid"
+      },
+      {
+        "id": 170,
+        "name": "DIAMOND",
+        "state": "solid"
+      },
+      {
+        "id": 171,
+        "name": "GALENA",
+        "state": "solid"
+      },
+      {
+        "id": 172,
+        "name": "CINNABAR",
+        "state": "solid"
+      },
+      {
+        "id": 173,
+        "name": "PYRITE",
+        "state": "solid"
+      },
+      {
+        "id": 174,
+        "name": "GRANITE",
+        "state": "solid"
+      },
+      {
+        "id": 175,
+        "name": "PUMICE",
+        "state": "solid"
+      },
+      {
+        "id": 176,
+        "name": "SANDSTONE",
+        "state": "solid"
+      },
+      {
+        "id": 177,
+        "name": "MARBLE",
+        "state": "solid"
+      },
+      {
+        "id": 178,
+        "name": "TUNGSTEN",
+        "state": "solid"
+      },
+      {
+        "id": 179,
+        "name": "NICHROME",
+        "state": "solid"
+      },
+      {
+        "id": 180,
+        "name": "FERRITE",
+        "state": "solid"
+      },
+      {
+        "id": 181,
+        "name": "ARGON",
+        "state": "gas"
+      },
+      {
+        "id": 182,
+        "name": "QUARTZ",
+        "state": "solid"
+      },
+      {
+        "id": 183,
+        "name": "NEODYMIUM_MAGNET",
+        "state": "solid"
+      },
+      {
+        "id": 184,
+        "name": "BAUXITE",
+        "state": "powder"
+      },
+      {
+        "id": 185,
+        "name": "MOLTEN_ZINC",
+        "state": "liquid"
+      },
+      {
+        "id": 186,
+        "name": "MOLTEN_BRONZE",
+        "state": "liquid"
+      },
+      {
+        "id": 187,
+        "name": "MOLTEN_SODIUM",
+        "state": "liquid"
+      },
+      {
+        "id": 188,
+        "name": "MOLTEN_POTASSIUM",
+        "state": "liquid"
+      },
+      {
+        "id": 189,
+        "name": "MOLTEN_CALCIUM",
+        "state": "liquid"
+      },
+      {
+        "id": 190,
+        "name": "MOLTEN_TITANIUM",
+        "state": "liquid"
+      },
+      {
+        "id": 191,
+        "name": "MOLTEN_PLATINUM",
+        "state": "liquid"
+      },
+      {
+        "id": 192,
+        "name": "MOLTEN_TUNGSTEN",
+        "state": "liquid"
+      },
+      {
+        "id": 193,
+        "name": "MOLTEN_NICHROME",
+        "state": "liquid"
+      },
+      {
+        "id": 194,
+        "name": "MOLTEN_METAL",
+        "state": "liquid"
+      },
+      {
+        "id": 195,
+        "name": "METAL_VAPOR",
+        "state": "gas"
+      },
+      {
+        "id": 196,
+        "name": "MOLTEN_MAGNESIUM",
+        "state": "liquid"
+      },
+      {
+        "id": 197,
+        "name": "CAUSTIC_SODA",
+        "state": "powder"
+      },
+      {
+        "id": 198,
+        "name": "PERMAFROST",
+        "state": "solid"
+      },
+      {
+        "id": 199,
+        "name": "GYPSUM",
+        "state": "solid"
+      },
+      {
+        "id": 200,
+        "name": "PLASTER",
+        "state": "powder"
+      },
+      {
+        "id": 201,
+        "name": "REINFORCED_CONCRETE",
+        "state": "solid"
+      },
+      {
+        "id": 202,
+        "name": "COKE",
+        "state": "solid"
+      },
+      {
+        "id": 203,
+        "name": "CARBON_MONOXIDE",
+        "state": "gas"
+      },
+      {
+        "id": 204,
+        "name": "MAGNETITE",
+        "state": "solid"
+      },
+      {
+        "id": 205,
+        "name": "MALACHITE",
+        "state": "solid"
+      },
+      {
+        "id": 206,
+        "name": "NICKEL",
+        "state": "solid"
+      },
+      {
+        "id": 207,
+        "name": "CHROMIUM",
+        "state": "solid"
+      },
+      {
+        "id": 208,
+        "name": "NIOBIUM",
+        "state": "solid"
+      },
+      {
+        "id": 209,
+        "name": "BRASS",
+        "state": "solid"
+      },
+      {
+        "id": 210,
+        "name": "CARBON_CARBON",
+        "state": "solid"
+      },
+      {
+        "id": 211,
+        "name": "SULFURIC_ACID",
+        "state": "liquid"
+      },
+      {
+        "id": 212,
+        "name": "GASOLINE",
+        "state": "liquid"
+      },
+      {
+        "id": 213,
+        "name": "BITUMEN",
+        "state": "liquid"
+      },
+      {
+        "id": 214,
+        "name": "HYDRAZINE",
+        "state": "liquid"
+      },
+      {
+        "id": 215,
+        "name": "POLYSTYRENE",
+        "state": "solid"
+      },
+      {
+        "id": 216,
+        "name": "ACRYLIC",
+        "state": "solid"
+      },
+      {
+        "id": 217,
+        "name": "PTFE",
+        "state": "solid"
+      },
+      {
+        "id": 218,
+        "name": "NEON",
+        "state": "gas"
+      },
+      {
+        "id": 219,
+        "name": "MOLTEN_ALUMINA",
+        "state": "liquid"
+      },
+      {
+        "id": 220,
+        "name": "CORIUM",
+        "state": "liquid"
+      },
+      {
+        "id": 221,
+        "name": "SOLID_MERCURY",
+        "state": "solid"
+      },
+      {
+        "id": 222,
+        "name": "LIQUID_METHANE",
+        "state": "liquid"
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 1280,
+        "x": 5760,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "frameNotice": "",
+      "humans": 0,
+      "impact": null,
+      "message": "Tanks ready \u2014 begin when your crew is ready",
+      "phase": "ready",
+      "remaining": 30,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-663cf087-6611-40b4-bf42-b705d4b3aa93",
+          "index": 0,
+          "kills": 0,
+          "name": "Tony",
+          "spawnX": 5824,
+          "surfaceY": 672
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-9ac6b9d0-aa5d-4c02-b7a8-9e80d6d3e336",
+          "index": 1,
+          "kills": 0,
+          "name": "Copper",
+          "spawnX": 6976,
+          "surfaceY": 693
+        }
+      ],
+      "seed": 7,
+      "shotId": null,
+      "turnNumber": 0,
+      "turnSeconds": 30,
+      "version": 5,
+      "winner": null
+    },
+    "preferences": {
+      "computers": 4,
+      "humans": 0,
+      "namesText": "M5 Verify 1\nM5 Verify 2\nM5 Verify 3\nM5 Verify 4",
+      "turnSeconds": 5
+    },
+    "scores": {
+      "matches": {
+        "37cdce95-ef52-4524-abcb-4e4b0289d980": {
+          "seed": 7,
+          "winner": "M5 Verify 4"
+        }
+      },
+      "players": {
+        "m5 verify 1": {
+          "games": 1,
+          "kills": 1,
+          "name": "M5 Verify 1",
+          "wins": 0
+        },
+        "m5 verify 2": {
+          "games": 1,
+          "kills": 0,
+          "name": "M5 Verify 2",
+          "wins": 0
+        },
+        "m5 verify 3": {
+          "games": 1,
+          "kills": 1,
+          "name": "M5 Verify 3",
+          "wins": 0
+        },
+        "m5 verify 4": {
+          "games": 1,
+          "kills": 1,
+          "name": "M5 Verify 4",
+          "wins": 1
+        }
+      }
+    },
+    "world": "b29dda01-c94c-4410-9d1f-a50ea1f51e94"
+  }
+}

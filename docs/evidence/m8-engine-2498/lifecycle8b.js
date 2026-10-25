@@ -1,0 +1,12 @@
+talus.sim.resume();talus.ui.closeMenu();talus.camera.frame(null);talus.camera.follow('off');talus.camera.centerOn(6200,400);await talus.sleepTicks(60);
+const owner=talus.entities.get(talus.state.get('m8.native.actor'));if(!owner||!await owner.whenLive({timeoutTicks:1200}))throw new Error('No diagnostic owner');
+const view=()=>({snapshot:owner.snapshot(),controller:owner.controller.state,defenses:owner.defenses.state});
+owner.controller.removeFuel(100);owner.controller.addFuel(3);owner.defenses.configure('shield',{capacity:60,types:['blast']});owner.defenses.discharge('shield',100);owner.defenses.charge('shield',30);owner.defenses.activate('shield',true);
+owner.defenses.configure('deflector',{capacity:4,radius:180,acceleration:3000,drainPerSecond:1,kinds:['rigid-body'],owners:'others',elements:[]});owner.defenses.discharge('deflector',100);owner.defenses.charge('deflector',2);owner.defenses.activate('deflector',true);
+const before=view(),residency=[];talus.on('entity.residency',e=>{if(e.entityKey===owner.id)residency.push(JSON.parse(JSON.stringify(e)))});
+talus.camera.centerOn(9200,400);
+for(let n=0;n<1200&&owner.snapshot().residency!=='stored';n++)await talus.sleepTicks(1);
+const parked={snapshot:owner.snapshot(),fields:talus.world.defenseFields()};if(parked.snapshot.residency!=='stored')throw new Error('Actor did not park '+JSON.stringify(parked));
+talus.camera.centerOn(6200,400);if(!await owner.whenLive({timeoutTicks:1200}))throw new Error('Actor did not restore');await talus.sleepTicks(30);const restored=view();
+if(restored.controller.fuel!==3||restored.controller.capacity!==12||restored.defenses.shield.remaining!==30||restored.defenses.deflector.remaining!==2)throw new Error('State changed '+JSON.stringify(restored));
+talus.sim.pause();return {before,parked,restored,residency,fields:talus.world.defenseFields()};

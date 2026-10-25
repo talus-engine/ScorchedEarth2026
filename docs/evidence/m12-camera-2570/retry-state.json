@@ -1,0 +1,5509 @@
+{
+  "camera": {
+    "frame": null,
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5696,
+      "y": -128
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5760,
+      "y": -64
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5760,
+      "y": -64
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 6039.499999999992,
+      "y": 153.6203038747226
+    },
+    "zoom": 0.25
+  },
+  "clock": 107.21666666666188,
+  "error": "",
+  "events": [
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 0.016666666666666666,
+      "completedChunks": 0,
+      "family": "template",
+      "kind": "terrain-source",
+      "parameters": {},
+      "phase": "complete",
+      "reason": null,
+      "recipeId": "wfc",
+      "seed": 257001,
+      "totalChunks": 0,
+      "turn": 0,
+      "version": 1
+    },
+    {
+      "catalog": "procedural-m11",
+      "choices": {
+        "growth": [
+          "builtin-lightning",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "m9-planar-bramble-probe",
+          "builtin-worm-tunnels",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "builtin-creeping-vine",
+          "indigo-m9-oak",
+          "builtin-roots",
+          "builtin-meadow-grass",
+          "builtin-coral",
+          "builtin-ivy-wall",
+          "builtin-wheat",
+          "builtin-icicles",
+          "builtin-hair",
+          "builtin-flower-bed",
+          "builtin-vine-ledge",
+          "builtin-creeping-vine",
+          "indigo-m9-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-flower-bed",
+          "m9-planar-bramble-probe",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "indigo-m9-oak",
+          "builtin-ivy-wall",
+          "builtin-worm-tunnels",
+          "builtin-wheat",
+          "builtin-bramble",
+          "builtin-lightning",
+          "builtin-coral",
+          "builtin-icicles",
+          "builtin-meadow-grass",
+          "builtin-hair",
+          "builtin-creeping-vine",
+          "builtin-worm-tunnels",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "builtin-oak-sapling",
+          "builtin-ivy-wall",
+          "m9-planar-bramble-probe",
+          "builtin-icicles",
+          "builtin-coral",
+          "indigo-m9-oak",
+          "builtin-living-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-wheat"
+        ],
+        "neural": [
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four",
+          "builtin-nca-stations",
+          "builtin-nca-masonry",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four"
+        ],
+        "neuralRecipe": [
+          "builtin-brush-keep-library",
+          "builtin-brush-research-lab",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-station-deck",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-tundra",
+          "builtin-brush-great-hall",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-hellscape",
+          "builtin-brush-coal",
+          "builtin-brush-catacombs",
+          "builtin-brush-station-deck",
+          "builtin-brush-tundra",
+          "builtin-brush-gold",
+          "builtin-brush-hellscape"
+        ],
+        "noise": [
+          "builtin-brick-6",
+          "builtin-fence-2",
+          "builtin-rusty-3",
+          "builtin-brickwood",
+          "builtin-concrete-2",
+          "builtin-panel-8",
+          "builtin-chess-1",
+          "builtin-wood-1",
+          "builtin-brick-2",
+          "builtin-steel-1",
+          "builtin-bigdoor-1",
+          "builtin-grid-2",
+          "builtin-grid-1",
+          "builtin-pillwindow",
+          "builtin-lab-5",
+          "builtin-slime-1",
+          "builtin-sludge-1",
+          "builtin-rusty-2",
+          "builtin-pipes-1",
+          "builtin-skultrim-1",
+          "builtin-fence-3",
+          "builtin-brick-1",
+          "builtin-grass-1",
+          "builtin-ooze-1",
+          "builtin-panel-5",
+          "builtin-crate-1",
+          "builtin-warn-3",
+          "builtin-wood-3",
+          "builtin-circlewindow",
+          "builtin-support-2",
+          "builtin-warn-1",
+          "builtin-door-3",
+          "builtin-light-2",
+          "builtin-crate-3",
+          "builtin-sqdoor-7",
+          "builtin-wood-2",
+          "builtin-vent-2",
+          "builtin-floor-3",
+          "builtin-metal-7",
+          "builtin-metal-6",
+          "builtin-cube-1",
+          "builtin-zinc-1",
+          "builtin-grid-6",
+          "builtin-panel-3",
+          "builtin-paper-1",
+          "builtin-cube-2",
+          "builtin-dirt-1",
+          "builtin-panel-7",
+          "builtin-rusty-1",
+          "builtin-brick2"
+        ],
+        "semantic": [
+          "builtin-brush-mossy-glade",
+          "builtin-brush-gold",
+          "builtin-brush-scorched-wasteland",
+          "builtin-brush-jungle-undergrowth",
+          "builtin-brush-hills",
+          "builtin-brush-toxic-dump",
+          "builtin-brush-power-substation",
+          "builtin-brush-keep-library",
+          "builtin-brush-glacier",
+          "builtin-brush-subway-tunnel",
+          "builtin-brush-crimson-desert",
+          "builtin-brush-charred",
+          "builtin-brush-alien-jungle",
+          "builtin-brush-engine-room",
+          "builtin-brush-rubble",
+          "builtin-brush-goblin-warren",
+          "builtin-brush-great-hall",
+          "builtin-brush-deep-mine",
+          "builtin-brush-frozen-lake",
+          "builtin-brush-alien-hive",
+          "builtin-brush-research-lab",
+          "builtin-brush-enchanted-forest",
+          "builtin-brush-derelict-station",
+          "builtin-brush-ice-moon",
+          "builtin-brush-coal",
+          "builtin-brush-tundra",
+          "builtin-brush-industrial-pipeworks",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-haunted-wood",
+          "builtin-brush-mesa-badlands",
+          "builtin-brush-chemical-plant",
+          "builtin-brush-scrapyard",
+          "builtin-brush-catacombs",
+          "builtin-brush-dragon-graveyard",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-castle-wall",
+          "builtin-brush-spaceship-prison",
+          "builtin-brush-snowy-pines",
+          "builtin-brush-mine-shaft",
+          "builtin-brush-dunes",
+          "builtin-brush-dragon-hoard",
+          "builtin-brush-mangrove-shallows",
+          "builtin-brush-autumn-woodland",
+          "builtin-brush-red-rock-canyon",
+          "indigo-mixed-earth",
+          "builtin-brush-cliffside",
+          "builtin-brush-desecrated-chapel",
+          "builtin-brush-reactor-chamber",
+          "builtin-brush-cryo-bay",
+          "builtin-brush-ice-cave"
+        ],
+        "structureTexture": [
+          "builtin-crate-3",
+          "builtin-steel-1",
+          "builtin-tarmac-2",
+          "builtin-wood-2",
+          "builtin-concrete-8",
+          "builtin-brickwood",
+          "builtin-crate-1",
+          "builtin-concrete-7",
+          "builtin-metal-2",
+          "builtin-marble-1",
+          "builtin-metal-4",
+          "builtin-concrete-2",
+          "builtin-brick-2",
+          "builtin-metal-7",
+          "builtin-brick-1",
+          "builtin-tarmac-4",
+          "builtin-wood-3",
+          "builtin-metal-1",
+          "builtin-steel-3",
+          "builtin-steel-2",
+          "builtin-crate-2",
+          "builtin-brick-4",
+          "builtin-corrugat-1",
+          "builtin-wood-1",
+          "builtin-metal-6"
+        ],
+        "vector": [
+          "builtin:checkmark",
+          "builtin:sun",
+          "builtin:heart",
+          "builtin:arrow-up",
+          "builtin:spade",
+          "builtin:club",
+          "builtin:star-6",
+          "builtin:gear",
+          "builtin:hexagon",
+          "builtin:rounded-square",
+          "builtin:arrow-right",
+          "builtin:tree",
+          "builtin:crescent",
+          "builtin:triangle",
+          "builtin:right-triangle",
+          "builtin:octagon",
+          "builtin:chevron-right",
+          "builtin:circle",
+          "builtin:square",
+          "builtin:cross",
+          "builtin:fire",
+          "builtin:snowflake",
+          "builtin:drop",
+          "builtin:speech-bubble",
+          "builtin:shield"
+        ]
+      },
+      "clock": 1.016666666666668,
+      "hash": "2b6e76aee7840f8b7bd706b3fbaea1e3f783806cf0b959cc151c76b33754b36a",
+      "kind": "generation-catalog",
+      "story": {
+        "id": "world-beneath-landfill",
+        "version": 1
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.1166666666666605,
+      "kind": "deployment-surface",
+      "offset": 40,
+      "player": "M12P Pan Alpha",
+      "requestedX": 5960,
+      "turn": 0,
+      "x": 6000,
+      "y": 656
+    },
+    {
+      "clock": 3.1999999999999935,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 54.16666793823242,
+        "x": 5999.5,
+        "y": 606.0848999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.299999999999993,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M12P Pan Alpha",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 119.16666412353516,
+        "x": 5999.5,
+        "y": 615.293212890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 3.299999999999993,
+      "id": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "kind": "deployed",
+      "name": "M12P Pan Alpha",
+      "turn": 0
+    },
+    {
+      "clock": 3.4499999999999926,
+      "id": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "kind": "land",
+      "position": {
+        "x": 5999.5,
+        "y": 640.3765869140625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.799999999999988,
+      "kind": "deployment-surface",
+      "offset": 0,
+      "player": "M12P Pan Beta",
+      "requestedX": 6840,
+      "turn": 0,
+      "x": 6840,
+      "y": 628
+    },
+    {
+      "clock": 4.866666666666655,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "Arig Silverhaven",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 6839.5,
+        "y": 577.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.966666666666654,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M12P Pan Beta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 6839.5,
+        "y": 585.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 4.966666666666654,
+      "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "kind": "deployed",
+      "name": "M12P Pan Beta",
+      "turn": 0
+    },
+    {
+      "clock": 4.966666666666654,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "clock": 5.149999999999987,
+      "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "kind": "land",
+      "position": {
+        "x": 6839.5,
+        "y": 614.30859375
+      },
+      "turn": 0
+    },
+    {
+      "center": {
+        "x": 6011.060909538925,
+        "y": 642.8101783966827
+      },
+      "clock": 5.533333333333319,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "tracking": 1,
+      "turn": 0
+    },
+    {
+      "cash": 360,
+      "clock": 5.533333333333319,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "M12P Pan Alpha",
+      "price": 240,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 5.533333333333319,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M12P Pan Alpha",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 5.533333333333319,
+      "kind": "cpu-shopping",
+      "name": "M12P Pan Alpha",
+      "purchases": [
+        "heavy",
+        "battery"
+      ],
+      "reserve": 210,
+      "selected": "heavy",
+      "skipped": [],
+      "stage": "81be09fd-d9e9-4830-88f7-773af5ce743d:ready",
+      "stock": {
+        "battery": 2,
+        "heavy": 3
+      },
+      "turn": 0
+    },
+    {
+      "cash": 320,
+      "clock": 5.533333333333319,
+      "item": "napalm",
+      "kind": "purchase",
+      "name": "M12P Pan Beta",
+      "price": 280,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 320,
+      "clock": 5.533333333333319,
+      "kind": "cpu-shopping",
+      "name": "M12P Pan Beta",
+      "purchases": [
+        "napalm"
+      ],
+      "reserve": 180,
+      "selected": "napalm",
+      "skipped": [],
+      "stage": "81be09fd-d9e9-4830-88f7-773af5ce743d:ready",
+      "stock": {
+        "napalm": 3
+      },
+      "turn": 0
+    },
+    {
+      "clock": 42.133333333332224,
+      "color": "#ffd447",
+      "eyebrow": "SCORCHED TERRA",
+      "id": 1,
+      "kind": "arcade-start",
+      "long": true,
+      "radar": false,
+      "receipt": false,
+      "score": "",
+      "seconds": 2.5,
+      "sub": "Round 1 \u00b7 Seed 257001",
+      "title": "BATTLE STATIONS",
+      "turn": 0
+    },
+    {
+      "clock": 43.38333333333215,
+      "elapsed": 2.5166666666666626,
+      "id": 1,
+      "kind": "arcade-ended",
+      "turn": 0
+    },
+    {
+      "center": {
+        "x": 5999.458007812508,
+        "y": 643.2877807617177
+      },
+      "clock": 43.38333333333215,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "tracking": 1,
+      "turn": 1
+    },
+    {
+      "clock": 43.38333333333215,
+      "color": "#EC4787",
+      "eyebrow": "TURN 1 / COMMAND CARTRIDGE",
+      "id": 2,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Heavy Weather \u00b7 expert",
+      "title": "M12P Pan Alpha",
+      "turn": 1
+    },
+    {
+      "clock": 43.89999999999879,
+      "elapsed": 1.000000000000001,
+      "id": 2,
+      "kind": "arcade-ended",
+      "turn": 1
+    },
+    {
+      "center": {
+        "x": 5999.458007812508,
+        "y": 643.2877807617177
+      },
+      "clock": 43.89999999999879,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "tracking": 1,
+      "turn": 1
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 43.89999999999879,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 10,
+      "turn": 1
+    },
+    {
+      "clock": 43.89999999999879,
+      "id": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "kind": "turn",
+      "name": "M12P Pan Alpha",
+      "turn": 1
+    },
+    {
+      "budgetRemaining": 87,
+      "clock": 45.93333333333201,
+      "item": "heavy",
+      "kind": "cpu-decision",
+      "memory": 0,
+      "persona": "kiloton",
+      "risk": 0.6,
+      "skill": "expert",
+      "skipped": [
+        {
+          "item": "escape-charge",
+          "reason": "local-terrain-tactic"
+        }
+      ],
+      "tactic": "High arc over obstruction",
+      "target": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "trials": [
+        {
+          "goal": "tank",
+          "obstruction": null,
+          "reason": "clear",
+          "target": "M12P Pan Beta",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "heavy",
+          "work": {
+            "candidates": 9,
+            "cells": 156989,
+            "chunks": 174,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 129889
+          }
+        }
+      ],
+      "turn": 1
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 45.949999999998674,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 13,
+      "turn": 1
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 45.949999999998674,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 16,
+      "turn": 1
+    },
+    {
+      "angle": 64.91243442718405,
+      "clock": 45.949999999998674,
+      "kind": "cpu-aimed",
+      "name": "M12P Pan Alpha",
+      "origin": {
+        "x": 5999.4580078125,
+        "y": 643.2877807617188
+      },
+      "plan": {
+        "candidates": [
+          {
+            "angle": -1.4470949715982604,
+            "obstruction": {
+              "element": 3,
+              "kind": "unknown",
+              "reason": "material-drag-not-supported",
+              "time": 0.030666666666666665,
+              "x": 6011.5,
+              "y": 564.5
+            },
+            "power": 0.8181631152820773,
+            "reason": "material-drag-not-supported"
+          },
+          {
+            "angle": -1.3947350940384304,
+            "obstruction": {
+              "element": 3,
+              "kind": "unknown",
+              "reason": "material-drag-not-supported",
+              "time": 0.03414634146341464,
+              "x": 6011.5,
+              "y": 564.5
+            },
+            "power": 0.6771388535690493,
+            "reason": "material-drag-not-supported"
+          },
+          {
+            "angle": -1.3423752164786007,
+            "obstruction": {
+              "bodyId": 2,
+              "kind": "body",
+              "time": 3.260185185185178,
+              "x": 6823.5,
+              "y": 566.5
+            },
+            "power": 0.5899579280358739,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -1.2900153389187707,
+            "obstruction": {
+              "element": 3,
+              "kind": "unknown",
+              "reason": "material-drag-not-supported",
+              "time": 0.16999999999999998,
+              "x": 6058.5,
+              "y": 454.5
+            },
+            "power": 0.5301861946773715,
+            "reason": "material-drag-not-supported"
+          },
+          {
+            "angle": -1.2376554613589408,
+            "obstruction": {
+              "element": 3,
+              "kind": "unknown",
+              "reason": "material-drag-not-supported",
+              "time": 0.12586206896551724,
+              "x": 6049.5,
+              "y": 502.5
+            },
+            "power": 0.48671125968219714,
+            "reason": "material-drag-not-supported"
+          },
+          {
+            "angle": -1.185295583799111,
+            "obstruction": {
+              "element": 3,
+              "kind": "unknown",
+              "reason": "material-drag-not-supported",
+              "time": 2.3006410256410224,
+              "x": 6765.5,
+              "y": 476.5
+            },
+            "power": 0.4539781675976701,
+            "reason": "material-drag-not-supported"
+          },
+          {
+            "angle": -1.132935706239281,
+            "obstruction": null,
+            "power": 0.4288321134936996,
+            "reason": "clear"
+          }
+        ],
+        "obstruction": null,
+        "reason": "clear",
+        "solution": {
+          "angle": -1.132935706239281,
+          "childImpacts": "not-planned",
+          "coverage": "impact",
+          "end": {
+            "x": 6821.508811687014,
+            "y": 602.6702209420052
+          },
+          "origin": {
+            "x": 6014.722111661042,
+            "y": 610.683990587861
+          },
+          "path": [
+            {
+              "x": 6014.722111661042,
+              "y": 610.683990587861
+            },
+            {
+              "x": 6020.580521308533,
+              "y": 598.2834036252412
+            },
+            {
+              "x": 6026.438930956025,
+              "y": 586.063372218177
+            },
+            {
+              "x": 6032.297340603516,
+              "y": 574.0238963666684
+            },
+            {
+              "x": 6038.155750251008,
+              "y": 562.1649760707153
+            },
+            {
+              "x": 6044.014159898499,
+              "y": 550.4866113303177
+            },
+            {
+              "x": 6049.872569545991,
+              "y": 538.9888021454757
+            },
+            {
+              "x": 6055.730979193482,
+              "y": 527.6715485161893
+            },
+            {
+              "x": 6061.589388840974,
+              "y": 516.5348504424585
+            },
+            {
+              "x": 6067.447798488465,
+              "y": 505.5787079242832
+            },
+            {
+              "x": 6073.306208135957,
+              "y": 494.80312096166347
+            },
+            {
+              "x": 6079.164617783448,
+              "y": 484.20808955459927
+            },
+            {
+              "x": 6085.02302743094,
+              "y": 473.7936137030906
+            },
+            {
+              "x": 6090.881437078431,
+              "y": 463.5596934071376
+            },
+            {
+              "x": 6096.739846725923,
+              "y": 453.5063286667401
+            },
+            {
+              "x": 6102.598256373414,
+              "y": 443.6335194818981
+            },
+            {
+              "x": 6108.456666020906,
+              "y": 433.9412658526117
+            },
+            {
+              "x": 6114.315075668397,
+              "y": 424.4295677788808
+            },
+            {
+              "x": 6120.173485315889,
+              "y": 415.09842526070554
+            },
+            {
+              "x": 6126.03189496338,
+              "y": 405.9478382980858
+            },
+            {
+              "x": 6131.890304610872,
+              "y": 396.9778068910216
+            },
+            {
+              "x": 6137.748714258363,
+              "y": 388.18833103951295
+            },
+            {
+              "x": 6143.607123905855,
+              "y": 379.5794107435599
+            },
+            {
+              "x": 6149.465533553346,
+              "y": 371.1510460031624
+            },
+            {
+              "x": 6155.323943200838,
+              "y": 362.9032368183204
+            },
+            {
+              "x": 6161.182352848329,
+              "y": 354.835983189034
+            },
+            {
+              "x": 6167.040762495821,
+              "y": 346.94928511530316
+            },
+            {
+              "x": 6172.899172143312,
+              "y": 339.24314259712787
+            },
+            {
+              "x": 6178.757581790804,
+              "y": 331.71755563450813
+            },
+            {
+              "x": 6184.615991438295,
+              "y": 324.37252422744393
+            },
+            {
+              "x": 6190.474401085787,
+              "y": 317.2080483759353
+            },
+            {
+              "x": 6196.332810733278,
+              "y": 310.2241280799822
+            },
+            {
+              "x": 6202.19122038077,
+              "y": 303.4207633395847
+            },
+            {
+              "x": 6208.049630028261,
+              "y": 296.79795415474274
+            },
+            {
+              "x": 6213.908039675753,
+              "y": 290.3557005254563
+            },
+            {
+              "x": 6219.766449323244,
+              "y": 284.0940024517255
+            },
+            {
+              "x": 6225.624858970736,
+              "y": 278.0128599335502
+            },
+            {
+              "x": 6231.483268618227,
+              "y": 272.11227297093046
+            },
+            {
+              "x": 6237.341678265719,
+              "y": 266.39224156386626
+            },
+            {
+              "x": 6243.20008791321,
+              "y": 260.8527657123576
+            },
+            {
+              "x": 6249.058497560702,
+              "y": 255.49384541640453
+            },
+            {
+              "x": 6254.916907208193,
+              "y": 250.315480676007
+            },
+            {
+              "x": 6260.775316855685,
+              "y": 245.31767149116504
+            },
+            {
+              "x": 6266.633726503176,
+              "y": 240.50041786187865
+            },
+            {
+              "x": 6272.492136150668,
+              "y": 235.8637197881478
+            },
+            {
+              "x": 6278.350545798159,
+              "y": 231.40757726997248
+            },
+            {
+              "x": 6284.208955445651,
+              "y": 227.1319903073527
+            },
+            {
+              "x": 6290.067365093142,
+              "y": 223.03695890028857
+            },
+            {
+              "x": 6295.925774740634,
+              "y": 219.1224830487799
+            },
+            {
+              "x": 6301.784184388125,
+              "y": 215.38856275282683
+            },
+            {
+              "x": 6307.642594035617,
+              "y": 211.83519801242932
+            },
+            {
+              "x": 6313.501003683108,
+              "y": 208.46238882758735
+            },
+            {
+              "x": 6319.3594133306,
+              "y": 205.27013519830095
+            },
+            {
+              "x": 6325.217822978091,
+              "y": 202.2584371245701
+            },
+            {
+              "x": 6331.076232625583,
+              "y": 199.4272946063948
+            },
+            {
+              "x": 6336.934642273074,
+              "y": 196.77670764377504
+            },
+            {
+              "x": 6342.793051920566,
+              "y": 194.30667623671084
+            },
+            {
+              "x": 6348.651461568057,
+              "y": 192.01720038520224
+            },
+            {
+              "x": 6354.509871215549,
+              "y": 189.90828008924913
+            },
+            {
+              "x": 6360.36828086304,
+              "y": 187.9799153488516
+            },
+            {
+              "x": 6366.226690510532,
+              "y": 186.23210616400965
+            },
+            {
+              "x": 6372.085100158023,
+              "y": 184.66485253472325
+            },
+            {
+              "x": 6377.943509805515,
+              "y": 183.2781544609924
+            },
+            {
+              "x": 6383.801919453006,
+              "y": 182.07201194281708
+            },
+            {
+              "x": 6389.660329100498,
+              "y": 181.04642498019737
+            },
+            {
+              "x": 6395.518738747989,
+              "y": 180.20139357313317
+            },
+            {
+              "x": 6401.377148395481,
+              "y": 179.53691772162452
+            },
+            {
+              "x": 6407.235558042972,
+              "y": 179.05299742567144
+            },
+            {
+              "x": 6413.093967690464,
+              "y": 178.74963268527392
+            },
+            {
+              "x": 6418.952377337955,
+              "y": 178.62682350043195
+            },
+            {
+              "x": 6424.810786985447,
+              "y": 178.68456987114556
+            },
+            {
+              "x": 6430.669196632938,
+              "y": 178.9228717974147
+            },
+            {
+              "x": 6436.52760628043,
+              "y": 179.3417292792394
+            },
+            {
+              "x": 6442.386015927921,
+              "y": 179.94114231661965
+            },
+            {
+              "x": 6448.244425575413,
+              "y": 180.72111090955545
+            },
+            {
+              "x": 6454.102835222904,
+              "y": 181.6816350580468
+            },
+            {
+              "x": 6459.961244870396,
+              "y": 182.82271476209377
+            },
+            {
+              "x": 6465.819654517887,
+              "y": 184.14435002169623
+            },
+            {
+              "x": 6471.678064165379,
+              "y": 185.64654083685423
+            },
+            {
+              "x": 6477.53647381287,
+              "y": 187.32928720756783
+            },
+            {
+              "x": 6483.394883460362,
+              "y": 189.192589133837
+            },
+            {
+              "x": 6489.253293107853,
+              "y": 191.2364466156617
+            },
+            {
+              "x": 6495.111702755345,
+              "y": 193.46085965304195
+            },
+            {
+              "x": 6500.970112402836,
+              "y": 195.86582824597775
+            },
+            {
+              "x": 6506.828522050328,
+              "y": 198.45135239446913
+            },
+            {
+              "x": 6512.686931697819,
+              "y": 201.21743209851604
+            },
+            {
+              "x": 6518.545341345311,
+              "y": 204.16406735811853
+            },
+            {
+              "x": 6524.403750992802,
+              "y": 207.29125817327656
+            },
+            {
+              "x": 6530.262160640294,
+              "y": 210.59900454399016
+            },
+            {
+              "x": 6536.120570287785,
+              "y": 214.0873064702593
+            },
+            {
+              "x": 6541.978979935277,
+              "y": 217.756163952084
+            },
+            {
+              "x": 6547.837389582768,
+              "y": 221.60557698946425
+            },
+            {
+              "x": 6553.69579923026,
+              "y": 225.63554558240008
+            },
+            {
+              "x": 6559.554208877751,
+              "y": 229.84606973089143
+            },
+            {
+              "x": 6565.412618525243,
+              "y": 234.23714943493837
+            },
+            {
+              "x": 6571.271028172734,
+              "y": 238.80878469454083
+            },
+            {
+              "x": 6577.129437820226,
+              "y": 243.5609755096989
+            },
+            {
+              "x": 6582.987847467717,
+              "y": 248.4937218804125
+            },
+            {
+              "x": 6588.846257115209,
+              "y": 253.6070238066816
+            },
+            {
+              "x": 6594.7046667627,
+              "y": 258.9008812885063
+            },
+            {
+              "x": 6600.563076410192,
+              "y": 264.37529432588656
+            },
+            {
+              "x": 6606.421486057683,
+              "y": 270.03026291882236
+            },
+            {
+              "x": 6612.279895705175,
+              "y": 275.8657870673137
+            },
+            {
+              "x": 6618.138305352666,
+              "y": 281.88186677136065
+            },
+            {
+              "x": 6623.996715000158,
+              "y": 288.07850203096314
+            },
+            {
+              "x": 6629.855124647649,
+              "y": 294.45569284612117
+            },
+            {
+              "x": 6635.713534295141,
+              "y": 301.01343921683474
+            },
+            {
+              "x": 6641.571943942632,
+              "y": 307.75174114310386
+            },
+            {
+              "x": 6647.430353590124,
+              "y": 314.6705986249286
+            },
+            {
+              "x": 6653.288763237615,
+              "y": 321.77001166230883
+            },
+            {
+              "x": 6659.147172885107,
+              "y": 329.04998025524463
+            },
+            {
+              "x": 6665.005582532598,
+              "y": 336.510504403736
+            },
+            {
+              "x": 6670.86399218009,
+              "y": 344.1515841077829
+            },
+            {
+              "x": 6676.722401827581,
+              "y": 351.9732193673854
+            },
+            {
+              "x": 6682.580811475073,
+              "y": 359.97541018254344
+            },
+            {
+              "x": 6688.439221122564,
+              "y": 368.158156553257
+            },
+            {
+              "x": 6694.297630770056,
+              "y": 376.52145847952613
+            },
+            {
+              "x": 6700.156040417547,
+              "y": 385.0653159613509
+            },
+            {
+              "x": 6706.014450065039,
+              "y": 393.7897289987311
+            },
+            {
+              "x": 6711.87285971253,
+              "y": 402.6946975916669
+            },
+            {
+              "x": 6717.7312693600215,
+              "y": 411.78022174015825
+            },
+            {
+              "x": 6723.589679007513,
+              "y": 421.04630144420514
+            },
+            {
+              "x": 6729.4480886550045,
+              "y": 430.4929367038076
+            },
+            {
+              "x": 6735.306498302496,
+              "y": 440.12012751896566
+            },
+            {
+              "x": 6741.1649079499875,
+              "y": 449.9278738896792
+            },
+            {
+              "x": 6747.023317597479,
+              "y": 459.9161758159483
+            },
+            {
+              "x": 6752.8817272449705,
+              "y": 470.08503329777307
+            },
+            {
+              "x": 6758.740136892462,
+              "y": 480.4344463351533
+            },
+            {
+              "x": 6764.5985465399535,
+              "y": 490.9644149280891
+            },
+            {
+              "x": 6770.456956187445,
+              "y": 501.6749390765805
+            },
+            {
+              "x": 6776.3153658349365,
+              "y": 512.5660187806274
+            },
+            {
+              "x": 6782.173775482428,
+              "y": 523.6376540402298
+            },
+            {
+              "x": 6788.0321851299195,
+              "y": 534.8898448553879
+            },
+            {
+              "x": 6793.890594777411,
+              "y": 546.3225912261015
+            },
+            {
+              "x": 6799.7490044249025,
+              "y": 557.9358931523707
+            },
+            {
+              "x": 6805.607414072394,
+              "y": 569.7297506341954
+            },
+            {
+              "x": 6811.4658237198855,
+              "y": 581.7041636715757
+            },
+            {
+              "x": 6817.324233367377,
+              "y": 593.8591322645115
+            },
+            {
+              "x": 6821.508811687014,
+              "y": 602.6702209420052
+            }
+          ],
+          "power": 0.4288321134936996,
+          "speed": 829.0145929392893,
+          "time": 2.295238095238092,
+          "velocity": {
+            "x": 351.50457884948986,
+            "y": -750.8060510905185
+          }
+        },
+        "status": "clear",
+        "warnings": [
+          "evolving-air-fields-not-predicted"
+        ],
+        "work": {
+          "candidates": 9,
+          "cells": 156989,
+          "chunks": 174,
+          "geometry": {
+            "catalogRows": 0,
+            "chunks": 1,
+            "colliders": 1,
+            "records": 0
+          },
+          "steps": 129889
+        }
+      },
+      "power": 42.88321134936996,
+      "tactic": "High arc over obstruction",
+      "target": {
+        "bodyId": null,
+        "entityId": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+        "x": 6839.5,
+        "y": 614.1283569335938
+      },
+      "turn": 1,
+      "weapon": {
+        "ammo": {
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 3,
+          "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+          "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+          "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+          "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 0,
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+          "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+          "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+          "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+          "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+          "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+          "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 0,
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+          "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+          "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+          "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+          "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+        },
+        "angle": -1.132935706239281,
+        "equipped": "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+        "gravityScale": 1,
+        "items": [
+          "219d46ea-fa7c-4578-b119-bba07279e6f0",
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+          "9dd9a83c-66b3-4720-a798-b7ce47372022",
+          "fa168217-924a-4b95-b7f2-025d856f5b88",
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+          "70446b65-1a75-4950-840a-443f28dc58a6",
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+          "2ee512d3-c721-4978-a1a5-b97d42255b13",
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+          "a80f054a-6235-4746-b050-8d5cd248dd57",
+          "b4474e78-1c10-4d79-994d-d900ed050664",
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+          "173004dc-1907-43e3-9e01-10f4b7084523",
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+          "1a4d56f6-0058-471f-a4bf-77548338012c",
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+          "e1a46386-8976-4b3c-9408-0159b3f64235",
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+          "2e0a754f-eb50-487b-b90a-907a3a43159a",
+          "780f5cdb-7252-4a69-987b-b908477015ad",
+          "815021a5-49a0-4790-91dd-b5b61a3c5050",
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+          "bb0da974-5d0f-4644-a6da-278758d07d9f",
+          "9cb680d4-3edf-451b-81da-ebbb514808bb",
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc",
+          "78ea7cb7-a3be-435a-be9f-5766f5f97a81"
+        ],
+        "kind": "rigid-body",
+        "localAngle": -1.3886502717547993,
+        "pinned": true,
+        "power": 0.4288321134936996,
+        "speed": {
+          "current": 829.0145929392893,
+          "max": 1800,
+          "min": 100
+        }
+      }
+    },
+    {
+      "clock": 47.383333333331926,
+      "kind": "presentation-centering",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "speechKind": "shooting",
+      "turn": 1
+    },
+    {
+      "center": {
+        "x": 5999.458007812508,
+        "y": 643.2877807617177
+      },
+      "clock": 47.383333333331926,
+      "kind": "presentation-centered",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "ready": true,
+      "speechKind": "shooting",
+      "tracking": 1,
+      "turn": 1,
+      "x": 5999.4580078125,
+      "y": 643.2877807617188
+    },
+    {
+      "clock": 47.383333333331926,
+      "id": "[\"terra-heavy-weather\",null,\"taunt\",\"neutral\",\"I don't do warning shots. I do warnings.\"]",
+      "kind": "quip",
+      "name": "M12P Pan Alpha",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "speechKind": "shooting",
+      "text": "I don't do warning shots. I do warnings.",
+      "turn": 1
+    },
+    {
+      "clock": 50.39999999999842,
+      "elapsed": 3.016666666666495,
+      "kind": "presentation-ended",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "speechKind": "shooting",
+      "turn": 1
+    },
+    {
+      "actualEquipped": "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+      "angle": 64.91243442718405,
+      "clock": 50.39999999999842,
+      "item": "heavy",
+      "kind": "fire-request",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "power": 42.88321134936996,
+      "stock": 3,
+      "template": "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 50.39999999999842,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 36,
+      "turn": 1
+    },
+    {
+      "clock": 50.39999999999842,
+      "item": "heavy",
+      "kind": "ammo-spent",
+      "name": "M12P Pan Alpha",
+      "remaining": 2,
+      "template": "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+      "turn": 1
+    },
+    {
+      "action": "accepted-cast",
+      "clock": 50.39999999999842,
+      "item": "heavy",
+      "kind": "cpu-progress",
+      "name": "M12P Pan Alpha",
+      "previousPasses": 0,
+      "projectileId": 1,
+      "template": "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+      "turn": 1
+    },
+    {
+      "clock": 50.39999999999842,
+      "depth": 0,
+      "id": 1,
+      "kind": "launch",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 1,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+        "vx": 351.50457763671875,
+        "vy": -750.8060302734375,
+        "x": 6014.5,
+        "y": 610.5
+      },
+      "template": "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+      "turn": 1,
+      "weapon": "heavy"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 52.76666666666495,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 51,
+      "turn": 1
+    },
+    {
+      "clock": 52.76666666666495,
+      "id": 1,
+      "kind": "collision",
+      "turn": 1,
+      "with": "terrain",
+      "x": 6791.85009765625,
+      "y": 623.7499389648438
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 52.78333333333162,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 71,
+      "turn": 1
+    },
+    {
+      "action": "damage",
+      "amount": 227,
+      "clock": 52.78333333333162,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 298,
+      "turn": 1
+    },
+    {
+      "action": "hurt",
+      "amount": 76,
+      "clock": 52.78333333333162,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 76,
+      "turn": 1
+    },
+    {
+      "amount": 75.78128824120971,
+      "clock": 52.78333333333162,
+      "direct": false,
+      "killed": false,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "projectileId": 1,
+      "targetEntityId": 2,
+      "targetStableId": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "turn": 1
+    },
+    {
+      "clock": 52.78333333333162,
+      "damageBefore": 0,
+      "dx": -47.64990234375,
+      "dy": 9.62115478515625,
+      "impact": {
+        "x": 6791.85009765625,
+        "y": 623.7499389648438
+      },
+      "kind": "cpu-observation",
+      "origin": {
+        "x": 5999.4580078125,
+        "y": 643.2877807617188
+      },
+      "power": 42.88321134936996,
+      "reason": "detonated",
+      "target": {
+        "x": 6839.5,
+        "y": 614.1287841796875
+      },
+      "targetId": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "turn": 1,
+      "weapon": "heavy"
+    },
+    {
+      "clock": 52.78333333333162,
+      "id": 1,
+      "kind": "end",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "reason": "detonated",
+      "shooterResidency": "live",
+      "turn": 1,
+      "x": 6791.85009765625,
+      "y": 623.7499389648438
+    },
+    {
+      "clock": 52.799999999998285,
+      "ended": 1,
+      "kind": "attack-resolved",
+      "launched": 1,
+      "turn": 1,
+      "weapon": "heavy"
+    },
+    {
+      "clock": 55.78333333333145,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6599.85009765625,
+        "y": 495.74993896484375
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 1,
+      "watchId": 1
+    },
+    {
+      "clock": 55.78333333333145,
+      "color": "#EC4787",
+      "eyebrow": "TURN 1 COMPLETE",
+      "id": 3,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "0 kills (+0) \u00b7 Turn cash +$298.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M12P Pan Alpha",
+      "turn": 1
+    },
+    {
+      "clock": 56.28333333333142,
+      "elapsed": 1.000000000000001,
+      "id": 3,
+      "kind": "arcade-ended",
+      "turn": 1
+    },
+    {
+      "center": {
+        "x": 6827.822889234336,
+        "y": 618.5273126200065
+      },
+      "clock": 56.51666666666474,
+      "kind": "turn-camera-arrived",
+      "liveId": 2,
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "tracking": 1,
+      "turn": 2
+    },
+    {
+      "clock": 56.51666666666474,
+      "color": "#35D9FF",
+      "eyebrow": "TURN 2 / COMMAND CARTRIDGE",
+      "id": 4,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Cascade Institute \u00b7 expert",
+      "title": "M12P Pan Beta",
+      "turn": 2
+    },
+    {
+      "clock": 57.01666666666471,
+      "elapsed": 1.000000000000001,
+      "id": 4,
+      "kind": "arcade-ended",
+      "turn": 2
+    },
+    {
+      "center": {
+        "x": 6839.01298129718,
+        "y": 618.8921434667801
+      },
+      "clock": 57.01666666666471,
+      "kind": "turn-camera-arrived",
+      "liveId": 2,
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "tracking": 1,
+      "turn": 2
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 57.01666666666471,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 86,
+      "turn": 2
+    },
+    {
+      "clock": 57.01666666666471,
+      "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "kind": "turn",
+      "name": "M12P Pan Beta",
+      "turn": 2
+    },
+    {
+      "clock": 57.01666666666471,
+      "control": "cpu",
+      "kind": "flip-upright",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "pose": {
+        "alive": true,
+        "angle": -0.5354126691818237,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": "terra-cascade-institute",
+        "health": 24.218711758790292,
+        "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M12P Pan Beta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 0,
+        "x": 6839.5,
+        "y": 619.3834228515625
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 2
+    },
+    {
+      "budgetRemaining": 75,
+      "clock": 59.48333333333124,
+      "item": "napalm",
+      "kind": "cpu-decision",
+      "memory": 0,
+      "persona": "domino",
+      "risk": 0.35,
+      "skill": "expert",
+      "skipped": [
+        {
+          "item": "escape-charge",
+          "reason": "local-terrain-tactic"
+        }
+      ],
+      "tactic": "High arc over obstruction",
+      "target": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "trials": [
+        {
+          "goal": "tank",
+          "obstruction": null,
+          "reason": "clear",
+          "target": "M12P Pan Alpha",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "napalm",
+          "work": {
+            "candidates": 21,
+            "cells": 634489,
+            "chunks": 141,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 160274
+          }
+        }
+      ],
+      "turn": 2
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 59.499999999997904,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 89,
+      "turn": 2
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 59.499999999997904,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 92,
+      "turn": 2
+    },
+    {
+      "angle": 150.78031664702576,
+      "clock": 59.499999999997904,
+      "kind": "cpu-aimed",
+      "name": "M12P Pan Beta",
+      "origin": {
+        "x": 6839.5,
+        "y": 619.554931640625
+      },
+      "plan": {
+        "candidates": [
+          {
+            "angle": -1.7938549317329378,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 3.3333333333333264,
+              "x": 6011.5,
+              "y": 594.5
+            },
+            "power": 0.5939129643840715,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -1.8462148092927675,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 2.9857843137254845,
+              "x": 6010.5,
+              "y": 594.5
+            },
+            "power": 0.5335219722939655,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -1.8985746868525977,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 2.7192708333333284,
+              "x": 6010.5,
+              "y": 594.5
+            },
+            "power": 0.48944606601726265,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -1.9509345644124276,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 2.504999999999996,
+              "x": 6011.5,
+              "y": 594.5
+            },
+            "power": 0.45609120808076115,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.003294441972258,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 2.3267857142857107,
+              "x": 6011.5,
+              "y": 594.5
+            },
+            "power": 0.4303096418036148,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.055654319532087,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 2.173456790123454,
+              "x": 6013.5,
+              "y": 594.5
+            },
+            "power": 0.4101680402411148,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.1080141970919173,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 2.0391025641025617,
+              "x": 6015.5,
+              "y": 594.5
+            },
+            "power": 0.3944514875067398,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.160374074651747,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 1.921153846153844,
+              "x": 6016.5,
+              "y": 594.5
+            },
+            "power": 0.3823512677801773,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.212733952211577,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 1.8179999999999985,
+              "x": 6016.5,
+              "y": 596.5
+            },
+            "power": 0.3732875470770523,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.265093829771407,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 1.719333333333332,
+              "x": 6018.5,
+              "y": 600.5
+            },
+            "power": 0.3668941144598648,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.3174537073312367,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 1.629999999999999,
+              "x": 6019.5,
+              "y": 600.5
+            },
+            "power": 0.3629573468817398,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.369813584891067,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 1.5479166666666662,
+              "x": 6019.5,
+              "y": 602.5
+            },
+            "power": 0.3613093976629898,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.4221734624508966,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 1.4699999999999998,
+              "x": 6019.5,
+              "y": 605.5
+            },
+            "power": 0.3619502668036148,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.4745333400107263,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 1.396,
+              "x": 6019.5,
+              "y": 608.5
+            },
+            "power": 0.3648799543036148,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.526893217570556,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 1.3240000000000005,
+              "x": 6019.5,
+              "y": 611.5
+            },
+            "power": 0.3702357892645523,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.5792530951303863,
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 1.2532051282051286,
+              "x": 6019.5,
+              "y": 614.5
+            },
+            "power": 0.3782466535223648,
+            "reason": "obstructed"
+          },
+          {
+            "angle": -2.631612972690216,
+            "obstruction": null,
+            "power": 0.3892940168036148,
+            "reason": "clear"
+          }
+        ],
+        "obstruction": null,
+        "reason": "clear",
+        "solution": {
+          "angle": -2.631612972690216,
+          "childImpacts": "not-planned",
+          "coverage": "impact",
+          "end": {
+            "x": 6007.781373487676,
+            "y": 626.715147146336
+          },
+          "origin": {
+            "x": 6808.080840635629,
+            "y": 601.8093141582668
+          },
+          "path": [
+            {
+              "x": 6808.080840635629,
+              "y": 601.8093141582668
+            },
+            {
+              "x": 6796.999771090504,
+              "y": 595.7241641534863
+            },
+            {
+              "x": 6785.918701545378,
+              "y": 589.8195697042613
+            },
+            {
+              "x": 6774.837632000253,
+              "y": 584.0955308105919
+            },
+            {
+              "x": 6763.756562455127,
+              "y": 578.552047472478
+            },
+            {
+              "x": 6752.675492910002,
+              "y": 573.1891196899196
+            },
+            {
+              "x": 6741.594423364876,
+              "y": 568.0067474629168
+            },
+            {
+              "x": 6730.513353819751,
+              "y": 563.0049307914695
+            },
+            {
+              "x": 6719.432284274625,
+              "y": 558.1836696755778
+            },
+            {
+              "x": 6708.3512147295,
+              "y": 553.5429641152416
+            },
+            {
+              "x": 6697.270145184374,
+              "y": 549.0828141104611
+            },
+            {
+              "x": 6686.189075639249,
+              "y": 544.8032196612361
+            },
+            {
+              "x": 6675.108006094123,
+              "y": 540.7041807675666
+            },
+            {
+              "x": 6664.026936548998,
+              "y": 536.7856974294527
+            },
+            {
+              "x": 6652.945867003872,
+              "y": 533.0477696468944
+            },
+            {
+              "x": 6641.864797458747,
+              "y": 529.4903974198916
+            },
+            {
+              "x": 6630.783727913621,
+              "y": 526.1135807484443
+            },
+            {
+              "x": 6619.702658368496,
+              "y": 522.9173196325526
+            },
+            {
+              "x": 6608.62158882337,
+              "y": 519.9016140722164
+            },
+            {
+              "x": 6597.540519278245,
+              "y": 517.0664640674358
+            },
+            {
+              "x": 6586.459449733119,
+              "y": 514.4118696182109
+            },
+            {
+              "x": 6575.378380187994,
+              "y": 511.9378307245414
+            },
+            {
+              "x": 6564.297310642868,
+              "y": 509.6443473864275
+            },
+            {
+              "x": 6553.216241097743,
+              "y": 507.5314196038691
+            },
+            {
+              "x": 6542.135171552617,
+              "y": 505.59904737686634
+            },
+            {
+              "x": 6531.054102007492,
+              "y": 503.84723070541907
+            },
+            {
+              "x": 6519.973032462366,
+              "y": 502.2759695895274
+            },
+            {
+              "x": 6508.891962917241,
+              "y": 500.88526402919126
+            },
+            {
+              "x": 6497.810893372115,
+              "y": 499.6751140244107
+            },
+            {
+              "x": 6486.72982382699,
+              "y": 498.6455195751856
+            },
+            {
+              "x": 6475.648754281864,
+              "y": 497.7964806815162
+            },
+            {
+              "x": 6464.567684736739,
+              "y": 497.1279973434023
+            },
+            {
+              "x": 6453.486615191613,
+              "y": 496.6400695608439
+            },
+            {
+              "x": 6442.405545646488,
+              "y": 496.3326973338411
+            },
+            {
+              "x": 6431.324476101362,
+              "y": 496.20588066239384
+            },
+            {
+              "x": 6420.243406556237,
+              "y": 496.25961954650217
+            },
+            {
+              "x": 6409.162337011111,
+              "y": 496.4939139861661
+            },
+            {
+              "x": 6398.081267465986,
+              "y": 496.90876398138545
+            },
+            {
+              "x": 6387.00019792086,
+              "y": 497.5041695321604
+            },
+            {
+              "x": 6375.9191283757345,
+              "y": 498.28013063849096
+            },
+            {
+              "x": 6364.838058830609,
+              "y": 499.23664730037706
+            },
+            {
+              "x": 6353.7569892854835,
+              "y": 500.3737195178187
+            },
+            {
+              "x": 6342.675919740358,
+              "y": 501.6913472908159
+            },
+            {
+              "x": 6331.5948501952325,
+              "y": 503.1895306193686
+            },
+            {
+              "x": 6320.513780650107,
+              "y": 504.86826950347694
+            },
+            {
+              "x": 6309.4327111049815,
+              "y": 506.7275639431408
+            },
+            {
+              "x": 6298.351641559856,
+              "y": 508.7674139383602
+            },
+            {
+              "x": 6287.2705720147305,
+              "y": 510.9878194891352
+            },
+            {
+              "x": 6276.189502469605,
+              "y": 513.3887805954657
+            },
+            {
+              "x": 6265.1084329244795,
+              "y": 515.9702972573518
+            },
+            {
+              "x": 6254.027363379354,
+              "y": 518.7323694747935
+            },
+            {
+              "x": 6242.9462938342285,
+              "y": 521.6749972477907
+            },
+            {
+              "x": 6231.865224289103,
+              "y": 524.7981805763434
+            },
+            {
+              "x": 6220.7841547439775,
+              "y": 528.1019194604517
+            },
+            {
+              "x": 6209.703085198852,
+              "y": 531.5862139001155
+            },
+            {
+              "x": 6198.6220156537265,
+              "y": 535.2510638953349
+            },
+            {
+              "x": 6187.540946108601,
+              "y": 539.09646944611
+            },
+            {
+              "x": 6176.4598765634755,
+              "y": 543.1224305524405
+            },
+            {
+              "x": 6165.37880701835,
+              "y": 547.3289472143266
+            },
+            {
+              "x": 6154.2977374732245,
+              "y": 551.7160194317682
+            },
+            {
+              "x": 6143.216667928099,
+              "y": 556.2836472047654
+            },
+            {
+              "x": 6132.1355983829735,
+              "y": 561.0318305333182
+            },
+            {
+              "x": 6121.054528837848,
+              "y": 565.9605694174264
+            },
+            {
+              "x": 6109.9734592927225,
+              "y": 571.0698638570902
+            },
+            {
+              "x": 6098.892389747597,
+              "y": 576.3597138523097
+            },
+            {
+              "x": 6087.8113202024715,
+              "y": 581.8301194030847
+            },
+            {
+              "x": 6076.730250657346,
+              "y": 587.4810805094153
+            },
+            {
+              "x": 6065.6491811122205,
+              "y": 593.3125971713014
+            },
+            {
+              "x": 6054.568111567095,
+              "y": 599.324669388743
+            },
+            {
+              "x": 6043.4870420219695,
+              "y": 605.5172971617402
+            },
+            {
+              "x": 6032.405972476844,
+              "y": 611.8904804902929
+            },
+            {
+              "x": 6021.3249029317185,
+              "y": 618.4442193744012
+            },
+            {
+              "x": 6010.243833386593,
+              "y": 625.178513814065
+            },
+            {
+              "x": 6007.781373487676,
+              "y": 626.715147146336
+            }
+          ],
+          "power": 0.3892940168036148,
+          "speed": 761.7998285661452,
+          "time": 1.2037037037037044,
+          "velocity": {
+            "x": -664.8641727075119,
+            "y": -371.8798336201681
+          }
+        },
+        "status": "clear",
+        "warnings": [
+          "evolving-air-fields-not-predicted"
+        ],
+        "work": {
+          "candidates": 21,
+          "cells": 634489,
+          "chunks": 141,
+          "geometry": {
+            "catalogRows": 0,
+            "chunks": 1,
+            "colliders": 1,
+            "records": 0
+          },
+          "steps": 160274
+        }
+      },
+      "power": 38.92940168036148,
+      "tactic": "High arc over obstruction",
+      "target": {
+        "bodyId": null,
+        "entityId": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+        "x": 5999.4580078125,
+        "y": 643.2876586914062
+      },
+      "turn": 2,
+      "weapon": {
+        "ammo": {
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 0,
+          "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+          "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+          "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+          "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 0,
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+          "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+          "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+          "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+          "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+          "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+          "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 3,
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+          "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+          "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+          "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+          "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+        },
+        "angle": -2.631612972690216,
+        "equipped": "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+        "gravityScale": 1,
+        "items": [
+          "219d46ea-fa7c-4578-b119-bba07279e6f0",
+          "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+          "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+          "9dd9a83c-66b3-4720-a798-b7ce47372022",
+          "fa168217-924a-4b95-b7f2-025d856f5b88",
+          "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+          "70446b65-1a75-4950-840a-443f28dc58a6",
+          "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+          "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+          "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+          "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+          "2ee512d3-c721-4978-a1a5-b97d42255b13",
+          "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+          "a80f054a-6235-4746-b050-8d5cd248dd57",
+          "b4474e78-1c10-4d79-994d-d900ed050664",
+          "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+          "173004dc-1907-43e3-9e01-10f4b7084523",
+          "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+          "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+          "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+          "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+          "1a4d56f6-0058-471f-a4bf-77548338012c",
+          "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+          "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+          "e1a46386-8976-4b3c-9408-0159b3f64235",
+          "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+          "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+          "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+          "2e0a754f-eb50-487b-b90a-907a3a43159a",
+          "780f5cdb-7252-4a69-987b-b908477015ad",
+          "815021a5-49a0-4790-91dd-b5b61a3c5050",
+          "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+          "bb0da974-5d0f-4644-a6da-278758d07d9f",
+          "9cb680d4-3edf-451b-81da-ebbb514808bb",
+          "e3a20e82-7e11-4ef9-bce2-903255ebb4dc",
+          "78ea7cb7-a3be-435a-be9f-5766f5f97a81"
+        ],
+        "kind": "rigid-body",
+        "localAngle": -2.1295336646572265,
+        "pinned": true,
+        "power": 0.3892940168036148,
+        "speed": {
+          "current": 761.7998285661452,
+          "max": 1800,
+          "min": 100
+        }
+      }
+    },
+    {
+      "clock": 60.93333333333115,
+      "kind": "presentation-centering",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "speechKind": "shooting",
+      "turn": 2
+    },
+    {
+      "center": {
+        "x": 6839.499999999989,
+        "y": 619.5502996019677
+      },
+      "clock": 60.93333333333115,
+      "kind": "presentation-centered",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "ready": true,
+      "speechKind": "shooting",
+      "tracking": 1,
+      "turn": 2,
+      "x": 6839.5,
+      "y": 619.5496826171875
+    },
+    {
+      "clock": 60.93333333333115,
+      "id": "[\"terra-cascade-institute\",null,\"taunt\",\"neutral\",\"The prop department has made an error.\"]",
+      "kind": "quip",
+      "name": "M12P Pan Beta",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "speechKind": "shooting",
+      "text": "The prop department has made an error.",
+      "turn": 2
+    },
+    {
+      "clock": 63.94999999999765,
+      "elapsed": 3.016666666666495,
+      "kind": "presentation-ended",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "speechKind": "shooting",
+      "turn": 2
+    },
+    {
+      "actualEquipped": "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+      "angle": 150.78031664702576,
+      "clock": 63.94999999999765,
+      "item": "napalm",
+      "kind": "fire-request",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "power": 38.92940168036148,
+      "stock": 3,
+      "template": "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+      "turn": 2
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 63.94999999999765,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 112,
+      "turn": 2
+    },
+    {
+      "clock": 63.94999999999765,
+      "item": "napalm",
+      "kind": "ammo-spent",
+      "name": "M12P Pan Beta",
+      "remaining": 2,
+      "template": "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+      "turn": 2
+    },
+    {
+      "action": "accepted-cast",
+      "clock": 63.94999999999765,
+      "item": "napalm",
+      "kind": "cpu-progress",
+      "name": "M12P Pan Beta",
+      "previousPasses": 0,
+      "projectileId": 2,
+      "template": "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+      "turn": 2
+    },
+    {
+      "clock": 63.94999999999765,
+      "depth": 0,
+      "id": 2,
+      "kind": "launch",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 2,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+        "vx": -664.8641967773438,
+        "vy": -371.87982177734375,
+        "x": 6807.5,
+        "y": 601.5
+      },
+      "template": "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+      "turn": 2,
+      "weapon": "napalm"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 65.16666666666426,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 127,
+      "turn": 2
+    },
+    {
+      "clock": 65.16666666666426,
+      "id": 2,
+      "kind": "collision",
+      "turn": 2,
+      "with": "body",
+      "x": 6012.01708984375,
+      "y": 630.1610717773438
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 65.16666666666426,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 147,
+      "turn": 2
+    },
+    {
+      "action": "damage",
+      "amount": 21,
+      "clock": 65.16666666666426,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 168,
+      "turn": 2
+    },
+    {
+      "action": "hurt",
+      "amount": 7,
+      "clock": 65.16666666666426,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 305,
+      "turn": 2
+    },
+    {
+      "amount": 6.853422926195134,
+      "clock": 65.16666666666426,
+      "direct": true,
+      "killed": false,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "projectileId": 2,
+      "targetEntityId": 0,
+      "targetStableId": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "turn": 2
+    },
+    {
+      "clock": 65.16666666666426,
+      "damageBefore": 0,
+      "dx": 12.55908203125,
+      "dy": -13.126708984375,
+      "impact": {
+        "x": 6012.01708984375,
+        "y": 630.1610717773438
+      },
+      "kind": "cpu-observation",
+      "origin": {
+        "x": 6839.5,
+        "y": 619.71923828125
+      },
+      "power": 38.92940168036148,
+      "reason": "detonated",
+      "target": {
+        "x": 5999.4580078125,
+        "y": 643.2877807617188
+      },
+      "targetId": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "turn": 2,
+      "weapon": "napalm"
+    },
+    {
+      "clock": 65.16666666666426,
+      "id": 2,
+      "kind": "end",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "reason": "detonated",
+      "shooterResidency": "live",
+      "turn": 2,
+      "x": 6012.01708984375,
+      "y": 630.1610717773438
+    },
+    {
+      "clock": 66.23333333333086,
+      "element": "CRUDE_OIL",
+      "kind": "material-payload",
+      "receipt": {
+        "accepted": 6288,
+        "added": 6288,
+        "evaluated": 9216,
+        "id": 1,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 944,
+        "status": "completed",
+        "work": 6288
+      },
+      "turn": 2,
+      "weapon": "napalm",
+      "x": 6012,
+      "y": 606
+    },
+    {
+      "clock": 66.51666666666418,
+      "kind": "payload-ignited",
+      "receipt": {
+        "accepted": 64,
+        "added": 64,
+        "evaluated": 64,
+        "id": 2,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 64
+      },
+      "turn": 2,
+      "weapon": "napalm"
+    },
+    {
+      "clock": 66.53333333333084,
+      "ended": 1,
+      "kind": "attack-resolved",
+      "launched": 1,
+      "turn": 2,
+      "weapon": "napalm"
+    },
+    {
+      "clock": 69.51666666666401,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 5820.01708984375,
+        "y": 502.16107177734375
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 2,
+      "watchId": 2
+    },
+    {
+      "clock": 69.51666666666401,
+      "color": "#35D9FF",
+      "eyebrow": "TURN 2 COMPLETE",
+      "id": 5,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "0 kills (+0) \u00b7 Turn cash +$92.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M12P Pan Beta",
+      "turn": 2
+    },
+    {
+      "clock": 70.01666666666398,
+      "elapsed": 1.000000000000001,
+      "id": 5,
+      "kind": "arcade-ended",
+      "turn": 2
+    },
+    {
+      "center": {
+        "x": 6007.317280523402,
+        "y": 635.0732504994319
+      },
+      "clock": 70.09999999999731,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "tracking": 1,
+      "turn": 3
+    },
+    {
+      "clock": 70.09999999999731,
+      "color": "#EC4787",
+      "eyebrow": "TURN 3 / COMMAND CARTRIDGE",
+      "id": 6,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Heavy Weather \u00b7 expert",
+      "title": "M12P Pan Alpha",
+      "turn": 3
+    },
+    {
+      "clock": 70.59999999999728,
+      "elapsed": 1.000000000000001,
+      "id": 6,
+      "kind": "arcade-ended",
+      "turn": 3
+    },
+    {
+      "center": {
+        "x": 5999.7857954714145,
+        "y": 642.9450593530611
+      },
+      "clock": 70.59999999999728,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "tracking": 1,
+      "turn": 3
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 70.59999999999728,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 315,
+      "turn": 3
+    },
+    {
+      "clock": 70.59999999999728,
+      "id": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "kind": "turn",
+      "name": "M12P Pan Alpha",
+      "turn": 3
+    },
+    {
+      "clock": 74.78333333333038,
+      "kind": "cpu-decision-refused",
+      "name": "M12P Pan Alpha",
+      "skipped": [
+        {
+          "item": "escape-charge",
+          "reason": "local-terrain-tactic"
+        }
+      ],
+      "trials": [
+        {
+          "goal": "tank",
+          "obstruction": {
+            "bodyId": 2,
+            "kind": "body",
+            "time": 2.9469696969696915,
+            "x": 6842.5,
+            "y": 560.5
+          },
+          "reason": "material-drag-not-supported",
+          "target": "M12P Pan Beta",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "heavy",
+          "work": {
+            "candidates": 29,
+            "cells": 143171,
+            "chunks": 127,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 171196
+          }
+        },
+        {
+          "goal": "tank",
+          "obstruction": null,
+          "reason": "cancelled-or-owner-moved",
+          "target": "M12P Pan Beta",
+          "warnings": [],
+          "weapon": "standard",
+          "work": {
+            "candidates": 0,
+            "cells": 0,
+            "chunks": 0,
+            "steps": 0
+          }
+        }
+      ],
+      "turn": 3
+    },
+    {
+      "clock": 74.78333333333038,
+      "count": 1,
+      "decision": {
+        "budgetRemaining": 66,
+        "skipped": [
+          {
+            "item": "escape-charge",
+            "reason": "local-terrain-tactic"
+          }
+        ],
+        "status": "refused",
+        "trials": [
+          {
+            "goal": "tank",
+            "obstruction": {
+              "bodyId": 2,
+              "kind": "body",
+              "time": 2.9469696969696915,
+              "x": 6842.5,
+              "y": 560.5
+            },
+            "reason": "material-drag-not-supported",
+            "target": "M12P Pan Beta",
+            "warnings": [
+              "evolving-air-fields-not-predicted"
+            ],
+            "weapon": "heavy",
+            "work": {
+              "candidates": 29,
+              "cells": 143171,
+              "chunks": 127,
+              "geometry": {
+                "catalogRows": 0,
+                "chunks": 1,
+                "colliders": 1,
+                "records": 0
+              },
+              "steps": 171196
+            }
+          },
+          {
+            "goal": "tank",
+            "obstruction": null,
+            "reason": "cancelled-or-owner-moved",
+            "target": "M12P Pan Beta",
+            "warnings": [],
+            "weapon": "standard",
+            "work": {
+              "candidates": 0,
+              "cells": 0,
+              "chunks": 0,
+              "steps": 0
+            }
+          }
+        ],
+        "turn": 3
+      },
+      "kind": "cpu-pass",
+      "limit": 2,
+      "name": "M12P Pan Alpha",
+      "reason": "No supported clear shot after bounded movement, escape and demolition alternatives",
+      "turn": 3
+    },
+    {
+      "action": "pass",
+      "amount": 10,
+      "clock": 74.78333333333038,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 325,
+      "turn": 3
+    },
+    {
+      "clock": 74.78333333333038,
+      "color": "#EC4787",
+      "eyebrow": "TURN 3 COMPLETE",
+      "id": 7,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "0 kills (+0) \u00b7 Turn cash +$20.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M12P Pan Alpha",
+      "turn": 3
+    },
+    {
+      "clock": 75.28333333333035,
+      "elapsed": 1.000000000000001,
+      "id": 7,
+      "kind": "arcade-ended",
+      "turn": 3
+    },
+    {
+      "center": {
+        "x": 6828.31404162826,
+        "y": 620.6891575300881
+      },
+      "clock": 75.98333333333031,
+      "kind": "turn-camera-arrived",
+      "liveId": 2,
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "tracking": 1,
+      "turn": 4
+    },
+    {
+      "clock": 75.98333333333031,
+      "color": "#35D9FF",
+      "eyebrow": "TURN 4 / COMMAND CARTRIDGE",
+      "id": 8,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Cascade Institute \u00b7 expert",
+      "title": "M12P Pan Beta",
+      "turn": 4
+    },
+    {
+      "clock": 76.48333333333028,
+      "elapsed": 1.000000000000001,
+      "id": 8,
+      "kind": "arcade-ended",
+      "turn": 4
+    },
+    {
+      "center": {
+        "x": 6839.033465850813,
+        "y": 620.4084726277978
+      },
+      "clock": 76.48333333333028,
+      "kind": "turn-camera-arrived",
+      "liveId": 2,
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "tracking": 1,
+      "turn": 4
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 76.48333333333028,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 178,
+      "turn": 4
+    },
+    {
+      "clock": 76.48333333333028,
+      "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "kind": "turn",
+      "name": "M12P Pan Beta",
+      "turn": 4
+    },
+    {
+      "clock": 76.48333333333028,
+      "control": "cpu",
+      "kind": "flip-upright",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "pose": {
+        "alive": true,
+        "angle": -0.5354126691818237,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": "terra-cascade-institute",
+        "health": 24.218711758790292,
+        "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M12P Pan Beta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 0,
+        "x": 6839.5,
+        "y": 620.395751953125
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 4
+    },
+    {
+      "clock": 80.7499999999967,
+      "kind": "cpu-decision-refused",
+      "name": "M12P Pan Beta",
+      "skipped": [
+        {
+          "item": "escape-charge",
+          "reason": "local-terrain-tactic"
+        }
+      ],
+      "trials": [
+        {
+          "goal": "tank",
+          "obstruction": {
+            "element": 17,
+            "kind": "unknown",
+            "reason": "material-drag-not-supported",
+            "time": 1.5406666666666662,
+            "x": 6023.5,
+            "y": 612.5
+          },
+          "reason": "material-drag-not-supported",
+          "target": "M12P Pan Alpha",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "napalm",
+          "work": {
+            "candidates": 29,
+            "cells": 739837,
+            "chunks": 129,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 172185
+          }
+        },
+        {
+          "goal": "tank",
+          "obstruction": {
+            "element": 17,
+            "kind": "unknown",
+            "reason": "material-drag-not-supported",
+            "time": 1.6866666666666656,
+            "x": 6023.5,
+            "y": 613.5
+          },
+          "reason": "cell-budget",
+          "target": "M12P Pan Alpha",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "standard",
+          "work": {
+            "candidates": 41,
+            "cells": 1000001,
+            "chunks": 121,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 265978
+          }
+        }
+      ],
+      "turn": 4
+    },
+    {
+      "clock": 80.7499999999967,
+      "count": 1,
+      "decision": {
+        "budgetRemaining": 26,
+        "skipped": [
+          {
+            "item": "escape-charge",
+            "reason": "local-terrain-tactic"
+          }
+        ],
+        "status": "refused",
+        "trials": [
+          {
+            "goal": "tank",
+            "obstruction": {
+              "element": 17,
+              "kind": "unknown",
+              "reason": "material-drag-not-supported",
+              "time": 1.5406666666666662,
+              "x": 6023.5,
+              "y": 612.5
+            },
+            "reason": "material-drag-not-supported",
+            "target": "M12P Pan Alpha",
+            "warnings": [
+              "evolving-air-fields-not-predicted"
+            ],
+            "weapon": "napalm",
+            "work": {
+              "candidates": 29,
+              "cells": 739837,
+              "chunks": 129,
+              "geometry": {
+                "catalogRows": 0,
+                "chunks": 1,
+                "colliders": 1,
+                "records": 0
+              },
+              "steps": 172185
+            }
+          },
+          {
+            "goal": "tank",
+            "obstruction": {
+              "element": 17,
+              "kind": "unknown",
+              "reason": "material-drag-not-supported",
+              "time": 1.6866666666666656,
+              "x": 6023.5,
+              "y": 613.5
+            },
+            "reason": "cell-budget",
+            "target": "M12P Pan Alpha",
+            "warnings": [
+              "evolving-air-fields-not-predicted"
+            ],
+            "weapon": "standard",
+            "work": {
+              "candidates": 41,
+              "cells": 1000001,
+              "chunks": 121,
+              "geometry": {
+                "catalogRows": 0,
+                "chunks": 1,
+                "colliders": 1,
+                "records": 0
+              },
+              "steps": 265978
+            }
+          }
+        ],
+        "turn": 4
+      },
+      "kind": "cpu-pass",
+      "limit": 2,
+      "name": "M12P Pan Beta",
+      "reason": "No supported clear shot after bounded movement, escape and demolition alternatives",
+      "turn": 4
+    },
+    {
+      "action": "pass",
+      "amount": 10,
+      "clock": 80.7499999999967,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 188,
+      "turn": 4
+    },
+    {
+      "clock": 80.7499999999967,
+      "color": "#35D9FF",
+      "eyebrow": "TURN 4 COMPLETE",
+      "id": 9,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "0 kills (+0) \u00b7 Turn cash +$20.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M12P Pan Beta",
+      "turn": 4
+    },
+    {
+      "clock": 81.24999999999667,
+      "elapsed": 1.000000000000001,
+      "id": 9,
+      "kind": "arcade-ended",
+      "turn": 4
+    },
+    {
+      "center": {
+        "x": 6010.606829600165,
+        "y": 641.7742874327081
+      },
+      "clock": 81.94999999999663,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "tracking": 1,
+      "turn": 5
+    },
+    {
+      "clock": 81.94999999999663,
+      "color": "#EC4787",
+      "eyebrow": "TURN 5 / COMMAND CARTRIDGE",
+      "id": 10,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Heavy Weather \u00b7 expert",
+      "title": "M12P Pan Alpha",
+      "turn": 5
+    },
+    {
+      "clock": 82.4499999999966,
+      "elapsed": 1.000000000000001,
+      "id": 10,
+      "kind": "arcade-ended",
+      "turn": 5
+    },
+    {
+      "center": {
+        "x": 5999.8869635354295,
+        "y": 642.0186517684842
+      },
+      "clock": 82.4499999999966,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "tracking": 1,
+      "turn": 5
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 82.4499999999966,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 335,
+      "turn": 5
+    },
+    {
+      "clock": 82.4499999999966,
+      "id": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "kind": "turn",
+      "name": "M12P Pan Alpha",
+      "turn": 5
+    },
+    {
+      "clock": 85.16666666666312,
+      "kind": "cpu-decision-refused",
+      "name": "M12P Pan Alpha",
+      "skipped": [
+        {
+          "item": "escape-charge",
+          "reason": "local-terrain-tactic"
+        }
+      ],
+      "trials": [
+        {
+          "goal": "tank",
+          "obstruction": {
+            "bodyId": 2,
+            "kind": "body",
+            "time": 1.67986111111111,
+            "x": 6820.5,
+            "y": 581.5
+          },
+          "reason": "material-drag-not-supported",
+          "target": "M12P Pan Beta",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "heavy",
+          "work": {
+            "candidates": 29,
+            "cells": 182529,
+            "chunks": 148,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 171382
+          }
+        },
+        {
+          "goal": "tank",
+          "obstruction": null,
+          "reason": "cancelled-or-owner-moved",
+          "target": "M12P Pan Beta",
+          "warnings": [],
+          "weapon": "standard",
+          "work": {
+            "candidates": 0,
+            "cells": 0,
+            "chunks": 0,
+            "steps": 0
+          }
+        }
+      ],
+      "turn": 5
+    },
+    {
+      "clock": 85.16666666666312,
+      "count": 2,
+      "decision": {
+        "budgetRemaining": 66,
+        "skipped": [
+          {
+            "item": "escape-charge",
+            "reason": "local-terrain-tactic"
+          }
+        ],
+        "status": "refused",
+        "trials": [
+          {
+            "goal": "tank",
+            "obstruction": {
+              "bodyId": 2,
+              "kind": "body",
+              "time": 1.67986111111111,
+              "x": 6820.5,
+              "y": 581.5
+            },
+            "reason": "material-drag-not-supported",
+            "target": "M12P Pan Beta",
+            "warnings": [
+              "evolving-air-fields-not-predicted"
+            ],
+            "weapon": "heavy",
+            "work": {
+              "candidates": 29,
+              "cells": 182529,
+              "chunks": 148,
+              "geometry": {
+                "catalogRows": 0,
+                "chunks": 1,
+                "colliders": 1,
+                "records": 0
+              },
+              "steps": 171382
+            }
+          },
+          {
+            "goal": "tank",
+            "obstruction": null,
+            "reason": "cancelled-or-owner-moved",
+            "target": "M12P Pan Beta",
+            "warnings": [],
+            "weapon": "standard",
+            "work": {
+              "candidates": 0,
+              "cells": 0,
+              "chunks": 0,
+              "steps": 0
+            }
+          }
+        ],
+        "turn": 5
+      },
+      "kind": "cpu-pass",
+      "limit": 2,
+      "name": "M12P Pan Alpha",
+      "reason": "No supported clear shot after bounded movement, escape and demolition alternatives",
+      "turn": 5
+    },
+    {
+      "action": "pass",
+      "amount": 10,
+      "clock": 85.16666666666312,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 345,
+      "turn": 5
+    },
+    {
+      "clock": 85.16666666666312,
+      "color": "#EC4787",
+      "eyebrow": "TURN 5 COMPLETE",
+      "id": 11,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "0 kills (+0) \u00b7 Turn cash +$20.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M12P Pan Alpha",
+      "turn": 5
+    },
+    {
+      "clock": 85.66666666666309,
+      "elapsed": 1.000000000000001,
+      "id": 11,
+      "kind": "arcade-ended",
+      "turn": 5
+    },
+    {
+      "center": {
+        "x": 6828.31357622594,
+        "y": 623.2996729089451
+      },
+      "clock": 86.36666666666305,
+      "kind": "turn-camera-arrived",
+      "liveId": 2,
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "tracking": 1,
+      "turn": 6
+    },
+    {
+      "clock": 86.36666666666305,
+      "color": "#35D9FF",
+      "eyebrow": "TURN 6 / COMMAND CARTRIDGE",
+      "id": 12,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Cascade Institute \u00b7 expert",
+      "title": "M12P Pan Beta",
+      "turn": 6
+    },
+    {
+      "clock": 86.86666666666302,
+      "elapsed": 1.000000000000001,
+      "id": 12,
+      "kind": "arcade-ended",
+      "turn": 6
+    },
+    {
+      "center": {
+        "x": 6839.033446440222,
+        "y": 623.0498461425351
+      },
+      "clock": 86.86666666666302,
+      "kind": "turn-camera-arrived",
+      "liveId": 2,
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "tracking": 1,
+      "turn": 6
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 86.86666666666302,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 198,
+      "turn": 6
+    },
+    {
+      "clock": 86.86666666666302,
+      "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "kind": "turn",
+      "name": "M12P Pan Beta",
+      "turn": 6
+    },
+    {
+      "clock": 92.79999999999602,
+      "kind": "cpu-decision-refused",
+      "name": "M12P Pan Beta",
+      "skipped": [
+        {
+          "item": "escape-charge",
+          "reason": "local-terrain-tactic"
+        }
+      ],
+      "trials": [
+        {
+          "goal": "tank",
+          "obstruction": {
+            "element": 17,
+            "kind": "unknown",
+            "reason": "material-drag-not-supported",
+            "time": 1.1839506172839511,
+            "x": 6013.5,
+            "y": 623.5
+          },
+          "reason": "cell-budget",
+          "target": "M12P Pan Alpha",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "napalm",
+          "work": {
+            "candidates": 29,
+            "cells": 1000001,
+            "chunks": 232,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 172157
+          }
+        },
+        {
+          "goal": "tank",
+          "obstruction": {
+            "bodyId": 0,
+            "kind": "body",
+            "time": 1.5152777777777773,
+            "x": 6019.5,
+            "y": 605.5
+          },
+          "reason": "cell-budget",
+          "target": "M12P Pan Alpha",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "standard",
+          "work": {
+            "candidates": 25,
+            "cells": 1000001,
+            "chunks": 228,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 238564
+          }
+        }
+      ],
+      "turn": 6
+    },
+    {
+      "clock": 92.79999999999602,
+      "count": 2,
+      "decision": {
+        "budgetRemaining": 42,
+        "skipped": [
+          {
+            "item": "escape-charge",
+            "reason": "local-terrain-tactic"
+          }
+        ],
+        "status": "refused",
+        "trials": [
+          {
+            "goal": "tank",
+            "obstruction": {
+              "element": 17,
+              "kind": "unknown",
+              "reason": "material-drag-not-supported",
+              "time": 1.1839506172839511,
+              "x": 6013.5,
+              "y": 623.5
+            },
+            "reason": "cell-budget",
+            "target": "M12P Pan Alpha",
+            "warnings": [
+              "evolving-air-fields-not-predicted"
+            ],
+            "weapon": "napalm",
+            "work": {
+              "candidates": 29,
+              "cells": 1000001,
+              "chunks": 232,
+              "geometry": {
+                "catalogRows": 0,
+                "chunks": 1,
+                "colliders": 1,
+                "records": 0
+              },
+              "steps": 172157
+            }
+          },
+          {
+            "goal": "tank",
+            "obstruction": {
+              "bodyId": 0,
+              "kind": "body",
+              "time": 1.5152777777777773,
+              "x": 6019.5,
+              "y": 605.5
+            },
+            "reason": "cell-budget",
+            "target": "M12P Pan Alpha",
+            "warnings": [
+              "evolving-air-fields-not-predicted"
+            ],
+            "weapon": "standard",
+            "work": {
+              "candidates": 25,
+              "cells": 1000001,
+              "chunks": 228,
+              "geometry": {
+                "catalogRows": 0,
+                "chunks": 1,
+                "colliders": 1,
+                "records": 0
+              },
+              "steps": 238564
+            }
+          }
+        ],
+        "turn": 6
+      },
+      "kind": "cpu-pass",
+      "limit": 2,
+      "name": "M12P Pan Beta",
+      "reason": "No supported clear shot after bounded movement, escape and demolition alternatives",
+      "turn": 6
+    },
+    {
+      "action": "pass",
+      "amount": 10,
+      "clock": 92.79999999999602,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 208,
+      "turn": 6
+    },
+    {
+      "clock": 92.79999999999602,
+      "color": "#35D9FF",
+      "eyebrow": "TURN 6 COMPLETE",
+      "id": 13,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "0 kills (+0) \u00b7 Turn cash +$20.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M12P Pan Beta",
+      "turn": 6
+    },
+    {
+      "clock": 93.299999999996,
+      "elapsed": 1.000000000000001,
+      "id": 13,
+      "kind": "arcade-ended",
+      "turn": 6
+    },
+    {
+      "center": {
+        "x": 6010.606803899556,
+        "y": 642.1375314134351
+      },
+      "clock": 93.99999999999596,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "tracking": 1,
+      "turn": 7
+    },
+    {
+      "clock": 93.99999999999596,
+      "color": "#EC4787",
+      "eyebrow": "TURN 7 / COMMAND CARTRIDGE",
+      "id": 14,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Heavy Weather \u00b7 expert",
+      "title": "M12P Pan Alpha",
+      "turn": 7
+    },
+    {
+      "clock": 94.49999999999592,
+      "elapsed": 1.000000000000001,
+      "id": 14,
+      "kind": "arcade-ended",
+      "turn": 7
+    },
+    {
+      "center": {
+        "x": 5999.886962463532,
+        "y": 642.3701700567545
+      },
+      "clock": 94.49999999999592,
+      "kind": "turn-camera-arrived",
+      "liveId": 0,
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "tracking": 1,
+      "turn": 7
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 94.49999999999592,
+      "kind": "cash",
+      "name": "M12P Pan Alpha",
+      "total": 355,
+      "turn": 7
+    },
+    {
+      "clock": 94.49999999999592,
+      "id": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "kind": "turn",
+      "name": "M12P Pan Alpha",
+      "turn": 7
+    },
+    {
+      "clock": 94.49999999999592,
+      "decision": {
+        "angle": -2.8,
+        "consecutivePasses": 2,
+        "coverage": "observed-local-terrain-only",
+        "eligibleSamples": [
+          {
+            "element": "DIRT",
+            "x": 5952,
+            "y": 636
+          }
+        ],
+        "item": "escape-charge",
+        "tactic": "Free Riot Charge \u00b7 clear nearby terrain",
+        "template": "78ea7cb7-a3be-435a-be9f-5766f5f97a81",
+        "turn": 7
+      },
+      "kind": "cpu-escape-selected",
+      "name": "M12P Pan Alpha",
+      "turn": 7
+    },
+    {
+      "clock": 94.5166666666626,
+      "kind": "presentation-centering",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "speechKind": "shooting",
+      "turn": 7
+    },
+    {
+      "center": {
+        "x": 5999.863284821685,
+        "y": 642.3706629814455
+      },
+      "clock": 94.5166666666626,
+      "kind": "presentation-centered",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "ready": true,
+      "speechKind": "shooting",
+      "tracking": 1,
+      "turn": 7,
+      "x": 5999.42041015625,
+      "y": 642.3798828125
+    },
+    {
+      "clock": 94.5166666666626,
+      "id": "[\"terra-heavy-weather\",null,\"taunt\",\"neutral\",\"You can follow its progress by listening.\"]",
+      "kind": "quip",
+      "name": "M12P Pan Alpha",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "speechKind": "shooting",
+      "text": "You can follow its progress by listening.",
+      "turn": 7
+    },
+    {
+      "clock": 94.69999999999592,
+      "id": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "kind": "land",
+      "position": {
+        "x": 5999.42041015625,
+        "y": 626.4714965820312
+      },
+      "turn": 7
+    },
+    {
+      "clock": 97.53333333332908,
+      "elapsed": 3.016666666666495,
+      "kind": "presentation-ended",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "speechKind": "shooting",
+      "turn": 7
+    },
+    {
+      "actualEquipped": "78ea7cb7-a3be-435a-be9f-5766f5f97a81",
+      "angle": 160.42818263663048,
+      "clock": 97.53333333332908,
+      "item": "escape-charge",
+      "kind": "fire-request",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "power": 100,
+      "stock": "unlimited",
+      "template": "78ea7cb7-a3be-435a-be9f-5766f5f97a81",
+      "turn": 7
+    },
+    {
+      "clock": 97.53333333332908,
+      "depth": 0,
+      "id": 3,
+      "kind": "launch",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 3,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+        "vx": 0,
+        "vy": 0,
+        "x": 5980,
+        "y": 635
+      },
+      "template": "78ea7cb7-a3be-435a-be9f-5766f5f97a81",
+      "turn": 7,
+      "weapon": "escape-charge"
+    },
+    {
+      "clock": 97.5666666666624,
+      "damageBefore": 75.78128824120971,
+      "dx": -859.5,
+      "dy": 10.9564208984375,
+      "impact": {
+        "x": 5980,
+        "y": 635
+      },
+      "kind": "cpu-observation",
+      "origin": {
+        "x": 5999.42041015625,
+        "y": 642.38916015625
+      },
+      "power": 100,
+      "reason": "detonated",
+      "target": {
+        "x": 6839.5,
+        "y": 624.0435791015625
+      },
+      "targetId": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "turn": 7,
+      "weapon": "escape-charge"
+    },
+    {
+      "clock": 97.5666666666624,
+      "id": 3,
+      "kind": "end",
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "reason": "detonated",
+      "shooterResidency": "live",
+      "turn": 7,
+      "x": 5980,
+      "y": 635
+    },
+    {
+      "angle": -2.8,
+      "clock": 98.11666666666238,
+      "kind": "terrain-payload",
+      "origin": {
+        "x": 5980,
+        "y": 635
+      },
+      "owner": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "receipt": {
+        "accepted": 162,
+        "added": 162,
+        "evaluated": 1295,
+        "id": 3,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 162,
+        "skipped": 415,
+        "status": "completed",
+        "work": 261
+      },
+      "shape": {
+        "kind": "polygon",
+        "points": [
+          {
+            "x": 5980,
+            "y": 635
+          },
+          {
+            "x": 5955.87867180141,
+            "y": 607.3203770629752
+          },
+          {
+            "x": 5943.819098395797,
+            "y": 641.2403813270469
+          }
+        ]
+      },
+      "template": "78ea7cb7-a3be-435a-be9f-5766f5f97a81",
+      "turn": 7,
+      "weapon": "escape-charge"
+    },
+    {
+      "accepted": 162,
+      "action": "terrain-work",
+      "clock": 98.11666666666238,
+      "item": "escape-charge",
+      "kind": "cpu-progress",
+      "name": "M12P Pan Alpha",
+      "previousPasses": 2,
+      "turn": 7,
+      "work": 261
+    },
+    {
+      "clock": 98.13333333332903,
+      "ended": 1,
+      "kind": "attack-resolved",
+      "launched": 1,
+      "turn": 7,
+      "weapon": "escape-charge"
+    },
+    {
+      "clock": 101.1166666666622,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 5788,
+        "y": 507
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 7,
+      "watchId": 3
+    },
+    {
+      "clock": 101.1166666666622,
+      "color": "#EC4787",
+      "eyebrow": "TURN 7 COMPLETE",
+      "id": 15,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": false,
+      "receipt": true,
+      "score": "0 kills (+0) \u00b7 Turn cash +$10.00",
+      "seconds": 1,
+      "sub": "Every crater counts.",
+      "title": "M12P Pan Alpha",
+      "turn": 7
+    },
+    {
+      "clock": 101.61666666666218,
+      "elapsed": 1.000000000000001,
+      "id": 15,
+      "kind": "arcade-ended",
+      "turn": 7
+    },
+    {
+      "center": {
+        "x": 6828.027979494718,
+        "y": 624.1566422674723
+      },
+      "clock": 102.31666666666214,
+      "kind": "turn-camera-arrived",
+      "liveId": 2,
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "tracking": 1,
+      "turn": 8
+    },
+    {
+      "clock": 102.31666666666214,
+      "color": "#35D9FF",
+      "eyebrow": "TURN 8 / COMMAND CARTRIDGE",
+      "id": 16,
+      "kind": "arcade-start",
+      "long": false,
+      "radar": true,
+      "receipt": false,
+      "score": "",
+      "seconds": 1,
+      "sub": "Cascade Institute \u00b7 expert",
+      "title": "M12P Pan Beta",
+      "turn": 8
+    },
+    {
+      "clock": 102.81666666666212,
+      "elapsed": 1.000000000000001,
+      "id": 16,
+      "kind": "arcade-ended",
+      "turn": 8
+    },
+    {
+      "center": {
+        "x": 6839.021535022032,
+        "y": 624.0124133650557
+      },
+      "clock": 102.81666666666212,
+      "kind": "turn-camera-arrived",
+      "liveId": 2,
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "tracking": 1,
+      "turn": 8
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 102.81666666666212,
+      "kind": "cash",
+      "name": "M12P Pan Beta",
+      "total": 218,
+      "turn": 8
+    },
+    {
+      "clock": 102.81666666666212,
+      "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "kind": "turn",
+      "name": "M12P Pan Beta",
+      "turn": 8
+    },
+    {
+      "clock": 102.81666666666212,
+      "kind": "cpu-escape-refused",
+      "name": "M12P Pan Beta",
+      "reason": "no-observed-eligible-terrain",
+      "samples": 63,
+      "turn": 8
+    },
+    {
+      "clock": 102.81666666666212,
+      "control": "cpu",
+      "kind": "flip-upright",
+      "owner": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "pose": {
+        "alive": true,
+        "angle": -0.302079439163208,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": "terra-cascade-institute",
+        "health": 24.218711758790292,
+        "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M12P Pan Beta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 0,
+        "x": 6839.5,
+        "y": 624.005126953125
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 8
+    },
+    {
+      "clock": 104.68333333332868,
+      "kind": "cpu-decision-refused",
+      "name": "M12P Pan Beta",
+      "skipped": [
+        {
+          "item": "escape-charge",
+          "reason": "local-terrain-tactic"
+        }
+      ],
+      "trials": [
+        {
+          "goal": "tank",
+          "obstruction": {
+            "element": 17,
+            "kind": "unknown",
+            "reason": "material-drag-not-supported",
+            "time": 1.481333333333333,
+            "x": 6019.5,
+            "y": 625.5
+          },
+          "reason": "material-drag-not-supported",
+          "target": "M12P Pan Alpha",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "napalm",
+          "work": {
+            "candidates": 29,
+            "cells": 695237,
+            "chunks": 105,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 172163
+          }
+        },
+        {
+          "goal": "tank",
+          "obstruction": null,
+          "reason": "cancelled-or-owner-moved",
+          "target": "M12P Pan Alpha",
+          "warnings": [],
+          "weapon": "standard",
+          "work": {
+            "candidates": 0,
+            "cells": 0,
+            "chunks": 0,
+            "steps": 0
+          }
+        }
+      ],
+      "turn": 8
+    },
+    {
+      "clock": 104.68333333332868,
+      "count": 2,
+      "decision": {
+        "budgetRemaining": 66,
+        "skipped": [
+          {
+            "item": "escape-charge",
+            "reason": "local-terrain-tactic"
+          }
+        ],
+        "status": "refused",
+        "trials": [
+          {
+            "goal": "tank",
+            "obstruction": {
+              "element": 17,
+              "kind": "unknown",
+              "reason": "material-drag-not-supported",
+              "time": 1.481333333333333,
+              "x": 6019.5,
+              "y": 625.5
+            },
+            "reason": "material-drag-not-supported",
+            "target": "M12P Pan Alpha",
+            "warnings": [
+              "evolving-air-fields-not-predicted"
+            ],
+            "weapon": "napalm",
+            "work": {
+              "candidates": 29,
+              "cells": 695237,
+              "chunks": 105,
+              "geometry": {
+                "catalogRows": 0,
+                "chunks": 1,
+                "colliders": 1,
+                "records": 0
+              },
+              "steps": 172163
+            }
+          },
+          {
+            "goal": "tank",
+            "obstruction": null,
+            "reason": "cancelled-or-owner-moved",
+            "target": "M12P Pan Alpha",
+            "warnings": [],
+            "weapon": "standard",
+            "work": {
+              "candidates": 0,
+              "cells": 0,
+              "chunks": 0,
+              "steps": 0
+            }
+          }
+        ],
+        "turn": 8
+      },
+      "kind": "cpu-stalled",
+      "limit": 2,
+      "name": "M12P Pan Beta",
+      "position": {
+        "x": 6839.5,
+        "y": 636.916748046875
+      },
+      "reason": "No supported clear shot after bounded movement, escape and demolition alternatives",
+      "turn": 8
+    },
+    {
+      "clock": 104.68333333332868,
+      "count": 2,
+      "kind": "cpu-retry",
+      "name": "M12P Pan Beta",
+      "turn": 8
+    },
+    {
+      "clock": 104.68333333332868,
+      "kind": "cpu-escape-refused",
+      "name": "M12P Pan Beta",
+      "reason": "no-observed-eligible-terrain",
+      "samples": 63,
+      "turn": 8
+    },
+    {
+      "clock": 107.1999999999952,
+      "kind": "cpu-decision-refused",
+      "name": "M12P Pan Beta",
+      "skipped": [
+        {
+          "item": "escape-charge",
+          "reason": "local-terrain-tactic"
+        }
+      ],
+      "trials": [
+        {
+          "goal": "tank",
+          "obstruction": {
+            "element": 17,
+            "kind": "unknown",
+            "reason": "material-drag-not-supported",
+            "time": 1.2358974358974364,
+            "x": 6013.5,
+            "y": 625.5
+          },
+          "reason": "material-drag-not-supported",
+          "target": "M12P Pan Alpha",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "napalm",
+          "work": {
+            "candidates": 29,
+            "cells": 558646,
+            "chunks": 76,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 171811
+          }
+        },
+        {
+          "goal": "tank",
+          "obstruction": {
+            "element": 17,
+            "kind": "unknown",
+            "reason": "material-drag-not-supported",
+            "time": 1.2583333333333335,
+            "x": 6016.5,
+            "y": 626.5
+          },
+          "reason": "material-drag-not-supported",
+          "target": "M12P Pan Alpha",
+          "warnings": [
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "standard",
+          "work": {
+            "candidates": 43,
+            "cells": 837440,
+            "chunks": 76,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 1,
+              "colliders": 1,
+              "records": 0
+            },
+            "steps": 267602
+          }
+        }
+      ],
+      "turn": 8
+    },
+    {
+      "clock": 107.1999999999952,
+      "count": 2,
+      "decision": {
+        "budgetRemaining": 24,
+        "skipped": [
+          {
+            "item": "escape-charge",
+            "reason": "local-terrain-tactic"
+          }
+        ],
+        "status": "refused",
+        "trials": [
+          {
+            "goal": "tank",
+            "obstruction": {
+              "element": 17,
+              "kind": "unknown",
+              "reason": "material-drag-not-supported",
+              "time": 1.2358974358974364,
+              "x": 6013.5,
+              "y": 625.5
+            },
+            "reason": "material-drag-not-supported",
+            "target": "M12P Pan Alpha",
+            "warnings": [
+              "evolving-air-fields-not-predicted"
+            ],
+            "weapon": "napalm",
+            "work": {
+              "candidates": 29,
+              "cells": 558646,
+              "chunks": 76,
+              "geometry": {
+                "catalogRows": 0,
+                "chunks": 1,
+                "colliders": 1,
+                "records": 0
+              },
+              "steps": 171811
+            }
+          },
+          {
+            "goal": "tank",
+            "obstruction": {
+              "element": 17,
+              "kind": "unknown",
+              "reason": "material-drag-not-supported",
+              "time": 1.2583333333333335,
+              "x": 6016.5,
+              "y": 626.5
+            },
+            "reason": "material-drag-not-supported",
+            "target": "M12P Pan Alpha",
+            "warnings": [
+              "evolving-air-fields-not-predicted"
+            ],
+            "weapon": "standard",
+            "work": {
+              "candidates": 43,
+              "cells": 837440,
+              "chunks": 76,
+              "geometry": {
+                "catalogRows": 0,
+                "chunks": 1,
+                "colliders": 1,
+                "records": 0
+              },
+              "steps": 267602
+            }
+          }
+        ],
+        "turn": 8
+      },
+      "kind": "cpu-stalled",
+      "limit": 2,
+      "name": "M12P Pan Beta",
+      "position": {
+        "x": 6839.5,
+        "y": 637.62060546875
+      },
+      "reason": "No supported clear shot after bounded movement, escape and demolition alternatives",
+      "turn": 8
+    }
+  ],
+  "live": [
+    {
+      "health": 93.14657707380486,
+      "id": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+      "live": true,
+      "liveId": 0,
+      "position": {
+        "x": 5999.42041015625,
+        "y": 642.2667846679688
+      },
+      "residency": "live"
+    },
+    {
+      "health": 24.218711758790292,
+      "id": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+      "live": true,
+      "liveId": 2,
+      "position": {
+        "x": 6839.5,
+        "y": 637.62060546875
+      },
+      "residency": "live"
+    }
+  ],
+  "match": {
+    "attack": null,
+    "baseGeneration": {
+      "recipe": "wfc"
+    },
+    "biome": "terra-reach-v2",
+    "biomeCycle": false,
+    "biomeRounds": 1,
+    "bounds": {
+      "h": 1280,
+      "w": 12800,
+      "x": 0,
+      "y": 0
+    },
+    "cameraPolicyVersion": 1,
+    "cashNotice": "M12P Pan Beta +$10 \u00b7 turn",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 102.24999999999548,
+      "rng": 1674153828,
+      "serial": 0
+    },
+    "computers": 2,
+    "cpuSkill": "expert",
+    "details": 0,
+    "focusIndex": 1,
+    "generated": 0,
+    "generation": "wfc",
+    "generationChoice": "wfc",
+    "generationVersion": 12,
+    "humans": 0,
+    "impact": null,
+    "lastCardTurn": 7,
+    "lastHit": "M12P Pan Alpha \u22127 HP \u00b7 DIRECT HIT",
+    "livingSites": 0,
+    "message": "M12P Pan Beta is blocked. No safe shot or eligible escape terrain. Resume retries; Game menu saves.",
+    "pendingTurn": null,
+    "personaSeed": "257001",
+    "phase": "turn",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "procedural": {
+      "catalog": "procedural-m11",
+      "choices": {
+        "growth": [
+          "builtin-lightning",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "m9-planar-bramble-probe",
+          "builtin-worm-tunnels",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "builtin-creeping-vine",
+          "indigo-m9-oak",
+          "builtin-roots",
+          "builtin-meadow-grass",
+          "builtin-coral",
+          "builtin-ivy-wall",
+          "builtin-wheat",
+          "builtin-icicles",
+          "builtin-hair",
+          "builtin-flower-bed",
+          "builtin-vine-ledge",
+          "builtin-creeping-vine",
+          "indigo-m9-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-flower-bed",
+          "m9-planar-bramble-probe",
+          "builtin-living-bramble",
+          "builtin-oak-sapling",
+          "indigo-m9-oak",
+          "builtin-ivy-wall",
+          "builtin-worm-tunnels",
+          "builtin-wheat",
+          "builtin-bramble",
+          "builtin-lightning",
+          "builtin-coral",
+          "builtin-icicles",
+          "builtin-meadow-grass",
+          "builtin-hair",
+          "builtin-creeping-vine",
+          "builtin-worm-tunnels",
+          "indigo-m9-bramble",
+          "builtin-bramble",
+          "builtin-oak-sapling",
+          "builtin-ivy-wall",
+          "m9-planar-bramble-probe",
+          "builtin-icicles",
+          "builtin-coral",
+          "indigo-m9-oak",
+          "builtin-living-bramble",
+          "builtin-vine-ledge",
+          "builtin-roots",
+          "builtin-wheat"
+        ],
+        "neural": [
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four",
+          "builtin-nca-stations",
+          "builtin-nca-masonry",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-masonry",
+          "builtin-nca-stations",
+          "builtin-nca-four",
+          "builtin-nca-eight",
+          "builtin-nca-four"
+        ],
+        "neuralRecipe": [
+          "builtin-brush-keep-library",
+          "builtin-brush-research-lab",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-hellscape",
+          "builtin-brush-station-deck",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-tundra",
+          "builtin-brush-great-hall",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-hellscape",
+          "builtin-brush-coal",
+          "builtin-brush-catacombs",
+          "builtin-brush-station-deck",
+          "builtin-brush-tundra",
+          "builtin-brush-gold",
+          "builtin-brush-hellscape"
+        ],
+        "noise": [
+          "builtin-brick-6",
+          "builtin-fence-2",
+          "builtin-rusty-3",
+          "builtin-brickwood",
+          "builtin-concrete-2",
+          "builtin-panel-8",
+          "builtin-chess-1",
+          "builtin-wood-1",
+          "builtin-brick-2",
+          "builtin-steel-1",
+          "builtin-bigdoor-1",
+          "builtin-grid-2",
+          "builtin-grid-1",
+          "builtin-pillwindow",
+          "builtin-lab-5",
+          "builtin-slime-1",
+          "builtin-sludge-1",
+          "builtin-rusty-2",
+          "builtin-pipes-1",
+          "builtin-skultrim-1",
+          "builtin-fence-3",
+          "builtin-brick-1",
+          "builtin-grass-1",
+          "builtin-ooze-1",
+          "builtin-panel-5",
+          "builtin-crate-1",
+          "builtin-warn-3",
+          "builtin-wood-3",
+          "builtin-circlewindow",
+          "builtin-support-2",
+          "builtin-warn-1",
+          "builtin-door-3",
+          "builtin-light-2",
+          "builtin-crate-3",
+          "builtin-sqdoor-7",
+          "builtin-wood-2",
+          "builtin-vent-2",
+          "builtin-floor-3",
+          "builtin-metal-7",
+          "builtin-metal-6",
+          "builtin-cube-1",
+          "builtin-zinc-1",
+          "builtin-grid-6",
+          "builtin-panel-3",
+          "builtin-paper-1",
+          "builtin-cube-2",
+          "builtin-dirt-1",
+          "builtin-panel-7",
+          "builtin-rusty-1",
+          "builtin-brick2"
+        ],
+        "semantic": [
+          "builtin-brush-mossy-glade",
+          "builtin-brush-gold",
+          "builtin-brush-scorched-wasteland",
+          "builtin-brush-jungle-undergrowth",
+          "builtin-brush-hills",
+          "builtin-brush-toxic-dump",
+          "builtin-brush-power-substation",
+          "builtin-brush-keep-library",
+          "builtin-brush-glacier",
+          "builtin-brush-subway-tunnel",
+          "builtin-brush-crimson-desert",
+          "builtin-brush-charred",
+          "builtin-brush-alien-jungle",
+          "builtin-brush-engine-room",
+          "builtin-brush-rubble",
+          "builtin-brush-goblin-warren",
+          "builtin-brush-great-hall",
+          "builtin-brush-deep-mine",
+          "builtin-brush-frozen-lake",
+          "builtin-brush-alien-hive",
+          "builtin-brush-research-lab",
+          "builtin-brush-enchanted-forest",
+          "builtin-brush-derelict-station",
+          "builtin-brush-ice-moon",
+          "builtin-brush-coal",
+          "builtin-brush-tundra",
+          "builtin-brush-industrial-pipeworks",
+          "builtin-brush-sewer-tunnel",
+          "builtin-brush-haunted-wood",
+          "builtin-brush-mesa-badlands",
+          "builtin-brush-chemical-plant",
+          "builtin-brush-scrapyard",
+          "builtin-brush-catacombs",
+          "builtin-brush-dragon-graveyard",
+          "builtin-brush-ancient-ruins",
+          "builtin-brush-castle-wall",
+          "builtin-brush-spaceship-prison",
+          "builtin-brush-snowy-pines",
+          "builtin-brush-mine-shaft",
+          "builtin-brush-dunes",
+          "builtin-brush-dragon-hoard",
+          "builtin-brush-mangrove-shallows",
+          "builtin-brush-autumn-woodland",
+          "builtin-brush-red-rock-canyon",
+          "indigo-mixed-earth",
+          "builtin-brush-cliffside",
+          "builtin-brush-desecrated-chapel",
+          "builtin-brush-reactor-chamber",
+          "builtin-brush-cryo-bay",
+          "builtin-brush-ice-cave"
+        ],
+        "structureTexture": [
+          "builtin-crate-3",
+          "builtin-steel-1",
+          "builtin-tarmac-2",
+          "builtin-wood-2",
+          "builtin-concrete-8",
+          "builtin-brickwood",
+          "builtin-crate-1",
+          "builtin-concrete-7",
+          "builtin-metal-2",
+          "builtin-marble-1",
+          "builtin-metal-4",
+          "builtin-concrete-2",
+          "builtin-brick-2",
+          "builtin-metal-7",
+          "builtin-brick-1",
+          "builtin-tarmac-4",
+          "builtin-wood-3",
+          "builtin-metal-1",
+          "builtin-steel-3",
+          "builtin-steel-2",
+          "builtin-crate-2",
+          "builtin-brick-4",
+          "builtin-corrugat-1",
+          "builtin-wood-1",
+          "builtin-metal-6"
+        ],
+        "vector": [
+          "builtin:checkmark",
+          "builtin:sun",
+          "builtin:heart",
+          "builtin:arrow-up",
+          "builtin:spade",
+          "builtin:club",
+          "builtin:star-6",
+          "builtin:gear",
+          "builtin:hexagon",
+          "builtin:rounded-square",
+          "builtin:arrow-right",
+          "builtin:tree",
+          "builtin:crescent",
+          "builtin:triangle",
+          "builtin:right-triangle",
+          "builtin:octagon",
+          "builtin:chevron-right",
+          "builtin:circle",
+          "builtin:square",
+          "builtin:cross",
+          "builtin:fire",
+          "builtin:snowflake",
+          "builtin:drop",
+          "builtin:speech-bubble",
+          "builtin:shield"
+        ]
+      },
+      "completed": {},
+      "growthPolicies": {
+        "builtin-bramble": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        },
+        "builtin-coral": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.2
+        },
+        "builtin-creeping-vine": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "builtin-flower-bed": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.8
+        },
+        "builtin-hair": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "viewPlane",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 4
+        },
+        "builtin-icicles": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.7
+        },
+        "builtin-ivy-wall": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "builtin-lightning": {
+          "endTime": 0.3,
+          "flowing": false,
+          "startTubes": 1,
+          "stroke": {
+            "paintOn": "viewPlane",
+            "sizeAttribute": "lengthMax",
+            "sizeMode": "attribute",
+            "sizeReference": 3
+          },
+          "timed": true,
+          "tubesPerStep": 0.1
+        },
+        "builtin-living-bramble": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        },
+        "builtin-meadow-grass": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 3
+        },
+        "builtin-oak-sapling": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 1,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.05
+        },
+        "builtin-roots": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.2
+        },
+        "builtin-vine-ledge": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "builtin-wheat": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scatter",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 2
+        },
+        "builtin-worm-tunnels": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "viewPlane",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.3
+        },
+        "indigo-m9-bramble": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        },
+        "indigo-m9-oak": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 1,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.05
+        },
+        "m9-planar-bramble-probe": {
+          "endTime": 1000,
+          "flowing": false,
+          "startTubes": 0,
+          "stroke": {
+            "paintOn": "surface",
+            "sizeAttribute": "tubesPerStep",
+            "sizeMode": "scale",
+            "sizeReference": 3
+          },
+          "timed": false,
+          "tubesPerStep": 0.5
+        }
+      },
+      "hash": "2b6e76aee7840f8b7bd706b3fbaea1e3f783806cf0b959cc151c76b33754b36a",
+      "receipts": [],
+      "sites": [],
+      "story": {
+        "affinities": {
+          "growth": [
+            "roots",
+            "worm",
+            "living bramble",
+            "creeping vine",
+            "oak"
+          ],
+          "noise": [
+            "crate",
+            "paper",
+            "rusty",
+            "scrap",
+            "wood",
+            "dirt",
+            "sludge"
+          ],
+          "semantic": [
+            "scrapyard",
+            "toxic dump",
+            "goblin warren",
+            "mine shaft",
+            "derelict",
+            "sewer"
+          ],
+          "vector": [
+            "gear",
+            "square",
+            "circle",
+            "hexagon",
+            "triangle"
+          ]
+        },
+        "description": "A crust of soil and junk covers old machinery, timber braces and small fuel chambers. Shooting the right support exposes a cavity instead of merely digging another straight shaft.",
+        "id": "world-beneath-landfill",
+        "motifs": [
+          {
+            "central": true,
+            "id": "junk-slide",
+            "kind": "counterweight",
+            "name": "Junk slide",
+            "parameters": {
+              "deckMaterial": "WOOD",
+              "dimensions": {
+                "deckLength": 144,
+                "deckThickness": 10,
+                "height": 144,
+                "loadDiameter": 28,
+                "supportHeight": 44,
+                "supportWidth": 8,
+                "width": 192
+              },
+              "loadMaterial": "IRON",
+              "slopeDeg": 8,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-rigid-gravity",
+              "native-rigid-contact"
+            ],
+            "seed": 4074234570,
+            "siteIndex": 0
+          },
+          {
+            "central": false,
+            "id": "buried-fuel-route",
+            "kind": "fuel-cell",
+            "name": "Old fuel line",
+            "parameters": {
+              "deckMaterial": "CONCRETE",
+              "dimensions": {
+                "deckLength": 160,
+                "deckThickness": 12,
+                "gateWidth": 12,
+                "height": 176,
+                "ignitionGap": 24,
+                "lowerBasinDepth": 32,
+                "lowerBasinWidth": 88,
+                "reservoirDepth": 28,
+                "reservoirWidth": 64,
+                "separatorThickness": 12,
+                "supportHeight": 40,
+                "supportWidth": 10,
+                "wallThickness": 8,
+                "width": 224
+              },
+              "ignitionMaterial": "EMBER",
+              "liquidMaterial": "CRUDE_OIL",
+              "loadMaterial": "IRON",
+              "slopeDeg": 6,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-liquid-flow",
+              "native-combustion",
+              "native-rigid-gravity",
+              "active-region-thermal-acceptance"
+            ],
+            "seed": 4091012189,
+            "siteIndex": 1
+          },
+          {
+            "central": false,
+            "id": "buried-roof",
+            "kind": "counterweight",
+            "name": "The roof under the rubbish",
+            "parameters": {
+              "deckMaterial": "WOOD",
+              "dimensions": {
+                "deckLength": 144,
+                "deckThickness": 10,
+                "height": 144,
+                "loadDiameter": 28,
+                "supportHeight": 44,
+                "supportWidth": 8,
+                "width": 192
+              },
+              "loadMaterial": "IRON",
+              "looseMaterial": "DIRT",
+              "slopeDeg": 8,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-rigid-gravity",
+              "native-powder-fall"
+            ],
+            "seed": 4040679332,
+            "siteIndex": 2
+          },
+          {
+            "central": false,
+            "id": "junk-slide",
+            "kind": "counterweight",
+            "name": "Junk slide",
+            "parameters": {
+              "deckMaterial": "WOOD",
+              "dimensions": {
+                "deckLength": 144,
+                "deckThickness": 10,
+                "height": 144,
+                "loadDiameter": 28,
+                "supportHeight": 44,
+                "supportWidth": 8,
+                "width": 192
+              },
+              "loadMaterial": "IRON",
+              "slopeDeg": 8,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-rigid-gravity",
+              "native-rigid-contact"
+            ],
+            "seed": 4057456951,
+            "siteIndex": 3
+          },
+          {
+            "central": false,
+            "id": "buried-fuel-route",
+            "kind": "fuel-cell",
+            "name": "Old fuel line",
+            "parameters": {
+              "deckMaterial": "CONCRETE",
+              "dimensions": {
+                "deckLength": 160,
+                "deckThickness": 12,
+                "gateWidth": 12,
+                "height": 176,
+                "ignitionGap": 24,
+                "lowerBasinDepth": 32,
+                "lowerBasinWidth": 88,
+                "reservoirDepth": 28,
+                "reservoirWidth": 64,
+                "separatorThickness": 12,
+                "supportHeight": 40,
+                "supportWidth": 10,
+                "wallThickness": 8,
+                "width": 224
+              },
+              "ignitionMaterial": "EMBER",
+              "liquidMaterial": "CRUDE_OIL",
+              "loadMaterial": "IRON",
+              "slopeDeg": 6,
+              "supportMaterial": "WOOD"
+            },
+            "requires": [
+              "native-liquid-flow",
+              "native-combustion",
+              "native-rigid-gravity",
+              "active-region-thermal-acceptance"
+            ],
+            "seed": 4007124094,
+            "siteIndex": 4
+          }
+        ],
+        "name": "World Beneath the Landfill",
+        "placement": {
+          "centralSites": 1,
+          "sitesPerMap": 5
+        },
+        "seed": 478062876,
+        "selection": {
+          "affinityBonus": 3,
+          "baseWeight": 1
+        },
+        "sourceFile": "Game/landscape-stories.json",
+        "version": 1
+      },
+      "version": 1
+    },
+    "remaining": 25.616666666666916,
+    "roster": [
+      {
+        "aiRng": 1797448603,
+        "aimedTurn": 7,
+        "autoAimTurn": null,
+        "autoDefenseChecked": true,
+        "cashBreakdown": {
+          "aim": 3,
+          "damage": 227,
+          "hit": 20,
+          "hurt": 7,
+          "landing": 15,
+          "pass": 20,
+          "power": 3,
+          "shoot": 20,
+          "turn": 40
+        },
+        "cashEarned": 355,
+        "color": "#EC4787",
+        "consecutivePasses": 0,
+        "control": "cpu",
+        "cpuStalled": null,
+        "damage": 75.78128824120971,
+        "damageTaken": 6.853422926195134,
+        "eliminated": false,
+        "entityId": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+        "hits": 1,
+        "impacts": [
+          {
+            "damageBefore": 0,
+            "dx": -47.64990234375,
+            "dy": 9.62115478515625,
+            "impact": {
+              "x": 6791.85009765625,
+              "y": 623.7499389648438
+            },
+            "origin": {
+              "x": 5999.4580078125,
+              "y": 643.2877807617188
+            },
+            "power": 42.88321134936996,
+            "reason": "detonated",
+            "target": {
+              "x": 6839.5,
+              "y": 614.1287841796875
+            },
+            "targetId": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+            "turn": 1,
+            "weapon": "heavy"
+          },
+          {
+            "damageBefore": 75.78128824120971,
+            "dx": -859.5,
+            "dy": 10.9564208984375,
+            "impact": {
+              "x": 5980,
+              "y": 635
+            },
+            "origin": {
+              "x": 5999.42041015625,
+              "y": 642.38916015625
+            },
+            "power": 100,
+            "reason": "detonated",
+            "target": {
+              "x": 6839.5,
+              "y": 624.0435791015625
+            },
+            "targetId": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+            "turn": 7,
+            "weapon": "escape-charge"
+          }
+        ],
+        "index": 0,
+        "kills": 0,
+        "lastKnownPosition": {
+          "x": 5999.42041015625,
+          "y": 642.2670288085938
+        },
+        "lastLandRecord": {
+          "clock": 94.69999999999592,
+          "x": 5999.42041015625,
+          "y": 626.4714965820312
+        },
+        "lastMoveX": 5999.42041015625,
+        "moveDistance": 0,
+        "name": "M12P Pan Alpha",
+        "personaId": "kiloton",
+        "placementReady": true,
+        "plannedTurn": 7,
+        "preparedTurn": 7,
+        "shotFrom": {
+          "x": 5999.42041015625,
+          "y": 642.38916015625
+        },
+        "shots": 2,
+        "spawnX": 6000,
+        "surfaceY": 656,
+        "tactic": "Free Riot Charge \u00b7 clear nearby terrain",
+        "targetId": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "turnStartCash": 345,
+        "turnStartKills": 0,
+        "weaponId": "escape-charge"
+      },
+      {
+        "aiRng": 3324237566,
+        "aimedTurn": 2,
+        "autoAimTurn": null,
+        "autoDefenseChecked": true,
+        "cashBreakdown": {
+          "aim": 3,
+          "damage": 21,
+          "hit": 20,
+          "hurt": 76,
+          "landing": 15,
+          "pass": 20,
+          "power": 3,
+          "shoot": 20,
+          "turn": 40
+        },
+        "cashEarned": 218,
+        "color": "#35D9FF",
+        "consecutivePasses": 2,
+        "control": "cpu",
+        "cpuStalled": {
+          "clock": 107.1999999999952,
+          "reason": "No supported clear shot after bounded movement, escape and demolition alternatives",
+          "turn": 8
+        },
+        "damage": 6.853422926195134,
+        "damageTaken": 75.78128824120971,
+        "eliminated": false,
+        "entityId": "instance@spawn-82f48b51-e167-48f5-b26b-a0ddf4f5f82f",
+        "hits": 1,
+        "impacts": [
+          {
+            "damageBefore": 0,
+            "dx": 12.55908203125,
+            "dy": -13.126708984375,
+            "impact": {
+              "x": 6012.01708984375,
+              "y": 630.1610717773438
+            },
+            "origin": {
+              "x": 6839.5,
+              "y": 619.71923828125
+            },
+            "power": 38.92940168036148,
+            "reason": "detonated",
+            "target": {
+              "x": 5999.4580078125,
+              "y": 643.2877807617188
+            },
+            "targetId": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+            "turn": 2,
+            "weapon": "napalm"
+          }
+        ],
+        "index": 1,
+        "kills": 0,
+        "lastFlipAt": 102.81666666666212,
+        "lastKnownPosition": {
+          "x": 6839.5,
+          "y": 637.62060546875
+        },
+        "lastLandRecord": {
+          "clock": 5.149999999999987,
+          "x": 6839.5,
+          "y": 614.30859375
+        },
+        "lastMoveX": 6839.5,
+        "moveDistance": 0,
+        "name": "M12P Pan Beta",
+        "personaId": "domino",
+        "placementReady": true,
+        "plannedTurn": 2,
+        "preparedTurn": 8,
+        "shotFrom": {
+          "x": 6839.5,
+          "y": 619.71923828125
+        },
+        "shots": 1,
+        "spawnX": 6840,
+        "surfaceY": 628,
+        "tactic": "Blocked: no useful legal action; inspection needed",
+        "targetId": "instance@spawn-e83a4b15-1e93-4801-bd91-72d9575fb3ca",
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "turnStartCash": 208,
+        "turnStartKills": 0,
+        "weaponId": "napalm"
+      }
+    ],
+    "round": 1,
+    "seed": 257001,
+    "seriesId": "81be09fd-d9e9-4830-88f7-773af5ce743d",
+    "seriesLength": 1,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 0,
+      "family": "template",
+      "parameters": {},
+      "phase": "complete",
+      "reason": null,
+      "recipeId": "wfc",
+      "seed": 257001,
+      "totalChunks": 0,
+      "version": 1
+    },
+    "turnNumber": 8,
+    "turnSeconds": 30,
+    "version": 9,
+    "waitTicks": 35,
+    "winner": null
+  },
+  "paused": true,
+  "save": {
+    "allowed": true,
+    "blockers": []
+  },
+  "world": "81be09fd-d9e9-4830-88f7-773af5ce743d"
+}

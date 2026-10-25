@@ -1,0 +1,116 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 2,
+  "ok": true,
+  "value": {
+    "clock": 87.58333333332965,
+    "error": "",
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "humans": 0,
+      "impact": null,
+      "message": "Tanks ready \u2014 begin when your crew is ready",
+      "phase": "ready",
+      "remaining": 30,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-43fb1303-0d9f-4319-80fc-dc89990136ee",
+          "index": 0,
+          "kills": 0,
+          "name": "Tony",
+          "spawnX": 5248,
+          "surfaceY": 656
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-ff2b2730-6cce-48d8-af31-eb4f4a321f0e",
+          "index": 1,
+          "kills": 0,
+          "name": "Copper",
+          "spawnX": 7552,
+          "surfaceY": 656
+        }
+      ],
+      "seed": 7,
+      "shotId": null,
+      "turnNumber": 0,
+      "turnSeconds": 30,
+      "version": 4,
+      "winner": null
+    },
+    "paused": false,
+    "preferences": {
+      "computers": 2,
+      "humans": 0,
+      "namesText": "Tony\nCopper",
+      "turnSeconds": 30
+    },
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 81,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-43fb1303-0d9f-4319-80fc-dc89990136ee",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 4,
+        "maxHealth": 100,
+        "name": "Tony",
+        "residency": "live",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 5247.5,
+        "y": 641.9998779296875
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 117,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-ff2b2730-6cce-48d8-af31-eb4f4a321f0e",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "Copper",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 7551.5,
+        "y": 641.9991455078125
+      }
+    ],
+    "scores": {
+      "matches": {},
+      "players": {}
+    },
+    "worldId": "81b50c65-1483-4681-ac21-5aa6dc6265e3"
+  }
+}

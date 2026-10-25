@@ -1,0 +1,663 @@
+{
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6399.5,
+          "y": 609.4999389648438
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 136.0001220703125,
+          "w": 920,
+          "x": 5939.5,
+          "y": 541.4998779296875
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5248,
+      "y": -128
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": -64
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": -64
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5599.5,
+      "y": 125.49993896484376
+    },
+    "zoom": 0.25
+  },
+  "clock": 15.000000000000323,
+  "error": "",
+  "events": [
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 0.016666666666666666,
+      "completedChunks": 700,
+      "family": "maze",
+      "kind": "terrain-source",
+      "parameters": {
+        "cellSize": 48
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "bunker-grid",
+      "seed": 1792873708739,
+      "totalChunks": 4000,
+      "turn": 0,
+      "version": 1
+    },
+    {
+      "clock": 1.5833333333333326,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 5959.5,
+        "y": 525.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 1.6833333333333322,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Alpha",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 5959.5,
+        "y": 533.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 1.6833333333333322,
+      "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "kind": "deployed",
+      "name": "M10F Oct24 Alpha",
+      "turn": 0
+    },
+    {
+      "clock": 1.866666666666665,
+      "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 3.2333333333333267,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 97,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 3,
+        "maxHealth": 100,
+        "name": "Aris Redholm",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6252.5,
+        "y": 620.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.3333333333333264,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 97,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 3,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Bravo",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6252.5,
+        "y": 627.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 3.3333333333333264,
+      "id": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "kind": "deployed",
+      "name": "M10F Oct24 Bravo",
+      "turn": 0
+    },
+    {
+      "clock": 3.5333333333333257,
+      "id": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 4.883333333333321,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 102,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 5,
+        "maxHealth": 100,
+        "name": "Branic Stonedale",
+        "residency": "live",
+        "slot": null,
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6546.5,
+        "y": 620.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.983333333333321,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 102,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 5,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Charlie",
+        "residency": "live",
+        "slot": null,
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6546.5,
+        "y": 627.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 4.983333333333321,
+      "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "kind": "deployed",
+      "name": "M10F Oct24 Charlie",
+      "turn": 0
+    },
+    {
+      "clock": 5.18333333333332,
+      "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 6.5333333333333155,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 7,
+        "maxHealth": 100,
+        "name": "Calis Ironstone",
+        "residency": "live",
+        "slot": null,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6839.5,
+        "y": 572.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.633333333333315,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 7,
+        "maxHealth": 100,
+        "name": "M10F Oct24 Delta",
+        "residency": "live",
+        "slot": null,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6839.5,
+        "y": 579.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 6.633333333333315,
+      "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "kind": "deployed",
+      "name": "M10F Oct24 Delta",
+      "turn": 0
+    },
+    {
+      "clock": 6.633333333333315,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 261,
+      "clock": 6.633333333333315,
+      "item": "shield",
+      "kind": "purchase",
+      "name": "M10F Oct24 Alpha",
+      "price": 250,
+      "quantity": 1,
+      "turn": 0
+    },
+    {
+      "clock": 6.833333333333314,
+      "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "kind": "land",
+      "turn": 0
+    }
+  ],
+  "live": [
+    {
+      "id": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+      "live": true,
+      "position": {
+        "x": 5959.5,
+        "y": 561.4998779296875
+      }
+    },
+    {
+      "id": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+      "live": true,
+      "position": {
+        "x": 6252.5,
+        "y": 657.4998779296875
+      }
+    },
+    {
+      "id": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+      "live": true,
+      "position": {
+        "x": 6546.5,
+        "y": 657.5
+      }
+    },
+    {
+      "id": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+      "live": true,
+      "position": {
+        "x": 6839.5,
+        "y": 609.4998779296875
+      }
+    }
+  ],
+  "match": {
+    "attack": null,
+    "baseGeneration": {
+      "parameters": {},
+      "recipe": "brush"
+    },
+    "biome": "bunker-grid",
+    "biomeCycle": false,
+    "biomeRounds": 1,
+    "bounds": {
+      "h": 1280,
+      "w": 960,
+      "x": 5920,
+      "y": 0
+    },
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0,
+      "rng": 767604102,
+      "serial": 0
+    },
+    "computers": 4,
+    "cpuSkill": "persona",
+    "details": 0,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "generated": 0,
+    "generation": "bunker-grid",
+    "generationChoice": "random",
+    "humans": 0,
+    "impact": null,
+    "livingSites": 0,
+    "message": "Tanks ready \u2014 begin when your crew is ready",
+    "pendingTurn": null,
+    "personaSeed": "2533504",
+    "phase": "ready",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "remaining": 30,
+    "roster": [
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#EC4787",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-f83b409d-d34f-4ba4-aacf-c4aa7445260c",
+        "hits": 0,
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Alpha",
+        "personaId": "kiloton",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 5960,
+        "surfaceY": 576,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "weaponId": "nuke"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#A574F4",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-d8e34e85-5737-4efa-b44f-05b7ca972ad0",
+        "hits": 0,
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Bravo",
+        "personaId": "faultline",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6253,
+        "surfaceY": 672,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "weaponId": "standard"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#B083CF",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-a63fe9b1-a141-4c7c-8db5-c41de68c7246",
+        "hits": 0,
+        "index": 2,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Charlie",
+        "personaId": "faultline",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6547,
+        "surfaceY": 672,
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "weaponId": "standard"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#FF6150",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-69efd64f-b0c1-4043-8746-32f3da888d64",
+        "hits": 0,
+        "index": 3,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10F Oct24 Delta",
+        "personaId": "lucky",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6840,
+        "surfaceY": 624,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "weaponId": "standard"
+      }
+    ],
+    "round": 2,
+    "seed": 1792873708739,
+    "seriesId": "04621717-2bbb-4958-bddc-d64eb8bee652",
+    "seriesLength": 3,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 700,
+      "family": "maze",
+      "parameters": {
+        "cellSize": 48
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "bunker-grid",
+      "seed": 1792873708739,
+      "totalChunks": 4000,
+      "version": 1
+    },
+    "turnNumber": 0,
+    "turnSeconds": 30,
+    "version": 9,
+    "winner": null
+  },
+  "paused": false,
+  "save": {
+    "allowed": true,
+    "blockers": []
+  },
+  "world": "fc1ca2cc-3ee0-42f8-84f1-381d320fbdf1"
+}

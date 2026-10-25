@@ -1,0 +1,176 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 5,
+  "ok": true,
+  "value": {
+    "encounter": {
+      "friendlyFire": false,
+      "id": "scorched-terra",
+      "members": [
+        {
+          "entityKey": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546"
+        },
+        {
+          "entityKey": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6"
+        },
+        {
+          "entityKey": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b"
+        },
+        {
+          "entityKey": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78"
+        },
+        {
+          "entityKey": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14"
+        },
+        {
+          "entityKey": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529"
+        }
+      ],
+      "mode": "free-for-all",
+      "selfDamage": true
+    },
+    "error": "",
+    "phase": "ready",
+    "pools": [
+      {
+        "death": 100,
+        "id": "terra-lucky-fuses",
+        "taunt": 100,
+        "types": [
+          "alert",
+          "attack",
+          "dodge",
+          "flee",
+          "lost",
+          "ally_down",
+          "taunt",
+          "death",
+          "hit",
+          "miss",
+          "buy",
+          "victory",
+          "chain_reaction"
+        ]
+      },
+      {
+        "death": 100,
+        "id": "terra-burrow-union",
+        "taunt": 100,
+        "types": [
+          "alert",
+          "attack",
+          "dodge",
+          "flee",
+          "lost",
+          "ally_down",
+          "taunt",
+          "death",
+          "hit",
+          "miss",
+          "buy",
+          "victory",
+          "chain_reaction"
+        ]
+      },
+      {
+        "death": 100,
+        "id": "terra-heavy-weather",
+        "taunt": 100,
+        "types": [
+          "alert",
+          "attack",
+          "dodge",
+          "flee",
+          "lost",
+          "ally_down",
+          "taunt",
+          "death",
+          "hit",
+          "miss",
+          "buy",
+          "victory",
+          "chain_reaction"
+        ]
+      },
+      {
+        "death": 100,
+        "id": "terra-gravity-office",
+        "taunt": 100,
+        "types": [
+          "alert",
+          "attack",
+          "dodge",
+          "flee",
+          "lost",
+          "ally_down",
+          "taunt",
+          "death",
+          "hit",
+          "miss",
+          "buy",
+          "victory",
+          "chain_reaction"
+        ]
+      },
+      {
+        "death": 100,
+        "id": "terra-cascade-institute",
+        "taunt": 100,
+        "types": [
+          "alert",
+          "attack",
+          "dodge",
+          "flee",
+          "lost",
+          "ally_down",
+          "taunt",
+          "death",
+          "hit",
+          "miss",
+          "buy",
+          "victory",
+          "chain_reaction"
+        ]
+      }
+    ],
+    "relation": {
+      "damageAllowed": true,
+      "scope": "encounter",
+      "stance": "hostile"
+    },
+    "roster": [
+      {
+        "faction": "terra-lucky-fuses",
+        "name": "M10 Fuse",
+        "persona": "lucky"
+      },
+      {
+        "faction": "terra-burrow-union",
+        "name": "M10 Mole",
+        "persona": "mole"
+      },
+      {
+        "faction": "terra-heavy-weather",
+        "name": "M10 Kiloton",
+        "persona": "kiloton"
+      },
+      {
+        "faction": "terra-gravity-office",
+        "name": "M10 Faultline",
+        "persona": "faultline"
+      },
+      {
+        "faction": "terra-cascade-institute",
+        "name": "M10 Domino",
+        "persona": "domino"
+      },
+      {
+        "faction": "terra-lucky-fuses",
+        "name": "M10 Twin Fuse",
+        "persona": "lucky"
+      }
+    ],
+    "world": "909a6dc0-ed42-47e8-bccb-1c56fb8a3793"
+  }
+}

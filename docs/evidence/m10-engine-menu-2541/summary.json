@@ -1,0 +1,96 @@
+{
+  "source": "4cf2e21c4924c4a7f293922e6cb1e2278fc50b0c",
+  "candidateVersion": "0.0.2541",
+  "accepted": true,
+  "focused": {
+    "files": 3,
+    "passed": 26
+  },
+  "typeScriptErrors": 0,
+  "packaged": {
+    "2539": {
+      "worker": {
+        "passed": 119,
+        "failed": 0
+      },
+      "loopback": {
+        "passed": 119,
+        "failed": 0
+      }
+    },
+    "2540": {
+      "worker": {
+        "passed": 118,
+        "failed": 1,
+        "failure": "M10 pre-world keyboard remap moves native focus"
+      },
+      "loopback": {
+        "passed": 119,
+        "failed": 0
+      }
+    },
+    "2541": {
+      "worker": {
+        "passed": 119,
+        "failed": 0
+      },
+      "loopback": {
+        "passed": 119,
+        "failed": 0
+      }
+    }
+  },
+  "remaining": [],
+  "limits": [
+    "Broader Settings layout/clipping and viewport/DPR matrix remain separate",
+    "E38/E39 and E14/E16/E23/E24 equipment/save carryover unchanged",
+    "Physical controller hardware and Windows not separately tested"
+  ],
+  "retainedEngineDiagnosticWorld": "0bb8884c-ff1c-4d23-bd0c-9dcbca52b395",
+  "profileClones": 0,
+  "installedVersion": "0.0.2541",
+  "installedAsarSha256": "79713e412541e3c6d1a32fdb20f4bcfb7236e684280a6809e43215146b070e88",
+  "actual": {
+    "passed": 31,
+    "failed": 0,
+    "checks": {
+      "paused-input-ownership": true,
+      "seed-done": true,
+      "pause-tab": true,
+      "title-pad-binding-back": true,
+      "pause-skin": true,
+      "setup-back": true,
+      "load-action-names": true,
+      "browsing-accounts-unchanged": true,
+      "load-root-back": true,
+      "name-cancel": true,
+      "pause-keyboard-tab": true,
+      "native-popover-skin": true,
+      "load-list-back": true,
+      "original-saves-preserved": true,
+      "numeric-back": true,
+      "title-options-back": true,
+      "pause-binding-back": true,
+      "title-tab": true,
+      "native-popover-back": true,
+      "owned-diagnostic-retained": true,
+      "title-skin": true,
+      "seed-cancel": true,
+      "pause-options-back": true,
+      "title-keyboard-tab": true,
+      "exact-account-restoration": true,
+      "pause-return": true,
+      "pause-pad-binding-back": true,
+      "title-binding-back": true,
+      "advanced-draft": true,
+      "seed-held-confirm": true,
+      "seed-back": true
+    }
+  },
+  "preservation": {
+    "originalCount": 193,
+    "currentCount": 194,
+    "excludedOwnedDiagnostic": "0bb8884c-ff1c-4d23-bd0c-9dcbca52b395"
+  },
+  "acceptanceScope": "E36 navigation and requested E37 inner-control skin at the tested desktop viewport"
+}

@@ -1,0 +1,2029 @@
+[
+  {
+    "bounds": {
+      "h": 1280,
+      "w": 12800,
+      "x": 0,
+      "y": 0
+    },
+    "clock": 0.016666666666666666,
+    "completedChunks": 0,
+    "family": "template",
+    "kind": "terrain-source",
+    "parameters": {},
+    "phase": "complete",
+    "reason": null,
+    "recipeId": "wfc",
+    "seed": 257001,
+    "totalChunks": 0,
+    "turn": 0,
+    "version": 1
+  },
+  {
+    "catalog": "procedural-m11",
+    "choices": {
+      "growth": [
+        "builtin-lightning",
+        "indigo-m9-bramble",
+        "builtin-bramble",
+        "m9-planar-bramble-probe",
+        "builtin-worm-tunnels",
+        "builtin-living-bramble",
+        "builtin-oak-sapling",
+        "builtin-creeping-vine",
+        "indigo-m9-oak",
+        "builtin-roots",
+        "builtin-meadow-grass",
+        "builtin-coral",
+        "builtin-ivy-wall",
+        "builtin-wheat",
+        "builtin-icicles",
+        "builtin-hair",
+        "builtin-flower-bed",
+        "builtin-vine-ledge",
+        "builtin-creeping-vine",
+        "indigo-m9-bramble",
+        "builtin-vine-ledge",
+        "builtin-roots",
+        "builtin-flower-bed",
+        "m9-planar-bramble-probe",
+        "builtin-living-bramble",
+        "builtin-oak-sapling",
+        "indigo-m9-oak",
+        "builtin-ivy-wall",
+        "builtin-worm-tunnels",
+        "builtin-wheat",
+        "builtin-bramble",
+        "builtin-lightning",
+        "builtin-coral",
+        "builtin-icicles",
+        "builtin-meadow-grass",
+        "builtin-hair",
+        "builtin-creeping-vine",
+        "builtin-worm-tunnels",
+        "indigo-m9-bramble",
+        "builtin-bramble",
+        "builtin-oak-sapling",
+        "builtin-ivy-wall",
+        "m9-planar-bramble-probe",
+        "builtin-icicles",
+        "builtin-coral",
+        "indigo-m9-oak",
+        "builtin-living-bramble",
+        "builtin-vine-ledge",
+        "builtin-roots",
+        "builtin-wheat"
+      ],
+      "neural": [
+        "builtin-nca-masonry",
+        "builtin-nca-stations",
+        "builtin-nca-four",
+        "builtin-nca-eight",
+        "builtin-nca-four",
+        "builtin-nca-stations",
+        "builtin-nca-masonry",
+        "builtin-nca-eight",
+        "builtin-nca-masonry",
+        "builtin-nca-stations",
+        "builtin-nca-four",
+        "builtin-nca-eight",
+        "builtin-nca-masonry",
+        "builtin-nca-stations",
+        "builtin-nca-four",
+        "builtin-nca-eight",
+        "builtin-nca-four"
+      ],
+      "neuralRecipe": [
+        "builtin-brush-keep-library",
+        "builtin-brush-research-lab",
+        "builtin-brush-hellscape",
+        "builtin-brush-hellscape",
+        "builtin-brush-hellscape",
+        "builtin-brush-station-deck",
+        "builtin-brush-ancient-ruins",
+        "builtin-brush-tundra",
+        "builtin-brush-great-hall",
+        "builtin-brush-sewer-tunnel",
+        "builtin-brush-hellscape",
+        "builtin-brush-coal",
+        "builtin-brush-catacombs",
+        "builtin-brush-station-deck",
+        "builtin-brush-tundra",
+        "builtin-brush-gold",
+        "builtin-brush-hellscape"
+      ],
+      "noise": [
+        "builtin-brick-6",
+        "builtin-fence-2",
+        "builtin-rusty-3",
+        "builtin-brickwood",
+        "builtin-concrete-2",
+        "builtin-panel-8",
+        "builtin-chess-1",
+        "builtin-wood-1",
+        "builtin-brick-2",
+        "builtin-steel-1",
+        "builtin-bigdoor-1",
+        "builtin-grid-2",
+        "builtin-grid-1",
+        "builtin-pillwindow",
+        "builtin-lab-5",
+        "builtin-slime-1",
+        "builtin-sludge-1",
+        "builtin-rusty-2",
+        "builtin-pipes-1",
+        "builtin-skultrim-1",
+        "builtin-fence-3",
+        "builtin-brick-1",
+        "builtin-grass-1",
+        "builtin-ooze-1",
+        "builtin-panel-5",
+        "builtin-crate-1",
+        "builtin-warn-3",
+        "builtin-wood-3",
+        "builtin-circlewindow",
+        "builtin-support-2",
+        "builtin-warn-1",
+        "builtin-door-3",
+        "builtin-light-2",
+        "builtin-crate-3",
+        "builtin-sqdoor-7",
+        "builtin-wood-2",
+        "builtin-vent-2",
+        "builtin-floor-3",
+        "builtin-metal-7",
+        "builtin-metal-6",
+        "builtin-cube-1",
+        "builtin-zinc-1",
+        "builtin-grid-6",
+        "builtin-panel-3",
+        "builtin-paper-1",
+        "builtin-cube-2",
+        "builtin-dirt-1",
+        "builtin-panel-7",
+        "builtin-rusty-1",
+        "builtin-brick2"
+      ],
+      "semantic": [
+        "builtin-brush-mossy-glade",
+        "builtin-brush-gold",
+        "builtin-brush-scorched-wasteland",
+        "builtin-brush-jungle-undergrowth",
+        "builtin-brush-hills",
+        "builtin-brush-toxic-dump",
+        "builtin-brush-power-substation",
+        "builtin-brush-keep-library",
+        "builtin-brush-glacier",
+        "builtin-brush-subway-tunnel",
+        "builtin-brush-crimson-desert",
+        "builtin-brush-charred",
+        "builtin-brush-alien-jungle",
+        "builtin-brush-engine-room",
+        "builtin-brush-rubble",
+        "builtin-brush-goblin-warren",
+        "builtin-brush-great-hall",
+        "builtin-brush-deep-mine",
+        "builtin-brush-frozen-lake",
+        "builtin-brush-alien-hive",
+        "builtin-brush-research-lab",
+        "builtin-brush-enchanted-forest",
+        "builtin-brush-derelict-station",
+        "builtin-brush-ice-moon",
+        "builtin-brush-coal",
+        "builtin-brush-tundra",
+        "builtin-brush-industrial-pipeworks",
+        "builtin-brush-sewer-tunnel",
+        "builtin-brush-haunted-wood",
+        "builtin-brush-mesa-badlands",
+        "builtin-brush-chemical-plant",
+        "builtin-brush-scrapyard",
+        "builtin-brush-catacombs",
+        "builtin-brush-dragon-graveyard",
+        "builtin-brush-ancient-ruins",
+        "builtin-brush-castle-wall",
+        "builtin-brush-spaceship-prison",
+        "builtin-brush-snowy-pines",
+        "builtin-brush-mine-shaft",
+        "builtin-brush-dunes",
+        "builtin-brush-dragon-hoard",
+        "builtin-brush-mangrove-shallows",
+        "builtin-brush-autumn-woodland",
+        "builtin-brush-red-rock-canyon",
+        "indigo-mixed-earth",
+        "builtin-brush-cliffside",
+        "builtin-brush-desecrated-chapel",
+        "builtin-brush-reactor-chamber",
+        "builtin-brush-cryo-bay",
+        "builtin-brush-ice-cave"
+      ],
+      "structureTexture": [
+        "builtin-crate-3",
+        "builtin-steel-1",
+        "builtin-tarmac-2",
+        "builtin-wood-2",
+        "builtin-concrete-8",
+        "builtin-brickwood",
+        "builtin-crate-1",
+        "builtin-concrete-7",
+        "builtin-metal-2",
+        "builtin-marble-1",
+        "builtin-metal-4",
+        "builtin-concrete-2",
+        "builtin-brick-2",
+        "builtin-metal-7",
+        "builtin-brick-1",
+        "builtin-tarmac-4",
+        "builtin-wood-3",
+        "builtin-metal-1",
+        "builtin-steel-3",
+        "builtin-steel-2",
+        "builtin-crate-2",
+        "builtin-brick-4",
+        "builtin-corrugat-1",
+        "builtin-wood-1",
+        "builtin-metal-6"
+      ],
+      "vector": [
+        "builtin:checkmark",
+        "builtin:sun",
+        "builtin:heart",
+        "builtin:arrow-up",
+        "builtin:spade",
+        "builtin:club",
+        "builtin:star-6",
+        "builtin:gear",
+        "builtin:hexagon",
+        "builtin:rounded-square",
+        "builtin:arrow-right",
+        "builtin:tree",
+        "builtin:crescent",
+        "builtin:triangle",
+        "builtin:right-triangle",
+        "builtin:octagon",
+        "builtin:chevron-right",
+        "builtin:circle",
+        "builtin:square",
+        "builtin:cross",
+        "builtin:fire",
+        "builtin:snowflake",
+        "builtin:drop",
+        "builtin:speech-bubble",
+        "builtin:shield"
+      ]
+    },
+    "clock": 0.8666666666666677,
+    "hash": "2b6e76aee7840f8b7bd706b3fbaea1e3f783806cf0b959cc151c76b33754b36a",
+    "kind": "generation-catalog",
+    "story": {
+      "id": "world-beneath-landfill",
+      "version": 1
+    },
+    "turn": 0
+  },
+  {
+    "clock": 2.966666666666661,
+    "kind": "deployment-surface",
+    "offset": 40,
+    "player": "M12V Distant Alpha",
+    "requestedX": 5960,
+    "turn": 0,
+    "x": 6000,
+    "y": 656
+  },
+  {
+    "clock": 3.033333333333327,
+    "kind": "spawn-pose",
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "pose": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 93,
+        "y": 9
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 0,
+      "maxHealth": 100,
+      "name": "Feris Blackmere",
+      "residency": "live",
+      "slot": null,
+      "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+      "vx": 0,
+      "vy": 43.33333206176758,
+      "x": 5999.5,
+      "y": 605.18212890625
+    },
+    "turn": 0
+  },
+  {
+    "clock": 3.133333333333327,
+    "kind": "placement-ready",
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "pose": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 93,
+        "y": 9
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 0,
+      "maxHealth": 100,
+      "name": "M12V Distant Alpha",
+      "residency": "live",
+      "slot": null,
+      "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+      "vx": 0,
+      "vy": 108.33333587646484,
+      "x": 5999.5,
+      "y": 613.30712890625
+    },
+    "posture": {
+      "config": {
+        "angularSpeed": 2,
+        "liftLimit": 64,
+        "liftSpeed": 60,
+        "maxSlope": 1,
+        "mode": "upright",
+        "penetrationTolerance": 0.01,
+        "supportDepth": 32
+      },
+      "lifted": 0,
+      "status": "complete",
+      "supportSamples": 9,
+      "targetAngle": 0
+    },
+    "receipt": {
+      "accepted": true,
+      "reason": "ok"
+    },
+    "turn": 0,
+    "waited": 6
+  },
+  {
+    "clock": 3.133333333333327,
+    "id": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "kind": "deployed",
+    "name": "M12V Distant Alpha",
+    "turn": 0
+  },
+  {
+    "clock": 3.299999999999993,
+    "id": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "kind": "land",
+    "position": {
+      "x": 5999.5,
+      "y": 640.3765869140625
+    },
+    "turn": 0
+  },
+  {
+    "clock": 4.633333333333322,
+    "kind": "deployment-surface",
+    "offset": 0,
+    "player": "M12V Distant Beta",
+    "requestedX": 6840,
+    "turn": 0,
+    "x": 6840,
+    "y": 628
+  },
+  {
+    "clock": 4.699999999999989,
+    "kind": "spawn-pose",
+    "owner": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+    "pose": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 106,
+        "y": 9
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 2,
+      "maxHealth": 100,
+      "name": "Arig Silverhaven",
+      "residency": "live",
+      "slot": null,
+      "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+      "vx": 0,
+      "vy": 43.33333206176758,
+      "x": 6839.5,
+      "y": 577.18212890625
+    },
+    "turn": 0
+  },
+  {
+    "clock": 4.799999999999988,
+    "kind": "placement-ready",
+    "owner": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+    "pose": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 106,
+        "y": 9
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 2,
+      "maxHealth": 100,
+      "name": "M12V Distant Beta",
+      "residency": "live",
+      "slot": null,
+      "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+      "vx": 0,
+      "vy": 108.33333587646484,
+      "x": 6839.5,
+      "y": 585.30712890625
+    },
+    "posture": {
+      "config": {
+        "angularSpeed": 2,
+        "liftLimit": 64,
+        "liftSpeed": 60,
+        "maxSlope": 1,
+        "mode": "upright",
+        "penetrationTolerance": 0.01,
+        "supportDepth": 32
+      },
+      "lifted": 0,
+      "status": "complete",
+      "supportSamples": 9,
+      "targetAngle": 0
+    },
+    "receipt": {
+      "accepted": true,
+      "reason": "ok"
+    },
+    "turn": 0,
+    "waited": 6
+  },
+  {
+    "clock": 4.799999999999988,
+    "id": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+    "kind": "deployed",
+    "name": "M12V Distant Beta",
+    "turn": 0
+  },
+  {
+    "clock": 4.799999999999988,
+    "kind": "match-ready",
+    "phase": "ready",
+    "turn": 0
+  },
+  {
+    "clock": 4.966666666666654,
+    "id": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+    "kind": "land",
+    "position": {
+      "x": 6839.5,
+      "y": 612.5293579101562
+    },
+    "turn": 0
+  },
+  {
+    "center": {
+      "x": 6010.30476875067,
+      "y": 642.7612750136288
+    },
+    "clock": 5.366666666666653,
+    "kind": "turn-camera-arrived",
+    "liveId": 0,
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "tracking": 1,
+    "turn": 0
+  },
+  {
+    "cash": 360,
+    "clock": 5.366666666666653,
+    "item": "heavy",
+    "kind": "purchase",
+    "name": "M12V Distant Alpha",
+    "price": 240,
+    "quantity": 3,
+    "turn": 0
+  },
+  {
+    "cash": 270,
+    "clock": 5.366666666666653,
+    "item": "battery",
+    "kind": "purchase",
+    "name": "M12V Distant Alpha",
+    "price": 90,
+    "quantity": 2,
+    "turn": 0
+  },
+  {
+    "cash": 270,
+    "clock": 5.366666666666653,
+    "kind": "cpu-shopping",
+    "name": "M12V Distant Alpha",
+    "purchases": [
+      "heavy",
+      "battery"
+    ],
+    "reserve": 210,
+    "selected": "heavy",
+    "skipped": [],
+    "stage": "6fdecc45-4adb-4c8e-a952-ed9fa48cbbb1:ready",
+    "stock": {
+      "battery": 2,
+      "heavy": 3
+    },
+    "turn": 0
+  },
+  {
+    "cash": 320,
+    "clock": 5.366666666666653,
+    "item": "napalm",
+    "kind": "purchase",
+    "name": "M12V Distant Beta",
+    "price": 280,
+    "quantity": 3,
+    "turn": 0
+  },
+  {
+    "cash": 320,
+    "clock": 5.366666666666653,
+    "kind": "cpu-shopping",
+    "name": "M12V Distant Beta",
+    "purchases": [
+      "napalm"
+    ],
+    "reserve": 180,
+    "selected": "napalm",
+    "skipped": [],
+    "stage": "6fdecc45-4adb-4c8e-a952-ed9fa48cbbb1:ready",
+    "stock": {
+      "napalm": 3
+    },
+    "turn": 0
+  },
+  {
+    "clock": 68.23333333333075,
+    "color": "#ffd447",
+    "eyebrow": "SCORCHED TERRA",
+    "id": 1,
+    "kind": "arcade-start",
+    "long": true,
+    "radar": false,
+    "receipt": false,
+    "score": "",
+    "seconds": 2.5,
+    "sub": "Round 1 \u00b7 Seed 257001",
+    "title": "BATTLE STATIONS",
+    "turn": 0
+  },
+  {
+    "clock": 69.49999999999734,
+    "elapsed": 2.5166666666666626,
+    "id": 1,
+    "kind": "arcade-ended",
+    "turn": 0
+  },
+  {
+    "center": {
+      "x": 5999.435546875008,
+      "y": 643.1119995117177
+    },
+    "clock": 69.49999999999734,
+    "kind": "turn-camera-arrived",
+    "liveId": 0,
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "tracking": 1,
+    "turn": 1
+  },
+  {
+    "clock": 69.49999999999734,
+    "color": "#EC4787",
+    "eyebrow": "TURN 1 / COMMAND CARTRIDGE",
+    "id": 2,
+    "kind": "arcade-start",
+    "long": false,
+    "radar": true,
+    "receipt": false,
+    "score": "",
+    "seconds": 1,
+    "sub": "Heavy Weather \u00b7 expert",
+    "title": "M12V Distant Alpha",
+    "turn": 1
+  },
+  {
+    "clock": 69.99999999999731,
+    "elapsed": 1.000000000000001,
+    "id": 2,
+    "kind": "arcade-ended",
+    "turn": 1
+  },
+  {
+    "center": {
+      "x": 5999.435546875008,
+      "y": 643.1119995117177
+    },
+    "clock": 69.99999999999731,
+    "kind": "turn-camera-arrived",
+    "liveId": 0,
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "tracking": 1,
+    "turn": 1
+  },
+  {
+    "action": "turn",
+    "amount": 10,
+    "clock": 69.99999999999731,
+    "kind": "cash",
+    "name": "M12V Distant Alpha",
+    "total": 10,
+    "turn": 1
+  },
+  {
+    "clock": 69.99999999999731,
+    "id": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "kind": "turn",
+    "name": "M12V Distant Alpha",
+    "turn": 1
+  },
+  {
+    "budgetRemaining": 44,
+    "clock": 72.71666666666383,
+    "item": "standard",
+    "kind": "cpu-decision",
+    "memory": 0,
+    "persona": "kiloton",
+    "risk": 0.6,
+    "skill": "expert",
+    "skipped": [
+      {
+        "item": "escape-charge",
+        "reason": "local-terrain-tactic"
+      }
+    ],
+    "tactic": "High arc over obstruction",
+    "target": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+    "trials": [
+      {
+        "goal": "tank",
+        "obstruction": {
+          "element": 10,
+          "kind": "terrain",
+          "time": 1.8604166666666648,
+          "x": 8459.5,
+          "y": 576.5
+        },
+        "reason": "material-drag-not-supported",
+        "target": "M12V Distant Beta",
+        "warnings": [
+          "evolving-air-fields-not-predicted"
+        ],
+        "weapon": "heavy",
+        "work": {
+          "candidates": 29,
+          "cells": 226856,
+          "chunks": 226,
+          "geometry": {
+            "catalogRows": 0,
+            "chunks": 1,
+            "colliders": 1,
+            "records": 0
+          },
+          "steps": 468028
+        }
+      },
+      {
+        "goal": "tank",
+        "obstruction": null,
+        "reason": "clear",
+        "target": "M12V Distant Beta",
+        "warnings": [
+          "evolving-air-fields-not-predicted"
+        ],
+        "weapon": "standard",
+        "work": {
+          "candidates": 23,
+          "cells": 93588,
+          "chunks": 65,
+          "geometry": {
+            "catalogRows": 0,
+            "chunks": 1,
+            "colliders": 1,
+            "records": 0
+          },
+          "steps": 397538
+        }
+      }
+    ],
+    "turn": 1
+  },
+  {
+    "action": "aim",
+    "amount": 3,
+    "clock": 72.74999999999716,
+    "kind": "cash",
+    "name": "M12V Distant Alpha",
+    "total": 13,
+    "turn": 1
+  },
+  {
+    "action": "power",
+    "amount": 3,
+    "clock": 72.74999999999716,
+    "kind": "cash",
+    "name": "M12V Distant Alpha",
+    "total": 16,
+    "turn": 1
+  },
+  {
+    "angle": 44.91243442718405,
+    "clock": 72.74999999999716,
+    "kind": "cpu-aimed",
+    "name": "M12V Distant Alpha",
+    "origin": {
+      "x": 5999.435546875,
+      "y": 642.2949829101562
+    },
+    "plan": {
+      "candidates": [
+        {
+          "angle": -0.7838698558404151,
+          "obstruction": null,
+          "power": 0.6943152339500375,
+          "reason": "clear"
+        }
+      ],
+      "obstruction": null,
+      "reason": "clear",
+      "solution": {
+        "angle": -0.7838698558404151,
+        "childImpacts": "not-planned",
+        "coverage": "impact",
+        "end": {
+          "x": 8537.730607490723,
+          "y": 612.4005021009979
+        },
+        "origin": {
+          "x": 6024.930265612607,
+          "y": 617.6950894617086
+        },
+        "path": [
+          {
+            "x": 6024.930265612607,
+            "y": 617.6950894617086
+          },
+          {
+            "x": 6040.042211724602,
+            "y": 602.742111523735
+          },
+          {
+            "x": 6055.154157836596,
+            "y": 587.9696891413171
+          },
+          {
+            "x": 6070.26610394859,
+            "y": 573.3778223144546
+          },
+          {
+            "x": 6085.378050060584,
+            "y": 558.9665110431478
+          },
+          {
+            "x": 6100.489996172579,
+            "y": 544.7357553273964
+          },
+          {
+            "x": 6115.601942284573,
+            "y": 530.6855551672007
+          },
+          {
+            "x": 6130.713888396567,
+            "y": 516.8159105625606
+          },
+          {
+            "x": 6145.8258345085615,
+            "y": 503.126821513476
+          },
+          {
+            "x": 6160.937780620556,
+            "y": 489.618288019947
+          },
+          {
+            "x": 6176.04972673255,
+            "y": 476.2903100819734
+          },
+          {
+            "x": 6191.161672844544,
+            "y": 463.14288769955544
+          },
+          {
+            "x": 6206.2736189565385,
+            "y": 450.176020872693
+          },
+          {
+            "x": 6221.385565068533,
+            "y": 437.3897096013862
+          },
+          {
+            "x": 6236.497511180527,
+            "y": 424.7839538856349
+          },
+          {
+            "x": 6251.609457292521,
+            "y": 412.3587537254392
+          },
+          {
+            "x": 6266.7214034045155,
+            "y": 400.11410912079896
+          },
+          {
+            "x": 6281.83334951651,
+            "y": 388.0500200717144
+          },
+          {
+            "x": 6296.945295628504,
+            "y": 376.1664865781853
+          },
+          {
+            "x": 6312.057241740498,
+            "y": 364.4635086402118
+          },
+          {
+            "x": 6327.1691878524925,
+            "y": 352.9410862577938
+          },
+          {
+            "x": 6342.281133964487,
+            "y": 341.59921943093144
+          },
+          {
+            "x": 6357.393080076481,
+            "y": 330.4379081596246
+          },
+          {
+            "x": 6372.505026188475,
+            "y": 319.4571524438733
+          },
+          {
+            "x": 6387.61697230047,
+            "y": 308.6569522836776
+          },
+          {
+            "x": 6402.728918412464,
+            "y": 298.0373076790374
+          },
+          {
+            "x": 6417.840864524458,
+            "y": 287.5982186299528
+          },
+          {
+            "x": 6432.952810636452,
+            "y": 277.3396851364237
+          },
+          {
+            "x": 6448.064756748447,
+            "y": 267.2617071984502
+          },
+          {
+            "x": 6463.176702860441,
+            "y": 257.36428481603224
+          },
+          {
+            "x": 6478.288648972435,
+            "y": 247.64741798916984
+          },
+          {
+            "x": 6493.400595084429,
+            "y": 238.111106717863
+          },
+          {
+            "x": 6508.512541196424,
+            "y": 228.75535100211172
+          },
+          {
+            "x": 6523.624487308418,
+            "y": 219.580150841916
+          },
+          {
+            "x": 6538.736433420412,
+            "y": 210.58550623727584
+          },
+          {
+            "x": 6553.848379532406,
+            "y": 201.77141718819124
+          },
+          {
+            "x": 6568.960325644401,
+            "y": 193.13788369466215
+          },
+          {
+            "x": 6584.072271756395,
+            "y": 184.6849057566887
+          },
+          {
+            "x": 6599.184217868389,
+            "y": 176.41248337427075
+          },
+          {
+            "x": 6614.296163980383,
+            "y": 168.32061654740835
+          },
+          {
+            "x": 6629.408110092378,
+            "y": 160.40930527610152
+          },
+          {
+            "x": 6644.520056204372,
+            "y": 152.67854956035023
+          },
+          {
+            "x": 6659.632002316366,
+            "y": 145.12834940015452
+          },
+          {
+            "x": 6674.74394842836,
+            "y": 137.75870479551435
+          },
+          {
+            "x": 6689.855894540355,
+            "y": 130.56961574642975
+          },
+          {
+            "x": 6704.967840652349,
+            "y": 123.56108225290068
+          },
+          {
+            "x": 6720.079786764343,
+            "y": 116.7331043149272
+          },
+          {
+            "x": 6735.1917328763375,
+            "y": 110.08568193250925
+          },
+          {
+            "x": 6750.303678988332,
+            "y": 103.61881510564686
+          },
+          {
+            "x": 6765.415625100326,
+            "y": 97.33250383434005
+          },
+          {
+            "x": 6780.52757121232,
+            "y": 91.22674811858874
+          },
+          {
+            "x": 6795.6395173243145,
+            "y": 85.30154795839302
+          },
+          {
+            "x": 6810.751463436309,
+            "y": 79.55690335375284
+          },
+          {
+            "x": 6825.863409548303,
+            "y": 73.99281430466823
+          },
+          {
+            "x": 6840.975355660297,
+            "y": 68.60928081113917
+          },
+          {
+            "x": 6856.0873017722915,
+            "y": 63.40630287316567
+          },
+          {
+            "x": 6871.199247884286,
+            "y": 58.38388049074772
+          },
+          {
+            "x": 6886.31119399628,
+            "y": 53.54201366388533
+          },
+          {
+            "x": 6901.423140108274,
+            "y": 48.88070239257849
+          },
+          {
+            "x": 6916.535086220269,
+            "y": 44.39994667682721
+          },
+          {
+            "x": 6931.647032332263,
+            "y": 40.09974651663149
+          },
+          {
+            "x": 6946.758978444257,
+            "y": 35.98010191199131
+          },
+          {
+            "x": 6961.870924556251,
+            "y": 32.0410128629067
+          },
+          {
+            "x": 6976.982870668246,
+            "y": 28.282479369377636
+          },
+          {
+            "x": 6992.09481678024,
+            "y": 24.704501431404132
+          },
+          {
+            "x": 7007.206762892234,
+            "y": 21.307079048986186
+          },
+          {
+            "x": 7022.318709004228,
+            "y": 18.09021222212379
+          },
+          {
+            "x": 7037.430655116223,
+            "y": 15.053900950816953
+          },
+          {
+            "x": 7052.542601228217,
+            "y": 12.19814523506567
+          },
+          {
+            "x": 7067.654547340211,
+            "y": 9.522945074869943
+          },
+          {
+            "x": 7082.766493452205,
+            "y": 7.028300470229775
+          },
+          {
+            "x": 7097.8784395642,
+            "y": 4.71421142114516
+          },
+          {
+            "x": 7112.990385676194,
+            "y": 2.580677927616102
+          },
+          {
+            "x": 7128.102331788188,
+            "y": 0.6276999896425979
+          },
+          {
+            "x": 7143.214277900182,
+            "y": -1.14472239277535
+          },
+          {
+            "x": 7158.326224012177,
+            "y": -2.7365892196377426
+          },
+          {
+            "x": 7173.438170124171,
+            "y": -4.147900490944579
+          },
+          {
+            "x": 7188.550116236165,
+            "y": -5.378656206695861
+          },
+          {
+            "x": 7203.662062348159,
+            "y": -6.428856366891587
+          },
+          {
+            "x": 7218.774008460154,
+            "y": -7.298500971531758
+          },
+          {
+            "x": 7233.885954572148,
+            "y": -7.987590020616373
+          },
+          {
+            "x": 7248.997900684142,
+            "y": -8.496123514145433
+          },
+          {
+            "x": 7264.109846796136,
+            "y": -8.824101452118937
+          },
+          {
+            "x": 7279.221792908131,
+            "y": -8.971523834536885
+          },
+          {
+            "x": 7294.333739020125,
+            "y": -8.938390661399279
+          },
+          {
+            "x": 7309.445685132119,
+            "y": -8.724701932706116
+          },
+          {
+            "x": 7324.5576312441135,
+            "y": -8.330457648457397
+          },
+          {
+            "x": 7339.669577356108,
+            "y": -7.755657808653123
+          },
+          {
+            "x": 7354.781523468102,
+            "y": -7.000302413293294
+          },
+          {
+            "x": 7369.893469580096,
+            "y": -6.064391462377909
+          },
+          {
+            "x": 7385.005415692091,
+            "y": -4.947924955906968
+          },
+          {
+            "x": 7400.117361804085,
+            "y": -3.650902893880472
+          },
+          {
+            "x": 7415.229307916079,
+            "y": -2.17332527629842
+          },
+          {
+            "x": 7430.341254028073,
+            "y": -0.5151921031608124
+          },
+          {
+            "x": 7445.453200140068,
+            "y": 1.3234966255323504
+          },
+          {
+            "x": 7460.565146252062,
+            "y": 3.3427409097810687
+          },
+          {
+            "x": 7475.677092364056,
+            "y": 5.542540749585342
+          },
+          {
+            "x": 7490.78903847605,
+            "y": 7.922896144945172
+          },
+          {
+            "x": 7505.900984588045,
+            "y": 10.483807095860556
+          },
+          {
+            "x": 7521.012930700039,
+            "y": 13.225273602331498
+          },
+          {
+            "x": 7536.124876812033,
+            "y": 16.147295664357994
+          },
+          {
+            "x": 7551.236822924027,
+            "y": 19.249873281940047
+          },
+          {
+            "x": 7566.348769036022,
+            "y": 22.533006455077658
+          },
+          {
+            "x": 7581.460715148016,
+            "y": 25.996695183770814
+          },
+          {
+            "x": 7596.57266126001,
+            "y": 29.64093946801954
+          },
+          {
+            "x": 7611.684607372004,
+            "y": 33.46573930782382
+          },
+          {
+            "x": 7626.796553483999,
+            "y": 37.471094703183645
+          },
+          {
+            "x": 7641.908499595993,
+            "y": 41.65700565409903
+          },
+          {
+            "x": 7657.020445707987,
+            "y": 46.02347216056997
+          },
+          {
+            "x": 7672.132391819981,
+            "y": 50.57049422259647
+          },
+          {
+            "x": 7687.244337931976,
+            "y": 55.29807184017852
+          },
+          {
+            "x": 7702.35628404397,
+            "y": 60.20620501331613
+          },
+          {
+            "x": 7717.468230155964,
+            "y": 65.2948937420093
+          },
+          {
+            "x": 7732.580176267958,
+            "y": 70.56413802625801
+          },
+          {
+            "x": 7747.692122379953,
+            "y": 76.01393786606228
+          },
+          {
+            "x": 7762.804068491947,
+            "y": 81.6442932614221
+          },
+          {
+            "x": 7777.916014603941,
+            "y": 87.45520421233749
+          },
+          {
+            "x": 7793.027960715936,
+            "y": 93.44667071880843
+          },
+          {
+            "x": 7808.13990682793,
+            "y": 99.61869278083492
+          },
+          {
+            "x": 7823.251852939924,
+            "y": 105.971270398417
+          },
+          {
+            "x": 7838.363799051918,
+            "y": 112.5044035715546
+          },
+          {
+            "x": 7853.475745163912,
+            "y": 119.21809230024776
+          },
+          {
+            "x": 7868.587691275907,
+            "y": 126.11233658449646
+          },
+          {
+            "x": 7883.699637387901,
+            "y": 133.18713642430072
+          },
+          {
+            "x": 7898.811583499895,
+            "y": 140.44249181966055
+          },
+          {
+            "x": 7913.9235296118895,
+            "y": 147.87840277057592
+          },
+          {
+            "x": 7929.035475723884,
+            "y": 155.49486927704686
+          },
+          {
+            "x": 7944.147421835878,
+            "y": 163.29189133907337
+          },
+          {
+            "x": 7959.259367947872,
+            "y": 171.2694689566554
+          },
+          {
+            "x": 7974.371314059867,
+            "y": 179.427602129793
+          },
+          {
+            "x": 7989.483260171861,
+            "y": 187.76629085848617
+          },
+          {
+            "x": 8004.595206283855,
+            "y": 196.2855351427349
+          },
+          {
+            "x": 8019.707152395849,
+            "y": 204.98533498253911
+          },
+          {
+            "x": 8034.819098507844,
+            "y": 213.86569037789897
+          },
+          {
+            "x": 8049.931044619838,
+            "y": 222.92660132881431
+          },
+          {
+            "x": 8065.042990731832,
+            "y": 232.16806783528529
+          },
+          {
+            "x": 8080.154936843826,
+            "y": 241.59008989731177
+          },
+          {
+            "x": 8095.266882955821,
+            "y": 251.19266751489383
+          },
+          {
+            "x": 8110.378829067815,
+            "y": 260.9758006880314
+          },
+          {
+            "x": 8125.490775179809,
+            "y": 270.9394894167246
+          },
+          {
+            "x": 8140.602721291803,
+            "y": 281.0837337009733
+          },
+          {
+            "x": 8155.714667403798,
+            "y": 291.40853354077757
+          },
+          {
+            "x": 8170.826613515792,
+            "y": 301.9138889361374
+          },
+          {
+            "x": 8185.938559627786,
+            "y": 312.5997998870528
+          },
+          {
+            "x": 8201.05050573978,
+            "y": 323.46626639352377
+          },
+          {
+            "x": 8216.162451851775,
+            "y": 334.51328845555025
+          },
+          {
+            "x": 8231.274397963769,
+            "y": 345.7408660731323
+          },
+          {
+            "x": 8246.386344075763,
+            "y": 357.1489992462699
+          },
+          {
+            "x": 8261.498290187757,
+            "y": 368.7376879749631
+          },
+          {
+            "x": 8276.610236299752,
+            "y": 380.5069322592118
+          },
+          {
+            "x": 8291.722182411746,
+            "y": 392.4567320990161
+          },
+          {
+            "x": 8306.83412852374,
+            "y": 404.5870874943759
+          },
+          {
+            "x": 8321.946074635734,
+            "y": 416.8979984452913
+          },
+          {
+            "x": 8337.058020747729,
+            "y": 429.38946495176225
+          },
+          {
+            "x": 8352.169966859723,
+            "y": 442.06148701378874
+          },
+          {
+            "x": 8367.281912971717,
+            "y": 454.9140646313708
+          },
+          {
+            "x": 8382.393859083712,
+            "y": 467.9471978045085
+          },
+          {
+            "x": 8397.505805195706,
+            "y": 481.1608865332016
+          },
+          {
+            "x": 8412.6177513077,
+            "y": 494.55513081745033
+          },
+          {
+            "x": 8427.729697419694,
+            "y": 508.1299306572546
+          },
+          {
+            "x": 8442.841643531689,
+            "y": 521.8852860526144
+          },
+          {
+            "x": 8457.953589643683,
+            "y": 535.8211970035298
+          },
+          {
+            "x": 8473.065535755677,
+            "y": 549.9376635100008
+          },
+          {
+            "x": 8488.177481867671,
+            "y": 564.2346855720273
+          },
+          {
+            "x": 8503.289427979666,
+            "y": 578.7122631896093
+          },
+          {
+            "x": 8518.40137409166,
+            "y": 593.3703963627469
+          },
+          {
+            "x": 8533.513320203654,
+            "y": 608.2090850914401
+          },
+          {
+            "x": 8537.730607490723,
+            "y": 612.4005021009979
+          }
+        ],
+        "power": 0.6943152339500375,
+        "speed": 1280.3358977150638,
+        "time": 2.7713178294573595,
+        "velocity": {
+          "x": 906.7167667196436,
+          "y": -903.9495096117446
+        }
+      },
+      "status": "clear",
+      "warnings": [
+        "evolving-air-fields-not-predicted"
+      ],
+      "work": {
+        "candidates": 23,
+        "cells": 93588,
+        "chunks": 65,
+        "geometry": {
+          "catalogRows": 0,
+          "chunks": 1,
+          "colliders": 1,
+          "records": 0
+        },
+        "steps": 397538
+      }
+    },
+    "power": 69.43152339500375,
+    "tactic": "High arc over obstruction",
+    "target": {
+      "bodyId": null,
+      "entityId": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+      "x": 8559,
+      "y": 604
+    },
+    "turn": 1,
+    "weapon": {
+      "ammo": {
+        "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+        "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 3,
+        "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+        "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+        "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+        "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+        "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+        "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+        "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+        "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+        "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 0,
+        "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+        "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+        "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+        "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+        "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+        "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+        "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+        "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+        "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+        "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+        "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+        "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 0,
+        "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+        "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+        "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+        "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+        "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+        "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+        "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+        "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+        "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+        "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+        "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+      },
+      "angle": -0.7838698558404151,
+      "equipped": "219d46ea-fa7c-4578-b119-bba07279e6f0",
+      "gravityScale": 1,
+      "items": [
+        "219d46ea-fa7c-4578-b119-bba07279e6f0",
+        "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+        "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+        "9dd9a83c-66b3-4720-a798-b7ce47372022",
+        "fa168217-924a-4b95-b7f2-025d856f5b88",
+        "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+        "70446b65-1a75-4950-840a-443f28dc58a6",
+        "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+        "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+        "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+        "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+        "2ee512d3-c721-4978-a1a5-b97d42255b13",
+        "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+        "a80f054a-6235-4746-b050-8d5cd248dd57",
+        "b4474e78-1c10-4d79-994d-d900ed050664",
+        "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+        "173004dc-1907-43e3-9e01-10f4b7084523",
+        "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+        "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+        "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+        "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+        "1a4d56f6-0058-471f-a4bf-77548338012c",
+        "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+        "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+        "e1a46386-8976-4b3c-9408-0159b3f64235",
+        "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+        "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+        "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+        "2e0a754f-eb50-487b-b90a-907a3a43159a",
+        "780f5cdb-7252-4a69-987b-b908477015ad",
+        "815021a5-49a0-4790-91dd-b5b61a3c5050",
+        "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+        "bb0da974-5d0f-4644-a6da-278758d07d9f",
+        "9cb680d4-3edf-451b-81da-ebbb514808bb",
+        "e3a20e82-7e11-4ef9-bce2-903255ebb4dc",
+        "78ea7cb7-a3be-435a-be9f-5766f5f97a81"
+      ],
+      "kind": "rigid-body",
+      "localAngle": -1.0395842723443214,
+      "pinned": true,
+      "power": 0.6943152339500375,
+      "speed": {
+        "current": 1280.3358977150638,
+        "max": 1800,
+        "min": 100
+      }
+    }
+  },
+  {
+    "clock": 74.18333333333041,
+    "kind": "presentation-centering",
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "speechKind": "shooting",
+    "turn": 1
+  },
+  {
+    "center": {
+      "x": 5999.435546875008,
+      "y": 642.2949998350131
+    },
+    "clock": 74.18333333333041,
+    "kind": "presentation-centered",
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "ready": true,
+    "speechKind": "shooting",
+    "tracking": 1,
+    "turn": 1,
+    "x": 5999.435546875,
+    "y": 642.2949829101562
+  },
+  {
+    "clock": 74.18333333333041,
+    "id": "[\"terra-heavy-weather\",null,\"taunt\",\"neutral\",\"I am a small tank with very big opinions.\"]",
+    "kind": "quip",
+    "name": "M12V Distant Alpha",
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "speechKind": "shooting",
+    "text": "I am a small tank with very big opinions.",
+    "turn": 1
+  },
+  {
+    "clock": 77.1999999999969,
+    "elapsed": 3.016666666666495,
+    "kind": "presentation-ended",
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "speechKind": "shooting",
+    "turn": 1
+  },
+  {
+    "actualEquipped": "219d46ea-fa7c-4578-b119-bba07279e6f0",
+    "angle": 44.91243442718405,
+    "clock": 77.1999999999969,
+    "item": "standard",
+    "kind": "fire-request",
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "power": 69.43152339500375,
+    "stock": "unlimited",
+    "template": "219d46ea-fa7c-4578-b119-bba07279e6f0",
+    "turn": 1
+  },
+  {
+    "action": "shoot",
+    "amount": 20,
+    "clock": 77.1999999999969,
+    "kind": "cash",
+    "name": "M12V Distant Alpha",
+    "total": 36,
+    "turn": 1
+  },
+  {
+    "action": "accepted-cast",
+    "clock": 77.1999999999969,
+    "item": "standard",
+    "kind": "cpu-progress",
+    "name": "M12V Distant Alpha",
+    "previousPasses": 0,
+    "projectileId": 1,
+    "template": "219d46ea-fa7c-4578-b119-bba07279e6f0",
+    "turn": 1
+  },
+  {
+    "clock": 77.1999999999969,
+    "depth": 0,
+    "id": 1,
+    "kind": "launch",
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "snapshot": {
+      "age": 0,
+      "held": false,
+      "id": 1,
+      "kind": "rigid-body",
+      "ownerId": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+      "vx": 906.716796875,
+      "vy": -903.9495239257812,
+      "x": 6024.5,
+      "y": 616.5
+    },
+    "template": "219d46ea-fa7c-4578-b119-bba07279e6f0",
+    "turn": 1,
+    "weapon": "standard"
+  },
+  {
+    "action": "landing",
+    "amount": 15,
+    "clock": 79.81666666666342,
+    "kind": "cash",
+    "name": "M12V Distant Alpha",
+    "total": 51,
+    "turn": 1
+  },
+  {
+    "clock": 79.81666666666342,
+    "element": "DIRT",
+    "id": 1,
+    "kind": "collision",
+    "turn": 1,
+    "with": "particle",
+    "x": 8172.5,
+    "y": 639.5
+  },
+  {
+    "clock": 79.81666666666342,
+    "damageBefore": 0,
+    "dx": -386.5,
+    "dy": 35.5,
+    "impact": {
+      "x": 8172.5,
+      "y": 639.5
+    },
+    "kind": "cpu-observation",
+    "origin": {
+      "x": 5999.435546875,
+      "y": 642.2949829101562
+    },
+    "power": 69.43152339500375,
+    "reason": "detonated",
+    "target": {
+      "x": 8559,
+      "y": 604
+    },
+    "targetId": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+    "turn": 1,
+    "weapon": "standard"
+  },
+  {
+    "clock": 79.81666666666342,
+    "id": 1,
+    "kind": "end",
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "reason": "detonated",
+    "shooterResidency": "stored",
+    "turn": 1,
+    "x": 8172.5,
+    "y": 639.5
+  },
+  {
+    "clock": 79.83333333333009,
+    "ended": 1,
+    "kind": "attack-resolved",
+    "launched": 1,
+    "turn": 1,
+    "weapon": "standard"
+  },
+  {
+    "clock": 80.24999999999673,
+    "health": 100,
+    "kind": "tank-restored",
+    "liveId": 8,
+    "owner": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+    "turn": 1
+  },
+  {
+    "clock": 80.56666666666338,
+    "id": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+    "kind": "land",
+    "position": {
+      "x": 8559,
+      "y": 640.3765869140625
+    },
+    "turn": 1
+  },
+  {
+    "clock": 82.81666666666325,
+    "kind": "settled",
+    "rect": {
+      "h": 384,
+      "w": 384,
+      "x": 7980.5,
+      "y": 511.5
+    },
+    "ticks": 180,
+    "timedOut": true,
+    "turn": 1,
+    "watchId": 1
+  },
+  {
+    "clock": 82.81666666666325,
+    "color": "#EC4787",
+    "eyebrow": "TURN 1 COMPLETE",
+    "id": 3,
+    "kind": "arcade-start",
+    "long": false,
+    "radar": false,
+    "receipt": true,
+    "score": "0 kills (+0) \u00b7 Turn cash +$51.00",
+    "seconds": 1,
+    "sub": "Every crater counts.",
+    "title": "M12V Distant Alpha",
+    "turn": 1
+  },
+  {
+    "clock": 83.31666666666322,
+    "elapsed": 1.000000000000001,
+    "id": 3,
+    "kind": "arcade-ended",
+    "turn": 1
+  },
+  {
+    "center": {
+      "x": 8547.137386192422,
+      "y": 642.3949355427596
+    },
+    "clock": 83.88333333332986,
+    "kind": "turn-camera-arrived",
+    "liveId": 8,
+    "owner": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+    "tracking": 1,
+    "turn": 2
+  },
+  {
+    "clock": 83.88333333332986,
+    "color": "#35D9FF",
+    "eyebrow": "TURN 2 / COMMAND CARTRIDGE",
+    "id": 4,
+    "kind": "arcade-start",
+    "long": false,
+    "radar": true,
+    "receipt": false,
+    "score": "",
+    "seconds": 1,
+    "sub": "Cascade Institute \u00b7 expert",
+    "title": "M12V Distant Beta",
+    "turn": 2
+  },
+  {
+    "clock": 84.38333333332983,
+    "elapsed": 1.000000000000001,
+    "id": 4,
+    "kind": "arcade-ended",
+    "turn": 2
+  },
+  {
+    "center": {
+      "x": 8558.436928698115,
+      "y": 642.8104514479193
+    },
+    "clock": 84.38333333332983,
+    "kind": "turn-camera-arrived",
+    "liveId": 8,
+    "owner": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+    "tracking": 1,
+    "turn": 2
+  },
+  {
+    "action": "turn",
+    "amount": 10,
+    "clock": 84.38333333332983,
+    "kind": "cash",
+    "name": "M12V Distant Beta",
+    "total": 10,
+    "turn": 2
+  },
+  {
+    "clock": 84.38333333332983,
+    "id": "instance@spawn-c9917ee2-74f4-4799-be55-8bb1799b085a",
+    "kind": "turn",
+    "name": "M12V Distant Beta",
+    "turn": 2
+  },
+  {
+    "clock": 85.86666666666308,
+    "kind": "cpu-decision-refused",
+    "name": "M12V Distant Beta",
+    "skipped": [
+      {
+        "item": "escape-charge",
+        "reason": "local-terrain-tactic"
+      }
+    ],
+    "trials": [
+      {
+        "goal": "tank",
+        "obstruction": {
+          "element": 3,
+          "kind": "unknown",
+          "reason": "material-drag-not-supported",
+          "time": 4.427243589743579,
+          "x": 6003.5,
+          "y": 625.5
+        },
+        "reason": "chunk-budget",
+        "target": "M12V Distant Alpha",
+        "warnings": [
+          "stationary-saved-shapes-no-future-motion",
+          "evolving-air-fields-not-predicted"
+        ],
+        "weapon": "napalm",
+        "work": {
+          "candidates": 10,
+          "cells": 318544,
+          "chunks": 256,
+          "geometry": {
+            "catalogRows": 0,
+            "chunks": 2,
+            "colliders": 1,
+            "records": 1
+          },
+          "steps": 160219
+        }
+      },
+      {
+        "goal": "tank",
+        "obstruction": null,
+        "reason": "cancelled-or-owner-moved",
+        "target": "M12V Distant Alpha",
+        "warnings": [],
+        "weapon": "standard",
+        "work": {
+          "candidates": 0,
+          "cells": 0,
+          "chunks": 0,
+          "steps": 0
+        }
+      }
+    ],
+    "turn": 2
+  },
+  {
+    "clock": 85.86666666666308,
+    "count": 1,
+    "decision": {
+      "budgetRemaining": 85,
+      "skipped": [
+        {
+          "item": "escape-charge",
+          "reason": "local-terrain-tactic"
+        }
+      ],
+      "status": "refused",
+      "trials": [
+        {
+          "goal": "tank",
+          "obstruction": {
+            "element": 3,
+            "kind": "unknown",
+            "reason": "material-drag-not-supported",
+            "time": 4.427243589743579,
+            "x": 6003.5,
+            "y": 625.5
+          },
+          "reason": "chunk-budget",
+          "target": "M12V Distant Alpha",
+          "warnings": [
+            "stationary-saved-shapes-no-future-motion",
+            "evolving-air-fields-not-predicted"
+          ],
+          "weapon": "napalm",
+          "work": {
+            "candidates": 10,
+            "cells": 318544,
+            "chunks": 256,
+            "geometry": {
+              "catalogRows": 0,
+              "chunks": 2,
+              "colliders": 1,
+              "records": 1
+            },
+            "steps": 160219
+          }
+        },
+        {
+          "goal": "tank",
+          "obstruction": null,
+          "reason": "cancelled-or-owner-moved",
+          "target": "M12V Distant Alpha",
+          "warnings": [],
+          "weapon": "standard",
+          "work": {
+            "candidates": 0,
+            "cells": 0,
+            "chunks": 0,
+            "steps": 0
+          }
+        }
+      ],
+      "turn": 2
+    },
+    "kind": "cpu-pass",
+    "limit": 2,
+    "name": "M12V Distant Beta",
+    "reason": "No supported clear shot after bounded movement, escape and demolition alternatives",
+    "turn": 2
+  },
+  {
+    "action": "pass",
+    "amount": 10,
+    "clock": 85.86666666666308,
+    "kind": "cash",
+    "name": "M12V Distant Beta",
+    "total": 20,
+    "turn": 2
+  },
+  {
+    "clock": 85.86666666666308,
+    "color": "#35D9FF",
+    "eyebrow": "TURN 2 COMPLETE",
+    "id": 5,
+    "kind": "arcade-start",
+    "long": false,
+    "radar": false,
+    "receipt": true,
+    "score": "0 kills (+0) \u00b7 Turn cash +$20.00",
+    "seconds": 1,
+    "sub": "Every crater counts.",
+    "title": "M12V Distant Beta",
+    "turn": 2
+  },
+  {
+    "clock": 86.36666666666305,
+    "elapsed": 1.000000000000001,
+    "id": 5,
+    "kind": "arcade-ended",
+    "turn": 2
+  },
+  {
+    "clock": 87.19999999999634,
+    "health": null,
+    "kind": "tank-restored",
+    "liveId": 12,
+    "owner": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "turn": 3
+  },
+  {
+    "clock": 87.41666666666299,
+    "kind": "fault",
+    "message": "TalusError: EntityWeapon.setAmmo: the entity has no blackboard to hold ammo",
+    "turn": 3
+  },
+  {
+    "clock": 88.13333333332962,
+    "id": "instance@spawn-9f62b869-d26c-43d2-bd8b-e13a9d92a474",
+    "kind": "land",
+    "position": {
+      "x": 5999.435546875,
+      "y": 642.2949829101562
+    },
+    "turn": 3
+  }
+]

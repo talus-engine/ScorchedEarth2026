@@ -1,0 +1,6316 @@
+{
+  "snapshots": [
+    {
+      "dialogueActive": true,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 0,
+        "humans": 0,
+        "impact": null,
+        "message": "Computer is choosing its shot",
+        "phase": "turn",
+        "remaining": 9.766666666666657,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 1,
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 1,
+        "turnSeconds": 10,
+        "version": 3,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 2,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9915161132812
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 609.9910278320312
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test Amber",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 10,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Computer is choosing its shot",
+        "tankCount": 2,
+        "turnNumber": 1,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": false,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 0,
+        "humans": 0,
+        "impact": null,
+        "message": "Shell in flight",
+        "phase": "flight",
+        "remaining": 8.766666666666605,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 1,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9924926757812
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": 1,
+        "turnNumber": 1,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 0,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 2,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9905395507812
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 609.9910278320312
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test Amber",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "flight",
+        "ready": false,
+        "remaining": 9,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Shell in flight",
+        "tankCount": 2,
+        "turnNumber": 1,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": false,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 0,
+        "humans": 0,
+        "impact": {
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        "message": "Waiting for terrain and tanks to settle",
+        "phase": "settling",
+        "remaining": 8.766666666666605,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 1,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9924926757812
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 1,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 168,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9922485351562
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 4,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 609.9924926757812
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test Amber",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "settling",
+        "ready": false,
+        "remaining": 9,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Waiting for terrain and tanks to settle",
+        "tankCount": 2,
+        "turnNumber": 1,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": true,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 1,
+        "humans": 0,
+        "impact": null,
+        "message": "Computer is choosing its shot",
+        "phase": "turn",
+        "remaining": 10,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 1,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9924926757812
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 2,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 168,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9922485351562
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 4,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 609.9902954101562
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 135,
+          "color": "#ffbd82",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test Cobalt",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 10,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "WAITING"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "CURRENT"
+          }
+        ],
+        "seed": 0,
+        "status": "Computer is choosing its shot",
+        "tankCount": 2,
+        "turnNumber": 2,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": false,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 1,
+        "humans": 0,
+        "impact": null,
+        "message": "Shell in flight",
+        "phase": "flight",
+        "remaining": 8.766666666666605,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 1,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9924926757812
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 2,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 609.9922485351562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": 2,
+        "turnNumber": 2,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 0,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9922485351562
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 4,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 609.9920043945312
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 135,
+          "color": "#ffbd82",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test Cobalt",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "flight",
+        "ready": false,
+        "remaining": 9,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "WAITING"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "CURRENT"
+          }
+        ],
+        "seed": 0,
+        "status": "Shell in flight",
+        "tankCount": 2,
+        "turnNumber": 2,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": false,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        },
+        {
+          "clock": 109.03333333332844,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4965.6787109375,
+          "y": 656
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 1,
+        "humans": 0,
+        "impact": {
+          "x": 4965.6787109375,
+          "y": 656
+        },
+        "message": "Waiting for terrain and tanks to settle",
+        "phase": "settling",
+        "remaining": 8.766666666666605,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 1,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9924926757812
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 2,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 609.9922485351562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 2,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 173,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 6,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9906005859375
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 609.9920043945312
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 135,
+          "color": "#ffbd82",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test Cobalt",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "settling",
+        "ready": false,
+        "remaining": 9,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "WAITING"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "CURRENT"
+          }
+        ],
+        "seed": 0,
+        "status": "Waiting for terrain and tanks to settle",
+        "tankCount": 2,
+        "turnNumber": 2,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": true,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        },
+        {
+          "clock": 109.03333333332844,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4965.6787109375,
+          "y": 656
+        },
+        {
+          "clock": 109.5333333333284,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4773.6787109375,
+            "y": 528
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 109.5333333333284,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 3
+        },
+        {
+          "clock": 109.54999999999508,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 66.8001498884362,
+          "target": "M3 Test Cobalt",
+          "turn": 3
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 0,
+        "humans": 0,
+        "impact": null,
+        "message": "Computer is choosing its shot",
+        "phase": "turn",
+        "remaining": 10,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 1,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9924926757812
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 2,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 609.9922485351562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 3,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 173,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 6,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9910278320312
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 609.9920043945312
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test Amber",
+          "power": 67
+        },
+        "finished": false,
+        "human": false,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 10,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Computer is choosing its shot",
+        "tankCount": 2,
+        "turnNumber": 3,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": false,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        },
+        {
+          "clock": 109.03333333332844,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4965.6787109375,
+          "y": 656
+        },
+        {
+          "clock": 109.5333333333284,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4773.6787109375,
+            "y": 528
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 109.5333333333284,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 3
+        },
+        {
+          "clock": 109.54999999999508,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 66.8001498884362,
+          "target": "M3 Test Cobalt",
+          "turn": 3
+        },
+        {
+          "angle": 45,
+          "clock": 110.76666666666166,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 67,
+          "turn": 3
+        },
+        {
+          "clock": 110.76666666666166,
+          "id": 3,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 3
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 0,
+        "humans": 0,
+        "impact": null,
+        "message": "Shell in flight",
+        "phase": "flight",
+        "remaining": 8.766666666666605,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 3,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9902954101562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 2,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 609.9922485351562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": 3,
+        "turnNumber": 3,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 0,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 6,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9900512695312
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 609.9920043945312
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test Amber",
+          "power": 67
+        },
+        "finished": false,
+        "human": false,
+        "phase": "flight",
+        "ready": false,
+        "remaining": 9,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Shell in flight",
+        "tankCount": 2,
+        "turnNumber": 3,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": false,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        },
+        {
+          "clock": 109.03333333332844,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4965.6787109375,
+          "y": 656
+        },
+        {
+          "clock": 109.5333333333284,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4773.6787109375,
+            "y": 528
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 109.5333333333284,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 3
+        },
+        {
+          "clock": 109.54999999999508,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 66.8001498884362,
+          "target": "M3 Test Cobalt",
+          "turn": 3
+        },
+        {
+          "angle": 45,
+          "clock": 110.76666666666166,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 67,
+          "turn": 3
+        },
+        {
+          "clock": 110.76666666666166,
+          "id": 3,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 3
+        },
+        {
+          "amount": 47.70089752940379,
+          "clock": 113.39999999999483,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "projectileId": 3,
+          "targetEntityId": 8,
+          "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 3
+        },
+        {
+          "clock": 113.39999999999483,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 3,
+          "x": 7517,
+          "y": 624
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 0,
+        "humans": 0,
+        "impact": {
+          "x": 7517,
+          "y": 624
+        },
+        "message": "Waiting for terrain and tanks to settle",
+        "phase": "settling",
+        "remaining": 8.766666666666605,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 3,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9902954101562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 2,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 609.9922485351562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 3,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 158,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9922485351562
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 52.29910247059621,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 8,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 610.1707153320312
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Computer",
+          "health": 100,
+          "name": "M3 Test Amber",
+          "power": 67
+        },
+        "finished": false,
+        "human": false,
+        "phase": "settling",
+        "ready": false,
+        "remaining": 9,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 52,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Waiting for terrain and tanks to settle",
+        "tankCount": 2,
+        "turnNumber": 3,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": true,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        },
+        {
+          "clock": 109.03333333332844,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4965.6787109375,
+          "y": 656
+        },
+        {
+          "clock": 109.5333333333284,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4773.6787109375,
+            "y": 528
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 109.5333333333284,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 3
+        },
+        {
+          "clock": 109.54999999999508,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 66.8001498884362,
+          "target": "M3 Test Cobalt",
+          "turn": 3
+        },
+        {
+          "angle": 45,
+          "clock": 110.76666666666166,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 67,
+          "turn": 3
+        },
+        {
+          "clock": 110.76666666666166,
+          "id": 3,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 3
+        },
+        {
+          "amount": 47.70089752940379,
+          "clock": 113.39999999999483,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "projectileId": 3,
+          "targetEntityId": 8,
+          "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 3
+        },
+        {
+          "clock": 113.39999999999483,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 3,
+          "x": 7517,
+          "y": 624
+        },
+        {
+          "clock": 113.89999999999482,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7325,
+            "y": 496
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 3,
+          "watchId": 3
+        },
+        {
+          "clock": 113.89999999999482,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 4
+        },
+        {
+          "clock": 113.91666666666148,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 65.74563848541905,
+          "target": "M3 Test Amber",
+          "turn": 4
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 1,
+        "humans": 0,
+        "impact": null,
+        "message": "Computer is choosing its shot",
+        "phase": "turn",
+        "remaining": 9.783333333333324,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 3,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9902954101562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 4,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 609.9922485351562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 4,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 158,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9922485351562
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 52.29910247059621,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 8,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 610.1661987304688
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 135,
+          "color": "#ffbd82",
+          "control": "Computer",
+          "health": 52,
+          "name": "M3 Test Cobalt",
+          "power": 66
+        },
+        "finished": false,
+        "human": false,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 10,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "WAITING"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 52,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "CURRENT"
+          }
+        ],
+        "seed": 0,
+        "status": "Computer is choosing its shot",
+        "tankCount": 2,
+        "turnNumber": 4,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": false,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        },
+        {
+          "clock": 109.03333333332844,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4965.6787109375,
+          "y": 656
+        },
+        {
+          "clock": 109.5333333333284,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4773.6787109375,
+            "y": 528
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 109.5333333333284,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 3
+        },
+        {
+          "clock": 109.54999999999508,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 66.8001498884362,
+          "target": "M3 Test Cobalt",
+          "turn": 3
+        },
+        {
+          "angle": 45,
+          "clock": 110.76666666666166,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 67,
+          "turn": 3
+        },
+        {
+          "clock": 110.76666666666166,
+          "id": 3,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 3
+        },
+        {
+          "amount": 47.70089752940379,
+          "clock": 113.39999999999483,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "projectileId": 3,
+          "targetEntityId": 8,
+          "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 3
+        },
+        {
+          "clock": 113.39999999999483,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 3,
+          "x": 7517,
+          "y": 624
+        },
+        {
+          "clock": 113.89999999999482,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7325,
+            "y": 496
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 3,
+          "watchId": 3
+        },
+        {
+          "clock": 113.89999999999482,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 4
+        },
+        {
+          "clock": 113.91666666666148,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 65.74563848541905,
+          "target": "M3 Test Amber",
+          "turn": 4
+        },
+        {
+          "angle": 135,
+          "clock": 115.13333333332808,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 66,
+          "turn": 4
+        },
+        {
+          "clock": 115.13333333332808,
+          "id": 4,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 4
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 1,
+        "humans": 0,
+        "impact": null,
+        "message": "Shell in flight",
+        "phase": "flight",
+        "remaining": 8.766666666666605,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 3,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9902954101562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 4,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 610.1592407226562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": 4,
+        "turnNumber": 4,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 0,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9922485351562
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 52.29910247059621,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 8,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 610.1572875976562
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 135,
+          "color": "#ffbd82",
+          "control": "Computer",
+          "health": 52,
+          "name": "M3 Test Cobalt",
+          "power": 66
+        },
+        "finished": false,
+        "human": false,
+        "phase": "flight",
+        "ready": false,
+        "remaining": 9,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "WAITING"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 52,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "CURRENT"
+          }
+        ],
+        "seed": 0,
+        "status": "Shell in flight",
+        "tankCount": 2,
+        "turnNumber": 4,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": false,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        },
+        {
+          "clock": 109.03333333332844,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4965.6787109375,
+          "y": 656
+        },
+        {
+          "clock": 109.5333333333284,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4773.6787109375,
+            "y": 528
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 109.5333333333284,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 3
+        },
+        {
+          "clock": 109.54999999999508,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 66.8001498884362,
+          "target": "M3 Test Cobalt",
+          "turn": 3
+        },
+        {
+          "angle": 45,
+          "clock": 110.76666666666166,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 67,
+          "turn": 3
+        },
+        {
+          "clock": 110.76666666666166,
+          "id": 3,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 3
+        },
+        {
+          "amount": 47.70089752940379,
+          "clock": 113.39999999999483,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "projectileId": 3,
+          "targetEntityId": 8,
+          "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 3
+        },
+        {
+          "clock": 113.39999999999483,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 3,
+          "x": 7517,
+          "y": 624
+        },
+        {
+          "clock": 113.89999999999482,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7325,
+            "y": 496
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 3,
+          "watchId": 3
+        },
+        {
+          "clock": 113.89999999999482,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 4
+        },
+        {
+          "clock": 113.91666666666148,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 65.74563848541905,
+          "target": "M3 Test Amber",
+          "turn": 4
+        },
+        {
+          "angle": 135,
+          "clock": 115.13333333332808,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 66,
+          "turn": 4
+        },
+        {
+          "clock": 115.13333333332808,
+          "id": 4,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 4
+        },
+        {
+          "amount": 15.645189111693114,
+          "clock": 117.93333333332792,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "projectileId": 4,
+          "targetEntityId": 10,
+          "targetStableId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 4
+        },
+        {
+          "clock": 117.93333333332792,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 4,
+          "x": 5168.3134765625,
+          "y": 712
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 1,
+        "humans": 0,
+        "impact": {
+          "x": 5168.3134765625,
+          "y": 712
+        },
+        "message": "Waiting for terrain and tanks to settle",
+        "phase": "settling",
+        "remaining": 8.766666666666605,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 3,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9902954101562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 4,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 610.1592407226562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 4,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 168,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 84.35481088830689,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 10,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9906616210938
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 52.29910247059621,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 610.1476440429688
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 135,
+          "color": "#ffbd82",
+          "control": "Computer",
+          "health": 52,
+          "name": "M3 Test Cobalt",
+          "power": 66
+        },
+        "finished": false,
+        "human": false,
+        "phase": "settling",
+        "ready": false,
+        "remaining": 9,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 84,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "WAITING"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 52,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "CURRENT"
+          }
+        ],
+        "seed": 0,
+        "status": "Waiting for terrain and tanks to settle",
+        "tankCount": 2,
+        "turnNumber": 4,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": true,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        },
+        {
+          "clock": 109.03333333332844,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4965.6787109375,
+          "y": 656
+        },
+        {
+          "clock": 109.5333333333284,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4773.6787109375,
+            "y": 528
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 109.5333333333284,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 3
+        },
+        {
+          "clock": 109.54999999999508,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 66.8001498884362,
+          "target": "M3 Test Cobalt",
+          "turn": 3
+        },
+        {
+          "angle": 45,
+          "clock": 110.76666666666166,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 67,
+          "turn": 3
+        },
+        {
+          "clock": 110.76666666666166,
+          "id": 3,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 3
+        },
+        {
+          "amount": 47.70089752940379,
+          "clock": 113.39999999999483,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "projectileId": 3,
+          "targetEntityId": 8,
+          "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 3
+        },
+        {
+          "clock": 113.39999999999483,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 3,
+          "x": 7517,
+          "y": 624
+        },
+        {
+          "clock": 113.89999999999482,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7325,
+            "y": 496
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 3,
+          "watchId": 3
+        },
+        {
+          "clock": 113.89999999999482,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 4
+        },
+        {
+          "clock": 113.91666666666148,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 65.74563848541905,
+          "target": "M3 Test Amber",
+          "turn": 4
+        },
+        {
+          "angle": 135,
+          "clock": 115.13333333332808,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 66,
+          "turn": 4
+        },
+        {
+          "clock": 115.13333333332808,
+          "id": 4,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 4
+        },
+        {
+          "amount": 15.645189111693114,
+          "clock": 117.93333333332792,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "projectileId": 4,
+          "targetEntityId": 10,
+          "targetStableId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 4
+        },
+        {
+          "clock": 117.93333333332792,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 4,
+          "x": 5168.3134765625,
+          "y": 712
+        },
+        {
+          "clock": 118.4333333333279,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4976.3134765625,
+            "y": 584
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 4,
+          "watchId": 4
+        },
+        {
+          "clock": 118.4333333333279,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 5
+        },
+        {
+          "clock": 118.44999999999456,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 67.55187425694342,
+          "target": "M3 Test Cobalt",
+          "turn": 5
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 0,
+        "humans": 0,
+        "impact": null,
+        "message": "Computer is choosing its shot",
+        "phase": "turn",
+        "remaining": 10,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 3,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9902954101562
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 4,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 610.1592407226562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 5,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 168,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 84.35481088830689,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 10,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9907836914062
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 52.29910247059621,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 610.1476440429688
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Computer",
+          "health": 84,
+          "name": "M3 Test Amber",
+          "power": 68
+        },
+        "finished": false,
+        "human": false,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 10,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 84,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 52,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Computer is choosing its shot",
+        "tankCount": 2,
+        "turnNumber": 5,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": false,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        },
+        {
+          "clock": 109.03333333332844,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4965.6787109375,
+          "y": 656
+        },
+        {
+          "clock": 109.5333333333284,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4773.6787109375,
+            "y": 528
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 109.5333333333284,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 3
+        },
+        {
+          "clock": 109.54999999999508,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 66.8001498884362,
+          "target": "M3 Test Cobalt",
+          "turn": 3
+        },
+        {
+          "angle": 45,
+          "clock": 110.76666666666166,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 67,
+          "turn": 3
+        },
+        {
+          "clock": 110.76666666666166,
+          "id": 3,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 3
+        },
+        {
+          "amount": 47.70089752940379,
+          "clock": 113.39999999999483,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "projectileId": 3,
+          "targetEntityId": 8,
+          "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 3
+        },
+        {
+          "clock": 113.39999999999483,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 3,
+          "x": 7517,
+          "y": 624
+        },
+        {
+          "clock": 113.89999999999482,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7325,
+            "y": 496
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 3,
+          "watchId": 3
+        },
+        {
+          "clock": 113.89999999999482,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 4
+        },
+        {
+          "clock": 113.91666666666148,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 65.74563848541905,
+          "target": "M3 Test Amber",
+          "turn": 4
+        },
+        {
+          "angle": 135,
+          "clock": 115.13333333332808,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 66,
+          "turn": 4
+        },
+        {
+          "clock": 115.13333333332808,
+          "id": 4,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 4
+        },
+        {
+          "amount": 15.645189111693114,
+          "clock": 117.93333333332792,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "projectileId": 4,
+          "targetEntityId": 10,
+          "targetStableId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 4
+        },
+        {
+          "clock": 117.93333333332792,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 4,
+          "x": 5168.3134765625,
+          "y": 712
+        },
+        {
+          "clock": 118.4333333333279,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4976.3134765625,
+            "y": 584
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 4,
+          "watchId": 4
+        },
+        {
+          "clock": 118.4333333333279,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 5
+        },
+        {
+          "clock": 118.44999999999456,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 67.55187425694342,
+          "target": "M3 Test Cobalt",
+          "turn": 5
+        },
+        {
+          "angle": 45,
+          "clock": 119.66666666666116,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 68,
+          "turn": 5
+        },
+        {
+          "clock": 119.66666666666116,
+          "id": 5,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 5
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 0,
+        "humans": 0,
+        "impact": null,
+        "message": "Shell in flight",
+        "phase": "flight",
+        "remaining": 8.766666666666605,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "plannedTurn": 5,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9906616210938
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 4,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 610.1592407226562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": 5,
+        "turnNumber": 5,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 0,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 84.35481088830689,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 10,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9907836914062
+        },
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 52.29910247059621,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 610.1476440429688
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Computer",
+          "health": 84,
+          "name": "M3 Test Amber",
+          "power": 68
+        },
+        "finished": false,
+        "human": false,
+        "phase": "flight",
+        "ready": false,
+        "remaining": 9,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 84,
+            "kills": 0,
+            "name": "M3 Test Amber",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 52,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Shell in flight",
+        "tankCount": 2,
+        "turnNumber": 5,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": false,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        },
+        {
+          "clock": 109.03333333332844,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4965.6787109375,
+          "y": 656
+        },
+        {
+          "clock": 109.5333333333284,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4773.6787109375,
+            "y": 528
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 109.5333333333284,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 3
+        },
+        {
+          "clock": 109.54999999999508,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 66.8001498884362,
+          "target": "M3 Test Cobalt",
+          "turn": 3
+        },
+        {
+          "angle": 45,
+          "clock": 110.76666666666166,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 67,
+          "turn": 3
+        },
+        {
+          "clock": 110.76666666666166,
+          "id": 3,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 3
+        },
+        {
+          "amount": 47.70089752940379,
+          "clock": 113.39999999999483,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "projectileId": 3,
+          "targetEntityId": 8,
+          "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 3
+        },
+        {
+          "clock": 113.39999999999483,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 3,
+          "x": 7517,
+          "y": 624
+        },
+        {
+          "clock": 113.89999999999482,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7325,
+            "y": 496
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 3,
+          "watchId": 3
+        },
+        {
+          "clock": 113.89999999999482,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 4
+        },
+        {
+          "clock": 113.91666666666148,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 65.74563848541905,
+          "target": "M3 Test Amber",
+          "turn": 4
+        },
+        {
+          "angle": 135,
+          "clock": 115.13333333332808,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 66,
+          "turn": 4
+        },
+        {
+          "clock": 115.13333333332808,
+          "id": 4,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 4
+        },
+        {
+          "amount": 15.645189111693114,
+          "clock": 117.93333333332792,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "projectileId": 4,
+          "targetEntityId": 10,
+          "targetStableId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 4
+        },
+        {
+          "clock": 117.93333333332792,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 4,
+          "x": 5168.3134765625,
+          "y": 712
+        },
+        {
+          "clock": 118.4333333333279,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4976.3134765625,
+            "y": 584
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 4,
+          "watchId": 4
+        },
+        {
+          "clock": 118.4333333333279,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 5
+        },
+        {
+          "clock": 118.44999999999456,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 67.55187425694342,
+          "target": "M3 Test Cobalt",
+          "turn": 5
+        },
+        {
+          "angle": 45,
+          "clock": 119.66666666666116,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 68,
+          "turn": 5
+        },
+        {
+          "clock": 119.66666666666116,
+          "id": 5,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 5
+        },
+        {
+          "clock": 122.28333333332768,
+          "killer": "M3 Test Amber",
+          "kind": "eliminated",
+          "name": "M3 Test Cobalt",
+          "reason": "destroyed",
+          "turn": 5
+        },
+        {
+          "amount": 62.827166083125256,
+          "clock": 122.28333333332768,
+          "direct": true,
+          "killed": true,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "projectileId": 5,
+          "targetEntityId": 12,
+          "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 5
+        },
+        {
+          "clock": 122.28333333332768,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 5,
+          "x": 7544.5458984375,
+          "y": 594.4429321289062
+        },
+        {
+          "clock": 122.466666666661,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 5
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 0,
+        "humans": 0,
+        "impact": {
+          "x": 7544.5458984375,
+          "y": 594.4429321289062
+        },
+        "message": "Waiting for terrain and tanks to settle",
+        "phase": "settling",
+        "remaining": 8.766666666666605,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 1,
+            "name": "M3 Test Amber",
+            "plannedTurn": 5,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9906616210938
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": true,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 4,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 610.1592407226562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 5,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 157,
+        "winner": null
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 84.35481088830689,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9907836914062
+        },
+        {
+          "alive": false,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 0,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 12,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 619.9899291992188
+        }
+      ],
+      "scores": null,
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Computer",
+          "health": 84,
+          "name": "M3 Test Amber",
+          "power": 68
+        },
+        "finished": false,
+        "human": false,
+        "phase": "settling",
+        "ready": false,
+        "remaining": 9,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 84,
+            "kills": 1,
+            "name": "M3 Test Amber",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 0,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "OUT"
+          }
+        ],
+        "seed": 0,
+        "status": "Waiting for terrain and tanks to settle",
+        "tankCount": 2,
+        "turnNumber": 5,
+        "turnSeconds": 10,
+        "winner": "Draw"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    },
+    {
+      "dialogueActive": true,
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "deployed",
+          "name": "M3 Test Amber",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "deployed",
+          "name": "M3 Test Cobalt",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 100.38333333332892,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 1
+        },
+        {
+          "clock": 100.3999999999956,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 70,
+          "target": "M3 Test Cobalt",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 101.61666666666218,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 70,
+          "turn": 1
+        },
+        {
+          "clock": 101.61666666666218,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 1
+        },
+        {
+          "clock": 104.41666666666202,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 7758.8330078125,
+          "y": 679
+        },
+        {
+          "clock": 104.916666666662,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7566.8330078125,
+            "y": 551
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 104.916666666662,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 2
+        },
+        {
+          "clock": 104.93333333332866,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 70,
+          "target": "M3 Test Amber",
+          "turn": 2
+        },
+        {
+          "angle": 135,
+          "clock": 106.14999999999526,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 70,
+          "turn": 2
+        },
+        {
+          "clock": 106.14999999999526,
+          "id": 2,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 2
+        },
+        {
+          "clock": 109.03333333332844,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 2,
+          "x": 4965.6787109375,
+          "y": 656
+        },
+        {
+          "clock": 109.5333333333284,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4773.6787109375,
+            "y": 528
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 2,
+          "watchId": 2
+        },
+        {
+          "clock": 109.5333333333284,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 3
+        },
+        {
+          "clock": 109.54999999999508,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 66.8001498884362,
+          "target": "M3 Test Cobalt",
+          "turn": 3
+        },
+        {
+          "angle": 45,
+          "clock": 110.76666666666166,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 67,
+          "turn": 3
+        },
+        {
+          "clock": 110.76666666666166,
+          "id": 3,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 3
+        },
+        {
+          "amount": 47.70089752940379,
+          "clock": 113.39999999999483,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "projectileId": 3,
+          "targetEntityId": 8,
+          "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 3
+        },
+        {
+          "clock": 113.39999999999483,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 3,
+          "x": 7517,
+          "y": 624
+        },
+        {
+          "clock": 113.89999999999482,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7325,
+            "y": 496
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 3,
+          "watchId": 3
+        },
+        {
+          "clock": 113.89999999999482,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "turn",
+          "name": "M3 Test Cobalt",
+          "turn": 4
+        },
+        {
+          "clock": 113.91666666666148,
+          "kind": "cpu-plan",
+          "name": "M3 Test Cobalt",
+          "power": 65.74563848541905,
+          "target": "M3 Test Amber",
+          "turn": 4
+        },
+        {
+          "angle": 135,
+          "clock": 115.13333333332808,
+          "kind": "fire-request",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "power": 66,
+          "turn": 4
+        },
+        {
+          "clock": 115.13333333332808,
+          "id": 4,
+          "kind": "launch",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 4
+        },
+        {
+          "amount": 15.645189111693114,
+          "clock": 117.93333333332792,
+          "direct": false,
+          "killed": false,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "projectileId": 4,
+          "targetEntityId": 10,
+          "targetStableId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 4
+        },
+        {
+          "clock": 117.93333333332792,
+          "kind": "end",
+          "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "shooterResidency": "stored",
+          "turn": 4,
+          "x": 5168.3134765625,
+          "y": 712
+        },
+        {
+          "clock": 118.4333333333279,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 4976.3134765625,
+            "y": 584
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 4,
+          "watchId": 4
+        },
+        {
+          "clock": 118.4333333333279,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "kind": "turn",
+          "name": "M3 Test Amber",
+          "turn": 5
+        },
+        {
+          "clock": 118.44999999999456,
+          "kind": "cpu-plan",
+          "name": "M3 Test Amber",
+          "power": 67.55187425694342,
+          "target": "M3 Test Cobalt",
+          "turn": 5
+        },
+        {
+          "angle": 45,
+          "clock": 119.66666666666116,
+          "kind": "fire-request",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "power": 68,
+          "turn": 5
+        },
+        {
+          "clock": 119.66666666666116,
+          "id": 5,
+          "kind": "launch",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "turn": 5
+        },
+        {
+          "clock": 122.28333333332768,
+          "killer": "M3 Test Amber",
+          "kind": "eliminated",
+          "name": "M3 Test Cobalt",
+          "reason": "destroyed",
+          "turn": 5
+        },
+        {
+          "amount": 62.827166083125256,
+          "clock": 122.28333333332768,
+          "direct": true,
+          "killed": true,
+          "kind": "hit",
+          "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "projectileId": 5,
+          "targetEntityId": 12,
+          "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "turn": 5
+        },
+        {
+          "clock": 122.28333333332768,
+          "kind": "end",
+          "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "shooterResidency": "stored",
+          "turn": 5,
+          "x": 7544.5458984375,
+          "y": 594.4429321289062
+        },
+        {
+          "clock": 122.466666666661,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "kind": "land",
+          "turn": 5
+        },
+        {
+          "clock": 122.78333333332765,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7352.5458984375,
+            "y": 466.44293212890625
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 5,
+          "watchId": 5
+        },
+        {
+          "clock": 122.78333333332765,
+          "kind": "finished",
+          "turn": 5,
+          "winner": "M3 Test Amber"
+        }
+      ],
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 2,
+        "focusIndex": 0,
+        "humans": 0,
+        "impact": {
+          "x": 7544.5458984375,
+          "y": 594.4429321289062
+        },
+        "message": "M3 Test Amber wins the match",
+        "phase": "finished",
+        "remaining": 8.766666666666605,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+            "index": 0,
+            "kills": 1,
+            "name": "M3 Test Amber",
+            "plannedTurn": 5,
+            "shotFrom": {
+              "x": 5247.5,
+              "y": 705.9906616210938
+            },
+            "spawnX": 5248,
+            "surfaceY": 720,
+            "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": true,
+            "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+            "index": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "plannedTurn": 4,
+            "shotFrom": {
+              "x": 7551.5,
+              "y": 610.1592407226562
+            },
+            "spawnX": 7552,
+            "surfaceY": 624,
+            "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 5,
+        "turnSeconds": 10,
+        "version": 3,
+        "waitTicks": 157,
+        "winner": "M3 Test Amber"
+      },
+      "roster": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 81,
+            "y": 11
+          },
+          "faction": null,
+          "health": 84.35481088830689,
+          "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M3 Test Amber",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5247.5,
+          "y": 705.9907836914062
+        },
+        {
+          "alive": false,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 0,
+          "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 12,
+          "maxHealth": 100,
+          "name": "M3 Test Cobalt",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 619.9899291992188
+        }
+      ],
+      "scores": {
+        "matches": {
+          "1bfd91b9-8e77-48fd-8172-c6a801776840": {
+            "seed": 0,
+            "winner": "M3 Test Amber"
+          }
+        },
+        "players": {
+          "m3 test amber": {
+            "games": 1,
+            "kills": 1,
+            "name": "M3 Test Amber",
+            "wins": 1
+          },
+          "m3 test cobalt": {
+            "games": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "wins": 0
+          }
+        }
+      },
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": true,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Computer",
+          "health": 84,
+          "name": "M3 Test Amber",
+          "power": 68
+        },
+        "finished": true,
+        "human": false,
+        "phase": "finished",
+        "ready": false,
+        "remaining": 9,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 84,
+            "kills": 1,
+            "name": "M3 Test Amber",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 0,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "status": "OUT"
+          }
+        ],
+        "scores": [
+          {
+            "games": 1,
+            "kills": 1,
+            "name": "M3 Test Amber",
+            "wins": 1
+          },
+          {
+            "games": 1,
+            "kills": 0,
+            "name": "M3 Test Cobalt",
+            "wins": 0
+          }
+        ],
+        "seed": 0,
+        "status": "M3 Test Amber wins the match",
+        "tankCount": 2,
+        "turnNumber": 5,
+        "turnSeconds": 10,
+        "winner": "M3 Test Amber"
+      },
+      "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+    }
+  ],
+  "checks": [
+    {
+      "name": "one survivor ends the match",
+      "passed": true
+    },
+    {
+      "name": "CPU graph plans and launches both tanks",
+      "passed": true
+    },
+    {
+      "name": "one launch per firing turn",
+      "passed": true
+    },
+    {
+      "name": "at least one damaging hit",
+      "passed": true
+    },
+    {
+      "name": "credited kill recorded",
+      "passed": true
+    },
+    {
+      "name": "shooter can park during flight",
+      "passed": true
+    },
+    {
+      "name": "all completed impacts settle",
+      "passed": true
+    },
+    {
+      "name": "score stored once for this world",
+      "passed": true
+    },
+    {
+      "name": "winner has an installation-level win",
+      "passed": true
+    },
+    {
+      "name": "no script faults",
+      "passed": true
+    }
+  ],
+  "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840",
+  "initial": {
+    "dialogueActive": false,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8833333333333315,
+        "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.033333333333327,
+        "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "kind": "deployed",
+        "name": "M3 Test Amber",
+        "turn": 0
+      },
+      {
+        "clock": 4.899999999999988,
+        "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.049999999999984,
+        "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "kind": "deployed",
+        "name": "M3 Test Cobalt",
+        "turn": 0
+      },
+      {
+        "clock": 6.11666666666665,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      }
+    ],
+    "match": {
+      "biome": "slate-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "humans": 0,
+      "impact": null,
+      "message": "Tanks ready \u2014 begin when your crew is ready",
+      "phase": "ready",
+      "remaining": 10,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "index": 0,
+          "kills": 0,
+          "name": "M3 Test Amber",
+          "spawnX": 5248,
+          "surfaceY": 720
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "index": 1,
+          "kills": 0,
+          "name": "M3 Test Cobalt",
+          "spawnX": 7552,
+          "surfaceY": 624
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 0,
+      "turnSeconds": 10,
+      "version": 3,
+      "winner": null
+    },
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 81,
+          "y": 11
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M3 Test Amber",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+        "vx": 0,
+        "vy": 0,
+        "x": 5247.5,
+        "y": 705.9909057617188
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 117,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "M3 Test Cobalt",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+        "vx": 0,
+        "vy": 0,
+        "x": 7551.5,
+        "y": 609.9910278320312
+      }
+    ],
+    "scores": null,
+    "ui": {
+      "biome": "Slate Reach",
+      "canSetup": true,
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 100,
+        "name": "M3 Test Amber",
+        "power": 70
+      },
+      "finished": false,
+      "human": false,
+      "phase": "ready",
+      "ready": true,
+      "remaining": 10,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "M3 Test Amber",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 100,
+          "kills": 0,
+          "name": "M3 Test Cobalt",
+          "status": "WAITING"
+        }
+      ],
+      "seed": 0,
+      "status": "Tanks ready \u2014 begin when your crew is ready",
+      "tankCount": 2,
+      "turnNumber": 0,
+      "turnSeconds": 10,
+      "winner": "Draw"
+    },
+    "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+  },
+  "final": {
+    "dialogueActive": true,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8833333333333315,
+        "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.033333333333327,
+        "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "kind": "deployed",
+        "name": "M3 Test Amber",
+        "turn": 0
+      },
+      {
+        "clock": 4.899999999999988,
+        "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.049999999999984,
+        "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "kind": "deployed",
+        "name": "M3 Test Cobalt",
+        "turn": 0
+      },
+      {
+        "clock": 6.11666666666665,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 100.38333333332892,
+        "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "kind": "turn",
+        "name": "M3 Test Amber",
+        "turn": 1
+      },
+      {
+        "clock": 100.3999999999956,
+        "kind": "cpu-plan",
+        "name": "M3 Test Amber",
+        "power": 70,
+        "target": "M3 Test Cobalt",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 101.61666666666218,
+        "kind": "fire-request",
+        "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "power": 70,
+        "turn": 1
+      },
+      {
+        "clock": 101.61666666666218,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "turn": 1
+      },
+      {
+        "clock": 104.41666666666202,
+        "kind": "end",
+        "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "shooterResidency": "stored",
+        "turn": 1,
+        "x": 7758.8330078125,
+        "y": 679
+      },
+      {
+        "clock": 104.916666666662,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 7566.8330078125,
+          "y": 551
+        },
+        "ticks": 30,
+        "timedOut": false,
+        "turn": 1,
+        "watchId": 1
+      },
+      {
+        "clock": 104.916666666662,
+        "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "kind": "turn",
+        "name": "M3 Test Cobalt",
+        "turn": 2
+      },
+      {
+        "clock": 104.93333333332866,
+        "kind": "cpu-plan",
+        "name": "M3 Test Cobalt",
+        "power": 70,
+        "target": "M3 Test Amber",
+        "turn": 2
+      },
+      {
+        "angle": 135,
+        "clock": 106.14999999999526,
+        "kind": "fire-request",
+        "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "power": 70,
+        "turn": 2
+      },
+      {
+        "clock": 106.14999999999526,
+        "id": 2,
+        "kind": "launch",
+        "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "turn": 2
+      },
+      {
+        "clock": 109.03333333332844,
+        "kind": "end",
+        "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "shooterResidency": "stored",
+        "turn": 2,
+        "x": 4965.6787109375,
+        "y": 656
+      },
+      {
+        "clock": 109.5333333333284,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 4773.6787109375,
+          "y": 528
+        },
+        "ticks": 30,
+        "timedOut": false,
+        "turn": 2,
+        "watchId": 2
+      },
+      {
+        "clock": 109.5333333333284,
+        "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "kind": "turn",
+        "name": "M3 Test Amber",
+        "turn": 3
+      },
+      {
+        "clock": 109.54999999999508,
+        "kind": "cpu-plan",
+        "name": "M3 Test Amber",
+        "power": 66.8001498884362,
+        "target": "M3 Test Cobalt",
+        "turn": 3
+      },
+      {
+        "angle": 45,
+        "clock": 110.76666666666166,
+        "kind": "fire-request",
+        "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "power": 67,
+        "turn": 3
+      },
+      {
+        "clock": 110.76666666666166,
+        "id": 3,
+        "kind": "launch",
+        "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "turn": 3
+      },
+      {
+        "amount": 47.70089752940379,
+        "clock": 113.39999999999483,
+        "direct": false,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "projectileId": 3,
+        "targetEntityId": 8,
+        "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "turn": 3
+      },
+      {
+        "clock": 113.39999999999483,
+        "kind": "end",
+        "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "shooterResidency": "stored",
+        "turn": 3,
+        "x": 7517,
+        "y": 624
+      },
+      {
+        "clock": 113.89999999999482,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 7325,
+          "y": 496
+        },
+        "ticks": 30,
+        "timedOut": false,
+        "turn": 3,
+        "watchId": 3
+      },
+      {
+        "clock": 113.89999999999482,
+        "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "kind": "turn",
+        "name": "M3 Test Cobalt",
+        "turn": 4
+      },
+      {
+        "clock": 113.91666666666148,
+        "kind": "cpu-plan",
+        "name": "M3 Test Cobalt",
+        "power": 65.74563848541905,
+        "target": "M3 Test Amber",
+        "turn": 4
+      },
+      {
+        "angle": 135,
+        "clock": 115.13333333332808,
+        "kind": "fire-request",
+        "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "power": 66,
+        "turn": 4
+      },
+      {
+        "clock": 115.13333333332808,
+        "id": 4,
+        "kind": "launch",
+        "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "turn": 4
+      },
+      {
+        "amount": 15.645189111693114,
+        "clock": 117.93333333332792,
+        "direct": false,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "projectileId": 4,
+        "targetEntityId": 10,
+        "targetStableId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "turn": 4
+      },
+      {
+        "clock": 117.93333333332792,
+        "kind": "end",
+        "owner": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "shooterResidency": "stored",
+        "turn": 4,
+        "x": 5168.3134765625,
+        "y": 712
+      },
+      {
+        "clock": 118.4333333333279,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 4976.3134765625,
+          "y": 584
+        },
+        "ticks": 30,
+        "timedOut": false,
+        "turn": 4,
+        "watchId": 4
+      },
+      {
+        "clock": 118.4333333333279,
+        "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "kind": "turn",
+        "name": "M3 Test Amber",
+        "turn": 5
+      },
+      {
+        "clock": 118.44999999999456,
+        "kind": "cpu-plan",
+        "name": "M3 Test Amber",
+        "power": 67.55187425694342,
+        "target": "M3 Test Cobalt",
+        "turn": 5
+      },
+      {
+        "angle": 45,
+        "clock": 119.66666666666116,
+        "kind": "fire-request",
+        "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "power": 68,
+        "turn": 5
+      },
+      {
+        "clock": 119.66666666666116,
+        "id": 5,
+        "kind": "launch",
+        "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "turn": 5
+      },
+      {
+        "clock": 122.28333333332768,
+        "killer": "M3 Test Amber",
+        "kind": "eliminated",
+        "name": "M3 Test Cobalt",
+        "reason": "destroyed",
+        "turn": 5
+      },
+      {
+        "amount": 62.827166083125256,
+        "clock": 122.28333333332768,
+        "direct": true,
+        "killed": true,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "projectileId": 5,
+        "targetEntityId": 12,
+        "targetStableId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "turn": 5
+      },
+      {
+        "clock": 122.28333333332768,
+        "kind": "end",
+        "owner": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "shooterResidency": "stored",
+        "turn": 5,
+        "x": 7544.5458984375,
+        "y": 594.4429321289062
+      },
+      {
+        "clock": 122.466666666661,
+        "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "kind": "land",
+        "turn": 5
+      },
+      {
+        "clock": 122.78333333332765,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 7352.5458984375,
+          "y": 466.44293212890625
+        },
+        "ticks": 30,
+        "timedOut": false,
+        "turn": 5,
+        "watchId": 5
+      },
+      {
+        "clock": 122.78333333332765,
+        "kind": "finished",
+        "turn": 5,
+        "winner": "M3 Test Amber"
+      }
+    ],
+    "match": {
+      "biome": "slate-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "humans": 0,
+      "impact": {
+        "x": 7544.5458984375,
+        "y": 594.4429321289062
+      },
+      "message": "M3 Test Amber wins the match",
+      "phase": "finished",
+      "remaining": 8.766666666666605,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+          "index": 0,
+          "kills": 1,
+          "name": "M3 Test Amber",
+          "plannedTurn": 5,
+          "shotFrom": {
+            "x": 5247.5,
+            "y": 705.9906616210938
+          },
+          "spawnX": 5248,
+          "surfaceY": 720,
+          "targetId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910"
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": true,
+          "entityId": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+          "index": 1,
+          "kills": 0,
+          "name": "M3 Test Cobalt",
+          "plannedTurn": 4,
+          "shotFrom": {
+            "x": 7551.5,
+            "y": 610.1592407226562
+          },
+          "spawnX": 7552,
+          "surfaceY": 624,
+          "targetId": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878"
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 5,
+      "turnSeconds": 10,
+      "version": 3,
+      "waitTicks": 157,
+      "winner": "M3 Test Amber"
+    },
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 81,
+          "y": 11
+        },
+        "faction": null,
+        "health": 84.35481088830689,
+        "id": "instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "M3 Test Amber",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+        "vx": 0,
+        "vy": 0,
+        "x": 5247.5,
+        "y": 705.9907836914062
+      },
+      {
+        "alive": false,
+        "angle": 0,
+        "chunk": {
+          "x": 117,
+          "y": 9
+        },
+        "faction": null,
+        "health": 0,
+        "id": "instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 12,
+        "maxHealth": 100,
+        "name": "M3 Test Cobalt",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+        "vx": 0,
+        "vy": 0,
+        "x": 7551.5,
+        "y": 619.9899291992188
+      }
+    ],
+    "scores": {
+      "matches": {
+        "1bfd91b9-8e77-48fd-8172-c6a801776840": {
+          "seed": 0,
+          "winner": "M3 Test Amber"
+        }
+      },
+      "players": {
+        "m3 test amber": {
+          "games": 1,
+          "kills": 1,
+          "name": "M3 Test Amber",
+          "wins": 1
+        },
+        "m3 test cobalt": {
+          "games": 1,
+          "kills": 0,
+          "name": "M3 Test Cobalt",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "biome": "Slate Reach",
+      "canSetup": true,
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 84,
+        "name": "M3 Test Amber",
+        "power": 68
+      },
+      "finished": true,
+      "human": false,
+      "phase": "finished",
+      "ready": false,
+      "remaining": 9,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 84,
+          "kills": 1,
+          "name": "M3 Test Amber",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 0,
+          "kills": 0,
+          "name": "M3 Test Cobalt",
+          "status": "OUT"
+        }
+      ],
+      "scores": [
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M3 Test Amber",
+          "wins": 1
+        },
+        {
+          "games": 1,
+          "kills": 0,
+          "name": "M3 Test Cobalt",
+          "wins": 0
+        }
+      ],
+      "seed": 0,
+      "status": "M3 Test Amber wins the match",
+      "tankCount": 2,
+      "turnNumber": 5,
+      "turnSeconds": 10,
+      "winner": "M3 Test Amber"
+    },
+    "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+  },
+  "scriptStatus": {
+    "faulted": [],
+    "generation": 2,
+    "ok": true,
+    "root": "Worlds/1bfd91b9-8e77-48fd-8172-c6a801776840/Scripts",
+    "scripts": [
+      {
+        "avgUs": 195,
+        "enabled": true,
+        "entries": 7799,
+        "handlers": 22,
+        "id": "match",
+        "logTail": [
+          "land {\"id\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\"}",
+          "deployed {\"name\":\"M3 Test Amber\",\"id\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\"}",
+          "land {\"id\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\"}",
+          "deployed {\"name\":\"M3 Test Cobalt\",\"id\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\"}",
+          "match-ready {\"phase\":\"ready\"}",
+          "turn {\"name\":\"M3 Test Amber\",\"id\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\"}",
+          "cpu-plan {\"name\":\"M3 Test Amber\",\"target\":\"M3 Test Cobalt\",\"power\":70}",
+          "fire-request {\"owner\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\",\"angle\":45,\"power\":70}",
+          "launch {\"id\":1,\"owner\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\"}",
+          "end {\"x\":7758.8330078125,\"y\":679,\"owner\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\",\"shooterResidency\":\"stored\"}",
+          "settled {\"watchId\":1,\"rect\":{\"x\":7566.8330078125,\"y\":551,\"w\":384,\"h\":384},\"ticks\":30,\"timedOut\":false}",
+          "turn {\"name\":\"M3 Test Cobalt\",\"id\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\"}",
+          "cpu-plan {\"name\":\"M3 Test Cobalt\",\"target\":\"M3 Test Amber\",\"power\":70}",
+          "fire-request {\"owner\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\",\"angle\":135,\"power\":70}",
+          "launch {\"id\":2,\"owner\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\"}",
+          "end {\"x\":4965.6787109375,\"y\":656,\"owner\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\",\"shooterResidency\":\"stored\"}",
+          "settled {\"watchId\":2,\"rect\":{\"x\":4773.6787109375,\"y\":528,\"w\":384,\"h\":384},\"ticks\":30,\"timedOut\":false}",
+          "turn {\"name\":\"M3 Test Amber\",\"id\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\"}",
+          "cpu-plan {\"name\":\"M3 Test Amber\",\"target\":\"M3 Test Cobalt\",\"power\":66.8001498884362}",
+          "fire-request {\"owner\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\",\"angle\":45,\"power\":67}",
+          "launch {\"id\":3,\"owner\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\"}",
+          "hit {\"targetEntityId\":8,\"amount\":47.70089752940379,\"killed\":false,\"direct\":false,\"targetStableId\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\",\"projectileId\":3,\"kind\":\"rigid-body\",\"ownerEntityId\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\"}",
+          "end {\"x\":7517,\"y\":624,\"owner\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\",\"shooterResidency\":\"stored\"}",
+          "settled {\"watchId\":3,\"rect\":{\"x\":7325,\"y\":496,\"w\":384,\"h\":384},\"ticks\":30,\"timedOut\":false}",
+          "turn {\"name\":\"M3 Test Cobalt\",\"id\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\"}",
+          "cpu-plan {\"name\":\"M3 Test Cobalt\",\"target\":\"M3 Test Amber\",\"power\":65.74563848541905}",
+          "fire-request {\"owner\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\",\"angle\":135,\"power\":66}",
+          "launch {\"id\":4,\"owner\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\"}",
+          "hit {\"targetEntityId\":10,\"amount\":15.645189111693114,\"killed\":false,\"direct\":false,\"targetStableId\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\",\"projectileId\":4,\"kind\":\"rigid-body\",\"ownerEntityId\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\"}",
+          "end {\"x\":5168.3134765625,\"y\":712,\"owner\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\",\"shooterResidency\":\"stored\"}",
+          "settled {\"watchId\":4,\"rect\":{\"x\":4976.3134765625,\"y\":584,\"w\":384,\"h\":384},\"ticks\":30,\"timedOut\":false}",
+          "turn {\"name\":\"M3 Test Amber\",\"id\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\"}",
+          "cpu-plan {\"name\":\"M3 Test Amber\",\"target\":\"M3 Test Cobalt\",\"power\":67.55187425694342}",
+          "fire-request {\"owner\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\",\"angle\":45,\"power\":68}",
+          "launch {\"id\":5,\"owner\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\"}",
+          "eliminated {\"name\":\"M3 Test Cobalt\",\"reason\":\"destroyed\",\"killer\":\"M3 Test Amber\"}",
+          "hit {\"targetEntityId\":12,\"amount\":62.827166083125256,\"killed\":true,\"direct\":true,\"targetStableId\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\",\"projectileId\":5,\"kind\":\"rigid-body\",\"ownerEntityId\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\"}",
+          "end {\"x\":7544.5458984375,\"y\":594.4429321289062,\"owner\":\"instance@spawn-919fa205-b6a0-4457-bc29-7aeeb92b3878\",\"shooterResidency\":\"stored\"}",
+          "land {\"id\":\"instance@spawn-13357649-bf8f-497c-9d19-6121c1aef910\"}",
+          "settled {\"watchId\":5,\"rect\":{\"x\":7352.5458984375,\"y\":466.44293212890625,\"w\":384,\"h\":384},\"ticks\":30,\"timedOut\":false}",
+          "finished {\"winner\":\"M3 Test Amber\"}"
+        ],
+        "path": "match.ts",
+        "suspended": null
+      }
+    ],
+    "worldId": "1bfd91b9-8e77-48fd-8172-c6a801776840"
+  },
+  "accepted": true
+}

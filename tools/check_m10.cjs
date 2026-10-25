@@ -1,0 +1,71 @@
+const assert = require('node:assert/strict')
+const {fixture} = require('./check_m8.cjs')
+
+;(async()=>{
+  {
+    const start=fixture();start.m.phase='ready';start.m.turnNumber=0
+    for(const tank of start.actors.values())tank.snapshot=()=>({alive:true,x:tank.x,y:650})
+    let closed=0;start.talus.ui.closeMenu=()=>closed++
+    start.emit('menu.custom.shop-begin',{})
+    assert.equal(start.m.phase,'ready','A stale armory action cannot start a match without the armory open')
+    start.emit('menu.hud.shop',{})
+    start.emit('menu.custom.shop-begin',{})
+    assert.equal(closed,1);assert.equal(start.m.phase,'focusing','Opening armory starts the normal intro sequence')
+    start.emit('menu.custom.shop-begin',{});start.emit('menu.hud.begin',{})
+    assert.equal(closed,1);assert.equal(start.barriers.size,1,'Repeated activation cannot duplicate the intro or turn')
+  }
+  const f=fixture(), calls=[]
+  f.talus.ui.floatText=(at,text,options)=>calls.push({at,text,options})
+  const p=f.m.roster[0]
+  for(let i=0;i<100;i++)f.api.reward(p,'shoot')
+  const earned=p.cashEarned
+  f.emit('tick.frame',{dt:.25})
+  assert.equal(calls.length,0,'Money never emits a world label')
+  assert.equal(f.ui.walletPopups.length,1,'A dense burst produces one wallet badge')
+  assert.equal(f.ui.walletPopups[0].text,'+$2000.00')
+  f.emit('tick.frame',{dt:2});assert.equal(f.ui.walletPopups.length,0,'Wallet badge expires')
+  f.api.reward(f.m.roster[1],'shoot');f.emit('tick.frame',{dt:.25});assert.equal(f.ui.walletPopups.length,0,'Other wallets do not masquerade as the displayed wallet')
+  assert.equal(f.m.roster[1].cashEarned,20,'Hidden-wallet earnings remain authoritative')
+  f.api.reward(p,'shoot');f.emit('tick.frame',{dt:.25});f.m.focusIndex=1;f.emit('tick.frame',{dt:.016});assert.equal(f.ui.walletPopups.length,0,'Turn change clears the previous wallet badge');f.m.focusIndex=0
+  assert.equal(p.cashEarned,earned+20)
+  f.m.phase='focusing'
+  let completed=false
+  const promise=f.api.showArcadeCard('TURN 1','Alpha','Ready',1).then(ok=>{completed=ok})
+  assert.equal(f.barriers.size,1)
+  f.emit('tick.frame',{dt:.016});assert.equal(f.ui.arcadeCards.length,1)
+  f.emit('tick.frame',{dt:.99});await Promise.resolve();assert.equal(completed,false)
+  f.talus.sim.paused=true;f.emit('tick.frame',{dt:10})
+  assert.equal(f.ui.arcadeCards.length,0);assert.equal(completed,false,'Hidden pause time cannot advance the turn')
+  f.talus.sim.paused=false;f.emit('tick.frame',{dt:.016})
+  f.m.presentation.queue.push({kind:'death'});f.emit('tick.frame',{dt:5})
+  assert.equal(f.ui.arcadeCards.length,0,'Tank last words own the reading area')
+  f.m.presentation.queue=[];f.emit('tick.frame',{dt:.016})
+  f.emit('tick.frame',{dt:1});await promise
+  assert.equal(completed,true);assert.equal(f.ui.arcadeCards.length,0)
+  assert.equal(f.m.remaining,f.m.turnSeconds,'Card time is not playable turn time')
+  f.m.turnNumber=12;p.kills=3
+  const score=f.api.turnScoreCard();f.emit('tick.frame',{dt:.016})
+  assert.match(f.ui.arcadeCards[0].eyebrow,/12/)
+  assert.match(f.ui.arcadeCards[0].score,/3 kills/)
+  f.emit('tick.frame',{dt:1});await score
+  await f.api.turnScoreCard();assert.equal(f.ui.arcadeCards.length,0,'Completed turn gets only one score card')
+  const cancelled=f.api.showArcadeCard('TEST','Cancel','',1)
+  f.api.cancelArcade();assert.equal(await cancelled,false)
+  const voices=fixture(), pools={taunt:['one','two','three'],death:['last','words'],celebration:['cheers']}
+  voices.api.setPersonas({personas:[{id:'lucky',factionId:'fuses'},{id:'mole',factionId:'union'}]})
+  voices.talus.factions={pool:({factionId,type})=>({status:pools[type]?'ready':'missing-pool',lines:(pools[type]||[]).map(text=>({id:factionId+':'+type+':'+text,text}))})}
+  const lucky={personaId:'lucky'},mole={personaId:'mole'}
+  const first=Array.from({length:3},()=>voices.api.nextPersonaShout(lucky,'taunt').id)
+  assert.equal(new Set(first).size,3,'A persona bag uses every line before repeating')
+  assert.notEqual(voices.api.nextPersonaShout(lucky,'taunt').id,first.at(-1),'Shuffle boundaries do not repeat')
+  const before=JSON.stringify(voices.installed['indigo.dialogue'].personas['lucky:taunt'])
+  assert.match(voices.api.nextPersonaShout(mole,'taunt').id,/^union:/)
+  assert.match(voices.api.nextPersonaShout(lucky,'death').id,/:death:/)
+  assert.equal(voices.api.nextPersonaShout(lucky,'celebration').text,'cheers','Any authored type can use the same selector')
+  assert.equal(voices.api.nextPersonaShout(lucky,'unregistered'),null,'Missing types are silent')
+  assert.equal(JSON.stringify(voices.installed['indigo.dialogue'].personas['lucky:taunt']),before,'Other personas/types do not consume this bag')
+  const reload=fixture();Object.assign(reload.installed,JSON.parse(JSON.stringify(voices.installed)))
+  reload.api.setPersonas({personas:[{id:'lucky',factionId:'fuses'}]});reload.talus.factions=voices.talus.factions
+  assert.equal(reload.api.nextPersonaShout(lucky,'taunt').id,voices.api.nextPersonaShout(lucky,'taunt').id,'Reload continues the persisted bag')
+  console.log('PASS M10: cash aggregation/accounting, transition timing, pause/death interruptions, timer isolation, score-card idempotency and cancellation')
+})().catch(e=>{console.error(e);process.exitCode=1})

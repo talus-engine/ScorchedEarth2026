@@ -1,0 +1,1148 @@
+{
+  "initial": {
+    "clock": 6.26666666666665,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8833333333333315,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.049999999999994,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 1",
+        "turn": 0
+      },
+      {
+        "clock": 4.9166666666666545,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.06666666666665,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 2",
+        "turn": 0
+      },
+      {
+        "clock": 6.16666666666665,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 6.21666666666665,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "humans": 0,
+      "impact": null,
+      "message": "Tanks ready \u2014 begin when your crew is ready",
+      "phase": "ready",
+      "remaining": 20,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "index": 0,
+          "kills": 0,
+          "name": "M4 Test aimcap 1",
+          "spawnX": 5248,
+          "surfaceY": 592
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+          "index": 1,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "spawnX": 7552,
+          "surfaceY": 592
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 0,
+      "turnSeconds": 20,
+      "version": 4,
+      "winner": null
+    },
+    "paused": false,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 81,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 4,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 1",
+        "residency": "live",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 5247.5,
+        "y": 578
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 117,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 2",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 7551.5,
+        "y": 577.9990234375
+      }
+    ],
+    "scores": {
+      "matches": {
+        "9684759a-b4e6-4349-bd97-d95e7edf841e": {
+          "seed": 0,
+          "winner": "M4 Test resume-aiming 1"
+        }
+      },
+      "players": {
+        "m4 test resume-aiming 1": {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "wins": 1
+        },
+        "m4 test resume-aiming 2": {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": true,
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 100,
+        "name": "M4 Test aimcap 1",
+        "power": 70
+      },
+      "finished": false,
+      "human": false,
+      "lastHit": "",
+      "phase": "ready",
+      "ready": true,
+      "remaining": 20,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "M4 Test aimcap 1",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 100,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "status": "WAITING"
+        }
+      ],
+      "seed": 0,
+      "shotDirection": "RIGHT \u2192",
+      "status": "Tanks ready \u2014 begin when your crew is ready",
+      "tactic": "",
+      "tankCount": 2,
+      "target": "",
+      "turnNumber": 0,
+      "turnSeconds": 20,
+      "winner": "Draw"
+    },
+    "worldId": "431a92d8-0ebb-4197-96d7-ce04d6716b66"
+  },
+  "phase": "aiming",
+  "capture": {
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "humans": 0,
+      "impact": null,
+      "message": "Computer is choosing its shot",
+      "phase": "turn",
+      "remaining": 19.96666666666667,
+      "roster": [
+        {
+          "aimedTurn": 1,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "index": 0,
+          "kills": 0,
+          "name": "M4 Test aimcap 1",
+          "plannedTurn": 1,
+          "spawnX": 5248,
+          "surfaceY": 592,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead"
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+          "index": 1,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "spawnX": 7552,
+          "surfaceY": 592
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 1,
+      "turnSeconds": 20,
+      "version": 4,
+      "winner": null
+    },
+    "projectiles": []
+  },
+  "before": {
+    "clock": 6.516666666666649,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8833333333333315,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.049999999999994,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 1",
+        "turn": 0
+      },
+      {
+        "clock": 4.9166666666666545,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.06666666666665,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 2",
+        "turn": 0
+      },
+      {
+        "clock": 6.16666666666665,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 6.21666666666665,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.483333333333316,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "turn",
+        "name": "M4 Test aimcap 1",
+        "turn": 1
+      },
+      {
+        "clock": 6.499999999999982,
+        "distance": 2304,
+        "elevation": -0.9990234375,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test aimcap 1",
+        "rise": 0,
+        "target": "M4 Test aimcap 2",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 6.499999999999982,
+        "kind": "cpu-aimed",
+        "name": "M4 Test aimcap 1",
+        "origin": {
+          "x": 5247.5,
+          "y": 577
+        },
+        "power": 39.16094023728531,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 7551.5,
+          "y": 577.9990234375
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.3916094023728531,
+          "speed": {
+            "current": 1223.499454928731,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "humans": 0,
+      "impact": null,
+      "message": "Computer is choosing its shot",
+      "phase": "turn",
+      "remaining": 19.96666666666667,
+      "roster": [
+        {
+          "aimedTurn": 1,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "index": 0,
+          "kills": 0,
+          "name": "M4 Test aimcap 1",
+          "plannedTurn": 1,
+          "spawnX": 5248,
+          "surfaceY": 592,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead"
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+          "index": 1,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "spawnX": 7552,
+          "surfaceY": 592
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 1,
+      "turnSeconds": 20,
+      "version": 4,
+      "winner": null
+    },
+    "paused": true,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 81,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 4,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 1",
+        "residency": "live",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 5247.5,
+        "y": 577
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 117,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 2",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 7551.5,
+        "y": 577.9990234375
+      }
+    ],
+    "scores": {
+      "matches": {
+        "9684759a-b4e6-4349-bd97-d95e7edf841e": {
+          "seed": 0,
+          "winner": "M4 Test resume-aiming 1"
+        }
+      },
+      "players": {
+        "m4 test resume-aiming 1": {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "wins": 1
+        },
+        "m4 test resume-aiming 2": {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": false,
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 100,
+        "name": "M4 Test aimcap 1",
+        "power": 39.16094023728531
+      },
+      "finished": false,
+      "human": false,
+      "lastHit": "",
+      "phase": "turn",
+      "ready": false,
+      "remaining": 20,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "M4 Test aimcap 1",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 100,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "status": "WAITING"
+        }
+      ],
+      "seed": 0,
+      "shotDirection": "RIGHT \u2192",
+      "status": "Computer is choosing its shot",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M4 Test aimcap 2",
+      "turnNumber": 1,
+      "turnSeconds": 20,
+      "winner": "Draw"
+    },
+    "worldId": "431a92d8-0ebb-4197-96d7-ce04d6716b66"
+  },
+  "afterSave": {
+    "clock": 6.516666666666649,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8833333333333315,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.049999999999994,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 1",
+        "turn": 0
+      },
+      {
+        "clock": 4.9166666666666545,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.06666666666665,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 2",
+        "turn": 0
+      },
+      {
+        "clock": 6.16666666666665,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 6.21666666666665,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.483333333333316,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "turn",
+        "name": "M4 Test aimcap 1",
+        "turn": 1
+      },
+      {
+        "clock": 6.499999999999982,
+        "distance": 2304,
+        "elevation": -0.9990234375,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test aimcap 1",
+        "rise": 0,
+        "target": "M4 Test aimcap 2",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 6.499999999999982,
+        "kind": "cpu-aimed",
+        "name": "M4 Test aimcap 1",
+        "origin": {
+          "x": 5247.5,
+          "y": 577
+        },
+        "power": 39.16094023728531,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 7551.5,
+          "y": 577.9990234375
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.3916094023728531,
+          "speed": {
+            "current": 1223.499454928731,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "humans": 0,
+      "impact": null,
+      "message": "Computer is choosing its shot",
+      "phase": "turn",
+      "remaining": 19.96666666666667,
+      "roster": [
+        {
+          "aimedTurn": 1,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "index": 0,
+          "kills": 0,
+          "name": "M4 Test aimcap 1",
+          "plannedTurn": 1,
+          "spawnX": 5248,
+          "surfaceY": 592,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead"
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+          "index": 1,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "spawnX": 7552,
+          "surfaceY": 592
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 1,
+      "turnSeconds": 20,
+      "version": 4,
+      "winner": null
+    },
+    "paused": true,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 81,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 4,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 1",
+        "residency": "live",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 5247.5,
+        "y": 577
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 117,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 2",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 7551.5,
+        "y": 577.9990234375
+      }
+    ],
+    "scores": {
+      "matches": {
+        "9684759a-b4e6-4349-bd97-d95e7edf841e": {
+          "seed": 0,
+          "winner": "M4 Test resume-aiming 1"
+        }
+      },
+      "players": {
+        "m4 test resume-aiming 1": {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "wins": 1
+        },
+        "m4 test resume-aiming 2": {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": false,
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 100,
+        "name": "M4 Test aimcap 1",
+        "power": 39.16094023728531
+      },
+      "finished": false,
+      "human": false,
+      "lastHit": "",
+      "phase": "turn",
+      "ready": false,
+      "remaining": 20,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "M4 Test aimcap 1",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 100,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "status": "WAITING"
+        }
+      ],
+      "seed": 0,
+      "shotDirection": "RIGHT \u2192",
+      "status": "Computer is choosing its shot",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M4 Test aimcap 2",
+      "turnNumber": 1,
+      "turnSeconds": 20,
+      "winner": "Draw"
+    },
+    "worldId": "431a92d8-0ebb-4197-96d7-ce04d6716b66"
+  },
+  "after": {
+    "clock": 13.733333333333595,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8833333333333315,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.049999999999994,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 1",
+        "turn": 0
+      },
+      {
+        "clock": 4.9166666666666545,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.06666666666665,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "kind": "deployed",
+        "name": "M4 Test aimcap 2",
+        "turn": 0
+      },
+      {
+        "clock": 6.16666666666665,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 6.21666666666665,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.483333333333316,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "kind": "turn",
+        "name": "M4 Test aimcap 1",
+        "turn": 1
+      },
+      {
+        "clock": 6.499999999999982,
+        "distance": 2304,
+        "elevation": -0.9990234375,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test aimcap 1",
+        "rise": 0,
+        "target": "M4 Test aimcap 2",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 6.499999999999982,
+        "kind": "cpu-aimed",
+        "name": "M4 Test aimcap 1",
+        "origin": {
+          "x": 5247.5,
+          "y": 577
+        },
+        "power": 39.16094023728531,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 7551.5,
+          "y": 577.9990234375
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.3916094023728531,
+          "speed": {
+            "current": 1223.499454928731,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "clock": 6.516666666666649,
+        "kind": "match-ready",
+        "phase": "turn",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 7.966666666666644,
+        "kind": "fire-request",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "power": 39.16094023728531,
+        "turn": 1
+      },
+      {
+        "clock": 7.966666666666644,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "vx": 865.144775390625,
+          "vy": -865.144775390625,
+          "x": 5272.5,
+          "y": 552.5
+        },
+        "turn": 1
+      },
+      {
+        "amount": 56.235185474509784,
+        "clock": 10.616666666666774,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "projectileId": 1,
+        "targetEntityId": 3,
+        "targetStableId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "turn": 1
+      },
+      {
+        "clock": 10.616666666666774,
+        "kind": "end",
+        "owner": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "shooterResidency": "stored",
+        "turn": 1,
+        "x": 7530.90234375,
+        "y": 561.1234130859375
+      },
+      {
+        "clock": 13.616666666666925,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 7338.90234375,
+          "y": 433.1234130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 1,
+        "watchId": 1
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 1,
+      "humans": 0,
+      "impact": null,
+      "lastHit": "M4 Test aimcap 2 \u221256 HP \u00b7 DIRECT HIT",
+      "message": "Loading M4 Test aimcap 2",
+      "phase": "focusing",
+      "remaining": 20,
+      "roster": [
+        {
+          "aimedTurn": 1,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+          "index": 0,
+          "kills": 0,
+          "name": "M4 Test aimcap 1",
+          "plannedTurn": 1,
+          "shotFrom": {
+            "x": 5247.5,
+            "y": 578.3607177734375
+          },
+          "spawnX": 5248,
+          "surfaceY": 592,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead"
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+          "index": 1,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "spawnX": 7552,
+          "surfaceY": 592
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 2,
+      "turnSeconds": 20,
+      "version": 4,
+      "waitTicks": 159,
+      "winner": null
+    },
+    "paused": true,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 81,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6145394e-599a-4119-b112-295e52d20bf8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 1",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 5247.5,
+        "y": 578.9998779296875
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 117,
+          "y": 9
+        },
+        "faction": null,
+        "health": 43.764814525490216,
+        "id": "instance@spawn-257bda32-85d2-44cf-99f4-e1170c19cead",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 3,
+        "maxHealth": 100,
+        "name": "M4 Test aimcap 2",
+        "residency": "live",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 7551.5,
+        "y": 580
+      }
+    ],
+    "scores": {
+      "matches": {
+        "9684759a-b4e6-4349-bd97-d95e7edf841e": {
+          "seed": 0,
+          "winner": "M4 Test resume-aiming 1"
+        }
+      },
+      "players": {
+        "m4 test resume-aiming 1": {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "wins": 1
+        },
+        "m4 test resume-aiming 2": {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": false,
+      "current": {
+        "angle": 45,
+        "color": "#ffbd82",
+        "control": "Computer",
+        "health": 44,
+        "name": "M4 Test aimcap 2",
+        "power": 70
+      },
+      "finished": false,
+      "human": false,
+      "lastHit": "M4 Test aimcap 2 \u221256 HP \u00b7 DIRECT HIT",
+      "phase": "focusing",
+      "ready": false,
+      "remaining": 20,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "M4 Test aimcap 1",
+          "status": "WAITING"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 44,
+          "kills": 0,
+          "name": "M4 Test aimcap 2",
+          "status": "CURRENT"
+        }
+      ],
+      "seed": 0,
+      "shotDirection": "RIGHT \u2192",
+      "status": "Loading M4 Test aimcap 2",
+      "tactic": "",
+      "tankCount": 2,
+      "target": "",
+      "turnNumber": 2,
+      "turnSeconds": 20,
+      "winner": "Draw"
+    },
+    "worldId": "431a92d8-0ebb-4197-96d7-ce04d6716b66"
+  },
+  "checks": [
+    {
+      "name": "same saved roster and world",
+      "passed": true
+    },
+    {
+      "name": "phase resumes without fault",
+      "passed": true
+    },
+    {
+      "name": "turn advances once after resolution",
+      "passed": true
+    },
+    {
+      "name": "one original shot and one completed resolution",
+      "passed": true
+    },
+    {
+      "name": "one settle result",
+      "passed": true
+    },
+    {
+      "name": "impact wait completes within its limit",
+      "passed": true
+    }
+  ],
+  "accepted": true
+}

@@ -1,0 +1,1955 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 10598,
+  "ok": true,
+  "value": {
+    "after": {
+      "a": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": -1,
+          "y": -79
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+        "vx": 0,
+        "vy": 0,
+        "x": -0.5,
+        "y": -5000.5
+      },
+      "b": {
+        "alive": false,
+        "angle": 0,
+        "chunk": {
+          "x": 62,
+          "y": -77
+        },
+        "faction": null,
+        "health": 0,
+        "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 11,
+        "maxHealth": 100,
+        "name": "Daran Ironmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+        "vx": 0,
+        "vy": 0,
+        "x": 3999.5,
+        "y": -4900.5
+      }
+    },
+    "assigned": true,
+    "before": {
+      "a": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": -1,
+          "y": -79
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 9,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+        "vx": 0,
+        "vy": 0,
+        "x": -0.5,
+        "y": -5000.5
+      },
+      "b": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 62,
+          "y": -77
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "Daran Ironmere",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+        "vx": 0,
+        "vy": 0,
+        "x": 3999.5,
+        "y": -4900.5
+      }
+    },
+    "events": [
+      {
+        "clock": 43.31666666666549,
+        "entityId": 10,
+        "event": "projectile.launch",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "projectileId": 2,
+        "sourceResidency": "live",
+        "targetResidency": "stored",
+        "vx": 1000.0,
+        "vy": -120,
+        "weaponTemplateId": null,
+        "x": 39.5,
+        "y": -5000.5
+      },
+      {
+        "clock": 48.09999999999855,
+        "event": "projectile.directHit",
+        "hitBodyId": 11,
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "projectileId": 2,
+        "sourceResidency": "stored",
+        "speed": 153.23618793635663,
+        "targetEntityId": 11,
+        "targetResidency": "live",
+        "targetStableId": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+        "x": 3979.5,
+        "y": -4899.373046875
+      },
+      {
+        "cause": "body",
+        "clock": 48.09999999999855,
+        "event": "projectile.detonate",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "projectileId": 2,
+        "sourceResidency": "stored",
+        "targetEntityId": 11,
+        "targetResidency": "live",
+        "targetStableId": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+        "x": 3979.5,
+        "y": -4899.373046875
+      },
+      {
+        "clock": 48.09999999999855,
+        "entityId": "11",
+        "event": "death",
+        "killerEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "killerStableId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "slot": null,
+        "sourceResidency": "stored",
+        "stableId": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+        "targetResidency": "live",
+        "type": "blast",
+        "x": 3999.5,
+        "y": -4900.5
+      },
+      {
+        "amount": 100,
+        "amountAbsorbed": 0,
+        "amountRequested": 4742.465212491102,
+        "baseAmount": 4992.068644727476,
+        "blocked": false,
+        "category": "explosive",
+        "clock": 48.09999999999855,
+        "crit": false,
+        "event": "damage",
+        "killed": true,
+        "sourceEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "sourceResidency": "stored",
+        "sourceStableId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "targetEntityId": "11",
+        "targetResidency": "live",
+        "targetStableId": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+        "type": "blast",
+        "x": 3999.5,
+        "y": -4900.5
+      },
+      {
+        "amount": 100,
+        "clock": 48.09999999999855,
+        "direct": true,
+        "event": "projectile.hit",
+        "killed": true,
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "projectileId": 2,
+        "sourceResidency": "stored",
+        "targetEntityId": 11,
+        "targetResidency": "live",
+        "targetStableId": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b"
+      },
+      {
+        "clock": 48.09999999999855,
+        "event": "projectile.end",
+        "kind": "rigid-body",
+        "ownerEntityId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+        "projectileId": 2,
+        "reason": "detonated",
+        "sourceResidency": "stored",
+        "targetResidency": "live",
+        "x": 3979.5,
+        "y": -4899.373046875
+      }
+    ],
+    "id": 2,
+    "samples": [
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 9,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 0,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 999.75,
+          "vy": -119.97000122070312,
+          "x": 56.162506103515625,
+          "y": -5002.5
+        },
+        "tick": 0
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 9,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 0.16666666666666666,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 998.072509765625,
+          "vy": -119.6704330444336,
+          "x": 222.6405029296875,
+          "y": -5022.46484375
+        },
+        "tick": 10
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 0.3333333333333333,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 1001.7283935546876,
+          "vy": -52.756370544433594,
+          "x": 388.9373779296875,
+          "y": -5040.716796875
+        },
+        "tick": 20
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 0.49999999999999994,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 999.8429565429688,
+          "vy": 39.21632385253906,
+          "x": 555.786376953125,
+          "y": -5035.5703125
+        },
+        "tick": 30
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 0.6500000000000004,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 997.8451538085938,
+          "vy": 39.13819885253906,
+          "x": 705.609375,
+          "y": -5029.6953125
+        },
+        "tick": 40
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 0.733333333333334,
+          "held": true,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 0,
+          "vy": 0,
+          "x": 772.1328125,
+          "y": -5027.0859375
+        },
+        "tick": 50
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 0.733333333333334,
+          "held": true,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 0,
+          "vy": 0,
+          "x": 772.1328125,
+          "y": -5027.0859375
+        },
+        "tick": 60
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 0.733333333333334,
+          "held": true,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 0,
+          "vy": 0,
+          "x": 772.1328125,
+          "y": -5027.0859375
+        },
+        "tick": 70
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 0.733333333333334,
+          "held": true,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 0,
+          "vy": 0,
+          "x": 772.1328125,
+          "y": -5027.0859375
+        },
+        "tick": 80
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 0.733333333333334,
+          "held": true,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 0,
+          "vy": 0,
+          "x": 772.1328125,
+          "y": -5027.0859375
+        },
+        "tick": 90
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 0.8666666666666677,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 997.8451538085938,
+          "vy": 39.1380500793457,
+          "x": 921.810546875,
+          "y": -5021.21484375
+        },
+        "tick": 100
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 1.0333333333333343,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 997.8451538085938,
+          "vy": 39.137916564941406,
+          "x": 1088.119140625,
+          "y": -5014.69140625
+        },
+        "tick": 110
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 1.2000000000000006,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 997.8451538085938,
+          "vy": 39.13776779174805,
+          "x": 1254.427734375,
+          "y": -5008.16796875
+        },
+        "tick": 120
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 1.3666666666666667,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 997.8451538085938,
+          "vy": 39.137603759765625,
+          "x": 1420.736328125,
+          "y": -5001.64453125
+        },
+        "tick": 130
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 1.5333333333333328,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 997.8451538085938,
+          "vy": 39.137413024902344,
+          "x": 1587.044921875,
+          "y": -4995.12109375
+        },
+        "tick": 140
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 1.6999999999999988,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 997.8451538085938,
+          "vy": 39.1371955871582,
+          "x": 1753.353515625,
+          "y": -4988.59765625
+        },
+        "tick": 150
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 1.866666666666665,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 997.8451538085938,
+          "vy": 39.13694381713867,
+          "x": 1919.662109375,
+          "y": -4982.07421875
+        },
+        "tick": 160
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 2.033333333333331,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 995.8512573242188,
+          "vy": 39.058082580566406,
+          "x": 2085.820068359375,
+          "y": -4975.556640625
+        },
+        "tick": 170
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 2.199999999999997,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 993.3643798828124,
+          "vy": 38.959686279296875,
+          "x": 2251.567138671875,
+          "y": -4969.0546875
+        },
+        "tick": 180
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 2.366666666666663,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 990.8836059570312,
+          "vy": 38.863372802734375,
+          "x": 2416.900146484375,
+          "y": -4962.5703125
+        },
+        "tick": 190
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 2.533333333333329,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 988.408935546875,
+          "vy": 38.767147064208984,
+          "x": 2581.821044921875,
+          "y": -4956.103515625
+        },
+        "tick": 200
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 2.6999999999999953,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 986.3453369140624,
+          "vy": 38.687042236328125,
+          "x": 2746.343505859375,
+          "y": -4949.65234375
+        },
+        "tick": 210
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 2.866666666666662,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 984.2853393554688,
+          "vy": 38.60449981689453,
+          "x": 2910.534912109375,
+          "y": -4943.2109375
+        },
+        "tick": 220
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 3.033333333333327,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 982.2300415039062,
+          "vy": 38.526363372802734,
+          "x": 3074.397216796875,
+          "y": -4936.78515625
+        },
+        "tick": 230
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 3.1999999999999935,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 980.316650390625,
+          "vy": 38.45164108276367,
+          "x": 3237.948974609375,
+          "y": -4930.37109375
+        },
+        "tick": 240
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 3.3666666666666596,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 978.6702270507812,
+          "vy": 38.38665008544922,
+          "x": 3401.191162109375,
+          "y": -4923.966796875
+        },
+        "tick": 250
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 3.5333333333333257,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 976.7593383789062,
+          "vy": 38.31809616088867,
+          "x": 3564.114013671875,
+          "y": -4917.580078125
+        },
+        "tick": 260
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 3.699999999999992,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 974.7200927734376,
+          "vy": 38.2369384765625,
+          "x": 3726.724365234375,
+          "y": -4911.201171875
+        },
+        "tick": 270
+      },
+      {
+        "a": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": -1,
+            "y": -79
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": -0.5,
+          "y": -5000.5
+        },
+        "b": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 62,
+            "y": -77
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-59ba3b12-f3c8-491d-81e9-fa0f44a6d12b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 11,
+          "maxHealth": 100,
+          "name": "Daran Ironmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9e550035-f04d-4d8e-be57-aa1b6612205f",
+          "vx": 0,
+          "vy": 0,
+          "x": 3999.5,
+          "y": -4900.5
+        },
+        "shot": {
+          "age": 3.866666666666658,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-3318388c-b550-4b0e-a2fd-6bc72054c303",
+          "vx": 972.8170166015624,
+          "vy": 38.169315338134766,
+          "x": 3889.026123046875,
+          "y": -4904.833984375
+        },
+        "tick": 280
+      }
+    ]
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "ok": true,
+  "presets": [
+    {
+      "builtin": true,
+      "description": "Blades planted across the stroke and into depth; the ones behind the ground line land in Midground, the ones in front in Occlusion.",
+      "id": "builtin-meadow-grass",
+      "materials": {
+        "bud": "GRASS_BLADE_TIP",
+        "tube": "GRASS_BLADE_STEM",
+        "variants": {
+          "bud": "frozen"
+        }
+      },
+      "model": "tube",
+      "name": "Meadow grass",
+      "output": "cells",
+      "pacing": "withStroke",
+      "tags": [
+        "builtin",
+        "grass",
+        "plants"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "Tall stalks with a seed head at every tip.",
+      "id": "builtin-wheat",
+      "materials": {
+        "bud": "GRASS_BLADE_SEED",
+        "tube": "GRASS_BLADE_STEM"
+      },
+      "model": "tube",
+      "name": "Wheat",
+      "output": "cells",
+      "pacing": "withStroke",
+      "tags": [
+        "builtin",
+        "grass",
+        "crops"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "Ivy-style tips that crawl over nearby stone and flower as they go.",
+      "id": "builtin-creeping-vine",
+      "materials": {
+        "bud": "VINE_TIP",
+        "petal": "VINE_FLOWER",
+        "tube": "VINE_STEM",
+        "variants": {
+          "bud": "frozen"
+        }
+      },
+      "model": "ivy",
+      "name": "Creeping vine",
+      "output": "cells",
+      "pacing": "afterStroke",
+      "tags": [
+        "builtin",
+        "plants",
+        "vines"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "Leafy ivy that climbs the target plane's walls.",
+      "id": "builtin-ivy-wall",
+      "materials": {
+        "leaf": "TREE_LEAF",
+        "tube": "VINE_STEM"
+      },
+      "model": "ivy",
+      "name": "Ivy wall",
+      "output": "cells",
+      "pacing": "afterStroke",
+      "tags": [
+        "builtin",
+        "plants",
+        "vines"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "Thorny dead wood that splits twice and carries a few leaves.",
+      "id": "builtin-bramble",
+      "materials": {
+        "leaf": "TREE_LEAF",
+        "tube": "DEADWOOD"
+      },
+      "model": "tube",
+      "name": "Bramble",
+      "output": "cells",
+      "pacing": "withStroke",
+      "tags": [
+        "builtin",
+        "plants",
+        "thicket"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "A thorny living-wood thicket adopted by the native organism; oak physiology supplies leafing, thickening and decay.",
+      "id": "builtin-living-bramble",
+      "materials": {
+        "leaf": "TREE_LEAF",
+        "tube": "LIVING_WOOD"
+      },
+      "model": "tube",
+      "name": "Living bramble",
+      "output": "living",
+      "pacing": "withStroke",
+      "tags": [
+        "builtin",
+        "plants",
+        "thicket",
+        "living"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "A sapling adopted by the tree organism: it keeps thickening, leafing and swaying.",
+      "id": "builtin-oak-sapling",
+      "materials": {
+        "leaf": "TREE_LEAF",
+        "tube": "LIVING_WOOD"
+      },
+      "model": "tube",
+      "name": "Oak sapling",
+      "output": "living",
+      "pacing": "afterStroke",
+      "tags": [
+        "builtin",
+        "trees",
+        "living"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "Short stems each carrying a five-petal flower.",
+      "id": "builtin-flower-bed",
+      "materials": {
+        "petal": "VINE_FLOWER",
+        "tube": "GRASS_BLADE_STEM"
+      },
+      "model": "tube",
+      "name": "Flower bed",
+      "output": "cells",
+      "pacing": "withStroke",
+      "tags": [
+        "builtin",
+        "plants",
+        "flowers"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "Space-colonised roots that stay inside the soil.",
+      "id": "builtin-roots",
+      "materials": {
+        "replaces": [
+          "DIRT",
+          "MUD",
+          "SAND"
+        ],
+        "tube": "ROOTS_STEM"
+      },
+      "model": "colonize",
+      "name": "Roots",
+      "output": "cells",
+      "pacing": "afterStroke",
+      "tags": [
+        "builtin",
+        "plants",
+        "underground",
+        "colonize"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "Space-colonised coral that fills the brush footprint.",
+      "id": "builtin-coral",
+      "materials": {
+        "tube": "CORAL_BRANCH",
+        "variants": {
+          "tube": "frozen"
+        }
+      },
+      "model": "colonize",
+      "name": "Coral",
+      "output": "cells",
+      "pacing": "afterStroke",
+      "tags": [
+        "builtin",
+        "sea",
+        "colonize"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "Tapering ice that starts into the ledge (elevation 2) and hangs straight down under gravity.",
+      "id": "builtin-icicles",
+      "materials": {
+        "tube": "ICE"
+      },
+      "model": "tube",
+      "name": "Icicles",
+      "output": "cells",
+      "pacing": "withStroke",
+      "tags": [
+        "builtin",
+        "ice",
+        "winter"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "A colonised bolt of light-emitting cells that clears itself 0.3 s after it lands.",
+      "id": "builtin-lightning",
+      "materials": {
+        "tube": "FLASH"
+      },
+      "model": "colonize",
+      "name": "Lightning",
+      "output": "cells",
+      "pacing": "afterStroke",
+      "tags": [
+        "builtin",
+        "weather",
+        "effects",
+        "colonize"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "Long view-plane strands with a streaked texture.",
+      "id": "builtin-hair",
+      "materials": {
+        "tube": "BARK"
+      },
+      "model": "tube",
+      "name": "Hair",
+      "output": "cells",
+      "pacing": "withStroke",
+      "tags": [
+        "builtin",
+        "hair",
+        "textured"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "Erase brush: wandering tubes carve tunnels through whatever they cross.",
+      "id": "builtin-worm-tunnels",
+      "materials": {
+        "tube": "DIRT"
+      },
+      "model": "tube",
+      "name": "Worm tunnels",
+      "output": "cells",
+      "pacing": "withStroke",
+      "tags": [
+        "builtin",
+        "carve",
+        "underground"
+      ]
+    },
+    {
+      "builtin": true,
+      "description": "Ivy grown in Midground whatever layer is active: standable semisolid ledges behind the world.",
+      "id": "builtin-vine-ledge",
+      "materials": {
+        "leaf": "TREE_LEAF",
+        "tube": "VINE_STEM"
+      },
+      "model": "ivy",
+      "name": "Vine ledge",
+      "output": "cells",
+      "pacing": "afterStroke",
+      "tags": [
+        "builtin",
+        "plants",
+        "vines",
+        "platforms"
+      ]
+    },
+    {
+      "builtin": false,
+      "description": "A thorny living-wood thicket adopted by the native organism; oak physiology supplies leafing, thickening and decay.",
+      "id": "m9-planar-bramble-probe",
+      "materials": {
+        "leaf": "TREE_LEAF",
+        "tube": "LIVING_WOOD"
+      },
+      "model": "tube",
+      "name": "M9 planar bramble diagnostic",
+      "output": "living",
+      "pacing": "withStroke",
+      "tags": [
+        "plants",
+        "thicket",
+        "living"
+      ]
+    },
+    {
+      "builtin": false,
+      "description": "A sapling adopted by the tree organism: it keeps thickening, leafing and swaying.",
+      "id": "indigo-m9-oak",
+      "materials": {
+        "leaf": "TREE_LEAF",
+        "tube": "LIVING_WOOD"
+      },
+      "model": "tube",
+      "name": "Indigo living oak",
+      "output": "living",
+      "pacing": "afterStroke",
+      "tags": [
+        "trees",
+        "living"
+      ]
+    },
+    {
+      "builtin": false,
+      "description": "A thorny living-wood thicket adopted by the native organism; oak physiology supplies leafing, thickening and decay.",
+      "id": "indigo-m9-bramble",
+      "materials": {
+        "leaf": "TREE_LEAF",
+        "tube": "LIVING_WOOD"
+      },
+      "model": "tube",
+      "name": "Indigo living bramble",
+      "output": "living",
+      "pacing": "withStroke",
+      "tags": [
+        "plants",
+        "thicket",
+        "living"
+      ]
+    }
+  ],
+  "total": 18
+}

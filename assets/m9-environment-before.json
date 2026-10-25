@@ -1,0 +1,85 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 37,
+  "ok": true,
+  "value": {
+    "biomeFiles": [],
+    "layout": {
+      "ambientHeat": null,
+      "grid": {
+        "h": 17,
+        "w": 197,
+        "x": 0,
+        "y": 0
+      },
+      "highQualitySplats": false,
+      "mazeAreas": [],
+      "metadata": {
+        "author": "",
+        "description": "Indigo artillery \u2014 Mixed Reach, a seeded 50 by 5 tile battlefield. Dirt and sand with stone pockets over a solid stone bottom row.",
+        "isTemplate": false,
+        "name": "indigo",
+        "website": ""
+      },
+      "newGameLocation": {
+        "playerTemplateId": null,
+        "x": 6400,
+        "y": 540
+      },
+      "parallelWorlds": "none",
+      "reactionDefaults": {
+        "deathProduct": 7,
+        "eatenProduct": 21
+      },
+      "regions": [],
+      "rules": [],
+      "templateId": "d9fa0363-0172-a96e-9b10-0b0c3d9a1f58",
+      "wfcAreas": [
+        {
+          "id": "indigo-m1",
+          "name": "indigo-m1",
+          "tileset": ""
+        },
+        {
+          "id": "indigo-slate",
+          "name": "indigo-slate",
+          "tileset": ""
+        },
+        {
+          "id": "indigo-mixed",
+          "name": "indigo-mixed",
+          "tileset": ""
+        }
+      ],
+      "wfcTileSize": 4,
+      "zones": {
+        "catalog": [],
+        "template": []
+      }
+    },
+    "weather": [
+      {
+        "id": "weather_clear",
+        "name": "Clear"
+      },
+      {
+        "id": "weather_dust_storm",
+        "name": "Dust Storm"
+      },
+      {
+        "id": "weather_fog",
+        "name": "Fog"
+      },
+      {
+        "id": "weather_heavy_snow",
+        "name": "Heavy Snow"
+      },
+      {
+        "id": "weather_light_rain",
+        "name": "Light Rain"
+      }
+    ],
+    "weatherSets": []
+  }
+}

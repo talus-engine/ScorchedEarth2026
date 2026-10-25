@@ -1,0 +1,692 @@
+{
+  "clock": 69.38333333333068,
+  "error": "",
+  "events": [
+    {
+      "clock": 1.8499999999999983,
+      "id": "instance@spawn-0bc9a68f-13e9-45db-9c25-90e375e4e5d4",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 3.049999999999994,
+      "id": "instance@spawn-0bc9a68f-13e9-45db-9c25-90e375e4e5d4",
+      "kind": "deployed",
+      "name": "M8 Alpha",
+      "turn": 0
+    },
+    {
+      "clock": 4.899999999999988,
+      "id": "instance@spawn-f68f2d4d-8cc3-41f9-b644-39bff5b26d04",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 6.083333333333317,
+      "id": "instance@spawn-f68f2d4d-8cc3-41f9-b644-39bff5b26d04",
+      "kind": "deployed",
+      "name": "M8 Bravo",
+      "turn": 0
+    },
+    {
+      "clock": 7.949999999999977,
+      "id": "instance@spawn-c31bfeb3-da11-4328-8062-f22b0746d019",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 9.1166666666667,
+      "id": "instance@spawn-c31bfeb3-da11-4328-8062-f22b0746d019",
+      "kind": "deployed",
+      "name": "M8 Charlie",
+      "turn": 0
+    },
+    {
+      "clock": 9.1166666666667,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 360,
+      "clock": 9.1166666666667,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "M8 Alpha",
+      "price": 240,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 9.1166666666667,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Alpha",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 420,
+      "clock": 9.1166666666667,
+      "item": "crumble",
+      "kind": "purchase",
+      "name": "M8 Bravo",
+      "price": 180,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 330,
+      "clock": 9.1166666666667,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Bravo",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 480,
+      "clock": 9.1166666666667,
+      "item": "riot",
+      "kind": "purchase",
+      "name": "M8 Charlie",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 390,
+      "clock": 9.1166666666667,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Charlie",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    }
+  ],
+  "match": {
+    "biome": "mixed-reach",
+    "bounds": {
+      "h": 1280,
+      "w": 1280,
+      "x": 5760,
+      "y": 0
+    },
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0,
+      "rng": 839689206,
+      "serial": 0
+    },
+    "computers": 3,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "humans": 0,
+    "impact": null,
+    "message": "Tanks ready \u2014 begin when your crew is ready",
+    "phase": "ready",
+    "remaining": 20,
+    "roster": [
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#bcb1ff",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-0bc9a68f-13e9-45db-9c25-90e375e4e5d4",
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M8 Alpha",
+        "spawnX": 5824,
+        "surfaceY": 672,
+        "weaponId": "heavy"
+      },
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#ffbd82",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-f68f2d4d-8cc3-41f9-b644-39bff5b26d04",
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M8 Bravo",
+        "spawnX": 6400,
+        "surfaceY": 704,
+        "weaponId": "crumble"
+      },
+      {
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#8ae0ca",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-c31bfeb3-da11-4328-8062-f22b0746d019",
+        "index": 2,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M8 Charlie",
+        "spawnX": 6976,
+        "surfaceY": 693,
+        "weaponId": "riot"
+      }
+    ],
+    "round": 1,
+    "seed": 7,
+    "shotId": null,
+    "turnNumber": 0,
+    "turnSeconds": 20,
+    "version": 8,
+    "winner": null
+  },
+  "paused": false,
+  "roster": [
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 90,
+        "y": 10
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-0bc9a68f-13e9-45db-9c25-90e375e4e5d4",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 0,
+      "maxHealth": 100,
+      "name": "M8 Alpha",
+      "residency": "live",
+      "slot": null,
+      "templateId": "10887eef-ab35-4c6a-92cc-fee00b78d234",
+      "vx": 0,
+      "vy": 0,
+      "x": 5823.5,
+      "y": 653.5
+    },
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 99,
+        "y": 10
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-f68f2d4d-8cc3-41f9-b644-39bff5b26d04",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 2,
+      "maxHealth": 100,
+      "name": "M8 Bravo",
+      "residency": "live",
+      "slot": null,
+      "templateId": "10887eef-ab35-4c6a-92cc-fee00b78d234",
+      "vx": 0,
+      "vy": 0,
+      "x": 6399.5,
+      "y": 691.5
+    },
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 108,
+        "y": 10
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-c31bfeb3-da11-4328-8062-f22b0746d019",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 4,
+      "maxHealth": 100,
+      "name": "M8 Charlie",
+      "residency": "live",
+      "slot": null,
+      "templateId": "10887eef-ab35-4c6a-92cc-fee00b78d234",
+      "vx": 0,
+      "vy": 0,
+      "x": 6975.5,
+      "y": 679.5
+    }
+  ],
+  "scores": {
+    "matches": {},
+    "players": {}
+  },
+  "ui": {
+    "aimRotation": "rotate(-45deg)",
+    "batteries": 2,
+    "biome": "Mixed Reach",
+    "canEquip": false,
+    "canSetup": true,
+    "canShop": true,
+    "cash": 270,
+    "cashNotice": "",
+    "chaosCount": 0,
+    "chaosNotice": "",
+    "current": {
+      "angle": 45,
+      "color": "#bcb1ff",
+      "control": "Computer",
+      "health": 100,
+      "name": "M8 Alpha",
+      "power": 70
+    },
+    "finished": false,
+    "frameNotice": "",
+    "human": false,
+    "lastHit": "",
+    "loadout": [
+      {
+        "action": "equip-standard",
+        "disabled": false,
+        "name": "Field cannon",
+        "selected": false,
+        "stock": "\u221e"
+      },
+      {
+        "action": "equip-heavy",
+        "disabled": false,
+        "name": "Heavy howitzer",
+        "selected": true,
+        "stock": 3
+      },
+      {
+        "action": "equip-crumble",
+        "disabled": true,
+        "name": "Crumble cannon",
+        "selected": false,
+        "stock": 0
+      },
+      {
+        "action": "equip-riot",
+        "disabled": true,
+        "name": "Excavator cannon",
+        "selected": false,
+        "stock": 0
+      }
+    ],
+    "phase": "ready",
+    "ready": true,
+    "remaining": 20,
+    "roster": [
+      {
+        "cash": 270,
+        "color": "#bcb1ff",
+        "earned": 0,
+        "health": 100,
+        "kills": 0,
+        "name": "M8 Alpha",
+        "status": "CURRENT"
+      },
+      {
+        "cash": 330,
+        "color": "#ffbd82",
+        "earned": 0,
+        "health": 100,
+        "kills": 0,
+        "name": "M8 Bravo",
+        "status": "WAITING"
+      },
+      {
+        "cash": 390,
+        "color": "#8ae0ca",
+        "earned": 0,
+        "health": 100,
+        "kills": 0,
+        "name": "M8 Charlie",
+        "status": "WAITING"
+      }
+    ],
+    "round": 1,
+    "roundCash": 0,
+    "seed": 7,
+    "shop": {
+      "account": "m8 alpha",
+      "cash": 270,
+      "color": "#bcb1ff",
+      "computers": 3,
+      "count": 3,
+      "earned": 0,
+      "finished": false,
+      "humans": 0,
+      "index": 1,
+      "items": [
+        {
+          "action": "buy-standard",
+          "button": "Included",
+          "category": "WEAPON",
+          "description": "Reliable explosive shell. Unlimited ammunition.",
+          "disabled": true,
+          "id": "standard",
+          "name": "Field cannon",
+          "price": "Always available",
+          "stock": "Unlimited"
+        },
+        {
+          "action": "buy-heavy",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three heavy shells. Wider blasts, deeper craters, 120 peak damage.",
+          "disabled": false,
+          "id": "heavy",
+          "name": "Heavy howitzer",
+          "price": "$240 / 3",
+          "stock": "3"
+        },
+        {
+          "action": "buy-crumble",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three shells that fracture solid ground into loose powder. 65 peak damage.",
+          "disabled": false,
+          "id": "crumble",
+          "name": "Crumble cannon",
+          "price": "$180 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-riot",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three terrain-clearing riot shells. A broad crater with no blast damage.",
+          "disabled": false,
+          "id": "riot",
+          "name": "Excavator cannon",
+          "price": "$120 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-battery",
+          "button": "Buy bundle",
+          "category": "UTILITY",
+          "description": "Two repairs. Restore up to 30 hull each during your turn without ending it.",
+          "disabled": false,
+          "id": "battery",
+          "name": "Repair battery",
+          "price": "$90 / 2",
+          "stock": "2"
+        },
+        {
+          "action": "buy-ricochet",
+          "button": "In development",
+          "category": "WEAPON",
+          "description": "Three bouncing shells. A four-second fuse keeps them dangerous after landing.",
+          "disabled": true,
+          "id": "ricochet",
+          "name": "Bouncer cannon",
+          "price": "$180 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-jetpack",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "Six seconds of thrust using the tank's levitation controller.",
+          "disabled": true,
+          "id": "jetpack",
+          "name": "Jetpack fuel",
+          "price": "$180 / 6",
+          "stock": "0"
+        },
+        {
+          "action": "buy-digger",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "Five seconds of powered tunneling through the ground.",
+          "disabled": true,
+          "id": "digger",
+          "name": "Burrowing rig",
+          "price": "$220 / 5",
+          "stock": "0"
+        },
+        {
+          "action": "buy-sand",
+          "button": "In development",
+          "category": "WEAPON",
+          "description": "Charges release a seeded, noise-filled bank of real sand at impact.",
+          "disabled": true,
+          "id": "sand",
+          "name": "Sand charge cannon",
+          "price": "$180 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-magnet",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "A powered field that bends incoming metal shells away.",
+          "disabled": true,
+          "id": "magnet",
+          "name": "Mag deflector",
+          "price": "$350 / 1",
+          "stock": "0"
+        },
+        {
+          "action": "buy-shield",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "Absorbs incoming damage before it reaches the hull.",
+          "disabled": true,
+          "id": "shield",
+          "name": "Blast shield",
+          "price": "$250 / 1",
+          "stock": "0"
+        }
+      ],
+      "message": "Computer pilot: purchases made automatically. You can inspect or add supplies.",
+      "name": "M8 Alpha",
+      "namesText": "M8 Alpha\nM8 Bravo\nM8 Charlie",
+      "ready": true,
+      "receipts": [],
+      "result": "Every pilot starts with $600",
+      "revision": 2,
+      "round": 2,
+      "title": "Opening armory",
+      "turnSeconds": 20
+    },
+    "shotDirection": "RIGHT \u2192",
+    "speech": [],
+    "status": "Tanks ready \u2014 begin when your crew is ready",
+    "tactic": "",
+    "tankCount": 3,
+    "target": "",
+    "turnNumber": 0,
+    "turnSeconds": 20,
+    "weaponAmmo": 3,
+    "weaponName": "Heavy howitzer",
+    "winner": "Draw"
+  },
+  "worldId": "c909c32a-e9cc-48cc-a679-56122eb73320",
+  "economy": {
+    "cpuShops": {
+      "c909c32a-e9cc-48cc-a679-56122eb73320:ready": {
+        "m8 alpha": true,
+        "m8 bravo": true,
+        "m8 charlie": true
+      }
+    },
+    "players": {
+      "m8 alpha": {
+        "cash": 270,
+        "earned": 0,
+        "name": "M8 Alpha",
+        "revision": 2,
+        "selected": "heavy",
+        "spent": 330,
+        "stock": {
+          "battery": 2,
+          "heavy": 3
+        }
+      },
+      "m8 bravo": {
+        "cash": 330,
+        "earned": 0,
+        "name": "M8 Bravo",
+        "revision": 2,
+        "selected": "crumble",
+        "spent": 270,
+        "stock": {
+          "battery": 2,
+          "crumble": 3
+        }
+      },
+      "m8 charlie": {
+        "cash": 390,
+        "earned": 0,
+        "name": "M8 Charlie",
+        "revision": 2,
+        "selected": "riot",
+        "spent": 210,
+        "stock": {
+          "battery": 2,
+          "riot": 3
+        }
+      }
+    },
+    "rounds": {},
+    "version": 1
+  },
+  "weapons": [
+    {
+      "name": "M8 Alpha",
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 3,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -0.7853981633974483,
+        "equipped": "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.7,
+        "speed": {
+          "current": 2124,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "name": "M8 Bravo",
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 3
+        },
+        "angle": 0,
+        "equipped": "d76c6450-350e-439b-a119-f62d4a106fb2",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": false,
+        "power": 1,
+        "speed": {
+          "current": 3000,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "name": "M8 Charlie",
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 3,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": 0,
+        "equipped": "6e30450e-16bd-4098-903e-bd30c61728d7",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": false,
+        "power": 1,
+        "speed": {
+          "current": 3000,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    }
+  ],
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6399.5,
+          "y": 672.5
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 78,
+          "w": 1192,
+          "x": 5803.5,
+          "y": 633.5
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5248,
+      "y": -64
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 0
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 0
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5599.5,
+      "y": 188.5
+    },
+    "zoom": 0.25
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "columns": [
+        "name",
+        "sql"
+      ],
+      "rowCount": 5,
+      "rows": [
+        [
+          "audio_presets",
+          "CREATE TABLE audio_presets (\n      preset_id     TEXT PRIMARY KEY,\n      world_template_id TEXT, -- NULL = shared\n      preset_name   TEXT NOT NULL UNIQUE,\n      settings_json TEXT NOT NULL,\n      created_at    INTEGER NOT NULL,\n      modified_at   INTEGER NOT NULL\n    )"
+        ],
+        [
+          "brush_models",
+          "CREATE TABLE brush_models (\n      model_id TEXT PRIMARY KEY,\n      model_name TEXT NOT NULL,\n      arch TEXT NOT NULL,\n      weights BLOB NOT NULL,\n      size_bytes INTEGER NOT NULL,\n      created_at INTEGER NOT NULL,\n      modified_at INTEGER NOT NULL\n    )"
+        ],
+        [
+          "brush_shapes",
+          "CREATE TABLE brush_shapes (\n      shape_id    TEXT PRIMARY KEY,\n      shape_name  TEXT NOT NULL,\n      shape_size  INTEGER NOT NULL,\n      shape_data  BLOB NOT NULL,\n      size_bytes  INTEGER NOT NULL,\n      created_at  INTEGER NOT NULL,\n      modified_at INTEGER NOT NULL\n    )"
+        ],
+        [
+          "presets",
+          "CREATE TABLE presets (\n      preset_kind TEXT NOT NULL,\n      preset_id   TEXT NOT NULL,\n      -- Slice 4: '' = shared/built-in (sentinel, NOT NULL so it can\n      -- live in the PK); a template id means the preset (or the\n      -- template's EDIT of a shared preset \u2014 owned shadows shared by\n      -- preset_id) belongs to that world template.  Editing a preset\n      -- in template A can no longer regenerate template B's terrain.\n      world_template_id TEXT NOT NULL DEFAULT '',\n      preset_name TEXT NOT NULL,\n      data        TEXT NOT NULL,\n      created_at  INTEGER NOT NULL,\n      modified_at INTEGER NOT NULL,\n      PRIMARY KEY (preset_kind, preset_id, world_template_id)\n    )"
+        ],
+        [
+          "noise_preset_thumbnails",
+          "CREATE TABLE noise_preset_thumbnails (\n      preset_id  TEXT PRIMARY KEY,\n      signature  TEXT NOT NULL,\n      thumb_data BLOB NOT NULL,\n      thumb_w    INTEGER NOT NULL,\n      thumb_h    INTEGER NOT NULL,\n      mime_type  TEXT NOT NULL DEFAULT 'image/png',\n      created_at INTEGER NOT NULL\n    )"
+        ]
+      ]
+    }
+  ],
+  "truncated": false
+}

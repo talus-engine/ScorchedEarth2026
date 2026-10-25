@@ -1,0 +1,2503 @@
+{
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6399.5,
+          "y": 741.4799499511719
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 448.04010009765625,
+          "w": 920,
+          "x": 5939.5,
+          "y": 517.4598999023438
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5248,
+      "y": 0
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 64
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 64
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5599.5,
+      "y": 257.4799499511719
+    },
+    "zoom": 0.25
+  },
+  "clock": 26.549999999999773,
+  "error": "",
+  "events": [
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 0.016666666666666666,
+      "completedChunks": 700,
+      "family": "maze",
+      "kind": "terrain-source",
+      "parameters": {
+        "cellSize": 48
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "bunker-grid",
+      "seed": 2533516,
+      "totalChunks": 4000,
+      "turn": 0,
+      "version": 1
+    },
+    {
+      "clock": 1.5833333333333326,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-f9284531-85d6-4604-84e4-7a6917537ca7",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-f9284531-85d6-4604-84e4-7a6917537ca7",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "ea5387a7-ae87-44a8-9e0c-de060e3da3f9",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 5959.5,
+        "y": 525.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 1.6833333333333322,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-f9284531-85d6-4604-84e4-7a6917537ca7",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-f9284531-85d6-4604-84e4-7a6917537ca7",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 1",
+        "residency": "live",
+        "slot": null,
+        "templateId": "ea5387a7-ae87-44a8-9e0c-de060e3da3f9",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 5959.5,
+        "y": 533.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 6,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 1.6833333333333322,
+      "id": "instance@spawn-f9284531-85d6-4604-84e4-7a6917537ca7",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 1",
+      "turn": 0
+    },
+    {
+      "clock": 1.866666666666665,
+      "id": "instance@spawn-f9284531-85d6-4604-84e4-7a6917537ca7",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 3.2333333333333267,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-82fd67e9-c755-44ba-b97a-7b11d3874adf",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 94,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-82fd67e9-c755-44ba-b97a-7b11d3874adf",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "Arig Silverhaven",
+        "residency": "live",
+        "slot": null,
+        "templateId": "46f3126a-c74b-4c77-8850-c71e2aeff1d7",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6018.5,
+        "y": 620.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.31666666666666,
+      "id": "instance@spawn-82fd67e9-c755-44ba-b97a-7b11d3874adf",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 3.3333333333333264,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-82fd67e9-c755-44ba-b97a-7b11d3874adf",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 94,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-82fd67e9-c755-44ba-b97a-7b11d3874adf",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 2",
+        "residency": "live",
+        "slot": null,
+        "templateId": "46f3126a-c74b-4c77-8850-c71e2aeff1d7",
+        "vx": 0,
+        "vy": 10.833333015441896,
+        "x": 6018.50146484375,
+        "y": 626.05712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 3.3333333333333264,
+      "id": "instance@spawn-82fd67e9-c755-44ba-b97a-7b11d3874adf",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 2",
+      "turn": 0
+    },
+    {
+      "clock": 3.6333333333333258,
+      "id": "instance@spawn-82fd67e9-c755-44ba-b97a-7b11d3874adf",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 4.883333333333321,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-717da7ba-56a1-4d18-b570-33eca511b3d3",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 94,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-717da7ba-56a1-4d18-b570-33eca511b3d3",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 4,
+        "maxHealth": 100,
+        "name": "Aric Stonehaven",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6076.5,
+        "y": 620.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 4.983333333333321,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-717da7ba-56a1-4d18-b570-33eca511b3d3",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 94,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-717da7ba-56a1-4d18-b570-33eca511b3d3",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 4,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 3",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6076.5,
+        "y": 627.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 4.983333333333321,
+      "id": "instance@spawn-717da7ba-56a1-4d18-b570-33eca511b3d3",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 3",
+      "turn": 0
+    },
+    {
+      "clock": 5.18333333333332,
+      "id": "instance@spawn-717da7ba-56a1-4d18-b570-33eca511b3d3",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 6.5333333333333155,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-afd78a85-ef18-4017-aa59-3f0204587f33",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 95,
+          "y": 14
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-afd78a85-ef18-4017-aa59-3f0204587f33",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 6,
+        "maxHealth": 100,
+        "name": "Daris Blackhaven",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6135.5,
+        "y": 908.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 6.633333333333315,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-afd78a85-ef18-4017-aa59-3f0204587f33",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 95,
+          "y": 14
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-afd78a85-ef18-4017-aa59-3f0204587f33",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 6,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 4",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6135.5,
+        "y": 915.5015869140624
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 6.633333333333315,
+      "id": "instance@spawn-afd78a85-ef18-4017-aa59-3f0204587f33",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 4",
+      "turn": 0
+    },
+    {
+      "clock": 6.833333333333314,
+      "id": "instance@spawn-afd78a85-ef18-4017-aa59-3f0204587f33",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 8.199999999999987,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-6ff098f9-fc4a-4b50-807c-76ef74a0b1b4",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 96,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6ff098f9-fc4a-4b50-807c-76ef74a0b1b4",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 8,
+        "maxHealth": 100,
+        "name": "Darus Fairford",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "vx": 0,
+        "vy": 0,
+        "x": 6194.5,
+        "y": 619.55712890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 8.299999999999992,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-6ff098f9-fc4a-4b50-807c-76ef74a0b1b4",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 96,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6ff098f9-fc4a-4b50-807c-76ef74a0b1b4",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 8,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 5",
+        "residency": "live",
+        "slot": null,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "vx": 0,
+        "vy": 0,
+        "x": 6194.5,
+        "y": 619.918212890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "blocked",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 8.299999999999992,
+      "id": "instance@spawn-6ff098f9-fc4a-4b50-807c-76ef74a0b1b4",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 5",
+      "turn": 0
+    },
+    {
+      "clock": 9.866666666666736,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-7944a1db-c022-48b2-ac8f-e0d48875ec75",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 97,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-7944a1db-c022-48b2-ac8f-e0d48875ec75",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 10,
+        "maxHealth": 100,
+        "name": "Calek Fairholm",
+        "residency": "live",
+        "slot": null,
+        "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 6252.5,
+        "y": 621.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 9.96666666666674,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-7944a1db-c022-48b2-ac8f-e0d48875ec75",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 97,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-7944a1db-c022-48b2-ac8f-e0d48875ec75",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 10,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 6",
+        "residency": "live",
+        "slot": null,
+        "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 6252.5,
+        "y": 629.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 9.96666666666674,
+      "id": "instance@spawn-7944a1db-c022-48b2-ac8f-e0d48875ec75",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 6",
+      "turn": 0
+    },
+    {
+      "clock": 10.150000000000084,
+      "id": "instance@spawn-7944a1db-c022-48b2-ac8f-e0d48875ec75",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 11.516666666666818,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-0d130544-2df0-4209-b06c-1e4e5dcfb425",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 98,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-0d130544-2df0-4209-b06c-1e4e5dcfb425",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 12,
+        "maxHealth": 100,
+        "name": "Ferus Brammere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "54e88a24-0d0b-4fc6-962b-88e9da02870f",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6311.5,
+        "y": 620.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 11.616666666666823,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-0d130544-2df0-4209-b06c-1e4e5dcfb425",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 98,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-0d130544-2df0-4209-b06c-1e4e5dcfb425",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 12,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 7",
+        "residency": "live",
+        "slot": null,
+        "templateId": "54e88a24-0d0b-4fc6-962b-88e9da02870f",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6311.5,
+        "y": 627.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 11.616666666666823,
+      "id": "instance@spawn-0d130544-2df0-4209-b06c-1e4e5dcfb425",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 7",
+      "turn": 0
+    },
+    {
+      "clock": 11.816666666666832,
+      "id": "instance@spawn-0d130544-2df0-4209-b06c-1e4e5dcfb425",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 13.1666666666669,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-1cb0683f-03c0-4d2e-9738-ce8238d9b42a",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 99,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-1cb0683f-03c0-4d2e-9738-ce8238d9b42a",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 14,
+        "maxHealth": 100,
+        "name": "Garic Silverholm",
+        "residency": "live",
+        "slot": null,
+        "templateId": "df3e8da4-084c-4989-80c1-638805529db9",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6370.5,
+        "y": 620.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 13.266666666666906,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-1cb0683f-03c0-4d2e-9738-ce8238d9b42a",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 99,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-1cb0683f-03c0-4d2e-9738-ce8238d9b42a",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 14,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 8",
+        "residency": "live",
+        "slot": null,
+        "templateId": "df3e8da4-084c-4989-80c1-638805529db9",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6370.5,
+        "y": 627.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 13.266666666666906,
+      "id": "instance@spawn-1cb0683f-03c0-4d2e-9738-ce8238d9b42a",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 8",
+      "turn": 0
+    },
+    {
+      "clock": 13.466666666666915,
+      "id": "instance@spawn-1cb0683f-03c0-4d2e-9738-ce8238d9b42a",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 14.816666666666984,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-88ad6ef3-01c7-4815-ad42-c79b0d3557a6",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 100,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-88ad6ef3-01c7-4815-ad42-c79b0d3557a6",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 16,
+        "maxHealth": 100,
+        "name": "Branan Blackdale",
+        "residency": "live",
+        "slot": null,
+        "templateId": "12d67315-11d7-421d-8e2f-6dca94335d32",
+        "vx": 0,
+        "vy": 0,
+        "x": 6428.5,
+        "y": 619.556884765625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 14.916666666666988,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-88ad6ef3-01c7-4815-ad42-c79b0d3557a6",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 100,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-88ad6ef3-01c7-4815-ad42-c79b0d3557a6",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 16,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 9",
+        "residency": "live",
+        "slot": null,
+        "templateId": "12d67315-11d7-421d-8e2f-6dca94335d32",
+        "vx": 0,
+        "vy": 0,
+        "x": 6428.5,
+        "y": 619.40380859375
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0.875,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 14.916666666666988,
+      "id": "instance@spawn-88ad6ef3-01c7-4815-ad42-c79b0d3557a6",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 9",
+      "turn": 0
+    },
+    {
+      "clock": 16.466666666667013,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-bb143579-3561-4c12-895a-62a4d25bb78d",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 101,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-bb143579-3561-4c12-895a-62a4d25bb78d",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 18,
+        "maxHealth": 100,
+        "name": "Garus Stonemere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "eaf866a6-4216-405a-9a28-2e87df3d44eb",
+        "vx": 0,
+        "vy": 0,
+        "x": 6487.5,
+        "y": 619.556884765625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 16.566666666667007,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-bb143579-3561-4c12-895a-62a4d25bb78d",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 101,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-bb143579-3561-4c12-895a-62a4d25bb78d",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 18,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 10",
+        "residency": "live",
+        "slot": null,
+        "templateId": "eaf866a6-4216-405a-9a28-2e87df3d44eb",
+        "vx": 0,
+        "vy": 0,
+        "x": 6487.5,
+        "y": 619.73681640625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 16.566666666667007,
+      "id": "instance@spawn-bb143579-3561-4c12-895a-62a4d25bb78d",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 10",
+      "turn": 0
+    },
+    {
+      "clock": 18.11666666666692,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-c57e89c6-ac6a-4ea4-847b-dbd9b02f4c36",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 102,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-c57e89c6-ac6a-4ea4-847b-dbd9b02f4c36",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 20,
+        "maxHealth": 100,
+        "name": "Ferin Redholm",
+        "residency": "live",
+        "slot": null,
+        "templateId": "2745d498-e5bd-441e-b1b4-3f805b00ef61",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6546.5,
+        "y": 524.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 18.216666666666914,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-c57e89c6-ac6a-4ea4-847b-dbd9b02f4c36",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 102,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-c57e89c6-ac6a-4ea4-847b-dbd9b02f4c36",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 20,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 11",
+        "residency": "live",
+        "slot": null,
+        "templateId": "2745d498-e5bd-441e-b1b4-3f805b00ef61",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6546.5,
+        "y": 531.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 18.216666666666914,
+      "id": "instance@spawn-c57e89c6-ac6a-4ea4-847b-dbd9b02f4c36",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 11",
+      "turn": 0
+    },
+    {
+      "clock": 18.416666666666902,
+      "id": "instance@spawn-c57e89c6-ac6a-4ea4-847b-dbd9b02f4c36",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 19.766666666666826,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-96ac65f7-726f-4c38-babc-89b87a0618c9",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 103,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-96ac65f7-726f-4c38-babc-89b87a0618c9",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 22,
+        "maxHealth": 100,
+        "name": "Darek Goldmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6604.5,
+        "y": 620.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 19.86666666666682,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-96ac65f7-726f-4c38-babc-89b87a0618c9",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 103,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-96ac65f7-726f-4c38-babc-89b87a0618c9",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 22,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 12",
+        "residency": "live",
+        "slot": null,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6604.5,
+        "y": 627.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 19.86666666666682,
+      "id": "instance@spawn-96ac65f7-726f-4c38-babc-89b87a0618c9",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 12",
+      "turn": 0
+    },
+    {
+      "clock": 20.06666666666681,
+      "id": "instance@spawn-96ac65f7-726f-4c38-babc-89b87a0618c9",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 21.416666666666732,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-1eaba97c-8b08-40c0-9cfd-4ab17323770a",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 104,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-1eaba97c-8b08-40c0-9cfd-4ab17323770a",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 24,
+        "maxHealth": 100,
+        "name": "Calus Fairmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "ea62bcab-4004-4634-8cb4-8878b116aa1f",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6663.5,
+        "y": 524.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 21.51666666666673,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-1eaba97c-8b08-40c0-9cfd-4ab17323770a",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 104,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-1eaba97c-8b08-40c0-9cfd-4ab17323770a",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 24,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 13",
+        "residency": "live",
+        "slot": null,
+        "templateId": "ea62bcab-4004-4634-8cb4-8878b116aa1f",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6663.5,
+        "y": 531.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 21.51666666666673,
+      "id": "instance@spawn-1eaba97c-8b08-40c0-9cfd-4ab17323770a",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 13",
+      "turn": 0
+    },
+    {
+      "clock": 21.716666666666715,
+      "id": "instance@spawn-1eaba97c-8b08-40c0-9cfd-4ab17323770a",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 23.083333333333304,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-c5e1ef04-286e-4507-bc8e-e73c1a451ab8",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 105,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-c5e1ef04-286e-4507-bc8e-e73c1a451ab8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 26,
+        "maxHealth": 100,
+        "name": "Branic Silverhaven",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 6722.5,
+        "y": 525.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 23.183333333333294,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-c5e1ef04-286e-4507-bc8e-e73c1a451ab8",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 105,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-c5e1ef04-286e-4507-bc8e-e73c1a451ab8",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 26,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 14",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 6722.5,
+        "y": 533.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 23.183333333333294,
+      "id": "instance@spawn-c5e1ef04-286e-4507-bc8e-e73c1a451ab8",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 14",
+      "turn": 0
+    },
+    {
+      "clock": 23.36666666666662,
+      "id": "instance@spawn-c5e1ef04-286e-4507-bc8e-e73c1a451ab8",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 24.749999999999876,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-00b9abb5-7435-437f-9d42-ab470a49e249",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 105,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-00b9abb5-7435-437f-9d42-ab470a49e249",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 28,
+        "maxHealth": 100,
+        "name": "Edan Blackholm",
+        "residency": "live",
+        "slot": null,
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 6780.5,
+        "y": 525.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 24.84999999999987,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-00b9abb5-7435-437f-9d42-ab470a49e249",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 105,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-00b9abb5-7435-437f-9d42-ab470a49e249",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 28,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 15",
+        "residency": "live",
+        "slot": null,
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 6780.5,
+        "y": 533.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 24.84999999999987,
+      "id": "instance@spawn-00b9abb5-7435-437f-9d42-ab470a49e249",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 15",
+      "turn": 0
+    },
+    {
+      "clock": 25.033333333333193,
+      "id": "instance@spawn-00b9abb5-7435-437f-9d42-ab470a49e249",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 26.399999999999785,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-cc524676-82f5-457d-8a36-3dbee1beffb4",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-cc524676-82f5-457d-8a36-3dbee1beffb4",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 30,
+        "maxHealth": 100,
+        "name": "Darus Goldfield",
+        "residency": "live",
+        "slot": null,
+        "templateId": "c209af78-9f62-4fd6-8b2c-b4fa12b09676",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6839.5,
+        "y": 524.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 26.499999999999776,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-cc524676-82f5-457d-8a36-3dbee1beffb4",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 8
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-cc524676-82f5-457d-8a36-3dbee1beffb4",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 30,
+        "maxHealth": 100,
+        "name": "M10C 16 Pilot 16",
+        "residency": "live",
+        "slot": null,
+        "templateId": "c209af78-9f62-4fd6-8b2c-b4fa12b09676",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6839.5,
+        "y": 531.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 26.499999999999776,
+      "id": "instance@spawn-cc524676-82f5-457d-8a36-3dbee1beffb4",
+      "kind": "deployed",
+      "name": "M10C 16 Pilot 16",
+      "turn": 0
+    },
+    {
+      "clock": 26.499999999999776,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 420,
+      "clock": 26.499999999999776,
+      "item": "crumble",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 1",
+      "price": 180,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 300,
+      "clock": 26.499999999999776,
+      "item": "parachute",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 1",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 210,
+      "clock": 26.499999999999776,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 1",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 320,
+      "clock": 26.499999999999776,
+      "item": "napalm",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 2",
+      "price": 280,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 360,
+      "clock": 26.499999999999776,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 3",
+      "price": 240,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 26.499999999999776,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 3",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 320,
+      "clock": 26.499999999999776,
+      "item": "napalm",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 4",
+      "price": 280,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 420,
+      "clock": 26.499999999999776,
+      "item": "crumble",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 5",
+      "price": 180,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 300,
+      "clock": 26.499999999999776,
+      "item": "parachute",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 5",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 210,
+      "clock": 26.499999999999776,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 5",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 440,
+      "clock": 26.499999999999776,
+      "item": "machine-gun",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 6",
+      "price": 160,
+      "quantity": 4,
+      "turn": 0
+    },
+    {
+      "cash": 350,
+      "clock": 26.499999999999776,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 6",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 230,
+      "clock": 26.499999999999776,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 6",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 440,
+      "clock": 26.499999999999776,
+      "item": "machine-gun",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 7",
+      "price": 160,
+      "quantity": 4,
+      "turn": 0
+    },
+    {
+      "cash": 350,
+      "clock": 26.499999999999776,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 7",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 230,
+      "clock": 26.499999999999776,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 7",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 480,
+      "clock": 26.499999999999776,
+      "item": "riot",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 8",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 260,
+      "clock": 26.499999999999776,
+      "item": "digger",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 8",
+      "price": 220,
+      "quantity": 5,
+      "turn": 0
+    },
+    {
+      "cash": 140,
+      "clock": 26.499999999999776,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 8",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 480,
+      "clock": 26.499999999999776,
+      "item": "riot",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 9",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 260,
+      "clock": 26.499999999999776,
+      "item": "digger",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 9",
+      "price": 220,
+      "quantity": 5,
+      "turn": 0
+    },
+    {
+      "cash": 140,
+      "clock": 26.499999999999776,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 9",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 480,
+      "clock": 26.499999999999776,
+      "item": "riot",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 10",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 260,
+      "clock": 26.499999999999776,
+      "item": "digger",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 10",
+      "price": 220,
+      "quantity": 5,
+      "turn": 0
+    },
+    {
+      "cash": 140,
+      "clock": 26.499999999999776,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 10",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 320,
+      "clock": 26.499999999999776,
+      "item": "napalm",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 11",
+      "price": 280,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 440,
+      "clock": 26.499999999999776,
+      "item": "machine-gun",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 12",
+      "price": 160,
+      "quantity": 4,
+      "turn": 0
+    },
+    {
+      "cash": 350,
+      "clock": 26.499999999999776,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 12",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 230,
+      "clock": 26.499999999999776,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 12",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 440,
+      "clock": 26.499999999999776,
+      "item": "machine-gun",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 13",
+      "price": 160,
+      "quantity": 4,
+      "turn": 0
+    },
+    {
+      "cash": 350,
+      "clock": 26.499999999999776,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 13",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 230,
+      "clock": 26.499999999999776,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 13",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "cash": 360,
+      "clock": 26.499999999999776,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 14",
+      "price": 240,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 26.499999999999776,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 14",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 420,
+      "clock": 26.499999999999776,
+      "item": "crumble",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 15",
+      "price": 180,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 300,
+      "clock": 26.499999999999776,
+      "item": "parachute",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 15",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 210,
+      "clock": 26.499999999999776,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 15",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 360,
+      "clock": 26.499999999999776,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 16",
+      "price": 240,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 26.499999999999776,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10C 16 Pilot 16",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    }
+  ],
+  "generation": {
+    "bounds": {
+      "h": 1280,
+      "w": 12800,
+      "x": 0,
+      "y": 0
+    },
+    "completedChunks": 720,
+    "family": "maze",
+    "parameters": {
+      "cellSize": 48
+    },
+    "phase": "ready",
+    "reason": null,
+    "recipeId": "bunker-grid",
+    "seed": 2533516,
+    "totalChunks": 4000,
+    "version": 1
+  },
+  "live": [
+    {
+      "id": "instance@spawn-f9284531-85d6-4604-84e4-7a6917537ca7",
+      "live": true,
+      "position": {
+        "x": 5959.5,
+        "y": 563.135498046875
+      }
+    },
+    {
+      "id": "instance@spawn-82fd67e9-c755-44ba-b97a-7b11d3874adf",
+      "live": true,
+      "position": {
+        "x": 6018.50146484375,
+        "y": 657.5
+      }
+    },
+    {
+      "id": "instance@spawn-717da7ba-56a1-4d18-b570-33eca511b3d3",
+      "live": true,
+      "position": {
+        "x": 6076.49951171875,
+        "y": 657.4998779296875
+      }
+    },
+    {
+      "id": "instance@spawn-afd78a85-ef18-4017-aa59-3f0204587f33",
+      "live": true,
+      "position": {
+        "x": 6135.5,
+        "y": 945.5
+      }
+    },
+    {
+      "id": "instance@spawn-6ff098f9-fc4a-4b50-807c-76ef74a0b1b4",
+      "live": true,
+      "position": {
+        "x": 6194.5,
+        "y": 620.0987548828125
+      }
+    },
+    {
+      "id": "instance@spawn-7944a1db-c022-48b2-ac8f-e0d48875ec75",
+      "live": true,
+      "position": {
+        "x": 6252.5,
+        "y": 657.6802978515625
+      }
+    },
+    {
+      "id": "instance@spawn-0d130544-2df0-4209-b06c-1e4e5dcfb425",
+      "live": true,
+      "position": {
+        "x": 6311.5,
+        "y": 657.6802978515625
+      }
+    },
+    {
+      "id": "instance@spawn-1cb0683f-03c0-4d2e-9738-ce8238d9b42a",
+      "live": true,
+      "position": {
+        "x": 6370.5,
+        "y": 657.68017578125
+      }
+    },
+    {
+      "id": "instance@spawn-88ad6ef3-01c7-4815-ad42-c79b0d3557a6",
+      "live": true,
+      "position": {
+        "x": 6428.5,
+        "y": 622.791748046875
+      }
+    },
+    {
+      "id": "instance@spawn-bb143579-3561-4c12-895a-62a4d25bb78d",
+      "live": true,
+      "position": {
+        "x": 6487.5,
+        "y": 622.9500732421875
+      }
+    },
+    {
+      "id": "instance@spawn-c57e89c6-ac6a-4ea4-847b-dbd9b02f4c36",
+      "live": true,
+      "position": {
+        "x": 6546.5,
+        "y": 561.6802978515625
+      }
+    },
+    {
+      "id": "instance@spawn-96ac65f7-726f-4c38-babc-89b87a0618c9",
+      "live": true,
+      "position": {
+        "x": 6604.5,
+        "y": 657.6802368164062
+      }
+    },
+    {
+      "id": "instance@spawn-1eaba97c-8b08-40c0-9cfd-4ab17323770a",
+      "live": true,
+      "position": {
+        "x": 6663.5,
+        "y": 561.4998779296875
+      }
+    },
+    {
+      "id": "instance@spawn-c5e1ef04-286e-4507-bc8e-e73c1a451ab8",
+      "live": true,
+      "position": {
+        "x": 6722.5,
+        "y": 561.68017578125
+      }
+    },
+    {
+      "id": "instance@spawn-00b9abb5-7435-437f-9d42-ab470a49e249",
+      "live": true,
+      "position": {
+        "x": 6780.5,
+        "y": 561.5
+      }
+    },
+    {
+      "id": "instance@spawn-cc524676-82f5-457d-8a36-3dbee1beffb4",
+      "live": true,
+      "position": {
+        "x": 6839.5,
+        "y": 537.4598999023438
+      }
+    }
+  ],
+  "match": {
+    "attack": null,
+    "baseGeneration": {
+      "recipe": "bunker-grid"
+    },
+    "biome": "bunker-grid",
+    "biomeCycle": false,
+    "biomeRounds": 1,
+    "bounds": {
+      "h": 1280,
+      "w": 960,
+      "x": 5920,
+      "y": 0
+    },
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0,
+      "rng": 1925661522,
+      "serial": 0
+    },
+    "computers": 16,
+    "cpuSkill": "persona",
+    "details": 0,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "generated": 0,
+    "generation": "bunker-grid",
+    "generationChoice": "bunker-grid",
+    "humans": 0,
+    "impact": null,
+    "livingSites": 0,
+    "message": "Tanks ready \u2014 begin when your crew is ready",
+    "pendingTurn": null,
+    "personaSeed": "M10-completion",
+    "phase": "ready",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "remaining": 30,
+    "roster": [
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#9581F4",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-f9284531-85d6-4604-84e4-7a6917537ca7",
+        "hits": 0,
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 1",
+        "personaId": "faultline",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 5960,
+        "surfaceY": 576,
+        "templateId": "ea5387a7-ae87-44a8-9e0c-de060e3da3f9",
+        "weaponId": "crumble"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#61A9D9",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-82fd67e9-c755-44ba-b97a-7b11d3874adf",
+        "hits": 0,
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 2",
+        "personaId": "domino",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6019,
+        "surfaceY": 672,
+        "templateId": "46f3126a-c74b-4c77-8850-c71e2aeff1d7",
+        "weaponId": "napalm"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#EC3555",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-717da7ba-56a1-4d18-b570-33eca511b3d3",
+        "hits": 0,
+        "index": 2,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 3",
+        "personaId": "kiloton",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6077,
+        "surfaceY": 672,
+        "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+        "weaponId": "heavy"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#35D9FF",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-afd78a85-ef18-4017-aa59-3f0204587f33",
+        "hits": 0,
+        "index": 3,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 4",
+        "personaId": "domino",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6136,
+        "surfaceY": 960,
+        "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+        "weaponId": "napalm"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#A574F4",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-6ff098f9-fc4a-4b50-807c-76ef74a0b1b4",
+        "hits": 0,
+        "index": 4,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 5",
+        "personaId": "faultline",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6195,
+        "surfaceY": 672,
+        "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+        "weaponId": "crumble"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#FF783C",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-7944a1db-c022-48b2-ac8f-e0d48875ec75",
+        "hits": 0,
+        "index": 5,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 6",
+        "personaId": "lucky",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6253,
+        "surfaceY": 672,
+        "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+        "weaponId": "machine-gun"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#E6C97C",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-0d130544-2df0-4209-b06c-1e4e5dcfb425",
+        "hits": 0,
+        "index": 6,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 7",
+        "personaId": "lucky",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6312,
+        "surfaceY": 672,
+        "templateId": "54e88a24-0d0b-4fc6-962b-88e9da02870f",
+        "weaponId": "machine-gun"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#70F8A0",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-1cb0683f-03c0-4d2e-9738-ce8238d9b42a",
+        "hits": 0,
+        "index": 7,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 8",
+        "personaId": "mole",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6371,
+        "surfaceY": 672,
+        "templateId": "df3e8da4-084c-4989-80c1-638805529db9",
+        "weaponId": "riot"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#7EF88F",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-88ad6ef3-01c7-4815-ad42-c79b0d3557a6",
+        "hits": 0,
+        "index": 8,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 9",
+        "personaId": "mole",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6429,
+        "surfaceY": 672,
+        "templateId": "12d67315-11d7-421d-8e2f-6dca94335d32",
+        "weaponId": "riot"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#82D3AF",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-bb143579-3561-4c12-895a-62a4d25bb78d",
+        "hits": 0,
+        "index": 9,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 10",
+        "personaId": "mole",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6488,
+        "surfaceY": 672,
+        "templateId": "eaf866a6-4216-405a-9a28-2e87df3d44eb",
+        "weaponId": "riot"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#49FFFB",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-c57e89c6-ac6a-4ea4-847b-dbd9b02f4c36",
+        "hits": 0,
+        "index": 10,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 11",
+        "personaId": "domino",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6547,
+        "surfaceY": 576,
+        "templateId": "2745d498-e5bd-441e-b1b4-3f805b00ef61",
+        "weaponId": "napalm"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#FF6150",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-96ac65f7-726f-4c38-babc-89b87a0618c9",
+        "hits": 0,
+        "index": 11,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 12",
+        "personaId": "lucky",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6605,
+        "surfaceY": 672,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "weaponId": "machine-gun"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#D9A165",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-1eaba97c-8b08-40c0-9cfd-4ab17323770a",
+        "hits": 0,
+        "index": 12,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 13",
+        "personaId": "lucky",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6664,
+        "surfaceY": 576,
+        "templateId": "ea62bcab-4004-4634-8cb4-8878b116aa1f",
+        "weaponId": "machine-gun"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#EC4787",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-c5e1ef04-286e-4507-bc8e-e73c1a451ab8",
+        "hits": 0,
+        "index": 13,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 14",
+        "personaId": "kiloton",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6723,
+        "surfaceY": 576,
+        "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+        "weaponId": "heavy"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#B083CF",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-00b9abb5-7435-437f-9d42-ab470a49e249",
+        "hits": 0,
+        "index": 14,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 15",
+        "personaId": "faultline",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6781,
+        "surfaceY": 576,
+        "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+        "weaponId": "crumble"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#C9605C",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-cc524676-82f5-457d-8a36-3dbee1beffb4",
+        "hits": 0,
+        "index": 15,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 16 Pilot 16",
+        "personaId": "kiloton",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6840,
+        "surfaceY": 576,
+        "templateId": "c209af78-9f62-4fd6-8b2c-b4fa12b09676",
+        "weaponId": "heavy"
+      }
+    ],
+    "round": 1,
+    "seed": 2533516,
+    "seriesId": "5a77cb44-c261-4ac6-80c8-9c0f7e2e31f5",
+    "seriesLength": 3,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 700,
+      "family": "maze",
+      "parameters": {
+        "cellSize": 48
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "bunker-grid",
+      "seed": 2533516,
+      "totalChunks": 4000,
+      "version": 1
+    },
+    "turnNumber": 0,
+    "turnSeconds": 30,
+    "version": 9,
+    "winner": null
+  },
+  "paused": false,
+  "world": "5a77cb44-c261-4ac6-80c8-9c0f7e2e31f5"
+}

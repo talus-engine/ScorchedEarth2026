@@ -1,0 +1,451 @@
+{
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6399.5,
+          "y": 656.8774719238281
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 87.14068603515625,
+          "w": 920,
+          "x": 5939.5,
+          "y": 613.30712890625
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5248,
+      "y": -64
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 0
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 0
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5599.5,
+      "y": 172.87747192382812
+    },
+    "zoom": 0.25
+  },
+  "clock": 3.349999999999993,
+  "error": "",
+  "events": [
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 0.016666666666666666,
+      "completedChunks": 0,
+      "family": "template",
+      "kind": "terrain-source",
+      "parameters": {},
+      "phase": "complete",
+      "reason": null,
+      "recipeId": "wfc",
+      "seed": 2533502,
+      "totalChunks": 0,
+      "turn": 0,
+      "version": 1
+    },
+    {
+      "clock": 1.5833333333333326,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-7520b79a-4935-4f22-83c9-540efd86fcd2",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-7520b79a-4935-4f22-83c9-540efd86fcd2",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "ea5387a7-ae87-44a8-9e0c-de060e3da3f9",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 5959.5,
+        "y": 641.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 1.6833333333333322,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-7520b79a-4935-4f22-83c9-540efd86fcd2",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-7520b79a-4935-4f22-83c9-540efd86fcd2",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M10C 2 Pilot 1",
+        "residency": "live",
+        "slot": null,
+        "templateId": "ea5387a7-ae87-44a8-9e0c-de060e3da3f9",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 5959.5,
+        "y": 649.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 1.6833333333333322,
+      "id": "instance@spawn-7520b79a-4935-4f22-83c9-540efd86fcd2",
+      "kind": "deployed",
+      "name": "M10C 2 Pilot 1",
+      "turn": 0
+    },
+    {
+      "clock": 1.866666666666665,
+      "id": "instance@spawn-7520b79a-4935-4f22-83c9-540efd86fcd2",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 3.2333333333333267,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-6c11bb88-2fc5-44dc-ab73-1b85ac194fb6",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6c11bb88-2fc5-44dc-ab73-1b85ac194fb6",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "Arig Silverhaven",
+        "residency": "live",
+        "slot": null,
+        "templateId": "46f3126a-c74b-4c77-8850-c71e2aeff1d7",
+        "vx": 0,
+        "vy": 32.5,
+        "x": 6839.5,
+        "y": 624.4598999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 3.3333333333333264,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-6c11bb88-2fc5-44dc-ab73-1b85ac194fb6",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 9
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-6c11bb88-2fc5-44dc-ab73-1b85ac194fb6",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M10C 2 Pilot 2",
+        "residency": "live",
+        "slot": null,
+        "templateId": "46f3126a-c74b-4c77-8850-c71e2aeff1d7",
+        "vx": 0,
+        "vy": 97.5,
+        "x": 6839.5,
+        "y": 631.5015869140625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 6,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 3.3333333333333264,
+      "id": "instance@spawn-6c11bb88-2fc5-44dc-ab73-1b85ac194fb6",
+      "kind": "deployed",
+      "name": "M10C 2 Pilot 2",
+      "turn": 0
+    },
+    {
+      "clock": 3.3333333333333264,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 420,
+      "clock": 3.3333333333333264,
+      "item": "crumble",
+      "kind": "purchase",
+      "name": "M10C 2 Pilot 1",
+      "price": 180,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 300,
+      "clock": 3.3333333333333264,
+      "item": "parachute",
+      "kind": "purchase",
+      "name": "M10C 2 Pilot 1",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 210,
+      "clock": 3.3333333333333264,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M10C 2 Pilot 1",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 320,
+      "clock": 3.3333333333333264,
+      "item": "napalm",
+      "kind": "purchase",
+      "name": "M10C 2 Pilot 2",
+      "price": 280,
+      "quantity": 3,
+      "turn": 0
+    }
+  ],
+  "generation": {
+    "bounds": {
+      "h": 1280,
+      "w": 12800,
+      "x": 0,
+      "y": 0
+    },
+    "completedChunks": 0,
+    "family": "template",
+    "parameters": {},
+    "phase": "complete",
+    "reason": null,
+    "recipeId": "wfc",
+    "seed": 2533502,
+    "totalChunks": 0,
+    "version": 1
+  },
+  "live": [
+    {
+      "id": "instance@spawn-7520b79a-4935-4f22-83c9-540efd86fcd2",
+      "live": true,
+      "position": {
+        "x": 5959.5,
+        "y": 680.4478149414062
+      }
+    },
+    {
+      "id": "instance@spawn-6c11bb88-2fc5-44dc-ab73-1b85ac194fb6",
+      "live": true,
+      "position": {
+        "x": 6839.5,
+        "y": 633.30712890625
+      }
+    }
+  ],
+  "match": {
+    "attack": null,
+    "baseGeneration": {
+      "recipe": "wfc"
+    },
+    "biome": "mixed-reach",
+    "biomeCycle": false,
+    "biomeRounds": 1,
+    "bounds": {
+      "h": 1280,
+      "w": 960,
+      "x": 5920,
+      "y": 0
+    },
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0,
+      "rng": 1892253379,
+      "serial": 0
+    },
+    "computers": 2,
+    "cpuSkill": "persona",
+    "details": 0,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "generated": 0,
+    "generation": "wfc",
+    "generationChoice": "wfc",
+    "humans": 0,
+    "impact": null,
+    "livingSites": 0,
+    "message": "Tanks ready \u2014 begin when your crew is ready",
+    "pendingTurn": null,
+    "personaSeed": "M10-completion",
+    "phase": "ready",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "remaining": 30,
+    "roster": [
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#9581F4",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-7520b79a-4935-4f22-83c9-540efd86fcd2",
+        "hits": 0,
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 2 Pilot 1",
+        "personaId": "faultline",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 5960,
+        "surfaceY": 692,
+        "templateId": "ea5387a7-ae87-44a8-9e0c-de060e3da3f9",
+        "weaponId": "crumble"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#61A9D9",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-6c11bb88-2fc5-44dc-ab73-1b85ac194fb6",
+        "hits": 0,
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M10C 2 Pilot 2",
+        "personaId": "domino",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6840,
+        "surfaceY": 676,
+        "templateId": "46f3126a-c74b-4c77-8850-c71e2aeff1d7",
+        "weaponId": "napalm"
+      }
+    ],
+    "round": 1,
+    "seed": 2533502,
+    "seriesId": "b0cb8a4f-ec7a-4af7-b985-15651a33d567",
+    "seriesLength": 3,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 0,
+      "family": "template",
+      "parameters": {},
+      "phase": "complete",
+      "reason": null,
+      "recipeId": "wfc",
+      "seed": 2533502,
+      "totalChunks": 0,
+      "version": 1
+    },
+    "turnNumber": 0,
+    "turnSeconds": 30,
+    "version": 9,
+    "winner": null
+  },
+  "paused": false,
+  "world": "b0cb8a4f-ec7a-4af7-b985-15651a33d567"
+}

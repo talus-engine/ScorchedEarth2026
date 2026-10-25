@@ -1,0 +1,2364 @@
+{
+  "version": 2,
+  "startingCash": 600,
+  "awards": {
+    "turn": 10,
+    "aim": 3,
+    "power": 3,
+    "move": 2,
+    "shoot": 20,
+    "landing": 15,
+    "resolution": 10,
+    "bounce": 5,
+    "hit": 20,
+    "damage": 3,
+    "hurt": 1,
+    "death": 100,
+    "kill": 100,
+    "win": 150,
+    "pass": 10,
+    "timeout": 10,
+    "equip": 5,
+    "utility": 15
+  },
+  "items": [
+    {
+      "id": "standard",
+      "name": "Baby Missile",
+      "kind": "weapon",
+      "price": 0,
+      "bundle": 0,
+      "enabled": true,
+      "description": "Reliable explosive shell. Unlimited ammunition.",
+      "template": "219d46ea-fa7c-4578-b119-bba07279e6f0",
+      "category": "Artillery",
+      "original": "Baby Missile",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 80,
+        "damageType": "blast",
+        "aoeRadius": 100,
+        "carveRadius": 48,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "modTemplate": "56a93867-b4a4-4a3e-b89d-85b1817f9561",
+      "unlimited": true
+    },
+    {
+      "id": "heavy",
+      "name": "Missile",
+      "kind": "weapon",
+      "price": 240,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Three heavy shells. Wider blasts, deeper craters, 120 peak damage.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 120,
+        "damageType": "blast",
+        "aoeRadius": 145,
+        "carveRadius": 70,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "template": "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+      "modTemplate": "e494550a-528e-4386-a895-ef98885d4ec7",
+      "category": "Artillery",
+      "original": "Missile"
+    },
+    {
+      "id": "crumble",
+      "name": "Crumble cannon",
+      "kind": "weapon",
+      "price": 180,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Three shells that crumble solid ground into falling debris. 65 peak damage.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 65,
+        "damageType": "blast",
+        "aoeRadius": 100,
+        "carveRadius": 80,
+        "carveMode": "powder",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "template": "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+      "modTemplate": "7f29ba47-c667-4f10-a795-f2e0887f490a",
+      "category": "Artillery"
+    },
+    {
+      "id": "riot",
+      "name": "Riot Bomb",
+      "kind": "weapon",
+      "price": 120,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Three terrain-clearing riot shells. A broad crater with no blast damage.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 110,
+        "carveRadius": 95,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "template": "9dd9a83c-66b3-4720-a798-b7ce47372022",
+      "modTemplate": "bf014b07-0819-4dd9-a631-fd3331fd841d",
+      "category": "Artillery",
+      "original": "Riot Bomb"
+    },
+    {
+      "id": "battery",
+      "name": "Battery",
+      "kind": "utility",
+      "price": 90,
+      "bundle": 2,
+      "enabled": true,
+      "heal": 30,
+      "description": "Two repairs. Restore up to 30 hull each during your turn without ending it.",
+      "category": "Support",
+      "original": "Battery"
+    },
+    {
+      "id": "ricochet",
+      "name": "Bouncer cannon",
+      "kind": "weapon",
+      "price": 180,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Three bouncing shells. A four-second fuse keeps them dangerous after landing.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 8,
+        "range": 0,
+        "damage": 95,
+        "damageType": "blast",
+        "aoeRadius": 115,
+        "carveRadius": 52,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": false,
+          "onBody": true,
+          "onRest": false,
+          "fuse": 4,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "bouncing": 5
+      },
+      "template": "fa168217-924a-4b95-b7f2-025d856f5b88",
+      "modTemplate": "27d1fdc8-32fe-4a8f-ba04-a478e85ec07c",
+      "category": "Artillery"
+    },
+    {
+      "id": "jetpack",
+      "name": "Jetpack fuel",
+      "kind": "utility",
+      "price": 180,
+      "bundle": 6,
+      "enabled": true,
+      "description": "Six seconds of thrust using the tank's levitation controller.",
+      "controller": {
+        "levitationEnabled": true,
+        "levitationStartEmpty": true,
+        "levitationTime": 12000,
+        "levitationRecoveryRate": 0,
+        "levitationAccel": 500,
+        "levitationMaxSpeed": 120
+      },
+      "category": "Support"
+    },
+    {
+      "id": "digger",
+      "name": "Burrowing rig",
+      "kind": "utility",
+      "price": 220,
+      "bundle": 5,
+      "enabled": true,
+      "description": "Five seconds of powered tunneling through the ground.",
+      "tool": {
+        "width": 6,
+        "height": 42,
+        "interval": 0.1,
+        "workPerSecond": 8000,
+        "reach": 90,
+        "materials": [
+          {
+            "name": "DIRT",
+            "hardness": 1
+          },
+          {
+            "name": "SAND",
+            "hardness": 1
+          },
+          {
+            "name": "STONE",
+            "hardness": 3
+          }
+        ]
+      },
+      "category": "Support"
+    },
+    {
+      "id": "sand",
+      "name": "Sand charge cannon",
+      "kind": "weapon",
+      "price": 180,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Charges release a seeded, noise-filled bank of real sand at impact.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "brush": {
+        "radius": 64,
+        "rise": 24,
+        "settleSeconds": 2,
+        "regionWidth": 256,
+        "regionHeight": 512,
+        "recipe": {
+          "id": "indigo-sand-bank",
+          "name": "Indigo sand bank",
+          "description": "Seeded native noise deposits loose sand in empty cells.",
+          "tags": [
+            "sand",
+            "runtime"
+          ],
+          "macro": {
+            "mode": "volumetric",
+            "support": "none",
+            "strata": [
+              {
+                "element": "SAND",
+                "thickness": [
+                  1,
+                  1
+                ],
+                "bands": [
+                  {
+                    "element": "SAND",
+                    "endPos": 0.6
+                  },
+                  {
+                    "element": "EMPTY",
+                    "endPos": 1
+                  }
+                ]
+              }
+            ]
+          },
+          "micro": {
+            "noise": {
+              "algorithm": "simplex",
+              "frequency": 0.08,
+              "octaves": 3,
+              "persistence": 0.5,
+              "lacunarity": 2
+            },
+            "tint": {
+              "ramp": [
+                "#94723f",
+                "#e7ca75"
+              ],
+              "strength": 0.2
+            }
+          }
+        }
+      },
+      "template": "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+      "modTemplate": "ad40f188-b309-444a-8e29-23b2b431f341",
+      "category": "Artillery"
+    },
+    {
+      "id": "magnet",
+      "name": "Mag Deflector",
+      "kind": "utility",
+      "price": 350,
+      "bundle": 1,
+      "enabled": true,
+      "description": "A powered field that bends incoming metal shells away.",
+      "charge": 6,
+      "field": {
+        "capacity": 12,
+        "radius": 180,
+        "acceleration": 3000,
+        "drainPerSecond": 1,
+        "kinds": [
+          "rigid-body"
+        ],
+        "owners": "others",
+        "elements": []
+      },
+      "materialNames": [
+        "IRON",
+        "LEAD",
+        "TUNGSTEN",
+        "STEEL"
+      ],
+      "category": "Support",
+      "original": "Mag Deflector"
+    },
+    {
+      "id": "shield",
+      "name": "Shield",
+      "kind": "utility",
+      "price": 250,
+      "bundle": 1,
+      "enabled": true,
+      "description": "Absorbs incoming damage before it reaches the hull.",
+      "charge": 60,
+      "field": {
+        "capacity": 120,
+        "types": [
+          "kinetic",
+          "blast",
+          "fire",
+          "acid",
+          "electric",
+          "freeze",
+          "poison"
+        ]
+      },
+      "category": "Support",
+      "original": "Shield"
+    },
+    {
+      "id": "baby-nuke",
+      "name": "Baby Nuke",
+      "kind": "weapon",
+      "price": 360,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "A compact nuclear shell: 150 peak damage and a 104-pixel crater.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 150,
+        "damageType": "blast",
+        "aoeRadius": 200,
+        "carveRadius": 104,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Baby Nuke",
+      "template": "70446b65-1a75-4950-840a-443f28dc58a6",
+      "modTemplate": "c378454c-ec98-459a-b7c5-1f75438e1e3f"
+    },
+    {
+      "id": "nuke",
+      "name": "Nuke",
+      "kind": "weapon",
+      "price": 600,
+      "bundle": 2,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "A very large nuclear shell: 220 peak damage and a 176-pixel crater.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 220,
+        "damageType": "blast",
+        "aoeRadius": 280,
+        "carveRadius": 176,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Nuke",
+      "template": "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+      "modTemplate": "1384d0ce-0f8f-458d-bf73-7fef5e353b14"
+    },
+    {
+      "id": "leapfrog",
+      "name": "Leap Frog",
+      "kind": "weapon",
+      "price": 300,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "Three consecutive explosive hops. The second and third warheads launch from the previous impact.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 70,
+        "damageType": "blast",
+        "aoeRadius": 95,
+        "carveRadius": 42,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Leap Frog",
+      "behavior": {
+        "mode": "leap",
+        "hops": 3
+      },
+      "template": "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+      "modTemplate": "2050b0ff-e58f-4223-a97f-ab1b5d66857a"
+    },
+    {
+      "id": "funky",
+      "name": "Funky Bomb",
+      "kind": "weapon",
+      "price": 420,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "A chaotic blast scattering seven live secondary warheads.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 65,
+        "damageType": "blast",
+        "aoeRadius": 95,
+        "carveRadius": 42,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Funky Bomb",
+      "behavior": {
+        "mode": "cluster",
+        "count": 7,
+        "childDamage": 55,
+        "childRadius": 70,
+        "childCarve": 28,
+        "speed": 280
+      },
+      "template": "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+      "modTemplate": "1096f536-4bea-4957-bd67-a18007777ddc"
+    },
+    {
+      "id": "mirv",
+      "name": "MIRV",
+      "kind": "weapon",
+      "price": 400,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "Splits into five descending warheads at the apex. Early impact releases the payload against the obstruction.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "MIRV",
+      "behavior": {
+        "mode": "apex",
+        "count": 5,
+        "childDamage": 80,
+        "childRadius": 105,
+        "childCarve": 48,
+        "spread": 130
+      },
+      "template": "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+      "modTemplate": "fac09249-1d7d-4877-a00d-270d75c0c84b"
+    },
+    {
+      "id": "deaths-head",
+      "name": "Death\u2019s Head",
+      "kind": "weapon",
+      "price": 750,
+      "bundle": 1,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "Nine large warheads at the apex. Allow plenty of clearance.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Death\u2019s Head",
+      "behavior": {
+        "mode": "apex",
+        "count": 9,
+        "childDamage": 145,
+        "childRadius": 185,
+        "childCarve": 96,
+        "spread": 125
+      },
+      "template": "2ee512d3-c721-4978-a1a5-b97d42255b13",
+      "modTemplate": "f0c692b1-8dc5-46d2-8fb6-c332103f0337"
+    },
+    {
+      "id": "napalm",
+      "name": "Napalm",
+      "kind": "weapon",
+      "price": 280,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Materials",
+      "description": "Deposits real burning fuel at impact. Fire and oil continue simulating after the turn.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 15,
+        "damageType": "fire",
+        "aoeRadius": 35,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Napalm",
+      "behavior": {
+        "mode": "deposit",
+        "element": "CRUDE_OIL",
+        "radius": 48,
+        "ignite": true
+      },
+      "template": "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+      "modTemplate": "494e4984-e4c3-4cca-ac55-cf8c8d7d3647"
+    },
+    {
+      "id": "hot-napalm",
+      "name": "Hot Napalm",
+      "kind": "weapon",
+      "price": 400,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Materials",
+      "description": "Deposits real burning fuel at impact. Fire and oil continue simulating after the turn.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 15,
+        "damageType": "fire",
+        "aoeRadius": 35,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Hot Napalm",
+      "behavior": {
+        "mode": "deposit",
+        "element": "CRUDE_OIL",
+        "radius": 80,
+        "ignite": true
+      },
+      "template": "a80f054a-6235-4746-b050-8d5cd248dd57",
+      "modTemplate": "8d817a44-3d3c-4cb5-8762-4cbf379bd5ad"
+    },
+    {
+      "id": "tracer",
+      "name": "Tracer",
+      "kind": "weapon",
+      "price": 60,
+      "bundle": 5,
+      "enabled": true,
+      "category": "Support",
+      "description": "A harmless ballistic ranging shell. Its final location remains in the hit readout.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Tracer",
+      "template": "b4474e78-1c10-4d79-994d-d900ed050664",
+      "modTemplate": "48cd451c-599c-489c-ade3-e4114d0664c7"
+    },
+    {
+      "id": "baby-roller",
+      "name": "Baby Roller",
+      "kind": "weapon",
+      "price": 200,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "Rolls and bounces down slopes; detonates on a hull or after coming to rest. A safety fuse bounds the wait.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 10,
+        "range": 0,
+        "damage": 55,
+        "damageType": "blast",
+        "aoeRadius": 65,
+        "carveRadius": 32,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": false,
+          "onBody": true,
+          "onRest": true,
+          "fuse": 8,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "bouncing": 100
+      },
+      "original": "Baby Roller",
+      "template": "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+      "modTemplate": "7c2321fa-99c7-4546-92a1-010bfbb00b53"
+    },
+    {
+      "id": "roller",
+      "name": "Roller",
+      "kind": "weapon",
+      "price": 280,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "Rolls and bounces down slopes; detonates on a hull or after coming to rest. A safety fuse bounds the wait.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 10,
+        "range": 0,
+        "damage": 90,
+        "damageType": "blast",
+        "aoeRadius": 110,
+        "carveRadius": 55,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": false,
+          "onBody": true,
+          "onRest": true,
+          "fuse": 8,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "bouncing": 100
+      },
+      "original": "Roller",
+      "template": "173004dc-1907-43e3-9e01-10f4b7084523",
+      "modTemplate": "7d6c9481-728a-4b6a-9b51-2490a29e1e2f"
+    },
+    {
+      "id": "heavy-roller",
+      "name": "Heavy Roller",
+      "kind": "weapon",
+      "price": 280,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "Rolls and bounces down slopes; detonates on a hull or after coming to rest. A safety fuse bounds the wait.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 10,
+        "range": 0,
+        "damage": 130,
+        "damageType": "blast",
+        "aoeRadius": 150,
+        "carveRadius": 75,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": false,
+          "onBody": true,
+          "onRest": true,
+          "fuse": 8,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "bouncing": 100
+      },
+      "original": "Heavy Roller",
+      "template": "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+      "modTemplate": "fbc66215-3dd1-4a8f-943f-ef1fd6c9573a"
+    },
+    {
+      "id": "heavy-riot",
+      "name": "Heavy Riot Bomb",
+      "kind": "weapon",
+      "price": 220,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Excavation",
+      "description": "Clears a wide crater without blast damage.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 144,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Heavy Riot Bomb",
+      "template": "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+      "modTemplate": "2241a178-7e64-473e-b90e-e276618f0d79"
+    },
+    {
+      "id": "dirt-clod",
+      "name": "Dirt Clod",
+      "kind": "weapon",
+      "price": 160,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Materials",
+      "description": "Deposits real dirt in empty cells; native particles can bury tanks and fill valleys.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Dirt Clod",
+      "behavior": {
+        "mode": "deposit",
+        "element": "DIRT",
+        "radius": 40
+      },
+      "template": "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+      "modTemplate": "04295300-459e-48fc-a2b4-b9b14213406f"
+    },
+    {
+      "id": "dirt-ball",
+      "name": "Dirt Ball",
+      "kind": "weapon",
+      "price": 192,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Materials",
+      "description": "Deposits real dirt in empty cells; native particles can bury tanks and fill valleys.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Dirt Ball",
+      "behavior": {
+        "mode": "deposit",
+        "element": "DIRT",
+        "radius": 72
+      },
+      "template": "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+      "modTemplate": "7eb3ee54-8b2e-4c21-94e0-d4f97a778a41"
+    },
+    {
+      "id": "ton-dirt",
+      "name": "Ton of Dirt",
+      "kind": "weapon",
+      "price": 232,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Materials",
+      "description": "Deposits real dirt in empty cells; native particles can bury tanks and fill valleys.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Ton of Dirt",
+      "behavior": {
+        "mode": "deposit",
+        "element": "DIRT",
+        "radius": 112
+      },
+      "template": "1a4d56f6-0058-471f-a4bf-77548338012c",
+      "modTemplate": "dcfecd01-b2ee-438d-8693-3cbc17a57015"
+    },
+    {
+      "id": "liquid-dirt",
+      "name": "Liquid Dirt",
+      "kind": "weapon",
+      "price": 216,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Materials",
+      "description": "Deposits real sand in empty cells; native particles can bury tanks and fill valleys.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Liquid Dirt",
+      "behavior": {
+        "mode": "deposit",
+        "element": "SAND",
+        "radius": 96
+      },
+      "template": "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+      "modTemplate": "3c2b70d8-ccba-45a1-b81f-872f80429714"
+    },
+    {
+      "id": "plasma",
+      "name": "Plasma Blast",
+      "kind": "weapon",
+      "price": 300,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Energy",
+      "description": "A self-centered blast. Uses one Battery as well as one charge; aim does not change its center.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 0,
+        "speedAtMinPower": 0,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 130,
+        "damageType": "electric",
+        "aoeRadius": 180,
+        "carveRadius": 65,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 0,
+        "independent": true,
+        "detonate": {
+          "onBody": false,
+          "onTerrain": false,
+          "fuse": 0.04,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "original": "Plasma Blast",
+      "behavior": {
+        "mode": "battery-blast"
+      },
+      "template": "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+      "modTemplate": "18b14126-cc2d-4335-add6-92204696ff65"
+    },
+    {
+      "id": "laser",
+      "name": "Laser",
+      "kind": "weapon",
+      "price": 300,
+      "bundle": 3,
+      "enabled": false,
+      "category": "In development",
+      "description": "In development: a native straight cutting beam powered by a Battery.",
+      "projectile": {
+        "kind": "particle",
+        "bodySizePx": 2,
+        "speed": 3000,
+        "speedAtMinPower": 3000,
+        "speedVariance": 0,
+        "gravityScale": 0,
+        "drag": 0,
+        "lifetime": 0.75,
+        "range": 0,
+        "damage": 8,
+        "damageType": "fire",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 40,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true
+        },
+        "material": "LASER",
+        "projectilesPerShot": 18,
+        "caImpact": true
+      },
+      "original": "Laser",
+      "behavior": {
+        "mode": "battery"
+      },
+      "requires": "E23"
+    },
+    {
+      "id": "machine-gun",
+      "name": "Machine Gun",
+      "kind": "weapon",
+      "price": 160,
+      "bundle": 4,
+      "enabled": true,
+      "category": "Rapid fire",
+      "description": "Twelve actual bullets over 0.88 seconds; one purchased magazine per turn.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 2200,
+        "speedAtMinPower": 2200,
+        "speedVariance": 0,
+        "gravityScale": 0.1,
+        "drag": 0,
+        "lifetime": 3,
+        "range": 0,
+        "damage": 9,
+        "damageType": "kinetic",
+        "aoeRadius": 4,
+        "carveRadius": 3,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        }
+      },
+      "behavior": {
+        "mode": "burst",
+        "count": 12,
+        "interval": 0.08,
+        "jitter": 0.018
+      },
+      "template": "e1a46386-8976-4b3c-9408-0159b3f64235",
+      "modTemplate": "b2fd5090-9b6f-407c-b302-50c6f4588608"
+    },
+    {
+      "id": "shotgun",
+      "name": "Shotgun",
+      "kind": "weapon",
+      "price": 170,
+      "bundle": 4,
+      "enabled": true,
+      "category": "Rapid fire",
+      "description": "Nine simultaneous pellets in a spread. Best at close range.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1400,
+        "speedAtMinPower": 1400,
+        "speedVariance": 0,
+        "gravityScale": 0.3,
+        "drag": 0,
+        "lifetime": 3,
+        "range": 0,
+        "damage": 15,
+        "damageType": "kinetic",
+        "aoeRadius": 10,
+        "carveRadius": 5,
+        "carveMode": "erase",
+        "spread": 0.075,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "projectilesPerShot": 9
+      },
+      "template": "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+      "modTemplate": "a3e039f5-2e7b-4b12-8974-45343642e96e"
+    },
+    {
+      "id": "flamethrower",
+      "name": "Flamethrower",
+      "kind": "weapon",
+      "price": 200,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Rapid fire",
+      "description": "A stream of actual FIRE particles over 1.4 seconds. Fire may persist after the attack.",
+      "projectile": {
+        "kind": "particle",
+        "bodySizePx": 4,
+        "speed": 420,
+        "speedAtMinPower": 420,
+        "speedVariance": 0,
+        "gravityScale": 0,
+        "drag": 0,
+        "lifetime": 2,
+        "range": 0,
+        "damage": 3,
+        "damageType": "fire",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 40,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true
+        },
+        "material": "FIRE",
+        "projectilesPerShot": 12,
+        "caImpact": true
+      },
+      "behavior": {
+        "mode": "burst",
+        "count": 15,
+        "interval": 0.1,
+        "jitter": 0.1
+      },
+      "template": "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+      "modTemplate": "43b76c78-88b6-4bf4-b4e6-886f17075e2b"
+    },
+    {
+      "id": "grenade",
+      "name": "Grenade",
+      "kind": "weapon",
+      "price": 150,
+      "bundle": 4,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "A bouncing three-second fused grenade.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 4,
+        "range": 0,
+        "damage": 90,
+        "damageType": "blast",
+        "aoeRadius": 105,
+        "carveRadius": 50,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": false,
+          "onBody": false,
+          "fuse": 3,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "bouncing": 20
+      },
+      "template": "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+      "modTemplate": "a7979dd5-c7df-43d2-97b6-4d4995c0a390"
+    },
+    {
+      "id": "cluster-grenade",
+      "name": "Cluster Grenade",
+      "kind": "weapon",
+      "price": 260,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "A fused grenade scattering five smaller live grenades.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 4,
+        "range": 0,
+        "damage": 65,
+        "damageType": "blast",
+        "aoeRadius": 85,
+        "carveRadius": 40,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": false,
+          "onBody": false,
+          "fuse": 3,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "bouncing": 20
+      },
+      "behavior": {
+        "mode": "cluster",
+        "count": 5,
+        "childDamage": 40,
+        "childRadius": 60,
+        "childCarve": 24,
+        "speed": 230
+      },
+      "template": "2e0a754f-eb50-487b-b90a-907a3a43159a",
+      "modTemplate": "957e498a-2742-4d25-ac73-9107e29aa0c8"
+    },
+    {
+      "id": "homing-rocket",
+      "name": "Homing Rocket",
+      "kind": "weapon",
+      "price": 350,
+      "bundle": 3,
+      "enabled": true,
+      "category": "Artillery",
+      "description": "A native steering rocket seeks the selected opponent. Deflectors can still bend metal rockets.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 95,
+        "damageType": "blast",
+        "aoeRadius": 115,
+        "carveRadius": 52,
+        "carveMode": "erase",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "homing": 2,
+        "homingDelay": 0.3
+      },
+      "behavior": {
+        "mode": "homing"
+      },
+      "template": "780f5cdb-7252-4a69-987b-b908477015ad",
+      "modTemplate": "771b6551-4f9e-4d5f-9190-0386ba528992"
+    },
+    {
+      "id": "smoke-tracer",
+      "name": "Smoke Tracer",
+      "original": "Smoke Tracer",
+      "kind": "weapon",
+      "category": "Support",
+      "price": 100,
+      "bundle": 5,
+      "enabled": true,
+      "description": "A harmless ranging shell leaving a native smoke-particle trail.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "trailMaterial": "SMOKE",
+        "trailRate": 36
+      },
+      "template": "815021a5-49a0-4790-91dd-b5b61a3c5050",
+      "modTemplate": "6048f636-1c79-4423-8750-a8aa8377065c"
+    },
+    {
+      "id": "escape-charge",
+      "name": "Free Riot Charge",
+      "kind": "weapon",
+      "category": "Excavation",
+      "price": 0,
+      "bundle": 0,
+      "enabled": true,
+      "description": "Unlimited free escape tool. A very small directional charge converts nearby terrain to smoke without damage or cash awards. Keep the large Riot Charge and Riot Blast for bigger jobs.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 1,
+        "speed": 0,
+        "speedAtMinPower": 0,
+        "speedVariance": 0,
+        "gravityScale": 0,
+        "drag": 0,
+        "lifetime": 0.1,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 20,
+        "independent": true,
+        "detonate": {
+          "onBody": false,
+          "onTerrain": false,
+          "fuse": 0.04,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "projectilesPerShot": 1
+      },
+      "behavior": {
+        "mode": "terrain",
+        "operation": "recipe",
+        "shape": "wedge",
+        "origin": "launch",
+        "length": 32,
+        "width": 36,
+        "holdSeconds": 0.5,
+        "materials": [
+          {
+            "name": "DIRT",
+            "hardness": 1
+          },
+          {
+            "name": "SAND",
+            "hardness": 1
+          },
+          {
+            "name": "MUD",
+            "hardness": 1
+          },
+          {
+            "name": "GRAVEL",
+            "hardness": 1
+          },
+          {
+            "name": "CLAY",
+            "hardness": 1
+          },
+          {
+            "name": "SNOW",
+            "hardness": 1
+          },
+          {
+            "name": "STONE",
+            "hardness": 4
+          }
+        ],
+        "element": "SMOKE",
+        "replacement": "matching"
+      },
+      "template": "78ea7cb7-a3be-435a-be9f-5766f5f97a81",
+      "modTemplate": "bf41f40d-2e8e-42fd-bf22-9f2a7ef70315",
+      "unlimited": true,
+      "noCombatRewards": true,
+      "source": "Scorched Terra"
+    },
+    {
+      "id": "riot-charge",
+      "name": "Riot Charge",
+      "original": "Riot Charge",
+      "kind": "weapon",
+      "category": "Excavation",
+      "price": 150,
+      "bundle": 3,
+      "enabled": true,
+      "description": "A directional native replacement wedge. Converts eligible terrain into real SMOKE; empty air, hulls and the foundation stay untouched.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 0,
+        "speedAtMinPower": 0,
+        "speedVariance": 0,
+        "gravityScale": 0,
+        "drag": 0,
+        "lifetime": 0.1,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onBody": false,
+          "onTerrain": false,
+          "fuse": 0.04,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "projectilesPerShot": 1
+      },
+      "behavior": {
+        "mode": "terrain",
+        "operation": "recipe",
+        "shape": "wedge",
+        "origin": "launch",
+        "length": 112,
+        "width": 96,
+        "holdSeconds": 2,
+        "materials": [
+          {
+            "name": "STONE",
+            "hardness": 4
+          },
+          {
+            "name": "DIRT",
+            "hardness": 1
+          },
+          {
+            "name": "SAND",
+            "hardness": 1
+          }
+        ],
+        "element": "SMOKE",
+        "replacement": "matching"
+      },
+      "template": "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+      "modTemplate": "0cc2b7c0-1f46-41db-a6e3-7220d6b708cb"
+    },
+    {
+      "id": "riot-blast",
+      "name": "Riot Blast",
+      "original": "Riot Blast",
+      "kind": "weapon",
+      "category": "Excavation",
+      "price": 260,
+      "bundle": 3,
+      "enabled": true,
+      "description": "A broad native replacement wedge. Converts eligible terrain into real SMOKE; empty air, hulls and the foundation stay untouched.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 0,
+        "speedAtMinPower": 0,
+        "speedVariance": 0,
+        "gravityScale": 0,
+        "drag": 0,
+        "lifetime": 0.1,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onBody": false,
+          "onTerrain": false,
+          "fuse": 0.04,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "projectilesPerShot": 1
+      },
+      "behavior": {
+        "mode": "terrain",
+        "operation": "recipe",
+        "shape": "wedge",
+        "origin": "launch",
+        "length": 216,
+        "width": 160,
+        "holdSeconds": 2,
+        "materials": [
+          {
+            "name": "STONE",
+            "hardness": 4
+          },
+          {
+            "name": "DIRT",
+            "hardness": 1
+          },
+          {
+            "name": "SAND",
+            "hardness": 1
+          }
+        ],
+        "element": "SMOKE",
+        "replacement": "matching"
+      },
+      "template": "bb0da974-5d0f-4644-a6da-278758d07d9f",
+      "modTemplate": "ceaa1548-a3ed-47de-b415-281c707b30fb"
+    },
+    {
+      "id": "baby-digger",
+      "name": "Baby Digger",
+      "original": "Baby Digger",
+      "kind": "weapon",
+      "category": "In development",
+      "price": 0,
+      "bundle": 1,
+      "enabled": false,
+      "requires": "E23",
+      "description": "In development: native underground projectile tunneling."
+    },
+    {
+      "id": "digger-shell",
+      "name": "Digger",
+      "original": "Digger",
+      "kind": "weapon",
+      "category": "In development",
+      "price": 0,
+      "bundle": 1,
+      "enabled": false,
+      "requires": "E23",
+      "description": "In development: native underground projectile tunneling."
+    },
+    {
+      "id": "heavy-digger",
+      "name": "Heavy Digger",
+      "original": "Heavy Digger",
+      "kind": "weapon",
+      "category": "In development",
+      "price": 0,
+      "bundle": 1,
+      "enabled": false,
+      "requires": "E23",
+      "description": "In development: wide underground projectile tunneling."
+    },
+    {
+      "id": "baby-sandhog",
+      "name": "Baby Sandhog",
+      "original": "Baby Sandhog",
+      "kind": "weapon",
+      "category": "In development",
+      "price": 0,
+      "bundle": 1,
+      "enabled": false,
+      "requires": "E23",
+      "description": "In development: splitting subterranean warheads."
+    },
+    {
+      "id": "sandhog",
+      "name": "Sandhog",
+      "original": "Sandhog",
+      "kind": "weapon",
+      "category": "In development",
+      "price": 0,
+      "bundle": 1,
+      "enabled": false,
+      "requires": "E23",
+      "description": "In development: splitting subterranean warheads."
+    },
+    {
+      "id": "heavy-sandhog",
+      "name": "Heavy Sandhog",
+      "original": "Heavy Sandhog",
+      "kind": "weapon",
+      "category": "In development",
+      "price": 0,
+      "bundle": 1,
+      "enabled": false,
+      "requires": "E23",
+      "description": "In development: large splitting subterranean warheads."
+    },
+    {
+      "id": "dirt-charge",
+      "name": "Dirt Charge",
+      "original": "Dirt Charge",
+      "kind": "weapon",
+      "category": "Materials",
+      "price": 160,
+      "bundle": 3,
+      "enabled": true,
+      "description": "A directional native DIRT bank. Adds actual material to empty terrain without overwriting tanks or the foundation.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 0,
+        "speedAtMinPower": 0,
+        "speedVariance": 0,
+        "gravityScale": 0,
+        "drag": 0,
+        "lifetime": 0.1,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onBody": false,
+          "onTerrain": false,
+          "fuse": 0.04,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "projectilesPerShot": 1
+      },
+      "behavior": {
+        "mode": "terrain",
+        "operation": "recipe",
+        "shape": "wedge",
+        "origin": "launch",
+        "length": 128,
+        "width": 112,
+        "element": "DIRT",
+        "holdSeconds": 2,
+        "materials": [
+          {
+            "name": "STONE",
+            "hardness": 4
+          },
+          {
+            "name": "DIRT",
+            "hardness": 1
+          },
+          {
+            "name": "SAND",
+            "hardness": 1
+          }
+        ],
+        "replacement": "empty"
+      },
+      "template": "9cb680d4-3edf-451b-81da-ebbb514808bb",
+      "modTemplate": "c805fa98-4248-4d31-81ea-df9187b4c109"
+    },
+    {
+      "id": "earth-disrupter",
+      "name": "Earth Disrupter",
+      "original": "Earth Disrupter",
+      "kind": "weapon",
+      "category": "Excavation",
+      "price": 320,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Breaks eligible solid earth into native rigid slabs and loose debris at impact. No erasure or blast damage: gravity and contacts determine the collapse.",
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 4,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 20,
+        "range": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          }
+        },
+        "projectilesPerShot": 1
+      },
+      "behavior": {
+        "mode": "terrain",
+        "operation": "fracture",
+        "shape": "disc",
+        "origin": "impact",
+        "radius": 80,
+        "fracture": {
+          "release": "all",
+          "size": 64,
+          "maxFragments": 32,
+          "overflow": "powder"
+        },
+        "holdSeconds": 2,
+        "materials": [
+          {
+            "name": "STONE",
+            "hardness": 4
+          },
+          {
+            "name": "DIRT",
+            "hardness": 1
+          },
+          {
+            "name": "SAND",
+            "hardness": 1
+          }
+        ],
+        "replacement": "eligible"
+      },
+      "template": "e3a20e82-7e11-4ef9-bce2-903255ebb4dc",
+      "modTemplate": "382a4e23-b491-4a6a-b243-852737e8c17b"
+    },
+    {
+      "id": "heat-guidance",
+      "name": "Heat Guidance",
+      "original": "Heat Guidance",
+      "kind": "utility",
+      "category": "In development",
+      "price": 0,
+      "bundle": 1,
+      "enabled": false,
+      "requires": "E24",
+      "description": "In development: attach guidance to the next purchased shot."
+    },
+    {
+      "id": "ballistic-guidance",
+      "name": "Ballistic Guidance",
+      "original": "Ballistic Guidance",
+      "kind": "utility",
+      "category": "In development",
+      "price": 0,
+      "bundle": 1,
+      "enabled": false,
+      "requires": "E24",
+      "description": "In development: finite ballistic correction for the next purchased shot."
+    },
+    {
+      "id": "horz-guidance",
+      "name": "Horz Guidance",
+      "original": "Horz Guidance",
+      "kind": "utility",
+      "category": "In development",
+      "price": 0,
+      "bundle": 1,
+      "enabled": false,
+      "requires": "E24",
+      "description": "In development: horizontal guidance input for one shot."
+    },
+    {
+      "id": "vert-guidance",
+      "name": "Vert Guidance",
+      "original": "Vert Guidance",
+      "kind": "utility",
+      "category": "In development",
+      "price": 0,
+      "bundle": 1,
+      "enabled": false,
+      "requires": "E24",
+      "description": "In development: vertical guidance input for one shot."
+    },
+    {
+      "id": "lazy-boy",
+      "name": "Lazy Boy",
+      "original": "Lazy Boy",
+      "kind": "utility",
+      "category": "Support",
+      "price": 180,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Sets a native ballistic firing solution. One charge only when a supported aim is found; you choose when to shoot."
+    },
+    {
+      "id": "parachute",
+      "name": "Parachute",
+      "original": "Parachute",
+      "kind": "utility",
+      "category": "Support",
+      "price": 120,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Native descent brake. One charge per deployment; early deployment slows a fall. Late deployment can still hurt.",
+      "controller": {
+        "capacity": 20,
+        "duration": 20,
+        "terminalSpeed": 45,
+        "deceleration": 1800
+      },
+      "cpuDeploySpeed": 80
+    },
+    {
+      "id": "auto-defense",
+      "name": "Auto Defense",
+      "original": "Auto Defense",
+      "kind": "utility",
+      "category": "Support",
+      "price": 120,
+      "bundle": 1,
+      "enabled": true,
+      "description": "At the start of the round, automatically activates your stocked shield and mag field. Consumed only if a field activates."
+    },
+    {
+      "id": "fuel-tank",
+      "name": "Fuel Tank",
+      "original": "Fuel Tank",
+      "kind": "utility",
+      "category": "Support",
+      "price": 120,
+      "bundle": 6,
+      "enabled": true,
+      "description": "Six seconds of full-speed ground propulsion. Native collision-accepted travel consumes fuel; blocked controls consume none.",
+      "controller": {
+        "capacity": 12,
+        "speed": 55
+      }
+    },
+    {
+      "id": "contact-trigger",
+      "name": "Contact Trigger",
+      "original": "Contact Trigger",
+      "kind": "utility",
+      "category": "In development",
+      "price": 0,
+      "bundle": 1,
+      "enabled": false,
+      "requires": "E24",
+      "description": "In development: attach contact detonation to the next purchased shot."
+    },
+    {
+      "id": "force-shield",
+      "name": "Force Shield",
+      "original": "Force Shield",
+      "kind": "utility",
+      "category": "Support",
+      "price": 440,
+      "bundle": 1,
+      "enabled": true,
+      "grants": {
+        "item": "shield",
+        "units": 2
+      },
+      "description": "Adds 2 standard shield charges to your reserve. The native field draws from that reserve."
+    },
+    {
+      "id": "heavy-shield",
+      "name": "Heavy Shield",
+      "original": "Heavy Shield",
+      "kind": "utility",
+      "category": "Support",
+      "price": 600,
+      "bundle": 1,
+      "enabled": true,
+      "grants": {
+        "item": "shield",
+        "units": 3
+      },
+      "description": "Adds 3 standard shield charges to your reserve. The native field draws from that reserve."
+    },
+    {
+      "id": "super-mag",
+      "name": "Super Mag",
+      "original": "Super Mag",
+      "kind": "utility",
+      "category": "Support",
+      "price": 850,
+      "bundle": 1,
+      "enabled": true,
+      "grants": {
+        "item": "magnet",
+        "units": 3
+      },
+      "description": "Adds 3 standard magnet charges to your reserve. The native field draws from that reserve."
+    }
+  ],
+  "cpu": {
+    "weapons": [
+      "mirv",
+      "nuke",
+      "machine-gun",
+      "funky",
+      "napalm",
+      "heavy-roller",
+      "deaths-head",
+      "shotgun",
+      "dirt-ball",
+      "homing-rocket",
+      "flamethrower",
+      "heavy",
+      "cluster-grenade",
+      "riot-charge",
+      "riot-blast",
+      "dirt-charge",
+      "earth-disrupter"
+    ],
+    "utilities": [
+      "jetpack",
+      "digger",
+      "magnet",
+      "shield",
+      "battery",
+      "parachute"
+    ],
+    "jetSeconds": 0.65,
+    "digSeconds": 0.65,
+    "fieldProbeAngle": 45,
+    "fieldProbePowers": [
+      12,
+      18,
+      24,
+      30,
+      8
+    ],
+    "driveSeconds": 0.8,
+    "maxConsecutivePasses": 2
+  },
+  "categories": [
+    "All",
+    "Artillery",
+    "Rapid fire",
+    "Materials",
+    "Excavation",
+    "Energy",
+    "Support",
+    "In development"
+  ],
+  "looseMatter": {
+    "states": [
+      "solid",
+      "powder"
+    ]
+  }
+}

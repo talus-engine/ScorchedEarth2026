@@ -1,0 +1,3259 @@
+{
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6399.5,
+          "y": 734.3765869140625
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 46,
+          "w": 920,
+          "x": 5939.5,
+          "y": 711.3765869140625
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5248,
+      "y": 0
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 64
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5312,
+      "y": 64
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5599.5,
+      "y": 250.3765869140625
+    },
+    "zoom": 0.25
+  },
+  "clock": 84.2999999999965,
+  "error": "",
+  "events": [
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 0.016666666666666666,
+      "completedChunks": 700,
+      "family": "zone",
+      "kind": "terrain-source",
+      "parameters": {
+        "airDepth": 744,
+        "blend": 4,
+        "frequency": 0.005,
+        "height": 110,
+        "octaves": 3
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "verdant-reach",
+      "seed": 2541101,
+      "totalChunks": 4000,
+      "turn": 0,
+      "version": 1
+    },
+    {
+      "clock": 0.3,
+      "kind": "generation-detail",
+      "n": 0,
+      "neural": true,
+      "receipt": {
+        "accepted": 3836,
+        "added": 3836,
+        "evaluated": 9604,
+        "id": 1,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2715,
+        "skipped": 3550,
+        "status": "completed",
+        "work": 3836
+      },
+      "size": 97,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 166,
+      "y": 780.25
+    },
+    {
+      "clock": 0.49999999999999994,
+      "kind": "generation-detail",
+      "n": 1,
+      "neural": false,
+      "receipt": {
+        "accepted": 8550,
+        "added": 8550,
+        "evaluated": 12544,
+        "id": 2,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5529,
+        "skipped": 1120,
+        "status": "completed",
+        "work": 8550
+      },
+      "size": 111,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 441,
+      "y": 741.75
+    },
+    {
+      "clock": 0.6666666666666671,
+      "kind": "generation-detail",
+      "n": 2,
+      "neural": false,
+      "receipt": {
+        "accepted": 2210,
+        "added": 2210,
+        "evaluated": 4900,
+        "id": 3,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1316,
+        "skipped": 1520,
+        "status": "completed",
+        "work": 2210
+      },
+      "size": 69,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 640,
+      "y": 762.25
+    },
+    {
+      "clock": 0.9333333333333346,
+      "kind": "generation-detail",
+      "n": 3,
+      "neural": true,
+      "receipt": {
+        "accepted": 5341,
+        "added": 5341,
+        "evaluated": 7056,
+        "id": 4,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3978,
+        "skipped": 57,
+        "status": "completed",
+        "work": 5341
+      },
+      "size": 83,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 915,
+      "y": 732.75
+    },
+    {
+      "clock": 1.1333333333333342,
+      "kind": "generation-detail",
+      "n": 4,
+      "neural": false,
+      "receipt": {
+        "accepted": 5693,
+        "added": 5693,
+        "evaluated": 7744,
+        "id": 5,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4761,
+        "skipped": 399,
+        "status": "completed",
+        "work": 5693
+      },
+      "size": 88,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 1186,
+      "y": 776
+    },
+    {
+      "clock": 1.3000000000000005,
+      "kind": "generation-detail",
+      "n": 5,
+      "neural": false,
+      "receipt": {
+        "accepted": 7741,
+        "added": 7741,
+        "evaluated": 10506,
+        "id": 6,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6028,
+        "skipped": 421,
+        "status": "completed",
+        "work": 7741
+      },
+      "size": 102,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 1461,
+      "y": 770.5
+    },
+    {
+      "clock": 1.6333333333333324,
+      "kind": "generation-detail",
+      "n": 6,
+      "neural": true,
+      "receipt": {
+        "accepted": 12131,
+        "added": 12131,
+        "evaluated": 15876,
+        "id": 7,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 9700,
+        "skipped": 131,
+        "status": "completed",
+        "work": 12131
+      },
+      "size": 125,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 1740,
+      "y": 771.25
+    },
+    {
+      "clock": 1.7666666666666653,
+      "kind": "generation-detail",
+      "n": 7,
+      "neural": false,
+      "receipt": {
+        "accepted": 2876,
+        "added": 2876,
+        "evaluated": 5550,
+        "id": 8,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2157,
+        "skipped": 1422,
+        "status": "completed",
+        "work": 2876
+      },
+      "size": 74,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 1935,
+      "y": 765.5
+    },
+    {
+      "clock": 1.9333333333333311,
+      "kind": "generation-detail",
+      "n": 8,
+      "neural": false,
+      "receipt": {
+        "accepted": 4900,
+        "added": 4900,
+        "evaluated": 6400,
+        "id": 9,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4031,
+        "skipped": 0,
+        "status": "completed",
+        "work": 4900
+      },
+      "size": 79,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 2206,
+      "y": 763.75
+    },
+    {
+      "clock": 2.166666666666664,
+      "kind": "generation-detail",
+      "n": 9,
+      "neural": true,
+      "receipt": {
+        "accepted": 5667,
+        "added": 5667,
+        "evaluated": 8836,
+        "id": 10,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3674,
+        "skipped": 1113,
+        "status": "completed",
+        "work": 5667
+      },
+      "size": 93,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 2481,
+      "y": 726.25
+    },
+    {
+      "clock": 2.33333333333333,
+      "kind": "generation-detail",
+      "n": 10,
+      "neural": false,
+      "receipt": {
+        "accepted": 2808,
+        "added": 2808,
+        "evaluated": 5550,
+        "id": 11,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1666,
+        "skipped": 1490,
+        "status": "completed",
+        "work": 2808
+      },
+      "size": 74,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 2763,
+      "y": 763.5
+    },
+    {
+      "clock": 2.5666666666666624,
+      "kind": "generation-detail",
+      "n": 11,
+      "neural": false,
+      "receipt": {
+        "accepted": 7977,
+        "added": 7977,
+        "evaluated": 15876,
+        "id": 12,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5708,
+        "skipped": 4285,
+        "status": "completed",
+        "work": 7977
+      },
+      "size": 125,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 3000,
+      "y": 776.25
+    },
+    {
+      "clock": 2.866666666666662,
+      "kind": "generation-detail",
+      "n": 12,
+      "neural": true,
+      "receipt": {
+        "accepted": 6068,
+        "added": 6068,
+        "evaluated": 10506,
+        "id": 13,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4570,
+        "skipped": 2094,
+        "status": "completed",
+        "work": 6068
+      },
+      "size": 102,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 3233,
+      "y": 784.5
+    },
+    {
+      "clock": 3.016666666666661,
+      "kind": "generation-detail",
+      "n": 13,
+      "neural": false,
+      "receipt": {
+        "accepted": 4328,
+        "added": 4328,
+        "evaluated": 7744,
+        "id": 14,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2756,
+        "skipped": 1764,
+        "status": "completed",
+        "work": 4328
+      },
+      "size": 88,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 3470,
+      "y": 784
+    },
+    {
+      "clock": 3.1499999999999937,
+      "kind": "generation-detail",
+      "n": 14,
+      "neural": false,
+      "receipt": {
+        "accepted": 3312,
+        "added": 3312,
+        "evaluated": 4356,
+        "id": 15,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2498,
+        "skipped": 0,
+        "status": "completed",
+        "work": 3312
+      },
+      "size": 65,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 3783,
+      "y": 747.25
+    },
+    {
+      "clock": 3.4499999999999926,
+      "kind": "generation-detail",
+      "n": 15,
+      "neural": true,
+      "receipt": {
+        "accepted": 10504,
+        "added": 10504,
+        "evaluated": 13456,
+        "id": 16,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 7765,
+        "skipped": 76,
+        "status": "completed",
+        "work": 10504
+      },
+      "size": 116,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 4020,
+      "y": 773
+    },
+    {
+      "clock": 3.6666666666666585,
+      "kind": "generation-detail",
+      "n": 16,
+      "neural": false,
+      "receipt": {
+        "accepted": 6780,
+        "added": 6780,
+        "evaluated": 8836,
+        "id": 17,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5397,
+        "skipped": 0,
+        "status": "completed",
+        "work": 6780
+      },
+      "size": 93,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 4253,
+      "y": 770.25
+    },
+    {
+      "clock": 3.8333333333333246,
+      "kind": "generation-detail",
+      "n": 17,
+      "neural": false,
+      "receipt": {
+        "accepted": 3221,
+        "added": 3221,
+        "evaluated": 6400,
+        "id": 18,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2429,
+        "skipped": 1679,
+        "status": "completed",
+        "work": 3221
+      },
+      "size": 79,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 4490,
+      "y": 765.75
+    },
+    {
+      "clock": 4.083333333333324,
+      "kind": "generation-detail",
+      "n": 18,
+      "neural": true,
+      "receipt": {
+        "accepted": 3278,
+        "added": 3278,
+        "evaluated": 8464,
+        "id": 19,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2080,
+        "skipped": 3390,
+        "status": "completed",
+        "work": 3278
+      },
+      "size": 92,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 4739,
+      "y": 795
+    },
+    {
+      "clock": 4.266666666666657,
+      "kind": "generation-detail",
+      "n": 19,
+      "neural": false,
+      "receipt": {
+        "accepted": 4770,
+        "added": 4770,
+        "evaluated": 6162,
+        "id": 20,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3787,
+        "skipped": 0,
+        "status": "completed",
+        "work": 4770
+      },
+      "size": 78,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 5056,
+      "y": 775.5
+    },
+    {
+      "clock": 4.3666666666666565,
+      "kind": "generation-detail",
+      "n": 20,
+      "neural": false,
+      "receipt": {
+        "accepted": 7314,
+        "added": 7314,
+        "evaluated": 11342,
+        "id": 21,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5717,
+        "skipped": 1504,
+        "status": "completed",
+        "work": 7314
+      },
+      "size": 106,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 5280,
+      "y": 775.5
+    },
+    {
+      "clock": 4.516666666666656,
+      "kind": "generation-detail",
+      "n": 21,
+      "neural": true,
+      "receipt": {
+        "accepted": 6265,
+        "added": 6265,
+        "evaluated": 14400,
+        "id": 22,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4307,
+        "skipped": 5039,
+        "status": "completed",
+        "work": 6265
+      },
+      "size": 120,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 5555,
+      "y": 767
+    },
+    {
+      "clock": 4.516666666666656,
+      "kind": "generation-detail-skipped",
+      "n": 22,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 4.516666666666656,
+      "kind": "generation-detail-skipped",
+      "n": 23,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 4.516666666666656,
+      "kind": "generation-detail-skipped",
+      "n": 24,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 4.516666666666656,
+      "kind": "generation-detail-skipped",
+      "n": 25,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 4.516666666666656,
+      "kind": "generation-detail-skipped",
+      "n": 26,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 4.516666666666656,
+      "kind": "generation-detail-skipped",
+      "n": 27,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 4.533333333333323,
+      "kind": "generation-detail",
+      "n": 28,
+      "neural": false,
+      "receipt": {
+        "accepted": 4317,
+        "added": 4317,
+        "evaluated": 7744,
+        "id": 23,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3207,
+        "skipped": 1775,
+        "status": "completed",
+        "work": 4317
+      },
+      "size": 88,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 7320,
+      "y": 780
+    },
+    {
+      "clock": 4.616666666666656,
+      "kind": "generation-detail",
+      "n": 29,
+      "neural": false,
+      "receipt": {
+        "accepted": 6160,
+        "added": 6160,
+        "evaluated": 10506,
+        "id": 24,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4707,
+        "skipped": 2002,
+        "status": "completed",
+        "work": 6160
+      },
+      "size": 102,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 7595,
+      "y": 769.5
+    },
+    {
+      "clock": 4.883333333333321,
+      "kind": "generation-detail",
+      "n": 30,
+      "neural": true,
+      "receipt": {
+        "accepted": 7759,
+        "added": 7759,
+        "evaluated": 10404,
+        "id": 25,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 5501,
+        "skipped": 241,
+        "status": "completed",
+        "work": 7759
+      },
+      "size": 101,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 7865,
+      "y": 748.25
+    },
+    {
+      "clock": 5.049999999999987,
+      "kind": "generation-detail",
+      "n": 31,
+      "neural": false,
+      "receipt": {
+        "accepted": 4669,
+        "added": 4669,
+        "evaluated": 7744,
+        "id": 26,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3489,
+        "skipped": 1265,
+        "status": "completed",
+        "work": 4669
+      },
+      "size": 87,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 8102,
+      "y": 782.75
+    },
+    {
+      "clock": 5.2166666666666535,
+      "kind": "generation-detail",
+      "n": 32,
+      "neural": false,
+      "receipt": {
+        "accepted": 2753,
+        "added": 2753,
+        "evaluated": 5476,
+        "id": 27,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1975,
+        "skipped": 1423,
+        "status": "completed",
+        "work": 2753
+      },
+      "size": 73,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 8339,
+      "y": 776.25
+    },
+    {
+      "clock": 5.466666666666653,
+      "kind": "generation-detail",
+      "n": 33,
+      "neural": true,
+      "receipt": {
+        "accepted": 6706,
+        "added": 6706,
+        "evaluated": 15376,
+        "id": 28,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4850,
+        "skipped": 5390,
+        "status": "completed",
+        "work": 6706
+      },
+      "size": 124,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 8576,
+      "y": 782
+    },
+    {
+      "clock": 5.616666666666652,
+      "kind": "generation-detail",
+      "n": 34,
+      "neural": false,
+      "receipt": {
+        "accepted": 4321,
+        "added": 4321,
+        "evaluated": 8464,
+        "id": 29,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3169,
+        "skipped": 2347,
+        "status": "completed",
+        "work": 4321
+      },
+      "size": 92,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 8885,
+      "y": 761
+    },
+    {
+      "clock": 5.783333333333318,
+      "kind": "generation-detail",
+      "n": 35,
+      "neural": false,
+      "receipt": {
+        "accepted": 2784,
+        "added": 2784,
+        "evaluated": 6162,
+        "id": 30,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1743,
+        "skipped": 1986,
+        "status": "completed",
+        "work": 2784
+      },
+      "size": 78,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 9122,
+      "y": 790.5
+    },
+    {
+      "clock": 6.016666666666651,
+      "kind": "generation-detail",
+      "n": 36,
+      "neural": true,
+      "receipt": {
+        "accepted": 3135,
+        "added": 3135,
+        "evaluated": 4096,
+        "id": 31,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2504,
+        "skipped": 93,
+        "status": "completed",
+        "work": 3135
+      },
+      "size": 64,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 9359,
+      "y": 745
+    },
+    {
+      "clock": 6.26666666666665,
+      "kind": "generation-detail",
+      "n": 37,
+      "neural": false,
+      "receipt": {
+        "accepted": 8549,
+        "added": 8549,
+        "evaluated": 13456,
+        "id": 32,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6132,
+        "skipped": 1829,
+        "status": "completed",
+        "work": 8549
+      },
+      "size": 115,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 9676,
+      "y": 777.75
+    },
+    {
+      "clock": 6.416666666666649,
+      "kind": "generation-detail",
+      "n": 38,
+      "neural": false,
+      "receipt": {
+        "accepted": 5057,
+        "added": 5057,
+        "evaluated": 7056,
+        "id": 33,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3867,
+        "skipped": 341,
+        "status": "completed",
+        "work": 5057
+      },
+      "size": 83,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 9905,
+      "y": 750.75
+    },
+    {
+      "clock": 6.716666666666648,
+      "kind": "generation-detail",
+      "n": 39,
+      "neural": true,
+      "receipt": {
+        "accepted": 2948,
+        "added": 2948,
+        "evaluated": 4900,
+        "id": 34,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 1773,
+        "skipped": 782,
+        "status": "completed",
+        "work": 2948
+      },
+      "size": 69,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 10142,
+      "y": 741.25
+    },
+    {
+      "clock": 6.933333333333314,
+      "kind": "generation-detail",
+      "n": 40,
+      "neural": false,
+      "receipt": {
+        "accepted": 5212,
+        "added": 5212,
+        "evaluated": 12210,
+        "id": 35,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3970,
+        "skipped": 4290,
+        "status": "completed",
+        "work": 5212
+      },
+      "size": 110,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 10374,
+      "y": 792.5
+    },
+    {
+      "clock": 7.14999999999998,
+      "kind": "generation-detail",
+      "n": 41,
+      "neural": false,
+      "receipt": {
+        "accepted": 9550,
+        "added": 9550,
+        "evaluated": 15376,
+        "id": 36,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6718,
+        "skipped": 2546,
+        "status": "completed",
+        "work": 9550
+      },
+      "size": 124,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 10649,
+      "y": 770
+    },
+    {
+      "clock": 7.416666666666646,
+      "kind": "generation-detail",
+      "n": 42,
+      "neural": true,
+      "receipt": {
+        "accepted": 3839,
+        "added": 3839,
+        "evaluated": 6806,
+        "id": 37,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2416,
+        "skipped": 1439,
+        "status": "completed",
+        "work": 3839
+      },
+      "size": 82,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 10928,
+      "y": 764.5
+    },
+    {
+      "clock": 7.583333333333312,
+      "kind": "generation-detail",
+      "n": 43,
+      "neural": false,
+      "receipt": {
+        "accepted": 5311,
+        "added": 5311,
+        "evaluated": 9216,
+        "id": 38,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3486,
+        "skipped": 1921,
+        "status": "completed",
+        "work": 5311
+      },
+      "size": 96,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 11203,
+      "y": 766
+    },
+    {
+      "clock": 7.733333333333311,
+      "kind": "generation-detail",
+      "n": 44,
+      "neural": false,
+      "receipt": {
+        "accepted": 5671,
+        "added": 5671,
+        "evaluated": 10404,
+        "id": 39,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4435,
+        "skipped": 2329,
+        "status": "completed",
+        "work": 5671
+      },
+      "size": 101,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 11394,
+      "y": 772.25
+    },
+    {
+      "clock": 8.083333333333314,
+      "kind": "generation-detail",
+      "n": 45,
+      "neural": true,
+      "receipt": {
+        "accepted": 8823,
+        "added": 8823,
+        "evaluated": 13456,
+        "id": 40,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6697,
+        "skipped": 1555,
+        "status": "completed",
+        "work": 8823
+      },
+      "size": 115,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 11669,
+      "y": 790.75
+    },
+    {
+      "clock": 8.283333333333324,
+      "kind": "generation-detail",
+      "n": 46,
+      "neural": false,
+      "receipt": {
+        "accepted": 3008,
+        "added": 3008,
+        "evaluated": 5476,
+        "id": 41,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 2174,
+        "skipped": 1168,
+        "status": "completed",
+        "work": 3008
+      },
+      "size": 73,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 11948,
+      "y": 757.25
+    },
+    {
+      "clock": 8.399999999999997,
+      "kind": "generation-detail",
+      "n": 47,
+      "neural": false,
+      "receipt": {
+        "accepted": 5922,
+        "added": 5922,
+        "evaluated": 7744,
+        "id": 42,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 4724,
+        "skipped": 12,
+        "status": "completed",
+        "work": 5922
+      },
+      "size": 87,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 12223,
+      "y": 767.75
+    },
+    {
+      "clock": 8.65000000000001,
+      "kind": "generation-detail",
+      "n": 48,
+      "neural": true,
+      "receipt": {
+        "accepted": 4324,
+        "added": 4324,
+        "evaluated": 8464,
+        "id": 43,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 3189,
+        "skipped": 2344,
+        "status": "completed",
+        "work": 4324
+      },
+      "size": 92,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.65
+        }
+      ],
+      "x": 12494,
+      "y": 783
+    },
+    {
+      "clock": 8.85000000000002,
+      "kind": "generation-detail",
+      "n": 49,
+      "neural": false,
+      "receipt": {
+        "accepted": 8758,
+        "added": 8758,
+        "evaluated": 11342,
+        "id": 44,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 6578,
+        "skipped": 60,
+        "status": "completed",
+        "work": 8758
+      },
+      "size": 106,
+      "turn": 0,
+      "weights": [
+        {
+          "anchorId": "builtin-brush-hills",
+          "w": 0.175
+        },
+        {
+          "anchorId": "builtin-brush-cliffside",
+          "w": 0.65
+        },
+        {
+          "anchorId": "builtin-brush-forest-floor",
+          "w": 0.175
+        }
+      ],
+      "x": 12689,
+      "y": 765.5
+    },
+    {
+      "clock": 9.38333333333338,
+      "ground": 744,
+      "kind": "generation-living",
+      "n": 0,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15610,
+        "added": 15610,
+        "evaluated": 262144,
+        "id": 45,
+        "organisms": [
+          1
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15610
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 128
+    },
+    {
+      "clock": 9.65000000000006,
+      "ground": 754,
+      "kind": "generation-living",
+      "n": 1,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 11631,
+        "added": 11631,
+        "evaluated": 262144,
+        "id": 46,
+        "organisms": [
+          2
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 11631
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 384
+    },
+    {
+      "clock": 9.983333333333409,
+      "ground": 728,
+      "kind": "generation-living",
+      "n": 2,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14331,
+        "added": 14331,
+        "evaluated": 262144,
+        "id": 47,
+        "organisms": [
+          3
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 14331
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 640
+    },
+    {
+      "clock": 10.300000000000091,
+      "ground": 696,
+      "kind": "generation-living",
+      "n": 3,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 11611,
+        "added": 11611,
+        "evaluated": 262144,
+        "id": 48,
+        "organisms": [
+          4
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 11611
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 896
+    },
+    {
+      "clock": 10.650000000000109,
+      "ground": 747,
+      "kind": "generation-living",
+      "n": 4,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15318,
+        "added": 15318,
+        "evaluated": 262144,
+        "id": 49,
+        "organisms": [
+          5
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15318
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 1152
+    },
+    {
+      "clock": 10.98333333333346,
+      "ground": 746,
+      "kind": "generation-living",
+      "n": 5,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 7414,
+        "added": 7414,
+        "evaluated": 262144,
+        "id": 50,
+        "organisms": [
+          6
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 7414
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 1408
+    },
+    {
+      "clock": 11.30000000000014,
+      "ground": 727,
+      "kind": "generation-living",
+      "n": 6,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15607,
+        "added": 15607,
+        "evaluated": 262144,
+        "id": 51,
+        "organisms": [
+          7
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15607
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 1664
+    },
+    {
+      "clock": 11.583333333333488,
+      "ground": 731,
+      "kind": "generation-living",
+      "n": 7,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 7543,
+        "added": 7543,
+        "evaluated": 262144,
+        "id": 52,
+        "organisms": [
+          8
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 7543
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 1920
+    },
+    {
+      "clock": 11.916666666666838,
+      "ground": 737,
+      "kind": "generation-living",
+      "n": 8,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15605,
+        "added": 15605,
+        "evaluated": 262144,
+        "id": 53,
+        "organisms": [
+          9
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15605
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 2176
+    },
+    {
+      "clock": 12.216666666666852,
+      "ground": 723,
+      "kind": "generation-living",
+      "n": 9,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 8370,
+        "added": 8370,
+        "evaluated": 262144,
+        "id": 54,
+        "organisms": [
+          10
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 40,
+        "status": "completed",
+        "work": 8370
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 2432
+    },
+    {
+      "clock": 12.483333333333531,
+      "ground": 777,
+      "kind": "generation-living",
+      "n": 10,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14504,
+        "added": 14504,
+        "evaluated": 262144,
+        "id": 55,
+        "organisms": [
+          11
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 14504
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 2688
+    },
+    {
+      "clock": 12.76666666666688,
+      "ground": 747,
+      "kind": "generation-living",
+      "n": 11,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 13337,
+        "added": 13337,
+        "evaluated": 262144,
+        "id": 56,
+        "organisms": [
+          12
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 2,
+        "status": "completed",
+        "work": 13337
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 2944
+    },
+    {
+      "clock": 13.10000000000023,
+      "ground": 744,
+      "kind": "generation-living",
+      "n": 12,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14959,
+        "added": 14959,
+        "evaluated": 262144,
+        "id": 57,
+        "organisms": [
+          13
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 14959
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 3200
+    },
+    {
+      "clock": 13.466666666666915,
+      "ground": 742,
+      "kind": "generation-living",
+      "n": 13,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 13575,
+        "added": 13575,
+        "evaluated": 262144,
+        "id": 58,
+        "organisms": [
+          14
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 13575
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 3456
+    },
+    {
+      "clock": 13.733333333333595,
+      "ground": 715,
+      "kind": "generation-living",
+      "n": 14,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14501,
+        "added": 14501,
+        "evaluated": 262144,
+        "id": 59,
+        "organisms": [
+          15
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 14501
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 3712
+    },
+    {
+      "clock": 13.983333333333608,
+      "ground": 738,
+      "kind": "generation-living",
+      "n": 15,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 10821,
+        "added": 10821,
+        "evaluated": 262144,
+        "id": 60,
+        "organisms": [
+          16
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 6,
+        "status": "completed",
+        "work": 10821
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 3968
+    },
+    {
+      "clock": 14.250000000000288,
+      "ground": 734,
+      "kind": "generation-living",
+      "n": 16,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15026,
+        "added": 15026,
+        "evaluated": 262144,
+        "id": 61,
+        "organisms": [
+          17
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15026
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 4224
+    },
+    {
+      "clock": 14.550000000000304,
+      "ground": 727,
+      "kind": "generation-living",
+      "n": 17,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 15419,
+        "added": 15419,
+        "evaluated": 262144,
+        "id": 62,
+        "organisms": [
+          18
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15419
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 4480
+    },
+    {
+      "clock": 14.950000000000324,
+      "ground": 749,
+      "kind": "generation-living",
+      "n": 18,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15558,
+        "added": 15558,
+        "evaluated": 262144,
+        "id": 63,
+        "organisms": [
+          19
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15558
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 4736
+    },
+    {
+      "clock": 15.10000000000033,
+      "ground": 742,
+      "kind": "generation-living",
+      "n": 19,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 4231,
+        "added": 4231,
+        "evaluated": 262144,
+        "id": 64,
+        "organisms": [
+          20
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 4231
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 4992
+    },
+    {
+      "clock": 15.216666666667004,
+      "ground": 733,
+      "kind": "generation-living",
+      "n": 20,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15603,
+        "added": 15603,
+        "evaluated": 262144,
+        "id": 65,
+        "organisms": [
+          21
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15603
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 5248
+    },
+    {
+      "clock": 15.283333333333672,
+      "ground": 713,
+      "kind": "generation-living",
+      "n": 21,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 3206,
+        "added": 3206,
+        "evaluated": 262144,
+        "id": 66,
+        "organisms": [
+          22
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 3206
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 5504
+    },
+    {
+      "clock": 15.283333333333672,
+      "kind": "generation-living-skipped",
+      "n": 22,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 15.283333333333672,
+      "kind": "generation-living-skipped",
+      "n": 23,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 15.283333333333672,
+      "kind": "generation-living-skipped",
+      "n": 24,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 15.283333333333672,
+      "kind": "generation-living-skipped",
+      "n": 25,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 15.283333333333672,
+      "kind": "generation-living-skipped",
+      "n": 26,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 15.283333333333672,
+      "kind": "generation-living-skipped",
+      "n": 27,
+      "reason": "combat corridor",
+      "turn": 0
+    },
+    {
+      "clock": 15.316666666667007,
+      "ground": 743,
+      "kind": "generation-living",
+      "n": 28,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15613,
+        "added": 15613,
+        "evaluated": 262144,
+        "id": 67,
+        "organisms": [
+          23
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15613
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 7296
+    },
+    {
+      "clock": 15.650000000000356,
+      "ground": 718,
+      "kind": "generation-living",
+      "n": 29,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 8408,
+        "added": 8408,
+        "evaluated": 262144,
+        "id": 68,
+        "organisms": [
+          24
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 8408
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 7552
+    },
+    {
+      "clock": 15.983333333333707,
+      "ground": 742,
+      "kind": "generation-living",
+      "n": 30,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15459,
+        "added": 15459,
+        "evaluated": 262144,
+        "id": 69,
+        "organisms": [
+          25
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 13,
+        "status": "completed",
+        "work": 15459
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 7808
+    },
+    {
+      "clock": 16.416666666667016,
+      "ground": 745,
+      "kind": "generation-living",
+      "n": 31,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 9044,
+        "added": 9044,
+        "evaluated": 262144,
+        "id": 70,
+        "organisms": [
+          26
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 9044
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 8064
+    },
+    {
+      "clock": 16.900000000000322,
+      "ground": 745,
+      "kind": "generation-living",
+      "n": 32,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14867,
+        "added": 14867,
+        "evaluated": 262144,
+        "id": 71,
+        "organisms": [
+          27
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 14867
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 8320
+    },
+    {
+      "clock": 17.466666666666956,
+      "ground": 720,
+      "kind": "generation-living",
+      "n": 33,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 9449,
+        "added": 9449,
+        "evaluated": 262144,
+        "id": 72,
+        "organisms": [
+          28
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 9449
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 8576
+    },
+    {
+      "clock": 17.866666666666934,
+      "ground": 738,
+      "kind": "generation-living",
+      "n": 34,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15624,
+        "added": 15624,
+        "evaluated": 262144,
+        "id": 73,
+        "organisms": [
+          29
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15624
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 8832
+    },
+    {
+      "clock": 18.166666666666917,
+      "ground": 771,
+      "kind": "generation-living",
+      "n": 35,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 12858,
+        "added": 12858,
+        "evaluated": 262144,
+        "id": 74,
+        "organisms": [
+          30
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 12858
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 9088
+    },
+    {
+      "clock": 18.633333333333557,
+      "ground": 716,
+      "kind": "generation-living",
+      "n": 36,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 14708,
+        "added": 14708,
+        "evaluated": 262144,
+        "id": 75,
+        "organisms": [
+          31
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 14708
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 9344
+    },
+    {
+      "clock": 19.033333333333537,
+      "ground": 745,
+      "kind": "generation-living",
+      "n": 37,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 4936,
+        "added": 4936,
+        "evaluated": 262144,
+        "id": 76,
+        "organisms": [
+          32
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 4936
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 9600
+    },
+    {
+      "clock": 19.48333333333351,
+      "ground": 724,
+      "kind": "generation-living",
+      "n": 38,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15626,
+        "added": 15626,
+        "evaluated": 262144,
+        "id": 77,
+        "organisms": [
+          33
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15626
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 9856
+    },
+    {
+      "clock": 19.75000000000016,
+      "ground": 723,
+      "kind": "generation-living",
+      "n": 39,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 15188,
+        "added": 15188,
+        "evaluated": 262144,
+        "id": 78,
+        "organisms": [
+          34
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 11,
+        "status": "completed",
+        "work": 15188
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 10112
+    },
+    {
+      "clock": 20.200000000000134,
+      "ground": 738,
+      "kind": "generation-living",
+      "n": 40,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15480,
+        "added": 15480,
+        "evaluated": 262144,
+        "id": 79,
+        "organisms": [
+          35
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15480
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 10368
+    },
+    {
+      "clock": 20.616666666666777,
+      "ground": 713,
+      "kind": "generation-living",
+      "n": 41,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 3393,
+        "added": 3393,
+        "evaluated": 262144,
+        "id": 80,
+        "organisms": [
+          36
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 3393
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 10624
+    },
+    {
+      "clock": 21.03333333333342,
+      "ground": 777,
+      "kind": "generation-living",
+      "n": 42,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15507,
+        "added": 15507,
+        "evaluated": 262144,
+        "id": 81,
+        "organisms": [
+          37
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 30,
+        "status": "completed",
+        "work": 15507
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 10880
+    },
+    {
+      "clock": 21.366666666666735,
+      "ground": 767,
+      "kind": "generation-living",
+      "n": 43,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 4919,
+        "added": 4919,
+        "evaluated": 262144,
+        "id": 82,
+        "organisms": [
+          38
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 7,
+        "status": "completed",
+        "work": 4919
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 11136
+    },
+    {
+      "clock": 21.883333333333372,
+      "ground": 722,
+      "kind": "generation-living",
+      "n": 44,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15623,
+        "added": 15623,
+        "evaluated": 262144,
+        "id": 83,
+        "organisms": [
+          39
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15623
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 11392
+    },
+    {
+      "clock": 22.383333333333344,
+      "ground": 737,
+      "kind": "generation-living",
+      "n": 45,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 4628,
+        "added": 4628,
+        "evaluated": 262144,
+        "id": 84,
+        "organisms": [
+          40
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 4628
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 11648
+    },
+    {
+      "clock": 22.849999999999984,
+      "ground": 730,
+      "kind": "generation-living",
+      "n": 46,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15596,
+        "added": 15596,
+        "evaluated": 262144,
+        "id": 85,
+        "organisms": [
+          41
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15596
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 11904
+    },
+    {
+      "clock": 23.33333333333329,
+      "ground": 758,
+      "kind": "generation-living",
+      "n": 47,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 4162,
+        "added": 4162,
+        "evaluated": 262144,
+        "id": 86,
+        "organisms": [
+          42
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 4162
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 12160
+    },
+    {
+      "clock": 23.59999999999994,
+      "ground": 756,
+      "kind": "generation-living",
+      "n": 48,
+      "preset": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 15576,
+        "added": 15576,
+        "evaluated": 262144,
+        "id": 87,
+        "organisms": [
+          43
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 15576
+      },
+      "size": 64,
+      "turn": 0,
+      "x": 12416
+    },
+    {
+      "clock": 23.966666666666587,
+      "ground": 715,
+      "kind": "generation-living",
+      "n": 49,
+      "preset": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 7561,
+        "added": 7561,
+        "evaluated": 262144,
+        "id": 88,
+        "organisms": [
+          44
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 7561
+      },
+      "size": 128,
+      "turn": 0,
+      "x": 12672
+    },
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 23.966666666666587,
+      "kind": "generation-living-complete",
+      "sites": 50,
+      "turn": 0
+    },
+    {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "clock": 23.966666666666587,
+      "hybrid": true,
+      "kind": "generation-complete",
+      "mode": "verdant-reach",
+      "turn": 0
+    },
+    {
+      "clock": 25.533333333333164,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-5786b8d3-d8ff-47b6-bde8-bea8f1e0fa18",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-5786b8d3-d8ff-47b6-bde8-bea8f1e0fa18",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "Feris Blackmere",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+        "vx": 0,
+        "vy": 43.33333206176758,
+        "x": 5959.5,
+        "y": 694.18212890625
+      },
+      "turn": 0
+    },
+    {
+      "clock": 25.63333333333316,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-5786b8d3-d8ff-47b6-bde8-bea8f1e0fa18",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 93,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-5786b8d3-d8ff-47b6-bde8-bea8f1e0fa18",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M11G Oct24 Alpha",
+        "residency": "live",
+        "slot": null,
+        "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+        "vx": 0,
+        "vy": 108.33333587646484,
+        "x": 5959.5,
+        "y": 702.30712890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 25.63333333333316,
+      "id": "instance@spawn-5786b8d3-d8ff-47b6-bde8-bea8f1e0fa18",
+      "kind": "deployed",
+      "name": "M11G Oct24 Alpha",
+      "turn": 0
+    },
+    {
+      "clock": 25.81666666666648,
+      "id": "instance@spawn-5786b8d3-d8ff-47b6-bde8-bea8f1e0fa18",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 27.2166666666664,
+      "kind": "spawn-pose",
+      "owner": "instance@spawn-352e7a84-4a08-4f54-b627-c5cc5a413575",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-352e7a84-4a08-4f54-b627-c5cc5a413575",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "Arig Silverhaven",
+        "residency": "live",
+        "slot": null,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "vx": 0,
+        "vy": 54.16666793823242,
+        "x": 6839.5,
+        "y": 700.0848999023438
+      },
+      "turn": 0
+    },
+    {
+      "clock": 27.316666666666396,
+      "kind": "placement-ready",
+      "owner": "instance@spawn-352e7a84-4a08-4f54-b627-c5cc5a413575",
+      "pose": {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 106,
+          "y": 11
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-352e7a84-4a08-4f54-b627-c5cc5a413575",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M11G Oct24 Bravo",
+        "residency": "live",
+        "slot": null,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "vx": 0,
+        "vy": 119.16666412353516,
+        "x": 6839.5,
+        "y": 709.293212890625
+      },
+      "posture": {
+        "config": {
+          "angularSpeed": 2,
+          "liftLimit": 64,
+          "liftSpeed": 60,
+          "maxSlope": 1,
+          "mode": "upright",
+          "penetrationTolerance": 0.01,
+          "supportDepth": 32
+        },
+        "lifted": 0,
+        "status": "complete",
+        "supportSamples": 9,
+        "targetAngle": 0
+      },
+      "receipt": {
+        "accepted": true,
+        "reason": "ok"
+      },
+      "turn": 0,
+      "waited": 6
+    },
+    {
+      "clock": 27.316666666666396,
+      "id": "instance@spawn-352e7a84-4a08-4f54-b627-c5cc5a413575",
+      "kind": "deployed",
+      "name": "M11G Oct24 Bravo",
+      "turn": 0
+    },
+    {
+      "clock": 27.316666666666396,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 360,
+      "clock": 27.316666666666396,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "M11G Oct24 Alpha",
+      "price": 240,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 27.316666666666396,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M11G Oct24 Alpha",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 440,
+      "clock": 27.316666666666396,
+      "item": "machine-gun",
+      "kind": "purchase",
+      "name": "M11G Oct24 Bravo",
+      "price": 160,
+      "quantity": 4,
+      "turn": 0
+    },
+    {
+      "cash": 350,
+      "clock": 27.316666666666396,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M11G Oct24 Bravo",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 230,
+      "clock": 27.316666666666396,
+      "item": "fuel-tank",
+      "kind": "purchase",
+      "name": "M11G Oct24 Bravo",
+      "price": 120,
+      "quantity": 6,
+      "turn": 0
+    },
+    {
+      "clock": 27.483333333333057,
+      "id": "instance@spawn-352e7a84-4a08-4f54-b627-c5cc5a413575",
+      "kind": "land",
+      "turn": 0
+    }
+  ],
+  "live": [
+    {
+      "id": "instance@spawn-5786b8d3-d8ff-47b6-bde8-bea8f1e0fa18",
+      "live": true,
+      "position": {
+        "x": 5959.5,
+        "y": 731.3765869140625
+      }
+    },
+    {
+      "id": "instance@spawn-352e7a84-4a08-4f54-b627-c5cc5a413575",
+      "live": true,
+      "position": {
+        "x": 6839.5,
+        "y": 737.3765869140625
+      }
+    }
+  ],
+  "match": {
+    "attack": null,
+    "baseGeneration": {
+      "recipe": "verdant-reach"
+    },
+    "biome": "verdant-reach",
+    "biomeCycle": false,
+    "biomeRounds": 1,
+    "bounds": {
+      "h": 1280,
+      "w": 960,
+      "x": 5920,
+      "y": 0
+    },
+    "cashNotice": "",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "",
+      "quiet": 0,
+      "rng": 351403765,
+      "serial": 0
+    },
+    "computers": 2,
+    "cpuSkill": "persona",
+    "details": 50,
+    "focusIndex": 0,
+    "frameNotice": "",
+    "generated": 0,
+    "generation": "verdant-reach",
+    "generationChoice": "verdant-reach",
+    "humans": 0,
+    "impact": null,
+    "livingSites": 50,
+    "message": "Tanks ready \u2014 begin when your crew is ready",
+    "pendingTurn": null,
+    "personaSeed": "M11-generation",
+    "phase": "ready",
+    "presentation": {
+      "active": null,
+      "queue": []
+    },
+    "remaining": 30,
+    "roster": [
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#EC3555",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-5786b8d3-d8ff-47b6-bde8-bea8f1e0fa18",
+        "hits": 0,
+        "index": 0,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M11G Oct24 Alpha",
+        "personaId": "kiloton",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 5960,
+        "surfaceY": 745,
+        "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+        "weaponId": "heavy"
+      },
+      {
+        "autoAimTurn": null,
+        "cashBreakdown": {},
+        "cashEarned": 0,
+        "color": "#FF6150",
+        "control": "cpu",
+        "damage": 0,
+        "damageTaken": 0,
+        "eliminated": false,
+        "entityId": "instance@spawn-352e7a84-4a08-4f54-b627-c5cc5a413575",
+        "hits": 0,
+        "index": 1,
+        "kills": 0,
+        "moveDistance": 0,
+        "name": "M11G Oct24 Bravo",
+        "personaId": "lucky",
+        "placementReady": true,
+        "shots": 0,
+        "spawnX": 6840,
+        "surfaceY": 750,
+        "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+        "weaponId": "machine-gun"
+      }
+    ],
+    "round": 1,
+    "seed": 2541101,
+    "seriesId": "aa0b22a0-8282-4496-a9bf-87099ca6fe71",
+    "seriesLength": 1,
+    "shotId": null,
+    "terrainSource": {
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "completedChunks": 700,
+      "family": "zone",
+      "parameters": {
+        "airDepth": 744,
+        "blend": 4,
+        "frequency": 0.005,
+        "height": 110,
+        "octaves": 3
+      },
+      "phase": "ready",
+      "reason": null,
+      "recipeId": "verdant-reach",
+      "seed": 2541101,
+      "totalChunks": 4000,
+      "version": 1
+    },
+    "turnNumber": 0,
+    "turnSeconds": 30,
+    "version": 9,
+    "winner": null
+  },
+  "paused": false,
+  "save": {
+    "allowed": true,
+    "blockers": []
+  },
+  "world": "aa0b22a0-8282-4496-a9bf-87099ca6fe71"
+}

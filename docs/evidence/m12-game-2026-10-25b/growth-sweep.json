@@ -1,0 +1,1173 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 41078,
+  "ok": true,
+  "value": [
+    {
+      "id": "builtin-bramble",
+      "receipt": {
+        "accepted": 16246,
+        "added": 16246,
+        "evaluated": 262144,
+        "id": 144,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 16246
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 400,
+            "y": 711
+          },
+          "path": [
+            {
+              "x": 399,
+              "y": 710
+            },
+            {
+              "x": 401,
+              "y": 710
+            }
+          ],
+          "presetId": "builtin-bramble",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541102,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 144,
+          "y": 231
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-coral",
+      "receipt": {
+        "accepted": 1,
+        "added": 1,
+        "evaluated": 262144,
+        "id": 145,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 1
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 912,
+            "y": 733
+          },
+          "path": [
+            {
+              "x": 908,
+              "y": 732
+            },
+            {
+              "x": 910,
+              "y": 732
+            },
+            {
+              "x": 912,
+              "y": 732
+            },
+            {
+              "x": 914,
+              "y": 732
+            },
+            {
+              "x": 916,
+              "y": 732
+            }
+          ],
+          "presetId": "builtin-coral",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541103,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 656,
+          "y": 253
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-creeping-vine",
+      "receipt": {
+        "accepted": 1,
+        "added": 1,
+        "evaluated": 262144,
+        "id": 146,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 1
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 1424,
+            "y": 692
+          },
+          "path": [
+            {
+              "x": 1421,
+              "y": 691
+            },
+            {
+              "x": 1423,
+              "y": 691
+            },
+            {
+              "x": 1425,
+              "y": 691
+            },
+            {
+              "x": 1427,
+              "y": 691
+            }
+          ],
+          "presetId": "builtin-creeping-vine",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541104,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 1168,
+          "y": 212
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-flower-bed",
+      "receipt": {
+        "accepted": 98,
+        "added": 98,
+        "evaluated": 262144,
+        "id": 147,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 98
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 1936,
+            "y": 688
+          },
+          "path": [
+            {
+              "x": 1936,
+              "y": 687
+            }
+          ],
+          "presetId": "builtin-flower-bed",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541105,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 1680,
+          "y": 208
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-hair",
+      "receipt": {
+        "accepted": 564,
+        "added": 564,
+        "evaluated": 262144,
+        "id": 148,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 564
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 2448,
+            "y": 712
+          },
+          "path": [
+            {
+              "x": 2448,
+              "y": 711
+            }
+          ],
+          "presetId": "builtin-hair",
+          "radius": 48,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541106,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 2192,
+          "y": 232
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-icicles",
+      "receipt": {
+        "accepted": 82,
+        "added": 82,
+        "evaluated": 262144,
+        "id": 149,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 82
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 2960,
+            "y": 698
+          },
+          "path": [
+            {
+              "x": 2959,
+              "y": 697
+            },
+            {
+              "x": 2961,
+              "y": 697
+            }
+          ],
+          "presetId": "builtin-icicles",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541107,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 2704,
+          "y": 218
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-ivy-wall",
+      "receipt": {
+        "accepted": 1,
+        "added": 1,
+        "evaluated": 262144,
+        "id": 150,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 1
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 3472,
+            "y": 664
+          },
+          "path": [
+            {
+              "x": 3469,
+              "y": 663
+            },
+            {
+              "x": 3471,
+              "y": 663
+            },
+            {
+              "x": 3473,
+              "y": 663
+            },
+            {
+              "x": 3475,
+              "y": 663
+            }
+          ],
+          "presetId": "builtin-ivy-wall",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541108,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 3216,
+          "y": 184
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-lightning",
+      "receipt": {
+        "accepted": 33,
+        "added": 33,
+        "evaluated": 262144,
+        "id": 151,
+        "liveGrowth": {
+          "handle": 1,
+          "jobs": 1,
+          "seconds": 0.31666666666666665
+        },
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 33
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "liveSeconds": 0.31666666666666665,
+          "origin": {
+            "x": 3984,
+            "y": 694
+          },
+          "path": [
+            {
+              "x": 3984,
+              "y": 693
+            }
+          ],
+          "presetId": "builtin-lightning",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541109,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 3728,
+          "y": 214
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-living-bramble",
+      "receipt": {
+        "accepted": 664,
+        "added": 664,
+        "evaluated": 262144,
+        "id": 152,
+        "organisms": [
+          1
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 664
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 4496,
+            "y": 697
+          },
+          "path": [
+            {
+              "x": 4495,
+              "y": 696
+            },
+            {
+              "x": 4497,
+              "y": 696
+            }
+          ],
+          "presetId": "builtin-living-bramble",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541110,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 4240,
+          "y": 217
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-meadow-grass",
+      "receipt": {
+        "accepted": 108,
+        "added": 108,
+        "evaluated": 262144,
+        "id": 153,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 108
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 5008,
+            "y": 712
+          },
+          "path": [
+            {
+              "x": 5008,
+              "y": 711
+            }
+          ],
+          "presetId": "builtin-meadow-grass",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541111,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 4752,
+          "y": 232
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-oak-sapling",
+      "receipt": {
+        "accepted": 37466,
+        "added": 37466,
+        "evaluated": 262144,
+        "id": 154,
+        "organisms": [
+          2
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 37466
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 5520,
+            "y": 693
+          },
+          "path": [
+            {
+              "x": 5520,
+              "y": 692
+            }
+          ],
+          "presetId": "builtin-oak-sapling",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541112,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 5264,
+          "y": 213
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-roots",
+      "receipt": {
+        "accepted": 1,
+        "added": 1,
+        "evaluated": 262144,
+        "id": 155,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 1
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 6032,
+            "y": 551
+          },
+          "path": [
+            {
+              "x": 6028,
+              "y": 550
+            },
+            {
+              "x": 6030,
+              "y": 550
+            },
+            {
+              "x": 6032,
+              "y": 550
+            },
+            {
+              "x": 6034,
+              "y": 550
+            },
+            {
+              "x": 6036,
+              "y": 550
+            }
+          ],
+          "presetId": "builtin-roots",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541113,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 5776,
+          "y": 71
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-vine-ledge",
+      "receipt": {
+        "accepted": 8988,
+        "added": 8988,
+        "evaluated": 262144,
+        "id": 156,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 8988
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 6544,
+            "y": 702
+          },
+          "path": [
+            {
+              "x": 6541,
+              "y": 701
+            },
+            {
+              "x": 6543,
+              "y": 701
+            },
+            {
+              "x": 6545,
+              "y": 701
+            },
+            {
+              "x": 6547,
+              "y": 701
+            }
+          ],
+          "presetId": "builtin-vine-ledge",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541114,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 6288,
+          "y": 222
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-wheat",
+      "receipt": {
+        "accepted": 186,
+        "added": 186,
+        "evaluated": 262144,
+        "id": 157,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 186
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 7056,
+            "y": 397
+          },
+          "path": [
+            {
+              "x": 7056,
+              "y": 396
+            }
+          ],
+          "presetId": "builtin-wheat",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541115,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 6800,
+          "y": -83
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "builtin-worm-tunnels",
+      "receipt": {
+        "accepted": 0,
+        "added": 0,
+        "evaluated": 262144,
+        "id": 158,
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 1484,
+        "status": "completed",
+        "work": 0
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 7568,
+            "y": 701
+          },
+          "path": [
+            {
+              "x": 7565,
+              "y": 700
+            },
+            {
+              "x": 7567,
+              "y": 700
+            },
+            {
+              "x": 7569,
+              "y": 700
+            },
+            {
+              "x": 7571,
+              "y": 700
+            }
+          ],
+          "presetId": "builtin-worm-tunnels",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541116,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 7312,
+          "y": 221
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "indigo-m9-bramble",
+      "receipt": {
+        "accepted": 11881,
+        "added": 11881,
+        "evaluated": 262144,
+        "id": 159,
+        "organisms": [
+          3
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 11881
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 8080,
+            "y": 713
+          },
+          "path": [
+            {
+              "x": 8079,
+              "y": 712
+            },
+            {
+              "x": 8081,
+              "y": 712
+            }
+          ],
+          "presetId": "indigo-m9-bramble",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541117,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 7824,
+          "y": 233
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "indigo-m9-oak",
+      "receipt": {
+        "accepted": 37265,
+        "added": 37265,
+        "evaluated": 262144,
+        "id": 160,
+        "organisms": [
+          4
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 37265
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 8592,
+            "y": 696
+          },
+          "path": [
+            {
+              "x": 8592,
+              "y": 695
+            }
+          ],
+          "presetId": "indigo-m9-oak",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541118,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 8336,
+          "y": 216
+        },
+        "targetLayer": "world"
+      }
+    },
+    {
+      "id": "m9-planar-bramble-probe",
+      "receipt": {
+        "accepted": 10010,
+        "added": 10010,
+        "evaluated": 262144,
+        "id": 161,
+        "organisms": [
+          5
+        ],
+        "reason": "ok",
+        "rejected": 0,
+        "removed": 0,
+        "skipped": 0,
+        "status": "completed",
+        "work": 10010
+      },
+      "spec": {
+        "bounds": {
+          "h": 1024,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "budget": {
+          "cells": 262144,
+          "particles": 262144,
+          "pixels": 524288,
+          "work": 786432
+        },
+        "catalog": "procedural-m11",
+        "growth": {
+          "fragments": 262144,
+          "jobs": 64,
+          "origin": {
+            "x": 9104,
+            "y": 714
+          },
+          "path": [
+            {
+              "x": 9103,
+              "y": 713
+            },
+            {
+              "x": 9105,
+              "y": 713
+            }
+          ],
+          "presetId": "m9-planar-bramble-probe",
+          "radius": 64,
+          "steps": 4096
+        },
+        "kind": "growth",
+        "layerPolicy": "authored",
+        "replacement": "empty",
+        "seed": 2541119,
+        "shape": {
+          "h": 512,
+          "w": 512,
+          "x": 8848,
+          "y": 234
+        },
+        "targetLayer": "world"
+      }
+    }
+  ]
+}

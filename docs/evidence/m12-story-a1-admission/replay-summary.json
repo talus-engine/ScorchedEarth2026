@@ -1,0 +1,208 @@
+{
+  "version": "0.0.2571",
+  "world": "4481a8df-2662-4bcc-bf45-7c7c46904f24",
+  "seed": 256337,
+  "completed": {
+    "clearance": 7,
+    "growth": 50,
+    "macro": 171,
+    "mechanism-0": 14,
+    "mechanism-1": 2,
+    "neural": 17,
+    "noise": 50,
+    "semantic": 50,
+    "structures": 25
+  },
+  "formerFailure": {
+    "clock": 57.06666666666471,
+    "family": "growth",
+    "kind": "generation-native",
+    "n": 7,
+    "preset": "builtin-icicles",
+    "receipt": {
+      "accepted": 0,
+      "added": 0,
+      "admission": {
+        "active": 110,
+        "available": 73,
+        "finite": 110,
+        "holders": [
+          {
+            "chunks": 110,
+            "finite": true,
+            "id": 344,
+            "label": "runtime-terrain-work"
+          }
+        ],
+        "needed": 121,
+        "omittedHolders": 0,
+        "reason": "ready",
+        "required": 216,
+        "reserve": 256,
+        "retiring": 73,
+        "waitedMs": 0.08000004291534424
+      },
+      "evaluated": 262144,
+      "id": 346,
+      "reason": "ok",
+      "rejected": 0,
+      "removed": 0,
+      "skipped": 0,
+      "status": "completed",
+      "work": 0
+    },
+    "requestedSize": 74,
+    "size": 74,
+    "turn": 0,
+    "x": 18293
+  },
+  "firstObservedWait": {
+    "clock": 57.56666666666468,
+    "family": "growth",
+    "kind": "generation-native",
+    "n": 8,
+    "preset": "builtin-ivy-wall",
+    "receipt": {
+      "accepted": 0,
+      "added": 0,
+      "admission": {
+        "active": 0,
+        "available": 145,
+        "finite": 0,
+        "holders": [],
+        "needed": 121,
+        "omittedHolders": 0,
+        "reason": "ready",
+        "required": 232,
+        "reserve": 256,
+        "retiring": 111,
+        "waitedMs": 235.13499999046329
+      },
+      "evaluated": 262144,
+      "id": 347,
+      "reason": "ok",
+      "rejected": 0,
+      "removed": 0,
+      "skipped": 0,
+      "status": "completed",
+      "work": 0
+    },
+    "requestedSize": 106,
+    "size": 106,
+    "turn": 0,
+    "x": 18573
+  },
+  "currentFailure": {
+    "family": "mechanism-1",
+    "motif": "fallen-bell",
+    "n": 2,
+    "origin": {
+      "x": 18048,
+      "y": 240
+    },
+    "part": "inclined deck",
+    "reason": "no-fitting-placement",
+    "receipt": {
+      "accepted": 0,
+      "added": 0,
+      "admission": {
+        "active": 0,
+        "available": 242,
+        "finite": 0,
+        "holders": [],
+        "needed": 18,
+        "omittedHolders": 0,
+        "reason": "ready",
+        "required": 23,
+        "reserve": 256,
+        "retiring": 14,
+        "waitedMs": 0.02499997615814209
+      },
+      "evaluated": 1614,
+      "id": 414,
+      "placement": {
+        "attempts": [
+          {
+            "blocked": 8,
+            "categories": {
+              "occupancy": 8
+            },
+            "index": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "reason": "blocked-footprint",
+            "samples": [
+              {
+                "category": "occupancy",
+                "element": 8,
+                "x": 18002,
+                "y": 162
+              },
+              {
+                "category": "occupancy",
+                "element": 8,
+                "x": 18004,
+                "y": 163
+              },
+              {
+                "category": "occupancy",
+                "element": 8,
+                "x": 18094,
+                "y": 174
+              },
+              {
+                "category": "occupancy",
+                "element": 8,
+                "x": 18092,
+                "y": 175
+              },
+              {
+                "category": "occupancy",
+                "element": 8,
+                "x": 18093,
+                "y": 175
+              },
+              {
+                "category": "occupancy",
+                "element": 8,
+                "x": 18094,
+                "y": 175
+              },
+              {
+                "category": "occupancy",
+                "element": 8,
+                "x": 18095,
+                "y": 175
+              },
+              {
+                "category": "occupancy",
+                "element": 8,
+                "x": 18096,
+                "y": 175
+              }
+            ]
+          }
+        ],
+        "cells": 1614,
+        "evaluated": 1614,
+        "preview": false,
+        "selected": null
+      },
+      "reason": "no-fitting-placement",
+      "rejected": 1614,
+      "removed": 0,
+      "skipped": 0,
+      "status": "refused",
+      "work": 0
+    },
+    "story": "drowned-cathedral"
+  },
+  "classification": "Game-authored support round caps overlap rotated rigid deck after successful native preview; native revalidation correctly refuses.",
+  "visualReview": {
+    "fallen-bell-wide": "Visible large oak, pale textured slope and masonry props; unfinished trestles in crown. This is a scaffold with coarse silhouettes; no whole-map visual acceptance.",
+    "fallen-bell-crop": "Shows two narrow support ends; no deck committed.",
+    "central-spillway-wide": "Completed elevated water reservoir, conduit and lower basin visible; uneven connected central foreground and stone base. Physical trigger not yet performed."
+  }
+}

@@ -1,0 +1,4791 @@
+{
+  "clock": 73.68333333333044,
+  "error": "",
+  "events": [
+    {
+      "clock": 1.866666666666665,
+      "id": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 3.0666666666666607,
+      "id": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "kind": "deployed",
+      "name": "M8 Native A",
+      "turn": 0
+    },
+    {
+      "clock": 4.933333333333321,
+      "id": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 6.083333333333317,
+      "id": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "kind": "deployed",
+      "name": "M8 Native B",
+      "turn": 0
+    },
+    {
+      "clock": 7.949999999999977,
+      "id": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "kind": "land",
+      "turn": 0
+    },
+    {
+      "clock": 9.100000000000032,
+      "id": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "kind": "deployed",
+      "name": "M8 Native C",
+      "turn": 0
+    },
+    {
+      "clock": 9.100000000000032,
+      "kind": "match-ready",
+      "phase": "ready",
+      "turn": 0
+    },
+    {
+      "cash": 360,
+      "clock": 9.100000000000032,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "M8 Native A",
+      "price": 240,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 270,
+      "clock": 9.100000000000032,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Native A",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 420,
+      "clock": 9.100000000000032,
+      "item": "crumble",
+      "kind": "purchase",
+      "name": "M8 Native B",
+      "price": 180,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 330,
+      "clock": 9.100000000000032,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Native B",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "cash": 480,
+      "clock": 9.100000000000032,
+      "item": "riot",
+      "kind": "purchase",
+      "name": "M8 Native C",
+      "price": 120,
+      "quantity": 3,
+      "turn": 0
+    },
+    {
+      "cash": 390,
+      "clock": 9.100000000000032,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Native C",
+      "price": 90,
+      "quantity": 2,
+      "turn": 0
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 9.51666666666672,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 10,
+      "turn": 1
+    },
+    {
+      "clock": 9.51666666666672,
+      "id": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "kind": "turn",
+      "name": "M8 Native A",
+      "turn": 1
+    },
+    {
+      "clock": 9.533333333333388,
+      "distance": 576,
+      "elevation": -38,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Native A",
+      "rise": 0,
+      "target": "M8 Native B",
+      "turn": 1
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 9.533333333333388,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 13,
+      "turn": 1
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 9.533333333333388,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 16,
+      "turn": 1
+    },
+    {
+      "angle": 45,
+      "clock": 9.533333333333388,
+      "kind": "cpu-aimed",
+      "name": "M8 Native A",
+      "origin": {
+        "x": 5823.5,
+        "y": 653.5
+      },
+      "power": 17.556352041234575,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 6399.5,
+        "y": 691.5
+      },
+      "turn": 1,
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 3,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -0.7853981633974483,
+        "equipped": "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.17556352041234574,
+        "speed": {
+          "current": 592.6454796040496,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 45,
+      "clock": 10.933333333333456,
+      "kind": "fire-request",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "power": 17.556352041234575,
+      "turn": 1
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 10.933333333333456,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 36,
+      "turn": 1
+    },
+    {
+      "clock": 10.933333333333456,
+      "item": "heavy",
+      "kind": "ammo-spent",
+      "name": "M8 Native A",
+      "remaining": 2,
+      "turn": 1
+    },
+    {
+      "clock": 10.933333333333456,
+      "id": "shooting-369",
+      "kind": "quip",
+      "name": "M8 Native A",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "speechKind": "shooting",
+      "text": "I have never let accuracy limit my ambition.",
+      "turn": 1
+    },
+    {
+      "clock": 10.933333333333456,
+      "id": 1,
+      "kind": "launch",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 1,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+        "vx": 419.0636291503906,
+        "vy": -419.0636291503906,
+        "x": 5848.5,
+        "y": 627.5
+      },
+      "turn": 1,
+      "weapon": "heavy"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 12.400000000000196,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 51,
+      "turn": 1
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 12.400000000000196,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 71,
+      "turn": 1
+    },
+    {
+      "action": "damage",
+      "amount": 204,
+      "clock": 12.400000000000196,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 275,
+      "turn": 1
+    },
+    {
+      "action": "hurt",
+      "amount": 68,
+      "clock": 12.400000000000196,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 68,
+      "turn": 1
+    },
+    {
+      "amount": 67.9374516401093,
+      "clock": 12.400000000000196,
+      "direct": false,
+      "killed": false,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "projectileId": 1,
+      "targetEntityId": 2,
+      "targetStableId": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "turn": 1
+    },
+    {
+      "clock": 12.400000000000196,
+      "kind": "end",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "shooterResidency": "live",
+      "turn": 1,
+      "x": 6454.4775390625,
+      "y": 711.75
+    },
+    {
+      "clock": 15.400000000000343,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6262.4775390625,
+        "y": 583.75
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 1,
+      "watchId": 1
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 15.600000000000357,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 78,
+      "turn": 2
+    },
+    {
+      "clock": 15.600000000000357,
+      "id": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "kind": "turn",
+      "name": "M8 Native B",
+      "turn": 2
+    },
+    {
+      "action": "utility",
+      "amount": 15,
+      "clock": 15.600000000000357,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 93,
+      "turn": 2
+    },
+    {
+      "clock": 15.600000000000357,
+      "healed": 30,
+      "item": "battery",
+      "kind": "utility",
+      "name": "M8 Native B",
+      "turn": 2
+    },
+    {
+      "clock": 15.600000000000357,
+      "distance": 576,
+      "elevation": 41,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Native B",
+      "rise": 0,
+      "target": "M8 Native A",
+      "turn": 2
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 15.600000000000357,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 96,
+      "turn": 2
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 15.600000000000357,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 99,
+      "turn": 2
+    },
+    {
+      "angle": 135,
+      "clock": 15.600000000000357,
+      "kind": "cpu-aimed",
+      "name": "M8 Native B",
+      "origin": {
+        "x": 6399.5,
+        "y": 694.5
+      },
+      "power": 19.00327164100469,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 5823.5,
+        "y": 653.5
+      },
+      "turn": 2,
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 3
+        },
+        "angle": -2.356194490192345,
+        "equipped": "d76c6450-350e-439b-a119-f62d4a106fb2",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.1900327164100469,
+        "speed": {
+          "current": 634.8955319173369,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 135,
+      "clock": 17.016666666666982,
+      "kind": "fire-request",
+      "owner": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "power": 19.00327164100469,
+      "turn": 2
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 17.016666666666982,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 119,
+      "turn": 2
+    },
+    {
+      "clock": 17.016666666666982,
+      "item": "crumble",
+      "kind": "ammo-spent",
+      "name": "M8 Native B",
+      "remaining": 2,
+      "turn": 2
+    },
+    {
+      "clock": 17.016666666666982,
+      "id": "shooting-251",
+      "kind": "quip",
+      "name": "M8 Native B",
+      "owner": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "speechKind": "shooting",
+      "text": "I saved a front-row seat in your crater.",
+      "turn": 2
+    },
+    {
+      "clock": 17.016666666666982,
+      "id": 2,
+      "kind": "launch",
+      "owner": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 2,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+        "vx": -448.9389343261719,
+        "vy": -448.9389343261719,
+        "x": 6373.5,
+        "y": 672.5
+      },
+      "turn": 2,
+      "weapon": "crumble"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 18.35000000000024,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 134,
+      "turn": 2
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 18.35000000000024,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 154,
+      "turn": 2
+    },
+    {
+      "action": "damage",
+      "amount": 103,
+      "clock": 18.35000000000024,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 257,
+      "turn": 2
+    },
+    {
+      "action": "hurt",
+      "amount": 34,
+      "clock": 18.35000000000024,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 309,
+      "turn": 2
+    },
+    {
+      "amount": 34.30000788053066,
+      "clock": 18.35000000000024,
+      "direct": false,
+      "killed": false,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "projectileId": 2,
+      "targetEntityId": 0,
+      "targetStableId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "turn": 2
+    },
+    {
+      "clock": 18.35000000000024,
+      "kind": "end",
+      "owner": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "shooterResidency": "live",
+      "turn": 2,
+      "x": 5779.1845703125,
+      "y": 657
+    },
+    {
+      "clock": 21.35000000000007,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 5587.1845703125,
+        "y": 529
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 2,
+      "watchId": 2
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 21.550000000000058,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 10,
+      "turn": 3
+    },
+    {
+      "clock": 21.550000000000058,
+      "id": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "kind": "turn",
+      "name": "M8 Native C",
+      "turn": 3
+    },
+    {
+      "clock": 21.550000000000058,
+      "distance": 576,
+      "elevation": -18,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Native C",
+      "rise": 0,
+      "target": "M8 Native B",
+      "turn": 3
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 21.550000000000058,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 13,
+      "turn": 3
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 21.550000000000058,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 16,
+      "turn": 3
+    },
+    {
+      "angle": 135,
+      "clock": 21.550000000000058,
+      "kind": "cpu-aimed",
+      "name": "M8 Native C",
+      "origin": {
+        "x": 6975.5,
+        "y": 681.5
+      },
+      "power": 17.89520814665801,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 6399.5,
+        "y": 699.5
+      },
+      "turn": 3,
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 3,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -2.356194490192345,
+        "equipped": "6e30450e-16bd-4098-903e-bd30c61728d7",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.1789520814665801,
+        "speed": {
+          "current": 602.5400778824139,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 135,
+      "clock": 22.966666666666644,
+      "kind": "fire-request",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "power": 17.89520814665801,
+      "turn": 3
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 22.966666666666644,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 36,
+      "turn": 3
+    },
+    {
+      "clock": 22.966666666666644,
+      "item": "riot",
+      "kind": "ammo-spent",
+      "name": "M8 Native C",
+      "remaining": 2,
+      "turn": 3
+    },
+    {
+      "clock": 22.966666666666644,
+      "id": "shooting-341",
+      "kind": "quip",
+      "name": "M8 Native C",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "speechKind": "shooting",
+      "text": "I am about to update your location in place.",
+      "turn": 3
+    },
+    {
+      "clock": 22.966666666666644,
+      "id": 3,
+      "kind": "launch",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 3,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+        "vx": -426.0601806640625,
+        "vy": -426.0601806640625,
+        "x": 6949.5,
+        "y": 655.5
+      },
+      "turn": 3,
+      "weapon": "riot"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 24.399999999999896,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 51,
+      "turn": 3
+    },
+    {
+      "clock": 24.399999999999896,
+      "kind": "end",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "shooterResidency": "live",
+      "turn": 3,
+      "x": 6352.96435546875,
+      "y": 710.75
+    },
+    {
+      "clock": 27.399999999999725,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6160.96435546875,
+        "y": 582.75
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 3,
+      "watchId": 3
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 27.599999999999714,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 319,
+      "turn": 4
+    },
+    {
+      "clock": 27.599999999999714,
+      "id": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "kind": "turn",
+      "name": "M8 Native A",
+      "turn": 4
+    },
+    {
+      "action": "utility",
+      "amount": 15,
+      "clock": 27.599999999999714,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 334,
+      "turn": 4
+    },
+    {
+      "clock": 27.599999999999714,
+      "healed": 30,
+      "item": "battery",
+      "kind": "utility",
+      "name": "M8 Native A",
+      "turn": 4
+    },
+    {
+      "clock": 27.599999999999714,
+      "distance": 576,
+      "elevation": -57,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Native A",
+      "rise": 0,
+      "target": "M8 Native B",
+      "turn": 4
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 27.599999999999714,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 337,
+      "turn": 4
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 27.599999999999714,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 340,
+      "turn": 4
+    },
+    {
+      "angle": 45,
+      "clock": 27.599999999999714,
+      "kind": "cpu-aimed",
+      "name": "M8 Native A",
+      "origin": {
+        "x": 5823.5,
+        "y": 653.5
+      },
+      "power": 17.249429878333704,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 6399.5,
+        "y": 710.5
+      },
+      "turn": 4,
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 2,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -0.7853981633974483,
+        "equipped": "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.17249429878333702,
+        "speed": {
+          "current": 583.6833524473441,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 45,
+      "clock": 29.0166666666663,
+      "kind": "fire-request",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "power": 17.249429878333704,
+      "turn": 4
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 29.0166666666663,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 360,
+      "turn": 4
+    },
+    {
+      "clock": 29.0166666666663,
+      "item": "heavy",
+      "kind": "ammo-spent",
+      "name": "M8 Native A",
+      "remaining": 1,
+      "turn": 4
+    },
+    {
+      "clock": 29.0166666666663,
+      "id": "shooting-267",
+      "kind": "quip",
+      "name": "M8 Native A",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "speechKind": "shooting",
+      "text": "Please face the camera and the shell.",
+      "turn": 4
+    },
+    {
+      "clock": 29.0166666666663,
+      "id": 4,
+      "kind": "launch",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 4,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+        "vx": 412.7264709472656,
+        "vy": -412.7264709472656,
+        "x": 5848.5,
+        "y": 627.5
+      },
+      "turn": 4,
+      "weapon": "heavy"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 30.53333333333288,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 375,
+      "turn": 4
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 30.53333333333288,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 395,
+      "turn": 4
+    },
+    {
+      "action": "damage",
+      "amount": 169,
+      "clock": 30.53333333333288,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 564,
+      "turn": 4
+    },
+    {
+      "action": "hurt",
+      "amount": 56,
+      "clock": 30.53333333333288,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 313,
+      "turn": 4
+    },
+    {
+      "amount": 56.4571091308068,
+      "clock": 30.53333333333288,
+      "direct": false,
+      "killed": false,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "projectileId": 4,
+      "targetEntityId": 2,
+      "targetStableId": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "turn": 4
+    },
+    {
+      "clock": 30.53333333333288,
+      "kind": "end",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "shooterResidency": "live",
+      "turn": 4,
+      "x": 6465,
+      "y": 743.1588745117188
+    },
+    {
+      "clock": 33.53333333333271,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6273,
+        "y": 615.1588745117188
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 4,
+      "watchId": 4
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 33.7333333333327,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 323,
+      "turn": 5
+    },
+    {
+      "clock": 33.7333333333327,
+      "id": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "kind": "turn",
+      "name": "M8 Native B",
+      "turn": 5
+    },
+    {
+      "action": "utility",
+      "amount": 15,
+      "clock": 33.7333333333327,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 338,
+      "turn": 5
+    },
+    {
+      "clock": 33.7333333333327,
+      "healed": 30,
+      "item": "battery",
+      "kind": "utility",
+      "name": "M8 Native B",
+      "turn": 5
+    },
+    {
+      "clock": 33.7333333333327,
+      "distance": 576,
+      "elevation": 58,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Native B",
+      "rise": 0,
+      "target": "M8 Native A",
+      "turn": 5
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 33.7333333333327,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 341,
+      "turn": 5
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 33.7333333333327,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 344,
+      "turn": 5
+    },
+    {
+      "angle": 135,
+      "clock": 33.7333333333327,
+      "kind": "cpu-aimed",
+      "name": "M8 Native B",
+      "origin": {
+        "x": 6399.5,
+        "y": 711.5
+      },
+      "power": 19.35717805048053,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 5823.5,
+        "y": 653.5
+      },
+      "turn": 5,
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 2
+        },
+        "angle": -2.356194490192345,
+        "equipped": "d76c6450-350e-439b-a119-f62d4a106fb2",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.1935717805048053,
+        "speed": {
+          "current": 645.2295990740315,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 135,
+      "clock": 35.14999999999929,
+      "kind": "fire-request",
+      "owner": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "power": 19.35717805048053,
+      "turn": 5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 35.14999999999929,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 364,
+      "turn": 5
+    },
+    {
+      "clock": 35.14999999999929,
+      "item": "crumble",
+      "kind": "ammo-spent",
+      "name": "M8 Native B",
+      "remaining": 1,
+      "turn": 5
+    },
+    {
+      "clock": 35.14999999999929,
+      "id": "shooting-270",
+      "kind": "quip",
+      "name": "M8 Native B",
+      "owner": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "speechKind": "shooting",
+      "text": "The prop department has made an error.",
+      "turn": 5
+    },
+    {
+      "clock": 35.14999999999929,
+      "id": 5,
+      "kind": "launch",
+      "owner": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 5,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+        "vx": -456.2462158203125,
+        "vy": -456.2462158203125,
+        "x": 6373.5,
+        "y": 685.5
+      },
+      "turn": 5,
+      "weapon": "crumble"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 36.483333333332546,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 379,
+      "turn": 5
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 36.483333333332546,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 399,
+      "turn": 5
+    },
+    {
+      "action": "damage",
+      "amount": 191,
+      "clock": 36.483333333332546,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 590,
+      "turn": 5
+    },
+    {
+      "action": "hurt",
+      "amount": 64,
+      "clock": 36.483333333332546,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 628,
+      "turn": 5
+    },
+    {
+      "amount": 63.52297804575488,
+      "clock": 36.483333333332546,
+      "direct": false,
+      "killed": false,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "projectileId": 5,
+      "targetEntityId": 0,
+      "targetStableId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "turn": 5
+    },
+    {
+      "clock": 36.483333333332546,
+      "kind": "end",
+      "owner": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "shooterResidency": "live",
+      "turn": 5,
+      "x": 5775,
+      "y": 656
+    },
+    {
+      "clock": 39.483333333332375,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 5583,
+        "y": 528
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 5,
+      "watchId": 5
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 39.68333333333237,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 61,
+      "turn": 6
+    },
+    {
+      "clock": 39.68333333333237,
+      "id": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "kind": "turn",
+      "name": "M8 Native C",
+      "turn": 6
+    },
+    {
+      "clock": 39.68333333333237,
+      "distance": 576,
+      "elevation": -30,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Native C",
+      "rise": 0,
+      "target": "M8 Native B",
+      "turn": 6
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 39.68333333333237,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 64,
+      "turn": 6
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 39.68333333333237,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 67,
+      "turn": 6
+    },
+    {
+      "angle": 135,
+      "clock": 39.68333333333237,
+      "kind": "cpu-aimed",
+      "name": "M8 Native C",
+      "origin": {
+        "x": 6975.5,
+        "y": 681.5
+      },
+      "power": 17.689880310772654,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 6399.5,
+        "y": 711.5
+      },
+      "turn": 6,
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 2,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -2.356194490192345,
+        "equipped": "6e30450e-16bd-4098-903e-bd30c61728d7",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.17689880310772654,
+        "speed": {
+          "current": 596.5445050745615,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 135,
+      "clock": 41.09999999999895,
+      "kind": "fire-request",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "power": 17.689880310772654,
+      "turn": 6
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 41.09999999999895,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 87,
+      "turn": 6
+    },
+    {
+      "clock": 41.09999999999895,
+      "item": "riot",
+      "kind": "ammo-spent",
+      "name": "M8 Native C",
+      "remaining": 1,
+      "turn": 6
+    },
+    {
+      "clock": 41.09999999999895,
+      "id": "shooting-456",
+      "kind": "quip",
+      "name": "M8 Native C",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "speechKind": "shooting",
+      "text": "I have sacrificed accuracy for dramatic effect.",
+      "turn": 6
+    },
+    {
+      "clock": 41.09999999999895,
+      "id": 6,
+      "kind": "launch",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 6,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+        "vx": -421.8206787109375,
+        "vy": -421.8206787109375,
+        "x": 6949.5,
+        "y": 655.5
+      },
+      "turn": 6,
+      "weapon": "riot"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 42.5833333333322,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 102,
+      "turn": 6
+    },
+    {
+      "clock": 42.5833333333322,
+      "kind": "end",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "shooterResidency": "live",
+      "turn": 6,
+      "x": 6334,
+      "y": 740
+    },
+    {
+      "clock": 45.58333333333203,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6142,
+        "y": 612
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 6,
+      "watchId": 6
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 45.78333333333202,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 638,
+      "turn": 7
+    },
+    {
+      "clock": 45.78333333333202,
+      "id": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "kind": "turn",
+      "name": "M8 Native A",
+      "turn": 7
+    },
+    {
+      "action": "utility",
+      "amount": 15,
+      "clock": 45.78333333333202,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 653,
+      "turn": 7
+    },
+    {
+      "clock": 45.78333333333202,
+      "healed": 30,
+      "item": "battery",
+      "kind": "utility",
+      "name": "M8 Native A",
+      "turn": 7
+    },
+    {
+      "clock": 45.78333333333202,
+      "distance": 576,
+      "elevation": -66,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Native A",
+      "rise": 0,
+      "target": "M8 Native B",
+      "turn": 7
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 45.78333333333202,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 656,
+      "turn": 7
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 45.78333333333202,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 659,
+      "turn": 7
+    },
+    {
+      "angle": 45,
+      "clock": 45.78333333333202,
+      "kind": "cpu-aimed",
+      "name": "M8 Native A",
+      "origin": {
+        "x": 5823.5,
+        "y": 653.5
+      },
+      "power": 17.108824457212705,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 6399.5,
+        "y": 719.5
+      },
+      "turn": 7,
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 1,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -0.7853981633974483,
+        "equipped": "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.17108824457212704,
+        "speed": {
+          "current": 579.577674150611,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 45,
+      "clock": 47.1999999999986,
+      "kind": "fire-request",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "power": 17.108824457212705,
+      "turn": 7
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 47.1999999999986,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 679,
+      "turn": 7
+    },
+    {
+      "clock": 47.1999999999986,
+      "item": "heavy",
+      "kind": "ammo-spent",
+      "name": "M8 Native A",
+      "remaining": 0,
+      "turn": 7
+    },
+    {
+      "clock": 47.1999999999986,
+      "id": "shooting-204",
+      "kind": "quip",
+      "name": "M8 Native A",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "speechKind": "shooting",
+      "text": "This meeting could have been an explosion.",
+      "turn": 7
+    },
+    {
+      "clock": 47.1999999999986,
+      "id": 7,
+      "kind": "launch",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 7,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+        "vx": 409.82330322265625,
+        "vy": -409.82330322265625,
+        "x": 5848.5,
+        "y": 627.5
+      },
+      "turn": 7,
+      "weapon": "heavy"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 48.68333333333185,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 694,
+      "turn": 7
+    },
+    {
+      "action": "death",
+      "amount": 100,
+      "clock": 48.68333333333185,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 690,
+      "turn": 7
+    },
+    {
+      "action": "kill",
+      "amount": 100,
+      "clock": 48.68333333333185,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 794,
+      "turn": 7
+    },
+    {
+      "clock": 48.68333333333185,
+      "id": "death-131",
+      "kind": "quip",
+      "name": "M8 Native B",
+      "owner": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "speechKind": "death",
+      "text": "I was not prepared for this much earth.",
+      "turn": 7
+    },
+    {
+      "clock": 48.68333333333185,
+      "effect": "fireworks",
+      "id": 1,
+      "kind": "chaos-queued",
+      "owner": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "turn": 7,
+      "x": 6399.5,
+      "y": 719.5
+    },
+    {
+      "clock": 48.68333333333185,
+      "killer": "M8 Native A",
+      "kind": "eliminated",
+      "name": "M8 Native B",
+      "reason": "destroyed",
+      "turn": 7
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 48.68333333333185,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 814,
+      "turn": 7
+    },
+    {
+      "action": "damage",
+      "amount": 219,
+      "clock": 48.68333333333185,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1033,
+      "turn": 7
+    },
+    {
+      "action": "hurt",
+      "amount": 73,
+      "clock": 48.68333333333185,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 763,
+      "turn": 7
+    },
+    {
+      "amount": 72.90235518868677,
+      "clock": 48.68333333333185,
+      "direct": false,
+      "killed": true,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "projectileId": 7,
+      "targetEntityId": 2,
+      "targetStableId": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "turn": 7
+    },
+    {
+      "clock": 48.68333333333185,
+      "kind": "end",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "shooterResidency": "live",
+      "turn": 7,
+      "x": 6448,
+      "y": 739
+    },
+    {
+      "clock": 48.69999999999852,
+      "effect": "fireworks",
+      "id": 1,
+      "kind": "chaos-started",
+      "turn": 7,
+      "x": 6399.5,
+      "y": 719.5
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 48.69999999999852,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 783,
+      "turn": 7
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 48.76666666666518,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 803,
+      "turn": 7
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 48.84999999999851,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 823,
+      "turn": 7
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 48.93333333333184,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 843,
+      "turn": 7
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 48.93333333333184,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 858,
+      "turn": 7
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 49.01666666666517,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 878,
+      "turn": 7
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 49.01666666666517,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 893,
+      "turn": 7
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 49.08333333333183,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 908,
+      "turn": 7
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 49.099999999998495,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 928,
+      "turn": 7
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 49.16666666666516,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 948,
+      "turn": 7
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 49.24999999999849,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 968,
+      "turn": 7
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 49.333333333331815,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 988,
+      "turn": 7
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 49.333333333331815,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 1003,
+      "turn": 7
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 49.36666666666515,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 1018,
+      "turn": 7
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 49.416666666665144,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 1038,
+      "turn": 7
+    },
+    {
+      "clock": 49.48333333333181,
+      "effect": "fireworks",
+      "elapsed": 0.8000000000000008,
+      "id": 1,
+      "kind": "chaos-emission-ended",
+      "launched": 10,
+      "livePulses": 0,
+      "particles": 0,
+      "turn": 7
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 49.5833333333318,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 1053,
+      "turn": 7
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 49.69999999999846,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 1068,
+      "turn": 7
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 49.84999999999845,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 1083,
+      "turn": 7
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 49.84999999999845,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 1098,
+      "turn": 7
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 50.09999999999844,
+      "kind": "cash",
+      "name": "M8 Native B",
+      "total": 1113,
+      "turn": 7
+    },
+    {
+      "clock": 50.116666666665104,
+      "effect": "fireworks",
+      "elapsed": 1.4333333333333331,
+      "ended": 10,
+      "id": 1,
+      "kind": "chaos-ended",
+      "launched": 10,
+      "livePulses": 0,
+      "particles": 0,
+      "turn": 7
+    },
+    {
+      "clock": 51.68333333333168,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6256,
+        "y": 611
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 7,
+      "watchId": 7
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 51.88333333333167,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 112,
+      "turn": 8
+    },
+    {
+      "clock": 51.88333333333167,
+      "id": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "kind": "turn",
+      "name": "M8 Native C",
+      "turn": 8
+    },
+    {
+      "clock": 51.88333333333167,
+      "distance": 1152,
+      "elevation": 28,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Native C",
+      "rise": 0,
+      "target": "M8 Native A",
+      "turn": 8
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 51.88333333333167,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 115,
+      "turn": 8
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 51.88333333333167,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 118,
+      "turn": 8
+    },
+    {
+      "angle": 135,
+      "clock": 51.88333333333167,
+      "kind": "cpu-aimed",
+      "name": "M8 Native C",
+      "origin": {
+        "x": 6975.5,
+        "y": 681.5
+      },
+      "power": 27.261786506854847,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 5823.5,
+        "y": 653.5
+      },
+      "turn": 8,
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 1,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -2.356194490192345,
+        "equipped": "6e30450e-16bd-4098-903e-bd30c61728d7",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.27261786506854846,
+        "speed": {
+          "current": 876.0441660001615,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 135,
+      "clock": 53.299999999998256,
+      "kind": "fire-request",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "power": 27.261786506854847,
+      "turn": 8
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 53.299999999998256,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 138,
+      "turn": 8
+    },
+    {
+      "clock": 53.299999999998256,
+      "item": "riot",
+      "kind": "ammo-spent",
+      "name": "M8 Native C",
+      "remaining": 0,
+      "turn": 8
+    },
+    {
+      "clock": 53.299999999998256,
+      "id": "shooting-115",
+      "kind": "quip",
+      "name": "M8 Native C",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "speechKind": "shooting",
+      "text": "Your subscription to quiet has expired.",
+      "turn": 8
+    },
+    {
+      "clock": 53.299999999998256,
+      "id": 18,
+      "kind": "launch",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 18,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+        "vx": -619.456787109375,
+        "vy": -619.456787109375,
+        "x": 6949.5,
+        "y": 655.5
+      },
+      "turn": 8,
+      "weapon": "riot"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 55.16666666666482,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 153,
+      "turn": 8
+    },
+    {
+      "clock": 55.16666666666482,
+      "kind": "end",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "shooterResidency": "live",
+      "turn": 8,
+      "x": 5813.9638671875,
+      "y": 637.3734130859375
+    },
+    {
+      "clock": 58.166666666664646,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 5621.9638671875,
+        "y": 509.3734130859375
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 8,
+      "watchId": 8
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 58.366666666664635,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1043,
+      "turn": 9
+    },
+    {
+      "clock": 58.366666666664635,
+      "id": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "kind": "turn",
+      "name": "M8 Native A",
+      "turn": 9
+    },
+    {
+      "clock": 58.366666666664635,
+      "distance": 1152,
+      "elevation": -4,
+      "high": false,
+      "kind": "cpu-plan",
+      "name": "M8 Native A",
+      "rise": 0,
+      "target": "M8 Native C",
+      "turn": 9
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 58.366666666664635,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1046,
+      "turn": 9
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 58.366666666664635,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1049,
+      "turn": 9
+    },
+    {
+      "angle": 45,
+      "clock": 58.366666666664635,
+      "kind": "cpu-aimed",
+      "name": "M8 Native A",
+      "origin": {
+        "x": 5823.5,
+        "y": 677.5
+      },
+      "power": 26.84362650916039,
+      "tactic": "Elevation-adjusted shot",
+      "target": {
+        "x": 6975.5,
+        "y": 681.5
+      },
+      "turn": 9,
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -0.7853981633974483,
+        "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.26843626509160395,
+        "speed": {
+          "current": 863.8338940674836,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 45,
+      "clock": 59.78333333333122,
+      "kind": "fire-request",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "power": 26.84362650916039,
+      "turn": 9
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 59.78333333333122,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1069,
+      "turn": 9
+    },
+    {
+      "clock": 59.78333333333122,
+      "id": "shooting-348",
+      "kind": "quip",
+      "name": "M8 Native A",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "speechKind": "shooting",
+      "text": "This feature ships today. in your direction.",
+      "turn": 9
+    },
+    {
+      "clock": 59.78333333333122,
+      "id": 19,
+      "kind": "launch",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 19,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+        "vx": 610.8228149414062,
+        "vy": -610.8228149414062,
+        "x": 5848.5,
+        "y": 651.5
+      },
+      "turn": 9,
+      "weapon": "standard"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 61.68333333333111,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1084,
+      "turn": 9
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 61.69999999999778,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1104,
+      "turn": 9
+    },
+    {
+      "action": "damage",
+      "amount": 187,
+      "clock": 61.69999999999778,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1291,
+      "turn": 9
+    },
+    {
+      "action": "hurt",
+      "amount": 62,
+      "clock": 61.69999999999778,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 215,
+      "turn": 9
+    },
+    {
+      "amount": 62.31928095145954,
+      "clock": 61.69999999999778,
+      "direct": true,
+      "killed": false,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "projectileId": 19,
+      "targetEntityId": 4,
+      "targetStableId": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "turn": 9
+    },
+    {
+      "clock": 61.69999999999778,
+      "kind": "end",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "shooterResidency": "live",
+      "turn": 9,
+      "x": 6983.9833984375,
+      "y": 665.6234130859375
+    },
+    {
+      "clock": 64.69999999999762,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 6791.9833984375,
+        "y": 537.6234130859375
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 9,
+      "watchId": 9
+    },
+    {
+      "action": "turn",
+      "amount": 10,
+      "clock": 64.8999999999976,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 225,
+      "turn": 10
+    },
+    {
+      "clock": 64.8999999999976,
+      "id": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "kind": "turn",
+      "name": "M8 Native C",
+      "turn": 10
+    },
+    {
+      "action": "utility",
+      "amount": 15,
+      "clock": 64.8999999999976,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 240,
+      "turn": 10
+    },
+    {
+      "clock": 64.8999999999976,
+      "healed": 29.999999999999993,
+      "item": "battery",
+      "kind": "utility",
+      "name": "M8 Native C",
+      "turn": 10
+    },
+    {
+      "clock": 64.8999999999976,
+      "distance": 1152,
+      "elevation": 6,
+      "high": true,
+      "kind": "cpu-plan",
+      "name": "M8 Native C",
+      "rise": 172.5,
+      "target": "M8 Native A",
+      "turn": 10
+    },
+    {
+      "action": "aim",
+      "amount": 3,
+      "clock": 64.8999999999976,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 243,
+      "turn": 10
+    },
+    {
+      "action": "power",
+      "amount": 3,
+      "clock": 64.8999999999976,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 246,
+      "turn": 10
+    },
+    {
+      "angle": 120.0,
+      "clock": 64.8999999999976,
+      "kind": "cpu-aimed",
+      "name": "M8 Native C",
+      "origin": {
+        "x": 6975.5,
+        "y": 683.5
+      },
+      "power": 29.15278417534948,
+      "tactic": "High arc over cover",
+      "target": {
+        "x": 5823.5,
+        "y": 677.5
+      },
+      "turn": 10,
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -2.0943951023931957,
+        "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.2915278417534948,
+        "speed": {
+          "current": 931.2612979202048,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    },
+    {
+      "angle": 120.0,
+      "clock": 66.31666666666419,
+      "kind": "fire-request",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "power": 29.15278417534948,
+      "turn": 10
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 66.31666666666419,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 266,
+      "turn": 10
+    },
+    {
+      "clock": 66.31666666666419,
+      "id": "shooting-041",
+      "kind": "quip",
+      "name": "M8 Native C",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "speechKind": "shooting",
+      "text": "You shall be remembered in the geology.",
+      "turn": 10
+    },
+    {
+      "clock": 66.31666666666419,
+      "id": 20,
+      "kind": "launch",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "snapshot": {
+        "age": 0,
+        "held": false,
+        "id": 20,
+        "kind": "rigid-body",
+        "ownerId": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+        "vx": -465.6306457519531,
+        "vy": -806.4959716796875,
+        "x": 6957.5,
+        "y": 653.5
+      },
+      "turn": 10,
+      "weapon": "standard"
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 68.79999999999738,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 281,
+      "turn": 10
+    },
+    {
+      "action": "death",
+      "amount": 100,
+      "clock": 68.81666666666405,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1391,
+      "turn": 10
+    },
+    {
+      "action": "kill",
+      "amount": 100,
+      "clock": 68.81666666666405,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 381,
+      "turn": 10
+    },
+    {
+      "clock": 68.81666666666405,
+      "id": "death-285",
+      "kind": "quip",
+      "name": "M8 Native A",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "speechKind": "death",
+      "text": "The safety check returned a nervous laugh.",
+      "turn": 10
+    },
+    {
+      "clock": 68.81666666666405,
+      "effect": "fireworks",
+      "id": 2,
+      "kind": "chaos-queued",
+      "owner": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "turn": 10,
+      "x": 5823.5,
+      "y": 677.5
+    },
+    {
+      "clock": 68.81666666666405,
+      "killer": "M8 Native C",
+      "kind": "eliminated",
+      "name": "M8 Native A",
+      "reason": "destroyed",
+      "turn": 10
+    },
+    {
+      "action": "hit",
+      "amount": 20,
+      "clock": 68.81666666666405,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 401,
+      "turn": 10
+    },
+    {
+      "action": "damage",
+      "amount": 192,
+      "clock": 68.81666666666405,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 593,
+      "turn": 10
+    },
+    {
+      "action": "hurt",
+      "amount": 64,
+      "clock": 68.81666666666405,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1455,
+      "turn": 10
+    },
+    {
+      "amount": 63.91305937941511,
+      "clock": 68.81666666666405,
+      "direct": true,
+      "killed": true,
+      "kind": "hit",
+      "ownerEntityId": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "projectileId": 20,
+      "targetEntityId": 0,
+      "targetStableId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "turn": 10
+    },
+    {
+      "clock": 68.81666666666405,
+      "kind": "end",
+      "owner": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "shooterResidency": "live",
+      "turn": 10,
+      "x": 5824.43115234375,
+      "y": 661.6234130859375
+    },
+    {
+      "clock": 68.83333333333071,
+      "effect": "fireworks",
+      "id": 2,
+      "kind": "chaos-started",
+      "turn": 10,
+      "x": 5823.498046875,
+      "y": 677.6409912109375
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 68.83333333333071,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1475,
+      "turn": 10
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 68.89999999999738,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1495,
+      "turn": 10
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 68.9833333333307,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1515,
+      "turn": 10
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 69.06666666666403,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1535,
+      "turn": 10
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 69.0833333333307,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1550,
+      "turn": 10
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 69.09999999999737,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1565,
+      "turn": 10
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 69.14999999999736,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1585,
+      "turn": 10
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 69.1833333333307,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1600,
+      "turn": 10
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 69.21666666666403,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1615,
+      "turn": 10
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 69.23333333333069,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1635,
+      "turn": 10
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 69.24999999999736,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1650,
+      "turn": 10
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 69.29999999999735,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1670,
+      "turn": 10
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 69.38333333333068,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1690,
+      "turn": 10
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 69.41666666666401,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1705,
+      "turn": 10
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 69.46666666666401,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1725,
+      "turn": 10
+    },
+    {
+      "action": "shoot",
+      "amount": 20,
+      "clock": 69.54999999999734,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1745,
+      "turn": 10
+    },
+    {
+      "clock": 69.616666666664,
+      "effect": "fireworks",
+      "elapsed": 0.8000000000000008,
+      "id": 2,
+      "kind": "chaos-emission-ended",
+      "launched": 10,
+      "livePulses": 0,
+      "particles": 0,
+      "turn": 10
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 69.78333333333066,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1760,
+      "turn": 10
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 70.16666666666397,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1775,
+      "turn": 10
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 70.3499999999973,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1790,
+      "turn": 10
+    },
+    {
+      "action": "landing",
+      "amount": 15,
+      "clock": 70.58333333333061,
+      "kind": "cash",
+      "name": "M8 Native A",
+      "total": 1805,
+      "turn": 10
+    },
+    {
+      "clock": 70.59999999999728,
+      "effect": "fireworks",
+      "elapsed": 1.783333333333332,
+      "ended": 10,
+      "id": 2,
+      "kind": "chaos-ended",
+      "launched": 10,
+      "livePulses": 0,
+      "particles": 0,
+      "turn": 10
+    },
+    {
+      "clock": 71.81666666666388,
+      "kind": "settled",
+      "rect": {
+        "h": 384,
+        "w": 384,
+        "x": 5632.43115234375,
+        "y": 533.6234130859375
+      },
+      "ticks": 180,
+      "timedOut": true,
+      "turn": 10,
+      "watchId": 10
+    },
+    {
+      "action": "win",
+      "amount": 150,
+      "clock": 73.61666666666378,
+      "kind": "cash",
+      "name": "M8 Native C",
+      "total": 743,
+      "turn": 10
+    },
+    {
+      "clock": 73.61666666666378,
+      "kind": "cash-settled",
+      "paid": {
+        "m8 native a": 1805,
+        "m8 native b": 1113,
+        "m8 native c": 743
+      },
+      "turn": 10
+    },
+    {
+      "clock": 73.61666666666378,
+      "kind": "finished",
+      "turn": 10,
+      "winner": "M8 Native C"
+    },
+    {
+      "cash": 1835,
+      "clock": 73.61666666666378,
+      "item": "heavy",
+      "kind": "purchase",
+      "name": "M8 Native A",
+      "price": 240,
+      "quantity": 3,
+      "turn": 10
+    },
+    {
+      "cash": 1745,
+      "clock": 73.61666666666378,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Native A",
+      "price": 90,
+      "quantity": 2,
+      "turn": 10
+    },
+    {
+      "cash": 1263,
+      "clock": 73.61666666666378,
+      "item": "crumble",
+      "kind": "purchase",
+      "name": "M8 Native B",
+      "price": 180,
+      "quantity": 3,
+      "turn": 10
+    },
+    {
+      "cash": 1173,
+      "clock": 73.61666666666378,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Native B",
+      "price": 90,
+      "quantity": 2,
+      "turn": 10
+    },
+    {
+      "cash": 1013,
+      "clock": 73.61666666666378,
+      "item": "riot",
+      "kind": "purchase",
+      "name": "M8 Native C",
+      "price": 120,
+      "quantity": 3,
+      "turn": 10
+    },
+    {
+      "cash": 923,
+      "clock": 73.61666666666378,
+      "item": "battery",
+      "kind": "purchase",
+      "name": "M8 Native C",
+      "price": 90,
+      "quantity": 2,
+      "turn": 10
+    }
+  ],
+  "match": {
+    "biome": "mixed-reach",
+    "bounds": {
+      "h": 1280,
+      "w": 1280,
+      "x": 5760,
+      "y": 0
+    },
+    "cashNotice": "M8 Native C +$150 \u00b7 win",
+    "cashShots": {},
+    "chaos": {
+      "jobs": [],
+      "notice": "M8 Native A: Hostile fireworks!",
+      "quiet": 3.016666666666661,
+      "rng": 1327909703,
+      "serial": 2
+    },
+    "computers": 3,
+    "focusIndex": 2,
+    "frameNotice": "",
+    "humans": 0,
+    "impact": {
+      "x": 5824.43115234375,
+      "y": 661.6234130859375
+    },
+    "lastHit": "M8 Native A \u221264 HP \u00b7 ELIMINATED",
+    "message": "M8 Native C wins the match",
+    "phase": "finished",
+    "remaining": 18.566666666666748,
+    "roster": [
+      {
+        "aimedTurn": 9,
+        "cashBreakdown": {
+          "aim": 12,
+          "damage": 779,
+          "death": 100,
+          "hit": 80,
+          "hurt": 162,
+          "kill": 100,
+          "landing": 210,
+          "power": 12,
+          "shoot": 280,
+          "turn": 40,
+          "utility": 30
+        },
+        "cashEarned": 1805,
+        "chaosId": 2,
+        "color": "#bcb1ff",
+        "control": "cpu",
+        "deathEffect": "fireworks",
+        "eliminated": true,
+        "entityId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+        "index": 0,
+        "kills": 1,
+        "lastMoveX": 5823.5,
+        "moveDistance": 0,
+        "name": "M8 Native A",
+        "plannedTurn": 9,
+        "shotFrom": {
+          "x": 5823.5,
+          "y": 677.5
+        },
+        "spawnX": 5824,
+        "surfaceY": 672,
+        "tactic": "Elevation-adjusted shot",
+        "targetId": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+        "weaponId": "standard"
+      },
+      {
+        "aimedTurn": 5,
+        "cashBreakdown": {
+          "aim": 6,
+          "damage": 294,
+          "death": 100,
+          "hit": 40,
+          "hurt": 197,
+          "landing": 180,
+          "power": 6,
+          "shoot": 240,
+          "turn": 20,
+          "utility": 30
+        },
+        "cashEarned": 1113,
+        "chaosId": 1,
+        "color": "#ffbd82",
+        "control": "cpu",
+        "deathEffect": "fireworks",
+        "eliminated": true,
+        "entityId": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+        "index": 1,
+        "kills": 0,
+        "lastMoveX": 6399.5,
+        "moveDistance": 0,
+        "name": "M8 Native B",
+        "plannedTurn": 5,
+        "shotFrom": {
+          "x": 6399.5,
+          "y": 711.5
+        },
+        "spawnX": 6400,
+        "surfaceY": 704,
+        "tactic": "Elevation-adjusted shot",
+        "targetId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+        "weaponId": "crumble"
+      },
+      {
+        "aimedTurn": 10,
+        "cashBreakdown": {
+          "aim": 12,
+          "damage": 192,
+          "hit": 20,
+          "hurt": 62,
+          "kill": 100,
+          "landing": 60,
+          "power": 12,
+          "shoot": 80,
+          "turn": 40,
+          "utility": 15,
+          "win": 150
+        },
+        "cashEarned": 743,
+        "color": "#8ae0ca",
+        "control": "cpu",
+        "eliminated": false,
+        "entityId": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+        "index": 2,
+        "kills": 1,
+        "lastMoveX": 6975.5,
+        "moveDistance": 0,
+        "name": "M8 Native C",
+        "plannedTurn": 10,
+        "shotFrom": {
+          "x": 6975.5,
+          "y": 685.5
+        },
+        "spawnX": 6976,
+        "surfaceY": 693,
+        "tactic": "High arc over cover",
+        "targetId": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+        "weaponId": "standard"
+      }
+    ],
+    "round": 1,
+    "seed": 7,
+    "shotId": null,
+    "turnNumber": 10,
+    "turnSeconds": 20,
+    "version": 8,
+    "waitTicks": 150,
+    "winner": "M8 Native C"
+  },
+  "paused": false,
+  "roster": [
+    null,
+    null,
+    {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 108,
+        "y": 10
+      },
+      "faction": null,
+      "health": 67.68071904854045,
+      "id": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 4,
+      "maxHealth": 100,
+      "name": "M8 Native C",
+      "residency": "live",
+      "slot": null,
+      "templateId": "10887eef-ab35-4c6a-92cc-fee00b78d234",
+      "vx": 0,
+      "vy": 0,
+      "x": 6975.5,
+      "y": 685.5
+    }
+  ],
+  "scores": {
+    "matches": {
+      "8ea08ff4-c0ca-4a76-a000-3024b01e5d91": {
+        "seed": 123,
+        "winner": "M8 Alpha"
+      },
+      "b6bebd14-d3f4-4d76-97f9-ad452e43d5f0": {
+        "seed": 7,
+        "winner": "M8 Native C"
+      },
+      "c909c32a-e9cc-48cc-a679-56122eb73320": {
+        "seed": 7,
+        "winner": "M8 Alpha"
+      }
+    },
+    "players": {
+      "m8 alpha": {
+        "games": 2,
+        "kills": 4,
+        "name": "M8 Alpha",
+        "wins": 2
+      },
+      "m8 bravo": {
+        "games": 2,
+        "kills": 0,
+        "name": "M8 Bravo",
+        "wins": 0
+      },
+      "m8 charlie": {
+        "games": 2,
+        "kills": 0,
+        "name": "M8 Charlie",
+        "wins": 0
+      },
+      "m8 native a": {
+        "games": 1,
+        "kills": 1,
+        "name": "M8 Native A",
+        "wins": 0
+      },
+      "m8 native b": {
+        "games": 1,
+        "kills": 0,
+        "name": "M8 Native B",
+        "wins": 0
+      },
+      "m8 native c": {
+        "games": 1,
+        "kills": 1,
+        "name": "M8 Native C",
+        "wins": 1
+      }
+    }
+  },
+  "ui": {
+    "aimRotation": "rotate(-120.00000000000001deg)",
+    "batteries": 3,
+    "biome": "Mixed Reach",
+    "canEquip": false,
+    "canSetup": true,
+    "canShop": true,
+    "cash": 923,
+    "cashNotice": "M8 Native C +$150 \u00b7 win",
+    "chaosCount": 0,
+    "chaosNotice": "M8 Native A: Hostile fireworks!",
+    "current": {
+      "angle": 120.0,
+      "color": "#8ae0ca",
+      "control": "Computer",
+      "health": 68,
+      "name": "M8 Native C",
+      "power": 29.15278417534948
+    },
+    "finished": true,
+    "frameNotice": "",
+    "human": false,
+    "lastHit": "M8 Native A \u221264 HP \u00b7 ELIMINATED",
+    "loadout": [
+      {
+        "action": "equip-standard",
+        "disabled": false,
+        "name": "Field cannon",
+        "selected": true,
+        "stock": "\u221e"
+      },
+      {
+        "action": "equip-heavy",
+        "disabled": true,
+        "name": "Heavy howitzer",
+        "selected": false,
+        "stock": 0
+      },
+      {
+        "action": "equip-crumble",
+        "disabled": true,
+        "name": "Crumble cannon",
+        "selected": false,
+        "stock": 0
+      },
+      {
+        "action": "equip-riot",
+        "disabled": false,
+        "name": "Excavator cannon",
+        "selected": false,
+        "stock": 3
+      }
+    ],
+    "phase": "finished",
+    "ready": false,
+    "remaining": 19,
+    "roster": [
+      {
+        "cash": 1745,
+        "color": "#bcb1ff",
+        "earned": 1805,
+        "health": 0,
+        "kills": 1,
+        "name": "M8 Native A",
+        "status": "OUT"
+      },
+      {
+        "cash": 1173,
+        "color": "#ffbd82",
+        "earned": 1113,
+        "health": 0,
+        "kills": 0,
+        "name": "M8 Native B",
+        "status": "OUT"
+      },
+      {
+        "cash": 923,
+        "color": "#8ae0ca",
+        "earned": 743,
+        "health": 68,
+        "kills": 1,
+        "name": "M8 Native C",
+        "status": "CURRENT"
+      }
+    ],
+    "round": 1,
+    "roundCash": 743,
+    "scores": [
+      {
+        "games": 2,
+        "kills": 4,
+        "name": "M8 Alpha",
+        "wins": 2
+      },
+      {
+        "games": 2,
+        "kills": 0,
+        "name": "M8 Bravo",
+        "wins": 0
+      },
+      {
+        "games": 2,
+        "kills": 0,
+        "name": "M8 Charlie",
+        "wins": 0
+      },
+      {
+        "games": 1,
+        "kills": 1,
+        "name": "M8 Native A",
+        "wins": 0
+      },
+      {
+        "games": 1,
+        "kills": 0,
+        "name": "M8 Native B",
+        "wins": 0
+      },
+      {
+        "games": 1,
+        "kills": 1,
+        "name": "M8 Native C",
+        "wins": 1
+      }
+    ],
+    "seed": 7,
+    "shop": {
+      "account": "m8 native a",
+      "cash": 1745,
+      "color": "#bcb1ff",
+      "computers": 3,
+      "count": 3,
+      "earned": 1805,
+      "finished": true,
+      "humans": 0,
+      "index": 1,
+      "items": [
+        {
+          "action": "buy-standard",
+          "button": "Included",
+          "category": "WEAPON",
+          "description": "Reliable explosive shell. Unlimited ammunition.",
+          "disabled": true,
+          "id": "standard",
+          "name": "Field cannon",
+          "price": "Always available",
+          "stock": "Unlimited"
+        },
+        {
+          "action": "buy-heavy",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three heavy shells. Wider blasts, deeper craters, 120 peak damage.",
+          "disabled": false,
+          "id": "heavy",
+          "name": "Heavy howitzer",
+          "price": "$240 / 3",
+          "stock": "3"
+        },
+        {
+          "action": "buy-crumble",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three shells that fracture solid ground into loose powder. 65 peak damage.",
+          "disabled": false,
+          "id": "crumble",
+          "name": "Crumble cannon",
+          "price": "$180 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-riot",
+          "button": "Buy bundle",
+          "category": "WEAPON",
+          "description": "Three terrain-clearing riot shells. A broad crater with no blast damage.",
+          "disabled": false,
+          "id": "riot",
+          "name": "Excavator cannon",
+          "price": "$120 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-battery",
+          "button": "Buy bundle",
+          "category": "UTILITY",
+          "description": "Two repairs. Restore up to 30 hull each during your turn without ending it.",
+          "disabled": false,
+          "id": "battery",
+          "name": "Repair battery",
+          "price": "$90 / 2",
+          "stock": "2"
+        },
+        {
+          "action": "buy-ricochet",
+          "button": "In development",
+          "category": "WEAPON",
+          "description": "Three bouncing shells. A four-second fuse keeps them dangerous after landing.",
+          "disabled": true,
+          "id": "ricochet",
+          "name": "Bouncer cannon",
+          "price": "$180 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-jetpack",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "Six seconds of thrust using the tank's levitation controller.",
+          "disabled": true,
+          "id": "jetpack",
+          "name": "Jetpack fuel",
+          "price": "$180 / 6",
+          "stock": "0"
+        },
+        {
+          "action": "buy-digger",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "Five seconds of powered tunneling through the ground.",
+          "disabled": true,
+          "id": "digger",
+          "name": "Burrowing rig",
+          "price": "$220 / 5",
+          "stock": "0"
+        },
+        {
+          "action": "buy-sand",
+          "button": "In development",
+          "category": "WEAPON",
+          "description": "Charges release a seeded, noise-filled bank of real sand at impact.",
+          "disabled": true,
+          "id": "sand",
+          "name": "Sand charge cannon",
+          "price": "$180 / 3",
+          "stock": "0"
+        },
+        {
+          "action": "buy-magnet",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "A powered field that bends incoming metal shells away.",
+          "disabled": true,
+          "id": "magnet",
+          "name": "Mag deflector",
+          "price": "$350 / 1",
+          "stock": "0"
+        },
+        {
+          "action": "buy-shield",
+          "button": "In development",
+          "category": "UTILITY",
+          "description": "Absorbs incoming damage before it reaches the hull.",
+          "disabled": true,
+          "id": "shield",
+          "name": "Blast shield",
+          "price": "$250 / 1",
+          "stock": "0"
+        }
+      ],
+      "message": "Computer pilot: purchases made automatically. You can inspect or add supplies.",
+      "name": "M8 Native A",
+      "namesText": "M8 Native A\nM8 Native B\nM8 Native C",
+      "ready": false,
+      "receipts": [
+        {
+          "action": "turn",
+          "amount": 40
+        },
+        {
+          "action": "aim",
+          "amount": 12
+        },
+        {
+          "action": "power",
+          "amount": 12
+        },
+        {
+          "action": "shoot",
+          "amount": 280
+        },
+        {
+          "action": "landing",
+          "amount": 210
+        },
+        {
+          "action": "hit",
+          "amount": 80
+        },
+        {
+          "action": "damage",
+          "amount": 779
+        },
+        {
+          "action": "hurt",
+          "amount": 162
+        },
+        {
+          "action": "utility",
+          "amount": 30
+        },
+        {
+          "action": "kill",
+          "amount": 100
+        },
+        {
+          "action": "death",
+          "amount": 100
+        }
+      ],
+      "result": "M8 Native C wins the match",
+      "revision": 10,
+      "round": 2,
+      "title": "Between rounds",
+      "turnSeconds": 20
+    },
+    "shotDirection": "\u2190 LEFT",
+    "speech": [],
+    "status": "M8 Native C wins the match",
+    "tactic": "High arc over cover",
+    "tankCount": 3,
+    "target": "M8 Native A",
+    "turnNumber": 10,
+    "turnSeconds": 20,
+    "weaponAmmo": "\u221e",
+    "weaponName": "Field cannon",
+    "winner": "M8 Native C"
+  },
+  "worldId": "b6bebd14-d3f4-4d76-97f9-ad452e43d5f0",
+  "economy": {
+    "cpuShops": {
+      "8ea08ff4-c0ca-4a76-a000-3024b01e5d91:finished": {
+        "m8 alpha": true,
+        "m8 bravo": true,
+        "m8 charlie": true
+      },
+      "8ea08ff4-c0ca-4a76-a000-3024b01e5d91:ready": {
+        "m8 alpha": true,
+        "m8 bravo": true,
+        "m8 charlie": true
+      },
+      "b6bebd14-d3f4-4d76-97f9-ad452e43d5f0:finished": {
+        "m8 native a": true,
+        "m8 native b": true,
+        "m8 native c": true
+      },
+      "b6bebd14-d3f4-4d76-97f9-ad452e43d5f0:ready": {
+        "m8 native a": true,
+        "m8 native b": true,
+        "m8 native c": true
+      },
+      "c909c32a-e9cc-48cc-a679-56122eb73320:finished": {
+        "m8 alpha": true,
+        "m8 bravo": true,
+        "m8 charlie": true
+      },
+      "c909c32a-e9cc-48cc-a679-56122eb73320:ready": {
+        "m8 alpha": true,
+        "m8 bravo": true,
+        "m8 charlie": true
+      }
+    },
+    "players": {
+      "m8 alpha": {
+        "cash": 2744,
+        "earned": 3494,
+        "name": "M8 Alpha",
+        "revision": 23,
+        "selected": "crumble",
+        "spent": 1350,
+        "stock": {
+          "battery": 2,
+          "crumble": 3,
+          "heavy": 5
+        }
+      },
+      "m8 bravo": {
+        "cash": 1222,
+        "earned": 1402,
+        "name": "M8 Bravo",
+        "revision": 12,
+        "selected": "riot",
+        "spent": 780,
+        "stock": {
+          "battery": 2,
+          "crumble": 5,
+          "riot": 5
+        }
+      },
+      "m8 charlie": {
+        "cash": 4573,
+        "earned": 4873,
+        "name": "M8 Charlie",
+        "revision": 16,
+        "selected": "heavy",
+        "spent": 900,
+        "stock": {
+          "battery": 2,
+          "heavy": 3,
+          "riot": 3
+        }
+      },
+      "m8 native a": {
+        "cash": 1745,
+        "earned": 1805,
+        "name": "M8 Native A",
+        "revision": 10,
+        "selected": "heavy",
+        "spent": 660,
+        "stock": {
+          "battery": 2,
+          "heavy": 3
+        }
+      },
+      "m8 native b": {
+        "cash": 1173,
+        "earned": 1113,
+        "name": "M8 Native B",
+        "revision": 9,
+        "selected": "crumble",
+        "spent": 540,
+        "stock": {
+          "battery": 2,
+          "crumble": 4
+        }
+      },
+      "m8 native c": {
+        "cash": 923,
+        "earned": 743,
+        "name": "M8 Native C",
+        "revision": 9,
+        "selected": "riot",
+        "spent": 420,
+        "stock": {
+          "battery": 3,
+          "riot": 3
+        }
+      }
+    },
+    "rounds": {
+      "8ea08ff4-c0ca-4a76-a000-3024b01e5d91": {
+        "paid": {
+          "m8 alpha": 1586,
+          "m8 bravo": 548,
+          "m8 charlie": 4055
+        },
+        "round": 2,
+        "seed": 123
+      },
+      "b6bebd14-d3f4-4d76-97f9-ad452e43d5f0": {
+        "paid": {
+          "m8 native a": 1805,
+          "m8 native b": 1113,
+          "m8 native c": 743
+        },
+        "round": 1,
+        "seed": 7
+      },
+      "c909c32a-e9cc-48cc-a679-56122eb73320": {
+        "paid": {
+          "m8 alpha": 1908,
+          "m8 bravo": 854,
+          "m8 charlie": 818
+        },
+        "round": 1,
+        "seed": 7
+      }
+    },
+    "version": 1
+  },
+  "weapons": [
+    {
+      "name": "M8 Native A",
+      "weapon": null
+    },
+    {
+      "name": "M8 Native B",
+      "weapon": null
+    },
+    {
+      "name": "M8 Native C",
+      "weapon": {
+        "ammo": {
+          "6e30450e-16bd-4098-903e-bd30c61728d7": 0,
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd": 0,
+          "d76c6450-350e-439b-a119-f62d4a106fb2": 0
+        },
+        "angle": -2.0943951023931957,
+        "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+        "gravityScale": 1,
+        "items": [
+          "e71e2a10-2649-4b71-978d-f37396f20214",
+          "89b6413f-9ab9-40b0-ba24-9240a8912ebd",
+          "d76c6450-350e-439b-a119-f62d4a106fb2",
+          "6e30450e-16bd-4098-903e-bd30c61728d7"
+        ],
+        "kind": "rigid-body",
+        "pinned": true,
+        "power": 0.2915278417534948,
+        "speed": {
+          "current": 931.2612979202048,
+          "max": 3000,
+          "min": 80
+        }
+      }
+    }
+  ],
+  "camera": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6975.5,
+          "y": 685.5
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 40,
+          "w": 40,
+          "x": 6955.5,
+          "y": 665.5
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5824,
+      "y": -64
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5888,
+      "y": 0
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5888,
+      "y": 0
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 6175.5,
+      "y": 201.5
+    },
+    "zoom": 0.25
+  },
+  "explosions": [
+    {
+      "carve": "erase",
+      "carveRadius": 70,
+      "carvedCells": 2076,
+      "clock": 12.400000000000196,
+      "damage": 120,
+      "radius": 145,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 6454.4775390625,
+      "y": 711.75
+    },
+    {
+      "carve": "powder",
+      "carveRadius": 80,
+      "carvedCells": 2471,
+      "clock": 18.35000000000024,
+      "damage": 65,
+      "radius": 100,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 5779.1845703125,
+      "y": 657
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 95,
+      "carvedCells": 2846,
+      "clock": 24.399999999999896,
+      "damage": 0,
+      "radius": 110,
+      "source": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "x": 6352.96435546875,
+      "y": 710.75
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 70,
+      "carvedCells": 1012,
+      "clock": 30.53333333333288,
+      "damage": 120,
+      "radius": 145,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 6465,
+      "y": 743.1588745117188
+    },
+    {
+      "carve": "powder",
+      "carveRadius": 80,
+      "carvedCells": 2279,
+      "clock": 36.483333333332546,
+      "damage": 65,
+      "radius": 100,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 5775,
+      "y": 656
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 95,
+      "carvedCells": 1698,
+      "clock": 42.5833333333322,
+      "damage": 0,
+      "radius": 110,
+      "source": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "x": 6334,
+      "y": 740
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 70,
+      "carvedCells": 31,
+      "clock": 48.68333333333185,
+      "damage": 120,
+      "radius": 145,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 6448,
+      "y": 739
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 0,
+      "clock": 48.93333333333184,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 6445,
+      "y": 737.75
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 0,
+      "clock": 49.01666666666517,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 6420.04541015625,
+      "y": 759.1488037109375
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 192,
+      "clock": 49.08333333333183,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 6531,
+      "y": 739.2005004882812
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 281,
+      "clock": 49.333333333331815,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 6380.89501953125,
+      "y": 820.766357421875
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 1,
+      "clock": 49.36666666666515,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 6384.0185546875,
+      "y": 708.2503051757812
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 2,
+      "clock": 49.5833333333318,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 6296,
+      "y": 778
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 1,
+      "clock": 49.69999999999846,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 6302.08154296875,
+      "y": 755.0614624023438
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 133,
+      "clock": 49.84999999999845,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 6355.0732421875,
+      "y": 837.1375732421875
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 0,
+      "clock": 49.84999999999845,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 6424.2626953125,
+      "y": 735.713623046875
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 8,
+      "clock": 50.09999999999844,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-912f4857-e769-46ae-b824-cb550d1e7676",
+      "x": 6413.7724609375,
+      "y": 776.6171875
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 95,
+      "carvedCells": 2232,
+      "clock": 55.16666666666482,
+      "damage": 0,
+      "radius": 110,
+      "source": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "x": 5813.9638671875,
+      "y": 637.3734130859375
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 48,
+      "carvedCells": 145,
+      "clock": 61.69999999999778,
+      "damage": 80,
+      "radius": 100,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 6983.9833984375,
+      "y": 665.6234130859375
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 48,
+      "carvedCells": 3,
+      "clock": 68.81666666666405,
+      "damage": 80,
+      "radius": 100,
+      "source": "instance@spawn-387503be-aece-421f-b6c5-da65ff90a97e",
+      "x": 5824.43115234375,
+      "y": 661.6234130859375
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 314,
+      "clock": 69.0833333333307,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 5874.07666015625,
+      "y": 703.7501220703125
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 609,
+      "clock": 69.09999999999737,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 5833,
+      "y": 704
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 10,
+      "clock": 69.1833333333307,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 5810.99951171875,
+      "y": 705
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 458,
+      "clock": 69.21666666666403,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 5951.71533203125,
+      "y": 695.5576171875
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 293,
+      "clock": 69.24999999999736,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 5793.24951171875,
+      "y": 686.1397094726562
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 7,
+      "clock": 69.41666666666401,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 5758.25,
+      "y": 678.7607421875
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 332,
+      "clock": 69.78333333333066,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 5693.66845703125,
+      "y": 649.75
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 211,
+      "clock": 70.16666666666397,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 5992,
+      "y": 688
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 76,
+      "clock": 70.3499999999973,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 5720.57470703125,
+      "y": 662.00244140625
+    },
+    {
+      "carve": "erase",
+      "carveRadius": 28,
+      "carvedCells": 385,
+      "clock": 70.58333333333061,
+      "damage": 55,
+      "radius": 72,
+      "source": "instance@spawn-a01249a9-7f23-4aee-a96a-d14a65d71248",
+      "x": 5937.03271484375,
+      "y": 720
+    }
+  ],
+  "frames": [
+    {
+      "active": true,
+      "clock": 9.766666666666731,
+      "phase": "turn",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 10.266666666666756,
+      "phase": "turn",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 10.76666666666678,
+      "phase": "turn",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 11.266666666666806,
+      "phase": "flight",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 11.766666666666833,
+      "phase": "flight",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 12.266666666666856,
+      "phase": "flight",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 12.76666666666688,
+      "phase": "settling",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 13.266666666666906,
+      "phase": "settling",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 13.76666666666693,
+      "phase": "settling",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 14.266666666666955,
+      "phase": "settling",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 14.76666666666698,
+      "phase": "settling",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 15.266666666667003,
+      "phase": "settling",
+      "turn": 1,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 15.76666666666703,
+      "phase": "turn",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 16.266666666667025,
+      "phase": "turn",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 16.766666666666996,
+      "phase": "turn",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 17.266666666666968,
+      "phase": "flight",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 17.76666666666694,
+      "phase": "flight",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 18.26666666666691,
+      "phase": "flight",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 18.76666666666688,
+      "phase": "settling",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 19.266666666666858,
+      "phase": "settling",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 19.766666666666826,
+      "phase": "settling",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 20.266666666666797,
+      "phase": "settling",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 20.76666666666677,
+      "phase": "settling",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 21.26666666666674,
+      "phase": "settling",
+      "turn": 2,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 21.766666666666712,
+      "phase": "turn",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 22.266666666666683,
+      "phase": "turn",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 22.766666666666655,
+      "phase": "turn",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 23.266666666666627,
+      "phase": "flight",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 23.7666666666666,
+      "phase": "flight",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 24.26666666666657,
+      "phase": "flight",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 24.76666666666654,
+      "phase": "settling",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 25.266666666666513,
+      "phase": "settling",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 25.766666666666485,
+      "phase": "settling",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 26.266666666666456,
+      "phase": "settling",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 26.766666666666428,
+      "phase": "settling",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 27.2666666666664,
+      "phase": "settling",
+      "turn": 3,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 27.76666666666637,
+      "phase": "turn",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 28.266666666666342,
+      "phase": "turn",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 28.76666666666631,
+      "phase": "turn",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 29.26666666666629,
+      "phase": "flight",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 29.766666666666257,
+      "phase": "flight",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 30.26666666666623,
+      "phase": "flight",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 30.7666666666662,
+      "phase": "settling",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 31.266666666666172,
+      "phase": "settling",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 31.766666666666143,
+      "phase": "settling",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 32.26666666666612,
+      "phase": "settling",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 32.76666666666609,
+      "phase": "settling",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 33.26666666666606,
+      "phase": "settling",
+      "turn": 4,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 33.76666666666603,
+      "phase": "turn",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 34.266666666666005,
+      "phase": "turn",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 34.76666666666598,
+      "phase": "turn",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 35.26666666666595,
+      "phase": "flight",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 35.76666666666592,
+      "phase": "flight",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 36.26666666666589,
+      "phase": "flight",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 36.76666666666586,
+      "phase": "settling",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 37.266666666665834,
+      "phase": "settling",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 37.766666666665806,
+      "phase": "settling",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 38.26666666666578,
+      "phase": "settling",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 38.76666666666575,
+      "phase": "settling",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 39.26666666666572,
+      "phase": "settling",
+      "turn": 5,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 39.76666666666569,
+      "phase": "turn",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 40.266666666665664,
+      "phase": "turn",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 40.766666666665635,
+      "phase": "turn",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 41.26666666666561,
+      "phase": "flight",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 41.76666666666558,
+      "phase": "flight",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 42.26666666666555,
+      "phase": "flight",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 42.76666666666552,
+      "phase": "settling",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 43.26666666666549,
+      "phase": "settling",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 43.766666666665465,
+      "phase": "settling",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 44.26666666666544,
+      "phase": "settling",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 44.76666666666541,
+      "phase": "settling",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 45.26666666666538,
+      "phase": "settling",
+      "turn": 6,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 45.76666666666535,
+      "phase": "focusing",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 46.26666666666532,
+      "phase": "turn",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 46.766666666665294,
+      "phase": "turn",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 47.266666666665266,
+      "phase": "flight",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 47.76666666666524,
+      "phase": "flight",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 48.26666666666521,
+      "phase": "flight",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 48.76666666666518,
+      "phase": "settling",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 49.26666666666515,
+      "phase": "settling",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 49.76666666666512,
+      "phase": "settling",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 50.266666666665095,
+      "phase": "settling",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 50.76666666666507,
+      "phase": "settling",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 51.26666666666504,
+      "phase": "settling",
+      "turn": 7,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 51.76666666666501,
+      "phase": "focusing",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 52.26666666666498,
+      "phase": "turn",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 52.76666666666495,
+      "phase": "turn",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 53.266666666664925,
+      "phase": "turn",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 53.7666666666649,
+      "phase": "flight",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 54.26666666666487,
+      "phase": "flight",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 54.76666666666484,
+      "phase": "flight",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 55.26666666666481,
+      "phase": "settling",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 55.76666666666478,
+      "phase": "settling",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 56.266666666664754,
+      "phase": "settling",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 56.766666666664726,
+      "phase": "settling",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 57.2666666666647,
+      "phase": "settling",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 57.76666666666467,
+      "phase": "settling",
+      "turn": 8,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 58.26666666666464,
+      "phase": "focusing",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 58.76666666666461,
+      "phase": "turn",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 59.266666666664584,
+      "phase": "turn",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 59.766666666664555,
+      "phase": "turn",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 60.26666666666453,
+      "phase": "flight",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 60.7666666666645,
+      "phase": "flight",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 61.26666666666447,
+      "phase": "flight",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 61.76666666666444,
+      "phase": "settling",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 62.26666666666441,
+      "phase": "settling",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 62.766666666664385,
+      "phase": "settling",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 63.26666666666436,
+      "phase": "settling",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 63.76666666666433,
+      "phase": "settling",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 64.2666666666643,
+      "phase": "settling",
+      "turn": 9,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 64.76666666666428,
+      "phase": "focusing",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 65.26666666666425,
+      "phase": "turn",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 65.76666666666422,
+      "phase": "turn",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 66.2666666666642,
+      "phase": "turn",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 66.76666666666416,
+      "phase": "flight",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 67.26666666666414,
+      "phase": "flight",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 67.76666666666411,
+      "phase": "flight",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 68.26666666666408,
+      "phase": "flight",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 68.76666666666405,
+      "phase": "flight",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 69.26666666666402,
+      "phase": "settling",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 69.766666666664,
+      "phase": "settling",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 70.26666666666397,
+      "phase": "settling",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 70.76666666666394,
+      "phase": "settling",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 71.26666666666391,
+      "phase": "settling",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 71.76666666666388,
+      "phase": "settling",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 72.26666666666385,
+      "phase": "aftermath",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 72.76666666666382,
+      "phase": "aftermath",
+      "turn": 10,
+      "zoom": 0.25
+    },
+    {
+      "active": true,
+      "clock": 73.2666666666638,
+      "phase": "aftermath",
+      "turn": 10,
+      "zoom": 0.25
+    }
+  ]
+}

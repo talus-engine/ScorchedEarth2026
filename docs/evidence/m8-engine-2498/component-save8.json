@@ -1,0 +1,141 @@
+{
+  "before": {
+    "controller": {
+      "capacity": 12,
+      "enabled": true,
+      "fuel": 3,
+      "grounded": true,
+      "held": false,
+      "recoveryPerSecond": 0,
+      "thrusting": false
+    },
+    "defenses": {
+      "deflector": {
+        "active": true,
+        "remaining": 2,
+        "spec": {
+          "acceleration": 3000,
+          "capacity": 4,
+          "drainPerSecond": 1,
+          "elements": [],
+          "kinds": [
+            "rigid-body"
+          ],
+          "owners": "others",
+          "radius": 180
+        }
+      },
+      "shield": {
+        "active": true,
+        "remaining": 30,
+        "spec": {
+          "capacity": 60,
+          "types": [
+            "blast"
+          ]
+        }
+      }
+    },
+    "snapshot": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 96,
+        "y": 6
+      },
+      "faction": null,
+      "health": 89.59451833272277,
+      "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 20,
+      "maxHealth": 100,
+      "name": "Feris Blackmere",
+      "residency": "live",
+      "slot": null,
+      "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+      "vx": 0,
+      "vy": 0,
+      "x": 6161.49462890625,
+      "y": 386.0993957519531
+    },
+    "world": "5ad3b549-3361-45e9-ba60-558da786a14b"
+  },
+  "save": {
+    "action": "press",
+    "focused": true,
+    "key": "s",
+    "modifiers": [
+      "meta"
+    ],
+    "ok": true,
+    "sent": 2,
+    "window": {
+      "height": 968,
+      "width": 1600
+    }
+  },
+  "after": {
+    "controller": {
+      "capacity": 12,
+      "enabled": true,
+      "fuel": 3,
+      "grounded": true,
+      "held": false,
+      "recoveryPerSecond": 0,
+      "thrusting": false
+    },
+    "defenses": {
+      "deflector": {
+        "active": true,
+        "remaining": 2,
+        "spec": {
+          "acceleration": 3000,
+          "capacity": 4,
+          "drainPerSecond": 1,
+          "elements": [],
+          "kinds": [
+            "rigid-body"
+          ],
+          "owners": "others",
+          "radius": 180
+        }
+      },
+      "shield": {
+        "active": true,
+        "remaining": 30,
+        "spec": {
+          "capacity": 60,
+          "types": [
+            "blast"
+          ]
+        }
+      }
+    },
+    "snapshot": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 96,
+        "y": 6
+      },
+      "faction": null,
+      "health": 89.59451833272277,
+      "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 0,
+      "maxHealth": 100,
+      "name": "Feris Blackmere",
+      "residency": "live",
+      "slot": null,
+      "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+      "vx": 0,
+      "vy": 0,
+      "x": 6161.49462890625,
+      "y": 386.2794799804687
+    },
+    "world": "5ad3b549-3361-45e9-ba60-558da786a14b"
+  },
+  "passed": true
+}

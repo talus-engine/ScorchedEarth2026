@@ -1,0 +1,8665 @@
+{
+  "version": 2,
+  "areaId": "terra-reach-v2",
+  "tileSizePixels": 256,
+  "tileSizeChunks": 4,
+  "grid": {
+    "x": 0,
+    "y": 0,
+    "columns": 50,
+    "rows": 5
+  },
+  "sourceSwatch": "WFC/mixed-earth-swatch.svg",
+  "sourceSwatchNote": "Historical bootstrap input only; current painted origins are native WFC tile art.",
+  "gateMeaning": "Filled bridge span. Sky is a full EMPTY edge. Fractions run left-to-right on N/S and top-to-bottom on E/W.",
+  "collarPixels": 8,
+  "seedPolicy": "Fixed connecting heights; seeded ridge/bowl silhouettes and four mixed-earth textures. Source tiles are WYSIWYG in the editor and join the same palette in games.",
+  "sockets": {
+    "sky": {
+      "a": 0,
+      "b": 1
+    },
+    "earth": {
+      "a": 0,
+      "b": 1
+    },
+    "stone": {
+      "a": 0,
+      "b": 1
+    },
+    "h64": {
+      "a": 0.25,
+      "b": 1
+    },
+    "h128": {
+      "a": 0.5,
+      "b": 1
+    },
+    "h192": {
+      "a": 0.75,
+      "b": 1
+    }
+  },
+  "tiles": [
+    {
+      "name": "terra-v2-sky",
+      "role": "sky",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        0,
+        0
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 65536
+      },
+      "originAnchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "name": "terra-v2-bedrock",
+      "role": "bedrock",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        256,
+        0
+      ],
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      },
+      "materials": {
+        "STONE": 65536
+      },
+      "originAnchor": {
+        "x": 0,
+        "y": 16
+      }
+    },
+    {
+      "name": "terra-v2-earth-1",
+      "role": "interior",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        512,
+        0
+      ],
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      },
+      "materials": {
+        "STONE": 17740,
+        "DIRT": 27503,
+        "SAND": 20293
+      },
+      "originAnchor": {
+        "x": 0,
+        "y": 12
+      }
+    },
+    {
+      "name": "terra-v2-earth-2",
+      "role": "interior",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        768,
+        0
+      ],
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      },
+      "materials": {
+        "STONE": 17978,
+        "DIRT": 27145,
+        "SAND": 20413
+      },
+      "originAnchor": {
+        "x": 4,
+        "y": 12
+      }
+    },
+    {
+      "name": "terra-v2-earth-3",
+      "role": "interior",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        1024,
+        0
+      ],
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      },
+      "materials": {
+        "STONE": 18102,
+        "DIRT": 27722,
+        "SAND": 19712
+      },
+      "originAnchor": {
+        "x": 8,
+        "y": 12
+      }
+    },
+    {
+      "name": "terra-v2-earth-4",
+      "role": "interior",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        1280,
+        0
+      ],
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      },
+      "materials": {
+        "STONE": 17563,
+        "DIRT": 28297,
+        "SAND": 19676
+      },
+      "originAnchor": {
+        "x": 12,
+        "y": 12
+      }
+    },
+    {
+      "name": "terra-v2-64-64-ridge",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        0,
+        256
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h64"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 10624,
+        "STONE": 12265,
+        "SAND": 17582,
+        "DIRT": 25065
+      },
+      "originAnchor": {
+        "x": 4,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-64-64-bowl",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        256,
+        256
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h64"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 23296,
+        "STONE": 8877,
+        "SAND": 14111,
+        "DIRT": 19252
+      },
+      "originAnchor": {
+        "x": 8,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-64-128-ridge",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        512,
+        256
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h64"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 17632,
+        "DIRT": 21390,
+        "SAND": 15865,
+        "STONE": 10649
+      },
+      "originAnchor": {
+        "x": 12,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-64-128-bowl",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        768,
+        256
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h64"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 31456,
+        "STONE": 7839,
+        "SAND": 10965,
+        "DIRT": 15276
+      },
+      "originAnchor": {
+        "x": 20,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-64-192-ridge",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        1024,
+        256
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h64"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 25792,
+        "STONE": 8878,
+        "DIRT": 18351,
+        "SAND": 12515
+      },
+      "originAnchor": {
+        "x": 40,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-64-192-bowl",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        1280,
+        256
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h64"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 39616,
+        "STONE": 5674,
+        "SAND": 8333,
+        "DIRT": 11913
+      },
+      "originAnchor": {
+        "x": 48,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-128-64-ridge",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        0,
+        512
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h128"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 17696,
+        "SAND": 16024,
+        "STONE": 10554,
+        "DIRT": 21262
+      },
+      "originAnchor": {
+        "x": 0,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-128-64-bowl",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        256,
+        512
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h128"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 31520,
+        "DIRT": 15311,
+        "SAND": 10826,
+        "STONE": 7879
+      },
+      "originAnchor": {
+        "x": 16,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-128-128-ridge",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        512,
+        512
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h128"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 25856,
+        "DIRT": 18132,
+        "SAND": 12561,
+        "STONE": 8987
+      },
+      "originAnchor": {
+        "x": 24,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-128-128-bowl",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        768,
+        512
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h128"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 39680,
+        "DIRT": 11691,
+        "STONE": 5584,
+        "SAND": 8581
+      },
+      "originAnchor": {
+        "x": 28,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-128-192-ridge",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        1024,
+        512
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h128"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 34016,
+        "STONE": 6927,
+        "SAND": 10707,
+        "DIRT": 13886
+      },
+      "originAnchor": {
+        "x": 32,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-128-192-bowl",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        1280,
+        512
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h128"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 47840,
+        "DIRT": 8010,
+        "SAND": 5579,
+        "STONE": 4107
+      },
+      "originAnchor": {
+        "x": 56,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-192-64-ridge",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        0,
+        768
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h192"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 25920,
+        "DIRT": 18058,
+        "SAND": 12413,
+        "STONE": 9145
+      },
+      "originAnchor": {
+        "x": 36,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-192-64-bowl",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        256,
+        768
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h192"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 39744,
+        "DIRT": 11866,
+        "SAND": 8636,
+        "STONE": 5290
+      },
+      "originAnchor": {
+        "x": 44,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-192-128-ridge",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        512,
+        768
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h192"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 34080,
+        "DIRT": 13765,
+        "SAND": 10534,
+        "STONE": 7157
+      },
+      "originAnchor": {
+        "x": 52,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-192-128-bowl",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        768,
+        768
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h192"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 47904,
+        "SAND": 5400,
+        "STONE": 4067,
+        "DIRT": 8165
+      },
+      "originAnchor": {
+        "x": 68,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-192-192-ridge",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        1024,
+        768
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h192"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 42240,
+        "STONE": 5202,
+        "SAND": 7385,
+        "DIRT": 10709
+      },
+      "originAnchor": {
+        "x": 60,
+        "y": 8
+      }
+    },
+    {
+      "name": "terra-v2-192-192-bowl",
+      "role": "surface",
+      "sizeChunks": [
+        4,
+        4
+      ],
+      "atlasOrigin": [
+        1280,
+        768
+      ],
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h192"
+      },
+      "weight": 1,
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      },
+      "materials": {
+        "EMPTY": 54912,
+        "DIRT": 4850,
+        "SAND": 3594,
+        "STONE": 2180
+      },
+      "originAnchor": {
+        "x": 64,
+        "y": 8
+      }
+    }
+  ],
+  "placements": [
+    {
+      "x": 0,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 16,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 20,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 24,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 28,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 32,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 36,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 40,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 44,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 48,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 52,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 56,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 60,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 64,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 68,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 72,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 76,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 80,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 84,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 88,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 92,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 96,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 100,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 104,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 108,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 112,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 116,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 120,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 124,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 128,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 132,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 136,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 140,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 144,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 148,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 152,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 156,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 160,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 164,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 168,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 172,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 176,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 180,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 184,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 188,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 192,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 196,
+      "y": 0,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 16,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 20,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 24,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 28,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 32,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 36,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 40,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 44,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 48,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 52,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 56,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 60,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 64,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 68,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 72,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 76,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 80,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 84,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 88,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 92,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 96,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 100,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 104,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 108,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 112,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 116,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 120,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 124,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 128,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 132,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 136,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 140,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 144,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 148,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 152,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 156,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 160,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 164,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 168,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 172,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 176,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 180,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 184,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 188,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 192,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 196,
+      "y": 4,
+      "source": "terra-v2-sky",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "sky",
+        "east": "sky",
+        "west": "sky"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "source": "terra-v2-128-64-ridge",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "source": "terra-v2-64-64-ridge",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "source": "terra-v2-64-64-bowl",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 12,
+      "y": 8,
+      "source": "terra-v2-64-128-ridge",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 16,
+      "y": 8,
+      "source": "terra-v2-128-64-bowl",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 20,
+      "y": 8,
+      "source": "terra-v2-64-128-bowl",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 24,
+      "y": 8,
+      "source": "terra-v2-128-128-ridge",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 28,
+      "y": 8,
+      "source": "terra-v2-128-128-bowl",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 32,
+      "y": 8,
+      "source": "terra-v2-128-192-ridge",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 36,
+      "y": 8,
+      "source": "terra-v2-192-64-ridge",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 40,
+      "y": 8,
+      "source": "terra-v2-64-192-ridge",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 44,
+      "y": 8,
+      "source": "terra-v2-192-64-bowl",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 48,
+      "y": 8,
+      "source": "terra-v2-64-192-bowl",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 52,
+      "y": 8,
+      "source": "terra-v2-192-128-ridge",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 56,
+      "y": 8,
+      "source": "terra-v2-128-192-bowl",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 60,
+      "y": 8,
+      "source": "terra-v2-192-192-ridge",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 64,
+      "y": 8,
+      "source": "terra-v2-192-192-bowl",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 68,
+      "y": 8,
+      "source": "terra-v2-192-128-bowl",
+      "origin": true,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 72,
+      "y": 8,
+      "source": "terra-v2-128-128-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 76,
+      "y": 8,
+      "source": "terra-v2-128-192-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 80,
+      "y": 8,
+      "source": "terra-v2-192-128-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 84,
+      "y": 8,
+      "source": "terra-v2-128-64-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 88,
+      "y": 8,
+      "source": "terra-v2-64-64-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 92,
+      "y": 8,
+      "source": "terra-v2-64-128-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 96,
+      "y": 8,
+      "source": "terra-v2-128-192-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 100,
+      "y": 8,
+      "source": "terra-v2-192-192-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 104,
+      "y": 8,
+      "source": "terra-v2-192-128-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 108,
+      "y": 8,
+      "source": "terra-v2-128-64-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 112,
+      "y": 8,
+      "source": "terra-v2-64-128-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 116,
+      "y": 8,
+      "source": "terra-v2-128-128-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 120,
+      "y": 8,
+      "source": "terra-v2-128-192-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 124,
+      "y": 8,
+      "source": "terra-v2-192-128-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 128,
+      "y": 8,
+      "source": "terra-v2-128-64-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 132,
+      "y": 8,
+      "source": "terra-v2-64-128-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 136,
+      "y": 8,
+      "source": "terra-v2-128-192-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 140,
+      "y": 8,
+      "source": "terra-v2-192-128-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 144,
+      "y": 8,
+      "source": "terra-v2-128-128-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 148,
+      "y": 8,
+      "source": "terra-v2-128-64-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 152,
+      "y": 8,
+      "source": "terra-v2-64-64-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 156,
+      "y": 8,
+      "source": "terra-v2-64-128-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 160,
+      "y": 8,
+      "source": "terra-v2-128-192-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 164,
+      "y": 8,
+      "source": "terra-v2-192-128-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 168,
+      "y": 8,
+      "source": "terra-v2-128-64-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 172,
+      "y": 8,
+      "source": "terra-v2-64-128-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 176,
+      "y": 8,
+      "source": "terra-v2-128-192-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 180,
+      "y": 8,
+      "source": "terra-v2-192-192-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h192",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.75,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 184,
+      "y": 8,
+      "source": "terra-v2-192-128-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h192"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.75,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 188,
+      "y": 8,
+      "source": "terra-v2-128-64-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h64",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.25,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 192,
+      "y": 8,
+      "source": "terra-v2-64-128-bowl",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h64"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.25,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 196,
+      "y": 8,
+      "source": "terra-v2-128-128-ridge",
+      "origin": false,
+      "sockets": {
+        "north": "sky",
+        "south": "earth",
+        "east": "h128",
+        "west": "h128"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0.5,
+          "b": 1
+        },
+        "west": {
+          "a": 0.5,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": true,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": true,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 8,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": true,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 12,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": true,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 16,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 20,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 24,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 28,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 32,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 36,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 40,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 44,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 48,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 52,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 56,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 60,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 64,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 68,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 72,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 76,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 80,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 84,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 88,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 92,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 96,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 100,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 104,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 108,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 112,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 116,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 120,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 124,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 128,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 132,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 136,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 140,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 144,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 148,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 152,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 156,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 160,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 164,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 168,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 172,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 176,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 180,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 184,
+      "y": 12,
+      "source": "terra-v2-earth-3",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 188,
+      "y": 12,
+      "source": "terra-v2-earth-4",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 192,
+      "y": 12,
+      "source": "terra-v2-earth-1",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 196,
+      "y": 12,
+      "source": "terra-v2-earth-2",
+      "origin": false,
+      "sockets": {
+        "north": "earth",
+        "south": "stone",
+        "east": "earth",
+        "west": "earth"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 0,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": true,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 4,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 8,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 12,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 20,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 24,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 28,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 32,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 36,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 40,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 44,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 48,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 52,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 60,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 64,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 68,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 72,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 76,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 80,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 84,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 88,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 92,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 96,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 100,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 104,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 108,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 112,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 116,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 120,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 124,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 128,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 132,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 136,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 140,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 144,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 148,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 152,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 156,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 160,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 164,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 168,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 172,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 176,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 180,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 184,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 188,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 192,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    },
+    {
+      "x": 196,
+      "y": 16,
+      "source": "terra-v2-bedrock",
+      "origin": false,
+      "sockets": {
+        "north": "stone",
+        "south": "stone",
+        "east": "stone",
+        "west": "stone"
+      },
+      "gates": {
+        "north": {
+          "a": 0,
+          "b": 1
+        },
+        "south": {
+          "a": 0,
+          "b": 1
+        },
+        "east": {
+          "a": 0,
+          "b": 1
+        },
+        "west": {
+          "a": 0,
+          "b": 1
+        }
+      }
+    }
+  ]
+}

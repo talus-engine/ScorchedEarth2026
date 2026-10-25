@@ -1,0 +1,29 @@
+{
+  "templateId": "cce2b704-efbf-41de-bb3b-60981733e19c",
+  "bodies": [
+    {
+      "name": "tracked-hull",
+      "bodyIndex": 0,
+      "pixels": 294
+    },
+    {
+      "name": "aimable-turret-and-barrel",
+      "bodyIndex": 0,
+      "pixels": 273
+    }
+  ],
+  "joints": [
+    {
+      "anchorALocalX": 0,
+      "anchorALocalY": -6,
+      "anchorBLocalX": -15,
+      "anchorBLocalY": 6,
+      "bodyA": 0,
+      "bodyB": 1,
+      "motorMaxTorque": 0,
+      "motorSpeed": 0,
+      "stiffness": 1,
+      "type": "hinge"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-23T20:56:08.918246-07:00",
+  "status": "M9 closed by user at delivered scope",
+  "version": "0.0.2530",
+  "sourceCommit": "7c55ffbb125891b5be680bce1100e1c085d3e49a",
+  "installedAsarSha256": "503b8e83576ae88107b13dcc85e14d090b4834c611eb62d4f8e1632c8bce1e6e",
+  "catalogue": {
+    "weaponsEnabled": 35,
+    "utilitiesEnabled": 12,
+    "disabled": 12
+  },
+  "checks": {
+    "m9Policy": "passed",
+    "generationPolicy": "passed",
+    "utilityPolicy": "passed after updating stale controller fixture"
+  },
+  "liveBridge": "connection refused; no fresh live readback or replay",
+  "productionCodeChanged": false,
+  "accountsChanged": false,
+  "nextMilestoneStarted": false
+}

@@ -1,0 +1,5797 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 6,
+  "ok": true,
+  "value": {
+    "error": "",
+    "events": [
+      {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "clock": 0,
+        "completedChunks": 0,
+        "family": "template",
+        "kind": "terrain-source",
+        "parameters": {},
+        "phase": "complete",
+        "reason": null,
+        "recipeId": "wfc",
+        "seed": 2533411,
+        "totalChunks": 0,
+        "turn": 0,
+        "version": 1
+      },
+      {
+        "clock": 1.566666666666666,
+        "kind": "spawn-pose",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 93,
+            "y": 8
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 0,
+          "maxHealth": 100,
+          "name": "Feris Blackmere",
+          "residency": "live",
+          "slot": null,
+          "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+          "vx": 0,
+          "vy": 43.33333206176758,
+          "x": 5959.5,
+          "y": 513.18212890625
+        },
+        "turn": 0
+      },
+      {
+        "clock": 1.6666666666666656,
+        "kind": "placement-ready",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 93,
+            "y": 8
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 0,
+          "maxHealth": 100,
+          "name": "M10 Fuse",
+          "residency": "live",
+          "slot": null,
+          "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+          "vx": 0,
+          "vy": 108.33333587646484,
+          "x": 5959.5,
+          "y": 521.30712890625
+        },
+        "posture": {
+          "config": {
+            "angularSpeed": 2,
+            "liftLimit": 64,
+            "liftSpeed": 60,
+            "maxSlope": 1,
+            "mode": "upright",
+            "penetrationTolerance": 0.01,
+            "supportDepth": 32
+          },
+          "lifted": 0,
+          "status": "complete",
+          "supportSamples": 7,
+          "targetAngle": 0
+        },
+        "receipt": {
+          "accepted": true,
+          "reason": "ok"
+        },
+        "turn": 0,
+        "waited": 6
+      },
+      {
+        "clock": 1.6666666666666656,
+        "id": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "kind": "deployed",
+        "name": "M10 Fuse",
+        "turn": 0
+      },
+      {
+        "clock": 1.8499999999999983,
+        "id": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.2499999999999933,
+        "kind": "spawn-pose",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 95,
+            "y": 8
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 2,
+          "maxHealth": 100,
+          "name": "Arig Silverhaven",
+          "residency": "live",
+          "slot": null,
+          "templateId": "df3e8da4-084c-4989-80c1-638805529db9",
+          "vx": 0,
+          "vy": 54.16666793823242,
+          "x": 6135.5,
+          "y": 525.0848999023438
+        },
+        "turn": 0
+      },
+      {
+        "clock": 3.349999999999993,
+        "kind": "placement-ready",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 95,
+            "y": 8
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 2,
+          "maxHealth": 100,
+          "name": "M10 Mole",
+          "residency": "live",
+          "slot": null,
+          "templateId": "df3e8da4-084c-4989-80c1-638805529db9",
+          "vx": 0,
+          "vy": 119.16666412353516,
+          "x": 6135.5,
+          "y": 534.293212890625
+        },
+        "posture": {
+          "config": {
+            "angularSpeed": 2,
+            "liftLimit": 64,
+            "liftSpeed": 60,
+            "maxSlope": 1,
+            "mode": "upright",
+            "penetrationTolerance": 0.01,
+            "supportDepth": 32
+          },
+          "lifted": 0,
+          "status": "complete",
+          "supportSamples": 7,
+          "targetAngle": 0
+        },
+        "receipt": {
+          "accepted": true,
+          "reason": "ok"
+        },
+        "turn": 0,
+        "waited": 6
+      },
+      {
+        "clock": 3.349999999999993,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "deployed",
+        "name": "M10 Mole",
+        "turn": 0
+      },
+      {
+        "clock": 3.4999999999999925,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.933333333333324,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 4.9166666666666545,
+        "kind": "spawn-pose",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 98,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 4,
+          "maxHealth": 100,
+          "name": "Aric Stonehaven",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+          "vx": 0,
+          "vy": 43.33333206176758,
+          "x": 6311.5,
+          "y": 604.18212890625
+        },
+        "turn": 0
+      },
+      {
+        "clock": 5.016666666666654,
+        "kind": "placement-ready",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 98,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 4,
+          "maxHealth": 100,
+          "name": "M10 Kiloton",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+          "vx": 0,
+          "vy": 108.33333587646484,
+          "x": 6311.5,
+          "y": 612.30712890625
+        },
+        "posture": {
+          "config": {
+            "angularSpeed": 2,
+            "liftLimit": 64,
+            "liftSpeed": 60,
+            "maxSlope": 1,
+            "mode": "upright",
+            "penetrationTolerance": 0.01,
+            "supportDepth": 32
+          },
+          "lifted": 0,
+          "status": "complete",
+          "supportSamples": 9,
+          "targetAngle": 0
+        },
+        "receipt": {
+          "accepted": true,
+          "reason": "ok"
+        },
+        "turn": 0,
+        "waited": 6
+      },
+      {
+        "clock": 5.016666666666654,
+        "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "kind": "deployed",
+        "name": "M10 Kiloton",
+        "turn": 0
+      },
+      {
+        "clock": 5.18333333333332,
+        "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.583333333333315,
+        "kind": "spawn-pose",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 101,
+            "y": 8
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 6,
+          "maxHealth": 100,
+          "name": "Daris Blackhaven",
+          "residency": "live",
+          "slot": null,
+          "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+          "vx": 0,
+          "vy": 43.33333206176758,
+          "x": 6487.5,
+          "y": 574.18212890625
+        },
+        "turn": 0
+      },
+      {
+        "clock": 6.683333333333315,
+        "kind": "placement-ready",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 101,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 6,
+          "maxHealth": 100,
+          "name": "M10 Faultline",
+          "residency": "live",
+          "slot": null,
+          "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+          "vx": 0,
+          "vy": 108.33333587646484,
+          "x": 6487.5,
+          "y": 582.30712890625
+        },
+        "posture": {
+          "config": {
+            "angularSpeed": 2,
+            "liftLimit": 64,
+            "liftSpeed": 60,
+            "maxSlope": 1,
+            "mode": "upright",
+            "penetrationTolerance": 0.01,
+            "supportDepth": 32
+          },
+          "lifted": 0,
+          "status": "complete",
+          "supportSamples": 9,
+          "targetAngle": 0
+        },
+        "receipt": {
+          "accepted": true,
+          "reason": "ok"
+        },
+        "turn": 0,
+        "waited": 6
+      },
+      {
+        "clock": 6.683333333333315,
+        "id": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "kind": "deployed",
+        "name": "M10 Faultline",
+        "turn": 0
+      },
+      {
+        "clock": 6.849999999999981,
+        "id": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 8.24999999999999,
+        "kind": "spawn-pose",
+        "owner": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 104,
+            "y": 8
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 8,
+          "maxHealth": 100,
+          "name": "Darus Fairford",
+          "residency": "live",
+          "slot": null,
+          "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+          "vx": 0,
+          "vy": 43.33333206176758,
+          "x": 6663.5,
+          "y": 547.18212890625
+        },
+        "turn": 0
+      },
+      {
+        "clock": 8.349999999999994,
+        "kind": "placement-ready",
+        "owner": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 104,
+            "y": 8
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 8,
+          "maxHealth": 100,
+          "name": "M10 Domino",
+          "residency": "live",
+          "slot": null,
+          "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+          "vx": 0,
+          "vy": 108.33333587646484,
+          "x": 6663.5,
+          "y": 555.30712890625
+        },
+        "posture": {
+          "config": {
+            "angularSpeed": 2,
+            "liftLimit": 64,
+            "liftSpeed": 60,
+            "maxSlope": 1,
+            "mode": "upright",
+            "penetrationTolerance": 0.01,
+            "supportDepth": 32
+          },
+          "lifted": 0,
+          "status": "complete",
+          "supportSamples": 6,
+          "targetAngle": 0
+        },
+        "receipt": {
+          "accepted": true,
+          "reason": "ok"
+        },
+        "turn": 0,
+        "waited": 6
+      },
+      {
+        "clock": 8.349999999999994,
+        "id": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "kind": "deployed",
+        "name": "M10 Domino",
+        "turn": 0
+      },
+      {
+        "clock": 8.433333333333332,
+        "id": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 9.91666666666674,
+        "kind": "spawn-pose",
+        "owner": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 106,
+            "y": 8
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 10,
+          "maxHealth": 100,
+          "name": "Calek Fairholm",
+          "residency": "live",
+          "slot": null,
+          "templateId": "ea62bcab-4004-4634-8cb4-8878b116aa1f",
+          "vx": 0,
+          "vy": 43.33333206176758,
+          "x": 6839.5,
+          "y": 555.18212890625
+        },
+        "turn": 0
+      },
+      {
+        "clock": 10.016666666666744,
+        "kind": "placement-ready",
+        "owner": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "pose": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 106,
+            "y": 8
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 10,
+          "maxHealth": 100,
+          "name": "M10 Twin Fuse",
+          "residency": "live",
+          "slot": null,
+          "templateId": "ea62bcab-4004-4634-8cb4-8878b116aa1f",
+          "vx": 0,
+          "vy": 108.33333587646484,
+          "x": 6839.5,
+          "y": 563.30712890625
+        },
+        "posture": {
+          "config": {
+            "angularSpeed": 2,
+            "liftLimit": 64,
+            "liftSpeed": 60,
+            "maxSlope": 1,
+            "mode": "upright",
+            "penetrationTolerance": 0.01,
+            "supportDepth": 32
+          },
+          "lifted": 0,
+          "status": "complete",
+          "supportSamples": 9,
+          "targetAngle": 0
+        },
+        "receipt": {
+          "accepted": true,
+          "reason": "ok"
+        },
+        "turn": 0,
+        "waited": 6
+      },
+      {
+        "clock": 10.016666666666744,
+        "id": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "kind": "deployed",
+        "name": "M10 Twin Fuse",
+        "turn": 0
+      },
+      {
+        "clock": 10.016666666666744,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "cash": 480,
+        "clock": 10.016666666666744,
+        "item": "fuel-tank",
+        "kind": "purchase",
+        "name": "M10 Fuse",
+        "price": 120,
+        "quantity": 6,
+        "turn": 0
+      },
+      {
+        "cash": 80,
+        "clock": 10.016666666666744,
+        "item": "mirv",
+        "kind": "purchase",
+        "name": "M10 Fuse",
+        "price": 400,
+        "quantity": 3,
+        "turn": 0
+      },
+      {
+        "cash": 480,
+        "clock": 10.016666666666744,
+        "item": "fuel-tank",
+        "kind": "purchase",
+        "name": "M10 Mole",
+        "price": 120,
+        "quantity": 6,
+        "turn": 0
+      },
+      {
+        "cash": 260,
+        "clock": 10.016666666666744,
+        "item": "digger",
+        "kind": "purchase",
+        "name": "M10 Mole",
+        "price": 220,
+        "quantity": 5,
+        "turn": 0
+      },
+      {
+        "cash": 170,
+        "clock": 10.016666666666744,
+        "item": "battery",
+        "kind": "purchase",
+        "name": "M10 Mole",
+        "price": 90,
+        "quantity": 2,
+        "turn": 0
+      },
+      {
+        "cash": 480,
+        "clock": 10.016666666666744,
+        "item": "fuel-tank",
+        "kind": "purchase",
+        "name": "M10 Kiloton",
+        "price": 120,
+        "quantity": 6,
+        "turn": 0
+      },
+      {
+        "cash": 320,
+        "clock": 10.016666666666744,
+        "item": "machine-gun",
+        "kind": "purchase",
+        "name": "M10 Kiloton",
+        "price": 160,
+        "quantity": 4,
+        "turn": 0
+      },
+      {
+        "cash": 230,
+        "clock": 10.016666666666744,
+        "item": "battery",
+        "kind": "purchase",
+        "name": "M10 Kiloton",
+        "price": 90,
+        "quantity": 2,
+        "turn": 0
+      },
+      {
+        "cash": 480,
+        "clock": 10.016666666666744,
+        "item": "fuel-tank",
+        "kind": "purchase",
+        "name": "M10 Faultline",
+        "price": 120,
+        "quantity": 6,
+        "turn": 0
+      },
+      {
+        "cash": 60,
+        "clock": 10.016666666666744,
+        "item": "funky",
+        "kind": "purchase",
+        "name": "M10 Faultline",
+        "price": 420,
+        "quantity": 3,
+        "turn": 0
+      },
+      {
+        "cash": 480,
+        "clock": 10.016666666666744,
+        "item": "fuel-tank",
+        "kind": "purchase",
+        "name": "M10 Domino",
+        "price": 120,
+        "quantity": 6,
+        "turn": 0
+      },
+      {
+        "cash": 200,
+        "clock": 10.016666666666744,
+        "item": "napalm",
+        "kind": "purchase",
+        "name": "M10 Domino",
+        "price": 280,
+        "quantity": 3,
+        "turn": 0
+      },
+      {
+        "cash": 110,
+        "clock": 10.016666666666744,
+        "item": "battery",
+        "kind": "purchase",
+        "name": "M10 Domino",
+        "price": 90,
+        "quantity": 2,
+        "turn": 0
+      },
+      {
+        "cash": 480,
+        "clock": 10.016666666666744,
+        "item": "fuel-tank",
+        "kind": "purchase",
+        "name": "M10 Twin Fuse",
+        "price": 120,
+        "quantity": 6,
+        "turn": 0
+      },
+      {
+        "cash": 200,
+        "clock": 10.016666666666744,
+        "item": "heavy-roller",
+        "kind": "purchase",
+        "name": "M10 Twin Fuse",
+        "price": 280,
+        "quantity": 3,
+        "turn": 0
+      },
+      {
+        "cash": 80,
+        "clock": 10.016666666666744,
+        "item": "parachute",
+        "kind": "purchase",
+        "name": "M10 Twin Fuse",
+        "price": 120,
+        "quantity": 3,
+        "turn": 0
+      },
+      {
+        "clock": 10.166666666666751,
+        "id": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 85.94999999999641,
+        "color": "#ffd447",
+        "eyebrow": "SCORCHED TERRA",
+        "id": 1,
+        "kind": "arcade-start",
+        "long": true,
+        "score": "",
+        "seconds": 2.5,
+        "sub": "Round 1 \u00b7 Seed 2533411",
+        "title": "BATTLE STATIONS",
+        "turn": 0
+      },
+      {
+        "clock": 87.19999999999634,
+        "elapsed": 2.5166666666666626,
+        "id": 1,
+        "kind": "arcade-ended",
+        "turn": 0
+      },
+      {
+        "clock": 87.39999999999633,
+        "color": "#FF783C",
+        "eyebrow": "TURN 1 / COMMAND CARTRIDGE",
+        "id": 2,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "",
+        "seconds": 1,
+        "sub": "Make a crater.",
+        "title": "M10 Fuse",
+        "turn": 1
+      },
+      {
+        "clock": 87.8999999999963,
+        "elapsed": 1.000000000000001,
+        "id": 2,
+        "kind": "arcade-ended",
+        "turn": 1
+      },
+      {
+        "action": "turn",
+        "amount": 10,
+        "clock": 87.8999999999963,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 10,
+        "turn": 1
+      },
+      {
+        "clock": 87.8999999999963,
+        "id": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "kind": "turn",
+        "name": "M10 Fuse",
+        "turn": 1
+      },
+      {
+        "after": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 32.60099463637175,
+          "fuel": 5.40725464297506,
+          "spent": 0.5927453570249407
+        },
+        "before": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 0,
+          "fuel": 6,
+          "spent": 0
+        },
+        "clock": 88.71666666666292,
+        "item": "fuel-tank",
+        "kind": "utility",
+        "name": "M10 Fuse",
+        "turn": 1
+      },
+      {
+        "clock": 88.71666666666292,
+        "control": "cpu",
+        "kind": "flip-upright",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "pose": {
+          "alive": true,
+          "angle": -0.48910704255104065,
+          "chunk": {
+            "x": 93,
+            "y": 8
+          },
+          "faction": "terra-lucky-fuses",
+          "health": 100,
+          "id": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 0,
+          "maxHealth": 100,
+          "name": "M10 Fuse",
+          "residency": "live",
+          "slot": null,
+          "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+          "vx": 40.05146789550781,
+          "vy": 0,
+          "x": 5993.4580078125,
+          "y": 544.3617553710938
+        },
+        "receipt": {
+          "accepted": true,
+          "reason": "ok"
+        },
+        "turn": 1
+      },
+      {
+        "clock": 89.03333333332957,
+        "distance": 142.0517578125,
+        "elevation": -23.964599609375,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M10 Fuse",
+        "rise": 0,
+        "target": "M10 Mole",
+        "turn": 1
+      },
+      {
+        "action": "aim",
+        "amount": 3,
+        "clock": 89.03333333332957,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 13,
+        "turn": 1
+      },
+      {
+        "action": "power",
+        "amount": 3,
+        "clock": 89.03333333332957,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 16,
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 89.03333333332957,
+        "kind": "cpu-aimed",
+        "name": "M10 Fuse",
+        "origin": {
+          "x": 5993.4580078125,
+          "y": 547.3765869140625
+        },
+        "power": 10.651684959620027,
+        "tactic": "Close-range shot",
+        "target": {
+          "x": 6135.509765625,
+          "y": 571.3411865234375
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {
+            "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+            "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 0,
+            "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+            "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+            "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+            "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+            "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+            "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+            "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+            "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 3,
+            "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 0,
+            "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+            "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+            "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+            "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+            "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+            "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+            "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+            "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+            "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+            "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+            "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+            "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 0,
+            "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+            "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+            "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+            "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+            "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+            "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+            "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+            "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+            "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+            "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+            "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+          },
+          "angle": -0.7853981633974483,
+          "equipped": "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+          "gravityScale": 1,
+          "items": [
+            "219d46ea-fa7c-4578-b119-bba07279e6f0",
+            "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+            "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+            "9dd9a83c-66b3-4720-a798-b7ce47372022",
+            "fa168217-924a-4b95-b7f2-025d856f5b88",
+            "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+            "70446b65-1a75-4950-840a-443f28dc58a6",
+            "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+            "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+            "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+            "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+            "2ee512d3-c721-4978-a1a5-b97d42255b13",
+            "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+            "a80f054a-6235-4746-b050-8d5cd248dd57",
+            "b4474e78-1c10-4d79-994d-d900ed050664",
+            "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+            "173004dc-1907-43e3-9e01-10f4b7084523",
+            "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+            "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+            "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+            "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+            "1a4d56f6-0058-471f-a4bf-77548338012c",
+            "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+            "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+            "e1a46386-8976-4b3c-9408-0159b3f64235",
+            "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+            "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+            "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+            "2e0a754f-eb50-487b-b90a-907a3a43159a",
+            "780f5cdb-7252-4a69-987b-b908477015ad",
+            "815021a5-49a0-4790-91dd-b5b61a3c5050",
+            "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+            "bb0da974-5d0f-4644-a6da-278758d07d9f",
+            "9cb680d4-3edf-451b-81da-ebbb514808bb",
+            "e3a20e82-7e11-4ef9-bce2-903255ebb4dc"
+          ],
+          "kind": "rigid-body",
+          "localAngle": -0.7853981894744804,
+          "pinned": true,
+          "power": 0.10651684959620028,
+          "speed": {
+            "current": 281.0786443135405,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "clock": 90.46666666666282,
+        "kind": "presentation-centered",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "speechKind": "shooting",
+        "turn": 1,
+        "x": 5993.4580078125,
+        "y": 547.3765869140625
+      },
+      {
+        "clock": 90.46666666666282,
+        "id": "[\"terra-lucky-fuses\",null,\"taunt\",\"neutral\",\"The lucky charm is strapped to the shell.\"]",
+        "kind": "quip",
+        "name": "M10 Fuse",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "speechKind": "shooting",
+        "text": "The lucky charm is strapped to the shell.",
+        "turn": 1
+      },
+      {
+        "clock": 93.48333333332933,
+        "elapsed": 3.016666666666495,
+        "kind": "presentation-ended",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "speechKind": "shooting",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 93.48333333332933,
+        "kind": "fire-request",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "power": 10.651684959620027,
+        "turn": 1
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 93.48333333332933,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 36,
+        "turn": 1
+      },
+      {
+        "clock": 93.48333333332933,
+        "item": "mirv",
+        "kind": "ammo-spent",
+        "name": "M10 Fuse",
+        "remaining": 2,
+        "turn": 1
+      },
+      {
+        "clock": 93.48333333332933,
+        "depth": 0,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+          "vx": 198.7526092529297,
+          "vy": -198.7526092529297,
+          "x": 6018.5,
+          "y": 521.5
+        },
+        "turn": 1,
+        "weapon": "mirv"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 93.79999999999596,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 56,
+        "turn": 1
+      },
+      {
+        "clock": 93.79999999999596,
+        "depth": 1,
+        "id": 2,
+        "kind": "launch",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+          "vx": -62.18757629394531,
+          "vy": 64,
+          "x": 6080.5,
+          "y": 483.5
+        },
+        "turn": 1,
+        "weapon": "mirv"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 93.79999999999596,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 76,
+        "turn": 1
+      },
+      {
+        "clock": 93.79999999999596,
+        "depth": 1,
+        "id": 3,
+        "kind": "launch",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+          "vx": 67.81242370605469,
+          "vy": 52,
+          "x": 6080.5,
+          "y": 483.5
+        },
+        "turn": 1,
+        "weapon": "mirv"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 93.79999999999596,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 96,
+        "turn": 1
+      },
+      {
+        "clock": 93.79999999999596,
+        "depth": 1,
+        "id": 4,
+        "kind": "launch",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 4,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+          "vx": 197.8124237060547,
+          "vy": 40,
+          "x": 6080.5,
+          "y": 483.5
+        },
+        "turn": 1,
+        "weapon": "mirv"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 93.79999999999596,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 116,
+        "turn": 1
+      },
+      {
+        "clock": 93.79999999999596,
+        "depth": 1,
+        "id": 5,
+        "kind": "launch",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 5,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+          "vx": 327.81243896484375,
+          "vy": 52,
+          "x": 6080.5,
+          "y": 483.5
+        },
+        "turn": 1,
+        "weapon": "mirv"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 93.79999999999596,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 136,
+        "turn": 1
+      },
+      {
+        "clock": 93.79999999999596,
+        "depth": 1,
+        "id": 6,
+        "kind": "launch",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 6,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+          "vx": 457.81243896484375,
+          "vy": 64,
+          "x": 6080.5,
+          "y": 483.5
+        },
+        "turn": 1,
+        "weapon": "mirv"
+      },
+      {
+        "clock": 93.79999999999596,
+        "count": 5,
+        "kind": "warheads-split",
+        "mode": "apex",
+        "turn": 1,
+        "weapon": "mirv",
+        "x": 6081.28125,
+        "y": 491.6860656738281
+      },
+      {
+        "action": "resolution",
+        "amount": 10,
+        "clock": 93.79999999999596,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 146,
+        "turn": 1
+      },
+      {
+        "clock": 93.79999999999596,
+        "id": 1,
+        "kind": "end",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "reason": "removed",
+        "shooterResidency": "live",
+        "turn": 1,
+        "x": 6081.28125,
+        "y": 491.6860656738281
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 94.24999999999594,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 161,
+        "turn": 1
+      },
+      {
+        "clock": 94.24999999999594,
+        "element": "STONE",
+        "id": 3,
+        "kind": "collision",
+        "turn": 1,
+        "with": "terrain",
+        "x": 6110,
+        "y": 571
+      },
+      {
+        "action": "hit",
+        "amount": 20,
+        "clock": 94.24999999999594,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 181,
+        "turn": 1
+      },
+      {
+        "action": "damage",
+        "amount": 173,
+        "clock": 94.24999999999594,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 354,
+        "turn": 1
+      },
+      {
+        "action": "hurt",
+        "amount": 58,
+        "clock": 94.24999999999594,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 58,
+        "turn": 1
+      },
+      {
+        "amount": 57.534319826839585,
+        "clock": 94.24999999999594,
+        "direct": false,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "projectileId": 3,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "turn": 1
+      },
+      {
+        "clock": 94.24999999999594,
+        "id": 3,
+        "kind": "end",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 1,
+        "x": 6110,
+        "y": 571
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 94.2666666666626,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 369,
+        "turn": 1
+      },
+      {
+        "clock": 94.2666666666626,
+        "element": "DIRT",
+        "id": 2,
+        "kind": "collision",
+        "turn": 1,
+        "with": "particle",
+        "x": 6052.5,
+        "y": 579.5
+      },
+      {
+        "action": "hit",
+        "amount": 20,
+        "clock": 94.2666666666626,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 389,
+        "turn": 1
+      },
+      {
+        "action": "damage",
+        "amount": 82,
+        "clock": 94.2666666666626,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 471,
+        "turn": 1
+      },
+      {
+        "action": "hurt",
+        "amount": 27,
+        "clock": 94.2666666666626,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 498,
+        "turn": 1
+      },
+      {
+        "amount": 27.349065943982534,
+        "clock": 94.2666666666626,
+        "direct": false,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "projectileId": 2,
+        "targetEntityId": 0,
+        "targetStableId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "turn": 1
+      },
+      {
+        "clock": 94.2666666666626,
+        "id": 2,
+        "kind": "end",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 1,
+        "x": 6052.5,
+        "y": 579.5
+      },
+      {
+        "clock": 94.29999999999592,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "land",
+        "turn": 1
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 94.4666666666626,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 513,
+        "turn": 1
+      },
+      {
+        "clock": 94.4666666666626,
+        "id": 6,
+        "kind": "collision",
+        "turn": 1,
+        "with": "terrain",
+        "x": 6380,
+        "y": 664
+      },
+      {
+        "action": "hit",
+        "amount": 20,
+        "clock": 94.4666666666626,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 533,
+        "turn": 1
+      },
+      {
+        "action": "damage",
+        "amount": 72,
+        "clock": 94.4666666666626,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 605,
+        "turn": 1
+      },
+      {
+        "action": "hurt",
+        "amount": 24,
+        "clock": 94.4666666666626,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 24,
+        "turn": 1
+      },
+      {
+        "amount": 24.061386835363923,
+        "clock": 94.4666666666626,
+        "direct": false,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "projectileId": 6,
+        "targetEntityId": 4,
+        "targetStableId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "turn": 1
+      },
+      {
+        "clock": 94.4666666666626,
+        "id": 6,
+        "kind": "end",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 1,
+        "x": 6380,
+        "y": 664
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 94.4666666666626,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 620,
+        "turn": 1
+      },
+      {
+        "clock": 94.4666666666626,
+        "element": "SAND",
+        "id": 5,
+        "kind": "collision",
+        "turn": 1,
+        "with": "terrain",
+        "x": 6291,
+        "y": 659
+      },
+      {
+        "clock": 94.4666666666626,
+        "id": 5,
+        "kind": "end",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 1,
+        "x": 6291,
+        "y": 659
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 94.48333333332926,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 635,
+        "turn": 1
+      },
+      {
+        "clock": 94.48333333332926,
+        "element": "DIRT",
+        "id": 4,
+        "kind": "collision",
+        "turn": 1,
+        "with": "particle",
+        "x": 6212.5,
+        "y": 655.5
+      },
+      {
+        "clock": 94.48333333332926,
+        "id": 4,
+        "kind": "end",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 1,
+        "x": 6212.5,
+        "y": 655.5
+      },
+      {
+        "clock": 94.49999999999592,
+        "ended": 6,
+        "kind": "attack-resolved",
+        "launched": 6,
+        "turn": 1,
+        "weapon": "mirv"
+      },
+      {
+        "clock": 94.5166666666626,
+        "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "kind": "land",
+        "turn": 1
+      },
+      {
+        "clock": 94.58333333332924,
+        "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "kind": "land",
+        "turn": 1
+      },
+      {
+        "clock": 94.63333333332923,
+        "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "kind": "land",
+        "turn": 1
+      },
+      {
+        "clock": 97.48333333332909,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6020.5,
+          "y": 527.5
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 1,
+        "watchId": 1
+      },
+      {
+        "clock": 97.48333333332909,
+        "color": "#FF783C",
+        "eyebrow": "TURN 1 COMPLETE",
+        "id": 3,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "0 kills \u00b7 Round earned $635.00",
+        "seconds": 1,
+        "sub": "Every crater counts.",
+        "title": "M10 Fuse",
+        "turn": 1
+      },
+      {
+        "clock": 97.98333333332906,
+        "elapsed": 1.000000000000001,
+        "id": 3,
+        "kind": "arcade-ended",
+        "turn": 1
+      },
+      {
+        "clock": 98.18333333332905,
+        "color": "#70F8A0",
+        "eyebrow": "TURN 2 / COMMAND CARTRIDGE",
+        "id": 4,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "",
+        "seconds": 1,
+        "sub": "Make a crater.",
+        "title": "M10 Mole",
+        "turn": 2
+      },
+      {
+        "clock": 98.68333333332902,
+        "elapsed": 1.000000000000001,
+        "id": 4,
+        "kind": "arcade-ended",
+        "turn": 2
+      },
+      {
+        "action": "turn",
+        "amount": 10,
+        "clock": 98.68333333332902,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 68,
+        "turn": 2
+      },
+      {
+        "clock": 98.68333333332902,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "turn",
+        "name": "M10 Mole",
+        "turn": 2
+      },
+      {
+        "after": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 22.45857632100524,
+          "fuel": 5.591662248709013,
+          "spent": 0.4083377512910041
+        },
+        "before": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 0,
+          "fuel": 6,
+          "spent": 0
+        },
+        "clock": 99.49999999999564,
+        "item": "fuel-tank",
+        "kind": "utility",
+        "name": "M10 Mole",
+        "turn": 2
+      },
+      {
+        "clock": 99.91666666666228,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "clock": 100.03333333332894,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "action": "utility",
+        "amount": 15,
+        "clock": 100.16666666666228,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 83,
+        "turn": 2
+      },
+      {
+        "clock": 100.16666666666228,
+        "healed": 30.000000000000007,
+        "item": "battery",
+        "kind": "utility",
+        "name": "M10 Mole",
+        "turn": 2
+      },
+      {
+        "clock": 100.16666666666228,
+        "distance": 103.7958984375,
+        "elevation": 31.33544921875,
+        "high": true,
+        "kind": "cpu-plan",
+        "name": "M10 Mole",
+        "rise": 42.449951171875,
+        "target": "M10 Fuse",
+        "turn": 2
+      },
+      {
+        "action": "aim",
+        "amount": 3,
+        "clock": 100.16666666666228,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 86,
+        "turn": 2
+      },
+      {
+        "action": "power",
+        "amount": 3,
+        "clock": 100.16666666666228,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 89,
+        "turn": 2
+      },
+      {
+        "angle": 120.0,
+        "clock": 100.16666666666228,
+        "kind": "cpu-aimed",
+        "name": "M10 Mole",
+        "origin": {
+          "x": 6097.25390625,
+          "y": 578.449951171875
+        },
+        "power": 12.18610770585022,
+        "tactic": "High arc over cover",
+        "target": {
+          "x": 5993.4580078125,
+          "y": 547.114501953125
+        },
+        "turn": 2,
+        "weapon": {
+          "ammo": {
+            "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+            "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 0,
+            "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+            "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+            "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+            "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+            "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+            "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+            "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+            "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+            "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 0,
+            "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+            "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+            "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+            "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+            "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+            "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+            "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+            "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+            "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+            "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+            "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+            "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 0,
+            "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+            "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+            "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+            "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+            "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+            "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+            "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+            "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+            "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+            "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+            "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+          },
+          "angle": -2.0943951023931957,
+          "equipped": "219d46ea-fa7c-4578-b119-bba07279e6f0",
+          "gravityScale": 1,
+          "items": [
+            "219d46ea-fa7c-4578-b119-bba07279e6f0",
+            "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+            "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+            "9dd9a83c-66b3-4720-a798-b7ce47372022",
+            "fa168217-924a-4b95-b7f2-025d856f5b88",
+            "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+            "70446b65-1a75-4950-840a-443f28dc58a6",
+            "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+            "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+            "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+            "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+            "2ee512d3-c721-4978-a1a5-b97d42255b13",
+            "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+            "a80f054a-6235-4746-b050-8d5cd248dd57",
+            "b4474e78-1c10-4d79-994d-d900ed050664",
+            "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+            "173004dc-1907-43e3-9e01-10f4b7084523",
+            "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+            "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+            "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+            "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+            "1a4d56f6-0058-471f-a4bf-77548338012c",
+            "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+            "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+            "e1a46386-8976-4b3c-9408-0159b3f64235",
+            "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+            "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+            "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+            "2e0a754f-eb50-487b-b90a-907a3a43159a",
+            "780f5cdb-7252-4a69-987b-b908477015ad",
+            "815021a5-49a0-4790-91dd-b5b61a3c5050",
+            "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+            "bb0da974-5d0f-4644-a6da-278758d07d9f",
+            "9cb680d4-3edf-451b-81da-ebbb514808bb",
+            "e3a20e82-7e11-4ef9-bce2-903255ebb4dc"
+          ],
+          "kind": "rigid-body",
+          "localAngle": -2.159497634899185,
+          "pinned": true,
+          "power": 0.1218610770585022,
+          "speed": {
+            "current": 307.16383099945375,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "clock": 100.2999999999956,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "action": "hit",
+        "amount": 20,
+        "clock": 101.19999999999554,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 109,
+        "turn": 2
+      },
+      {
+        "action": "damage",
+        "amount": 6,
+        "clock": 101.19999999999554,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 115,
+        "turn": 2
+      },
+      {
+        "action": "hurt",
+        "amount": 2,
+        "clock": 101.19999999999554,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 117,
+        "turn": 2
+      },
+      {
+        "clock": 101.59999999999552,
+        "kind": "presentation-centered",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "speechKind": "shooting",
+        "turn": 2,
+        "x": 6097.25390625,
+        "y": 596.1015014648438
+      },
+      {
+        "clock": 101.59999999999552,
+        "id": "[\"terra-burrow-union\",null,\"taunt\",\"neutral\",\"My shovel has a muzzle velocity.\"]",
+        "kind": "quip",
+        "name": "M10 Mole",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "speechKind": "shooting",
+        "text": "My shovel has a muzzle velocity.",
+        "turn": 2
+      },
+      {
+        "clock": 104.616666666662,
+        "elapsed": 3.016666666666495,
+        "kind": "presentation-ended",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "speechKind": "shooting",
+        "turn": 2
+      },
+      {
+        "angle": 120.0,
+        "clock": 104.616666666662,
+        "kind": "fire-request",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "power": 12.18610770585022,
+        "turn": 2
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 104.616666666662,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 137,
+        "turn": 2
+      },
+      {
+        "clock": 104.616666666662,
+        "depth": 0,
+        "id": 7,
+        "kind": "launch",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 7,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+          "vx": -153.5819091796875,
+          "vy": -266.0116882324219,
+          "x": 6078.5,
+          "y": 564.5
+        },
+        "turn": 2,
+        "weapon": "standard"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 105.26666666666198,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 152,
+        "turn": 2
+      },
+      {
+        "clock": 105.26666666666198,
+        "id": 7,
+        "kind": "collision",
+        "turn": 2,
+        "with": "body",
+        "x": 5981.38720703125,
+        "y": 531.9788208007812
+      },
+      {
+        "action": "death",
+        "amount": 100,
+        "clock": 105.26666666666198,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 735,
+        "turn": 2
+      },
+      {
+        "action": "kill",
+        "amount": 100,
+        "clock": 105.26666666666198,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 252,
+        "turn": 2
+      },
+      {
+        "clock": 105.26666666666198,
+        "kind": "death-pose-held",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "seconds": 4,
+        "turn": 2
+      },
+      {
+        "clock": 105.26666666666198,
+        "killer": "M10 Mole",
+        "kind": "eliminated",
+        "name": "M10 Fuse",
+        "reason": "destroyed",
+        "turn": 2
+      },
+      {
+        "action": "hit",
+        "amount": 20,
+        "clock": 105.26666666666198,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 272,
+        "turn": 2
+      },
+      {
+        "action": "damage",
+        "amount": 218,
+        "clock": 105.26666666666198,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 490,
+        "turn": 2
+      },
+      {
+        "action": "hurt",
+        "amount": 73,
+        "clock": 105.26666666666198,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 808,
+        "turn": 2
+      },
+      {
+        "amount": 72.65093405601746,
+        "clock": 105.26666666666198,
+        "direct": true,
+        "killed": true,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "projectileId": 7,
+        "targetEntityId": 0,
+        "targetStableId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "turn": 2
+      },
+      {
+        "clock": 105.26666666666198,
+        "id": 7,
+        "kind": "end",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 2,
+        "x": 5981.38720703125,
+        "y": 531.9788208007812
+      },
+      {
+        "clock": 105.28333333332864,
+        "kind": "presentation-centered",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "speechKind": "death",
+        "turn": 2,
+        "x": 5993.4580078125,
+        "y": 547.1146240234375
+      },
+      {
+        "clock": 105.28333333332864,
+        "id": "[\"terra-lucky-fuses\",null,\"death\",\"neutral\",\"There is no undo button under this wreckage.\"]",
+        "kind": "quip",
+        "name": "M10 Fuse",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "speechKind": "death",
+        "text": "There is no undo button under this wreckage.",
+        "turn": 2
+      },
+      {
+        "clock": 105.28333333332864,
+        "ended": 1,
+        "kind": "attack-resolved",
+        "launched": 1,
+        "turn": 2,
+        "weapon": "standard"
+      },
+      {
+        "clock": 108.2666666666618,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 5789.38720703125,
+          "y": 403.9788208007813
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 2,
+        "watchId": 2
+      },
+      {
+        "clock": 108.29999999999514,
+        "elapsed": 3.016666666666495,
+        "kind": "presentation-ended",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "speechKind": "death",
+        "turn": 2
+      },
+      {
+        "clock": 108.29999999999514,
+        "kind": "death-pose-released",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "turn": 2
+      },
+      {
+        "clock": 108.29999999999514,
+        "effect": "fireworks",
+        "id": 1,
+        "kind": "chaos-queued",
+        "owner": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "turn": 2,
+        "x": 5993.4580078125,
+        "y": 547.1146240234375
+      },
+      {
+        "clock": 108.29999999999514,
+        "effect": "fireworks",
+        "id": 1,
+        "kind": "chaos-started",
+        "turn": 2,
+        "x": 5993.4580078125,
+        "y": 547.1146240234375
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 108.29999999999514,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 828,
+        "turn": 2
+      },
+      {
+        "clock": 108.29999999999514,
+        "color": "#70F8A0",
+        "eyebrow": "TURN 2 COMPLETE",
+        "id": 5,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "1 kills \u00b7 Round earned $490.00",
+        "seconds": 1,
+        "sub": "Every crater counts.",
+        "title": "M10 Mole",
+        "turn": 2
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 108.3666666666618,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 848,
+        "turn": 2
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 108.44999999999511,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 868,
+        "turn": 2
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 108.53333333332846,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 888,
+        "turn": 2
+      },
+      {
+        "clock": 108.54999999999512,
+        "id": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "kind": "land",
+        "turn": 2
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 108.6166666666618,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 908,
+        "turn": 2
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 108.6166666666618,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 923,
+        "turn": 2
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 108.68333333332843,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 938,
+        "turn": 2
+      },
+      {
+        "action": "hit",
+        "amount": 20,
+        "clock": 108.68333333332843,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 958,
+        "turn": 2
+      },
+      {
+        "action": "damage",
+        "amount": 186,
+        "clock": 108.68333333332843,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1144,
+        "turn": 2
+      },
+      {
+        "action": "hurt",
+        "amount": 62,
+        "clock": 108.68333333332843,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 552,
+        "turn": 2
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 108.69999999999511,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1164,
+        "turn": 2
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 108.69999999999511,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1179,
+        "turn": 2
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 108.76666666666178,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1199,
+        "turn": 2
+      },
+      {
+        "clock": 108.79999999999512,
+        "elapsed": 1.000000000000001,
+        "id": 5,
+        "kind": "arcade-ended",
+        "turn": 2
+      },
+      {
+        "clock": 108.83333333332844,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 108.8499999999951,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1219,
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 108.93333333332843,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1239,
+        "turn": 3
+      },
+      {
+        "clock": 108.9499999999951,
+        "id": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 108.9999999999951,
+        "color": "#EC3555",
+        "eyebrow": "TURN 3 / COMMAND CARTRIDGE",
+        "id": 6,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "",
+        "seconds": 1,
+        "sub": "Make a crater.",
+        "title": "M10 Kiloton",
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 109.01666666666176,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1259,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 109.03333333332844,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1274,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 109.0499999999951,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1289,
+        "turn": 3
+      },
+      {
+        "clock": 109.08333333332844,
+        "effect": "fireworks",
+        "elapsed": 0.8000000000000008,
+        "id": 1,
+        "kind": "chaos-emission-ended",
+        "launched": 10,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 109.31666666666176,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1304,
+        "turn": 3
+      },
+      {
+        "clock": 109.49999999999508,
+        "elapsed": 1.000000000000001,
+        "id": 6,
+        "kind": "arcade-ended",
+        "turn": 3
+      },
+      {
+        "action": "turn",
+        "amount": 10,
+        "clock": 109.49999999999508,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 34,
+        "turn": 3
+      },
+      {
+        "clock": 109.49999999999508,
+        "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "kind": "turn",
+        "name": "M10 Kiloton",
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 109.7333333333284,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1319,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 110.0666666666617,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1334,
+        "turn": 3
+      },
+      {
+        "action": "death",
+        "amount": 100,
+        "clock": 110.0666666666617,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 652,
+        "turn": 3
+      },
+      {
+        "action": "kill",
+        "amount": 100,
+        "clock": 110.0666666666617,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1434,
+        "turn": 3
+      },
+      {
+        "clock": 110.0666666666617,
+        "kind": "death-pose-held",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "seconds": 4,
+        "turn": 3
+      },
+      {
+        "clock": 110.0666666666617,
+        "killer": "M10 Fuse",
+        "kind": "eliminated",
+        "name": "M10 Mole",
+        "reason": "destroyed",
+        "turn": 3
+      },
+      {
+        "action": "hit",
+        "amount": 20,
+        "clock": 110.0666666666617,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1454,
+        "turn": 3
+      },
+      {
+        "action": "damage",
+        "amount": 25,
+        "clock": 110.0666666666617,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1479,
+        "turn": 3
+      },
+      {
+        "action": "hurt",
+        "amount": 8,
+        "clock": 110.0666666666617,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 660,
+        "turn": 3
+      },
+      {
+        "after": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 24.35327293314549,
+          "fuel": 5.557213219397363,
+          "spent": 0.44278678060264504
+        },
+        "before": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 0,
+          "fuel": 6,
+          "spent": 0
+        },
+        "clock": 110.08333333332835,
+        "item": "fuel-tank",
+        "kind": "utility",
+        "name": "M10 Kiloton",
+        "turn": 3
+      },
+      {
+        "clock": 110.08333333332835,
+        "kind": "presentation-centered",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "speechKind": "death",
+        "turn": 3,
+        "x": 6097.25390625,
+        "y": 625.6585083007812
+      },
+      {
+        "clock": 110.08333333332835,
+        "id": "[\"terra-burrow-union\",null,\"death\",\"neutral\",\"The hill has outlived our arrangement.\"]",
+        "kind": "quip",
+        "name": "M10 Mole",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "speechKind": "death",
+        "text": "The hill has outlived our arrangement.",
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 110.08333333332835,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1494,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 110.13333333332837,
+        "kind": "cash",
+        "name": "M10 Fuse",
+        "total": 1509,
+        "turn": 3
+      },
+      {
+        "clock": 110.14999999999505,
+        "effect": "fireworks",
+        "elapsed": 1.866666666666665,
+        "ended": 10,
+        "id": 1,
+        "kind": "chaos-ended",
+        "launched": 10,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 3
+      },
+      {
+        "clock": 113.09999999999486,
+        "elapsed": 3.016666666666495,
+        "kind": "presentation-ended",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "speechKind": "death",
+        "turn": 3
+      },
+      {
+        "clock": 113.09999999999486,
+        "kind": "death-pose-released",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "turn": 3
+      },
+      {
+        "clock": 113.09999999999486,
+        "effect": "fireworks",
+        "id": 2,
+        "kind": "chaos-queued",
+        "owner": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "turn": 3,
+        "x": 6097.25390625,
+        "y": 625.6585083007812
+      },
+      {
+        "clock": 113.09999999999486,
+        "control": "cpu",
+        "kind": "flip-upright",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "pose": {
+          "alive": true,
+          "angle": -0.4213387668132782,
+          "chunk": {
+            "x": 98,
+            "y": 9
+          },
+          "faction": "terra-heavy-weather",
+          "health": 75.93861316463608,
+          "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 4,
+          "maxHealth": 100,
+          "name": "M10 Kiloton",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+          "vx": 0,
+          "vy": 0,
+          "x": 6335.85302734375,
+          "y": 637.3543090820312
+        },
+        "receipt": {
+          "accepted": true,
+          "reason": "ok"
+        },
+        "turn": 3
+      },
+      {
+        "clock": 113.09999999999486,
+        "effect": "fireworks",
+        "id": 2,
+        "kind": "chaos-started",
+        "turn": 3,
+        "x": 6097.25390625,
+        "y": 625.6585083007812
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 113.09999999999486,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 680,
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 113.16666666666153,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 700,
+        "turn": 3
+      },
+      {
+        "clock": 113.19999999999486,
+        "distance": 151.681640625,
+        "elevation": 21.4141845703125,
+        "high": true,
+        "kind": "cpu-plan",
+        "name": "M10 Kiloton",
+        "rise": 35.35394287109375,
+        "target": "M10 Faultline",
+        "turn": 3
+      },
+      {
+        "angle": 8.035823999998968,
+        "clock": 113.19999999999486,
+        "kind": "cpu-direct-aim",
+        "name": "M10 Kiloton",
+        "target": {
+          "x": 6487.53466796875,
+          "y": 615.9397583007812
+        },
+        "turn": 3
+      },
+      {
+        "clock": 113.19999999999486,
+        "kind": "presentation-centered",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "speechKind": "shooting",
+        "turn": 3,
+        "x": 6335.85302734375,
+        "y": 637.3539428710938
+      },
+      {
+        "clock": 113.19999999999486,
+        "id": "[\"terra-heavy-weather\",null,\"taunt\",\"neutral\",\"Measure twice, crater once.\"]",
+        "kind": "quip",
+        "name": "M10 Kiloton",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "speechKind": "shooting",
+        "text": "Measure twice, crater once.",
+        "turn": 3
+      },
+      {
+        "clock": 113.19999999999486,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 113.24999999999486,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 720,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 113.26666666666152,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 735,
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 113.33333333332818,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 755,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 113.38333333332818,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 770,
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 113.41666666666153,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 790,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 113.46666666666152,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 805,
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 113.49999999999484,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 825,
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 113.5666666666615,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 845,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 113.5666666666615,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 860,
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 113.64999999999483,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 880,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 113.6666666666615,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 895,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 113.6666666666615,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 910,
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 113.73333333332816,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 930,
+        "turn": 3
+      },
+      {
+        "clock": 113.74999999999484,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 113.81666666666148,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 950,
+        "turn": 3
+      },
+      {
+        "clock": 113.83333333332816,
+        "id": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+        "kind": "land",
+        "turn": 3
+      },
+      {
+        "clock": 113.88333333332815,
+        "effect": "fireworks",
+        "elapsed": 0.8000000000000008,
+        "id": 2,
+        "kind": "chaos-emission-ended",
+        "launched": 10,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 113.9999999999948,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 965,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 114.41666666666146,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 980,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 114.56666666666143,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 995,
+        "turn": 3
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 114.66666666666144,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 1010,
+        "turn": 3
+      },
+      {
+        "action": "hit",
+        "amount": 20,
+        "clock": 114.66666666666144,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 1030,
+        "turn": 3
+      },
+      {
+        "action": "damage",
+        "amount": 23,
+        "clock": 114.66666666666144,
+        "kind": "cash",
+        "name": "M10 Mole",
+        "total": 1053,
+        "turn": 3
+      },
+      {
+        "action": "hurt",
+        "amount": 8,
+        "clock": 114.66666666666144,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 42,
+        "turn": 3
+      },
+      {
+        "clock": 114.68333333332812,
+        "effect": "fireworks",
+        "elapsed": 1.5999999999999992,
+        "ended": 10,
+        "id": 2,
+        "kind": "chaos-ended",
+        "launched": 10,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 3
+      },
+      {
+        "clock": 116.21666666666135,
+        "elapsed": 3.016666666666495,
+        "kind": "presentation-ended",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "speechKind": "shooting",
+        "turn": 3
+      },
+      {
+        "angle": 8.035823999998968,
+        "clock": 116.21666666666135,
+        "kind": "fire-request",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "power": 100,
+        "turn": 3
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 116.21666666666135,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 62,
+        "turn": 3
+      },
+      {
+        "clock": 116.21666666666135,
+        "item": "machine-gun",
+        "kind": "ammo-spent",
+        "name": "M10 Kiloton",
+        "remaining": 3,
+        "turn": 3
+      },
+      {
+        "clock": 116.21666666666135,
+        "depth": 0,
+        "id": 28,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 28,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2178.39794921875,
+          "vy": -307.54290771484375,
+          "x": 6370.5,
+          "y": 632.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 116.29999999999468,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 82,
+        "turn": 3
+      },
+      {
+        "clock": 116.29999999999468,
+        "depth": 1,
+        "id": 29,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 29,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2175.474853515625,
+          "vy": -327.5802917480469,
+          "x": 6370.5,
+          "y": 631.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 116.34999999999468,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 97,
+        "turn": 3
+      },
+      {
+        "clock": 116.34999999999468,
+        "element": "IRON",
+        "id": 29,
+        "kind": "collision",
+        "turn": 3,
+        "with": "body",
+        "x": 6467.22998046875,
+        "y": 619.423095703125
+      },
+      {
+        "clock": 116.34999999999468,
+        "id": 29,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6467.22998046875,
+        "y": 619.423095703125
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 116.34999999999468,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 112,
+        "turn": 3
+      },
+      {
+        "clock": 116.34999999999468,
+        "element": "IRON",
+        "id": 28,
+        "kind": "collision",
+        "turn": 3,
+        "with": "body",
+        "x": 6654.91064453125,
+        "y": 591.1956787109375
+      },
+      {
+        "clock": 116.34999999999468,
+        "id": 28,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6654.91064453125,
+        "y": 591.1956787109375
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 116.383333333328,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 132,
+        "turn": 3
+      },
+      {
+        "clock": 116.383333333328,
+        "depth": 1,
+        "id": 30,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 30,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2177.805908203125,
+          "vy": -311.70758056640625,
+          "x": 6370.5,
+          "y": 632.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 116.433333333328,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 147,
+        "turn": 3
+      },
+      {
+        "clock": 116.433333333328,
+        "element": "IRON",
+        "id": 30,
+        "kind": "collision",
+        "turn": 3,
+        "with": "body",
+        "x": 6466.6005859375,
+        "y": 621.2163696289062
+      },
+      {
+        "clock": 116.433333333328,
+        "id": 30,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6466.6005859375,
+        "y": 621.2163696289062
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 116.46666666666134,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 167,
+        "turn": 3
+      },
+      {
+        "clock": 116.46666666666134,
+        "depth": 1,
+        "id": 31,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 31,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2173.284423828125,
+          "vy": -341.81060791015625,
+          "x": 6370.5,
+          "y": 631.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 116.51666666666134,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 182,
+        "turn": 3
+      },
+      {
+        "clock": 116.51666666666134,
+        "element": "IRON",
+        "id": 31,
+        "kind": "collision",
+        "turn": 3,
+        "with": "body",
+        "x": 6467.4638671875,
+        "y": 618.7537841796875
+      },
+      {
+        "clock": 116.51666666666134,
+        "id": 31,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6467.4638671875,
+        "y": 618.7537841796875
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 116.54999999999468,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 202,
+        "turn": 3
+      },
+      {
+        "clock": 116.54999999999468,
+        "depth": 1,
+        "id": 32,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 32,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2174.177978515625,
+          "vy": -336.0805358886719,
+          "x": 6370.5,
+          "y": 631.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 116.59999999999468,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 217,
+        "turn": 3
+      },
+      {
+        "clock": 116.59999999999468,
+        "element": "IRON",
+        "id": 32,
+        "kind": "collision",
+        "turn": 3,
+        "with": "body",
+        "x": 6467.369140625,
+        "y": 619.02392578125
+      },
+      {
+        "clock": 116.59999999999468,
+        "id": 32,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6467.369140625,
+        "y": 619.02392578125
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 116.633333333328,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 237,
+        "turn": 3
+      },
+      {
+        "clock": 116.633333333328,
+        "depth": 1,
+        "id": 33,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 33,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2183.10302734375,
+          "vy": -272.1418151855469,
+          "x": 6371.5,
+          "y": 632.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 116.683333333328,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 252,
+        "turn": 3
+      },
+      {
+        "clock": 116.683333333328,
+        "element": "IRON",
+        "id": 33,
+        "kind": "collision",
+        "turn": 3,
+        "with": "body",
+        "x": 6466.53662109375,
+        "y": 621.39697265625
+      },
+      {
+        "clock": 116.683333333328,
+        "id": 33,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6466.53662109375,
+        "y": 621.39697265625
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 116.69999999999466,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 272,
+        "turn": 3
+      },
+      {
+        "clock": 116.69999999999466,
+        "depth": 1,
+        "id": 34,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 34,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2179.79345703125,
+          "vy": -297.48992919921875,
+          "x": 6371.5,
+          "y": 632.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 116.74999999999466,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 287,
+        "turn": 3
+      },
+      {
+        "clock": 116.74999999999466,
+        "element": "IRON",
+        "id": 34,
+        "kind": "collision",
+        "turn": 3,
+        "with": "body",
+        "x": 6466.53662109375,
+        "y": 621.396484375
+      },
+      {
+        "clock": 116.74999999999466,
+        "id": 34,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6466.53662109375,
+        "y": 621.396484375
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 116.783333333328,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 307,
+        "turn": 3
+      },
+      {
+        "clock": 116.783333333328,
+        "depth": 1,
+        "id": 35,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 35,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2183.480712890625,
+          "vy": -269.0947570800781,
+          "x": 6371.5,
+          "y": 632.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 116.833333333328,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 322,
+        "turn": 3
+      },
+      {
+        "clock": 116.833333333328,
+        "id": 35,
+        "kind": "collision",
+        "turn": 3,
+        "with": "terrain",
+        "x": 6461.75,
+        "y": 619.6846923828125
+      },
+      {
+        "clock": 116.833333333328,
+        "id": 35,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6461.75,
+        "y": 619.6846923828125
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 116.86666666666132,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 342,
+        "turn": 3
+      },
+      {
+        "clock": 116.86666666666132,
+        "depth": 1,
+        "id": 36,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 36,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2179.9609375,
+          "vy": -296.2613525390625,
+          "x": 6371.5,
+          "y": 632.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 116.91666666666131,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 357,
+        "turn": 3
+      },
+      {
+        "clock": 116.91666666666131,
+        "element": "IRON",
+        "id": 36,
+        "kind": "collision",
+        "turn": 3,
+        "with": "body",
+        "x": 6466.25537109375,
+        "y": 617.7528686523438
+      },
+      {
+        "clock": 116.91666666666131,
+        "id": 36,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6466.25537109375,
+        "y": 617.7528686523438
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 116.94999999999465,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 377,
+        "turn": 3
+      },
+      {
+        "clock": 116.94999999999465,
+        "depth": 1,
+        "id": 37,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 37,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2180.8427734375,
+          "vy": -289.69842529296875,
+          "x": 6371.5,
+          "y": 632.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 117.01666666666132,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 392,
+        "turn": 3
+      },
+      {
+        "clock": 117.01666666666132,
+        "element": "IRON",
+        "id": 37,
+        "kind": "collision",
+        "turn": 3,
+        "with": "body",
+        "x": 6485.00341796875,
+        "y": 615.5623168945312
+      },
+      {
+        "clock": 117.01666666666132,
+        "id": 37,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6485.00341796875,
+        "y": 615.5623168945312
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 117.03333333332796,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 412,
+        "turn": 3
+      },
+      {
+        "clock": 117.03333333332796,
+        "depth": 1,
+        "id": 38,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 38,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2177.67919921875,
+          "vy": -312.5909118652344,
+          "x": 6370.5,
+          "y": 632.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 117.08333333332796,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 427,
+        "turn": 3
+      },
+      {
+        "clock": 117.08333333332796,
+        "id": 38,
+        "kind": "collision",
+        "turn": 3,
+        "with": "body",
+        "x": 6481.4716796875,
+        "y": 614.54150390625
+      },
+      {
+        "clock": 117.08333333332796,
+        "id": 38,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6481.4716796875,
+        "y": 614.54150390625
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 117.09999999999464,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 447,
+        "turn": 3
+      },
+      {
+        "clock": 117.09999999999464,
+        "depth": 1,
+        "id": 39,
+        "kind": "launch",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 39,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "vx": 2174.81298828125,
+          "vy": -331.947021484375,
+          "x": 6370.5,
+          "y": 631.5
+        },
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 117.14999999999463,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 462,
+        "turn": 3
+      },
+      {
+        "clock": 117.14999999999463,
+        "id": 39,
+        "kind": "collision",
+        "turn": 3,
+        "with": "body",
+        "x": 6476.22802734375,
+        "y": 613.5210571289062
+      },
+      {
+        "clock": 117.14999999999463,
+        "id": 39,
+        "kind": "end",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6476.22802734375,
+        "y": 613.5210571289062
+      },
+      {
+        "clock": 117.1666666666613,
+        "ended": 12,
+        "kind": "attack-resolved",
+        "launched": 12,
+        "turn": 3,
+        "weapon": "machine-gun"
+      },
+      {
+        "clock": 120.14999999999446,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6284.22802734375,
+          "y": 485.52105712890625
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 3,
+        "watchId": 3
+      },
+      {
+        "clock": 120.14999999999446,
+        "color": "#EC3555",
+        "eyebrow": "TURN 3 COMPLETE",
+        "id": 7,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "0 kills \u00b7 Round earned $462.00",
+        "seconds": 1,
+        "sub": "Every crater counts.",
+        "title": "M10 Kiloton",
+        "turn": 3
+      },
+      {
+        "clock": 120.64999999999444,
+        "elapsed": 1.000000000000001,
+        "id": 7,
+        "kind": "arcade-ended",
+        "turn": 3
+      },
+      {
+        "clock": 120.84999999999442,
+        "color": "#A574F4",
+        "eyebrow": "TURN 4 / COMMAND CARTRIDGE",
+        "id": 8,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "",
+        "seconds": 1,
+        "sub": "Make a crater.",
+        "title": "M10 Faultline",
+        "turn": 4
+      },
+      {
+        "clock": 121.3499999999944,
+        "elapsed": 1.000000000000001,
+        "id": 8,
+        "kind": "arcade-ended",
+        "turn": 4
+      },
+      {
+        "action": "turn",
+        "amount": 10,
+        "clock": 121.3499999999944,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 10,
+        "turn": 4
+      },
+      {
+        "clock": 121.3499999999944,
+        "id": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "kind": "turn",
+        "name": "M10 Faultline",
+        "turn": 4
+      },
+      {
+        "after": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 10.62241858028574,
+          "fuel": 5.806865116722069,
+          "spent": 0.19313488327792247
+        },
+        "before": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 0,
+          "fuel": 6,
+          "spent": 0
+        },
+        "clock": 122.16666666666102,
+        "item": "fuel-tank",
+        "kind": "utility",
+        "name": "M10 Faultline",
+        "turn": 4
+      },
+      {
+        "clock": 122.16666666666102,
+        "distance": 141.0595703125,
+        "elevation": -21.11700439453125,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M10 Faultline",
+        "rise": 0,
+        "target": "M10 Kiloton",
+        "turn": 4
+      },
+      {
+        "action": "aim",
+        "amount": 3,
+        "clock": 122.16666666666102,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 13,
+        "turn": 4
+      },
+      {
+        "action": "power",
+        "amount": 3,
+        "clock": 122.16666666666102,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 16,
+        "turn": 4
+      },
+      {
+        "angle": 135,
+        "clock": 122.16666666666102,
+        "kind": "cpu-aimed",
+        "name": "M10 Faultline",
+        "origin": {
+          "x": 6476.91259765625,
+          "y": 616.4793701171875
+        },
+        "power": 10.72943015360701,
+        "tactic": "Close-range shot",
+        "target": {
+          "x": 6335.85302734375,
+          "y": 637.5963745117188
+        },
+        "turn": 4,
+        "weapon": {
+          "ammo": {
+            "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+            "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 0,
+            "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+            "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+            "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+            "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+            "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+            "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+            "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+            "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+            "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 0,
+            "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+            "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+            "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+            "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 3,
+            "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+            "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+            "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+            "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+            "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+            "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+            "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+            "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 0,
+            "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+            "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+            "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+            "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+            "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+            "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+            "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+            "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+            "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+            "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+            "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+          },
+          "angle": -2.356194490192345,
+          "equipped": "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+          "gravityScale": 1,
+          "items": [
+            "219d46ea-fa7c-4578-b119-bba07279e6f0",
+            "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+            "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+            "9dd9a83c-66b3-4720-a798-b7ce47372022",
+            "fa168217-924a-4b95-b7f2-025d856f5b88",
+            "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+            "70446b65-1a75-4950-840a-443f28dc58a6",
+            "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+            "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+            "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+            "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+            "2ee512d3-c721-4978-a1a5-b97d42255b13",
+            "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+            "a80f054a-6235-4746-b050-8d5cd248dd57",
+            "b4474e78-1c10-4d79-994d-d900ed050664",
+            "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+            "173004dc-1907-43e3-9e01-10f4b7084523",
+            "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+            "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+            "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+            "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+            "1a4d56f6-0058-471f-a4bf-77548338012c",
+            "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+            "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+            "e1a46386-8976-4b3c-9408-0159b3f64235",
+            "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+            "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+            "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+            "2e0a754f-eb50-487b-b90a-907a3a43159a",
+            "780f5cdb-7252-4a69-987b-b908477015ad",
+            "815021a5-49a0-4790-91dd-b5b61a3c5050",
+            "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+            "bb0da974-5d0f-4644-a6da-278758d07d9f",
+            "9cb680d4-3edf-451b-81da-ebbb514808bb",
+            "e3a20e82-7e11-4ef9-bce2-903255ebb4dc"
+          ],
+          "kind": "rigid-body",
+          "localAngle": -2.426862204072884,
+          "pinned": true,
+          "power": 0.1072943015360701,
+          "speed": {
+            "current": 282.4003126113192,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "clock": 123.59999999999428,
+        "kind": "presentation-centered",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "speechKind": "shooting",
+        "turn": 4,
+        "x": 6476.91259765625,
+        "y": 616.4688720703125
+      },
+      {
+        "clock": 123.59999999999428,
+        "id": "[\"terra-gravity-office\",null,\"taunt\",\"neutral\",\"I challenge your coordinates to a duel.\"]",
+        "kind": "quip",
+        "name": "M10 Faultline",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "speechKind": "shooting",
+        "text": "I challenge your coordinates to a duel.",
+        "turn": 4
+      },
+      {
+        "clock": 126.61666666666076,
+        "elapsed": 3.016666666666495,
+        "kind": "presentation-ended",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "speechKind": "shooting",
+        "turn": 4
+      },
+      {
+        "angle": 135,
+        "clock": 126.61666666666076,
+        "kind": "fire-request",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "power": 10.72943015360701,
+        "turn": 4
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 126.61666666666076,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 36,
+        "turn": 4
+      },
+      {
+        "clock": 126.61666666666076,
+        "item": "funky",
+        "kind": "ammo-spent",
+        "name": "M10 Faultline",
+        "remaining": 2,
+        "turn": 4
+      },
+      {
+        "clock": 126.61666666666076,
+        "depth": 0,
+        "id": 40,
+        "kind": "launch",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 40,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "vx": -199.6871795654297,
+          "vy": -199.6871795654297,
+          "x": 6450.5,
+          "y": 593.5
+        },
+        "turn": 4,
+        "weapon": "funky"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 127.63333333332736,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 51,
+        "turn": 4
+      },
+      {
+        "clock": 127.63333333332736,
+        "id": 40,
+        "kind": "collision",
+        "turn": 4,
+        "with": "terrain",
+        "x": 6249,
+        "y": 726.75
+      },
+      {
+        "clock": 127.63333333332736,
+        "id": 40,
+        "kind": "end",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 4,
+        "x": 6249,
+        "y": 726.75
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 127.64999999999404,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 71,
+        "turn": 4
+      },
+      {
+        "clock": 127.64999999999404,
+        "depth": 1,
+        "id": 41,
+        "kind": "launch",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 41,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "vx": -260.355712890625,
+          "vy": -103.02865600585938,
+          "x": 6248.5,
+          "y": 718.5
+        },
+        "turn": 4,
+        "weapon": "funky"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 127.64999999999404,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 91,
+        "turn": 4
+      },
+      {
+        "clock": 127.64999999999404,
+        "depth": 1,
+        "id": 42,
+        "kind": "launch",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 42,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "vx": -239.72930908203125,
+          "vy": -144.6715545654297,
+          "x": 6248.5,
+          "y": 718.5
+        },
+        "turn": 4,
+        "weapon": "funky"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 127.64999999999404,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 111,
+        "turn": 4
+      },
+      {
+        "clock": 127.64999999999404,
+        "depth": 1,
+        "id": 43,
+        "kind": "launch",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 43,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "vx": -241.86541748046875,
+          "vy": -141.07131958007812,
+          "x": 6248.5,
+          "y": 718.5
+        },
+        "turn": 4,
+        "weapon": "funky"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 127.64999999999404,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 131,
+        "turn": 4
+      },
+      {
+        "clock": 127.64999999999404,
+        "depth": 1,
+        "id": 44,
+        "kind": "launch",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 44,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "vx": -112.1837158203125,
+          "vy": -256.5439758300781,
+          "x": 6248.5,
+          "y": 718.5
+        },
+        "turn": 4,
+        "weapon": "funky"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 127.64999999999404,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 151,
+        "turn": 4
+      },
+      {
+        "clock": 127.64999999999404,
+        "depth": 1,
+        "id": 45,
+        "kind": "launch",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 45,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "vx": 29.028717041015625,
+          "vy": -278.4911804199219,
+          "x": 6248.5,
+          "y": 718.5
+        },
+        "turn": 4,
+        "weapon": "funky"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 127.64999999999404,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 171,
+        "turn": 4
+      },
+      {
+        "clock": 127.64999999999404,
+        "depth": 1,
+        "id": 46,
+        "kind": "launch",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 46,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "vx": -252.2313537597656,
+          "vy": -121.57032012939452,
+          "x": 6248.5,
+          "y": 718.5
+        },
+        "turn": 4,
+        "weapon": "funky"
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 127.64999999999404,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 191,
+        "turn": 4
+      },
+      {
+        "clock": 127.64999999999404,
+        "depth": 1,
+        "id": 47,
+        "kind": "launch",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 47,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "vx": -261.7782287597656,
+          "vy": -99.35871887207033,
+          "x": 6248.5,
+          "y": 718.5
+        },
+        "turn": 4,
+        "weapon": "funky"
+      },
+      {
+        "clock": 127.64999999999404,
+        "count": 7,
+        "kind": "warheads-split",
+        "mode": "cluster",
+        "turn": 4,
+        "weapon": "funky",
+        "x": 6249,
+        "y": 726.75
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 127.7166666666607,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 206,
+        "turn": 4
+      },
+      {
+        "clock": 127.7166666666607,
+        "element": "SAND",
+        "id": 42,
+        "kind": "collision",
+        "turn": 4,
+        "with": "particle",
+        "x": 6235.5,
+        "y": 711.5
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 127.7166666666607,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 221,
+        "turn": 4
+      },
+      {
+        "clock": 127.7166666666607,
+        "element": "SAND",
+        "id": 43,
+        "kind": "collision",
+        "turn": 4,
+        "with": "particle",
+        "x": 6235.5,
+        "y": 711.5
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 127.7166666666607,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 236,
+        "turn": 4
+      },
+      {
+        "clock": 127.7166666666607,
+        "element": "SAND",
+        "id": 46,
+        "kind": "collision",
+        "turn": 4,
+        "with": "particle",
+        "x": 6231.5,
+        "y": 711.5
+      },
+      {
+        "clock": 127.7166666666607,
+        "id": 42,
+        "kind": "end",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 4,
+        "x": 6235.5,
+        "y": 711.5
+      },
+      {
+        "clock": 127.7166666666607,
+        "id": 43,
+        "kind": "end",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 4,
+        "x": 6235.5,
+        "y": 711.5
+      },
+      {
+        "clock": 127.7166666666607,
+        "id": 46,
+        "kind": "end",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 4,
+        "x": 6231.5,
+        "y": 711.5
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 127.79999999999404,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 251,
+        "turn": 4
+      },
+      {
+        "clock": 127.79999999999404,
+        "element": "SAND",
+        "id": 45,
+        "kind": "collision",
+        "turn": 4,
+        "with": "particle",
+        "x": 6252.5,
+        "y": 685.5
+      },
+      {
+        "clock": 127.79999999999404,
+        "id": 45,
+        "kind": "end",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 4,
+        "x": 6252.5,
+        "y": 685.5
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 127.8166666666607,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 266,
+        "turn": 4
+      },
+      {
+        "clock": 127.8166666666607,
+        "element": "DIRT",
+        "id": 41,
+        "kind": "collision",
+        "turn": 4,
+        "with": "particle",
+        "x": 6207.5,
+        "y": 710.5
+      },
+      {
+        "clock": 127.8166666666607,
+        "id": 41,
+        "kind": "end",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 4,
+        "x": 6207.5,
+        "y": 710.5
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 127.8166666666607,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 281,
+        "turn": 4
+      },
+      {
+        "clock": 127.8166666666607,
+        "id": 47,
+        "kind": "collision",
+        "turn": 4,
+        "with": "terrain",
+        "x": 6204.25,
+        "y": 713.2730102539062
+      },
+      {
+        "clock": 127.8166666666607,
+        "id": 47,
+        "kind": "end",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 4,
+        "x": 6204.25,
+        "y": 713.2730102539062
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 128.03333333332736,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 296,
+        "turn": 4
+      },
+      {
+        "clock": 128.03333333332736,
+        "element": "SAND",
+        "id": 44,
+        "kind": "collision",
+        "turn": 4,
+        "with": "particle",
+        "x": 6206.5,
+        "y": 668.5
+      },
+      {
+        "clock": 128.03333333332736,
+        "id": 44,
+        "kind": "end",
+        "owner": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 4,
+        "x": 6206.5,
+        "y": 668.5
+      },
+      {
+        "clock": 128.04999999999404,
+        "ended": 8,
+        "kind": "attack-resolved",
+        "launched": 8,
+        "turn": 4,
+        "weapon": "funky"
+      },
+      {
+        "clock": 131.03333333332975,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6014.5,
+          "y": 540.5
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 4,
+        "watchId": 4
+      },
+      {
+        "clock": 131.03333333332975,
+        "color": "#A574F4",
+        "eyebrow": "TURN 4 COMPLETE",
+        "id": 9,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "0 kills \u00b7 Round earned $296.00",
+        "seconds": 1,
+        "sub": "Every crater counts.",
+        "title": "M10 Faultline",
+        "turn": 4
+      },
+      {
+        "clock": 131.53333333333015,
+        "elapsed": 1.000000000000001,
+        "id": 9,
+        "kind": "arcade-ended",
+        "turn": 4
+      },
+      {
+        "clock": 131.7333333333303,
+        "color": "#35D9FF",
+        "eyebrow": "TURN 5 / COMMAND CARTRIDGE",
+        "id": 10,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "",
+        "seconds": 1,
+        "sub": "Make a crater.",
+        "title": "M10 Domino",
+        "turn": 5
+      },
+      {
+        "clock": 132.2333333333307,
+        "elapsed": 1.000000000000001,
+        "id": 10,
+        "kind": "arcade-ended",
+        "turn": 5
+      },
+      {
+        "action": "turn",
+        "amount": 10,
+        "clock": 132.2333333333307,
+        "kind": "cash",
+        "name": "M10 Domino",
+        "total": 10,
+        "turn": 5
+      },
+      {
+        "clock": 132.2333333333307,
+        "id": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "kind": "turn",
+        "name": "M10 Domino",
+        "turn": 5
+      },
+      {
+        "after": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 31.80574378984238,
+          "fuel": 5.421713749275584,
+          "spent": 0.5782862507244069
+        },
+        "before": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 0,
+          "fuel": 6,
+          "spent": 0
+        },
+        "clock": 133.03333333333134,
+        "item": "fuel-tank",
+        "kind": "utility",
+        "name": "M10 Domino",
+        "turn": 5
+      },
+      {
+        "clock": 133.03333333333134,
+        "distance": 143.2958984375,
+        "elevation": -20.2581787109375,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M10 Domino",
+        "rise": 0,
+        "target": "M10 Twin Fuse",
+        "turn": 5
+      },
+      {
+        "action": "aim",
+        "amount": 3,
+        "clock": 133.03333333333134,
+        "kind": "cash",
+        "name": "M10 Domino",
+        "total": 13,
+        "turn": 5
+      },
+      {
+        "action": "power",
+        "amount": 3,
+        "clock": 133.03333333333134,
+        "kind": "cash",
+        "name": "M10 Domino",
+        "total": 16,
+        "turn": 5
+      },
+      {
+        "angle": 45,
+        "clock": 133.03333333333134,
+        "kind": "cpu-aimed",
+        "name": "M10 Domino",
+        "origin": {
+          "x": 6693.70166015625,
+          "y": 566.6788330078125
+        },
+        "power": 10.921575724792492,
+        "tactic": "Close-range shot",
+        "target": {
+          "x": 6836.99755859375,
+          "y": 586.93701171875
+        },
+        "turn": 5,
+        "weapon": {
+          "ammo": {
+            "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+            "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 0,
+            "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+            "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+            "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+            "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+            "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+            "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+            "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+            "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+            "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 0,
+            "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+            "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+            "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+            "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+            "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+            "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+            "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+            "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+            "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+            "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+            "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+            "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 3,
+            "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+            "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+            "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+            "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+            "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+            "dbf78db4-cfdc-40f0-a539-99aac14d205c": 0,
+            "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+            "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+            "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+            "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+            "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+          },
+          "angle": -0.7853981633974483,
+          "equipped": "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+          "gravityScale": 1,
+          "items": [
+            "219d46ea-fa7c-4578-b119-bba07279e6f0",
+            "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+            "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+            "9dd9a83c-66b3-4720-a798-b7ce47372022",
+            "fa168217-924a-4b95-b7f2-025d856f5b88",
+            "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+            "70446b65-1a75-4950-840a-443f28dc58a6",
+            "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+            "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+            "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+            "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+            "2ee512d3-c721-4978-a1a5-b97d42255b13",
+            "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+            "a80f054a-6235-4746-b050-8d5cd248dd57",
+            "b4474e78-1c10-4d79-994d-d900ed050664",
+            "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+            "173004dc-1907-43e3-9e01-10f4b7084523",
+            "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+            "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+            "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+            "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+            "1a4d56f6-0058-471f-a4bf-77548338012c",
+            "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+            "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+            "e1a46386-8976-4b3c-9408-0159b3f64235",
+            "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+            "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+            "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+            "2e0a754f-eb50-487b-b90a-907a3a43159a",
+            "780f5cdb-7252-4a69-987b-b908477015ad",
+            "815021a5-49a0-4790-91dd-b5b61a3c5050",
+            "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+            "bb0da974-5d0f-4644-a6da-278758d07d9f",
+            "9cb680d4-3edf-451b-81da-ebbb514808bb",
+            "e3a20e82-7e11-4ef9-bce2-903255ebb4dc"
+          ],
+          "kind": "rigid-body",
+          "localAngle": -0.8369512786461284,
+          "pinned": true,
+          "power": 0.10921575724792491,
+          "speed": {
+            "current": 285.6667873214724,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "clock": 134.44999999999914,
+        "kind": "presentation-centered",
+        "owner": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "speechKind": "shooting",
+        "turn": 5,
+        "x": 6693.70166015625,
+        "y": 568.0057983398438
+      },
+      {
+        "clock": 134.44999999999914,
+        "id": "[\"terra-cascade-institute\",null,\"taunt\",\"neutral\",\"I am aiming for critical acclaim.\"]",
+        "kind": "quip",
+        "name": "M10 Domino",
+        "owner": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "speechKind": "shooting",
+        "text": "I am aiming for critical acclaim.",
+        "turn": 5
+      },
+      {
+        "clock": 137.45000000000152,
+        "elapsed": 3.000000000002387,
+        "kind": "presentation-ended",
+        "owner": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "speechKind": "shooting",
+        "turn": 5
+      },
+      {
+        "angle": 45,
+        "clock": 137.45000000000152,
+        "kind": "fire-request",
+        "owner": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "power": 10.921575724792492,
+        "turn": 5
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 137.45000000000152,
+        "kind": "cash",
+        "name": "M10 Domino",
+        "total": 36,
+        "turn": 5
+      },
+      {
+        "clock": 137.45000000000152,
+        "item": "napalm",
+        "kind": "ammo-spent",
+        "name": "M10 Domino",
+        "remaining": 2,
+        "turn": 5
+      },
+      {
+        "clock": 137.45000000000152,
+        "depth": 0,
+        "id": 48,
+        "kind": "launch",
+        "owner": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 48,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+          "vx": 201.99691772460935,
+          "vy": -201.99691772460935,
+          "x": 6718.5,
+          "y": 542.5
+        },
+        "turn": 5,
+        "weapon": "napalm"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 138.3833333333356,
+        "kind": "cash",
+        "name": "M10 Domino",
+        "total": 51,
+        "turn": 5
+      },
+      {
+        "clock": 138.3833333333356,
+        "element": "STONE",
+        "id": 48,
+        "kind": "collision",
+        "turn": 5,
+        "with": "terrain",
+        "x": 6902,
+        "y": 635
+      },
+      {
+        "clock": 138.3833333333356,
+        "id": 48,
+        "kind": "end",
+        "owner": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 5,
+        "x": 6902,
+        "y": 635
+      },
+      {
+        "clock": 139.41666666666976,
+        "element": "CRUDE_OIL",
+        "kind": "material-payload",
+        "receipt": {
+          "accepted": 6234,
+          "added": 6234,
+          "evaluated": 9216,
+          "id": 8,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 998,
+          "status": "completed",
+          "work": 6234
+        },
+        "turn": 5,
+        "weapon": "napalm",
+        "x": 6902,
+        "y": 611
+      },
+      {
+        "clock": 139.68333333333663,
+        "kind": "payload-ignited",
+        "receipt": {
+          "accepted": 64,
+          "added": 64,
+          "evaluated": 64,
+          "id": 9,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 64
+        },
+        "turn": 5,
+        "weapon": "napalm"
+      },
+      {
+        "clock": 139.7000000000033,
+        "ended": 1,
+        "kind": "attack-resolved",
+        "launched": 1,
+        "turn": 5,
+        "weapon": "napalm"
+      },
+      {
+        "clock": 142.68333333333902,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6710,
+          "y": 507
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 5,
+        "watchId": 5
+      },
+      {
+        "clock": 142.68333333333902,
+        "color": "#35D9FF",
+        "eyebrow": "TURN 5 COMPLETE",
+        "id": 11,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "0 kills \u00b7 Round earned $51.00",
+        "seconds": 1,
+        "sub": "Every crater counts.",
+        "title": "M10 Domino",
+        "turn": 5
+      },
+      {
+        "clock": 143.18333333333942,
+        "elapsed": 1.000000000000001,
+        "id": 11,
+        "kind": "arcade-ended",
+        "turn": 5
+      },
+      {
+        "clock": 143.38333333333958,
+        "color": "#D9A165",
+        "eyebrow": "TURN 6 / COMMAND CARTRIDGE",
+        "id": 12,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "",
+        "seconds": 1,
+        "sub": "Make a crater.",
+        "title": "M10 Twin Fuse",
+        "turn": 6
+      },
+      {
+        "clock": 143.88333333333998,
+        "elapsed": 1.000000000000001,
+        "id": 12,
+        "kind": "arcade-ended",
+        "turn": 6
+      },
+      {
+        "action": "turn",
+        "amount": 10,
+        "clock": 143.88333333333998,
+        "kind": "cash",
+        "name": "M10 Twin Fuse",
+        "total": 10,
+        "turn": 6
+      },
+      {
+        "clock": 143.88333333333998,
+        "id": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "kind": "turn",
+        "name": "M10 Twin Fuse",
+        "turn": 6
+      },
+      {
+        "after": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 42.70397840700002,
+          "fuel": 5.223564028963628,
+          "spent": 0.7764359710363641
+        },
+        "before": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 0,
+          "fuel": 6,
+          "spent": 0
+        },
+        "clock": 144.6833333333406,
+        "item": "fuel-tank",
+        "kind": "utility",
+        "name": "M10 Twin Fuse",
+        "turn": 6
+      },
+      {
+        "clock": 144.6833333333406,
+        "distance": 100.59228515625,
+        "elevation": 10.46868896484375,
+        "high": true,
+        "kind": "cpu-plan",
+        "name": "M10 Twin Fuse",
+        "rise": 26.4744873046875,
+        "target": "M10 Domino",
+        "turn": 6
+      },
+      {
+        "action": "aim",
+        "amount": 3,
+        "clock": 144.6833333333406,
+        "kind": "cash",
+        "name": "M10 Twin Fuse",
+        "total": 13,
+        "turn": 6
+      },
+      {
+        "action": "power",
+        "amount": 3,
+        "clock": 144.6833333333406,
+        "kind": "cash",
+        "name": "M10 Twin Fuse",
+        "total": 16,
+        "turn": 6
+      },
+      {
+        "angle": 120.0,
+        "clock": 144.6833333333406,
+        "kind": "cpu-aimed",
+        "name": "M10 Twin Fuse",
+        "origin": {
+          "x": 6794.2939453125,
+          "y": 578.4744873046875
+        },
+        "power": 10.789371276720162,
+        "tactic": "High arc over cover",
+        "target": {
+          "x": 6693.70166015625,
+          "y": 568.0057983398438
+        },
+        "turn": 6,
+        "weapon": {
+          "ammo": {
+            "02a92005-a7da-4717-826b-2ccbd5ec37d3": 0,
+            "0ab6c0a5-f0df-4177-bdec-d97152c5b229": 0,
+            "173004dc-1907-43e3-9e01-10f4b7084523": 0,
+            "1a4d56f6-0058-471f-a4bf-77548338012c": 0,
+            "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12": 0,
+            "21a7dc63-bbb5-4d63-800a-e75f90d39794": 0,
+            "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886": 0,
+            "2e0a754f-eb50-487b-b90a-907a3a43159a": 0,
+            "2ee512d3-c721-4978-a1a5-b97d42255b13": 0,
+            "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372": 0,
+            "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2": 0,
+            "46fa464d-efc9-4cdc-9f58-7f34c6df79b4": 0,
+            "4b40ae2e-de9d-4ce7-b157-89254bbcad67": 0,
+            "6f99a25f-64be-4b8e-9687-a27734c0f18a": 0,
+            "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b": 0,
+            "70446b65-1a75-4950-840a-443f28dc58a6": 0,
+            "780f5cdb-7252-4a69-987b-b908477015ad": 0,
+            "815021a5-49a0-4790-91dd-b5b61a3c5050": 0,
+            "90b273d1-25bc-4e3e-b48e-3aaa9b487057": 0,
+            "9cb680d4-3edf-451b-81da-ebbb514808bb": 0,
+            "9dd9a83c-66b3-4720-a798-b7ce47372022": 0,
+            "a80f054a-6235-4746-b050-8d5cd248dd57": 0,
+            "ad09d6ff-6bad-4451-b7dc-de31c63b4850": 0,
+            "b3b1e951-8527-4aa1-8185-bdbf198b336c": 0,
+            "b4474e78-1c10-4d79-994d-d900ed050664": 0,
+            "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938": 0,
+            "bb0da974-5d0f-4644-a6da-278758d07d9f": 0,
+            "be01a387-a0f6-48ac-ae66-57d54d4177c4": 0,
+            "dbf78db4-cfdc-40f0-a539-99aac14d205c": 3,
+            "e1a46386-8976-4b3c-9408-0159b3f64235": 0,
+            "e3a20e82-7e11-4ef9-bce2-903255ebb4dc": 0,
+            "e6f74d61-a720-4f87-8a81-255a2f6ed379": 0,
+            "f8d3afb1-b4e3-4d0e-abd2-be135dad4072": 0,
+            "fa168217-924a-4b95-b7f2-025d856f5b88": 0
+          },
+          "angle": -2.0943951023931957,
+          "equipped": "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+          "gravityScale": 1,
+          "items": [
+            "219d46ea-fa7c-4578-b119-bba07279e6f0",
+            "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+            "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+            "9dd9a83c-66b3-4720-a798-b7ce47372022",
+            "fa168217-924a-4b95-b7f2-025d856f5b88",
+            "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+            "70446b65-1a75-4950-840a-443f28dc58a6",
+            "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+            "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+            "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+            "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+            "2ee512d3-c721-4978-a1a5-b97d42255b13",
+            "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+            "a80f054a-6235-4746-b050-8d5cd248dd57",
+            "b4474e78-1c10-4d79-994d-d900ed050664",
+            "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+            "173004dc-1907-43e3-9e01-10f4b7084523",
+            "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+            "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+            "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+            "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+            "1a4d56f6-0058-471f-a4bf-77548338012c",
+            "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+            "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+            "e1a46386-8976-4b3c-9408-0159b3f64235",
+            "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+            "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+            "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+            "2e0a754f-eb50-487b-b90a-907a3a43159a",
+            "780f5cdb-7252-4a69-987b-b908477015ad",
+            "815021a5-49a0-4790-91dd-b5b61a3c5050",
+            "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+            "bb0da974-5d0f-4644-a6da-278758d07d9f",
+            "9cb680d4-3edf-451b-81da-ebbb514808bb",
+            "e3a20e82-7e11-4ef9-bce2-903255ebb4dc"
+          ],
+          "kind": "rigid-body",
+          "localAngle": -2.094395020436809,
+          "pinned": true,
+          "power": 0.10789371276720162,
+          "speed": {
+            "current": 283.4193117042428,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "clock": 146.1000000000084,
+        "kind": "presentation-centered",
+        "owner": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "speechKind": "shooting",
+        "turn": 6,
+        "x": 6794.2939453125,
+        "y": 578.3765869140625
+      },
+      {
+        "clock": 146.1000000000084,
+        "id": "[\"terra-lucky-fuses\",null,\"taunt\",\"neutral\",\"Your parking permit is under review.\"]",
+        "kind": "quip",
+        "name": "M10 Twin Fuse",
+        "owner": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "speechKind": "shooting",
+        "text": "Your parking permit is under review.",
+        "turn": 6
+      },
+      {
+        "clock": 149.1000000000108,
+        "elapsed": 3.000000000002387,
+        "kind": "presentation-ended",
+        "owner": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "speechKind": "shooting",
+        "turn": 6
+      },
+      {
+        "angle": 120.0,
+        "clock": 149.1000000000108,
+        "kind": "fire-request",
+        "owner": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "power": 10.789371276720162,
+        "turn": 6
+      },
+      {
+        "action": "shoot",
+        "amount": 20,
+        "clock": 149.1000000000108,
+        "kind": "cash",
+        "name": "M10 Twin Fuse",
+        "total": 36,
+        "turn": 6
+      },
+      {
+        "clock": 149.1000000000108,
+        "item": "heavy-roller",
+        "kind": "ammo-spent",
+        "name": "M10 Twin Fuse",
+        "remaining": 2,
+        "turn": 6
+      },
+      {
+        "clock": 149.1000000000108,
+        "depth": 0,
+        "id": 49,
+        "kind": "launch",
+        "owner": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 49,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+          "vx": -141.70965576171875,
+          "vy": -245.4483184814453,
+          "x": 6775.5,
+          "y": 546.5
+        },
+        "turn": 6,
+        "weapon": "heavy-roller"
+      },
+      {
+        "action": "landing",
+        "amount": 15,
+        "clock": 150.1000000000116,
+        "kind": "cash",
+        "name": "M10 Twin Fuse",
+        "total": 51,
+        "turn": 6
+      },
+      {
+        "clock": 150.1000000000116,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6638,
+        "y": 627.75
+      },
+      {
+        "action": "bounce",
+        "amount": 5,
+        "clock": 150.1000000000116,
+        "kind": "cash",
+        "name": "M10 Twin Fuse",
+        "total": 56,
+        "turn": 6
+      },
+      {
+        "clock": 150.28333333334507,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6610.05029296875,
+        "y": 632
+      },
+      {
+        "action": "bounce",
+        "amount": 5,
+        "clock": 150.28333333334507,
+        "kind": "cash",
+        "name": "M10 Twin Fuse",
+        "total": 61,
+        "turn": 6
+      },
+      {
+        "clock": 150.30000000001175,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6608.9072265625,
+        "y": 632
+      },
+      {
+        "clock": 150.3500000000118,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6604.15087890625,
+        "y": 632
+      },
+      {
+        "clock": 150.36666666667847,
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6602,
+        "y": 631
+      },
+      {
+        "clock": 150.38333333334515,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6602.06103515625,
+        "y": 632
+      },
+      {
+        "clock": 150.40000000001183,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6602.3154296875,
+        "y": 632
+      },
+      {
+        "clock": 150.4333333333452,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6602.4033203125,
+        "y": 632
+      },
+      {
+        "clock": 150.45000000001187,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6602.5654296875,
+        "y": 632
+      },
+      {
+        "clock": 150.48333333334523,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6602.587890625,
+        "y": 632
+      },
+      {
+        "clock": 150.5000000000119,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6602.58349609375,
+        "y": 632.00146484375
+      },
+      {
+        "clock": 150.53333333334527,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6602.57861328125,
+        "y": 632
+      },
+      {
+        "clock": 150.55000000001195,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6602.57421875,
+        "y": 632
+      },
+      {
+        "clock": 150.5833333333453,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6602.58642578125,
+        "y": 632
+      },
+      {
+        "clock": 150.600000000012,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6602.59912109375,
+        "y": 632
+      },
+      {
+        "clock": 150.63333333334535,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6606.7431640625,
+        "y": 632
+      },
+      {
+        "clock": 150.6833333333454,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6606.75439453125,
+        "y": 632
+      },
+      {
+        "clock": 150.73333333334543,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6606.75439453125,
+        "y": 632
+      },
+      {
+        "clock": 150.7500000000121,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6606.7548828125,
+        "y": 632
+      },
+      {
+        "clock": 150.78333333334547,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6606.7548828125,
+        "y": 632
+      },
+      {
+        "clock": 150.80000000001215,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6606.7548828125,
+        "y": 632
+      },
+      {
+        "clock": 150.8333333333455,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6606.7548828125,
+        "y": 632
+      },
+      {
+        "clock": 150.8500000000122,
+        "element": "DIRT",
+        "id": 49,
+        "kind": "collision",
+        "turn": 6,
+        "with": "terrain",
+        "x": 6606.7548828125,
+        "y": 632.0053100585938
+      },
+      {
+        "action": "hit",
+        "amount": 20,
+        "clock": 150.86666666667887,
+        "kind": "cash",
+        "name": "M10 Twin Fuse",
+        "total": 81,
+        "turn": 6
+      },
+      {
+        "action": "damage",
+        "amount": 53,
+        "clock": 150.86666666667887,
+        "kind": "cash",
+        "name": "M10 Twin Fuse",
+        "total": 134,
+        "turn": 6
+      },
+      {
+        "action": "hurt",
+        "amount": 18,
+        "clock": 150.86666666667887,
+        "kind": "cash",
+        "name": "M10 Faultline",
+        "total": 314,
+        "turn": 6
+      },
+      {
+        "action": "hit",
+        "amount": 20,
+        "clock": 150.86666666667887,
+        "kind": "cash",
+        "name": "M10 Twin Fuse",
+        "total": 154,
+        "turn": 6
+      },
+      {
+        "action": "damage",
+        "amount": 103,
+        "clock": 150.86666666667887,
+        "kind": "cash",
+        "name": "M10 Twin Fuse",
+        "total": 257,
+        "turn": 6
+      },
+      {
+        "action": "hurt",
+        "amount": 34,
+        "clock": 150.86666666667887,
+        "kind": "cash",
+        "name": "M10 Domino",
+        "total": 85,
+        "turn": 6
+      },
+      {
+        "amount": 17.54999055186707,
+        "clock": 150.86666666667887,
+        "direct": false,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "projectileId": 49,
+        "targetEntityId": 6,
+        "targetStableId": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+        "turn": 6
+      },
+      {
+        "amount": 34.23199846667513,
+        "clock": 150.86666666667887,
+        "direct": false,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "projectileId": 49,
+        "targetEntityId": 8,
+        "targetStableId": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+        "turn": 6
+      },
+      {
+        "clock": 150.86666666667887,
+        "id": 49,
+        "kind": "end",
+        "owner": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+        "reason": "detonated",
+        "shooterResidency": "live",
+        "turn": 6,
+        "x": 6604.7548828125,
+        "y": 630.00537109375
+      },
+      {
+        "clock": 150.88333333334555,
+        "ended": 1,
+        "kind": "attack-resolved",
+        "launched": 1,
+        "turn": 6,
+        "weapon": "heavy-roller"
+      },
+      {
+        "clock": 153.86666666668123,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6412.7548828125,
+          "y": 502.00537109375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 6,
+        "watchId": 6
+      },
+      {
+        "clock": 153.86666666668123,
+        "color": "#D9A165",
+        "eyebrow": "TURN 6 COMPLETE",
+        "id": 13,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "0 kills \u00b7 Round earned $257.00",
+        "seconds": 1,
+        "sub": "Every crater counts.",
+        "title": "M10 Twin Fuse",
+        "turn": 6
+      },
+      {
+        "clock": 154.36666666668165,
+        "elapsed": 1.000000000000001,
+        "id": 13,
+        "kind": "arcade-ended",
+        "turn": 6
+      },
+      {
+        "clock": 154.5666666666818,
+        "color": "#EC3555",
+        "eyebrow": "TURN 7 / COMMAND CARTRIDGE",
+        "id": 14,
+        "kind": "arcade-start",
+        "long": false,
+        "score": "",
+        "seconds": 1,
+        "sub": "Make a crater.",
+        "title": "M10 Kiloton",
+        "turn": 7
+      },
+      {
+        "clock": 155.0666666666822,
+        "elapsed": 1.000000000000001,
+        "id": 14,
+        "kind": "arcade-ended",
+        "turn": 7
+      },
+      {
+        "action": "turn",
+        "amount": 10,
+        "clock": 155.0666666666822,
+        "kind": "cash",
+        "name": "M10 Kiloton",
+        "total": 472,
+        "turn": 7
+      },
+      {
+        "clock": 155.0666666666822,
+        "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "kind": "turn",
+        "name": "M10 Kiloton",
+        "turn": 7
+      },
+      {
+        "clock": 155.68333333334937,
+        "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "kind": "land",
+        "turn": 7
+      },
+      {
+        "after": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 43.66975624681072,
+          "fuel": 5.206004431876176,
+          "spent": 0.7939955681238309
+        },
+        "before": {
+          "config": {
+            "capacity": 12,
+            "speed": 55
+          },
+          "distance": 24.35327293314549,
+          "fuel": 5.557213219397363,
+          "spent": 0.44278678060264504
+        },
+        "clock": 155.86666666668285,
+        "item": "fuel-tank",
+        "kind": "utility",
+        "name": "M10 Kiloton",
+        "turn": 7
+      },
+      {
+        "clock": 155.86666666668285,
+        "control": "cpu",
+        "kind": "flip-upright",
+        "owner": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+        "pose": {
+          "alive": true,
+          "angle": 0.4119945168495178,
+          "chunk": {
+            "x": 99,
+            "y": 10
+          },
+          "faction": "terra-heavy-weather",
+          "health": 68.16997414042262,
+          "id": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 4,
+          "maxHealth": 100,
+          "name": "M10 Kiloton",
+          "residency": "live",
+          "slot": null,
+          "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+          "vx": 0,
+          "vy": 0,
+          "x": 6355.515625,
+          "y": 695.8746948242188
+        },
+        "receipt": {
+          "accepted": true,
+          "reason": "ok"
+        },
+        "turn": 7
+      }
+    ],
+    "match": {
+      "attack": null,
+      "autoDefenseChecked": true,
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 960,
+        "x": 5920,
+        "y": 0
+      },
+      "cashNotice": "M10 Kiloton +$10 \u00b7 turn",
+      "cashShots": {},
+      "chaos": {
+        "jobs": [],
+        "notice": "M10 Mole: Hostile fireworks!",
+        "quiet": 41.16666666666561,
+        "rng": 495935301,
+        "serial": 2
+      },
+      "computers": 6,
+      "details": 0,
+      "focusIndex": 2,
+      "frameNotice": "",
+      "generated": 0,
+      "generation": "wfc",
+      "generationChoice": "wfc",
+      "humans": 0,
+      "impact": null,
+      "lastCardTurn": 6,
+      "lastHit": "M10 Domino \u221234 HP \u00b7 SPLASH",
+      "livingSites": 0,
+      "message": "M10 Kiloton is righting \u2014 movement and firing remain available",
+      "pendingTurn": null,
+      "phase": "turn",
+      "presentation": {
+        "active": null,
+        "queue": []
+      },
+      "remaining": 19.21666666666671,
+      "roster": [
+        {
+          "aimedTurn": 1,
+          "autoAimTurn": null,
+          "cashBreakdown": {
+            "aim": 3,
+            "damage": 538,
+            "death": 100,
+            "hit": 100,
+            "hurt": 100,
+            "kill": 100,
+            "landing": 225,
+            "power": 3,
+            "resolution": 10,
+            "shoot": 320,
+            "turn": 10
+          },
+          "cashEarned": 1509,
+          "chaosId": 1,
+          "color": "#FF783C",
+          "control": "cpu",
+          "deathEffect": "fireworks",
+          "eliminated": true,
+          "entityId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+          "index": 0,
+          "kills": 1,
+          "lastFlipAt": 88.71666666666292,
+          "lastMoveX": 5964.4990234375,
+          "moveDistance": 0,
+          "name": "M10 Fuse",
+          "personaId": "lucky",
+          "placementReady": true,
+          "plannedTurn": 1,
+          "preparedTurn": 1,
+          "shotFrom": {
+            "x": 5993.4580078125,
+            "y": 547.3765869140625
+          },
+          "spawnX": 5960,
+          "surfaceY": 564,
+          "tactic": "Close-range shot",
+          "targetId": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+          "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+          "weaponId": "mirv"
+        },
+        {
+          "aimedTurn": 2,
+          "autoAimTurn": null,
+          "cashBreakdown": {
+            "aim": 3,
+            "damage": 247,
+            "death": 100,
+            "hit": 60,
+            "hurt": 130,
+            "kill": 100,
+            "landing": 165,
+            "power": 3,
+            "shoot": 220,
+            "turn": 10,
+            "utility": 15
+          },
+          "cashEarned": 1053,
+          "chaosId": 2,
+          "color": "#70F8A0",
+          "control": "cpu",
+          "deathEffect": "fireworks",
+          "eliminated": true,
+          "entityId": "instance@spawn-5699bd43-7b27-4d44-b9ed-98c72d7236f6",
+          "index": 1,
+          "kills": 1,
+          "lastMoveX": 6135.509765625,
+          "moveDistance": 0,
+          "name": "M10 Mole",
+          "personaId": "mole",
+          "placementReady": true,
+          "plannedTurn": 2,
+          "preparedTurn": 2,
+          "shotFrom": {
+            "x": 6097.25390625,
+            "y": 596.1015625
+          },
+          "spawnX": 6136,
+          "surfaceY": 575,
+          "tactic": "High arc over cover",
+          "targetId": "instance@spawn-e969811e-50e7-4603-815f-0604022e7546",
+          "templateId": "df3e8da4-084c-4989-80c1-638805529db9",
+          "weaponId": "standard"
+        },
+        {
+          "autoAimTurn": null,
+          "cashBreakdown": {
+            "hurt": 32,
+            "landing": 180,
+            "shoot": 240,
+            "turn": 20
+          },
+          "cashEarned": 472,
+          "color": "#EC3555",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "index": 2,
+          "kills": 0,
+          "lastFlipAt": 155.86666666668285,
+          "lastMoveX": 6335.85302734375,
+          "moveDistance": 0,
+          "name": "M10 Kiloton",
+          "personaId": "kiloton",
+          "placementReady": true,
+          "plannedTurn": 3,
+          "preparedTurn": 7,
+          "shotFrom": {
+            "x": 6335.85302734375,
+            "y": 637.6399536132812
+          },
+          "spawnX": 6312,
+          "surfaceY": 655,
+          "tactic": "Direct sighting",
+          "targetId": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+          "weaponId": "machine-gun"
+        },
+        {
+          "aimedTurn": 4,
+          "autoAimTurn": null,
+          "cashBreakdown": {
+            "aim": 3,
+            "hurt": 18,
+            "landing": 120,
+            "power": 3,
+            "shoot": 160,
+            "turn": 10
+          },
+          "cashEarned": 314,
+          "color": "#A574F4",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-94ce2e9b-58f2-4e26-bb3f-2431c3167d78",
+          "index": 3,
+          "kills": 0,
+          "lastMoveX": 6487.53466796875,
+          "moveDistance": 0,
+          "name": "M10 Faultline",
+          "personaId": "faultline",
+          "placementReady": true,
+          "plannedTurn": 4,
+          "preparedTurn": 4,
+          "shotFrom": {
+            "x": 6476.91259765625,
+            "y": 619.4409790039062
+          },
+          "spawnX": 6488,
+          "surfaceY": 625,
+          "tactic": "Close-range shot",
+          "targetId": "instance@spawn-896b1430-546a-4b86-b673-3c669400948b",
+          "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+          "weaponId": "funky"
+        },
+        {
+          "aimedTurn": 5,
+          "autoAimTurn": null,
+          "cashBreakdown": {
+            "aim": 3,
+            "hurt": 34,
+            "landing": 15,
+            "power": 3,
+            "shoot": 20,
+            "turn": 10
+          },
+          "cashEarned": 85,
+          "color": "#35D9FF",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+          "index": 4,
+          "kills": 0,
+          "lastMoveX": 6661.8974609375,
+          "moveDistance": 0,
+          "name": "M10 Domino",
+          "personaId": "domino",
+          "placementReady": true,
+          "plannedTurn": 5,
+          "preparedTurn": 5,
+          "shotFrom": {
+            "x": 6693.70166015625,
+            "y": 568.0057983398438
+          },
+          "spawnX": 6664,
+          "surfaceY": 598,
+          "tactic": "Close-range shot",
+          "targetId": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+          "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+          "weaponId": "napalm"
+        },
+        {
+          "aimedTurn": 6,
+          "autoAimTurn": null,
+          "cashBreakdown": {
+            "aim": 3,
+            "bounce": 10,
+            "damage": 156,
+            "hit": 40,
+            "landing": 15,
+            "power": 3,
+            "shoot": 20,
+            "turn": 10
+          },
+          "cashEarned": 257,
+          "color": "#D9A165",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-f1b8afe5-cecf-4b91-8915-d3c6dbeb9529",
+          "index": 5,
+          "kills": 0,
+          "lastMoveX": 6836.99755859375,
+          "moveDistance": 0,
+          "name": "M10 Twin Fuse",
+          "personaId": "lucky",
+          "placementReady": true,
+          "plannedTurn": 6,
+          "preparedTurn": 6,
+          "shotFrom": {
+            "x": 6794.2939453125,
+            "y": 578.546142578125
+          },
+          "spawnX": 6840,
+          "surfaceY": 606,
+          "tactic": "High arc over cover",
+          "targetId": "instance@spawn-ac3ced50-e8f1-4c46-be8f-6eeb4bca9b14",
+          "templateId": "ea62bcab-4004-4634-8cb4-8878b116aa1f",
+          "weaponId": "heavy-roller"
+        }
+      ],
+      "round": 1,
+      "seed": 2533411,
+      "shotId": null,
+      "terrainSource": {
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "completedChunks": 0,
+        "family": "template",
+        "parameters": {},
+        "phase": "complete",
+        "reason": null,
+        "recipeId": "wfc",
+        "seed": 2533411,
+        "totalChunks": 0,
+        "version": 1
+      },
+      "turnNumber": 7,
+      "turnSeconds": 20,
+      "version": 9,
+      "waitTicks": 106,
+      "winner": null
+    },
+    "phase": "turn",
+    "turn": 7,
+    "world": "909a6dc0-ed42-47e8-bccb-1c56fb8a3793"
+  }
+}

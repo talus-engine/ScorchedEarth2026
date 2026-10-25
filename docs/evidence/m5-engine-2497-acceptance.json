@@ -1,0 +1,302 @@
+{
+  "version": "0.0.2497",
+  "baseCommit": "ebfcba48d7884fdbb0f00b18cec6f2e209fdc9c4",
+  "installedApp": "/Applications/Talus.app",
+  "artifactsSha256": {
+    "app.asar": "79c695fa6099d65f6470d3454a59997b8254651f0b4d2c21915dfa3e986596ba",
+    "arm64.dmg": "73b6b68b3560898b470dd8ac0e5d6ca5bd559c92fbaaa31ab5554d1a4ab115a1",
+    "arm64.zip": "d3328e7cb7f1312ccee8e4efd5086bbfc0a8f62b8210434bec66053689c3eeaa"
+  },
+  "checks": [
+    {
+      "name": "installed course: clears_steps_stops_at_wall",
+      "passed": true,
+      "evidence": "m5-osx2497-stream.json"
+    },
+    {
+      "name": "installed course: returns_over_steps",
+      "passed": true,
+      "evidence": "m5-osx2497-stream.json"
+    },
+    {
+      "name": "installed course: healthy",
+      "passed": true,
+      "evidence": "m5-osx2497-stream.json"
+    },
+    {
+      "name": "installed course: restored_identity",
+      "passed": true,
+      "evidence": "m5-osx2497-stream.json"
+    },
+    {
+      "name": "fresh wide one-pixel ledge: right",
+      "passed": true,
+      "evidence": "m5-osx2497-one-wide.json"
+    },
+    {
+      "name": "fresh wide one-pixel ledge: left",
+      "passed": true,
+      "evidence": "m5-osx2497-one-wide.json"
+    },
+    {
+      "name": "fresh wide one-pixel ledge: stepObserved",
+      "passed": true,
+      "evidence": "m5-osx2497-one-wide.json"
+    },
+    {
+      "name": "fresh wide one-pixel ledge: healthy",
+      "passed": true,
+      "evidence": "m5-osx2497-one-wide.json"
+    },
+    {
+      "name": "profile order forward",
+      "passed": true,
+      "evidence": "m5-profiles-packaged-2.json"
+    },
+    {
+      "name": "skin forward",
+      "passed": true,
+      "evidence": "m5-profiles-packaged-2.json"
+    },
+    {
+      "name": "profile order reverse",
+      "passed": true,
+      "evidence": "m5-profiles-packaged-2.json"
+    },
+    {
+      "name": "skin reverse",
+      "passed": true,
+      "evidence": "m5-profiles-packaged-2.json"
+    },
+    {
+      "name": "mixed sand/stone ramp both directions",
+      "passed": true,
+      "evidence": "m5-mixed-course.json"
+    },
+    {
+      "name": "m5-four-resize.json 800",
+      "passed": true,
+      "evidence": "m5-four-resize.json"
+    },
+    {
+      "name": "m5-four-resize.json 1600",
+      "passed": true,
+      "evidence": "m5-four-resize.json"
+    },
+    {
+      "name": "m5-sixteen-resize.json 800",
+      "passed": true,
+      "evidence": "m5-sixteen-resize.json"
+    },
+    {
+      "name": "m5-sixteen-resize.json 1600",
+      "passed": true,
+      "evidence": "m5-sixteen-resize.json"
+    },
+    {
+      "name": "m5-combat-clean-four.json combat",
+      "passed": true,
+      "evidence": "m5-combat-clean-four.json",
+      "detail": {
+        "turns": 10,
+        "shots": 10,
+        "observedTicks": 4260
+      }
+    },
+    {
+      "name": "m5-combat-16.json combat",
+      "passed": true,
+      "evidence": "m5-combat-16.json",
+      "detail": {
+        "turns": 30,
+        "shots": 30,
+        "observedTicks": 15180
+      }
+    },
+    {
+      "name": "m5-osx2497-combat.json combat",
+      "passed": true,
+      "evidence": "m5-osx2497-combat.json",
+      "detail": {
+        "turns": 3,
+        "shots": 3,
+        "observedTicks": 1260
+      }
+    },
+    {
+      "name": "installed combat: finished",
+      "passed": true,
+      "evidence": "m5-osx2497-combat.json"
+    },
+    {
+      "name": "installed combat: noParks",
+      "passed": true,
+      "evidence": "m5-osx2497-combat.json"
+    },
+    {
+      "name": "installed combat: zoom",
+      "passed": true,
+      "evidence": "m5-osx2497-combat.json"
+    },
+    {
+      "name": "installed combat: oneSurvivor",
+      "passed": true,
+      "evidence": "m5-osx2497-combat.json"
+    },
+    {
+      "name": "installed combat: stateAfterReopen",
+      "passed": true,
+      "evidence": "m5-osx2497-combat.json"
+    },
+    {
+      "name": "constrained independent high",
+      "passed": true,
+      "evidence": "m5-off-ring-flights-16.json",
+      "detail": {
+        "events": [
+          "launch",
+          "detonate",
+          "hit",
+          "end"
+        ],
+        "outsideTicks": 348
+      }
+    },
+    {
+      "name": "constrained independent long",
+      "passed": true,
+      "evidence": "m5-off-ring-flights-16.json",
+      "detail": {
+        "events": [
+          "launch",
+          "detonate",
+          "end"
+        ],
+        "outsideTicks": 617
+      }
+    },
+    {
+      "name": "remote crater: nonempty",
+      "passed": true,
+      "evidence": "m5-offring-crater-cpu-preservation.json"
+    },
+    {
+      "name": "remote crater: exactStone",
+      "passed": true,
+      "evidence": "m5-offring-crater-cpu-preservation.json"
+    },
+    {
+      "name": "remote crater: allMaterial",
+      "passed": true,
+      "evidence": "m5-offring-crater-cpu-preservation.json"
+    },
+    {
+      "name": "remote crater: zoom",
+      "passed": true,
+      "evidence": "m5-offring-crater-cpu-preservation.json"
+    },
+    {
+      "name": "remote crater: allTanksLive",
+      "passed": true,
+      "evidence": "m5-offring-crater-cpu-preservation.json"
+    },
+    {
+      "name": "remote crater: healthIdentity",
+      "passed": true,
+      "evidence": "m5-offring-crater-cpu-preservation.json"
+    },
+    {
+      "name": "remote crater: noParks",
+      "passed": true,
+      "evidence": "m5-offring-crater-cpu-preservation.json"
+    },
+    {
+      "name": "remote crater: carvedInteriorEmpty",
+      "passed": true,
+      "evidence": "m5-offring-crater-cpu-preservation.json"
+    },
+    {
+      "name": "124 untouched ground chunks after combat and reopen",
+      "passed": true,
+      "evidence": "m5-four-preservation-gpu.json"
+    },
+    {
+      "name": "original evidence unchanged",
+      "passed": true,
+      "evidence": "preservation-check.json",
+      "detail": {
+        "checked": 153,
+        "changed": []
+      }
+    },
+    {
+      "name": "unit suite",
+      "passed": true,
+      "evidence": "all-unit-final.log",
+      "detail": "13727 passed, 1 expected failure, 17 skipped"
+    },
+    {
+      "name": "native physics",
+      "passed": true,
+      "evidence": "native-physics.log",
+      "detail": "46 passed"
+    },
+    {
+      "name": "terrain browser lane",
+      "passed": true,
+      "evidence": "e2e-terrain.log",
+      "detail": "4 trips, exact material/particle fingerprints, save during departure and reopen"
+    },
+    {
+      "name": "type-check",
+      "passed": true,
+      "evidence": "required precommit command output",
+      "detail": "0 errors, exit 0"
+    },
+    {
+      "name": "production build",
+      "passed": true,
+      "evidence": "build-release.log",
+      "detail": "exit 0"
+    },
+    {
+      "name": "final packaged desktop smoke",
+      "passed": true,
+      "evidence": "desktop-smoke-release.log",
+      "detail": "all checks passed"
+    },
+    {
+      "name": "original preferences/scores restored; Tony and Copper ready",
+      "passed": true,
+      "evidence": "m5-osx2497-user-ready.json",
+      "detail": {
+        "worldId": "b29dda01-c94c-4410-9d1f-a50ea1f51e94",
+        "names": [
+          "Tony",
+          "Copper"
+        ],
+        "zoom": 0.25
+      }
+    }
+  ],
+  "rawEvidence": "/private/tmp/indigo-m5-engine/docs/evidence and Indigo docs/evidence",
+  "limitations": [
+    "Local ad-hoc signed arm64 release; not notarized or publicly published.",
+    "Off-grid loose GPU matter remains held; rigid physics, carving and damage continue.",
+    "No in-flight transient projectile save persistence added.",
+    "Corpse occlusion invalidates exact visible-pmap crater comparisons at entity overlap; full remote crater comparison passes."
+  ],
+  "harnessNotes": [
+    "Initial powder correction also snapped solid ground; fixed before the refined candidate.",
+    "A single-response sixteen-tank audit timed out; paged retrieval recovered all samples.",
+    "Fixed menu coordinates missed fields after the error row changed layout; verified actual submitted values on retry.",
+    "An installed ledge attempt timed out while paused; public resume and clean fixture rerun passed.",
+    "An unfocused course save key is not a persistence result."
+  ],
+  "engineCommit": "ff77aaf51d84716cab1df32a5ff4832c3b3ad325",
+  "diagnosticArchive": {
+    "file": "m5-engine-2497-diagnostics.zip",
+    "sha256": "ea1488fc3de13a3761c82d4cf531947eea23f49a39193541917063924261499f",
+    "bytes": 4580147
+  }
+}

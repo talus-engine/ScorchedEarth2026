@@ -1,0 +1,211 @@
+{
+  "last_node_id": 4,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "ai/flow/Sequence",
+      "title": "Aim, think, fire",
+      "pos": [
+        40,
+        140
+      ],
+      "size": [
+        260,
+        100
+      ],
+      "properties": {},
+      "inputs": [
+        {
+          "name": "exec",
+          "type": -1,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "child_0",
+          "type": -1,
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "child_1",
+          "type": -1,
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "child_2",
+          "type": -1,
+          "links": [
+            3
+          ]
+        },
+        {
+          "name": "child_3",
+          "type": -1,
+          "links": []
+        },
+        {
+          "name": "child_4",
+          "type": -1,
+          "links": []
+        },
+        {
+          "name": "child_5",
+          "type": -1,
+          "links": []
+        },
+        {
+          "name": "child_6",
+          "type": -1,
+          "links": []
+        },
+        {
+          "name": "child_7",
+          "type": -1,
+          "links": []
+        },
+        {
+          "name": "success",
+          "type": -1,
+          "links": []
+        },
+        {
+          "name": "failure",
+          "type": -1,
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "ai/script/ScriptAction",
+      "title": "Choose target and aim",
+      "pos": [
+        370,
+        40
+      ],
+      "size": [
+        260,
+        100
+      ],
+      "properties": {
+        "code": "talus.emit('indigo:cpu-plan', {id:self.id, turn:JSON.parse(bb.__hookData).turn})"
+      },
+      "inputs": [
+        {
+          "name": "exec",
+          "type": -1,
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "done",
+          "type": -1,
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "ai/action/Wait",
+      "title": "Think for a moment",
+      "pos": [
+        370,
+        190
+      ],
+      "size": [
+        260,
+        100
+      ],
+      "properties": {
+        "minSec": 1.2,
+        "maxSec": 1.2
+      },
+      "inputs": [
+        {
+          "name": "exec",
+          "type": -1,
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "success",
+          "type": -1,
+          "links": []
+        },
+        {
+          "name": "failure",
+          "type": -1,
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "ai/script/ScriptAction",
+      "title": "Request one shot",
+      "pos": [
+        370,
+        340
+      ],
+      "size": [
+        260,
+        100
+      ],
+      "properties": {
+        "code": "talus.emit('indigo:cpu-fire', {id:self.id, turn:JSON.parse(bb.__hookData).turn})"
+      },
+      "inputs": [
+        {
+          "name": "exec",
+          "type": -1,
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "done",
+          "type": -1,
+          "links": []
+        }
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      -1
+    ],
+    [
+      2,
+      1,
+      1,
+      3,
+      0,
+      -1
+    ],
+    [
+      3,
+      1,
+      2,
+      4,
+      0,
+      -1
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

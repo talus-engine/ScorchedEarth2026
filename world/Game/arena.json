@@ -1,0 +1,263 @@
+{
+  "biome": {
+    "id": "terra-reach-v2",
+    "name": "Terra Reach",
+    "areaId": "terra-reach-v2"
+  },
+  "tiles": {
+    "width": 50,
+    "height": 5,
+    "chunksPerTile": 4
+  },
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "w": 12800,
+    "h": 1280
+  },
+  "surfaceBand": {
+    "top": 512,
+    "height": 256
+  },
+  "tankTemplate": "b6653dd5-74e8-416b-beac-4a1a7d325cc7",
+  "maxPlayers": 16,
+  "combat": {
+    "x": 5920,
+    "w": 960,
+    "spawnInset": 40,
+    "tankHalfWidth": 20
+  },
+  "cpuGraph": "205b7779-ca29-40cf-9d3b-a0fad2fefe6b",
+  "moveSpeed": 55,
+  "terrain": {
+    "brushRecipe": "indigo-mixed-earth",
+    "materials": [
+      "DIRT",
+      "SAND",
+      "STONE"
+    ],
+    "solidBottomTileRow": 4,
+    "artistTemplate": "WFC/template.json"
+  },
+  "impactWaitTicks": 180,
+  "generation": {
+    "default": "wfc",
+    "brushOriginX": 16384,
+    "brushWidth": 12800,
+    "brushHeight": 1280,
+    "surfaceY": 640,
+    "amplitude": 144,
+    "cellWidth": 512,
+    "detailSize": [
+      64,
+      128
+    ],
+    "recipes": [
+      "indigo-mixed-earth",
+      "builtin-brush-hills",
+      "builtin-brush-cliffside"
+    ],
+    "growthPresets": [
+      "builtin-bramble",
+      "builtin-oak-sapling"
+    ],
+    "neuralModel": "builtin-nca-eight",
+    "status": {
+      "recipes": "native-runtime",
+      "neural": "E22",
+      "livingGrowth": "E22"
+    }
+  },
+  "posture": {
+    "controller": {
+      "angularSpeed": 2,
+      "supportDepth": 32,
+      "maxSlope": 1,
+      "liftSpeed": 60,
+      "liftLimit": 64,
+      "penetrationTolerance": 0.01
+    },
+    "flipCooldownSeconds": 0.5,
+    "cpuTiltRadians": 0.3,
+    "cpuFlipWaitTicks": 60,
+    "placementWaitTicks": 60
+  },
+  "tankPalettes": [
+    {
+      "templateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+      "color": "#FF783C",
+      "palette": {
+        "body": "#FF783C",
+        "turret": "#FFF1C1",
+        "accent": "#FFD447",
+        "tracks": "#191925"
+      },
+      "style": "lucky"
+    },
+    {
+      "templateId": "df3e8da4-084c-4989-80c1-638805529db9",
+      "color": "#70F8A0",
+      "palette": {
+        "body": "#70F8A0",
+        "turret": "#79503A",
+        "accent": "#FFD447",
+        "tracks": "#191925"
+      },
+      "style": "mole"
+    },
+    {
+      "templateId": "9763a5ed-a0c1-42e9-aaad-0c6ab18fa163",
+      "color": "#EC3555",
+      "palette": {
+        "body": "#EC3555",
+        "turret": "#FFD447",
+        "accent": "#FFF1C1",
+        "tracks": "#191925"
+      },
+      "style": "kiloton"
+    },
+    {
+      "templateId": "5a1bc214-cafe-47e1-a4f3-97a13acbf199",
+      "color": "#A574F4",
+      "palette": {
+        "body": "#A574F4",
+        "turret": "#86D8FF",
+        "accent": "#FFF1C1",
+        "tracks": "#191925"
+      },
+      "style": "faultline"
+    },
+    {
+      "templateId": "5d93c63c-e311-4ba0-bfd7-c44257ee22bc",
+      "color": "#35D9FF",
+      "palette": {
+        "body": "#35D9FF",
+        "turret": "#FF4FA3",
+        "accent": "#FFF1C1",
+        "tracks": "#191925"
+      },
+      "style": "domino"
+    },
+    {
+      "templateId": "ea62bcab-4004-4634-8cb4-8878b116aa1f",
+      "color": "#D9A165",
+      "palette": {
+        "body": "#D9A165",
+        "turret": "#D9D8B4",
+        "accent": "#D9D66B",
+        "tracks": "#1A181F"
+      },
+      "style": "lucky"
+    },
+    {
+      "templateId": "eaf866a6-4216-405a-9a28-2e87df3d44eb",
+      "color": "#82D3AF",
+      "palette": {
+        "body": "#82D3AF",
+        "turret": "#675641",
+        "accent": "#D9D66B",
+        "tracks": "#1A181F"
+      },
+      "style": "mole"
+    },
+    {
+      "templateId": "c209af78-9f62-4fd6-8b2c-b4fa12b09676",
+      "color": "#C9605C",
+      "palette": {
+        "body": "#C9605C",
+        "turret": "#D9D66B",
+        "accent": "#D9D8B4",
+        "tracks": "#1A181F"
+      },
+      "style": "kiloton"
+    },
+    {
+      "templateId": "75b90c60-fd71-4d3f-b66b-d1fc5231ff2a",
+      "color": "#B083CF",
+      "palette": {
+        "body": "#B083CF",
+        "turret": "#91B2D9",
+        "accent": "#D9D8B4",
+        "tracks": "#1A181F"
+      },
+      "style": "faultline"
+    },
+    {
+      "templateId": "46f3126a-c74b-4c77-8850-c71e2aeff1d7",
+      "color": "#61A9D9",
+      "palette": {
+        "body": "#61A9D9",
+        "turret": "#D9708C",
+        "accent": "#D9D8B4",
+        "tracks": "#1A181F"
+      },
+      "style": "domino"
+    },
+    {
+      "templateId": "a8806c8c-d125-4208-a3da-55204728083f",
+      "color": "#FF6150",
+      "palette": {
+        "body": "#FF6150",
+        "turret": "#FFE7C7",
+        "accent": "#FFB659",
+        "tracks": "#1A1C25"
+      },
+      "style": "lucky"
+    },
+    {
+      "templateId": "12d67315-11d7-421d-8e2f-6dca94335d32",
+      "color": "#7EF88F",
+      "palette": {
+        "body": "#7EF88F",
+        "turret": "#794840",
+        "accent": "#FFB659",
+        "tracks": "#1A1C25"
+      },
+      "style": "mole"
+    },
+    {
+      "templateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+      "color": "#EC4787",
+      "palette": {
+        "body": "#EC4787",
+        "turret": "#FFB659",
+        "accent": "#FFE7C7",
+        "tracks": "#1A1C25"
+      },
+      "style": "kiloton"
+    },
+    {
+      "templateId": "ea5387a7-ae87-44a8-9e0c-de060e3da3f9",
+      "color": "#9581F4",
+      "palette": {
+        "body": "#9581F4",
+        "turret": "#92F3FF",
+        "accent": "#FFE7C7",
+        "tracks": "#1A1C25"
+      },
+      "style": "faultline"
+    },
+    {
+      "templateId": "2745d498-e5bd-441e-b1b4-3f805b00ef61",
+      "color": "#49FFFB",
+      "palette": {
+        "body": "#49FFFB",
+        "turret": "#FF61CD",
+        "accent": "#FFE7C7",
+        "tracks": "#1A1C25"
+      },
+      "style": "domino"
+    },
+    {
+      "templateId": "54e88a24-0d0b-4fc6-962b-88e9da02870f",
+      "color": "#E6C97C",
+      "palette": {
+        "body": "#E6C97C",
+        "turret": "#DFE6C4",
+        "accent": "#D3E682",
+        "tracks": "#1E1B21"
+      },
+      "style": "lucky"
+    }
+  ]
+}

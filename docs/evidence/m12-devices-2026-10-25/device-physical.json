@@ -1,0 +1,565 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 8640,
+  "ok": true,
+  "value": {
+    "after": {
+      "clock": 4.2833333333333234,
+      "drain": {
+        "STONE": 97,
+        "TERRA_LIQUID_DRAIN": 1
+      },
+      "panels": [
+        {
+          "counts": {
+            "STONE": 1158,
+            "TERRA_WATER_SOURCE": 1
+          },
+          "device": "TERRA_WATER_SOURCE",
+          "id": "water",
+          "material": "WATER",
+          "period": 12,
+          "x": 32800,
+          "y": 128
+        },
+        {
+          "counts": {
+            "STONE": 1158,
+            "TERRA_OIL_SOURCE": 1
+          },
+          "device": "TERRA_OIL_SOURCE",
+          "id": "oil",
+          "material": "CRUDE_OIL",
+          "period": 30,
+          "x": 32928,
+          "y": 128
+        },
+        {
+          "counts": {
+            "EJECTA": 1,
+            "FIRE": 5,
+            "SMOKE": 6,
+            "SOOT": 2,
+            "STONE": 1158,
+            "TERRA_FIRE_SOURCE": 1
+          },
+          "device": "TERRA_FIRE_SOURCE",
+          "id": "fire",
+          "material": "FIRE",
+          "period": 12,
+          "x": 33056,
+          "y": 128
+        },
+        {
+          "counts": {
+            "STONE": 1158,
+            "TERRA_LAVA_SOURCE": 1
+          },
+          "device": "TERRA_LAVA_SOURCE",
+          "id": "lava",
+          "material": "LAVA",
+          "period": 60,
+          "x": 33184,
+          "y": 128
+        }
+      ]
+    },
+    "before": {
+      "clock": 1.2833333333333337,
+      "drain": {
+        "SAND": 1,
+        "STONE": 97,
+        "TERRA_LIQUID_DRAIN": 1,
+        "WATER": 1
+      },
+      "panels": [
+        {
+          "counts": {
+            "STONE": 1158,
+            "TERRA_WATER_SOURCE": 1
+          },
+          "device": "TERRA_WATER_SOURCE",
+          "id": "water",
+          "material": "WATER",
+          "period": 12,
+          "x": 32800,
+          "y": 128
+        },
+        {
+          "counts": {
+            "STONE": 1158,
+            "TERRA_OIL_SOURCE": 1
+          },
+          "device": "TERRA_OIL_SOURCE",
+          "id": "oil",
+          "material": "CRUDE_OIL",
+          "period": 30,
+          "x": 32928,
+          "y": 128
+        },
+        {
+          "counts": {
+            "STONE": 1158,
+            "TERRA_FIRE_SOURCE": 1
+          },
+          "device": "TERRA_FIRE_SOURCE",
+          "id": "fire",
+          "material": "FIRE",
+          "period": 12,
+          "x": 33056,
+          "y": 128
+        },
+        {
+          "counts": {
+            "STONE": 1158,
+            "TERRA_LAVA_SOURCE": 1
+          },
+          "device": "TERRA_LAVA_SOURCE",
+          "id": "lava",
+          "material": "LAVA",
+          "period": 60,
+          "x": 33184,
+          "y": 128
+        }
+      ]
+    },
+    "checks": {
+      "drainsWater": true,
+      "fire": true,
+      "lava": false,
+      "oil": false,
+      "oneDeviceEach": true,
+      "preservesPowder": false,
+      "preservesSolid": true,
+      "water": false
+    },
+    "receipts": [
+      {
+        "element": "STONE",
+        "h": 6,
+        "label": "water floor",
+        "receipt": {
+          "accepted": 342,
+          "added": 342,
+          "evaluated": 600,
+          "id": 1,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 342
+        },
+        "w": 56,
+        "x": 32772,
+        "y": 176
+      },
+      {
+        "element": "STONE",
+        "h": 68,
+        "label": "water left",
+        "receipt": {
+          "accepted": 408,
+          "added": 408,
+          "evaluated": 720,
+          "id": 2,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 408
+        },
+        "w": 6,
+        "x": 32772,
+        "y": 108
+      },
+      {
+        "element": "STONE",
+        "h": 68,
+        "label": "water right",
+        "receipt": {
+          "accepted": 408,
+          "added": 408,
+          "evaluated": 720,
+          "id": 3,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 408
+        },
+        "w": 6,
+        "x": 32822,
+        "y": 108
+      },
+      {
+        "element": "TERRA_WATER_SOURCE",
+        "h": 1,
+        "label": "water source",
+        "receipt": {
+          "accepted": 1,
+          "added": 1,
+          "evaluated": 25,
+          "id": 4,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 1
+        },
+        "w": 1,
+        "x": 32800,
+        "y": 128
+      },
+      {
+        "element": "STONE",
+        "h": 6,
+        "label": "oil floor",
+        "receipt": {
+          "accepted": 342,
+          "added": 342,
+          "evaluated": 600,
+          "id": 5,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 342
+        },
+        "w": 56,
+        "x": 32900,
+        "y": 176
+      },
+      {
+        "element": "STONE",
+        "h": 68,
+        "label": "oil left",
+        "receipt": {
+          "accepted": 408,
+          "added": 408,
+          "evaluated": 720,
+          "id": 6,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 408
+        },
+        "w": 6,
+        "x": 32900,
+        "y": 108
+      },
+      {
+        "element": "STONE",
+        "h": 68,
+        "label": "oil right",
+        "receipt": {
+          "accepted": 408,
+          "added": 408,
+          "evaluated": 720,
+          "id": 7,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 408
+        },
+        "w": 6,
+        "x": 32950,
+        "y": 108
+      },
+      {
+        "element": "TERRA_OIL_SOURCE",
+        "h": 1,
+        "label": "oil source",
+        "receipt": {
+          "accepted": 1,
+          "added": 1,
+          "evaluated": 25,
+          "id": 8,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 1
+        },
+        "w": 1,
+        "x": 32928,
+        "y": 128
+      },
+      {
+        "element": "STONE",
+        "h": 6,
+        "label": "fire floor",
+        "receipt": {
+          "accepted": 342,
+          "added": 342,
+          "evaluated": 600,
+          "id": 9,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 342
+        },
+        "w": 56,
+        "x": 33028,
+        "y": 176
+      },
+      {
+        "element": "STONE",
+        "h": 68,
+        "label": "fire left",
+        "receipt": {
+          "accepted": 408,
+          "added": 408,
+          "evaluated": 720,
+          "id": 10,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 408
+        },
+        "w": 6,
+        "x": 33028,
+        "y": 108
+      },
+      {
+        "element": "STONE",
+        "h": 68,
+        "label": "fire right",
+        "receipt": {
+          "accepted": 408,
+          "added": 408,
+          "evaluated": 720,
+          "id": 11,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 408
+        },
+        "w": 6,
+        "x": 33078,
+        "y": 108
+      },
+      {
+        "element": "TERRA_FIRE_SOURCE",
+        "h": 1,
+        "label": "fire source",
+        "receipt": {
+          "accepted": 1,
+          "added": 1,
+          "evaluated": 25,
+          "id": 12,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 1
+        },
+        "w": 1,
+        "x": 33056,
+        "y": 128
+      },
+      {
+        "element": "STONE",
+        "h": 6,
+        "label": "lava floor",
+        "receipt": {
+          "accepted": 342,
+          "added": 342,
+          "evaluated": 600,
+          "id": 13,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 342
+        },
+        "w": 56,
+        "x": 33156,
+        "y": 176
+      },
+      {
+        "element": "STONE",
+        "h": 68,
+        "label": "lava left",
+        "receipt": {
+          "accepted": 408,
+          "added": 408,
+          "evaluated": 720,
+          "id": 14,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 408
+        },
+        "w": 6,
+        "x": 33156,
+        "y": 108
+      },
+      {
+        "element": "STONE",
+        "h": 68,
+        "label": "lava right",
+        "receipt": {
+          "accepted": 408,
+          "added": 408,
+          "evaluated": 720,
+          "id": 15,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 408
+        },
+        "w": 6,
+        "x": 33206,
+        "y": 108
+      },
+      {
+        "element": "TERRA_LAVA_SOURCE",
+        "h": 1,
+        "label": "lava source",
+        "receipt": {
+          "accepted": 1,
+          "added": 1,
+          "evaluated": 25,
+          "id": 16,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 1
+        },
+        "w": 1,
+        "x": 33184,
+        "y": 128
+      },
+      {
+        "element": "STONE",
+        "h": 4,
+        "label": "drain fixture floor",
+        "receipt": {
+          "accepted": 96,
+          "added": 96,
+          "evaluated": 224,
+          "id": 17,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 96
+        },
+        "w": 24,
+        "x": 33348,
+        "y": 165
+      },
+      {
+        "element": "STONE",
+        "h": 1,
+        "label": "drain fixture solid",
+        "receipt": {
+          "accepted": 1,
+          "added": 1,
+          "evaluated": 25,
+          "id": 18,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 1
+        },
+        "w": 1,
+        "x": 33356,
+        "y": 160
+      },
+      {
+        "element": "SAND",
+        "h": 1,
+        "label": "drain fixture powder",
+        "receipt": {
+          "accepted": 1,
+          "added": 1,
+          "evaluated": 25,
+          "id": 19,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 1
+        },
+        "w": 1,
+        "x": 33364,
+        "y": 160
+      },
+      {
+        "element": "WATER",
+        "h": 1,
+        "label": "drain fixture water",
+        "receipt": {
+          "accepted": 1,
+          "added": 1,
+          "evaluated": 25,
+          "id": 20,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 1
+        },
+        "w": 1,
+        "x": 33360,
+        "y": 157
+      },
+      {
+        "element": "TERRA_LIQUID_DRAIN",
+        "h": 1,
+        "label": "liquid drain",
+        "receipt": {
+          "accepted": 1,
+          "added": 1,
+          "evaluated": 25,
+          "id": 21,
+          "reason": "ok",
+          "rejected": 0,
+          "removed": 0,
+          "skipped": 0,
+          "status": "completed",
+          "work": 1
+        },
+        "w": 1,
+        "x": 33360,
+        "y": 160
+      }
+    ],
+    "save": {
+      "allowed": true,
+      "blockers": []
+    },
+    "world": "51b4d7c9-27c4-42c8-a48b-c5516e039020"
+  }
+}

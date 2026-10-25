@@ -1,0 +1,109 @@
+{
+  "damage": {
+    "error": null,
+    "logs": [],
+    "ms": 4916,
+    "ok": true,
+    "value": {
+      "camera": {
+        "frame": {
+          "result": {
+            "center": {
+              "x": 6227.5,
+              "y": 651.3734130859375
+            },
+            "clamped": true,
+            "fitsSimulation": true,
+            "fitsViewport": true
+          },
+          "spec": {
+            "bounds": {
+              "h": 188.0003662109375,
+              "w": 1192,
+              "x": 5803.5,
+              "y": 531.4996337890625
+            },
+            "padding": 32,
+            "preferVisible": true
+          }
+        },
+        "loadedBounds": {
+          "h": 1472,
+          "w": 2240,
+          "x": 5120,
+          "y": -64
+        },
+        "simulationBounds": {
+          "h": 1344,
+          "w": 2112,
+          "x": 5184,
+          "y": 0
+        },
+        "targetSimulationBounds": {
+          "h": 1344,
+          "w": 2112,
+          "x": 5184,
+          "y": 0
+        },
+        "viewport": {
+          "h": 968,
+          "w": 1600,
+          "x": 5427.5,
+          "y": 167.3734130859375
+        },
+        "zoom": 0.25
+      },
+      "clock": 25.89999999999981,
+      "event": {
+        "amount": 77.23889924096152,
+        "amountAbsorbed": 0,
+        "amountRequested": 77.23889924096152,
+        "baseAmount": 81.30410446417002,
+        "blocked": false,
+        "category": "explosive",
+        "crit": false,
+        "killed": false,
+        "sourceEntityId": "0",
+        "sourceStableId": "instance@spawn-76053d40-1dfc-4bb8-91ee-4517f8cab9a9",
+        "targetEntityId": "2",
+        "targetStableId": "instance@spawn-e4d01aa9-64ea-40ad-a32a-0ef5b132ca30",
+        "type": "blast",
+        "x": 6111.5,
+        "y": 669.5
+      },
+      "paused": false
+    }
+  },
+  "birth": {
+    "wall": 0.03323420794913545,
+    "done": 0.09814654098590836,
+    "window": {
+      "height": 968,
+      "width": 1600
+    }
+  },
+  "mid": {
+    "wall": 0.32832241599680856,
+    "done": 0.365063332952559,
+    "window": {
+      "height": 968,
+      "width": 1600
+    }
+  },
+  "expired": {
+    "wall": 1.020780582970474,
+    "done": 1.0647210409515537,
+    "window": {
+      "height": 968,
+      "width": 1600
+    }
+  },
+  "later": {
+    "wall": 2.065383832959924,
+    "done": 2.100690957973711,
+    "window": {
+      "height": 968,
+      "width": 1600
+    }
+  }
+}

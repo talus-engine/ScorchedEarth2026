@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/indigo-m9-collapse/enable_terrain_items_2530.py", line 41, in <module>
+    report['save']=script('await talus.editor.save();return true')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tonygermaneri/gh/indigo/tools/audit_m2.py", line 10, in script
+    result = call('engine_run_script', {'source': source, 'timeoutMs': 60000}, timeout=70)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tonygermaneri/gh/indigo/tools/bridge.py", line 25, in call
+    raise RuntimeError(f"{name}: HTTP {error.code}: {error.read().decode()}") from None
+RuntimeError: engine_run_script: HTTP 502: {"error":"page connection lost mid-call"}

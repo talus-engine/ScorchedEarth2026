@@ -1,0 +1,534 @@
+{
+  "error": null,
+  "logs": [],
+  "ms": 4,
+  "ok": true,
+  "value": {
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8833333333333315,
+        "id": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.033333333333327,
+        "id": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "kind": "deployed",
+        "name": "M4 Test resume-aiming 1",
+        "turn": 0
+      },
+      {
+        "clock": 4.883333333333321,
+        "id": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "id": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a",
+        "kind": "deployed",
+        "name": "M4 Test resume-aiming 2",
+        "turn": 0
+      },
+      {
+        "clock": 6.11666666666665,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 6.1499999999999835,
+        "id": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "kind": "land",
+        "turn": 1
+      },
+      {
+        "clock": 6.333333333333316,
+        "id": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "kind": "turn",
+        "name": "M4 Test resume-aiming 1",
+        "turn": 1
+      },
+      {
+        "clock": 6.349999999999983,
+        "distance": 2304,
+        "elevation": 96.00738525390624,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test resume-aiming 1",
+        "rise": 0,
+        "target": "M4 Test resume-aiming 2",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 6.349999999999983,
+        "kind": "cpu-aimed",
+        "name": "M4 Test resume-aiming 1",
+        "origin": {
+          "x": 5247.5,
+          "y": 705.99853515625
+        },
+        "power": 40.071483051924695,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 7551.5,
+          "y": 609.9911499023438
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.40071483051924695,
+          "speed": {
+            "current": 1250.0873051162012,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "clock": 6.366666666666649,
+        "kind": "match-ready",
+        "phase": "turn",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 7.816666666666644,
+        "kind": "fire-request",
+        "owner": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "power": 40.071483051924695,
+        "turn": 1
+      },
+      {
+        "clock": 7.816666666666644,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+          "vx": 883.9451904296875,
+          "vy": -883.9451904296875,
+          "x": 5272.5,
+          "y": 680.5
+        },
+        "turn": 1
+      },
+      {
+        "amount": 57.246508672108334,
+        "clock": 10.416666666666764,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "projectileId": 1,
+        "targetEntityId": 3,
+        "targetStableId": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a",
+        "turn": 1
+      },
+      {
+        "clock": 10.416666666666764,
+        "kind": "end",
+        "owner": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "shooterResidency": "stored",
+        "turn": 1,
+        "x": 7531.5,
+        "y": 595.5374145507812
+      },
+      {
+        "clock": 10.916666666666789,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 7339.5,
+          "y": 467.5374145507813
+        },
+        "ticks": 30,
+        "timedOut": false,
+        "turn": 1,
+        "watchId": 1
+      },
+      {
+        "clock": 11.1166666666668,
+        "id": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a",
+        "kind": "turn",
+        "name": "M4 Test resume-aiming 2",
+        "turn": 2
+      },
+      {
+        "clock": 11.1166666666668,
+        "distance": 2304,
+        "elevation": -95.82421875,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test resume-aiming 2",
+        "rise": 0,
+        "target": "M4 Test resume-aiming 1",
+        "turn": 2
+      },
+      {
+        "angle": 135,
+        "clock": 11.1166666666668,
+        "kind": "cpu-aimed",
+        "name": "M4 Test resume-aiming 2",
+        "origin": {
+          "x": 7551.5,
+          "y": 610.166015625
+        },
+        "power": 38.32477836461891,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 5247.5,
+          "y": 705.990234375
+        },
+        "turn": 2,
+        "weapon": {
+          "ammo": {},
+          "angle": -2.356194490192345,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.38324778364618906,
+          "speed": {
+            "current": 1199.083528246872,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 135,
+        "clock": 12.516666666666868,
+        "kind": "fire-request",
+        "owner": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a",
+        "power": 38.32477836461891,
+        "turn": 2
+      },
+      {
+        "clock": 12.516666666666868,
+        "id": 2,
+        "kind": "launch",
+        "owner": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a",
+          "vx": -847.8800659179688,
+          "vy": -847.8800659179688,
+          "x": 7525.5,
+          "y": 584.5
+        },
+        "turn": 2
+      },
+      {
+        "amount": 58.3830367175243,
+        "clock": 15.23333333333367,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a",
+        "projectileId": 2,
+        "targetEntityId": 6,
+        "targetStableId": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "turn": 2
+      },
+      {
+        "clock": 15.23333333333367,
+        "kind": "end",
+        "owner": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a",
+        "shooterResidency": "stored",
+        "turn": 2,
+        "x": 5264.3896484375,
+        "y": 690.1143798828125
+      },
+      {
+        "clock": 15.733333333333697,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 5072.3896484375,
+          "y": 562.1143798828125
+        },
+        "ticks": 30,
+        "timedOut": false,
+        "turn": 2,
+        "watchId": 2
+      },
+      {
+        "clock": 15.933333333333705,
+        "id": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "kind": "turn",
+        "name": "M4 Test resume-aiming 1",
+        "turn": 3
+      },
+      {
+        "clock": 15.933333333333705,
+        "distance": 2304,
+        "elevation": 97,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M4 Test resume-aiming 1",
+        "rise": 18.98992919921875,
+        "target": "M4 Test resume-aiming 2",
+        "turn": 3
+      },
+      {
+        "angle": 45,
+        "clock": 15.933333333333705,
+        "kind": "cpu-aimed",
+        "name": "M4 Test resume-aiming 1",
+        "origin": {
+          "x": 5247.5,
+          "y": 706.9899291992188
+        },
+        "power": 40.08110930031374,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 7551.5,
+          "y": 609.9899291992188
+        },
+        "turn": 3,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "ad38e818-9e88-466b-8d56-d1fcc092bb82",
+          "gravityScale": 1,
+          "items": [
+            "ad38e818-9e88-466b-8d56-d1fcc092bb82"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.40081109300313744,
+          "speed": {
+            "current": 1250.3683915691613,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 17.350000000000296,
+        "kind": "fire-request",
+        "owner": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "power": 40.08110930031374,
+        "turn": 3
+      },
+      {
+        "clock": 17.350000000000296,
+        "id": 3,
+        "kind": "launch",
+        "owner": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+          "vx": 884.1439819335938,
+          "vy": -884.1439819335938,
+          "x": 5272.5,
+          "y": 680.5
+        },
+        "turn": 3
+      },
+      {
+        "clock": 19.966666666666818,
+        "killer": "M4 Test resume-aiming 1",
+        "kind": "eliminated",
+        "name": "M4 Test resume-aiming 2",
+        "reason": "destroyed",
+        "turn": 3
+      },
+      {
+        "amount": 56.451437293190736,
+        "clock": 19.966666666666818,
+        "direct": true,
+        "killed": true,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "projectileId": 3,
+        "targetEntityId": 9,
+        "targetStableId": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a",
+        "turn": 3
+      },
+      {
+        "clock": 19.966666666666818,
+        "kind": "end",
+        "owner": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+        "shooterResidency": "stored",
+        "turn": 3,
+        "x": 7531.2626953125,
+        "y": 594.1148681640625
+      },
+      {
+        "clock": 20.466666666666782,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 7339.2626953125,
+          "y": 466.1148681640625
+        },
+        "ticks": 30,
+        "timedOut": false,
+        "turn": 3,
+        "watchId": 3
+      },
+      {
+        "clock": 20.466666666666782,
+        "kind": "finished",
+        "turn": 3,
+        "winner": "M4 Test resume-aiming 1"
+      }
+    ],
+    "match": {
+      "biome": "slate-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "humans": 0,
+      "impact": {
+        "x": 7531.2626953125,
+        "y": 594.1148681640625
+      },
+      "lastHit": "M4 Test resume-aiming 2 \u221256 HP \u00b7 ELIMINATED",
+      "message": "M4 Test resume-aiming 1 wins the match",
+      "phase": "finished",
+      "remaining": 18.566666666666748,
+      "roster": [
+        {
+          "aimedTurn": 3,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f",
+          "index": 0,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "plannedTurn": 3,
+          "shotFrom": {
+            "x": 5247.5,
+            "y": 705.9923095703125
+          },
+          "spawnX": 5248,
+          "surfaceY": 720,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a"
+        },
+        {
+          "aimedTurn": 2,
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": true,
+          "entityId": "instance@spawn-71221e28-8f62-48e8-a213-748a0e16a19a",
+          "index": 1,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "plannedTurn": 2,
+          "shotFrom": {
+            "x": 7551.5,
+            "y": 609.990234375
+          },
+          "spawnX": 7552,
+          "surfaceY": 624,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-9d1022d2-68af-49a5-8ee0-a7d8f991692f"
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 3,
+      "turnSeconds": 20,
+      "version": 4,
+      "waitTicks": 157,
+      "winner": "M4 Test resume-aiming 1"
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Slate Reach",
+      "canSetup": true,
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 42,
+        "name": "M4 Test resume-aiming 1",
+        "power": 40.08110930031374
+      },
+      "finished": true,
+      "human": false,
+      "lastHit": "M4 Test resume-aiming 2 \u221256 HP \u00b7 ELIMINATED",
+      "phase": "finished",
+      "ready": false,
+      "remaining": 19,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 42,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 0,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "status": "OUT"
+        }
+      ],
+      "scores": [
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "wins": 1
+        },
+        {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "wins": 0
+        }
+      ],
+      "seed": 0,
+      "shotDirection": "RIGHT \u2192",
+      "status": "M4 Test resume-aiming 1 wins the match",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M4 Test resume-aiming 2",
+      "turnNumber": 3,
+      "turnSeconds": 20,
+      "winner": "M4 Test resume-aiming 1"
+    },
+    "worldId": "9684759a-b4e6-4349-bd97-d95e7edf841e"
+  }
+}

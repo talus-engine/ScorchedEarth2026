@@ -1,0 +1,161 @@
+{
+  "version": 6,
+  "resultQuietSeconds": 3,
+  "effects": [
+    {
+      "id": "dynamite",
+      "name": "Dynamite makeover",
+      "enabled": false,
+      "requires": "E14: preserve-color body transmutation and 2x2 center ignition",
+      "description": "Turn the actual hull into DYNAMITE, keep its paint, replace its central 2x2 pixels with FIRE."
+    },
+    {
+      "id": "acid",
+      "name": "Acid bath",
+      "enabled": false,
+      "requires": "E14: body-to-liquid transmutation",
+      "description": "The actual tank becomes HYDROCHLORIC_ACID and dissolves the ground."
+    },
+    {
+      "id": "furnace",
+      "name": "Ten-second furnace",
+      "enabled": false,
+      "duration": 10,
+      "interval": 0.1,
+      "mode": "spray",
+      "element": "FIRE",
+      "count": 32,
+      "speed": 180,
+      "spread": 0.8,
+      "finishBlast": 36,
+      "requires": "E16: correct element initialization in the public particle spray API"
+    },
+    {
+      "id": "magazine",
+      "name": "One hundred bad decisions",
+      "enabled": true,
+      "duration": 0,
+      "mode": "magazine",
+      "count": 100
+    },
+    {
+      "id": "nuke",
+      "name": "Extremely poor reactor design",
+      "enabled": false,
+      "requires": "E15: runtime large material brush",
+      "description": "Random 96\u2013240 px radius FIRE brush centered on the tank; no substitute scripted blast."
+    },
+    {
+      "id": "last-laugh",
+      "name": "The last laugh",
+      "enabled": false,
+      "requires": "E14: preserve-color transmutation plus ignition after burst",
+      "description": "Ten random-direction shells over 0.75 seconds, then the hull becomes lit dynamite."
+    },
+    {
+      "id": "thermite",
+      "name": "Thermite confetti",
+      "enabled": false,
+      "duration": 4,
+      "interval": 0.15,
+      "mode": "spray",
+      "element": "THERMITE",
+      "count": 18,
+      "speed": 220,
+      "spread": 2.4,
+      "ignite": true,
+      "finishBlast": 32,
+      "requires": "E16: correct element initialization in the public particle spray API"
+    },
+    {
+      "id": "oil",
+      "name": "Oil well from hell",
+      "enabled": false,
+      "duration": 6,
+      "interval": 0.15,
+      "mode": "spray",
+      "element": "CRUDE_OIL",
+      "count": 24,
+      "speed": 210,
+      "spread": 1.5,
+      "ignite": true,
+      "finishBlast": 48,
+      "requires": "E16: correct element initialization in the public particle spray API"
+    },
+    {
+      "id": "volcano",
+      "name": "Pocket volcano",
+      "enabled": false,
+      "duration": 5,
+      "interval": 0.2,
+      "mode": "spray",
+      "element": "LAVA",
+      "count": 18,
+      "speed": 260,
+      "spread": 1.8,
+      "finishBlast": 48,
+      "requires": "E16: correct element initialization in the public particle spray API"
+    },
+    {
+      "id": "cryo",
+      "name": "Cryogenic tantrum",
+      "enabled": false,
+      "duration": 4,
+      "interval": 0.15,
+      "mode": "spray",
+      "element": "LIQUID_NITROGEN",
+      "count": 28,
+      "speed": 170,
+      "spread": 2.8,
+      "finishBlast": 32,
+      "requires": "E16: correct element initialization in the public particle spray API"
+    },
+    {
+      "id": "sprinkler",
+      "name": "Corrosive sprinkler",
+      "enabled": false,
+      "duration": 6,
+      "interval": 0.15,
+      "mode": "spray",
+      "element": "HYDROCHLORIC_ACID",
+      "count": 18,
+      "speed": 200,
+      "spread": 2.6,
+      "finishBlast": 32,
+      "requires": "E16: correct element initialization in the public particle spray API"
+    },
+    {
+      "id": "fireworks",
+      "name": "Hostile fireworks",
+      "enabled": true,
+      "duration": 0.8,
+      "interval": 0.08,
+      "mode": "shells",
+      "count": 10,
+      "pattern": "radial",
+      "speed": 340
+    },
+    {
+      "id": "popcorn",
+      "name": "Popcorn minefield",
+      "enabled": true,
+      "duration": 0.6,
+      "interval": 0.1,
+      "mode": "shells",
+      "count": 6,
+      "pattern": "bounce",
+      "speed": 160
+    },
+    {
+      "id": "meteor",
+      "name": "Your personal meteor shower",
+      "enabled": true,
+      "duration": 1.6,
+      "interval": 0.2,
+      "mode": "shells",
+      "count": 8,
+      "pattern": "rain",
+      "speed": 200
+    }
+  ]
+}

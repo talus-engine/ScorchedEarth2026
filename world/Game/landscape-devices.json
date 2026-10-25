@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "status": "awaiting-native-physical-acceptance",
+  "devices": [
+    {"name":"TERRA_WATER_SOURCE","basedOn":"PARTICLE_SPAWNER","emits":"WATER","fields":{"hardness":16,"color":[0.12,0.65,0.95],"params":{"enabled":1,"emitMode":0,"framesPerSpawn":12,"burst":1,"shape":0,"speedMin":0,"speedMax":0.1,"speedAngle":1.5708,"temperature":295.15}}},
+    {"name":"TERRA_OIL_SOURCE","basedOn":"PARTICLE_SPAWNER","emits":"CRUDE_OIL","fields":{"hardness":16,"color":[0.55,0.35,0.1],"params":{"enabled":1,"emitMode":0,"framesPerSpawn":30,"burst":1,"shape":0,"speedMin":0,"speedMax":0.1,"speedAngle":1.5708,"temperature":295.15}}},
+    {"name":"TERRA_FIRE_SOURCE","basedOn":"PARTICLE_SPAWNER","emits":"FIRE","fields":{"hardness":16,"color":[0.95,0.3,0.1],"params":{"enabled":1,"emitMode":0,"framesPerSpawn":12,"burst":1,"shape":0,"speedMin":0.2,"speedMax":0.5,"speedAngle":4.7124,"speedJitter":0.2,"temperature":1100}}},
+    {"name":"TERRA_LAVA_SOURCE","basedOn":"PARTICLE_SPAWNER","emits":"LAVA","fields":{"hardness":16,"color":[0.8,0.15,0.05],"params":{"enabled":1,"emitMode":0,"framesPerSpawn":60,"burst":1,"shape":0,"speedMin":0,"speedMax":0.1,"speedAngle":1.5708,"temperature":1450}}},
+    {"name":"TERRA_LIQUID_DRAIN","basedOn":"PARTICLE_DRAIN","fields":{"hardness":16,"color":[0.15,0.25,0.3],"params":{"enabled":1,"framesPerDrain":1,"shape":1,"shapeRadius":6,"filterClassMask":4}}}
+  ]
+}

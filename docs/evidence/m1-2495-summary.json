@@ -1,0 +1,355 @@
+{
+  "installedVersion": "0.0.2495",
+  "sourceBase": "adf204861",
+  "sourceState": "committed on clean local main",
+  "worldId": "2c5632cb-1eea-47d4-aed1-b38c0ffa7331",
+  "templateId": "d9fa0363-0172-a96e-9b10-0b0c3d9a1f58",
+  "seed": 1729,
+  "passed": 33,
+  "total": 33,
+  "accepted": true,
+  "checks": [
+    {
+      "name": "Indigo template open in editor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "import created live WFC area",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normal x=400 start",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all starting ground cells are stone",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "before-first-shot: 192 chunks have no unexpected terrain loss",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "calibration: 192 chunks have no unexpected terrain loss",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "long range flight",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "home survives shell-following return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "first crater survives round trip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "damage1: 192 chunks have no unexpected terrain loss",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "damage2: 192 chunks have no unexpected terrain loss",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "two shots kill the target, one survivor",
+      "passed": true,
+      "detail": [
+        {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 6,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-527c15e2-2815-4bb4-aabc-14557ec28b97",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "M1 Shooter",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 399.5,
+          "y": 625.9899291992188
+        },
+        {
+          "alive": false,
+          "angle": 0,
+          "chunk": {
+            "x": 72,
+            "y": 10
+          },
+          "faction": null,
+          "health": 0,
+          "id": "instance@spawn-5ef57d7f-85a7-42e6-a99d-73fde30cabd2",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 16,
+          "maxHealth": 100,
+          "name": "M1 Target",
+          "residency": "live",
+          "slot": null,
+          "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+          "vx": 0,
+          "vy": 0,
+          "x": 4615.5,
+          "y": 644.3583374023438
+        }
+      ]
+    },
+    {
+      "name": "highArc: 192 chunks have no unexpected terrain loss",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "shooter parked during flight with durable owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "high arc above terrain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "both hit callbacks delivered with owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "damage and kill credit retain shooter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hits precede projectile end",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all four impacts settled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "camera-only ground return 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "camera-only ground return 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "camera-only ground return 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after-round-trips: 192 chunks have no unexpected terrain loss",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "former pit region contains full ground",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "save/reopen retains survivor identity, health and marker",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "save/reopen retains cannon inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target remains dead after reopen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "home survives save/reopen exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "craters survive save/reopen exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "corridor contents survive save/reopen exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "after-reopen: 192 chunks have no unexpected terrain loss",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "all 192 terrain chunks match exactly after save/reopen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all 192 terrain chunks and craters match after camera round trips",
+      "passed": true,
+      "detail": "Compared recorded full-corridor hashes after the replay; this assertion is now in the runner."
+    }
+  ],
+  "terrain": {
+    "chunks": 192,
+    "cellsPerAudit": 786432,
+    "auditStages": [
+      "before-first-shot",
+      "calibration",
+      "damage1",
+      "damage2",
+      "highArc",
+      "after-round-trips",
+      "after-reopen"
+    ],
+    "unexpectedMissingCells": 0,
+    "roundTripsExact": true,
+    "saveReopenExact": true,
+    "formerlyMissingChunk": {
+      "before-first-shot": {
+        "sha256": "3431383721510cf1c211de027cf958c183e16db5fabb6b230eb284c85e196aa9",
+        "stoneCells": 4096
+      },
+      "calibration": {
+        "sha256": "3431383721510cf1c211de027cf958c183e16db5fabb6b230eb284c85e196aa9",
+        "stoneCells": 4096
+      },
+      "damage1": {
+        "sha256": "3431383721510cf1c211de027cf958c183e16db5fabb6b230eb284c85e196aa9",
+        "stoneCells": 4096
+      },
+      "damage2": {
+        "sha256": "3431383721510cf1c211de027cf958c183e16db5fabb6b230eb284c85e196aa9",
+        "stoneCells": 4096
+      },
+      "highArc": {
+        "sha256": "3431383721510cf1c211de027cf958c183e16db5fabb6b230eb284c85e196aa9",
+        "stoneCells": 4096
+      },
+      "after-round-trips": {
+        "sha256": "3431383721510cf1c211de027cf958c183e16db5fabb6b230eb284c85e196aa9",
+        "stoneCells": 4096
+      },
+      "after-reopen": {
+        "sha256": "3431383721510cf1c211de027cf958c183e16db5fabb6b230eb284c85e196aa9",
+        "stoneCells": 4096
+      }
+    }
+  },
+  "impacts": [
+    {
+      "shot": 1,
+      "x": 4686.265625,
+      "y": 639.75
+    },
+    {
+      "shot": 2,
+      "x": 4595.5,
+      "y": 631.9620971679688
+    },
+    {
+      "shot": 3,
+      "x": 4595.5,
+      "y": 631.9620971679688
+    },
+    {
+      "shot": 4,
+      "x": 4596.04150390625,
+      "y": 679.75
+    }
+  ],
+  "hits": [
+    {
+      "shot": 2,
+      "amount": 60.137953474358085,
+      "killed": false,
+      "owner": "instance@spawn-527c15e2-2815-4bb4-aabc-14557ec28b97"
+    },
+    {
+      "shot": 3,
+      "amount": 58.15468445866281,
+      "killed": true,
+      "owner": "instance@spawn-527c15e2-2815-4bb4-aabc-14557ec28b97"
+    }
+  ],
+  "scriptFaults": [],
+  "survivor": {
+    "alive": true,
+    "angle": 0,
+    "chunk": {
+      "x": 6,
+      "y": 9
+    },
+    "faction": null,
+    "health": 100,
+    "id": "instance@spawn-527c15e2-2815-4bb4-aabc-14557ec28b97",
+    "keepLiveOffscreen": false,
+    "launchedBy": null,
+    "liveId": 0,
+    "maxHealth": 100,
+    "name": "M1 Shooter",
+    "residency": "live",
+    "slot": null,
+    "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+    "vx": 0,
+    "vy": 0,
+    "x": 399.5,
+    "y": 625.9899291992188
+  },
+  "target": {
+    "alive": false,
+    "angle": 0,
+    "chunk": {
+      "x": 72,
+      "y": 10
+    },
+    "faction": null,
+    "health": 0,
+    "id": "instance@spawn-5ef57d7f-85a7-42e6-a99d-73fde30cabd2",
+    "keepLiveOffscreen": false,
+    "launchedBy": null,
+    "liveId": null,
+    "maxHealth": 100,
+    "name": "M1 Target",
+    "residency": "stored",
+    "slot": null,
+    "templateId": "66da3944-6b83-4937-8833-1d3c398c37ac",
+    "vx": 0,
+    "vy": 0,
+    "x": 4615.5,
+    "y": 694.265380859375
+  },
+  "sourceCommit": "aef4c32cf572145966ad7610e175958861c6c88b"
+}

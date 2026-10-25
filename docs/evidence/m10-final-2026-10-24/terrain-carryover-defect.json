@@ -1,0 +1,104 @@
+{
+  "baseGeneration": {
+    "parameters": {},
+    "recipe": "brush"
+  },
+  "generation": "bunker-grid",
+  "generationChoice": "random",
+  "params": {
+    "account": "m10f oct24 alpha",
+    "baseGeneration": {
+      "parameters": {},
+      "recipe": "brush"
+    },
+    "biomeCycle": "random",
+    "biomeRounds": "1",
+    "computers": "4",
+    "cpuSkill": "persona",
+    "deploy": "yes",
+    "generation": {
+      "recipe": "random",
+      "recipeParameters": {
+        "bramble-badlands": {
+          "blend": 0,
+          "frequency": 0.005,
+          "height": 110,
+          "octaves": 3
+        },
+        "brush": {},
+        "bunker-grid": {
+          "cellSize": 48
+        },
+        "cavern-war": {
+          "cellSize": 48,
+          "fillProbability": 0.48,
+          "smoothSteps": 4
+        },
+        "crater-country": {
+          "blend": 0,
+          "frequency": 0.008,
+          "height": 135,
+          "octaves": 3
+        },
+        "dune-sea": {
+          "blend": 0,
+          "frequency": 0.004,
+          "height": 90,
+          "octaves": 3
+        },
+        "rat-run": {
+          "braidChance": 0.65,
+          "cellSize": 48
+        },
+        "shattered-highlands": {
+          "blend": 0,
+          "frequency": 0.006,
+          "height": 155,
+          "octaves": 3
+        },
+        "terrace-siege": {
+          "cellSize": 48,
+          "platformDividerWallChance": 0.2,
+          "platformDropChance": 0.4,
+          "platformDropWidthTiles": 2,
+          "platformFilledBayChance": 0.1,
+          "platformFloorThicknessTiles": 1,
+          "platformGapChance": 0.2,
+          "platformMaxVerticalGapTiles": 5,
+          "platformMinVerticalGapTiles": 3
+        },
+        "wfc": {}
+      },
+      "weights": {
+        "bramble-badlands": 6,
+        "brush": 24,
+        "bunker-grid": 7,
+        "cavern-war": 7,
+        "crater-country": 6,
+        "dune-sea": 6,
+        "rat-run": 7,
+        "shattered-highlands": 6,
+        "terrace-siege": 7,
+        "wfc": 24
+      }
+    },
+    "humans": "0",
+    "namesText": "M10F Oct24 Alpha\nM10F Oct24 Bravo\nM10F Oct24 Charlie\nM10F Oct24 Delta",
+    "personaSeed": "2533504",
+    "revision": "10",
+    "round": "2",
+    "seed": "",
+    "seriesId": "04621717-2bbb-4958-bddc-d64eb8bee652",
+    "seriesLength": "3",
+    "turnSeconds": "30"
+  },
+  "round": 2,
+  "seriesId": "04621717-2bbb-4958-bddc-d64eb8bee652",
+  "world": "fc1ca2cc-3ee0-42f8-84f1-381d320fbdf1",
+  "expectedGeneration": {
+    "parameters": {},
+    "recipe": "brush"
+  },
+  "gamePath": "Menus/shop.html: data-talus-param=generation / data-talus-json=shop.generation",
+  "sourceCause": "MenuOverlay.vue onOverlayClick overwrites explicit typed params with any cached terrainDrafts entry, regardless of whether the current menu owns a terrain control."
+}

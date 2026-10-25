@@ -1,0 +1,4712 @@
+{
+  "before": {
+    "actor": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+    "controller": {
+      "capacity": 12,
+      "enabled": true,
+      "fuel": 3,
+      "grounded": true,
+      "held": false,
+      "recoveryPerSecond": 0,
+      "thrusting": false
+    },
+    "snapshot": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 96,
+        "y": 6
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 0,
+      "maxHealth": 100,
+      "name": "Feris Blackmere",
+      "residency": "live",
+      "slot": null,
+      "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+      "vx": 0,
+      "vy": 0,
+      "x": 6161.49462890625,
+      "y": 385.4999084472656
+    },
+    "world": "5ad3b549-3361-45e9-ba60-558da786a14b"
+  },
+  "beforeSamples": {
+    "layer": "foreground",
+    "ok": true,
+    "samples": [
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6020,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#5b5446",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#5b5446",
+            "name": "STONE",
+            "particleIndex": 1530458,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#59564c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#59564c",
+            "name": "STONE",
+            "particleIndex": 1530493,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#4c5630",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#4c5630",
+            "name": "STONE",
+            "particleIndex": 1530543,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 1530578,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 280
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6300,
+        "y": 280
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6368,
+        "y": 280
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6020,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 1531354,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1531389,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#4c5630",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#4c5630",
+            "name": "STONE",
+            "particleIndex": 1531439,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#31331f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#31331f",
+            "name": "STONE",
+            "particleIndex": 1531474,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 287
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6300,
+        "y": 287
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6368,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1524313,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6020,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#38421f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#38421f",
+            "name": "STONE",
+            "particleIndex": 1524358,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1524393,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#2c271f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#2c271f",
+            "name": "STONE",
+            "particleIndex": 1526363,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#45581f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#45581f",
+            "name": "STONE",
+            "particleIndex": 1526398,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1528433,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6300,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#59564c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#59564c",
+            "name": "STONE",
+            "particleIndex": 1528501,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6368,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1525209,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6020,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#8f7846",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#8f7846",
+            "name": "STONE",
+            "particleIndex": 1525254,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1525289,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1527259,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 1527294,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#38421f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#38421f",
+            "name": "STONE",
+            "particleIndex": 1529329,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6300,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#31331f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#31331f",
+            "name": "STONE",
+            "particleIndex": 1529397,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6368,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1526233,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6020,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 1526278,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1526313,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#4c5630",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#4c5630",
+            "name": "STONE",
+            "particleIndex": 1528283,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#31331f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#31331f",
+            "name": "STONE",
+            "particleIndex": 1528318,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#597821",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#597821",
+            "name": "STONE",
+            "particleIndex": 1530353,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6300,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1530421,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6368,
+        "y": 415
+      }
+    ]
+  },
+  "focus": {
+    "action": "click",
+    "focused": true,
+    "ok": true,
+    "sent": 3,
+    "window": {
+      "height": 968,
+      "width": 1600
+    },
+    "x": 1000,
+    "y": 500
+  },
+  "save": {
+    "action": "press",
+    "focused": true,
+    "key": "s",
+    "modifiers": [
+      "meta"
+    ],
+    "ok": true,
+    "sent": 2,
+    "window": {
+      "height": 968,
+      "width": 1600
+    }
+  },
+  "saveLog": {
+    "lines": [
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1057.0799999833107,
+        "text": "[gpu-startup] BloomToPressurePass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1057.949999988079,
+        "text": "[gpu-startup] BloomToPressurePass: 1 ms (1 pipeline compiled off the GPU main thread)"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1057.964999973774,
+        "text": "[gpu-startup] PlasmaDamage: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1060.1899999976158,
+        "text": "[gpu-startup] PlasmaDamage: 2 ms (1 pipeline compiled off the GPU main thread)"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1060.2049999833107,
+        "text": "[gpu-startup] PipePlasmaEffects: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1060.824999988079,
+        "text": "[gpu-startup] PipePlasmaEffects: 1 ms (1 pipeline compiled off the GPU main thread)"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1060.839999973774,
+        "text": "[gpu-startup] LifeDamage: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1064.324999988079,
+        "text": "[gpu-startup] LifeDamage: 3 ms (2 pipelines compiled off the GPU main thread)"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1064.339999973774,
+        "text": "[gpu-startup] GoldAbsorber: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1065.9449999928474,
+        "text": "[gpu-startup] GoldAbsorber: 2 ms (1 pipeline compiled off the GPU main thread)"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1084.0849999785423,
+        "text": "[gpu-alloc] 1315 MB live (peak 1315 MB): Particle Storage Buffer 336 MB, spawnPosBuffer 56 MB, pmap deterministic claims 44 MB, em:dl0 40 MB, particleVisualRoles 28 MB"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1095.1549999713898,
+        "text": "[gpu-startup] AnimatedParticlePartSystem: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1115.914999961853,
+        "text": "[gpu-startup] AnimatedParticlePartSystem: 20 ms (1 pipeline compiled off the GPU main thread)"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1116.0949999690056,
+        "text": "[gpu-startup] Simulation resources ready: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1116.304999947548,
+        "text": "[gpu-startup] Simulation resources ready: 0 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1116.3299999833107,
+        "text": "[gpu-startup] Persistence pipelines: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1118.239999949932,
+        "text": "[gpu-startup] Persistence pipelines: 2 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1118.3149999976158,
+        "text": "[gpu-startup] RasterLayerPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1120.364999949932,
+        "text": "[gpu-startup] RasterLayerPass: 2 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1120.5799999833107,
+        "text": "[gpu-startup] AnimatedBgDecalRenderer: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1121.7099999785423,
+        "text": "[gpu-startup] AnimatedBgDecalRenderer: 1 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1121.75,
+        "text": "[gpu-startup] ElectricityOverlayPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1123.274999976158,
+        "text": "[gpu-startup] ElectricityOverlayPass: 1 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1123.3499999642372,
+        "text": "[gpu-startup] EmFieldViewPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1124.2199999690056,
+        "text": "[gpu-startup] EmFieldViewPass: 1 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1124.2549999952316,
+        "text": "[gpu-startup] ExplosionBloomOverlayPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1126.4099999666214,
+        "text": "[gpu-startup] ExplosionBloomOverlayPass: 2 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1126.489999949932,
+        "text": "[gpu-startup] TrailOverlayPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1127.1749999523165,
+        "text": "[gpu-startup] TrailOverlayPass: 1 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1127.2299999594688,
+        "text": "[gpu-startup] ParticleMeshPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1127.4099999666214,
+        "text": "[gpu-startup] ParticleMeshPass: 0 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1127.4199999570849,
+        "text": "[gpu-startup] ShockwaveRingPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1128.2799999713898,
+        "text": "[gpu-startup] ShockwaveRingPass: 1 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1128.2949999570849,
+        "text": "[gpu-startup] AirLensPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1129.7599999904633,
+        "text": "[gpu-startup] AirLensPass: 1 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1129.7699999809265,
+        "text": "[gpu-startup] AirDustPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1131.1949999928474,
+        "text": "[gpu-startup] AirDustPass: 1 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1131.214999973774,
+        "text": "[gpu-startup] LightBloomPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1132.789999961853,
+        "text": "[gpu-startup] LightBloomPass: 2 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1132.8199999928474,
+        "text": "[gpu-startup] LightBouncePass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1134.0049999952316,
+        "text": "[gpu-startup] LightBouncePass: 1 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1134.0299999713898,
+        "text": "[gpu-startup] LightPostFusedPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1135.6099999547005,
+        "text": "[gpu-startup] LightPostFusedPass: 2 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1135.625,
+        "text": "[gpu-startup] AtmospherePass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1136.824999988079,
+        "text": "[gpu-startup] AtmospherePass: 1 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1136.8349999785423,
+        "text": "[gpu-startup] CombustionCompositePass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1137.6599999666214,
+        "text": "[gpu-startup] CombustionCompositePass: 1 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1137.664999961853,
+        "text": "[gpu-startup] RbMotionBlurPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1138.8349999785423,
+        "text": "[gpu-startup] RbMotionBlurPass: 1 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1138.8499999642372,
+        "text": "[gpu-startup] IonizationOverlayPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1140.839999973774,
+        "text": "[gpu-startup] IonizationOverlayPass: 2 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1140.9249999523165,
+        "text": "[gpu-startup] LightingPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1151.4249999523165,
+        "text": "[gpu-startup] LightingPass: 10 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1151.5,
+        "text": "[gpu-startup] FogOfWarPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1151.949999988079,
+        "text": "[gpu-startup] FogOfWarPass: 0 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1151.964999973774,
+        "text": "[gpu-startup] OccluderMaskPass: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 1154.414999961853,
+        "text": "[gpu-startup] OccluderMaskPass: 2 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 2466.9549999833107,
+        "text": "[gpu-startup] Ready: starting"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 2485.729999959469,
+        "text": "[gpu-startup] Ready: 19 ms"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 2485.8949999809265,
+        "text": "[gpu-startup] done in 1714 ms: 136 pipelines compiled off the GPU main thread (slowest 40 ms, em:census), 0 synchronously; GPU main thread's longest stall 16 ms over 6 probes"
+      },
+      {
+        "level": "warn",
+        "realm": "engine",
+        "t": 2764.6299999952316,
+        "text": "[GpuPerf] fence 148.9ms (>4\u00d7 budget)"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 2785.774999976158,
+        "text": "[talus-core] stillness kernel: sharing the engine store arena instance"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 2786.789999961853,
+        "text": "[talus-core] stillness parity confirmed (rust output verified against JS)"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 5537.714999973774,
+        "text": "[GameState] Session flags cleared"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 5560.52999997139,
+        "text": "[WorldManager] reclaimed 0MB of database (512MB -> 512MB, incremental, 5ms)"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 5623.679999947548,
+        "text": "[Talus] Load game on template \"indigo\" at v69 (templateId=d9fa0363-0172-a96e-9b10-0b0c3d9a1f58)"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 5623.909999966621,
+        "text": "WFCZoneManager: Added zone \"indigo-m1\" (0,0 to 0,0)"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 5623.919999957085,
+        "text": "WFCZoneManager: Added zone \"indigo-slate\" (0,0 to 0,0)"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 5623.949999988079,
+        "text": "WFCZoneManager: Added zone \"indigo-mixed\" (0,0 to 0,0)"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 5738.439999997616,
+        "text": "[ScriptHost] world 5ad3b549-3361-45e9-ba60-558da786a14b: 7 script(s) in the store"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 6401.599999964237,
+        "text": "[talus-core] load-unpack parity confirmed (rust output verified against JS)"
+      },
+      {
+        "level": "warn",
+        "realm": "engine",
+        "t": 6404.314999997616,
+        "text": "[ComputePipeline] particleVisualRoles slot scatter: needed before its async compile landed (dispatch) \u2014 compiled synchronously on the GPU main thread in 0 ms; give it an explicit bind-group layout, or put it behind a LazyAsyncPipeline"
+      },
+      {
+        "level": "warn",
+        "realm": "engine",
+        "t": 6858.924999952316,
+        "text": "[GpuPerf] fence 211.4ms (>4\u00d7 budget)"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 6994.049999952316,
+        "text": "[load] world \"5ad3b549-3361-45e9-ba60-558da786a14b\" loaded in 1459ms \u2014 clearAndMeta 27, sections 2, aggregates 14, template 116, registries 11, ringLoad 607, activate 290, spawnRestore 262, stateShaders 128"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 6996.664999961853,
+        "text": "[hostSession] loadWorld complete: worldId=5ad3b549-3361-45e9-ba60-558da786a14b controllerBuilt=true"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 7016.560000002384,
+        "text": "[gpu-alloc] 2008 MB live (peak 2008 MB): CA Intentions 533 MB, Particle Storage Buffer 336 MB, spawnPosBuffer 56 MB, pmap deterministic claims 44 MB, em:dl0 40 MB"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 7016.679999947548,
+        "text": "[gpu-alloc] 2064 MB live (peak 2064 MB): CA Intentions 533 MB, Particle Storage Buffer 336 MB, spawnPosBuffer 56 MB, pmap deterministic claims 44 MB, em:dl0 40 MB"
+      },
+      {
+        "level": "error",
+        "realm": "engine",
+        "t": 7124.819999992847,
+        "text": "[webgpu:error] Destroyed texture [Texture \"LightingPass.lightTexture\"] used in a submit.\n - While calling [Queue].Submit([[CommandBuffer from CommandEncoder \"sim group wave\"]])\n"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 7314.944999992847,
+        "text": "[gpu-alloc] 2308 MB live (peak 2308 MB): CA Intentions 533 MB, Particle Storage Buffer 336 MB, ParticleShape instances 85 MB, LightingPass.emitters 64 MB, spawnPosBuffer 56 MB"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 14027.229999959469,
+        "text": "[gpu-queue] write storm: 2000 writeBuffer / 1 writeTexture in 50 ms \u2014     at GPUQueue.writeBuffer (app://editor/engine/assets/workerEntry-Beh7f16k.js:27349:129) <-     at e.recordSpawnPos (app://editor/engine/assets/workerEntry-Beh7f16k.js:25609:197515) <-     at e.onParticleCreated (app://editor/engine/assets/workerEntry-Beh7f16k.js:25609:29174) <-     at e.createParticle (app://editor/engine/assets/workerEntry-Beh7f16k.js:12059:14372) <-     at app://editor/engine/assets/workerEntry-Beh7f16k.js:25609:111898 <-     at app://editor/engine/assets/workerEntry-Beh7f16k.js:25609:111204 <-     at e\u2026"
+      },
+      {
+        "level": "warn",
+        "realm": "engine",
+        "t": 14060.479999959469,
+        "text": "EntitySpawner: joint bodyB index 1 not found"
+      },
+      {
+        "level": "warn",
+        "realm": "engine",
+        "t": 14066.03499996662,
+        "text": "[ComputePipeline] Particle Renderer (order pass): needed before its async compile landed (dispatch) \u2014 compiled synchronously on the GPU main thread in 0 ms; give it an explicit bind-group layout, or put it behind a LazyAsyncPipeline"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 14071.629999995232,
+        "text": "[PressureMap] kicking refresh: dim=1024x1024 cell=4 offset=(4152,-1648)"
+      },
+      {
+        "level": "warn",
+        "realm": "engine",
+        "t": 14082.239999949932,
+        "text": "[ComputePipeline] caParamRef sidecar slot scatter: needed before its async compile landed (dispatch) \u2014 compiled synchronously on the GPU main thread in 0 ms; give it an explicit bind-group layout, or put it behind a LazyAsyncPipeline"
+      },
+      {
+        "level": "warn",
+        "realm": "engine",
+        "t": 14082.304999947548,
+        "text": "[ComputePipeline] birthColor sidecar slot scatter: needed before its async compile landed (dispatch) \u2014 compiled synchronously on the GPU main thread in 0 ms; give it an explicit bind-group layout, or put it behind a LazyAsyncPipeline"
+      },
+      {
+        "level": "warn",
+        "realm": "engine",
+        "t": 14082.709999978542,
+        "text": "[ComputePipeline] RB Swept Contact: needed before its async compile landed (dispatch) \u2014 compiled synchronously on the GPU main thread in 0 ms; give it an explicit bind-group layout, or put it behind a LazyAsyncPipeline"
+      },
+      {
+        "level": "warn",
+        "realm": "engine",
+        "t": 14082.724999964235,
+        "text": "[ComputePipeline] RB Pose Record: needed before its async compile landed (dispatch) \u2014 compiled synchronously on the GPU main thread in 0 ms; give it an explicit bind-group layout, or put it behind a LazyAsyncPipeline"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 14097.539999961851,
+        "text": "[PressureMap] mirror seeded: cells=1048576 nonzero=262811 maxMagSq=1.01e-1"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 14365.724999964235,
+        "text": "[PressureMap] kicking refresh: dim=1024x1024 cell=4 offset=(4152,-1648)"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 14380.049999952316,
+        "text": "[PressureMap] mirror seeded: cells=1048576 nonzero=268724 maxMagSq=9.56e-2"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 14632.65999996662,
+        "text": "[PressureMap] kicking refresh: dim=1024x1024 cell=4 offset=(4152,-1648)"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 14646.389999985697,
+        "text": "[PressureMap] mirror seeded: cells=1048576 nonzero=274516 maxMagSq=1.08e-1"
+      },
+      {
+        "level": "log",
+        "realm": "engine",
+        "t": 94153.5,
+        "text": "[rb-rehome] first scan: live=0 target=world:5ad3b549"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 94474.47999995948,
+        "text": "[serdeBucketing] SerdeWorker spawned \u2014 persistence bucketing runs off-thread"
+      },
+      {
+        "level": "log",
+        "realm": "page",
+        "t": 94653.32499998808,
+        "text": "\ud83d\udd0d Ctrl+S detected! event.key: s ctrlKey: false metaKey: true"
+      },
+      {
+        "level": "log",
+        "realm": "page",
+        "t": 94653.37000000475,
+        "text": "\ud83d\udcbe Save triggered..."
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 94658.74500000475,
+        "text": "[serdeBucketing] bucketing kernel: talus-core wasm (rust) + shared-memory arena"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 94661.04499995708,
+        "text": "[serdeBucketing] wasm arena provisioned: 156.6MB @ 134217736"
+      },
+      {
+        "level": "info",
+        "realm": "engine",
+        "t": 94738.56999999283,
+        "text": "[sync] full-ring persistence sync (full) held the ring for 584ms at t=94.2s epoch=1792732369933 (1552853 rows, capture=218ms, bucket=214ms, rebuild=145ms, retire=0ms, reclaim=6ms, via=sab)"
+      },
+      {
+        "level": "log",
+        "realm": "page",
+        "t": 96382.24000000954,
+        "text": "\ud83d\udcbe [game] Saved 403 dirty chunks to IndexedDB"
+      }
+    ],
+    "ok": true
+  },
+  "afterSaveSamples": {
+    "layer": "foreground",
+    "ok": true,
+    "samples": [
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6020,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#5b5446",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#5b5446",
+            "name": "STONE",
+            "particleIndex": 1530458,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#59564c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#59564c",
+            "name": "STONE",
+            "particleIndex": 1530493,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#4c5630",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#4c5630",
+            "name": "STONE",
+            "particleIndex": 1530543,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 1530578,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 280
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6300,
+        "y": 280
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6368,
+        "y": 280
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6020,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 1531354,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1531389,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#4c5630",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#4c5630",
+            "name": "STONE",
+            "particleIndex": 1531439,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#31331f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#31331f",
+            "name": "STONE",
+            "particleIndex": 1531474,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 287
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6300,
+        "y": 287
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6368,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1524313,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6020,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#38421f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#38421f",
+            "name": "STONE",
+            "particleIndex": 1524358,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1524393,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#2c271f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#2c271f",
+            "name": "STONE",
+            "particleIndex": 1526363,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#45581f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#45581f",
+            "name": "STONE",
+            "particleIndex": 1526398,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1528433,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6300,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#59564c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#59564c",
+            "name": "STONE",
+            "particleIndex": 1528501,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6368,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1525209,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6020,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#8f7846",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#8f7846",
+            "name": "STONE",
+            "particleIndex": 1525254,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1525289,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1527259,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 1527294,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#38421f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#38421f",
+            "name": "STONE",
+            "particleIndex": 1529329,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6300,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#31331f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#31331f",
+            "name": "STONE",
+            "particleIndex": 1529397,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6368,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1526233,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6020,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 1526278,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1526313,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#4c5630",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#4c5630",
+            "name": "STONE",
+            "particleIndex": 1528283,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#31331f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#31331f",
+            "name": "STONE",
+            "particleIndex": 1528318,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#597821",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#597821",
+            "name": "STONE",
+            "particleIndex": 1530353,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6300,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1530421,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6368,
+        "y": 415
+      }
+    ]
+  },
+  "after": {
+    "controller": {
+      "capacity": 12,
+      "enabled": true,
+      "fuel": 3,
+      "grounded": true,
+      "held": false,
+      "recoveryPerSecond": 0,
+      "thrusting": false
+    },
+    "snapshot": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 96,
+        "y": 6
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-2ec145be-2317-49df-9256-8e6d2490ded1",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 0,
+      "maxHealth": 100,
+      "name": "Feris Blackmere",
+      "residency": "live",
+      "slot": null,
+      "templateId": "349e05b7-6c16-464d-aa07-c97c6b848730",
+      "vx": 0,
+      "vy": 0,
+      "x": 6161.49462890625,
+      "y": 385.6795349121094
+    },
+    "world": "5ad3b549-3361-45e9-ba60-558da786a14b"
+  },
+  "afterReopenSamples": {
+    "layer": "foreground",
+    "ok": true,
+    "samples": [
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6020,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#5b5446",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#5b5446",
+            "name": "STONE",
+            "particleIndex": 5,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#59564c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#59564c",
+            "name": "STONE",
+            "particleIndex": 180,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#4c5630",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#4c5630",
+            "name": "STONE",
+            "particleIndex": 678,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 280
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 713,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 280
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6300,
+        "y": 280
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6368,
+        "y": 280
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6020,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 145,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 628,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#4c5630",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#4c5630",
+            "name": "STONE",
+            "particleIndex": 986,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#31331f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#31331f",
+            "name": "STONE",
+            "particleIndex": 1021,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 287
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6300,
+        "y": 287
+      },
+      {
+        "elementId": null,
+        "hex": null,
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": null,
+        "resident": true,
+        "x": 6368,
+        "y": 287
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 1796,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6020,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#38421f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#38421f",
+            "name": "STONE",
+            "particleIndex": 1841,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 2836,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 400
+      },
+      {
+        "elementId": 23,
+        "hex": "#8c786b",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 23,
+            "hex": "#8c786b",
+            "name": "IRON",
+            "particleIndex": 9105,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "IRON",
+        "resident": true,
+        "x": 6150,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#45581f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#45581f",
+            "name": "STONE",
+            "particleIndex": 3881,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 6044,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6300,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#59564c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#59564c",
+            "name": "STONE",
+            "particleIndex": 7072,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6368,
+        "y": 400
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 2244,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6020,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#8f7846",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#8f7846",
+            "name": "STONE",
+            "particleIndex": 2289,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 3284,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 4294,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 4329,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#38421f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#38421f",
+            "name": "STONE",
+            "particleIndex": 6492,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6300,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#31331f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#31331f",
+            "name": "STONE",
+            "particleIndex": 7520,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6368,
+        "y": 407
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 2756,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6020,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#40521f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#40521f",
+            "name": "STONE",
+            "particleIndex": 2801,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6065,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 3796,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6100,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#4c5630",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#4c5630",
+            "name": "STONE",
+            "particleIndex": 4806,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6150,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#31331f",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#31331f",
+            "name": "STONE",
+            "particleIndex": 4841,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6185,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#597821",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#597821",
+            "name": "STONE",
+            "particleIndex": 7004,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6300,
+        "y": 415
+      },
+      {
+        "elementId": 9,
+        "hex": "#69635c",
+        "layers": {
+          "background": {
+            "rgba": null,
+            "type": "raster"
+          },
+          "foreground": {
+            "elementId": 9,
+            "hex": "#69635c",
+            "name": "STONE",
+            "particleIndex": 8032,
+            "slot": 0,
+            "type": "particle"
+          },
+          "midground": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 1,
+            "type": "particle"
+          },
+          "occlusion": {
+            "elementId": null,
+            "hex": null,
+            "name": null,
+            "particleIndex": null,
+            "slot": 2,
+            "type": "particle"
+          }
+        },
+        "name": "STONE",
+        "resident": true,
+        "x": 6368,
+        "y": 415
+      }
+    ]
+  }
+}

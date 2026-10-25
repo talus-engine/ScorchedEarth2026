@@ -1,0 +1,33 @@
+{
+  "package": {
+    "candidate": "contact-damage-9",
+    "installedBy": "assistant",
+    "displayVersion": "0.0.2504",
+    "commit": "5598431ee",
+    "uncommittedChanges": false,
+    "sha256": "d2b754bc77eb8a2b08d1da2a541dab23cdd1c23db0365a20353ee4310b8c985f",
+    "rollback": "/private/tmp/indigo-m9-engine/Talus-2498.app",
+    "releaseAccepted": false
+  },
+  "worldId": "b0d456a3-7589-4cce-bf1e-3afcca1343bd",
+  "checks": {
+    "direct contact damage packaged": true,
+    "off-camera loose filter packaged": true,
+    "30 native mods installed and read back": true,
+    "CPU game finished": true,
+    "all survivors resident in sampled frames": true,
+    "every shell ends once": true,
+    "four native damage hits": true,
+    "durable sources for all shells": true,
+    "hit before end": true,
+    "save reopen all checks": true,
+    "original accounts restored exactly": true,
+    "no script error": true
+  },
+  "accepted": true,
+  "limits": [
+    "Sampled every six simulation ticks; bounded 120-frame tail, not a continuous archive.",
+    "Historical MIRV rain contact is not independently identified.",
+    "This accepts contact filtering/direct damage, not all M9 requirements."
+  ]
+}

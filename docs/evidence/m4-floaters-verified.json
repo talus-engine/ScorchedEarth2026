@@ -1,0 +1,278 @@
+{
+  "initial": {
+    "clock": 64.43333333333096,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.866666666666665,
+        "id": "instance@spawn-44e363a5-3e0e-41b4-9021-9a6903ef6a93",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.016666666666661,
+        "id": "instance@spawn-44e363a5-3e0e-41b4-9021-9a6903ef6a93",
+        "kind": "deployed",
+        "name": "M4 Test mixed-terrain-seed1 1",
+        "turn": 0
+      },
+      {
+        "clock": 4.866666666666655,
+        "id": "instance@spawn-80627700-e64b-4917-9b43-47e213f3ea68",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.016666666666651,
+        "id": "instance@spawn-80627700-e64b-4917-9b43-47e213f3ea68",
+        "kind": "deployed",
+        "name": "M4 Test mixed-terrain-seed1 2",
+        "turn": 0
+      },
+      {
+        "clock": 7.866666666666644,
+        "id": "instance@spawn-dd80840b-113c-4293-87e0-8594e2a53c0b",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 9.033333333333362,
+        "id": "instance@spawn-dd80840b-113c-4293-87e0-8594e2a53c0b",
+        "kind": "deployed",
+        "name": "M4 Test mixed-terrain-seed1 3",
+        "turn": 0
+      },
+      {
+        "clock": 9.066666666666697,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 17.833333333333602,
+        "id": "instance@spawn-44e363a5-3e0e-41b4-9021-9a6903ef6a93",
+        "kind": "land",
+        "turn": 0
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 3,
+      "focusIndex": 0,
+      "humans": 0,
+      "impact": null,
+      "message": "Tanks ready \u2014 begin when your crew is ready",
+      "phase": "ready",
+      "remaining": 20,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-44e363a5-3e0e-41b4-9021-9a6903ef6a93",
+          "index": 0,
+          "kills": 0,
+          "name": "M4 Test mixed-terrain-seed1 1",
+          "spawnX": 4224,
+          "surfaceY": 688
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-80627700-e64b-4917-9b43-47e213f3ea68",
+          "index": 1,
+          "kills": 0,
+          "name": "M4 Test mixed-terrain-seed1 2",
+          "spawnX": 6528,
+          "surfaceY": 688
+        },
+        {
+          "color": "#8ae0ca",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-dd80840b-113c-4293-87e0-8594e2a53c0b",
+          "index": 2,
+          "kills": 0,
+          "name": "M4 Test mixed-terrain-seed1 3",
+          "spawnX": 8832,
+          "surfaceY": 688
+        }
+      ],
+      "seed": 1,
+      "shotId": null,
+      "turnNumber": 0,
+      "turnSeconds": 20,
+      "version": 4,
+      "winner": null
+    },
+    "paused": false,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 65,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-44e363a5-3e0e-41b4-9021-9a6903ef6a93",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 18,
+        "maxHealth": 100,
+        "name": "M4 Test mixed-terrain-seed1 1",
+        "residency": "live",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 4223.5,
+        "y": 671.9998779296875
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 101,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-80627700-e64b-4917-9b43-47e213f3ea68",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "M4 Test mixed-terrain-seed1 2",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 6527.5,
+        "y": 673
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 137,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-dd80840b-113c-4293-87e0-8594e2a53c0b",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": null,
+        "maxHealth": 100,
+        "name": "M4 Test mixed-terrain-seed1 3",
+        "residency": "stored",
+        "slot": null,
+        "templateId": "d1ebad90-e08e-434d-946d-d66b4193aa11",
+        "vx": 0,
+        "vy": 0,
+        "x": 8831.5,
+        "y": 672.99951171875
+      }
+    ],
+    "scores": {
+      "matches": {
+        "9684759a-b4e6-4349-bd97-d95e7edf841e": {
+          "seed": 0,
+          "winner": "M4 Test resume-aiming 1"
+        }
+      },
+      "players": {
+        "m4 test resume-aiming 1": {
+          "games": 1,
+          "kills": 1,
+          "name": "M4 Test resume-aiming 1",
+          "wins": 1
+        },
+        "m4 test resume-aiming 2": {
+          "games": 1,
+          "kills": 0,
+          "name": "M4 Test resume-aiming 2",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": true,
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 100,
+        "name": "M4 Test mixed-terrain-seed1 1",
+        "power": 70
+      },
+      "finished": false,
+      "human": false,
+      "lastHit": "",
+      "phase": "ready",
+      "ready": true,
+      "remaining": 20,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "M4 Test mixed-terrain-seed1 1",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 100,
+          "kills": 0,
+          "name": "M4 Test mixed-terrain-seed1 2",
+          "status": "WAITING"
+        },
+        {
+          "color": "#8ae0ca",
+          "health": 100,
+          "kills": 0,
+          "name": "M4 Test mixed-terrain-seed1 3",
+          "status": "WAITING"
+        }
+      ],
+      "seed": 1,
+      "shotDirection": "RIGHT \u2192",
+      "status": "Tanks ready \u2014 begin when your crew is ready",
+      "tactic": "",
+      "tankCount": 3,
+      "target": "",
+      "turnNumber": 0,
+      "turnSeconds": 20,
+      "winner": "Draw"
+    },
+    "worldId": "e5ae98bd-a1b8-4790-b88b-949a36361d35"
+  },
+  "spawn": {
+    "clock": 64.43333333333096,
+    "position": {
+      "x": 4223.5,
+      "y": 671.9998779296875
+    },
+    "requestedLifetimeMs": 900
+  },
+  "fresh": {
+    "screenshot": "docs/evidence/m4-floaters-verified-fresh.jpg",
+    "clock": 64.71666666666428
+  },
+  "expired": {
+    "screenshot": "docs/evidence/m4-floaters-verified-expired.jpg",
+    "clock": 65.98333333333088
+  }
+}

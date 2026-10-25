@@ -1,0 +1,1817 @@
+{
+  "checks": [
+    {
+      "name": "human turn starts with keyboard enabled",
+      "passed": true
+    },
+    {
+      "name": "human positioning moves the tank",
+      "passed": true
+    },
+    {
+      "name": "power input updates blackboard and HUD",
+      "passed": true
+    },
+    {
+      "name": "fire launches one shell and locks human input",
+      "passed": true
+    },
+    {
+      "name": "impact settles before the next tank turn",
+      "passed": true
+    }
+  ],
+  "snapshots": {
+    "ready": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "deployed",
+          "name": "Tony",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "deployed",
+          "name": "Copper",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 6.16666666666665,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": false
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Tanks ready \u2014 begin when your crew is ready",
+        "phase": "ready",
+        "remaining": 20,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "index": 0,
+            "kills": 0,
+            "name": "Tony",
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "index": 1,
+            "kills": 0,
+            "name": "Copper",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 0,
+        "turnSeconds": 20,
+        "version": 3,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 81,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 2,
+            "maxHealth": 100,
+            "name": "Tony",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5247.5,
+            "y": 705.9900512695312
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974475,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": false,
+            "power": 1,
+            "speed": {
+              "current": 1800,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "Copper",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9910278320312
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": true,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 0,
+          "name": "Tony",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "ready",
+        "ready": true,
+        "remaining": 20,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 0,
+            "kills": 0,
+            "name": "Tony",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "Copper",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Tanks ready \u2014 begin when your crew is ready",
+        "tankCount": 2,
+        "turnNumber": 0,
+        "turnSeconds": 20,
+        "winner": "Draw"
+      },
+      "worldId": "5b90d353-0568-4857-a3a6-7f16b17818b0"
+    },
+    "humanStart": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "deployed",
+          "name": "Tony",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "deployed",
+          "name": "Copper",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 6.16666666666665,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 51.01666666666505,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "turn",
+          "name": "Tony",
+          "turn": 1
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": true
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Position, aim and fire",
+        "phase": "turn",
+        "remaining": 20,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "index": 0,
+            "kills": 0,
+            "name": "Tony",
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "index": 1,
+            "kills": 0,
+            "name": "Copper",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 1,
+        "turnSeconds": 20,
+        "version": 3,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 81,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 2,
+            "maxHealth": 100,
+            "name": "Tony",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5247.5,
+            "y": 705.9924926757812
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.7,
+            "speed": {
+              "current": 1290,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "Copper",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9910278320312
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 100,
+          "name": "Tony",
+          "power": 70
+        },
+        "finished": false,
+        "human": true,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 20,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "Tony",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "Copper",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Position, aim and fire",
+        "tankCount": 2,
+        "turnNumber": 1,
+        "turnSeconds": 20,
+        "winner": "Draw"
+      },
+      "worldId": "5b90d353-0568-4857-a3a6-7f16b17818b0"
+    },
+    "moved": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "deployed",
+          "name": "Tony",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "deployed",
+          "name": "Copper",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 6.16666666666665,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 51.01666666666505,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "turn",
+          "name": "Tony",
+          "turn": 1
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": true
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Position, aim and fire",
+        "phase": "turn",
+        "remaining": 19.50000000000003,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "index": 0,
+            "kills": 0,
+            "name": "Tony",
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "index": 1,
+            "kills": 0,
+            "name": "Copper",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 1,
+        "turnSeconds": 20,
+        "version": 3,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 2,
+            "maxHealth": 100,
+            "name": "Tony",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5259.18408203125,
+            "y": 705.9928588867188
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.7,
+            "speed": {
+              "current": 1290,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "Copper",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9910278320312
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 100,
+          "name": "Tony",
+          "power": 70
+        },
+        "finished": false,
+        "human": true,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 20,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "Tony",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "Copper",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Position, aim and fire",
+        "tankCount": 2,
+        "turnNumber": 1,
+        "turnSeconds": 20,
+        "winner": "Draw"
+      },
+      "worldId": "5b90d353-0568-4857-a3a6-7f16b17818b0"
+    },
+    "aimed": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "deployed",
+          "name": "Tony",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "deployed",
+          "name": "Copper",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 6.16666666666665,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 51.01666666666505,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "turn",
+          "name": "Tony",
+          "turn": 1
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": true
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Position, aim and fire",
+        "phase": "turn",
+        "remaining": 19.200000000000045,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "index": 0,
+            "kills": 0,
+            "name": "Tony",
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "index": 1,
+            "kills": 0,
+            "name": "Copper",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 1,
+        "turnSeconds": 20,
+        "version": 3,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 76,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 2,
+            "maxHealth": 100,
+            "name": "Tony",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5259.18408203125,
+            "y": 705.9911499023438
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.76,
+            "speed": {
+              "current": 1392,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "Copper",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9910278320312
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 100,
+          "name": "Tony",
+          "power": 76
+        },
+        "finished": false,
+        "human": true,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 20,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "Tony",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "Copper",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Position, aim and fire",
+        "tankCount": 2,
+        "turnNumber": 1,
+        "turnSeconds": 20,
+        "winner": "Draw"
+      },
+      "worldId": "5b90d353-0568-4857-a3a6-7f16b17818b0"
+    },
+    "flight": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "deployed",
+          "name": "Tony",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "deployed",
+          "name": "Copper",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 6.16666666666665,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 51.01666666666505,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "turn",
+          "name": "Tony",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 51.83333333333167,
+          "kind": "fire-request",
+          "owner": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "power": 76,
+          "turn": 1
+        },
+        {
+          "clock": 51.84999999999834,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "turn": 1
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": false
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 0,
+        "humans": 1,
+        "impact": null,
+        "message": "Shell in flight",
+        "phase": "flight",
+        "remaining": 19.18333333333338,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "index": 0,
+            "kills": 0,
+            "name": "Tony",
+            "shotFrom": {
+              "x": 5259.18408203125,
+              "y": 705.9911499023438
+            },
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "index": 1,
+            "kills": 0,
+            "name": "Copper",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": 1,
+        "turnNumber": 1,
+        "turnSeconds": 20,
+        "version": 3,
+        "waitTicks": 0,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 76,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 2,
+            "maxHealth": 100,
+            "name": "Tony",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5259.18408203125,
+            "y": 705.9911499023438
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.76,
+            "speed": {
+              "current": 1392,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        },
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "Copper",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9910278320312
+          },
+          "weapon": null
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#bcb1ff",
+          "control": "Human",
+          "health": 100,
+          "name": "Tony",
+          "power": 76
+        },
+        "finished": false,
+        "human": false,
+        "phase": "flight",
+        "ready": false,
+        "remaining": 20,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "Tony",
+            "status": "CURRENT"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "Copper",
+            "status": "WAITING"
+          }
+        ],
+        "seed": 0,
+        "status": "Shell in flight",
+        "tankCount": 2,
+        "turnNumber": 1,
+        "turnSeconds": 20,
+        "winner": "Draw"
+      },
+      "worldId": "5b90d353-0568-4857-a3a6-7f16b17818b0"
+    },
+    "cpuStart": {
+      "error": "",
+      "events": [
+        {
+          "clock": 1.8833333333333315,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 3.033333333333327,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "deployed",
+          "name": "Tony",
+          "turn": 0
+        },
+        {
+          "clock": 4.899999999999988,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 6.049999999999984,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "deployed",
+          "name": "Copper",
+          "turn": 0
+        },
+        {
+          "clock": 6.11666666666665,
+          "kind": "match-ready",
+          "phase": "ready",
+          "turn": 0
+        },
+        {
+          "clock": 6.16666666666665,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "land",
+          "turn": 0
+        },
+        {
+          "clock": 51.01666666666505,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "kind": "turn",
+          "name": "Tony",
+          "turn": 1
+        },
+        {
+          "angle": 45,
+          "clock": 51.83333333333167,
+          "kind": "fire-request",
+          "owner": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "power": 76,
+          "turn": 1
+        },
+        {
+          "clock": 51.84999999999834,
+          "id": 1,
+          "kind": "launch",
+          "owner": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "turn": 1
+        },
+        {
+          "clock": 54.84999999999817,
+          "kind": "end",
+          "owner": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "shooterResidency": "stored",
+          "turn": 1,
+          "x": 8157,
+          "y": 657
+        },
+        {
+          "clock": 55.34999999999814,
+          "kind": "settled",
+          "rect": {
+            "h": 384,
+            "w": 384,
+            "x": 7965,
+            "y": 529
+          },
+          "ticks": 30,
+          "timedOut": false,
+          "turn": 1,
+          "watchId": 1
+        },
+        {
+          "clock": 55.34999999999814,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "kind": "turn",
+          "name": "Copper",
+          "turn": 2
+        }
+      ],
+      "input": {
+        "actions": {
+          "attack": false,
+          "defend": false,
+          "drop_through": false,
+          "heal": false,
+          "interact": false,
+          "jump": false,
+          "move_down": false,
+          "move_left": false,
+          "move_right": false,
+          "move_up": false,
+          "pause": false,
+          "tank_angle_down": false,
+          "tank_angle_up": false,
+          "tank_fire": false,
+          "tank_move_left": false,
+          "tank_move_right": false,
+          "tank_pass": false,
+          "tank_power_down": false,
+          "tank_power_up": false,
+          "toggle_editor": false,
+          "walk_modifier": false
+        },
+        "aim": null,
+        "enabled": false
+      },
+      "match": {
+        "biome": "slate-reach",
+        "bounds": {
+          "h": 1280,
+          "w": 12800,
+          "x": 0,
+          "y": 0
+        },
+        "computers": 1,
+        "focusIndex": 1,
+        "humans": 1,
+        "impact": null,
+        "message": "Computer is choosing its shot",
+        "phase": "turn",
+        "remaining": 20,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "control": "human",
+            "eliminated": false,
+            "entityId": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "index": 0,
+            "kills": 0,
+            "name": "Tony",
+            "shotFrom": {
+              "x": 5259.18408203125,
+              "y": 705.9911499023438
+            },
+            "spawnX": 5248,
+            "surfaceY": 720
+          },
+          {
+            "color": "#ffbd82",
+            "control": "cpu",
+            "eliminated": false,
+            "entityId": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "index": 1,
+            "kills": 0,
+            "name": "Copper",
+            "spawnX": 7552,
+            "surfaceY": 624
+          }
+        ],
+        "seed": 0,
+        "shotId": null,
+        "turnNumber": 2,
+        "turnSeconds": 20,
+        "version": 3,
+        "waitTicks": 180,
+        "winner": null
+      },
+      "roster": [
+        {
+          "angle": 45,
+          "power": 76,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 82,
+              "y": 11
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": null,
+            "maxHealth": 100,
+            "name": "Tony",
+            "residency": "stored",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 5259.18408203125,
+            "y": 705.9911499023438
+          },
+          "weapon": null
+        },
+        {
+          "angle": 45,
+          "power": 70,
+          "snapshot": {
+            "alive": true,
+            "angle": 0,
+            "chunk": {
+              "x": 117,
+              "y": 9
+            },
+            "faction": null,
+            "health": 100,
+            "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+            "keepLiveOffscreen": false,
+            "launchedBy": null,
+            "liveId": 4,
+            "maxHealth": 100,
+            "name": "Copper",
+            "residency": "live",
+            "slot": null,
+            "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+            "vx": 0,
+            "vy": 0,
+            "x": 7551.5,
+            "y": 609.9907836914062
+          },
+          "weapon": {
+            "ammo": {},
+            "angle": -0.7853981633974483,
+            "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+            "gravityScale": 1,
+            "items": [
+              "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+            ],
+            "kind": "rigid-body",
+            "pinned": true,
+            "power": 0.7,
+            "speed": {
+              "current": 1290,
+              "max": 1800,
+              "min": 100
+            }
+          }
+        }
+      ],
+      "ui": {
+        "biome": "Slate Reach",
+        "canSetup": false,
+        "current": {
+          "angle": 45,
+          "color": "#ffbd82",
+          "control": "Computer",
+          "health": 100,
+          "name": "Copper",
+          "power": 70
+        },
+        "finished": false,
+        "human": false,
+        "phase": "turn",
+        "ready": false,
+        "remaining": 20,
+        "roster": [
+          {
+            "color": "#bcb1ff",
+            "health": 100,
+            "kills": 0,
+            "name": "Tony",
+            "status": "WAITING"
+          },
+          {
+            "color": "#ffbd82",
+            "health": 100,
+            "kills": 0,
+            "name": "Copper",
+            "status": "CURRENT"
+          }
+        ],
+        "seed": 0,
+        "status": "Computer is choosing its shot",
+        "tankCount": 2,
+        "turnNumber": 2,
+        "turnSeconds": 20,
+        "winner": "Draw"
+      },
+      "worldId": "5b90d353-0568-4857-a3a6-7f16b17818b0"
+    }
+  },
+  "worldId": "5b90d353-0568-4857-a3a6-7f16b17818b0",
+  "timeout": {
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8833333333333315,
+        "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.033333333333327,
+        "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+        "kind": "deployed",
+        "name": "Tony",
+        "turn": 0
+      },
+      {
+        "clock": 4.899999999999988,
+        "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.049999999999984,
+        "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+        "kind": "deployed",
+        "name": "Copper",
+        "turn": 0
+      },
+      {
+        "clock": 6.11666666666665,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 6.16666666666665,
+        "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 51.01666666666505,
+        "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+        "kind": "turn",
+        "name": "Tony",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 51.83333333333167,
+        "kind": "fire-request",
+        "owner": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+        "power": 76,
+        "turn": 1
+      },
+      {
+        "clock": 51.84999999999834,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+        "turn": 1
+      },
+      {
+        "clock": 54.84999999999817,
+        "kind": "end",
+        "owner": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+        "shooterResidency": "stored",
+        "turn": 1,
+        "x": 8157,
+        "y": 657
+      },
+      {
+        "clock": 55.34999999999814,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 7965,
+          "y": 529
+        },
+        "ticks": 30,
+        "timedOut": false,
+        "turn": 1,
+        "watchId": 1
+      },
+      {
+        "clock": 55.34999999999814,
+        "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+        "kind": "turn",
+        "name": "Copper",
+        "turn": 2
+      },
+      {
+        "clock": 75.34999999999701,
+        "kind": "timeout",
+        "turn": 2
+      },
+      {
+        "clock": 75.39999999999701,
+        "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+        "kind": "turn",
+        "name": "Tony",
+        "turn": 3
+      },
+      {
+        "clock": 75.43333333333034,
+        "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+        "kind": "land",
+        "turn": 3
+      }
+    ],
+    "input": {
+      "actions": {
+        "attack": false,
+        "defend": false,
+        "drop_through": false,
+        "heal": false,
+        "interact": false,
+        "jump": false,
+        "move_down": false,
+        "move_left": false,
+        "move_right": false,
+        "move_up": false,
+        "pause": false,
+        "tank_angle_down": false,
+        "tank_angle_up": false,
+        "tank_fire": false,
+        "tank_move_left": false,
+        "tank_move_right": false,
+        "tank_pass": false,
+        "tank_power_down": false,
+        "tank_power_up": false,
+        "toggle_editor": false,
+        "walk_modifier": false
+      },
+      "aim": null,
+      "enabled": true
+    },
+    "match": {
+      "biome": "slate-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 12800,
+        "x": 0,
+        "y": 0
+      },
+      "computers": 1,
+      "focusIndex": 0,
+      "humans": 1,
+      "impact": null,
+      "message": "Position, aim and fire",
+      "phase": "turn",
+      "remaining": 2.3833333333331836,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "control": "human",
+          "eliminated": false,
+          "entityId": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "index": 0,
+          "kills": 0,
+          "name": "Tony",
+          "shotFrom": {
+            "x": 5259.18408203125,
+            "y": 705.9911499023438
+          },
+          "spawnX": 5248,
+          "surfaceY": 720
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "index": 1,
+          "kills": 0,
+          "name": "Copper",
+          "spawnX": 7552,
+          "surfaceY": 624
+        }
+      ],
+      "seed": 0,
+      "shotId": null,
+      "turnNumber": 3,
+      "turnSeconds": 20,
+      "version": 3,
+      "waitTicks": 180,
+      "winner": null
+    },
+    "roster": [
+      {
+        "angle": 45,
+        "power": 76,
+        "snapshot": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 82,
+            "y": 11
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-f3f666ee-2082-4851-b6f6-6b39befc5bee",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": 5,
+          "maxHealth": 100,
+          "name": "Tony",
+          "residency": "live",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 5259.18408203125,
+          "y": 705.9911499023438
+        },
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974475,
+          "equipped": "b253b8ca-cd5d-4dc6-bae5-132daac81aa6",
+          "gravityScale": 1,
+          "items": [
+            "b253b8ca-cd5d-4dc6-bae5-132daac81aa6"
+          ],
+          "kind": "rigid-body",
+          "pinned": false,
+          "power": 1,
+          "speed": {
+            "current": 1800,
+            "max": 1800,
+            "min": 100
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "power": 70,
+        "snapshot": {
+          "alive": true,
+          "angle": 0,
+          "chunk": {
+            "x": 117,
+            "y": 9
+          },
+          "faction": null,
+          "health": 100,
+          "id": "instance@spawn-f12aa025-e96a-4d0b-b8fd-536f04dbaa5f",
+          "keepLiveOffscreen": false,
+          "launchedBy": null,
+          "liveId": null,
+          "maxHealth": 100,
+          "name": "Copper",
+          "residency": "stored",
+          "slot": null,
+          "templateId": "fc64631f-6afd-4eb1-912f-5cebd2c77302",
+          "vx": 0,
+          "vy": 0,
+          "x": 7551.5,
+          "y": 609.9905395507812
+        },
+        "weapon": null
+      }
+    ],
+    "ui": {
+      "biome": "Slate Reach",
+      "canSetup": false,
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Human",
+        "health": 100,
+        "name": "Tony",
+        "power": 76
+      },
+      "finished": false,
+      "human": true,
+      "phase": "turn",
+      "ready": false,
+      "remaining": 3,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "Tony",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 100,
+          "kills": 0,
+          "name": "Copper",
+          "status": "WAITING"
+        }
+      ],
+      "seed": 0,
+      "status": "Position, aim and fire",
+      "tankCount": 2,
+      "turnNumber": 3,
+      "turnSeconds": 20,
+      "winner": "Draw"
+    },
+    "worldId": "5b90d353-0568-4857-a3a6-7f16b17818b0"
+  }
+}

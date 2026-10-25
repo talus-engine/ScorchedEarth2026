@@ -1,0 +1,4682 @@
+{
+  "checks": {
+    "Actual primary launch produces one shooting line": true,
+    "Shooting bubble is visible at 25 percent zoom": true,
+    "Camera motion leaves the same sentence at exactly the same screen position": true,
+    "Shooting speech expires while simulation is paused": true,
+    "A physical combat death produces last words": true,
+    "Death speech survives disappearing wreck": true,
+    "CPU match finishes without script faults": true,
+    "Each primary launch speaks exactly once": true,
+    "Each eliminated tank speaks once, regardless of chaos shells": true,
+    "All speech expires after combat": true,
+    "Save/reopen retains phrase deck without resurrecting bubbles": true
+  },
+  "baselineWorld": "6b416563-7443-48ef-ae75-cc34ef246416",
+  "worldId": "522c7bb9-5f09-4b25-a6c1-a831c74a3e18",
+  "floaterWallStart": 1792721317.691224,
+  "floaterFresh": {
+    "at": {
+      "x": 5823.5,
+      "y": 653.5
+    },
+    "clock": 6.099999999999984
+  },
+  "floaterExpired": {
+    "clock": 7.616666666666645
+  },
+  "floaterWallEnd": 1792721320.7318559,
+  "shooting": {
+    "clock": 9.38333333333338,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8499999999999983,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.033333333333327,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "deployed",
+        "name": "M7 Quip A",
+        "turn": 0
+      },
+      {
+        "clock": 4.883333333333321,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "deployed",
+        "name": "M7 Quip B",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 7.849999999999977,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "turn",
+        "name": "M7 Quip A",
+        "turn": 1
+      },
+      {
+        "clock": 7.866666666666644,
+        "distance": 1152,
+        "elevation": -28,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip A",
+        "rise": 0,
+        "target": "M7 Quip B",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 7.866666666666644,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip A",
+        "origin": {
+          "x": 5823.5,
+          "y": 653.5
+        },
+        "power": 26.54123336518996,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.2654123336518996,
+          "speed": {
+            "current": 855.0040142635468,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 9.266666666666708,
+        "kind": "fire-request",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "power": 26.54123336518996,
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": "shooting-369",
+        "kind": "quip",
+        "name": "M7 Quip A",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "speechKind": "shooting",
+        "text": "I have never let accuracy limit my ambition.",
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "vx": 604.5791625976562,
+          "vy": -604.5791625976562,
+          "x": 5848.5,
+          "y": 627.5
+        },
+        "turn": 1
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 1280,
+        "x": 5760,
+        "y": 0
+      },
+      "chaos": {
+        "jobs": [],
+        "notice": "",
+        "quiet": 3.2499999999999933,
+        "rng": 839689206,
+        "serial": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "frameNotice": "",
+      "humans": 0,
+      "impact": null,
+      "message": "Shell in flight",
+      "phase": "flight",
+      "remaining": 3.566666666666672,
+      "roster": [
+        {
+          "aimedTurn": 1,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "index": 0,
+          "kills": 0,
+          "name": "M7 Quip A",
+          "plannedTurn": 1,
+          "shotFrom": {
+            "x": 5823.5,
+            "y": 653.5
+          },
+          "spawnX": 5824,
+          "surfaceY": 672,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf"
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+          "index": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "spawnX": 6976,
+          "surfaceY": 693
+        }
+      ],
+      "seed": 7,
+      "shotId": 1,
+      "turnNumber": 1,
+      "turnSeconds": 5,
+      "version": 6,
+      "waitTicks": 0,
+      "winner": null
+    },
+    "paused": true,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 90,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M7 Quip A",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+        "vx": 0,
+        "vy": 0,
+        "x": 5823.5,
+        "y": 653.5
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 108,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M7 Quip B",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+        "vx": 0,
+        "vy": 0,
+        "x": 6975.5,
+        "y": 681.5
+      }
+    ],
+    "scores": {
+      "matches": {},
+      "players": {}
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": false,
+      "chaosCount": 0,
+      "chaosNotice": "",
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 100,
+        "name": "M7 Quip A",
+        "power": 26.54123336518996
+      },
+      "finished": false,
+      "frameNotice": "",
+      "human": false,
+      "lastHit": "",
+      "phase": "flight",
+      "ready": false,
+      "remaining": 4,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "M7 Quip A",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 100,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "status": "WAITING"
+        }
+      ],
+      "seed": 7,
+      "shotDirection": "RIGHT \u2192",
+      "speech": [
+        {
+          "color": "#bcb1ff",
+          "kind": "FIRING",
+          "left": "clamp(140px, 14.00%, calc(100% - 140px))",
+          "name": "M7 Quip A",
+          "opacity": 1,
+          "text": "I have never let accuracy limit my ambition.",
+          "top": "clamp(210px, calc(48.55% - 34px), calc(100% - 150px))"
+        }
+      ],
+      "status": "Shell in flight",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M7 Quip B",
+      "turnNumber": 1,
+      "turnSeconds": 5,
+      "winner": "Draw"
+    },
+    "worldId": "522c7bb9-5f09-4b25-a6c1-a831c74a3e18"
+  },
+  "cameraBefore": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6227.5,
+          "y": 552.9263916015625
+        },
+        "clamped": true,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 68,
+          "w": 1192,
+          "x": 5803.5,
+          "y": 633.5
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5120,
+      "y": -192
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5184,
+      "y": -128
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5184,
+      "y": -128
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5427.5,
+      "y": 68.9263916015625
+    },
+    "zoom": 0.25
+  },
+  "cameraMoved": {
+    "clock": 9.400000000000048,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8499999999999983,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.033333333333327,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "deployed",
+        "name": "M7 Quip A",
+        "turn": 0
+      },
+      {
+        "clock": 4.883333333333321,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "deployed",
+        "name": "M7 Quip B",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 7.849999999999977,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "turn",
+        "name": "M7 Quip A",
+        "turn": 1
+      },
+      {
+        "clock": 7.866666666666644,
+        "distance": 1152,
+        "elevation": -28,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip A",
+        "rise": 0,
+        "target": "M7 Quip B",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 7.866666666666644,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip A",
+        "origin": {
+          "x": 5823.5,
+          "y": 653.5
+        },
+        "power": 26.54123336518996,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.2654123336518996,
+          "speed": {
+            "current": 855.0040142635468,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 9.266666666666708,
+        "kind": "fire-request",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "power": 26.54123336518996,
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": "shooting-369",
+        "kind": "quip",
+        "name": "M7 Quip A",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "speechKind": "shooting",
+        "text": "I have never let accuracy limit my ambition.",
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "vx": 604.5791625976562,
+          "vy": -604.5791625976562,
+          "x": 5848.5,
+          "y": 627.5
+        },
+        "turn": 1
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 1280,
+        "x": 5760,
+        "y": 0
+      },
+      "chaos": {
+        "jobs": [],
+        "notice": "",
+        "quiet": 3.2499999999999933,
+        "rng": 839689206,
+        "serial": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "frameNotice": "",
+      "humans": 0,
+      "impact": null,
+      "message": "Shell in flight",
+      "phase": "flight",
+      "remaining": 3.566666666666672,
+      "roster": [
+        {
+          "aimedTurn": 1,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "index": 0,
+          "kills": 0,
+          "name": "M7 Quip A",
+          "plannedTurn": 1,
+          "shotFrom": {
+            "x": 5823.5,
+            "y": 653.5
+          },
+          "spawnX": 5824,
+          "surfaceY": 672,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf"
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+          "index": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "spawnX": 6976,
+          "surfaceY": 693
+        }
+      ],
+      "seed": 7,
+      "shotId": 1,
+      "turnNumber": 1,
+      "turnSeconds": 5,
+      "version": 6,
+      "waitTicks": 0,
+      "winner": null
+    },
+    "paused": true,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 90,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M7 Quip A",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+        "vx": 0,
+        "vy": 0,
+        "x": 5823.5,
+        "y": 653.5
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 108,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M7 Quip B",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+        "vx": 0,
+        "vy": 0,
+        "x": 6975.5,
+        "y": 681.5
+      }
+    ],
+    "scores": {
+      "matches": {},
+      "players": {}
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": false,
+      "chaosCount": 0,
+      "chaosNotice": "",
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 100,
+        "name": "M7 Quip A",
+        "power": 26.54123336518996
+      },
+      "finished": false,
+      "frameNotice": "",
+      "human": false,
+      "lastHit": "",
+      "phase": "flight",
+      "ready": false,
+      "remaining": 4,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "M7 Quip A",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 100,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "status": "WAITING"
+        }
+      ],
+      "seed": 7,
+      "shotDirection": "RIGHT \u2192",
+      "speech": [
+        {
+          "color": "#bcb1ff",
+          "kind": "FIRING",
+          "left": "clamp(140px, 14.00%, calc(100% - 140px))",
+          "name": "M7 Quip A",
+          "opacity": 1,
+          "text": "I have never let accuracy limit my ambition.",
+          "top": "clamp(210px, calc(48.55% - 34px), calc(100% - 150px))"
+        }
+      ],
+      "status": "Shell in flight",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M7 Quip B",
+      "turnNumber": 1,
+      "turnSeconds": 5,
+      "winner": "Draw"
+    },
+    "worldId": "522c7bb9-5f09-4b25-a6c1-a831c74a3e18"
+  },
+  "cameraAfter": {
+    "frame": {
+      "result": {
+        "center": {
+          "x": 6327.5,
+          "y": 452.9263916015625
+        },
+        "clamped": false,
+        "fitsSimulation": true,
+        "fitsViewport": true
+      },
+      "spec": {
+        "bounds": {
+          "h": 68,
+          "w": 1192,
+          "x": 5803.5,
+          "y": 633.5
+        },
+        "padding": 32,
+        "preferVisible": true
+      }
+    },
+    "loadedBounds": {
+      "h": 1472,
+      "w": 2240,
+      "x": 5120,
+      "y": -192
+    },
+    "simulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5184,
+      "y": -128
+    },
+    "targetSimulationBounds": {
+      "h": 1344,
+      "w": 2112,
+      "x": 5248,
+      "y": -192
+    },
+    "viewport": {
+      "h": 968,
+      "w": 1600,
+      "x": 5527.5,
+      "y": -31.0736083984375
+    },
+    "zoom": 0.25
+  },
+  "shootingExpired": {
+    "clock": 9.400000000000048,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8499999999999983,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.033333333333327,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "deployed",
+        "name": "M7 Quip A",
+        "turn": 0
+      },
+      {
+        "clock": 4.883333333333321,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "deployed",
+        "name": "M7 Quip B",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 7.849999999999977,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "turn",
+        "name": "M7 Quip A",
+        "turn": 1
+      },
+      {
+        "clock": 7.866666666666644,
+        "distance": 1152,
+        "elevation": -28,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip A",
+        "rise": 0,
+        "target": "M7 Quip B",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 7.866666666666644,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip A",
+        "origin": {
+          "x": 5823.5,
+          "y": 653.5
+        },
+        "power": 26.54123336518996,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.2654123336518996,
+          "speed": {
+            "current": 855.0040142635468,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 9.266666666666708,
+        "kind": "fire-request",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "power": 26.54123336518996,
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": "shooting-369",
+        "kind": "quip",
+        "name": "M7 Quip A",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "speechKind": "shooting",
+        "text": "I have never let accuracy limit my ambition.",
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "vx": 604.5791625976562,
+          "vy": -604.5791625976562,
+          "x": 5848.5,
+          "y": 627.5
+        },
+        "turn": 1
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 1280,
+        "x": 5760,
+        "y": 0
+      },
+      "chaos": {
+        "jobs": [],
+        "notice": "",
+        "quiet": 3.2499999999999933,
+        "rng": 839689206,
+        "serial": 0
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "frameNotice": "",
+      "humans": 0,
+      "impact": null,
+      "message": "Shell in flight",
+      "phase": "flight",
+      "remaining": 3.566666666666672,
+      "roster": [
+        {
+          "aimedTurn": 1,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "index": 0,
+          "kills": 0,
+          "name": "M7 Quip A",
+          "plannedTurn": 1,
+          "shotFrom": {
+            "x": 5823.5,
+            "y": 653.5
+          },
+          "spawnX": 5824,
+          "surfaceY": 672,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf"
+        },
+        {
+          "color": "#ffbd82",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+          "index": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "spawnX": 6976,
+          "surfaceY": 693
+        }
+      ],
+      "seed": 7,
+      "shotId": 1,
+      "turnNumber": 1,
+      "turnSeconds": 5,
+      "version": 6,
+      "waitTicks": 0,
+      "winner": null
+    },
+    "paused": true,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 90,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M7 Quip A",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+        "vx": 0,
+        "vy": 0,
+        "x": 5823.5,
+        "y": 653.5
+      },
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 108,
+          "y": 10
+        },
+        "faction": null,
+        "health": 100,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M7 Quip B",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+        "vx": 0,
+        "vy": 0,
+        "x": 6975.5,
+        "y": 681.5
+      }
+    ],
+    "scores": {
+      "matches": {},
+      "players": {}
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": false,
+      "chaosCount": 0,
+      "chaosNotice": "",
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 100,
+        "name": "M7 Quip A",
+        "power": 26.54123336518996
+      },
+      "finished": false,
+      "frameNotice": "",
+      "human": false,
+      "lastHit": "",
+      "phase": "flight",
+      "ready": false,
+      "remaining": 4,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 100,
+          "kills": 0,
+          "name": "M7 Quip A",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 100,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "status": "WAITING"
+        }
+      ],
+      "seed": 7,
+      "shotDirection": "RIGHT \u2192",
+      "speech": [],
+      "status": "Shell in flight",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M7 Quip B",
+      "turnNumber": 1,
+      "turnSeconds": 5,
+      "winner": "Draw"
+    },
+    "worldId": "522c7bb9-5f09-4b25-a6c1-a831c74a3e18"
+  },
+  "death": {
+    "clock": 24.2999999999999,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8499999999999983,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.033333333333327,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "deployed",
+        "name": "M7 Quip A",
+        "turn": 0
+      },
+      {
+        "clock": 4.883333333333321,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "deployed",
+        "name": "M7 Quip B",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 7.849999999999977,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "turn",
+        "name": "M7 Quip A",
+        "turn": 1
+      },
+      {
+        "clock": 7.866666666666644,
+        "distance": 1152,
+        "elevation": -28,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip A",
+        "rise": 0,
+        "target": "M7 Quip B",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 7.866666666666644,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip A",
+        "origin": {
+          "x": 5823.5,
+          "y": 653.5
+        },
+        "power": 26.54123336518996,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.2654123336518996,
+          "speed": {
+            "current": 855.0040142635468,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 9.266666666666708,
+        "kind": "fire-request",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "power": 26.54123336518996,
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": "shooting-369",
+        "kind": "quip",
+        "name": "M7 Quip A",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "speechKind": "shooting",
+        "text": "I have never let accuracy limit my ambition.",
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "vx": 604.5791625976562,
+          "vy": -604.5791625976562,
+          "x": 5848.5,
+          "y": 627.5
+        },
+        "turn": 1
+      },
+      {
+        "amount": 59.08257293742756,
+        "clock": 11.183333333333469,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "projectileId": 1,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 1
+      },
+      {
+        "clock": 11.183333333333469,
+        "kind": "end",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "shooterResidency": "live",
+        "turn": 1,
+        "x": 6990.84375,
+        "y": 665.3734130859375
+      },
+      {
+        "clock": 14.183333333333618,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6798.84375,
+          "y": 537.3734130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 1,
+        "watchId": 1
+      },
+      {
+        "clock": 14.383333333333628,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "turn",
+        "name": "M7 Quip B",
+        "turn": 2
+      },
+      {
+        "clock": 14.383333333333628,
+        "distance": 1152,
+        "elevation": 28,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip B",
+        "rise": 0,
+        "target": "M7 Quip A",
+        "turn": 2
+      },
+      {
+        "angle": 135,
+        "clock": 14.383333333333628,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip B",
+        "origin": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "power": 27.261786506854847,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 5823.5,
+          "y": 653.5
+        },
+        "turn": 2,
+        "weapon": {
+          "ammo": {},
+          "angle": -2.356194490192345,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.27261786506854846,
+          "speed": {
+            "current": 876.0441660001615,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 135,
+        "clock": 15.783333333333696,
+        "kind": "fire-request",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "power": 27.261786506854847,
+        "turn": 2
+      },
+      {
+        "clock": 15.783333333333696,
+        "id": "shooting-251",
+        "kind": "quip",
+        "name": "M7 Quip B",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "speechKind": "shooting",
+        "text": "I saved a front-row seat in your crater.",
+        "turn": 2
+      },
+      {
+        "clock": 15.783333333333696,
+        "id": 2,
+        "kind": "launch",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+          "vx": -619.456787109375,
+          "vy": -619.456787109375,
+          "x": 6949.5,
+          "y": 655.5
+        },
+        "turn": 2
+      },
+      {
+        "amount": 60.6011111413963,
+        "clock": 17.65000000000028,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "projectileId": 2,
+        "targetEntityId": 0,
+        "targetStableId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "turn": 2
+      },
+      {
+        "clock": 17.65000000000028,
+        "kind": "end",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "shooterResidency": "live",
+        "turn": 2,
+        "x": 5811.2333984375,
+        "y": 637.3734130859375
+      },
+      {
+        "clock": 20.65000000000011,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 5619.2333984375,
+          "y": 509.3734130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 2,
+        "watchId": 2
+      },
+      {
+        "clock": 20.850000000000097,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "turn",
+        "name": "M7 Quip A",
+        "turn": 3
+      },
+      {
+        "clock": 20.850000000000097,
+        "distance": 1152,
+        "elevation": -20,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip A",
+        "rise": 0,
+        "target": "M7 Quip B",
+        "turn": 3
+      },
+      {
+        "angle": 45,
+        "clock": 20.850000000000097,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip A",
+        "origin": {
+          "x": 5823.5,
+          "y": 661.5
+        },
+        "power": 26.640998422181667,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "turn": 3,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.26640998422181666,
+          "speed": {
+            "current": 857.9171539277047,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 22.266666666666683,
+        "kind": "fire-request",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "power": 26.640998422181667,
+        "turn": 3
+      },
+      {
+        "clock": 22.266666666666683,
+        "id": "shooting-341",
+        "kind": "quip",
+        "name": "M7 Quip A",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "speechKind": "shooting",
+        "text": "I am about to update your location in place.",
+        "turn": 3
+      },
+      {
+        "clock": 22.266666666666683,
+        "id": 3,
+        "kind": "launch",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "vx": 606.6390380859375,
+          "vy": -606.6390380859375,
+          "x": 5848.5,
+          "y": 635.5
+        },
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "id": "death-131",
+        "kind": "quip",
+        "name": "M7 Quip B",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "speechKind": "death",
+        "text": "I was not prepared for this much earth.",
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "effect": "fireworks",
+        "id": 1,
+        "kind": "chaos-queued",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 3,
+        "x": 6975.5,
+        "y": 681.5
+      },
+      {
+        "clock": 24.18333333333324,
+        "killer": "M7 Quip A",
+        "kind": "eliminated",
+        "name": "M7 Quip B",
+        "reason": "destroyed",
+        "turn": 3
+      },
+      {
+        "amount": 60.51124905931356,
+        "clock": 24.18333333333324,
+        "direct": true,
+        "killed": true,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "projectileId": 3,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "kind": "end",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6987.9609375,
+        "y": 665.3734130859375
+      },
+      {
+        "clock": 24.199999999999907,
+        "effect": "fireworks",
+        "id": 1,
+        "kind": "chaos-started",
+        "turn": 3,
+        "x": 6975.50146484375,
+        "y": 681.5982055664062
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 1280,
+        "x": 5760,
+        "y": 0
+      },
+      "chaos": {
+        "jobs": [
+          {
+            "effect": "fireworks",
+            "elapsed": 0.11666666666666664,
+            "emissionDone": false,
+            "emitted": 2,
+            "ended": 0,
+            "id": 1,
+            "launched": 2,
+            "livePulses": 0,
+            "name": "M7 Quip B",
+            "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+            "particles": 0,
+            "projectileIds": [
+              4,
+              5
+            ],
+            "started": true,
+            "x": 6975.5419921875,
+            "y": 685.4817504882812
+          }
+        ],
+        "notice": "M7 Quip B: Hostile fireworks!",
+        "quiet": 0,
+        "rng": 1748248879,
+        "serial": 1
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "frameNotice": "",
+      "humans": 0,
+      "impact": {
+        "x": 6987.9609375,
+        "y": 665.3734130859375
+      },
+      "lastHit": "M7 Quip B \u221261 HP \u00b7 ELIMINATED",
+      "message": "Letting the impact settle",
+      "phase": "settling",
+      "remaining": 3.566666666666672,
+      "roster": [
+        {
+          "aimedTurn": 3,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "index": 0,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "plannedTurn": 3,
+          "shotFrom": {
+            "x": 5823.5,
+            "y": 661.5
+          },
+          "spawnX": 5824,
+          "surfaceY": 672,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf"
+        },
+        {
+          "aimedTurn": 2,
+          "chaosId": 1,
+          "color": "#ffbd82",
+          "control": "cpu",
+          "deathEffect": "fireworks",
+          "eliminated": true,
+          "entityId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+          "index": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "plannedTurn": 2,
+          "shotFrom": {
+            "x": 6975.5,
+            "y": 681.5
+          },
+          "spawnX": 6976,
+          "surfaceY": 693,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9"
+        }
+      ],
+      "seed": 7,
+      "shotId": null,
+      "turnNumber": 3,
+      "turnSeconds": 5,
+      "version": 6,
+      "waitTicks": 115,
+      "winner": null
+    },
+    "paused": false,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 90,
+          "y": 10
+        },
+        "faction": null,
+        "health": 39.3988888586037,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M7 Quip A",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+        "vx": 0,
+        "vy": 0,
+        "x": 5823.5,
+        "y": 661.5
+      },
+      {
+        "alive": false,
+        "angle": -0.02327091246843338,
+        "chunk": {
+          "x": 108,
+          "y": 10
+        },
+        "faction": null,
+        "health": 0,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 2,
+        "maxHealth": 100,
+        "name": "M7 Quip B",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+        "vx": -0.14636527001857758,
+        "vy": 65.4923324584961,
+        "x": 6975.5419921875,
+        "y": 685.4817504882812
+      }
+    ],
+    "scores": {
+      "matches": {},
+      "players": {}
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": false,
+      "chaosCount": 1,
+      "chaosNotice": "M7 Quip B: Hostile fireworks!",
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 39,
+        "name": "M7 Quip A",
+        "power": 26.640998422181667
+      },
+      "finished": false,
+      "frameNotice": "",
+      "human": false,
+      "lastHit": "M7 Quip B \u221261 HP \u00b7 ELIMINATED",
+      "phase": "settling",
+      "ready": false,
+      "remaining": 4,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 39,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 0,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "status": "OUT"
+        }
+      ],
+      "seed": 7,
+      "shotDirection": "RIGHT \u2192",
+      "speech": [
+        {
+          "color": "#bcb1ff",
+          "kind": "FIRING",
+          "left": "clamp(140px, 14.00%, calc(100% - 140px))",
+          "name": "M7 Quip A",
+          "opacity": 0.8333333333333489,
+          "text": "I am about to update your location in place.",
+          "top": "clamp(210px, calc(48.97% - 34px), calc(100% - 150px))"
+        },
+        {
+          "color": "#ffbd82",
+          "kind": "LAST WORDS",
+          "left": "clamp(140px, 86.00%, calc(100% - 140px))",
+          "name": "M7 Quip B",
+          "opacity": 1,
+          "text": "I was not prepared for this much earth.",
+          "top": "clamp(210px, calc(51.03% - 34px), calc(100% - 150px))"
+        }
+      ],
+      "status": "Letting the impact settle",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M7 Quip B",
+      "turnNumber": 3,
+      "turnSeconds": 5,
+      "winner": "Draw"
+    },
+    "worldId": "522c7bb9-5f09-4b25-a6c1-a831c74a3e18"
+  },
+  "final": {
+    "clock": 28.833333333332977,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8499999999999983,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.033333333333327,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "deployed",
+        "name": "M7 Quip A",
+        "turn": 0
+      },
+      {
+        "clock": 4.883333333333321,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "deployed",
+        "name": "M7 Quip B",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 7.849999999999977,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "turn",
+        "name": "M7 Quip A",
+        "turn": 1
+      },
+      {
+        "clock": 7.866666666666644,
+        "distance": 1152,
+        "elevation": -28,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip A",
+        "rise": 0,
+        "target": "M7 Quip B",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 7.866666666666644,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip A",
+        "origin": {
+          "x": 5823.5,
+          "y": 653.5
+        },
+        "power": 26.54123336518996,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.2654123336518996,
+          "speed": {
+            "current": 855.0040142635468,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 9.266666666666708,
+        "kind": "fire-request",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "power": 26.54123336518996,
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": "shooting-369",
+        "kind": "quip",
+        "name": "M7 Quip A",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "speechKind": "shooting",
+        "text": "I have never let accuracy limit my ambition.",
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "vx": 604.5791625976562,
+          "vy": -604.5791625976562,
+          "x": 5848.5,
+          "y": 627.5
+        },
+        "turn": 1
+      },
+      {
+        "amount": 59.08257293742756,
+        "clock": 11.183333333333469,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "projectileId": 1,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 1
+      },
+      {
+        "clock": 11.183333333333469,
+        "kind": "end",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "shooterResidency": "live",
+        "turn": 1,
+        "x": 6990.84375,
+        "y": 665.3734130859375
+      },
+      {
+        "clock": 14.183333333333618,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6798.84375,
+          "y": 537.3734130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 1,
+        "watchId": 1
+      },
+      {
+        "clock": 14.383333333333628,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "turn",
+        "name": "M7 Quip B",
+        "turn": 2
+      },
+      {
+        "clock": 14.383333333333628,
+        "distance": 1152,
+        "elevation": 28,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip B",
+        "rise": 0,
+        "target": "M7 Quip A",
+        "turn": 2
+      },
+      {
+        "angle": 135,
+        "clock": 14.383333333333628,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip B",
+        "origin": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "power": 27.261786506854847,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 5823.5,
+          "y": 653.5
+        },
+        "turn": 2,
+        "weapon": {
+          "ammo": {},
+          "angle": -2.356194490192345,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.27261786506854846,
+          "speed": {
+            "current": 876.0441660001615,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 135,
+        "clock": 15.783333333333696,
+        "kind": "fire-request",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "power": 27.261786506854847,
+        "turn": 2
+      },
+      {
+        "clock": 15.783333333333696,
+        "id": "shooting-251",
+        "kind": "quip",
+        "name": "M7 Quip B",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "speechKind": "shooting",
+        "text": "I saved a front-row seat in your crater.",
+        "turn": 2
+      },
+      {
+        "clock": 15.783333333333696,
+        "id": 2,
+        "kind": "launch",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+          "vx": -619.456787109375,
+          "vy": -619.456787109375,
+          "x": 6949.5,
+          "y": 655.5
+        },
+        "turn": 2
+      },
+      {
+        "amount": 60.6011111413963,
+        "clock": 17.65000000000028,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "projectileId": 2,
+        "targetEntityId": 0,
+        "targetStableId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "turn": 2
+      },
+      {
+        "clock": 17.65000000000028,
+        "kind": "end",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "shooterResidency": "live",
+        "turn": 2,
+        "x": 5811.2333984375,
+        "y": 637.3734130859375
+      },
+      {
+        "clock": 20.65000000000011,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 5619.2333984375,
+          "y": 509.3734130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 2,
+        "watchId": 2
+      },
+      {
+        "clock": 20.850000000000097,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "turn",
+        "name": "M7 Quip A",
+        "turn": 3
+      },
+      {
+        "clock": 20.850000000000097,
+        "distance": 1152,
+        "elevation": -20,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip A",
+        "rise": 0,
+        "target": "M7 Quip B",
+        "turn": 3
+      },
+      {
+        "angle": 45,
+        "clock": 20.850000000000097,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip A",
+        "origin": {
+          "x": 5823.5,
+          "y": 661.5
+        },
+        "power": 26.640998422181667,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "turn": 3,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.26640998422181666,
+          "speed": {
+            "current": 857.9171539277047,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 22.266666666666683,
+        "kind": "fire-request",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "power": 26.640998422181667,
+        "turn": 3
+      },
+      {
+        "clock": 22.266666666666683,
+        "id": "shooting-341",
+        "kind": "quip",
+        "name": "M7 Quip A",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "speechKind": "shooting",
+        "text": "I am about to update your location in place.",
+        "turn": 3
+      },
+      {
+        "clock": 22.266666666666683,
+        "id": 3,
+        "kind": "launch",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "vx": 606.6390380859375,
+          "vy": -606.6390380859375,
+          "x": 5848.5,
+          "y": 635.5
+        },
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "id": "death-131",
+        "kind": "quip",
+        "name": "M7 Quip B",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "speechKind": "death",
+        "text": "I was not prepared for this much earth.",
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "effect": "fireworks",
+        "id": 1,
+        "kind": "chaos-queued",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 3,
+        "x": 6975.5,
+        "y": 681.5
+      },
+      {
+        "clock": 24.18333333333324,
+        "killer": "M7 Quip A",
+        "kind": "eliminated",
+        "name": "M7 Quip B",
+        "reason": "destroyed",
+        "turn": 3
+      },
+      {
+        "amount": 60.51124905931356,
+        "clock": 24.18333333333324,
+        "direct": true,
+        "killed": true,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "projectileId": 3,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "kind": "end",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6987.9609375,
+        "y": 665.3734130859375
+      },
+      {
+        "clock": 24.199999999999907,
+        "effect": "fireworks",
+        "id": 1,
+        "kind": "chaos-started",
+        "turn": 3,
+        "x": 6975.50146484375,
+        "y": 681.5982055664062
+      },
+      {
+        "clock": 24.983333333333196,
+        "effect": "fireworks",
+        "elapsed": 0.8000000000000008,
+        "id": 1,
+        "kind": "chaos-emission-ended",
+        "launched": 10,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 3
+      },
+      {
+        "clock": 25.733333333333153,
+        "effect": "fireworks",
+        "elapsed": 1.5499999999999994,
+        "ended": 10,
+        "id": 1,
+        "kind": "chaos-ended",
+        "launched": 10,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 3
+      },
+      {
+        "clock": 27.18333333333307,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6795.9609375,
+          "y": 537.3734130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 3,
+        "watchId": 3
+      },
+      {
+        "clock": 28.74999999999965,
+        "kind": "finished",
+        "turn": 3,
+        "winner": "M7 Quip A"
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 1280,
+        "x": 5760,
+        "y": 0
+      },
+      "chaos": {
+        "jobs": [],
+        "notice": "M7 Quip B: Hostile fireworks!",
+        "quiet": 3.016666666666661,
+        "rng": 1748248879,
+        "serial": 1
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "frameNotice": "",
+      "humans": 0,
+      "impact": {
+        "x": 6987.9609375,
+        "y": 665.3734130859375
+      },
+      "lastHit": "M7 Quip B \u221261 HP \u00b7 ELIMINATED",
+      "message": "M7 Quip A wins the match",
+      "phase": "finished",
+      "remaining": 3.566666666666672,
+      "roster": [
+        {
+          "aimedTurn": 3,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "index": 0,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "plannedTurn": 3,
+          "shotFrom": {
+            "x": 5823.5,
+            "y": 661.5
+          },
+          "spawnX": 5824,
+          "surfaceY": 672,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf"
+        },
+        {
+          "aimedTurn": 2,
+          "chaosId": 1,
+          "color": "#ffbd82",
+          "control": "cpu",
+          "deathEffect": "fireworks",
+          "eliminated": true,
+          "entityId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+          "index": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "plannedTurn": 2,
+          "shotFrom": {
+            "x": 6975.5,
+            "y": 681.5
+          },
+          "spawnX": 6976,
+          "surfaceY": 693,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9"
+        }
+      ],
+      "seed": 7,
+      "shotId": null,
+      "turnNumber": 3,
+      "turnSeconds": 5,
+      "version": 6,
+      "waitTicks": 115,
+      "winner": "M7 Quip A"
+    },
+    "paused": false,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 90,
+          "y": 10
+        },
+        "faction": null,
+        "health": 39.3988888586037,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M7 Quip A",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+        "vx": 0,
+        "vy": 0,
+        "x": 5823.5,
+        "y": 661.5
+      },
+      null
+    ],
+    "scores": {
+      "matches": {
+        "522c7bb9-5f09-4b25-a6c1-a831c74a3e18": {
+          "seed": 7,
+          "winner": "M7 Quip A"
+        }
+      },
+      "players": {
+        "m7 quip a": {
+          "games": 1,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "wins": 1
+        },
+        "m7 quip b": {
+          "games": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": true,
+      "chaosCount": 0,
+      "chaosNotice": "M7 Quip B: Hostile fireworks!",
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 39,
+        "name": "M7 Quip A",
+        "power": 26.640998422181667
+      },
+      "finished": true,
+      "frameNotice": "",
+      "human": false,
+      "lastHit": "M7 Quip B \u221261 HP \u00b7 ELIMINATED",
+      "phase": "finished",
+      "ready": false,
+      "remaining": 4,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 39,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 0,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "status": "OUT"
+        }
+      ],
+      "scores": [
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "wins": 1
+        },
+        {
+          "games": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "wins": 0
+        }
+      ],
+      "seed": 7,
+      "shotDirection": "RIGHT \u2192",
+      "speech": [],
+      "status": "M7 Quip A wins the match",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M7 Quip B",
+      "turnNumber": 3,
+      "turnSeconds": 5,
+      "winner": "M7 Quip A"
+    },
+    "worldId": "522c7bb9-5f09-4b25-a6c1-a831c74a3e18"
+  },
+  "expired": {
+    "clock": 28.833333333332977,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8499999999999983,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.033333333333327,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "deployed",
+        "name": "M7 Quip A",
+        "turn": 0
+      },
+      {
+        "clock": 4.883333333333321,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "deployed",
+        "name": "M7 Quip B",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 7.849999999999977,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "turn",
+        "name": "M7 Quip A",
+        "turn": 1
+      },
+      {
+        "clock": 7.866666666666644,
+        "distance": 1152,
+        "elevation": -28,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip A",
+        "rise": 0,
+        "target": "M7 Quip B",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 7.866666666666644,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip A",
+        "origin": {
+          "x": 5823.5,
+          "y": 653.5
+        },
+        "power": 26.54123336518996,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.2654123336518996,
+          "speed": {
+            "current": 855.0040142635468,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 9.266666666666708,
+        "kind": "fire-request",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "power": 26.54123336518996,
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": "shooting-369",
+        "kind": "quip",
+        "name": "M7 Quip A",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "speechKind": "shooting",
+        "text": "I have never let accuracy limit my ambition.",
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "vx": 604.5791625976562,
+          "vy": -604.5791625976562,
+          "x": 5848.5,
+          "y": 627.5
+        },
+        "turn": 1
+      },
+      {
+        "amount": 59.08257293742756,
+        "clock": 11.183333333333469,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "projectileId": 1,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 1
+      },
+      {
+        "clock": 11.183333333333469,
+        "kind": "end",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "shooterResidency": "live",
+        "turn": 1,
+        "x": 6990.84375,
+        "y": 665.3734130859375
+      },
+      {
+        "clock": 14.183333333333618,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6798.84375,
+          "y": 537.3734130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 1,
+        "watchId": 1
+      },
+      {
+        "clock": 14.383333333333628,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "turn",
+        "name": "M7 Quip B",
+        "turn": 2
+      },
+      {
+        "clock": 14.383333333333628,
+        "distance": 1152,
+        "elevation": 28,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip B",
+        "rise": 0,
+        "target": "M7 Quip A",
+        "turn": 2
+      },
+      {
+        "angle": 135,
+        "clock": 14.383333333333628,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip B",
+        "origin": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "power": 27.261786506854847,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 5823.5,
+          "y": 653.5
+        },
+        "turn": 2,
+        "weapon": {
+          "ammo": {},
+          "angle": -2.356194490192345,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.27261786506854846,
+          "speed": {
+            "current": 876.0441660001615,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 135,
+        "clock": 15.783333333333696,
+        "kind": "fire-request",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "power": 27.261786506854847,
+        "turn": 2
+      },
+      {
+        "clock": 15.783333333333696,
+        "id": "shooting-251",
+        "kind": "quip",
+        "name": "M7 Quip B",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "speechKind": "shooting",
+        "text": "I saved a front-row seat in your crater.",
+        "turn": 2
+      },
+      {
+        "clock": 15.783333333333696,
+        "id": 2,
+        "kind": "launch",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+          "vx": -619.456787109375,
+          "vy": -619.456787109375,
+          "x": 6949.5,
+          "y": 655.5
+        },
+        "turn": 2
+      },
+      {
+        "amount": 60.6011111413963,
+        "clock": 17.65000000000028,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "projectileId": 2,
+        "targetEntityId": 0,
+        "targetStableId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "turn": 2
+      },
+      {
+        "clock": 17.65000000000028,
+        "kind": "end",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "shooterResidency": "live",
+        "turn": 2,
+        "x": 5811.2333984375,
+        "y": 637.3734130859375
+      },
+      {
+        "clock": 20.65000000000011,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 5619.2333984375,
+          "y": 509.3734130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 2,
+        "watchId": 2
+      },
+      {
+        "clock": 20.850000000000097,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "turn",
+        "name": "M7 Quip A",
+        "turn": 3
+      },
+      {
+        "clock": 20.850000000000097,
+        "distance": 1152,
+        "elevation": -20,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip A",
+        "rise": 0,
+        "target": "M7 Quip B",
+        "turn": 3
+      },
+      {
+        "angle": 45,
+        "clock": 20.850000000000097,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip A",
+        "origin": {
+          "x": 5823.5,
+          "y": 661.5
+        },
+        "power": 26.640998422181667,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "turn": 3,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.26640998422181666,
+          "speed": {
+            "current": 857.9171539277047,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 22.266666666666683,
+        "kind": "fire-request",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "power": 26.640998422181667,
+        "turn": 3
+      },
+      {
+        "clock": 22.266666666666683,
+        "id": "shooting-341",
+        "kind": "quip",
+        "name": "M7 Quip A",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "speechKind": "shooting",
+        "text": "I am about to update your location in place.",
+        "turn": 3
+      },
+      {
+        "clock": 22.266666666666683,
+        "id": 3,
+        "kind": "launch",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "vx": 606.6390380859375,
+          "vy": -606.6390380859375,
+          "x": 5848.5,
+          "y": 635.5
+        },
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "id": "death-131",
+        "kind": "quip",
+        "name": "M7 Quip B",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "speechKind": "death",
+        "text": "I was not prepared for this much earth.",
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "effect": "fireworks",
+        "id": 1,
+        "kind": "chaos-queued",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 3,
+        "x": 6975.5,
+        "y": 681.5
+      },
+      {
+        "clock": 24.18333333333324,
+        "killer": "M7 Quip A",
+        "kind": "eliminated",
+        "name": "M7 Quip B",
+        "reason": "destroyed",
+        "turn": 3
+      },
+      {
+        "amount": 60.51124905931356,
+        "clock": 24.18333333333324,
+        "direct": true,
+        "killed": true,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "projectileId": 3,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "kind": "end",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6987.9609375,
+        "y": 665.3734130859375
+      },
+      {
+        "clock": 24.199999999999907,
+        "effect": "fireworks",
+        "id": 1,
+        "kind": "chaos-started",
+        "turn": 3,
+        "x": 6975.50146484375,
+        "y": 681.5982055664062
+      },
+      {
+        "clock": 24.983333333333196,
+        "effect": "fireworks",
+        "elapsed": 0.8000000000000008,
+        "id": 1,
+        "kind": "chaos-emission-ended",
+        "launched": 10,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 3
+      },
+      {
+        "clock": 25.733333333333153,
+        "effect": "fireworks",
+        "elapsed": 1.5499999999999994,
+        "ended": 10,
+        "id": 1,
+        "kind": "chaos-ended",
+        "launched": 10,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 3
+      },
+      {
+        "clock": 27.18333333333307,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6795.9609375,
+          "y": 537.3734130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 3,
+        "watchId": 3
+      },
+      {
+        "clock": 28.74999999999965,
+        "kind": "finished",
+        "turn": 3,
+        "winner": "M7 Quip A"
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 1280,
+        "x": 5760,
+        "y": 0
+      },
+      "chaos": {
+        "jobs": [],
+        "notice": "M7 Quip B: Hostile fireworks!",
+        "quiet": 3.016666666666661,
+        "rng": 1748248879,
+        "serial": 1
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "frameNotice": "",
+      "humans": 0,
+      "impact": {
+        "x": 6987.9609375,
+        "y": 665.3734130859375
+      },
+      "lastHit": "M7 Quip B \u221261 HP \u00b7 ELIMINATED",
+      "message": "M7 Quip A wins the match",
+      "phase": "finished",
+      "remaining": 3.566666666666672,
+      "roster": [
+        {
+          "aimedTurn": 3,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "index": 0,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "plannedTurn": 3,
+          "shotFrom": {
+            "x": 5823.5,
+            "y": 661.5
+          },
+          "spawnX": 5824,
+          "surfaceY": 672,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf"
+        },
+        {
+          "aimedTurn": 2,
+          "chaosId": 1,
+          "color": "#ffbd82",
+          "control": "cpu",
+          "deathEffect": "fireworks",
+          "eliminated": true,
+          "entityId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+          "index": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "plannedTurn": 2,
+          "shotFrom": {
+            "x": 6975.5,
+            "y": 681.5
+          },
+          "spawnX": 6976,
+          "surfaceY": 693,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9"
+        }
+      ],
+      "seed": 7,
+      "shotId": null,
+      "turnNumber": 3,
+      "turnSeconds": 5,
+      "version": 6,
+      "waitTicks": 115,
+      "winner": "M7 Quip A"
+    },
+    "paused": true,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 90,
+          "y": 10
+        },
+        "faction": null,
+        "health": 39.3988888586037,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M7 Quip A",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+        "vx": 0,
+        "vy": 0,
+        "x": 5823.5,
+        "y": 661.5
+      },
+      null
+    ],
+    "scores": {
+      "matches": {
+        "522c7bb9-5f09-4b25-a6c1-a831c74a3e18": {
+          "seed": 7,
+          "winner": "M7 Quip A"
+        }
+      },
+      "players": {
+        "m7 quip a": {
+          "games": 1,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "wins": 1
+        },
+        "m7 quip b": {
+          "games": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": true,
+      "chaosCount": 0,
+      "chaosNotice": "M7 Quip B: Hostile fireworks!",
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 39,
+        "name": "M7 Quip A",
+        "power": 26.640998422181667
+      },
+      "finished": true,
+      "frameNotice": "",
+      "human": false,
+      "lastHit": "M7 Quip B \u221261 HP \u00b7 ELIMINATED",
+      "phase": "finished",
+      "ready": false,
+      "remaining": 4,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 39,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 0,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "status": "OUT"
+        }
+      ],
+      "scores": [
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "wins": 1
+        },
+        {
+          "games": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "wins": 0
+        }
+      ],
+      "seed": 7,
+      "shotDirection": "RIGHT \u2192",
+      "speech": [],
+      "status": "M7 Quip A wins the match",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M7 Quip B",
+      "turnNumber": 3,
+      "turnSeconds": 5,
+      "winner": "M7 Quip A"
+    },
+    "worldId": "522c7bb9-5f09-4b25-a6c1-a831c74a3e18"
+  },
+  "deck": {
+    "bags": {
+      "death": [
+        388,
+        151,
+        79,
+        375,
+        431,
+        418,
+        78,
+        314,
+        458,
+        467,
+        465,
+        229,
+        315,
+        171,
+        427,
+        237,
+        26,
+        7,
+        242,
+        456,
+        491,
+        415,
+        263,
+        96,
+        352,
+        98,
+        176,
+        395,
+        118,
+        464,
+        164,
+        407,
+        302,
+        185,
+        403,
+        99,
+        125,
+        222,
+        480,
+        398,
+        170,
+        329,
+        49,
+        58,
+        191,
+        122,
+        116,
+        1,
+        380,
+        213,
+        272,
+        60,
+        495,
+        461,
+        430,
+        494,
+        300,
+        95,
+        45,
+        322,
+        299,
+        305,
+        8,
+        140,
+        76,
+        65,
+        141,
+        27,
+        267,
+        439,
+        143,
+        203,
+        405,
+        296,
+        251,
+        482,
+        173,
+        383,
+        466,
+        266,
+        13,
+        422,
+        144,
+        159,
+        199,
+        226,
+        162,
+        165,
+        404,
+        215,
+        401,
+        438,
+        150,
+        334,
+        497,
+        278,
+        100,
+        462,
+        366,
+        450,
+        285,
+        361,
+        257,
+        128,
+        5,
+        316,
+        172,
+        259,
+        287,
+        472,
+        409,
+        33,
+        177,
+        384,
+        397,
+        113,
+        441,
+        24,
+        364,
+        84,
+        448,
+        446,
+        444,
+        254,
+        155,
+        292,
+        475,
+        138,
+        399,
+        453,
+        42,
+        115,
+        239,
+        304,
+        224,
+        52,
+        190,
+        72,
+        498,
+        376,
+        236,
+        214,
+        41,
+        260,
+        442,
+        158,
+        145,
+        350,
+        325,
+        67,
+        425,
+        286,
+        169,
+        212,
+        400,
+        470,
+        132,
+        117,
+        416,
+        59,
+        452,
+        434,
+        362,
+        235,
+        308,
+        21,
+        40,
+        471,
+        70,
+        166,
+        248,
+        210,
+        25,
+        421,
+        256,
+        163,
+        68,
+        147,
+        22,
+        445,
+        104,
+        357,
+        479,
+        378,
+        426,
+        47,
+        429,
+        436,
+        175,
+        457,
+        186,
+        346,
+        432,
+        250,
+        373,
+        12,
+        228,
+        157,
+        341,
+        268,
+        133,
+        107,
+        451,
+        9,
+        205,
+        102,
+        227,
+        69,
+        367,
+        136,
+        312,
+        297,
+        419,
+        269,
+        121,
+        499,
+        111,
+        440,
+        459,
+        153,
+        18,
+        198,
+        372,
+        23,
+        355,
+        219,
+        183,
+        358,
+        294,
+        348,
+        291,
+        74,
+        353,
+        216,
+        152,
+        289,
+        460,
+        275,
+        221,
+        249,
+        298,
+        119,
+        368,
+        433,
+        30,
+        86,
+        230,
+        90,
+        356,
+        43,
+        488,
+        109,
+        53,
+        428,
+        0,
+        485,
+        246,
+        37,
+        303,
+        474,
+        331,
+        11,
+        101,
+        234,
+        359,
+        420,
+        391,
+        124,
+        207,
+        295,
+        195,
+        181,
+        344,
+        20,
+        232,
+        194,
+        106,
+        189,
+        493,
+        387,
+        469,
+        335,
+        270,
+        6,
+        55,
+        134,
+        337,
+        32,
+        161,
+        345,
+        321,
+        208,
+        197,
+        396,
+        473,
+        371,
+        35,
+        29,
+        83,
+        360,
+        483,
+        142,
+        10,
+        217,
+        326,
+        379,
+        225,
+        280,
+        393,
+        3,
+        46,
+        282,
+        149,
+        146,
+        264,
+        193,
+        496,
+        288,
+        447,
+        324,
+        437,
+        481,
+        333,
+        424,
+        82,
+        253,
+        88,
+        85,
+        414,
+        103,
+        168,
+        114,
+        201,
+        15,
+        93,
+        336,
+        108,
+        423,
+        243,
+        247,
+        339,
+        478,
+        323,
+        271,
+        327,
+        377,
+        240,
+        34,
+        131,
+        389,
+        94,
+        313,
+        182,
+        231,
+        476,
+        14,
+        486,
+        402,
+        180,
+        320,
+        38,
+        307,
+        174,
+        290,
+        410,
+        4,
+        31,
+        211,
+        343,
+        332,
+        120,
+        202,
+        369,
+        255,
+        484,
+        277,
+        139,
+        57,
+        417,
+        340,
+        354,
+        137,
+        187,
+        406,
+        374,
+        178,
+        411,
+        92,
+        390,
+        75,
+        261,
+        244,
+        123,
+        408,
+        105,
+        276,
+        265,
+        365,
+        63,
+        127,
+        443,
+        492,
+        349,
+        56,
+        62,
+        61,
+        73,
+        347,
+        477,
+        17,
+        309,
+        135,
+        487,
+        412,
+        306,
+        386,
+        342,
+        338,
+        241,
+        318,
+        454,
+        274,
+        392,
+        48,
+        80,
+        192,
+        258,
+        489,
+        283,
+        281,
+        351,
+        89,
+        28,
+        490,
+        413,
+        382,
+        110,
+        220,
+        19,
+        330,
+        36,
+        381,
+        206,
+        2,
+        449,
+        317,
+        319,
+        66,
+        97,
+        91,
+        279,
+        370,
+        273,
+        71,
+        223,
+        245,
+        363,
+        455,
+        238,
+        51,
+        218,
+        311,
+        16,
+        435,
+        293,
+        310,
+        54,
+        209,
+        200,
+        87,
+        252,
+        394,
+        44,
+        50,
+        112,
+        301,
+        148,
+        64,
+        204,
+        468,
+        167,
+        188,
+        262,
+        184,
+        196,
+        385,
+        129,
+        77,
+        463,
+        156,
+        39,
+        179,
+        160,
+        328,
+        233,
+        126,
+        81,
+        154,
+        284
+      ],
+      "shooting": [
+        165,
+        341,
+        390,
+        234,
+        320,
+        254,
+        223,
+        75,
+        60,
+        142,
+        365,
+        43,
+        181,
+        31,
+        264,
+        416,
+        185,
+        156,
+        240,
+        180,
+        469,
+        350,
+        279,
+        429,
+        192,
+        103,
+        296,
+        491,
+        352,
+        46,
+        182,
+        381,
+        122,
+        116,
+        67,
+        66,
+        207,
+        355,
+        160,
+        170,
+        427,
+        157,
+        281,
+        245,
+        421,
+        76,
+        167,
+        410,
+        47,
+        71,
+        198,
+        237,
+        58,
+        453,
+        215,
+        299,
+        425,
+        56,
+        147,
+        11,
+        12,
+        49,
+        246,
+        423,
+        87,
+        480,
+        26,
+        191,
+        201,
+        34,
+        271,
+        80,
+        107,
+        272,
+        174,
+        140,
+        14,
+        273,
+        197,
+        5,
+        354,
+        162,
+        298,
+        318,
+        99,
+        63,
+        349,
+        419,
+        465,
+        292,
+        316,
+        144,
+        442,
+        52,
+        357,
+        426,
+        437,
+        189,
+        373,
+        109,
+        101,
+        129,
+        338,
+        403,
+        150,
+        225,
+        358,
+        293,
+        451,
+        205,
+        85,
+        2,
+        477,
+        444,
+        398,
+        463,
+        376,
+        470,
+        172,
+        319,
+        387,
+        260,
+        158,
+        454,
+        333,
+        325,
+        348,
+        475,
+        401,
+        329,
+        362,
+        247,
+        242,
+        115,
+        468,
+        361,
+        135,
+        395,
+        392,
+        195,
+        367,
+        218,
+        486,
+        204,
+        57,
+        332,
+        456,
+        110,
+        148,
+        210,
+        290,
+        94,
+        91,
+        48,
+        24,
+        428,
+        136,
+        213,
+        238,
+        441,
+        261,
+        439,
+        270,
+        476,
+        220,
+        366,
+        196,
+        461,
+        131,
+        471,
+        208,
+        120,
+        117,
+        379,
+        295,
+        187,
+        137,
+        130,
+        229,
+        312,
+        280,
+        397,
+        1,
+        227,
+        384,
+        104,
+        84,
+        0,
+        90,
+        236,
+        478,
+        335,
+        448,
+        276,
+        141,
+        438,
+        62,
+        287,
+        400,
+        370,
+        380,
+        93,
+        251,
+        42,
+        344,
+        193,
+        402,
+        188,
+        473,
+        209,
+        322,
+        418,
+        39,
+        3,
+        212,
+        95,
+        79,
+        485,
+        336,
+        458,
+        303,
+        396,
+        35,
+        74,
+        45,
+        176,
+        487,
+        496,
+        219,
+        149,
+        53,
+        305,
+        38,
+        152,
+        277,
+        235,
+        78,
+        173,
+        257,
+        372,
+        337,
+        113,
+        217,
+        211,
+        364,
+        231,
+        64,
+        490,
+        97,
+        313,
+        334,
+        81,
+        422,
+        434,
+        69,
+        443,
+        360,
+        54,
+        29,
+        479,
+        263,
+        83,
+        308,
+        51,
+        146,
+        499,
+        19,
+        369,
+        255,
+        459,
+        239,
+        258,
+        111,
+        359,
+        351,
+        68,
+        435,
+        278,
+        248,
+        8,
+        407,
+        378,
+        143,
+        154,
+        404,
+        6,
+        243,
+        327,
+        289,
+        121,
+        286,
+        399,
+        183,
+        72,
+        424,
+        309,
+        86,
+        108,
+        262,
+        452,
+        177,
+        179,
+        4,
+        386,
+        37,
+        382,
+        232,
+        446,
+        20,
+        466,
+        274,
+        417,
+        221,
+        168,
+        314,
+        284,
+        92,
+        102,
+        33,
+        44,
+        126,
+        200,
+        249,
+        304,
+        324,
+        119,
+        282,
+        233,
+        457,
+        484,
+        432,
+        252,
+        283,
+        175,
+        356,
+        25,
+        77,
+        100,
+        317,
+        481,
+        268,
+        132,
+        10,
+        326,
+        27,
+        408,
+        297,
+        301,
+        492,
+        202,
+        259,
+        343,
+        32,
+        388,
+        449,
+        371,
+        431,
+        106,
+        244,
+        241,
+        123,
+        307,
+        184,
+        228,
+        36,
+        21,
+        17,
+        498,
+        161,
+        467,
+        291,
+        323,
+        275,
+        178,
+        482,
+        310,
+        406,
+        393,
+        98,
+        166,
+        394,
+        353,
+        30,
+        488,
+        411,
+        345,
+        82,
+        302,
+        230,
+        285,
+        383,
+        265,
+        7,
+        267,
+        450,
+        214,
+        163,
+        224,
+        13,
+        70,
+        253,
+        16,
+        409,
+        194,
+        112,
+        377,
+        331,
+        151,
+        105,
+        413,
+        494,
+        447,
+        415,
+        171,
+        41,
+        288,
+        315,
+        330,
+        339,
+        124,
+        61,
+        342,
+        462,
+        96,
+        489,
+        391,
+        374,
+        159,
+        464,
+        28,
+        128,
+        436,
+        18,
+        483,
+        139,
+        22,
+        155,
+        300,
+        311,
+        23,
+        65,
+        50,
+        153,
+        306,
+        474,
+        412,
+        420,
+        9,
+        186,
+        216,
+        375,
+        497,
+        430,
+        59,
+        226,
+        495,
+        89,
+        346,
+        73,
+        118,
+        15,
+        256,
+        445,
+        405,
+        199,
+        472,
+        294,
+        133,
+        328,
+        190,
+        145,
+        460,
+        134,
+        164,
+        389,
+        363,
+        321,
+        55,
+        125,
+        88,
+        127,
+        414,
+        169,
+        222,
+        138,
+        493,
+        433,
+        206,
+        440,
+        385,
+        40,
+        347,
+        114,
+        203,
+        455,
+        269,
+        266
+      ]
+    },
+    "last": {
+      "death": "death-131",
+      "shooting": "shooting-341"
+    },
+    "rng": 2197863365
+  },
+  "saveKey": {
+    "action": "press",
+    "focused": true,
+    "key": "s",
+    "modifiers": [
+      "meta"
+    ],
+    "ok": true,
+    "sent": 2,
+    "window": {
+      "height": 968,
+      "width": 1600
+    }
+  },
+  "reopened": {
+    "clock": 31.033333333332852,
+    "error": "",
+    "events": [
+      {
+        "clock": 1.8499999999999983,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 3.033333333333327,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "deployed",
+        "name": "M7 Quip A",
+        "turn": 0
+      },
+      {
+        "clock": 4.883333333333321,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "land",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "deployed",
+        "name": "M7 Quip B",
+        "turn": 0
+      },
+      {
+        "clock": 6.033333333333317,
+        "kind": "match-ready",
+        "phase": "ready",
+        "turn": 0
+      },
+      {
+        "clock": 7.849999999999977,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "turn",
+        "name": "M7 Quip A",
+        "turn": 1
+      },
+      {
+        "clock": 7.866666666666644,
+        "distance": 1152,
+        "elevation": -28,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip A",
+        "rise": 0,
+        "target": "M7 Quip B",
+        "turn": 1
+      },
+      {
+        "angle": 45,
+        "clock": 7.866666666666644,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip A",
+        "origin": {
+          "x": 5823.5,
+          "y": 653.5
+        },
+        "power": 26.54123336518996,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "turn": 1,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.2654123336518996,
+          "speed": {
+            "current": 855.0040142635468,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 9.266666666666708,
+        "kind": "fire-request",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "power": 26.54123336518996,
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": "shooting-369",
+        "kind": "quip",
+        "name": "M7 Quip A",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "speechKind": "shooting",
+        "text": "I have never let accuracy limit my ambition.",
+        "turn": 1
+      },
+      {
+        "clock": 9.266666666666708,
+        "id": 1,
+        "kind": "launch",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 1,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "vx": 604.5791625976562,
+          "vy": -604.5791625976562,
+          "x": 5848.5,
+          "y": 627.5
+        },
+        "turn": 1
+      },
+      {
+        "amount": 59.08257293742756,
+        "clock": 11.183333333333469,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "projectileId": 1,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 1
+      },
+      {
+        "clock": 11.183333333333469,
+        "kind": "end",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "shooterResidency": "live",
+        "turn": 1,
+        "x": 6990.84375,
+        "y": 665.3734130859375
+      },
+      {
+        "clock": 14.183333333333618,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6798.84375,
+          "y": 537.3734130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 1,
+        "watchId": 1
+      },
+      {
+        "clock": 14.383333333333628,
+        "id": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "kind": "turn",
+        "name": "M7 Quip B",
+        "turn": 2
+      },
+      {
+        "clock": 14.383333333333628,
+        "distance": 1152,
+        "elevation": 28,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip B",
+        "rise": 0,
+        "target": "M7 Quip A",
+        "turn": 2
+      },
+      {
+        "angle": 135,
+        "clock": 14.383333333333628,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip B",
+        "origin": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "power": 27.261786506854847,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 5823.5,
+          "y": 653.5
+        },
+        "turn": 2,
+        "weapon": {
+          "ammo": {},
+          "angle": -2.356194490192345,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.27261786506854846,
+          "speed": {
+            "current": 876.0441660001615,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 135,
+        "clock": 15.783333333333696,
+        "kind": "fire-request",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "power": 27.261786506854847,
+        "turn": 2
+      },
+      {
+        "clock": 15.783333333333696,
+        "id": "shooting-251",
+        "kind": "quip",
+        "name": "M7 Quip B",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "speechKind": "shooting",
+        "text": "I saved a front-row seat in your crater.",
+        "turn": 2
+      },
+      {
+        "clock": 15.783333333333696,
+        "id": 2,
+        "kind": "launch",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 2,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+          "vx": -619.456787109375,
+          "vy": -619.456787109375,
+          "x": 6949.5,
+          "y": 655.5
+        },
+        "turn": 2
+      },
+      {
+        "amount": 60.6011111413963,
+        "clock": 17.65000000000028,
+        "direct": true,
+        "killed": false,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "projectileId": 2,
+        "targetEntityId": 0,
+        "targetStableId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "turn": 2
+      },
+      {
+        "clock": 17.65000000000028,
+        "kind": "end",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "shooterResidency": "live",
+        "turn": 2,
+        "x": 5811.2333984375,
+        "y": 637.3734130859375
+      },
+      {
+        "clock": 20.65000000000011,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 5619.2333984375,
+          "y": 509.3734130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 2,
+        "watchId": 2
+      },
+      {
+        "clock": 20.850000000000097,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "kind": "turn",
+        "name": "M7 Quip A",
+        "turn": 3
+      },
+      {
+        "clock": 20.850000000000097,
+        "distance": 1152,
+        "elevation": -20,
+        "high": false,
+        "kind": "cpu-plan",
+        "name": "M7 Quip A",
+        "rise": 0,
+        "target": "M7 Quip B",
+        "turn": 3
+      },
+      {
+        "angle": 45,
+        "clock": 20.850000000000097,
+        "kind": "cpu-aimed",
+        "name": "M7 Quip A",
+        "origin": {
+          "x": 5823.5,
+          "y": 661.5
+        },
+        "power": 26.640998422181667,
+        "tactic": "Elevation-adjusted shot",
+        "target": {
+          "x": 6975.5,
+          "y": 681.5
+        },
+        "turn": 3,
+        "weapon": {
+          "ammo": {},
+          "angle": -0.7853981633974483,
+          "equipped": "e71e2a10-2649-4b71-978d-f37396f20214",
+          "gravityScale": 1,
+          "items": [
+            "e71e2a10-2649-4b71-978d-f37396f20214"
+          ],
+          "kind": "rigid-body",
+          "pinned": true,
+          "power": 0.26640998422181666,
+          "speed": {
+            "current": 857.9171539277047,
+            "max": 3000,
+            "min": 80
+          }
+        }
+      },
+      {
+        "angle": 45,
+        "clock": 22.266666666666683,
+        "kind": "fire-request",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "power": 26.640998422181667,
+        "turn": 3
+      },
+      {
+        "clock": 22.266666666666683,
+        "id": "shooting-341",
+        "kind": "quip",
+        "name": "M7 Quip A",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "speechKind": "shooting",
+        "text": "I am about to update your location in place.",
+        "turn": 3
+      },
+      {
+        "clock": 22.266666666666683,
+        "id": 3,
+        "kind": "launch",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "snapshot": {
+          "age": 0,
+          "held": false,
+          "id": 3,
+          "kind": "rigid-body",
+          "ownerId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "vx": 606.6390380859375,
+          "vy": -606.6390380859375,
+          "x": 5848.5,
+          "y": 635.5
+        },
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "id": "death-131",
+        "kind": "quip",
+        "name": "M7 Quip B",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "speechKind": "death",
+        "text": "I was not prepared for this much earth.",
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "effect": "fireworks",
+        "id": 1,
+        "kind": "chaos-queued",
+        "owner": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 3,
+        "x": 6975.5,
+        "y": 681.5
+      },
+      {
+        "clock": 24.18333333333324,
+        "killer": "M7 Quip A",
+        "kind": "eliminated",
+        "name": "M7 Quip B",
+        "reason": "destroyed",
+        "turn": 3
+      },
+      {
+        "amount": 60.51124905931356,
+        "clock": 24.18333333333324,
+        "direct": true,
+        "killed": true,
+        "kind": "hit",
+        "ownerEntityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "projectileId": 3,
+        "targetEntityId": 2,
+        "targetStableId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+        "turn": 3
+      },
+      {
+        "clock": 24.18333333333324,
+        "kind": "end",
+        "owner": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "shooterResidency": "live",
+        "turn": 3,
+        "x": 6987.9609375,
+        "y": 665.3734130859375
+      },
+      {
+        "clock": 24.199999999999907,
+        "effect": "fireworks",
+        "id": 1,
+        "kind": "chaos-started",
+        "turn": 3,
+        "x": 6975.50146484375,
+        "y": 681.5982055664062
+      },
+      {
+        "clock": 24.983333333333196,
+        "effect": "fireworks",
+        "elapsed": 0.8000000000000008,
+        "id": 1,
+        "kind": "chaos-emission-ended",
+        "launched": 10,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 3
+      },
+      {
+        "clock": 25.733333333333153,
+        "effect": "fireworks",
+        "elapsed": 1.5499999999999994,
+        "ended": 10,
+        "id": 1,
+        "kind": "chaos-ended",
+        "launched": 10,
+        "livePulses": 0,
+        "particles": 0,
+        "turn": 3
+      },
+      {
+        "clock": 27.18333333333307,
+        "kind": "settled",
+        "rect": {
+          "h": 384,
+          "w": 384,
+          "x": 6795.9609375,
+          "y": 537.3734130859375
+        },
+        "ticks": 180,
+        "timedOut": true,
+        "turn": 3,
+        "watchId": 3
+      },
+      {
+        "clock": 28.74999999999965,
+        "kind": "finished",
+        "turn": 3,
+        "winner": "M7 Quip A"
+      },
+      {
+        "clock": 31.016666666666183,
+        "kind": "match-ready",
+        "phase": "finished",
+        "turn": 3
+      }
+    ],
+    "match": {
+      "biome": "mixed-reach",
+      "bounds": {
+        "h": 1280,
+        "w": 1280,
+        "x": 5760,
+        "y": 0
+      },
+      "chaos": {
+        "jobs": [],
+        "notice": "M7 Quip B: Hostile fireworks!",
+        "quiet": 3.016666666666661,
+        "rng": 1748248879,
+        "serial": 1
+      },
+      "computers": 2,
+      "focusIndex": 0,
+      "frameNotice": "",
+      "humans": 0,
+      "impact": {
+        "x": 6987.9609375,
+        "y": 665.3734130859375
+      },
+      "lastHit": "M7 Quip B \u221261 HP \u00b7 ELIMINATED",
+      "message": "M7 Quip A wins the match",
+      "phase": "finished",
+      "remaining": 3.566666666666672,
+      "roster": [
+        {
+          "aimedTurn": 3,
+          "color": "#bcb1ff",
+          "control": "cpu",
+          "eliminated": false,
+          "entityId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+          "index": 0,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "plannedTurn": 3,
+          "shotFrom": {
+            "x": 5823.5,
+            "y": 661.5
+          },
+          "spawnX": 5824,
+          "surfaceY": 672,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf"
+        },
+        {
+          "aimedTurn": 2,
+          "chaosId": 1,
+          "color": "#ffbd82",
+          "control": "cpu",
+          "deathEffect": "fireworks",
+          "eliminated": true,
+          "entityId": "instance@spawn-784ecaab-b296-4cbf-84d2-409ed91316cf",
+          "index": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "plannedTurn": 2,
+          "shotFrom": {
+            "x": 6975.5,
+            "y": 681.5
+          },
+          "spawnX": 6976,
+          "surfaceY": 693,
+          "tactic": "Elevation-adjusted shot",
+          "targetId": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9"
+        }
+      ],
+      "seed": 7,
+      "shotId": null,
+      "turnNumber": 3,
+      "turnSeconds": 5,
+      "version": 6,
+      "waitTicks": 115,
+      "winner": "M7 Quip A"
+    },
+    "paused": false,
+    "roster": [
+      {
+        "alive": true,
+        "angle": 0,
+        "chunk": {
+          "x": 90,
+          "y": 10
+        },
+        "faction": null,
+        "health": 39.3988888586037,
+        "id": "instance@spawn-14c61488-882d-40ef-a11e-9b79c8911fd9",
+        "keepLiveOffscreen": false,
+        "launchedBy": null,
+        "liveId": 0,
+        "maxHealth": 100,
+        "name": "M7 Quip A",
+        "residency": "live",
+        "slot": null,
+        "templateId": "fad84873-23f6-478e-8b77-8a831213a1fc",
+        "vx": 0,
+        "vy": 0,
+        "x": 5823.5,
+        "y": 661.68017578125
+      },
+      null
+    ],
+    "scores": {
+      "matches": {
+        "522c7bb9-5f09-4b25-a6c1-a831c74a3e18": {
+          "seed": 7,
+          "winner": "M7 Quip A"
+        }
+      },
+      "players": {
+        "m7 quip a": {
+          "games": 1,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "wins": 1
+        },
+        "m7 quip b": {
+          "games": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "wins": 0
+        }
+      }
+    },
+    "ui": {
+      "aimRotation": "rotate(-45deg)",
+      "biome": "Mixed Reach",
+      "canSetup": true,
+      "chaosCount": 0,
+      "chaosNotice": "M7 Quip B: Hostile fireworks!",
+      "current": {
+        "angle": 45,
+        "color": "#bcb1ff",
+        "control": "Computer",
+        "health": 39,
+        "name": "M7 Quip A",
+        "power": 26.640998422181667
+      },
+      "finished": true,
+      "frameNotice": "",
+      "human": false,
+      "lastHit": "M7 Quip B \u221261 HP \u00b7 ELIMINATED",
+      "phase": "finished",
+      "ready": false,
+      "remaining": 4,
+      "roster": [
+        {
+          "color": "#bcb1ff",
+          "health": 39,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "status": "CURRENT"
+        },
+        {
+          "color": "#ffbd82",
+          "health": 0,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "status": "OUT"
+        }
+      ],
+      "scores": [
+        {
+          "games": 1,
+          "kills": 1,
+          "name": "M7 Quip A",
+          "wins": 1
+        },
+        {
+          "games": 1,
+          "kills": 0,
+          "name": "M7 Quip B",
+          "wins": 0
+        }
+      ],
+      "seed": 7,
+      "shotDirection": "RIGHT \u2192",
+      "speech": [],
+      "status": "M7 Quip A wins the match",
+      "tactic": "Elevation-adjusted shot",
+      "tankCount": 2,
+      "target": "M7 Quip B",
+      "turnNumber": 3,
+      "turnSeconds": 5,
+      "winner": "M7 Quip A"
+    },
+    "worldId": "522c7bb9-5f09-4b25-a6c1-a831c74a3e18"
+  }
+}
