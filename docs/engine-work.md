@@ -544,3 +544,11 @@ uses center pixels rather than the keyed image border. Source findings are
 not yet live regression acceptance. Tracks are explicitly cosmetic; no vehicle
 traction system or scripted pose workaround is requested. All 36 weapon sprites
 are installed independently; the native rig waits for these fixes.
+
+
+M13 correction: the user clarified that tracks/wheels are rigid bodies on
+joints; cosmetic describes their lack of propulsion. The existing floating
+controller still drives the tank. E57/E58 have been withdrawn as prerequisites
+and ENGINE told to hold them. Source concerns were handed off prematurely,
+before a native prototype. Existing dynamic hinge-motor and sprite animation
+support must be tried first; no new animation feature is established as needed.

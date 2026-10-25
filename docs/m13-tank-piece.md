@@ -15,12 +15,12 @@ generated RGB remains independent of the existing solid material. See the
 [art sheet](../assets/m13/contact-sheet.png) and
 [installation receipt](../assets/m13/weapon-install.json).
 
-The cosmetic rig builder is prepared locally: 22 tread links, four wheels,
-hinged jet pods, seven clips and native animation layers. **It is not installed.**
-The original tank/controller remains in use until E57 provides its native
-pose/ownership contract and E58 allows the exact 3×1 tread art. No substitute
-track image or scripted pose loop has been added. `build_m13_rig.py` refuses
-missing art and marks output as blocked without the confirmed engine contract.
+The initial rig builder is a **draft, not installed**: 22 tread links, four
+wheels, hinged jet pods and native animation records. Its sprite-host/local-pose
+approach has not been demonstrated and is being reconsidered against existing
+rigid-body/joint animation support. There is no established engine blocker.
+The 3×1 tread image remains to be generated/imported through a supported native
+route. The original tank and floating character controller remain in use.
 
 Confirmation so far: all generated art inspected as a contact sheet; all 36
 weapon patches read back with gameplay fields preserved; Python tools compile.
@@ -30,14 +30,17 @@ acceptance is still pending. The editor has no remaining diagnostic entities,
 is paused, and its view was restored. No game/account diagnostic or WFC painting
 was performed. No new published package has been exported.
 
-ENGINE received E57/E58 and the generic-entity cosmetic-body requirement in
-`AGENT_CHAT.md`. The editor/API lease has been returned for native work.
+The premature E57/E58 handoff has been put on hold in `AGENT_CHAT.md`. Those
+source observations are not release requirements. ENGINE currently holds the
+editor/API lease for its separate WFC work; GAME will prototype after handoff.
 
 ## Native implementation
 
-Use Talus's native animated multi-part entity. Tracks are visual only; existing
-character movement, terrain stepping, fuel, health and combat remain owned by
-their native systems. Preserve the user's minimal confirmation workflow.
+Use Talus's native animated multi-part entity. **Tracks and wheels are rigid
+bodies connected by joints.** Animate their motion approximately with movement
+speed. They do not provide traction or propulsion; the existing floating
+character controller continues to move the tank. Use existing native body,
+joint and animation features. Preserve the user's minimal confirmation workflow.
 
 Art comes from the engine's configured `gpt-image-2` API. Reuse repeated parts
 instead of generating every tread instance separately. Keep native-size art:
@@ -61,12 +64,12 @@ Designer and Image Generation specialist blocks, and the animation provider
 rig prompt. Use native frame import/binding and animation records. Do not add
 a script-rendered tank or script-owned pose update loop.
 
-The current source composition issue is handed to ENGINE in
-[M13 E57](engine-m13-patch-prompt.md). Full mechanical track physics is expressly
-outside scope. Keep working on art/rig data while the engine resolves it.
+First author one owned prototype using existing native body/joint animation,
+including the current hinge-motor animation path where appropriate. Do not
+require a new engine schema. Only a concrete failed native case can justify
+reopening [the retained investigation notes](engine-m13-patch-prompt.md).
 
-After the engine handoff: generate `tread-link` through the corrected native
-importer, record the confirmed E57 schema, build and install one owned prototype,
+Generate/import `tread-link`, build and check the native prototype,
 then apply the rig to the base and 16 persona variants with their existing
 colors. Preserve each current template's non-art gameplay fields. The exact
 pre-M13 base is retained in `assets/m13/before/tank-base.json`; fetch current

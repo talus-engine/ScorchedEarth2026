@@ -39,5 +39,7 @@ Engine work proceeds in parallel under [the M12 prompt](engine-m12-patch-prompt.
 [Current work](m13-tank-piece.md): 36 distinct generated weapon sprites are
 installed; cosmetic tracks/wheels, folding jet pods, persona-color integration
 and their short native visual/movement check remain. Reuse native controller
-speed/levitating parameters and animation layers. [E57/E58](engine-m13-patch-prompt.md)
-are handed to ENGINE; no functional track physics is in scope.
+speed/levitating parameters and animation layers. Tracks/wheels remain rigid
+bodies on joints; propulsion remains the existing floating controller.
+[E57/E58](engine-m13-patch-prompt.md) are on hold: first demonstrate a prototype
+with existing native support, then report only a concrete missing capability.

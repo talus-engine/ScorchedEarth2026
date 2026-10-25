@@ -1,81 +1,53 @@
-# M13 — native articulated animation composition
+# M13 — investigation notes; patch request on hold
 
-The next Scorched Terra feature uses native layered entity components, joints,
-animation clips/controllers and native locomotion/levitation/attack parameters.
-The user explicitly clarified that tracks are **cosmetic animation**, roughly
-matching character movement speed. No physical track traction, new vehicle
-controller or dynamic living-character child bodies are requested.
+**Correction, 2026-10-25:** E57/E58 are withdrawn as game prerequisites. ENGINE
+has been told to hold this work. Neither observation below has been shown to
+block a native tank prototype. They do not establish missing animation support
+and are not release requirements.
 
-## E57 — preserve local animated poses through joint anchoring
+Tracks and wheels must remain **rigid bodies connected by joints**. Cosmetic
+means that their motion does not propel the tank: the existing floating
+character controller continues to drive it. Use existing native bodies,
+joints, animation layers and controller parameters first.
 
-Source audit on the M12 candidate identifies an existing composition problem:
+The earlier sprite-host/local-pose design was an implementation choice, not a
+user requirement. The current animator already has a dynamic-body branch that
+drives hinge motors from clip `motorSpeed`, separate from its animated-part
+pose branch. GAME must demonstrate a small native prototype before requesting
+engine changes. Any later request needs a concrete reproduction and an account
+of why existing supported authoring cannot achieve the required behavior.
 
-- `src/animation/EntityAnimator.ts` `applyPoses()` computes animated child
-  translation from spawn position plus clip offsets and writes velocity.
-- It then calls `anchorRiggedLimbs()`, which overwrites that translation with
-  the first hinge's anchored position, discarding the clip offsets.
-- `anchorRiggedLimbs()` uses the root transform for anchor A even when
-  `hinge.bodyA` is an intermediate component.
-- Clip `angle` is mirrored but otherwise world-oriented. There is no authored
-  local-space mode for a component that must rotate with a tilted chassis.
+## E57 — unverified pose-composition concern
 
-These are source findings, not yet a live tank regression. Confirm with one
-small native fixture before changing semantics. This must be fixed in the
-native animation evaluator; do not ask the game to reposition parts per tick.
+The source audit inspected the animated-part branch of
+`src/animation/EntityAnimator.ts`:
 
-Provide a coherent, documented opt-in local/hierarchical pose contract if the
-existing world-space behavior must stay compatible. Compose parent transform,
-local joint pivot, neutral part pose, clip offsets/rotation and facing once.
-Resolve actual joint parents in a deterministic order, handle invalid/cyclic
-rigs explicitly, and make anchoring and clip evaluation share the final writer.
-Preserve intentionally world-targeted aim/held-weapon behavior.
+- `applyPoses()` writes animated child translation from spawn and clip offsets.
+- Subsequent `anchorRiggedLimbs()` writes translation from joint anchors.
+- That anchoring path uses the root transform rather than an intermediate
+  `hinge.bodyA` parent; the inspected pose angle is world-oriented.
 
-The concrete game case is a roughly 40-pixel tank: jointed wheels, 3×1-pixel
-animated tread links circulating around them, and hinged jet pods that fold
-when the native `levitating` parameter changes. The chassis may slope, flip,
-park and restore. Rig parts should retain their pose relative to it. The game
-will use body masks/layers and existing controller states, not a new renderer.
+These observations concern a particular pose path. They do not prove that
+existing rigid-body joint animation, sprite layers or the required tank are
+blocked. The proposed new local-pose/ownership contract is withdrawn pending a
+native demonstration. Generic dynamic children are not inherently a defect;
+they are relevant to the user's requested rigid bodies on joints.
 
-The exact live tank has no `aiType`/`isPlayer` at template or root. Its old
-aim body is animated because `aimAtTarget`; generic added children otherwise
-become dynamic under `EntitySpawner` even with `isKinematic`. Include a native
-cosmetic-body ownership selection for controller-driven generic entities in
-this contract. Do not require a fake NPC/aim flag or new patrol behavior.
+## E58 — unverified tiny-image import concern
 
-Minimum confirmation: one tilted root, a nested hinged pod and a translating
-3×1 link; show that clip motion survives anchoring, the pod follows its actual
-parent, facing/aim stay correct, and park/restore retains the neutral geometry.
-Use the user's minimal-check direction; no broad M12 theme/series replay.
-
-## Existing features to reuse
-
-- Native `speed`, `direction`, `grounded`, `levitating`, `attack`, `hurt`, `dead`.
-- `particleAnimationLayers`, `frameTracks`, `frameLayerBindings`, `bodyMask`.
-- Animation graph nodes and editor record save/import APIs.
-- Existing per-weapon pixels and native `heldItemAnchor` / weapon equip body.
-- Configured `gpt-image-2` image provider for generated pixel art; never expose
-  its key. Keep model selection explicit and report only the model name.
-
-No engine feature is requested just to give weapons different sprites or to
-react to jetpack engagement; those contracts already exist.
-
-## E58 — tiny generated parts sample the image border
-
-`ChatGptEntityProvider.ts` `classifyToPixels()` uses
+The inspected `ChatGptEntityProvider.ts` resampling loop uses
 `floor(py * sourceHeight / targetHeight)` and the analogous X expression.
-For a one-pixel-high part (the requested 3×1 tread link), this samples only
-source row zero: normally the chroma-key border, not the generated subject.
-This can turn a valid source image into an empty part. This is a source-level
-finding; no paid image request has been used to reproduce an obvious sampler
-edge case. Do not compensate by making the game tracks larger.
+For a one-pixel-high output this selects source row zero. A chroma-key border
+there could produce an empty part. No 3×1 generation/import failure has yet
+been demonstrated. This is an image-import concern, not an animation feature.
+The first step is to use the existing native generation/import facilities for
+the requested tiny art and retain the actual result.
 
-Use correct nearest-neighbor pixel-center mapping for the target sample grid
-(or an explicitly documented native subject-crop policy if already available),
-retain transparent/chroma handling, and check a small deterministic colored
-center / keyed-border image reduced to 3×1 and 1×1. Return nonempty correct
-center samples without changing target dimensions. Keep this fix in the native
-entity image importer, so all tiny generated parts benefit.
+## Scope and coordination
 
-Coordinate through ignored root `AGENT_CHAT.md`. Keep M12's pending bounded
-package handoff separate, and return the exact new animation authoring schema
-as soon as decided so game data can be prepared in parallel.
+Continue using native `speed`, `direction`, `levitating`, body/joint data,
+clips/controllers and sprite layers; preserve existing floating propulsion.
+Use the configured `gpt-image-2` provider without exposing its key. Existing
+weapon art remains installed. No engine change is currently established as
+necessary for the rig. `AGENT_CHAT.md` tracks the separate engine UI lease and
+the next opportunity for the native prototype.

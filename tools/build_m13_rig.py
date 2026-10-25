@@ -1,14 +1,10 @@
 """Build a local native tank-rig proposal; never connects to Talus or installs.
 
 Inputs are the exact current template snapshot and native image-2 part receipts.
-Without --pose-contract the output is deliberately a non-installable draft.
-That file records ENGINE's confirmed E57 fields, rather than this tool inventing
-an engine schema. Its own envelope is:
-  {"reference": "native source/contract reference", "confirmed": true,
-   "cosmeticPartsWithoutAI": true, "emptyAnchorRestore": true,
-   "patches": [{"target": "controller|template|visualBody|visualJoint|track",
-                "fields": {<actual documented native fields>}}]}
-Only each patch's fields enter native records; the envelope is build metadata.
+This initial sprite-host pose proposal is a draft, not an installable rig. The
+user requires rigid bodies on joints while existing floating movement provides
+propulsion. Reconsider this proposal against existing native joint-motor/body
+animation in a concrete prototype; no new engine schema is a prerequisite.
 """
 import argparse
 import copy
@@ -60,7 +56,7 @@ def centered_part(receipt, key):
             f"{key}: generated art exceeds requested native dimensions")
     if key == "tread-link":
         require(width == 3 and height == 1 and len(pixels) == 3,
-                "tread-link must contain exactly three adjacent native pixels (3x1); E58 may still be pending")
+                "tread-link must contain exactly three adjacent native pixels (3x1)")
     cx = (b["minLocalX"] + b["maxLocalX"]) / 2
     cy = (b["minLocalY"] + b["maxLocalY"]) / 2
     normalized = [{**p, "localX": rounded(p["localX"] - cx),
@@ -88,7 +84,7 @@ def capsule(distance, half_run=15.0, radius=3.5, center_y=3.0):
     return x, y, angle + cycles * math.tau
 
 
-def build(base, receipts, contract=None, record_ids=None, target_template_id=None):
+def build(base, receipts, record_ids=None, target_template_id=None):
     base = copy.deepcopy(base.get("record", base))
     body_by_id = {b["bodyIndex"]: b for b in base.get("bodies", [])}
     require(set(body_by_id) == {0, 1}, "Expected exact two-part pre-M13 tank snapshot")
@@ -260,30 +256,16 @@ def build(base, receipts, contract=None, record_ids=None, target_template_id=Non
     patch = {"pixels": [], "bodies": bodies, "joints": joints,
              "particleAnimationSets": sets, "particleAnimationLayers": layers,
              "animationControllerId": controller["controllerId"]}
-    unresolved = ["E57 confirmed parent-local pose composition fields are required",
-                  "E57 must select cosmetic parts on this generic tank without adding patrol AI",
-                  "E57 must retain neutral offsets for empty sprite-anchor parts on park/restore"]
-    if contract is not None:
-        require(contract.get("confirmed") is True and bool(contract.get("reference")), "E57 contract must cite confirmed native schema")
-        require(contract.get("cosmeticPartsWithoutAI") is True and contract.get("emptyAnchorRestore") is True,
-                "Contract must confirm generic cosmetic-body ownership and empty-anchor restore semantics")
-        require(bool(contract.get("patches")), "Supply actual native opt-in field patches")
-        targets = {"controller": [controller], "template": [patch],
-                   "visualBody": [b for b in bodies if b["bodyIndex"] in visual_indices],
-                   "visualJoint": new_joints, "track": [t for c in clips for t in c["tracks"]]}
-        for change in contract["patches"]:
-            require(change.get("target") in targets and bool(change.get("fields")), "Invalid E57 patch target or empty fields")
-            for target in targets[change["target"]]:
-                require(not (set(change["fields"]) & set(target)), "E57 opt-in cannot overwrite existing authored rig fields")
-                target.update(copy.deepcopy(change["fields"]))
-        unresolved = []
+    unresolved = ["Author and demonstrate actual rigid bodies on joints using existing native support",
+                  "Confirm floating controller remains the sole propulsion system",
+                  "Review this draft sprite-host pose approach against the native joint-motor path"]
     require(bodies[1] == body_by_id[1], "Existing native aim body must remain exact")
     require(joints[:len(base.get("joints", []))] == base.get("joints", []), "Existing aim joint must remain exact")
-    return {"version": 1, "status": "ready-for-native-review" if not unresolved else "draft-blocked-on-E57",
-            "readyForInstall": not unresolved, "targetTemplateId": template_id,
+    return {"version": 1, "status": "draft-needs-native-prototype",
+            "readyForInstall": False, "targetTemplateId": template_id,
             "sourceTemplateId": base["templateId"], "recordReferences": record_references,
             "baseSnapshotSha256": digest(base), "artSha256": {k: digest(receipts[k]) for k in PARTS},
-            "nativeContract": copy.deepcopy(contract), "unresolved": unresolved,
+            "unresolved": unresolved,
             "templatePatch": patch, "clips": clips, "controller": controller,
             "manifest": {"components": components, "rootBounds": root_box, "rootAnchorCenter": root_center,
                          "bodyCount": len(bodies), "treadLinkCount": len(tread_indices), "treadLinkSize": [3, 1],
@@ -304,18 +286,16 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--base", type=Path, default=ROOT / "assets/m13/before/tank-base.json")
     parser.add_argument("--parts-dir", type=Path, default=ROOT / "assets/m13/generated")
-    parser.add_argument("--pose-contract", type=Path)
     parser.add_argument("--target-template-id", help="Owned prototype or palette variant receiving this proposal")
     parser.add_argument("--record-ids", type=Path, help="JSON map of recordReferences logical keys to allocated native IDs")
     parser.add_argument("--output", type=Path, default=ROOT / "artifacts/m13/rig-proposal.json")
-    parser.add_argument("--require-ready", action="store_true", help="Refuse a draft while E57 is unresolved")
+    parser.add_argument("--require-ready", action="store_true", help="Refuse the unreviewed initial rig proposal")
     args = parser.parse_args()
     missing = [str(args.parts_dir / (k + ".json")) for k in PARTS if not (args.parts_dir / (k + ".json")).exists()]
     require(not missing, "Native part receipts are still required:\n" + "\n".join(missing))
     receipts = {k: json.loads((args.parts_dir / (k + ".json")).read_text()) for k in PARTS}
-    contract = json.loads(args.pose_contract.read_text()) if args.pose_contract else None
     record_ids = json.loads(args.record_ids.read_text()) if args.record_ids else None
-    proposal = build(json.loads(args.base.read_text()), receipts, contract, record_ids, args.target_template_id)
+    proposal = build(json.loads(args.base.read_text()), receipts, record_ids, args.target_template_id)
     require(not args.require_ready or proposal["readyForInstall"], "; ".join(proposal["unresolved"]))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(proposal, indent=2) + "\n")
