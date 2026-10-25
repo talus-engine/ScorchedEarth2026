@@ -1,0 +1,817 @@
+{
+  "id": "cluster-grenade",
+  "model": "gpt-image-2",
+  "sourceTemplateId": "c650c338-97f6-412e-be6a-8101ff0a6ffa",
+  "sourceBodyIndex": 4,
+  "requested": {
+    "id": "cluster-grenade",
+    "name": "Cluster Grenade",
+    "kind": "weapon",
+    "targetTemplateId": "2e0a754f-eb50-487b-b90a-907a3a43159a",
+    "width": 24,
+    "height": 10,
+    "design": "multi-chamber grenade launcher with three green drum lobes; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+  },
+  "body": {
+    "bodyIndex": 4,
+    "isKinematic": true,
+    "isStatic": false,
+    "name": "cluster-grenade",
+    "pixels": [
+      {
+        "color": 4280228125,
+        "elementType": 80,
+        "localX": 28,
+        "localY": 1
+      },
+      {
+        "color": 4282334782,
+        "elementType": 14,
+        "localX": 29,
+        "localY": 1
+      },
+      {
+        "color": 4279374098,
+        "elementType": 213,
+        "localX": 28,
+        "localY": 2
+      },
+      {
+        "color": 4279769112,
+        "elementType": 210,
+        "localX": 29,
+        "localY": 2
+      },
+      {
+        "color": 4281084716,
+        "elementType": 162,
+        "localX": 30,
+        "localY": 2
+      },
+      {
+        "color": 4287105143,
+        "elementType": 114,
+        "localX": 32,
+        "localY": 2
+      },
+      {
+        "color": 4279308306,
+        "elementType": 150,
+        "localX": 33,
+        "localY": 2
+      },
+      {
+        "color": 4281545523,
+        "elementType": 202,
+        "localX": 35,
+        "localY": 2
+      },
+      {
+        "color": 4279238671,
+        "elementType": 15,
+        "localX": 37,
+        "localY": 2
+      },
+      {
+        "color": 4282466883,
+        "elementType": 14,
+        "localX": 38,
+        "localY": 2
+      },
+      {
+        "color": 4279961114,
+        "elementType": 15,
+        "localX": 39,
+        "localY": 2
+      },
+      {
+        "color": 4293192174,
+        "elementType": 177,
+        "localX": 25,
+        "localY": 3
+      },
+      {
+        "color": 4286611841,
+        "elementType": 9,
+        "localX": 26,
+        "localY": 3
+      },
+      {
+        "color": 4286348671,
+        "elementType": 9,
+        "localX": 27,
+        "localY": 3
+      },
+      {
+        "color": 4279900698,
+        "elementType": 210,
+        "localX": 28,
+        "localY": 3
+      },
+      {
+        "color": 4284045145,
+        "elementType": 5,
+        "localX": 29,
+        "localY": 3
+      },
+      {
+        "color": 4285427310,
+        "elementType": 42,
+        "localX": 30,
+        "localY": 3
+      },
+      {
+        "color": 4279903521,
+        "elementType": 39,
+        "localX": 31,
+        "localY": 3
+      },
+      {
+        "color": 4280232230,
+        "elementType": 39,
+        "localX": 32,
+        "localY": 3
+      },
+      {
+        "color": 4280166437,
+        "elementType": 39,
+        "localX": 33,
+        "localY": 3
+      },
+      {
+        "color": 4282992970,
+        "elementType": 5,
+        "localX": 34,
+        "localY": 3
+      },
+      {
+        "color": 4279707170,
+        "elementType": 39,
+        "localX": 35,
+        "localY": 3
+      },
+      {
+        "color": 4280297767,
+        "elementType": 162,
+        "localX": 36,
+        "localY": 3
+      },
+      {
+        "color": 4279969571,
+        "elementType": 39,
+        "localX": 37,
+        "localY": 3
+      },
+      {
+        "color": 4279769369,
+        "elementType": 210,
+        "localX": 38,
+        "localY": 3
+      },
+      {
+        "color": 4280233257,
+        "elementType": 39,
+        "localX": 39,
+        "localY": 3
+      },
+      {
+        "color": 4280364073,
+        "elementType": 162,
+        "localX": 40,
+        "localY": 3
+      },
+      {
+        "color": 4282401347,
+        "elementType": 14,
+        "localX": 41,
+        "localY": 3
+      },
+      {
+        "color": 4279374098,
+        "elementType": 213,
+        "localX": 42,
+        "localY": 3
+      },
+      {
+        "color": 4281348144,
+        "elementType": 202,
+        "localX": 24,
+        "localY": 4
+      },
+      {
+        "color": 4281479474,
+        "elementType": 202,
+        "localX": 25,
+        "localY": 4
+      },
+      {
+        "color": 4281348144,
+        "elementType": 202,
+        "localX": 26,
+        "localY": 4
+      },
+      {
+        "color": 4281282352,
+        "elementType": 202,
+        "localX": 27,
+        "localY": 4
+      },
+      {
+        "color": 4283914072,
+        "elementType": 5,
+        "localX": 28,
+        "localY": 4
+      },
+      {
+        "color": 4281413681,
+        "elementType": 202,
+        "localX": 29,
+        "localY": 4
+      },
+      {
+        "color": 4279705116,
+        "elementType": 39,
+        "localX": 30,
+        "localY": 4
+      },
+      {
+        "color": 4285574557,
+        "elementType": 33,
+        "localX": 31,
+        "localY": 4
+      },
+      {
+        "color": 4284719505,
+        "elementType": 126,
+        "localX": 32,
+        "localY": 4
+      },
+      {
+        "color": 4279439891,
+        "elementType": 213,
+        "localX": 33,
+        "localY": 4
+      },
+      {
+        "color": 4279377178,
+        "elementType": 39,
+        "localX": 34,
+        "localY": 4
+      },
+      {
+        "color": 4285574299,
+        "elementType": 33,
+        "localX": 35,
+        "localY": 4
+      },
+      {
+        "color": 4283929729,
+        "elementType": 126,
+        "localX": 36,
+        "localY": 4
+      },
+      {
+        "color": 4282729798,
+        "elementType": 5,
+        "localX": 37,
+        "localY": 4
+      },
+      {
+        "color": 4285115033,
+        "elementType": 176,
+        "localX": 38,
+        "localY": 4
+      },
+      {
+        "color": 4285771935,
+        "elementType": 33,
+        "localX": 39,
+        "localY": 4
+      },
+      {
+        "color": 4281293389,
+        "elementType": 169,
+        "localX": 40,
+        "localY": 4
+      },
+      {
+        "color": 4288125595,
+        "elementType": 59,
+        "localX": 41,
+        "localY": 4
+      },
+      {
+        "color": 4282466369,
+        "elementType": 14,
+        "localX": 42,
+        "localY": 4
+      },
+      {
+        "color": 4284703333,
+        "elementType": 42,
+        "localX": 43,
+        "localY": 4
+      },
+      {
+        "color": 4284308829,
+        "elementType": 5,
+        "localX": 44,
+        "localY": 4
+      },
+      {
+        "color": 4284703587,
+        "elementType": 42,
+        "localX": 45,
+        "localY": 4
+      },
+      {
+        "color": 4284243037,
+        "elementType": 5,
+        "localX": 46,
+        "localY": 4
+      },
+      {
+        "color": 4282992969,
+        "elementType": 5,
+        "localX": 24,
+        "localY": 5
+      },
+      {
+        "color": 4280163868,
+        "elementType": 210,
+        "localX": 25,
+        "localY": 5
+      },
+      {
+        "color": 4281150765,
+        "elementType": 162,
+        "localX": 27,
+        "localY": 5
+      },
+      {
+        "color": 4280229406,
+        "elementType": 210,
+        "localX": 28,
+        "localY": 5
+      },
+      {
+        "color": 4294502708,
+        "elementType": 40,
+        "localX": 29,
+        "localY": 5
+      },
+      {
+        "color": 4281622608,
+        "elementType": 124,
+        "localX": 30,
+        "localY": 5
+      },
+      {
+        "color": 4281622609,
+        "elementType": 124,
+        "localX": 31,
+        "localY": 5
+      },
+      {
+        "color": 4284061574,
+        "elementType": 126,
+        "localX": 32,
+        "localY": 5
+      },
+      {
+        "color": 4283387727,
+        "elementType": 5,
+        "localX": 33,
+        "localY": 5
+      },
+      {
+        "color": 4281556816,
+        "elementType": 124,
+        "localX": 34,
+        "localY": 5
+      },
+      {
+        "color": 4281293130,
+        "elementType": 169,
+        "localX": 35,
+        "localY": 5
+      },
+      {
+        "color": 4282218341,
+        "elementType": 124,
+        "localX": 36,
+        "localY": 5
+      },
+      {
+        "color": 4279966491,
+        "elementType": 210,
+        "localX": 37,
+        "localY": 5
+      },
+      {
+        "color": 4281556816,
+        "elementType": 124,
+        "localX": 38,
+        "localY": 5
+      },
+      {
+        "color": 4281491024,
+        "elementType": 169,
+        "localX": 39,
+        "localY": 5
+      },
+      {
+        "color": 4282269759,
+        "elementType": 14,
+        "localX": 40,
+        "localY": 5
+      },
+      {
+        "color": 4279637527,
+        "elementType": 213,
+        "localX": 41,
+        "localY": 5
+      },
+      {
+        "color": 4282664261,
+        "elementType": 5,
+        "localX": 42,
+        "localY": 5
+      },
+      {
+        "color": 4285427311,
+        "elementType": 42,
+        "localX": 43,
+        "localY": 5
+      },
+      {
+        "color": 4285361262,
+        "elementType": 42,
+        "localX": 44,
+        "localY": 5
+      },
+      {
+        "color": 4288322976,
+        "elementType": 61,
+        "localX": 45,
+        "localY": 5
+      },
+      {
+        "color": 4279242769,
+        "elementType": 213,
+        "localX": 46,
+        "localY": 5
+      },
+      {
+        "color": 4282532162,
+        "elementType": 14,
+        "localX": 24,
+        "localY": 6
+      },
+      {
+        "color": 4280426785,
+        "elementType": 162,
+        "localX": 25,
+        "localY": 6
+      },
+      {
+        "color": 4278782218,
+        "elementType": 150,
+        "localX": 26,
+        "localY": 6
+      },
+      {
+        "color": 4278782217,
+        "elementType": 153,
+        "localX": 27,
+        "localY": 6
+      },
+      {
+        "color": 4280492835,
+        "elementType": 162,
+        "localX": 28,
+        "localY": 6
+      },
+      {
+        "color": 4283979578,
+        "elementType": 5,
+        "localX": 29,
+        "localY": 6
+      },
+      {
+        "color": 4281424716,
+        "elementType": 169,
+        "localX": 30,
+        "localY": 6
+      },
+      {
+        "color": 4281886808,
+        "elementType": 124,
+        "localX": 31,
+        "localY": 6
+      },
+      {
+        "color": 4281623635,
+        "elementType": 124,
+        "localX": 32,
+        "localY": 6
+      },
+      {
+        "color": 4281085229,
+        "elementType": 162,
+        "localX": 33,
+        "localY": 6
+      },
+      {
+        "color": 4281688403,
+        "elementType": 169,
+        "localX": 34,
+        "localY": 6
+      },
+      {
+        "color": 4281689687,
+        "elementType": 124,
+        "localX": 35,
+        "localY": 6
+      },
+      {
+        "color": 4282547306,
+        "elementType": 124,
+        "localX": 36,
+        "localY": 6
+      },
+      {
+        "color": 4280887850,
+        "elementType": 162,
+        "localX": 37,
+        "localY": 6
+      },
+      {
+        "color": 4281886552,
+        "elementType": 124,
+        "localX": 38,
+        "localY": 6
+      },
+      {
+        "color": 4281754965,
+        "elementType": 124,
+        "localX": 39,
+        "localY": 6
+      },
+      {
+        "color": 4281611828,
+        "elementType": 202,
+        "localX": 40,
+        "localY": 6
+      },
+      {
+        "color": 4279506197,
+        "elementType": 213,
+        "localX": 41,
+        "localY": 6
+      },
+      {
+        "color": 4278782218,
+        "elementType": 150,
+        "localX": 42,
+        "localY": 6
+      },
+      {
+        "color": 4280427299,
+        "elementType": 162,
+        "localX": 43,
+        "localY": 6
+      },
+      {
+        "color": 4280624422,
+        "elementType": 162,
+        "localX": 44,
+        "localY": 6
+      },
+      {
+        "color": 4280427299,
+        "elementType": 162,
+        "localX": 45,
+        "localY": 6
+      },
+      {
+        "color": 4283782998,
+        "elementType": 5,
+        "localX": 46,
+        "localY": 6
+      },
+      {
+        "color": 4290888646,
+        "elementType": 206,
+        "localX": 24,
+        "localY": 7
+      },
+      {
+        "color": 4280887336,
+        "elementType": 162,
+        "localX": 25,
+        "localY": 7
+      },
+      {
+        "color": 4282532419,
+        "elementType": 14,
+        "localX": 28,
+        "localY": 7
+      },
+      {
+        "color": 4278979853,
+        "elementType": 150,
+        "localX": 29,
+        "localY": 7
+      },
+      {
+        "color": 4278782474,
+        "elementType": 150,
+        "localX": 30,
+        "localY": 7
+      },
+      {
+        "color": 4290440186,
+        "elementType": 161,
+        "localX": 31,
+        "localY": 7
+      },
+      {
+        "color": 4279577378,
+        "elementType": 17,
+        "localX": 32,
+        "localY": 7
+      },
+      {
+        "color": 4278848010,
+        "elementType": 150,
+        "localX": 33,
+        "localY": 7
+      },
+      {
+        "color": 4278716681,
+        "elementType": 153,
+        "localX": 34,
+        "localY": 7
+      },
+      {
+        "color": 4290308857,
+        "elementType": 161,
+        "localX": 35,
+        "localY": 7
+      },
+      {
+        "color": 4279709990,
+        "elementType": 17,
+        "localX": 36,
+        "localY": 7
+      },
+      {
+        "color": 4282400833,
+        "elementType": 14,
+        "localX": 37,
+        "localY": 7
+      },
+      {
+        "color": 4279575583,
+        "elementType": 39,
+        "localX": 38,
+        "localY": 7
+      },
+      {
+        "color": 4290374649,
+        "elementType": 161,
+        "localX": 39,
+        "localY": 7
+      },
+      {
+        "color": 4281490255,
+        "elementType": 169,
+        "localX": 40,
+        "localY": 7
+      },
+      {
+        "color": 4283782486,
+        "elementType": 5,
+        "localX": 41,
+        "localY": 7
+      },
+      {
+        "color": 4279834906,
+        "elementType": 210,
+        "localX": 42,
+        "localY": 7
+      },
+      {
+        "color": 4279110926,
+        "elementType": 150,
+        "localX": 24,
+        "localY": 8
+      },
+      {
+        "color": 4282400833,
+        "elementType": 14,
+        "localX": 25,
+        "localY": 8
+      },
+      {
+        "color": 4282400319,
+        "elementType": 14,
+        "localX": 26,
+        "localY": 8
+      },
+      {
+        "color": 4282203454,
+        "elementType": 14,
+        "localX": 27,
+        "localY": 8
+      },
+      {
+        "color": 4294370613,
+        "elementType": 40,
+        "localX": 28,
+        "localY": 8
+      },
+      {
+        "color": 4280229663,
+        "elementType": 210,
+        "localX": 29,
+        "localY": 8
+      },
+      {
+        "color": 4281216302,
+        "elementType": 162,
+        "localX": 30,
+        "localY": 8
+      },
+      {
+        "color": 4281808438,
+        "elementType": 14,
+        "localX": 31,
+        "localY": 8
+      },
+      {
+        "color": 4281742902,
+        "elementType": 14,
+        "localX": 32,
+        "localY": 8
+      },
+      {
+        "color": 4281742902,
+        "elementType": 14,
+        "localX": 33,
+        "localY": 8
+      },
+      {
+        "color": 4282071611,
+        "elementType": 14,
+        "localX": 34,
+        "localY": 8
+      },
+      {
+        "color": 4280625189,
+        "elementType": 162,
+        "localX": 35,
+        "localY": 8
+      },
+      {
+        "color": 4282399518,
+        "elementType": 227,
+        "localX": 36,
+        "localY": 8
+      },
+      {
+        "color": 4282268188,
+        "elementType": 227,
+        "localX": 37,
+        "localY": 8
+      },
+      {
+        "color": 4284571745,
+        "elementType": 171,
+        "localX": 38,
+        "localY": 8
+      },
+      {
+        "color": 4281940282,
+        "elementType": 14,
+        "localX": 39,
+        "localY": 8
+      },
+      {
+        "color": 4282071867,
+        "elementType": 14,
+        "localX": 40,
+        "localY": 8
+      },
+      {
+        "color": 4280098335,
+        "elementType": 210,
+        "localX": 41,
+        "localY": 8
+      }
+    ]
+  },
+  "contentWidth": 23,
+  "contentHeight": 8
+}

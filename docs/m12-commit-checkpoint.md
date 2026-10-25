@@ -34,3 +34,17 @@ All diagnostic ledgers are closed with exact baseline restoration. User WFC artw
 - **Engine handoff, 22:56:45 UTC:** ENGINE accepted the reduced scope and explicitly authorized checkpointing reviewed game source now. Candidate **0.0.2572 / `eb3a1c72c`** is committed/pushed; ENGINE reports 14,259 tests with zero failures, zero TypeScript errors and successful production/player builds. Signing/package smoke and the short changed-boundary browser check are still in progress. These are reported engine results, not installed game acceptance.
 - Defer the ten-theme sweep, A2/A3 and physical mechanism chains, seed/hybrid comparisons, best-of-three shopping/biome series, further controller coverage and final desktop/Website artifact rollout. The attempted spillway probe [never ran](evidence/m12-story-a1-trestles/spillway-probe-status.json): a harness wait-call error occurred before sampling or excavation, so it has no physical result.
 - Existing disabled capabilities and unsupported full mid-volley persistence remain unchanged. Commit the working checkpoint with these limits visible; revisit the matrix as follow-up work.
+
+
+## Later engine handoff — 23:11–23:14 UTC
+
+ENGINE returned the original quiet editor with signed local 0.0.2572 installed
+(source `eb3a1c72c84c62bd3ab95e4984a33fe8389444e2`; not notarized). Its bounded
+Website 0.2.3 check under `/games/terra/` now reopens the same save, preserving
+94/0 HP, $368, Missile 1, Nuke 2 and standings. It reports all 642 images and
+1,188 resources verified, all 36 powder overrides silent, and nonzero browser
+mixer output with no page/console errors. Perceptual weather audio and fresh
+cold-title recovery remain unestablished. Original account JSON strings matched
+the fresh engine baseline without restoration writes. These are ENGINE-reported
+results; the GAME distant-restore replay is still pending. The new M13 tank-art
+work does not reopen the broad M12 acceptance matrix.

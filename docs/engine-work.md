@@ -532,3 +532,15 @@ quiet-save carryover remain open. This is not full game-side M10 acceptance.
 
 
 2541 repository gate: pushed `ea52d3b893b7e9c362d7f8a42cd24e07dfd4c885`; full suite **14,051 passed** across **1,154 passing files**, with one expected failure and 17 skipped tests (six skipped files); production build and zero-error type-check passed. [Raw push gate](evidence/m10-engine-menu-2541/pre-push.log). Installed hash was rechecked after push and still matches the accepted 2541 bundle.
+
+
+## M13 native tank animation — 2026-10-25
+
+[E57/E58 prompt](engine-m13-patch-prompt.md) handed to ENGINE through
+`AGENT_CHAT.md`; acknowledged and queued. E57 covers native parent-local joint
+pose composition, generic-entity cosmetic body ownership, and stable neutral
+offsets across restoration. E58 corrects tiny image sampling so a 3×1 tread
+uses center pixels rather than the keyed image border. Source findings are
+not yet live regression acceptance. Tracks are explicitly cosmetic; no vehicle
+traction system or scripted pose workaround is requested. All 36 weapon sprites
+are installed independently; the native rig waits for these fixes.

@@ -32,3 +32,12 @@ Engine work proceeds in parallel under [the M12 prompt](engine-m12-patch-prompt.
 - 2026-10-25 camera update: the old mandatory roster frame is superseded. GAME owns removal of live-only selection, false deaths on unresolved snapshots, consumption/debit replay, burst truncation on unload and death-emitter residency assumptions. ENGINE owns smooth durable/point follow (E52) and native saved-geometry/durable targeting (E53). Use only finite local work leases where an ongoing cast/emission needs simulation; do not pin all tanks. Initial spawn spacing is unchanged unless separately authored; normal world bounds still apply.
 
 - 2026-10-25 installed2570: smooth-camera/full-map-bounds/durable-target lifecycle integration is live, with no mandatory all-roster frame. A bounded real CPU round completed after two Resume retries; actual flight/death motion and3s dialogue/2.5s death-watch timing passed. Original simulated title is enabled, exact owned Website copy updated. A1 now passes all25structures but stops at native growth-region admission (E54); all prior diagnostic ledgers restored exactly. Final bounded CPU/camera observation is running; actual parked-game combat, unattended series and packages remain open.
+
+
+## M13 tank piece
+
+[Current work](m13-tank-piece.md): 36 distinct generated weapon sprites are
+installed; cosmetic tracks/wheels, folding jet pods, persona-color integration
+and their short native visual/movement check remain. Reuse native controller
+speed/levitating parameters and animation layers. [E57/E58](engine-m13-patch-prompt.md)
+are handed to ENGINE; no functional track physics is in scope.

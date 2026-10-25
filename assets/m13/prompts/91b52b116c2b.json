@@ -1,0 +1,19 @@
+{
+  "prompt": "Create an exploded pixel-art source board for Scorched Terra. This is a reusable art library, not a playable character. Return exactly the listed separate body parts, in order, with the exact names and bounding boxes below. Generate each part independently. Exactly the first part is root; connect each other part to it with a hinge at its listed placement. Do not add connecting material, backgrounds, labels or unlisted bodies. All parts are inert solid metal: use IRON for the plan. Color is artwork only. Keep these deliberately tiny dimensions exactly. 1980s arcade pixel graphics; tiny bold pixel clusters, hard edges, no antialiasing, no fine painterly details, no text or logos\nPARTS:\n[\n  {\n    \"name\": \"chassis\",\n    \"boxX\": 0,\n    \"boxY\": 0,\n    \"boxW\": 36,\n    \"boxH\": 14,\n    \"isRoot\": true,\n    \"material\": \"IRON\",\n    \"imagePrompt\": \"compact low armored tank hull only, cyan steel plates, dark lower fender and ivory edge highlights; no turret, tracks, wheels or weapons\"\n  },\n  {\n    \"name\": \"turret\",\n    \"boxX\": 36,\n    \"boxY\": 0,\n    \"boxW\": 8,\n    \"boxH\": 6,\n    \"isRoot\": false,\n    \"material\": \"IRON\",\n    \"imagePrompt\": \"round low-profile cyan tank turret bearing cap only, dark lower pivot ring; no barrel or chassis\"\n  },\n  {\n    \"name\": \"wheel\",\n    \"boxX\": 72,\n    \"boxY\": 0,\n    \"boxW\": 5,\n    \"boxH\": 5,\n    \"isRoot\": false,\n    \"material\": \"IRON\",\n    \"imagePrompt\": \"single circular charcoal tank road wheel with steel rim and three bright hub spokes; perfectly side-on\"\n  },\n  {\n    \"name\": \"jet-pod\",\n    \"boxX\": 108,\n    \"boxY\": 0,\n    \"boxW\": 5,\n    \"boxH\": 8,\n    \"isRoot\": false,\n    \"material\": \"IRON\",\n    \"imagePrompt\": \"single compact tank jetpack pod, cyan armored upper casing and orange nozzle at bottom; nozzle points down; no flame\"\n  },\n  {\n    \"name\": \"jet-flame\",\n    \"boxX\": 144,\n    \"boxY\": 0,\n    \"boxW\": 3,\n    \"boxH\": 7,\n    \"isRoot\": false,\n    \"material\": \"IRON\",\n    \"imagePrompt\": \"single tiny downward jet exhaust plume, bright ivory core, yellow middle and orange tip; widest at top, tapered at bottom\"\n  }\n]",
+  "templateName": "indigo/art/m13/91b52b116c2b",
+  "targetHeight": 14,
+  "styleTheme": "1980s arcade pixel graphics; tiny bold pixel clusters, hard edges, no antialiasing, no fine painterly details, no text or logos",
+  "colorThemes": [
+    "steel",
+    "charcoal",
+    "cyan",
+    "warm ivory",
+    "item-specific accent colors"
+  ],
+  "description": "Generated tiny part source board; game installation copies art only.",
+  "tags": [
+    "scorched-terra",
+    "m13",
+    "art-source"
+  ]
+}

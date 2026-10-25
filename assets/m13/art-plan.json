@@ -1,0 +1,380 @@
+{
+  "version": 1,
+  "model": "gpt-image-2",
+  "mode": "Talus native generate_entity per-part image pipeline",
+  "style": "1980s arcade pixel graphics; tiny bold pixel clusters, hard edges, no antialiasing, no fine painterly details, no text or logos",
+  "parts": [
+    {
+      "id": "standard",
+      "name": "Baby Missile",
+      "kind": "weapon",
+      "targetTemplateId": "219d46ea-fa7c-4578-b119-bba07279e6f0",
+      "width": 20,
+      "height": 5,
+      "design": "short single cannon, angular breech, one ivory muzzle band; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "heavy",
+      "name": "Missile",
+      "kind": "weapon",
+      "targetTemplateId": "0ab6c0a5-f0df-4177-bdec-d97152c5b229",
+      "width": 26,
+      "height": 7,
+      "design": "long heavy cannon, chunky stepped breech, two ivory muzzle bands; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "crumble",
+      "name": "Crumble cannon",
+      "kind": "weapon",
+      "targetTemplateId": "4b40ae2e-de9d-4ce7-b157-89254bbcad67",
+      "width": 22,
+      "height": 8,
+      "design": "rock-breaker cannon with square crusher teeth and ochre hazard blocks; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "riot",
+      "name": "Riot Bomb",
+      "kind": "weapon",
+      "targetTemplateId": "9dd9a83c-66b3-4720-a798-b7ce47372022",
+      "width": 18,
+      "height": 8,
+      "design": "wide blunt mortar with blue vent slits and a flared shovel-shaped mouth; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "ricochet",
+      "name": "Bouncer cannon",
+      "kind": "weapon",
+      "targetTemplateId": "fa168217-924a-4b95-b7f2-025d856f5b88",
+      "width": 24,
+      "height": 7,
+      "design": "spring-loaded bounce gun with visible silver coil and round orange breech; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "sand",
+      "name": "Sand charge cannon",
+      "kind": "weapon",
+      "targetTemplateId": "e6f74d61-a720-4f87-8a81-255a2f6ed379",
+      "width": 20,
+      "height": 10,
+      "design": "sand hopper cannon with angular tan funnel above a short nozzle; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "baby-nuke",
+      "name": "Baby Nuke",
+      "kind": "weapon",
+      "targetTemplateId": "70446b65-1a75-4950-840a-443f28dc58a6",
+      "width": 20,
+      "height": 9,
+      "design": "compact nuclear launcher, bulbous olive chamber and one bright yellow warning square; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "nuke",
+      "name": "Nuke",
+      "kind": "weapon",
+      "targetTemplateId": "30429bd4-deb3-4bbb-82e1-0e9b930b8aa2",
+      "width": 27,
+      "height": 11,
+      "design": "oversized nuclear launcher, thick olive drum, large yellow hazard plate, short dark muzzle; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "leapfrog",
+      "name": "Leap Frog",
+      "kind": "weapon",
+      "targetTemplateId": "1aa5e1f6-bd3e-4e3e-b574-d996fe08da12",
+      "width": 24,
+      "height": 8,
+      "design": "three-step green launcher with three descending chamber humps; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "funky",
+      "name": "Funky Bomb",
+      "kind": "weapon",
+      "targetTemplateId": "6feb77ee-0aa7-495f-8485-2d5b3c9cc02b",
+      "width": 23,
+      "height": 10,
+      "design": "asymmetric purple chaos cannon, orange bulb and zigzag muzzle; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "mirv",
+      "name": "MIRV",
+      "kind": "weapon",
+      "targetTemplateId": "2f61b3c3-8c0b-45c8-9d7e-3b7053cc1372",
+      "width": 26,
+      "height": 10,
+      "design": "five-warhead launcher, stepped stack of slim silver tubes with cyan nose markings; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "deaths-head",
+      "name": "Death\u2019s Head",
+      "kind": "weapon",
+      "targetTemplateId": "2ee512d3-c721-4978-a1a5-b97d42255b13",
+      "width": 28,
+      "height": 11,
+      "design": "heavy black launcher with ivory skull-like armored shroud and three long teeth; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "napalm",
+      "name": "Napalm",
+      "kind": "weapon",
+      "targetTemplateId": "ad09d6ff-6bad-4451-b7dc-de31c63b4850",
+      "width": 23,
+      "height": 9,
+      "design": "fuel launcher with one amber cylindrical tank and dark narrow ignition nozzle; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "hot-napalm",
+      "name": "Hot Napalm",
+      "kind": "weapon",
+      "targetTemplateId": "a80f054a-6235-4746-b050-8d5cd248dd57",
+      "width": 25,
+      "height": 10,
+      "design": "double red fuel tanks above a copper nozzle with orange heat fins; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "tracer",
+      "name": "Tracer",
+      "kind": "weapon",
+      "targetTemplateId": "b4474e78-1c10-4d79-994d-d900ed050664",
+      "width": 26,
+      "height": 4,
+      "design": "thin ivory ranging barrel with a small blue sight and bright white muzzle; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "baby-roller",
+      "name": "Baby Roller",
+      "kind": "weapon",
+      "targetTemplateId": "90b273d1-25bc-4e3e-b48e-3aaa9b487057",
+      "width": 18,
+      "height": 8,
+      "design": "small roller launcher with round steel drum and one red ball visible; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "roller",
+      "name": "Roller",
+      "kind": "weapon",
+      "targetTemplateId": "173004dc-1907-43e3-9e01-10f4b7084523",
+      "width": 23,
+      "height": 9,
+      "design": "medium roller launcher with large round gray drum and twin red ball marks; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "heavy-roller",
+      "name": "Heavy Roller",
+      "kind": "weapon",
+      "targetTemplateId": "dbf78db4-cfdc-40f0-a539-99aac14d205c",
+      "width": 27,
+      "height": 11,
+      "design": "heavy roller launcher with armored wheel-like breech and three red ball marks; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "heavy-riot",
+      "name": "Heavy Riot Bomb",
+      "kind": "weapon",
+      "targetTemplateId": "6f99a25f-64be-4b8e-9687-a27734c0f18a",
+      "width": 27,
+      "height": 10,
+      "design": "heavy blue excavator mortar with broad toothed scoop-shaped muzzle; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "dirt-clod",
+      "name": "Dirt Clod",
+      "kind": "weapon",
+      "targetTemplateId": "be01a387-a0f6-48ac-ae66-57d54d4177c4",
+      "width": 18,
+      "height": 7,
+      "design": "little earthen clod catapult gun with tan cup and short dark stock; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "dirt-ball",
+      "name": "Dirt Ball",
+      "kind": "weapon",
+      "targetTemplateId": "21a7dc63-bbb5-4d63-800a-e75f90d39794",
+      "width": 22,
+      "height": 9,
+      "design": "round ochre hopper chamber and short wide soil barrel; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "ton-dirt",
+      "name": "Ton of Dirt",
+      "kind": "weapon",
+      "targetTemplateId": "1a4d56f6-0058-471f-a4bf-77548338012c",
+      "width": 27,
+      "height": 11,
+      "design": "boxy construction hopper full of brown earth with large yellow chute; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "liquid-dirt",
+      "name": "Liquid Dirt",
+      "kind": "weapon",
+      "targetTemplateId": "25c9e6c3-87ab-4f3d-bb09-e9d11cbde886",
+      "width": 24,
+      "height": 10,
+      "design": "slurry cannon with copper canister and flexible-looking green nozzle; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "plasma",
+      "name": "Plasma Blast",
+      "kind": "weapon",
+      "targetTemplateId": "46fa464d-efc9-4cdc-9f58-7f34c6df79b4",
+      "width": 25,
+      "height": 9,
+      "design": "electric plasma projector with cyan forked muzzle and violet capacitor; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "machine-gun",
+      "name": "Machine Gun",
+      "kind": "weapon",
+      "targetTemplateId": "e1a46386-8976-4b3c-9408-0159b3f64235",
+      "width": 28,
+      "height": 6,
+      "design": "long perforated machine-gun barrel, compact drum magazine, brass feed box; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "shotgun",
+      "name": "Shotgun",
+      "kind": "weapon",
+      "targetTemplateId": "f8d3afb1-b4e3-4d0e-abd2-be135dad4072",
+      "width": 24,
+      "height": 7,
+      "design": "double-barrel shotgun turret, two squared muzzles and brown pump grip; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "flamethrower",
+      "name": "Flamethrower",
+      "kind": "weapon",
+      "targetTemplateId": "b3b1e951-8527-4aa1-8185-bdbf198b336c",
+      "width": 26,
+      "height": 8,
+      "design": "thin flame lance, orange pilot light and small red pressure tank; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "grenade",
+      "name": "Grenade",
+      "kind": "weapon",
+      "targetTemplateId": "02a92005-a7da-4717-826b-2ccbd5ec37d3",
+      "width": 19,
+      "height": 8,
+      "design": "stubby revolving grenade launcher with green cylinder and blunt gray barrel; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "cluster-grenade",
+      "name": "Cluster Grenade",
+      "kind": "weapon",
+      "targetTemplateId": "2e0a754f-eb50-487b-b90a-907a3a43159a",
+      "width": 24,
+      "height": 10,
+      "design": "multi-chamber grenade launcher with three green drum lobes; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "homing-rocket",
+      "name": "Homing Rocket",
+      "kind": "weapon",
+      "targetTemplateId": "780f5cdb-7252-4a69-987b-b908477015ad",
+      "width": 27,
+      "height": 9,
+      "design": "guided rocket rail with red pointed rocket and cyan tracking optic; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "smoke-tracer",
+      "name": "Smoke Tracer",
+      "kind": "weapon",
+      "targetTemplateId": "815021a5-49a0-4790-91dd-b5b61a3c5050",
+      "width": 24,
+      "height": 7,
+      "design": "long smoke canister launcher with pale gray cylinder and violet vent; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "escape-charge",
+      "name": "Free Riot Charge",
+      "kind": "weapon",
+      "targetTemplateId": "78ea7cb7-a3be-435a-be9f-5766f5f97a81",
+      "width": 16,
+      "height": 6,
+      "design": "small emergency orange wedge launcher with a single broad black mouth; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "riot-charge",
+      "name": "Riot Charge",
+      "kind": "weapon",
+      "targetTemplateId": "b4b8ea9c-cb8f-4a58-b537-e274cb8dc938",
+      "width": 21,
+      "height": 8,
+      "design": "blue directional breaching charge projector with fan-shaped muzzle; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "riot-blast",
+      "name": "Riot Blast",
+      "kind": "weapon",
+      "targetTemplateId": "bb0da974-5d0f-4644-a6da-278758d07d9f",
+      "width": 27,
+      "height": 10,
+      "design": "large directional breacher with twin blue pressure chambers and broad fan muzzle; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "dirt-charge",
+      "name": "Dirt Charge",
+      "kind": "weapon",
+      "targetTemplateId": "9cb680d4-3edf-451b-81da-ebbb514808bb",
+      "width": 22,
+      "height": 9,
+      "design": "yellow soil injector with square brown reservoir and flat extrusion nozzle; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "earth-disrupter",
+      "name": "Earth Disrupter",
+      "kind": "weapon",
+      "targetTemplateId": "e3a20e82-7e11-4ef9-bce2-903255ebb4dc",
+      "width": 28,
+      "height": 10,
+      "design": "seismic cannon with copper tuning forks, black anvil chamber and orange coils; side-on mounted tank weapon, business end points right; no hands, tank, bullets or lettering"
+    },
+    {
+      "id": "chassis",
+      "name": "chassis",
+      "kind": "component",
+      "width": 36,
+      "height": 14,
+      "design": "compact low armored tank hull only, cyan steel plates, dark lower fender and ivory edge highlights; no turret, tracks, wheels or weapons"
+    },
+    {
+      "id": "turret",
+      "name": "turret",
+      "kind": "component",
+      "width": 8,
+      "height": 6,
+      "design": "round low-profile cyan tank turret bearing cap only, dark lower pivot ring; no barrel or chassis"
+    },
+    {
+      "id": "wheel",
+      "name": "wheel",
+      "kind": "component",
+      "width": 5,
+      "height": 5,
+      "design": "single circular charcoal tank road wheel with steel rim and three bright hub spokes; perfectly side-on"
+    },
+    {
+      "id": "jet-pod",
+      "name": "jet-pod",
+      "kind": "component",
+      "width": 5,
+      "height": 8,
+      "design": "single compact tank jetpack pod, cyan armored upper casing and orange nozzle at bottom; nozzle points down; no flame"
+    },
+    {
+      "id": "jet-flame",
+      "name": "jet-flame",
+      "kind": "component",
+      "width": 3,
+      "height": 7,
+      "design": "single tiny downward jet exhaust plume, bright ivory core, yellow middle and orange tip; widest at top, tapered at bottom"
+    },
+    {
+      "id": "tread-link",
+      "name": "tread-link",
+      "kind": "component",
+      "width": 3,
+      "height": 1,
+      "design": "single flat tank tread link, exactly three adjacent steel-gray pixels in one row, bright center and dark ends; fill entire part rectangle"
+    }
+  ]
+}
