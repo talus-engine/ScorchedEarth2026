@@ -46,18 +46,24 @@ project and uses the existing editor to edit a bounded menu scene. At the
 
 ## Finish after the current app handoff
 
-1. Connect the title to native colored-particle import and execute the game
-   script once per entry. Preserve source colors, one simulation layer and
-   fresh independent seed selection. Remove the duplicate static HTML logo.
+1. Install the prepared scene source, then create/update a durable menu-scene
+   child world under Indigo using the new project hierarchy. Bind it to
+   `menu:title` and the existing title menu's scene view. Initialize from the
+   current colored-logo source, not the old decorative stamp scene; retain the
+   document ID and root/scene binding in the install receipt. Preserve source
+   colors, one simulation layer and the game script's fresh seed per entry.
+   Remove the duplicate static HTML logo.
 2. Inspect native fire/water emission, methane and wood burning; reenter once
    to confirm a different material pattern. Check title controls and margins.
 3. Use ENGINE's completed prototype movement/collision acceptance. Install the reviewed rig
    across the 17 base/persona templates, preserving each current palette and
    gameplay fields. Inspect representative weapons and one firing sequence.
-4. Run a bounded game smoke, then export fresh macOS and Website packages from
-   the original template. Keep the stable application ID and use a new release
-   version; do not package the stale Website working copy as current content.
-   Verify the real output title/icon and one ordinary launch/navigation flow.
+4. Per the latest user request, export a fresh **unsigned macOS ARM64 0.3.0**
+   build from the updated original project, without notarization. Keep the
+   stable application ID `com.talus.m11-2552`. Launch that packaged game and
+   watch a CPU-only match with the new tanks; verify its title/icon and ordinary
+   start flow. Website packaging remains subsequent work; the old Website
+   working copy is not the current release source.
 
 ENGINE has the quiet UI/GPU/API/install window returned at 05:55:21 UTC for
 candidate 2583 acceptance. GAME has no native jobs running and remains
