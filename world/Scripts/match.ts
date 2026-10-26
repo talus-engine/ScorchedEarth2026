@@ -1158,7 +1158,17 @@ if (!talus.editor.available) {
   }
   function openShop() {
     if (!match || arcadeCard || !['ready', 'finished'].includes(match.phase)) return
-    input(false); shopOpen = true; cpuShopping(); publishShop(); publish()
+    input(false); cpuShopping()
+    // Spectators have no purchase decisions. Use the same idempotent CPU
+    // shopping receipts, then enter the normal camera/card/turn sequence.
+    if (match.phase === 'ready' && match.roster.length > 0 && match.roster.every((p: any) => p.control === 'cpu')) {
+      shopOpen = false; talus.ui.closeMenu()
+      record('cpu-armory-complete', { round: match.round, players: match.roster.length })
+      run(() => beginTurn(false)); return
+    }
+    shopOpen = true
+    shopIndex = Math.max(0, match.roster.findIndex((p: any) => p.control === 'human'))
+    publishShop(); publish()
     talus.ui.openMenu('Menus/shop.html')
   }
   function closeShop() { shopOpen = false; talus.ui.closeMenu(); publish() }

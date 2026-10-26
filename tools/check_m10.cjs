@@ -4,6 +4,7 @@ const {fixture} = require('./check_m8.cjs')
 ;(async()=>{
   {
     const start=fixture();start.m.phase='ready';start.m.turnNumber=0
+    start.m.roster[0].control='human';start.m.humans=1;start.m.computers=1
     for(const tank of start.actors.values())tank.snapshot=()=>({alive:true,x:tank.x,y:650})
     let closed=0;start.talus.ui.closeMenu=()=>closed++
     start.emit('menu.custom.shop-begin',{})
