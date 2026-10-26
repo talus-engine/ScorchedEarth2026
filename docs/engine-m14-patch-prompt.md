@@ -6,7 +6,21 @@ do not implement a new animation ownership model or tiny-image generator.
 Finish the separate WFC reroll release first. Coordinate UI ownership through
 the ignored root `AGENT_CHAT.md`.
 
-## 1. Imported colored particles and emitters in `menu:title`
+## 1. One particle layer: imported logo colors and native Particle Emitters
+
+User clarification: **"A single layer, various elements, nothing else."**
+Use the ordinary native particle engine on one isolated layer. No additional
+layers, entities or rigid bodies are requested for this logo. This is existing
+particle functionality to expose/wire correctly, not a separate reduced
+simulation design or special logo renderer.
+
+Terminology: the user's **Particle Emitter** is element 153, internally named
+`PARTICLE_SPAWNER` with `caBehavior: 'spawner'` in
+`src/simulation/ElementDatabaseDefaults.ts`. Its Fire named variant already
+exists. The selected project fire/water sources are derived configurations of
+that element, as recorded in `world/Game/landscape-devices.json`. The internal
+word "spawner" does not identify a different requested feature. Use the native
+element/configuration/variant path; keep imported colors independent of it.
 
 The user wants the generated **Scorched Earth 2026** logo to be real particles
 in the isolated title scene, retaining imported RGB independently of element:
@@ -14,13 +28,17 @@ in the isolated title scene, retaining imported RGB independently of element:
 - Top quarter: project element `TERRA_FIRE_SOURCE` (225), a FIRE emitter.
 - Next quarter: `METHANE` (33), ordinary gas, not a methane emitter.
 - Bottom half: `TERRA_WATER_SOURCE` (223), a WATER emitter.
+- Across these regions: seeded irregular zebra stripes of `WOOD`, with exactly
+  the same logo pixel colors. These stripes become apparent as they burn.
 
-Prepared 512×256 transparent band images and placement (64,20) in the existing
+Prepared 512×256 transparent material masks and placement (64,20) in the existing
 640×384 scene are listed in
 [`assets/m13/title-particle-logo.json`](../assets/m13/title-particle-logo.json).
 `tools/prepare_m13_title_particles.py` copies nearest-sampled source RGBA without
-recoloring; reassembling all three bands is byte-exact. Transparent pixels must
+recoloring; reassembling all four disjoint masks is byte-exact. Transparent pixels must
 remain empty. Assets live under `world/Menus/Assets/earth-2026-logo-*.png`.
+The wood revision is prepared locally; the previous three-band revision is
+installed. GAME will upload the four revised masks after UI lease return.
 The current HTML logo is a temporary visible title, not a claimed particle implementation.
 
 Confirmed limitations, including ENGINE's 2026-10-26 00:55 response:
@@ -35,18 +53,19 @@ Confirmed limitations, including ENGINE's 2026-10-26 00:55 response:
 Raw public refusals: [source validation](evidence/m13-native/title-source-validation.json),
 [color validation](evidence/m13-native/title-pixel-color-validation.json).
 
-Extend the existing scene definition and public authoring API with a bounded
-image-to-particle route using world-owned files. Preserve source pixel colors
-while assigning an element separately. Reuse native spawner semantics within
-the isolated scene; do not run a second full game world or let menu particles
-interact with gameplay. Support native methane/fire reactions. Preserve pause,
+Expose the existing image-to-particle/color/element functionality for the single
+menu layer using project-owned files. Preserve source pixel colors while
+assigning an element separately. Reuse the native Particle Emitter kernel and
+configuration semantics within that layer; do not run a second full game world
+or let menu particles interact with gameplay. Support native methane/fire and
+wood/fire reactions. Preserve pause,
 loop/reset, teardown, export and Website resource resolution. Expose the schema
 in generated docs and validation, with explicit image/particle/work budgets.
 Avoid a per-logo schema or thousands of custom colored element definitions.
 
-Minimal acceptance: import these three assets, sample several known pixels
+Minimal acceptance: import these four masks, sample several known pixels
 before stepping to show unchanged RGB and correct element IDs, then show fire
-and water emission plus methane simulation. Close/reopen/reset the scene and
+and water emission, methane simulation and burning wood stripes. Close/reopen/reset the scene and
 confirm isolation and bounded work. GAME will then replace the HTML logo with
 the actual native particle scene using the published contract.
 

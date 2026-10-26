@@ -573,3 +573,18 @@ animation-layer colliders does not resolve movement. Source inspection points
 to the native CCT query filtering its root body but not its decorative children.
 The prompt requests diagnosis/fix of that narrow collision case. Rig roster
 installation and active particle title integration follow the native fixes.
+
+
+### M14 single-layer clarification — 2026-10-26
+
+The user clarified that the logo is one native particle layer with various
+material assignments and exact imported colors, now including irregular WOOD
+stripes to burn. No additional layers or world/entity features are requested.
+Particle Emitter is builtin153, internally PARTICLE_SPAWNER/caBehavior spawner;
+the project fire/water sources are configurations derived from it. The engine
+handoff now names that mapping and scopes the work to native particle import,
+colors and existing emitter behavior on the menu layer. Four disjoint material
+masks are prepared locally; their union reconstructs sampled source RGBA exactly.
+The wood revision is not yet installed. Current implementation restrictions are
+recorded in [the capability audit](menu-title-capabilities.md), not adopted as
+user requirements. ENGINE retains the UI lease for WFC acceptance.

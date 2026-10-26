@@ -49,13 +49,17 @@ See [A/B results](evidence/m13-native/drive-comparison.json),
 [collision-toggle result](evidence/m13-native/drive-without-layer-colliders.json)
 and [comparison image](evidence/m13-native/drive-comparison.jpg).
 
-**Particle title:** the three transparent logo bands preserve sampled source
-RGBA exactly: top quarter FIRE emitter, next quarter METHANE gas, bottom half
-WATER emitter. Files are installed and read back, with material/placement data
-in [the manifest](../assets/m13/title-particle-logo.json). They are not active
-particle content yet. The existing isolated menu scene only accepts rect/circle
-stamps and explicitly rejects spawners. ENGINE confirmed no existing image/
-spawner route. The HTML title currently displays the correct new logo while
+**Particle title:** the revised four transparent material masks preserve sampled
+source RGBA exactly: top quarter FIRE emitter, next quarter METHANE gas, bottom
+half WATER emitter, crossed by seeded irregular WOOD stripes that burn. The
+first three-band revision was installed/read back; this new wood revision is
+prepared locally for the next app handoff. Material/placement data is in
+[the manifest](../assets/m13/title-particle-logo.json). These are one particle
+layer, not additional simulation layers. Particle Emitter is native element153
+(`PARTICLE_SPAWNER` internally); our sources configure that same element.
+They are not active particle content yet. The existing isolated menu scene only
+accepts rect/circle stamps and explicitly rejects this emitter behavior.
+The HTML title currently displays the correct new logo while
 the [M14 native scene work](engine-m14-patch-prompt.md) is pending.
 
 Two bounded diagnostics returned to the original Indigo editor with all four

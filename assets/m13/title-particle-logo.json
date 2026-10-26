@@ -1,10 +1,161 @@
 {
+  "version": 2,
+  "seed": 2026,
   "title": "Scorched Earth 2026",
   "source": "Art/scorched-terra-title.png",
   "sourceSha256": "1e65209444f6fd666998ad0cda915b0d7bcd50d53894d386259ce680a2232066",
   "scene": "menu:title",
   "sampling": "nearest, copied source RGBA; no recoloring",
-  "layout": "top quarter fire emitter, next quarter methane, bottom half water emitter",
+  "layout": "top quarter fire emitter, next quarter methane, bottom half water emitter; irregular wood stripes across all regions",
+  "woodStripes": {
+    "slope": 0.2773975735417115,
+    "amplitude": 7.5125787761562535,
+    "period": 85.47290851092285,
+    "phase": 5.403543056483738,
+    "intervals": [
+      [
+        -200,
+        -194.28154204645128
+      ],
+      [
+        -177.3788428096374,
+        -168.1716282429418
+      ],
+      [
+        -146.9363609579227,
+        -136.45274728054036
+      ],
+      [
+        -115.33119836748453,
+        -105.2174254206201
+      ],
+      [
+        -81.23192622202127,
+        -70.97474451491095
+      ],
+      [
+        -49.3499735104857,
+        -42.670434954910206
+      ],
+      [
+        -20.68577930607217,
+        -14.910623500941261
+      ],
+      [
+        9.707274086139563,
+        17.85485791411512
+      ],
+      [
+        42.44677286280601,
+        52.24301933504555
+      ],
+      [
+        75.07507558982756,
+        81.54664821829972
+      ],
+      [
+        98.81631856705985,
+        110.67570500364418
+      ],
+      [
+        136.75682988035396,
+        147.3927811880263
+      ],
+      [
+        174.38831080016226,
+        182.9834236265694
+      ],
+      [
+        197.9755823405096,
+        205.3583443451507
+      ],
+      [
+        226.60520132513804,
+        233.65005444627874
+      ],
+      [
+        253.596875821705,
+        264.7321994915675
+      ],
+      [
+        287.88388152803736,
+        296.92584503946705
+      ],
+      [
+        311.24745595975713,
+        321.22349229664036
+      ],
+      [
+        339.94954131748165,
+        347.9050637923874
+      ],
+      [
+        367.08911703893466,
+        376.18914175311505
+      ],
+      [
+        396.6690578434391,
+        402.4841934489092
+      ],
+      [
+        423.0668571819232,
+        433.31788471434635
+      ],
+      [
+        455.12003292520444,
+        463.55724790165704
+      ],
+      [
+        489.4750581839208,
+        496.28556220997126
+      ],
+      [
+        515.7451221671477,
+        527.228754008061
+      ],
+      [
+        547.4582235656767,
+        556.0841342101797
+      ],
+      [
+        570.4140240029924,
+        576.9856980843833
+      ],
+      [
+        592.6626831592292,
+        598.0048971083364
+      ],
+      [
+        621.1655114260055,
+        632.3732840288421
+      ],
+      [
+        647.7067769734181,
+        657.0629448412415
+      ],
+      [
+        677.1734690325865,
+        685.5482608349789
+      ],
+      [
+        702.5243153249281,
+        713.7257638016457
+      ],
+      [
+        735.8724803971553,
+        744.0700548168335
+      ]
+    ],
+    "colorChange": false
+  },
+  "emitterIdentity": {
+    "base": "PARTICLE_SPAWNER",
+    "baseId": 153,
+    "userName": "Particle Emitter",
+    "fire": "TERRA_FIRE_SOURCE",
+    "water": "TERRA_WATER_SOURCE",
+    "note": "Existing project configurations of the native Particle Emitter"
+  },
   "assets": [
     {
       "file": "Menus/Assets/earth-2026-logo-fire.png",
@@ -17,9 +168,9 @@
         0,
         64
       ],
-      "nontransparentPixels": 17562,
+      "nontransparentPixels": 12375,
       "preservePixelColors": true,
-      "sha256": "86c12bdb94a12a1fc02817ed180843ad1cad5df7dc1e2eef07b83e1cfe9c4ccf"
+      "sha256": "2e55114b6cb03e69e04a0c597ff99284dd16c97023710456ebdb3f5b9eb0c434"
     },
     {
       "file": "Menus/Assets/earth-2026-logo-methane.png",
@@ -32,9 +183,9 @@
         64,
         128
       ],
-      "nontransparentPixels": 29580,
+      "nontransparentPixels": 20790,
       "preservePixelColors": true,
-      "sha256": "d66bf357a944c5ee04153552a70b4473309df57fdef6d0f45697357b9e8b5319"
+      "sha256": "e0392e24c5985643c157ccf85d96859b826bba6e0fcdefc93ad3ed4a62eced34"
     },
     {
       "file": "Menus/Assets/earth-2026-logo-water.png",
@@ -47,11 +198,23 @@
         128,
         256
       ],
-      "nontransparentPixels": 52584,
+      "nontransparentPixels": 36818,
       "preservePixelColors": true,
-      "sha256": "1810e99580a2995f2e273aac34106ee2affdaa1e97f26defa9388b05af077f82"
+      "sha256": "36ad5f76b39b4f29a53542974945734bc79e8233870433e2924bfb583173aa4e"
+    },
+    {
+      "file": "Menus/Assets/earth-2026-logo-wood.png",
+      "element": "WOOD",
+      "x": 64,
+      "y": 20,
+      "width": 512,
+      "height": 256,
+      "band": null,
+      "nontransparentPixels": 29743,
+      "preservePixelColors": true,
+      "sha256": "0d897dbeef65aa4e9b7c08c4401c93df0a5908fc2397dc8e516d37d6b65c16e1"
     }
   ],
   "rgbaReconstructionExact": true,
-  "status": "prepared; current isolated menu-scene API refuses image pixels and spawners"
+  "status": "prepared locally; revised four-material masks await native single-layer import/emitter integration"
 }
