@@ -45,8 +45,10 @@ movement. Levitation consumes fuel/articulates the pods but cannot move the root
 ENGINE confirmed the CCT hit its own decorative child colliders. The installed
 0.0.2581 now contains the corrected native filters; actual movement, thrust,
 support, wall and other-tank collision acceptance passed on 0.0.2578 with the
-same WASM. This is fixed engine behavior. The roster still uses its previous
-bodies pending the game-side installation after the next quiet app handoff.
+same WASM. This is fixed engine behavior. All 17 base/persona templates now
+have the accepted native rig, with 119 validated animation records and exact
+template readback. Gameplay fields and accounts were preserved. The packaged
+CPU match remains the final game-side observation.
 See [A/B results](evidence/m13-native/drive-comparison.json),
 [collision-toggle result](evidence/m13-native/drive-without-layer-colliders.json)
 and [comparison image](evidence/m13-native/drive-comparison.jpg).
@@ -63,10 +65,10 @@ They are not active particle content yet. The installed 0.0.2581 now supports
 the required colored image import and native emitter behavior.
 The game-owned [randomization script](title-logo-script.md) now produces a fresh
 stripe pattern by default, with explicit-seed replay. Local authoring is working;
-automatic per-title-entry execution is wired in the local title scene through
-the released `particleImages/materialScript` contract. Installation and visual
-acceptance are pending. The installed HTML title still displays the correct
-new static logo until that integration is installed.
+automatic per-title-entry execution is wired in the installed title scene
+through the released `particleImages/materialScript` contract. The static HTML
+duplicate is removed. The durable title child under Indigo and live visual
+acceptance await the hierarchy build; prepared source and script are installed.
 
 Two bounded diagnostics returned to the original Indigo editor with all four
 installed account strings unchanged; no account restoration was performed.
@@ -74,9 +76,8 @@ The temporary prototype layer toggle was restored exactly. Native screenshots
 and compact receipts are under `docs/evidence/m13-native/`; full diagnostic
 baselines remain ignored under `artifacts/m13/`.
 
-After M14: integrate the documented particle scene format, remove the duplicate
-HTML logo, run one short prototype movement/thrust check, then install the
-existing rig across base/persona templates with current colors preserved.
-Inspect representative weapon shapes and one shot. Re-export desktop/Website
-packages afterward: existing published binaries still contain their previous
-exported content. No broad E2E matrix or profile clone is required.
+Next: finish the durable title-child binding and inspect the native title,
+then build the requested unsigned macOS 0.3.0 package. Watch a CPU match with
+the installed rigs and inspect representative weapon shapes and one shot.
+Existing published binaries still contain their previous exported content.
+Website packaging follows later. No broad E2E matrix or profile clone is required.

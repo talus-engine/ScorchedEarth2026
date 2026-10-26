@@ -1,0 +1,655 @@
+[
+  {
+    "kind": "animationClip",
+    "record": {
+      "clipId": "9d9d42ea-9942-53f4-96ec-7b3bf654c424",
+      "clipName": "m13-base",
+      "delay": 0,
+      "direction": "normal",
+      "duration": 1,
+      "entityTemplateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+      "fillMode": "both",
+      "frameTracks": [
+        {
+          "animationSetId": "6e4b444d-9931-56cf-9b32-6e1eba82880c",
+          "frameRate": 1,
+          "particleLayerId": "c9ff3f70-c77b-5994-b257-aa6e134a6f53"
+        },
+        {
+          "animationSetId": "d1965da3-2f2e-51c6-af81-e0d4852ebbbe",
+          "frameRate": 1,
+          "particleLayerId": "7d47b935-050a-5abe-ae7e-c6091b903fb7"
+        },
+        {
+          "animationSetId": "8df8da43-6790-5988-a015-9cab20c88b0d",
+          "frameRate": 1,
+          "particleLayerId": "c1d9eb52-8e21-5241-88f3-260251d2e3c4"
+        },
+        {
+          "animationSetId": "33a9dcba-2049-586b-b687-ab107574eba8",
+          "frameRate": 1,
+          "particleLayerId": "f2a70748-dc56-5912-8954-3e3e735943f2"
+        },
+        {
+          "animationSetId": "626fc322-b2f2-5059-9cbb-39105b96a37f",
+          "frameRate": 1,
+          "particleLayerId": "2ab9c660-80d1-5bc8-b4a5-908b547c336d"
+        },
+        {
+          "animationSetId": "bc8616ba-b532-523c-9565-745e5d7cf70d",
+          "frameRate": 1,
+          "particleLayerId": "8edda22d-e283-50b5-9911-614d8e376d17"
+        },
+        {
+          "animationSetId": "48ec756d-3a5e-589e-8839-c542979ca034",
+          "frameRate": 1,
+          "particleLayerId": "c7c97d0f-47a3-54f1-9def-c0ad99891746"
+        },
+        {
+          "animationSetId": "95aeea11-ea56-585f-bce7-16c700bbdece",
+          "frameRate": 1,
+          "particleLayerId": "c771a813-44d4-51b5-ad84-4d5951df3d0b"
+        }
+      ],
+      "iterationCount": 0,
+      "rootMotion": false,
+      "tracks": []
+    }
+  },
+  {
+    "kind": "animationClip",
+    "record": {
+      "clipId": "d045746a-a93f-5caa-848f-9065391522e5",
+      "clipName": "m13-drive-idle",
+      "delay": 0,
+      "direction": "normal",
+      "duration": 1,
+      "entityTemplateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+      "fillMode": "both",
+      "frameTracks": [
+        {
+          "animationSetId": "54ddf51f-b894-5c5e-b406-340c4931e9c0",
+          "frameRate": 1,
+          "particleLayerId": "48f6305a-ccc3-52e4-9c9f-6cc4201afb6f"
+        },
+        {
+          "animationSetId": "560765bb-d5e3-52c8-9bb5-91dbc3f79da4",
+          "frameRate": 1,
+          "particleLayerId": "11263ea3-c2d1-5579-9b2e-f0eabeaf8dbb"
+        }
+      ],
+      "iterationCount": 0,
+      "rootMotion": false,
+      "tracks": [
+        {
+          "bodyIndex": 3,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 6,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 4,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 5,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 7,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 8,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 100
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "kind": "animationClip",
+    "record": {
+      "clipId": "88fa755f-ade5-5764-8745-b36470d94cce",
+      "clipName": "m13-drive-slow",
+      "delay": 0,
+      "direction": "normal",
+      "duration": 1,
+      "entityTemplateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+      "fillMode": "both",
+      "frameTracks": [
+        {
+          "animationSetId": "d9a8fc5c-9509-5ff6-9c2e-79290b2677d9",
+          "frameRate": 27,
+          "particleLayerId": "48f6305a-ccc3-52e4-9c9f-6cc4201afb6f"
+        },
+        {
+          "animationSetId": "d9a8fc5c-9509-5ff6-9c2e-79290b2677d9",
+          "frameRate": 27,
+          "particleLayerId": "11263ea3-c2d1-5579-9b2e-f0eabeaf8dbb"
+        }
+      ],
+      "iterationCount": 0,
+      "rootMotion": false,
+      "tracks": [
+        {
+          "bodyIndex": 4,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 13.75,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 13.75,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 5,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 13.75,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 13.75,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 7,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 13.75,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 13.75,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 8,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 13.75,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 13.75,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 3,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 6,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 0,
+              "percent": 100
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "kind": "animationClip",
+    "record": {
+      "clipId": "ffa94364-922e-57f3-bf10-656583c53366",
+      "clipName": "m13-drive-run",
+      "delay": 0,
+      "direction": "normal",
+      "duration": 0.4,
+      "entityTemplateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+      "fillMode": "both",
+      "frameTracks": [
+        {
+          "animationSetId": "54d053b5-9c51-5e36-8214-4b2a29d77cab",
+          "frameRate": 54,
+          "particleLayerId": "48f6305a-ccc3-52e4-9c9f-6cc4201afb6f"
+        },
+        {
+          "animationSetId": "54d053b5-9c51-5e36-8214-4b2a29d77cab",
+          "frameRate": 54,
+          "particleLayerId": "11263ea3-c2d1-5579-9b2e-f0eabeaf8dbb"
+        }
+      ],
+      "iterationCount": 0,
+      "rootMotion": false,
+      "tracks": [
+        {
+          "bodyIndex": 4,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 27.5,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 27.5,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 5,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 27.5,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 27.5,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 7,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 27.5,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 27.5,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 8,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 27.5,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 27.5,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 3,
+          "keyframes": [
+            {
+              "easing": "step",
+              "motorSpeed": 0.45,
+              "percent": 0
+            },
+            {
+              "easing": "step",
+              "motorSpeed": -0.45,
+              "percent": 50
+            },
+            {
+              "easing": "step",
+              "motorSpeed": 0.45,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 6,
+          "keyframes": [
+            {
+              "easing": "step",
+              "motorSpeed": 0.45,
+              "percent": 0
+            },
+            {
+              "easing": "step",
+              "motorSpeed": -0.45,
+              "percent": 50
+            },
+            {
+              "easing": "step",
+              "motorSpeed": 0.45,
+              "percent": 100
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "kind": "animationClip",
+    "record": {
+      "clipId": "af2c27e6-481a-5107-b1db-cbfb1a39210e",
+      "clipName": "m13-jets-rest",
+      "delay": 0,
+      "direction": "normal",
+      "duration": 1,
+      "entityTemplateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+      "fillMode": "both",
+      "iterationCount": 0,
+      "rootMotion": false,
+      "tracks": [
+        {
+          "bodyIndex": 9,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 6,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 6,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 10,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": -6,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": -6,
+              "percent": 100
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "kind": "animationClip",
+    "record": {
+      "clipId": "d925f928-a7b9-558d-bb0c-a21e408564c0",
+      "clipName": "m13-jets-thrust",
+      "delay": 0,
+      "direction": "normal",
+      "duration": 1,
+      "entityTemplateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+      "fillMode": "both",
+      "frameTracks": [
+        {
+          "animationSetId": "7f8abaa9-8a00-5cc7-8dcd-66a189acedae",
+          "frameRate": 1,
+          "particleLayerId": "c880d4c8-b4ae-5c2f-9d89-fb1eb97e5d2d"
+        },
+        {
+          "animationSetId": "fd8284f7-5167-5bba-8fed-18882d6195dc",
+          "frameRate": 1,
+          "particleLayerId": "339d360f-adba-5934-90f6-686e2ed70c93"
+        }
+      ],
+      "iterationCount": 0,
+      "rootMotion": false,
+      "tracks": [
+        {
+          "bodyIndex": 9,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": -6,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": -6,
+              "percent": 100
+            }
+          ]
+        },
+        {
+          "bodyIndex": 10,
+          "keyframes": [
+            {
+              "easing": "linear",
+              "motorSpeed": 6,
+              "percent": 0
+            },
+            {
+              "easing": "linear",
+              "motorSpeed": 6,
+              "percent": 100
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "kind": "animationController",
+    "record": {
+      "controllerId": "12c52ff4-dd72-5b3f-825d-fc59dc411476",
+      "entityTemplateId": "c5d569e0-1dbb-409c-a693-7a4e9fbf7bad",
+      "layers": [
+        {
+          "blendMode": "override",
+          "name": "base-art",
+          "stateMachine": {
+            "defaultState": "idle",
+            "states": [
+              {
+                "clipId": "9d9d42ea-9942-53f4-96ec-7b3bf654c424",
+                "loop": true,
+                "speed": 1,
+                "stateName": "idle"
+              }
+            ],
+            "transitions": []
+          },
+          "weight": 1
+        },
+        {
+          "blendMode": "override",
+          "blendTree": {
+            "entries": [
+              {
+                "clipId": "d045746a-a93f-5caa-848f-9065391522e5",
+                "speed": 1,
+                "threshold": 0
+              },
+              {
+                "clipId": "88fa755f-ade5-5764-8745-b36470d94cce",
+                "speed": 1,
+                "threshold": 0.45
+              },
+              {
+                "clipId": "ffa94364-922e-57f3-bf10-656583c53366",
+                "speed": 1,
+                "threshold": 1
+              }
+            ],
+            "parameter": "speed",
+            "type": "1d"
+          },
+          "bodyMask": [
+            3,
+            6,
+            4,
+            5,
+            7,
+            8
+          ],
+          "name": "locomotion",
+          "weight": 1
+        },
+        {
+          "blendMode": "override",
+          "bodyMask": [
+            9,
+            10
+          ],
+          "name": "jetpack",
+          "stateMachine": {
+            "defaultState": "rest",
+            "states": [
+              {
+                "clipId": "af2c27e6-481a-5107-b1db-cbfb1a39210e",
+                "loop": true,
+                "speed": 1,
+                "stateName": "rest"
+              },
+              {
+                "clipId": "d925f928-a7b9-558d-bb0c-a21e408564c0",
+                "loop": true,
+                "speed": 1,
+                "stateName": "thrust"
+              }
+            ],
+            "transitions": [
+              {
+                "conditions": [
+                  {
+                    "op": "==",
+                    "parameter": "levitating",
+                    "value": true
+                  }
+                ],
+                "crossfadeDuration": 0.1,
+                "exitTimePercent": 0,
+                "fromState": "rest",
+                "hasExitTime": false,
+                "interruptible": true,
+                "toState": "thrust"
+              },
+              {
+                "conditions": [
+                  {
+                    "op": "==",
+                    "parameter": "levitating",
+                    "value": false
+                  }
+                ],
+                "crossfadeDuration": 0.1,
+                "exitTimePercent": 0,
+                "fromState": "thrust",
+                "hasExitTime": false,
+                "interruptible": true,
+                "toState": "rest"
+              }
+            ]
+          },
+          "weight": 1
+        }
+      ],
+      "parameters": {
+        "levitating": {
+          "default": false,
+          "type": "bool"
+        },
+        "speed": {
+          "default": 0,
+          "type": "float"
+        }
+      }
+    }
+  }
+]

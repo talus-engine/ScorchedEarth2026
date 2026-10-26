@@ -7,8 +7,7 @@
 - Pure game-owned `Game/title-logo-pattern.js` and `Game/title-logo.json` settings.
 - Public API binary/text readback, saved original template, exact unchanged
   account strings and camera/pause state. No WFC or terrain edits.
-- All 17 roster rig proposals built locally from freshly read native templates;
-  current gameplay tanks are unchanged pending movement acceptance.
+- All 17 roster rig proposals were built locally from freshly read native templates.
 
 Staging receipt: [native readback](evidence/m14-game/staging.json).
 The complete level backup remains in `backups/` with its verified manifest.
@@ -26,7 +25,25 @@ pattern; leaving and reentering requests a fresh pattern.
 hero above the existing controls. All six navigation buttons retain their
 native actions. Shared CSS keeps the scene at full opacity and gives it a
 bounded responsive height; native screenshots and margin inspection remain
-pending. These two title files are **not installed yet**.
+pending. These two title files were installed during the short 2581 window below.
+
+## Installed game rollout on 2581
+
+All 17 base/persona tank templates now use the accepted native rig. The public
+authoring APIs validated and saved 119 animation records; each template patch
+was read back exactly, preserving its non-art fields and persona palette.
+The full before/after records and proposals are retained in `assets/m13/`.
+
+The prepared title JSON/HTML, shared CSS and unsigned 0.3.0 publishing settings
+are installed and read back. Native scene validation accepts the image and
+material script. Indigo was saved and Talus quit normally. The four freshly
+captured account strings are unchanged; no account restoration, WFC/terrain
+edit, match or publishing action occurred in this window.
+See [rollout receipt](evidence/m14-game/rollout.json).
+
+The durable Title child and live visual acceptance remain for the new hierarchy
+build. ENGINE has the returned quiet lease and knows the prepared source is now
+installed; it will initialize the child from this source.
 
 ## Engine fixes accepted
 
@@ -55,9 +72,9 @@ project and uses the existing editor to edit a bounded menu scene. At the
    Remove the duplicate static HTML logo.
 2. Inspect native fire/water emission, methane and wood burning; reenter once
    to confirm a different material pattern. Check title controls and margins.
-3. Use ENGINE's completed prototype movement/collision acceptance. Install the reviewed rig
-   across the 17 base/persona templates, preserving each current palette and
-   gameplay fields. Inspect representative weapons and one firing sequence.
+3. The reviewed rig is installed across all 17 base/persona templates. Inspect
+   representative weapons and one firing sequence in the CPU game; ENGINE's
+   prototype movement/collision acceptance already covers the controller fix.
 4. Per the latest user request, export a fresh **unsigned macOS ARM64 0.3.0**
    build from the updated original project, without notarization. Keep the
    stable application ID `com.talus.m11-2552`. Launch that packaged game and
@@ -65,11 +82,12 @@ project and uses the existing editor to edit a bounded menu scene. At the
    start flow. Website packaging remains subsequent work; the old Website
    working copy is not the current release source.
 
-ENGINE has the quiet UI/GPU/API/install window returned at 05:55:21 UTC for
-candidate 2583 acceptance. GAME has no native jobs running and remains
-source-only until explicit return. No completed game rollout or updated
-published artifact is claimed yet. Scoped SQLite map-cache recovery remains
-separate engine work; the original file store has not been restored or reset.
+ENGINE has the quiet UI/GPU/API/install window returned after the short 2581
+installation, for the corrected hierarchy candidate's acceptance. GAME has no
+native jobs running and remains source-only until explicit return. Tank
+installation is complete; title-child binding, visual/game checks and the
+updated published artifact remain pending. Scoped SQLite map-cache recovery
+remains separate engine work; the original file store has not been restored or reset.
 
 The older broad theme/mechanism/series acceptance matrix remains deferred under
 the user's minimum-confirmation instruction; it is not a gate for this pass.
