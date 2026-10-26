@@ -59,7 +59,10 @@ layer, not additional simulation layers. Particle Emitter is native element153
 (`PARTICLE_SPAWNER` internally); our sources configure that same element.
 They are not active particle content yet. The existing isolated menu scene only
 accepts rect/circle stamps and explicitly rejects this emitter behavior.
-The HTML title currently displays the correct new logo while
+The game-owned [randomization script](title-logo-script.md) now produces a fresh
+stripe pattern by default, with explicit-seed replay. Local authoring is working;
+automatic per-title-entry execution awaits the documented native initialization
+path. The HTML title currently displays the correct new logo while
 the [M14 native scene work](engine-m14-patch-prompt.md) is pending.
 
 Two bounded diagnostics returned to the original Indigo editor with all four

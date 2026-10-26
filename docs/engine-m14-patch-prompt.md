@@ -41,6 +41,16 @@ The wood revision is prepared locally; the previous three-band revision is
 installed. GAME will upload the four revised masks after UI lease return.
 The current HTML logo is a temporary visible title, not a claimed particle implementation.
 
+Per-entry randomization is game policy, implemented in
+`world/Game/title-logo-pattern.js`: a pure JS function body taking `logo` data
+and returning a seeded Uint8Array material mask without reading/changing RGBA.
+See `docs/title-logo-script.md` for input/output. Run once before particle import
+on title entry with a fresh seed (or an explicit reproducible seed), then let
+the native particles simulate without rewriting the mask. Provide/document the
+normal supported initialization/script route; reuse existing sandbox/runtime
+facilities. Do not add the logo's stripe algorithm to engine code. The Node/Python
+adapter is local authoring only, not a published runtime dependency.
+
 Confirmed limitations, including ENGINE's 2026-10-26 00:55 response:
 
 - `MenuSceneStamp` supports rectangle/circle only; no imported RGBA raster.
