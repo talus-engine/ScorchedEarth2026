@@ -16,6 +16,10 @@ def main():
     args = parser.parse_args()
     source_path = ROOT / 'world/Art/scorched-terra-title.png'
     source = Image.open(source_path).convert('RGBA').resize((512, 256), Image.Resampling.NEAREST)
+    particle_image = 'Menus/Assets/earth-2026-logo.png'
+    particle_path = args.output_root / 'world' / particle_image
+    particle_path.parent.mkdir(parents=True, exist_ok=True)
+    source.save(particle_path)
     manifest_path = args.output_root / 'assets/m13/title-particle-logo.json'
     seed = args.seed
     if seed is None:
@@ -71,6 +75,8 @@ def main():
         'title': 'Scorched Earth 2026', 'source': 'Art/scorched-terra-title.png',
         'sourceSha256': hashlib.sha256(source_path.read_bytes()).hexdigest(),
         'scene': 'menu:title', 'sampling': 'nearest, copied source RGBA; no recoloring',
+        'particleImage': {'file': particle_image, 'width': 512, 'height': 256,
+                          'sha256': hashlib.sha256(particle_path.read_bytes()).hexdigest()},
         'layout': 'top quarter fire emitter, next quarter methane, bottom half water emitter; irregular wood stripes across all regions',
         'woodStripes': {**pattern['stripes'], 'colorChange': False},
         'emitterIdentity': {'base': 'PARTICLE_SPAWNER', 'baseId': 153,

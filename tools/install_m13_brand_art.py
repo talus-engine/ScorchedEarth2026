@@ -5,10 +5,13 @@ import argparse
 from bridge import ROOT, WORLD_ID, call, script
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--title-bands', action='store_true', help='Install prepared material-band assets only')
+parser.add_argument('--title-bands', action='store_true', help='Install the particle logo image and prepared material masks')
 args = parser.parse_args()
-paths = (tuple(a['file'] for a in json.loads((ROOT / 'assets/m13/title-particle-logo.json').read_text())['assets'])
-         if args.title_bands else ('Art/scorched-terra-title.png', 'Art/scorched-terra-title.webp', 'Game/Publishing/icon.png'))
+if args.title_bands:
+    manifest = json.loads((ROOT / 'assets/m13/title-particle-logo.json').read_text())
+    paths = (manifest['particleImage']['file'], *(a['file'] for a in manifest['assets']))
+else:
+    paths = ('Art/scorched-terra-title.png', 'Art/scorched-terra-title.webp', 'Game/Publishing/icon.png')
 context = call('engine_describe_context')
 assert context['world']['isEditorMode'] and context['world']['templateId'] == WORLD_ID
 receipts = []

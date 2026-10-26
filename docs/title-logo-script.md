@@ -47,8 +47,10 @@ Thirty-two tested seeds produced 32 distinct patterns with 27–33% wood coverag
 same-seed replay was exact. Two unseeded authoring runs also produced different
 images, each passing the complete RGBA reconstruction check.
 
-The script and local authoring path are implemented. Automatic title-entry
-execution is not connected yet: ENGINE owns the app and is integrating the
-single-layer particle import/emitter path. Use its documented initialization
-contract when supplied; do not inject JavaScript into sanitized menu HTML or
-move the game-specific stripe policy into engine source.
+The script and local authoring path are implemented. The local scene now
+references the script through `particleImages[].materialScript` with parameter
+`logo` and seed `"entry"`, matching ENGINE's proposed contract. It prepares the
+material assignments once per scene entry; the loop reuses those prepared
+pixels. Native installation and acceptance wait for ENGINE's validated build.
+No JavaScript is injected into sanitized menu HTML, and all stripe policy
+remains in the project.

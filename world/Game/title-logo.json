@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "scene": "menu:title",
+  "image": "Menus/Assets/earth-2026-logo.png",
+  "patternScript": "Game/title-logo-pattern.js",
+  "width": 512,
+  "height": 256,
+  "position": { "x": 64, "y": 20 },
+  "materials": ["TERRA_FIRE_SOURCE", "METHANE", "TERRA_WATER_SOURCE", "WOOD"],
+  "seedPolicy": "new-per-entry",
+  "fixedSeed": null,
+  "preservePixelColors": true,
+  "transparentPixels": "empty"
+}

@@ -37,9 +37,12 @@ Prepared 512×256 transparent material masks and placement (64,20) in the existi
 `tools/prepare_m13_title_particles.py` copies nearest-sampled source RGBA without
 recoloring; reassembling all four disjoint masks is byte-exact. Transparent pixels must
 remain empty. Assets live under `world/Menus/Assets/earth-2026-logo-*.png`.
-The wood revision is prepared locally; the previous three-band revision is
-installed. GAME will upload the four revised masks after UI lease return.
-The current HTML logo is a temporary visible title, not a claimed particle implementation.
+The full source image, all four masks and the pattern script were installed and
+read back on 0.0.2576 before the 01:40 UTC quiet handoff. The full image is
+`Menus/Assets/earth-2026-logo.png`. The native title scene integration is prepared
+locally against ENGINE's proposed `particleImages/materialScript` contract;
+installation waits for the validated build. The currently installed HTML logo
+is a temporary visible title, not a claimed particle implementation.
 
 Per-entry randomization is game policy, implemented in
 `world/Game/title-logo-pattern.js`: a pure JS function body taking `logo` data

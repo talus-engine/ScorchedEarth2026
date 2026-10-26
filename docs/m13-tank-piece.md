@@ -52,8 +52,8 @@ and [comparison image](evidence/m13-native/drive-comparison.jpg).
 **Particle title:** the revised four transparent material masks preserve sampled
 source RGBA exactly: top quarter FIRE emitter, next quarter METHANE gas, bottom
 half WATER emitter, crossed by seeded irregular WOOD stripes that burn. The
-first three-band revision was installed/read back; this new wood revision is
-prepared locally for the next app handoff. Material/placement data is in
+full logo and four-mask wood revision are now installed/read back on 0.0.2576,
+along with the game-owned pattern script and settings. Material/placement data is in
 [the manifest](../assets/m13/title-particle-logo.json). These are one particle
 layer, not additional simulation layers. Particle Emitter is native element153
 (`PARTICLE_SPAWNER` internally); our sources configure that same element.
