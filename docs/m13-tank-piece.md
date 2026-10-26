@@ -2,7 +2,7 @@
 
 ## Current checkpoint — 2026-10-25
 
-Talus 0.0.2572 is installed. Generated **41 reusable parts** through its native
+Generated **41 reusable parts** on Talus 0.0.2572 through its native
 `generate_entity` API with the Image Provider control confirmed as
 `gpt-image-2`: all 36 enabled weapons plus chassis, turret, wheel, jet pod and
 flame. Seven source-board receipts, exact prompts, native pixel records and
@@ -15,10 +15,12 @@ generated RGB remains independent of the existing solid material. See the
 [art sheet](../assets/m13/contact-sheet.png) and
 [installation receipt](../assets/m13/weapon-install.json).
 
-The initial rig builder is a **draft, not installed**: 22 tread links, four
-wheels, hinged jet pods and native animation records. Its sprite-host/local-pose
-approach has not been demonstrated and is being reconsidered against existing
-rigid-body/joint animation support. There is no established engine blocker.
+The revised rig builder uses existing native support: two rigid track modules,
+four hinged wheels and two hinged jet pods. Each module displays twelve 3×1
+tread links through native frame animation. Wheel and pod motion uses native
+hinge-motor clips. Decorative bodies have `maskBits: 0` and no gravity: they
+remain real jointed rigid bodies without terrain contact or propulsion.
+The rig is **prepared, not installed**. There is no established engine blocker.
 The 3×1 tread image remains to be generated/imported through a supported native
 route. The original tank and floating character controller remain in use.
 
@@ -33,6 +35,12 @@ was performed. No new published package has been exported.
 The premature E57/E58 handoff has been put on hold in `AGENT_CHAT.md`. Those
 source observations are not release requirements. ENGINE currently holds the
 editor/API lease for its separate WFC work; GAME will prototype after handoff.
+
+The prepared installer validates and saves the native clips/controller before
+attaching them, backs up each template and compares non-art fields after saving.
+`tools/review_m13_rig.py` supplies separate one-second movement/thrust stages in
+one no-match diagnostic save. It captures a fresh account baseline and compares
+all four raw keys when returning to the original editor. It has not been run.
 
 ## Native implementation
 
@@ -50,14 +58,14 @@ variants using color changes independent of element assignments.
 
 Native animation layers:
 
-- Locomotion: idle/run blend from `speed`, with circulating tread-link poses
-  and wheel rotation. Clip duration is tuned to the existing 55px/s controller.
+- Locomotion: idle/slow/run blend from `speed`, with a circulating tread pattern
+  and wheel rotation. The full-speed belt animation travels about 55px/s;
+  the four wheel motors turn at 27.5 radians/s for the generated 4px wheels.
 - Jetpack: folded/deployed transitions from actual native `levitating`, masked
   to the two pods; local rotation and a native flame sprite layer during thrust.
 - Weapon: existing world-relative turret aim and native equipped-item sprite.
   Every enabled weapon receives distinct small generated art while retaining
   its template ID, projectile behavior, inventory and prices.
-- Action: small native recoil/hurt poses where they do not conflict with aim.
 
 Read authoring guidance in the engine's `ANIMATION_PROTOCOL`, Casting, Costume
 Designer and Image Generation specialist blocks, and the animation provider

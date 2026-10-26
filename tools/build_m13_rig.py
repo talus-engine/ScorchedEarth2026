@@ -1,10 +1,8 @@
-"""Build a local native tank-rig proposal; never connects to Talus or installs.
+"""Build native jointed tank data. Existing floating CCT owns propulsion.
 
-Inputs are the exact current template snapshot and native image-2 part receipts.
-This initial sprite-host pose proposal is a draft, not an installable rig. The
-user requires rigid bodies on joints while existing floating movement provides
-propulsion. Reconsider this proposal against existing native joint-motor/body
-animation in a concrete prototype; no new engine schema is a prerequisite.
+Track assemblies and wheels are rigid bodies on joints, with no terrain
+collisions. Native frame layers animate the 3x1 tread pattern; native hinge
+motors rotate wheels and articulate pods. No runtime pose script is required.
 """
 import argparse
 import copy
@@ -15,7 +13,7 @@ from pathlib import Path
 import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
-PARTS = ("chassis", "turret", "wheel", "tread-link", "jet-pod", "jet-flame")
+PARTS = ('chassis', 'turret', 'wheel', 'tread-link', 'jet-pod', 'jet-flame')
 
 
 def require(condition, message):
@@ -24,288 +22,231 @@ def require(condition, message):
 
 
 def digest(value):
-    return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-
-
-def rounded(value):
-    return round(float(value), 9)
+    return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
 
 
 def bounds(pixels):
-    require(bool(pixels), "Cannot infer bounds from empty source pixels")
-    return {"minLocalX": min(p["localX"] for p in pixels),
-            "maxLocalX": max(p["localX"] for p in pixels),
-            "minLocalY": min(p["localY"] for p in pixels),
-            "maxLocalY": max(p["localY"] for p in pixels)}
+    require(bool(pixels), 'Cannot infer bounds from empty pixels')
+    return {'minLocalX': min(p['localX'] for p in pixels), 'maxLocalX': max(p['localX'] for p in pixels),
+            'minLocalY': min(p['localY'] for p in pixels), 'maxLocalY': max(p['localY'] for p in pixels)}
 
 
-def centered_part(receipt, key):
-    require(receipt.get("id") == key, f"Wrong receipt for {key}")
-    require(receipt.get("model") == "gpt-image-2", f"{key}: expected native image-2 receipt")
-    pixels = receipt.get("body", {}).get("pixels", [])
-    require(bool(pixels), f"{key}: generated part is empty; regenerate through native importer")
-    for p in pixels:
-        require(all(isinstance(p.get(k), (int, float)) and math.isfinite(p[k])
-                    for k in ("localX", "localY", "elementType")), f"{key}: invalid native pixel")
-        require(p["elementType"] > 0, f"{key}: AIR is not a visible part material")
+def centered_part(receipt, key, material):
+    require(receipt.get('id') == key and receipt.get('model') == 'gpt-image-2', 'Expected native image-2 receipt: ' + key)
+    pixels = copy.deepcopy(receipt['body']['pixels'])
     b = bounds(pixels)
-    width = b["maxLocalX"] - b["minLocalX"] + 1
-    height = b["maxLocalY"] - b["minLocalY"] + 1
-    requested = receipt.get("requested", {})
-    require(width <= requested.get("width", 0) and height <= requested.get("height", 0),
-            f"{key}: generated art exceeds requested native dimensions")
-    if key == "tread-link":
-        require(width == 3 and height == 1 and len(pixels) == 3,
-                "tread-link must contain exactly three adjacent native pixels (3x1)")
-    cx = (b["minLocalX"] + b["maxLocalX"]) / 2
-    cy = (b["minLocalY"] + b["maxLocalY"]) / 2
-    normalized = [{**p, "localX": rounded(p["localX"] - cx),
-                   "localY": rounded(p["localY"] - cy)} for p in pixels]
-    return {"width": width, "height": height, "pixels": normalized}
+    width, height = b['maxLocalX'] - b['minLocalX'] + 1, b['maxLocalY'] - b['minLocalY'] + 1
+    require(width <= receipt['requested']['width'] and height <= receipt['requested']['height'], 'Part exceeds requested size: ' + key)
+    if key == 'tread-link':
+        require(width == 3 and height == 1 and len(pixels) == 3, 'Tread image must be three adjacent pixels')
+    cx, cy = (b['minLocalX'] + b['maxLocalX']) / 2, (b['minLocalY'] + b['maxLocalY']) / 2
+    for p in pixels:
+        p.update(localX=p['localX'] - cx, localY=p['localY'] - cy, elementType=material)
+    return {'width': width, 'height': height, 'pixels': pixels}
 
 
-def capsule(distance, half_run=15.0, radius=3.5, center_y=3.0):
-    """Offline authored keyframes around a rounded track; no runtime solver."""
-    straight = 2 * half_run
-    arc = math.pi * radius
-    circumference = 2 * straight + 2 * arc
-    cycles = math.floor(distance / circumference)
-    s = distance - cycles * circumference
+def capsule(distance, half_run=4.5, radius=3):
+    straight, arc = 2 * half_run, math.pi * radius
+    s = distance % (2 * straight + 2 * arc)
     if s < straight:
-        x, y, angle = -half_run + s, center_y - radius, 0
-    elif s < straight + arc:
+        return -half_run + s, -radius, 0
+    if s < straight + arc:
         a = -math.pi / 2 + (s - straight) / radius
-        x, y, angle = half_run + radius * math.cos(a), center_y + radius * math.sin(a), a + math.pi / 2
-    elif s < 2 * straight + arc:
-        x, y, angle = half_run - (s - straight - arc), center_y + radius, math.pi
-    else:
-        a = math.pi / 2 + (s - 2 * straight - arc) / radius
-        x, y, angle = -half_run + radius * math.cos(a), center_y + radius * math.sin(a), a + math.pi / 2
-    return x, y, angle + cycles * math.tau
+        return half_run + radius * math.cos(a), radius * math.sin(a), a + math.pi / 2
+    if s < 2 * straight + arc:
+        return half_run - (s - straight - arc), radius, math.pi
+    a = math.pi / 2 + (s - 2 * straight - arc) / radius
+    return -half_run + radius * math.cos(a), radius * math.sin(a), a + math.pi / 2
 
 
-def build(base, receipts, record_ids=None, target_template_id=None):
-    base = copy.deepcopy(base.get("record", base))
-    body_by_id = {b["bodyIndex"]: b for b in base.get("bodies", [])}
-    require(set(body_by_id) == {0, 1}, "Expected exact two-part pre-M13 tank snapshot")
-    require(body_by_id[1].get("aimAtTarget") is True, "Preserve existing body1 native aim pivot")
-    require(not base.get("particleAnimationLayers") and not base.get("animationControllerId"),
-            "Snapshot already has animation; review before replacing authored animation records")
-    require(base.get("characterController", {}).get("enabled") is True, "Tank must retain native CCT")
-    require(set(PARTS) <= set(receipts), "Missing generated parts: " + ", ".join(sorted(set(PARTS) - set(receipts))))
-    art = {key: centered_part(receipts[key], key) for key in PARTS}
-    template_id = target_template_id or base["templateId"]
+def belt_frames(link):
+    circumference, count, phases = 18 + 6 * math.pi, 12, 3
+    frames = []
+    for phase in range(phases):
+        cells = {}
+        for n in range(count):
+            x, y, a = capsule(circumference * (n + phase / phases) / count)
+            for p in link['pixels']:
+                px = round(x + p['localX'] * math.cos(a) - p['localY'] * math.sin(a))
+                py = round(y + p['localX'] * math.sin(a) + p['localY'] * math.cos(a))
+                cells[(px, py)] = {**p, 'localX': px, 'localY': py}
+        frames.append({'width': 19, 'height': 9, 'pixels': list(cells.values())})
+    return frames, circumference / count
+
+
+def build(base, receipts, record_ids=None, target_template_id=None, palette=None):
+    base = copy.deepcopy(base.get('record', base))
+    require({b['bodyIndex'] for b in base['bodies']} == {0, 1}, 'Use an exact pre-M13 tank record')
+    require(base['bodies'][1].get('aimAtTarget'), 'Native aim pivot required')
+    require(base.get('characterController', {}).get('enabled'), 'Existing CCT required')
+    require(set(PARTS) <= set(receipts), 'Missing native part receipts: ' + ', '.join(set(PARTS) - set(receipts)))
+    material = base['bodies'][0]['pixels'][0]['elementType']
+    art = {k: centered_part(receipts[k], k, material) for k in PARTS}
+    # Tint cyan paint only. Neutral steel highlights and weapon art remain intact.
+    if palette:
+        import colorsys
+        rgb = [int(palette['body'][n:n+2], 16) / 255 for n in (1, 3, 5)]
+        hue, saturation, value = colorsys.rgb_to_hsv(*rgb)
+        for key in ('chassis', 'turret', 'jet-pod'):
+            for p in art[key]['pixels']:
+                c = p['color']; r, g, b = c & 255, (c >> 8) & 255, (c >> 16) & 255
+                if g > r * 1.1 and b > r * 1.1:
+                    brightness = max(r, g, b) / 255
+                    nr, ng, nb = [round(v * 255) for v in colorsys.hsv_to_rgb(hue, saturation, min(1, brightness * (0.55 + value * 0.65)))]
+                    p['color'] = (255 << 24) | (nb << 16) | (ng << 8) | nr
+    template_id = target_template_id or base['templateId']
     record_ids = record_ids or {}
-    record_references = []
+    def uid(name):
+        return record_ids.get(name) or str(uuid.uuid5(uuid.NAMESPACE_URL, f'scorched-terra/m13/{template_id}/{name}'))
+    box = bounds(base['bodies'][0]['pixels'])
+    center = ((box['minLocalX'] + box['maxLocalX']) / 2, (box['minLocalY'] + box['maxLocalY']) / 2)
+    bodies = copy.deepcopy(base['bodies']); bodies[0]['pixels'] = []
+    joints = copy.deepcopy(base['joints'])
+    sets, layers, clips, static_frames, components = [], [], [], [], []
+    centers = {0: center}
 
-    def make_id(name):
-        value = record_ids.get(name) or str(uuid.uuid5(uuid.NAMESPACE_URL, f"scorched-terra/m13/{template_id}/{name}"))
-        require(isinstance(value, str) and bool(value), "Record ID must be a nonempty string: " + name)
-        return value
-    root_box = bounds(body_by_id[0]["pixels"])
-    root_center = ((root_box["minLocalX"] + root_box["maxLocalX"]) / 2,
-                   (root_box["minLocalY"] + root_box["maxLocalY"]) / 2)
-    material = body_by_id[0]["pixels"][0]["elementType"]
-    # Generated RGB is artwork; native image classification may choose a
-    # reactive substance for a highlight. Every rig frame stays hull material,
-    # including the cosmetic exhaust. Never edit the retained source receipts.
-    for source in art.values():
-        for pixel in source["pixels"]:
-            pixel["elementType"] = material
-    bodies = [copy.deepcopy(body_by_id[0]), copy.deepcopy(body_by_id[1])]
-    bodies[0]["pixels"] = []
-    joints = copy.deepcopy(base.get("joints", []))
-    require(all(j["bodyA"] in (-1, 0, 1) and j["bodyB"] in (0, 1) for j in joints),
-            "Unexpected existing joint; no existing rig parts may be discarded")
-    visual_indices, new_joints, layers, sets, static_frames, clips = [], [], [], [], [], []
-    components = []
+    def animation_set(key, frames, fps=1):
+        result = uid('set/' + key)
+        sets.append({'id': result, 'name': 'm13-' + key, 'frames': frames, 'frameRate': fps,
+                     'pivotX': (frames[0]['width'] - 1) / 2,
+                     'pivotY': (frames[0]['height'] - 1) / 2})
+        return result
 
-    def frame_set(key, part_key, dx=0.0, dy=0.0):
-        source = art[part_key]
-        pixels = [{**p, "localX": rounded(p["localX"] + dx), "localY": rounded(p["localY"] + dy)}
-                  for p in source["pixels"]]
-        set_id = make_id("set/" + key)
-        sets.append({"id": set_id, "name": "m13-" + key,
-                     "frames": [{"width": source["width"], "height": source["height"], "pixels": pixels}],
-                     "frameRate": 1})
-        return set_id
-
-    def sprite_layer(key, body_index, set_id, box, offset=(0, 0), collision=False, always=True):
-        layer_id = make_id("sprite/" + key)
-        layers.append({"id": layer_id, "name": "m13-" + key, "layerType": "particle-frame",
-                       "bindBodyIndex": body_index, "animationSetId": set_id, "loop": True,
-                       "offsetX": rounded(offset[0]), "offsetY": rounded(offset[1]),
-                       "collision": {"enabled": collision, "shape": "box", "elementType": material,
-                                     **box, "padding": 0, "inset": 0}})
-        track = {"particleLayerId": layer_id, "animationSetId": set_id, "frameRate": 1}
+    def sprite_layer(key, idx, set_id, sprite_box, position, always=True, collision=False):
+        layer_id = uid('layer/' + key)
+        layers.append({'id': layer_id, 'name': 'm13-' + key, 'layerType': 'particle-frame',
+                       'bindBodyIndex': idx, 'animationSetId': set_id, 'frameRate': 1, 'loop': True,
+                       'offsetX': position[0], 'offsetY': position[1],
+                       'collision': {'enabled': collision, 'shape': 'box', 'elementType': material,
+                                     **sprite_box, 'padding': 0, 'inset': 0}})
+        ft = {'particleLayerId': layer_id, 'animationSetId': set_id, 'frameRate': 1}
         if always:
-            static_frames.append(track)
-        return track
+            static_frames.append(ft)
+        return ft
 
-    hull_set = frame_set("hull", "chassis", root_center[0], -7)
-    sprite_layer("hull", 0, hull_set, root_box, collision=True)
+    hull = copy.deepcopy(art['chassis'])
+    for p in hull['pixels']:
+        p['localY'] += -8 - center[1]
+    root_local_box = {k: v - center[0 if k.endswith('X') else 1] for k, v in box.items()}
+    sprite_layer('hull', 0, animation_set('hull', [hull]), root_local_box, center, collision=True)
 
-    def part(key, art_key, x, y, pivot_y=0):
+    def part(key, frame, position, parent=0, joint_type='hinge', limits=None, pivot=(0, 0), always=True, fps=1):
         idx = len(bodies)
-        bodies.append({"bodyIndex": idx, "name": "M13 " + key, "role": "other",
-                       "isStatic": False, "indestructible": True, "pixels": []})
-        visual_indices.append(idx)
-        box = bounds(art[art_key]["pixels"])
-        set_id = frame_set(key, art_key)
-        sprite_layer(key, idx, set_id, box, (x, y))
-        joint = {"type": "hinge", "bodyA": 0, "bodyB": idx,
-                 "anchorALocalX": rounded(x - root_center[0]),
-                 "anchorALocalY": rounded(y + pivot_y - root_center[1]),
-                 "anchorBLocalX": 0, "anchorBLocalY": pivot_y,
-                 "contactsEnabled": False, "motorSpeed": 0, "motorMaxTorque": 0, "stiffness": 1}
+        bodies.append({'bodyIndex': idx, 'name': 'M13 ' + key, 'role': 'other', 'isStatic': False,
+                       'indestructible': True, 'gravityScale': 0, 'maskBits': 0,
+                       'friction': 0, 'restitution': 0, 'linearDamping': 0.1, 'angularDamping': 0.1,
+                       'pixels': []})
+        centers[idx] = position
+        sprite_box = bounds(frame['pixels'])
+        # Bounds are centered, stable proxies. Source frame geometry can be asymmetric.
+        w, h = frame['width'], frame['height']
+        sprite_box = {'minLocalX': -(w-1)/2, 'maxLocalX': (w-1)/2,
+                      'minLocalY': -(h-1)/2, 'maxLocalY': (h-1)/2}
+        set_id = animation_set(key, [frame], fps)
+        ft = sprite_layer(key, idx, set_id, sprite_box, position, always=always)
+        ax, ay = centers[parent]
+        joint = {'type': joint_type, 'bodyA': parent, 'bodyB': idx,
+                 'anchorALocalX': position[0] + pivot[0] - ax, 'anchorALocalY': position[1] + pivot[1] - ay,
+                 'anchorBLocalX': pivot[0], 'anchorBLocalY': pivot[1], 'contactsEnabled': False,
+                 'motorSpeed': 0, 'motorMaxTorque': 100, 'stiffness': 1}
+        if limits:
+            joint.update(hingeLimitMin=limits[0], hingeLimitMax=limits[1])
         joints.append(joint)
-        new_joints.append(joint)
-        components.append({"bodyIndex": idx, "part": art_key, "name": key,
-                           "neutralTemplateCenter": {"x": rounded(x), "y": rounded(y)},
-                           "frameWidth": art[art_key]["width"], "frameHeight": art[art_key]["height"]})
-        return idx, box
+        components.append({'bodyIndex': idx, 'name': key, 'parent': parent, 'center': position,
+                           'width': w, 'height': h, 'terrainCollision': False})
+        return idx, ft, sprite_box
 
-    cap, _ = part("turret-bearing", "turret", root_center[0], root_center[1] - 10)
-    wheel_indices = [part("wheel-" + str(n), "wheel", x, 3)[0]
-                     for n, x in enumerate((-13, -4.5, 4.5, 13))]
-    circumference = 60 + 7 * math.pi
-    tread_indices, tread_phases = [], []
-    for n in range(22):
-        phase = circumference * n / 22
-        x, y, _ = capsule(phase)
-        tread_indices.append(part("tread-" + str(n), "tread-link", x, y)[0])
-        tread_phases.append(phase)
-    pod_indices, flame_frames = [], []
-    for side, x in (("left", -16), ("right", 16)):
-        pod, box = part("jet-" + side, "jet-pod", x, -7, pivot_y=-3.5)
-        pod_indices.append(pod)
-        flame_set = frame_set("flame-" + side, "jet-flame", dy=7.5)
-        # The flame's *frame pixels* extend below the nozzle. Keep its hidden
-        # anchor envelope equal to its pod's so it cannot move that body's CoM.
-        flame_frames.append(sprite_layer("flame-" + side, pod, flame_set, box, (x, -7), always=False))
+    cap, _, _ = part('turret-bearing', art['turret'], (center[0], -16), joint_type='fixed')
+    belt, pitch = belt_frames(art['tread-link'])
+    slow_set = animation_set('belt-slow', belt, 27)
+    fast_set = animation_set('belt-run', belt, 54)
+    modules, wheels, belt_idle, belt_slow, belt_fast = [], [], [], [], []
+    for side, mx in (('rear', -10), ('front', 10)):
+        module, ft, _ = part('track-' + side, belt[0], (mx, 2), limits=(-0.045, 0.045), always=False)
+        modules.append(module); belt_idle.append(ft)
+        belt_slow.append({**ft, 'animationSetId': slow_set, 'frameRate': 27})
+        belt_fast.append({**ft, 'animationSetId': fast_set, 'frameRate': 54})
+        for n, offset in enumerate((-4.5, 4.5)):
+            wheel, _, _ = part('wheel-' + side + '-' + str(n), art['wheel'], (mx + offset, 2), parent=module)
+            wheels.append(wheel)
+    pods, flame_tracks = [], []
+    for side, x in (('left', -16), ('right', 16)):
+        pod, _, pod_box = part('jet-' + side, art['jet-pod'], (x, -7), limits=(-0.45, 0.45), pivot=(0, -3))
+        pods.append(pod)
+        flame = copy.deepcopy(art['jet-flame'])
+        for p in flame['pixels']:
+            p['localY'] += 6
+        flame_tracks.append(sprite_layer('flame-' + side, pod, animation_set('flame-' + side, [flame]), pod_box, (x, -7), always=False))
 
-    def track(idx, frames):
-        return {"bodyIndex": idx, "keyframes": frames}
+    def motor_track(idx, speed):
+        return {'bodyIndex': idx, 'keyframes': [{'percent': 0, 'motorSpeed': speed, 'easing': 'linear'},
+                                               {'percent': 100, 'motorSpeed': speed, 'easing': 'linear'}]}
 
-    def pose(percent, x=0, y=0, angle=0, easing="linear"):
-        return {"percent": rounded(percent), "offsetX": rounded(x), "offsetY": rounded(y),
-                "angle": rounded(angle), "easing": easing}
-
-    def clip(key, duration, tracks, frames=None):
-        clip_id = make_id("clip/" + key)
-        record_references.append({"kind": "animationClip", "key": "clip/" + key, "id": clip_id})
-        value = {"clipId": clip_id, "clipName": "m13-" + key, "entityTemplateId": template_id,
-                 "duration": rounded(duration), "iterationCount": 0, "direction": "normal",
-                 "fillMode": "both", "delay": 0, "rootMotion": False, "tracks": tracks}
+    def clip(key, tracks, frames=None, duration=1):
+        clip_id = uid('clip/' + key)
+        value = {'clipId': clip_id, 'clipName': 'm13-' + key, 'entityTemplateId': template_id,
+                 'duration': duration, 'iterationCount': 0, 'direction': 'normal', 'fillMode': 'both',
+                 'delay': 0, 'rootMotion': False, 'tracks': tracks}
         if frames:
-            value["frameTracks"] = frames
+            value['frameTracks'] = frames
         clips.append(value)
         return clip_id
 
-    base_clip = clip("base", 1, [track(cap, [pose(0), pose(100)])], static_frames)
-    tread_idle, tread_run = [], []
-    for idx, phase in zip(tread_indices, tread_phases):
-        x0, y0, a0 = capsule(phase)
-        tread_idle.append(track(idx, [pose(0, angle=a0), pose(100, angle=a0)]))
-        keys = []
-        for n in range(65):
-            x, y, a = capsule(phase + circumference * n / 64)
-            keys.append(pose(100 * n / 64, x - x0, y - y0, a))
-        tread_run.append(track(idx, keys))
-    speed = base["characterController"]["runSpeed"]
-    require(isinstance(speed, (int, float)) and speed > 0, "Native runSpeed must be positive")
-    tread_idle_id = clip("treads-idle", 1, tread_idle)
-    tread_run_id = clip("treads-run", circumference / speed, tread_run)
-    wheels_idle_id = clip("wheels-idle", 1, [track(i, [pose(0), pose(100)]) for i in wheel_indices])
-    wheel_radius = max(art["wheel"]["width"], art["wheel"]["height"]) / 2
-    wheels_run_id = clip("wheels-run", math.tau * wheel_radius / speed,
-                         [track(i, [pose(n * 25, angle=n * math.pi / 2) for n in range(5)]) for i in wheel_indices])
-    folded_id = clip("jets-folded", 1, [track(i, [pose(0, angle=a), pose(100, angle=a)])
-                                       for i, a in zip(pod_indices, (math.pi / 2, -math.pi / 2))])
-    deployed_id = clip("jets-deployed", 1, [track(i, [pose(0), pose(100)]) for i in pod_indices], flame_frames)
-
-    def state(name, clip_id):
-        return {"stateName": name, "clipId": clip_id, "speed": 1, "loop": True}
-
-    def locomotion(name, mask, idle_id, run_id):
-        return {"name": name, "blendMode": "override", "weight": 1, "bodyMask": mask,
-                "blendTree": {"type": "1d", "parameter": "speed", "entries": [
-                    {"threshold": 0, "clipId": idle_id, "speed": 1},
-                    {"threshold": 0.05, "clipId": run_id, "speed": 1},
-                    {"threshold": 1, "clipId": run_id, "speed": 1}]}}
-
-    transitions = [{"fromState": a, "toState": b,
-                    "conditions": [{"parameter": "levitating", "op": "==", "value": v}],
-                    "crossfadeDuration": 0.18, "hasExitTime": False,
-                    "exitTimePercent": 0, "interruptible": True}
-                   for a, b, v in (("folded", "deployed", True), ("deployed", "folded", False))]
-    controller = {"controllerId": make_id("controller"), "entityTemplateId": template_id,
-                  "parameters": {"speed": {"type": "float", "default": 0},
-                                 "direction": {"type": "float", "default": 0},
-                                 "levitating": {"type": "bool", "default": False}},
-                  "layers": [
-                      {"name": "base-art", "blendMode": "override", "weight": 1, "bodyMask": [cap],
-                       "stateMachine": {"defaultState": "idle", "states": [state("idle", base_clip)], "transitions": []}},
-                      locomotion("treads", tread_indices, tread_idle_id, tread_run_id),
-                      locomotion("wheels", wheel_indices, wheels_idle_id, wheels_run_id),
-                      {"name": "jetpack", "blendMode": "override", "weight": 1, "bodyMask": pod_indices,
-                       "stateMachine": {"defaultState": "folded", "states": [state("folded", folded_id),
-                                                                                 state("deployed", deployed_id)],
-                                        "transitions": transitions}}]}
-    record_references.append({"kind": "animationController", "key": "controller", "id": controller["controllerId"]})
-    patch = {"pixels": [], "bodies": bodies, "joints": joints,
-             "particleAnimationSets": sets, "particleAnimationLayers": layers,
-             "animationControllerId": controller["controllerId"]}
-    unresolved = ["Author and demonstrate actual rigid bodies on joints using existing native support",
-                  "Confirm floating controller remains the sole propulsion system",
-                  "Review this draft sprite-host pose approach against the native joint-motor path"]
-    require(bodies[1] == body_by_id[1], "Existing native aim body must remain exact")
-    require(joints[:len(base.get("joints", []))] == base.get("joints", []), "Existing aim joint must remain exact")
-    return {"version": 1, "status": "draft-needs-native-prototype",
-            "readyForInstall": False, "targetTemplateId": template_id,
-            "sourceTemplateId": base["templateId"], "recordReferences": record_references,
-            "baseSnapshotSha256": digest(base), "artSha256": {k: digest(receipts[k]) for k in PARTS},
-            "unresolved": unresolved,
-            "templatePatch": patch, "clips": clips, "controller": controller,
-            "manifest": {"components": components, "rootBounds": root_box, "rootAnchorCenter": root_center,
-                         "bodyCount": len(bodies), "treadLinkCount": len(tread_indices), "treadLinkSize": [3, 1],
-                         "wheelCount": len(wheel_indices), "wheelSize": [art["wheel"]["width"], art["wheel"]["height"]],
-                         "trackCircumferencePx": circumference, "nominalTravelPxPerSecond": speed,
-                         "controllerPreserved": base["characterController"], "heldItemAnchorPreserved": base.get("heldItemAnchor"),
-                         "notes": ["No network calls, live mutations, script pose loops or gameplay changes.",
-                                   "Base frame tracks keep every static sprite component visible; flames are thrust-only.",
-                                   "Native speed blend crosses to the nominal run loop by 0.05; cosmetic motion is not exact odometry.",
-                                   "Native grounded movement controls facing and mirrors clip travel/angles; a second world-direction reversal would double-flip left movement.",
-                                   "Root bounds preserve the authored hull AABB; existing native CCT insets remain untouched.",
-                                   "Aim body1, existing aim joint and all nonvisual template fields remain unchanged.",
-                                   "Every visual frame uses the original hull element, preserving generated RGB; exhaust is cosmetic.",
-                                   "Native record save upserts deterministic IDs; --record-ids also supports explicit installer allocation."]}}
+    base_clip = clip('base', [], static_frames)
+    speed = base['characterController']['runSpeed']
+    wheel_omega = speed / (max(art['wheel']['width'], art['wheel']['height']) / 2)
+    idle = clip('drive-idle', [motor_track(i, 0) for i in modules + wheels], belt_idle)
+    slow = clip('drive-slow', [motor_track(i, wheel_omega/2) for i in wheels] + [motor_track(i, 0) for i in modules], belt_slow)
+    rock = [{'bodyIndex': i, 'keyframes': [{'percent': p, 'motorSpeed': v, 'easing': 'step'}
+                                         for p, v in [(0, .45), (50, -.45), (100, .45)]]} for i in modules]
+    run = clip('drive-run', [motor_track(i, wheel_omega) for i in wheels] + rock, belt_fast, .4)
+    folded = clip('jets-rest', [motor_track(i, v) for i, v in zip(pods, (6, -6))])
+    deployed = clip('jets-thrust', [motor_track(i, v) for i, v in zip(pods, (-6, 6))], flame_tracks)
+    def state(name, c):
+        return {'stateName': name, 'clipId': c, 'speed': 1, 'loop': True}
+    controller = {'controllerId': uid('controller'), 'entityTemplateId': template_id,
+                  'parameters': {'speed': {'type': 'float', 'default': 0}, 'levitating': {'type': 'bool', 'default': False}},
+                  'layers': [
+                      {'name': 'base-art', 'blendMode': 'override', 'weight': 1,
+                       'stateMachine': {'defaultState': 'idle', 'states': [state('idle', base_clip)], 'transitions': []}},
+                      {'name': 'locomotion', 'blendMode': 'override', 'weight': 1, 'bodyMask': modules + wheels,
+                       'blendTree': {'type': '1d', 'parameter': 'speed', 'entries': [
+                           {'threshold': 0, 'clipId': idle, 'speed': 1},
+                           {'threshold': .45, 'clipId': slow, 'speed': 1},
+                           {'threshold': 1, 'clipId': run, 'speed': 1}]}},
+                      {'name': 'jetpack', 'blendMode': 'override', 'weight': 1, 'bodyMask': pods,
+                       'stateMachine': {'defaultState': 'rest', 'states': [state('rest', folded), state('thrust', deployed)],
+                                        'transitions': [{'fromState': a, 'toState': b,
+                                                         'conditions': [{'parameter': 'levitating', 'op': '==', 'value': v}],
+                                                         'crossfadeDuration': .1, 'hasExitTime': False,
+                                                         'exitTimePercent': 0, 'interruptible': True}
+                                                        for a, b, v in [('rest', 'thrust', True), ('thrust', 'rest', False)]]}}]}
+    patch = {'pixels': [], 'bodies': bodies, 'joints': joints, 'particleAnimationSets': sets,
+             'particleAnimationLayers': layers, 'animationControllerId': controller['controllerId']}
+    return {'version': 2, 'status': 'native-prototype-ready', 'targetTemplateId': template_id,
+            'baseSnapshotSha256': digest(base), 'templatePatch': patch, 'clips': clips, 'controller': controller,
+            'manifest': {'components': components, 'bodyCount': len(bodies), 'trackModules': len(modules),
+                         'visibleLinksPerModule': 12, 'linkSize': [3, 1], 'wheelCount': len(wheels),
+                         'nominalSpeed': speed, 'wheelMotorRadiansPerSecond': wheel_omega,
+                         'beltSpeedPixelsPerSecond': pitch * 54 / 3,
+                         'rootBounds': box, 'characterControllerPreserved': base['characterController'],
+                         'propulsion': 'existing floating character controller', 'terrainCollisions': 'root only',
+                         'runtimePoseScript': False}}
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--base", type=Path, default=ROOT / "assets/m13/before/tank-base.json")
-    parser.add_argument("--parts-dir", type=Path, default=ROOT / "assets/m13/generated")
-    parser.add_argument("--target-template-id", help="Owned prototype or palette variant receiving this proposal")
-    parser.add_argument("--record-ids", type=Path, help="JSON map of recordReferences logical keys to allocated native IDs")
-    parser.add_argument("--output", type=Path, default=ROOT / "artifacts/m13/rig-proposal.json")
-    parser.add_argument("--require-ready", action="store_true", help="Refuse the unreviewed initial rig proposal")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--base', type=Path, default=ROOT / 'assets/m13/before/tank-base.json')
+    parser.add_argument('--parts-dir', type=Path, default=ROOT / 'assets/m13/generated')
+    parser.add_argument('--target-template-id')
+    parser.add_argument('--output', type=Path, default=ROOT / 'artifacts/m13/rig-proposal.json')
     args = parser.parse_args()
-    missing = [str(args.parts_dir / (k + ".json")) for k in PARTS if not (args.parts_dir / (k + ".json")).exists()]
-    require(not missing, "Native part receipts are still required:\n" + "\n".join(missing))
-    receipts = {k: json.loads((args.parts_dir / (k + ".json")).read_text()) for k in PARTS}
-    record_ids = json.loads(args.record_ids.read_text()) if args.record_ids else None
-    proposal = build(json.loads(args.base.read_text()), receipts, record_ids, args.target_template_id)
-    require(not args.require_ready or proposal["readyForInstall"], "; ".join(proposal["unresolved"]))
+    receipts = {k: json.loads((args.parts_dir / (k + '.json')).read_text()) for k in PARTS}
+    proposal = build(json.loads(args.base.read_text()), receipts, target_template_id=args.target_template_id)
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(proposal, indent=2) + "\n")
-    print(json.dumps({"output": str(args.output), "status": proposal["status"],
-                      "bodies": proposal["manifest"]["bodyCount"], "clips": len(proposal["clips"]),
-                      "unresolved": proposal["unresolved"]}, indent=2))
+    args.output.write_text(json.dumps(proposal, indent=2) + '\n')
+    print(json.dumps({'output': str(args.output), 'manifest': proposal['manifest']}, indent=2))
 
 
-if __name__ == "__main__":
-    try:
-        main()
-    except (ValueError, KeyError, OSError, json.JSONDecodeError) as exc:
-        raise SystemExit("M13 rig proposal refused: " + str(exc))
+if __name__ == '__main__':
+    main()

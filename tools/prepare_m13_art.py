@@ -59,7 +59,7 @@ def main():
         ('wheel', 5, 5, 'single circular charcoal tank road wheel with steel rim and three bright hub spokes; perfectly side-on'),
         ('jet-pod', 5, 8, 'single compact tank jetpack pod, cyan armored upper casing and orange nozzle at bottom; nozzle points down; no flame'),
         ('jet-flame', 3, 7, 'single tiny downward jet exhaust plume, bright ivory core, yellow middle and orange tip; widest at top, tapered at bottom'),
-        ('tread-link', 3, 1, 'single flat tank tread link, exactly three adjacent steel-gray pixels in one row, bright center and dark ends; fill entire part rectangle'),
+        ('tread-link', 3, 1, 'single flat tank tread link: three edge-to-edge rectangular steel bands, dark gray left third, bright silver center third, dark gray right third; all three bands extend fully from the very top border to the very bottom border and fill the entire canvas, with zero margins or background; reduces to exactly three adjacent pixels in one row'),
     ]
     for key, width, height, design in components:
         parts.append({'id': key, 'name': key, 'kind': 'component', 'width': width, 'height': height, 'design': design})
