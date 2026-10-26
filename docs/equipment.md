@@ -19,6 +19,17 @@ Cash rewards cover turns, movement, firing, landing, hits, damage, death and
 other configured actions. Damage to oneself still earns the configured awards.
 The free escape charge has no combat cash reward.
 
+The equipment drawer arms one guidance charge and one contact fuse for the next
+compatible single-shell volley. Ballistic Guidance surveys the selected angle
+and adjusts power; a refused or stale solution keeps the charge. Horizontal and
+vertical guidance change the native shell's velocity at the selected target's
+height or horizontal position. Contact Trigger detonates on the root shell's
+first collision. Charges leave the wallet only on an accepted launch. These
+game rules use existing projectile controls; they are separate from native
+weapon modifier sockets. Guidance applies to the carrier; split children keep
+their own behavior. Particle, homing, burst and terrain-tool weapons cannot take
+these attachments.
+
 ## CPU policy
 
 Five faction-backed personas differ in shopping, risk, movement, target selection
@@ -36,7 +47,10 @@ Large geometry or wind changes invalidate a correction's applicability without
 erasing the observation. Deliberate demolition, apex carriers, expiration and
 early wall impacts do not masquerade as ordinary range error. A changed firing
 pose is checked again after dialogue, before spending ammunition. Repeated
-failure reaches a visible, saveable stall rather than an infinite pass loop.
+geometry failure permits at most two paid, locally surveyed moves followed by
+fresh native shot planning. Unknown terrain and other hard refusals stop this
+recovery. Repeated failure reaches a visible, saveable stall rather than an
+infinite pass loop.
 
 Death effects are data in `Game/chaos.json`. The presentation owns the three-second
 last words; effects own transmutation, particles, projectiles and bounded emission

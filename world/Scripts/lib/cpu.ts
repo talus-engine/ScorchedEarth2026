@@ -224,7 +224,9 @@ function create(ctx: Runtime) {
         }
         if (!valid())
             return;
-        const solved = await ctx.aiming.planCpuShot(p, turn);
+        let solved = await ctx.aiming.planCpuShot(p, turn);
+        if (!solved && valid())
+            solved = await recoverCpuShot(p, turn, valid);
         while (valid() && talus.sim.paused)
             await talus.sleepTicks(1);
         if (solved) {
@@ -233,6 +235,72 @@ function create(ctx: Runtime) {
         }
         else if (valid())
             cpuNoAction(p, 'No supported clear shot after bounded movement, escape and demolition alternatives');
+    }
+    async function recoverCpuShot(p: any, turn: number, valid: () => boolean): Promise<boolean> {
+        const e = ctx.core.entity(p), decision: any = e.blackboard.get('custom.aiDecision');
+        // Geometry refusals permit repositioning. Unknown/corrupt terrain needs an explicit stop.
+        if (!decision?.trials?.length || decision.trials.some((trial: any) => !['obstructed', 'unreachable'].includes(trial.reason))
+            || p.recoveryTurn === turn)
+            return false;
+        p.recoveryTurn = turn;
+        const target = ctx.state.match.roster.filter((r: any) => r !== p).map(ctx.aiming.targetSnapshot)
+            .filter(Boolean).sort((a: any, b: any) => Math.abs(a.x - e.x!) - Math.abs(b.x - e.x!))[0];
+        if (!target)
+            return false;
+        const toward = Math.sign(target.x - e.x!) || 1;
+        const directions = explorationPath(p, toward) ? [toward, -toward] : [-toward, toward];
+        for (const direction of directions.slice(0, ctx.state.market.cpu.recoveryPositions ?? 2)) {
+            if (!valid() || ctx.state.match.remaining <= 3 || !e.isLive)
+                break;
+            const currentDecision: any = e.blackboard.get('custom.aiDecision');
+            if (currentDecision?.trials?.some((trial: any) => !['obstructed', 'unreachable'].includes(trial.reason)))
+                break;
+            const start = { ...e.position! };
+            const drive = ctx.economy.owned(p, 'fuel-tank') > 0 && ctx.economy.itemById('fuel-tank').enabled;
+            const dig = !explorationPath(p, direction) && ctx.economy.owned(p, 'digger') > 0 && ctx.economy.itemById('digger').enabled;
+            const ceiling = talus.world.raycast({ x: start.x, y: start.y - 16 }, { x: start.x, y: start.y - 112 });
+            const lift = !dig && !explorationPath(p, direction) && !ceiling
+                && ctx.economy.owned(p, 'jetpack') > 0 && ctx.economy.itemById('jetpack').enabled;
+            if ((!drive || !explorationPath(p, direction)) && !dig && !lift)
+                continue;
+            p.tactic = dig ? 'Digging a new firing position' : lift ? 'Jet-assisted firing position' : 'Moving around the blocked corridor';
+            ctx.menus.publish();
+            const until = talus.sim.clock + Math.min(ctx.state.market.cpu.recoverySeconds ?? 1.5, ctx.state.match.remaining - 3);
+            let lifted = false;
+            try {
+                if (lift)
+                    lifted = e.controller.levitate(true).accepted;
+                while (valid() && e.isLive && talus.sim.clock < until && ctx.state.match.remaining > 3) {
+                    if (dig)
+                        await ctx.equipment.dig(p, direction);
+                    if (!valid() || !e.isLive)
+                        break;
+                    if (drive && (lifted || explorationPath(p, direction)))
+                        ctx.equipment.driveTank(p, direction * ctx.state.arena.moveSpeed);
+                    else if (!dig && !lifted)
+                        break;
+                    await talus.sleepTicks(3);
+                }
+            }
+            finally {
+                if (e.isLive) {
+                    ctx.equipment.driveTank(p, 0);
+                    if (lifted)
+                        e.controller.levitate(false);
+                }
+            }
+            if (!valid() || !e.isLive)
+                return false;
+            ctx.equipment.accountSupply(p);
+            const at = e.position!;
+            if (Math.hypot(at.x - start.x, at.y - start.y) < 4)
+                continue;
+            cpuProgress(p);
+            ctx.session.persist();
+            if (await ctx.aiming.planCpuShot(p, turn))
+                return true;
+        }
+        return false;
     }
     function cpuPlan(e: any): void {
         if (!ctx.core.active() || (ctx.core.current().control !== 'cpu' && ctx.core.current().autoAimTurn !== ctx.state.match.turnNumber) || e.id !== ctx.core.current().entityId || e.turn !== ctx.state.match.turnNumber)
@@ -323,6 +391,6 @@ function create(ctx: Runtime) {
                 ctx.session.run(ctx.combat.fire);
         });
     }
-    return { cpuProgress, cpuNoAction, retryStalledCpu, prepareCpuEscape, explorationPath, exploreCpu, prepareCpuTurn, cpuPlan, cpuAimed, bind };
+    return { cpuProgress, cpuNoAction, retryStalledCpu, prepareCpuEscape, explorationPath, exploreCpu, prepareCpuTurn, recoverCpuShot, cpuPlan, cpuAimed, bind };
 }
 export = create;

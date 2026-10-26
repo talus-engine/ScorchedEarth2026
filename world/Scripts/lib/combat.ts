@@ -29,6 +29,10 @@ function create(ctx: Runtime) {
         if (!e.isLive)
             return;
         const item = ctx.economy.itemById(p.weaponId);
+        if (p.control === 'cpu')
+            ctx.attachments.armCpu(p);
+        if (p.guidanceArmed && (!await ctx.attachments.prepare(p) || !ctx.core.active() || p !== ctx.core.current()))
+            return;
         if (item.behavior?.mode.startsWith('battery') && ctx.economy.owned(p, 'battery') < 1) {
             if (p.control === 'cpu')
                 ctx.equipment.chooseWeapon(p, 'standard');
@@ -54,6 +58,8 @@ function create(ctx: Runtime) {
             ctx.residency.checkRoster();
             return;
         }
+        if (!ctx.attachments.ready(p))
+            return;
         const solution = p.fireSolution, target = ctx.aiming.targetSnapshot(ctx.state.match.roster.find((r: any) => r.entityId === p.targetId));
         if (p.control === 'cpu' && solution?.kind === 'tank' && solution.turn === ctx.state.match.turnNumber
             && p.fireRefreshTurn !== ctx.state.match.turnNumber && target && (!ctx.aiming.comparableShot(solution, s, target, true)
@@ -231,6 +237,7 @@ function create(ctx: Runtime) {
         }
     }
     function tickAttack(): void {
+        ctx.attachments.tickGuidance();
         if (talus.sim.paused || ctx.state.match.phase === 'fault')
             return;
         const a = ctx.state.match.attack;
@@ -327,6 +334,7 @@ function create(ctx: Runtime) {
                 }
                 if (item.behavior?.mode.startsWith('battery'))
                     ctx.economy.wallet(p).stock.battery--;
+                ctx.attachments.attach(p, a);
                 p.shots = (p.shots || 0) + 1;
                 if (item.behavior?.mode !== 'terrain')
                     ctx.cpu.cpuProgress(p);
@@ -367,6 +375,7 @@ function create(ctx: Runtime) {
             if (entry) {
                 entry.collision = e.with;
             }
+            ctx.attachments.contact(e.projectile, e.projectileId);
         });
         talus.on('projectile.bounce', e => ctx.economy.shotReward(e, 'bounce'));
         talus.on('damage', e => {

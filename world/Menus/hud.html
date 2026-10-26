@@ -1144,6 +1144,12 @@
             <button data-talus-action="parachute" data-talus-show="parachuteEnabled" data-talus-class-selected="parachuteOn">Parachute · <span data-talus-bind="parachuteCharges"></span> left</button>
             <button data-talus-action="battery">Repair +30 · <span data-talus-bind="batteries"></span> left</button>
           </div>
+          <div data-talus-show="human" hidden>
+            <div class="eyebrow">NEXT SHOT</div>
+            <div class="loadout" data-talus-each="attachments">
+              <template><button data-talus-attr-data-talus-action="action" data-talus-attr-disabled="disabled" data-talus-class-selected="selected"><span data-talus-bind="name"></span> · <span data-talus-bind="stock"></span></button></template>
+            </div>
+          </div>
         </div>
       </details>
       <details class="hud-drawer">

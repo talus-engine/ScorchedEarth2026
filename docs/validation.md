@@ -23,6 +23,10 @@ suite loads the actual native CommonJS libraries in isolated VMs. It checks
 payouts, finite stock, timing, CPU learning, camera interruption, residency,
 terrain requests, supported deployment and save barriers. These doubles test
 game policy; they do not prove GPU particle behavior.
+Round-transition cases cover exactly-once requests, paid shopping, native
+refusal, typed terrain settings, human choice and pause/save fences. Attachment
+cases cover charge retention, stale poses, crossing triggers and held shots;
+CPU recovery cases require actual changed positions before replanning.
 
 For native solver and Rapier/WASM checks, set `TALUS_ENGINE_ROOT` to a built Talus
 checkout with its dependencies installed:

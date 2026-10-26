@@ -39,6 +39,11 @@ function create(ctx: Runtime) {
             weaponName: ctx.state.market ? ctx.economy.itemById(p.weaponId || 'standard').name : 'Field cannon',
             weaponAmmo: ctx.state.bank && p.weaponId && !ctx.economy.unlimited(p.weaponId) ? ctx.economy.owned(p, p.weaponId) : '∞',
             batteries: ctx.state.bank ? ctx.economy.owned(p, 'battery') : 0,
+            attachments: ctx.state.market && ctx.state.bank ? ctx.state.market.items.filter((i: any) => i.enabled && i.attachment).map((i: any) => ({
+                name: i.name, action: 'arm-' + i.id, stock: ctx.economy.owned(p, i.id),
+                selected: p.guidanceArmed === i.id || p.contactArmed === i.id,
+                disabled: p.guidanceArmed !== i.id && p.contactArmed !== i.id
+                    && (ctx.economy.owned(p, i.id) < 1 || !ctx.attachments.compatible(ctx.economy.itemById(p.weaponId), i.id)) })) : [],
             autoAimCharges: ctx.state.bank ? ctx.economy.owned(p, 'lazy-boy') : 0,
             groundFuel: e?.isLive ? (e.controller.groundDrive?.fuel ?? 0).toFixed(1) : '0',
             groundFuelStock: ctx.state.bank ? ctx.economy.owned(p, 'fuel-tank').toFixed(1) : '0',
@@ -91,6 +96,16 @@ function create(ctx: Runtime) {
         const nextRound = ctx.state.match.series?.complete ? 1 : ctx.state.match.round + 1;
         const recipe = cycle[Math.floor((nextRound - 1) / (ctx.state.match.biomeRounds || 1)) % cycle.length];
         return { ...request, recipe, parameters: recipe === request.recipe ? request.parameters : undefined };
+    }
+    function nextRoundParams(): Record<string, Json> {
+        const m = ctx.state.match;
+        return JSON.parse(JSON.stringify({ deploy: 'yes', seed: '',
+            seriesId: m.series?.complete ? '' : m.seriesId, seriesLength: m.seriesLength || 1,
+            round: m.series?.complete ? 1 : m.round + 1, humans: m.humans, computers: m.computers,
+            turnSeconds: m.turnSeconds, namesText: m.roster.map((p: any) => p.name).join('\n'),
+            personaSeed: m.personaSeed, cpuSkill: m.cpuSkill,
+            biomeCycle: m.biomeCycle ? 'cycle' : 'random', biomeRounds: m.biomeRounds || 1,
+            baseGeneration: m.baseGeneration, generation: nextGeneration() }));
     }
     function validate(params: any): {
         presentation: {
@@ -300,6 +315,6 @@ function create(ctx: Runtime) {
             }
         });
     }
-    return { input, publish, showSetup, generationRequest, nextGeneration, validate, bind };
+    return { input, publish, showSetup, generationRequest, nextGeneration, nextRoundParams, validate, bind };
 }
 export = create;

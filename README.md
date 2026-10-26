@@ -15,6 +15,8 @@ seed or let the engine randomize it, select human and CPU players, then press **
 A CPU-only opening armory purchases supplies and starts automatically. Human
 players can shop before pressing **Begin Match**. **Resume saved game** appears when a
 saved game is available.
+CPU-only series also buy supplies and deploy the next round automatically;
+the completed series remains on its results screen.
 
 The battlefield is 50 WFC tiles wide and 5 tall. Tiles are 256×256 pixels with a
 solid stone foundation. Generation can also use zones, mazes and noise-driven

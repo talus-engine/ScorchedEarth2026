@@ -202,8 +202,11 @@ function create(ctx: Runtime) {
                 ctx.session.run(ctx.presentation.restoreFocusAfterBoot);
             ctx.menus.publish();
             talus.state.set('indigo.error', '');
-            if (ctx.state.match.phase === 'finished')
-                ctx.economy.openShop();
+            if (ctx.state.match.phase === 'finished') {
+                ctx.state.match.resultsShown = true;
+                if (!ctx.turns.automaticSeries() || ctx.state.match.nextRoundRequest)
+                    ctx.economy.openShop();
+            }
         }
         finally {
             ctx.state.booting = false;
@@ -245,6 +248,10 @@ function create(ctx: Runtime) {
             }
             if (!ctx.state.booted || ctx.state.booting || !ctx.state.match || ctx.state.match.phase === 'fault')
                 return;
+            if (ctx.state.match.phase === 'finished') {
+                ctx.session.run(ctx.turns.advanceCpuRound);
+                return;
+            }
             if (ctx.state.match.phase !== 'finished') {
                 try {
                     ctx.presentation.tickPresentation();

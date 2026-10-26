@@ -12,6 +12,7 @@ import camera = require('camera');
 import turns = require('turns');
 import supplies = require('supplies');
 import combat = require('combat');
+import attachments = require('attachments');
 import chaos = require('chaos');
 import generation = require('generation');
 import landscape = require('landscape');
@@ -86,6 +87,7 @@ function create() {
     ctx.turns = turns(ctx);
     ctx.supplies = supplies(ctx);
     ctx.combat = combat(ctx);
+    ctx.attachments = attachments(ctx);
     ctx.chaos = chaos(ctx);
     ctx.generation = generation(ctx);
     ctx.landscape = landscape(ctx);
@@ -99,6 +101,7 @@ function create() {
         ctx.cpu.bind();
         ctx.turns.bind();
         ctx.combat.bind();
+        ctx.attachments.bind();
         ctx.menus.bind();
         ctx.lifecycle.bind();
     }

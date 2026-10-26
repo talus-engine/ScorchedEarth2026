@@ -1,0 +1,122 @@
+{
+  "id": 231,
+  "blendMode": "normal",
+  "name": "TERRA_LASER",
+  "semisolidSupport": false,
+  "audioFullCount": 700,
+  "audioFullSpeed": 2.5,
+  "trailMode": 0,
+  "trailDecay": 0.117,
+  "trailTint": "",
+  "trailStrength": 0,
+  "trailSweepPx": 1,
+  "category": [
+    "Energy"
+  ],
+  "tags": [
+    "energy"
+  ],
+  "transforms": {},
+  "color": [
+    0.2,
+    1,
+    0.35
+  ],
+  "falldown": 3,
+  "weight": 1,
+  "gravity": 0,
+  "collision": 0,
+  "diffusion": 0,
+  "maxVelocity": 256,
+  "lowTemperature": 0,
+  "lowTemperatureTransition": 5,
+  "highTemperature": 9999,
+  "highTemperatureTransition": 0,
+  "tptAdvection": 0,
+  "tptAirDrag": 0,
+  "tptAirLoss": 1,
+  "tptLoss": 1,
+  "hotAir": 0,
+  "flammable": 0,
+  "hardness": 0,
+  "fireLife": 0,
+  "frozenTtlDecay": 0,
+  "heatConduct": 0.35,
+  "heatCapacity": 0.3,
+  "initialTemp": 295.15,
+  "heatGen": 0,
+  "brownian": 0,
+  "lifeNoise": 0.15,
+  "lightEmit": true,
+  "lightRadius": 12,
+  "lightColor": [
+    0.2,
+    1,
+    0.35
+  ],
+  "lightIntensity": 0.8,
+  "lightPulseHz": 8,
+  "lightPulseAmp": 0,
+  "lightPulseMode": "noise",
+  "lightFalloff": 1,
+  "lightFalloffCurve": 0.4,
+  "useElementColorForLight": 1,
+  "rules": [
+    {
+      "ruleId": "laser-cut",
+      "label": "Vaporize contacted material",
+      "condition": {
+        "direction": "any",
+        "elementType": -1,
+        "requireClassAny": [
+          "solid",
+          "powder"
+        ]
+      },
+      "effects": [
+        {
+          "type": "changeNeighbour",
+          "newType": 5
+        }
+      ],
+      "probability": 1,
+      "enabled": true
+    }
+  ],
+  "lightOpacity": 0,
+  "textureAnchor": true,
+  "renderMode": "solid",
+  "gradientRange": [
+    0,
+    1
+  ],
+  "shadeChannel": {
+    "driver": "lifetime",
+    "range": [
+      0,
+      1
+    ],
+    "amount": 0.84
+  },
+  "opacityChannel": {
+    "driver": "lifetime",
+    "range": [
+      0,
+      1
+    ],
+    "amount": 0.8
+  },
+  "shape": {
+    "kind": "streak"
+  },
+  "meshCellPx": 16,
+  "meshFeather": 1,
+  "meshGlow": true,
+  "meshOver": true,
+  "meshStrength": 1,
+  "meshTween": 0,
+  "textureFrameCount": 1,
+  "textureFrameLayout": "horizontal",
+  "textureTileSize": 32,
+  "damageOnContact": 8
+}

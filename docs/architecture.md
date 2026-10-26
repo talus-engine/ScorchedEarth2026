@@ -18,6 +18,7 @@ loaded by Talus once per script sandbox and do not start as independent scripts.
 | `combat`, `chaos` | Spend ammunition on accepted launches, handle projectile payloads and run delayed death effects |
 | `aiming`, `cpu` | Survey terrain, choose tactics, move, learn from impacts and retain successful shots |
 | `equipment`, `economy` | Drive native controllers, reconcile finite utility consumption, purchase stock and award cash |
+| `attachments` | Arm purchased guidance/fuses, survey fixed-angle shots and steer or detonate native projectiles |
 | `presentation`, `camera` | Smooth tracking, three-second dialogue, arcade cards and native text labels |
 | `residency`, `supplies` | Restore parked tanks, own bounded emitter regions, focus and award supply drops |
 | `generation`, `landscape`, `brushes` | Select pinned presets, place terrain and physical structures, find supported deployment positions |
@@ -41,6 +42,13 @@ while another tank acts. Their small native simulation regions exist only while
 emitting. A projectile can travel away from the shooter, which may be parked by
 the engine. Durable entity IDs, native residency and actual projectile events
 remain authoritative.
+
+CPU-only series buy stock and start the next round automatically after results
+and outstanding effects finish. The native `game.newGame` transition receives
+the roster, series and complete terrain settings. Purchases and the request are
+persisted before navigation; a refused transition opens the armory with an
+explicit retry. Human rounds keep the armory decision, and a completed series
+stays on its results.
 
 ## State ownership
 

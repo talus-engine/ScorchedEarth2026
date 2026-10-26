@@ -82,6 +82,7 @@ export interface Runtime {
     turns: ReturnType<typeof import('turns')>;
     supplies: ReturnType<typeof import('supplies')>;
     combat: ReturnType<typeof import('combat')>;
+    attachments: ReturnType<typeof import('attachments')>;
     chaos: ReturnType<typeof import('chaos')>;
     generation: ReturnType<typeof import('generation')>;
     landscape: ReturnType<typeof import('landscape')>;

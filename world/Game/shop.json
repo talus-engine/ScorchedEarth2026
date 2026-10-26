@@ -697,7 +697,7 @@
     },
     {
       "id": "deaths-head",
-      "name": "Death\u2019s Head",
+      "name": "Death’s Head",
       "kind": "weapon",
       "price": 750,
       "bundle": 1,
@@ -735,7 +735,7 @@
           }
         }
       },
-      "original": "Death\u2019s Head",
+      "original": "Death’s Head",
       "behavior": {
         "mode": "apex",
         "count": 9,
@@ -1328,7 +1328,7 @@
       "bundle": 3,
       "enabled": false,
       "category": "Unavailable",
-      "description": "No configured native implementation for a native straight cutting beam powered by a Battery.",
+      "description": "Requires custom element resolution in scripted projectile launches. Native laser material is authored; this weapon remains unavailable.",
       "projectile": {
         "kind": "particle",
         "bodySizePx": 2,
@@ -1361,7 +1361,7 @@
       "behavior": {
         "mode": "battery"
       },
-      "unavailableReason": "No configured native implementation for a native straight cutting beam powered by a Battery."
+      "unavailableReason": "Requires custom element resolution in scripted projectile launches. Native laser material is authored; this weapon remains unavailable."
     },
     {
       "id": "machine-gun",
@@ -2159,36 +2159,36 @@
       "name": "Ballistic Guidance",
       "original": "Ballistic Guidance",
       "kind": "utility",
-      "category": "Unavailable",
-      "price": 0,
-      "bundle": 1,
-      "enabled": false,
-      "description": "No configured native implementation for finite ballistic correction for the next purchased shot.",
-      "unavailableReason": "No configured native implementation for finite ballistic correction for the next purchased shot."
+      "category": "Support",
+      "price": 140,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Sets power for your selected angle and target using the native ballistic survey. A refused survey keeps the charge.",
+      "attachment": "guidance"
     },
     {
       "id": "horz-guidance",
       "name": "Horz Guidance",
       "original": "Horz Guidance",
       "kind": "utility",
-      "category": "Unavailable",
-      "price": 0,
-      "bundle": 1,
-      "enabled": false,
-      "description": "No configured native implementation for horizontal guidance input for one shot.",
-      "unavailableReason": "No configured native implementation for horizontal guidance input for one shot."
+      "category": "Support",
+      "price": 100,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Turns a single rigid shell horizontally when it reaches the selected target height. Consumed when the shot launches.",
+      "attachment": "guidance"
     },
     {
       "id": "vert-guidance",
       "name": "Vert Guidance",
       "original": "Vert Guidance",
       "kind": "utility",
-      "category": "Unavailable",
-      "price": 0,
-      "bundle": 1,
-      "enabled": false,
-      "description": "No configured native implementation for vertical guidance input for one shot.",
-      "unavailableReason": "No configured native implementation for vertical guidance input for one shot."
+      "category": "Support",
+      "price": 100,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Drops a single rigid shell vertically when it passes above the selected target. Consumed when the shot launches.",
+      "attachment": "guidance"
     },
     {
       "id": "lazy-boy",
@@ -2250,12 +2250,12 @@
       "name": "Contact Trigger",
       "original": "Contact Trigger",
       "kind": "utility",
-      "category": "Unavailable",
-      "price": 0,
-      "bundle": 1,
-      "enabled": false,
-      "description": "No configured native implementation for attach contact detonation to the next purchased shot.",
-      "unavailableReason": "No configured native implementation for attach contact detonation to the next purchased shot."
+      "category": "Support",
+      "price": 60,
+      "bundle": 3,
+      "enabled": true,
+      "description": "Detonates a single rigid shell on its first terrain or body contact. Useful with delayed or bouncing shells.",
+      "attachment": "contact"
     },
     {
       "id": "force-shield",
@@ -2342,7 +2342,9 @@
       8
     ],
     "driveSeconds": 0.8,
-    "maxConsecutivePasses": 2
+    "maxConsecutivePasses": 2,
+    "recoveryPositions": 2,
+    "recoverySeconds": 1.5
   },
   "categories": [
     "All",

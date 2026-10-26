@@ -103,9 +103,43 @@ function create(ctx: Runtime) {
             if (ctx.state.match.phase !== 'finished')
                 return;
             await ctx.presentation.showArcadeCard(ctx.state.match.winner ? 'VICTORY OVERDRIVE' : 'MUTUALLY ASSURED NONSENSE', ctx.state.match.series?.complete ? ctx.state.match.series.champion : ctx.state.match.winner || 'NO SURVIVORS', 'Round ' + ctx.state.match.round + ' · Seed ' + ctx.state.match.seed, 3);
+            ctx.state.match.resultsShown = true;
+            ctx.session.persist();
+            if (!automaticSeries())
+                ctx.economy.openShop();
             ctx.menus.publish();
         });
         return true;
+    }
+    function automaticSeries(): boolean {
+        const m = ctx.state.match;
+        return !!(m?.phase === 'finished' && m.series && !m.series.complete && m.roster.length
+            && m.roster.every((p: any) => p.control === 'cpu'));
+    }
+    async function advanceCpuRound(): Promise<void> {
+        const m = ctx.state.match;
+        if (!automaticSeries() || !m.resultsShown || m.nextRoundRequest || ctx.state.booting
+            || talus.sim.paused || ctx.state.exitDrain || ctx.state.shopOpen || ctx.session.sequencePending()
+            || !talus.game.saveStatus.allowed)
+            return;
+        // Persist all purchases and the request before the native transition can end this VM.
+        ctx.economy.cpuShopping();
+        const params = ctx.menus.nextRoundParams();
+        params.seed = (Number(m.seed) + 0x9e3779b9) >>> 0;
+        m.nextRoundRequest = { status: 'requested', params };
+        m.message = 'Deploying round ' + params.round;
+        ctx.session.persist();
+        ctx.menus.publish();
+        let result: GameTransitionResult;
+        try { result = await talus.game.newGame(params); }
+        catch (error) { result = { status: 'refused', reason: String(error) }; }
+        if (ctx.state.match !== m || result.status === 'accepted')
+            return;
+        m.nextRoundRequest = { status: 'refused', reason: result.reason, params };
+        m.message = 'Next round could not start: ' + result.reason + '. Deploy next round retries.';
+        ctx.session.persist();
+        ctx.economy.openShop();
+        ctx.menus.publish();
     }
     async function beginTurn(next: boolean): Promise<void> {
         if (['focusing', 'refocusing', 'positioning', 'deploying', 'finished', 'fault'].includes(ctx.state.match.phase))
@@ -222,6 +256,6 @@ function create(ctx: Runtime) {
             }
         });
     }
-    return { scoreSeries, eliminate, announce, finish, beginTurn, startTurn, settle, bind };
+    return { scoreSeries, eliminate, announce, finish, automaticSeries, advanceCpuRound, beginTurn, startTurn, settle, bind };
 }
 export = create;
