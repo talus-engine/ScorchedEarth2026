@@ -1,8 +1,8 @@
-# Scorched Terra after M11
+# Scorched Earth 2026 after M11
 
 M11 engine contracts E37–E44 are accepted on 0.0.2559; see the engine repository's `docs/m11-installed-validation.md`. Full resource packaging, native brush dynamics, textured structures, loading presentation and installer publishing are available. Game integration and natural full-series acceptance remain. Older reports describing these engine contracts as blocked are historical.
 
-The following seven game tasks retain their order. The two subsequent user requests are appended as items 8–9. The E45 WFC repair and new game-side [artist scaffold](wfc-artist-template.md) are installed; E50 full-footprint artist saving passed installed 2568 acceptance. Remaining engine changes are in the [M12 engine prompt](engine-m12-patch-prompt.md).
+The following seven game tasks retain their order. Subsequent user requests are appended below in order. The E45 WFC repair and new game-side [artist scaffold](wfc-artist-template.md) are installed; E50 full-footprint artist saving passed installed 2568 acceptance. Remaining engine changes are in the [M12 engine prompt](engine-m12-patch-prompt.md).
 
 1. **Full preset integration.** Use the pinned `procedural-m11` catalog, seeded selection across all noise/semantic/neural/living presets, authentic layers/textures, and persisted IDs/hash/progress. Keep combat randomness independent and never regenerate completed work on resume. The subsequent user direction relayed by ENGINE on 2026-10-25 adds roughly ten game-owned landscape stories (post-apocalyptic city, layered hell, water caves and related themes); use affinity weights while retaining the entire catalog's eligibility.
 2. **Brush dynamics and clearance.** Randomize native Spin + Size LFO amplitude for pure noise. Add large spinning flower erasure while keeping openings imperfect, foreground-only, and protective of living bodies, other layers and the bottom stone tile. Run all decoration passes.
@@ -13,6 +13,11 @@ The following seven game tasks retain their order. The two subsequent user reque
 7. **Acceptance and updated package.** Complete natural CPU series across shops/rounds/terrain changes, seeded replay and safe save/reopen; verify account/inventory idempotency, controller flows and screen margins. Publish the updated snapshot after acceptance. Keep diagnostic profiles/builds bounded.
 8. **Website build target — E46.** Add Website to native publishing and the bundled CLI. Produce a self-contained deployable web directory/archive, retain scoped resources and game identity, document hosting/browser requirements, and validate actual browser play/persistence. Game work adopts the target and checks Scorched Terra; reusable publishing/runtime changes belong to the engine.
 9. **Simulated menu scenes — E47.** Make dramatic title screens with real particles, background and parallax through a reusable Talus Vue component. Explore named `menu:xxx` scenes/layers with local origin 0,0, visible only in their menus and completely isolated from gameplay. Prefer one engine/runtime with native scene/render isolation. Canvas copying is an option to evaluate, not a required implementation. Game work authors title-screen choreography after the native contract lands.
+
+10. **Compact battle HUD.** Put the main information and controls in a top bar and bottom bar. Keep wallets, aim/power/time, roster and weapon readable; move secondary loadout/utility/help information into expandable panels. Photograph CPU and human layouts at normal and small window sizes.
+11. **Tank-tread transitions.** Replace diagonal stripes with wide pixel treads spaced like a tank, driving into the turn/round card and throwing pixel dirt. Preserve the one-second turn/score timing and player/score labels.
+12. **Curious CPUs.** Add seeded, persona-specific exploratory movement using the native character controller, owned fuel, local terrain checks and bounded turn time. Seek useful positions and nearby supply crates without walking blindly over cliffs.
+13. **Sky supplies.** Roll independently at turn and round boundaries, with a higher round chance. Suspend combat input/timers, smoothly focus a real falling supply crate, then return to the turn. Pickups grant ammo/utilities once, survive ordinary saves/streaming, and remain bounded.
 
 Engine work proceeds in parallel under [the M12 prompt](engine-m12-patch-prompt.md). The ignored root `AGENT_CHAT.md` coordinates session ownership, API questions and release handoffs. Retained disabled equipment/death effects and in-flight saves remain in [the older backlog](backlog.md); M11 acceptance does not enable them.
 
@@ -43,3 +48,7 @@ speed/levitating parameters and animation layers. Tracks/wheels remain rigid
 bodies on joints; propulsion remains the existing floating controller.
 [E57/E58](engine-m13-patch-prompt.md) are on hold: first demonstrate a prototype
 with existing native support, then report only a concrete missing capability.
+
+## Current follow-up — 2026-10-26
+
+Items 10–13 are implemented, locally checked and installed into the Indigo editor project; see [gameplay polish](gameplay-polish.md). Native gameplay acceptance and an updated package remain. The previously published CPU build continues unchanged. M14 fullscreen title and articulated tank pieces are delivered; see [M14 integration](m14-game-integration.md). Engine candidate2587 owns cold-title readiness, stock-menu flash suppression and safe refresh of the retained Title authoring world; packaged validation is pending.

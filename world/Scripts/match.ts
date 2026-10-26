@@ -5,6 +5,7 @@ if (!talus.editor.available) {
   let generationRecipes: any, personaCatalog: any, soundCatalog: any, childDepth = 0
   let booting = false, booted = false, ticks = 0
   let launchingChaos = false
+  let supplyCatalog: any = null, supplySequence = false
   const pendingTankReady = new Set<string>()
   function refreshRestoredTanks() {
     // End-of-turn posture intent survives a save even if its restore event was
@@ -364,7 +365,10 @@ if (!talus.editor.available) {
   }
   async function restoreFocusAfterBoot() {
     if (match.phase === 'refocusing') { await resumeCurrentTurn(); return }
-    const phase = match.phase, ready = await focus()
+    const phase = match.phase
+    const pendingDrop = match.supplies?.crates.find((c: any) => c.id === match.supplies.active)
+    if (phase === 'focusing' && pendingDrop && supplyCatalog) await watchSupply(pendingDrop)
+    const ready = await focus()
     if (match.phase !== phase) return
     if (phase === 'ready') {
       // A pre-round casualty must not silently press Begin for the player.
@@ -392,7 +396,7 @@ if (!talus.editor.available) {
     }
   }
   function sequencePending() {
-    return !!(match && (arcadeCard || match.attack || presenting() || match.chaos.jobs.length || launchingChaos || digging
+    return !!(match && (supplySequence || arcadeCard || match.attack || presenting() || match.chaos.jobs.length || launchingChaos || digging
       || ['deploying', 'telegraph', 'firing', 'flight', 'settling', 'focusing', 'refocusing', 'positioning', 'aftermath'].includes(match.phase)))
   }
   function updateExitView() {
@@ -962,6 +966,53 @@ if (!talus.editor.available) {
     record('cpu-escape-selected', { name: p.name, decision: tank.blackboard.get('custom.aiDecision') })
     persist(); publish(); return true
   }
+  function explorationPath(p: any, direction: number) {
+    const at = entity(p)?.snapshot(), half = arena.combat.tankHalfWidth
+    if (!at || !direction) return null
+    const x = at.x + direction * (half + 24)
+    if (x < match.bounds.x + half || x > match.bounds.x + match.bounds.w - half) return null
+    // Resident observations are only a local safety estimate. Recheck while
+    // driving; native collision and fuel telemetry remain authoritative.
+    const ground = talus.world.groundY(x, at.y - 18, 66)
+    if (ground === null || ground < at.y - 16 || ground > at.y + 42) return null
+    if (talus.world.raycast({ x: at.x + direction * (half + 3), y: at.y - 10 }, { x, y: at.y - 10 })) return null
+    if (match.roster.some((r: any) => { const other = r !== p && targetSnapshot(r); return other && Math.hypot(other.x - x, other.y - at.y) < 58 })) return null
+    return { x, y: ground }
+  }
+  async function exploreCpu(p: any, turn: number, valid: () => boolean) {
+    const style = doctrine(p).exploration
+    if (!style || p.exploredTurn === turn || !valid() || owned(p, 'fuel-tank') <= 0 || match.remaining <= 4) return
+    p.exploredTurn = turn
+    const roll = aiRandom(p); persist()
+    if (roll >= style.chance) return
+    const e = entity(p), origin = e.position!, visits = p.exploredPositions || []
+    const crates = (match.supplies?.crates || []).filter((c: any) => c.state === 'available')
+      .map((c: any) => talus.bodies.get(c.bodyId)?.snapshot()).filter((c: any) => c && Math.abs(c.x - origin.x) < 600)
+    const candidates = [-1, 1].map(direction => {
+      const at = explorationPath(p, direction); if (!at) return null
+      const novelty = visits.length ? Math.min(...visits.map((v: any) => Math.abs(v.x - at.x))) : 30
+      const supply = crates.length ? Math.min(...crates.map((c: any) => Math.abs(c.x - origin.x))) - Math.min(...crates.map((c: any) => Math.abs(c.x - at.x))) : 0
+      const score = Math.min(80, novelty) + (origin.y - at.y) * (style.preference === 'high-ground' ? 3 : 1)
+        + supply * (style.preference === 'supplies' ? 3 : 1.5) + aiRandom(p) * 30
+      return { direction, at, score }
+    }).filter(Boolean).sort((a: any, b: any) => b.score - a.score)
+    const choice = candidates[0]; if (!choice) return
+    const seconds = Math.min(style.seconds, match.remaining - 3)
+    p.tactic = crates.length ? 'Investigating nearby supplies' : style.preference === 'high-ground' ? 'Scouting higher ground' : 'Exploring a fresh firing position'
+    e.blackboard.set('custom.exploration', { turn, direction: choice.direction, from: { ...origin }, seconds, tactic: p.tactic })
+    record('cpu-explore-start', { name: p.name, direction: choice.direction, from: origin, seconds, roll }); publish()
+    const until = talus.sim.clock + seconds
+    try {
+      while (valid() && talus.sim.clock < until && match.remaining > 3 && owned(p, 'fuel-tank') > 0) {
+        if (!explorationPath(p, choice.direction)) break
+        driveTank(p, choice.direction * arena.moveSpeed)
+        await talus.sleepTicks(3)
+      }
+    } finally { driveTank(p, 0) }
+    const at = e.position
+    if (at) { p.exploredPositions = [...visits, { x: at.x, y: at.y }].slice(-8); record('cpu-explore-end', { name: p.name, from: origin, to: at }) }
+    persist()
+  }
   async function prepareCpuTurn(p:any,turn:number) {
     if (!active() || p.eliminated || current() !== p || match.turnNumber !== turn) return
     const token=utilityGeneration,e=entity(p),d=doctrine(p), beforePosition={...entity(p).position!}, beforeDig=owned(p,'digger')
@@ -972,8 +1023,7 @@ if (!talus.editor.available) {
       const others=match.roster.filter((r:any)=>r!==p&&targetSnapshot(r))
       const target=others.sort((a:any,b:any)=>Math.abs(entity(a).x!-e.x!)-Math.abs(entity(b).x!-e.x!))[0]
       const direction=target?Math.sign(entity(target).x!-e.x!):1
-      // Utilities respond to an observed obstruction or dangerous proximity;
-      // ownership alone is not a reason to drain fuel every turn.
+      // Escape nearby hazards first; clear terrain also allows a short scout.
       const close=target && Math.abs(entity(target).x!-e.x!)<100
       const wall=talus.world.raycast({x:e.x!+direction*28,y:e.y!-8},{x:e.x!+direction*70,y:e.y!-8})
       const burrow=!!wall && (p.personaId==='mole'||p.personaId==='faultline') && owned(p,'digger')>0
@@ -986,6 +1036,7 @@ if (!talus.editor.available) {
         const until=talus.sim.clock+market.cpu.driveSeconds
         while(valid()&&talus.sim.clock<until) {driveTank(p,-direction*arena.moveSpeed);await talus.sleepTicks(1)}
       }
+      if (valid() && !wall && !close) await exploreCpu(p, turn, valid)
       if(valid()&&wall&&!burrow&&owned(p,'jetpack')>0&&itemById('jetpack').enabled) {
         const held=e.controller.levitate(true)
         record('cpu-utility-attempt',{name:p.name,item:'jetpack',reason:'observed-obstruction',stock:owned(p,'jetpack'),receipt:held,from:e.position})
@@ -1070,6 +1121,8 @@ if (!talus.editor.available) {
         if (reason) { skipped.push({ item: id, reason }); continue }
         if (owned(p,id) >= 2 || buy(id,2)) break
       }
+      // Explorers reserve a small tank of drive fuel before optional defenses.
+      if (d.exploration) buy('fuel-tank', 2)
       for (const id of d.utilityPreferences.slice(0,3)) buy(id, id==='battery'?2:1)
       // The receipt shares the same bank object as purchases; later visits do not buy again.
       Object.defineProperty(bought, playerKey(p), { value: true, enumerable: true, configurable: true, writable: true })
@@ -1625,6 +1678,137 @@ if (!talus.editor.available) {
     passivePosture(p)
     persist()
   }
+  function supplyState() {
+    return match.supplies ||= { rng: chaosSeed(String(match.seed) + ':supplies'), checked: null, active: null, crates: [] }
+  }
+  function supplyRandom() {
+    const state = supplyState(); let x = state.rng
+    x ^= x << 13; x ^= x >>> 17; x ^= x << 5
+    state.rng = x >>> 0; return state.rng / 4294967296
+  }
+  function supplyLabel(crate: any, at: Vec2 | null) {
+    talus.ui.worldText('supply:' + crate.id, at ? { at, text: '↓ ' + itemById(crate.item).name,
+      offset: { x: 0, y: -38 }, size: 18, color: '#70f8a0', outline: '#10102a', background: '#10102acc', maxWidth: 280 } : null)
+  }
+  function claimSupply(crate: any, p: any) {
+    bank.supplyClaims ||= {}; const claims = bank.supplyClaims[talus.world.id] ||= {}
+    if (!Object.hasOwn(claims, crate.id)) {
+      const w = wallet(p), item = itemById(crate.item), supply = item.grants?.item || item.id
+      w.stock[supply] = owned(p, supply) + crate.units; w.revision++
+      // Grant and receipt share one installed write, including across an old
+      // save being reopened. Selection and paid ammunition are left untouched.
+      claims[crate.id] = { player: playerKey(p), item: supply, units: crate.units }
+      saveBank()
+      record('supply-collected', { id: crate.id, name: p.name, item: supply, units: crate.units })
+      match.message = p.name + ' recovered ' + crate.units + ' × ' + item.name
+      syncLoadout(p)
+    }
+    crate.state = 'collected'; supplyLabel(crate, null); persist()
+    const body = talus.bodies.get(crate.bodyId)
+    if (body?.exists) body.destroy()
+  }
+  function tickSupplies() {
+    if (!supplyCatalog || !match.supplies) return
+    let changed = false
+    for (const crate of match.supplies.crates) {
+      if (!crate.bodyId) continue
+      const body = talus.bodies.get(crate.bodyId), at = body?.snapshot()
+      if (crate.state === 'collected') { if (body?.exists) body.destroy(); continue }
+      if (crate.state === 'lost') continue
+      if (!at || at.y > match.bounds.y + match.bounds.h || at.x < match.bounds.x || at.x > match.bounds.x + match.bounds.w) {
+        crate.state = 'lost'; supplyLabel(crate, null); if (body?.exists) body.destroy()
+        record('supply-lost', { id: crate.id }); changed = true; continue
+      }
+      // Parked bodies retain their position but are not collectible until the
+      // real tank/body are resident together. Never pull remote inventory in.
+      supplyLabel(crate, body!.isLive ? at : null)
+      if (supplySequence || presenting() || !['turn', 'ready', 'settling'].includes(match.phase) || !body!.isLive || Math.abs(at.vy) > 45) continue
+      const nearby = match.roster.filter((p: any) => !p.eliminated && entity(p)?.isLive)
+        .map((p: any) => ({ p, at: entity(p).snapshot()! }))
+        .filter((v: any) => Math.hypot(v.at.x - at.x, v.at.y - at.y) <= supplyCatalog.pickupRadius)
+        .sort((a: any, b: any) => Math.hypot(a.at.x - at.x, a.at.y - at.y) - Math.hypot(b.at.x - at.x, b.at.y - at.y) || a.p.index - b.p.index)
+      if (nearby[0]) { claimSupply(crate, nearby[0].p); changed = true }
+    }
+    // Keep the last few terminal receipts for diagnosis, not every crate in a
+    // long match. The installed claim ledger still protects older saved games.
+    const live = match.supplies.crates.filter((c: any) => !['collected', 'lost'].includes(c.state))
+    const done = match.supplies.crates.filter((c: any) => ['collected', 'lost'].includes(c.state)).slice(-8)
+    match.supplies.crates = [...live, ...done]
+    if (changed) { persist(); publish() }
+  }
+  async function watchSupply(crate: any) {
+    if (supplySequence) return
+    supplySequence = true; input(false); persist()
+    try {
+      match.message = 'SUPPLY DROP · ' + itemById(crate.item).name; publish()
+      if (!crate.bodyId) {
+        let ready = false
+        for (let n = 0; n < supplyCatalog.cameraWaitTicks && match.phase === 'focusing'; n++) {
+          if (!presenting() && cameraArrived(cameraPoint(crate.spawn, 'supply-arrival'))) { ready = true; break }
+          await talus.sleepTicks(1)
+        }
+        if (!ready) { crate.state = 'lost'; record('supply-cancelled', { id: crate.id, reason: 'camera-region-not-ready' }); return }
+        // Recover an already-created authored body if an interrupted script
+        // retained the native body but not the immediately following state write.
+        const name = 'Supply ' + crate.id
+        let body = talus.bodies.find({ includeStored: true }).find(b => b.name === name)
+        if (!body) {
+          const cells: Array<{ x: number; y: number; element: string }> = []
+          for (let y = 0; y < supplyCatalog.crateHeight; y++) for (let x = 0; x < supplyCatalog.crateWidth; x++) {
+            const band = y < 2 || y >= supplyCatalog.crateHeight - 2 || x < 2 || x >= supplyCatalog.crateWidth - 2 || Math.abs(x - supplyCatalog.crateWidth / 2) < 2
+            cells.push({ x: Math.round(crate.spawn.x + x - supplyCatalog.crateWidth / 2), y: Math.round(crate.spawn.y + y - supplyCatalog.crateHeight / 2), element: band ? 'IRON' : 'WOOD' })
+          }
+          body = await talus.bodies.create({ cells, name, kind: 'dynamic' }) || undefined
+        }
+        if (!body) { crate.state = 'lost'; record('supply-cancelled', { id: crate.id, reason: 'native-body-empty' }); return }
+        crate.bodyId = body.id; crate.state = 'falling'; crate.watchStarted = talus.sim.clock; persist()
+        record('supply-spawned', { id: crate.id, bodyId: body.id, item: crate.item, units: crate.units, at: crate.spawn })
+      }
+      const until = talus.sim.clock + supplyCatalog.maxFlightSeconds
+      while (match.phase === 'focusing' && talus.sim.clock < until) {
+        const body = talus.bodies.get(crate.bodyId), at = body?.snapshot()
+        if (!at || ['lost', 'collected'].includes(crate.state)) break
+        if (!presenting()) cameraPoint(at, 'supply-flight')
+        supplyLabel(crate, at)
+        if (talus.sim.clock - (crate.watchStarted || 0) > .6 && (at.sleeping || Math.abs(at.vy) < 6 && talus.world.groundY(at.x, at.y + supplyCatalog.crateHeight / 2, 8) !== null)) break
+        await talus.sleepTicks(1)
+      }
+      if (!['lost', 'collected'].includes(crate.state)) crate.state = 'available'
+      record('supply-watch-ended', { id: crate.id, state: crate.state })
+    } finally {
+      supplyState().active = null; supplySequence = false; persist()
+    }
+  }
+  async function maybeSupplyDrop(boundary: 'round' | 'turn') {
+    if (!supplyCatalog || supplySequence || match.phase !== 'focusing') return
+    const state = supplyState(), key = boundary + ':' + (boundary === 'round' ? match.round : match.turnNumber)
+    if (state.checked === key) return
+    state.checked = key
+    const roll = supplyRandom(), chance = boundary === 'round' ? supplyCatalog.roundChance : supplyCatalog.turnChance
+    persist()
+    if (roll >= chance || state.crates.filter((c: any) => !['lost', 'collected'].includes(c.state)).length >= supplyCatalog.maxActive) return
+    const options = supplyCatalog.contents.filter((c: any) => itemById(c.item)?.enabled && !unlimited(c.item))
+    if (!options.length) return
+    let draw = supplyRandom() * options.reduce((sum: number, c: any) => sum + c.weight, 0)
+    const content = options.find((c: any) => (draw -= c.weight) < 0) || options[options.length - 1]
+    const anchor = targetSnapshot(current()); if (!anchor) return
+    // Candidate columns are near the next pilot, not on top of a tank. The
+    // native durable surface query sees saved terrain beyond the current view.
+    let spawn: Vec2 | null = null
+    for (let n = 0; n < 6 && !spawn; n++) {
+      const x = Math.round(clamp(anchor.x + (supplyRandom() < .5 ? -1 : 1) * (100 + supplyRandom() * 220), match.bounds.x + 48, match.bounds.x + match.bounds.w - 48))
+      if (match.roster.some((p: any) => { const at = targetSnapshot(p); return at && Math.abs(at.x - x) < 70 })) continue
+      const ground = await talus.world.findSurface(x, match.bounds.y, match.bounds.h)
+      if (ground === null || ground < match.bounds.y + 70) continue
+      spawn = { x, y: Math.max(match.bounds.y + 24, ground - supplyCatalog.height) }
+    }
+    if (match.phase !== 'focusing') { persist(); return }
+    if (!spawn) { record('supply-cancelled', { boundary, reason: 'no-safe-column' }); persist(); return }
+    const crate = { id: key, item: content.item, units: content.units, spawn, bodyId: null, state: 'incoming' }
+    state.crates.push(crate); state.active = crate.id; persist()
+    record('supply-selected', { id: crate.id, roll, chance, item: crate.item, at: spawn })
+    await watchSupply(crate)
+  }
   async function beginTurn(next: boolean) {
     if (['focusing', 'refocusing', 'positioning', 'deploying', 'finished', 'fault'].includes(match.phase)) return
     if (presenting()) { match.pendingTurn = next; return }
@@ -1641,6 +1825,8 @@ if (!talus.editor.available) {
     autoDefend()
     match.turnNumber++; match.remaining = match.turnSeconds; match.shotId = null; match.impact = null
     match.message = 'Loading ' + current().name; persist(); publish()
+    await maybeSupplyDrop(next ? 'turn' : 'round')
+    if (match.phase !== 'focusing' || finish()) return
     const ready = await focus()
     if (match.phase !== 'focusing') return
     if (ready && !current().eliminated) {
@@ -2687,6 +2873,7 @@ if (!talus.editor.available) {
       generationRecipes = JSON.parse((await talus.files.readText('Game/generation.json'))!)
       personaCatalog = JSON.parse((await talus.files.readText('Game/personas.json'))!)
       soundCatalog = JSON.parse(await talus.files.readText('Game/audio.json') || '{}')
+      supplyCatalog = JSON.parse((await talus.files.readText('Game/supply-drops.json'))!)
       talus.ui.damageTextStyle(damageTextStyle)
       market.categories.forEach((name: string, index: number) => talus.on('menu.custom.category-' + index, () => { shopCategory = name; publishShop() }))
       for (const item of market.items) {
@@ -3009,6 +3196,7 @@ if (!talus.editor.available) {
     ticks++
     if (ticks % 6 === 0) {
       checkRoster()
+      try { tickSupplies() } catch (error) { fail(error); return }
       if (itemById('parachute').enabled && !['ready','deploying','finished','fault'].includes(match.phase)) {
         for (const p of match.roster) {
           const e=entity(p)

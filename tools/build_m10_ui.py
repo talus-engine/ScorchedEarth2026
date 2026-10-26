@@ -2,11 +2,13 @@
 from pathlib import Path
 import base64
 import re
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 MENUS = ROOT / 'world/Menus'
 css = (MENUS / 'arcade.css').read_text()
-for path in MENUS.glob('*.html'):
+paths = [MENUS / name for name in sys.argv[1:]] if sys.argv[1:] else [p for p in MENUS.glob('*.html') if p.name not in {'loading.html', 'm11-loading.html'}]
+for path in paths:
     html = path.read_text()
     html = re.sub(r'<style>.*?</style>\s*', '', html, flags=re.S)
     html = html.replace('__TERRA_TITLE_IMAGE__', 'data:image/webp;base64,' + base64.b64encode(
@@ -14,4 +16,4 @@ for path in MENUS.glob('*.html'):
     path.write_text('<style>\n' + css + '\n</style>\n' + html)
     if path.stat().st_size > 1024 * 1024:
         raise ValueError(f'{path.name} exceeds native world text file limit')
-print('Arcade menus built:', ', '.join(p.name for p in MENUS.glob('*.html')))
+print('Arcade menus built:', ', '.join(p.name for p in paths))
