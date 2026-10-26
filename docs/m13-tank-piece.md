@@ -20,7 +20,7 @@ four hinged wheels and two hinged jet pods. Each module displays twelve 3×1
 tread links through native frame animation. Wheel and pod motion uses native
 hinge-motor clips. Decorative bodies have `maskBits: 0` and no gravity: they
 remain real jointed rigid bodies without terrain contact or propulsion.
-The rig is **prepared, not installed**. There is no established engine blocker.
+The rig is **prepared, not installed**. Native animation needs no new feature.
 The 3×1 tread image remains to be generated/imported through a supported native
 route. The original tank and floating character controller remain in use.
 
@@ -32,9 +32,13 @@ acceptance is still pending. The editor has no remaining diagnostic entities,
 is paused, and its view was restored. No game/account diagnostic or WFC painting
 was performed. No new published package has been exported.
 
-The premature E57/E58 handoff has been put on hold in `AGENT_CHAT.md`. Those
-source observations are not release requirements. ENGINE currently holds the
-editor/API lease for its separate WFC work; GAME will prototype after handoff.
+The premature E57/E58 handoff was withdrawn. After ENGINE returned the editor
+on 0.0.2575, the actual native 3×1 call returned an empty body. Its exact prompt,
+receipt and source are retained as `1e864ee79a34` under the asset directories.
+E58 alone is now reopened with a concrete reproduction: the image sampler uses
+the top border for a one-pixel-high output. E57 stays withdrawn. GAME offered
+ENGINE the editor lease for the small image sampling correction; prototype
+acceptance and roster installation follow its return.
 
 The prepared installer validates and saves the native clips/controller before
 attaching them, backs up each template and compares non-art fields after saving.

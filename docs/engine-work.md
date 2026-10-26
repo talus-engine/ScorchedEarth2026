@@ -552,3 +552,8 @@ controller still drives the tank. E57/E58 have been withdrawn as prerequisites
 and ENGINE told to hold them. Source concerns were handed off prematurely,
 before a native prototype. Existing dynamic hinge-motor and sprite animation
 support must be tried first; no new animation feature is established as needed.
+
+
+### E58 actual reproduction — 2026-10-26
+
+On installed2575, native generate_entity returned an empty 3×1 tread body despite the explicit full-bleed prompt. Exact retained request/source/receipt: assets/m13/{prompts,boards}/1e864ee79a34*.json; native template ec28be8e-59ff-4b9c-8dec-3dc29e76f173. The sampler takes source y=0 when output H=1. Sent the concrete center-sampling correction to ENGINE through AGENT_CHAT.md, offering the editor lease for installation. E57 remains withdrawn: the tank uses existing dynamic joint motors, frame animation and CCT auto parameters. Native prototype and roster acceptance pending the tiny-image correction.

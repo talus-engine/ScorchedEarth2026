@@ -1,6 +1,10 @@
-# M13 — investigation notes; patch request on hold
+# M13 — E58 tiny-image reproduction; E57 remains withdrawn
 
-**Correction, 2026-10-25:** E57/E58 are withdrawn as game prerequisites. ENGINE
+**2026-10-26:** E58 is now reproduced by a real 3×1 native generation on
+0.0.2575. See the exact request/response at the end of this document. Only the
+tiny-image sampling fix has been reopened; no animation engine work is requested.
+
+**Earlier correction, 2026-10-25:** E57/E58 were withdrawn as game prerequisites. ENGINE
 has been told to hold this work. Neither observation below has been shown to
 block a native tank prototype. They do not establish missing animation support
 and are not release requirements.
@@ -51,3 +55,19 @@ Use the configured `gpt-image-2` provider without exposing its key. Existing
 weapon art remains installed. No engine change is currently established as
 necessary for the rig. `AGENT_CHAT.md` tracks the separate engine UI lease and
 the next opportunity for the native prototype.
+# Reproduced follow-up: E58 only — 2026-10-26
+
+On installed 0.0.2575, the actual native `generate_entity` call returned a
+3×1 part with an empty `pixels` array. Source template:
+`ec28be8e-59ff-4b9c-8dec-3dc29e76f173`.
+Exact request and response: `assets/m13/prompts/1e864ee79a34.json`,
+`assets/m13/boards/1e864ee79a34.json` and its `-source.json` companion.
+The prompt explicitly requested three full-height steel bands with zero margins.
+
+`ChatGptEntityProvider.classifyToPixels` samples `floor(py * sh / H)`;
+for H=1 that always samples the source's top border. Correct nearest-neighbor
+sampling to source pixel centers, bounded to the source dimensions, and add a
+small regression for 3×1/1×3 parts surrounded by the provider's chroma background.
+Do not add a new animation or sprite-host contract. E57 remains withdrawn.
+This concrete image issue was sent to ENGINE through `AGENT_CHAT.md`.
+
