@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "state": "completed",
+  "settings": {
+    "title": "Scorched Earth 2026",
+    "version": "0.3.1",
+    "author": "Tony",
+    "appId": "com.talus.m11-2552",
+    "icon": "Game/Publishing/icon.png",
+    "target": "mac",
+    "arch": "arm64",
+    "zip": true,
+    "signing": "unsigned",
+    "basePath": "/",
+    "notarize": false
+  },
+  "engineBuild": "2585",
+  "exportedAt": 1793028755957,
+  "snapshotSha256": "dd374ae9ded6a12f06010bfba7e6725c5ede5d69ee0753d2e58617be9464d984",
+  "assets": "bundled",
+  "signing": "ad-hoc",
+  "notarized": false,
+  "notarization": [],
+  "toolchain": {
+    "electron": "44.1.1",
+    "builder": "26.15.3"
+  },
+  "artifacts": [
+    {
+      "kind": "app",
+      "path": "/Users/tonygermaneri/gh/indigo/artifacts/published/com.talus.m11-2552-0.3.1-mac-arm64/Scorched Earth 2026.app",
+      "bytes": 479640756,
+      "files": 266,
+      "sha256": "a5332d348de2a3172205f018737885ac81ee40ce3ce1c5c97ea32696018404a3"
+    },
+    {
+      "kind": "dmg",
+      "path": "/Users/tonygermaneri/gh/indigo/artifacts/published/com.talus.m11-2552-0.3.1-mac-arm64/Scorched Earth 2026-0.3.1-mac-arm64.dmg",
+      "bytes": 256650173,
+      "files": 1,
+      "sha256": "0bfdd56a0a28101ea35ef9831fc9b351bb4cdecb748cb872ebc1a90b0dd969ea"
+    },
+    {
+      "kind": "zip",
+      "path": "/Users/tonygermaneri/gh/indigo/artifacts/published/com.talus.m11-2552-0.3.1-mac-arm64/Scorched Earth 2026-0.3.1-mac-arm64.zip",
+      "bytes": 237711701,
+      "files": 1,
+      "sha256": "c3e29549e943fef6dc6066c2b7847df8c31ec680d1a350a86d5f464f7639fe3c"
+    }
+  ],
+  "scopedImageCount": 642,
+  "gameCommit": "92c6464",
+  "publishedVia": "Talus File \u2192 Publish Game, user assisted folder confirmation and Publish",
+  "manifestSha256": "94e543c0b953e45c31a2eadfe1cc8d1da364ccd3879935ff7bb32f2598e5461f",
+  "verifiedProjectFiles": [
+    "Scripts/match.ts",
+    "Game/personas.json",
+    "Game/supply-drops.json",
+    "Menus/hud.html",
+    "Menus/title.html",
+    "Game/title-logo-pattern.js"
+  ],
+  "signatureVerification": "codesign --verify --deep --strict passed; Signature=adhoc",
+  "gameplayLaunched": false,
+  "pendingEngineFixes": [
+    "cold-title visibility/loading (candidate2587)",
+    "next-round SerdeWorker memory trap (engine source fix under validation)"
+  ]
+}
