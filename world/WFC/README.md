@@ -1,15 +1,22 @@
-# Terra Reach artist scaffold
+# Paint the terrain palette
 
-Indigo contains 250 WFC anchors on a 50×5 grid. Each tile is 256×256px (4×4 chunks). `template.json` lists every source tile, origin coordinate, connector and native gate pair. `artist-sheet.svg` is a visual reference, not a matter import.
+Each source tile is a square 256×256 pixels (4×4 native chunks). The connector
+labels and their rectangles are editing aids, not tile outlines.
 
-Paint reusable art only at the 24 origins listed in `template.json` (`originAnchor`, in chunks). The other 226 positions are remix slots. All surface origins are at chunk Y8, from X0 through 68. Foundation origins are (0,12),(4,12),(8,12),(12,12); sky is (0,0), bedrock (0,16).
+Surface origins occupy chunk Y8, X0 through X68. Foundation origins occupy Y12
+at X0, X4, X8 and X12. Sky is at (0,0); bedrock is at (0,16). Consult
+`template.json` for individual `originAnchor` coordinates and `artist-sheet.svg`
+for the palette reference. The live layout can omit or relocate scaffold slots.
 
-Gate marks bracket filled ground. h64/h128/h192 mean the ground begins 64/128/192 pixels down that face. North/south fractions run left-to-right; west/east run top-to-bottom. Sky is entirely empty, earth entirely filled, stone entirely STONE. Keep the 8px terrain collars and outer 2px material rims intact. Repaint interiors freely after the native save fix is accepted. Preserve the solid bottom row.
+The small gate markers bracket the filled bridge span. North/south fractions
+run left to right; east/west fractions run top to bottom. h64, h128 and h192 begin
+ground at those pixel heights. Preserve the eight-pixel silhouette collars and
+two-pixel material rims so neighboring tiles connect. Their rims use the same
+noise samples. Interiors are free to paint. Keep the bedrock row solid stone.
 
-The seed selects ridge/bowl silhouettes and earth textures inside fixed connecting heights. The editor's large socket-label rectangles are not tile boundaries; the tile footprint always spans4×4 grid squares.
+Native painted origins are the source of truth. `bootstrap.svg` is a starting
+palette produced by the repository's `tools/build_wfc_template.py`; importing
+it replaces painted artwork. It is not needed when editing the existing art.
 
-**E50 is required before a full artist pass:** Talus 0.0.2561 saves edits in the top-left origin chunk to the reusable tile, but other chunks can become local overrides. The engine agent is fixing full-footprint origin autosave. Verify that fix before painting, including save/reopen and a new seeded game.
-
-`bootstrap.svg` is the initial 24-tile element-indexed import, using an exported native noise swatch. Do not reimport it over later artist changes. Native tile art resides in the database, so also export the complete Talus project after editing; a file-mount sync alone does not capture new palette pixels.
-
-Full handoff, source-coordinate table and retained evidence: game repository `docs/wfc-artist-template.md`. The old Mixed Reach palette was preserved. Native metadata repair checkpoint: `snap_90863e52-32f7-4bde-a2f2-2ae7c948c2e2`.
+Save in Talus, then export the complete project to capture native pixels,
+connectors and layout. A copy of the file mount alone cannot capture them.

@@ -1,0 +1,125 @@
+{
+  "clipId": "8d6fff97-da8e-59dd-b2a4-582135ee4d5f",
+  "clipName": "drive-run",
+  "delay": 0,
+  "direction": "normal",
+  "duration": 0.4,
+  "entityTemplateId": "46f3126a-c74b-4c77-8850-c71e2aeff1d7",
+  "fillMode": "both",
+  "frameTracks": [
+    {
+      "animationSetId": "4d37a405-32cf-5633-9892-26f4aac00071",
+      "frameRate": 54,
+      "particleLayerId": "fa569108-19a2-517f-a83b-61ed80c817fc"
+    },
+    {
+      "animationSetId": "4d37a405-32cf-5633-9892-26f4aac00071",
+      "frameRate": 54,
+      "particleLayerId": "6fe8d08e-33c2-5e38-b2a4-fefd5fd1492a"
+    }
+  ],
+  "iterationCount": 0,
+  "rootMotion": false,
+  "tracks": [
+    {
+      "bodyIndex": 4,
+      "keyframes": [
+        {
+          "easing": "linear",
+          "motorSpeed": 27.5,
+          "percent": 0
+        },
+        {
+          "easing": "linear",
+          "motorSpeed": 27.5,
+          "percent": 100
+        }
+      ]
+    },
+    {
+      "bodyIndex": 5,
+      "keyframes": [
+        {
+          "easing": "linear",
+          "motorSpeed": 27.5,
+          "percent": 0
+        },
+        {
+          "easing": "linear",
+          "motorSpeed": 27.5,
+          "percent": 100
+        }
+      ]
+    },
+    {
+      "bodyIndex": 7,
+      "keyframes": [
+        {
+          "easing": "linear",
+          "motorSpeed": 27.5,
+          "percent": 0
+        },
+        {
+          "easing": "linear",
+          "motorSpeed": 27.5,
+          "percent": 100
+        }
+      ]
+    },
+    {
+      "bodyIndex": 8,
+      "keyframes": [
+        {
+          "easing": "linear",
+          "motorSpeed": 27.5,
+          "percent": 0
+        },
+        {
+          "easing": "linear",
+          "motorSpeed": 27.5,
+          "percent": 100
+        }
+      ]
+    },
+    {
+      "bodyIndex": 3,
+      "keyframes": [
+        {
+          "easing": "step",
+          "motorSpeed": 0.45,
+          "percent": 0
+        },
+        {
+          "easing": "step",
+          "motorSpeed": -0.45,
+          "percent": 50
+        },
+        {
+          "easing": "step",
+          "motorSpeed": 0.45,
+          "percent": 100
+        }
+      ]
+    },
+    {
+      "bodyIndex": 6,
+      "keyframes": [
+        {
+          "easing": "step",
+          "motorSpeed": 0.45,
+          "percent": 0
+        },
+        {
+          "easing": "step",
+          "motorSpeed": -0.45,
+          "percent": 50
+        },
+        {
+          "easing": "step",
+          "motorSpeed": 0.45,
+          "percent": 100
+        }
+      ]
+    }
+  ]
+}

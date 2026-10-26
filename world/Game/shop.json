@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "startingCash": 600,
   "awards": {
     "turn": 10,
@@ -1328,8 +1327,8 @@
       "price": 300,
       "bundle": 3,
       "enabled": false,
-      "category": "In development",
-      "description": "In development: a native straight cutting beam powered by a Battery.",
+      "category": "Unavailable",
+      "description": "No configured native implementation for a native straight cutting beam powered by a Battery.",
       "projectile": {
         "kind": "particle",
         "bodySizePx": 2,
@@ -1362,7 +1361,7 @@
       "behavior": {
         "mode": "battery"
       },
-      "requires": "E23"
+      "unavailableReason": "No configured native implementation for a native straight cutting beam powered by a Battery."
     },
     {
       "id": "machine-gun",
@@ -1931,72 +1930,72 @@
       "name": "Baby Digger",
       "original": "Baby Digger",
       "kind": "weapon",
-      "category": "In development",
+      "category": "Unavailable",
       "price": 0,
       "bundle": 1,
       "enabled": false,
-      "requires": "E23",
-      "description": "In development: native underground projectile tunneling."
+      "description": "No configured native implementation for native underground projectile tunneling.",
+      "unavailableReason": "No configured native implementation for native underground projectile tunneling."
     },
     {
       "id": "digger-shell",
       "name": "Digger",
       "original": "Digger",
       "kind": "weapon",
-      "category": "In development",
+      "category": "Unavailable",
       "price": 0,
       "bundle": 1,
       "enabled": false,
-      "requires": "E23",
-      "description": "In development: native underground projectile tunneling."
+      "description": "No configured native implementation for native underground projectile tunneling.",
+      "unavailableReason": "No configured native implementation for native underground projectile tunneling."
     },
     {
       "id": "heavy-digger",
       "name": "Heavy Digger",
       "original": "Heavy Digger",
       "kind": "weapon",
-      "category": "In development",
+      "category": "Unavailable",
       "price": 0,
       "bundle": 1,
       "enabled": false,
-      "requires": "E23",
-      "description": "In development: wide underground projectile tunneling."
+      "description": "No configured native implementation for wide underground projectile tunneling.",
+      "unavailableReason": "No configured native implementation for wide underground projectile tunneling."
     },
     {
       "id": "baby-sandhog",
       "name": "Baby Sandhog",
       "original": "Baby Sandhog",
       "kind": "weapon",
-      "category": "In development",
+      "category": "Unavailable",
       "price": 0,
       "bundle": 1,
       "enabled": false,
-      "requires": "E23",
-      "description": "In development: splitting subterranean warheads."
+      "description": "No configured native implementation for splitting subterranean warheads.",
+      "unavailableReason": "No configured native implementation for splitting subterranean warheads."
     },
     {
       "id": "sandhog",
       "name": "Sandhog",
       "original": "Sandhog",
       "kind": "weapon",
-      "category": "In development",
+      "category": "Unavailable",
       "price": 0,
       "bundle": 1,
       "enabled": false,
-      "requires": "E23",
-      "description": "In development: splitting subterranean warheads."
+      "description": "No configured native implementation for splitting subterranean warheads.",
+      "unavailableReason": "No configured native implementation for splitting subterranean warheads."
     },
     {
       "id": "heavy-sandhog",
       "name": "Heavy Sandhog",
       "original": "Heavy Sandhog",
       "kind": "weapon",
-      "category": "In development",
+      "category": "Unavailable",
       "price": 0,
       "bundle": 1,
       "enabled": false,
-      "requires": "E23",
-      "description": "In development: large splitting subterranean warheads."
+      "description": "No configured native implementation for large splitting subterranean warheads.",
+      "unavailableReason": "No configured native implementation for large splitting subterranean warheads."
     },
     {
       "id": "dirt-charge",
@@ -2148,48 +2147,48 @@
       "name": "Heat Guidance",
       "original": "Heat Guidance",
       "kind": "utility",
-      "category": "In development",
+      "category": "Unavailable",
       "price": 0,
       "bundle": 1,
       "enabled": false,
-      "requires": "E24",
-      "description": "In development: attach guidance to the next purchased shot."
+      "description": "No configured native implementation for attach guidance to the next purchased shot.",
+      "unavailableReason": "No configured native implementation for attach guidance to the next purchased shot."
     },
     {
       "id": "ballistic-guidance",
       "name": "Ballistic Guidance",
       "original": "Ballistic Guidance",
       "kind": "utility",
-      "category": "In development",
+      "category": "Unavailable",
       "price": 0,
       "bundle": 1,
       "enabled": false,
-      "requires": "E24",
-      "description": "In development: finite ballistic correction for the next purchased shot."
+      "description": "No configured native implementation for finite ballistic correction for the next purchased shot.",
+      "unavailableReason": "No configured native implementation for finite ballistic correction for the next purchased shot."
     },
     {
       "id": "horz-guidance",
       "name": "Horz Guidance",
       "original": "Horz Guidance",
       "kind": "utility",
-      "category": "In development",
+      "category": "Unavailable",
       "price": 0,
       "bundle": 1,
       "enabled": false,
-      "requires": "E24",
-      "description": "In development: horizontal guidance input for one shot."
+      "description": "No configured native implementation for horizontal guidance input for one shot.",
+      "unavailableReason": "No configured native implementation for horizontal guidance input for one shot."
     },
     {
       "id": "vert-guidance",
       "name": "Vert Guidance",
       "original": "Vert Guidance",
       "kind": "utility",
-      "category": "In development",
+      "category": "Unavailable",
       "price": 0,
       "bundle": 1,
       "enabled": false,
-      "requires": "E24",
-      "description": "In development: vertical guidance input for one shot."
+      "description": "No configured native implementation for vertical guidance input for one shot.",
+      "unavailableReason": "No configured native implementation for vertical guidance input for one shot."
     },
     {
       "id": "lazy-boy",
@@ -2251,12 +2250,12 @@
       "name": "Contact Trigger",
       "original": "Contact Trigger",
       "kind": "utility",
-      "category": "In development",
+      "category": "Unavailable",
       "price": 0,
       "bundle": 1,
       "enabled": false,
-      "requires": "E24",
-      "description": "In development: attach contact detonation to the next purchased shot."
+      "description": "No configured native implementation for attach contact detonation to the next purchased shot.",
+      "unavailableReason": "No configured native implementation for attach contact detonation to the next purchased shot."
     },
     {
       "id": "force-shield",
@@ -2353,7 +2352,7 @@
     "Excavation",
     "Energy",
     "Support",
-    "In development"
+    "Unavailable"
   ],
   "looseMatter": {
     "states": [

@@ -1,0 +1,78 @@
+{
+  "description": "Small destructible title-logo patches of the native Particle Emitter. Source logo RGB is independent of material color.",
+  "devices": [
+    {
+      "name": "TERRA_TITLE_FIRE_SOURCE",
+      "basedOn": "PARTICLE_SPAWNER",
+      "emits": "FIRE",
+      "fields": {
+        "hardness": 1,
+        "flammable": 40,
+        "heatConduct": 0.12,
+        "highTemperature": 1300,
+        "highTemperatureTransition": 6,
+        "ambientSfxId": null,
+        "params": {
+          "enabled": 1,
+          "emitMode": 0,
+          "framesPerSpawn": 12,
+          "burst": 1,
+          "shape": 0,
+          "speedMin": 0.1,
+          "speedMax": 0.3,
+          "speedAngle": 4.7124,
+          "speedJitter": 0.2,
+          "temperature": 1100
+        }
+      }
+    },
+    {
+      "name": "TERRA_TITLE_WATER_SOURCE",
+      "basedOn": "PARTICLE_SPAWNER",
+      "emits": "WATER",
+      "fields": {
+        "hardness": 1,
+        "flammable": 40,
+        "heatConduct": 0.12,
+        "highTemperature": 1300,
+        "highTemperatureTransition": 6,
+        "ambientSfxId": null,
+        "params": {
+          "enabled": 1,
+          "emitMode": 0,
+          "framesPerSpawn": 24,
+          "burst": 1,
+          "shape": 0,
+          "speedMin": 0,
+          "speedMax": 0.1,
+          "speedAngle": 1.5708,
+          "temperature": 295.15
+        }
+      }
+    },
+    {
+      "name": "TERRA_TITLE_GAS_SOURCE",
+      "basedOn": "PARTICLE_SPAWNER",
+      "emits": "METHANE",
+      "fields": {
+        "hardness": 1,
+        "flammable": 40,
+        "heatConduct": 0.12,
+        "highTemperature": 1300,
+        "highTemperatureTransition": 6,
+        "ambientSfxId": null,
+        "params": {
+          "enabled": 1,
+          "emitMode": 0,
+          "framesPerSpawn": 30,
+          "burst": 1,
+          "shape": 0,
+          "speedMin": 0.05,
+          "speedMax": 0.2,
+          "speedAngle": 4.7124,
+          "temperature": 295.15
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "controllerId": "4ed275f9-5d2e-51b2-ae57-566eee8ed7f3",
+  "entityTemplateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+  "layers": [
+    {
+      "blendMode": "override",
+      "name": "base-art",
+      "stateMachine": {
+        "defaultState": "idle",
+        "states": [
+          {
+            "clipId": "8113febb-d309-55e9-8cf7-0393b77826a4",
+            "loop": true,
+            "speed": 1,
+            "stateName": "idle"
+          }
+        ],
+        "transitions": []
+      },
+      "weight": 1
+    },
+    {
+      "blendMode": "override",
+      "blendTree": {
+        "entries": [
+          {
+            "clipId": "a3f316dd-93dd-50a4-8035-6a7cf4b20bc1",
+            "speed": 1,
+            "threshold": 0
+          },
+          {
+            "clipId": "0349aa9b-76a8-5f96-a01d-d39fc12be79f",
+            "speed": 1,
+            "threshold": 0.45
+          },
+          {
+            "clipId": "84f9a799-6a7b-5b0a-a4b2-77d26129a0d3",
+            "speed": 1,
+            "threshold": 1
+          }
+        ],
+        "parameter": "speed",
+        "type": "1d"
+      },
+      "bodyMask": [
+        3,
+        6,
+        4,
+        5,
+        7,
+        8
+      ],
+      "name": "locomotion",
+      "weight": 1
+    },
+    {
+      "blendMode": "override",
+      "bodyMask": [
+        9,
+        10
+      ],
+      "name": "jetpack",
+      "stateMachine": {
+        "defaultState": "rest",
+        "states": [
+          {
+            "clipId": "41735cf4-8671-5096-8f11-83f513212e45",
+            "loop": true,
+            "speed": 1,
+            "stateName": "rest"
+          },
+          {
+            "clipId": "1892ec12-7d40-5a20-8a27-dde9a8a89d91",
+            "loop": true,
+            "speed": 1,
+            "stateName": "thrust"
+          }
+        ],
+        "transitions": [
+          {
+            "conditions": [
+              {
+                "op": "==",
+                "parameter": "levitating",
+                "value": true
+              }
+            ],
+            "crossfadeDuration": 0.1,
+            "exitTimePercent": 0,
+            "fromState": "rest",
+            "hasExitTime": false,
+            "interruptible": true,
+            "toState": "thrust"
+          },
+          {
+            "conditions": [
+              {
+                "op": "==",
+                "parameter": "levitating",
+                "value": false
+              }
+            ],
+            "crossfadeDuration": 0.1,
+            "exitTimePercent": 0,
+            "fromState": "thrust",
+            "hasExitTime": false,
+            "interruptible": true,
+            "toState": "rest"
+          }
+        ]
+      },
+      "weight": 1
+    }
+  ],
+  "parameters": {
+    "levitating": {
+      "default": false,
+      "type": "bool"
+    },
+    "speed": {
+      "default": 0,
+      "type": "float"
+    }
+  }
+}

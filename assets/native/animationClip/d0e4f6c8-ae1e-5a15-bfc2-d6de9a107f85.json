@@ -1,0 +1,43 @@
+{
+  "clipId": "d0e4f6c8-ae1e-5a15-bfc2-d6de9a107f85",
+  "clipName": "jets-rest",
+  "delay": 0,
+  "direction": "normal",
+  "duration": 1,
+  "entityTemplateId": "a8806c8c-d125-4208-a3da-55204728083f",
+  "fillMode": "both",
+  "iterationCount": 0,
+  "rootMotion": false,
+  "tracks": [
+    {
+      "bodyIndex": 9,
+      "keyframes": [
+        {
+          "easing": "linear",
+          "motorSpeed": 6,
+          "percent": 0
+        },
+        {
+          "easing": "linear",
+          "motorSpeed": 6,
+          "percent": 100
+        }
+      ]
+    },
+    {
+      "bodyIndex": 10,
+      "keyframes": [
+        {
+          "easing": "linear",
+          "motorSpeed": -6,
+          "percent": 0
+        },
+        {
+          "easing": "linear",
+          "motorSpeed": -6,
+          "percent": 100
+        }
+      ]
+    }
+  ]
+}

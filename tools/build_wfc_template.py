@@ -1,6 +1,6 @@
 """Build the artist's square WFC scaffold from Talus-authored material pixels.
 
-Run with `arch -x86_64 python3 tools/build_wfc_template.py` on this workstation.
+Run with `python3 tools/build_wfc_template.py` (requires Pillow).
 No procedural noise is substituted for the native brush: the existing exported
 noise swatch supplies the material, while this script defines the tile geometry.
 This is a bootstrap asset builder, not a command to overwrite later artist work.
@@ -24,7 +24,7 @@ NS = '{https://talus.dev/ns/world}'
 
 def main():
     OUT.mkdir(exist_ok=True)
-    swatch = ROOT / 'assets/mixed-earth-swatch.svg'
+    swatch = ROOT / 'assets/art/terrain-swatch.svg'
     (OUT / 'mixed-earth-swatch.svg').write_bytes(swatch.read_bytes())
     root = ET.parse(swatch).getroot()
     node = next(n for n in root.iter() if n.get(NS + 'channel') == 'element')
@@ -130,7 +130,7 @@ def main():
     manifest = {'version': 2, 'areaId': AREA, 'tileSizePixels': SIZE, 'tileSizeChunks': 4,
                 'grid': {'x': 0, 'y': 0, 'columns': 50, 'rows': 5},
                 'sourceSwatch': 'WFC/mixed-earth-swatch.svg',
-                'sourceSwatchNote': 'Historical bootstrap input only; current painted origins are native WFC tile art.',
+                'sourceSwatchNote': 'Palette-builder input; painted tile origins are stored as native WFC art.',
                 'gateMeaning': 'Filled bridge span. Sky is a full EMPTY edge. Fractions run left-to-right on N/S and top-to-bottom on E/W.',
                 'collarPixels': 8, 'seedPolicy': 'Fixed connecting heights; seeded ridge/bowl silhouettes and four mixed-earth textures. Source tiles are WYSIWYG in the editor and join the same palette in games.',
                 'sockets': gates, 'tiles': rows, 'placements': placements}

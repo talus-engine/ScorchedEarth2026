@@ -1,5 +1,4 @@
 {
-  "version": 9,
   "resultQuietSeconds": 3,
   "deathWatchSeconds": 2.5,
   "effects": [
@@ -7,14 +6,12 @@
       "id": "dynamite",
       "name": "Dynamite makeover",
       "enabled": false,
-      "requires": "E14: preserve-color body transmutation and 2x2 center ignition",
       "description": "Turn the actual hull into DYNAMITE, keep its paint, replace its central 2x2 pixels with FIRE."
     },
     {
       "id": "acid",
       "name": "Acid bath",
       "enabled": false,
-      "requires": "E14: body-to-liquid transmutation",
       "description": "The actual tank becomes HYDROCHLORIC_ACID and dissolves the ground."
     },
     {
@@ -28,8 +25,7 @@
       "count": 32,
       "speed": 180,
       "spread": 0.8,
-      "finishBlast": 36,
-      "requires": "E16: correct element initialization in the public particle spray API"
+      "finishBlast": 36
     },
     {
       "id": "magazine",
@@ -54,7 +50,6 @@
       "id": "last-laugh",
       "name": "The last laugh",
       "enabled": false,
-      "requires": "E14: preserve-color transmutation plus ignition after burst",
       "description": "Ten random-direction shells over 0.75 seconds, then the hull becomes lit dynamite."
     },
     {
@@ -69,8 +64,7 @@
       "speed": 220,
       "spread": 2.4,
       "ignite": true,
-      "finishBlast": 32,
-      "requires": "E16: correct element initialization in the public particle spray API"
+      "finishBlast": 32
     },
     {
       "id": "oil",
@@ -84,8 +78,7 @@
       "speed": 210,
       "spread": 1.5,
       "ignite": true,
-      "finishBlast": 48,
-      "requires": "E16: correct element initialization in the public particle spray API"
+      "finishBlast": 48
     },
     {
       "id": "volcano",
@@ -98,8 +91,7 @@
       "count": 18,
       "speed": 260,
       "spread": 1.8,
-      "finishBlast": 48,
-      "requires": "E16: correct element initialization in the public particle spray API"
+      "finishBlast": 48
     },
     {
       "id": "cryo",
@@ -112,8 +104,7 @@
       "count": 28,
       "speed": 170,
       "spread": 2.8,
-      "finishBlast": 32,
-      "requires": "E16: correct element initialization in the public particle spray API"
+      "finishBlast": 32
     },
     {
       "id": "sprinkler",
@@ -126,8 +117,7 @@
       "count": 18,
       "speed": 200,
       "spread": 2.6,
-      "finishBlast": 32,
-      "requires": "E16: correct element initialization in the public particle spray API"
+      "finishBlast": 32
     },
     {
       "id": "fireworks",

@@ -1,2 +1,97 @@
-<style>*{box-sizing:border-box}body{margin:0;color:#fff1c1;background:#080810;font:20px/1.35 'VCR OSD Mono','Courier New',monospace}main{min-height:100vh;border:4px solid #35d9ff;box-shadow:inset 0 0 0 4px #10102a;padding:24px;background:repeating-linear-gradient(0deg,#10102a 0 3px,#171735 3px 6px)}img{display:block;width:min(100%,520px);height:140px;object-fit:contain;margin:0 auto 12px;image-rendering:pixelated}h1{font-size:26px;line-height:1.1;color:#ffd447;text-shadow:3px 3px 0 #a32864;margin:6px 0 16px}p{margin:8px 0;overflow-wrap:anywhere}.phase{color:#70f8a0}.detail{font-size:16px;color:#c1cae2;min-height:42px}.count{font-size:14px;color:#35d9ff}progress{display:block;appearance:none;width:100%;height:22px;border:3px solid #fff1c1;background:#080810;accent-color:#ffd447;margin:12px 0}progress::-webkit-progress-bar{background:#080810}progress::-webkit-progress-value{background:repeating-linear-gradient(90deg,#ffd447 0 16px,#a66c28 16px 19px)}progress:indeterminate{background:repeating-linear-gradient(90deg,#ffd447 0 16px,#080810 16px 32px);animation:march 1s steps(8,end) infinite}@keyframes march{to{background-position:64px 0}}@media(max-width:500px){main{padding:16px}img{height:110px}h1{font-size:22px}}@media(prefers-reduced-motion:reduce){progress{animation:none!important}}</style>
-<main aria-label="Scorched Earth 2026 loading"><img alt="Scorched Earth 2026" src="asset:logo"><h1>Building a better crater</h1><p class="phase" data-talus-loading="phase"></p><p class="detail" data-talus-loading="detail"></p><progress data-talus-loading="progress" aria-label="Loading progress"></progress><span class="count" data-talus-loading="counter"></span></main>
+<style>
+* {
+  box-sizing:border-box;
+}
+body {
+  margin:0;
+  color:#fff1c1;
+  background:#080810;
+  font:20px/1.35 'VCR OSD Mono','Courier New',monospace;
+}
+main {
+  min-height:100vh;
+  border:4px solid #35d9ff;
+  box-shadow:inset 0 0 0 4px #10102a;
+  padding:24px;
+  background:repeating-linear-gradient(0deg,#10102a 0 3px,#171735 3px 6px);
+}
+img {
+  display:block;
+  width:min(100%,520px);
+  height:140px;
+  object-fit:contain;
+  margin:0 auto 12px;
+  image-rendering:pixelated;
+}
+h1 {
+  font-size:26px;
+  line-height:1.1;
+  color:#ffd447;
+  text-shadow:3px 3px 0 #a32864;
+  margin:6px 0 16px;
+}
+p {
+  margin:8px 0;
+  overflow-wrap:anywhere;
+}
+.phase {
+  color:#70f8a0;
+}
+.detail {
+  font-size:16px;
+  color:#c1cae2;
+  min-height:42px;
+}
+.count {
+  font-size:14px;
+  color:#35d9ff;
+}
+progress {
+  display:block;
+  appearance:none;
+  width:100%;
+  height:22px;
+  border:3px solid #fff1c1;
+  background:#080810;
+  accent-color:#ffd447;
+  margin:12px 0;
+}
+progress::-webkit-progress-bar {
+  background:#080810;
+}
+progress::-webkit-progress-value {
+  background:repeating-linear-gradient(90deg,#ffd447 0 16px,#a66c28 16px 19px);
+}
+progress:indeterminate {
+  background:repeating-linear-gradient(90deg,#ffd447 0 16px,#080810 16px 32px);
+  animation:march 1s steps(8,end) infinite;
+}
+@keyframes march {
+  to {
+    background-position:64px 0;
+  }
+}
+@media(max-width:500px) {
+  main {
+    padding:16px;
+  }
+  img {
+    height:110px;
+  }
+  h1 {
+    font-size:22px;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  progress {
+    animation:none!important;
+  }
+}
+</style>
+<main aria-label="Scorched Earth 2026 loading">
+  <img alt="Scorched Earth 2026" src="asset:logo">
+  <h1>Building a better crater</h1>
+  <p class="phase" data-talus-loading="phase"></p>
+  <p class="detail" data-talus-loading="detail"></p>
+  <progress data-talus-loading="progress" aria-label="Loading progress"></progress><span class="count" data-talus-loading="counter"></span>
+</main>

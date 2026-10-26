@@ -1,7 +1,6 @@
 {
-  "version": 1,
   "foundation": {
-    "id": "indigo-m9-foundation",
+    "id": "indigo-foundation",
     "name": "Solid foundation",
     "description": "Permanent bottom tile row",
     "tags": [
@@ -33,7 +32,7 @@
   "fill": {
     "description": "Noise brush for artillery terrain: loose dirt and sand with stone pockets. The bottom WFC row is authored separately as solid stone.",
     "group": "Indigo",
-    "id": "indigo-m9-fill",
+    "id": "indigo-fill",
     "macro": {
       "mode": "volumetric",
       "strata": [
@@ -81,7 +80,7 @@
   "surface": {
     "description": "Noise brush for artillery terrain: loose dirt and sand with stone pockets. The bottom WFC row is authored separately as solid stone.",
     "group": "Indigo",
-    "id": "indigo-m9-ridge",
+    "id": "indigo-ridge",
     "macro": {
       "mode": "surface",
       "strata": [
@@ -334,25 +333,7 @@
     "clearCombatMargin": 256,
     "steps": 4096,
     "jobs": 64,
-    "fragments": 262144,
-    "presets": [
-      {
-        "id": "indigo-m9-oak",
-        "base": "builtin-oak-sapling",
-        "name": "Indigo living oak",
-        "sheet": {}
-      },
-      {
-        "id": "indigo-m9-bramble",
-        "base": "builtin-living-bramble",
-        "name": "Indigo living bramble",
-        "sheet": {
-          "azimuthMin": 0,
-          "azimuthMax": 0,
-          "brushWidth": 0
-        }
-      }
-    ]
+    "fragments": 262144
   },
   "semantic": {
     "temperature": 0.08,
@@ -405,8 +386,8 @@
     "groundBuffer": 32
   },
   "catalog": {
-    "id": "procedural-m11",
-    "hash": "2b6e76aee7840f8b7bd706b3fbaea1e3f783806cf0b959cc151c76b33754b36a",
+    "id": "terrain-presets",
+    "hash": "8f88071aef0db1b4c73739da22eb1024174bcab3c4799397736c998aa05f88da",
     "storyFile": "Game/landscape-stories.json",
     "structures": 25
   }

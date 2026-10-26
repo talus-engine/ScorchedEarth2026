@@ -9,7 +9,8 @@ import urllib.error
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
-WORLD_ID = "d9fa0363-0172-a96e-9b10-0b0c3d9a1f58"
+PROJECT = json.loads((ROOT / "project.json").read_text())
+WORLD_ID = os.environ.get("TALUS_PROJECT_ID", PROJECT["worldId"])
 
 def call(name, args=None, timeout=120):
     token_file = Path(os.environ.get("TALUS_TOKEN_FILE", str(Path.home() / "Library/Application Support/Talus/bridge-token")))

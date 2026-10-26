@@ -41,32 +41,7 @@
   },
   "impactWaitTicks": 180,
   "generation": {
-    "default": "wfc",
-    "brushOriginX": 16384,
-    "brushWidth": 12800,
-    "brushHeight": 1280,
-    "surfaceY": 640,
-    "amplitude": 144,
-    "cellWidth": 512,
-    "detailSize": [
-      64,
-      128
-    ],
-    "recipes": [
-      "indigo-mixed-earth",
-      "builtin-brush-hills",
-      "builtin-brush-cliffside"
-    ],
-    "growthPresets": [
-      "builtin-bramble",
-      "builtin-oak-sapling"
-    ],
-    "neuralModel": "builtin-nca-eight",
-    "status": {
-      "recipes": "native-runtime",
-      "neural": "E22",
-      "livingGrowth": "E22"
-    }
+    "brushOriginX": 16384
   },
   "posture": {
     "controller": {

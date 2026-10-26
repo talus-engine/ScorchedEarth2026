@@ -1,0 +1,55 @@
+{
+  "clipId": "1892ec12-7d40-5a20-8a27-dde9a8a89d91",
+  "clipName": "jets-thrust",
+  "delay": 0,
+  "direction": "normal",
+  "duration": 1,
+  "entityTemplateId": "9600cc5c-704b-4c65-9842-1933a41827e1",
+  "fillMode": "both",
+  "frameTracks": [
+    {
+      "animationSetId": "d7dfc838-e3ee-5755-8bfc-2a5f0342798a",
+      "frameRate": 1,
+      "particleLayerId": "82c334f8-2546-50c5-9693-4db26ed37c33"
+    },
+    {
+      "animationSetId": "4a0b4c6d-03f8-513f-b037-a4d70381941b",
+      "frameRate": 1,
+      "particleLayerId": "dfcc0089-f750-563c-b399-3f42ebd5d7a3"
+    }
+  ],
+  "iterationCount": 0,
+  "rootMotion": false,
+  "tracks": [
+    {
+      "bodyIndex": 9,
+      "keyframes": [
+        {
+          "easing": "linear",
+          "motorSpeed": -6,
+          "percent": 0
+        },
+        {
+          "easing": "linear",
+          "motorSpeed": -6,
+          "percent": 100
+        }
+      ]
+    },
+    {
+      "bodyIndex": 10,
+      "keyframes": [
+        {
+          "easing": "linear",
+          "motorSpeed": 6,
+          "percent": 0
+        },
+        {
+          "easing": "linear",
+          "motorSpeed": 6,
+          "percent": 100
+        }
+      ]
+    }
+  ]
+}

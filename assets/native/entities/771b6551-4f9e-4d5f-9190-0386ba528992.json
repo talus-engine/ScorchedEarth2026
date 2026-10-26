@@ -1,0 +1,164 @@
+{
+  "bodies": [
+    {
+      "bodyIndex": 0,
+      "isStatic": false,
+      "pixels": [
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 3
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 3
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 3
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 3
+        }
+      ]
+    }
+  ],
+  "canvasHeight": 128,
+  "canvasWidth": 64,
+  "description": "Standard explosive shell; terrain carving and credited blast damage.",
+  "isPlayer": false,
+  "isStatic": false,
+  "itemData": {
+    "isMod": true,
+    "maxStack": 99,
+    "modSpec": {
+      "castDelayDelta": 0,
+      "kind": "projectile",
+      "powerCost": 0,
+      "projectile": {
+        "aoeRadius": 115,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 52,
+        "damage": 95,
+        "damageType": "blast",
+        "detonate": {
+          "atLifetime": true,
+          "looseMatter": {
+            "states": [
+              "solid",
+              "powder"
+            ]
+          },
+          "onBody": true,
+          "onTerrain": true
+        },
+        "drag": 0,
+        "elementType": 23,
+        "gravityScale": 1,
+        "homing": 2,
+        "homingDelay": 0.3,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0
+      },
+      "rechargeDelta": 0,
+      "recoilDelta": 0
+    },
+    "stackable": true,
+    "tradeValue": 25
+  },
+  "joints": [],
+  "pixels": [],
+  "shaderId": null,
+  "shaderInterest": false,
+  "tags": [],
+  "templateId": "771b6551-4f9e-4d5f-9190-0386ba528992",
+  "templateName": "scorched-earth/homing-rocket-shell",
+  "vendorData": null
+}

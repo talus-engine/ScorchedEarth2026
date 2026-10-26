@@ -28,7 +28,7 @@ def inventory(root):
             raise RuntimeError('Refusing symlink: ' + str(p))
         if not p.is_file() or any(part.startswith('.') for part in p.relative_to(root).parts):
             continue
-        if rel.startswith('Thumbnail/') or rel in GENERATED or p.name.startswith('example-'):
+        if rel.startswith(('Thumbnail/', 'Worlds/', 'AI/world-raster/samples/')) or rel in GENERATED or p.name.startswith('example-'):
             continue
         if p.suffix == '.js' and p.with_suffix('.ts').exists():
             continue
@@ -66,7 +66,7 @@ def context():
     c = call('engine_describe_context')
     w = c['world']
     if not w['isEditorMode'] or w['templateId'] != WORLD_ID or not w['engineBooted']:
-        raise RuntimeError('Open the Indigo template in the Talus editor first')
+        raise RuntimeError('Open the configured project in the Talus editor first')
     mount = c['files'].get('hostMount')
     if not mount or not mount['mounted']:
         raise RuntimeError('The Talus file mount is offline')
@@ -140,7 +140,7 @@ def main():
     p.add_argument('--path', action='append', help='Select individual relative paths; repeat as needed')
     args = p.parse_args()
     live = context()
-    rows = sync(args.action, ROOT / 'world', live, ROOT / 'artifacts/talus-sync/baseline.json', args.path, install_text)
+    rows = sync(args.action, ROOT / 'world', live, ROOT / '.build/sync/baseline.json', args.path, install_text)
     for row in rows:
         if row['state'] != 'same':
             print(('APPLIED ' if row.get('applied') else '') + row['state'] + ' ' + row['path'])

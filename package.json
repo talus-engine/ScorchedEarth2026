@@ -1,0 +1,13 @@
+{
+  "name": "scorched-earth-2026-template",
+  "private": true,
+  "description": "A turn-based artillery game built with native Talus scripts, graphs and menus.",
+  "scripts": {
+    "check": "node tools/check.cjs",
+    "test": "node --test --test-concurrency=1 tests/*.test.cjs",
+    "audit": "python3 tools/audit.py",
+    "menus": "python3 tools/menus.py",
+    "test:native": "node tools/native-tests.cjs"
+  },
+  "devDependencies": {"typescript": "5.9.3"}
+}

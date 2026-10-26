@@ -1,0 +1,69 @@
+# Game architecture
+
+Talus owns particles, rigid bodies, joints, animation, character controllers,
+streaming, collision, native weapon planning, terrain tools and persistence.
+The game controls who can act, when actions resolve, which native operations
+run, and what the menus display.
+
+`world/Scripts/main.ts` creates the game only in a playable instance.
+`Scripts/lib/game.ts` constructs every service before registering events. Native
+libraries use `import service = require('service')` and `export = create`.
+`context.ts` describes shared state and the service boundaries. Libraries are
+loaded by Talus once per script sandbox and do not start as independent scripts.
+
+| Library | Responsibility |
+| --- | --- |
+| `lifecycle`, `menus` | Read configuration, create the roster, restore a match, publish UI state and route player input |
+| `turns`, `session` | Advance turns, resolve results, persist match state and hold save barriers during unfinished actions |
+| `combat`, `chaos` | Spend ammunition on accepted launches, handle projectile payloads and run delayed death effects |
+| `aiming`, `cpu` | Survey terrain, choose tactics, move, learn from impacts and retain successful shots |
+| `equipment`, `economy` | Drive native controllers, reconcile finite utility consumption, purchase stock and award cash |
+| `presentation`, `camera` | Smooth tracking, three-second dialogue, arcade cards and native text labels |
+| `residency`, `supplies` | Restore parked tanks, own bounded emitter regions, focus and award supply drops |
+| `generation`, `landscape`, `brushes` | Select pinned presets, place terrain and physical structures, find supported deployment positions |
+| `core` | Shared predicates, clamping and deterministic seed hashing |
+
+## Turn sequence
+
+Deployment finds supported open ground and creates the roster's native entity
+templates. A CPU-only opening armory buys automatically. Human players can shop
+before beginning. A turn centers the camera smoothly on its tank, prepares its
+posture and enables only that tank's controller or CPU graph.
+
+Firing queues a presentation: camera arrival, dialogue for three seconds, then
+an accepted native cast. The cast ends the tank's input period. Projectile
+launch, collision, hit and end events drive children, damage rewards and impact
+feedback. Resolution uses a bounded settling interval; powders need not become
+perfectly still. The score card precedes the next player card and turn.
+
+Death has its own camera/dialogue/effect sequence. Death emitters can continue
+while another tank acts. Their small native simulation regions exist only while
+emitting. A projectile can travel away from the shooter, which may be parked by
+the engine. Durable entity IDs, native residency and actual projectile events
+remain authoritative.
+
+## State ownership
+
+- `talus.state['indigo.match']`: the current instance's roster, turn, selected
+  generation plan, CPU observations and pending work.
+- Installed state: named wallets, stock, score/series records, preferences and
+  shuffled dialogue decks, shared across plays.
+- NPC blackboards: the current controller/graph inputs, target, angle, power,
+  persona, aiming result and bounded CPU memory.
+- `talus.ui`: derived menu/HUD values. HTML binds reactively through native
+  `data-talus-*` attributes; buttons emit `menu.<slot>.<action>` events.
+- Ephemeral handles: camera intent, native region leases, card promises and
+  animation timing. These are rebuilt after loading, never serialized as handles.
+
+Payout receipts prevent a result from paying twice. Utility consumption and its
+stock debit share one installed-state write. Save barriers cover deployment,
+volleys, presentations and unfinished effects. The pause menu offers an optional finish-and-save path at a safe boundary.
+Quit stays available immediately and may discard unsaved battle progress.
+
+## Graph and dialogue
+
+`world/Graphs/cpu-turn.json` uses blackboard decisions to aim and fire through
+native graph nodes and named game events. Scripts own strategy and sequencing;
+the graph owns its native action chain. `world/Dialogue/*.ink` supplies the
+announcer stories. Persona shouts are data in `Game/persona-voices.json`, with
+arbitrary shout type IDs configured by `Game/personas.json`.
