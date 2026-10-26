@@ -25,6 +25,13 @@ def install(target, receipts, palette=None):
     if not backup.exists():
         write(backup, current)
     original = json.loads(backup.read_text())
+    # A retained backup is safe for a rerun only when the live record is still
+    # that source, or exactly the rig we last installed. In particular, never
+    # overwrite later body physics/equipment edits with a historical snapshot.
+    retained = ROOT / 'assets/m13/templates/tanks' / (target + '.json')
+    if current != original and (not retained.exists() or current != json.loads(retained.read_text())):
+        raise RuntimeError('Tank changed since its retained snapshots: ' + target
+                           + '. Reconcile current body/joint fields before reinstalling.')
     proposal = build(original, receipts, target_template_id=target, palette=palette)
     patch = proposal['templatePatch']
     call('save_entity_template', {'template': target, 'patch': patch, 'dryRun': True})
@@ -44,6 +51,11 @@ def install(target, receipts, palette=None):
     for field, value in current.items():
         if field not in patch:
             assert actual.get(field) == value, ('Unexpected non-art change', field)
+    for before_body in original['bodies']:
+        after_body = next(body for body in actual['bodies'] if body['bodyIndex'] == before_body['bodyIndex'])
+        assert ({k: v for k, v in before_body.items() if k != 'pixels'}
+                == {k: v for k, v in after_body.items() if k != 'pixels'}), 'Existing body settings changed'
+    assert actual['joints'][:len(original['joints'])] == original['joints'], 'Existing joints changed'
     write(ROOT / 'assets/m13/templates/tanks' / (target + '.json'), actual)
     write(ROOT / 'assets/m13/animations' / (target + '.json'), saved)
     write(ROOT / 'assets/m13/rigs' / (target + '.json'), proposal)
