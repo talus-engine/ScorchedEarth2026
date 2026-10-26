@@ -181,6 +181,7 @@ async function main() {
     p.control = 'human'; f.m.turnNumber = 7
     let completed = false
     const next = f.api.beginTurn(false).then(() => { completed = true })
+    await flush() // The supply-boundary check yields before camera tracking begins.
     f.status('arrived'); await advance(0)
     f.emit('tick.frame', { dt: 0 }); assert.equal(f.ui.arcadeCards.length, 1)
     f.m.presentation.active = finishedDeath(f, f.m.roster[1]); tank.residency = 'stored'

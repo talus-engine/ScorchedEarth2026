@@ -656,9 +656,9 @@ if (!talus.editor.available) {
   }
   function doctrine(p: any) {
     const profile = personaFor(p)?.strategy || { risk: .5, saveFraction: .2, weaponPreferences: ['heavy', 'standard'],
-      utilityPreferences: ['battery'], impactMemory: 2, candidateBudget: 24, angleErrorDegrees: 2, powerErrorPercent: 3 }
+      utilityPreferences: ['battery'], candidateBudget: 24, learningRate: .55 }
     const skill = personaCatalog?.personas.find((v: any) => v.skill === match?.cpuSkill)?.strategy
-    return skill ? { ...profile, ...Object.fromEntries(['impactMemory', 'candidateBudget', 'angleErrorDegrees', 'powerErrorPercent'].map(k => [k, skill[k]])) } : profile
+    return skill ? { ...profile, ...Object.fromEntries(['candidateBudget', 'learningRate'].map(k => [k, skill[k]])) } : profile
   }
   function aiRandom(p: any) {
     // Combat decisions never draw from terrain, dialogue or death-effect RNG.
@@ -695,8 +695,71 @@ if (!talus.editor.available) {
     if (!(s.speed > 0)) return 'native-forecast-stationary-cast'
     return null
   }
+  function fireControl(p: any, targetId: string, weapon: string, create = false): any {
+    const records = p.fireControls || []
+    let memory = records.find((m: any) => m.targetId === targetId && m.weapon === weapon)
+    if (!memory && create) {
+      memory = { targetId, weapon, samples: 0, hits: 0, offsetX: 0, gain: 1, best: null, last: null }
+      // A different gun/target must not evict the last shell's feedback. Keep
+      // durable, per-pair records; no unbounded journal or cross-round identity.
+      p.fireControls = [...records, memory].slice(-64)
+    }
+    return memory
+  }
+  function comparableShot(sample: any, origin: Vec2, target: Vec2, exact = false): boolean {
+    if (!sample?.origin || !sample.target) return false
+    const dx = target.x - origin.x, oldDx = sample.target.x - sample.origin.x
+    return Math.sign(dx) === Math.sign(oldDx)
+      && Math.abs((target.y - origin.y) - (sample.target.y - sample.origin.y)) <= (exact ? 2 : 40)
+      && Math.abs(dx - oldDx) <= (exact ? 2 : Math.max(64, Math.abs(oldDx) * .2))
+      && Math.hypot(origin.x - sample.origin.x, origin.y - sample.origin.y) <= (exact ? 2 : 160)
+      && Math.hypot(target.x - sample.target.x, target.y - sample.target.y) <= (exact ? 2 : 160)
+      && Math.abs((sample.wind ?? 0) - (talus.world.wind || 0)) <= (exact ? .01 : 5)
+  }
+  function observeCpuShot(p: any, observation: any) {
+    p.impacts = [...(p.impacts || []), observation].slice(-64)
+    const memory = fireControl(p, observation.targetId, observation.weapon, true)
+    // An apex release, deliberate excavation, an early wall/body hit, or an
+    // expired/out-of-bounds shell says nothing about ordinary range error.
+    const shot = observation.solution
+    const moved = Math.hypot(observation.target.x - observation.targetAtLaunch.x, observation.target.y - observation.targetAtLaunch.y)
+    const useful = (shot?.kind === 'tank' || observation.hit && ['field', 'uncertain-tank'].includes(shot?.kind))
+      && observation.reason === 'detonated' && !observation.split
+      && moved <= 12 && (observation.hit || observation.collision === 'terrain'
+        && Math.abs(observation.dy) <= 40 && Math.abs(observation.dx) <= Math.max(128, Math.abs(observation.target.x - observation.origin.x) * .3))
+    observation.learning = useful ? 'range-feedback' : 'diagnostic-only'
+    if (useful) {
+      memory.samples++; if (observation.hit) memory.hits++
+      const sample = { origin: observation.origin, target: observation.targetAtLaunch, wind: observation.wind,
+        angle: observation.angle, power: observation.power, offsetX: shot.offsetX || 0,
+        error: Math.hypot(observation.dx, observation.dy), direct: observation.direct, turn: observation.turn }
+      const best = memory.best, comparable = comparableShot(best, sample.origin, sample.target, true)
+      if (observation.hit && (!comparable || observation.direct && !best.direct
+        || observation.direct === best.direct && sample.error < best.error)) memory.best = sample
+      const regressed = comparable && (!observation.hit || best.direct && !observation.direct
+        || observation.direct === best.direct && sample.error > best.error + 2)
+      if (regressed) {
+        // Keep the best successful solution; shrink subsequent corrections.
+        // Never replace a proven hit with the most recent worse experiment.
+        memory.gain = Math.max(.125, memory.gain / 2)
+        memory.offsetX = best.offsetX
+      } else {
+        const rate = (doctrine(p).learningRate ?? .65) * memory.gain
+        const correction = observation.direct ? 0 : clamp(observation.dx * rate, observation.hit ? -12 : -96, observation.hit ? 12 : 96)
+        memory.offsetX = clamp(sample.offsetX - correction, -160, 160)
+      }
+      memory.last = sample
+    }
+    const tank = entity(p)
+    if (tank?.can('blackboard.set')) {
+      tank.blackboard.set('custom.aiImpacts', p.impacts)
+      tank.blackboard.set('custom.fireControls', p.fireControls)
+    }
+    record('cpu-observation', observation)
+  }
   async function planCpuShot(p: any, turn: number): Promise<boolean> {
     const tank = entity(p), token = utilityGeneration, d = doctrine(p)
+    p.fireSolution = null
     const valid = () => active() && current() === p && !p.eliminated && match.turnNumber === turn && token === utilityGeneration
     const origin = tank.position!, trials: any[] = [], blocked: { target: any, at: BallisticObstruction }[] = []
     const snapshots = new Map<string, EntitySnapshot>()
@@ -708,14 +771,15 @@ if (!talus.editor.available) {
     const snapshot = (r: any) => snapshots.get(r.entityId)!
     const distance = (r: any) => Math.hypot(snapshot(r).x - origin.x, snapshot(r).y - origin.y)
     const cluster = (r: any) => targets.filter((v: any) => v !== r && Math.hypot(snapshot(v).x - snapshot(r).x, snapshot(v).y - snapshot(r).y) < 200).length
-    targets.sort((a: any, b: any) => (distance(a) + (snapshot(a).health ?? 100) * 2 - cluster(a) * (p.personaId === 'domino' ? 180 : 30))
-      - (distance(b) + (snapshot(b).health ?? 100) * 2 - cluster(b) * (p.personaId === 'domino' ? 180 : 30)))
+    const targetPriority = (r: any) => distance(r) + (snapshot(r).health ?? 100) * 2
+      - cluster(r) * (p.personaId === 'domino' ? 180 : 30)
+      - ((p.fireControls || []).some((m: any) => m.targetId === r.entityId && owned(p, m.weapon) > 0
+        && comparableShot(m.best, origin, snapshot(r))) ? 400 : 0)
+    targets.sort((a: any, b: any) => targetPriority(a) - targetPriority(b))
     if (!targets.length) return false
     if ((tank.health ?? 100) <= 70) useBattery(p)
     syncLoadout(p)
     let budget = d.candidateBudget
-    const angleError = (aiRandom(p) * 2 - 1) * d.angleErrorDegrees * Math.PI / 180
-    const powerError = (aiRandom(p) * 2 - 1) * d.powerErrorPercent / 100
     const ownedWeapons = market.items.filter((i: any) => i.enabled && i.kind === 'weapon' && owned(p, i.id) > 0)
     const skipped = ownedWeapons.map((item: any) => ({ item: item.id, reason: cpuWeaponUnavailable(item) })).filter((v: any) => v.reason)
     // Capability filtering precedes ranking. A paid but unsupported forecast
@@ -732,7 +796,9 @@ if (!talus.editor.available) {
       const closeRapid = item.id === 'machine-gun' && distance(target) < 400 ? 80 : 0
       const benefit = (item.projectile?.damage || item.behavior?.childDamage || 0) * .25 + cluster(target) * radius * .15
       const paid = item.id !== 'standard' ? 80 : 0
-      return { item, score: (pref >= 0 ? 140 - pref * 25 : -80) + paid + benefit + closeRapid - collateral - ineffective }
+      const learned = fireControl(p, target.entityId, item.id)
+      const proven = comparableShot(learned?.best, origin, snapshot(target)) ? 220 : 0
+      return { item, score: (pref >= 0 ? 140 - pref * 25 : -80) + paid + benefit + closeRapid + proven - collateral - ineffective }
     }).sort((a: any, b: any) => b.score - a.score)
     const candidateTargets = targets.slice(0, 2)
     const corridors = candidateTargets.map((target: any) => {
@@ -751,6 +817,11 @@ if (!talus.editor.available) {
     const accept = (target: any, item: any, point: Vec2, plan: BallisticPlan, tactic: string, terrain: boolean, memory: number) => {
       p.weaponId = item.id; wallet(p).selected = item.id; wallet(p).revision++; saveBank()
       p.targetId = target.entityId; p.plannedTurn = turn; p.tactic = tactic
+      p.fireSolution = { turn, weapon: item.id, targetId: target.entityId, origin: { ...origin }, target: snapshot(target),
+        point: { ...point }, offsetX: point.x - snapshot(target).x, wind: talus.world.wind || 0,
+        hullAngle: tank.snapshot()?.angle,
+        angle: plan.solution!.angle, power: plan.solution!.power, predicted: plan.solution!.end,
+        kind: terrain ? 'terrain' : item.behavior?.mode === 'apex' ? 'apex' : 'tank' }
       tank.blackboard.set('custom.indigoTarget', targetReference(target, point, terrain))
       tank.blackboard.set('custom.aimPlan', JSON.parse(JSON.stringify(plan))); tank.blackboard.set('custom.aimRefusal', null)
       tank.blackboard.set('custom.aimAngle', plan.solution!.angle); tank.blackboard.set('custom.aimPower', plan.solution!.power)
@@ -795,7 +866,9 @@ if (!talus.editor.available) {
       const options = ranked(target).map((v: any) => v.item)
       // All supported inventory is ranked. Within a small skill budget reserve
       // a fallback cannon request, instead of spending everything on one gun.
-      const maximum = Math.max(2, Math.floor(attackBudget / Math.max(1, candidateTargets.length - targetIndex)))
+      // Give a small useful shortlist enough angles to solve an arc. A large
+      // inventory must not dilute every weapon down to one candidate.
+      const maximum = attackBudget >= 36 ? 3 : 2
       const selected = options.slice(0, maximum)
       if (!selected.some((i: any) => i.id === 'standard')) {
         if (selected.length >= maximum) selected.pop()
@@ -813,28 +886,46 @@ if (!talus.editor.available) {
           if (y !== null) { point = { x, y: y - 2 }; support = true }
         }
         if (!support && !carrier && spec.damage === 0 && (spec.carveRadius > 0 || item.behavior?.operation === 'fracture')) continue
-        const memory = (p.impacts || []).filter((m: any) => m.targetId === target.entityId && m.weapon === item.id
-          && Math.hypot(m.origin.x - origin.x, m.origin.y - origin.y) < 48 && Math.hypot(m.target.x - at.x, m.target.y - at.y) < 48).slice(-d.impactMemory)
-        const last = memory[memory.length - 1]
-        if (!support && !carrier && last && Math.abs(last.dx) < 128 && Math.abs(last.dy) < 96)
-          point.x -= clamp(memory.reduce((sum: number, m: any) => sum + m.dx, 0) / memory.length * .35, -40, 40)
+        const memory = fireControl(p, target.entityId, item.id)
+        const last = comparableShot(memory?.last, origin, at) ? memory.last : null
+        const best = comparableShot(memory?.best, origin, at, true) ? memory.best : null
+        if (!support && !carrier && last) point.x += memory.offsetX
         const obstruction = corridors[targetIndex].obstruction
-        const high = carrier || at.y < origin.y - 48 || !!(obstruction && obstruction.entity?.id !== target.entityId) || !!(last && Math.abs(last.dx) >= 128)
+        const high = carrier || at.y < origin.y - 48 || !!(obstruction && obstruction.entity?.id !== target.entityId)
         const remaining = selected.length - optionIndex + (candidateTargets.length - targetIndex - 1) * selected.length
-        const allowance = Math.max(1, Math.floor(attackBudget / remaining))
+        const allowance = Math.max(1, Math.floor(attackBudget / Math.min(remaining, 2)))
         const request: BallisticPlanRequest = { target: point, ...(support ? {} : { targetEntityId: target.entityId }),
-          goal: carrier ? 'apex' : 'impact', preferHighArc: high, minElevation: 5, maxElevation: 89,
-          angleStep: clamp(Math.ceil(84 / allowance), 2, 30), maxCandidates: allowance,
-          maxSteps: 500000, maxCells: 1000000, terrain: 'materialize', tolerance: support ? 18 : Math.min(80, 28 + d.angleErrorDegrees * 8),
-          ...(spec.speedAtMinPower === spec.speed ? { fixedAngle: Math.atan2(point.y - origin.y, point.x - origin.x) } : {}),
-          angleOffset: angleError, powerOffset: powerError }
-        const plan = await survey(target, item, request, support ? 'support' : carrier ? 'apex' : 'tank')
+          goal: carrier ? 'apex' : 'impact', preferHighArc: high, minElevation: high ? 60 : 5, maxElevation: 89,
+          angleStep: clamp((high ? 29 : 84) / Math.max(1, allowance - 1), .25, 30), maxCandidates: allowance,
+          maxSteps: 500000, maxCells: 1000000, terrain: 'materialize', tolerance: support ? 18 : 8 }
+        // Fixed-speed guns need an elevation search too: pointing at the enemy
+        // ignores drop. Sweep a small fine grid above the direct sight line.
+        if (spec.speedAtMinPower === spec.speed) {
+          const right = point.x >= origin.x, line = Math.atan2(point.y - origin.y, Math.abs(point.x - origin.x))
+          request.minElevation = 0; request.maxElevation = Math.max(1, Math.min(8, (allowance - 1) * .25))
+          request.angleStep = .25; request.preferHighArc = false
+          request.angleOffset = clamp(right ? line : -line, -.8, .8)
+        }
+        let plan: BallisticPlan | null = null
+        // Try the proven angle first, solving power again against current
+        // native geometry. No random skill offset is ever added to a hit.
+        const prior = best || last
+        if (!support && !carrier && prior && allowance >= 2) {
+          plan = await survey(target, item, { ...request, fixedAngle: prior.angle, angleOffset: 0, maxCandidates: 1 }, 'tank')
+          if (!plan) return false
+          attackBudget -= Math.max(1, plan.work.candidates)
+          request.maxCandidates = allowance - 1
+        }
+        if (plan?.status !== 'clear' || !plan.solution) {
+          plan = await survey(target, item, request, support ? 'support' : carrier ? 'apex' : 'tank')
+          if (!plan) return false
+          attackBudget -= Math.max(1, plan.work.candidates)
+        }
         if (!plan) return false
-        attackBudget -= Math.max(1, plan.work.candidates)
         if (plan.status !== 'clear' || !plan.solution) continue
         return accept(target, item, point, plan, support ? 'Remove observed support' : carrier ? 'Clear carrier to apex'
           : cluster(target) && p.personaId === 'domino' ? 'Cluster / chain opportunity' : high ? 'High arc over obstruction'
-          : last ? 'Observed-miss correction' : 'Surveyed firing corridor', support, memory.length)
+          : best ? 'Refining a proven firing solution' : last ? 'Observed-miss correction' : 'Surveyed firing corridor', support, memory?.samples || 0)
       }
     }
     // Intentional demolition is useful even when no enemy is directly hittable.
@@ -850,8 +941,7 @@ if (!talus.editor.available) {
       const allowance = Math.min(budget, Math.max(2, Math.floor(d.candidateBudget / 4)))
       const plan = await survey(obstruction.target, item, { target: point, goal: 'impact', preferHighArc: true,
         minElevation: 5, maxElevation: 89, angleStep: clamp(Math.ceil(84 / allowance), 2, 30), maxCandidates: allowance,
-        maxSteps: 500000, maxCells: 1000000, terrain: 'materialize', tolerance: 18,
-        angleOffset: angleError, powerOffset: powerError }, 'demolition')
+        maxSteps: 500000, maxCells: 1000000, terrain: 'materialize', tolerance: 18 }, 'demolition')
       if (!plan) return false
       if (plan.status === 'clear' && plan.solution)
         return accept(obstruction.target, item, point, plan, 'Open an observed firing lane', true, 0)
@@ -872,6 +962,9 @@ if (!talus.editor.available) {
         if (!tank.weapon.equip(probe.item.template) || tank.weapon.state?.equipped !== probe.item.template) continue
         p.weaponId = probe.item.id; wallet(p).selected = probe.item.id; wallet(p).revision++; saveBank()
         p.targetId = probe.target.entityId; p.plannedTurn = turn; p.tactic = 'Exploratory native arc · liquid drag uncertain'
+        p.fireSolution = { turn, weapon: probe.item.id, targetId: p.targetId, origin: { ...origin }, target,
+          point: probe.point, offsetX: probe.point.x - target.x, angle: probe.candidate.angle, power: probe.candidate.power,
+          kind: 'uncertain-tank', wind: talus.world.wind || 0 }
         tank.blackboard.set('custom.indigoTarget', targetReference(probe.target, probe.point))
         tank.blackboard.set('custom.aimAngle', probe.candidate.angle); tank.blackboard.set('custom.aimPower', probe.candidate.power)
         tank.blackboard.set('custom.decisionTurn', turn)
@@ -889,11 +982,16 @@ if (!talus.editor.available) {
         p.fieldProbeCount = trial + 1; p.targetId = target.entityId; p.weaponId = 'standard'; p.plannedTurn = turn
         wallet(p).selected = 'standard'; wallet(p).revision++; saveBank(); tank.weapon.equip(itemById('standard').template)
         const powers = [.25, .4, .55, .7, .85], elevation = trial % 2 ? 72 : 83
+        const memory = fireControl(p, target.entityId, 'standard'), best = comparableShot(memory?.best, origin, at, true) ? memory.best : null
+        const angle = best?.angle ?? -(at.x < origin.x ? 180 - elevation : elevation) * Math.PI / 180
+        const power = best?.power ?? powers[trial % powers.length]
         tank.blackboard.set('custom.indigoTarget', targetReference(target, at))
-        tank.blackboard.set('custom.aimAngle', -(at.x < origin.x ? 180 - elevation : elevation) * Math.PI / 180)
-        tank.blackboard.set('custom.aimPower', powers[trial % powers.length]); tank.blackboard.set('custom.decisionTurn', turn)
+        tank.blackboard.set('custom.aimAngle', angle)
+        tank.blackboard.set('custom.aimPower', power); tank.blackboard.set('custom.decisionTurn', turn)
         tank.blackboard.set('custom.aimPlan', null); tank.blackboard.set('custom.aimRefusal', 'deflection-fields')
-        p.tactic = 'Exploratory high arc through magnetic field'
+        p.fireSolution = { turn, weapon: 'standard', targetId: target.entityId, origin: { ...origin }, target: at,
+          point: at, offsetX: 0, angle, power, kind: 'field', wind: talus.world.wind || 0 }
+        p.tactic = best ? 'Repeat observed hit through magnetic field · uncertain' : 'Exploratory high arc through magnetic field'
         record('cpu-field-probe', { name: p.name, trial, trials, skipped }); persist(); publish(); return true
       }
       tank.blackboard.set('custom.aiDecision', { turn, status: 'refused', trials, skipped, budgetRemaining: budget })
@@ -983,6 +1081,12 @@ if (!talus.editor.available) {
     const style = doctrine(p).exploration
     if (!style || p.exploredTurn === turn || !valid() || owned(p, 'fuel-tank') <= 0 || match.remaining <= 4) return
     p.exploredTurn = turn
+    // Keep exploring when searching, but don't gratuitously abandon a proven
+    // emplacement. Emergency movement/escape earlier in the turn still wins.
+    if ((p.fireControls || []).some((m: any) => {
+      const target = match.roster.find((r: any) => r.entityId === m.targetId), at = targetSnapshot(target)
+      return at && owned(p, m.weapon) > 0 && comparableShot(m.best, entity(p).position!, at, true)
+    })) { record('cpu-hold-solution', { name: p.name, turn }); return }
     const roll = aiRandom(p); persist()
     if (roll >= style.chance) return
     const e = entity(p), origin = e.position!, visits = p.exploredPositions || []
@@ -1910,13 +2014,49 @@ if (!talus.editor.available) {
   function performAttack(p: any) {
     const e = entity(p), s = e.snapshot()!
     if (!e.isLive || !s?.alive) { checkRoster(); return }
+    const solution = p.fireSolution, target = targetSnapshot(match.roster.find((r: any) => r.entityId === p.targetId))
+    // Three seconds of dialogue may let powder settle or a hull rotate. A
+    // stale muzzle is not a learning problem: re-solve before spending ammo.
+    if (p.control === 'cpu' && solution?.kind === 'tank' && solution.turn === match.turnNumber
+      && p.fireRefreshTurn !== match.turnNumber && target && (!comparableShot(solution, s, target, true)
+        || Math.abs((solution.hullAngle ?? s.angle) - s.angle) > .02)) {
+      p.fireRefreshTurn = match.turnNumber; run(() => refreshCpuShot(p, solution)); return
+    }
     aim(); p.shotFrom = { x: s.x, y: s.y }
     match.phase = 'firing'; match.waitTicks = 0; match.message = 'Firing'
     match.attack = { owner: p.entityId, item: p.weaponId, damageBefore: p.damage || 0, rootId: null, ids: {},
       launched: 0, ended: 0, emitted: 1, tasks: 0, pending: [], launchClock: null, spent: false, lastPoint: null,
-      angle: e.weapon.state!.angle, power: Number(e.blackboard.get('custom.power')), origin: null }
+      angle: e.weapon.state!.angle, power: Number(e.blackboard.get('custom.power')), origin: null,
+      targetId: p.targetId, targetAtLaunch: targetSnapshot(match.roster.find((r: any) => r.entityId === p.targetId)),
+      solution: p.fireSolution?.turn === match.turnNumber && p.fireSolution.weapon === p.weaponId ? p.fireSolution : null,
+      wind: talus.world.wind || 0 }
     record('fire-request', { owner: e.id, item: itemById(p.weaponId).id, template: itemById(p.weaponId).template, actualEquipped: e.weapon.state?.equipped, stock: unlimited(p.weaponId) ? 'unlimited' : owned(p,p.weaponId), angle: e.blackboard.get('custom.angle'), power: e.blackboard.get('custom.power') })
     if (!e.weapon.fire()) fail('Cannon did not accept the trigger')
+  }
+  async function refreshCpuShot(p: any, previous: any) {
+    const tank = entity(p), token = utilityGeneration, turn = match.turnNumber
+    const valid = () => token === utilityGeneration && match?.phase === 'telegraph' && current() === p
+      && !p.eliminated && match.turnNumber === turn && p.weaponId === previous.weapon
+    const target = targetSnapshot(match.roster.find((r: any) => r.entityId === p.targetId))
+    if (!target || !valid()) return
+    const point = { x: target.x + previous.offsetX, y: target.y }
+    const request: BallisticPlanRequest = { target: point, targetEntityId: p.targetId, fixedAngle: previous.angle,
+      maxCandidates: 1, tolerance: 8, terrain: 'materialize', maxSteps: 500000, maxCells: 1000000 }
+    const plan = await tank.weapon.plan(request)
+    while (valid() && talus.sim.paused) await talus.sleepTicks(1)
+    if (!valid()) return
+    record('cpu-shot-rechecked', { name: p.name, turn, reason: plan.reason, previous, plan })
+    if (plan.status !== 'clear' || !plan.solution) {
+      match.phase = 'turn'
+      cpuNoAction(p, 'Firing position changed during dialogue; fresh native survey refused: ' + plan.reason)
+      return
+    }
+    p.fireSolution = { ...previous, origin: { ...tank.position! }, target, point, hullAngle: tank.snapshot()?.angle,
+      angle: plan.solution.angle, power: plan.solution.power, wind: talus.world.wind || 0, predicted: plan.solution.end }
+    tank.blackboard.set('custom.aimPlan', JSON.parse(JSON.stringify(plan)))
+    tank.blackboard.set('custom.aimAngle', plan.solution.angle); tank.blackboard.set('custom.aimPower', plan.solution.power)
+    tank.blackboard.set('custom.angle', -plan.solution.angle * 180 / Math.PI); tank.blackboard.set('custom.power', plan.solution.power * 100)
+    performAttack(p)
   }
   function attackShell(at: any, spec: any, depth = 1) {
     const a = match.attack
@@ -2085,7 +2225,7 @@ if (!talus.editor.available) {
     const angle = Number(tank.blackboard.get('custom.aimAngle')), power = Number(tank.blackboard.get('custom.aimPower'))
     if (!Number.isFinite(angle) || !Number.isFinite(power)) throw new Error('Ballistic graph returned invalid aim')
     tank.blackboard.set('custom.angle', -angle * 180 / Math.PI)
-    tank.blackboard.set('custom.power', clamp(power * 100, 1, 100))
+    tank.blackboard.set('custom.power', clamp(power * 100, 0, 100))
     if (p.autoAimTurn === match.turnNumber) {
       p.autoAimTurn = null
       wallet(p).stock['lazy-boy'] = Math.max(0, owned(p, 'lazy-boy') - 1); wallet(p).revision++; saveBank()
@@ -3092,9 +3232,15 @@ if (!talus.editor.available) {
       a.spent = true; saveBank()
     }
     const snapshot = e.projectile.snapshot()
-    a.ids[e.projectileId] = { depth: childDepth, vy: snapshot?.vy ?? -1, vx: snapshot?.vx ?? 0, split: false }
+    a.ids[e.projectileId] = { depth: childDepth, vy: snapshot?.vy ?? -1, vx: snapshot?.vx ?? 0, split: false,
+      launch: snapshot && { x: snapshot.x, y: snapshot.y, vx: snapshot.vx, vy: snapshot.vy }, launchClock: talus.sim.clock }
     a.launched++
     if (a.rootId == null) { a.rootId = e.projectileId; a.launchClock = talus.sim.clock; a.origin = { x: snapshot!.x, y: snapshot!.y } }
+    if (childDepth === 0 && a.solution) record('cpu-launch-check', {
+      owner: a.owner, weapon: a.item, target: a.targetId, planned: a.solution,
+      actual: { origin: snapshot && { x: snapshot.x, y: snapshot.y }, vx: snapshot?.vx, vy: snapshot?.vy,
+        angle: a.angle, power: a.power / 100, tank: p.shotFrom, target: a.targetAtLaunch },
+    })
     let homingAccepted: boolean | null = null
     if (item.behavior?.mode === 'homing' && p.targetId) {
       homingAccepted = e.projectile.setTarget(p.targetId)
@@ -3112,7 +3258,14 @@ if (!talus.editor.available) {
       splitAttack(entry, e.projectile.snapshot() || e, b); e.projectile.remove()
     }
   })
-  talus.on('projectile.collision', e => { shotReward(e, 'landing'); if (match?.attack?.ids[e.projectileId]) record('collision', {id:e.projectileId,with:e.with,x:e.x,y:e.y,element:talus.world.cell(e.x,e.y)?.element?.name}) })
+  talus.on('projectile.collision', e => {
+    shotReward(e, 'landing')
+    const entry = match?.attack?.ids[e.projectileId]
+    if (entry) {
+      entry.collision = e.with
+      record('collision', {id:e.projectileId,with:e.with,x:e.x,y:e.y,element:talus.world.cell(e.x,e.y)?.element?.name})
+    }
+  })
   talus.on('projectile.bounce', e => shotReward(e, 'bounce'))
   talus.on('damage', e => {
     if (!match || e.blocked || e.amount <= 0) return
@@ -3126,6 +3279,9 @@ if (!talus.editor.available) {
   })
   talus.on('projectile.hit', e => {
     if (!match?.attack?.ids[e.projectileId]) return
+    if (e.targetStableId === match.attack.targetId && e.amount > 0) {
+      const entry = match.attack.ids[e.projectileId]; entry.targetHit = true; entry.directHit ||= e.direct
+    }
     record('hit', JSON.parse(JSON.stringify(e)))
     const target = match.roster.find((p: any) => p.entityId === e.targetStableId)
     match.lastHit = (target?.name || 'Tank') + ' −' + Math.round(e.amount) + ' HP' + (e.killed ? ' · ELIMINATED' : e.direct ? ' · DIRECT HIT' : ' · SPLASH')
@@ -3151,15 +3307,14 @@ if (!talus.editor.available) {
     }
     if (b?.mode === 'leap' && entry.depth < b.hops - 1) a.pending.push({ kind: 'leap', at, vx: entry.vx * .35, depth: entry.depth })
     const p = match.roster.find((r: any) => r.entityId === a.owner), tank = entity(p)
-    if (!p.eliminated && p.control === 'cpu' && p.shotFrom && entry.depth === 0) {
-      const target=match.roster.find((r:any)=>r.entityId===p.targetId), targetAt=target&&entity(target)?.position
-      if(targetAt) {
-        const observation={turn:match.turnNumber,targetId:p.targetId,weapon:a.item,origin:p.shotFrom,target:targetAt,
-          impact:at,reason:e.reason,damageBefore:a.damageBefore||0,dx:at.x-targetAt.x,dy:at.y-targetAt.y,power:a.power}
-        p.impacts=[...(p.impacts||[]),observation].slice(-doctrine(p).impactMemory)
-        if (tank?.can('blackboard.set')) tank.blackboard.set('custom.aiImpacts',p.impacts)
-        record('cpu-observation',observation)
-      }
+    if (p.control === 'cpu' && p.shotFrom && e.projectileId === a.rootId) {
+      const target=match.roster.find((r:any)=>r.entityId===a.targetId), targetAt=target&&entity(target)?.position || a.targetAtLaunch
+      if(targetAt && a.targetAtLaunch) observeCpuShot(p, {
+        turn:match.turnNumber,targetId:a.targetId,weapon:a.item,origin:p.shotFrom,target:{x:targetAt.x,y:targetAt.y},
+        targetAtLaunch:{x:a.targetAtLaunch.x,y:a.targetAtLaunch.y}, impact:at,reason:e.reason,collision:entry.collision,
+        damageBefore:a.damageBefore||0,dx:at.x-targetAt.x,dy:at.y-targetAt.y,power:a.power/100,angle:a.angle,
+        hit:!!entry.targetHit,direct:!!entry.directHit,split:entry.split,solution:a.solution,wind:a.wind,
+        launch:entry.launch,flightSeconds:talus.sim.clock-entry.launchClock })
     }
     record('end', { ...at, reason: e.reason, id: e.projectileId, owner: a.owner, shooterResidency: tank?.residency }); persist()
   })

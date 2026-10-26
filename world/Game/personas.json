@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "Native factions and shuffled voices active; bounded persona shopping, native collision-aware planning and observed impact memory enabled",
+  "status": "Native factions, distinct strategies and voices; bounded collision-aware planning with persistent per-target/weapon feedback; successful solutions are refined without random aim rerolls",
   "shoutTypes": [
     {
       "id": "taunt",
@@ -60,15 +60,13 @@
           "battery",
           "fuel-tank"
         ],
-        "impactMemory": 1,
         "candidateBudget": 12,
-        "angleErrorDegrees": 5,
-        "powerErrorPercent": 6,
         "exploration": {
           "chance": 0.9,
           "seconds": 2.1,
           "preference": "wander"
-        }
+        },
+        "learningRate": 0.45
       },
       "voice": "Cheerful, spectacularly overconfident amateur. Bureaucratic excuses and accidental success."
     },
@@ -99,15 +97,13 @@
           "fuel-tank",
           "battery"
         ],
-        "impactMemory": 2,
         "candidateBudget": 24,
-        "angleErrorDegrees": 3,
-        "powerErrorPercent": 4,
         "exploration": {
           "chance": 0.85,
           "seconds": 1.8,
           "preference": "supplies"
-        }
+        },
+        "learningRate": 0.55
       },
       "voice": "Proud union tunneler. Foundations, permits, shifts, soil and a deep distrust of ceilings."
     },
@@ -138,15 +134,13 @@
           "battery",
           "parachute"
         ],
-        "impactMemory": 3,
         "candidateBudget": 48,
-        "angleErrorDegrees": 1.5,
-        "powerErrorPercent": 2.5,
         "exploration": {
           "chance": 0.65,
           "seconds": 1.4,
           "preference": "high-ground"
-        }
+        },
+        "learningRate": 0.65
       },
       "voice": "Bombastic officer who solves small inconveniences with impossibly large ammunition."
     },
@@ -177,15 +171,13 @@
           "digger",
           "battery"
         ],
-        "impactMemory": 5,
         "candidateBudget": 72,
-        "angleErrorDegrees": 0.7,
-        "powerErrorPercent": 1.2,
         "exploration": {
           "chance": 0.85,
           "seconds": 1.9,
           "preference": "high-ground"
-        }
+        },
+        "learningRate": 0.8
       },
       "voice": "Dry structural engineer. Gravity is a colleague, falling is an administrative procedure."
     },
@@ -218,15 +210,13 @@
           "jetpack",
           "battery"
         ],
-        "impactMemory": 8,
         "candidateBudget": 96,
-        "angleErrorDegrees": 0.25,
-        "powerErrorPercent": 0.5,
         "exploration": {
           "chance": 0.95,
           "seconds": 2.2,
           "preference": "supplies"
-        }
+        },
+        "learningRate": 0.9
       },
       "voice": "Polite experimental scientist. Predicts consequences confidently, regrets them academically."
     }
