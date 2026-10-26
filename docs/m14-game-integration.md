@@ -28,15 +28,30 @@ native actions. Shared CSS keeps the scene at full opacity and gives it a
 bounded responsive height; native screenshots and margin inspection remain
 pending. These two title files are **not installed yet**.
 
-## Finish after ENGINE returns the confirmed interface/build
+## Engine fixes accepted
+
+The installed 0.0.2581 includes the CCT and native particle-image fixes. ENGINE
+accepted the actual jointed prototype on 0.0.2578; subsequent builds retain the
+same WASM. The unchanged rig settled onto support, drove about 54 pixels in
+each direction, rose about 106 pixels under thrust, landed after release,
+stopped at a wall and contacted/pushed another tank. Parts remained attached.
+The diagnostic closed with all four installed account strings unchanged.
+The report is `foxtrot/docs/m14-cct-validation.md`; this accepts movement and
+collision behavior, not the still-pending roster rollout or CPU match.
+
+The native `particleImages/materialScript` schema is released. The title-scene
+editor is a separate feature: candidate 0.0.2583 adds child worlds within one
+project and uses the existing editor to edit a bounded menu scene. At the
+05:55:21 UTC handoff, it was awaiting installed acceptance.
+
+## Finish after the current app handoff
 
 1. Connect the title to native colored-particle import and execute the game
    script once per entry. Preserve source colors, one simulation layer and
    fresh independent seed selection. Remove the duplicate static HTML logo.
 2. Inspect native fire/water emission, methane and wood burning; reenter once
    to confirm a different material pattern. Check title controls and margins.
-3. Recheck the jointed prototype moving left/right, stopping and levitating;
-   verify weapon aim and native part animation. Install the same reviewed rig
+3. Use ENGINE's completed prototype movement/collision acceptance. Install the reviewed rig
    across the 17 base/persona templates, preserving each current palette and
    gameplay fields. Inspect representative weapons and one firing sequence.
 4. Run a bounded game smoke, then export fresh macOS and Website packages from
@@ -44,11 +59,11 @@ pending. These two title files are **not installed yet**.
    version; do not package the stale Website working copy as current content.
    Verify the real output title/icon and one ordinary launch/navigation flow.
 
-ENGINE owns the UI/GPU/API lease after the 01:40:18 UTC handoff. Source-only game
-work continues until its explicit return. The proposed scene contract is now
-being implemented; installation waits for its validated schema and build.
-ENGINE reproduced the CCT's same-entity body-1 hit and is verifying the fix.
-No M14 completion or updated published artifact is claimed yet.
+ENGINE has the quiet UI/GPU/API/install window returned at 05:55:21 UTC for
+candidate 2583 acceptance. GAME has no native jobs running and remains
+source-only until explicit return. No completed game rollout or updated
+published artifact is claimed yet. Scoped SQLite map-cache recovery remains
+separate engine work; the original file store has not been restored or reset.
 
 The older broad theme/mechanism/series acceptance matrix remains deferred under
 the user's minimum-confirmation instruction; it is not a gate for this pass.

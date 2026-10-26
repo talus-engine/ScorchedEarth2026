@@ -42,9 +42,11 @@ locally, ignored by Git, with SHA256 and SQLite quick-check verified. See
 moved 54.7 pixels in 60 ticks. The rig moved zero and falsely reported grounded
 above the platform. Disabling every animation-layer collider also produced zero
 movement. Levitation consumes fuel/articulates the pods but cannot move the root.
-The native CCT query appears to include its own decorative child colliders.
-This is a narrow reproduced filtering defect, not missing animation support.
-The roster still uses its previous tank bodies until this is corrected.
+ENGINE confirmed the CCT hit its own decorative child colliders. The installed
+0.0.2581 now contains the corrected native filters; actual movement, thrust,
+support, wall and other-tank collision acceptance passed on 0.0.2578 with the
+same WASM. This is fixed engine behavior. The roster still uses its previous
+bodies pending the game-side installation after the next quiet app handoff.
 See [A/B results](evidence/m13-native/drive-comparison.json),
 [collision-toggle result](evidence/m13-native/drive-without-layer-colliders.json)
 and [comparison image](evidence/m13-native/drive-comparison.jpg).
@@ -57,13 +59,14 @@ along with the game-owned pattern script and settings. Material/placement data i
 [the manifest](../assets/m13/title-particle-logo.json). These are one particle
 layer, not additional simulation layers. Particle Emitter is native element153
 (`PARTICLE_SPAWNER` internally); our sources configure that same element.
-They are not active particle content yet. The existing isolated menu scene only
-accepts rect/circle stamps and explicitly rejects this emitter behavior.
+They are not active particle content yet. The installed 0.0.2581 now supports
+the required colored image import and native emitter behavior.
 The game-owned [randomization script](title-logo-script.md) now produces a fresh
 stripe pattern by default, with explicit-seed replay. Local authoring is working;
-automatic per-title-entry execution awaits the documented native initialization
-path. The HTML title currently displays the correct new logo while
-the [M14 native scene work](engine-m14-patch-prompt.md) is pending.
+automatic per-title-entry execution is wired in the local title scene through
+the released `particleImages/materialScript` contract. Installation and visual
+acceptance are pending. The installed HTML title still displays the correct
+new static logo until that integration is installed.
 
 Two bounded diagnostics returned to the original Indigo editor with all four
 installed account strings unchanged; no account restoration was performed.
