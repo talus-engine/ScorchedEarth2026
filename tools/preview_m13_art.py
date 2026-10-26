@@ -5,7 +5,8 @@ from bridge import ROOT
 
 
 def main():
-    records = [json.loads(p.read_text()) for p in sorted((ROOT / 'assets/m13/generated').glob('*.json'))]
+    paths = list((ROOT / 'assets/m13/generated').glob('*.json')) + list((ROOT / 'assets/m13/authored').glob('*.json'))
+    records = sorted([json.loads(p.read_text()) for p in paths], key=lambda r: r['id'])
     assert records, 'No native generated part records yet'
     width, cell_h, columns = 1000, 150, 4
     sheet = Image.new('RGB', (width, ((len(records) + columns - 1) // columns) * cell_h), '#161529')

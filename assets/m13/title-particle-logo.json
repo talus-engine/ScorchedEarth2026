@@ -1,0 +1,57 @@
+{
+  "title": "Scorched Earth 2026",
+  "source": "Art/scorched-terra-title.png",
+  "sourceSha256": "1e65209444f6fd666998ad0cda915b0d7bcd50d53894d386259ce680a2232066",
+  "scene": "menu:title",
+  "sampling": "nearest, copied source RGBA; no recoloring",
+  "layout": "top quarter fire emitter, next quarter methane, bottom half water emitter",
+  "assets": [
+    {
+      "file": "Menus/Assets/earth-2026-logo-fire.png",
+      "element": "TERRA_FIRE_SOURCE",
+      "x": 64,
+      "y": 20,
+      "width": 512,
+      "height": 256,
+      "band": [
+        0,
+        64
+      ],
+      "nontransparentPixels": 17562,
+      "preservePixelColors": true,
+      "sha256": "86c12bdb94a12a1fc02817ed180843ad1cad5df7dc1e2eef07b83e1cfe9c4ccf"
+    },
+    {
+      "file": "Menus/Assets/earth-2026-logo-methane.png",
+      "element": "METHANE",
+      "x": 64,
+      "y": 20,
+      "width": 512,
+      "height": 256,
+      "band": [
+        64,
+        128
+      ],
+      "nontransparentPixels": 29580,
+      "preservePixelColors": true,
+      "sha256": "d66bf357a944c5ee04153552a70b4473309df57fdef6d0f45697357b9e8b5319"
+    },
+    {
+      "file": "Menus/Assets/earth-2026-logo-water.png",
+      "element": "TERRA_WATER_SOURCE",
+      "x": 64,
+      "y": 20,
+      "width": 512,
+      "height": 256,
+      "band": [
+        128,
+        256
+      ],
+      "nontransparentPixels": 52584,
+      "preservePixelColors": true,
+      "sha256": "1810e99580a2995f2e273aac34106ee2affdaa1e97f26defa9388b05af077f82"
+    }
+  ],
+  "rgbaReconstructionExact": true,
+  "status": "prepared; current isolated menu-scene API refuses image pixels and spawners"
+}

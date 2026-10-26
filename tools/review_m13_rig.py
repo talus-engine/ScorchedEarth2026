@@ -86,7 +86,10 @@ def wait_ready(root, run):
                            "setup:talus.ui.get('installed.indigo'),error:talus.state.get('indigo.error')};")
                 last = s
                 if s.get('nonce') != run['nonce']:
-                    raise ValueError('A different game owns the UI; refusing to attach')
+                    # Navigation briefly exposes the previous page's params.
+                    # Wait without mutating it; attach only to our exact nonce.
+                    time.sleep(.3)
+                    continue
                 assert s['match'] is None, 'Diagnostic unexpectedly created a match'
                 assert not s.get('error'), s['error']
                 if s.get('setup') is not None:

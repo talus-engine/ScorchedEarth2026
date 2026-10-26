@@ -16,6 +16,11 @@ ROOT = Path(__file__).resolve().parents[1]
 PARTS = ('chassis', 'turret', 'wheel', 'tread-link', 'jet-pod', 'jet-flame')
 
 
+def load_parts(parts_dir=ROOT / 'assets/m13/generated'):
+    return {k: json.loads(((ROOT / 'assets/m13/authored' if k == 'tread-link' else parts_dir)
+                          / (k + '.json')).read_text()) for k in PARTS}
+
+
 def require(condition, message):
     if not condition:
         raise ValueError(message)
@@ -32,7 +37,11 @@ def bounds(pixels):
 
 
 def centered_part(receipt, key, material):
-    require(receipt.get('id') == key and receipt.get('model') == 'gpt-image-2', 'Expected native image-2 receipt: ' + key)
+    require(receipt.get('id') == key, 'Part identity mismatch: ' + key)
+    if key == 'tread-link':
+        require(receipt.get('source') == 'authored-pixel-strip', 'Expected authored tread strip')
+    else:
+        require(receipt.get('model') == 'gpt-image-2', 'Expected native image-2 receipt: ' + key)
     pixels = copy.deepcopy(receipt['body']['pixels'])
     b = bounds(pixels)
     width, height = b['maxLocalX'] - b['minLocalX'] + 1, b['maxLocalY'] - b['minLocalY'] + 1
@@ -221,8 +230,9 @@ def build(base, receipts, record_ids=None, target_template_id=None, palette=None
                                                          'crossfadeDuration': .1, 'hasExitTime': False,
                                                          'exitTimePercent': 0, 'interruptible': True}
                                                         for a, b, v in [('rest', 'thrust', True), ('thrust', 'rest', False)]]}}]}
+    # Native spawning discovers the controller by its owning entityTemplateId.
     patch = {'pixels': [], 'bodies': bodies, 'joints': joints, 'particleAnimationSets': sets,
-             'particleAnimationLayers': layers, 'animationControllerId': controller['controllerId']}
+             'particleAnimationLayers': layers}
     return {'version': 2, 'status': 'native-prototype-ready', 'targetTemplateId': template_id,
             'baseSnapshotSha256': digest(base), 'templatePatch': patch, 'clips': clips, 'controller': controller,
             'manifest': {'components': components, 'bodyCount': len(bodies), 'trackModules': len(modules),
@@ -241,7 +251,7 @@ def main():
     parser.add_argument('--target-template-id')
     parser.add_argument('--output', type=Path, default=ROOT / 'artifacts/m13/rig-proposal.json')
     args = parser.parse_args()
-    receipts = {k: json.loads((args.parts_dir / (k + '.json')).read_text()) for k in PARTS}
+    receipts = load_parts(args.parts_dir)
     proposal = build(json.loads(args.base.read_text()), receipts, target_template_id=args.target_template_id)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(proposal, indent=2) + '\n')

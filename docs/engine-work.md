@@ -557,3 +557,19 @@ support must be tried first; no new animation feature is established as needed.
 ### E58 actual reproduction — 2026-10-26
 
 On installed2575, native generate_entity returned an empty 3×1 tread body despite the explicit full-bleed prompt. Exact retained request/source/receipt: assets/m13/{prompts,boards}/1e864ee79a34*.json; native template ec28be8e-59ff-4b9c-8dec-3dc29e76f173. The sampler takes source y=0 when output H=1. Sent the concrete center-sampling correction to ENGINE through AGENT_CHAT.md, offering the editor lease for installation. E57 remains withdrawn: the tank uses existing dynamic joint motors, frame animation and CCT auto parameters. Native prototype and roster acceptance pending the tiny-image correction.
+
+
+### M13 final disposition / M14 concrete follow-up — 2026-10-26
+
+E57/E58 are withdrawn. The user chose a directly authored three-pixel tread;
+no tiny-image fix or new animation contract is requested. Native prototype
+installation succeeds; the motor/sprite/controller animation is already present.
+
+Two actual remaining cases are documented in
+[the M14 prompt](engine-m14-patch-prompt.md): isolated menu scenes reject imported
+RGBA/spawners (confirmed by ENGINE), and the jointed tank stays stuck while the
+original tank moves 54.7 pixels with identical controller commands. Disabling all
+animation-layer colliders does not resolve movement. Source inspection points
+to the native CCT query filtering its root body but not its decorative children.
+The prompt requests diagnosis/fix of that narrow collision case. Rig roster
+installation and active particle title integration follow the native fixes.

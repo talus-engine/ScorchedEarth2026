@@ -1,6 +1,11 @@
-# M13 — E58 tiny-image reproduction; E57 remains withdrawn
+# M13 — historical investigation; no engine dependency
 
-**2026-10-26:** E58 is now reproduced by a real 3×1 native generation on
+**User direction, 2026-10-26:** author the three tread pixels directly or sample
+a metal texture. The tank now uses `assets/m13/authored/tread-link.json`.
+E58 is withdrawn from this milestone; no image-generation release is needed.
+E57 remains withdrawn. The records below retain the investigation history.
+
+**Earlier 2026-10-26 investigation:** E58 was reproduced by a real 3×1 native generation on
 0.0.2575. See the exact request/response at the end of this document. Only the
 tiny-image sampling fix has been reopened; no animation engine work is requested.
 

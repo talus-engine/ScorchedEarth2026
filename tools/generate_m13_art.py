@@ -22,7 +22,7 @@ def prompt_for(parts, style):
                  'boxW': p['width'], 'boxH': p['height'], 'isRoot': n == 0,
                  'material': 'IRON', 'imagePrompt': p['design']}
                 for n, p in enumerate(parts)]
-    return ('Create an exploded pixel-art source board for Scorched Terra. '
+    return ('Create an exploded pixel-art source board for Scorched Earth 2026. '
             'This is a reusable art library, not a playable character. '
             'Return exactly the listed separate body parts, in order, with the exact names '
             'and bounding boxes below. Generate each part independently. '

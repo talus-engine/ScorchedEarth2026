@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 from bridge import ROOT, WORLD_ID, call, script
-from build_m13_rig import PARTS, build
+from build_m13_rig import build, load_parts
 
 
 def write(path, value):
@@ -35,6 +35,8 @@ def install(target, receipts, palette=None):
     # Save normalized native records, then attach the controller and complete rig.
     normalized = [{'kind': row['kind'], 'record': row['record']} for row in validation]
     saved = native('const rows=' + json.dumps(normalized) + ';const out=[];for(const r of rows){out.push({kind:r.kind,record:await talus.editor.records.save(r.kind,r.record)});}return out;')
+    controllers = native("return await talus.editor.records.list('animationController');")
+    assert any(c['id'] == proposal['controller']['controllerId'] for c in controllers), 'Native controller missing'
     call('save_entity_template', {'template': target, 'patch': patch})
     actual = call('read_asset', {'kind': 'entity', 'id': target})['record']
     for field in patch:
@@ -55,7 +57,7 @@ def main():
     args = p.parse_args()
     context = call('engine_describe_context')['world']
     assert context['isEditorMode'] and context['templateId'] == WORLD_ID
-    receipts = {k: json.loads((ROOT / 'assets/m13/generated' / (k + '.json')).read_text()) for k in PARTS}
+    receipts = load_parts()
     arena = json.loads((ROOT / 'world/Game/arena.json').read_text())
     path = ROOT / 'assets/m13/tank-install.json'
     ledger = json.loads(path.read_text()) if path.exists() else {}

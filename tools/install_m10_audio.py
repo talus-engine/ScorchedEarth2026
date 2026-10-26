@@ -23,7 +23,7 @@ for name,duration in [('turn',.25),('fire',.18),('death',.65),('victory',.8),('b
     wav=raw.getvalue();(dest/(name+'.wav')).write_bytes(wav)
     source='const a=await talus.audio.import(new Uint8Array('+json.dumps(list(wav))+'),{name:'+json.dumps('terra-'+name+'.wav')+'});'
     if ids.get(name):source+='const r=await talus.editor.records.get("sound",'+json.dumps(ids[name])+');r.audioId=a.audioId;'
-    else:source+='const r=await talus.editor.records.create("sound",'+json.dumps('Scorched Terra '+name)+',{audioId:a.audioId});'
+    else:source+='const r=await talus.editor.records.create("sound",'+json.dumps('Scorched Earth 2026 '+name)+',{audioId:a.audioId});'
     source+='return await talus.editor.records.save("sound",r)'
     r=call('engine_run_script',{'source':source,'timeoutMs':10000},timeout=20)
     assert not r.get('error'),r

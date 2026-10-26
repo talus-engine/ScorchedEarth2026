@@ -19,7 +19,7 @@ for path in paths:
     print('Installed', relative, flush=True)
 graph = json.loads((ROOT / 'world/Graphs/cpu-turn.json').read_text())
 call('save_behavior_graph', {'graphId': json.loads((ROOT / 'world/Game/arena.json').read_text())['cpuGraph'],
-    'graphName': 'Scorched Terra CPU turn', 'graphType': 'command', 'graphData': graph,
+    'graphName': 'Scorched Earth 2026 CPU turn', 'graphType': 'command', 'graphData': graph,
     'description': 'Shared persona survey, native aiming, presentation and fire stages.'})
 controls = json.loads((ROOT / 'world/Game/input.json').read_text())
 r = call('engine_run_script', {'source': 'const ui=await talus.editor.records.get("gameUi");Object.assign(ui,' + json.dumps(controls) + ');return await talus.editor.records.save("gameUi",ui)', 'timeoutMs': 10000}, timeout=20)

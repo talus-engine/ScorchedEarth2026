@@ -1,4 +1,4 @@
-// Scorched Terra: M9 combat plus M10 arcade presentation. Indigo save identity stays stable.
+// Scorched Earth 2026: M9 combat plus M10 arcade presentation. Indigo save identity stays stable.
 if (!talus.editor.available) {
   let arena: any, match: any, chaosCatalog: any, quipCatalog: any, quipDeck: any, market: any, bank: any
   let shopOpen = false, shopIndex = 0, shopCategory = 'All'
@@ -1633,7 +1633,7 @@ if (!talus.editor.available) {
     if (finish()) return
     const previous = current()
     if (next) await turnScoreCard()
-    else if (!match.turnNumber) await showArcadeCard('SCORCHED TERRA', 'BATTLE STATIONS', 'Round ' + match.round + ' · Seed ' + match.seed, 2.5)
+    else if (!match.turnNumber) await showArcadeCard('SCORCHED EARTH 2026', 'BATTLE STATIONS', 'Round ' + match.round + ' · Seed ' + match.seed, 2.5)
     if (match.phase !== 'focusing') return
     checkRoster(); if (finish()) return
     if (next && !previous.eliminated) passivePosture(previous)
@@ -2764,11 +2764,13 @@ if (!talus.editor.available) {
           if (!tank) throw new Error('Tank spawn refused: ' + p.name)
           if (!p.entityId) record('spawn-pose', { owner: tank.id, pose: tank.snapshot() })
           p.entityId = tank.id; p.spawnX = placement.x; p.surfaceY = ground; persist()
+          const spawnAngle = p.index < match.roster.length / 2 ? 0 : 180
           tank.blackboard.set('name', p.name); tank.blackboard.set('custom.indigoPlayer', p.index)
-          tank.blackboard.set('custom.control', p.control); tank.blackboard.set('custom.angle', 45); tank.blackboard.set('custom.power', 70)
+          tank.blackboard.set('custom.control', p.control); tank.blackboard.set('custom.angle', spawnAngle); tank.blackboard.set('custom.power', 70)
           if (!await tank.whenLive({ timeoutTicks: 600 })) throw new Error('Tank did not become live')
           await preparePlacement(p)
           syncLoadout(p)
+          tank.weapon.aim(-spawnAngle * Math.PI / 180, .7)
           nameplate(p); record('deployed', { name: p.name, id: tank.id })
         }
         match.phase = 'ready'; match.message = 'Tanks ready — begin when your crew is ready'; persist()

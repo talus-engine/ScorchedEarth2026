@@ -147,7 +147,7 @@ def main():
     # No area stamp: installation changes all constraints in one reviewed edit.
     (OUT / 'bootstrap.svg').write_text(svg)
     # Contact sheet is a reference only. Native sliders are installed as gates.
-    sheet = ['<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1160" viewBox="0 0 1440 1160"><rect width="1440" height="1160" fill="#111322"/><g font-family="monospace" fill="#eeeeee"><text x="20" y="26" font-size="20">SCORCHED TERRA / WFC ARTIST SCAFFOLD / 256 x 256 PER TILE</text>']
+    sheet = ['<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1160" viewBox="0 0 1440 1160"><rect width="1440" height="1160" fill="#111322"/><g font-family="monospace" fill="#eeeeee"><text x="20" y="26" font-size="20">SCORCHED EARTH 2026 / WFC ARTIST SCAFFOLD / 256 x 256 PER TILE</text>']
     for i, (t, img) in enumerate(zip(rows, pictures)):
         rgb = Image.new('RGB', (256, 256), '#151b30')
         rgb.putdata([tuple(int(palette[v][1].lstrip('#')[k:k+2], 16) for k in (0, 2, 4)) if v else (21, 27, 48) for v in img.getdata()])

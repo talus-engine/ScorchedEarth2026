@@ -367,14 +367,15 @@
       "width": 3,
       "height": 7,
       "design": "single tiny downward jet exhaust plume, bright ivory core, yellow middle and orange tip; widest at top, tapered at bottom"
-    },
+    }
+  ],
+  "authoredParts": [
     {
       "id": "tread-link",
-      "name": "tread-link",
-      "kind": "component",
       "width": 3,
       "height": 1,
-      "design": "single flat tank tread link: three edge-to-edge rectangular steel bands, dark gray left third, bright silver center third, dark gray right third; all three bands extend fully from the very top border to the very bottom border and fill the entire canvas, with zero margins or background; reduces to exactly three adjacent pixels in one row"
+      "path": "assets/m13/authored/tread-link.json",
+      "source": "authored-pixel-strip"
     }
   ]
 }

@@ -1,0 +1,161 @@
+{
+  "after": {
+    "clock": 5.833333333333318,
+    "controller": {
+      "capacity": 12,
+      "enabled": true,
+      "fuel": 2.0000000000000084,
+      "grounded": true,
+      "held": false,
+      "recoveryPerSecond": 0,
+      "thrusting": false
+    },
+    "drive": {
+      "config": {
+        "capacity": 10,
+        "speed": 55
+      },
+      "distance": 0,
+      "fuel": 3,
+      "spent": 0
+    },
+    "pose": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 9,
+        "y": 6
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-d04800e4-b9d9-4bb3-aea7-fc1a62a1d2cc",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 1,
+      "maxHealth": 100,
+      "name": "Daran Ironmere",
+      "residency": "live",
+      "slot": null,
+      "templateId": "df65c209-6090-469e-8f83-6936f09491ed",
+      "vx": 0,
+      "vy": 0,
+      "x": 599.5,
+      "y": 445.6805419921875
+    }
+  },
+  "before": {
+    "clock": 4.8333333333333215,
+    "controller": {
+      "capacity": 12,
+      "enabled": true,
+      "fuel": 0,
+      "grounded": true,
+      "held": false,
+      "recoveryPerSecond": 0,
+      "thrusting": false
+    },
+    "drive": {
+      "config": {
+        "capacity": 10,
+        "speed": 55
+      },
+      "distance": 0,
+      "fuel": 3,
+      "spent": 0
+    },
+    "pose": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 9,
+        "y": 6
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-d04800e4-b9d9-4bb3-aea7-fc1a62a1d2cc",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 1,
+      "maxHealth": 100,
+      "name": "Daran Ironmere",
+      "residency": "live",
+      "slot": null,
+      "templateId": "df65c209-6090-469e-8f83-6936f09491ed",
+      "vx": 0,
+      "vy": 0,
+      "x": 599.5,
+      "y": 445.6805419921875
+    }
+  },
+  "during": {
+    "clock": 5.833333333333318,
+    "controller": {
+      "capacity": 12,
+      "enabled": true,
+      "fuel": 2.0000000000000084,
+      "grounded": true,
+      "held": true,
+      "recoveryPerSecond": 0,
+      "thrusting": true
+    },
+    "drive": {
+      "config": {
+        "capacity": 10,
+        "speed": 55
+      },
+      "distance": 0,
+      "fuel": 3,
+      "spent": 0
+    },
+    "pose": {
+      "alive": true,
+      "angle": 0,
+      "chunk": {
+        "x": 9,
+        "y": 6
+      },
+      "faction": null,
+      "health": 100,
+      "id": "instance@spawn-d04800e4-b9d9-4bb3-aea7-fc1a62a1d2cc",
+      "keepLiveOffscreen": false,
+      "launchedBy": null,
+      "liveId": 1,
+      "maxHealth": 100,
+      "name": "Daran Ironmere",
+      "residency": "live",
+      "slot": null,
+      "templateId": "df65c209-6090-469e-8f83-6936f09491ed",
+      "vx": 0,
+      "vy": 0,
+      "x": 599.5,
+      "y": 445.6805419921875
+    }
+  },
+  "receipts": [
+    {
+      "accepted": true,
+      "addedSeconds": 3,
+      "label": "jet-fuel",
+      "reason": "ok"
+    },
+    {
+      "accepted": true,
+      "addedSeconds": 0,
+      "label": "thrust",
+      "reason": "ok"
+    },
+    {
+      "accepted": true,
+      "addedSeconds": 0,
+      "label": "cleanup-drive",
+      "reason": "ok",
+      "removedSeconds": 0
+    },
+    {
+      "accepted": true,
+      "addedSeconds": 0,
+      "label": "cleanup-thrust",
+      "reason": "ok"
+    }
+  ]
+}
