@@ -9,7 +9,7 @@ The bundled CLI can export and publish without opening a renderer. Close Talus
 first so the profile is coherent, then run:
 
 ```sh
-python3 tools/project.py export
+node tools/project.cjs export
 ```
 
 This produces `project/scorched-earth-2026.talus`, the complete importable project.
@@ -19,7 +19,7 @@ Use `--overwrite` to deliberately replace an existing export. `--binary`,
 For a publish-ready snapshot and installer:
 
 ```sh
-python3 tools/project.py export --publish-snapshot --output dist/source.talus
+node tools/project.cjs export --publish-snapshot --output dist/source.talus
 mkdir -p dist/packages
 ELECTRON_RUN_AS_NODE=1 /Applications/Talus.app/Contents/MacOS/Talus \
   /Applications/Talus.app/Contents/Resources/publisher/tools/publish/cli.mjs \

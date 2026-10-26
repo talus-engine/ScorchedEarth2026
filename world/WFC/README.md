@@ -15,7 +15,7 @@ two-pixel material rims so neighboring tiles connect. Their rims use the same
 noise samples. Interiors are free to paint. Keep the bedrock row solid stone.
 
 Native painted origins are the source of truth. `bootstrap.svg` is a starting
-palette produced by the repository's `tools/build_wfc_template.py`; importing
+palette produced by the repository's `tools/build_wfc_template.cjs`; importing
 it replaces painted artwork. It is not needed when editing the existing art.
 
 Save in Talus, then export the complete project to capture native pixels,

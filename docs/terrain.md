@@ -42,7 +42,7 @@ and stone foundation intact. Native terrain receipts must report completion and
 actual body placement before progress is persisted. A refusal stops generation
 with its reason; it is not silently counted as completed work.
 
-`tools/build_wfc_template.py` regenerates the local bootstrap and reference files
+`tools/build_wfc_template.cjs` regenerates the local bootstrap and reference files
 from `assets/art/terrain-swatch.svg`. It does not install them into the editor.
-`tests/test_wfc.py` checks pixel seams and gates; `tests/wfc-solver.cjs` runs the
+`tests/wfc.test.cjs` checks pixel seams and gates; `tests/wfc-solver.cjs` runs the
 native solver across seeded layouts.

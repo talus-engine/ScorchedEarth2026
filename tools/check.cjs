@@ -6,7 +6,7 @@ const ts = require('typescript');
 const root = path.resolve(__dirname, '..');
 const declarations = path.resolve(process.env.TALUS_TYPES || '.build/talus.d.ts');
 if (!fs.existsSync(declarations))
-    throw Error('Set TALUS_TYPES to the editor’s Scripts/talus.d.ts, or run tools/project.py types.');
+    throw Error('Set TALUS_TYPES to the editor’s Scripts/talus.d.ts, or run tools/project.cjs types.');
 const scripts = path.join(root, 'world/Scripts');
 const files = fs.readdirSync(scripts, { recursive: true }).filter(p => p.endsWith('.ts')).map(p => path.join(scripts, p));
 const program = ts.createProgram([...files, declarations], {

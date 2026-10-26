@@ -86,21 +86,18 @@ unsigned installers and website output.
 
 ## Work on the source
 
-Install Node dependencies with `npm install` and Python dependencies with
-`python3 -m pip install -r requirements.txt`. Open the imported project in Talus,
-then use its authenticated local bridge:
+Use Node.js 24 or newer and install dependencies with `npm ci`.
+Open the imported project in Talus, then use its authenticated local bridge:
 
 ```sh
-python3 tools/project.py types
-python3 tools/talus_sync.py status
+node tools/project.cjs types
+node tools/talus_sync.cjs status
 npm run check
-python3 -m unittest discover -s tests -p 'test_sync.py'
-python3 tests/test_wfc.py
 npm run audit
 ```
 
 Follow [authoring](docs/authoring.md) to capture or install reviewed source.
-Run `python3 tools/menus.py` after editing shared CSS. Read
+Run `node tools/menus.cjs` after editing shared CSS. Read
 [validation](docs/validation.md) for native solver tests and visual checks.
 Keep build outputs in ignored `dist/`, working reports in `.build/`, and bridge
 credentials in the native Talus profile. The repository contains no player

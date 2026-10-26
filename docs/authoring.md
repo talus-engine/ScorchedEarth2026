@@ -24,10 +24,10 @@ Use `TALUS_BRIDGE_URL` and `TALUS_TOKEN_FILE` for another bridge location.
 A symlink records only a target path in Git. Capture real files instead:
 
 ```sh
-python3 tools/talus_sync.py status
-python3 tools/talus_sync.py capture
+node tools/talus_sync.cjs status
+node tools/talus_sync.cjs capture
 # Edit files in world/, then inspect the diff.
-python3 tools/talus_sync.py install
+node tools/talus_sync.cjs install
 ```
 
 The first identical capture establishes `.build/sync/baseline.json`. Conflicting
@@ -37,7 +37,7 @@ Binary imports use native asset tools or `talus.files.writeBytes`.
 
 Terrain, WFC pixels, joints and native records are not fully represented by the
 file mount. Save in Talus and export the complete project after editing them.
-`tools/records.py capture` reads the configured roster, weapon/mod templates and
+`tools/records.cjs capture` reads the configured roster, weapon/mod templates and
 their animation libraries into `assets/native/`. `install` validates changes,
 saves through native authoring APIs and checks entity readback. Import the full
 archive before installing these records; they use durable native IDs.
@@ -51,13 +51,13 @@ archive before installing these records; they use durable native IDs.
 - Terrain families and parameters: `Game/generation.json`,
   `Game/terrain-recipes.json` and `Game/landscape-stories.json`.
 - Menus: `Menus/*.html`; shared styling: `Menus/arcade.css`. Run
-  `python3 tools/menus.py` to embed the shared theme into self-contained menus.
+  `node tools/menus.cjs` to embed the shared theme into self-contained menus.
 - Title material stripes: `Game/title-logo-pattern.js`; source art:
   `assets/art/title-logo.png`. The pattern changes material indices only.
 - Native tank parts and weapon art: `assets/native/`, `assets/sprites/` and the
   engine's template/animation editors.
 
-After syncing an edited `Game/input.json`, run `python3 tools/project.py ui` to install its
+After syncing an edited `Game/input.json`, run `node tools/project.cjs ui` to install its
 bindings and UI policy through the native `gameUi` record. The game selects
 `quitSavePolicy: discard` so Quit and app close never wait for a game save.
 The separate Save & title command explicitly requests a required save.
@@ -70,10 +70,10 @@ player accounts. Save source explicitly; reusable scenarios can be saved under
 `Menus/Previews/`. Previewing a menu does not replace a real gameplay check.
 
 `Game/Presets/` holds complete editable source records. After changing them, run
-`python3 tools/project.py catalog`. This captures native dependencies into a
+`node tools/project.cjs catalog`. This captures native dependencies into a
 project-owned immutable catalog and updates the configured hash. Existing games
 retain their own pinned resources and generation progress.
 
 The editor-only guide is defined by `world/Guide.md` and `Game/guide.json`.
 `Scripts/guide.ts` handles its read-only links. Install its annotation with
-`python3 tools/project.py guide` after installing the files.
+`node tools/project.cjs guide` after installing the files.

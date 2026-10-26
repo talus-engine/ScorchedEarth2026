@@ -1,17 +1,22 @@
 # Validation
 
-Install Node dependencies with `npm install`. Python authoring tools require
-Python 3 and Pillow (`python3 -m pip install -r requirements.txt`).
+Use Node.js 24 or newer and install dependencies with `npm ci`.
+All authoring helpers and tests run in Node; no separate image or database
+runtime is required.
 
 With the configured project open in Talus, obtain the native declarations:
 
 ```sh
-python3 tools/project.py types
+node tools/project.cjs types
 npm run check
-python3 -m unittest discover -s tests -p 'test_sync.py'
-python3 tests/test_wfc.py
 npm run audit
 ```
+
+`npm test` runs the same test suite without the declaration/type check and does
+not need a running editor. It includes file-sync conflict/refusal checks, bridge
+and export contracts, shared CSS embedding, and WFC geometry/pixel equivalence.
+The WFC builder is exercised in a temporary directory; tests never repaint the
+native palette or overwrite the tracked bootstrap.
 
 `TALUS_TYPES` can point directly at a generated `Scripts/talus.d.ts`. The behavior
 suite loads the actual native CommonJS libraries in isolated VMs. It checks
@@ -38,7 +43,7 @@ authored file snapshot.
 Verify the editor guide remains hidden in play. Save/export captures native art
 and bindings that file-only tests cannot inspect.
 
-`tools/audit.py` checks the maintained tree, module imports, configuration/file
+`tools/audit.cjs` checks the maintained tree, module imports, configuration/file
 references, synchronized shared styles, source naming and guide visibility. It
 also opens a temporary read-only copy of the exported archive, checks SQLite
 integrity, compares every authored file and the native UI policy, verifies the
