@@ -125,3 +125,25 @@ explicit operation, preserving its document ID and refusing unsaved painted
 changes. Runtime playback and package preflight read the updated root files;
 do not Save the old Title editor over the new source. This does not block the
 requested player build. The broad test matrix remains deferred.
+
+
+## Unsigned package delivered
+
+Native **File → Publish Game** on 2585 completed the macOS ARM64 0.3.0
+application, DMG and ZIP, unsigned/ad-hoc and not notarized. The output includes
+`source.talus`, a fresh complete project export; the publisher cleaned its own
+staging. [Build receipt](evidence/m14-game/unsigned-build.json).
+
+The actual packaged app starts the game through **New game → Deploy tanks →
+Begin match** with zero humans, four CPUs, best of three, WFC and random seed
+1792999511296. The new rigs appear in the native world; turns advance under CPU
+control. No clone profiles or broad E2E suite were used.
+
+Two startup defects are handed to ENGINE in `AGENT_CHAT.md`: first title entry
+can be blank (leaving/reentering renders it), and the default Talus menu flashes
+before the authored title. `Menus/loading.json` already selects the custom
+loading presentation and `Menus/menus.json` selects the authored title.
+ENGINE found a pending resize/visibility initialization race and is adding its
+regression/fix; actual cold-start acceptance remains pending. Compare the
+[first entry](evidence/m14-game/packaged-title-first-blank.png) and
+[successful reentry](evidence/m14-game/packaged-title-reentry.png).

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "state": "completed",
+  "settings": {
+    "title": "Scorched Earth 2026",
+    "version": "0.3.0",
+    "author": "Tony",
+    "appId": "com.talus.m11-2552",
+    "icon": "Game/Publishing/icon.png",
+    "target": "mac",
+    "arch": "arm64",
+    "zip": true,
+    "signing": "unsigned",
+    "basePath": "/",
+    "notarize": false
+  },
+  "engineBuild": "2585",
+  "exportedAt": 1792999243841,
+  "snapshotSha256": "fba379f4aae4508dd82d36fd85296b92fb593be95fe171963881112c2978ecda",
+  "assets": "bundled",
+  "signing": "ad-hoc",
+  "notarized": false,
+  "notarization": [],
+  "toolchain": {
+    "electron": "44.1.1",
+    "builder": "26.15.3"
+  },
+  "artifacts": [
+    {
+      "kind": "app",
+      "path": "/Users/tonygermaneri/gh/indigo/artifacts/published/com.talus.m11-2552-0.3.0-mac-arm64/Scorched Earth 2026.app",
+      "bytes": 479640390,
+      "files": 266,
+      "sha256": "518c11a0adf5dcf262d29fea31dedd7c8e16fae11f2f5735be034d669a0ddf12"
+    },
+    {
+      "kind": "dmg",
+      "path": "/Users/tonygermaneri/gh/indigo/artifacts/published/com.talus.m11-2552-0.3.0-mac-arm64/Scorched Earth 2026-0.3.0-mac-arm64.dmg",
+      "bytes": 256449414,
+      "files": 1,
+      "sha256": "96c33601f7c73224b4dd77ce4a28bdfadcd3b240ece2818dfd72be9dc033f97a"
+    },
+    {
+      "kind": "zip",
+      "path": "/Users/tonygermaneri/gh/indigo/artifacts/published/com.talus.m11-2552-0.3.0-mac-arm64/Scorched Earth 2026-0.3.0-mac-arm64.zip",
+      "bytes": 237711478,
+      "files": 1,
+      "sha256": "550e2a96c17c4341de438d4d427760c526e06db10defb2946be0f64d8d2fe7bb"
+    }
+  ],
+  "scopedImageCount": 642,
+  "gameCommit": "cb0489a",
+  "publishedVia": "Talus File \u2192 Publish Game",
+  "manifestSha256": "324e8b192789c1620bb3849ca8bbfb5351fcdfabbf0b510b005a0b6a64a4b68e"
+}
