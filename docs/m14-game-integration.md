@@ -91,3 +91,37 @@ remains separate engine work; the original file store has not been restored or r
 
 The older broad theme/mechanism/series acceptance matrix remains deferred under
 the user's minimum-confirmation instruction; it is not a gate for this pass.
+
+## Final title and unsigned delivery (2585)
+
+All 17 tanks are installed. The durable `Title` child is
+`fee4549f-c9ff-418d-8051-5cc9c7b3f557` under Indigo, bound to `menu:title`.
+ENGINE accepted that child on 2585 with 131 exact material/color samples.
+
+The user's final title changes are installed in the root source: full viewport,
+no containing border, existing-size menu controls over the simulation. Native
+**Atomic Realm Mine** and **Mine Background** tile-brush presets supply the
+foreground particles and rear raster plane. Both were painted with
+`world_raster_place_autotiles`, sampled through the public raster API, and retained
+as project PNGs. Temporary authoring layers were removed; no WFC art was changed.
+
+The logo keeps its original pixel colors. WOOD surrounds randomized DYNAMITE
+stripes confined to its center; small peripheral native Particle Emitter patches
+emit fire, water and methane. The title-specific emitter materials are softer
+and combustible. A 90-second loop allows the burn to complete. Twenty initial
+material/RGB samples matched exactly. After two seconds, fire was present and
+all dynamite remained intact; after 72.9 seconds, no WOOD or DYNAMITE remained,
+and FIRE, WATER and METHANE were observed. Native screenshots confirm the scene
+fills the 1600×968 window and all six menu controls fit.
+
+See [title evidence](evidence/m14-game/title/title-particles.json),
+[initial screen](evidence/m14-game/title/title-initial.jpg),
+[tile brush receipt](evidence/m14-game/title/tile-brush.json), and
+[installation](evidence/m14-game/title/final-install.json).
+
+**Editor follow-up:** 2585 does not expose refresh-from-source for the retained
+Title working copy after external scene/script edits. ENGINE is adding that
+explicit operation, preserving its document ID and refusing unsaved painted
+changes. Runtime playback and package preflight read the updated root files;
+do not Save the old Title editor over the new source. This does not block the
+requested player build. The broad test matrix remains deferred.

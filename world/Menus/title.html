@@ -27,17 +27,17 @@
 @media(max-width:1000px){.indigo-hud .top{gap:6px}.indigo-hud .world{max-width:200px}.indigo-hud .roster{min-width:130px}.indigo-hud .roster .row{font-size:12px;gap:6px}.indigo-hud .name{max-width:330px;overflow-wrap:anywhere}.indigo-hud .panel{padding:8px}.indigo-hud .numbers{gap:10px}.indigo-hud .bottom>.panel{max-width:50vw}}
 
 /* The title artwork is the native particle scene. Controls stay below it. */
-.terra-title{isolation:isolate;background:#080812}
-.terra-title .title-hero{position:relative;height:clamp(220px,44vh,430px);max-width:900px;margin:0 auto;overflow:hidden}
+.terra-title{isolation:isolate;background:#080812;position:fixed;inset:0;width:100vw;height:100vh;min-height:0;max-height:none;padding:0;border:0;box-shadow:none;overflow:hidden}
+.terra-title .title-hero{position:absolute;inset:0;height:100%;width:100%;max-width:none;margin:0;overflow:hidden}
 .terra-title .title-scene{position:absolute;inset:0;display:block;pointer-events:none;opacity:1}
-.terra-title .title-content{position:relative;z-index:1}
+.terra-title .title-content{position:absolute;z-index:1;left:50%;bottom:clamp(16px,5vh,64px);transform:translateX(-50%);width:min(1008px,94vw);max-height:90vh;overflow:auto}
 .terra-title .title-actions{padding:14px;background:#10102aeb;border:2px solid var(--cyan);box-shadow:5px 5px 0 var(--ink)}
 .terra-title .tagline,.terra-title .copyright{display:table;margin-left:auto;margin-right:auto;padding:5px 9px;background:#080810df}
 
 </style>
 <main class="terra terra-title" aria-label="Scorched Earth 2026 title screen">
   <div class="title-hero" role="img" aria-label="Scorched Earth 2026 — a burning particle logo">
-    <talus-scene-view class="title-scene" scene="menu:title" fit="contain"></talus-scene-view>
+    <talus-scene-view class="title-scene" scene="menu:title" fit="cover"></talus-scene-view>
   </div>
   <div class="title-content">
   <p class="tagline">SMALL TANKS. EXTREMELY LARGE CONSEQUENCES.</p>

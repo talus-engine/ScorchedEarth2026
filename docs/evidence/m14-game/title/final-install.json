@@ -1,0 +1,174 @@
+{
+  "elements": [
+    {
+      "emits": "FIRE",
+      "id": 228,
+      "name": "TERRA_TITLE_FIRE_SOURCE"
+    },
+    {
+      "emits": "WATER",
+      "id": 229,
+      "name": "TERRA_TITLE_WATER_SOURCE"
+    },
+    {
+      "emits": "METHANE",
+      "id": 230,
+      "name": "TERRA_TITLE_GAS_SOURCE"
+    }
+  ],
+  "files": [
+    {
+      "path": "Game/title-logo-pattern.js",
+      "sha256": "65c437098dd29930d36feb80d2d5e2aa95f3de34bb54921882d2c2d1a50467e9",
+      "readback": true
+    },
+    {
+      "path": "Game/title-logo.json",
+      "sha256": "ede1fb2da70af50b5f1f148ff206e5340a5413889dd5f74d21f72fb989a3041a",
+      "readback": true
+    },
+    {
+      "path": "Game/title-emitters.json",
+      "sha256": "4d864232d3c9072c73edfc2c60e6766b2ad98cfba426ca25bc6582ad10674686",
+      "readback": true
+    },
+    {
+      "path": "Menus/Scenes/title.json",
+      "sha256": "ba68b31ca8183991027c432e1386f5542bbfbed288862a71940084d703657b22",
+      "readback": true
+    },
+    {
+      "path": "Menus/title.html",
+      "sha256": "aabc8dfcb54df80345c585fa477407c61523040cc106c3d0a786797d9ee2b2ea",
+      "readback": true
+    },
+    {
+      "path": "Menus/arcade.css",
+      "sha256": "7e4d1d71da70180329b99e85d5e4ef2a3b464864827155041f83e7959c9e43c9",
+      "readback": true
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "result": {
+      "definition": {
+        "background": [
+          0.031,
+          0.031,
+          0.071,
+          1
+        ],
+        "backgrounds": [
+          {
+            "file": "Menus/Assets/title-dusk.png",
+            "opacity": 1,
+            "parallaxX": 0.08,
+            "parallaxY": 0.056,
+            "scrollX": 0.35,
+            "scrollY": 0,
+            "tiling": "horizontal"
+          },
+          {
+            "file": "Menus/Assets/title-mountains.png",
+            "opacity": 0.78,
+            "parallaxX": 0.26,
+            "parallaxY": 0.182,
+            "scrollX": 0.85,
+            "scrollY": 0,
+            "tiling": "horizontal"
+          },
+          {
+            "file": "Menus/Assets/title-foothills.png",
+            "opacity": 0.85,
+            "parallaxX": 0.72,
+            "parallaxY": 0.504,
+            "scrollX": 1.5,
+            "scrollY": 0,
+            "tiling": "horizontal"
+          },
+          {
+            "file": "Menus/Assets/title-tiles-background.png",
+            "opacity": 0.72,
+            "parallaxX": 0.3,
+            "parallaxY": 0.2,
+            "scrollX": 0,
+            "scrollY": 0,
+            "tiling": "none"
+          }
+        ],
+        "height": 384,
+        "loopSeconds": 90,
+        "particleImages": [
+          {
+            "file": "Menus/Assets/earth-2026-logo.png",
+            "height": 256,
+            "materialScript": {
+              "file": "Game/title-logo-pattern.js",
+              "parameter": "logo",
+              "seed": "entry"
+            },
+            "width": 512,
+            "x": 64,
+            "y": 20
+          },
+          {
+            "element": "STONE",
+            "file": "Menus/Assets/title-tiles-foreground.png",
+            "height": 384,
+            "width": 640,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "paused": false,
+        "seed": 1986,
+        "stamps": [],
+        "version": 1,
+        "width": 640
+      },
+      "limits": {
+        "assetBytes": 8388608,
+        "backgrounds": 8,
+        "cells": 262144,
+        "documentBytes": 2097152,
+        "height": 512,
+        "imagePixels": 4194304,
+        "particleImages": 16,
+        "scenes": 2,
+        "scriptBytes": 131072,
+        "scriptFuel": 250000,
+        "scriptMemoryBytes": 33554432,
+        "scriptTimeoutMs": 2000,
+        "stamps": 256,
+        "views": 4,
+        "width": 1024
+      },
+      "ok": true,
+      "supported": [
+        "solid",
+        "powder",
+        "liquid",
+        "gas",
+        "heat",
+        "material-reactions",
+        "particle-emitters",
+        "image-particles",
+        "pure-material-initializer",
+        "parallax"
+      ],
+      "unsupported": [
+        "entities",
+        "rigid-bodies",
+        "organisms",
+        "air-pressure",
+        "electromagnetism",
+        "pipes",
+        "life-CA",
+        "gameplay-events",
+        "gameplay-scripts"
+      ]
+    }
+  },
+  "rootSaved": true,
+  "titleChildRefreshPending": true
+}

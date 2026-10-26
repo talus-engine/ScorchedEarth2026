@@ -3,7 +3,7 @@
   "width": 640,
   "height": 384,
   "seed": 1986,
-  "loopSeconds": 18,
+  "loopSeconds": 90,
   "background": [
     0.031,
     0.031,
@@ -37,34 +37,18 @@
       "scrollX": 1.5,
       "scrollY": 0,
       "opacity": 0.85
-    }
-  ],
-  "stamps": [
-    {
-      "shape": "rect",
-      "x": 0,
-      "y": 370,
-      "width": 640,
-      "height": 14,
-      "element": "STONE"
     },
     {
-      "shape": "rect",
-      "x": 0,
-      "y": 0,
-      "width": 3,
-      "height": 370,
-      "element": "STONE"
-    },
-    {
-      "shape": "rect",
-      "x": 637,
-      "y": 0,
-      "width": 3,
-      "height": 370,
-      "element": "STONE"
+      "file": "Menus/Assets/title-tiles-background.png",
+      "tiling": "none",
+      "parallaxX": 0.3,
+      "parallaxY": 0.2,
+      "scrollX": 0,
+      "scrollY": 0,
+      "opacity": 0.72
     }
   ],
+  "stamps": [],
   "particleImages": [
     {
       "file": "Menus/Assets/earth-2026-logo.png",
@@ -77,6 +61,14 @@
         "parameter": "logo",
         "seed": "entry"
       }
+    },
+    {
+      "file": "Menus/Assets/title-tiles-foreground.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "element": "STONE"
     }
   ]
 }
