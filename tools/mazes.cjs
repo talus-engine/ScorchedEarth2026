@@ -37,6 +37,11 @@ function assemble({ tiles, props, catalog, themes = readJSON(THEMES).themes }) {
         const fg = required(tiles, theme.foreground, 'foreground tile set');
         const bg = required(tiles, theme.background, 'background tile set');
         if (/background/i.test(fg.name) || !/background/i.test(bg.name)) throw Error('Foreground/background tile roles are reversed');
+        maze.resources = { catalog: 'terrain-presets', tilesets: [fg, bg].map(tile => {
+            if (!tile.path.startsWith('/Assets/Sprites/')) throw Error('Expected a native sprite sheet: ' + tile.path);
+            return { id: tile.id, name: tile.name, imageRef: 'sprite-image:' + tile.path.slice('/Assets/Sprites/'.length),
+                tileWidth: tile.tileWidth, tileHeight: tile.tileHeight, type: tile.ruleMode, layout: tile.layout };
+        }) };
         const mapping = (tile, layerId, mazeKind, element) => ({ layerId, kind: 'tile', mazeKind,
             tilesetId: tile.id, tilesetSourcePath: tile.path, tilesetLayerId: tile.layers[0].id,
             elementId: element, materialElementId: element });
@@ -102,7 +107,11 @@ function build() {
     return result;
 }
 
-module.exports = { assemble, build };
+function resourceImages(catalog) {
+    return [...new Set(catalog.recipes.flatMap(recipe => recipe.maze?.resources?.tilesets.map(tile => tile.imageRef) || []))].sort();
+}
+
+module.exports = { assemble, build, resourceImages };
 if (require.main === module) run(async () => {
     const { positionals, values } = parseArgs({ allowPositionals: true, options: { help: { type: 'boolean' } } });
     const usage = 'Usage: node tools/mazes.cjs <build|props>';

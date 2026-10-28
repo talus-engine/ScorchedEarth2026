@@ -56,7 +56,8 @@ async function catalog() {
         if (kind === 'settings') document.id = 'default';
         documents.push(document);
     }
-    let { job } = await call('engine_resource_catalog', { action: 'capture', catalog: 'terrain-presets', documents });
+    const assets = require('./mazes.cjs').resourceImages(readJSON(path.join(ROOT, 'world/Game/Mazes/catalog.json')));
+    let { job } = await call('engine_resource_catalog', { action: 'capture', catalog: 'terrain-presets', documents, assets });
     while (['running', 'committing'].includes(job.state)) {
         await delay(500);
         ({ job } = await call('engine_resource_catalog', { action: 'status', job: job.id }));

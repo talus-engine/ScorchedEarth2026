@@ -63,6 +63,13 @@ Edit [themes.json](../assets/mazes/themes.json), then run
 their source paths, tile dimensions and layer IDs. Brush sources are the
 project-owned files in `world/Game/Presets`.
 
+Each recipe binds those tile dimensions, stencil rules and sheet references in
+`maze.resources`. With a compatible editor open, `node tools/project.cjs catalog`
+captures all eight foreground/background sheets together with the complete
+brush document set into `terrain-presets`. Catalog capture replaces the catalog
+atomically; it must retain the brush documents as well as the explicit image
+roots. New saves pin those bytes rather than consulting global tile presets.
+
 With Indigo open in the editor, `node tools/mazes.cjs props` regenerates the six
 scenery templates and captures their records. Their pixel/material definitions
 live in `tools/lib/maze-props.cjs`; use the native entity editor for detailed art.

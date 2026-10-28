@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { createHash } = require('node:crypto');
-const { assemble } = require('../tools/mazes.cjs');
+const { assemble, resourceImages } = require('../tools/mazes.cjs');
 const catalog = require('../world/Game/Mazes/catalog.json');
 const base = require('../world/Game/terrain-recipes.json');
 const tiles = require('../assets/mazes/tiles.json').presets;
@@ -54,6 +54,27 @@ test('maze strokes retain all native source types and exact trained neural weigh
     }
     const bramble = catalog.recipes.find(x => x.id === 'cavern-war').maze.strokes.find(x => x.sourceKind === 'grow');
     assert.equal(bramble.content.growth.id, 'builtin-living-bramble');
+});
+
+test('maze resources pin every foreground/background sheet and retain native tileset rules', () => {
+    const images = resourceImages(catalog);
+    assert.equal(images.length, 8);
+    for (const r of catalog.recipes) {
+        assert.equal(r.maze.resources.catalog, 'terrain-presets');
+        for (const m of r.maze.mappings.filter(m => m.kind === 'tile')) {
+            const bound = r.maze.resources.tilesets.find(t => t.id === m.tilesetId);
+            const native = tiles.find(t => t.id === m.tilesetId);
+            assert.ok(bound, 'Every tile mapping must have immutable metadata');
+            assert.equal(bound.imageRef, 'sprite-image:' + native.path.slice('/Assets/Sprites/'.length));
+            assert.ok(images.includes(bound.imageRef));
+            assert.equal(bound.type, native.ruleMode);
+            assert.equal(bound.layout, native.layout);
+            assert.equal(bound.tileWidth, native.tileWidth);
+            assert.equal(bound.tileHeight, native.tileHeight);
+        }
+    }
+    assert.deepEqual(resourceImages({ recipes: [...catalog.recipes, ...catalog.recipes] }), images,
+        'Repeated mappings must not duplicate catalog image roots');
 });
 
 test('maze scenery uses captured native entity bodies within the spawn footprint', () => {
