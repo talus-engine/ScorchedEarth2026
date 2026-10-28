@@ -9,7 +9,7 @@ function fixture(){
     const alpha={name:'Alpha',entityId:'original-shooter',eliminated:false,cashEarned:80},bravo={name:'Bravo',entityId:'target',eliminated:false,cashEarned:90};
     actors.set(alpha.entityId,makeActor(alpha.entityId,50,500));actors.set(bravo.entityId,makeActor(bravo.entityId,1000,500));
     const ctx={state:{arena:{bounds:{x:0,y:0,w:2000,h:1280}},match:{phase:'turn',bounds:{x:0,y:0,w:2000,h:1280},roster:[alpha,bravo]},bank:{players:{alpha:{name:'Alpha',cash:500,earned:200,revision:1},bravo:{name:'Bravo',cash:900,earned:300,revision:2}},rounds:{},cpuShops:{}},cashPopups:new Map()},economy:{playerKey:p=>p.name.toLowerCase()},core:{entity:p=>actors.get(p.entityId)},session:{persist(){},fail:e=>failures.push(e)},residency:{emissionRegionReady:(key,spec,particles,actorReady)=>{regions.push({key,spec,particles,actorReady});return actorReady;},releaseEmissionRegion:key=>released.push(key),releaseEmissionRegions:prefix=>released.push(prefix)}};
-    const talus={world:{id:'match-world',explode:spec=>{blasts.push(spec);return{carvedCells:0};},spawnParticles:spec=>{smoke.push(spec);return spec.count;}},game:{setSaveBarrier:(id,why)=>why===null?barriers.delete(id):barriers.set(id,why)},on:(event,fn)=>(handlers[event]||=[]).push(fn),entities:{get:id=>actors.get(id),spawn:async(template,x,y)=>{assert.equal(template,'sheep-template');if(spawnPromise)return spawnPromise;const actor=makeActor('sheep-'+(++spawnCounter),x,y);actors.set(actor.id,actor);return actor;}},installed:{set(key,value){if(persistFailure)throw Error('durable store refused');installed[key]=structuredClone(value);}}};
+    const talus={log(){},world:{id:'match-world',explode:spec=>{blasts.push(spec);return{carvedCells:0};},spawnParticles:spec=>{smoke.push(spec);return spec.count;}},game:{setSaveBarrier:(id,why)=>why===null?barriers.delete(id):barriers.set(id,why)},on:(event,fn)=>(handlers[event]||=[]).push(fn),entities:{get:id=>actors.get(id),spawn:async(template,x,y)=>{assert.equal(template,'sheep-template');if(spawnPromise)return spawnPromise;const actor=makeActor('sheep-'+(++spawnCounter),x,y);actors.set(actor.id,actor);return actor;}},installed:{set(key,value){if(persistFailure)throw Error('durable store refused');installed[key]=structuredClone(value);}}};
     function service(){const module={exports:{}};vm.runInNewContext(source,{module,exports:module.exports,talus,Math,Number,Object,JSON,Set});const api=module.exports(ctx);api.configure({...structuredClone(catalog),sheep:{...catalog.sheep,template:'sheep-template'}});return api;}
     const api=service();api.bind();
     const sheep={id:'black-sheep',behavior:{mode:'trickster',kind:'black-sheep'}};
@@ -37,4 +37,31 @@ test('sheep fuse bounds settlement, out-of-bounds removal is harmless, and capac
 });
 test('stopping an in-flight native spawn cleans its late body without repopulating another round',async()=>{
     const f=fixture();let resolve;f.spawnPromise(new Promise(done=>resolve=done));f.api.impact('black-sheep',f.alpha.entityId,{x:400,y:500});f.api.tick(.1);assert.equal(f.api.busy(),true);f.api.finish();const body=f.makeActor('late-sheep',400,500);f.actors.set(body.id,body);resolve(body);await flush();assert.equal(body.exists,false);assert.equal(f.api.busy(),false);assert.equal(f.barriers.size,0);assert.equal(f.api.settling(),false);
+});
+test('particle capture defers sheep without faulting or duplicating the paid payload',async()=>{
+    const f=fixture();let attempts=0;const spawn=f.talus.entities.spawn;
+    f.talus.entities.spawn=async(...args)=>++attempts===1?null:spawn(...args);
+    f.api.impact('black-sheep',f.alpha.entityId,{x:400,y:500});f.api.tick(.1);await flush();
+    assert.equal(f.failures.length,0);assert.equal(f.api.settling(),true);assert.equal(f.barriers.size,0);
+    f.api.tick(.1);await flush();assert.equal(attempts,1,'Retry waits rather than hammering native capture');
+    f.api.tick(.5);await flush();f.api.tick(.1);await flush();
+    assert.equal(attempts,2);assert.equal(f.actors.size,3);assert.equal(f.ctx.state.match.tricksters.sheep.length,1);
+    assert.equal(f.ctx.state.match.tricksters.sheep[0].mode,'running');assert.equal(f.failures.length,0);
+});
+test('unavailable sheep spawn exhausts a finite retry budget and releases settlement',async()=>{
+    for(const rejected of [false,true]){
+        const f=fixture();let attempts=0;
+        f.talus.entities.spawn=async()=>{attempts++;if(rejected)throw Error('capture active');return null;};
+        f.api.impact('black-sheep',f.alpha.entityId,{x:400,y:500});
+        for(let i=0;i<10;i++){f.api.tick(.5);await flush();}
+        assert.equal(attempts,6);assert.equal(f.failures.length,0);assert.equal(f.api.settling(),false);
+        assert.equal(f.barriers.size,0);assert.equal(f.blasts.length,0);assert.equal(f.actors.size,2);
+        assert.ok(f.released.includes('trickster:1'));
+    }
+});
+test('a deferred sheep is not retried after the round ends',async()=>{
+    const f=fixture();let attempts=0;f.talus.entities.spawn=async()=>{attempts++;return null;};
+    f.api.impact('black-sheep',f.alpha.entityId,{x:400,y:500});f.api.tick(.1);await flush();
+    f.api.finish();f.api.tick(1);await flush();
+    assert.equal(attempts,1);assert.equal(f.api.settling(),false);assert.equal(f.failures.length,0);
 });

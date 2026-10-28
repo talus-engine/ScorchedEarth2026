@@ -39,7 +39,7 @@ function create(ctx: Runtime) {
         const s = state();
         if (s.sheep.length >= catalog.sheep.maxActive)
             throw new Error('Black Sheep capacity reached');
-        const job = { id: ++s.serial, source: owner, entityId: null, mode: 'queued', age: 0,
+        const job = { id: ++s.serial, source: owner, entityId: null, mode: 'queued', age: 0, spawnAttempts: 0, retryAt: 0,
             x: at.x, y: Math.max(current().bounds.y + 12, at.y - catalog.sheep.spawnLift), stuck: 0, lastX: at.x };
         s.sheep.push(job);
         ctx.session.persist();
@@ -67,15 +67,18 @@ function create(ctx: Runtime) {
             return;
         const token = generation, match = current();
         pending.add(job);
+        job.spawnAttempts = (job.spawnAttempts || 0) + 1;
         barrier();
         void (async () => {
             try {
                 const entity = await talus.entities.spawn(catalog.sheep.template, job.x, job.y);
-                if (!entity)
-                    throw new Error('Native Black Sheep spawn refused');
                 if (token !== generation || current() !== match) {
-                    if (entity.exists)
+                    if (entity?.exists)
                         entity.despawn();
+                    return;
+                }
+                if (!entity) {
+                    retry(job);
                     return;
                 }
                 job.entityId = entity.id;
@@ -85,13 +88,24 @@ function create(ctx: Runtime) {
             }
             catch (error) {
                 if (token === generation && current() === match)
-                    ctx.session.fail(String(error));
+                    retry(job, String(error));
             }
             finally {
                 pending.delete(job);
                 barrier();
             }
         })();
+    }
+    function retry(job: any, reason = 'Native entity spawn unavailable'): void {
+        // Saving particles can temporarily defer native entity creation.
+        if (job.entityId || job.spawnAttempts >= 6 || job.age >= 8) {
+            remove(job);
+            talus.log('Black Sheep cancelled: ' + reason);
+        }
+        else {
+            job.retryAt = state().clock + .5;
+        }
+        ctx.session.persist();
     }
     function explode(job: any): boolean {
         if (!ready(job, true))
@@ -118,7 +132,12 @@ function create(ctx: Runtime) {
             if (pending.has(job))
                 continue;
             if (job.mode === 'queued') {
-                if (ready(job))
+                if (job.age >= 8) {
+                    remove(job);
+                    talus.log('Black Sheep cancelled: spawn area unavailable');
+                    ctx.session.persist();
+                }
+                else if (s.clock >= (job.retryAt || 0) && ready(job))
                     spawn(job);
                 continue;
             }

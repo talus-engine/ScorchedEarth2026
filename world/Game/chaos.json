@@ -1,6 +1,12 @@
 {
   "resultQuietSeconds": 1,
   "deathAftermathSeconds": 1,
+  "wreckage": {
+    "dynamiteRadius": 4,
+    "ignitionRadius": 2,
+    "impulseMin": 600,
+    "impulseMax": 1800
+  },
   "effects": [
     {
       "id": "dynamite",

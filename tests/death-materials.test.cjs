@@ -24,13 +24,15 @@ function scene(effect) {
     f.talus.projectiles = { launch(spec) { const shot = { id: shots.length + 1, spec: structuredClone(spec), exists: true };
         shots.push(shot); return shot; }, get(id) { return shots.find(s => s.id === id); } };
     f.talus.world.spawnParticles = spec => { sprays.push(structuredClone(spec)); return spec.count; };
+    wreck.releaseParts = async () => { wreck.exists = false; return { status: 'completed', reason: 'ok', released: 1, center: { x: job.x, y: job.y }, parts: [{ id: 'released-hull', members: 523, center: { x: job.x, y: job.y }, body: { can: () => true, applyImpulse() {} } }] }; };
+    f.talus.world.terrainWork = async () => ({ status: 'completed', reason: 'ok', added: 4 });
     f.talus.world.explode = async () => ({ status: 'completed', reason: 'ok', carvedCells: 0 });
     ctx.session.run = fn => pending.push(fn());
     f.api.queueChaos(p);
     const job = f.m.chaos.jobs[0];
     return { ...f, ctx, p, wreck, job, fx, control, calls, pending, holds, shots, sprays, despawns,
         step(dt) { f.talus.sim.clock += dt; f.api.tickChaos(dt); },
-        async settle() { await Promise.all(pending); } };
+        async settle() { let count = -1; while (count !== pending.length) { count = pending.length; await Promise.all(pending); } } };
 }
 
 test('Dynamite adopts the painted frame, ignites only its local centre and leaves the real wreck to react', async () => {
@@ -56,9 +58,10 @@ test('Dynamite adopts the painted frame, ignites only its local centre and leave
     assert.equal(f.job.convertedMembers, 523);
     assert.equal(f.job.ignitedMembers, 5, 'Overlapping real members are not limited to four artificial pixels');
     assert.equal(f.job.emissionDone, true);
-    assert.equal(f.wreck.exists, true);
+    assert.equal(f.wreck.exists, false, 'Native release transfers the hull into an independent body');
+    assert.equal(f.job.partsResult.released, 1);
     assert.equal(f.despawns.length, 0, 'Physical dynamite is not removed before native combustion');
-    assert.deepEqual(f.holds, [20, 0]);
+    assert.deepEqual(f.holds, [20], 'Release consumes the pose hold');
     f.step(.01);
     assert.equal(f.m.chaos.jobs.length, 0, 'The rest of play need not wait for chemistry to settle');
 });
@@ -85,12 +88,13 @@ test('Last laugh shoots ten independent random directions before native dynamite
     assert.ok(f.shots.every(s => s.spec.owner === f.wreck.id && s.spec.independent));
     assert.equal(f.calls[0].element, 'DYNAMITE');
     assert.equal(f.calls[1].element, 'FIRE');
-    assert.equal(f.job.emissionDone, true);
+    assert.equal(f.job.emissionDone, false, 'The wreck still waits for its shells');
     assert.equal(f.despawns.length, 0);
     assert.equal(f.m.chaos.jobs.length, 1, 'Real descendant lifecycle still fences the script queue');
     for (const shot of f.shots) f.emit('projectile.end', { projectileId: shot.id, ownerStableId: f.wreck.id });
     f.step(.01);
     assert.equal(f.job.ended, 10);
+    await f.settle();f.step(0);
     assert.equal(f.m.chaos.jobs.length, 0);
 });
 
@@ -187,7 +191,7 @@ test('A furnace with blocked pulses finishes on time and releases its save barri
         assert.equal(f.ctx.state.emissionRegions.size, 0);
         assert.equal(f.ctx.state.deathPoseHolds.size, 0);
         assert.equal(f.barriers.has('match-sequence'), false);
-        assert.equal(f.holds.at(-1), 0);
+        assert.equal(f.job.partsResult.status, 'completed');
         f.step(10);
         assert.equal(f.sprays.length, 100, 'Blocked pulses are never replayed or retried forever');
     }

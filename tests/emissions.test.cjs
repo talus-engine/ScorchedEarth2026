@@ -3,6 +3,8 @@ const { loadGame } = require('./support/runtime.cjs');
 // These tests do not claim real offscreen particle or projectile acceptance.
 const assert = require('node:assert/strict'), fs = require('node:fs'), path = require('node:path');
 const root = path.resolve(__dirname, '..');
+const chaos = require('../world/Game/chaos.json');
+async function drain(pending) { let count = -1; while (count !== pending.length) { count = pending.length; await Promise.all(pending); } }
 const shop = JSON.parse(fs.readFileSync(path.join(root, 'world/Game/shop.json'), 'utf8'));
 function scene(saved) {
     const control = { ready: false, empty: false, particles: 'simulated', refusal: null, reject: null, explosion: { status: 'completed', reason: 'ok', carvedCells: 0 }, placed: 8 };
@@ -12,9 +14,10 @@ function scene(saved) {
         get exists() { return !['destroyed', 'unresolved'].includes(this.residency); }, get isLive() { return this.residency === 'live'; },
         blackboard: { get: () => 45 }, despawn() { this.residency = 'destroyed'; },
     };
+    actor.releaseParts = async () => { actor.residency = 'destroyed'; return { status: 'completed', reason: 'ok', released: 1, center: actor.position, parts: [{ id: 'wreck-body', members: 100, center: actor.position, body: { can: () => true, applyImpulse() {} } }] }; };
     const shots = new Map([[1, { id: 1, exists: true }]]);
     const specCopy = spec => ({ ...spec, ...(spec.follow ? { follow: typeof spec.follow === 'string' ? spec.follow : spec.follow.id } : {}) });
-    const talus = { editor: { available: false }, on() { }, after() { }, log(message) { records.push(message); },
+    const talus = { elements: { get: () => ({ id: 42 }) }, editor: { available: false }, on() { }, after() { }, log(message) { records.push(message); },
         sim: { clock: 0, paused: false, anchor(spec) {
                 attempts++;
                 if (control.reject)
@@ -53,7 +56,7 @@ function scene(saved) {
     context.api = { tickAttack: ctx.combat.tickAttack, tickChaos: ctx.chaos.tickChaos, finishEmission: ctx.chaos.finishEmission, emissionRegionReady: ctx.residency.emissionRegionReady, releaseEmissionRegions: ctx.residency.releaseEmissionRegions, fail: ctx.session.fail, load(m, s) {
             ctx.state.match = m;
             ctx.state.market = s;
-            ctx.state.chaosCatalog = { effects: [] };
+            ctx.state.chaosCatalog = { ...chaos, effects: [] };
             ctx.session.persist = () => { };
             ctx.menus.publish = () => { };
             ctx.menus.input = () => { };
@@ -198,7 +201,7 @@ async function main() {
         assert.equal(f.explosions[0].radius, 48);
         assert.equal(f.explosions[0].scope, 'world');
         assert.equal(job.emissionDone, false, 'Finale waits for its native completion receipt');
-        await Promise.all(f.pending);
+        await drain(f.pending);
         f.step(0, 'chaos');
         assert.equal(f.anchors[0].spec.halfWidth, 64, 'The origin region contains the whole authored finale radius');
         assert.equal(job.particles, 24);
@@ -220,7 +223,7 @@ async function main() {
         f.control.explosion = { status: 'refused', reason: 'capacity' };
         assert.equal(f.api.finishEmission(job, fx), false);
         assert.equal(job.emissionDone, false);
-        await Promise.all(f.pending);
+        await drain(f.pending);
         f.step(0, 'chaos');
         assert.equal(f.explosions[0].scope, 'world', 'Finale does not depend on the camera or a live wreck');
         assert.equal(job.emissionDone, true);
@@ -242,7 +245,7 @@ async function main() {
         f.control.placed = 8;
         f.step(.05, 'chaos');
         f.step(.2, 'chaos');
-        await Promise.all(f.pending);
+        await drain(f.pending);
         f.step(0, 'chaos');
         assert.equal(job.emitted, 3);
         assert.equal(job.particles, 16);
@@ -258,7 +261,8 @@ async function main() {
         f.control.particles = 'held';
         f.step(.1, 'chaos');
         assert.equal(job.emitted, 2);
-        assert.equal(job.emissionDone, true);
+        assert.equal(job.effectDone, true);
+        assert.equal(job.emissionDone, false, 'Wreck waits for the last death shell');
         assert.equal(f.api.regions, 0);
         assert.equal(f.launches.length, 2);
         assert.ok(f.launches.every(s => s.independent === true));
@@ -270,9 +274,9 @@ async function main() {
         const f = scene(), { job } = f.death({ id: 'nuke', enabled: true, mode: 'brush', duration: 0, element: 'FIRE', radiusMin: 96, radiusMax: 96 });
         f.control.reject = 'BAD_ARGUMENT';
         f.step(.01, 'chaos');
-        await Promise.all(f.pending);
+        await drain(f.pending);
         assert.equal(f.attempts, 0, 'A brush uses terrainWork residency without a second nuke-sized anchor');
-        assert.equal(f.terrain.length, 1);
+        assert.equal(f.terrain.length, 3, 'Death brush followed by the shared dynamite/fire charge: ' + JSON.stringify(f.records));
         assert.equal(job.particles, 123);
         assert.equal(job.emissionDone, true);
     }
@@ -294,7 +298,7 @@ async function main() {
         after.actor.residency = 'live';
         after.step(.1, 'chaos');
         after.step(.1, 'chaos');
-        await Promise.all(after.pending);
+        await drain(after.pending);
         assert.equal(after.sprays.length, 1, 'Already emitted pulses are not replayed');
         assert.equal(after.explosions.length, 1);
         assert.equal(after.api.regions, 0);
@@ -316,7 +320,7 @@ async function main() {
         assert.equal(job.emissionDone, false);
         assert.equal(f.api.regions, 0, 'Native world work owns its own reservation');
         complete({ status: 'completed', reason: 'ok', carvedCells: 50 });
-        await Promise.all(f.pending);
+        await drain(f.pending);
         f.step(0, 'chaos');
         assert.equal(f.api.match.chaos.jobs.length, 0, 'An off-screen cryo finale completes and retires normally');
         assert.equal(f.records.length, 0);
@@ -327,7 +331,7 @@ async function main() {
         f.control.explosion = outcome === 'rejected' ? Promise.reject(Error('native publication fault'))
             : { status: outcome, reason: 'native-' + outcome };
         f.api.finishEmission(job, fx);
-        await Promise.all(f.pending);
+        await drain(f.pending);
         f.api.finishEmission(job, fx);
         assert.equal(job.emissionDone, true);
         assert.equal(f.explosions.length, 1, 'A publication failure must never replay potentially applied damage');

@@ -1,5 +1,6 @@
 /** Delayed death effects and their simulation requirements. */
 import type { Runtime } from 'context';
+import releaseWreckage = require('wreckage');
 function create(ctx: Runtime) {
     function chaosRandom(): number {
         let x = ctx.state.match.chaos.rng | 0;
@@ -106,13 +107,41 @@ function create(ctx: Runtime) {
                 beginFinale(job, fx);
             return false;
         }
+        job.effectDone = true;
+        ctx.residency.releaseEmissionRegion('death:' + job.id);
+        if (job.projectileIds.length)
+            return false;
+        if (!job.wreckDone) {
+            if (!job.workPending)
+                beginWreckage(job, fx);
+            return false;
+        }
         cleanupDeathPose(job);
         job.emissionDone = true;
-        const corpse = talus.entities.get(job.owner);
-        if (corpse?.exists && !job.materialConverted)
-            corpse.despawn();
         ctx.residency.releaseEmissionRegion('death:' + job.id);
         return true;
+    }
+    function beginWreckage(job: any, fx: any): void {
+        const match = ctx.state.match;
+        job.workPending = true;
+        ctx.residency.releaseEmissionRegion('death:' + job.id);
+        ctx.session.run(async () => {
+            try {
+                await releaseWreckage(ctx, job, chaosRandom);
+            }
+            catch (error) {
+                // Missing/offscreen/destroyed pieces must never prevent the next turn.
+                talus.log('Wreck finale ' + job.name + ': ' + String(error));
+            }
+            finally {
+                job.workPending = false;
+                if (ctx.state.match === match && match.phase !== 'fault' && match.chaos.jobs.includes(job)) {
+                    job.wreckDone = true;
+                    finishEmission(job, fx);
+                    ctx.session.persist();
+                }
+            }
+        });
     }
     function beginFinale(job: any, fx: any): void {
         const match = ctx.state.match;
@@ -199,8 +228,6 @@ function create(ctx: Runtime) {
                 if (ctx.state.match === match) {
                     if (failed || match.phase === 'fault')
                         cleanupDeathPose(job);
-                    else
-                        releaseDeathPose(job);
                     ctx.residency.releaseEmissionRegion('death:' + job.id);
                 }
                 if (complete && current()) {
@@ -225,8 +252,6 @@ function create(ctx: Runtime) {
             if (receipt.status !== 'completed')
                 throw new Error('Death brush: ' + receipt.reason);
             job.particles = receipt.added;
-            finishEmission(job, fx);
-            ctx.session.persist();
         }
         catch (error) {
             failed = true;
@@ -237,8 +262,10 @@ function create(ctx: Runtime) {
             if (ctx.state.match === match) {
                 if (failed || match.phase === 'fault')
                     cleanupDeathPose(job);
-                else
-                    releaseDeathPose(job);
+                else {
+                    finishEmission(job, fx);
+                    ctx.session.persist();
+                }
             }
         }
     }
@@ -259,12 +286,12 @@ function create(ctx: Runtime) {
             if (!fx?.enabled)
                 throw new Error('Death effect needs engine support: ' + job.effect);
             const wreck = talus.entities.get(job.owner)?.position;
-            if (!job.emissionDone && !job.finaleStarted && wreck) {
+            if (!job.emissionDone && !job.finaleStarted && !job.effectDone && wreck) {
                 job.x = wreck.x;
                 job.y = wreck.y;
             }
             try {
-                if (!job.emissionDone && !job.finaleStarted && ['spray', 'shells', 'magazine', 'transmute'].includes(fx.mode) && !ctx.residency.chaosRegionReady(job, fx))
+                if (!job.emissionDone && !job.finaleStarted && !job.effectDone && ['spray', 'shells', 'magazine', 'transmute'].includes(fx.mode) && !ctx.residency.chaosRegionReady(job, fx))
                     continue;
                 tickEffect(job, fx, dt);
             }
@@ -293,7 +320,7 @@ function create(ctx: Runtime) {
                 finishEmission(job, fx);
             }
         }
-        if (!job.emissionDone && !job.workPending && ['spray', 'shells'].includes(fx.mode)) {
+        if (!job.effectDone && !job.emissionDone && !job.workPending && ['spray', 'shells'].includes(fx.mode)) {
             const total = fx.mode === 'shells' ? fx.count : Math.ceil(fx.duration / fx.interval);
             while (job.emitted < total && job.emitted * fx.interval <= job.elapsed) {
                 const n = job.emitted;
@@ -330,6 +357,8 @@ function create(ctx: Runtime) {
             if (job.elapsed >= fx.duration || fx.mode === 'shells' && job.emitted >= total && !fx.finishBlast)
                 finishEmission(job, fx);
         }
+        if (job.effectDone && !job.emissionDone && !job.workPending)
+            finishEmission(job, fx);
         if (job.emissionDone && job.projectileIds.length === 0) {
             ctx.state.match.chaos.jobs = ctx.state.match.chaos.jobs.filter((v: any) => v.id !== job.id);
         }
