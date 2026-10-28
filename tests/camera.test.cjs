@@ -47,8 +47,7 @@ function setup(computers = 2) {
     };
     return { ...f, calls, texts, shots, holds, plates, status };
 }
-const flush = async () => { for (let i = 0; i < 30; i++)
-    await Promise.resolve(); };
+const flush = () => new Promise(resolve => setImmediate(resolve));
 function gates(f) {
     const waiting = [];
     f.talus.sleepTicks = () => new Promise(resolve => waiting.push(resolve));
@@ -163,7 +162,8 @@ async function main() {
         f.talus.sim.clock = start + 3;
         f.api.tickPresentation();
         assert.equal(f.m.chaos.jobs.length, 1);
-        assert.equal(f.holds.at(-1).seconds, 0);
+        assert.ok(f.holds.at(-1).seconds > 0 && f.holds.at(-1).seconds <= 30,
+            'Physical effect inherits a short finite hold after speech');
         assert.equal(f.m.presentation.active.stage, 'effect');
         f.talus.sim.paused = true;
         f.api.tickPresentation();

@@ -3,6 +3,7 @@ export type SupplyReading = {
     jet: number;
     shield: number;
     magnet: number;
+    deflectorItem?: 'magnet' | 'super-mag';
     groundSpent: number;
 };
 export type SpeechKind = 'shooting' | 'death';
@@ -84,6 +85,10 @@ export interface Runtime {
     combat: ReturnType<typeof import('combat')>;
     attachments: ReturnType<typeof import('attachments')>;
     chaos: ReturnType<typeof import('chaos')>;
+    creatures: ReturnType<typeof import('creatures')>;
+    ordnance: ReturnType<typeof import('ordnance')>;
+    tricksters: ReturnType<typeof import('tricksters')>;
+    payloads: ReturnType<typeof import('payloads')>;
     generation: ReturnType<typeof import('generation')>;
     landscape: ReturnType<typeof import('landscape')>;
     brushes: ReturnType<typeof import('brushes')>;

@@ -39,6 +39,7 @@ function create(ctx: Runtime) {
             weaponName: ctx.state.market ? ctx.economy.itemById(p.weaponId || 'standard').name : 'Field cannon',
             weaponAmmo: ctx.state.bank && p.weaponId && !ctx.economy.unlimited(p.weaponId) ? ctx.economy.owned(p, p.weaponId) : '∞',
             batteries: ctx.state.bank ? ctx.economy.owned(p, 'battery') : 0,
+            reflectiveFieldEnabled: !!ctx.state.market?.items.find((i: any) => i.id === 'super-mag' && i.enabled)?.field,
             attachments: ctx.state.market && ctx.state.bank ? ctx.state.market.items.filter((i: any) => i.enabled && i.attachment).map((i: any) => ({
                 name: i.name, action: 'arm-' + i.id, stock: ctx.economy.owned(p, i.id),
                 selected: p.guidanceArmed === i.id || p.contactArmed === i.id,
@@ -53,7 +54,11 @@ function create(ctx: Runtime) {
             parachuteOn: !!e?.isLive && !!e.controller.fallBrake?.deployed,
             supplies: ctx.state.bank ? { jet: e?.isLive ? (e.controller.state?.fuel ?? 0).toFixed(1) : '0', jetStock: ctx.economy.owned(p, 'jetpack').toFixed(1), dig: ctx.economy.owned(p, 'digger').toFixed(1), jetCapacity: e?.isLive ? (e.controller.state?.capacity ?? null) : null,
                 shield: e?.isLive ? Math.round(e.defenses.state?.shield?.remaining || 0) : 0, shieldCapacity: e?.isLive ? (e.defenses.state?.shield?.spec.capacity ?? 0) : 0, magnetCapacity: e?.isLive ? (e.defenses.state?.deflector?.spec.capacity ?? 0) : 0, magnet: e?.isLive ? (e.defenses.state?.deflector?.remaining || 0).toFixed(1) : '0',
-                shieldOn: !!e?.isLive && !!e.defenses.state?.shield?.active, magnetOn: !!e?.isLive && !!e.defenses.state?.deflector?.active } : null,
+                deflectorName: ctx.equipment.selectedDeflector(p) === 'super-mag' ? 'Reflector' : 'Mag',
+                magnetStock: ctx.economy.owned(p, 'magnet').toFixed(1), reflectStock: ctx.economy.owned(p, 'super-mag').toFixed(1),
+                shieldOn: !!e?.isLive && !!e.defenses.state?.shield?.active,
+                magnetOn: !!e?.isLive && !!e.defenses.state?.deflector?.active && !e.defenses.state?.deflector?.spec.reflection,
+                reflectOn: !!e?.isLive && !!e.defenses.state?.deflector?.active && !!e.defenses.state?.deflector?.spec.reflection } : null,
             canEquip: !ctx.state.shopOpen && (ctx.core.human() || ctx.state.match.phase === 'ready'),
             loadout: ctx.state.market && ctx.state.bank ? ctx.state.market.items.filter((i: any) => i.enabled && i.kind === 'weapon' && ctx.economy.owned(p, i.id) > 0).map((i: any) => ({
                 name: i.name, stock: ctx.economy.unlimited(i.id) ? '∞' : ctx.economy.owned(p, i.id), action: 'equip-' + i.id,
@@ -259,6 +264,10 @@ function create(ctx: Runtime) {
         talus.on('menu.hud.magnet', () => {
             if (ctx.core.human())
                 ctx.equipment.useDefense(ctx.core.current(), 'magnet');
+        });
+        talus.on('menu.hud.super-mag', () => {
+            if (ctx.core.human())
+                ctx.equipment.useDefense(ctx.core.current(), 'super-mag');
         });
         talus.on('menu.hud.battery', () => {
             if (ctx.core.human())

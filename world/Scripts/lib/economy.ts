@@ -90,6 +90,9 @@ function create(ctx: Runtime) {
                 if (owned(p, id) >= 2 || buy(id, 2))
                     break;
             }
+            if (ctx.state.market.items.some((item: any) => item.enabled && item.kind === 'weapon'
+                && item.behavior?.mode.startsWith('battery') && owned(p, item.id) > 0))
+                buy('battery', 2);
             if (d.exploration)
                 buy('fuel-tank', 2);
             for (const id of d.utilityPreferences.slice(0, 3))

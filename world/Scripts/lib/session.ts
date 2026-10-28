@@ -3,6 +3,7 @@ import type { Runtime } from 'context';
 function create(ctx: Runtime) {
     function sequencePending(): boolean {
         return !!(ctx.state.match && (ctx.state.supplySequence || ctx.state.arcadeCard || ctx.state.match.attack || ctx.core.presenting() || ctx.state.match.chaos.jobs.length || ctx.state.launchingChaos || ctx.state.digging
+            || ctx.payloads.busy()
             || ['deploying', 'telegraph', 'firing', 'flight', 'settling', 'focusing', 'refocusing', 'positioning', 'aftermath'].includes(ctx.state.match.phase)));
     }
     function updateExitView(): void {
@@ -87,7 +88,10 @@ function create(ctx: Runtime) {
         talus.game.quitToMenu({ save: 'required', destination: 'title' });
     }
     function fail(error: any): void {
+        ctx.payloads.stop();
+        talus.world.cancelTerrainWork();
         ctx.residency.releaseEmissionRegions();
+        ctx.chaos.releaseDeathPoses();
         ctx.camera.holdCamera();
         const message = String(error);
         ctx.menus.input(false);

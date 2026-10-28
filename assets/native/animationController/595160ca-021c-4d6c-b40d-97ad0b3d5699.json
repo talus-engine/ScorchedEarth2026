@@ -1,0 +1,66 @@
+{
+  "controllerId": "595160ca-021c-4d6c-b40d-97ad0b3d5699",
+  "entityTemplateId": "32f1e151-1919-482b-b3e6-bfffc804c407",
+  "layers": [
+    {
+      "blendMode": "override",
+      "name": "locomotion",
+      "stateMachine": {
+        "defaultState": "idle",
+        "states": [
+          {
+            "clipId": "2f509670-605f-48b3-8c33-1782ce9e9b23",
+            "loop": true,
+            "speed": 1,
+            "stateName": "idle"
+          },
+          {
+            "clipId": "3b6ae504-92e4-4bb6-a36a-1f8a79dc380c",
+            "loop": true,
+            "speed": 1,
+            "stateName": "run"
+          }
+        ],
+        "transitions": [
+          {
+            "conditions": [
+              {
+                "op": ">",
+                "parameter": "speed",
+                "value": 0.05
+              }
+            ],
+            "crossfadeDuration": 0,
+            "exitTimePercent": 0,
+            "fromState": "idle",
+            "hasExitTime": false,
+            "interruptible": true,
+            "toState": "run"
+          },
+          {
+            "conditions": [
+              {
+                "op": "<=",
+                "parameter": "speed",
+                "value": 0.05
+              }
+            ],
+            "crossfadeDuration": 0,
+            "exitTimePercent": 0,
+            "fromState": "run",
+            "hasExitTime": false,
+            "interruptible": true,
+            "toState": "idle"
+          }
+        ]
+      },
+      "weight": 1
+    }
+  ],
+  "parameters": {
+    "speed": {
+      "default": 0,
+      "type": "float"
+    }
+  }
+}

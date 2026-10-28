@@ -16,9 +16,13 @@ loaded by Talus once per script sandbox and do not start as independent scripts.
 | `lifecycle`, `menus` | Read configuration, create the roster, restore a match, publish UI state and route player input |
 | `turns`, `session` | Advance turns, resolve results, persist match state and hold save barriers during unfinished actions |
 | `combat`, `chaos` | Spend ammunition on accepted launches, handle projectile payloads and run delayed death effects |
+| `payloads` | Admit special weapons and route one landed carrier into its configured payload service |
+| `ordnance` | Own persistent mines, finite barrages, countdowns and material payload receipts |
+| `creatures`, `tricksters` | Drive native battlefield creatures, real contact effects and receipted cash transfers |
 | `aiming`, `cpu` | Survey terrain, choose tactics, move, learn from impacts and retain successful shots |
 | `equipment`, `economy` | Drive native controllers, reconcile finite utility consumption, purchase stock and award cash |
-| `attachments` | Arm purchased guidance/fuses, survey fixed-angle shots and steer or detonate native projectiles |
+| `attachments` | Reserve native cast accessories, reconcile accepted-launch spending and survey fixed-angle shots |
+| `special-weapons` | Bound cutting-shot aim estimates by native range, material eligibility and the protected foundation |
 | `presentation`, `camera` | Smooth tracking, three-second dialogue, arcade cards and native text labels |
 | `residency`, `supplies` | Restore parked tanks, own bounded emitter regions, focus and award supply drops |
 | `generation`, `landscape`, `brushes` | Select pinned presets, place terrain and physical structures, find supported deployment positions |
@@ -42,6 +46,14 @@ while another tank acts. Their small native simulation regions exist only while
 emitting. A projectile can travel away from the shooter, which may be parked by
 the engine. Durable entity IDs, native residency and actual projectile events
 remain authoritative.
+
+Special carriers declare `behavior.mode` in `Game/shop.json`; `payloads` loads
+their definitions from `Game/ordnance.json`, `Game/creatures.json` and
+`Game/tricksters.json`. Capacity and capability checks run before casting. Only
+an accepted root landing queues the payload; expiration, removal and world-edge
+termination do not summon an effect. Secondary ordnance launches are isolated
+from the current attack's ammunition transaction, even if a mine's owner is
+taking another turn. Real native hit/contact events drive damage and rewards.
 
 CPU-only series buy stock and start the next round automatically after results
 and outstanding effects finish. The native `game.newGame` transition receives
@@ -67,6 +79,16 @@ Payout receipts prevent a result from paying twice. Utility consumption and its
 stock debit share one installed-state write. Save barriers cover deployment,
 volleys, presentations and unfinished effects. The pause menu offers an optional finish-and-save path at a safe boundary.
 Quit stays available immediately and may discard unsaved battle progress.
+
+The match stores payload records under `ordnance`, `creatures` and `tricksters`:
+durable entity/body IDs, original shooter IDs, deterministic random state,
+finite timers and contact cooldowns. Native entities and bodies own their
+physical pose, contacts and streaming. Services rebuild region leases as needed;
+they do not serialize live handles. Unfinished spawns, terrain work, countdowns
+and tracked ordnance flights hold the save boundary. Dormant mines and idle
+creatures remain ordinary saved world objects. Round completion waits for finite
+effects, then removes owned hazards and releases their regions. Fault cleanup
+invalidates pending callbacks so late completions cannot attach to another match.
 
 ## Graph and dialogue
 

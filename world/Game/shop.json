@@ -1326,42 +1326,58 @@
       "kind": "weapon",
       "price": 300,
       "bundle": 3,
-      "enabled": false,
-      "category": "Unavailable",
-      "description": "Requires custom element resolution in scripted projectile launches. Native laser material is authored; this weapon remains unavailable.",
+      "enabled": true,
+      "category": "Energy",
+      "description": "Eight native cutting pulses vaporize contacted earth and damage hulls. Needs one Battery; finite two-second flight.",
       "projectile": {
-        "kind": "particle",
-        "bodySizePx": 2,
-        "speed": 3000,
-        "speedAtMinPower": 3000,
-        "speedVariance": 0,
-        "gravityScale": 0,
-        "drag": 0,
-        "lifetime": 0.75,
-        "range": 0,
+        "aoeRadius": 0,
+        "bodySizePx": 1,
+        "bouncing": 0,
+        "carveMode": "none",
+        "carveRadius": 0,
         "damage": 8,
         "damageType": "fire",
-        "aoeRadius": 0,
-        "carveRadius": 0,
-        "carveMode": "none",
-        "spread": 0,
-        "knockback": 0,
-        "spawnOffset": 40,
-        "independent": true,
         "detonate": {
-          "onTerrain": true,
           "onBody": true,
+          "onTerrain": true,
           "atLifetime": true
         },
-        "material": "LASER",
-        "projectilesPerShot": 18,
-        "caImpact": true
+        "drag": 0,
+        "gravityScale": 0,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "particle",
+        "knockback": 0,
+        "lifetime": 2,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 8,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 40,
+        "speed": 600,
+        "speedAtMinPower": 600,
+        "speedVariance": 0,
+        "spread": 0.008,
+        "spreadPattern": "uniform",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "caImpact": true,
+        "material": "TERRA_LASER"
       },
       "original": "Laser",
       "behavior": {
         "mode": "battery"
       },
-      "unavailableReason": "Requires custom element resolution in scripted projectile launches. Native laser material is authored; this weapon remains unavailable."
+      "template": "4ea48030-4b11-43f7-906c-e0c5820a3c67",
+      "modTemplate": "6b6c5547-29da-4a9d-abac-31400ec5094f"
     },
     {
       "id": "machine-gun",
@@ -1930,72 +1946,1842 @@
       "name": "Baby Digger",
       "original": "Baby Digger",
       "kind": "weapon",
-      "category": "Unavailable",
-      "price": 0,
-      "bundle": 1,
-      "enabled": false,
-      "description": "No configured native implementation for native underground projectile tunneling.",
-      "unavailableReason": "No configured native implementation for native underground projectile tunneling."
+      "category": "Excavation",
+      "price": 120,
+      "bundle": 3,
+      "enabled": true,
+      "description": "A narrow smoke-producing drill shell. Cuts up to 320px with finite work; stops at protected foundations.",
+      "projectile": {
+        "aoeRadius": 50,
+        "bodySizePx": 2,
+        "bouncing": 0,
+        "carveMode": "none",
+        "carveRadius": 0,
+        "damage": 35,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": false,
+          "atLifetime": true
+        },
+        "drag": 0,
+        "gravityScale": 0,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 4,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 180,
+        "speedAtMinPower": 180,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "excavation": {
+          "radius": 4,
+          "lookahead": 24,
+          "cutAhead": 0,
+          "output": 5,
+          "clearance": "solid",
+          "noise": {
+            "seed": 431,
+            "algorithm": "simplex",
+            "frequency": 0.09,
+            "width": 3,
+            "octaves": 2,
+            "persistence": 0.5,
+            "lacunarity": 2
+          },
+          "work": 6000,
+          "distance": 320,
+          "admissionTimeoutSeconds": 2,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "w": 29184,
+            "h": 1024
+          },
+          "exclusions": [
+            {
+              "x": 0,
+              "y": 1024,
+              "w": 29184,
+              "h": 256
+            }
+          ],
+          "materials": [
+            {
+              "element": 10,
+              "hardness": 1
+            },
+            {
+              "element": 11,
+              "hardness": 1
+            },
+            {
+              "element": 9,
+              "hardness": 3
+            },
+            {
+              "element": 14,
+              "hardness": 4
+            },
+            {
+              "element": 18,
+              "hardness": 2
+            },
+            {
+              "element": 176,
+              "hardness": 2
+            },
+            {
+              "element": 61,
+              "hardness": 5
+            },
+            {
+              "element": 8,
+              "hardness": 2
+            },
+            {
+              "element": 165,
+              "hardness": 2
+            },
+            {
+              "element": 169,
+              "hardness": 1
+            },
+            {
+              "element": 12,
+              "hardness": 1
+            },
+            {
+              "element": 37,
+              "hardness": 2
+            },
+            {
+              "element": 4,
+              "hardness": 1
+            },
+            {
+              "element": 41,
+              "hardness": 1
+            },
+            {
+              "element": 21,
+              "hardness": 1
+            },
+            {
+              "element": 29,
+              "hardness": 2
+            },
+            {
+              "element": 42,
+              "hardness": 2
+            },
+            {
+              "element": 44,
+              "hardness": 1
+            },
+            {
+              "element": 166,
+              "hardness": 2
+            },
+            {
+              "element": 167,
+              "hardness": 2
+            },
+            {
+              "element": 168,
+              "hardness": 1
+            },
+            {
+              "element": 119,
+              "hardness": 1
+            },
+            {
+              "element": 121,
+              "hardness": 1
+            },
+            {
+              "element": 122,
+              "hardness": 1
+            },
+            {
+              "element": 123,
+              "hardness": 1
+            },
+            {
+              "element": 124,
+              "hardness": 1
+            },
+            {
+              "element": 125,
+              "hardness": 1
+            },
+            {
+              "element": 126,
+              "hardness": 1
+            },
+            {
+              "element": 60,
+              "hardness": 2
+            }
+          ],
+          "onBlocked": "detonate",
+          "onExhausted": "detonate"
+        },
+        "material": "IRON"
+      },
+      "template": "109abfdb-cd3c-4119-92c6-693e52460825",
+      "modTemplate": "c6928105-96fa-49c5-9f5d-1852d4eca00c"
     },
     {
       "id": "digger-shell",
       "name": "Digger",
       "original": "Digger",
       "kind": "weapon",
-      "category": "Unavailable",
-      "price": 0,
-      "bundle": 1,
-      "enabled": false,
-      "description": "No configured native implementation for native underground projectile tunneling.",
-      "unavailableReason": "No configured native implementation for native underground projectile tunneling."
+      "category": "Excavation",
+      "price": 260,
+      "bundle": 3,
+      "enabled": true,
+      "description": "A six-pixel-radius drill cuts a noisy tunnel through eligible earth. Up to 640px of travel and a finite work reserve.",
+      "projectile": {
+        "aoeRadius": 70,
+        "bodySizePx": 2,
+        "bouncing": 0,
+        "carveMode": "none",
+        "carveRadius": 0,
+        "damage": 55,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": false,
+          "atLifetime": true
+        },
+        "drag": 0,
+        "gravityScale": 0,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 6,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 220,
+        "speedAtMinPower": 220,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "excavation": {
+          "radius": 6,
+          "lookahead": 24,
+          "cutAhead": 0,
+          "output": 5,
+          "clearance": "solid",
+          "noise": {
+            "seed": 977,
+            "algorithm": "simplex",
+            "frequency": 0.09,
+            "width": 5,
+            "octaves": 2,
+            "persistence": 0.5,
+            "lacunarity": 2
+          },
+          "work": 18000,
+          "distance": 640,
+          "admissionTimeoutSeconds": 2,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "w": 29184,
+            "h": 1024
+          },
+          "exclusions": [
+            {
+              "x": 0,
+              "y": 1024,
+              "w": 29184,
+              "h": 256
+            }
+          ],
+          "materials": [
+            {
+              "element": 10,
+              "hardness": 1
+            },
+            {
+              "element": 11,
+              "hardness": 1
+            },
+            {
+              "element": 9,
+              "hardness": 3
+            },
+            {
+              "element": 14,
+              "hardness": 4
+            },
+            {
+              "element": 18,
+              "hardness": 2
+            },
+            {
+              "element": 176,
+              "hardness": 2
+            },
+            {
+              "element": 61,
+              "hardness": 5
+            },
+            {
+              "element": 8,
+              "hardness": 2
+            },
+            {
+              "element": 165,
+              "hardness": 2
+            },
+            {
+              "element": 169,
+              "hardness": 1
+            },
+            {
+              "element": 12,
+              "hardness": 1
+            },
+            {
+              "element": 37,
+              "hardness": 2
+            },
+            {
+              "element": 4,
+              "hardness": 1
+            },
+            {
+              "element": 41,
+              "hardness": 1
+            },
+            {
+              "element": 21,
+              "hardness": 1
+            },
+            {
+              "element": 29,
+              "hardness": 2
+            },
+            {
+              "element": 42,
+              "hardness": 2
+            },
+            {
+              "element": 44,
+              "hardness": 1
+            },
+            {
+              "element": 166,
+              "hardness": 2
+            },
+            {
+              "element": 167,
+              "hardness": 2
+            },
+            {
+              "element": 168,
+              "hardness": 1
+            },
+            {
+              "element": 119,
+              "hardness": 1
+            },
+            {
+              "element": 121,
+              "hardness": 1
+            },
+            {
+              "element": 122,
+              "hardness": 1
+            },
+            {
+              "element": 123,
+              "hardness": 1
+            },
+            {
+              "element": 124,
+              "hardness": 1
+            },
+            {
+              "element": 125,
+              "hardness": 1
+            },
+            {
+              "element": 126,
+              "hardness": 1
+            },
+            {
+              "element": 60,
+              "hardness": 2
+            }
+          ],
+          "onBlocked": "detonate",
+          "onExhausted": "detonate"
+        },
+        "material": "IRON"
+      },
+      "template": "9c64588a-2968-4489-bde2-74de38b8abfa",
+      "modTemplate": "53edfbdf-582c-48ed-923a-4a41af1c6355"
     },
     {
       "id": "heavy-digger",
       "name": "Heavy Digger",
       "original": "Heavy Digger",
       "kind": "weapon",
-      "category": "Unavailable",
-      "price": 0,
-      "bundle": 1,
-      "enabled": false,
-      "description": "No configured native implementation for wide underground projectile tunneling.",
-      "unavailableReason": "No configured native implementation for wide underground projectile tunneling."
+      "category": "Excavation",
+      "price": 480,
+      "bundle": 2,
+      "enabled": true,
+      "description": "A wide drill with enough reserve for dense rock. Up to 1,000px travel; protected or unlisted material stops it.",
+      "projectile": {
+        "aoeRadius": 90,
+        "bodySizePx": 2,
+        "bouncing": 0,
+        "carveMode": "none",
+        "carveRadius": 0,
+        "damage": 80,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": false,
+          "atLifetime": true
+        },
+        "drag": 0,
+        "gravityScale": 0,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 8,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 240,
+        "speedAtMinPower": 240,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "excavation": {
+          "radius": 8,
+          "lookahead": 24,
+          "cutAhead": 0,
+          "output": 5,
+          "clearance": "solid",
+          "noise": {
+            "seed": 1601,
+            "algorithm": "simplex",
+            "frequency": 0.09,
+            "width": 7,
+            "octaves": 2,
+            "persistence": 0.5,
+            "lacunarity": 2
+          },
+          "work": 48000,
+          "distance": 1000,
+          "admissionTimeoutSeconds": 2,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "w": 29184,
+            "h": 1024
+          },
+          "exclusions": [
+            {
+              "x": 0,
+              "y": 1024,
+              "w": 29184,
+              "h": 256
+            }
+          ],
+          "materials": [
+            {
+              "element": 10,
+              "hardness": 1
+            },
+            {
+              "element": 11,
+              "hardness": 1
+            },
+            {
+              "element": 9,
+              "hardness": 3
+            },
+            {
+              "element": 14,
+              "hardness": 4
+            },
+            {
+              "element": 18,
+              "hardness": 2
+            },
+            {
+              "element": 176,
+              "hardness": 2
+            },
+            {
+              "element": 61,
+              "hardness": 5
+            },
+            {
+              "element": 8,
+              "hardness": 2
+            },
+            {
+              "element": 165,
+              "hardness": 2
+            },
+            {
+              "element": 169,
+              "hardness": 1
+            },
+            {
+              "element": 12,
+              "hardness": 1
+            },
+            {
+              "element": 37,
+              "hardness": 2
+            },
+            {
+              "element": 4,
+              "hardness": 1
+            },
+            {
+              "element": 41,
+              "hardness": 1
+            },
+            {
+              "element": 21,
+              "hardness": 1
+            },
+            {
+              "element": 29,
+              "hardness": 2
+            },
+            {
+              "element": 42,
+              "hardness": 2
+            },
+            {
+              "element": 44,
+              "hardness": 1
+            },
+            {
+              "element": 166,
+              "hardness": 2
+            },
+            {
+              "element": 167,
+              "hardness": 2
+            },
+            {
+              "element": 168,
+              "hardness": 1
+            },
+            {
+              "element": 119,
+              "hardness": 1
+            },
+            {
+              "element": 121,
+              "hardness": 1
+            },
+            {
+              "element": 122,
+              "hardness": 1
+            },
+            {
+              "element": 123,
+              "hardness": 1
+            },
+            {
+              "element": 124,
+              "hardness": 1
+            },
+            {
+              "element": 125,
+              "hardness": 1
+            },
+            {
+              "element": 126,
+              "hardness": 1
+            },
+            {
+              "element": 60,
+              "hardness": 2
+            }
+          ],
+          "onBlocked": "detonate",
+          "onExhausted": "detonate"
+        },
+        "material": "IRON"
+      },
+      "template": "71090451-de4b-4978-93df-3291c25b8240",
+      "modTemplate": "fe3324e7-d1c9-4072-9391-d681e17df8f5"
     },
     {
       "id": "baby-sandhog",
       "name": "Baby Sandhog",
       "original": "Baby Sandhog",
       "kind": "weapon",
-      "category": "Unavailable",
-      "price": 0,
-      "bundle": 1,
-      "enabled": false,
-      "description": "No configured native implementation for splitting subterranean warheads.",
-      "unavailableReason": "No configured native implementation for splitting subterranean warheads."
+      "category": "Excavation",
+      "price": 200,
+      "bundle": 3,
+      "enabled": true,
+      "description": "A native timed carrier splits into 3 burrowing warheads. Each child has its own finite cutting reserve and keeps the original shooter's damage credit.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 2,
+        "bouncing": 0,
+        "carveMode": "none",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": false,
+          "atLifetime": true,
+          "fuse": 0.8
+        },
+        "drag": 0,
+        "gravityScale": 0,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 4,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 180,
+        "speedAtMinPower": 180,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "excavation": {
+          "radius": 4,
+          "lookahead": 24,
+          "cutAhead": 0,
+          "output": 5,
+          "clearance": "solid",
+          "noise": {
+            "seed": 2761,
+            "algorithm": "simplex",
+            "frequency": 0.09,
+            "width": 4,
+            "octaves": 2,
+            "persistence": 0.5,
+            "lacunarity": 2
+          },
+          "work": 8000,
+          "distance": 224,
+          "admissionTimeoutSeconds": 2,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "w": 29184,
+            "h": 1024
+          },
+          "exclusions": [
+            {
+              "x": 0,
+              "y": 1024,
+              "w": 29184,
+              "h": 256
+            }
+          ],
+          "materials": [
+            {
+              "element": 10,
+              "hardness": 1
+            },
+            {
+              "element": 11,
+              "hardness": 1
+            },
+            {
+              "element": 9,
+              "hardness": 3
+            },
+            {
+              "element": 14,
+              "hardness": 4
+            },
+            {
+              "element": 18,
+              "hardness": 2
+            },
+            {
+              "element": 176,
+              "hardness": 2
+            },
+            {
+              "element": 61,
+              "hardness": 5
+            },
+            {
+              "element": 8,
+              "hardness": 2
+            },
+            {
+              "element": 165,
+              "hardness": 2
+            },
+            {
+              "element": 169,
+              "hardness": 1
+            },
+            {
+              "element": 12,
+              "hardness": 1
+            },
+            {
+              "element": 37,
+              "hardness": 2
+            },
+            {
+              "element": 4,
+              "hardness": 1
+            },
+            {
+              "element": 41,
+              "hardness": 1
+            },
+            {
+              "element": 21,
+              "hardness": 1
+            },
+            {
+              "element": 29,
+              "hardness": 2
+            },
+            {
+              "element": 42,
+              "hardness": 2
+            },
+            {
+              "element": 44,
+              "hardness": 1
+            },
+            {
+              "element": 166,
+              "hardness": 2
+            },
+            {
+              "element": 167,
+              "hardness": 2
+            },
+            {
+              "element": 168,
+              "hardness": 1
+            },
+            {
+              "element": 119,
+              "hardness": 1
+            },
+            {
+              "element": 121,
+              "hardness": 1
+            },
+            {
+              "element": 122,
+              "hardness": 1
+            },
+            {
+              "element": 123,
+              "hardness": 1
+            },
+            {
+              "element": 124,
+              "hardness": 1
+            },
+            {
+              "element": 125,
+              "hardness": 1
+            },
+            {
+              "element": 126,
+              "hardness": 1
+            },
+            {
+              "element": 60,
+              "hardness": 2
+            }
+          ],
+          "onBlocked": "detonate",
+          "onExhausted": "detonate"
+        },
+        "triggerChild": [
+          {
+            "aoeRadius": 48,
+            "bodySizePx": 2,
+            "bouncing": 0,
+            "carveMode": "none",
+            "carveRadius": 0,
+            "damage": 28,
+            "damageType": "blast",
+            "detonate": {
+              "onBody": true,
+              "onTerrain": false,
+              "atLifetime": true
+            },
+            "drag": 0,
+            "elementType": 23,
+            "gravityScale": 0,
+            "homing": 0,
+            "homingDelay": 0,
+            "independent": true,
+            "inheritVelocity": 0,
+            "kind": "rigid-body",
+            "knockback": 0,
+            "lifetime": 5,
+            "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+            "muzzleFlashCount": 0,
+            "muzzleFlashElementType": 0,
+            "muzzleFlashSpread": 0.5,
+            "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+            "piercing": 0,
+            "projectilesPerShot": 3,
+            "range": 0,
+            "recoil": 0,
+            "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+            "spawnOffset": 0,
+            "speed": 180,
+            "speedAtMinPower": 180,
+            "speedVariance": 0,
+            "spread": 0.55,
+            "spreadPattern": "uniform",
+            "trailElementType": 0,
+            "trailRate": 0,
+            "excavation": {
+              "radius": 3,
+              "lookahead": 24,
+              "cutAhead": 0,
+              "output": 5,
+              "clearance": "solid",
+              "noise": {
+                "seed": 3451,
+                "algorithm": "simplex",
+                "frequency": 0.09,
+                "width": 3,
+                "octaves": 2,
+                "persistence": 0.5,
+                "lacunarity": 2
+              },
+              "work": 4000,
+              "distance": 240,
+              "admissionTimeoutSeconds": 2,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 29184,
+                "h": 1024
+              },
+              "exclusions": [
+                {
+                  "x": 0,
+                  "y": 1024,
+                  "w": 29184,
+                  "h": 256
+                }
+              ],
+              "materials": [
+                {
+                  "element": 10,
+                  "hardness": 1
+                },
+                {
+                  "element": 11,
+                  "hardness": 1
+                },
+                {
+                  "element": 9,
+                  "hardness": 3
+                },
+                {
+                  "element": 14,
+                  "hardness": 4
+                },
+                {
+                  "element": 18,
+                  "hardness": 2
+                },
+                {
+                  "element": 176,
+                  "hardness": 2
+                },
+                {
+                  "element": 61,
+                  "hardness": 5
+                },
+                {
+                  "element": 8,
+                  "hardness": 2
+                },
+                {
+                  "element": 165,
+                  "hardness": 2
+                },
+                {
+                  "element": 169,
+                  "hardness": 1
+                },
+                {
+                  "element": 12,
+                  "hardness": 1
+                },
+                {
+                  "element": 37,
+                  "hardness": 2
+                },
+                {
+                  "element": 4,
+                  "hardness": 1
+                },
+                {
+                  "element": 41,
+                  "hardness": 1
+                },
+                {
+                  "element": 21,
+                  "hardness": 1
+                },
+                {
+                  "element": 29,
+                  "hardness": 2
+                },
+                {
+                  "element": 42,
+                  "hardness": 2
+                },
+                {
+                  "element": 44,
+                  "hardness": 1
+                },
+                {
+                  "element": 166,
+                  "hardness": 2
+                },
+                {
+                  "element": 167,
+                  "hardness": 2
+                },
+                {
+                  "element": 168,
+                  "hardness": 1
+                },
+                {
+                  "element": 119,
+                  "hardness": 1
+                },
+                {
+                  "element": 121,
+                  "hardness": 1
+                },
+                {
+                  "element": 122,
+                  "hardness": 1
+                },
+                {
+                  "element": 123,
+                  "hardness": 1
+                },
+                {
+                  "element": 124,
+                  "hardness": 1
+                },
+                {
+                  "element": 125,
+                  "hardness": 1
+                },
+                {
+                  "element": 126,
+                  "hardness": 1
+                },
+                {
+                  "element": 60,
+                  "hardness": 2
+                }
+              ],
+              "onBlocked": "detonate",
+              "onExhausted": "detonate"
+            }
+          }
+        ],
+        "material": "IRON"
+      },
+      "template": "0d6872f6-4d4e-43ce-8319-96e253652bce",
+      "modTemplate": "4d8efb91-839d-4f76-b2e4-8482b20ac830"
     },
     {
       "id": "sandhog",
       "name": "Sandhog",
       "original": "Sandhog",
       "kind": "weapon",
-      "category": "Unavailable",
-      "price": 0,
-      "bundle": 1,
-      "enabled": false,
-      "description": "No configured native implementation for splitting subterranean warheads.",
-      "unavailableReason": "No configured native implementation for splitting subterranean warheads."
+      "category": "Excavation",
+      "price": 380,
+      "bundle": 2,
+      "enabled": true,
+      "description": "A native timed carrier splits into 5 burrowing warheads. Each child has its own finite cutting reserve and keeps the original shooter's damage credit.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 2,
+        "bouncing": 0,
+        "carveMode": "none",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": false,
+          "atLifetime": true,
+          "fuse": 1
+        },
+        "drag": 0,
+        "gravityScale": 0,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 4,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 220,
+        "speedAtMinPower": 220,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "excavation": {
+          "radius": 4,
+          "lookahead": 24,
+          "cutAhead": 0,
+          "output": 5,
+          "clearance": "solid",
+          "noise": {
+            "seed": 2874,
+            "algorithm": "simplex",
+            "frequency": 0.09,
+            "width": 4,
+            "octaves": 2,
+            "persistence": 0.5,
+            "lacunarity": 2
+          },
+          "work": 8000,
+          "distance": 300,
+          "admissionTimeoutSeconds": 2,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "w": 29184,
+            "h": 1024
+          },
+          "exclusions": [
+            {
+              "x": 0,
+              "y": 1024,
+              "w": 29184,
+              "h": 256
+            }
+          ],
+          "materials": [
+            {
+              "element": 10,
+              "hardness": 1
+            },
+            {
+              "element": 11,
+              "hardness": 1
+            },
+            {
+              "element": 9,
+              "hardness": 3
+            },
+            {
+              "element": 14,
+              "hardness": 4
+            },
+            {
+              "element": 18,
+              "hardness": 2
+            },
+            {
+              "element": 176,
+              "hardness": 2
+            },
+            {
+              "element": 61,
+              "hardness": 5
+            },
+            {
+              "element": 8,
+              "hardness": 2
+            },
+            {
+              "element": 165,
+              "hardness": 2
+            },
+            {
+              "element": 169,
+              "hardness": 1
+            },
+            {
+              "element": 12,
+              "hardness": 1
+            },
+            {
+              "element": 37,
+              "hardness": 2
+            },
+            {
+              "element": 4,
+              "hardness": 1
+            },
+            {
+              "element": 41,
+              "hardness": 1
+            },
+            {
+              "element": 21,
+              "hardness": 1
+            },
+            {
+              "element": 29,
+              "hardness": 2
+            },
+            {
+              "element": 42,
+              "hardness": 2
+            },
+            {
+              "element": 44,
+              "hardness": 1
+            },
+            {
+              "element": 166,
+              "hardness": 2
+            },
+            {
+              "element": 167,
+              "hardness": 2
+            },
+            {
+              "element": 168,
+              "hardness": 1
+            },
+            {
+              "element": 119,
+              "hardness": 1
+            },
+            {
+              "element": 121,
+              "hardness": 1
+            },
+            {
+              "element": 122,
+              "hardness": 1
+            },
+            {
+              "element": 123,
+              "hardness": 1
+            },
+            {
+              "element": 124,
+              "hardness": 1
+            },
+            {
+              "element": 125,
+              "hardness": 1
+            },
+            {
+              "element": 126,
+              "hardness": 1
+            },
+            {
+              "element": 60,
+              "hardness": 2
+            }
+          ],
+          "onBlocked": "detonate",
+          "onExhausted": "detonate"
+        },
+        "triggerChild": [
+          {
+            "aoeRadius": 58,
+            "bodySizePx": 2,
+            "bouncing": 0,
+            "carveMode": "none",
+            "carveRadius": 0,
+            "damage": 35,
+            "damageType": "blast",
+            "detonate": {
+              "onBody": true,
+              "onTerrain": false,
+              "atLifetime": true
+            },
+            "drag": 0,
+            "elementType": 23,
+            "gravityScale": 0,
+            "homing": 0,
+            "homingDelay": 0,
+            "independent": true,
+            "inheritVelocity": 0,
+            "kind": "rigid-body",
+            "knockback": 0,
+            "lifetime": 5,
+            "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+            "muzzleFlashCount": 0,
+            "muzzleFlashElementType": 0,
+            "muzzleFlashSpread": 0.5,
+            "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+            "piercing": 0,
+            "projectilesPerShot": 5,
+            "range": 0,
+            "recoil": 0,
+            "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+            "spawnOffset": 0,
+            "speed": 220,
+            "speedAtMinPower": 220,
+            "speedVariance": 0,
+            "spread": 0.75,
+            "spreadPattern": "uniform",
+            "trailElementType": 0,
+            "trailRate": 0,
+            "excavation": {
+              "radius": 4,
+              "lookahead": 24,
+              "cutAhead": 0,
+              "output": 5,
+              "clearance": "solid",
+              "noise": {
+                "seed": 3588,
+                "algorithm": "simplex",
+                "frequency": 0.09,
+                "width": 3,
+                "octaves": 2,
+                "persistence": 0.5,
+                "lacunarity": 2
+              },
+              "work": 7000,
+              "distance": 360,
+              "admissionTimeoutSeconds": 2,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 29184,
+                "h": 1024
+              },
+              "exclusions": [
+                {
+                  "x": 0,
+                  "y": 1024,
+                  "w": 29184,
+                  "h": 256
+                }
+              ],
+              "materials": [
+                {
+                  "element": 10,
+                  "hardness": 1
+                },
+                {
+                  "element": 11,
+                  "hardness": 1
+                },
+                {
+                  "element": 9,
+                  "hardness": 3
+                },
+                {
+                  "element": 14,
+                  "hardness": 4
+                },
+                {
+                  "element": 18,
+                  "hardness": 2
+                },
+                {
+                  "element": 176,
+                  "hardness": 2
+                },
+                {
+                  "element": 61,
+                  "hardness": 5
+                },
+                {
+                  "element": 8,
+                  "hardness": 2
+                },
+                {
+                  "element": 165,
+                  "hardness": 2
+                },
+                {
+                  "element": 169,
+                  "hardness": 1
+                },
+                {
+                  "element": 12,
+                  "hardness": 1
+                },
+                {
+                  "element": 37,
+                  "hardness": 2
+                },
+                {
+                  "element": 4,
+                  "hardness": 1
+                },
+                {
+                  "element": 41,
+                  "hardness": 1
+                },
+                {
+                  "element": 21,
+                  "hardness": 1
+                },
+                {
+                  "element": 29,
+                  "hardness": 2
+                },
+                {
+                  "element": 42,
+                  "hardness": 2
+                },
+                {
+                  "element": 44,
+                  "hardness": 1
+                },
+                {
+                  "element": 166,
+                  "hardness": 2
+                },
+                {
+                  "element": 167,
+                  "hardness": 2
+                },
+                {
+                  "element": 168,
+                  "hardness": 1
+                },
+                {
+                  "element": 119,
+                  "hardness": 1
+                },
+                {
+                  "element": 121,
+                  "hardness": 1
+                },
+                {
+                  "element": 122,
+                  "hardness": 1
+                },
+                {
+                  "element": 123,
+                  "hardness": 1
+                },
+                {
+                  "element": 124,
+                  "hardness": 1
+                },
+                {
+                  "element": 125,
+                  "hardness": 1
+                },
+                {
+                  "element": 126,
+                  "hardness": 1
+                },
+                {
+                  "element": 60,
+                  "hardness": 2
+                }
+              ],
+              "onBlocked": "detonate",
+              "onExhausted": "detonate"
+            }
+          }
+        ],
+        "material": "IRON"
+      },
+      "template": "3938cf73-8569-4f45-9779-3ff4edf4036f",
+      "modTemplate": "65f4e5e7-0911-4dfd-be72-407f919d0274"
     },
     {
       "id": "heavy-sandhog",
       "name": "Heavy Sandhog",
       "original": "Heavy Sandhog",
       "kind": "weapon",
-      "category": "Unavailable",
-      "price": 0,
-      "bundle": 1,
-      "enabled": false,
-      "description": "No configured native implementation for large splitting subterranean warheads.",
-      "unavailableReason": "No configured native implementation for large splitting subterranean warheads."
+      "category": "Excavation",
+      "price": 680,
+      "bundle": 2,
+      "enabled": true,
+      "description": "A native timed carrier splits into 7 burrowing warheads. Each child has its own finite cutting reserve and keeps the original shooter's damage credit.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 2,
+        "bouncing": 0,
+        "carveMode": "none",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": false,
+          "atLifetime": true,
+          "fuse": 1.2
+        },
+        "drag": 0,
+        "gravityScale": 0,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 4,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 240,
+        "speedAtMinPower": 240,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "excavation": {
+          "radius": 4,
+          "lookahead": 24,
+          "cutAhead": 0,
+          "output": 5,
+          "clearance": "solid",
+          "noise": {
+            "seed": 2987,
+            "algorithm": "simplex",
+            "frequency": 0.09,
+            "width": 4,
+            "octaves": 2,
+            "persistence": 0.5,
+            "lacunarity": 2
+          },
+          "work": 8000,
+          "distance": 368,
+          "admissionTimeoutSeconds": 2,
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "w": 29184,
+            "h": 1024
+          },
+          "exclusions": [
+            {
+              "x": 0,
+              "y": 1024,
+              "w": 29184,
+              "h": 256
+            }
+          ],
+          "materials": [
+            {
+              "element": 10,
+              "hardness": 1
+            },
+            {
+              "element": 11,
+              "hardness": 1
+            },
+            {
+              "element": 9,
+              "hardness": 3
+            },
+            {
+              "element": 14,
+              "hardness": 4
+            },
+            {
+              "element": 18,
+              "hardness": 2
+            },
+            {
+              "element": 176,
+              "hardness": 2
+            },
+            {
+              "element": 61,
+              "hardness": 5
+            },
+            {
+              "element": 8,
+              "hardness": 2
+            },
+            {
+              "element": 165,
+              "hardness": 2
+            },
+            {
+              "element": 169,
+              "hardness": 1
+            },
+            {
+              "element": 12,
+              "hardness": 1
+            },
+            {
+              "element": 37,
+              "hardness": 2
+            },
+            {
+              "element": 4,
+              "hardness": 1
+            },
+            {
+              "element": 41,
+              "hardness": 1
+            },
+            {
+              "element": 21,
+              "hardness": 1
+            },
+            {
+              "element": 29,
+              "hardness": 2
+            },
+            {
+              "element": 42,
+              "hardness": 2
+            },
+            {
+              "element": 44,
+              "hardness": 1
+            },
+            {
+              "element": 166,
+              "hardness": 2
+            },
+            {
+              "element": 167,
+              "hardness": 2
+            },
+            {
+              "element": 168,
+              "hardness": 1
+            },
+            {
+              "element": 119,
+              "hardness": 1
+            },
+            {
+              "element": 121,
+              "hardness": 1
+            },
+            {
+              "element": 122,
+              "hardness": 1
+            },
+            {
+              "element": 123,
+              "hardness": 1
+            },
+            {
+              "element": 124,
+              "hardness": 1
+            },
+            {
+              "element": 125,
+              "hardness": 1
+            },
+            {
+              "element": 126,
+              "hardness": 1
+            },
+            {
+              "element": 60,
+              "hardness": 2
+            }
+          ],
+          "onBlocked": "detonate",
+          "onExhausted": "detonate"
+        },
+        "triggerChild": [
+          {
+            "aoeRadius": 68,
+            "bodySizePx": 2,
+            "bouncing": 0,
+            "carveMode": "none",
+            "carveRadius": 0,
+            "damage": 42,
+            "damageType": "blast",
+            "detonate": {
+              "onBody": true,
+              "onTerrain": false,
+              "atLifetime": true
+            },
+            "drag": 0,
+            "elementType": 23,
+            "gravityScale": 0,
+            "homing": 0,
+            "homingDelay": 0,
+            "independent": true,
+            "inheritVelocity": 0,
+            "kind": "rigid-body",
+            "knockback": 0,
+            "lifetime": 5,
+            "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+            "muzzleFlashCount": 0,
+            "muzzleFlashElementType": 0,
+            "muzzleFlashSpread": 0.5,
+            "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+            "piercing": 0,
+            "projectilesPerShot": 7,
+            "range": 0,
+            "recoil": 0,
+            "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+            "spawnOffset": 0,
+            "speed": 240,
+            "speedAtMinPower": 240,
+            "speedVariance": 0,
+            "spread": 0.95,
+            "spreadPattern": "uniform",
+            "trailElementType": 0,
+            "trailRate": 0,
+            "excavation": {
+              "radius": 5,
+              "lookahead": 24,
+              "cutAhead": 0,
+              "output": 5,
+              "clearance": "solid",
+              "noise": {
+                "seed": 3725,
+                "algorithm": "simplex",
+                "frequency": 0.09,
+                "width": 3,
+                "octaves": 2,
+                "persistence": 0.5,
+                "lacunarity": 2
+              },
+              "work": 12000,
+              "distance": 520,
+              "admissionTimeoutSeconds": 2,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 29184,
+                "h": 1024
+              },
+              "exclusions": [
+                {
+                  "x": 0,
+                  "y": 1024,
+                  "w": 29184,
+                  "h": 256
+                }
+              ],
+              "materials": [
+                {
+                  "element": 10,
+                  "hardness": 1
+                },
+                {
+                  "element": 11,
+                  "hardness": 1
+                },
+                {
+                  "element": 9,
+                  "hardness": 3
+                },
+                {
+                  "element": 14,
+                  "hardness": 4
+                },
+                {
+                  "element": 18,
+                  "hardness": 2
+                },
+                {
+                  "element": 176,
+                  "hardness": 2
+                },
+                {
+                  "element": 61,
+                  "hardness": 5
+                },
+                {
+                  "element": 8,
+                  "hardness": 2
+                },
+                {
+                  "element": 165,
+                  "hardness": 2
+                },
+                {
+                  "element": 169,
+                  "hardness": 1
+                },
+                {
+                  "element": 12,
+                  "hardness": 1
+                },
+                {
+                  "element": 37,
+                  "hardness": 2
+                },
+                {
+                  "element": 4,
+                  "hardness": 1
+                },
+                {
+                  "element": 41,
+                  "hardness": 1
+                },
+                {
+                  "element": 21,
+                  "hardness": 1
+                },
+                {
+                  "element": 29,
+                  "hardness": 2
+                },
+                {
+                  "element": 42,
+                  "hardness": 2
+                },
+                {
+                  "element": 44,
+                  "hardness": 1
+                },
+                {
+                  "element": 166,
+                  "hardness": 2
+                },
+                {
+                  "element": 167,
+                  "hardness": 2
+                },
+                {
+                  "element": 168,
+                  "hardness": 1
+                },
+                {
+                  "element": 119,
+                  "hardness": 1
+                },
+                {
+                  "element": 121,
+                  "hardness": 1
+                },
+                {
+                  "element": 122,
+                  "hardness": 1
+                },
+                {
+                  "element": 123,
+                  "hardness": 1
+                },
+                {
+                  "element": 124,
+                  "hardness": 1
+                },
+                {
+                  "element": 125,
+                  "hardness": 1
+                },
+                {
+                  "element": 126,
+                  "hardness": 1
+                },
+                {
+                  "element": 60,
+                  "hardness": 2
+                }
+              ],
+              "onBlocked": "detonate",
+              "onExhausted": "detonate"
+            }
+          }
+        ],
+        "material": "IRON"
+      },
+      "template": "893b4fe6-1508-41e3-ba34-ff440a9cac16",
+      "modTemplate": "632c21f5-7f8e-4e05-8b46-6f0c29530aea"
     },
     {
       "id": "dirt-charge",
@@ -2147,12 +3933,12 @@
       "name": "Heat Guidance",
       "original": "Heat Guidance",
       "kind": "utility",
-      "category": "Unavailable",
-      "price": 0,
-      "bundle": 1,
-      "enabled": false,
-      "description": "No configured native implementation for attach guidance to the next purchased shot.",
-      "unavailableReason": "No configured native implementation for attach guidance to the next purchased shot."
+      "category": "Support",
+      "price": 260,
+      "bundle": 2,
+      "enabled": true,
+      "description": "One finite charge guides the next compatible cast toward its selected living target. Native payload children inherit guidance; refused launches keep the charge.",
+      "attachment": "guidance"
     },
     {
       "id": "ballistic-guidance",
@@ -2175,7 +3961,7 @@
       "price": 100,
       "bundle": 3,
       "enabled": true,
-      "description": "Turns a single rigid shell horizontally when it reaches the selected target height. Consumed when the shot launches.",
+      "description": "The next compatible cast turns onto the selected target’s horizontal line. Native steering preserves speed, collisions and finite stock; payload children inherit it.",
       "attachment": "guidance"
     },
     {
@@ -2187,7 +3973,7 @@
       "price": 100,
       "bundle": 3,
       "enabled": true,
-      "description": "Drops a single rigid shell vertically when it passes above the selected target. Consumed when the shot launches.",
+      "description": "The next compatible cast dives onto the selected target’s vertical line. Native steering preserves speed, collisions and finite stock; payload children inherit it.",
       "attachment": "guidance"
     },
     {
@@ -2254,7 +4040,7 @@
       "price": 60,
       "bundle": 3,
       "enabled": true,
-      "description": "Detonates a single rigid shell on its first terrain or body contact. Useful with delayed or bouncing shells.",
+      "description": "The next compatible rigid cast detonates on terrain or body contact. One finite charge covers the cast and its native payload children; refused launches keep it.",
       "attachment": "contact"
     },
     {
@@ -2296,11 +4082,1072 @@
       "price": 850,
       "bundle": 1,
       "enabled": true,
-      "grants": {
-        "item": "magnet",
-        "units": 3
+      "charge": 12,
+      "field": {
+        "capacity": 24,
+        "radius": 180,
+        "acceleration": 3000,
+        "drainPerSecond": 1,
+        "kinds": [
+          "rigid-body"
+        ],
+        "owners": "others",
+        "elements": [],
+        "reflection": {
+          "restitution": 1,
+          "maxDeltaSpeed": 1000,
+          "energyPerSpeed": 0.01
+        }
       },
-      "description": "Adds 3 standard magnet charges to your reserve. The native field draws from that reserve."
+      "materialNames": [
+        "IRON",
+        "LEAD",
+        "TUNGSTEN",
+        "STEEL"
+      ],
+      "description": "A selectable reflector for incoming metal shells. Uses its own finite power reserve; speed and energy limits can allow a shell through."
+    },
+    {
+      "id": "holy-hand-grenade",
+      "name": "Holy Hand Grenade of Antioch",
+      "kind": "weapon",
+      "category": "Special",
+      "price": 1800,
+      "bundle": 1,
+      "enabled": false,
+      "description": "A white-and-gold grenade counts 1, 3, 5, then produces one 2,800px blast: ten times the normal Nuke radius.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "atLifetime": false,
+          "looseMatter": null
+        },
+        "drag": 0,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": [],
+        "missileSlot": {
+          "kind": "grid",
+          "width": 13,
+          "height": 14,
+          "cells": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            94,
+            94,
+            1,
+            94,
+            94,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            94,
+            94,
+            94,
+            94,
+            1,
+            94,
+            94,
+            94,
+            94,
+            0,
+            0,
+            0,
+            94,
+            94,
+            94,
+            94,
+            94,
+            1,
+            94,
+            94,
+            94,
+            94,
+            94,
+            0,
+            0,
+            94,
+            94,
+            94,
+            94,
+            94,
+            1,
+            94,
+            94,
+            94,
+            94,
+            94,
+            0,
+            94,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            94,
+            94,
+            94,
+            94,
+            94,
+            94,
+            94,
+            1,
+            94,
+            94,
+            94,
+            94,
+            94,
+            94,
+            94,
+            94,
+            94,
+            94,
+            94,
+            94,
+            1,
+            94,
+            94,
+            94,
+            94,
+            94,
+            94,
+            0,
+            94,
+            94,
+            94,
+            94,
+            94,
+            1,
+            94,
+            94,
+            94,
+            94,
+            94,
+            0,
+            0,
+            94,
+            94,
+            94,
+            94,
+            94,
+            1,
+            94,
+            94,
+            94,
+            94,
+            94,
+            0,
+            0,
+            0,
+            94,
+            94,
+            94,
+            94,
+            1,
+            94,
+            94,
+            94,
+            94,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            94,
+            94,
+            1,
+            94,
+            94,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "material": "IRON"
+      },
+      "behavior": {
+        "mode": "ordnance",
+        "kind": "holy"
+      },
+      "unavailableReason": "Native independent blast admission and distant damage coverage must support a true 2800px radius.",
+      "template": "f73dab03-548b-4a35-a064-6b9747ccf8e3",
+      "modTemplate": "ee1c0cc6-0c23-4fd3-9c93-b9e18298eb88"
+    },
+    {
+      "id": "proximity-mine",
+      "name": "Proximity Mine",
+      "kind": "weapon",
+      "category": "Support",
+      "price": 240,
+      "bundle": 3,
+      "enabled": true,
+      "description": "A normal shell drops a persistent mine. It arms after 1.25 seconds and detonates within 38px of any living tank, including its owner.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "atLifetime": false,
+          "looseMatter": null
+        },
+        "drag": 0,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": [],
+        "material": "IRON"
+      },
+      "behavior": {
+        "mode": "ordnance",
+        "kind": "mine"
+      },
+      "template": "082ebfbd-7d8a-493d-88a2-ec807bcef397",
+      "modTemplate": "c40372d7-5ed4-4cf8-a766-f59e4b38c764"
+    },
+    {
+      "id": "airstrike-bombs",
+      "name": "Bombing Run",
+      "kind": "weapon",
+      "category": "Special",
+      "price": 480,
+      "bundle": 2,
+      "enabled": true,
+      "description": "Mark an impact point for five falling explosive bombs.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "atLifetime": false,
+          "looseMatter": null
+        },
+        "drag": 0,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": [],
+        "material": "IRON"
+      },
+      "behavior": {
+        "mode": "ordnance",
+        "kind": "airstrike-bombs"
+      },
+      "template": "db9f6db3-a2d4-45b0-a62e-32f9956b67c0",
+      "modTemplate": "5c78618f-3500-48e5-8353-d89b7f51ca93"
+    },
+    {
+      "id": "airstrike-acid",
+      "name": "Acid Rain",
+      "kind": "weapon",
+      "category": "Special",
+      "price": 560,
+      "bundle": 2,
+      "enabled": true,
+      "description": "Five falling capsules burst into actual acid.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "atLifetime": false,
+          "looseMatter": null
+        },
+        "drag": 0,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": [],
+        "material": "IRON"
+      },
+      "behavior": {
+        "mode": "ordnance",
+        "kind": "airstrike-acid"
+      },
+      "template": "9b91c784-a1c4-41bf-ba3b-82998060eeb5",
+      "modTemplate": "e74e0fff-e67c-438e-ba1f-f8d912028f18"
+    },
+    {
+      "id": "airstrike-lava",
+      "name": "Lava Rain",
+      "kind": "weapon",
+      "category": "Special",
+      "price": 650,
+      "bundle": 2,
+      "enabled": true,
+      "description": "Four falling capsules spill molten lava.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "atLifetime": false,
+          "looseMatter": null
+        },
+        "drag": 0,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": [],
+        "material": "IRON"
+      },
+      "behavior": {
+        "mode": "ordnance",
+        "kind": "airstrike-lava"
+      },
+      "template": "4b3902d2-de24-4dd5-81e2-ffdc9ad9dd95",
+      "modTemplate": "1b04fa68-15b0-42f4-afb1-650ed1de7cee"
+    },
+    {
+      "id": "airstrike-nukes",
+      "name": "Nuclear Carpet",
+      "kind": "weapon",
+      "category": "Special",
+      "price": 1300,
+      "bundle": 1,
+      "enabled": true,
+      "description": "Two falling Baby Nukes detonate around the impact marker.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "atLifetime": false,
+          "looseMatter": null
+        },
+        "drag": 0,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": [],
+        "material": "IRON"
+      },
+      "behavior": {
+        "mode": "ordnance",
+        "kind": "airstrike-nukes"
+      },
+      "template": "c98fec9d-d14e-4712-904b-0e0ea29157c4",
+      "modTemplate": "2f4ee975-9d02-470c-91dc-ebd9a3a28824"
+    },
+    {
+      "id": "airstrike-chaos",
+      "name": "Mixed Apocalypse",
+      "kind": "weapon",
+      "category": "Special",
+      "price": 1100,
+      "bundle": 1,
+      "enabled": true,
+      "description": "A five-bomb combination of explosives, acid, a Baby Nuke, and lava.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "atLifetime": false,
+          "looseMatter": null
+        },
+        "drag": 0,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": [],
+        "material": "IRON"
+      },
+      "behavior": {
+        "mode": "ordnance",
+        "kind": "airstrike-chaos"
+      },
+      "template": "c3297c9a-1c98-45ce-9ee8-9b09835e8f02",
+      "modTemplate": "c58daf10-c7b3-48ff-87ff-2ff5adf92fbe"
+    },
+    {
+      "id": "rubber-duck-apocalypse",
+      "name": "Rubber Duck Apocalypse",
+      "kind": "weapon",
+      "category": "Special",
+      "price": 720,
+      "bundle": 2,
+      "enabled": true,
+      "description": "Six duck-shaped bouncing shells burst into water. Their fuse lasts four seconds.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "atLifetime": false,
+          "looseMatter": null
+        },
+        "drag": 0,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": [],
+        "material": "IRON"
+      },
+      "behavior": {
+        "mode": "ordnance",
+        "kind": "ducks"
+      },
+      "template": "caebe53a-2b60-4303-98ef-d5c907099b84",
+      "modTemplate": "c13644ef-1288-4ac1-a5be-da350f9a21ab"
+    },
+    {
+      "id": "meteor-lottery",
+      "name": "Meteor Lottery",
+      "kind": "weapon",
+      "category": "Special",
+      "price": 900,
+      "bundle": 1,
+      "enabled": true,
+      "description": "Eight falling meteors. Each has an 8% chance of a full Nuke-sized catastrophe.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "atLifetime": false,
+          "looseMatter": null
+        },
+        "drag": 0,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": [],
+        "material": "IRON"
+      },
+      "behavior": {
+        "mode": "ordnance",
+        "kind": "meteors"
+      },
+      "template": "d6c006e4-59c6-46fe-a25f-2ccc1a3b1d11",
+      "modTemplate": "474a68ae-68dd-4c6f-a6c2-f46e1eeee631"
+    },
+    {
+      "id": "black-sheep",
+      "name": "Black Sheep",
+      "kind": "weapon",
+      "category": "Chaos",
+      "enabled": true,
+      "price": 450,
+      "bundle": 2,
+      "description": "Launch a sheep that chases nearby firing and explosions. Explodes near a tank or after 18 seconds; the original shooter earns the damage.",
+      "template": "0bf8fea0-abbf-49ab-a25b-9e9424efe231",
+      "modTemplate": "21c7d074-84c2-4fcf-8c6e-77851aec092a",
+      "behavior": {
+        "mode": "trickster",
+        "kind": "black-sheep"
+      },
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 3,
+        "speed": 1400,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 14,
+        "range": 0,
+        "damage": 0,
+        "damageType": "kinetic",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "projectilesPerShot": 1,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true
+        },
+        "material": "IRON"
+      }
+    },
+    {
+      "id": "tax-collector",
+      "name": "Tax Collector",
+      "kind": "weapon",
+      "category": "Chaos",
+      "enabled": true,
+      "price": 175,
+      "bundle": 3,
+      "description": "A direct hit steals 25% of the target’s wallet, up to $250, for the original shooter. Shields that absorb the entire hit block collection.",
+      "template": "ab1ca123-acbf-4567-9048-e034131f2634",
+      "modTemplate": "38f8d09e-d650-4fba-979e-fcf952962a37",
+      "behavior": {
+        "mode": "trickster",
+        "kind": "tax-collector"
+      },
+      "projectile": {
+        "kind": "rigid-body",
+        "bodySizePx": 3,
+        "speed": 1400,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "gravityScale": 1,
+        "drag": 0,
+        "lifetime": 14,
+        "range": 0,
+        "damage": 4,
+        "damageType": "kinetic",
+        "aoeRadius": 0,
+        "carveRadius": 0,
+        "carveMode": "none",
+        "spread": 0,
+        "knockback": 0,
+        "spawnOffset": 36,
+        "independent": true,
+        "projectilesPerShot": 1,
+        "detonate": {
+          "onTerrain": true,
+          "onBody": true,
+          "atLifetime": true
+        },
+        "missileSlot": {
+          "kind": "grid",
+          "width": 9,
+          "height": 11,
+          "cells": [
+            0,
+            0,
+            37,
+            37,
+            37,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            37,
+            1,
+            37,
+            0,
+            0,
+            0,
+            0,
+            0,
+            37,
+            37,
+            37,
+            37,
+            37,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            8,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            37,
+            37,
+            37,
+            0,
+            0,
+            0,
+            0,
+            0,
+            37,
+            37,
+            37,
+            37,
+            37,
+            0,
+            0,
+            0,
+            0,
+            37,
+            37,
+            1,
+            37,
+            37,
+            1,
+            1,
+            0,
+            0,
+            0,
+            37,
+            37,
+            0,
+            37,
+            1,
+            1,
+            1,
+            0,
+            0,
+            37,
+            37,
+            0,
+            37,
+            1,
+            1,
+            1,
+            0,
+            0,
+            37,
+            0,
+            37,
+            0,
+            0,
+            0,
+            0,
+            0,
+            37,
+            37,
+            0,
+            37,
+            37,
+            0,
+            0,
+            0
+          ]
+        },
+        "material": "IRON"
+      }
+    },
+    {
+      "id": "shai-hulud",
+      "name": "Shai-Hulud",
+      "kind": "weapon",
+      "category": "Special",
+      "price": 25000,
+      "bundle": 1,
+      "enabled": true,
+      "description": "An extremely rare impact beacon wakes an indestructible 256px sandworm. Its jointed body burrows in new directions each turn, devouring any tank it touches.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "atLifetime": false,
+          "looseMatter": null
+        },
+        "drag": 0,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": [],
+        "material": "IRON"
+      },
+      "behavior": {
+        "mode": "creature",
+        "creature": "worm"
+      },
+      "template": "7d31f28c-5f70-4f0f-95f5-ba0e4734e4c6",
+      "modTemplate": "7ad622c3-2900-448d-b08c-2b25fdd623fd"
+    },
+    {
+      "id": "angry-crow",
+      "name": "Angry Crow",
+      "kind": "weapon",
+      "category": "Special",
+      "price": 900,
+      "bundle": 2,
+      "enabled": true,
+      "description": "A feathered impact beacon releases an angry crow. It pecks the nearest tank for four seconds, then flies away.",
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "atLifetime": false,
+          "looseMatter": null
+        },
+        "drag": 0,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": [],
+        "material": "IRON"
+      },
+      "behavior": {
+        "mode": "creature",
+        "creature": "crow"
+      },
+      "template": "fd16cd25-42ad-4458-a63a-37c1b1490213",
+      "modTemplate": "16b16919-5bf8-4eb4-b9c3-05d26159ccf7"
     }
   ],
   "cpu": {
@@ -2354,7 +5201,9 @@
     "Excavation",
     "Energy",
     "Support",
-    "Unavailable"
+    "Unavailable",
+    "Special",
+    "Chaos"
   ],
   "looseMatter": {
     "states": [

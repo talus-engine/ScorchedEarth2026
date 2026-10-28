@@ -1,5 +1,13 @@
 # Terrain and WFC art
 
+Gameplay uses the `daylight` biome in `world/Biomes/`: a 0.95 neutral ambient
+floor, exposure 20, fixed noon, and no night-cycle or fog dimming. Talus applies
+Reinhard tone mapping: this yields 95% light on open terrain and over 90% even
+with the compositor's maximum wall-interior dimming. Its native
+`scorched-daylight` lighting preset is captured in `assets/native/lighting/`.
+The arena's layout cells also bind that preset for editing. Rain retains the
+same daylight floor; fire and explosions can still add their own light.
+
 The battlefield is 50 tiles wide and 5 tiles tall. Each WFC tile is a square
 256×256 world pixels, or 4×4 native 64-pixel chunks. The bottom tile row is solid
 stone so loose material remains in the world. The visible editor socket labels

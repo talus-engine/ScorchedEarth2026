@@ -1,5 +1,6 @@
 /** Terrain-aware shot planning and persistent target/weapon learning. */
 import type { Runtime } from 'context';
+import specialWeapons = require('special-weapons');
 function create(ctx: Runtime) {
     function personaFor(p: any): any {
         return ctx.state.personaCatalog?.personas.find((v: any) => v.id === p.personaId) || ctx.state.personaCatalog?.personas[0];
@@ -48,11 +49,17 @@ function create(ctx: Runtime) {
             return 'unavailable-item';
         if (item.id === 'escape-charge')
             return 'local-terrain-tactic';
+        if (!ctx.payloads.canFire(item))
+            return 'payload-capacity';
+        if (specialWeapons.supported(item))
+            return null;
         const s = item.projectile;
         if (!s || s.kind !== 'rigid-body')
             return 'native-forecast-non-rigid';
         if (s.homing || item.behavior?.mode === 'homing')
             return 'native-forecast-homing';
+        if (s.excavation)
+            return 'native-forecast-excavation';
         if (s.bouncing)
             return 'native-forecast-bouncing';
         if (s.spread || s.projectilesPerShot > 1)
@@ -81,24 +88,54 @@ function create(ctx: Runtime) {
             && Math.hypot(target.x - sample.target.x, target.y - sample.target.y) <= (exact ? 2 : 160)
             && Math.abs((sample.wind ?? 0) - (talus.world.wind || 0)) <= (exact ? .01 : 5);
     }
+    function measuredSample(observation: any): any {
+        return { origin: observation.origin, target: observation.targetAtLaunch, wind: observation.wind,
+            angle: observation.angle, power: observation.power, offsetX: observation.solution?.offsetX || 0,
+            error: observation.learning === 'measured-direct-hit' ? 0 : Math.hypot(observation.dx, observation.dy), direct: observation.direct,
+            turn: observation.turn, guidance: observation.solution?.guidance || null };
+    }
+    function provenShot(p: any, targetId: string, weapon: string, origin: Vec2, target: Vec2, exact = false): any {
+        const memory = fireControl(p, targetId, weapon);
+        const retained = (p.impacts || []).filter((v: any) => v.targetId === targetId && v.weapon === weapon && v.hit && v.direct
+            && ['measured-direct-hit', 'range-feedback'].includes(v.learning)).map(measuredSample);
+        return [memory?.best, ...retained].filter(sample => {
+            if (!comparableShot(sample, origin, target, exact))
+                return false;
+            const guidance = sample.guidance;
+            return !guidance || ctx.economy.itemById(guidance)?.enabled && ctx.economy.owned(p, guidance) > 0
+                && ctx.attachments.compatible(ctx.economy.itemById(weapon), guidance);
+        }).sort((a, b) => Number(b.direct) - Number(a.direct) || a.error - b.error)[0] || null;
+    }
     function observeCpuShot(p: any, observation: any): void {
         p.impacts = [...(p.impacts || []), observation].slice(-64);
         const memory = fireControl(p, observation.targetId, observation.weapon, true);
         const shot = observation.solution;
         const moved = Math.hypot(observation.target.x - observation.targetAtLaunch.x, observation.target.y - observation.targetAtLaunch.y);
+        const special = shot?.kind === 'special';
+        const measured = (special || shot?.guidance) && observation.hit && observation.direct && moved <= 12;
         const useful = (shot?.kind === 'tank' || observation.hit && ['field', 'uncertain-tank'].includes(shot?.kind))
+            && !shot?.guidance
             && observation.reason === 'detonated' && !observation.split
             && moved <= 12 && (observation.hit || observation.collision === 'terrain'
             && Math.abs(observation.dy) <= 40 && Math.abs(observation.dx) <= Math.max(128, Math.abs(observation.target.x - observation.origin.x) * .3));
-        observation.learning = useful ? 'range-feedback' : 'diagnostic-only';
-        if (useful) {
+        observation.learning = measured ? 'measured-direct-hit' : useful ? 'range-feedback' : 'diagnostic-only';
+        if (measured) {
+            memory.samples++;
+            memory.hits++;
+            const sample = { ...measuredSample(observation), offsetX: 0 };
+            if (!comparableShot(memory.best, sample.origin, sample.target, true) || !memory.best.direct
+                || (memory.best.guidance || null) !== sample.guidance)
+                memory.best = sample;
+            memory.last = sample;
+            memory.offsetX = 0;
+        }
+        else if (useful) {
             memory.samples++;
             if (observation.hit)
                 memory.hits++;
-            const sample = { origin: observation.origin, target: observation.targetAtLaunch, wind: observation.wind,
-                angle: observation.angle, power: observation.power, offsetX: shot.offsetX || 0,
-                error: Math.hypot(observation.dx, observation.dy), direct: observation.direct, turn: observation.turn };
-            const best = memory.best, comparable = comparableShot(best, sample.origin, sample.target, true);
+            const sample = measuredSample(observation);
+            const best = memory.best, comparable = comparableShot(best, sample.origin, sample.target, true)
+                && (best.guidance || null) === sample.guidance;
             if (observation.hit && (!comparable || observation.direct && !best.direct
                 || observation.direct === best.direct && sample.error < best.error))
                 memory.best = sample;
@@ -121,8 +158,45 @@ function create(ctx: Runtime) {
             tank.blackboard.set('custom.fireControls', p.fireControls);
         }
     }
+    function writeSpecialAim(p: any, target: any, item: any, origin: Vec2, at: Vec2,
+        estimate: NonNullable<ReturnType<typeof specialWeapons.candidate>>, turn: number, kind = 'special'): void {
+        const tank = ctx.core.entity(p);
+        p.targetId = target.entityId;
+        p.plannedTurn = turn;
+        p.tactic = estimate.reason;
+        p.fireSolution = { turn, weapon: item.id, targetId: p.targetId, origin: { ...origin }, target: { ...at },
+            point: estimate.point, offsetX: 0, wind: talus.world.wind || 0, hullAngle: tank.snapshot()?.angle,
+            angle: estimate.angle, power: estimate.power, kind,
+            ...(Object.hasOwn(estimate, 'guidance') ? { guidance: estimate.guidance } : {}) };
+        tank.blackboard.set('custom.indigoTarget', targetReference(target, at));
+        tank.blackboard.set('custom.aimPlan', null);
+        tank.blackboard.set('custom.aimRefusal', 'prediction-unavailable');
+        tank.blackboard.set('custom.aimAngle', estimate.angle);
+        tank.blackboard.set('custom.aimPower', estimate.power);
+        tank.blackboard.set('custom.decisionTurn', turn);
+    }
+    function refreshSpecialShot(p: any): boolean {
+        const tank = ctx.core.entity(p), item = ctx.economy.itemById(p.weaponId);
+        const target = ctx.state.match.roster.find((r: any) => r.entityId === p.targetId), at = targetSnapshot(target);
+        const origin = tank?.position;
+        if (!tank?.isLive || !origin || !at || !specialWeapons.supported(item))
+            return false;
+        const angle = Math.atan2(at.y - origin.y, at.x - origin.x), muzzle = item.projectile.spawnOffset || 0;
+        const from = { x: origin.x + Math.cos(angle) * muzzle, y: origin.y + Math.sin(angle) * muzzle };
+        const estimate = specialWeapons.candidate(item, origin, at, { arena: ctx.state.arena,
+            obstruction: talus.world.raycast(from, at), targetId: target.entityId,
+            best: provenShot(p, target.entityId, item.id, origin, at, true) });
+        if (!estimate)
+            return false;
+        writeSpecialAim(p, target, item, origin, at, estimate, ctx.state.match.turnNumber);
+        tank.blackboard.set('custom.angle', -estimate.angle * 180 / Math.PI);
+        tank.blackboard.set('custom.power', estimate.power * 100);
+        return true;
+    }
     async function planCpuShot(p: any, turn: number): Promise<boolean> {
         const tank = ctx.core.entity(p), token = ctx.state.utilityGeneration, d = doctrine(p);
+        if (!ctx.attachments.clear(p))
+            return false;
         p.fireSolution = null;
         const valid = () => ctx.core.active() && ctx.core.current() === p && !p.eliminated && ctx.state.match.turnNumber === turn && token === ctx.state.utilityGeneration;
         const origin = tank.position!, trials: any[] = [], blocked: {
@@ -142,7 +216,7 @@ function create(ctx: Runtime) {
         const targetPriority = (r: any) => distance(r) + (snapshot(r).health ?? 100) * 2
             - cluster(r) * (p.personaId === 'domino' ? 180 : 30)
             - ((p.fireControls || []).some((m: any) => m.targetId === r.entityId && ctx.economy.owned(p, m.weapon) > 0
-                && comparableShot(m.best, origin, snapshot(r))) ? 400 : 0);
+                && provenShot(p, r.entityId, m.weapon, origin, snapshot(r))) ? 400 : 0);
         targets.sort((a: any, b: any) => targetPriority(a) - targetPriority(b));
         if (!targets.length)
             return false;
@@ -162,8 +236,7 @@ function create(ctx: Runtime) {
             const closeRapid = item.id === 'machine-gun' && distance(target) < 400 ? 80 : 0;
             const benefit = (item.projectile?.damage || item.behavior?.childDamage || 0) * .25 + cluster(target) * radius * .15;
             const paid = item.id !== 'standard' ? 80 : 0;
-            const learned = fireControl(p, target.entityId, item.id);
-            const proven = comparableShot(learned?.best, origin, snapshot(target)) ? 220 : 0;
+            const proven = provenShot(p, target.entityId, item.id, origin, snapshot(target)) ? 220 : 0;
             return { item, score: (pref >= 0 ? 140 - pref * 25 : -80) + paid + benefit + closeRapid + proven - collateral - ineffective };
         }).sort((a: any, b: any) => b.score - a.score);
         const candidateTargets = targets.slice(0, 2);
@@ -197,7 +270,7 @@ function create(ctx: Runtime) {
                 point: { ...point }, offsetX: point.x - snapshot(target).x, wind: talus.world.wind || 0,
                 hullAngle: tank.snapshot()?.angle,
                 angle: plan.solution!.angle, power: plan.solution!.power, predicted: plan.solution!.end,
-                kind: terrain ? 'terrain' : item.behavior?.mode === 'apex' ? 'apex' : 'tank' };
+                kind: terrain ? 'terrain' : ctx.payloads.handles(item) ? 'payload' : item.behavior?.mode === 'apex' ? 'apex' : 'tank' };
             tank.blackboard.set('custom.indigoTarget', targetReference(target, point, terrain));
             tank.blackboard.set('custom.aimPlan', JSON.parse(JSON.stringify(plan)));
             tank.blackboard.set('custom.aimRefusal', null);
@@ -262,6 +335,36 @@ function create(ctx: Runtime) {
                 const spec = item.projectile, at = targetSnapshot(target), carrier = item.behavior?.mode === 'apex';
                 if (!at)
                     continue surveyTargets;
+                const measured = provenShot(p, target.entityId, item.id, origin, at, true);
+                if (specialWeapons.supported(item) || measured?.guidance) {
+                    const estimate = specialWeapons.supported(item) ? specialWeapons.candidate(item, origin, at, { arena: ctx.state.arena,
+                        obstruction: corridors[targetIndex].obstruction, targetId: target.entityId,
+                        best: measured }) : { angle: measured.angle, power: measured.power, point: { x: at.x, y: at.y },
+                            repeated: true, guidance: measured.guidance, reason: 'Repeat measured guided hit; native fields remain uncertain' };
+                    budget--;
+                    attackBudget--;
+                    const battery = item.behavior?.mode?.startsWith('battery') && ctx.economy.owned(p, 'battery') < 1;
+                    if (!estimate || battery) {
+                        skipped.push({ item: item.id, reason: battery ? 'battery-required' : 'special-shot-unavailable' });
+                        continue;
+                    }
+                    const accepted = tank.weapon.equip(item.template);
+                    trials.push({ weapon: item.id, target: target.name, goal: 'special',
+                        reason: accepted ? 'uncertain-cutting-route' : 'weapon-equip-refused',
+                        work: { candidates: 0 }, warnings: ['No ballistic forecast for this native cutting shot'] });
+                    if (!accepted)
+                        continue;
+                    p.weaponId = item.id;
+                    ctx.economy.wallet(p).selected = item.id;
+                    ctx.economy.wallet(p).revision++;
+                    ctx.economy.saveBank();
+                    writeSpecialAim(p, target, item, origin, at, estimate, turn, specialWeapons.supported(item) ? 'special' : 'uncertain-tank');
+                    tank.blackboard.set('custom.aiDecision', { turn, status: 'uncertain', reason: estimate.reason,
+                        tactic: p.tactic, target: p.targetId, item: item.id, budgetRemaining: budget, trials, skipped });
+                    ctx.session.persist();
+                    ctx.menus.publish();
+                    return true;
+                }
                 let point = { x: at.x, y: at.y }, support = false;
                 if ((['mole', 'faultline'].includes(p.personaId) || spec.damage === 0) && (spec.carveRadius > 60 || item.behavior?.operation === 'fracture')) {
                     const x = at.x + (origin.x < at.x ? -24 : 24), y = talus.world.groundY(x, at.y + 8, 36);
@@ -273,8 +376,8 @@ function create(ctx: Runtime) {
                 if (!support && !carrier && spec.damage === 0 && (spec.carveRadius > 0 || item.behavior?.operation === 'fracture'))
                     continue;
                 const memory = fireControl(p, target.entityId, item.id);
-                const last = comparableShot(memory?.last, origin, at) ? memory.last : null;
-                const best = comparableShot(memory?.best, origin, at, true) ? memory.best : null;
+                const last = !memory?.last?.guidance && comparableShot(memory?.last, origin, at) ? memory.last : null;
+                const best = measured;
                 if (!support && !carrier && last)
                     point.x += memory.offsetX;
                 const obstruction = corridors[targetIndex].obstruction;
@@ -387,7 +490,7 @@ function create(ctx: Runtime) {
                 ctx.economy.saveBank();
                 tank.weapon.equip(ctx.economy.itemById('standard').template);
                 const powers = [.25, .4, .55, .7, .85], elevation = trial % 2 ? 72 : 83;
-                const memory = fireControl(p, target.entityId, 'standard'), best = comparableShot(memory?.best, origin, at, true) ? memory.best : null;
+                const best = provenShot(p, target.entityId, 'standard', origin, at, true);
                 const angle = best?.angle ?? -(at.x < origin.x ? 180 - elevation : elevation) * Math.PI / 180;
                 const power = best?.power ?? powers[trial % powers.length];
                 tank.blackboard.set('custom.indigoTarget', targetReference(target, at));
@@ -397,7 +500,8 @@ function create(ctx: Runtime) {
                 tank.blackboard.set('custom.aimPlan', null);
                 tank.blackboard.set('custom.aimRefusal', 'deflection-fields');
                 p.fireSolution = { turn, weapon: 'standard', targetId: target.entityId, origin: { ...origin }, target: at,
-                    point: at, offsetX: 0, angle, power, kind: 'field', wind: talus.world.wind || 0 };
+                    point: at, offsetX: 0, angle, power, kind: 'field', wind: talus.world.wind || 0,
+                    ...(best ? { guidance: best.guidance || null } : {}) };
                 p.tactic = best ? 'Repeat observed hit through magnetic field · uncertain' : 'Exploratory high arc through magnetic field';
                 ctx.session.persist();
                 ctx.menus.publish();
@@ -407,6 +511,6 @@ function create(ctx: Runtime) {
         }
         return false;
     }
-    return { personaFor, doctrine, aiRandom, targetSnapshot, targetReference, selectTarget, cpuWeaponUnavailable, fireControl, comparableShot, observeCpuShot, planCpuShot };
+    return { personaFor, doctrine, aiRandom, targetSnapshot, targetReference, selectTarget, cpuWeaponUnavailable, fireControl, comparableShot, provenShot, observeCpuShot, refreshSpecialShot, planCpuShot };
 }
 export = create;

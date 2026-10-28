@@ -175,7 +175,8 @@ async function main() {
         f.api.tickPresentation();
         assert.equal(f.m.presentation.active, null);
         assert.equal(f.m.presentation.queue.length, 0);
-        assert.deepEqual(f.holds.slice(-2).map(h => h.seconds), [0, 0]);
+        assert.ok(f.holds.slice(-2).every(h => h.seconds > 0 && h.seconds <= 30),
+            'Each physical effect keeps its finite hold after the camera moves on');
     }
     {
         const f = scene(), p = f.m.roster[0];

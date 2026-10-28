@@ -109,7 +109,7 @@ function create(ctx: Runtime) {
         p.exploredTurn = turn;
         if ((p.fireControls || []).some((m: any) => {
             const target = ctx.state.match.roster.find((r: any) => r.entityId === m.targetId), at = ctx.aiming.targetSnapshot(target);
-            return at && ctx.economy.owned(p, m.weapon) > 0 && ctx.aiming.comparableShot(m.best, ctx.core.entity(p).position!, at, true);
+            return at && ctx.economy.owned(p, m.weapon) > 0 && ctx.aiming.provenShot(p, m.targetId, m.weapon, ctx.core.entity(p).position!, at, true);
         })) {
             return;
         }
@@ -163,7 +163,7 @@ function create(ctx: Runtime) {
         if (p.preparedTurn !== turn) {
             p.preparedTurn = turn;
             ctx.equipment.syncUtilities(p);
-            for (const id of ['shield', 'magnet'] as const)
+            for (const id of ['shield', ctx.equipment.preferredDeflector(p)] as const)
                 if (ctx.economy.owned(p, id) > 0 && !e.defenses.state?.[id === 'shield' ? 'shield' : 'deflector']?.active)
                     ctx.equipment.useDefense(p, id);
             const others = ctx.state.match.roster.filter((r: any) => r !== p && ctx.aiming.targetSnapshot(r));

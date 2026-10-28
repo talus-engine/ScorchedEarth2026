@@ -1,0 +1,158 @@
+{
+  "bodies": [
+    {
+      "bodyIndex": 0,
+      "isStatic": false,
+      "pixels": [
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 3
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 3
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 3
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 3
+        }
+      ]
+    }
+  ],
+  "canvasHeight": 128,
+  "canvasWidth": 64,
+  "description": "Launch a sheep that chases nearby firing and explosions. Explodes near a tank or after 18 seconds; the original shooter earns the damage.",
+  "isPlayer": false,
+  "isStatic": false,
+  "itemData": {
+    "isMod": true,
+    "maxStack": 99,
+    "modSpec": {
+      "castDelayDelta": 0,
+      "kind": "projectile",
+      "powerCost": 0,
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 3,
+        "bouncing": 0,
+        "carveMode": "none",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "kinetic",
+        "detonate": {
+          "atLifetime": true,
+          "onBody": true,
+          "onTerrain": true
+        },
+        "drag": 0,
+        "elementType": 23,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 14,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1400,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0
+      },
+      "rechargeDelta": 0,
+      "recoilDelta": 0
+    },
+    "stackable": true,
+    "tradeValue": 225
+  },
+  "joints": [],
+  "pixels": [],
+  "shaderId": null,
+  "shaderInterest": false,
+  "tags": [],
+  "templateId": "21c7d074-84c2-4fcf-8c6e-77851aec092a",
+  "templateName": "scorched-earth/black-sheep-round",
+  "vendorData": null
+}

@@ -37,8 +37,9 @@ Binary imports use native asset tools or `talus.files.writeBytes`.
 
 Terrain, WFC pixels, joints and native records are not fully represented by the
 file mount. Save in Talus and export the complete project after editing them.
-`tools/records.cjs capture` reads the configured roster, weapon/mod templates and
-their animation libraries into `assets/native/`. `install` validates changes,
+`tools/records.cjs capture` reads the configured roster, weapon/mod and creature
+templates, their animation libraries, and biome lighting into `assets/native/`.
+`install` validates changes,
 saves through native authoring APIs and checks entity readback. Import the full
 archive before installing these records; they use durable native IDs.
 

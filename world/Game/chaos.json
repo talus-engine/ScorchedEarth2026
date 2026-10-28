@@ -5,19 +5,26 @@
     {
       "id": "dynamite",
       "name": "Dynamite makeover",
-      "enabled": false,
-      "description": "Turn the actual hull into DYNAMITE, keep its paint, replace its central 2x2 pixels with FIRE."
+      "enabled": true,
+      "description": "Turn the actual hull into DYNAMITE, keep its paint, replace its central 2x2 pixels with FIRE.",
+      "mode": "transmute",
+      "duration": 0,
+      "element": "DYNAMITE",
+      "ignite": true
     },
     {
       "id": "acid",
       "name": "Acid bath",
-      "enabled": false,
-      "description": "The actual tank becomes HYDROCHLORIC_ACID and dissolves the ground."
+      "enabled": true,
+      "description": "The actual tank becomes HYDROCHLORIC_ACID and dissolves the ground.",
+      "mode": "transmute",
+      "duration": 0,
+      "element": "HYDROCHLORIC_ACID"
     },
     {
       "id": "furnace",
       "name": "Ten-second furnace",
-      "enabled": false,
+      "enabled": true,
       "duration": 10,
       "interval": 0.1,
       "mode": "spray",
@@ -39,7 +46,7 @@
       "id": "nuke",
       "name": "Extremely poor reactor design",
       "enabled": true,
-      "description": "Random 96\u2013240 px radius FIRE brush centered on the tank; no substitute scripted blast.",
+      "description": "Random 96–240 px radius FIRE brush centered on the tank; no substitute scripted blast.",
       "mode": "brush",
       "duration": 0,
       "radiusMin": 96,
@@ -49,13 +56,21 @@
     {
       "id": "last-laugh",
       "name": "The last laugh",
-      "enabled": false,
-      "description": "Ten random-direction shells over 0.75 seconds, then the hull becomes lit dynamite."
+      "enabled": true,
+      "description": "Ten random-direction shells over 0.75 seconds, then the hull becomes lit dynamite.",
+      "mode": "shells",
+      "duration": 0.75,
+      "interval": 0.075,
+      "count": 10,
+      "pattern": "random",
+      "speed": 340,
+      "finishMaterial": "DYNAMITE",
+      "ignite": true
     },
     {
       "id": "thermite",
       "name": "Thermite confetti",
-      "enabled": false,
+      "enabled": true,
       "duration": 4,
       "interval": 0.15,
       "mode": "spray",
@@ -69,7 +84,7 @@
     {
       "id": "oil",
       "name": "Oil well from hell",
-      "enabled": false,
+      "enabled": true,
       "duration": 6,
       "interval": 0.15,
       "mode": "spray",
@@ -83,7 +98,7 @@
     {
       "id": "volcano",
       "name": "Pocket volcano",
-      "enabled": false,
+      "enabled": true,
       "duration": 5,
       "interval": 0.2,
       "mode": "spray",
@@ -96,7 +111,7 @@
     {
       "id": "cryo",
       "name": "Cryogenic tantrum",
-      "enabled": false,
+      "enabled": true,
       "duration": 4,
       "interval": 0.15,
       "mode": "spray",
@@ -109,7 +124,7 @@
     {
       "id": "sprinkler",
       "name": "Corrosive sprinkler",
-      "enabled": false,
+      "enabled": true,
       "duration": 6,
       "interval": 0.15,
       "mode": "spray",

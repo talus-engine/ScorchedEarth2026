@@ -847,7 +847,7 @@
   right: 0;
   bottom: calc(100% + 10px);
   width: min(680px,calc(100vw - 22px));
-  max-height: 42vh;
+  max-height: 62vh;
   overflow: auto;
   padding: 16px;
   background: #10102afa;
@@ -859,6 +859,11 @@
   max-width: none;
   max-height: none;
   overflow: visible;
+}
+.indigo-hud .hud-drawer .weapon-rack {
+  max-height: min(22vh,160px);
+  overflow: auto;
+  padding: 4px;
 }
 .hud-drawer p {
   margin: 8px 0;
@@ -1121,12 +1126,12 @@
         <summary>Equipment</summary>
         <div class="hud-drawer-body">
           <div class="eyebrow">LOADOUT / UTILITIES</div>
-          <div class="loadout" data-talus-show="canEquip" data-talus-each="loadout">
+          <div class="loadout weapon-rack" data-talus-show="canEquip" data-talus-each="loadout">
             <template>
               <button data-talus-attr-data-talus-action="action" data-talus-attr-disabled="disabled" data-talus-class-selected="selected"><span data-talus-bind="name"></span> · <span data-talus-bind="stock"></span></button>
             </template>
           </div>
-          <div class="muted" style="margin-top:8px">Jet <span data-talus-bind="supplies.jet"></span>s / <span data-talus-bind="supplies.jetCapacity"></span>s loaded (<span data-talus-bind="supplies.jetStock"></span>s total) · Digger <span data-talus-bind="supplies.dig"></span>s<br>Shield <span data-talus-bind="supplies.shield"></span>/<span data-talus-bind="supplies.shieldCapacity"></span> · Mag power <span data-talus-bind="supplies.magnet"></span>/<span data-talus-bind="supplies.magnetCapacity"></span></div>
+          <div class="muted" style="margin-top:8px">Jet <span data-talus-bind="supplies.jet"></span>s / <span data-talus-bind="supplies.jetCapacity"></span>s loaded (<span data-talus-bind="supplies.jetStock"></span>s total) · Digger <span data-talus-bind="supplies.dig"></span>s<br>Shield <span data-talus-bind="supplies.shield"></span>/<span data-talus-bind="supplies.shieldCapacity"></span> · <span data-talus-bind="supplies.deflectorName"></span> power <span data-talus-bind="supplies.magnet"></span>/<span data-talus-bind="supplies.magnetCapacity"></span></div>
           <div class="muted" data-talus-show="groundFuelEnabled">Drive <span data-talus-bind="groundFuel"></span>s loaded · <span data-talus-bind="groundFuelStock"></span>s total</div>
           <div class="muted" data-talus-show="parachuteEnabled">Parachutes <span data-talus-bind="parachuteCharges"></span> · <span data-talus-show="parachuteOn">deployed</span></div>
           <div class="loadout" data-talus-show="human" hidden>
@@ -1139,7 +1144,8 @@
           </div>
           <div class="loadout" data-talus-show="human" hidden>
             <button data-talus-action="shield" data-talus-class-selected="supplies.shieldOn">Shield on/off</button>
-            <button data-talus-action="magnet" data-talus-class-selected="supplies.magnetOn">Mag on/off</button>
+            <button data-talus-action="magnet" data-talus-class-selected="supplies.magnetOn" title="Toggle magnetic repulsion">Mag · <span data-talus-bind="supplies.magnetStock"></span></button>
+            <button data-talus-action="super-mag" data-talus-show="reflectiveFieldEnabled" data-talus-class-selected="supplies.reflectOn" title="Toggle Super Mag reflection">Reflect · <span data-talus-bind="supplies.reflectStock"></span></button>
             <button data-talus-action="auto-aim">Lazy Boy · <span data-talus-bind="autoAimCharges"></span> left</button>
             <button data-talus-action="parachute" data-talus-show="parachuteEnabled" data-talus-class-selected="parachuteOn">Parachute · <span data-talus-bind="parachuteCharges"></span> left</button>
             <button data-talus-action="battery">Repair +30 · <span data-talus-bind="batteries"></span> left</button>

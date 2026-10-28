@@ -1,0 +1,49 @@
+{
+  "data": {
+    "ambient": {
+      "b": 0.95,
+      "g": 0.95,
+      "r": 0.95
+    },
+    "cullFarLights": false,
+    "dayNight": {
+      "dayColor": {
+        "b": 1,
+        "g": 1,
+        "r": 1
+      },
+      "dayLengthSec": 0,
+      "duskColor": {
+        "b": 1,
+        "g": 1,
+        "r": 1
+      },
+      "enabled": false,
+      "nightColor": {
+        "b": 1,
+        "g": 1,
+        "r": 1
+      },
+      "timeOfDay": 0.5
+    },
+    "enabled": true,
+    "exposure": 20,
+    "fog": {
+      "enabled": false,
+      "memoryDim": 1,
+      "revealThreshold": 0.15,
+      "unseenColor": {
+        "b": 0.03,
+        "g": 0.02,
+        "r": 0.02
+      }
+    },
+    "polyOcclusion": true,
+    "polyOcclusionBodies": false,
+    "polyShadowHardness": 1,
+    "polyShadowSoft": true,
+    "polyShadowSoftness": 0.45
+  },
+  "id": "scorched-daylight",
+  "name": "Scorched Daylight"
+}

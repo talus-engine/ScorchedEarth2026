@@ -29,6 +29,12 @@ function create(ctx: Runtime) {
         if (!e.isLive)
             return;
         const item = ctx.economy.itemById(p.weaponId);
+        if (!ctx.payloads.canFire(item)) {
+            ctx.state.match.message = 'This payload cannot be deployed now. Ammunition retained.';
+            if (p.control === 'cpu') ctx.equipment.chooseWeapon(p, 'standard');
+            ctx.menus.publish();
+            return;
+        }
         if (p.control === 'cpu')
             ctx.attachments.armCpu(p);
         if (p.guidanceArmed && (!await ctx.attachments.prepare(p) || !ctx.core.active() || p !== ctx.core.current()))
@@ -60,6 +66,20 @@ function create(ctx: Runtime) {
         }
         if (!ctx.attachments.ready(p))
             return;
+        if (!ctx.payloads.canFire(ctx.economy.itemById(p.weaponId))) {
+            ctx.state.match.phase = 'turn';
+            ctx.state.match.message = 'Payload capacity changed. Ammunition retained.';
+            if (p.control === 'cpu') ctx.cpu.cpuNoAction(p, ctx.state.match.message);
+            else ctx.menus.input(true);
+            ctx.session.persist();
+            ctx.menus.publish();
+            return;
+        }
+        if (p.fireSolution?.kind === 'special' && !ctx.aiming.refreshSpecialShot(p)) {
+            ctx.state.match.phase = 'turn';
+            ctx.cpu.cpuNoAction(p, 'The cutting route changed during dialogue; ammunition retained');
+            return;
+        }
         const solution = p.fireSolution, target = ctx.aiming.targetSnapshot(ctx.state.match.roster.find((r: any) => r.entityId === p.targetId));
         if (p.control === 'cpu' && solution?.kind === 'tank' && solution.turn === ctx.state.match.turnNumber
             && p.fireRefreshTurn !== ctx.state.match.turnNumber && target && (!ctx.aiming.comparableShot(solution, s, target, true)
@@ -79,12 +99,23 @@ function create(ctx: Runtime) {
             targetId: p.targetId, targetAtLaunch: ctx.aiming.targetSnapshot(ctx.state.match.roster.find((r: any) => r.entityId === p.targetId)),
             solution: p.fireSolution?.turn === ctx.state.match.turnNumber && p.fireSolution.weapon === p.weaponId ? p.fireSolution : null,
             wind: talus.world.wind || 0 };
+        if (!ctx.attachments.stage(p, ctx.state.match.attack)) {
+            ctx.state.match.attack = null;
+            ctx.state.match.phase = 'turn';
+            ctx.menus.input(p.control === 'human');
+            ctx.session.persist();
+            ctx.menus.publish();
+            return;
+        }
         ctx.presentation.playCue("fire");
-        if (!e.weapon.fire())
+        ctx.tricksters.prepareAttack(p.entityId, ctx.state.match.attack, ctx.economy.itemById(p.weaponId));
+        if (!e.weapon.fire(p.targetId || undefined))
             ctx.session.fail('Cannon did not accept the trigger');
     }
     async function refreshCpuShot(p: any, previous: any): Promise<void> {
         const tank = ctx.core.entity(p), token = ctx.state.utilityGeneration, turn = ctx.state.match.turnNumber;
+        if (!ctx.attachments.clear(p))
+            return;
         const valid = () => token === ctx.state.utilityGeneration && ctx.state.match?.phase === 'telegraph' && ctx.core.current() === p
             && !p.eliminated && ctx.state.match.turnNumber === turn && p.weaponId === previous.weapon;
         const target = ctx.aiming.targetSnapshot(ctx.state.match.roster.find((r: any) => r.entityId === p.targetId));
@@ -237,7 +268,6 @@ function create(ctx: Runtime) {
         }
     }
     function tickAttack(): void {
-        ctx.attachments.tickGuidance();
         if (talus.sim.paused || ctx.state.match.phase === 'fault')
             return;
         const a = ctx.state.match.attack;
@@ -295,9 +325,12 @@ function create(ctx: Runtime) {
                 ctx.session.run(() => terrainPayload(a, job.at, b));
             if (job.kind === 'sand')
                 ctx.session.run(() => deposit(a, job.at, { element: 'SAND', radius: 64 }));
+            if (job.kind === 'payload')
+                ctx.session.run(() => ctx.payloads.impact(a, job.at));
         }
         const emitting = b?.mode === 'burst' && a.emitted < b.count;
         if (!emitting && !Object.keys(a.ids).length && !a.pending.length && !a.tasks) {
+            observeSpecialAttack(a);
             ctx.state.match.impact = a.lastPoint;
             ctx.state.match.attack = null;
             ctx.state.shot = null;
@@ -311,6 +344,24 @@ function create(ctx: Runtime) {
                 ctx.state.match.shotId = id;
             }
         }
+    }
+    function observeSpecialAttack(a: any): void {
+        if (a.solution?.kind !== 'special')
+            return;
+        const p = ctx.state.match.roster.find((r: any) => r.entityId === a.owner);
+        const target = ctx.state.match.roster.find((r: any) => r.entityId === a.targetId);
+        const targetAt = target && ctx.core.entity(target)?.position || a.targetAtLaunch;
+        const at = a.measuredHit || a.lastPoint;
+        if (p?.control !== 'cpu' || !p.shotFrom || !targetAt || !a.targetAtLaunch || !at)
+            return;
+        ctx.aiming.observeCpuShot(p, {
+            turn: ctx.state.match.turnNumber, targetId: a.targetId, weapon: a.item, origin: p.shotFrom,
+            target: { x: targetAt.x, y: targetAt.y }, targetAtLaunch: a.targetAtLaunch, impact: at,
+            reason: a.endReason, collision: a.endCollision, damageBefore: a.damageBefore || 0,
+            dx: at.x - targetAt.x, dy: at.y - targetAt.y, power: a.power / 100, angle: a.angle,
+            hit: !!a.targetHit, direct: !!a.directHit, split: !!a.nativePayload, solution: a.solution,
+            wind: a.wind, flightSeconds: talus.sim.clock - a.launchClock,
+        });
     }
     function bind() {
         talus.on('weapon.beforeFire', e => {
@@ -335,6 +386,8 @@ function create(ctx: Runtime) {
                 if (item.behavior?.mode.startsWith('battery'))
                     ctx.economy.wallet(p).stock.battery--;
                 ctx.attachments.attach(p, a);
+                if (a.solution)
+                    a.solution.guidance = a.guidanceArmed || null;
                 p.shots = (p.shots || 0) + 1;
                 if (item.behavior?.mode !== 'terrain')
                     ctx.cpu.cpuProgress(p);
@@ -369,13 +422,19 @@ function create(ctx: Runtime) {
                 e.projectile.remove();
             }
         });
+        talus.on('projectile.payload', e => {
+            const a = ctx.state.match?.attack, entry = a?.ids[e.projectileId];
+            if (entry) {
+                entry.split = true;
+                a.nativePayload = true;
+            }
+        });
         talus.on('projectile.collision', e => {
             ctx.economy.shotReward(e, 'landing');
             const entry = ctx.state.match?.attack?.ids[e.projectileId];
             if (entry) {
                 entry.collision = e.with;
             }
-            ctx.attachments.contact(e.projectile, e.projectileId);
         });
         talus.on('projectile.bounce', e => ctx.economy.shotReward(e, 'bounce'));
         talus.on('damage', e => {
@@ -399,10 +458,17 @@ function create(ctx: Runtime) {
         talus.on('projectile.hit', e => {
             if (!ctx.state.match?.attack?.ids[e.projectileId])
                 return;
+            ctx.tricksters.hit(e, ctx.state.match.attack, ctx.economy.itemById(ctx.state.match.attack.item));
             if (e.targetStableId === ctx.state.match.attack.targetId && e.amount > 0) {
                 const entry = ctx.state.match.attack.ids[e.projectileId];
                 entry.targetHit = true;
                 entry.directHit ||= e.direct;
+                const a = ctx.state.match.attack;
+                a.targetHit = true;
+                const at = e.projectile.snapshot() || e;
+                if ((!a.directHit || e.direct) && Number.isFinite(at.x) && Number.isFinite(at.y))
+                    a.measuredHit = { x: at.x, y: at.y };
+                a.directHit ||= e.direct;
             }
             const target = ctx.state.match.roster.find((p: any) => p.entityId === e.targetStableId);
             ctx.state.match.lastHit = (target?.name || 'Tank') + ' −' + Math.round(e.amount) + ' HP' + (e.killed ? ' · ELIMINATED' : e.direct ? ' · DIRECT HIT' : ' · SPLASH');
@@ -428,6 +494,9 @@ function create(ctx: Runtime) {
             delete a.ids[e.projectileId];
             a.ended++;
             a.lastPoint = at;
+            a.endReason = e.reason;
+            a.endCollision = entry.collision;
+            ctx.payloads.queue(a, entry, e);
             const b = ctx.economy.itemById(a.item).behavior;
             if (!entry.split && entry.depth === 0) {
                 if (b?.mode === 'cluster' || b?.mode === 'apex')
@@ -442,7 +511,7 @@ function create(ctx: Runtime) {
             if (b?.mode === 'leap' && entry.depth < b.hops - 1)
                 a.pending.push({ kind: 'leap', at, vx: entry.vx * .35, depth: entry.depth });
             const p = ctx.state.match.roster.find((r: any) => r.entityId === a.owner);
-            if (p.control === 'cpu' && p.shotFrom && e.projectileId === a.rootId) {
+            if (p.control === 'cpu' && p.shotFrom && e.projectileId === a.rootId && a.solution?.kind !== 'special') {
                 const target = ctx.state.match.roster.find((r: any) => r.entityId === a.targetId), targetAt = target && ctx.core.entity(target)?.position || a.targetAtLaunch;
                 if (targetAt && a.targetAtLaunch)
                     ctx.aiming.observeCpuShot(p, {

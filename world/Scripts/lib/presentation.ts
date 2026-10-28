@@ -233,12 +233,6 @@ function create(ctx: Runtime) {
         }
         speech(p, null);
         if (cue.kind === 'death') {
-            if (tank?.isLive || tank?.isFrozen) {
-                const released = tank.controller.holdPose(0);
-                if (!released.accepted)
-                    throw new Error('Native death pose release refused for ' + p.name);
-            }
-            ctx.state.deathPoseHolds.delete(p.entityId);
             ctx.chaos.queueChaos(p, at || cue);
             cue.stage = 'effect';
             cue.started = talus.sim.clock;

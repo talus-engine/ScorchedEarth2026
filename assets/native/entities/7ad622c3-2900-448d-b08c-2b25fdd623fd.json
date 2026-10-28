@@ -1,0 +1,159 @@
+{
+  "bodies": [
+    {
+      "bodyIndex": 0,
+      "isStatic": false,
+      "pixels": [
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 0
+        },
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 1
+        },
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 2
+        },
+        {
+          "elementType": 91,
+          "localX": 0,
+          "localY": 3
+        },
+        {
+          "elementType": 91,
+          "localX": 1,
+          "localY": 3
+        },
+        {
+          "elementType": 91,
+          "localX": 2,
+          "localY": 3
+        },
+        {
+          "elementType": 91,
+          "localX": 3,
+          "localY": 3
+        }
+      ]
+    }
+  ],
+  "canvasHeight": 128,
+  "canvasWidth": 64,
+  "description": "An extremely rare impact beacon wakes an indestructible 256px sandworm. Its jointed body burrows in new directions each turn, devouring any tank it touches.",
+  "isPlayer": false,
+  "isStatic": false,
+  "itemData": {
+    "isMod": true,
+    "maxStack": 99,
+    "modSpec": {
+      "castDelayDelta": 0,
+      "kind": "projectile",
+      "powerCost": 0,
+      "projectile": {
+        "aoeRadius": 0,
+        "bodySizePx": 4,
+        "bouncing": 0,
+        "carveMode": "erase",
+        "carveRadius": 0,
+        "damage": 0,
+        "damageType": "blast",
+        "detonate": {
+          "atLifetime": false,
+          "onBody": true,
+          "onTerrain": true
+        },
+        "drag": 0,
+        "elementType": 23,
+        "gravityScale": 1,
+        "homing": 0,
+        "homingDelay": 0,
+        "independent": true,
+        "inheritVelocity": 0,
+        "kind": "rigid-body",
+        "knockback": 0,
+        "lifetime": 20,
+        "misfireSfxId": "builtin:adobe_foley/weapons/Weapon Gun Dry Fire 01.ogg",
+        "muzzleFlashCount": 0,
+        "muzzleFlashElementType": 0,
+        "muzzleFlashSpread": 0.5,
+        "muzzleSfxId": "builtin:adobe_foley/weapons/Weapon Gun Pistol 22 Caliber Single Shot Interior Shooting Range 01.ogg",
+        "piercing": 0,
+        "projectilesPerShot": 1,
+        "range": 0,
+        "recoil": 0,
+        "ricochetSfxId": "builtin:adobe_foley/weapons/Weapon Bullet Ricochet 01.ogg",
+        "spawnOffset": 36,
+        "speed": 1800,
+        "speedAtMinPower": 100,
+        "speedVariance": 0,
+        "spread": 0,
+        "spreadPattern": "random",
+        "trailElementType": 0,
+        "trailRate": 0,
+        "triggerChild": []
+      },
+      "rechargeDelta": 0,
+      "recoilDelta": 0
+    },
+    "stackable": true,
+    "tradeValue": 25000
+  },
+  "joints": [],
+  "pixels": [],
+  "shaderId": null,
+  "shaderInterest": false,
+  "tags": [],
+  "templateId": "7ad622c3-2900-448d-b08c-2b25fdd623fd",
+  "templateName": "scorched-earth/shai-hulud-round",
+  "vendorData": null
+}

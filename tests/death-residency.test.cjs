@@ -54,7 +54,8 @@ function wordsAndChaos(f) {
     assert.deepEqual(structuredClone(text.at), f.cached);
     f.talus.sim.clock += 3;
     f.api.tickPresentation();
-    assert.deepEqual(f.controllerWrites, [120, 0], 'Pose operations begin only after native restoration, with a finite hold and explicit release');
+    const fx = f.game.context.state.chaosCatalog.effects.find(fx => fx.id === f.m.chaos.jobs[0].effect);
+    assert.deepEqual(f.controllerWrites, [120, fx.duration + 20], 'Speech transfers its finite pose hold to the physical death effect without an unheld gap');
     assert.deepEqual(f.boardWrites, ['custom.lastQuip', 'custom.deathChaos'], 'Available native blackboards retain the narration and effect receipts');
     assert.equal(f.m.chaos.jobs[0].x, f.cached.x);
     assert.equal(f.m.chaos.jobs[0].y, f.cached.y);
@@ -102,6 +103,7 @@ function wordsAndChaos(f) {
     assert.equal(f.tank.can('weapon'), true);
     f.api.checkRoster();
     wordsAndChaos(f);
-    assert.deepEqual(f.controllerWrites, [120, 0], 'The specific native holdPose contract allows a loaded frozen hull to receive a finite hold and release');
+    const fx = f.game.context.state.chaosCatalog.effects.find(fx => fx.id === f.m.chaos.jobs[0].effect);
+    assert.deepEqual(f.controllerWrites, [120, fx.duration + 20], 'The specific native holdPose contract allows a loaded frozen hull to transfer its finite pose hold to the effect');
 }
 console.log('PASS: parked death waits for restoration, destroyed/unresolved point fallback without unavailable blackboard/controller calls, durable faction speech keys, cached/native-event location precedence, finite frozen pose holds and duplicate-death safety');

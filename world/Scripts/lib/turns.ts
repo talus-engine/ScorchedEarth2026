@@ -62,7 +62,7 @@ function create(ctx: Runtime) {
         const alive = ctx.state.match.roster.filter((p: any) => !p.eliminated);
         if (alive.length > 1)
             return false;
-        if (ctx.core.presenting() || ctx.state.match.attack || ctx.state.match.chaos.jobs.length || ctx.state.match.chaos.quiet < ctx.state.chaosCatalog.resultQuietSeconds) {
+        if (ctx.core.presenting() || ctx.state.match.attack || ctx.payloads.settling() || ctx.state.match.chaos.jobs.length || ctx.state.match.chaos.quiet < ctx.state.chaosCatalog.resultQuietSeconds) {
             ctx.state.match.phase = 'aftermath';
             ctx.menus.input(false);
             ctx.state.match.message = 'Last tank standing… waiting for the chain reaction';
@@ -73,6 +73,7 @@ function create(ctx: Runtime) {
         if (alive[0])
             ctx.economy.reward(alive[0], 'win');
         ctx.state.match.phase = 'finished';
+        ctx.payloads.finished();
         ctx.state.match.winner = alive[0]?.name || null;
         ctx.economy.settleWallets();
         ctx.menus.input(false);
@@ -173,6 +174,7 @@ function create(ctx: Runtime) {
             } while (ctx.core.current().eliminated);
         ctx.equipment.autoDefend();
         ctx.state.match.turnNumber++;
+        ctx.creatures.onTurn();
         ctx.state.match.remaining = ctx.state.match.turnSeconds;
         ctx.state.match.shotId = null;
         ctx.state.match.impact = null;

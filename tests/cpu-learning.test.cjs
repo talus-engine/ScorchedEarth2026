@@ -101,7 +101,8 @@ async function main() {
         f.m.attack = { owner: f.p.entityId, item: 'standard', targetId: f.target.entityId, targetAtLaunch: { ...f.enemy.position },
             ids: { 123: { depth: 0, split: false, launch: { x: 6000, y: 640, vx: 500, vy: -500 }, launchClock: 0 } }, rootId: 123, ended: 0, pending: [], angle: -.8, power: 50,
             solution: { kind: 'tank', offsetX: 0 }, wind: 0 };
-        f.emit('projectile.hit', { projectileId: 123, targetStableId: f.target.entityId, amount: 80, direct: true });
+        f.emit('projectile.hit', { projectileId: 123, targetStableId: f.target.entityId, amount: 80, direct: true,
+            projectile: { snapshot: () => ({ ...f.enemy.position }) } });
         f.emit('projectile.end', { projectileId: 123, x: f.enemy.position.x, y: f.enemy.position.y, reason: 'detonated' });
         const m = f.api.fireControl(f.p, f.target.entityId, 'standard');
         assert.equal(m.hits, 1);
@@ -127,6 +128,138 @@ async function main() {
         assert.equal(f.requests.at(-1).maxCandidates, 1, 'One bounded native recheck after settling during speech');
         assert.equal(f.p.fireSolution.origin.x, f.tank.position.x);
         assert.equal(f.m.phase, 'firing');
+    }
+    {
+        const f = setup(), profiles = structuredClone(personas);
+        profiles.personas[0].strategy.weaponPreferences = ['digger-shell', 'standard'];
+        f.api.setPersonas(profiles);
+        f.p.personaId = profiles.personas[0].id;
+        f.enemy.position.x = f.tank.position.x + 400;
+        f.api.wallet(f.p).stock['digger-shell'] = 3;
+        assert.equal(await f.api.planCpuShot(f.p, 8), true);
+        assert.equal(f.p.weaponId, 'digger-shell');
+        assert.equal(f.p.fireSolution.kind, 'special');
+        assert.equal(f.requests.length, 0, 'Native ballistic forecasting is not invoked for an excavating shot');
+        assert.equal(f.tank.blackboard.get('custom.aimPlan'), null);
+        assert.equal(f.tank.blackboard.get('custom.aiDecision').status, 'uncertain');
+        f.api.observeCpuShot(f.p, f.observation({ weapon: 'digger-shell', hit: true, direct: true,
+            angle: -.09, power: .8, reason: 'expired', solution: { kind: 'special' } }));
+        const memory = f.api.fireControl(f.p, f.target.entityId, 'digger-shell');
+        assert.equal(memory.best.angle, -.09);
+        assert.equal(memory.offsetX, 0);
+        f.api.observeCpuShot(f.p, f.observation({ weapon: 'digger-shell', hit: false, direct: false,
+            dx: -70, dy: 0, solution: { kind: 'special' } }));
+        assert.equal(memory.best.angle, -.09, 'A subsequent cutter miss cannot discard the proven direct hit');
+        assert.equal(memory.offsetX, 0, 'Cutter misses do not get ballistic range corrections');
+        assert.equal(await f.api.planCpuShot(f.p, 8), true);
+        assert.equal(f.p.fireSolution.angle, -.09);
+        assert.equal(f.p.fireSolution.power, .8);
+        f.enemy.position.y -= 40;
+        assert.equal(f.api.refreshSpecialShot(f.p), true);
+        assert.equal(f.p.fireSolution.angle, Math.atan2(-40, 400), 'Changed target pose refreshes the explicit estimate');
+        assert.equal(f.tank.blackboard.get('custom.angle'), -Math.atan2(-40, 400) * 180 / Math.PI);
+        f.talus.world.raycast = () => ({ body: {}, element: { id: 23 } });
+        assert.equal(f.api.refreshSpecialShot(f.p), false, 'A new protected body refuses before firing');
+        assert.equal(f.api.owned(f.p, 'digger-shell'), 3, 'Planning and refusal consume no ammunition');
+    }
+    {
+        const f = setup(), profiles = structuredClone(personas);
+        profiles.personas[0].strategy.weaponPreferences = ['laser', 'standard'];
+        f.api.setPersonas(profiles);
+        f.p.personaId = profiles.personas[0].id;
+        f.enemy.position.x = f.tank.position.x + 400;
+        f.api.wallet(f.p).stock.laser = 3;
+        f.api.wallet(f.p).stock.battery = 0;
+        assert.equal(await f.api.planCpuShot(f.p, 8), true);
+        assert.equal(f.p.weaponId, 'standard', 'CPU does not arm a cutting pulse without its Battery');
+        f.api.wallet(f.p).stock.battery = 1;
+        assert.equal(await f.api.planCpuShot(f.p, 8), true);
+        assert.equal(f.p.weaponId, 'laser');
+        assert.equal(f.tank.blackboard.get('custom.aimPlan'), null);
+    }
+    {
+        const f = setup(), profiles = structuredClone(personas);
+        profiles.personas[0].strategy.weaponPreferences = ['baby-digger', 'standard'];
+        f.api.setPersonas(profiles);
+        f.p.personaId = profiles.personas[0].id;
+        f.enemy.position.x = f.tank.position.x + 600;
+        f.api.wallet(f.p).stock['baby-digger'] = 2;
+        f.tank.weapon.plan = async () => ({ status: 'refused', reason: 'obstructed', work: { candidates: 1 } });
+        assert.equal(await f.api.planCpuShot(f.p, 8), false);
+        const decision = f.tank.blackboard.get('custom.aiDecision');
+        assert.ok(decision.skipped.some(s => s.item === 'baby-digger' && s.reason === 'special-shot-unavailable'));
+        assert.ok(decision.trials.length && decision.trials.every(t => t.reason === 'obstructed'),
+            'Out-of-reach equipment must not masquerade as a hard native refusal and prevent paid repositioning');
+    }
+    {
+        const f = setup();
+        f.p.shotFrom = { ...f.tank.position };
+        f.m.attack = { owner: f.p.entityId, item: 'laser', targetId: f.target.entityId,
+            targetAtLaunch: { ...f.enemy.position }, ids: {
+                321: { depth: 0, split: false, launchClock: 0 },
+                322: { depth: 0, split: false, launchClock: 0 },
+            }, rootId: 321, ended: 0, pending: [], tasks: 0, emitted: 1, angle: -.12, power: 100,
+            solution: { kind: 'special' }, wind: 0 };
+        f.emit('projectile.end', { projectileId: 321, x: f.enemy.position.x + 100, y: f.enemy.position.y, reason: 'expired' });
+        assert.equal(f.p.impacts?.length || 0, 0, 'The first missed pulse cannot finish whole-cast learning');
+        f.emit('projectile.hit', { projectileId: 322, targetStableId: f.target.entityId, amount: 8, direct: true,
+            projectile: { snapshot: () => ({ ...f.enemy.position }) } });
+        f.emit('projectile.end', { projectileId: 322, x: f.enemy.position.x + 200, y: f.enemy.position.y, reason: 'expired' });
+        f.game.context.turns.settle = async () => {};
+        f.api.tickAttack();
+        const memory = f.api.fireControl(f.p, f.target.entityId, 'laser');
+        assert.equal(memory.hits, 1);
+        assert.equal(memory.best.angle, -.12);
+        assert.equal(f.p.impacts[0].learning, 'measured-direct-hit');
+        assert.equal(f.p.impacts[0].impact.x, f.enemy.position.x, 'Use actual hit position, not a later pulse expiry');
+        f.api.tickAttack();
+        assert.equal(memory.hits, 1, 'Finishing a cast twice cannot learn twice');
+    }
+    {
+        const f = setup(), profiles = structuredClone(personas);
+        profiles.personas[0].strategy.weaponPreferences = ['laser', 'standard'];
+        f.api.setPersonas(profiles);
+        f.p.personaId = profiles.personas[0].id;
+        f.enemy.position.x = f.tank.position.x + 400;
+        Object.assign(f.api.wallet(f.p).stock, { laser: 3, battery: 1, 'heat-guidance': 1 });
+        f.api.observeCpuShot(f.p, f.observation({ weapon: 'laser', hit: true, direct: true, angle: -.23,
+            power: 1, reason: 'expired', solution: { kind: 'special', guidance: 'heat-guidance' } }));
+        const memory = f.api.fireControl(f.p, f.target.entityId, 'laser');
+        assert.equal(memory.best.guidance, 'heat-guidance');
+        assert.equal(await f.api.planCpuShot(f.p, 8), true);
+        assert.equal(f.p.fireSolution.angle, -.23);
+        assert.equal(f.p.fireSolution.guidance, 'heat-guidance');
+        f.api.armCpu(f.p);
+        assert.equal(f.p.guidanceArmed, 'heat-guidance');
+        f.api.wallet(f.p).stock['heat-guidance'] = 0;
+        assert.equal(f.api.provenShot(f.p, f.target.entityId, 'laser', f.tank.position, f.enemy.position, true), null);
+        assert.equal(await f.api.planCpuShot(f.p, 8), true);
+        assert.equal(f.p.fireSolution.angle, 0, 'A spent Heat charge cannot turn its guided angle into an unguided proof');
+        assert.equal(Object.hasOwn(f.p.fireSolution, 'guidance'), false, 'Fresh direct estimate is distinct from measured unguided hit');
+        assert.equal(memory.best.angle, -.23, 'Unavailable equipment does not erase the observation');
+        f.api.wallet(f.p).stock['heat-guidance'] = 1;
+        assert.equal(await f.api.planCpuShot(f.p, 8), true);
+        assert.equal(f.p.fireSolution.angle, -.23, 'Restocking restores the original measured configuration');
+        assert.equal(f.p.fireSolution.guidance, 'heat-guidance');
+        f.api.observeCpuShot(f.p, f.observation({ weapon: 'laser', hit: false, direct: false, dx: -90,
+            solution: { kind: 'special', guidance: 'heat-guidance' } }));
+        assert.equal(memory.offsetX, 0);
+        assert.equal(memory.best.angle, -.23);
+    }
+    {
+        const f = setup();
+        f.api.wallet(f.p).stock['heat-guidance'] = 1;
+        f.api.observeCpuShot(f.p, f.observation({ hit: true, direct: true, angle: -.4, power: .42,
+            solution: { kind: 'uncertain-tank', guidance: 'heat-guidance' } }));
+        assert.equal(await f.api.planCpuShot(f.p, 8), true);
+        assert.equal(f.requests.length, 0, 'Measured guided hits never become clear unguided ballistic forecasts');
+        assert.equal(f.p.fireSolution.kind, 'uncertain-tank');
+        assert.equal(f.p.fireSolution.guidance, 'heat-guidance');
+        assert.equal(f.p.fireSolution.angle, -.4);
+        f.api.observeCpuShot(f.p, f.observation({ hit: false, direct: false, dx: 80,
+            solution: { kind: 'tank', guidance: 'heat-guidance' } }));
+        assert.equal(f.api.fireControl(f.p, f.target.entityId, 'standard').offsetX, 0,
+            'A guided miss does not contaminate unguided range correction');
     }
     console.log('PASS: per-target/weapon feedback, directional correction, pose validity, persistent successful solutions, no rerolled skill noise, regression rollback, held emplacement, diagnostic exclusions, bounded records, magnetic hit reuse, real event integration and duplicate-end isolation');
 }

@@ -1,4 +1,4 @@
-/** Capture or install the project's native entity and animation records. */
+/** Capture or install the project's native entities, animations and lighting. */
 const fs = require('node:fs');
 const path = require('node:path');
 const { parseArgs, isDeepStrictEqual } = require('node:util');
@@ -12,14 +12,25 @@ const recordsIn = folder => fs.readdirSync(folder).filter(name => name.endsWith(
 function entityIds() {
     const arena = readJSON(path.join(ROOT, 'world/Game/arena.json'));
     const shop = readJSON(path.join(ROOT, 'world/Game/shop.json'));
+    const payloads = ['creatures', 'ordnance', 'tricksters'].flatMap(name => {
+        const file = path.join(ROOT, 'world/Game', name + '.json');
+        return fs.existsSync(file) ? readJSON(file).nativeEntities || [] : [];
+    });
     return [...new Set([arena.tankTemplate, ...arena.tankPalettes.map(p => p.templateId),
-        ...shop.items.flatMap(item => [item.template, item.modTemplate].filter(Boolean))])].sort();
+        ...shop.items.flatMap(item => [item.template, item.modTemplate].filter(Boolean)), ...payloads])].sort();
 }
 
 function saveRecords(folder, rows, key) {
     fs.mkdirSync(folder, { recursive: true });
     for (const file of recordsIn(folder)) fs.unlinkSync(file);
     for (const row of rows) writeJSON(path.join(folder, row[key] + '.json'), row);
+}
+
+function lightingIds() {
+    const folder = path.join(ROOT, 'world/Biomes');
+    return fs.existsSync(folder)
+        ? [...new Set(recordsIn(folder).map(file => readJSON(file).lightingId).filter(Boolean))].sort()
+        : [];
 }
 
 async function capture() {
@@ -33,7 +44,14 @@ async function capture() {
         const records = await native(`const kind=${JSON.stringify(kind)},ids=${JSON.stringify(ids)};const out=[];for(const row of await talus.editor.records.list(kind)){const record=await talus.editor.records.get(kind,row.id);if(ids.includes(record.entityTemplateId))out.push(record)}return out`);
         saveRecords(path.join(DIRECTORY, kind), records, kind === 'animationClip' ? 'clipId' : 'controllerId');
     }
-    console.log(`Captured ${rows.length} entity records and their animation libraries.`);
+    const lighting = [];
+    for (const id of lightingIds()) {
+        const record = await native(`return await talus.editor.records.get('lighting',${JSON.stringify(id)})`);
+        if (!record) throw Error('Missing biome lighting: ' + id);
+        lighting.push(record);
+    }
+    saveRecords(path.join(DIRECTORY, 'lighting'), lighting, 'id');
+    console.log(`Captured ${rows.length} entity records, their animation libraries and ${lighting.length} lighting presets.`);
 }
 
 async function install() {
@@ -48,7 +66,7 @@ async function install() {
             proposals.push({ id, patch });
         }
     }
-    for (const kind of KINDS) for (const file of recordsIn(path.join(DIRECTORY, kind))) {
+    for (const kind of [...KINDS, 'lighting']) for (const file of recordsIn(path.join(DIRECTORY, kind))) {
         await native(`return await talus.editor.records.save(${JSON.stringify(kind)},${JSON.stringify(readJSON(file))})`);
     }
     for (const { id, patch } of proposals) {

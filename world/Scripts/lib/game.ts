@@ -14,6 +14,10 @@ import supplies = require('supplies');
 import combat = require('combat');
 import attachments = require('attachments');
 import chaos = require('chaos');
+import creatures = require('creatures');
+import ordnance = require('ordnance');
+import tricksters = require('tricksters');
+import payloads = require('payloads');
 import generation = require('generation');
 import landscape = require('landscape');
 import brushes = require('brushes');
@@ -89,6 +93,10 @@ function create() {
     ctx.combat = combat(ctx);
     ctx.attachments = attachments(ctx);
     ctx.chaos = chaos(ctx);
+    ctx.creatures = creatures(ctx);
+    ctx.ordnance = ordnance(ctx);
+    ctx.tricksters = tricksters(ctx);
+    ctx.payloads = payloads(ctx);
     ctx.generation = generation(ctx);
     ctx.landscape = landscape(ctx);
     ctx.brushes = brushes(ctx);
@@ -102,6 +110,7 @@ function create() {
         ctx.turns.bind();
         ctx.combat.bind();
         ctx.attachments.bind();
+        ctx.payloads.bind();
         ctx.menus.bind();
         ctx.lifecycle.bind();
     }

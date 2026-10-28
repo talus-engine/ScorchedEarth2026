@@ -35,7 +35,7 @@
   "personas": [
     {
       "id": "lucky",
-      "name": "Buck \u2018Lucky\u2019 Fuse",
+      "name": "Buck ‘Lucky’ Fuse",
       "factionId": "terra-lucky-fuses",
       "factionName": "Lucky Fuses",
       "skill": "rookie",
@@ -50,6 +50,8 @@
         "risk": 0.8,
         "saveFraction": 0.1,
         "weaponPreferences": [
+          "rubber-duck-apocalypse",
+          "tax-collector",
           "standard",
           "machine-gun",
           "heavy"
@@ -70,7 +72,7 @@
     },
     {
       "id": "mole",
-      "name": "Molly \u2018Mole\u2019 Morgan",
+      "name": "Molly ‘Mole’ Morgan",
       "factionId": "terra-burrow-union",
       "factionName": "Burrow Union",
       "skill": "easy",
@@ -85,9 +87,13 @@
         "risk": 0.4,
         "saveFraction": 0.2,
         "weaponPreferences": [
+          "shai-hulud",
+          "proximity-mine",
+          "digger-shell",
+          "baby-digger",
+          "sandhog",
           "riot",
           "crumble",
-          "heavy-riot",
           "standard"
         ],
         "utilityPreferences": [
@@ -122,6 +128,8 @@
         "risk": 0.6,
         "saveFraction": 0.35,
         "weaponPreferences": [
+          "airstrike-nukes",
+          "meteor-lottery",
           "nuke",
           "mirv",
           "heavy",
@@ -144,7 +152,7 @@
     },
     {
       "id": "faultline",
-      "name": "Vera \u2018Faultline\u2019 Voss",
+      "name": "Vera ‘Faultline’ Voss",
       "factionId": "terra-gravity-office",
       "factionName": "Gravity Office",
       "skill": "hard",
@@ -159,6 +167,10 @@
         "risk": 0.25,
         "saveFraction": 0.25,
         "weaponPreferences": [
+          "airstrike-acid",
+          "airstrike-lava",
+          "heavy-sandhog",
+          "sandhog",
           "crumble",
           "earth-disrupter",
           "riot",
@@ -196,6 +208,10 @@
         "risk": 0.35,
         "saveFraction": 0.3,
         "weaponPreferences": [
+          "black-sheep",
+          "angry-crow",
+          "airstrike-chaos",
+          "laser",
           "napalm",
           "mirv",
           "nuke",
@@ -203,9 +219,10 @@
           "standard"
         ],
         "utilityPreferences": [
-          "magnet",
-          "shield",
+          "heat-guidance",
+          "super-mag",
           "jetpack",
+          "shield",
           "battery"
         ],
         "candidateBudget": 96,

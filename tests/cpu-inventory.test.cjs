@@ -11,6 +11,9 @@ async function main() {
     {
         const f = setup(), p = f.m.roster[0], e = f.actors.get(p.entityId), w = f.api.bank.players.alpha;
         p.personaId = 'lucky';
+        const profiles = structuredClone(personas);
+        profiles.personas.find(persona => persona.id === 'lucky').strategy.weaponPreferences = ['machine-gun', 'standard', 'heavy'];
+        f.api.setPersonas(profiles);
         f.m.phase = 'ready';
         f.api.cpuShopping();
         assert.equal(w.stock['machine-gun'], 4);

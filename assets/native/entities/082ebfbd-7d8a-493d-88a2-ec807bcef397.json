@@ -1,0 +1,215 @@
+{
+  "bodies": [
+    {
+      "bodyIndex": 0,
+      "isStatic": false,
+      "name": "Proximity Mine sprite",
+      "pixels": [
+        {
+          "color": 4281259775,
+          "elementType": 23,
+          "localX": 0,
+          "localY": -2
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -2,
+          "localY": -1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -1,
+          "localY": -1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 0,
+          "localY": -1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 1,
+          "localY": -1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 2,
+          "localY": -1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -4,
+          "localY": 0
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -3,
+          "localY": 0
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -2,
+          "localY": 0
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -1,
+          "localY": 0
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 0,
+          "localY": 0
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 1,
+          "localY": 0
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 2,
+          "localY": 0
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 3,
+          "localY": 0
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 4,
+          "localY": 0
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -4,
+          "localY": 1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -3,
+          "localY": 1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -2,
+          "localY": 1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -1,
+          "localY": 1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 0,
+          "localY": 1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 1,
+          "localY": 1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 2,
+          "localY": 1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 3,
+          "localY": 1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 4,
+          "localY": 1
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -2,
+          "localY": 2
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": -1,
+          "localY": 2
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 0,
+          "localY": 2
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 1,
+          "localY": 2
+        },
+        {
+          "color": 4282681412,
+          "elementType": 23,
+          "localX": 2,
+          "localY": 2
+        }
+      ]
+    }
+  ],
+  "canvasHeight": 5,
+  "canvasWidth": 9,
+  "description": "A normal shell drops a persistent mine. It arms after 1.25 seconds and detonates within 38px of any living tank, including its owner.",
+  "indestructible": true,
+  "isPlayer": false,
+  "isStatic": false,
+  "itemData": {
+    "isWeapon": true,
+    "startingMods": [
+      "scorched-earth/proximity-mine-round"
+    ],
+    "tradeValue": 80,
+    "weaponBaseStats": {
+      "autoFire": false,
+      "castDelay": 0,
+      "powerChargeRate": 100,
+      "powerMax": 100,
+      "rechargeTime": 0,
+      "spread": 0
+    },
+    "weaponSlots": 1
+  },
+  "joints": [],
+  "pixels": [],
+  "shaderId": null,
+  "shaderInterest": false,
+  "tags": [],
+  "templateId": "082ebfbd-7d8a-493d-88a2-ec807bcef397",
+  "templateName": "scorched-earth/proximity-mine",
+  "vendorData": null
+}

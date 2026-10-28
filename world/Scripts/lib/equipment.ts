@@ -16,15 +16,11 @@ function create(ctx: Runtime) {
         ledger.supplySeen = now;
         return true;
     }
-    function readSupply(p: any): {
-        jet: number;
-        shield: number;
-        magnet: number;
-        groundSpent: number;
-    } {
+    function readSupply(p: any): SupplyReading {
         const e = ctx.core.entity(p), state = e.controller.state, defense = e.defenses.state;
         return { jet: state?.fuel || 0, shield: defense?.shield?.remaining || 0,
-            magnet: defense?.deflector?.remaining || 0, groundSpent: e.controller.groundDrive?.spent || 0 };
+            magnet: defense?.deflector?.remaining || 0, groundSpent: e.controller.groundDrive?.spent || 0,
+            deflectorItem: defense?.deflector?.spec.reflection ? 'super-mag' : 'magnet' };
     }
     function accountSupply(p: any): void {
         if (!ctx.state.bank || !p.entityId || !ctx.core.entity(p)?.isLive)
@@ -32,10 +28,18 @@ function create(ctx: Runtime) {
         const now = readSupply(p), before = tankUtilityLedger(p).supplySeen;
         let changed = false;
         if (before) {
-            for (const [key, id, rate] of [['jet', 'jetpack', 1], ['shield', 'shield', ctx.economy.itemById('shield').charge], ['magnet', 'magnet', ctx.economy.itemById('magnet').charge]] as const) {
+            for (const [key, id, rate] of [['jet', 'jetpack', 1], ['shield', 'shield', ctx.economy.itemById('shield').charge]] as const) {
                 const spent = Math.max(0, before[key] - now[key]) / Number(rate);
                 if (spent > 1e-9) {
                     ctx.economy.wallet(p).stock[id] = Math.max(0, ctx.economy.owned(p, id) - spent);
+                    changed = true;
+                }
+            }
+            const deflectorItem = before.deflectorItem || 'magnet';
+            if (deflectorItem === now.deflectorItem) {
+                const spent = Math.max(0, before.magnet - now.magnet) / ctx.economy.itemById(deflectorItem).charge;
+                if (spent > 1e-9) {
+                    ctx.economy.wallet(p).stock[deflectorItem] = Math.max(0, ctx.economy.owned(p, deflectorItem) - spent);
                     changed = true;
                 }
             }
@@ -50,6 +54,40 @@ function create(ctx: Runtime) {
         const observed = rememberSupply(p, now);
         if (changed || observed)
             ctx.economy.saveBank();
+    }
+    function selectedDeflector(p: any): 'magnet' | 'super-mag' {
+        return p.deflectorItem === 'super-mag' && ctx.economy.itemById('super-mag')?.field ? 'super-mag' : 'magnet';
+    }
+    function preferredDeflector(p: any): 'magnet' | 'super-mag' {
+        if (ctx.economy.itemById('super-mag')?.enabled && ctx.economy.itemById('super-mag')?.field
+            && ctx.economy.owned(p, 'super-mag') > 0)
+            return 'super-mag';
+        return 'magnet';
+    }
+    function selectDeflector(p: any, id: 'magnet' | 'super-mag'): boolean {
+        const e = ctx.core.entity(p), item = ctx.economy.itemById(id);
+        if (!e?.isLive || !e.alive || !item?.enabled || !item.field)
+            return false;
+        accountSupply(p);
+        const component = e.defenses.state?.deflector;
+        const actual = component?.spec.reflection ? 'super-mag' : 'magnet';
+        if (!component || actual !== id) {
+            const settings = { ...item.field,
+                elements: item.materialNames.map((name: string) => talus.elements.get(name)?.id).filter((element: any) => element !== undefined) };
+            const receipt = e.defenses.configure('deflector', settings);
+            if (!receipt.accepted) {
+                ctx.state.match.message = item.name + ': ' + receipt.reason;
+                return false;
+            }
+            // Loaded energy belongs to its original reserve. Switching modes neither spends nor transfers it.
+            const carried = e.defenses.state?.deflector?.remaining || 0;
+            if (carried > 0 && !e.defenses.discharge('deflector', carried).accepted)
+                throw new Error('Deflector could not release its previous reserve');
+            rememberSupply(p, readSupply(p));
+            ctx.economy.saveBank();
+        }
+        p.deflectorItem = id;
+        return true;
     }
     function syncUtilities(p: any): void {
         const e = ctx.core.entity(p);
@@ -94,7 +132,10 @@ function create(ctx: Runtime) {
             else if (target < state.charges)
                 e.controller.removeFallBrakeCharges(state.charges - target);
         }
-        for (const [id, kind] of [['shield', 'shield'], ['magnet', 'deflector']] as const) {
+        const deflectorItem = selectedDeflector(p);
+        if (ctx.economy.itemById(deflectorItem)?.enabled && !selectDeflector(p, deflectorItem))
+            throw new Error('Deflector configuration refused');
+        for (const [id, kind] of [['shield', 'shield'], [deflectorItem, 'deflector']] as const) {
             const item = ctx.economy.itemById(id);
             if (!item.enabled)
                 continue;
@@ -117,14 +158,19 @@ function create(ctx: Runtime) {
         if (rememberSupply(p, readSupply(p)))
             ctx.economy.saveBank();
     }
-    function useDefense(p: any, id: 'shield' | 'magnet'): boolean {
+    function useDefense(p: any, id: 'shield' | 'magnet' | 'super-mag'): boolean {
         if (!ctx.core.active() || p !== ctx.core.current() || p.eliminated || !ctx.economy.itemById(id).enabled)
             return false;
+        const switching = id !== 'shield' && selectedDeflector(p) !== id;
+        if (switching && (ctx.economy.owned(p, id) <= 0 || !selectDeflector(p, id))) {
+            ctx.menus.publish();
+            return false;
+        }
         syncUtilities(p);
         const e = ctx.core.entity(p), kind = id === 'shield' ? 'shield' : 'deflector', state = e.defenses.state?.[kind];
         if (!state)
             return false;
-        const receipt = e.defenses.activate(kind, !state.active);
+        const receipt = e.defenses.activate(kind, switching || !state.active);
         if (receipt.accepted) {
             ctx.session.persist();
             ctx.menus.publish();
@@ -266,6 +312,9 @@ function create(ctx: Runtime) {
             const e = ctx.core.entity(p);
             if (!e?.isLive || !e.alive)
                 continue;
+            if (p.control === 'cpu' && selectedDeflector(p) !== preferredDeflector(p)
+                && !selectDeflector(p, preferredDeflector(p)))
+                continue;
             syncUtilities(p);
             let activated = false, refused = false;
             for (const kind of ctx.economy.owned(p, 'auto-defense') >= 1 ? ['shield', 'deflector'] as const : []) {
@@ -346,6 +395,6 @@ function create(ctx: Runtime) {
         passivePosture(p);
         ctx.session.persist();
     }
-    return { tankUtilityLedger, rememberSupply, readSupply, accountSupply, syncUtilities, useDefense, useParachute, dig, driveTank, syncLoadout, chooseWeapon, useBattery, useAutoAim, autoDefend, movementVelocity, passivePosture, flipUpright, preparePlacement };
+    return { tankUtilityLedger, rememberSupply, readSupply, accountSupply, selectedDeflector, preferredDeflector, selectDeflector, syncUtilities, useDefense, useParachute, dig, driveTank, syncLoadout, chooseWeapon, useBattery, useAutoAim, autoDefend, movementVelocity, passivePosture, flipUpright, preparePlacement };
 }
 export = create;

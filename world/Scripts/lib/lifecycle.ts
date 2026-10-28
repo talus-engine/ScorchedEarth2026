@@ -14,6 +14,7 @@ function create(ctx: Runtime) {
             ctx.state.personaCatalog = JSON.parse((await talus.files.readText('Game/personas.json'))!);
             ctx.state.soundCatalog = JSON.parse(await talus.files.readText('Game/audio.json') || '{}');
             ctx.state.supplyCatalog = JSON.parse((await talus.files.readText('Game/supply-drops.json'))!);
+            await ctx.payloads.load();
             talus.ui.damageTextStyle(ctx.state.damageTextStyle);
             ctx.state.market.categories.forEach((name: string, index: number) => talus.on('menu.custom.category-' + index, () => { ctx.state.shopCategory = name; ctx.economy.publishShop(); }));
             for (const item of ctx.state.market.items) {
@@ -257,6 +258,7 @@ function create(ctx: Runtime) {
                     ctx.presentation.tickPresentation();
                     ctx.combat.tickAttack();
                     ctx.chaos.tickChaos(e.dt);
+                    ctx.payloads.tick(e.dt);
                 }
                 catch (error) {
                     ctx.session.fail(error);

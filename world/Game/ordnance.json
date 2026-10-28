@@ -1,0 +1,279 @@
+{
+  "nativeLargeBlast": false,
+  "maxMines": 16,
+  "effects": {
+    "mine": {
+      "mode": "mine",
+      "armSeconds": 1.25,
+      "triggerRadius": 38,
+      "blast": {
+        "damage": 110,
+        "aoeRadius": 112,
+        "carveRadius": 48
+      }
+    },
+    "holy": {
+      "mode": "holy",
+      "count": [
+        1,
+        3,
+        5
+      ],
+      "countSeconds": 3,
+      "blast": {
+        "damage": 220,
+        "aoeRadius": 2800,
+        "carveRadius": 176,
+        "knockback": 450
+      }
+    },
+    "airstrike-bombs": {
+      "mode": "airstrike",
+      "count": 5,
+      "interval": 0.18,
+      "height": 320,
+      "spacing": 50,
+      "speed": 260,
+      "pattern": [
+        "bomb"
+      ]
+    },
+    "airstrike-acid": {
+      "mode": "airstrike",
+      "count": 5,
+      "interval": 0.2,
+      "height": 300,
+      "spacing": 48,
+      "speed": 230,
+      "pattern": [
+        "acid"
+      ]
+    },
+    "airstrike-lava": {
+      "mode": "airstrike",
+      "count": 4,
+      "interval": 0.22,
+      "height": 300,
+      "spacing": 56,
+      "speed": 220,
+      "pattern": [
+        "lava"
+      ]
+    },
+    "airstrike-nukes": {
+      "mode": "airstrike",
+      "count": 2,
+      "interval": 0.4,
+      "height": 340,
+      "spacing": 90,
+      "speed": 260,
+      "pattern": [
+        "baby-nuke"
+      ]
+    },
+    "airstrike-chaos": {
+      "mode": "airstrike",
+      "count": 5,
+      "interval": 0.25,
+      "height": 320,
+      "spacing": 48,
+      "speed": 240,
+      "pattern": [
+        "bomb",
+        "acid",
+        "baby-nuke",
+        "lava",
+        "bomb"
+      ]
+    },
+    "ducks": {
+      "mode": "ducks",
+      "count": 6,
+      "interval": 0.12,
+      "speedMin": 150,
+      "speedMax": 280,
+      "projectile": {
+        "damage": 12,
+        "aoeRadius": 28,
+        "carveRadius": 0,
+        "bouncing": 5,
+        "lifetime": 7,
+        "detonate": {
+          "onBody": true,
+          "onTerrain": true,
+          "onRest": true,
+          "fuse": 4,
+          "atLifetime": true
+        }
+      },
+      "payload": {
+        "element": "WATER",
+        "radius": 34,
+        "requireImpact": false
+      }
+    },
+    "meteors": {
+      "mode": "meteors",
+      "count": 8,
+      "interval": 0.22,
+      "height": 380,
+      "spacing": 35,
+      "jitter": 24,
+      "drift": 35,
+      "speed": 360,
+      "catastropheChance": 0.08,
+      "ordinary": "meteor",
+      "catastrophe": "catastrophe"
+    }
+  },
+  "payloads": {
+    "bomb": {
+      "projectile": {
+        "damage": 70,
+        "aoeRadius": 90,
+        "carveRadius": 38
+      }
+    },
+    "acid": {
+      "projectile": {
+        "damage": 8,
+        "aoeRadius": 28,
+        "carveRadius": 8,
+        "damageType": "acid"
+      },
+      "payload": {
+        "element": "HYDROCHLORIC_ACID",
+        "radius": 34
+      }
+    },
+    "lava": {
+      "projectile": {
+        "damage": 18,
+        "aoeRadius": 38,
+        "carveRadius": 12,
+        "damageType": "fire"
+      },
+      "payload": {
+        "element": "LAVA",
+        "radius": 32
+      }
+    },
+    "baby-nuke": {
+      "projectile": {
+        "damage": 150,
+        "aoeRadius": 200,
+        "carveRadius": 104
+      }
+    },
+    "meteor": {
+      "projectile": {
+        "damage": 38,
+        "aoeRadius": 52,
+        "carveRadius": 22,
+        "trailElementType": 6,
+        "trailRate": 18
+      },
+      "sprite": "meteor"
+    },
+    "catastrophe": {
+      "projectile": {
+        "damage": 220,
+        "aoeRadius": 280,
+        "carveRadius": 176,
+        "trailElementType": 6,
+        "trailRate": 32
+      },
+      "sprite": "meteor"
+    }
+  },
+  "sprites": {
+    "holy": {
+      "materials": {
+        "W": "SILVER",
+        "G": "GOLD"
+      },
+      "colors": {
+        "W": "#ebebf2",
+        "G": "#ffd62e"
+      },
+      "rows": [
+        "......G......",
+        "....GGGGG....",
+        "......G......",
+        "....WWGWW....",
+        "..WWWWGWWWW..",
+        ".WWWWWGWWWWW.",
+        ".WWWWWGWWWWW.",
+        "WGGGGGGGGGGGW",
+        "WWWWWWGWWWWWW",
+        "WWWWWWGWWWWWW",
+        ".WWWWWGWWWWW.",
+        ".WWWWWGWWWWW.",
+        "..WWWWGWWWW..",
+        "....WWGWW...."
+      ]
+    },
+    "duck": {
+      "materials": {
+        "Y": "GOLD",
+        "K": "OBSIDIAN",
+        "O": "COPPER"
+      },
+      "colors": {
+        "Y": "#ffd62e",
+        "K": "#161020",
+        "O": "#e89030"
+      },
+      "rows": [
+        ".....YYY....",
+        "....YYYYK...",
+        "....YYYYYOO.",
+        ".....YYYOO..",
+        ".YY..YYY....",
+        "YYYYYYYYY...",
+        ".YYYYYYYYY..",
+        "..YYYYYYY...",
+        "....YYY....."
+      ]
+    },
+    "meteor": {
+      "materials": {
+        "R": "IRON",
+        "G": "OBSIDIAN",
+        "O": "GOLD"
+      },
+      "colors": {
+        "R": "#6f473a",
+        "G": "#241e28",
+        "O": "#ffd62e"
+      },
+      "rows": [
+        "...RR...",
+        "..RRGR..",
+        ".RRRGRR.",
+        "RRGRRRRO",
+        "RRGRROOR",
+        ".RRRROO.",
+        "..RROO..",
+        "...OO..."
+      ]
+    },
+    "mine": {
+      "materials": {
+        "M": "IRON",
+        "L": "GOLD"
+      },
+      "colors": {
+        "M": "#448844",
+        "L": "#ffd62e"
+      },
+      "rows": [
+        "....L....",
+        "..MMMMM..",
+        "MMMMMMMMM",
+        "MMMMMMMMM",
+        "..MMMMM.."
+      ]
+    }
+  }
+}

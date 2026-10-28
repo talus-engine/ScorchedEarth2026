@@ -33,6 +33,8 @@ setup exposes the terrain parameters.
   in the armory on weapons, ammunition, shields, fuel and other utilities.
 - Named wallets, stock and scores persist between plays. CPU personas choose
   tactics, shop, explore and learn from their shots.
+- Rare payloads add roaming worms, attacking crows, explosive sheep, mines,
+  airstrikes, bouncing water ducks, meteors and a cash-stealing Tax Collector.
 
 Use the on-screen angle, power, weapon and utility controls. Menus support mouse,
 keyboard and gamepad navigation; **Options → Controls** shows and changes the

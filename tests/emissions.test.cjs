@@ -29,7 +29,7 @@ function scene(saved) {
                 anchors.push(anchor);
                 return anchor;
             } }, entities: { get: () => actor },
-        world: { spawnParticles(spec) { sprays.push(spec); return control.placed; },
+        world: { cancelTerrainWork() { }, spawnParticles(spec) { sprays.push(spec); return control.placed; },
             explode(spec) { explosions.push(spec); return control.explosion; },
             terrainWork: async (spec) => { terrain.push(spec); return { status: 'completed', added: 123 }; },
         }, projectiles: { get: id => shots.get(id), launch(spec) {
@@ -276,7 +276,8 @@ async function main() {
         assert.equal(after.api.regions, 0);
     }
     const flags = JSON.parse(fs.readFileSync(path.join(root, 'world/Game/chaos.json'), 'utf8'));
-    assert.ok(flags.effects.filter(fx => fx.mode === 'spray').every(fx => !fx.enabled), 'Existing native API gates remain disabled');
+    assert.ok(flags.effects.filter(fx => fx.mode === 'spray').every(fx => fx.enabled && fx.duration <= 10 && fx.interval >= .1),
+        'Material sprays have a finite duration and bounded pulse cadence');
     console.log('PASS: burst restoration without truncation, no whole-flight shooter pin, genuine death cancellation, bounded reserve/loading/particle readiness, immutable waiting RNG/emission counts, moving wrecks, finite finale scope, failure cleanup, independent shell/brush ownership and resumed emission without replay');
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

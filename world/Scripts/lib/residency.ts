@@ -108,11 +108,13 @@ function create(ctx: Runtime) {
     }
     function chaosRegionReady(job: any, fx: any): boolean {
         const wreck = talus.entities.get(job.owner), radius = Math.max(64, Math.ceil(fx.finishBlast || 0) + 16);
-        const gone = wreck?.residency === 'destroyed';
+        const gone = !wreck?.exists;
         const spec: AnchorSpec = gone
             ? { rect: { x: job.x - radius, y: job.y - radius, w: radius * 2, h: radius * 2 }, label: 'terra-death-' + job.id }
             : { follow: job.owner, halfWidth: radius, halfHeight: radius, label: 'terra-death-' + job.id };
-        return emissionRegionReady('death:' + job.id, spec, fx.mode === 'spray' || !!fx.finishBlast, gone || !!wreck?.isLive);
+        return emissionRegionReady('death:' + job.id, spec,
+            fx.mode === 'spray' || fx.mode === 'transmute' || !!fx.finishMaterial || !!fx.finishBlast,
+            gone || !!wreck?.isLive);
     }
     function bind() {
         talus.on('entity.residency', e => {
