@@ -16,8 +16,10 @@ function entityIds() {
         const file = path.join(ROOT, 'world/Game', name + '.json');
         return fs.existsSync(file) ? readJSON(file).nativeEntities || [] : [];
     });
+    const sceneryFile = path.join(ROOT, 'world/Game/Mazes/entities.json');
+    const scenery = fs.existsSync(sceneryFile) ? readJSON(sceneryFile).entities.map(row => row.templateId) : [];
     return [...new Set([arena.tankTemplate, ...arena.tankPalettes.map(p => p.templateId),
-        ...shop.items.flatMap(item => [item.template, item.modTemplate].filter(Boolean)), ...payloads])].sort();
+        ...shop.items.flatMap(item => [item.template, item.modTemplate].filter(Boolean)), ...payloads, ...scenery])].sort();
 }
 
 function saveRecords(folder, rows, key) {

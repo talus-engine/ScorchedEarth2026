@@ -57,6 +57,7 @@ excerpts of game files and the native tank asset. Its source is
 | [world/Scripts/lib](world/Scripts/lib) | Game services, composed by `game.ts` with boundaries in `context.ts` |
 | [world/Game](world/Game) | Rules, shop, personas, dialogue catalogs, terrain parameters and input |
 | [world/Game/Presets](world/Game/Presets) | Project-owned noise, semantic, neural, living, vector and material resources |
+| [world/Game/Mazes](world/Game/Mazes) and [assets/mazes](assets/mazes) | Authored native maze recipes, foreground/background tile choices and scenery spawn templates; see [maze configuration](docs/mazes.md) for activation |
 | [world/Menus](world/Menus) | Title, setup, shop, HUD, pause, controls and shared arcade styling |
 | [world/Graphs](world/Graphs) and [world/Dialogue](world/Dialogue) | Native CPU action graph and Ink announcer stories |
 | [world/WFC](world/WFC) | Square tile scaffold, connector spans, palette references and artist instructions |

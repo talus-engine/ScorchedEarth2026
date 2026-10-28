@@ -53,6 +53,11 @@ Project-owned noise, semantic, neural, living and vector presets remain in
 `world/Game/Presets/` for editor painting and weapon effects. They are not loaded
 or validated during match startup.
 
+[Rich maze recipes](mazes.md) combine native foreground/background tile presets,
+all seven edge-stroke sources and native scenery entity rules. Their authoring
+catalog is `world/Game/Mazes/catalog.json`; activation uses the native streamed
+round-source interface, with no map-wide painting pass.
+
 `tools/build_wfc_template.cjs` regenerates the local bootstrap and reference files
 from `assets/art/terrain-swatch.svg`. It does not install them into the editor.
 `tests/wfc.test.cjs` checks pixel seams and gates; `tests/wfc-solver.cjs` runs the

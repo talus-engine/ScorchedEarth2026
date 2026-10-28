@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "recipe": "bunker-grid",
+      "foreground": "builtin:atomic-realm-industrial-industrial-47tiles",
+      "background": "builtin:atomic-realm-industrial-industrial-background-47tiles",
+      "material": 61,
+      "noise": "builtin-concrete-1",
+      "semantic": "builtin-brush-ancient-ruins",
+      "neuralModel": "builtin-nca-stations",
+      "neuralRecipe": "builtin-brush-factory-floor",
+      "growth": "builtin-ivy-wall",
+      "props": ["concrete-barrier", "rusted-girder", "wood-crate", "ruined-outpost"]
+    },
+    {
+      "recipe": "rat-run",
+      "foreground": "builtin:atomic-realm-mine-mine-47tiles",
+      "background": "builtin:atomic-realm-mine-mine-background-47tiles",
+      "material": 10,
+      "noise": "builtin-wood-1",
+      "semantic": "builtin-brush-sewer-tunnel",
+      "neuralModel": "builtin-nca-masonry",
+      "neuralRecipe": "builtin-brush-dark-dungeon",
+      "growth": "builtin-roots",
+      "props": ["wood-crate", "rusted-girder", "rubble-block"]
+    },
+    {
+      "recipe": "cavern-war",
+      "foreground": "builtin:atomic-realm-mine-mine-b-47tiles",
+      "background": "builtin:atomic-realm-mine-mine-b-background-47tiles",
+      "material": 18,
+      "noise": "builtin-dirt-1",
+      "semantic": "builtin-brush-rubble",
+      "neuralModel": "builtin-nca-eight",
+      "neuralRecipe": "builtin-brush-cliffside",
+      "growth": "builtin-living-bramble",
+      "props": ["rubble-block", "wood-crate", "ruined-outpost"]
+    },
+    {
+      "recipe": "terrace-siege",
+      "foreground": "builtin:atomic-realm-industrial-industrial-d-47tiles",
+      "background": "builtin:atomic-realm-industrial-industrial-d-background-47tiles",
+      "material": 61,
+      "noise": "builtin-grass-1",
+      "semantic": "builtin-brush-hills",
+      "neuralModel": "builtin-nca-four",
+      "neuralRecipe": "builtin-brush-hills",
+      "growth": "builtin-meadow-grass",
+      "props": ["ruined-outpost", "wood-crate", "concrete-barrier"]
+    }
+  ]
+}
