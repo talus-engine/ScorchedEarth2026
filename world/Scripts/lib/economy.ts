@@ -128,6 +128,10 @@ function create(ctx: Runtime) {
     function openShop(): void {
         if (!ctx.state.match || ctx.state.arcadeCard || !['ready', 'finished'].includes(ctx.state.match.phase))
             return;
+        if (ctx.state.match.phase === 'finished' && ctx.state.match.series?.complete) {
+            ctx.menus.showResults();
+            return;
+        }
         ctx.menus.input(false);
         cpuShopping();
         if (ctx.state.match.phase === 'ready' && ctx.state.match.roster.length > 0 && ctx.state.match.roster.every((p: any) => p.control === 'cpu')) {

@@ -41,6 +41,10 @@ async function run() {
     assert.deepEqual(flat.sleeps, [90], 'Native arrival precedes the authored terrain settling interval');
     assert.equal(flat.frames[0].target.point.x, 6400);
     assert.equal(flat.frames[0].options.whilePaused, false);
+    const distantX = settings.combat.x + settings.combat.spawnInset;
+    const distant = scene((x, y) => Math.abs(x - distant.frames.at(-1).target.point.x) <= 128 && y >= 640 ? solid() : null, distantX);
+    assert.deepEqual(position(await distant.api.deploymentGround(distant.api.player)), { x: distantX, y: 640 });
+    assert.equal(distant.frames[0].target.point.x, distantX, 'A spread-out spawn loads its own terrain, not the arena centre');
     for (const name of ['WOOD', 'LEAF', 'ROOTS_STEM']) {
         const canopy = scene((x, y) => y >= 640 ? solid() : rect(6200, 544, 400, 16)(x, y) ? solid(name) : null);
         assert.deepEqual(position(await canopy.api.deploymentGround(canopy.api.player)), { x: 6400, y: 640 }, name + ' canopy is not terrain support');

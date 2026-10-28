@@ -44,6 +44,11 @@ into view; the game waits for camera readiness and finds supported tank position
 There is no whole-map decoration pass before deployment. Saved terrain damage
 is preserved by the native world lifecycle.
 
+Tanks start across a 3,072-pixel central area with 128-pixel edge insets. Each
+spawn loads its own local terrain before checking support; distant tanks can
+stream out while the camera follows the next placement or turn. Maze maps
+reserve a matching open deployment corridor.
+
 Project-owned noise, semantic, neural, living and vector presets remain in
 `world/Game/Presets/` for editor painting and weapon effects. They are not loaded
 or validated during match startup.

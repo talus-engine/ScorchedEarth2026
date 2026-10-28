@@ -106,7 +106,9 @@ function create(ctx: Runtime) {
             await ctx.presentation.showArcadeCard(ctx.state.match.winner ? 'VICTORY OVERDRIVE' : 'MUTUALLY ASSURED NONSENSE', ctx.state.match.series?.complete ? ctx.state.match.series.champion : ctx.state.match.winner || 'NO SURVIVORS', 'Round ' + ctx.state.match.round + ' · Seed ' + ctx.state.match.seed, 1);
             ctx.state.match.resultsShown = true;
             ctx.session.persist();
-            if (!automaticSeries())
+            if (ctx.state.match.series?.complete)
+                ctx.menus.showResults();
+            else if (!automaticSeries())
                 ctx.economy.openShop();
             ctx.menus.publish();
         });
@@ -188,7 +190,7 @@ function create(ctx: Runtime) {
         if (ctx.state.match.phase !== 'focusing')
             return;
         if (ready && !ctx.core.current().eliminated) {
-            await ctx.presentation.showArcadeCard('TURN ' + ctx.state.match.turnNumber + ' / COMMAND CARTRIDGE', ctx.core.current().name, ctx.core.current().control === 'cpu' ? (ctx.aiming.personaFor(ctx.core.current())?.factionName || 'CPU') + ' · ' + (ctx.state.match.cpuSkill === 'persona' ? ctx.aiming.personaFor(ctx.core.current())?.skill : ctx.state.match.cpuSkill || ctx.aiming.personaFor(ctx.core.current())?.skill) : 'Your controller. Your crater.', .35, ctx.core.current().color);
+            await ctx.presentation.showArcadeCard('TURN ' + ctx.state.match.turnNumber + ' / COMMAND CARTRIDGE', ctx.core.current().name, ctx.core.current().control === 'cpu' ? (ctx.aiming.personaFor(ctx.core.current())?.factionName || 'CPU') + ' · ' + (ctx.state.match.cpuSkill === 'persona' ? ctx.aiming.personaFor(ctx.core.current())?.skill : ctx.state.match.cpuSkill || ctx.aiming.personaFor(ctx.core.current())?.skill) : 'Your controller. Your crater.', .75, ctx.core.current().color);
             if (ctx.state.match.phase !== 'focusing')
                 return;
             ctx.residency.checkRoster();

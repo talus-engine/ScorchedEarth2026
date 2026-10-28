@@ -183,7 +183,9 @@ function create(ctx: Runtime) {
             talus.state.set('indigo.error', '');
             if (ctx.state.match.phase === 'finished') {
                 ctx.state.match.resultsShown = true;
-                if (!ctx.turns.automaticSeries() || ctx.state.match.nextRoundRequest)
+                if (ctx.state.match.series?.complete)
+                    ctx.menus.showResults();
+                else if (!ctx.turns.automaticSeries() || ctx.state.match.nextRoundRequest)
                     ctx.economy.openShop();
             }
         }

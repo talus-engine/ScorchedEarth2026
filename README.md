@@ -16,7 +16,9 @@ A CPU-only opening armory purchases supplies and starts automatically. Human
 players can shop before pressing **Begin Match**. **Resume saved game** appears when a
 saved game is available.
 CPU-only series also buy supplies and deploy the next round automatically;
-the completed series remains on its results screen.
+the completed series stops at **Series Complete**, showing the winner and final
+standings. Choose **Restart Battle** for the same crew on a fresh battlefield,
+or **Main Menu** to return to the title screen.
 
 The battlefield is 50 WFC tiles wide and 5 tall. Tiles are 256×256 pixels with a
 solid stone foundation. Choose painted WFC terrain or one of four native maze

@@ -112,6 +112,18 @@ function create(ctx: Runtime) {
             biomeCycle: m.biomeCycle ? 'cycle' : 'random', biomeRounds: m.biomeRounds || 1,
             baseGeneration: m.baseGeneration, generation: nextGeneration() }));
     }
+    function showResults(): void {
+        const m = ctx.state.match;
+        if (m?.phase !== 'finished' || !m.series?.complete || !m.resultsShown)
+            return;
+        ctx.state.shopOpen = false;
+        input(false);
+        talus.ui.set('results', {
+            ...nextRoundParams(), champion: m.series.champion || m.winner || 'No survivors',
+            roundsPlayed: m.round, standings: m.series.standings,
+        });
+        talus.ui.openMenu('Menus/results.html');
+    }
     function validate(params: any): {
         presentation: {
             active: null;
@@ -229,6 +241,10 @@ function create(ctx: Runtime) {
                 ctx.session.run(() => ctx.turns.beginTurn(false));
         });
         talus.on('menu.hud.shop', ctx.economy.openShop);
+        talus.on('menu.custom.results-title', () => {
+            if (ctx.state.match?.phase === 'finished' && ctx.state.match.series?.complete)
+                talus.game.quitToMenu({ save: 'discard', destination: 'title' });
+        });
         talus.on('menu.custom.shop-close', ctx.economy.closeShop);
         talus.on('menu.custom.shop-begin', () => {
             if (!ctx.state.shopOpen || ctx.state.match?.phase !== 'ready')
@@ -321,6 +337,6 @@ function create(ctx: Runtime) {
             }
         });
     }
-    return { input, publish, showSetup, generationRequest, nextGeneration, nextRoundParams, validate, bind };
+    return { input, publish, showSetup, showResults, generationRequest, nextGeneration, nextRoundParams, validate, bind };
 }
 export = create;

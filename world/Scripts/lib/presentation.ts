@@ -22,7 +22,7 @@ function create(ctx: Runtime) {
         if (!ctx.state.match.turnNumber || ctx.state.match.lastCardTurn === ctx.state.match.turnNumber)
             return;
         const p = ctx.core.current();
-        if (await showArcadeCard('TURN ' + ctx.state.match.turnNumber + ' COMPLETE', p.name, 'Every crater counts.', .35, p.color, p.kills + ' kills (+' + (p.kills - (p.turnStartKills || 0)) + ') · Turn cash +$' + (p.cashEarned - (p.turnStartCash || 0)).toFixed(2))) {
+        if (await showArcadeCard('TURN ' + ctx.state.match.turnNumber + ' COMPLETE', p.name, 'Every crater counts.', .75, p.color, p.kills + ' kills (+' + (p.kills - (p.turnStartKills || 0)) + ') · Turn cash +$' + (p.cashEarned - (p.turnStartCash || 0)).toFixed(2))) {
             ctx.state.match.lastCardTurn = ctx.state.match.turnNumber;
             ctx.session.persist();
         }

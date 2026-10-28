@@ -23,7 +23,7 @@ loaded by Talus once per script sandbox and do not start as independent scripts.
 | `equipment`, `economy` | Drive native controllers, reconcile finite utility consumption, purchase stock and award cash |
 | `attachments` | Reserve native cast accessories, reconcile accepted-launch spending and survey fixed-angle shots |
 | `special-weapons` | Bound cutting-shot aim estimates by native range, material eligibility and the protected foundation |
-| `presentation`, `camera` | Smooth tracking, three-second dialogue, arcade cards and native text labels |
+| `presentation`, `camera` | Smooth tracking, 1.5-second dialogue, arcade cards and native text labels |
 | `residency`, `supplies` | Restore parked tanks, own bounded emitter regions, focus and award supply drops |
 | `generation` | Configure native WFC/maze terrain and find supported deployment positions |
 | `core` | Shared predicates, clamping and deterministic seed hashing |
@@ -40,7 +40,7 @@ an accepted native cast. The cast ends the tank's input period. Projectile
 launch, collision, hit and end events drive children, damage rewards and impact
 feedback. Resolution uses a bounded settling interval; powders need not become
 perfectly still. The score card precedes the next player card and turn.
-Turn cards last 0.35 seconds; the CPU's extra shot-choice pause is 0.2 seconds.
+Turn cards last 0.75 seconds; the CPU's extra shot-choice pause is 0.2 seconds.
 Impacts wait 20–60 simulation ticks, and death close-ups last 0.8 seconds after
 the effect begins. Long-running death effects continue while other tanks act.
 

@@ -77,6 +77,7 @@ const { fixture } = require('./support/game.cjs');
     f.emit('tick.frame', { dt: .016 });
     assert.match(f.ui.arcadeCards[0].eyebrow, /12/);
     assert.match(f.ui.arcadeCards[0].score, /3 kills/);
+    assert.equal(f.ui.arcadeCards[0].duration, '0.75s');
     f.emit('tick.frame', { dt: 1 });
     await score;
     await f.api.turnScoreCard();

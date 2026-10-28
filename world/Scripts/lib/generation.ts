@@ -23,17 +23,19 @@ function create(ctx: Runtime) {
             return c && !c.body && !c.entity && (c.state === 'solid' || c.state === 'powder')
                 && !/(WOOD|LEAF|ROOT|STEM|BRANCH)/.test(c.element?.name || '');
         };
-        let arrived = false;
-        const point = { x: ctx.state.arena.combat.x + ctx.state.arena.combat.w / 2, y: ctx.state.arena.surfaceBand.top + ctx.state.arena.surfaceBand.height / 2 };
-        for (let n = 0; n < 1800; n++) {
-            if (ctx.camera.cameraArrived(ctx.camera.cameraPoint(point, 'deploy:' + p.index))) {
-                arrived = true;
-                break;
+        let loadedX = p.spawnX;
+        async function loadAt(x: number): Promise<void> {
+            const point = { x, y: ctx.state.arena.surfaceBand.top + ctx.state.arena.surfaceBand.height / 2 };
+            for (let n = 0; n < 1800; n++) {
+                if (ctx.camera.cameraArrived(ctx.camera.cameraPoint(point, 'deploy:' + p.index))) {
+                    loadedX = x;
+                    return;
+                }
+                await talus.sleepTicks(1);
             }
-            await talus.sleepTicks(1);
-        }
-        if (!arrived)
             throw new Error('Deployment terrain did not become camera-ready: ' + p.name);
+        }
+        await loadAt(p.spawnX);
         await talus.sleepTicks(90);
         for (const dx of columns) {
             const x = Math.round(p.spawnX + dx);
@@ -44,6 +46,8 @@ function create(ctx: Runtime) {
             if (ctx.state.match.roster.some((other: any) => other !== p && other.entityId
                 && Math.abs((ctx.core.entity(other)?.position?.x ?? other.spawnX) - x) < half * 2 + 12))
                 continue;
+            if (Math.abs(x - loadedX) > 128)
+                await loadAt(x);
             for (let y = Math.floor(ctx.state.arena.surfaceBand.top); y <= 1024; y += 2) {
                 if (!groundCell(x, y))
                     continue;
