@@ -21,7 +21,7 @@ creates the effect once. Mines become durable rigid bodies, arm after a delay,
 and can trigger on their owner; dormant mines do not prolong a turn. Barrages
 launch finite native projectiles with the original shooter's credit. Material
 payloads commit real particles through bounded terrain work. The Holy Hand
-Grenade's exact 2,800px blast is configured but disabled pending native area support.
+Grenade is disabled in the armory.
 
 `Game/creatures.json` defines native worm and crow entities, their movement,
 contact damage, lifetime and population limits. Worms clear eligible terrain

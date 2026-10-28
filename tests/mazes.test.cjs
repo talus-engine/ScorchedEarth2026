@@ -2,7 +2,6 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const { createHash } = require('node:crypto');
 const { assemble, resourceImages } = require('../tools/mazes.cjs');
 const catalog = require('../world/Game/Mazes/catalog.json');
 const base = require('../world/Game/terrain-recipes.json');
@@ -35,22 +34,14 @@ test('maze recipes keep native chunk sources and distinct foreground/background 
     assert.throws(() => assemble({ tiles: reversed, props, catalog: base }), /roles are reversed/);
 });
 
-test('maze strokes retain all native source types and exact trained neural weights', () => {
-    const models = require('../world/Game/Presets/neural.json').models;
-    const sources = ['element', 'grow', 'neural', 'noise', 'pattern', 'semantic', 'tile'];
+test('maze strokes use non-neural native brushes and retain noise animation and living bramble', () => {
+    const sources = ['element', 'grow', 'noise', 'pattern', 'semantic', 'tile'];
     for (const r of catalog.recipes) {
         assert.deepEqual(r.maze.strokes.map(x => x.sourceKind).sort(), sources);
         assert.equal(new Set(r.maze.strokes.map(x => x.id)).size, r.maze.strokes.length);
         const spin = r.maze.strokes.find(x => x.sourceKind === 'noise');
         assert.ok(spin.brush.rotationStepDeg > 0 && spin.brush.lfoAmplitudePx > 0);
-        const n = r.maze.strokes.find(x => x.sourceKind === 'neural').content;
-        const model = models.find(x => x.id === n.neural.modelId);
-        assert.deepEqual(n.neural.arch, model.architecture);
-        const bytes = Buffer.from(n.neural.weights);
-        assert.ok(bytes.equals(Buffer.from(model.weightsBase64, 'base64')));
-        assert.equal(createHash('sha256').update(bytes).digest('hex'), model.weightsSha256);
-        assert.ok(n.semantic.weights.every(w => model.architecture.anchors.some(a => a.id === w.anchorId)));
-        assert.ok(n.neural.steps > 0 && n.neural.steps <= model.architecture.steps);
+        assert.ok(r.maze.strokes.every(x => !x.content?.neural));
     }
     const bramble = catalog.recipes.find(x => x.id === 'cavern-war').maze.strokes.find(x => x.sourceKind === 'grow');
     assert.equal(bramble.content.growth.id, 'builtin-living-bramble');

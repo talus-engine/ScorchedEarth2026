@@ -26,7 +26,7 @@ function randomFor(id) {
 
 function assemble({ tiles, props, catalog, themes = readJSON(THEMES).themes }) {
     const noise = preset('noise').presets, semantic = preset('semantic').recipes;
-    const growth = preset('living').presets, neural = preset('neural').models;
+    const growth = preset('living').presets;
     const settings = preset('semantic-settings').presets[0];
     const style = id => ({ recipes: [required(semantic, id, 'semantic recipe')],
         weights: [{ anchorId: id, w: 1 }], settings: copy(settings), noisePresets: [], visuals: {} });
@@ -59,16 +59,9 @@ function assemble({ tiles, props, catalog, themes = readJSON(THEMES).themes }) {
                 spacingPx: sourceKind === 'grow' ? 48 : 8 }, ...fields,
         });
         const noisePreset = required(noise, theme.noise, 'noise preset');
-        const model = required(neural, theme.neuralModel, 'neural model');
-        if (!model.architecture.anchors.some(anchor => anchor.id === theme.neuralRecipe))
-            throw Error(`Untrained neural anchor ${theme.neuralRecipe}`);
         maze.strokes = [
             stroke('weathered-edge', 'noise', 'n', 12 + Math.floor(random() * 9), 0,
                 { noisePresetId: noisePreset.id, noiseSpec: noisePreset.spec }),
-            stroke('neural-seams', 'neural', 'e', 24, 0, { content: {
-                semantic: style(theme.neuralRecipe), neural: { modelId: model.id,
-                    arch: model.architecture, weights: [...Buffer.from(model.weightsBase64, 'base64')],
-                    steps: model.architecture.steps, tintStrength: 0.7 } } }),
             stroke('semantic-ledges', 'semantic', 'n', 20, 1, { content: { semantic: style(theme.semantic) } }),
             stroke('living-fringe', 'grow', 'n', 3, 2,
                 { content: { growth: required(growth, theme.growth, 'living preset'), growthTextures: {} } }),
@@ -101,9 +94,7 @@ function build() {
     const catalog = readJSON(path.join(ROOT, 'world/Game/terrain-recipes.json'));
     const result = assemble({ tiles, props, catalog });
     fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });
-    const source = JSON.stringify(result, null, 2).replace(/"weights": \[\n[\s\d,]+\]/g,
-        value => '"weights": ' + JSON.stringify(JSON.parse(value.slice(value.indexOf('[')))));
-    fs.writeFileSync(OUTPUT, source + '\n');
+    fs.writeFileSync(OUTPUT, JSON.stringify(result, null, 2) + '\n');
     return result;
 }
 

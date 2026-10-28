@@ -11,10 +11,10 @@ The four authored combinations are in
 
 | Maze | Foreground / background tile presets | Brush character |
 | --- | --- | --- |
-| Bunker Grid | Atomic Realm Industrial / Industrial Background | Concrete texture, neural factory seams, ruined masonry, ivy |
-| Rat Run | Atomic Realm Mine / Mine Background | Wood texture, neural dungeon seams, sewer ledges, roots |
-| Cavern War | Atomic Realm Mine B / Mine B Background | Dirt texture, neural cliff seams, rubble ledges, living bramble |
-| Terrace Siege | Atomic Realm Industrial D / Industrial D Background | Grass texture, neural hills, grassy ledges, meadow growth |
+| Bunker Grid | Atomic Realm Industrial / Industrial Background | Concrete texture, ruined masonry, ivy |
+| Rat Run | Atomic Realm Mine / Mine Background | Wood texture, sewer ledges, roots |
+| Cavern War | Atomic Realm Mine B / Mine B Background | Dirt texture, rubble ledges, living bramble |
+| Terrace Siege | Atomic Realm Industrial D / Industrial D Background | Grass texture, grassy ledges, meadow growth |
 
 Foreground tile art carries physical material on the world particle plane.
 Background-specific tile art paints the `background` raster plane, including
@@ -23,9 +23,9 @@ foreground preset for trim; they do not substitute background art for walls.
 Every recipe also includes a small sand edge so blasts can release loose grit.
 
 Noise strokes use authored variations of native Spin, Size LFO amplitude and
-frequency. Their paths and noise vary with maze geometry and seed. Neural
-strokes include the actual trained model bytes and an anchor that belongs to
-that model. Semantic and living strokes include their complete native presets.
+frequency. Their paths and noise vary with maze geometry and seed. Semantic and
+living strokes include their complete native presets. Maze recipes omit neural
+strokes; neural presets remain available in the project's authoring library.
 No external image generation runs when a round starts.
 
 Physical scenery is made of native entity templates: wood crates, concrete
@@ -44,8 +44,8 @@ Maze options
 | Geometry | Cell size, entrances, entrance width, algorithm-specific room/gap/fill/braid/shaft controls | Existing advanced controls and open tank deployment corridor |
 | Cave smoothing | Wall bias, edge wobble/scale, cleanup threshold/passes | Available for cave tuning; does not replace the maze source |
 | Material mappings | Wall, floor, wall background, door and secret; none/element/noise/tile on particle or raster layers | Solid tiled walls, empty collision floor cells, decorative raster background |
-| Edge strokes | North/south/east/west, stacking order; element/noise/pattern/tile/grow/semantic/neural | All seven sources represented in each recipe |
-| Brush geometry | Shape, size, rotation, rotation step, spacing, Size LFO amplitude/frequency | Thin trim, varied noise tips, wider neural/semantic seams, sparse small growth tips |
+| Edge strokes | North/south/east/west, stacking order; element/noise/pattern/tile/grow/semantic/neural | Six non-neural sources represented in each recipe |
+| Brush geometry | Shape, size, rotation, rotation step, spacing, Size LFO amplitude/frequency | Thin trim, varied noise tips, wider semantic seams, sparse small growth tips |
 | Entities | Template, probability, centroid/noise filters, footprint, boundary avoidance, count limit; optional graph/faction/loadout/flags | Destructible scenery; up to 48 placements per maze |
 | Torches | Weighted entity types, wall/ceiling/floor/any, spacing, probability, position ratio, jitter and limit | Native floor lamps; up to 24 per maze |
 | Doors and keys | Sliding/swinging doors, useful/decorative placement, locks, spacing, secrets, key progression | Disabled: artillery rounds do not require puzzle traversal |
@@ -75,14 +75,14 @@ scenery templates and captures their records. Their pixel/material definitions
 live in `tools/lib/maze-props.cjs`; use the native entity editor for detailed art.
 Rebuild the maze catalog after changing template IDs.
 
-The active new-round file is `world/Game/terrain-recipes.json`. The rich maze
-catalog is authored but not activated: the installed round-source interface
-must accept native layered mappings, rich strokes and persistent entity rules
-before these entries replace its maze entries. The native layout maze evaluator
-already supports those features. Activation must use that evaluator directly,
-preserve background planes, and verify one seeded chunk reload without duplicate
-props. Do not substitute a whole-map painting pass or mutate the shared WFC
-authoring layout to bypass a round-source limitation.
+The active new-round file is `world/Game/terrain-recipes.json`. It uses lightweight
+maze recipes for startup speed. The richer catalog is available for authoring;
+replace matching maze entries in the active file to enable it. Both use the native
+world-layout maze chunk evaluator, with each round's seed and recipe captured in
+its save. Tiles, brushes and props stream into requested chunks; destruction is
+preserved when chunks reload. Measure startup cost on the target device before
+activating richer recipes. Do not substitute a whole-map painting pass or mutate
+the shared WFC authoring layout.
 
 Zone chunks are a separate procedural source to expand later. Hand-painted WFC
 tiles remain the author's canvas.

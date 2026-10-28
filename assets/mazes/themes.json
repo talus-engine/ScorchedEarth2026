@@ -8,10 +8,13 @@
       "material": 61,
       "noise": "builtin-concrete-1",
       "semantic": "builtin-brush-ancient-ruins",
-      "neuralModel": "builtin-nca-stations",
-      "neuralRecipe": "builtin-brush-factory-floor",
       "growth": "builtin-ivy-wall",
-      "props": ["concrete-barrier", "rusted-girder", "wood-crate", "ruined-outpost"]
+      "props": [
+        "concrete-barrier",
+        "rusted-girder",
+        "wood-crate",
+        "ruined-outpost"
+      ]
     },
     {
       "recipe": "rat-run",
@@ -20,10 +23,12 @@
       "material": 10,
       "noise": "builtin-wood-1",
       "semantic": "builtin-brush-sewer-tunnel",
-      "neuralModel": "builtin-nca-masonry",
-      "neuralRecipe": "builtin-brush-dark-dungeon",
       "growth": "builtin-roots",
-      "props": ["wood-crate", "rusted-girder", "rubble-block"]
+      "props": [
+        "wood-crate",
+        "rusted-girder",
+        "rubble-block"
+      ]
     },
     {
       "recipe": "cavern-war",
@@ -32,10 +37,12 @@
       "material": 18,
       "noise": "builtin-dirt-1",
       "semantic": "builtin-brush-rubble",
-      "neuralModel": "builtin-nca-eight",
-      "neuralRecipe": "builtin-brush-cliffside",
       "growth": "builtin-living-bramble",
-      "props": ["rubble-block", "wood-crate", "ruined-outpost"]
+      "props": [
+        "rubble-block",
+        "wood-crate",
+        "ruined-outpost"
+      ]
     },
     {
       "recipe": "terrace-siege",
@@ -44,10 +51,12 @@
       "material": 61,
       "noise": "builtin-grass-1",
       "semantic": "builtin-brush-hills",
-      "neuralModel": "builtin-nca-four",
-      "neuralRecipe": "builtin-brush-hills",
       "growth": "builtin-meadow-grass",
-      "props": ["ruined-outpost", "wood-crate", "concrete-barrier"]
+      "props": [
+        "ruined-outpost",
+        "wood-crate",
+        "concrete-barrier"
+      ]
     }
   ]
 }
