@@ -1,5 +1,6 @@
 /** Configuration loading and match initialization. */
 import type { Runtime } from 'context';
+import roster = require('roster');
 function create(ctx: Runtime) {
     async function boot(): Promise<void> {
         if (ctx.state.booting || ctx.state.booted)
@@ -12,6 +13,7 @@ function create(ctx: Runtime) {
             ctx.state.market = JSON.parse((await talus.files.readText('Game/shop.json'))!);
             ctx.state.terrainCatalog = JSON.parse((await talus.files.readText('Game/terrain-recipes.json'))!);
             ctx.state.personaCatalog = JSON.parse((await talus.files.readText('Game/personas.json'))!);
+            ctx.state.playerCatalog = JSON.parse((await talus.files.readText('Game/players.json'))!);
             ctx.state.soundCatalog = JSON.parse(await talus.files.readText('Game/audio.json') || '{}');
             ctx.state.supplyCatalog = JSON.parse((await talus.files.readText('Game/supply-drops.json'))!);
             await ctx.payloads.load();
@@ -63,14 +65,14 @@ function create(ctx: Runtime) {
                 }
                 catch (err) {
                     talus.ui.set('error', String(err));
-                    ctx.menus.showSetup();
+                    ctx.menus.showSetup(params);
                     ctx.state.booted = true;
                     return;
                 }
                 ctx.session.persist();
                 const saved: any = talus.installed.get('indigo') || {};
-                talus.installed.set('indigo', { ...saved, humans: ctx.state.match.humans, computers: ctx.state.match.computers,
-                    turnSeconds: ctx.state.match.turnSeconds, cpuSkill: ctx.state.match.cpuSkill, seriesLength: ctx.state.match.seriesLength, biomeCycle: ctx.state.match.biomeCycle ? 'cycle' : 'random', biomeRounds: ctx.state.match.biomeRounds, generation: ctx.state.match.generation, namesText: ctx.state.match.roster.map((p: any) => p.name).join('\n') });
+                talus.installed.set('indigo', { ...saved, ...roster.settings(ctx.state.match, saved),
+                    turnSeconds: ctx.state.match.turnSeconds, seriesLength: ctx.state.match.seriesLength, biomeCycle: ctx.state.match.biomeCycle ? 'cycle' : 'random', biomeRounds: ctx.state.match.biomeRounds, generation: ctx.state.match.generation });
             }
             ctx.session.persist();
             ctx.generation.configureGeneration(ctx.state.match.generation);

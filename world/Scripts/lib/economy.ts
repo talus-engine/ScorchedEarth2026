@@ -106,7 +106,7 @@ function create(ctx: Runtime) {
         if (!ctx.state.shopOpen)
             return;
         const p = ctx.state.match.roster[ctx.state.shopIndex], w = wallet(p);
-        talus.ui.set('shop', { name: p.name, persona: p.control === 'cpu' ? (ctx.aiming.personaFor(p)?.factionName || 'CPU') + ' · ' + (ctx.state.match.cpuSkill === 'persona' ? ctx.aiming.personaFor(p)?.skill : ctx.state.match.cpuSkill || ctx.aiming.personaFor(p)?.skill) : 'Local hotseat', color: p.color, cash: w.cash, earned: p.cashEarned,
+        talus.ui.set('shop', { name: p.name, persona: p.control === 'cpu' ? (ctx.aiming.personaFor(p)?.factionName || 'CPU') + ' · ' + ctx.aiming.skillFor(p) : 'Local hotseat', color: p.color, cash: w.cash, earned: p.cashEarned,
             revision: w.revision, account: playerKey(p), index: ctx.state.shopIndex + 1, count: ctx.state.match.roster.length,
             title: ctx.state.match.phase === 'finished' ? 'Between rounds' : 'Opening armory',
             result: ctx.state.match.phase === 'finished' ? ctx.state.match.message : 'New pilots get $' + ctx.state.market.startingCash + '. Cash and supplies carry between rounds.',

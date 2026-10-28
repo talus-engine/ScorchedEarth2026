@@ -23,6 +23,8 @@ function fixture(namesText = 'Alpha\nBravo', native = false, computers = 2) {
     talus.world.raycast = () => null;
     const game = loadGame(talus), state = game.context.state, api = game.api;
     state.terrainCatalog = read('world/Game/terrain-recipes.json');
+    state.playerCatalog = read('world/Game/players.json');
+    namesText.split('\n').forEach((name, i) => { if (state.playerCatalog.characters[i]) state.playerCatalog.characters[i].name = name; });
     api.configure = (a, s, q, c) => Object.assign(state, { arena: a, market: s, quipCatalog: q, chaosCatalog: c });
     api.load = m => { state.match = m; api.ensureWallets(); state.booted = true; };
     api.setSupplies = v => { state.supplyCatalog = v; };
@@ -32,10 +34,12 @@ function fixture(namesText = 'Alpha\nBravo', native = false, computers = 2) {
         game.context.turns.beginTurn = advance; if (retry)
         game.context.cpu.prepareCpuTurn = retry; };
     api.configure(arena, shop, read('world/Game/quips.json'), read('world/Game/chaos.json'));
-    const m = api.validate({ humans: 0, computers, turnSeconds: 5, namesText });
+    const m = api.validate({ humans: 0, computers, turnSeconds: 5 });
     api.load(m);
     m.phase = 'turn';
     for (const p of m.roster) {
+        p.cpuSkill = null;
+        p.personaId = null;
         p.entityId = 'tank-' + p.index;
         const bb = new Map(), ammo = {};
         actors.set(p.entityId, {

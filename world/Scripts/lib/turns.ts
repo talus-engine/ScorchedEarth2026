@@ -190,7 +190,7 @@ function create(ctx: Runtime) {
         if (ctx.state.match.phase !== 'focusing')
             return;
         if (ready && !ctx.core.current().eliminated) {
-            await ctx.presentation.showArcadeCard('TURN ' + ctx.state.match.turnNumber + ' / COMMAND CARTRIDGE', ctx.core.current().name, ctx.core.current().control === 'cpu' ? (ctx.aiming.personaFor(ctx.core.current())?.factionName || 'CPU') + ' · ' + (ctx.state.match.cpuSkill === 'persona' ? ctx.aiming.personaFor(ctx.core.current())?.skill : ctx.state.match.cpuSkill || ctx.aiming.personaFor(ctx.core.current())?.skill) : 'Your controller. Your crater.', .75, ctx.core.current().color);
+            await ctx.presentation.showArcadeCard('TURN ' + ctx.state.match.turnNumber + ' / COMMAND CARTRIDGE', ctx.core.current().name, ctx.core.current().control === 'cpu' ? (ctx.aiming.personaFor(ctx.core.current())?.factionName || 'CPU') + ' · ' + ctx.aiming.skillFor(ctx.core.current()) : 'Your controller. Your crater.', .75, ctx.core.current().color);
             if (ctx.state.match.phase !== 'focusing')
                 return;
             ctx.residency.checkRoster();

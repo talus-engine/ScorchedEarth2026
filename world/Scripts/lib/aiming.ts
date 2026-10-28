@@ -5,10 +5,13 @@ function create(ctx: Runtime) {
     function personaFor(p: any): any {
         return ctx.state.personaCatalog?.personas.find((v: any) => v.id === p.personaId) || ctx.state.personaCatalog?.personas[0];
     }
+    function skillFor(p: any): string {
+        return p.cpuSkill || personaFor(p)?.skill || 'regular';
+    }
     function doctrine(p: any): any {
         const profile = personaFor(p)?.strategy || { risk: .5, saveFraction: .2, weaponPreferences: ['heavy', 'standard'],
             utilityPreferences: ['battery'], candidateBudget: 24, learningRate: .55 };
-        const skill = ctx.state.personaCatalog?.personas.find((v: any) => v.skill === ctx.state.match?.cpuSkill)?.strategy;
+        const skill = ctx.state.personaCatalog?.personas.find((v: any) => v.skill === skillFor(p))?.strategy;
         return skill ? { ...profile, ...Object.fromEntries(['candidateBudget', 'learningRate'].map(k => [k, skill[k]])) } : profile;
     }
     function aiRandom(p: any): number {
@@ -277,7 +280,7 @@ function create(ctx: Runtime) {
             tank.blackboard.set('custom.aimAngle', plan.solution!.angle);
             tank.blackboard.set('custom.aimPower', plan.solution!.power);
             tank.blackboard.set('custom.decisionTurn', turn);
-            tank.blackboard.set('custom.aiDecision', { turn, persona: p.personaId, skill: ctx.state.match.cpuSkill === 'persona' ? personaFor(p)?.skill : ctx.state.match.cpuSkill || personaFor(p)?.skill,
+            tank.blackboard.set('custom.aiDecision', { turn, persona: p.personaId, skill: skillFor(p),
                 tactic, target: p.targetId, item: item.id, budgetRemaining: budget, trials, skipped, risk: d.risk, memory });
             ctx.session.persist();
             ctx.menus.publish();
@@ -511,6 +514,6 @@ function create(ctx: Runtime) {
         }
         return false;
     }
-    return { personaFor, doctrine, aiRandom, targetSnapshot, targetReference, selectTarget, cpuWeaponUnavailable, fireControl, comparableShot, provenShot, observeCpuShot, refreshSpecialShot, planCpuShot };
+    return { personaFor, skillFor, doctrine, aiRandom, targetSnapshot, targetReference, selectTarget, cpuWeaponUnavailable, fireControl, comparableShot, provenShot, observeCpuShot, refreshSpecialShot, planCpuShot };
 }
 export = create;

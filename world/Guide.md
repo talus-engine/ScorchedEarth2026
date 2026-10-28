@@ -4,7 +4,7 @@ A Talus game template: side-scrolling, turn-based artillery on destructible terr
 
 ## Play
 
-Choose New game, a seed or random map, and 2–16 human/CPU players, then Start match. Each tank has a timed turn to move, aim and fire. Shooting ends its turn. The last tank alive wins; falling outside the world is fatal. Actions earn cash for weapons and utilities. Names, wallets and scores persist. CPU-only opening shops run automatically.
+Choose New game, a seed or random map, and 2–10 human/CPU players, then Start match. Each tank has a timed turn to move, aim and fire. Shooting ends its turn. The last tank alive wins; falling outside the world is fatal. Actions earn cash for weapons and utilities. Names, wallets and scores persist. CPU-only opening shops run automatically.
 
 ## How it fits together
 

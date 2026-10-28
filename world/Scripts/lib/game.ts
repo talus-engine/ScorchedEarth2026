@@ -35,6 +35,7 @@ function create() {
             shopCategory: 'All',
             terrainCatalog: { version: 1, recipes: [] },
             personaCatalog: undefined,
+            playerCatalog: undefined!,
             soundCatalog: undefined,
             childDepth: 0,
             booting: false,

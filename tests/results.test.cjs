@@ -26,7 +26,8 @@ test('a completed series shows final results without another CPU shopping pass',
     assert.equal(f.ui.results.seriesId, '');
     assert.equal(f.ui.results.round, 1);
     assert.equal(f.ui.results.seriesLength, 5);
-    assert.equal(f.ui.results.namesText, 'Alpha\nBravo');
+    assert.deepEqual(Array.from(f.ui.results.humanNames), []);
+    assert.deepEqual(Array.from(f.ui.results.cpuCharacters), ['lucky', 'mole']);
     assert.equal(f.ui.results.generation.recipe, 'random');
     let starts = 0;
     f.talus.game.newGame = async () => { starts++; };

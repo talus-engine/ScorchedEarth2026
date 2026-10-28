@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict'), fs = require('node:fs');
 const { fixture } = require('./support/game.cjs');
 const personas = JSON.parse(fs.readFileSync('world/Game/personas.json', 'utf8'));
-function setup() { const f = fixture(); f.api.setPersonas(personas); f.m.cpuSkill = 'persona'; f.m.turnNumber = 1; f.talus.world.raycast = () => null; f.talus.world.groundY = () => null; for (const e of f.actors.values()) {
+function setup() { const f = fixture(); f.api.setPersonas(personas);  f.m.turnNumber = 1; f.talus.world.raycast = () => null; f.talus.world.groundY = () => null; for (const e of f.actors.values()) {
     e.liveId = Number(e.id.slice(-1)) + 1;
     e.y = 650;
 } return f; }
@@ -150,10 +150,10 @@ async function main() {
     }
     {
         const f = setup();
-        const args = { humans: 0, computers: 16, turnSeconds: 30, namesText: '', personaSeed: 'same' };
+        const args = { humans: 0, computers: 10, turnSeconds: 30, personaSeed: 'same' };
         const a = f.api.validate(args), b = f.api.validate(args);
         assert.deepEqual(a.roster.map(p => p.templateId), b.roster.map(p => p.templateId));
-        assert.equal(new Set(a.roster.map(p => p.templateId)).size, 16);
+        assert.equal(new Set(a.roster.map(p => p.templateId)).size, 10);
         assert.equal(new Set(a.roster.map(p => p.personaId)).size, 5);
     }
     console.log('PASS completion: persona budgets, swept-plan requests, support targeting, bounded impact feedback, stale-plan cancellation, MIRV fallback, honest magnetic guesses, idempotent series, biome groups, seeded unique palettes');

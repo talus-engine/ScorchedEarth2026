@@ -6,7 +6,7 @@ const personas = JSON.parse(fs.readFileSync('world/Game/personas.json', 'utf8'))
 function setup() {
     const f = fixture();
     f.api.setPersonas(structuredClone(personas));
-    f.m.cpuSkill = 'persona';
+
     f.m.turnNumber = 9;
     f.talus.world.raycast = () => null;
     f.talus.world.groundY = () => null;

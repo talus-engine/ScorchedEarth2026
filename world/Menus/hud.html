@@ -194,65 +194,116 @@
   padding: 1px 4px;
 }
 .indigo-setup {
-  width: min(1000px,92vw);
-  max-height: 88vh;
-  overflow: auto;
-  padding: 30px;
-}
-.indigo-setup .columns {
-  display: grid;
-  grid-template-columns: .8fr 1.2fr;
-  gap: 30px;
-}
-.indigo-setup .landscape {
-  height: 155px;
-  position: relative;
+  width: min(1280px,96vw);
+  max-height: 94vh;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  border: 2px solid #7582be;
-  background: repeating-linear-gradient(0deg,#10102a 0 3px,#181c3a 3px 6px);
-  margin: 18px 0;
+  padding: 20px;
 }
-.indigo-setup .hill {
-  position: absolute;
-  inset: 85px -45px -45px;
-  background: #413664;
-  border-top: 4px solid var(--pink);
-  transform: rotate(-14deg);
+.indigo-setup h1 {
+  font-size: clamp(24px,3vw,34px);
 }
-.indigo-setup .hill.far {
-  inset: 65px -40px -30px;
-  background: #292c50;
-  transform: rotate(18deg);
-  border-color: var(--cyan);
+.indigo-setup .subtitle {
+  margin: 8px 0;
+  font-size: 15px;
 }
-.indigo-setup .tank {
-  position: absolute;
-  left: 95px;
-  top: 86px;
+.indigo-setup .caption {
+  margin: 4px 0;
+  font-size: 13px;
+}
+.indigo-setup .setup-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  padding: 4px 8px 4px 0;
+}
+.indigo-setup > .actions {
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+.indigo-setup talus-roster-settings {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  margin: 8px 0;
+}
+.indigo-setup talus-roster-settings fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 6px 10px 10px;
+  border: 2px solid var(--cyan);
+  gap: 4px;
+}
+.indigo-setup talus-roster-settings legend {
+  color: var(--gold);
+  padding: 0 8px;
+  font-size: 16px;
+}
+.indigo-setup .talus-roster-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.indigo-setup .talus-roster-count select {
   width: 64px;
-  height: 24px;
-  background: var(--gold);
-  box-shadow: 0 8px 0 var(--ink);
+  margin: 0;
 }
-.indigo-setup .tank:before {
-  content: '';
-  position: absolute;
-  left: 16px;
-  top: -12px;
-  width: 32px;
-  height: 16px;
-  background: var(--cream);
+.indigo-setup .talus-roster-rows {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 8px 14px;
 }
-.indigo-setup .tank:after {
-  content: '';
-  position: absolute;
-  left: 32px;
-  top: -20px;
-  width: 45px;
-  height: 7px;
-  background: var(--cream);
-  transform: rotate(-30deg);
-  transform-origin: left center;
+.indigo-setup .talus-roster-section:first-child .talus-roster-rows {
+  grid-template-columns: repeat(5,minmax(0,1fr));
+}
+.indigo-setup .talus-roster-row {
+  min-width: 0;
+  display: block;
+}
+.indigo-setup talus-roster-settings .talus-roster-row + .talus-roster-row {
+  margin-block-start: 0;
+}
+.indigo-setup .talus-roster-row label {
+  font-size: 12px;
+}
+.indigo-setup .talus-roster-detail {
+  font-size: 12px;
+  line-height: 1.25;
+  margin: 4px 0 0;
+  color: #b6c7dd;
+}
+.indigo-setup .talus-roster-total {
+  font-size: 12px;
+  color: var(--mint);
+}
+.indigo-setup talus-roster-settings input,
+.indigo-setup talus-roster-settings select {
+  min-width: 0;
+  max-width: 100%;
+  padding: 6px 28px 6px 8px;
+  margin-top: 3px;
+  font-size: 15px;
+}
+.indigo-setup .battlefield-settings {
+  border-top: 3px double var(--cyan);
+  padding-top: 8px;
+  gap: 12px;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  align-items: start;
+}
+.indigo-setup .battlefield-settings input {
+  padding: 6px 8px;
+  margin-top: 3px;
+}
+.indigo-setup .battlefield-settings details {
+  margin: 0;
+  padding: 10px;
+  font-size: 15px;
+}
+.indigo-setup .battlefield-settings details[open] {
+  grid-column: 1/-1;
 }
 .indigo-shop {
   width: min(1180px,94vw);
@@ -518,11 +569,8 @@
   .terra {
     font-size: 16px;
   }
-  .indigo-setup .columns,.indigo-shop .layout {
+  .indigo-shop .layout {
     grid-template-columns: 1fr;
-  }
-  .indigo-setup .intro {
-    display: none;
   }
   .indigo-shop .cards {
     grid-template-columns: 1fr;
@@ -533,6 +581,21 @@
   }
   .terra .fields {
     gap: 12px;
+  }
+  .indigo-setup .battlefield-settings {
+    grid-template-columns: minmax(0,1fr);
+  }
+  .indigo-setup {
+    padding: 14px;
+  }
+  .indigo-setup .talus-roster-rows,
+  .indigo-setup .talus-roster-section:first-child .talus-roster-rows {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+@media (max-width:480px) {
+  .indigo-setup .talus-roster-rows {
+    grid-template-columns: minmax(0,1fr);
   }
 }
 @media (prefers-reduced-motion:reduce) {

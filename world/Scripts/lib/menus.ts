@@ -1,5 +1,6 @@
 /** Menu data, player input and new-match configuration. */
 import type { Runtime } from 'context';
+import players = require('roster');
 function create(ctx: Runtime) {
     function input(enabled: boolean): void {
         enabled = enabled && !ctx.state.exitDrain;
@@ -28,7 +29,7 @@ function create(ctx: Runtime) {
             roundStats: ctx.state.match.roster.map((r: any) => ({ name: r.name, kills: r.kills, damage: Math.round(r.damage || 0), accuracy: (r.shots ? Math.round((r.hits || 0) / r.shots * 100) : 0) + '%', shots: r.shots || 0, earned: r.cashEarned.toFixed(2) })),
             standings: ctx.state.match.series?.standings || [],
             phase: ctx.state.match.phase, status: ctx.state.match.message, turnNumber: ctx.state.match.turnNumber,
-            persona: p.control === 'cpu' ? (ctx.aiming.personaFor(p)?.factionName || 'CPU') + ' · ' + (ctx.state.match.cpuSkill === 'persona' ? ctx.aiming.personaFor(p)?.skill : ctx.state.match.cpuSkill || ctx.aiming.personaFor(p)?.skill) : 'Local hotseat',
+            persona: p.control === 'cpu' ? (ctx.aiming.personaFor(p)?.factionName || 'CPU') + ' · ' + ctx.aiming.skillFor(p) : 'Local hotseat',
             targets: ctx.state.match.roster.filter((r: any) => r !== p && !r.eliminated).map((r: any) => ({ name: r.name, action: 'target-' + r.index, selected: r.entityId === p.targetId })),
             tactic: p.tactic || '', target: ctx.state.match.roster.find((r: any) => r.entityId === p.targetId)?.name || '',
             shotDirection: Math.cos(Number(e?.blackboard.get('custom.angle') ?? 45) * Math.PI / 180) < 0 ? '← LEFT' : 'RIGHT →',
@@ -78,12 +79,12 @@ function create(ctx: Runtime) {
                 cash: ctx.state.bank ? ctx.economy.wallet(r).cash : 0, earned: r.cashEarned || 0 })),
         });
     }
-    function showSetup(): void {
+    function showSetup(draft: any = {}): void {
         if (ctx.state.match && !['ready', 'finished', 'fault'].includes(ctx.state.match.phase))
             return;
         const saved: any = talus.installed.get('indigo') || {};
-        talus.ui.set('installed.indigo', { generation: 'wfc', humans: 0, computers: 4, turnSeconds: 30,
-            namesText: 'CPU 1\nCPU 2\nCPU 3\nCPU 4', ...saved });
+        talus.ui.set('installed.indigo', { generation: 'wfc', humans: ctx.state.playerCatalog.humans.default,
+            computers: ctx.state.playerCatalog.computers.default, turnSeconds: 30, ...saved, ...draft });
         talus.ui.set('canResume', !!ctx.state.match);
         if (!ctx.state.match)
             talus.ui.hud(null);
@@ -106,9 +107,8 @@ function create(ctx: Runtime) {
         const m = ctx.state.match;
         return JSON.parse(JSON.stringify({ deploy: 'yes', seed: '',
             seriesId: m.series?.complete ? '' : m.seriesId, seriesLength: m.seriesLength || 1,
-            round: m.series?.complete ? 1 : m.round + 1, humans: m.humans, computers: m.computers,
-            turnSeconds: m.turnSeconds, namesText: m.roster.map((p: any) => p.name).join('\n'),
-            personaSeed: m.personaSeed, cpuSkill: m.cpuSkill,
+            round: m.series?.complete ? 1 : m.round + 1, ...players.settings(m),
+            turnSeconds: m.turnSeconds, personaSeed: m.personaSeed,
             biomeCycle: m.biomeCycle ? 'cycle' : 'random', biomeRounds: m.biomeRounds || 1,
             baseGeneration: m.baseGeneration, generation: nextGeneration() }));
     }
@@ -147,7 +147,6 @@ function create(ctx: Runtime) {
         bounds: any;
         cameraPolicyVersion: number;
         personaSeed: string;
-        cpuSkill: any;
         humans: number;
         computers: number;
         turnSeconds: number;
@@ -165,6 +164,8 @@ function create(ctx: Runtime) {
             templateId: any;
             entityId: null;
             personaId: any;
+            characterId: string | null;
+            cpuSkill: string | null;
             spawnX: number;
             eliminated: boolean;
             kills: number;
@@ -188,16 +189,14 @@ function create(ctx: Runtime) {
         };
     } {
         const source = talus.world.generation?.status();
-        const humans = Number(params.humans), computers = Number(params.computers), seconds = Number(params.turnSeconds);
-        if (!Number.isInteger(humans) || humans < 0 || !Number.isInteger(computers) || computers < 0
-            || humans + computers < 2 || humans + computers > ctx.state.arena.maxPlayers)
-            throw new Error('Choose between 2 and ' + ctx.state.arena.maxPlayers + ' tanks in total.');
+        const { humans, computers, humanNames, characters } = players.select(params, ctx.state.playerCatalog);
+        const seconds = Number(params.turnSeconds);
         if (!Number.isInteger(seconds) || seconds < 5 || seconds > 120)
             throw new Error('Choose a turn length from 5 to 120 whole seconds.');
-        const supplied = String(params.namesText || '').split(/\r?\n/).map(v => v.trim().slice(0, 32));
         const count = humans + computers, span = ctx.state.arena.combat.w - ctx.state.arena.combat.spawnInset * 2;
         const left = ctx.state.arena.combat.x + ctx.state.arena.combat.spawnInset;
-        const paletteOrder = Array.from({ length: ctx.state.arena.maxPlayers }, (_, i) => i);
+        const paletteOrder = ctx.state.arena.tankPalettes.map((_: any, i: number) => i)
+            .filter((i: number) => !characters.some(c => c.paletteIndex === i));
         let rosterRng = ctx.core.chaosSeed(String(params.personaSeed || talus.world.seed) + ':roster');
         for (let i = paletteOrder.length - 1; i > 0; i--) {
             rosterRng ^= rosterRng << 13;
@@ -206,15 +205,17 @@ function create(ctx: Runtime) {
             const j = (rosterRng >>> 0) % (i + 1);
             [paletteOrder[i], paletteOrder[j]] = [paletteOrder[j], paletteOrder[i]];
         }
-        const roster = Array.from({ length: count }, (_, i) => ({ index: i,
-            name: supplied[i] || (i < humans ? 'Player ' + (i + 1) : 'CPU ' + (i - humans + 1)),
-            control: i < humans ? 'human' : 'cpu', color: ctx.state.arena.tankPalettes?.[paletteOrder[i]]?.color || ctx.state.colors[i % ctx.state.colors.length],
-            templateId: ctx.state.arena.tankPalettes?.[paletteOrder[i]]?.templateId || ctx.state.arena.tankTemplate, entityId: null,
-            personaId: i < humans ? null : ctx.state.personaCatalog?.personas[paletteOrder[i] % ctx.state.personaCatalog.personas.length]?.id || null,
+        const roster = Array.from({ length: count }, (_, i) => {
+            const character = i < humans ? null : characters[i - humans];
+            const palette = ctx.state.arena.tankPalettes[character ? character.paletteIndex : paletteOrder[i]];
+            return { index: i,
+            name: character?.name || humanNames[i],
+            control: character ? 'cpu' : 'human', color: palette.color,
+            templateId: palette.templateId, entityId: null,
+            personaId: character?.personaId || null, characterId: character?.id || null, cpuSkill: character?.skill || null,
             spawnX: Math.round(left + span * i / (count - 1)), eliminated: false, kills: 0,
-            shots: 0, hits: 0, damage: 0, damageTaken: 0, cashEarned: 0, cashBreakdown: {}, weaponId: 'standard', moveDistance: 0, }));
-        if (new Set(roster.map(p => p.name.toLowerCase())).size !== count)
-            throw new Error('Use a different name for each tank so scores stay distinct.');
+            shots: 0, hits: 0, damage: 0, damageTaken: 0, cashEarned: 0, cashBreakdown: {}, weaponId: 'standard', moveDistance: 0 };
+        });
         return { presentation: { active: null, queue: [] }, pendingTurn: null, attack: null,
             generation: source?.recipeId || 'wfc',
             generationChoice: params.generation?.recipe || params['generation.recipe'] || source?.recipeId || 'wfc',
@@ -224,7 +225,7 @@ function create(ctx: Runtime) {
             biomeCycle: params.biomeCycle === 'cycle', biomeRounds: ctx.core.clamp(Math.floor(Number(params.biomeRounds) || 1), 1, 9), baseGeneration: params.baseGeneration || generationRequest(params),
             round: Math.max(1, Math.floor(Number(params.round) || 1)), cashShots: {}, cashNotice: '',
             bounds: { ...ctx.state.arena.bounds }, cameraPolicyVersion: 1,
-            personaSeed: String(params.personaSeed || talus.world.seed), cpuSkill: ['rookie', 'easy', 'regular', 'hard', 'expert'].includes(params.cpuSkill) ? params.cpuSkill : 'persona',
+            personaSeed: String(params.personaSeed || talus.world.seed),
             humans, computers, turnSeconds: seconds, remaining: seconds, phase: 'deploying', focusIndex: 0,
             turnNumber: 0, shotId: null, impact: null, roster, winner: null, message: 'Deploying tanks',
             chaos: { rng: ctx.core.chaosSeed(String(talus.world.seed)), serial: 0, jobs: [], quiet: 0, notice: '' } };
@@ -317,7 +318,7 @@ function create(ctx: Runtime) {
             if (ctx.core.human())
                 ctx.equipment.flipUpright(ctx.core.current());
         });
-        talus.on('menu.hud.setup', showSetup);
+        talus.on('menu.hud.setup', () => showSetup());
         talus.on('input.pressed', e => {
             if (e.slot !== 0 || !ctx.core.human())
                 return;

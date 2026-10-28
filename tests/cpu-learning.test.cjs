@@ -7,7 +7,7 @@ function setup() {
     const f = fixture();
     f.m.turnNumber = 8;
     f.api.setPersonas(personas);
-    f.m.cpuSkill = 'expert';
+    f.m.roster.forEach(p => p.cpuSkill = 'expert');
     f.talus.world.wind = 0;
     f.talus.world.raycast = () => null;
     f.talus.world.groundY = () => null;

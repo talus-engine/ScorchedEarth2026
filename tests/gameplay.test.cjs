@@ -6,7 +6,7 @@ function setup() {
     const f = fixture();
     f.api.setPersonas(read('personas'));
     f.api.setSupplies(read('supply-drops'));
-    f.m.cpuSkill = 'persona';
+
     f.m.turnNumber = 1;
     f.m.remaining = 30;
     f.talus.world.raycast = () => null;

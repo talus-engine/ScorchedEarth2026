@@ -20,6 +20,7 @@ export interface State {
     shopCategory: string;
     terrainCatalog: TerrainRecipeCatalog;
     personaCatalog: any;
+    playerCatalog: Parameters<typeof import('roster').select>[1];
     soundCatalog: any;
     childDepth: number;
     booting: boolean;

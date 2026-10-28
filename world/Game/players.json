@@ -1,0 +1,107 @@
+{
+  "minPlayers": 2,
+  "maxPlayers": 10,
+  "humans": {
+    "min": 0,
+    "max": 10,
+    "default": 0
+  },
+  "computers": {
+    "min": 0,
+    "max": 10,
+    "default": 4
+  },
+  "nameMaxLength": 32,
+  "characters": [
+    {
+      "id": "lucky",
+      "name": "Buck ‘Lucky’ Fuse",
+      "personaId": "lucky",
+      "skill": "rookie",
+      "paletteIndex": 0,
+      "color": "#FF783C",
+      "description": "Cheap shots, wandering and reckless close-range pressure."
+    },
+    {
+      "id": "mole",
+      "name": "Molly ‘Mole’ Morgan",
+      "personaId": "mole",
+      "skill": "easy",
+      "paletteIndex": 1,
+      "color": "#70F8A0",
+      "description": "Digs firing lanes and hunts underground supplies."
+    },
+    {
+      "id": "kiloton",
+      "name": "Captain Kiloton",
+      "personaId": "kiloton",
+      "skill": "regular",
+      "paletteIndex": 2,
+      "color": "#EC3555",
+      "description": "Saves up for the biggest explosions on the shelf."
+    },
+    {
+      "id": "faultline",
+      "name": "Vera ‘Faultline’ Voss",
+      "personaId": "faultline",
+      "skill": "hard",
+      "paletteIndex": 3,
+      "color": "#A574F4",
+      "description": "Cuts away support and sends opponents tumbling."
+    },
+    {
+      "id": "domino",
+      "name": "Dr. Domino",
+      "personaId": "domino",
+      "skill": "expert",
+      "paletteIndex": 4,
+      "color": "#35D9FF",
+      "description": "Sets off chain reactions with volatile weapons."
+    },
+    {
+      "id": "sparks",
+      "name": "Sparks McGee",
+      "personaId": "lucky",
+      "skill": "easy",
+      "paletteIndex": 5,
+      "color": "#D9A165",
+      "description": "Cheap shots, wandering and reckless close-range pressure."
+    },
+    {
+      "id": "badger",
+      "name": "Major Badger",
+      "personaId": "mole",
+      "skill": "hard",
+      "paletteIndex": 6,
+      "color": "#82D3AF",
+      "description": "Digs firing lanes and hunts underground supplies."
+    },
+    {
+      "id": "megaton",
+      "name": "Madame Megaton",
+      "personaId": "kiloton",
+      "skill": "expert",
+      "paletteIndex": 7,
+      "color": "#C9605C",
+      "description": "Saves up for the biggest explosions on the shelf."
+    },
+    {
+      "id": "gravel",
+      "name": "Sergeant Gravel",
+      "personaId": "faultline",
+      "skill": "regular",
+      "paletteIndex": 8,
+      "color": "#B083CF",
+      "description": "Cuts away support and sends opponents tumbling."
+    },
+    {
+      "id": "fizzle",
+      "name": "Professor Fizzle",
+      "personaId": "domino",
+      "skill": "rookie",
+      "paletteIndex": 9,
+      "color": "#61A9D9",
+      "description": "Sets off chain reactions with volatile weapons."
+    }
+  ]
+}

@@ -12,6 +12,9 @@ fire weapons, and reactive HTML menus expose the state.
 Import [the complete project](project/scorched-earth-2026.talus) into Talus. Open
 Indigo to edit, or launch its title screen and choose **New game**. Choose a
 seed or let the engine randomize it, select human and CPU players, then press **Start match**.
+Human players each get a name box; CPUs are selected from ten fixed characters
+with distinct colors, tactics and skill levels. Either group can contain zero
+players. Increasing a count reduces the other group only above the ten-tank cap.
 A CPU-only opening armory purchases supplies and starts automatically. Human
 players can shop before pressing **Begin Match**. **Resume saved game** appears when a
 saved game is available.
@@ -26,7 +29,7 @@ styles: Bunker Grid, Rat Run, Cavern War and Terrace Siege. Random selection
 uses only these maps. Advanced setup exposes the maze parameters. Each round
 creates its terrain on demand through native chunk streaming.
 
-- Two to sixteen tanks compete. Each gets a timed turn to move, aim and shoot.
+- Two to ten tanks compete. Each gets a timed turn to move, aim and shoot.
 - Shooting ends the tank's input period; the projectile and its effects resolve
   before the next turn. Camera movement follows the action smoothly.
 - Tanks announce shots and deaths, with 1.5 seconds for their lines before
@@ -80,7 +83,7 @@ cannot capture the whole project.
 ## Customize the template
 
 Start with [arena rules](world/Game/arena.json), [the armory](world/Game/shop.json),
-[personas](world/Game/personas.json) and [terrain settings](world/Game/terrain-recipes.json).
+[the character pool](world/Game/players.json), [personas](world/Game/personas.json) and [terrain settings](world/Game/terrain-recipes.json).
 The scripts use native Talus features for physics, streaming, animation,
 particles, weapon planning and persistence. The game owns turn sequencing,
 rewards, CPU strategy and presentation policy.

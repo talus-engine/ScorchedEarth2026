@@ -23,7 +23,7 @@ beforeAll(async () => {
 });
 function setup(direction = 1, distance = 800, height = 0, wind = 0, wall = false, weapon = 'standard') {
     const f = fixture();
-    f.m.cpuSkill = 'expert';
+    f.m.roster.forEach(p => p.cpuSkill = 'expert');
     f.m.turnNumber = 1;
     f.api.setPersonas(personas);
     f.talus.world.wind = wind;
@@ -156,7 +156,7 @@ test('native impact feedback converges, retains a hit and survives serialization
 for (const skill of ['rookie', 'easy', 'regular', 'hard', 'expert'])
     test(`${skill} learns without added aim noise`, async () => {
         const f = setup(), errors: number[] = [];
-        f.m.cpuSkill = skill;
+        f.m.roster.forEach(p => p.cpuSkill = skill);
         for (let n = 0; n < 6; n++) {
             f.m.turnNumber = n + 1;
             expect(await f.api.planCpuShot(f.p, n + 1)).toBe(true);

@@ -3,7 +3,7 @@
 const assert = require('node:assert/strict'), fs = require('node:fs');
 const { fixture } = require('./support/game.cjs');
 const personas = JSON.parse(fs.readFileSync('world/Game/personas.json', 'utf8'));
-function setup() { const f = fixture(); f.api.setPersonas(personas); f.m.cpuSkill = 'persona'; f.m.turnNumber = 3; f.talus.world.raycast = () => null; f.talus.world.groundY = () => null; f.talus.world.cell = () => null; f.talus.sim.pause = () => f.talus.sim.paused = true; f.talus.sim.resume = () => f.talus.sim.paused = false; for (const e of f.actors.values()) {
+function setup() { const f = fixture(); f.api.setPersonas(personas);  f.m.turnNumber = 3; f.talus.world.raycast = () => null; f.talus.world.groundY = () => null; f.talus.world.cell = () => null; f.talus.sim.pause = () => f.talus.sim.paused = true; f.talus.sim.resume = () => f.talus.sim.paused = false; for (const e of f.actors.values()) {
     e.liveId = Number(e.id.slice(-1)) + 1;
     e.y = 650;
     e.snapshot = () => ({ x: e.x, y: e.y, alive: true, vy: 0 });
