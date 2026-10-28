@@ -58,7 +58,8 @@ Authoring and activation
 ------------------------
 
 Edit [themes.json](../assets/mazes/themes.json), then run
-`node tools/mazes.cjs build` to assemble the self-contained native catalog.
+`node tools/mazes.cjs build` to assemble the self-contained native catalog and
+update its matching entries in the active round catalog.
 [tiles.json](../assets/mazes/tiles.json) records the selected native tile presets,
 their source paths, tile dimensions and layer IDs. Brush sources are the
 project-owned files in `world/Game/Presets`.
@@ -75,14 +76,17 @@ scenery templates and captures their records. Their pixel/material definitions
 live in `tools/lib/maze-props.cjs`; use the native entity editor for detailed art.
 Rebuild the maze catalog after changing template IDs.
 
-The active new-round file is `world/Game/terrain-recipes.json`. It uses lightweight
-maze recipes for startup speed. The richer catalog is available for authoring;
-replace matching maze entries in the active file to enable it. Both use the native
-world-layout maze chunk evaluator, with each round's seed and recipe captured in
-its save. Tiles, brushes and props stream into requested chunks; destruction is
-preserved when chunks reload. Measure startup cost on the target device before
-activating richer recipes. Do not substitute a whole-map painting pass or mutate
-the shared WFC authoring layout.
+The active new-round file is `world/Game/terrain-recipes.json`. Its default random
+pool includes WFC with weight 24 and each of the four decorated mazes with weight
+7. Landscape tours use the same entries. Semantic and living strokes, noise,
+foreground/background tiles and scenery are enabled; neural strokes are omitted.
+The advanced setup controls can adjust the pool weights and maze parameters.
+
+Each maze uses the native world-layout chunk evaluator, with the round's seed
+and recipe captured in its save. Tiles, brushes and props stream into requested
+chunks; destruction is preserved when chunks reload. Existing saves retain their
+captured recipes. Do not substitute a whole-map painting pass or mutate the shared
+WFC authoring layout.
 
 Zone chunks are a separate procedural source to expand later. Hand-painted WFC
 tiles remain the author's canvas.

@@ -5,6 +5,7 @@ const { parseArgs } = require('node:util');
 const { ROOT, readJSON, run } = require('./lib/files.cjs');
 const THEMES = path.join(ROOT, 'assets/mazes/themes.json');
 const OUTPUT = path.join(ROOT, 'world/Game/Mazes/catalog.json');
+const ACTIVE = path.join(ROOT, 'world/Game/terrain-recipes.json');
 const copy = value => structuredClone(value);
 const preset = name => readJSON(path.join(ROOT, 'world/Game/Presets', name + '.json'));
 
@@ -91,10 +92,12 @@ function assemble({ tiles, props, catalog, themes = readJSON(THEMES).themes }) {
 function build() {
     const tiles = readJSON(path.join(ROOT, 'assets/mazes/tiles.json')).presets;
     const props = readJSON(path.join(ROOT, 'world/Game/Mazes/entities.json')).entities;
-    const catalog = readJSON(path.join(ROOT, 'world/Game/terrain-recipes.json'));
+    const catalog = readJSON(ACTIVE);
     const result = assemble({ tiles, props, catalog });
     fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });
     fs.writeFileSync(OUTPUT, JSON.stringify(result, null, 2) + '\n');
+    catalog.recipes = catalog.recipes.map(recipe => result.recipes.find(maze => maze.id === recipe.id) || recipe);
+    fs.writeFileSync(ACTIVE, JSON.stringify(catalog, null, 2) + '\n');
     return result;
 }
 

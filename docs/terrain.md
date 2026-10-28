@@ -50,13 +50,16 @@ stream out while the camera follows the next placement or turn. Maze maps
 reserve a matching open deployment corridor.
 
 Project-owned noise, semantic, neural, living and vector presets remain in
-`world/Game/Presets/` for editor painting and weapon effects. They are not loaded
-or validated during match startup.
+`world/Game/Presets/` for editor painting and weapon effects. Maze recipes bind
+their required captured resources through the native catalog; game scripts do
+not run a preset preflight or decoration pass during match startup.
 
-[Rich maze recipes](mazes.md) combine native foreground/background tile presets,
-all seven edge-stroke sources and native scenery entity rules. Their authoring
-catalog is `world/Game/Mazes/catalog.json`; activation uses the native streamed
-round-source interface, with no map-wide painting pass.
+[Maze recipes](mazes.md) combine native foreground/background tile presets,
+semantic and living brushes, noise, tile/pattern trim, loose grit and native
+scenery entity rules. All four are included in the default random pool alongside
+WFC. Neural brushes are excluded. Their authoring catalog is
+`world/Game/Mazes/catalog.json`; `node tools/mazes.cjs build` keeps the active
+round recipes synchronized with it.
 
 `tools/build_wfc_template.cjs` regenerates the local bootstrap and reference files
 from `assets/art/terrain-swatch.svg`. It does not install them into the editor.

@@ -13,6 +13,7 @@ test('maze recipes keep native chunk sources and distinct foreground/background 
     for (const r of catalog.recipes) {
         assert.equal(r.family, 'maze');
         const original = base.recipes.find(x => x.id === r.id);
+        assert.deepEqual(original, r, 'Default rounds must use the complete authored maze recipe');
         assert.deepEqual(r.bounds, original.bounds);
         assert.deepEqual(r.foundation, original.foundation);
         assert.deepEqual(r.clearances, original.clearances);
