@@ -54,7 +54,7 @@ function create(ctx: Runtime) {
     async function announce(story: string, vars: any): Promise<void> {
         if (talus.dialogue.active)
             talus.dialogue.dismiss();
-        await talus.dialogue.start(story, { mode: 'announcer', speaker: 'Range control', lineMs: 1600, vars, writeBack: false });
+        await talus.dialogue.start(story, { mode: 'announcer', speaker: 'Range control', lineMs: 800, vars, writeBack: false });
     }
     function finish(): boolean {
         if (ctx.state.match.phase === 'finished')
@@ -103,7 +103,7 @@ function create(ctx: Runtime) {
             await ctx.presentation.turnScoreCard();
             if (ctx.state.match.phase !== 'finished')
                 return;
-            await ctx.presentation.showArcadeCard(ctx.state.match.winner ? 'VICTORY OVERDRIVE' : 'MUTUALLY ASSURED NONSENSE', ctx.state.match.series?.complete ? ctx.state.match.series.champion : ctx.state.match.winner || 'NO SURVIVORS', 'Round ' + ctx.state.match.round + ' · Seed ' + ctx.state.match.seed, 3);
+            await ctx.presentation.showArcadeCard(ctx.state.match.winner ? 'VICTORY OVERDRIVE' : 'MUTUALLY ASSURED NONSENSE', ctx.state.match.series?.complete ? ctx.state.match.series.champion : ctx.state.match.winner || 'NO SURVIVORS', 'Round ' + ctx.state.match.round + ' · Seed ' + ctx.state.match.seed, 1);
             ctx.state.match.resultsShown = true;
             ctx.session.persist();
             if (!automaticSeries())
@@ -160,7 +160,7 @@ function create(ctx: Runtime) {
         if (next)
             await ctx.presentation.turnScoreCard();
         else if (!ctx.state.match.turnNumber)
-            await ctx.presentation.showArcadeCard('SCORCHED EARTH 2026', 'BATTLE STATIONS', 'Round ' + ctx.state.match.round + ' · Seed ' + ctx.state.match.seed, 2.5);
+            await ctx.presentation.showArcadeCard('SCORCHED EARTH 2026', 'BATTLE STATIONS', 'Round ' + ctx.state.match.round + ' · Seed ' + ctx.state.match.seed, .85);
         if (ctx.state.match.phase !== 'focusing')
             return;
         ctx.residency.checkRoster();
@@ -188,7 +188,7 @@ function create(ctx: Runtime) {
         if (ctx.state.match.phase !== 'focusing')
             return;
         if (ready && !ctx.core.current().eliminated) {
-            await ctx.presentation.showArcadeCard('TURN ' + ctx.state.match.turnNumber + ' / COMMAND CARTRIDGE', ctx.core.current().name, ctx.core.current().control === 'cpu' ? (ctx.aiming.personaFor(ctx.core.current())?.factionName || 'CPU') + ' · ' + (ctx.state.match.cpuSkill === 'persona' ? ctx.aiming.personaFor(ctx.core.current())?.skill : ctx.state.match.cpuSkill || ctx.aiming.personaFor(ctx.core.current())?.skill) : 'Your controller. Your crater.', 1, ctx.core.current().color);
+            await ctx.presentation.showArcadeCard('TURN ' + ctx.state.match.turnNumber + ' / COMMAND CARTRIDGE', ctx.core.current().name, ctx.core.current().control === 'cpu' ? (ctx.aiming.personaFor(ctx.core.current())?.factionName || 'CPU') + ' · ' + (ctx.state.match.cpuSkill === 'persona' ? ctx.aiming.personaFor(ctx.core.current())?.skill : ctx.state.match.cpuSkill || ctx.aiming.personaFor(ctx.core.current())?.skill) : 'Your controller. Your crater.', .35, ctx.core.current().color);
             if (ctx.state.match.phase !== 'focusing')
                 return;
             ctx.residency.checkRoster();
@@ -240,7 +240,7 @@ function create(ctx: Runtime) {
         ctx.menus.publish();
         if (!ctx.core.presenting())
             ctx.camera.cameraPoint(p, 'impact');
-        await talus.world.watchSettle({ x: p.x - 192, y: p.y - 128, w: 384, h: 384 }, { minTicks: 60, maxTicks: ctx.state.arena.impactWaitTicks ?? 180 }).done;
+        await talus.world.watchSettle({ x: p.x - 192, y: p.y - 128, w: 384, h: 384 }, { minTicks: 20, maxTicks: ctx.state.arena.impactWaitTicks ?? 60 }).done;
         ctx.residency.checkRoster();
         if (!finish())
             await beginTurn(true);

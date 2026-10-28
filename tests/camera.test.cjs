@@ -7,6 +7,8 @@ function setup(computers = 2) {
     const f = fixture(undefined, false, computers), calls = [], texts = [], shots = [], holds = [], plates = [];
     let tracking = null, serial = 0;
     f.talus.camera = {
+        view: { zoom: .5 },
+        setZoom(zoom) { this.view.zoom = zoom; return this.view; },
         get tracking() { return tracking; },
         track(target, options) {
             const point = target.point || f.actors.get(typeof target.entity === 'string' ? target.entity : target.entity.id)?.position || null;
@@ -112,13 +114,13 @@ async function main() {
         const spokenAt = f.talus.sim.clock;
         assert.equal(f.texts.at(-1).clock, spokenAt);
         assert.equal(f.m.presentation.active.stage, 'speech');
-        f.talus.sim.clock = spokenAt + 2.999;
+        f.talus.sim.clock = spokenAt + 1.499;
         f.api.tickPresentation();
         assert.equal(f.shots.length, 0);
-        f.talus.sim.clock = spokenAt + 3;
+        f.talus.sim.clock = spokenAt + 1.5;
         f.api.tickPresentation();
         assert.equal(f.shots.length, 1);
-        assert.equal(f.shots[0].clock - spokenAt, 3);
+        assert.equal(f.shots[0].clock - spokenAt, 1.5);
     }
     {
         const f = setup(), p = f.m.roster[0];
@@ -156,10 +158,10 @@ async function main() {
         assert.equal(f.holds.at(-1).seconds, 120);
         const start = f.talus.sim.clock;
         assert.equal(f.m.presentation.active.stage, 'speech');
-        f.talus.sim.clock = start + 2.999;
+        f.talus.sim.clock = start + 1.499;
         f.api.tickPresentation();
         assert.equal(f.m.chaos.jobs.length, 0);
-        f.talus.sim.clock = start + 3;
+        f.talus.sim.clock = start + 1.5;
         f.api.tickPresentation();
         assert.equal(f.m.chaos.jobs.length, 1);
         assert.ok(f.holds.at(-1).seconds > 0 && f.holds.at(-1).seconds <= 30,
@@ -169,10 +171,10 @@ async function main() {
         f.api.tickPresentation();
         assert.equal(f.m.presentation.active.elapsed, 0);
         f.talus.sim.paused = false;
-        f.talus.sim.clock = start + 5.499;
+        f.talus.sim.clock = start + 2.299;
         f.api.tickPresentation();
         assert.ok(f.m.presentation.active);
-        f.talus.sim.clock = start + 5.5;
+        f.talus.sim.clock = start + 2.3;
         f.api.tickPresentation();
         assert.equal(f.m.presentation.active, null);
     }
@@ -233,7 +235,7 @@ async function main() {
         f.m.turnNumber = 7;
         f.m.remaining = 2.25;
         const cue = finishedDeath(f, f.m.roster[1]);
-        cue.started -= 2.5;
+        cue.started -= .8;
         f.m.presentation.active = cue;
         tank.residency = 'stored';
         f.api.cameraPoint(cue, 'death:' + cue.owner);
@@ -275,7 +277,7 @@ async function main() {
         tank.residency = 'stored';
         f.emit('tick.frame', { dt: .5 });
         assert.equal(f.ui.arcadeCards.length, 0);
-        await advance(2.5); // The death camera has stolen the previous successful focus.
+        await advance(.8); // The death camera has stolen the previous successful focus.
         assert.equal(f.m.presentation.active, null);
         f.emit('tick.frame', { dt: 0 });
         f.emit('tick.frame', { dt: 1 });

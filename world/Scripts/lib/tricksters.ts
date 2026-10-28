@@ -1,4 +1,4 @@
-/** Noise-seeking sheep and cash transfers credited to the original shooter. */
+/** Noise-seeking explosive sheep credited to the original shooter. */
 import type { Runtime } from 'context';
 type Point = { x: number; y: number };
 function create(ctx: Runtime) {
@@ -12,11 +12,11 @@ function create(ctx: Runtime) {
         return m.tricksters ||= { serial: 0, clock: 0, sheep: [], noises: [] };
     }
     const finite = (at: any): at is Point => Number.isFinite(at?.x) && Number.isFinite(at?.y);
+    const roster = (id: string) => current()?.roster.find((p: any) => p.entityId === id);
     function inside(at: Point): boolean {
         const b = current()?.bounds || ctx.state.arena.bounds;
         return finite(at) && at.x >= b.x && at.x < b.x + b.w && at.y >= b.y && at.y < b.y + b.h;
     }
-    const roster = (id: string) => current()?.roster.find((p: any) => p.entityId === id);
     const regionKey = (job: any) => 'trickster:' + job.id;
     function barrier(): void {
         talus.game.setSaveBarrier('tricksters', pending.size ? 'Creating native Black Sheep' : null);
@@ -25,50 +25,6 @@ function create(ctx: Runtime) {
     function canFire(item: any): boolean {
         return item?.behavior?.mode !== 'trickster' || item.behavior.kind !== 'black-sheep'
             || !!catalog && (current()?.tricksters?.sheep.length || 0) < catalog.sheep.maxActive;
-    }
-    function prepareAttack(owner: string, attack: any, item: any): void {
-        if (item?.behavior?.mode !== 'trickster' || item.behavior.kind !== 'tax-collector' || attack.trickster)
-            return;
-        const p = roster(owner), s = state();
-        if (!p || !s)
-            throw new Error('Tax Collector requires an original player account');
-        attack.trickster = { id: ++s.serial, world: talus.world.id, source: owner, account: ctx.economy.playerKey(p) };
-        ctx.session.persist();
-    }
-    function hit(event: any, attack: any, item: any): number {
-        if (!catalog || item?.behavior?.mode !== 'trickster' || item.behavior.kind !== 'tax-collector'
-            || !attack?.ids?.[event.projectileId] || !event.direct || !(event.amount > 0))
-            return 0;
-        const credit = attack.trickster, victim = roster(event.targetStableId);
-        if (!credit || credit.source !== attack.owner || credit.world !== talus.world.id || !victim)
-            return 0;
-        const target = ctx.economy.playerKey(victim), bank = ctx.state.bank;
-        if (credit.account === target || !Object.hasOwn(bank.players, credit.account) || !Object.hasOwn(bank.players, target))
-            return 0;
-        const receipt = credit.world + ':' + credit.id + ':' + target;
-        if (Object.hasOwn(bank.tricksterTransfers || {}, receipt))
-            return 0;
-        const available = Number(bank.players[target].cash), receiving = Number(bank.players[credit.account].cash);
-        if (!Number.isFinite(available) || available < 0 || !Number.isFinite(receiving) || receiving < 0)
-            throw new Error('Tax Collector encountered an invalid wallet');
-        const amount = Math.min(available, Math.max(0, Math.floor(Math.min(catalog.collector.maximumCash, available * catalog.collector.fraction))));
-        const next = JSON.parse(JSON.stringify(bank)), from = next.players[target], to = next.players[credit.account];
-        from.cash -= amount;
-        to.cash += amount;
-        from.revision++;
-        to.revision++;
-        next.tricksterTransfers ||= {};
-        Object.defineProperty(next.tricksterTransfers, receipt, { enumerable: true, configurable: true, writable: true,
-            value: { from: target, to: credit.account, amount } });
-        // One durable value contains both balances and the receipt. A failed write changes neither wallet in memory.
-        talus.installed.set('indigo.economy', next);
-        ctx.state.bank = next;
-        if (amount > 0) {
-            current().cashNotice = to.name + ' collected $' + amount + ' from ' + from.name;
-            ctx.state.cashPopups.set(credit.source, (ctx.state.cashPopups.get(credit.source) || 0) + amount);
-        }
-        ctx.session.persist();
-        return amount;
     }
     function hear(at: Point): void {
         if (!catalog || !finite(at) || !current() || ['ready', 'deploying', 'finished', 'fault'].includes(current().phase))
@@ -243,6 +199,6 @@ function create(ctx: Runtime) {
                 job.mode = 'detonating';
         });
     }
-    return { configure, canFire, prepareAttack, hit, hear, impact, tick, busy, settling, finish, stop, bind };
+    return { configure, canFire, hear, impact, tick, busy, settling, finish, stop, bind };
 }
 export = create;

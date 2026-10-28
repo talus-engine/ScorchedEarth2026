@@ -103,6 +103,7 @@ function create() {
     ctx.menus = menus(ctx);
     ctx.lifecycle = lifecycle(ctx);
     function start() {
+        ctx.camera.bind();
         ctx.residency.bind();
         ctx.presentation.bind();
         ctx.session.bind();

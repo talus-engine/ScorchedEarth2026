@@ -28,7 +28,7 @@ function wordsAndChaos(f) {
     f.api.tickPresentation();
     assert.equal(f.texts.at(-1).spec.text, 'The rest is silence.');
     assert.equal(f.factionHolds[0].owner, f.p.entityId, 'Faction speech is keyed by durable identity, including after native destruction');
-    f.talus.sim.clock += 3;
+    f.talus.sim.clock += 1.5;
     f.api.tickPresentation();
     assert.equal(f.texts.at(-1).spec, null);
     assert.equal(f.factionHolds.at(-1).owner, f.p.entityId);
@@ -52,7 +52,7 @@ function wordsAndChaos(f) {
     const text = f.texts.at(-1).spec;
     assert.equal(text.entity, f.tank, 'The restored durable handle retains its authoritative position');
     assert.deepEqual(structuredClone(text.at), f.cached);
-    f.talus.sim.clock += 3;
+    f.talus.sim.clock += 1.5;
     f.api.tickPresentation();
     const fx = f.game.context.state.chaosCatalog.effects.find(fx => fx.id === f.m.chaos.jobs[0].effect);
     assert.deepEqual(f.controllerWrites, [120, fx.duration + 20], 'Speech transfers its finite pose hold to the physical death effect without an unheld gap');

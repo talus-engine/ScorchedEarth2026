@@ -27,11 +27,8 @@ Grenade's exact 2,800px blast is configured but disabled pending native area sup
 contact damage, lifetime and population limits. Worms clear eligible terrain
 ahead of their physical bodies and leave the stone foundation intact; crows
 attack a selected tank for a bounded interval. `Game/tricksters.json` defines
-the noise-seeking Black Sheep and Tax Collector. Sheep follow recent shots and
-explosions, then detonate on proximity, contact or their finite fuse. Tax
-Collector transfers a bounded share of cash on a real direct hit; each victim
-can pay only once per cast. Both wallet balances and the receipt persist in one
-installed-state write, including when the original shooter has died.
+the noise-seeking Black Sheep. Sheep follow recent shots and explosions, then
+detonate on proximity, contact or their finite fuse.
 
 Utilities use native finite components: shields, magnetic deflection, batteries,
 parachutes, jet fuel, ground fuel, digging and aim assistance. The game reconciles

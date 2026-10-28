@@ -59,11 +59,11 @@ async function main() {
         await f.api.fire();
         f.api.tickPresentation();
         const started = f.talus.sim.clock;
-        f.talus.sim.clock = started + 2.999;
+        f.talus.sim.clock = started + 1.499;
         f.api.tickPresentation();
         assert.equal(fired, 0);
         assert.equal(f.api.bank.players.alpha.stock.heavy, 3);
-        f.talus.sim.clock = started + 3;
+        f.talus.sim.clock = started + 1.5;
         f.api.tickPresentation();
         assert.equal(fired, 1);
         assert.equal(f.api.bank.players.alpha.stock.heavy, 2, 'Only the ordinary actual launch debits ammunition');
@@ -128,6 +128,6 @@ async function main() {
         assert.equal(f.p.tactic, 'Exploratory high arc through magnetic field');
         assert.equal(f.tank.blackboard.get('custom.aimRefusal'), 'deflection-fields');
     }
-    console.log('PASS: native drag-only feasible candidates stay explicitly uncertain; normal and demolition clear plans win; stale pose/target/root/weapon/turn and hard/corrupt refusals cannot fallback; magnetic probes preserved; normal3s speech and launch-only stock debit unchanged');
+    console.log('PASS: native drag-only feasible candidates stay explicitly uncertain; normal and demolition clear plans win; stale pose/target/root/weapon/turn and hard/corrupt refusals cannot fallback; magnetic probes preserved; 1.5s speech and launch-only stock debit unchanged');
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

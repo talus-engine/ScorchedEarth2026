@@ -108,7 +108,6 @@ function create(ctx: Runtime) {
             return;
         }
         ctx.presentation.playCue("fire");
-        ctx.tricksters.prepareAttack(p.entityId, ctx.state.match.attack, ctx.economy.itemById(p.weaponId));
         if (!e.weapon.fire(p.targetId || undefined))
             ctx.session.fail('Cannon did not accept the trigger');
     }
@@ -458,7 +457,6 @@ function create(ctx: Runtime) {
         talus.on('projectile.hit', e => {
             if (!ctx.state.match?.attack?.ids[e.projectileId])
                 return;
-            ctx.tricksters.hit(e, ctx.state.match.attack, ctx.economy.itemById(ctx.state.match.attack.item));
             if (e.targetStableId === ctx.state.match.attack.targetId && e.amount > 0) {
                 const entry = ctx.state.match.attack.ids[e.projectileId];
                 entry.targetHit = true;

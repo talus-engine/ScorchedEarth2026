@@ -16,7 +16,7 @@ function create(ctx: Runtime) {
     }
     function queue(attack: any, entry: any, event: ProjectileEvent): void {
         const item = ctx.economy.itemById(attack.item);
-        if (!handles(item) || item.behavior.kind === 'tax-collector' || attack.payloadQueued || event.projectileId !== attack.rootId || entry.split
+        if (!handles(item) || attack.payloadQueued || event.projectileId !== attack.rootId || entry.split
             || !['body', 'terrain', 'particle'].includes(entry.collision)
             || ['removed', 'expired', 'lifetime', 'out-of-bounds', 'wall', 'destroyed'].includes(event.reason))
             return;

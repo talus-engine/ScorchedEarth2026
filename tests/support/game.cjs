@@ -20,6 +20,7 @@ function fixture(namesText = 'Alpha\nBravo', native = false, computers = 2) {
         installed: { get: k => installed[k], set: (k, v) => installed[k] = structuredClone(v) },
         players: { list: () => [] }, entities: { get: id => actors.get(id) }, camera: cameraMock(id => actors.get(id)),
         ui: { set: (k, v) => typeof k === 'string' ? ui[k] = v : Object.assign(ui, k), floatText() { }, openMenu() { }, closeMenu() { } } };
+    talus.world.raycast = () => null;
     const game = loadGame(talus), state = game.context.state, api = game.api;
     api.configure = (a, s, q, c) => Object.assign(state, { arena: a, market: s, quipCatalog: q, chaosCatalog: c });
     api.load = m => { state.match = m; api.ensureWallets(); state.booted = true; };

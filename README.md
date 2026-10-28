@@ -26,7 +26,7 @@ setup exposes the terrain parameters.
 - Two to sixteen tanks compete. Each gets a timed turn to move, aim and shoot.
 - Shooting ends the tank's input period; the projectile and its effects resolve
   before the next turn. Camera movement follows the action smoothly.
-- Tanks announce shots and deaths, with three seconds for their lines before
+- Tanks announce shots and deaths, with 1.5 seconds for their lines before
   firing or exploding. Death can trigger a destructive chain reaction.
 - The last living tank wins. Falling outside the battlefield eliminates a tank.
 - Actions earn cash, including firing, impacts, hits, damage and death. Spend it
@@ -34,7 +34,7 @@ setup exposes the terrain parameters.
 - Named wallets, stock and scores persist between plays. CPU personas choose
   tactics, shop, explore and learn from their shots.
 - Rare payloads add roaming worms, attacking crows, explosive sheep, mines,
-  airstrikes, bouncing water ducks, meteors and a cash-stealing Tax Collector.
+  airstrikes, bouncing water ducks and meteors.
 
 Use the on-screen angle, power, weapon and utility controls. Menus support mouse,
 keyboard and gamepad navigation; **Options → Controls** shows and changes the

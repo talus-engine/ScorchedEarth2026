@@ -124,10 +124,10 @@ async function main() {
         assert.deepEqual(f.order.slice(-2), ['camera', 'speech']);
         assert.ok(f.plates.every(v => !v.text.includes('“')));
         assert.equal(f.centers.at(-1).x, f.actors.get(p.entityId).x);
-        f.talus.sim.clock = start + 2.999;
+        f.talus.sim.clock = start + 1.499;
         f.api.tickPresentation();
         assert.equal(f.fired.length, 0);
-        f.talus.sim.clock = start + 3;
+        f.talus.sim.clock = start + 1.5;
         f.api.tickPresentation();
         assert.equal(f.fired.length, 1);
         assert.equal(f.m.phase, 'flight');
@@ -149,10 +149,10 @@ async function main() {
         assert.deepEqual(f.holds.map(h => h.seconds), [120, 120], 'Both queued wrecks receive bounded native holds before camera travel');
         f.api.tickPresentation();
         const t = f.talus.sim.clock;
-        f.talus.sim.clock = t + 2.9;
+        f.talus.sim.clock = t + 1.499;
         f.api.tickPresentation();
         assert.equal(f.m.chaos.jobs.length, 0);
-        f.talus.sim.clock = t + 3;
+        f.talus.sim.clock = t + 1.5;
         f.api.tickPresentation();
         assert.equal(f.m.chaos.jobs.length, 1);
         assert.equal(f.m.presentation.active.owner, a.entityId);
@@ -160,18 +160,18 @@ async function main() {
         assert.equal(f.talus.game.saveStatus.allowed, false, 'Death camera watch retains its save barrier');
         f.api.tickPresentation();
         assert.equal(f.m.presentation.active.owner, a.entityId, 'No simulation advance means no death-watch advance');
-        f.talus.sim.clock = t + 5.499;
+        f.talus.sim.clock = t + 2.299;
         f.api.tickPresentation();
         assert.equal(f.m.presentation.active.owner, a.entityId);
-        f.talus.sim.clock = t + 5.5;
+        f.talus.sim.clock = t + 2.3;
         f.api.tickPresentation();
         assert.equal(f.m.presentation.active, null);
         f.api.tickPresentation();
-        assert.equal(f.m.presentation.active.owner, b.entityId, 'Next death centers only after the previous 2.5-second watch');
-        f.talus.sim.clock += 3;
+        assert.equal(f.m.presentation.active.owner, b.entityId, 'Next death centers only after the previous 0.8-second watch');
+        f.talus.sim.clock += 1.5;
         f.api.tickPresentation();
         assert.equal(f.m.chaos.jobs.length, 2);
-        f.talus.sim.clock += 2.5;
+        f.talus.sim.clock += .8;
         f.api.tickPresentation();
         assert.equal(f.m.presentation.active, null);
         assert.equal(f.m.presentation.queue.length, 0);
@@ -187,7 +187,7 @@ async function main() {
         f.talus.sim.clock += 10;
         f.api.tickPresentation();
         assert.equal(f.fired.length, 0, 'Death cancels unlaunched shot');
-        f.talus.sim.clock += 3;
+        f.talus.sim.clock += 1.5;
         f.api.tickPresentation();
         assert.equal(f.fired.length, 0);
         assert.equal(f.m.chaos.jobs.length, 1);
@@ -198,7 +198,7 @@ async function main() {
         p.weaponId = 'mirv';
         await f.api.fire();
         f.api.tickPresentation();
-        f.talus.sim.clock += 3;
+        f.talus.sim.clock += 1.5;
         f.api.tickPresentation();
         const root = f.shots.get(f.m.attack.rootId);
         root.snapshot().vy = 1;
@@ -227,7 +227,7 @@ async function main() {
         p.weaponId = 'mirv';
         await f.api.fire();
         f.api.tickPresentation();
-        f.talus.sim.clock += 3;
+        f.talus.sim.clock += 1.5;
         f.api.tickPresentation();
         const carrier = [...f.shots.values()][0];
         carrier.remove();
@@ -248,7 +248,7 @@ async function main() {
         p.weaponId = 'machine-gun';
         await f.api.fire();
         f.api.tickPresentation();
-        f.talus.sim.clock += 3;
+        f.talus.sim.clock += 1.5;
         f.api.tickPresentation();
         for (let n = 0; n < 11; n++) {
             for (const h of f.shots.values())
@@ -410,6 +410,6 @@ async function main() {
         assert.equal(a.tasks, 0, 'Native refusal releases attack waiting');
     }
     console.log('PASS: Riot matching-only SMOKE, Dirt empty-only fill, native Earth collapse, world-oriented masks, protected foundation and completion/refusal waiting');
-    console.log('PASS: camera/label/fire order, exact three-second minimum, serialized deaths, interrupted-shot cancellation, MIRV apex split and last-warhead completion, burst lifetime/one-magazine accounting, 500 non-repeating phrases, all 33 original weapons and 15 accessories accounted for, finite native aim assistance, bounded best-effort deployment, R/HUD flip and CPU refusal tolerance');
+    console.log('PASS: camera/label/fire order, exact 1.5-second minimum, serialized deaths, interrupted-shot cancellation, MIRV apex split and last-warhead completion, burst lifetime/one-magazine accounting, 500 non-repeating phrases, all 33 original weapons and 15 accessories accounted for, finite native aim assistance, bounded best-effort deployment, R/HUD flip and CPU refusal tolerance');
 }
 main().catch(e => { console.error(e); process.exitCode = 1; });

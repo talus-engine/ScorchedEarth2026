@@ -6,7 +6,7 @@ function create(ctx: Runtime) {
             throw new Error('An arcade transition is already active');
         ctx.menus.input(false);
         return new Promise(resolve => {
-            const view = { id: ++ctx.state.arcadeSerial, eyebrow, title, sub, color, score, long: seconds > 1, radar: seconds === 1 && ctx.state.arcadeSerial % 2 === 0, receipt: eyebrow.includes('COMPLETE') };
+            const view = { id: ++ctx.state.arcadeSerial, eyebrow, title, sub, color, score, duration: seconds + 's', long: seconds > 1, radar: seconds <= 1 && ctx.state.arcadeSerial % 2 === 0, receipt: eyebrow.includes('COMPLETE') };
             ctx.state.arcadeCard = { view, seconds, elapsed: 0, visible: false, resolve };
             ctx.session.persist();
         });
@@ -22,7 +22,7 @@ function create(ctx: Runtime) {
         if (!ctx.state.match.turnNumber || ctx.state.match.lastCardTurn === ctx.state.match.turnNumber)
             return;
         const p = ctx.core.current();
-        if (await showArcadeCard('TURN ' + ctx.state.match.turnNumber + ' COMPLETE', p.name, 'Every crater counts.', 1, p.color, p.kills + ' kills (+' + (p.kills - (p.turnStartKills || 0)) + ') · Turn cash +$' + (p.cashEarned - (p.turnStartCash || 0)).toFixed(2))) {
+        if (await showArcadeCard('TURN ' + ctx.state.match.turnNumber + ' COMPLETE', p.name, 'Every crater counts.', .35, p.color, p.kills + ' kills (+' + (p.kills - (p.turnStartKills || 0)) + ') · Turn cash +$' + (p.cashEarned - (p.turnStartCash || 0)).toFixed(2))) {
             ctx.state.match.lastCardTurn = ctx.state.match.turnNumber;
             ctx.session.persist();
         }
@@ -188,7 +188,7 @@ function create(ctx: Runtime) {
             ? ctx.camera.cameraTank(p) : ctx.camera.cameraPoint(cue, 'death:' + cue.owner);
         if (cue.stage === 'centering') {
             const bodyReady = cue.kind === 'shooting' ? tank?.isLive : !at || tank?.isLive || tank?.isFrozen;
-            if (!ctx.camera.cameraArrived(state) || !bodyReady) {
+            if (!ctx.camera.cameraArrived(state) || !bodyReady || !ctx.camera.closeViewReady()) {
                 if (talus.sim.clock - cue.centerStarted > 30)
                     throw new Error('Presentation camera did not arrive: ' + p.name + ' / ' + state.reason);
                 if (ctx.state.ticks % 6 === 0)
@@ -216,7 +216,7 @@ function create(ctx: Runtime) {
         }
         cue.elapsed = talus.sim.clock - cue.started;
         if (cue.stage === 'effect') {
-            if (cue.elapsed < (ctx.state.chaosCatalog.deathWatchSeconds ?? 2.5)) {
+            if (cue.elapsed + 1e-9 < (ctx.state.chaosCatalog.deathWatchSeconds ?? .8)) {
                 if (ctx.state.ticks % 6 === 0)
                     ctx.session.persist();
                 return true;
@@ -226,7 +226,7 @@ function create(ctx: Runtime) {
             resumeAfterPresentation();
             return true;
         }
-        if (cue.elapsed < 3) {
+        if (cue.elapsed < 1.5) {
             if (ctx.state.ticks % 6 === 0)
                 ctx.session.persist();
             return true;

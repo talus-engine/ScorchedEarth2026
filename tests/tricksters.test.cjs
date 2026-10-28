@@ -12,33 +12,11 @@ function fixture(){
     const talus={world:{id:'match-world',explode:spec=>{blasts.push(spec);return{carvedCells:0};},spawnParticles:spec=>{smoke.push(spec);return spec.count;}},game:{setSaveBarrier:(id,why)=>why===null?barriers.delete(id):barriers.set(id,why)},on:(event,fn)=>(handlers[event]||=[]).push(fn),entities:{get:id=>actors.get(id),spawn:async(template,x,y)=>{assert.equal(template,'sheep-template');if(spawnPromise)return spawnPromise;const actor=makeActor('sheep-'+(++spawnCounter),x,y);actors.set(actor.id,actor);return actor;}},installed:{set(key,value){if(persistFailure)throw Error('durable store refused');installed[key]=structuredClone(value);}}};
     function service(){const module={exports:{}};vm.runInNewContext(source,{module,exports:module.exports,talus,Math,Number,Object,JSON,Set});const api=module.exports(ctx);api.configure({...structuredClone(catalog),sheep:{...catalog.sheep,template:'sheep-template'}});return api;}
     const api=service();api.bind();
-    const collector={id:'tax-collector',behavior:{mode:'trickster',kind:'tax-collector'}},sheep={id:'black-sheep',behavior:{mode:'trickster',kind:'black-sheep'}};
-    function attack(){const a={owner:alpha.entityId,ids:{31:{depth:0}},rootId:31};api.prepareAttack(alpha.entityId,a,collector);return a;}
-    function event(overrides={}){return{projectileId:31,targetStableId:bravo.entityId,direct:true,amount:4,...overrides};}
-    return{api,ctx,talus,alpha,bravo,collector,sheep,attack,event,actors,blasts,smoke,regions,released,barriers,installed,failures,service,makeActor,
+    const sheep={id:'black-sheep',behavior:{mode:'trickster',kind:'black-sheep'}};
+    return{api,ctx,talus,alpha,bravo,sheep,actors,blasts,smoke,regions,released,barriers,installed,failures,service,makeActor,
         emit:(event,data)=>handlers[event]?.forEach(fn=>fn(data)),persistFailure:v=>persistFailure=v,spawnPromise:v=>spawnPromise=v};
 }
 const flush=()=>new Promise(resolve=>setImmediate(resolve));
-test('collector transfers existing cash atomically, once, without minting another end-round award',()=>{
-    const f=fixture(),a=f.attack();f.api.prepareAttack(f.alpha.entityId,a,f.collector);assert.equal(f.ctx.state.match.tricksters.serial,1);
-    assert.equal(f.api.hit(f.event(),a,f.collector),225);assert.equal(f.ctx.state.bank.players.alpha.cash,725);assert.equal(f.ctx.state.bank.players.bravo.cash,675);
-    assert.equal(f.alpha.cashEarned,80);assert.equal(f.bravo.cashEarned,90);assert.equal(f.ctx.state.bank.players.alpha.earned,200);
-    const stored=f.installed['indigo.economy'];assert.equal(stored.players.alpha.cash+stored.players.bravo.cash,1400);assert.equal(Object.keys(stored.tricksterTransfers).length,1);
-    assert.equal(f.api.hit(f.event(),a,f.collector),0);assert.equal(f.service().hit(f.event(),JSON.parse(JSON.stringify(a)),f.collector),0);
-    assert.equal(f.ctx.state.cashPopups.get(f.alpha.entityId),225,'Money goes to the wallet popup queue');
-});
-test('collector uses durable original account after elimination and caps the actual debit',()=>{
-    const f=fixture(),a=f.attack();f.alpha.eliminated=true;f.actors.delete(f.alpha.entityId);f.alpha.name='Renamed after firing';f.ctx.state.bank.players.bravo.cash=3000;
-    assert.equal(f.api.hit(f.event(),a,f.collector),250);assert.equal(f.ctx.state.bank.players.alpha.cash,750);assert.equal(f.ctx.state.bank.players.bravo.cash,2750);
-});
-test('collector refuses self, same-account, shielded, indirect and foreign projectile hits',()=>{
-    const f=fixture(),a=f.attack();for(const change of [{amount:0},{direct:false},{projectileId:99},{targetStableId:f.alpha.entityId},{targetStableId:'missing'}])assert.equal(f.api.hit(f.event(change),a,f.collector),0);
-    f.bravo.name='ALPHA';assert.equal(f.api.hit(f.event(),a,f.collector),0);assert.equal(f.ctx.state.bank.players.alpha.cash,500);assert.equal(f.ctx.state.bank.players.bravo.cash,900);
-});
-test('failed durable write leaves both wallets unchanged; empty-wallet receipt cannot be replayed after funding',()=>{
-    const f=fixture(),a=f.attack();f.persistFailure(true);assert.throws(()=>f.api.hit(f.event(),a,f.collector),/durable store refused/);assert.equal(f.ctx.state.bank.players.alpha.cash,500);assert.equal(f.ctx.state.bank.players.bravo.cash,900);
-    f.persistFailure(false);f.ctx.state.bank.players.bravo.cash=0;assert.equal(f.api.hit(f.event(),a,f.collector),0);f.ctx.state.bank.players.bravo.cash=1000;assert.equal(f.api.hit(f.event(),a,f.collector),0);assert.equal(f.ctx.state.bank.players.alpha.cash,500);
-});
 test('native sheep is saved with original source and runs toward nearby shot or blast noise',async()=>{
     const f=fixture();assert.equal(f.api.impact('black-sheep',f.alpha.entityId,{x:400,y:500}),true);assert.equal(f.api.settling(),true);f.api.tick(.1);assert.equal(f.api.busy(),true);assert.equal(f.barriers.size,1);await flush();
     const job=f.ctx.state.match.tricksters.sheep[0],actor=f.actors.get(job.entityId);assert.equal(f.api.busy(),false);assert.equal(f.barriers.size,0);assert.equal(actor.blackboard.values['custom.originalShooter'],f.alpha.entityId);
@@ -53,7 +31,7 @@ test('sheep uses native contact and one attributed explosion, even after shooter
     assert.equal(f.blasts.length,1);assert.equal(f.blasts[0].source,f.alpha.entityId);assert.equal(f.blasts[0].damage,catalog.sheep.damage);assert.equal(f.blasts[0].carveRadius,0);assert.equal(f.api.settling(),false);assert.ok(f.released.includes('trickster:'+job.id));assert.equal(f.smoke[0].count,36);
 });
 test('sheep fuse bounds settlement, out-of-bounds removal is harmless, and capacity is admitted before ammo',async()=>{
-    const f=fixture();for(let n=0;n<catalog.sheep.maxActive;n++)f.api.impact('black-sheep',f.alpha.entityId,{x:400+n*80,y:500});assert.equal(f.api.canFire(f.sheep),false);assert.equal(f.api.canFire(f.collector),true);f.api.tick(.1);await flush();
+    const f=fixture();for(let n=0;n<catalog.sheep.maxActive;n++)f.api.impact('black-sheep',f.alpha.entityId,{x:400+n*80,y:500});assert.equal(f.api.canFire(f.sheep),false);f.api.tick(.1);await flush();
     const first=f.ctx.state.match.tricksters.sheep[0],body=f.actors.get(first.entityId);body.position.x=-10;f.api.tick(.1);assert.equal(f.blasts.length,0);assert.equal(f.api.canFire(f.sheep),true);
     for(let n=0;n<catalog.sheep.fuseSeconds;n++)f.api.tick(1);assert.equal(f.blasts.length,catalog.sheep.maxActive-1);assert.equal(f.api.settling(),false);assert.equal(f.ctx.state.match.tricksters.sheep.length,0);
 });

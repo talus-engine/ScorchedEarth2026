@@ -35,11 +35,21 @@ templates. A CPU-only opening armory buys automatically. Human players can shop
 before beginning. A turn centers the camera smoothly on its tank, prepares its
 posture and enables only that tank's controller or CPU graph.
 
-Firing queues a presentation: camera arrival, dialogue for three seconds, then
+Firing queues a presentation: camera arrival, dialogue for 1.5 seconds, then
 an accepted native cast. The cast ends the tank's input period. Projectile
 launch, collision, hit and end events drive children, damage rewards and impact
 feedback. Resolution uses a bounded settling interval; powders need not become
 perfectly still. The score card precedes the next player card and turn.
+Turn cards last 0.35 seconds; the CPU's extra shot-choice pause is 0.2 seconds.
+Impacts wait 20–60 simulation ticks, and death close-ups last 0.8 seconds after
+the effect begins. Long-running death effects continue while other tanks act.
+
+Camera zoom stays at 25% between turns and closes to 50% before speech.
+During flight, live shell velocity widens the view toward the apex, then descent
+closes it toward the expected landing height. Short resident-terrain rays
+anticipate nearer walls. Zoom changes at frame cadence, stays within 25–50%,
+and pauses with the simulation or a shell held for streaming. These observations
+guide presentation only; native physics determines the actual impact.
 
 Death has its own camera/dialogue/effect sequence. Death emitters can continue
 while another tank acts. Their small native simulation regions exist only while
