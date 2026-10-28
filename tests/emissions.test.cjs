@@ -5,7 +5,7 @@ const assert = require('node:assert/strict'), fs = require('node:fs'), path = re
 const root = path.resolve(__dirname, '..');
 const shop = JSON.parse(fs.readFileSync(path.join(root, 'world/Game/shop.json'), 'utf8'));
 function scene(saved) {
-    const control = { ready: false, empty: false, particles: 'simulated', refusal: null, reject: null, explosion: { carvedCells: 0 }, placed: 8 };
+    const control = { ready: false, empty: false, particles: 'simulated', refusal: null, reject: null, explosion: { status: 'completed', reason: 'ok', carvedCells: 0 }, placed: 8 };
     const anchors = [], launches = [], sprays = [], explosions = [], records = [], pending = [], terrain = [];
     let api, nextId = 1, attempts = 0;
     const actor = { id: 'instance@emitter', residency: 'live', alive: true, position: { x: 5000, y: 600 },
@@ -14,7 +14,7 @@ function scene(saved) {
     };
     const shots = new Map([[1, { id: 1, exists: true }]]);
     const specCopy = spec => ({ ...spec, ...(spec.follow ? { follow: typeof spec.follow === 'string' ? spec.follow : spec.follow.id } : {}) });
-    const talus = { editor: { available: false }, on() { }, after() { },
+    const talus = { editor: { available: false }, on() { }, after() { }, log(message) { records.push(message); },
         sim: { clock: 0, paused: false, anchor(spec) {
                 attempts++;
                 if (control.reject)
@@ -196,6 +196,10 @@ async function main() {
         assert.equal(f.sprays.at(-1).y, 594);
         assert.equal(f.explosions.length, 1);
         assert.equal(f.explosions[0].radius, 48);
+        assert.equal(f.explosions[0].scope, 'world');
+        assert.equal(job.emissionDone, false, 'Finale waits for its native completion receipt');
+        await Promise.all(f.pending);
+        f.step(0, 'chaos');
         assert.equal(f.anchors[0].spec.halfWidth, 64, 'The origin region contains the whole authored finale radius');
         assert.equal(job.particles, 24);
         assert.equal(job.emissionDone, true);
@@ -212,10 +216,17 @@ async function main() {
         f.step(.05, 'chaos');
         assert.ok(f.anchors[0].spec.rect, 'An actually destroyed wreck leaves a native region at its last known physical effect point');
         assert.equal(f.anchors[0].updates, 1);
-        f.control.explosion = null;
-        assert.throws(() => f.api.finishEmission(job, fx), /Death finale refused/);
+        f.control.ready = false;
+        f.control.explosion = { status: 'refused', reason: 'capacity' };
+        assert.equal(f.api.finishEmission(job, fx), false);
         assert.equal(job.emissionDone, false);
-        f.api.fail(Error('finale refused'));
+        await Promise.all(f.pending);
+        f.step(0, 'chaos');
+        assert.equal(f.explosions[0].scope, 'world', 'Finale does not depend on the camera or a live wreck');
+        assert.equal(job.emissionDone, true);
+        assert.equal(f.api.match.phase, 'flight', 'A refused optional finale cannot soft-lock the battle');
+        assert.equal(f.api.match.chaos.jobs.length, 0);
+        assert.equal(f.records.length, 1, 'Native reason is retained in diagnostics');
         assert.equal(f.anchors[0].active, false);
         assert.equal(f.api.regions, 0);
     }
@@ -231,6 +242,8 @@ async function main() {
         f.control.placed = 8;
         f.step(.05, 'chaos');
         f.step(.2, 'chaos');
+        await Promise.all(f.pending);
+        f.step(0, 'chaos');
         assert.equal(job.emitted, 3);
         assert.equal(job.particles, 16);
         assert.equal(job.livePulses, 2);
@@ -281,11 +294,46 @@ async function main() {
         after.actor.residency = 'live';
         after.step(.1, 'chaos');
         after.step(.1, 'chaos');
+        await Promise.all(after.pending);
         assert.equal(after.sprays.length, 1, 'Already emitted pulses are not replayed');
         assert.equal(after.explosions.length, 1);
         assert.equal(after.api.regions, 0);
     }
     const flags = JSON.parse(fs.readFileSync(path.join(root, 'world/Game/chaos.json'), 'utf8'));
+    {
+        const f = scene(), { job, fx } = f.death(flags.effects.find(effect => effect.id === 'cryo'));
+        let complete;
+        f.control.explosion = new Promise(resolve => { complete = resolve; });
+        f.control.ready = true;
+        f.step(fx.duration, 'chaos');
+        assert.equal(f.explosions.length, 1);
+        f.actor.residency = 'stored';
+        f.control.ready = false;
+        f.step(20, 'chaos');
+        f.api.finishEmission(job, fx);
+        assert.equal(f.explosions.length, 1, 'In-flight world work is not duplicated across ticks');
+        assert.equal(job.workPending, true);
+        assert.equal(job.emissionDone, false);
+        assert.equal(f.api.regions, 0, 'Native world work owns its own reservation');
+        complete({ status: 'completed', reason: 'ok', carvedCells: 50 });
+        await Promise.all(f.pending);
+        f.step(0, 'chaos');
+        assert.equal(f.api.match.chaos.jobs.length, 0, 'An off-screen cryo finale completes and retires normally');
+        assert.equal(f.records.length, 0);
+        assert.equal(f.api.match.phase, 'flight');
+    }
+    for (const outcome of ['failed', 'cancelled', 'rejected']) {
+        const f = scene(), { job, fx } = f.death();
+        f.control.explosion = outcome === 'rejected' ? Promise.reject(Error('native publication fault'))
+            : { status: outcome, reason: 'native-' + outcome };
+        f.api.finishEmission(job, fx);
+        await Promise.all(f.pending);
+        f.api.finishEmission(job, fx);
+        assert.equal(job.emissionDone, true);
+        assert.equal(f.explosions.length, 1, 'A publication failure must never replay potentially applied damage');
+        assert.equal(f.api.match.phase, 'flight');
+        assert.equal(f.records.length, 1);
+    }
     assert.ok(flags.effects.filter(fx => fx.mode === 'spray').every(fx => fx.enabled && fx.duration <= 10 && fx.interval >= .1),
         'Material sprays have a finite duration and bounded pulse cadence');
     console.log('PASS: burst restoration without truncation, no whole-flight shooter pin, genuine death cancellation, bounded reserve/loading/particle readiness, immutable waiting RNG/emission counts, moving wrecks, finite finale scope, failure cleanup, independent shell/brush ownership and resumed emission without replay');

@@ -180,9 +180,15 @@ function create(ctx: Runtime) {
         const p = ctx.state.match.roster.find((r: any) => r.entityId === cue.owner), tank = ctx.core.entity(p);
         holdDeathPose(cue);
         const at = tank?.position;
+        const effect = cue.kind === 'death'
+            ? ctx.state.match.chaos.jobs.find((job: any) => job.id === (cue.chaosId ?? p.chaosId)) : null;
         if (at && cue.stage !== 'effect' && cue.resumeStage !== 'effect') {
             cue.x = at.x;
             cue.y = at.y;
+        }
+        else if (effect) {
+            cue.x = effect.x;
+            cue.y = effect.y;
         }
         const state = cue.kind === 'shooting' || cue.stage === 'centering' && at && cue.resumeStage !== 'effect'
             ? ctx.camera.cameraTank(p) : ctx.camera.cameraPoint(cue, 'death:' + cue.owner);
@@ -216,7 +222,11 @@ function create(ctx: Runtime) {
         }
         cue.elapsed = talus.sim.clock - cue.started;
         if (cue.stage === 'effect') {
-            if (cue.elapsed + 1e-9 < (ctx.state.chaosCatalog.deathWatchSeconds ?? .8)) {
+            if (effect)
+                cue.effectFinishedAt = null;
+            else
+                cue.effectFinishedAt ??= talus.sim.clock;
+            if (effect || talus.sim.clock - cue.effectFinishedAt + 1e-9 < (ctx.state.chaosCatalog.deathAftermathSeconds ?? 1)) {
                 if (ctx.state.ticks % 6 === 0)
                     ctx.session.persist();
                 return true;
@@ -234,6 +244,7 @@ function create(ctx: Runtime) {
         speech(p, null);
         if (cue.kind === 'death') {
             ctx.chaos.queueChaos(p, at || cue);
+            cue.chaosId = p.chaosId;
             cue.stage = 'effect';
             cue.started = talus.sim.clock;
             cue.elapsed = 0;

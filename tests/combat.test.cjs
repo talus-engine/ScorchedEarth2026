@@ -163,20 +163,39 @@ async function main() {
         f.talus.sim.clock = t + 2.299;
         f.api.tickPresentation();
         assert.equal(f.m.presentation.active.owner, a.entityId);
-        f.talus.sim.clock = t + 2.3;
+        const firstEffect = f.m.chaos.jobs[0];
+        firstEffect.x += 80;
+        firstEffect.y += 20;
+        f.talus.sim.clock = t + 12;
+        f.api.tickPresentation();
+        assert.equal(f.m.presentation.active.owner, a.entityId, 'The full effect keeps the camera, however long it runs');
+        assert.equal(f.centers.at(-1).x, firstEffect.x, 'Camera follows the effect when the wreck moves');
+        firstEffect.emissionDone = true;
+        firstEffect.projectileIds = [99];
+        f.talus.sim.clock += 1;
+        f.api.tickPresentation();
+        assert.equal(f.m.presentation.active.owner, a.entityId, 'Remaining death shells also retain the camera');
+        f.m.chaos.jobs = [];
+        f.api.tickPresentation();
+        f.talus.sim.clock += .999;
+        f.api.tickPresentation();
+        assert.equal(f.m.presentation.active.owner, a.entityId, 'The aftermath delay starts after completion');
+        f.talus.sim.clock += .001;
         f.api.tickPresentation();
         assert.equal(f.m.presentation.active, null);
         f.api.tickPresentation();
-        assert.equal(f.m.presentation.active.owner, b.entityId, 'Next death centers only after the previous 0.8-second watch');
+        assert.equal(f.m.presentation.active.owner, b.entityId, 'Next death waits for completion plus one second');
         f.talus.sim.clock += 1.5;
         f.api.tickPresentation();
-        assert.equal(f.m.chaos.jobs.length, 2);
-        f.talus.sim.clock += .8;
+        assert.equal(f.m.chaos.jobs.length, 1);
+        f.m.chaos.jobs = [];
+        f.api.tickPresentation();
+        f.talus.sim.clock += 1;
         f.api.tickPresentation();
         assert.equal(f.m.presentation.active, null);
         assert.equal(f.m.presentation.queue.length, 0);
         assert.ok(f.holds.slice(-2).every(h => h.seconds > 0 && h.seconds <= 30),
-            'Each physical effect keeps its finite hold after the camera moves on');
+            'Each physical effect receives a finite native pose hold');
     }
     {
         const f = scene(), p = f.m.roster[0];

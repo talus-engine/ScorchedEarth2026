@@ -24,7 +24,7 @@ function scene(effect) {
     f.talus.projectiles = { launch(spec) { const shot = { id: shots.length + 1, spec: structuredClone(spec), exists: true };
         shots.push(shot); return shot; }, get(id) { return shots.find(s => s.id === id); } };
     f.talus.world.spawnParticles = spec => { sprays.push(structuredClone(spec)); return spec.count; };
-    f.talus.world.explode = () => ({ carvedCells: 0 });
+    f.talus.world.explode = async () => ({ status: 'completed', reason: 'ok', carvedCells: 0 });
     ctx.session.run = fn => pending.push(fn());
     f.api.queueChaos(p);
     const job = f.m.chaos.jobs[0];
@@ -152,9 +152,11 @@ test('Concurrent native destruction cancels hull work without replacing the miss
     assert.equal(f.m.chaos.jobs.length, 0);
 });
 
-test('The furnace emits exactly one hundred finite pulses while the next turn can continue', () => {
+test('The furnace emits exactly one hundred finite pulses and awaits its finale', async () => {
     const f = scene('furnace');
     for (let n = 0; n < 101; n++) f.step(.1);
+    await f.settle();
+    f.step(0);
     assert.equal(f.sprays.length, 100);
     assert.equal(f.job.particles, 3200);
     assert.equal(f.job.emissionDone, true);
@@ -165,7 +167,7 @@ test('The furnace emits exactly one hundred finite pulses while the next turn ca
     assert.equal(f.sprays.length, 100, 'Residual material does not restart the emitter');
 });
 
-test('A furnace with blocked pulses finishes on time and releases its save barrier and pose', () => {
+test('A furnace with blocked pulses finishes on time and releases its save barrier and pose', async () => {
     for (const blockedFrom of [0, 40]) {
         const f = scene('furnace');
         f.talus.world.spawnParticles = spec => {
@@ -173,6 +175,8 @@ test('A furnace with blocked pulses finishes on time and releases its save barri
             return f.sprays.length > blockedFrom ? 0 : spec.count;
         };
         for (let n = 0; n < 101; n++) f.step(.1);
+        await f.settle();
+        f.step(0);
         assert.equal(f.m.phase, 'turn');
         assert.equal(f.job.emitted, 100);
         assert.equal(f.job.livePulses, blockedFrom);

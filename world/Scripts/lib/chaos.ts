@@ -101,21 +101,50 @@ function create(ctx: Runtime) {
                 beginTransmutation(job, fx, fx.finishMaterial);
             return false;
         }
-        if (fx.finishBlast) {
-            if (!ctx.residency.chaosRegionReady(job, fx))
-                return false;
-            const result = talus.world.explode({ x: job.x, y: job.y, radius: fx.finishBlast,
-                damage: 45, carveRadius: Math.round(fx.finishBlast * .6), carve: 'erase', source: job.owner });
-            if (!result)
-                throw new Error('Death finale refused: ' + job.effect);
+        if (fx.finishBlast && !job.finaleResult) {
+            if (!job.workPending)
+                beginFinale(job, fx);
+            return false;
         }
-        releaseDeathPose(job);
+        cleanupDeathPose(job);
         job.emissionDone = true;
         const corpse = talus.entities.get(job.owner);
         if (corpse?.exists && !job.materialConverted)
             corpse.despawn();
         ctx.residency.releaseEmissionRegion('death:' + job.id);
         return true;
+    }
+    function beginFinale(job: any, fx: any): void {
+        const match = ctx.state.match;
+        job.finaleStarted = true;
+        job.workPending = true;
+        // World explosions own their crater reservation and can hit stored actors.
+        ctx.residency.releaseEmissionRegion('death:' + job.id);
+        ctx.session.run(async () => {
+            const current = () => ctx.state.match === match && match.phase !== 'fault' && match.chaos.jobs.includes(job);
+            try {
+                const result = await talus.world.explode({ scope: 'world', x: job.x, y: job.y, radius: fx.finishBlast,
+                    damage: 45, carveRadius: Math.round(fx.finishBlast * .6), carve: 'erase', source: job.owner });
+                if (!current())
+                    return;
+                job.finaleResult = { status: result.status, reason: result.reason };
+            }
+            catch (error) {
+                if (!current())
+                    return;
+                job.finaleResult = { status: 'failed', reason: String(error) };
+            }
+            finally {
+                job.workPending = false;
+                if (current()) {
+                    // A terminal native refusal must not stop the battle or replay partial damage.
+                    if (job.finaleResult.status !== 'completed')
+                        talus.log('Death finale ' + job.effect + ': ' + job.finaleResult.status + ' / ' + job.finaleResult.reason);
+                    finishEmission(job, fx);
+                    ctx.session.persist();
+                }
+            }
+        });
     }
     function beginTransmutation(job: any, fx: any, element: string): void {
         job.workPending = true;
@@ -230,12 +259,12 @@ function create(ctx: Runtime) {
             if (!fx?.enabled)
                 throw new Error('Death effect needs engine support: ' + job.effect);
             const wreck = talus.entities.get(job.owner)?.position;
-            if (!job.emissionDone && wreck) {
+            if (!job.emissionDone && !job.finaleStarted && wreck) {
                 job.x = wreck.x;
                 job.y = wreck.y;
             }
             try {
-                if (!job.emissionDone && ['spray', 'shells', 'magazine', 'transmute'].includes(fx.mode) && !ctx.residency.chaosRegionReady(job, fx))
+                if (!job.emissionDone && !job.finaleStarted && ['spray', 'shells', 'magazine', 'transmute'].includes(fx.mode) && !ctx.residency.chaosRegionReady(job, fx))
                     continue;
                 tickEffect(job, fx, dt);
             }
@@ -304,7 +333,7 @@ function create(ctx: Runtime) {
         if (job.emissionDone && job.projectileIds.length === 0) {
             ctx.state.match.chaos.jobs = ctx.state.match.chaos.jobs.filter((v: any) => v.id !== job.id);
         }
-        else if (job.elapsed > (fx.duration || 0) + 12) {
+        else if (!job.workPending && job.elapsed > (fx.duration || 0) + 12) {
             throw new Error('Death projectile did not resolve: ' + job.effect);
         }
     }

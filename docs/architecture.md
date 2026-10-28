@@ -41,8 +41,11 @@ launch, collision, hit and end events drive children, damage rewards and impact
 feedback. Resolution uses a bounded settling interval; powders need not become
 perfectly still. The score card precedes the next player card and turn.
 Turn cards last 0.75 seconds; the CPU's extra shot-choice pause is 0.2 seconds.
-Impacts wait 20–60 simulation ticks, and death close-ups last 0.8 seconds after
-the effect begins. Long-running death effects continue while other tanks act.
+Impacts wait 20–60 simulation ticks. Death close-ups follow the effect through
+its final blast and remaining shells, then linger for one second. Final blasts
+use native world-scope explosions so stored targets remain eligible; a refused
+optional finale is logged without stopping the match. Residual particles keep
+simulating after the close-up ends.
 
 Camera zoom stays at 25% between turns and closes to 50% before speech.
 During flight, live shell velocity widens the view toward the apex, then descent

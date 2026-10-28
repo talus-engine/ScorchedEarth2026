@@ -75,7 +75,8 @@ function finishedDeath(f, p) {
     p.eliminated = true;
     p.chaosId = 1; // Its physical effect has already completed.
     const at = f.actors.get(p.entityId).position;
-    return { owner: p.entityId, kind: 'death', ...at, stage: 'effect', started: f.talus.sim.clock, elapsed: 0 };
+    return { owner: p.entityId, kind: 'death', ...at, stage: 'effect', started: f.talus.sim.clock, elapsed: 0,
+        effectFinishedAt: f.talus.sim.clock };
 }
 function enableBoot(f) {
     // Preserve the fixture's utility capabilities across a real boot; utility
@@ -176,6 +177,11 @@ async function main() {
         assert.ok(f.m.presentation.active);
         f.talus.sim.clock = start + 2.3;
         f.api.tickPresentation();
+        assert.ok(f.m.presentation.active, 'The camera waits while physical death work remains');
+        f.m.chaos.jobs = [];
+        f.api.tickPresentation();
+        f.talus.sim.clock += 1;
+        f.api.tickPresentation();
         assert.equal(f.m.presentation.active, null);
     }
     {
@@ -235,7 +241,7 @@ async function main() {
         f.m.turnNumber = 7;
         f.m.remaining = 2.25;
         const cue = finishedDeath(f, f.m.roster[1]);
-        cue.started -= .8;
+        cue.effectFinishedAt -= 1;
         f.m.presentation.active = cue;
         tank.residency = 'stored';
         f.api.cameraPoint(cue, 'death:' + cue.owner);
@@ -277,7 +283,7 @@ async function main() {
         tank.residency = 'stored';
         f.emit('tick.frame', { dt: .5 });
         assert.equal(f.ui.arcadeCards.length, 0);
-        await advance(.8); // The death camera has stolen the previous successful focus.
+        await advance(1); // The death camera has stolen the previous successful focus.
         assert.equal(f.m.presentation.active, null);
         f.emit('tick.frame', { dt: 0 });
         f.emit('tick.frame', { dt: 1 });

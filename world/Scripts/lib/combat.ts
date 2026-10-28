@@ -207,13 +207,17 @@ function create(ctx: Runtime) {
             const receipt = await talus.world.terrainWork({ kind: 'recipe', shape: { x, y, radius },
                 simulationRegion: { x: x - radius - 32, y: y - radius - 32, w: radius * 2 + 64, h: radius * 2 + 256 },
                 bounds: { ...ctx.state.arena.bounds, h: 1024 }, replacement: 'empty', budget: { cells, particles: cells, work: cells },
-                recipe: materialRecipe(behavior.element) as TerrainRecipe, seed: ctx.core.chaosSeed(ctx.state.match.seed + ':' + a.rootId), holdSeconds: 1 });
+                recipe: materialRecipe(behavior.element) as TerrainRecipe, seed: ctx.core.chaosSeed(ctx.state.match.seed + ':' + a.rootId), holdSeconds: behavior.ignite ? 0 : 1 });
             if (receipt.status !== 'completed')
                 throw new Error(a.item + ' payload: ' + receipt.reason);
             if (behavior.ignite) {
-                const fire = await talus.world.terrainWork({ kind: 'recipe', shape: { x: x - 8, y: y - radius - 5, w: 16, h: 4 },
-                    bounds: ctx.state.arena.bounds, replacement: 'empty', budget: { cells: 64, particles: 64, work: 64 },
-                    recipe: materialRecipe('FIRE') as TerrainRecipe, seed: ctx.core.chaosSeed(ctx.state.match.seed + ':ignition:' + a.rootId), holdSeconds: .25 });
+                const top = y + Math.floor(radius / 4), height = y + radius - top, fireCells = radius * 2 * height;
+                // Replace fuel at the bottom of the pool; air and surrounding terrain stay untouched.
+                const fire = await talus.world.terrainWork({ kind: 'recipe', shape: { x: x - radius, y: top, w: radius * 2, h: height },
+                    bounds: { ...ctx.state.arena.bounds, h: 1024 }, replacement: 'matching',
+                    materials: [{ element: talus.elements.get(behavior.element)!.id, hardness: 1 }],
+                    budget: { cells: fireCells, particles: fireCells, work: fireCells },
+                    recipe: materialRecipe('FIRE') as TerrainRecipe, seed: ctx.core.chaosSeed(ctx.state.match.seed + ':ignition:' + a.rootId), holdSeconds: .1 });
                 if (fire.status !== 'completed')
                     throw new Error('Ignition: ' + fire.reason);
             }
