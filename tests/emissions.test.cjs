@@ -223,10 +223,20 @@ async function main() {
         const f = scene(), { job } = f.death();
         f.control.ready = true;
         f.control.placed = 0;
-        assert.throws(() => f.step(.05, 'chaos'), /placed no particles/);
-        assert.equal(job.emitted, 0);
-        assert.equal(job.particles, 0, 'An empty native spray is never recorded as a successful pulse');
-        f.api.fail(Error('empty spray'));
+        f.step(.05, 'chaos');
+        assert.equal(job.emitted, 1, 'An empty pulse consumes its scheduled attempt');
+        assert.equal(job.emptyPulses, 1);
+        assert.equal(job.livePulses, 0);
+        assert.equal(job.particles, 0, 'An empty native spray never invents particles');
+        f.control.placed = 8;
+        f.step(.05, 'chaos');
+        f.step(.2, 'chaos');
+        assert.equal(job.emitted, 3);
+        assert.equal(job.particles, 16);
+        assert.equal(job.livePulses, 2);
+        assert.equal(f.api.match.phase, 'flight', 'An empty death pulse must not fault the active match');
+        assert.equal(job.emissionDone, true);
+        assert.equal(f.explosions.length, 1);
         assert.equal(f.api.regions, 0);
     }
     {

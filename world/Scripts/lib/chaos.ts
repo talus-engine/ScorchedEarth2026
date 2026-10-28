@@ -272,11 +272,14 @@ function create(ctx: Runtime) {
                     const placed = talus.world.spawnParticles({ element: fx.element,
                         x: job.x, y: job.y - 26, count: fx.count, vx: 0, vy: -fx.speed,
                         spread: fx.spread, speedJitter: .3 });
-                    if (!(placed > 0))
-                        throw new Error('Death spray placed no particles: ' + job.effect + ' pulse ' + n);
+                    if (!Number.isSafeInteger(placed) || placed < 0)
+                        throw new Error('Invalid death spray particle count: ' + job.effect + ' pulse ' + n);
                     job.particles += placed;
                     if (placed > 0)
                         job.livePulses++;
+                    else
+                        // Occupied space or particle capacity may prevent this pulse; its time still passes.
+                        job.emptyPulses = (job.emptyPulses || 0) + 1;
                     if (fx.ignite && n % 3 === 0)
                         job.particles += talus.world.spawnParticles({
                             element: 'FIRE', x: job.x, y: job.y - 30, count: 8, vx: 0, vy: -80, spread: 1

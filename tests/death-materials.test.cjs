@@ -164,3 +164,27 @@ test('The furnace emits exactly one hundred finite pulses while the next turn ca
     f.step(2);
     assert.equal(f.sprays.length, 100, 'Residual material does not restart the emitter');
 });
+
+test('A furnace with blocked pulses finishes on time and releases its save barrier and pose', () => {
+    for (const blockedFrom of [0, 40]) {
+        const f = scene('furnace');
+        f.talus.world.spawnParticles = spec => {
+            f.sprays.push(structuredClone(spec));
+            return f.sprays.length > blockedFrom ? 0 : spec.count;
+        };
+        for (let n = 0; n < 101; n++) f.step(.1);
+        assert.equal(f.m.phase, 'turn');
+        assert.equal(f.job.emitted, 100);
+        assert.equal(f.job.livePulses, blockedFrom);
+        assert.equal(f.job.emptyPulses, 100 - blockedFrom);
+        assert.equal(f.job.particles, blockedFrom * 32);
+        assert.equal(f.job.emissionDone, true);
+        assert.equal(f.m.chaos.jobs.length, 0);
+        assert.equal(f.ctx.state.emissionRegions.size, 0);
+        assert.equal(f.ctx.state.deathPoseHolds.size, 0);
+        assert.equal(f.barriers.has('match-sequence'), false);
+        assert.equal(f.holds.at(-1), 0);
+        f.step(10);
+        assert.equal(f.sprays.length, 100, 'Blocked pulses are never replayed or retried forever');
+    }
+});
