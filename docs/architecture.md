@@ -25,7 +25,7 @@ loaded by Talus once per script sandbox and do not start as independent scripts.
 | `special-weapons` | Bound cutting-shot aim estimates by native range, material eligibility and the protected foundation |
 | `presentation`, `camera` | Smooth tracking, three-second dialogue, arcade cards and native text labels |
 | `residency`, `supplies` | Restore parked tanks, own bounded emitter regions, focus and award supply drops |
-| `generation`, `landscape`, `brushes` | Select pinned presets, place terrain and physical structures, find supported deployment positions |
+| `generation` | Configure native WFC/maze terrain and find supported deployment positions |
 | `core` | Shared predicates, clamping and deterministic seed hashing |
 
 ## Turn sequence
@@ -75,7 +75,7 @@ stays on its results.
 ## State ownership
 
 - `talus.state['indigo.match']`: the current instance's roster, turn, selected
-  generation plan, CPU observations and pending work.
+  terrain source, CPU observations and pending work.
 - Installed state: named wallets, stock, score/series records, preferences and
   shuffled dialogue decks, shared across plays.
 - NPC blackboards: the current controller/graph inputs, target, angle, power,

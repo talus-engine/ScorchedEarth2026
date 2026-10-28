@@ -4,7 +4,7 @@ const personas = require('../world/Game/personas.json');
 function scene() {
     const f = fixture(); f.api.setPersonas(personas);
     Object.assign(f.m, { phase: 'finished', resultsShown: true, series: { complete: false }, seriesId: 'cup', seriesLength: 5,
-        round: 2, seed: 19, baseGeneration: { recipe: 'brush', recipeParameters: { brush: { frequency: 2 } } } });
+        round: 2, seed: 19, baseGeneration: { recipe: 'rat-run', recipeParameters: { 'rat-run': { cellSize: 64 } } } });
     return f;
 }
 test('CPU round transition persists shopping and typed settings once before native acceptance', async () => {
@@ -19,7 +19,7 @@ test('CPU round transition persists shopping and typed settings once before nati
     await f.api.advanceCpuRound();
     assert.equal(calls, 1); assert.equal(request.round, 3); assert.equal(request.seriesId, 'cup');
     assert.equal(request.humans, 0); assert.equal(request.computers, 2); assert.equal(request.seed, (19 + 0x9e3779b9) >>> 0);
-    assert.equal(request.generation.recipeParameters.brush.frequency, 2);
+    assert.equal(request.generation.recipeParameters['rat-run'].cellSize, 64);
 });
 test('CPU round transition respects presentation, pause, exit, native barriers and human choices', async () => {
     for (const inhibit of [f => f.m.resultsShown = false, f => f.talus.sim.paused = true,

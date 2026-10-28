@@ -19,9 +19,10 @@ CPU-only series also buy supplies and deploy the next round automatically;
 the completed series remains on its results screen.
 
 The battlefield is 50 WFC tiles wide and 5 tall. Tiles are 256×256 pixels with a
-solid stone foundation. Generation can also use zones, mazes and noise-driven
-brush landscapes with semantic, neural, living and vector details. Advanced
-setup exposes the terrain parameters.
+solid stone foundation. Choose painted WFC terrain or one of four native maze
+styles: Bunker Grid, Rat Run, Cavern War and Terrace Siege. Random selection
+uses only these maps. Advanced setup exposes the maze parameters. Each round
+creates its terrain on demand through native chunk streaming.
 
 - Two to sixteen tanks compete. Each gets a timed turn to move, aim and shoot.
 - Shooting ends the tank's input period; the projectile and its effects resolve
@@ -76,7 +77,7 @@ cannot capture the whole project.
 ## Customize the template
 
 Start with [arena rules](world/Game/arena.json), [the armory](world/Game/shop.json),
-[personas](world/Game/personas.json) and [terrain settings](world/Game/generation.json).
+[personas](world/Game/personas.json) and [terrain settings](world/Game/terrain-recipes.json).
 The scripts use native Talus features for physics, streaming, animation,
 particles, weapon planning and persistence. The game owns turn sequencing,
 rewards, CPU strategy and presentation policy.

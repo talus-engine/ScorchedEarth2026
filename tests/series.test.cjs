@@ -143,10 +143,10 @@ async function main() {
         f.m.biomeRounds = 2;
         f.m.series.complete = false;
         f.m.round = 2;
-        f.m.baseGeneration = { recipe: 'wfc', parameters: { density: 1 }, recipeParameters: { brush: { frequency: 2 } } };
-        assert.equal(f.api.nextGeneration().recipe, 'brush');
+        f.m.baseGeneration = { recipe: 'wfc', parameters: { density: 1 }, recipeParameters: { 'bunker-grid': { cellSize: 64 } } };
+        assert.equal(f.api.nextGeneration().recipe, 'bunker-grid');
         assert.equal(f.api.nextGeneration().parameters, undefined);
-        assert.equal(f.api.nextGeneration().recipeParameters.brush.frequency, 2);
+        assert.equal(f.api.nextGeneration().recipeParameters['bunker-grid'].cellSize, 64);
     }
     {
         const f = setup();

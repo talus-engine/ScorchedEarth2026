@@ -28,7 +28,7 @@ test('enabled cutting weapons use native casts and are present in every tank inv
 
 test('all native drill roots and payloads remain bounded and protect the complete foundation', () => {
     const floor = arena.bounds.y + arena.terrain.solidBottomTileRow * arena.tiles.chunksPerTile * 64;
-    const right = arena.bounds.x + arena.generation.brushOriginX + arena.bounds.w;
+    const right = arena.bounds.x + arena.bounds.w;
     const inspect = (spec, label) => {
         const x = spec.excavation;
         assert.equal(spec.kind, 'rigid-body', label);

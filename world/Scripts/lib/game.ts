@@ -1,5 +1,5 @@
 /** Compose the game services before registering native events. */
-import type { Runtime } from 'context';
+import type { Runtime, State } from 'context';
 import core = require('core');
 import residency = require('residency');
 import presentation = require('presentation');
@@ -19,12 +19,10 @@ import ordnance = require('ordnance');
 import tricksters = require('tricksters');
 import payloads = require('payloads');
 import generation = require('generation');
-import landscape = require('landscape');
-import brushes = require('brushes');
 import menus = require('menus');
 import lifecycle = require('lifecycle');
 function create() {
-    const ctx = { state: {
+    const state: State = {
             arena: undefined,
             match: undefined,
             chaosCatalog: undefined,
@@ -35,7 +33,7 @@ function create() {
             shopOpen: false,
             shopIndex: 0,
             shopCategory: 'All',
-            generationRecipes: undefined,
+            terrainCatalog: { version: 1, recipes: [] },
             personaCatalog: undefined,
             soundCatalog: undefined,
             childDepth: 0,
@@ -78,7 +76,8 @@ function create() {
                 until: number;
             }>(),
             cameraIntent: null,
-        } } as Runtime;
+        };
+    const ctx = { state } as Runtime;
     ctx.core = core(ctx);
     ctx.residency = residency(ctx);
     ctx.presentation = presentation(ctx);
@@ -98,8 +97,6 @@ function create() {
     ctx.tricksters = tricksters(ctx);
     ctx.payloads = payloads(ctx);
     ctx.generation = generation(ctx);
-    ctx.landscape = landscape(ctx);
-    ctx.brushes = brushes(ctx);
     ctx.menus = menus(ctx);
     ctx.lifecycle = lifecycle(ctx);
     function start() {

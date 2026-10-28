@@ -31,24 +31,22 @@ X0, X4, X8 and X12. Sky is at (0,0), and bedrock at (0,16). Paint the source
 origins in the editor, save, and export the complete project to capture the art.
 The live artist layout may intentionally omit or relocate scaffold slots.
 
-## Procedural families
+## Map types
 
-Native terrain recipes select WFC, zone and maze forms, including materialized
-zones decorated with brushes. The advanced setup panel exposes their native
-parameters. Brush landscapes build a foundation and connected central terrain,
-then use noise, semantic, neural, living and vector tools from the pinned catalog.
+`world/Game/terrain-recipes.json` contains painted WFC terrain and four native
+maze variants: Bunker Grid, Rat Run, Cavern War and Terrace Siege. Random
+selection and landscape tours use this same catalog. The advanced setup panel
+exposes each maze's native parameters, with a solid stone foundation beneath
+all maps and an open central deployment area in each maze.
 
-Preset selection uses seeded shuffled bags. Story affinities weight ordering
-without excluding presets from a complete bag. Noise strokes vary spin and Size
-LFO amplitude. Living brushes scale nominal growth and planting density to a
-bounded region. Textured vectors become material-appropriate physical planks,
-blocks and other props. Story motifs add breakable supports and reservoirs.
+Only the current round is created. Talus generates its terrain as chunks stream
+into view; the game waits for camera readiness and finds supported tank positions.
+There is no whole-map decoration pass before deployment. Saved terrain damage
+is preserved by the native world lifecycle.
 
-Foreground clearance uses large spinning flower masks with an empty-heavy
-semantic mixture. It follows the terrain imperfectly and leaves the background
-and stone foundation intact. Native terrain receipts must report completion and
-actual body placement before progress is persisted. A refusal stops generation
-with its reason; it is not silently counted as completed work.
+Project-owned noise, semantic, neural, living and vector presets remain in
+`world/Game/Presets/` for editor painting and weapon effects. They are not loaded
+or validated during match startup.
 
 `tools/build_wfc_template.cjs` regenerates the local bootstrap and reference files
 from `assets/art/terrain-swatch.svg`. It does not install them into the editor.

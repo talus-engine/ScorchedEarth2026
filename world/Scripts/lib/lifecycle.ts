@@ -10,7 +10,7 @@ function create(ctx: Runtime) {
             ctx.state.chaosCatalog = JSON.parse((await talus.files.readText('Game/chaos.json'))!);
             ctx.state.quipCatalog = JSON.parse((await talus.files.readText('Game/quips.json'))!);
             ctx.state.market = JSON.parse((await talus.files.readText('Game/shop.json'))!);
-            ctx.state.generationRecipes = JSON.parse((await talus.files.readText('Game/generation.json'))!);
+            ctx.state.terrainCatalog = JSON.parse((await talus.files.readText('Game/terrain-recipes.json'))!);
             ctx.state.personaCatalog = JSON.parse((await talus.files.readText('Game/personas.json'))!);
             ctx.state.soundCatalog = JSON.parse(await talus.files.readText('Game/audio.json') || '{}');
             ctx.state.supplyCatalog = JSON.parse((await talus.files.readText('Game/supply-drops.json'))!);
@@ -57,7 +57,7 @@ function create(ctx: Runtime) {
                     ctx.state.booted = true;
                     return;
                 }
-                ctx.generation.configureGeneration(talus.world.generation.status().recipeId || (params.generation === 'brush' ? 'brush' : 'wfc'));
+                ctx.generation.configureGeneration(talus.world.generation.status().recipeId || 'wfc');
                 try {
                     ctx.state.match = ctx.menus.validate(params);
                 }
@@ -73,10 +73,7 @@ function create(ctx: Runtime) {
                     turnSeconds: ctx.state.match.turnSeconds, cpuSkill: ctx.state.match.cpuSkill, seriesLength: ctx.state.match.seriesLength, biomeCycle: ctx.state.match.biomeCycle ? 'cycle' : 'random', biomeRounds: ctx.state.match.biomeRounds, generation: ctx.state.match.generation, namesText: ctx.state.match.roster.map((p: any) => p.name).join('\n') });
             }
             ctx.session.persist();
-            if (ctx.state.match.generation === 'brush' && ctx.state.arena.bounds.x === 0)
-                ctx.generation.configureGeneration('brush');
-            else if (ctx.state.match.generation !== 'brush')
-                ctx.generation.configureGeneration(ctx.state.match.generation);
+            ctx.generation.configureGeneration(ctx.state.match.generation);
             if (ctx.state.match.attack)
                 throw new Error('An attack was interrupted by loading. Native projectile/cast persistence is required; start a fresh match.');
             if (ctx.state.match.presentation.active) {
@@ -100,25 +97,6 @@ function create(ctx: Runtime) {
                 const generation = talus.world.generation.status();
                 if (generation.phase === 'failed')
                     throw new Error('Native terrain generation: ' + generation.reason);
-                await ctx.generation.prepareProcedural();
-                if (ctx.state.match.generation === 'brush')
-                    await ctx.brushes.generateBrushArena();
-                else if (ctx.state.generationRecipes.hybrid.recipes.includes(ctx.state.match.generation)) {
-                    await ctx.landscape.generateStoryMacro();
-                    await ctx.brushes.prepareClearance();
-                    await ctx.brushes.generateBrushDetails();
-                    await ctx.brushes.generateStructures();
-                    await ctx.brushes.generateLivingArena();
-                    await ctx.brushes.clearCombatSpace();
-                    await ctx.landscape.generateStoryMechanisms();
-                }
-                else if (ctx.state.match.generation === 'bramble-badlands') {
-                    await ctx.landscape.generateStoryMacro();
-                    await ctx.brushes.prepareClearance();
-                    await ctx.brushes.generateLivingArena();
-                    await ctx.brushes.clearCombatSpace();
-                    await ctx.landscape.generateStoryMechanisms();
-                }
                 for (const p of ctx.state.match.roster) {
                     if (p.entityId && p.placementReady)
                         continue;

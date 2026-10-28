@@ -49,8 +49,8 @@ archive before installing these records; they use durable native IDs.
 - Cash, prices, ammunition and weapons: `Game/shop.json`.
 - CPU personas, factions, tactics and voices: `Game/personas.json` and
   `Game/persona-voices.json`.
-- Terrain families and parameters: `Game/generation.json`,
-  `Game/terrain-recipes.json` and `Game/landscape-stories.json`.
+- Terrain families and parameters: `Game/terrain-recipes.json`.
+  Editor brush resources: `Game/Presets/`.
 - Menus: `Menus/*.html`; shared styling: `Menus/arcade.css`. Run
   `node tools/menus.cjs` to embed the shared theme into self-contained menus.
 - Title material stripes: `Game/title-logo-pattern.js`; source art:

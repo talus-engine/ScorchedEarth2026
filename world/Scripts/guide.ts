@@ -3,7 +3,7 @@ if (talus.editor.available) {
     const files = new Set([
         'Scripts/main.ts', 'Scripts/lib/game.ts', 'Game/arena.json',
         'Graphs/cpu-turn.json', 'Game/shop.json', 'Game/personas.json',
-        'Menus/hud.html', 'Menus/setup.html', 'WFC/README.md', 'Game/generation.json',
+        'Menus/hud.html', 'Menus/setup.html', 'WFC/README.md', 'Game/terrain-recipes.json',
     ]);
     async function preview(title: string, text: string): Promise<void> {
         const lines = text.split('\n');

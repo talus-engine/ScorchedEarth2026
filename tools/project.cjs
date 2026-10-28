@@ -64,12 +64,7 @@ async function catalog() {
     if (job.state !== 'completed') throw Error(JSON.stringify(job.error || job));
     const result = job.catalog;
     writeJSON(path.join(ROOT, 'world/Game/Presets/catalog.json'), result);
-    const settingsPath = path.join(ROOT, 'world/Game/generation.json');
-    const settings = readJSON(settingsPath);
-    Object.assign(settings.catalog, { id: result.id, hash: result.hash });
-    writeJSON(settingsPath, settings);
     await write('Game/Presets/catalog.json');
-    await write('Game/generation.json');
     console.log(`Captured ${result.manifest.entries.length} project-owned resources.`);
 }
 

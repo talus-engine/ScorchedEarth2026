@@ -18,7 +18,7 @@ Choose New game, a seed or random map, and 2–16 human/CPU players, then Start 
 
 [Surface tile origins](camera:2304,640,0.25) · [Foundation origins](camera:512,896,0.5) · [Battlefield](camera:6400,640,0.25)
 
-All WFC tiles are 256×256 pixels. Preserve connector spans and edge collars; paint interiors freely. [Artist guide](event:guide:file?path=WFC/README.md) · [Generation presets](event:guide:file?path=Game/generation.json)
+All WFC tiles are 256×256 pixels. Preserve connector spans and edge collars; paint interiors freely. [Artist guide](event:guide:file?path=WFC/README.md) · [Terrain settings](event:guide:file?path=Game/terrain-recipes.json)
 
 The repository README maps all files, tools and assets. Save in Talus and export the complete project to retain painted terrain and Title. File sync alone does not capture native world data.
 

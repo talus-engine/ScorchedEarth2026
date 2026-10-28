@@ -97,7 +97,7 @@ function create(ctx: Runtime) {
         const request = ctx.state.match.baseGeneration || generationRequest(talus.game.params);
         if (!ctx.state.match.biomeCycle)
             return request;
-        const cycle = ['wfc', 'brush', 'dune-sea', 'bunker-grid', 'shattered-highlands', 'rat-run', 'bramble-badlands', 'cavern-war', 'crater-country', 'terrace-siege', 'verdant-reach'];
+        const cycle = ctx.state.terrainCatalog.recipes.map(recipe => recipe.id);
         const nextRound = ctx.state.match.series?.complete ? 1 : ctx.state.match.round + 1;
         const recipe = cycle[Math.floor((nextRound - 1) / (ctx.state.match.biomeRounds || 1)) % cycle.length];
         return { ...request, recipe, parameters: recipe === request.recipe ? request.parameters : undefined };
@@ -122,9 +122,6 @@ function create(ctx: Runtime) {
         generation: string;
         generationChoice: any;
         terrainSource: TerrainGenerationStatus;
-        generated: number;
-        details: number;
-        livingSites: number;
         seed: number;
         biome: any;
         seriesId: string;
@@ -207,10 +204,10 @@ function create(ctx: Runtime) {
         if (new Set(roster.map(p => p.name.toLowerCase())).size !== count)
             throw new Error('Use a different name for each tank so scores stay distinct.');
         return { presentation: { active: null, queue: [] }, pendingTurn: null, attack: null,
-            generation: source?.recipeId || (params.generation === 'brush' ? 'brush' : 'wfc'),
+            generation: source?.recipeId || 'wfc',
             generationChoice: params.generation?.recipe || params['generation.recipe'] || source?.recipeId || 'wfc',
             terrainSource: source || null,
-            generated: 0, details: 0, livingSites: 0, seed: talus.world.seed, biome: ctx.state.arena.biome.id,
+            seed: talus.world.seed, biome: ctx.state.arena.biome.id,
             seriesId: String(params.seriesId || talus.world.id), seriesLength: [1, 3, 5, 7, 9].includes(Number(params.seriesLength)) ? Number(params.seriesLength) : 1,
             biomeCycle: params.biomeCycle === 'cycle', biomeRounds: ctx.core.clamp(Math.floor(Number(params.biomeRounds) || 1), 1, 9), baseGeneration: params.baseGeneration || generationRequest(params),
             round: Math.max(1, Math.floor(Number(params.round) || 1)), cashShots: {}, cashNotice: '',

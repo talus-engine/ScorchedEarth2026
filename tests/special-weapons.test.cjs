@@ -57,13 +57,13 @@ test('confirmed direct hits retain angle and power; misses do not invent learned
     assert.equal(candidate(cutter, origin, target, { ...context, best: { ...best, guidance: 'heat-guidance' } }).guidance, 'heat-guidance');
 });
 
-test('native payload reach is finite and shifted brush worlds keep the same foundation', () => {
+test('native payload reach is finite and shifted arenas keep the same foundation', () => {
     const carrier = { ...cutter.projectile, speed: 200, lifetime: 8, detonate: { fuse: .8 },
         triggerChild: [{ ...cutter.projectile, speed: 160, lifetime: 2, excavation: { distance: 260 } }] };
     assert.equal(flightReach(carrier), 420, 'Fuse travels 160px; child cuts at most 260px');
     const shifted = structuredClone(arena);
-    shifted.bounds.x += arena.generation.brushOriginX;
-    const offset = arena.generation.brushOriginX;
+    const offset = 16384;
+    shifted.bounds.x += offset;
     assert.ok(candidate(cutter, { ...origin, x: origin.x + offset }, { ...target, x: target.x + offset }, { ...context, arena: shifted }));
     assert.equal(candidate(cutter, origin, target, { ...context, arena: shifted }), null);
 });

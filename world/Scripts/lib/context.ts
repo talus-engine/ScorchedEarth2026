@@ -18,7 +18,7 @@ export interface State {
     shopOpen: boolean;
     shopIndex: number;
     shopCategory: string;
-    generationRecipes: any;
+    terrainCatalog: TerrainRecipeCatalog;
     personaCatalog: any;
     soundCatalog: any;
     childDepth: number;
@@ -90,8 +90,6 @@ export interface Runtime {
     tricksters: ReturnType<typeof import('tricksters')>;
     payloads: ReturnType<typeof import('payloads')>;
     generation: ReturnType<typeof import('generation')>;
-    landscape: ReturnType<typeof import('landscape')>;
-    brushes: ReturnType<typeof import('brushes')>;
     menus: ReturnType<typeof import('menus')>;
     lifecycle: ReturnType<typeof import('lifecycle')>;
 }
