@@ -47,10 +47,12 @@ use native world-scope explosions so stored targets remain eligible; a refused
 optional finale is logged without stopping the match. Residual particles keep
 simulating after the close-up ends.
 
-Camera zoom stays at 25% between turns and closes to 50% before speech.
+Camera zoom uses canvas pixels per world pixel: 1 (100%) between turns and
+2 (200%) before speech. At a 1600-pixel-wide canvas these show 1600 and 800
+world pixels respectively.
 During flight, live shell velocity widens the view toward the apex, then descent
 closes it toward the expected landing height. Short resident-terrain rays
-anticipate nearer walls. Zoom changes at frame cadence, stays within 25–50%,
+anticipate nearer walls. Zoom changes at frame cadence, stays within 100–200%,
 and pauses with the simulation or a shell held for streaming. These observations
 guide presentation only; native physics determines the actual impact.
 

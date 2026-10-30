@@ -7,7 +7,7 @@ function setup(computers = 2) {
     const f = fixture(undefined, false, computers), calls = [], texts = [], shots = [], holds = [], plates = [];
     let tracking = null, serial = 0;
     f.talus.camera = {
-        view: { zoom: .5 },
+        view: { zoom: 2 },
         setZoom(zoom) { this.view.zoom = zoom; return this.view; },
         get tracking() { return tracking; },
         track(target, options) {
@@ -88,7 +88,7 @@ function enableBoot(f) {
     f.talus.audio = { play() { } };
     f.talus.encounters = { get: () => ({}) };
     f.talus.sim.pause = () => { f.talus.sim.paused = true; };
-    f.talus.camera.setZoom = zoom => assert.equal(zoom, .25);
+    f.talus.camera.setZoom = zoom => assert.equal(zoom, 1);
     f.talus.camera.follow = mode => assert.equal(mode, 'off');
     f.talus.camera.frame = frame => assert.equal(frame, null, 'Reload clears only the obsolete all-tank frame');
 }

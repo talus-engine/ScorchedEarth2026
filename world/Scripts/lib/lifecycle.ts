@@ -42,7 +42,7 @@ function create(ctx: Runtime) {
             talus.ui.set('speech', []);
             if (!ctx.state.chaosCatalog.effects.some((fx: any) => fx.enabled))
                 throw new Error('The death-effect catalog has no enabled effects');
-            talus.camera.setZoom(0.25);
+            talus.camera.setZoom(1);
             talus.camera.follow('off');
             talus.camera.frame(null);
             ctx.state.cameraIntent = null;

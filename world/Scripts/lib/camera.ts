@@ -1,7 +1,8 @@
 /** Smooth native tracking of tanks, projectiles and presentation points. */
 import type { Runtime } from 'context';
 function create(ctx: Runtime) {
-    const wideZoom = .25, closeZoom = .5;
+    // Canvas pixels per world pixel: one-to-one between turns, double-size close-ups.
+    const wideZoom = 1, closeZoom = 2;
     let flight: { id: number; launch: Vec2 & { vy: number }; apexY: number; previous: ProjectileSnapshot;
         gravity: number; probeAge: number; impact: Vec2 | null } | null = null;
     const ease = (value: number): number => {
@@ -77,7 +78,7 @@ function create(ctx: Runtime) {
         if (!m.attack)
             flight = null;
         const current = talus.camera.view.zoom;
-        const step = Math.max(0, Math.min(.1, dt)) * 3;
+        const step = Math.max(0, Math.min(.1, dt)) * 12;
         const zoom = Math.max(wideZoom, Math.min(closeZoom, current + Math.max(-step, Math.min(step, target - current))));
         if (Math.abs(zoom - current) > .0001 || zoom !== current && (zoom === wideZoom || zoom === closeZoom))
             talus.camera.setZoom(zoom);
