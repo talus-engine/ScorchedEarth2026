@@ -7,7 +7,9 @@
     "test": "node --test --test-concurrency=1 tests/*.test.cjs",
     "audit": "node tools/audit.cjs",
     "menus": "node tools/menus.cjs",
-    "test:native": "node tools/native-tests.cjs"
+    "test:native": "node tools/native-tests.cjs",
+    "template:export": "node tools/template.cjs export",
+    "template:publish": "node tools/template.cjs publish"
   },
   "devDependencies": {
     "@xmldom/xmldom": "0.9.12",

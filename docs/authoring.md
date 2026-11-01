@@ -1,6 +1,7 @@
 # Authoring and source control
 
-Import `project/scorched-earth-2026.talus` into Talus and open its Indigo editor.
+Download **Scorched Earth 2026** from Talus's Featured Templates, or manually
+import the published archive, and open its root editor.
 The archive contains the complete project: terrain, entity records, scoped
 resource bytes, files and the Title child world. `project.json` records the root
 and child IDs. When adopting a duplicated project, update both IDs in

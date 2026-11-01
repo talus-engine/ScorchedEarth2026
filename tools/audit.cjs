@@ -40,7 +40,9 @@ async function auditArchive(problems) {
         if (!title || title.parent_id !== PROJECT.worldId || title.kind !== 'menu-scene' || title.scene_id !== 'menu:title') problems.push('Archive is missing the native Title world binding.');
         if (!connection.prepare('SELECT 1 FROM world_files WHERE world_id=? LIMIT 1').get(PROJECT.titleWorldId)) problems.push('Archive is missing Title world files.');
         if (connection.prepare('SELECT count(*) AS count FROM installed_game_state').get().count) problems.push('Archive contains installed player data.');
-        const row = connection.prepare('SELECT game_ui_config FROM world_templates WHERE template_id=?').get(PROJECT.worldId);
+        const row = connection.prepare('SELECT template_name,is_template,description,game_ui_config FROM world_templates WHERE template_id=?').get(PROJECT.worldId);
+        if (row?.template_name !== PROJECT.name || row.is_template !== 1 || !row.description?.trim()) problems.push('Archive must have the configured project title, Template flag and description.');
+        if (!['Thumbnail/custom.png', 'Thumbnail/auto.png'].some(name => lookup.get(PROJECT.worldId, name)?.bytes?.length)) problems.push('Archive has no project thumbnail.');
         const actual = JSON.parse(row?.game_ui_config || '{}');
         const expected = readJSON(path.join(ROOT, 'world/Game/input.json'));
         if (Object.entries(expected).some(([key, value]) => !isDeepStrictEqual(actual[key], value))) problems.push('Archive native UI policy differs from Game/input.json.');
@@ -82,6 +84,8 @@ async function audit(sourceOnly = false) {
     for (const name of ['artifacts', 'backups', 'fixtures']) if (fs.existsSync(path.join(ROOT, name))) problems.push('Unexpected source directory: ' + name);
     if (spawnSync('git', ['ls-files', '--error-unmatch', 'AGENT_CHAT.md'], { cwd: ROOT }).status === 0) problems.push('AGENT_CHAT.md must remain untracked');
     if (spawnSync('git', ['check-ignore', '-q', 'AGENT_CHAT.md'], { cwd: ROOT }).status !== 0) problems.push('AGENT_CHAT.md is not ignored');
+    if (spawnSync('git', ['ls-files', '--error-unmatch', PROJECT.archive], { cwd: ROOT }).status === 0) problems.push('The template archive belongs on the artifacts branch, not in source control.');
+    if (spawnSync('git', ['check-ignore', '-q', PROJECT.archive], { cwd: ROOT }).status !== 0) problems.push('The local template archive must be ignored.');
     try { build(true); } catch (error) { problems.push(error.message); }
     if (!sourceOnly) {
         for (const name of ['README.md', 'world/Guide.md', 'world/Game/guide.json', 'world/Scripts/guide.ts', PROJECT.archive]) {

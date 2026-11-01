@@ -9,5 +9,14 @@
   "zip": true,
   "signing": "unsigned",
   "basePath": "/",
-  "notarize": false
+  "notarize": false,
+  "permissions": {
+    "gamepad": true,
+    "fullscreen": true,
+    "midi": false,
+    "microphone": false,
+    "camera": false,
+    "localNetwork": false,
+    "clipboardRead": false
+  }
 }

@@ -9,8 +9,17 @@ fire weapons, and reactive HTML menus expose the state.
 
 ## Open and play
 
-Import [the complete project](project/scorched-earth-2026.talus) into Talus. Open
-Indigo to edit, or launch its title screen and choose **New game**. Choose a
+In Talus, open **Home → Featured Templates → Scorched Earth 2026 → Download**.
+Open the installed template as a named copy to edit, or launch its title screen
+and choose **New game**. For manual import, use the
+[latest raw revision](https://raw.githubusercontent.com/talus-engine/ScorchedEarth2026/templates/scorched-earth-2026/latest.json):
+download its listed `.talus` parts and join them in order if there is more than
+one. [Publishing instructions](docs/publishing.md) explain the archive format.
+The game asks players for no browser permissions. Gamepads and fullscreen work
+without permission prompts; MIDI, microphone, camera, local network and clipboard
+reading are disabled.
+
+Choose a
 seed or let the engine randomize it, select human and CPU players, then press **Start match**.
 Human players each get a name box; CPUs are selected from ten fixed characters
 with distinct colors, tactics and skill levels. Either group can contain zero
@@ -78,7 +87,8 @@ The file tree and complete archive serve different purposes. `world/` is readabl
 source for scripts and configuration. Native terrain pixels, child worlds,
 scoped resources, joints and scene bindings travel in the `.talus` archive.
 Save and export after editing native data; copying the mounted files alone
-cannot capture the whole project.
+cannot capture the whole project. Archives are local build outputs and are
+published on the append-only `templates` branch, separate from this source tree.
 
 ## Customize the template
 
@@ -104,7 +114,7 @@ Open the imported project in Talus, then use its authenticated local bridge:
 node tools/project.cjs types
 node tools/talus_sync.cjs status
 npm run check
-npm run audit
+node tools/audit.cjs --source-only
 ```
 
 Follow [authoring](docs/authoring.md) to capture or install reviewed source.
@@ -113,3 +123,10 @@ Run `node tools/menus.cjs` after editing shared CSS. Read
 Keep build outputs in ignored `dist/`, working reports in `.build/`, and bridge
 credentials in the native Talus profile. The repository contains no player
 accounts or local credentials.
+
+After saving and closing the editor, `npm run template:export` checks the desktop
+and engine checkout build numbers, exports the complete project, audits it and
+runs the tests. `npm run template:publish` also stages, verifies and pushes an
+immutable artifact revision, then prints the engine registry diff for review.
+See [remote template publishing](docs/publishing.md#remote-template-revisions)
+for checkout locations, the public-host requirement and the schema rule.
