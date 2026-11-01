@@ -10,8 +10,17 @@ const { call, script } = require('./bridge.cjs');
 
 async function editor() {
     const context = await call('engine_describe_context');
-    if (!context.world.isEditorMode || context.world.templateId !== WORLD_ID) throw Error('Open the configured project in the editor first.');
+    const world = context.world;
+    if (!world?.isEditorMode || world.templateId !== WORLD_ID || world.worldId !== WORLD_ID || !world.engineBooted) {
+        throw Error('Open the configured root world in the Talus editor and wait for it to finish loading.');
+    }
     return context;
+}
+
+async function mountedEditor() {
+    const context = await editor();
+    if (!context.files?.hostMount?.mounted || !context.files.worldDir) throw Error('The Talus root-world file mount is not ready.');
+    return context.files.worldDir;
 }
 
 async function native(source) {
@@ -25,7 +34,7 @@ async function write(file) {
 }
 
 async function types() {
-    const source = path.join((await editor()).files.worldDir, 'Scripts/talus.d.ts');
+    const source = path.join(await mountedEditor(), 'Scripts/talus.d.ts');
     const target = path.join(ROOT, '.build/talus.d.ts');
     fs.mkdirSync(path.dirname(target), { recursive: true });
     fs.copyFileSync(source, target);
@@ -110,5 +119,5 @@ async function main() {
     await actions[positionals[0]]();
 }
 
-module.exports = { editor, native, exportProject };
+module.exports = { editor, mountedEditor, native, exportProject };
 if (require.main === module) run(main);

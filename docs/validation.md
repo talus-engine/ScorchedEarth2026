@@ -65,6 +65,13 @@ shared library records as well as project data. Keep the existing profile closed
 and use the temporary profile’s bridge token. Import the complete three-world
 archive so the Title scene and project-owned terrain resources are included.
 
+Exercise root → Title → root editor switching. Wait until `worldId` and
+`templateId` identify the requested world and `engineBooted` is true before
+reading or editing it. Root authoring helpers must refuse a child world or an
+unfinished switch. Initial boot readiness covers the screen and its padding;
+the rest of the terrain ring streams afterward. Inspect generation progress
+and probe residency separately from the loading screen.
+
 Zoom is canvas pixels per world pixel. The game uses 1–2, so a 1600-pixel-wide
 canvas shows 1600 world pixels between turns and 800 during a close-up. Verify
 `talus.camera.view.viewport` as well as its numeric zoom, and wait for native

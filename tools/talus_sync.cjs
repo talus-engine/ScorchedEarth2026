@@ -6,6 +6,7 @@ const path = require('node:path');
 const { isDeepStrictEqual, parseArgs } = require('node:util');
 const { ROOT, WORLD_ID, digest, readJSON, writeJSON, run } = require('./lib/files.cjs');
 const { call } = require('./bridge.cjs');
+const { mountedEditor: context } = require('./project.cjs');
 const TEXT = new Set(['.ts', '.js', '.json', '.ink', '.html', '.css', '.md', '.txt', '.svg', '.csv']);
 const ASSETS = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif', '.wav', '.ogg', '.mp3', '.flac', '.bin']);
 const GENERATED = new Set(['Scripts/talus.d.ts', 'Scripts/tsconfig.json']);
@@ -46,14 +47,6 @@ function classify(local, live, baseline) {
         else state = 'conflict';
         return { path: name, state, repo: a, mount: b };
     });
-}
-
-async function context() {
-    const c = await call('engine_describe_context');
-    const w = c.world;
-    if (!w.isEditorMode || w.templateId !== WORLD_ID || !w.engineBooted) throw Error('Open the configured project in the Talus editor first');
-    if (!c.files.hostMount?.mounted) throw Error('The Talus file mount is offline');
-    return c.files.worldDir;
 }
 
 async function sync(action, localRoot, liveRoot, statePath, { paths, writer } = {}) {

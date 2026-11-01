@@ -7,6 +7,8 @@ const { spawnSync } = require('node:child_process');
 const { call, script } = require('../tools/bridge.cjs');
 const { ROOT, WORLD_ID } = require('../tools/lib/files.cjs');
 const { build } = require('../tools/menus.cjs');
+const { editor, mountedEditor } = require('../tools/project.cjs');
+const { installText } = require('../tools/talus_sync.cjs');
 
 function temporary(t) {
     const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'talus-authoring-'));
@@ -39,6 +41,36 @@ test('bridge authenticates, encodes JSON, and propagates HTTP/native errors', as
     await assert.rejects(call('engine_describe_context'), /native refusal/);
     globalThis.fetch.mock.mockImplementation(async () => Response.json({ isError: true, error: 'tool refusal' }));
     await assert.rejects(call('engine_describe_context'), /tool refusal/);
+});
+
+test('authoring refuses unloaded or child worlds before writing to the root', async t => {
+    const token = path.join(temporary(t), 'token');
+    fs.writeFileSync(token, 'local-test-token');
+    const env = { ...process.env };
+    t.after(() => { process.env = env; });
+    process.env.TALUS_TOKEN_FILE = token;
+    const ready = { isEditorMode: true, templateId: WORLD_ID, worldId: WORLD_ID, engineBooted: true };
+    let response = { ok: true, world: ready, files: { hostMount: { mounted: true }, worldDir: '/mounted/root' } };
+    const requests = [];
+    t.mock.method(globalThis, 'fetch', async url => {
+        requests.push(url);
+        return Response.json(response);
+    });
+    assert.equal((await editor()).world.worldId, WORLD_ID);
+    assert.equal(await mountedEditor(), '/mounted/root');
+    for (const world of [null, { ...ready, engineBooted: false }, { ...ready, worldId: 'title-child' },
+        { ...ready, templateId: 'title-child' }, { ...ready, isEditorMode: false }]) {
+        response = { ...response, world };
+        await assert.rejects(installText('Game/test.json', '{}'), /root world.*finish loading/);
+    }
+    response.world = ready;
+    for (const files of [null, { hostMount: { mounted: false }, worldDir: '/stale/root' },
+        { hostMount: { mounted: true }, worldDir: null }]) {
+        response.files = files;
+        assert.equal((await editor()).world.worldId, WORLD_ID);
+        await assert.rejects(installText('Game/test.json', '{}'), /file mount is not ready/);
+    }
+    assert(requests.every(url => url.endsWith('/engine_describe_context')), 'No file operation may run before readiness');
 });
 
 test('theme embedding preserves literal CSS and surrounding menu content', t => {

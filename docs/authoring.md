@@ -20,6 +20,10 @@ Title. Its geometry and scene binding travel in the complete archive.
 are excluded from this root file sync and preserved by complete project exports. Talus exposes its file mount through
 `engine_describe_context`; the bridge helper reads the local token privately.
 Use `TALUS_BRIDGE_URL` and `TALUS_TOKEN_FILE` for another bridge location.
+Before reading declarations, capturing files or installing records, the tools
+require the configured root world to be fully loaded in editor mode. World
+switches can finish without reloading the page; the requested template alone
+does not identify the active world. File operations also require its live mount.
 
 A symlink records only a target path in Git. Capture real files instead:
 
