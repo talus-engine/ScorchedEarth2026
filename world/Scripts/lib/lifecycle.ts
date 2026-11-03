@@ -325,10 +325,7 @@ function create(ctx: Runtime) {
             }
             if (ctx.state.match.remaining <= 0) {
                 if (ctx.core.current().control === 'cpu') {
-                    if ((ctx.core.current().consecutivePasses || 0) >= (ctx.state.market.cpu.maxConsecutivePasses ?? 2) && ctx.cpu.prepareCpuEscape(ctx.core.current(), ctx.state.match.turnNumber))
-                        ctx.session.run(ctx.combat.fire);
-                    else
-                        ctx.cpu.cpuNoAction(ctx.core.current(), 'Turn budget exhausted');
+                    ctx.cpu.cpuFallback(ctx.core.current(), 'Turn timer ended; take a shot');
                 }
                 else {
                     ctx.economy.reward(ctx.core.current(), 'timeout');

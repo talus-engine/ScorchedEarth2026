@@ -1,39 +1,45 @@
 /** CPU movement, escape tactics and turn decisions. */
 import type { Runtime } from 'context';
 function create(ctx: Runtime) {
-    function cpuProgress(p: any): void {
-        if (p.control !== 'cpu')
+    let fallbackPending = false;
+    function cpuFallback(p: any, reason: string): void {
+        if (fallbackPending || talus.sim.paused || !ctx.core.active() || p !== ctx.core.current() || p.control !== 'cpu' || p.eliminated)
             return;
-        p.consecutivePasses = 0;
-        p.cpuStalled = null;
-    }
-    function cpuNoAction(p: any, reason: string): void {
-        if (!ctx.core.active() || p !== ctx.core.current())
+        const tank = ctx.core.entity(p), at = tank.position, turn = ctx.state.match.turnNumber;
+        if (!tank.isLive || !at || !ctx.attachments.clear(p))
             return;
-        const limit = ctx.state.market.cpu.maxConsecutivePasses ?? 2, count = p.consecutivePasses || 0;
-        if (count < limit) {
-            p.consecutivePasses = count + 1;
-            p.tactic = 'Blocked corridor · pass ' + p.consecutivePasses + '/' + limit;
-            ctx.economy.reward(p, 'pass');
-            ctx.session.run(() => ctx.turns.beginTurn(true));
-            return;
+        // A prediction is advice, not permission to shoot. Native physics resolves the attempt.
+        p.fireSolution = null;
+        p.guidanceArmed = null;
+        p.contactArmed = null;
+        if (!prepareCpuEscape(p, turn)) {
+            if (!ctx.equipment.chooseWeapon(p, 'standard'))
+                return;
+            const target = ctx.state.match.roster.filter((r: any) => r !== p)
+                .map((player: any) => ({ player, at: ctx.aiming.targetSnapshot(player) }))
+                .filter((candidate: any) => candidate.at)
+                .sort((a: any, b: any) => Math.hypot(a.at.x - at.x, a.at.y - at.y) - Math.hypot(b.at.x - at.x, b.at.y - at.y))[0];
+            const trial = p.probeShots || 0, elevations = [75, 45, 20, 85, 60, 10], powers = [65, 85, 45, 100, 30];
+            const elevation = elevations[trial % elevations.length];
+            tank.blackboard.set('custom.angle', target?.at.x < at.x ? 180 - elevation : elevation);
+            tank.blackboard.set('custom.power', powers[trial % powers.length]);
+            p.probeShots = trial + 1;
+            p.targetId = target?.player.entityId || null;
+            p.tactic = 'Blast a new firing lane';
         }
-        p.cpuStalled = { turn: ctx.state.match.turnNumber, reason, clock: talus.sim.clock };
-        p.tactic = 'Blocked: no useful legal action; inspection needed';
-        ctx.state.match.message = p.name + ' is blocked. No safe shot or eligible escape terrain. Resume retries; Game menu saves.';
-        ctx.menus.input(false);
+        tank.blackboard.set('custom.aimPlan', null);
+        tank.blackboard.set('custom.aimRefusal', null);
+        tank.blackboard.set('custom.aiDecision', { turn, status: 'exploratory', reason, item: p.weaponId, tactic: p.tactic });
+        p.plannedTurn = turn;
+        p.aimedTurn = turn;
+        ctx.state.match.message = p.name + ' · ' + p.tactic;
         ctx.session.persist();
         ctx.menus.publish();
-        talus.sim.pause();
-        talus.ui.openMenu('Menus/pause.html');
-    }
-    function retryStalledCpu(): void {
-        if (!ctx.state.match || ctx.state.match.phase !== 'turn' || !ctx.core.current().cpuStalled)
-            return;
-        const p = ctx.core.current();
-        p.cpuStalled = null;
-        talus.sim.resume();
-        ctx.session.run(() => ctx.cpu.prepareCpuTurn(p, ctx.state.match.turnNumber));
+        fallbackPending = true;
+        ctx.session.run(async () => {
+            try { await ctx.combat.fire(); }
+            finally { fallbackPending = false; }
+        });
     }
     function prepareCpuEscape(p: any, turn: number): boolean {
         if (!ctx.core.active() || ctx.core.current() !== p || ctx.state.match.turnNumber !== turn)
@@ -78,7 +84,7 @@ function create(ctx: Runtime) {
         p.aimedTurn = turn;
         p.tactic = 'Free Riot Charge · clear nearby terrain';
         tank.blackboard.set('custom.aiDecision', { turn, item: item.id, template: item.template, tactic: p.tactic,
-            coverage: 'observed-local-terrain-only', eligibleSamples: choice.cells, angle: choice.angle, consecutivePasses: p.consecutivePasses || 0 });
+            coverage: 'observed-local-terrain-only', eligibleSamples: choice.cells, angle: choice.angle });
         ctx.session.persist();
         ctx.menus.publish();
         return true;
@@ -158,7 +164,7 @@ function create(ctx: Runtime) {
     async function prepareCpuTurn(p: any, turn: number): Promise<void> {
         if (!ctx.core.active() || p.eliminated || ctx.core.current() !== p || ctx.state.match.turnNumber !== turn)
             return;
-        const token = ctx.state.utilityGeneration, e = ctx.core.entity(p), beforePosition = { ...ctx.core.entity(p).position! }, beforeDig = ctx.economy.owned(p, 'digger');
+        const token = ctx.state.utilityGeneration, e = ctx.core.entity(p);
         const valid = () => ctx.core.active() && !p.eliminated && ctx.core.current() === p && ctx.state.match.turnNumber === turn && token === ctx.state.utilityGeneration;
         if (p.preparedTurn !== turn) {
             p.preparedTurn = turn;
@@ -205,15 +211,6 @@ function create(ctx: Runtime) {
         if (!valid())
             return;
         ctx.equipment.driveTank(p, 0);
-        const afterPosition = e.position!;
-        if (Math.hypot(afterPosition.x - beforePosition.x, afterPosition.y - beforePosition.y) >= 4)
-            cpuProgress(p);
-        else if (ctx.economy.owned(p, 'digger') < beforeDig)
-            cpuProgress(p);
-        if ((p.consecutivePasses || 0) >= (ctx.state.market.cpu.maxConsecutivePasses ?? 2) && prepareCpuEscape(p, turn)) {
-            await ctx.combat.fire();
-            return;
-        }
         const tilt = Math.abs(Math.atan2(Math.sin(e.snapshot()!.angle), Math.cos(e.snapshot()!.angle)));
         if (tilt >= ctx.state.arena.posture.cpuTiltRadians && ctx.equipment.flipUpright(p)) {
             for (let waited = 0; valid() && waited < ctx.state.arena.posture.cpuFlipWaitTicks; waited += 6) {
@@ -234,11 +231,11 @@ function create(ctx: Runtime) {
                 e.runGraph(ctx.state.arena.cpuGraph, { turn });
         }
         else if (valid())
-            cpuNoAction(p, 'No supported clear shot after bounded movement, escape and demolition alternatives');
+            cpuFallback(p, 'No clear route; open one with a shot');
     }
     async function recoverCpuShot(p: any, turn: number, valid: () => boolean): Promise<boolean> {
         const e = ctx.core.entity(p), decision: any = e.blackboard.get('custom.aiDecision');
-        // Geometry refusals permit repositioning. Unknown/corrupt terrain needs an explicit stop.
+        // Spend movement time on geometry refusals; other survey failures go straight to an exploratory shot.
         if (!decision?.trials?.length || decision.trials.some((trial: any) => !['obstructed', 'unreachable'].includes(trial.reason))
             || p.recoveryTurn === turn)
             return false;
@@ -295,7 +292,6 @@ function create(ctx: Runtime) {
             const at = e.position!;
             if (Math.hypot(at.x - start.x, at.y - start.y) < 4)
                 continue;
-            cpuProgress(p);
             ctx.session.persist();
             if (await ctx.aiming.planCpuShot(p, turn))
                 return true;
@@ -356,8 +352,6 @@ function create(ctx: Runtime) {
         ctx.economy.reward(p, 'power');
     }
     function bind() {
-        talus.on('menu.pause.resume', retryStalledCpu);
-        talus.on('menu.custom.resume', retryStalledCpu);
         talus.on('indigo:cpu-plan', cpuPlan);
         talus.on('indigo:cpu-aimed', cpuAimed);
         talus.on('indigo:cpu-unreachable', e => {
@@ -383,7 +377,7 @@ function create(ctx: Runtime) {
                     return;
                 }
                 const reason = tank.blackboard.get('custom.aimRefusal') || 'Native aim graph refused the planned shot';
-                cpuNoAction(p, String(reason));
+                cpuFallback(p, String(reason));
             }
         });
         talus.on('indigo:cpu-fire', e => {
@@ -391,6 +385,6 @@ function create(ctx: Runtime) {
                 ctx.session.run(ctx.combat.fire);
         });
     }
-    return { cpuProgress, cpuNoAction, retryStalledCpu, prepareCpuEscape, explorationPath, exploreCpu, prepareCpuTurn, recoverCpuShot, cpuPlan, cpuAimed, bind };
+    return { cpuFallback, prepareCpuEscape, explorationPath, exploreCpu, prepareCpuTurn, recoverCpuShot, cpuPlan, cpuAimed, bind };
 }
 export = create;

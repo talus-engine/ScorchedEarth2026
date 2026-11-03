@@ -69,7 +69,7 @@ function create(ctx: Runtime) {
         if (!ctx.payloads.canFire(ctx.economy.itemById(p.weaponId))) {
             ctx.state.match.phase = 'turn';
             ctx.state.match.message = 'Payload capacity changed. Ammunition retained.';
-            if (p.control === 'cpu') ctx.cpu.cpuNoAction(p, ctx.state.match.message);
+            if (p.control === 'cpu') ctx.cpu.cpuFallback(p, ctx.state.match.message);
             else ctx.menus.input(true);
             ctx.session.persist();
             ctx.menus.publish();
@@ -77,7 +77,7 @@ function create(ctx: Runtime) {
         }
         if (p.fireSolution?.kind === 'special' && !ctx.aiming.refreshSpecialShot(p)) {
             ctx.state.match.phase = 'turn';
-            ctx.cpu.cpuNoAction(p, 'The cutting route changed during dialogue; ammunition retained');
+            ctx.cpu.cpuFallback(p, 'The cutting route changed during dialogue; ammunition retained');
             return;
         }
         const solution = p.fireSolution, target = ctx.aiming.targetSnapshot(ctx.state.match.roster.find((r: any) => r.entityId === p.targetId));
@@ -130,7 +130,7 @@ function create(ctx: Runtime) {
             return;
         if (plan.status !== 'clear' || !plan.solution) {
             ctx.state.match.phase = 'turn';
-            ctx.cpu.cpuNoAction(p, 'Firing position changed during dialogue; fresh native survey refused: ' + plan.reason);
+            ctx.cpu.cpuFallback(p, 'Firing position changed during dialogue; fresh native survey refused: ' + plan.reason);
             return;
         }
         p.fireSolution = { ...previous, origin: { ...tank.position! }, target, point, hullAngle: tank.snapshot()?.angle,
@@ -256,11 +256,6 @@ function create(ctx: Runtime) {
                 ...(b.operation === 'recipe' ? { recipe: materialRecipe(b.element) as TerrainRecipe } : {}),
                 ...(b.operation === 'fracture' ? { fracture: b.fracture } : {}),
                 seed: ctx.core.chaosSeed(ctx.state.match.seed + ':terrain:' + a.rootId), holdSeconds: b.holdSeconds });
-            const owner = ctx.state.match.roster.find((p: any) => p.entityId === a.owner);
-            if (receipt.status === 'completed' && receipt.accepted > 0 && owner)
-                ctx.cpu.cpuProgress(owner);
-            else
-                ;
             if (receipt.status !== 'completed') {
                 ctx.state.match.message = 'Terrain work refused: ' + receipt.reason;
                 ctx.menus.publish();
@@ -392,8 +387,6 @@ function create(ctx: Runtime) {
                 if (a.solution)
                     a.solution.guidance = a.guidanceArmed || null;
                 p.shots = (p.shots || 0) + 1;
-                if (item.behavior?.mode !== 'terrain')
-                    ctx.cpu.cpuProgress(p);
                 a.spent = true;
                 ctx.economy.saveBank();
             }

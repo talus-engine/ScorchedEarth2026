@@ -1,4 +1,4 @@
-// Game pass/accounting and native-request contracts. Real cast/carving acceptance
+// Game fallback/accounting and native-request contracts. Real cast/carving acceptance
 // must still run in the installed engine; this fixture does not prove physics.
 const assert = require('node:assert/strict'), fs = require('node:fs');
 const { fixture } = require('./support/game.cjs');
@@ -27,70 +27,27 @@ async function main() {
         assert.equal(p.cashEarned, 0, 'Selecting free escape grants no equip award');
     }
     {
-        const f = setup(), p = f.m.roster[0];
-        let advanced = 0, retries = 0;
-        f.api.testCpuHooks(async () => { advanced++; }, async () => { retries++; });
-        f.api.cpuNoAction(p, 'obstructed');
-        assert.equal(p.consecutivePasses, 1);
-        assert.equal(advanced, 1);
-        f.api.cpuNoAction(p, 'obstructed');
-        assert.equal(p.consecutivePasses, 2);
-        assert.equal(advanced, 2);
-        f.api.cpuNoAction(p, 'no eligible escape terrain');
-        assert.equal(p.consecutivePasses, 2);
-        assert.equal(advanced, 2, 'There is no third passive turn skip');
-        assert.equal(f.talus.sim.paused, true);
-        assert.equal(p.cpuStalled.reason, 'no eligible escape terrain');
-        assert.equal(f.talus.game.saveStatus.allowed, true);
-        assert.match(f.ui.status, /blocked/);
-        f.emit('menu.pause.resume', {});
-        assert.equal(retries, 1);
-        assert.equal(p.consecutivePasses, 2, 'Explicit retry is not progress');
-        assert.equal(p.cpuStalled, null);
-    }
-    {
-        const f = setup(), p = f.m.roster[0], e = f.actors.get(p.entityId);
-        let advanced = 0;
-        f.api.testCpuHooks(async () => { advanced++; });
-        e.blackboard.set('custom.aimRefusal', 'terrain-obstruction');
-        f.emit('indigo:cpu-unreachable', { id: p.entityId, turn: f.m.turnNumber - 1 });
-        assert.equal(advanced, 0, 'Stale aim events do not spend a turn');
-        for (let n = 0; n < 3; n++) {
-            f.emit('indigo:cpu-unreachable', { id: p.entityId, turn: f.m.turnNumber });
-            f.m.turnNumber++;
-        }
-        assert.equal(advanced, 2, 'The native graph refusal follows the same two-pass ceiling');
-        assert.equal(p.consecutivePasses, 2);
-        assert.equal(p.cpuStalled.reason, 'terrain-obstruction');
-        assert.equal(f.talus.sim.paused, true);
-    }
-    {
         const f = setup(), p = f.m.roster[0], item = f.shop.items.find(i => i.id === 'escape-charge');
         item.template = 'test-escape';
-        p.consecutivePasses = 2;
         let samples = 0;
         f.talus.world.cell = () => { samples++; return null; };
         assert.equal(f.api.prepareCpuEscape(p, 3), false);
         assert.ok(samples <= 81);
-        assert.equal(p.consecutivePasses, 2);
         f.talus.world.cell = () => ({ element: { name: 'DIRT' }, body: { id: 'live-hull' }, entity: null });
         assert.equal(f.api.prepareCpuEscape(p, 3), false, 'A live hull is never an eligible escape target');
         f.talus.world.cell = () => ({ element: { name: 'DIRT' }, body: null, entity: null });
         assert.equal(f.api.prepareCpuEscape(p, 3), true);
         assert.equal(p.weaponId, item.id);
-        assert.equal(p.consecutivePasses, 2, 'An observation/equip does not reset passes');
         assert.equal(f.actors.get(p.entityId).blackboard.get('custom.aimPlan'), null, 'Local terrain use is not called a ballistic forecast');
     }
     {
         const f = setup(), p = f.m.roster[0], e = f.actors.get(p.entityId), w = f.api.bank.players.alpha, item = f.shop.items.find(i => i.id === 'escape-charge');
         item.template = 'test-escape';
         p.weaponId = item.id;
-        p.consecutivePasses = 2;
         f.m.attack = { owner: p.entityId, item: item.id, ids: {}, rootId: null, launched: 0, ended: 0, tasks: 0, angle: -.5, spent: false, origin: { x: e.x + 20, y: 650 } };
         const shot = { snapshot: () => ({ x: e.x + 20, y: 650, vx: 0, vy: 0 }), id: 44 };
         f.emit('projectile.launch', { owner: e, projectileId: 44, projectile: shot });
         assert.equal(w.stock[item.id], undefined, 'Unlimited charge does not create/debit paid stock');
-        assert.equal(p.consecutivePasses, 2, 'A zero-damage escape cast is not yet useful work');
         assert.equal(p.cashEarned, 0);
         for (const action of ['landing', 'end', 'bounce'])
             f.api.shotReward({ owner: e, projectileId: 44 }, action);
@@ -99,10 +56,8 @@ async function main() {
         let accepted = 0;
         f.talus.world.terrainWork = async (s) => (calls.push(s), { status: 'completed', accepted, work: accepted });
         await f.api.terrainPayload(f.m.attack, { x: e.x + 20, y: 650 }, item.behavior);
-        assert.equal(p.consecutivePasses, 2);
         accepted = 14;
         await f.api.terrainPayload(f.m.attack, { x: e.x + 20, y: 650 }, item.behavior);
-        assert.equal(p.consecutivePasses, 0, 'Only actual accepted terrain replacement resets a failed-turn streak');
         assert.equal(calls[0].replacement, 'matching');
         assert.equal(calls[0].bounds.h, 1024);
         assert.equal(calls[0].recipe.macro.strata[0].element, 'SMOKE');
@@ -110,6 +65,6 @@ async function main() {
         assert.equal(p.damage, 0);
         assert.equal(p.cashEarned, 0);
     }
-    console.log('PASS: two-pass limit, persisted visible stall and explicit retry, native-cell escape eligibility, generalized unlimited inventory/UI, unchanged paid riot stock, native tiny smoke wedge, no fabricated progress or combat cash');
+    console.log('PASS: native-cell escape eligibility, generalized unlimited inventory/UI, unchanged paid riot stock, native tiny smoke wedge, no fabricated progress or combat cash');
 }
 main().catch(e => { console.error(e); process.exitCode = 1; });

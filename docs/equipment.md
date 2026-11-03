@@ -75,9 +75,13 @@ erasing the observation. Deliberate demolition, apex carriers, expiration and
 early wall impacts do not masquerade as ordinary range error. A changed firing
 pose is checked again after dialogue, before spending ammunition. Repeated
 geometry failure permits at most two paid, locally surveyed moves followed by
-fresh native shot planning. Unknown terrain and other hard refusals stop this
-recovery. Repeated failure reaches a visible, saveable stall rather than an
-infinite pass loop.
+fresh native shot planning. If planning or movement cannot find a route, the CPU
+uses its unlimited Riot Charge on nearby eligible terrain, or fires a standard
+shell while cycling through high and low angles and different powers. It does
+the same when its turn timer runs out. These attempts use native weapon physics
+and normal shot/death sequences; they do not need a clear-shot prediction.
+The next turn tries again. A blocked CPU never pauses the battle or asks for
+player intervention.
 
 Death effects are data in `Game/chaos.json`. The presentation owns the three-second
 last words; effects own transmutation, particles, projectiles and bounded emission

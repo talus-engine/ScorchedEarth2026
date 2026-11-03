@@ -5,7 +5,7 @@ function create(ctx: Runtime) {
     const current = (): any => ctx.state.match.roster[ctx.state.match.focusIndex];
     const clamp = (v: number, lo: number, hi: number): number => Math.max(lo, Math.min(hi, v));
     const presenting = (): boolean => !!ctx.state.match?.presentation.active || !!ctx.state.match?.presentation.queue.length;
-    const active = (): boolean => ctx.state.booted && !ctx.state.booting && !ctx.state.exitDrain && ctx.state.match?.phase === 'turn' && !current().cpuStalled && !presenting();
+    const active = (): boolean => ctx.state.booted && !ctx.state.booting && !ctx.state.exitDrain && ctx.state.match?.phase === 'turn' && !presenting();
     const human = (): boolean => active() && current().control === 'human';
     function chaosSeed(seed: string): number {
         let h = 2166136261;

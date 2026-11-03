@@ -10,14 +10,12 @@ function create(ctx: Runtime) {
         const status = talus.game.saveStatus;
         const blocked = !status.allowed || sequencePending() || ctx.state.booting;
         const waiting = ctx.state.exitDrain?.phase === 'running' || ctx.state.exitDrain?.phase === 'closing';
-        const stalled = ctx.state.match?.roster[ctx.state.match.focusIndex]?.cpuStalled;
         const message = ctx.state.exitDrain?.phase === 'failed'
             ? 'The action could not finish. Your save has not been replaced. You can still quit now.'
             : waiting ? 'Finishing the current action for a save. Resume battle cancels this wait; Quit now leaves immediately.'
                 : ctx.state.exitDrain?.phase === 'ready' ? 'Action complete. Your battle is paused and ready to save.'
                     : blocked ? 'Saving is unavailable while the action runs. Quit now leaves immediately without saving.'
-                        : stalled ? 'CPU blocked: ' + stalled.reason + '. Resume battle retries its available actions; you can also save and leave.'
-                            : 'Save & title preserves your progress. Quit now leaves immediately without saving.';
+                        : 'Save & title preserves your progress. Quit now leaves immediately without saving.';
         const view = JSON.stringify({ exitBlocked: blocked, exitDraining: !!ctx.state.exitDrain, exitStatus: message,
             exitFinishLabel: waiting ? 'Resume finishing action' : 'Finish action to save' });
         if (view !== ctx.state.exitView) {
