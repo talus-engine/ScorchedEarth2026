@@ -35,7 +35,7 @@ if (talus.editor.available) {
     talus.on('guide:title', () => preview('Title world',
         'Select Title in the project world switcher to edit its native artwork.\n\n'
         + 'The child world is bound to menu:title. Menus/title.html displays its full-screen scene behind the controls.\n\n'
-        + 'Menus/Scenes/title.json defines the scene. Game/title-logo-pattern.js assigns wood, dynamite and emitter materials while retaining image colors.\n\n'
-        + 'Menus/Assets/earth-2026-logo.png supplies the image.\n\n'
+        + 'Menus/Scenes/title.json defines the scene. Game/title-logo-pattern.js assigns wood, dynamite and assorted explosive materials while retaining image colors.\n\n'
+        + 'Art/Title contains the font-outline SVGs. Game/title-vectors.json holds the reusable native stamps. Menus/Assets/title-lettering.png is their compiled particle image.\n\n'
         + 'Save and export the complete project: the child world and binding are native data.'));
 }

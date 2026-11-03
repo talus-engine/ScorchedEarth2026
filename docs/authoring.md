@@ -68,8 +68,17 @@ and raster layer before syncing their game scripts into an authoring world.
   Editor brush resources: `Game/Presets/`.
 - Menus: `Menus/*.html`; shared styling: `Menus/arcade.css`. Run
   `node tools/menus.cjs` to embed the shared theme into self-contained menus.
-- Title material stripes: `Game/title-logo-pattern.js`; source art:
-  `assets/art/title-logo.png`. The pattern changes material indices only.
+- Title lettering: `Art/Title/` contains SVG outlines from the engine’s
+  `public/fonts/VCR_OSD_MONO.ttf`. `Game/title-vectors.json` holds reusable native
+  word stamps; `Game/title-lettering.json` defines their offsets and silver colors.
+  Stamp each word on a transparent raster layer from dark to light to create
+  the extrusion, at offsets 8, 6, 4, 2 and 0 pixels on both axes. Select a solid
+  ink element with the corresponding RGB color for each pass; the vector fill
+  uses the element's color. Use zero stroke width and disable rigid-body output.
+  The compiled
+  `Menus/Assets/title-lettering.png` supplies particle RGB;
+  `Game/title-logo-pattern.js` changes only the material indices on each entry.
+  Regenerate outlines with `node tools/title-lettering.cjs /path/to/VCR_OSD_MONO.ttf`.
 - Native tank parts and weapon art: `assets/native/`, `assets/sprites/` and the
   engine's template/animation editors.
 

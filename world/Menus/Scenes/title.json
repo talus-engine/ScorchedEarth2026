@@ -10,65 +10,31 @@
     0.071,
     1
   ],
+  "stamps": [],
   "backgrounds": [
     {
-      "file": "Menus/Assets/title-dusk.png",
-      "tiling": "horizontal",
-      "parallaxX": 0.08,
-      "parallaxY": 0.056,
-      "scrollX": 0.35,
-      "scrollY": 0,
-      "opacity": 1
-    },
-    {
-      "file": "Menus/Assets/title-mountains.png",
-      "tiling": "horizontal",
-      "parallaxX": 0.26,
-      "parallaxY": 0.182,
-      "scrollX": 0.85,
-      "scrollY": 0,
-      "opacity": 0.78
-    },
-    {
-      "file": "Menus/Assets/title-foothills.png",
-      "tiling": "horizontal",
-      "parallaxX": 0.72,
-      "parallaxY": 0.504,
-      "scrollX": 1.5,
-      "scrollY": 0,
-      "opacity": 0.85
-    },
-    {
-      "file": "Menus/Assets/title-tiles-background.png",
+      "file": "Menus/Assets/title-stars.png",
       "tiling": "none",
-      "parallaxX": 0.3,
-      "parallaxY": 0.2,
+      "parallaxX": 0.08,
+      "parallaxY": 0.05,
       "scrollX": 0,
       "scrollY": 0,
-      "opacity": 0.72
+      "opacity": 1
     }
   ],
-  "stamps": [],
   "particleImages": [
     {
-      "file": "Menus/Assets/earth-2026-logo.png",
-      "x": 64,
-      "y": 20,
-      "width": 512,
-      "height": 256,
+      "file": "Menus/Assets/title-lettering.png",
+      "x": 0,
+      "y": 52,
+      "width": 640,
+      "height": 128,
       "materialScript": {
         "file": "Game/title-logo-pattern.js",
         "parameter": "logo",
         "seed": "entry"
       }
-    },
-    {
-      "file": "Menus/Assets/title-tiles-foreground.png",
-      "x": 0,
-      "y": 0,
-      "width": 640,
-      "height": 384,
-      "element": "STONE"
     }
-  ]
+  ],
+  "paused": false
 }

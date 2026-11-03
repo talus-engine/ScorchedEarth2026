@@ -19,10 +19,10 @@ function random() {
   return ((n ^ n >>> 14) >>> 0) / 4294967296;
 }
 const between = (a, b) => a + random() * (b - a);
-const scale = width / 512;
+const scale = width / 640;
 const slope = between(.2, .65) * (random() < .5 ? -1 : 1);
 const amplitude = between(5, 13) * scale;
-const period = between(65, 135) * height / 256;
+const period = between(65, 135) * height / 128;
 const phase = between(0, Math.PI * 2);
 const reach = Math.abs(slope) * height + amplitude + 20 * scale;
 const stripes = [];
@@ -31,10 +31,9 @@ for (let start = -reach + between(0, 20) * scale; start < width + reach;) {
   stripes.push([start, end]);
   start = end + between(14, 28) * scale;
 }
-// The logo burns inward through wood before reaching the explosive core.
-// Small peripheral emitter patches keep the original living-logo effect.
-// These are material slots, not layers; source pixel colors stay untouched.
-const materials = ['WOOD', 'DYNAMITE', 'TERRA_TITLE_FIRE_SOURCE', 'TERRA_TITLE_WATER_SOURCE', 'TERRA_TITLE_GAS_SOURCE'];
+// Stripes replace material identity only; the stamped silver and shadow colors remain exact.
+const materials = ['WOOD', 'DYNAMITE', 'TNT', 'C4', 'COAL', 'GUNPOWDER', 'THERMITE'];
+const stripeMaterials = stripes.map((_, index) => index % 3 === 0 ? 1 : 2 + Math.floor(random() * (materials.length - 2)));
 const indices = new Uint8Array(width * height);
 for (let y = 0; y < height; y++) {
   const offset = slope * y + amplitude * Math.sin(y * 2 * Math.PI / period + phase);
@@ -43,14 +42,10 @@ for (let y = 0; y < height; y++) {
     const position = x + offset;
     while (stripe < stripes.length && position >= stripes[stripe][1]) stripe++;
     const inStripe = stripe < stripes.length && position >= stripes[stripe][0];
-    const nx = x / width, ny = y / height;
-    // An unbroken wooden margin surrounds every dynamite stripe. No fire
-    // emitter is embedded in, above, or directly below the explosive core.
-    const core = Math.pow((nx - .5) / .24, 2) + Math.pow((ny - .52) / .32, 2) < 1;
-    let material = core && inStripe ? 1 : 0;
-    if (nx > .07 && nx < .10 && ny > .46 && ny < .56) material = 2;
-    if (nx > .87 && nx < .91 && ny > .67 && ny < .74) material = 3;
-    if (nx > .84 && nx < .88 && ny > .16 && ny < .22) material = 4;
+    const nx = x / width;
+    const core = nx > .23 && nx < .77;
+    const choice = stripeMaterials[stripe] ?? 0;
+    const material = inStripe && (choice !== 1 || core) ? choice : 0;
     indices[y * width + x] = material;
   }
 }

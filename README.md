@@ -5,7 +5,7 @@ It demonstrates how to build tightly controlled game rules around a continuously
 simulated world: scripts schedule turns, native controllers move tanks, graphs
 fire weapons, and reactive HTML menus expose the state.
 
-![Scorched Earth 2026](world/Menus/Assets/earth-2026-logo.png)
+![Scorched Earth 2026](world/Menus/Assets/title-lettering.png)
 
 ## Open and play
 
@@ -85,8 +85,8 @@ excerpts of game files and the native tank asset. Its source is
 
 The root world owns the battlefield and game library. Its **Title** child world
 is bound to `menu:title`, filling the window behind the title controls. The logo
-retains its imported colors while seeded wood, dynamite and emitter stripes
-burn and explode. Edit Title through the project world switcher.
+uses layered VCR-font vector lettering. Its silver colors stay intact while
+seeded wood, dynamite and other combustible stripes give it native material reactions. Edit Title through the project world switcher.
 
 The file tree and complete archive serve different purposes. `world/` is readable
 source for scripts and configuration. Native terrain pixels, child worlds,
