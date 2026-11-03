@@ -395,6 +395,8 @@ function create(ctx: Runtime) {
                 launch: snapshot && { x: snapshot.x, y: snapshot.y, vx: snapshot.vx, vy: snapshot.vy }, launchClock: talus.sim.clock };
             a.launched++;
             if (a.rootId == null) {
+                p.lastShot = { turn: ctx.state.match.turnNumber, weapon: a.item,
+                    angle: -a.angle * 180 / Math.PI, power: a.power };
                 a.rootId = e.projectileId;
                 a.launchClock = talus.sim.clock;
                 a.origin = { x: snapshot!.x, y: snapshot!.y };

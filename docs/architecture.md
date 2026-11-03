@@ -92,6 +92,12 @@ stays on its results.
 - Ephemeral handles: camera intent, native region leases, card promises and
   animation timing. These are rebuilt after loading, never serialized as handles.
 
+The HUD keeps the roster in a translucent top line and the current action in a
+bottom line. Its right-side controls appear only during targeting. A successful
+launch records the weapon, angle and power on the shooter, so the action readout
+survives impacts, loadout changes and an unloaded or destroyed shooter. The native
+Menu Editor can preview these states without advancing the battle.
+
 Payout receipts prevent a result from paying twice. Utility consumption and its
 stock debit share one installed-state write. Save barriers cover deployment,
 volleys, presentations and unfinished effects. The pause menu offers an optional finish-and-save path at a safe boundary.

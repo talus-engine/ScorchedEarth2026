@@ -74,8 +74,8 @@ async function main() {
                 state = await page.evaluate(() => {
                     const hud = document.querySelector('.indigo-hud');
                     const read = key => hud?.querySelector(`[data-talus-bind="${key}"]`)?.textContent?.trim() || '';
-                    return { url: location.href, hud: !!hud, turn: Number(read('turnNumber')), hull: read('current.health'), control: read('current.control'),
-                        status: hud?.querySelector('.hud-status[data-talus-bind="status"]')?.textContent?.trim() || '',
+                    return { url: location.href, hud: !!hud, turn: Number(hud?.dataset.turn), hull: hud?.dataset.health, control: hud?.dataset.control,
+                        status: hud?.dataset.status || '',
                         loading: read('simulationNotice'),
                         roster: hud?.querySelectorAll('.hud-roster-pilot').length || 0, body: document.body.innerText.slice(-6000) };
                 });
@@ -101,7 +101,7 @@ async function main() {
                     const observed = await page.evaluate(() => {
                         const hud = document.querySelector('.indigo-hud');
                         const read = key => hud?.querySelector(`[data-talus-bind="${key}"]`)?.textContent?.trim() || '';
-                        return { turn: Number(read('turnNumber')), status: hud?.querySelector('.hud-status[data-talus-bind="status"]')?.textContent?.trim() || '',
+                        return { turn: Number(hud?.dataset.turn), status: hud?.dataset.status || '',
                             loading: read('simulationNotice'), samples: window.__indigoPlaybackSamples.splice(0) };
                     });
                     telemetry.push(...observed.samples);

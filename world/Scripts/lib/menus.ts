@@ -24,11 +24,23 @@ function create(ctx: Runtime) {
             return;
         const p = ctx.state.match.phase === 'finished' ? ctx.state.match.roster.find((r: any) => r.name === ctx.state.match.winner) || ctx.core.current() : ctx.core.current();
         const e = p.entityId ? ctx.core.entity(p) : null;
+        const targeting = ctx.core.active() && !ctx.state.arcadeCard && !ctx.state.shopOpen;
+        const lastShot = p.lastShot?.turn === ctx.state.match.turnNumber
+            && !['turn', 'telegraph', 'ready', 'deploying'].includes(ctx.state.match.phase) ? p.lastShot : null;
+        const weapon = lastShot?.weapon || p.weaponId || 'standard';
         talus.ui.set({ biome: ctx.state.arena.biome.name, seed: ctx.state.match.seed, tankCount: ctx.state.match.roster.length,
             seriesStatus: ctx.state.match.series?.complete ? 'Champion · ' + ctx.state.match.series.champion : 'Round ' + ctx.state.match.round + ' / Best of ' + (ctx.state.match.seriesLength || 1),
             roundStats: ctx.state.match.roster.map((r: any) => ({ name: r.name, kills: r.kills, damage: Math.round(r.damage || 0), accuracy: (r.shots ? Math.round((r.hits || 0) / r.shots * 100) : 0) + '%', shots: r.shots || 0, earned: r.cashEarned.toFixed(2) })),
             standings: ctx.state.match.series?.standings || [],
             phase: ctx.state.match.phase, status: ctx.state.match.message, turnNumber: ctx.state.match.turnNumber,
+            targeting,
+            action: {
+                weapon: ctx.state.market ? ctx.economy.itemById(weapon).name : 'Field cannon',
+                angle: lastShot?.angle ?? Number(e?.blackboard.get('custom.angle') ?? 45),
+                power: lastShot?.power ?? Number(e?.blackboard.get('custom.power') ?? 70),
+                thought: p.control === 'cpu' && !/^Error:|Match stopped/i.test(ctx.state.match.message)
+                    ? p.tactic || ctx.state.match.message : ctx.state.match.message,
+            },
             persona: p.control === 'cpu' ? (ctx.aiming.personaFor(p)?.factionName || 'CPU') + ' · ' + ctx.aiming.skillFor(p) : 'Local hotseat',
             targets: ctx.state.match.roster.filter((r: any) => r !== p && !r.eliminated).map((r: any) => ({ name: r.name, action: 'target-' + r.index, selected: r.entityId === p.targetId })),
             tactic: p.tactic || '', target: ctx.state.match.roster.find((r: any) => r.entityId === p.targetId)?.name || '',
