@@ -1,10 +1,11 @@
-/** Accept a desktop package only when its real menus reach a playable CPU turn. */
+/** Exercise real menus, CPU combat and sustained native simulation throughput. */
 const fs = require('node:fs');
 const path = require('node:path');
 const { parseArgs } = require('node:util');
 const { setTimeout: delay } = require('node:timers/promises');
 const { ROOT, readJSON, run } = require('./lib/files.cjs');
 const { launch, until } = require('./lib/packaged-player.cjs');
+const { assessPlayback } = require('./lib/playback-evidence.cjs');
 
 async function main() {
     const { values } = parseArgs({ options: {
@@ -12,10 +13,13 @@ async function main() {
         output: { type: 'string', default: path.join(ROOT, '.build/packaged-smoke') },
         recipe: { type: 'string', default: 'wfc' }, seed: { type: 'string', default: '1729' }, help: { type: 'boolean' },
         'startup-timeout': { type: 'string', default: '300' },
+        'play-seconds': { type: 'string', default: '90' },
     } });
-    if (values.help) return console.log('Usage: node tools/packaged-smoke.cjs [--app path.app] [--engine checkout] [--output directory] [--recipe wfc] [--seed 1729] [--startup-timeout seconds]');
+    if (values.help) return console.log('Usage: node tools/packaged-smoke.cjs [--app path.app] [--engine checkout] [--output directory] [--recipe wfc] [--seed 1729] [--startup-timeout seconds] [--play-seconds seconds>=30]');
     const startupSeconds = Number(values['startup-timeout']);
     if (!Number.isFinite(startupSeconds) || startupSeconds <= 0) throw Error('Startup timeout must be a positive number of seconds.');
+    const playSeconds = Number(values['play-seconds']);
+    if (!Number.isFinite(playSeconds) || playSeconds < 30) throw Error('Gameplay observation must last at least 30 seconds.');
     if (process.platform !== 'darwin') throw Error('This acceptance check runs the macOS packaged player.');
     if (!values.engine) throw Error('Set TALUS_ENGINE_ROOT or --engine to a Talus checkout with Playwright installed.');
     const settings = readJSON(path.join(ROOT, 'world/Game/publishing.json'));
@@ -26,11 +30,12 @@ async function main() {
     fs.mkdirSync(values.output, { recursive: true });
     const output = fs.mkdtempSync(path.join(path.resolve(values.output), 'run-'));
     console.log('Evidence:', output);
-    const report = { passed: false, app, criterion: 'two deployed CPU tanks reach active turn 1 after camera arrival through the packaged menus', recipe: values.recipe, seed: values.seed, startupSeconds, stages: [] };
+    const report = { passed: false, app, criterion: 'native CPU shot and next turn, with sustained simulation targeting 60 ticks/s', recipe: values.recipe, seed: values.seed, startupSeconds, playSeconds, stages: [], playback: null };
     let player, browser, page;
     const gamePages = () => browser?.contexts().flatMap(c => c.pages()).filter(p => !p.isClosed() && p.url().startsWith('app://game/')) || [];
     const currentPage = () => gamePages().at(-1);
     const logs = [];
+    const telemetry = [], states = [];
     const stage = text => { report.stages.push({ at: new Date().toISOString(), text }); console.log(text); };
     try {
         player = await launch(path.join(app, 'Contents/MacOS', name), output);
@@ -80,9 +85,41 @@ async function main() {
             if (matchError || /Create world failed|Engine failed|GPU device lost/i.test(state.body)) throw Error(matchError ? state.status : state.body);
             if (state.hud && state.turn >= 1 && Number(state.hull) > 0 && state.roster === 2 && /computer/i.test(state.control)
                 && state.status === 'Computer is choosing its shot') {
-                report.passed = true;
                 stage('Both tanks deployed, camera arrived and the CPU is choosing its shot');
                 await page.screenshot({ path: path.join(output, 'first-turn.png') });
+                await page.evaluate(() => {
+                    window.__indigoPlaybackSamples = [];
+                    window.addEventListener('talus:raf-frame-stats', e => {
+                        window.__indigoPlaybackSamples.push({ telemetry: e.detail.performanceTelemetry });
+                        if (window.__indigoPlaybackSamples.length > 240) window.__indigoPlaybackSamples.shift();
+                    });
+                });
+                // Allow the first and last native telemetry samples to span the requested duration.
+                const playingUntil = Date.now() + (playSeconds + 1) * 1000;
+                let sawShot = false, sawNextTurn = false, dropStarted = null;
+                while (Date.now() < playingUntil) {
+                    const observed = await page.evaluate(() => {
+                        const hud = document.querySelector('.indigo-hud');
+                        const read = key => hud?.querySelector(`[data-talus-bind="${key}"]`)?.textContent?.trim() || '';
+                        return { turn: Number(read('turnNumber')), status: hud?.querySelector('.hud-status[data-talus-bind="status"]')?.textContent?.trim() || '',
+                            loading: read('simulationNotice'), samples: window.__indigoPlaybackSamples.splice(0) };
+                    });
+                    telemetry.push(...observed.samples);
+                    states.push({ wall: Date.now(), turn: observed.turn, status: observed.status, loading: observed.loading });
+                    if (/^Error:|Match stopped/i.test(observed.status)) throw Error(observed.status);
+                    sawShot ||= /Attack in flight|rocket in flight|impact settle/i.test(observed.status);
+                    sawNextTurn ||= sawShot && observed.turn > state.turn;
+                    if (/SUPPLY DROP/.test(observed.status)) dropStarted ??= Date.now();
+                    else dropStarted = null;
+                    if (dropStarted !== null && Date.now() - dropStarted > 15000) throw Error('Supply-drop presentation exceeded 15 real seconds');
+                    await delay(250);
+                }
+                report.playback = { ...assessPlayback(telemetry), sawShot, sawNextTurn };
+                if (!report.playback.passed) throw Error(report.playback.problems.join('; '));
+                if (!sawShot || !sawNextTurn) throw Error('CPU combat did not complete a shot and advance to the next turn');
+                report.passed = true;
+                stage(`Gameplay accepted: ${report.playback.meanHz.toFixed(1)} sim ticks/s, shot completed and next turn reached`);
+                await page.screenshot({ path: path.join(output, 'gameplay.png') });
                 return;
             }
             if (Date.now() - progressAt > 15000) { stage(state.hud ? `Waiting for turn 1: ${state.status || state.loading}` : 'Waiting for the game world'); progressAt = Date.now(); }
@@ -95,7 +132,9 @@ async function main() {
         if (page && !page.isClosed()) await page.screenshot({ path: path.join(output, 'failure.png'), timeout: 10000 }).catch(() => {});
         throw error;
     } finally {
+        if (telemetry.length && !report.playback) report.playback = assessPlayback(telemetry);
         fs.writeFileSync(path.join(output, 'result.json'), JSON.stringify(report, null, 2) + '\n');
+        fs.writeFileSync(path.join(output, 'playback.json'), JSON.stringify({ telemetry, states }, null, 2) + '\n');
         fs.writeFileSync(path.join(output, 'console.json'), JSON.stringify(logs, null, 2) + '\n');
         if (page && !page.isClosed()) await page.evaluate(() => window.talusHost.quit()).catch(() => {});
         await browser?.close().catch(() => {});

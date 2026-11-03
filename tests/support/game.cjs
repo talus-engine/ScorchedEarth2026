@@ -21,14 +21,7 @@ function fixture(namesText = 'Alpha\nBravo', native = false, computers = 2) {
         players: { list: () => [] }, entities: { get: id => actors.get(id) }, camera: cameraMock(id => actors.get(id)),
         ui: { set: (k, v) => typeof k === 'string' ? ui[k] = v : Object.assign(ui, k), floatText() { }, openMenu() { }, closeMenu() { } } };
     talus.world.raycast = () => null;
-    talus.sim.ring = { mode: 'view', region: null, ready: 0, chunks: 0, resident: 0, open: 0,
-        overBudget: false, awaitingLayers: 0, budget: { chunks: 3328, particles: 12000000 }, arena: null, problems: [] };
-    talus.sim.setRing = (region, options) => {
-        const chunks = region ? Math.ceil(region.w / 64) * Math.ceil(region.h / 64) : 0;
-        return talus.sim.ring = { ...talus.sim.ring, mode: region ? 'region' : 'view',
-            region: region && structuredClone(region), electrical: options?.electrical || null, chunks, ready: chunks };
-    };
-    talus.sim.whenRingLoaded = async () => true;
+    talus.layers = { get: name => name === 'Shot paths' ? { type: 'raster' } : null };
     const game = loadGame(talus), state = game.context.state, api = game.api;
     state.terrainCatalog = read('world/Game/terrain-recipes.json');
     state.playerCatalog = read('world/Game/players.json');

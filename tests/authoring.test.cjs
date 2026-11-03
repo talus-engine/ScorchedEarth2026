@@ -70,7 +70,17 @@ test('authoring refuses unloaded or child worlds before writing to the root', as
         assert.equal((await editor()).world.worldId, WORLD_ID);
         await assert.rejects(installText('Game/test.json', '{}'), /file mount is not ready/);
     }
-    assert(requests.every(url => url.endsWith('/engine_describe_context')), 'No file operation may run before readiness');
+    assert(requests.every(url => /\/(engine_describe_context|list_world_files)$/.test(url)), 'No file mutation may run before readiness');
+    response.world = { ...ready, worldId: null };
+    response.files = { hostMount: { mounted: true }, worldDir: null };
+    globalThis.fetch.mock.mockImplementation(async (url, options) => {
+        if (url.endsWith('/list_world_files')) {
+            assert.deepEqual(JSON.parse(options.body), { worldId: WORLD_ID });
+            return Response.json({ ok: true, worldId: WORLD_ID, hostPath: '/mounted/root' });
+        }
+        return Response.json(response);
+    });
+    assert.equal(await mountedEditor(), '/mounted/root', 'Template editor resolves its explicit root when the game world ID is absent');
 });
 
 test('theme embedding preserves literal CSS and surrounding menu content', t => {

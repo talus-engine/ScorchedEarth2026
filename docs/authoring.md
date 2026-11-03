@@ -43,10 +43,20 @@ Binary imports use native asset tools or `talus.files.writeBytes`.
 Terrain, WFC pixels, joints and native records are not fully represented by the
 file mount. Save in Talus and export the complete project after editing them.
 `tools/records.cjs capture` reads the configured roster, weapon/mod and creature
-templates, their animation libraries, and biome lighting into `assets/native/`.
+templates, their animation libraries, biome lighting and backgrounds into `assets/native/`.
 `install` validates changes,
 saves through native authoring APIs and checks entity readback. Import the full
 archive before installing these records; they use durable native IDs.
+
+Custom element recipes in `assets/native/elements/` use a named base plus explicit
+property overrides. `node tools/records.cjs elements` validates and installs just
+these recipes, then reads each saved definition back. The complete `install`
+command includes them. Names are portable; numeric element IDs are assigned by
+the receiving project. A `null` override removes an inherited optional property.
+
+The [shot visual guide](shot-trails.md) describes smoke material generation, the
+trajectory raster layer, and the seeded retro sky library. Install the records
+and raster layer before syncing their game scripts into an authoring world.
 
 ## Common edits
 
@@ -64,9 +74,8 @@ archive before installing these records; they use durable native IDs.
   engine's template/animation editors.
 
 After syncing an edited `Game/input.json`, run `node tools/project.cjs ui` to install its
-bindings, ring, camera, weather and memory policy through the native `gameUi` record.
-Reopen the project after changing its engine budgets. Run
-`node tools/project.cjs arena` to install the authored projectile and loose-body
+bindings and game UI policy through the native `gameUi` record. Run
+`node tools/project.cjs arena` to install the authored projectile
 edge rules from `Game/arena-rules.json`; unrelated world-event rules are retained.
 The game selects
 `quitSavePolicy: discard` so Quit and app close never wait for a game save.

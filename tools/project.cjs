@@ -11,7 +11,7 @@ const { call, script } = require('./bridge.cjs');
 async function editor() {
     const context = await call('engine_describe_context');
     const world = context.world;
-    if (!world?.isEditorMode || world.templateId !== WORLD_ID || world.worldId !== WORLD_ID || !world.engineBooted) {
+    if (!world?.isEditorMode || world.templateId !== WORLD_ID || (world.worldId != null && world.worldId !== WORLD_ID) || !world.engineBooted) {
         throw Error('Open the configured root world in the Talus editor and wait for it to finish loading.');
     }
     return context;
@@ -19,8 +19,10 @@ async function editor() {
 
 async function mountedEditor() {
     const context = await editor();
-    if (!context.files?.hostMount?.mounted || !context.files.worldDir) throw Error('The Talus root-world file mount is not ready.');
-    return context.files.worldDir;
+    if (!context.files?.hostMount?.mounted) throw Error('The Talus root-world file mount is not ready.');
+    const directory = context.files.worldDir || (await call('list_world_files', { worldId: WORLD_ID })).hostPath;
+    if (!directory) throw Error('The Talus root-world file mount is not ready.');
+    return directory;
 }
 
 async function native(source) {
@@ -34,10 +36,12 @@ async function write(file) {
 }
 
 async function types() {
-    const source = path.join(await mountedEditor(), 'Scripts/talus.d.ts');
+    await editor();
+    const source = await native('return await talus.files.readText("Scripts/talus.d.ts")');
+    if (!source) throw Error('The editor has not generated its native declarations.');
     const target = path.join(ROOT, '.build/talus.d.ts');
     fs.mkdirSync(path.dirname(target), { recursive: true });
-    fs.copyFileSync(source, target);
+    fs.writeFileSync(target, source);
     console.log('Saved current native declarations to .build/talus.d.ts');
 }
 
@@ -58,7 +62,7 @@ async function arena() {
         if (!row || Object.entries(expected).some(([key, value]) => !isDeepStrictEqual(row[key], value)))
             throw Error('Native arena rule readback differs: ' + expected.id);
     }
-    console.log('Installed projectile and loose-body arena edges.');
+    console.log('Installed projectile arena edges.');
 }
 
 async function catalog() {

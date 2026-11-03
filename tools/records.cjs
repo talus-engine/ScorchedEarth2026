@@ -1,4 +1,4 @@
-/** Capture or install the project's native entities, animations and lighting. */
+/** Capture or install native entities, animations, lighting, backgrounds and custom elements. */
 const fs = require('node:fs');
 const path = require('node:path');
 const { parseArgs, isDeepStrictEqual } = require('node:util');
@@ -53,10 +53,19 @@ async function capture() {
         lighting.push(record);
     }
     saveRecords(path.join(DIRECTORY, 'lighting'), lighting, 'id');
+    const backgrounds = [];
+    const backgroundIds = [...new Set(recordsIn(path.join(ROOT, 'world/Biomes')).map(file => readJSON(file).backgroundId).filter(Boolean))];
+    for (const id of backgroundIds) {
+        const record = await native(`return await talus.editor.records.get('background',${JSON.stringify(id)})`);
+        if (!record) throw Error('Missing biome background: ' + id);
+        backgrounds.push(record);
+    }
+    saveRecords(path.join(DIRECTORY, 'backgrounds'), backgrounds, 'id');
     console.log(`Captured ${rows.length} entity records, their animation libraries and ${lighting.length} lighting presets.`);
 }
 
 async function install() {
+    await elements();
     const proposals = [];
     for (const file of recordsIn(path.join(DIRECTORY, 'entities'))) {
         const record = readJSON(file), id = record.templateId;
@@ -71,6 +80,8 @@ async function install() {
     for (const kind of [...KINDS, 'lighting']) for (const file of recordsIn(path.join(DIRECTORY, kind))) {
         await native(`return await talus.editor.records.save(${JSON.stringify(kind)},${JSON.stringify(readJSON(file))})`);
     }
+    for (const file of recordsIn(path.join(DIRECTORY, 'backgrounds')))
+        await native(`return await talus.editor.records.save('background',${JSON.stringify(readJSON(file))})`);
     for (const { id, patch } of proposals) {
         await call('save_entity_template', { template: id, patch });
         const actual = await native(`return await talus.editor.templates.get(${JSON.stringify(id)})`);
@@ -80,11 +91,34 @@ async function install() {
     console.log(`Installed ${proposals.length} changed entity records.`);
 }
 
+async function elements() {
+    const folder = path.join(DIRECTORY, 'elements');
+    if (!fs.existsSync(folder)) return;
+    for (const file of recordsIn(folder)) {
+        const spec = readJSON(file);
+        const actual = await native(`const spec=${JSON.stringify(spec)};
+            let element=talus.elements.get(spec.name);
+            const base=element||talus.elements.get(spec.basedOn);
+            if(!base)throw Error('Missing base element: '+spec.basedOn);
+            const check=await base.validate(spec.fields);
+            if(!check.ok)throw Error(JSON.stringify(check.problems));
+            if(element)await element.update(spec.fields);
+            else element=await talus.elements.create({name:spec.name,basedOn:spec.basedOn,fields:spec.fields});
+            return {actual:JSON.parse(await element.exportJson()),fields:spec.fields};`);
+        const mismatches = Object.entries(actual.fields).filter(([key, value]) => value === null
+            ? actual.actual[key] != null : !isDeepStrictEqual(actual.actual[key], value));
+        if (actual.actual.name !== spec.name || mismatches.length)
+            throw Error('Element readback differs: ' + spec.name + ' ' + mismatches.map(([key]) => key).join(', '));
+        console.log('Installed element: ' + spec.name);
+    }
+    await native('await talus.editor.save();return true');
+}
+
 if (require.main === module) run(async () => {
     const { values, positionals } = parseArgs({ allowPositionals: true, options: { help: { type: 'boolean' } } });
-    const usage = 'Usage: node tools/records.cjs <capture|install>';
+    const usage = 'Usage: node tools/records.cjs <capture|install|elements>';
     if (values.help) return console.log(usage);
-    if (positionals.length !== 1 || !['capture', 'install'].includes(positionals[0])) throw Error(usage);
+    if (positionals.length !== 1 || !['capture', 'install', 'elements'].includes(positionals[0])) throw Error(usage);
     await editor();
-    await (positionals[0] === 'capture' ? capture() : install());
+    await ({ capture, install, elements })[positionals[0]]();
 });

@@ -2,7 +2,6 @@
 import type { Runtime, State } from 'context';
 import core = require('core');
 import residency = require('residency');
-import simulation = require('simulation');
 import presentation = require('presentation');
 import session = require('session');
 import economy = require('economy');
@@ -22,6 +21,7 @@ import payloads = require('payloads');
 import generation = require('generation');
 import menus = require('menus');
 import lifecycle = require('lifecycle');
+import shotVisuals = require('shot-visuals');
 function create() {
     const state: State = {
             arena: undefined,
@@ -82,7 +82,6 @@ function create() {
     const ctx = { state } as Runtime;
     ctx.core = core(ctx);
     ctx.residency = residency(ctx);
-    ctx.simulation = simulation(ctx);
     ctx.presentation = presentation(ctx);
     ctx.session = session(ctx);
     ctx.economy = economy(ctx);
@@ -102,9 +101,9 @@ function create() {
     ctx.generation = generation(ctx);
     ctx.menus = menus(ctx);
     ctx.lifecycle = lifecycle(ctx);
+    ctx.shotVisuals = shotVisuals(ctx);
     function start() {
         ctx.camera.bind();
-        ctx.simulation.bind();
         ctx.residency.bind();
         ctx.presentation.bind();
         ctx.session.bind();
@@ -112,6 +111,7 @@ function create() {
         ctx.turns.bind();
         ctx.combat.bind();
         ctx.attachments.bind();
+        ctx.shotVisuals.bind();
         ctx.payloads.bind();
         ctx.menus.bind();
         ctx.lifecycle.bind();

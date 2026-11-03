@@ -1,0 +1,98 @@
+{
+  "palette": {
+    "source": "tank.color",
+    "bands": [
+      {
+        "mix": "#080C20",
+        "amount": 0.65
+      },
+      {
+        "mix": "#FFFFFF",
+        "amount": 0
+      },
+      {
+        "mix": "#FFFFFF",
+        "amount": 0.85
+      }
+    ]
+  },
+  "palettes": [
+    {
+      "color": "#FF783C",
+      "gas": "TANK_INK_FF783C"
+    },
+    {
+      "color": "#70F8A0",
+      "gas": "TANK_INK_70F8A0"
+    },
+    {
+      "color": "#EC3555",
+      "gas": "TANK_INK_EC3555"
+    },
+    {
+      "color": "#A574F4",
+      "gas": "TANK_INK_A574F4"
+    },
+    {
+      "color": "#35D9FF",
+      "gas": "TANK_INK_35D9FF"
+    },
+    {
+      "color": "#D9A165",
+      "gas": "TANK_INK_D9A165"
+    },
+    {
+      "color": "#82D3AF",
+      "gas": "TANK_INK_82D3AF"
+    },
+    {
+      "color": "#C9605C",
+      "gas": "TANK_INK_C9605C"
+    },
+    {
+      "color": "#B083CF",
+      "gas": "TANK_INK_B083CF"
+    },
+    {
+      "color": "#61A9D9",
+      "gas": "TANK_INK_61A9D9"
+    },
+    {
+      "color": "#FF6150",
+      "gas": "TANK_INK_FF6150"
+    },
+    {
+      "color": "#7EF88F",
+      "gas": "TANK_INK_7EF88F"
+    },
+    {
+      "color": "#EC4787",
+      "gas": "TANK_INK_EC4787"
+    },
+    {
+      "color": "#9581F4",
+      "gas": "TANK_INK_9581F4"
+    },
+    {
+      "color": "#49FFFB",
+      "gas": "TANK_INK_49FFFB"
+    },
+    {
+      "color": "#E6C97C",
+      "gas": "TANK_INK_E6C97C"
+    }
+  ],
+  "path": {
+    "layer": "Shot paths",
+    "widthPixels": 1,
+    "batchSeconds": 0.25,
+    "maxSpanPixels": 128,
+    "maxPending": 2048
+  },
+  "smoke": {
+    "spacingPixels": 2,
+    "widthPixels": 4,
+    "particlesPerPoint": 4,
+    "maxPointsPerTick": 64
+  }
+}

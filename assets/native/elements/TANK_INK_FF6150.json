@@ -1,0 +1,105 @@
+{
+  "name": "TANK_INK_FF6150",
+  "basedOn": "SMOKE",
+  "fields": {
+    "color": [
+      1,
+      0.3803921568627451,
+      0.3137254901960784
+    ],
+    "category": [
+      "Gases"
+    ],
+    "tags": [
+      "gas"
+    ],
+    "falldown": 3,
+    "weight": 1,
+    "hardness": 1,
+    "flammable": 0,
+    "collision": 0,
+    "gravity": -0.025,
+    "diffusion": 0.06,
+    "brownian": 0.04,
+    "maxVelocity": 96,
+    "fireLife": 0,
+    "lifeNoise": 0,
+    "frozenTtlDecay": 1,
+    "opacityChannel": null,
+    "initialTemp": 293,
+    "hotAir": 0,
+    "heatConduct": 0,
+    "lightOpacity": 0,
+    "lightScatter": 0,
+    "renderMode": "noise",
+    "textureDataUrl": null,
+    "noiseSpec": {
+      "algorithm": "simplex",
+      "frequency": 0.08,
+      "octaves": 3,
+      "persistence": 0.55,
+      "lacunarity": 2,
+      "noiseMix": 1,
+      "noiseVisualMode": "bands",
+      "layers": [
+        {
+          "color": [
+            0.37039215686274507,
+            0.1637254901960784,
+            0.19137254901960782
+          ],
+          "alpha": 1,
+          "scale": 0.08,
+          "strength": 1,
+          "endPos": 0.3333333333333333
+        },
+        {
+          "color": [
+            1,
+            0.3803921568627451,
+            0.3137254901960784
+          ],
+          "alpha": 1,
+          "scale": 0.08,
+          "strength": 1,
+          "endPos": 0.6666666666666666
+        },
+        {
+          "color": [
+            1,
+            0.9070588235294117,
+            0.8970588235294118
+          ],
+          "alpha": 1,
+          "scale": 0.08,
+          "strength": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    "trailStrength": 0.8,
+    "trailWidth": 1.6,
+    "trailLifetimeSize": 2.5,
+    "trailWaveAmount": 0.2,
+    "trailWaves": 1.5,
+    "trailWavePhase": 0,
+    "trailWaveSpread": 1,
+    "trailSweepPx": 0,
+    "trailDecay": 0.94,
+    "trailMode": 11,
+    "trailTint": null,
+    "rules": [],
+    "spawnSfxId": null,
+    "reactSfxId": null,
+    "ambientSfxId": null,
+    "movementSfxId": null,
+    "despawnSfxId": null,
+    "textureAnchor": true,
+    "shape": {
+      "kind": "puff",
+      "size": 4,
+      "sizeJitter": 0.3,
+      "tween": 0.08
+    }
+  }
+}

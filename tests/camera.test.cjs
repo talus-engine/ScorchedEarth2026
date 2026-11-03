@@ -90,11 +90,7 @@ function enableBoot(f) {
     f.talus.sim.pause = () => { f.talus.sim.paused = true; };
     f.talus.camera.setZoom = zoom => assert.equal(zoom, 1);
     f.talus.camera.follow = mode => assert.equal(mode, 'off');
-    f.talus.camera.frame = frame => {
-        assert.equal(frame.mode, 'confine', 'Reload restores the battlefield camera bounds');
-        f.talus.camera.view.frame = { spec: structuredClone(frame) };
-        f.talus.camera.view.viewport = { x: 5600, y: 150, w: 1600, h: 968 };
-    };
+    f.talus.camera.frame = frame => assert.equal(frame, null, 'Reload clears only the obsolete all-tank frame');
 }
 async function main() {
     {

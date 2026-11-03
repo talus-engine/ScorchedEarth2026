@@ -11,6 +11,37 @@ names.set('TERRA_LASER', require('../assets/native/materials/laser.json').id);
 const ids = ['laser', 'baby-digger', 'digger-shell', 'heavy-digger', 'baby-sandhog', 'sandhog', 'heavy-sandhog'];
 const items = ids.map(id => shop.items.find(i => i.id === id));
 const record = id => JSON.parse(fs.readFileSync('assets/native/entities/' + id + '.json', 'utf8'));
+// Wendell Hicken's Scorched Earth 1.5 manual, pages 23 and 28.
+// https://www.whicken.com/scorch/scorch15.zip (SCORCH.DOC)
+const originalWeapons = [
+    'Baby Missile', 'Missile', 'Baby Nuke', 'Nuke', 'Leap Frog', 'Funky Bomb', 'MIRV', 'Death’s Head',
+    'Napalm', 'Hot Napalm', 'Tracer', 'Smoke Tracer', 'Baby Roller', 'Roller', 'Heavy Roller',
+    'Riot Charge', 'Riot Blast', 'Riot Bomb', 'Heavy Riot Bomb', 'Baby Digger', 'Digger', 'Heavy Digger',
+    'Baby Sandhog', 'Sandhog', 'Heavy Sandhog', 'Dirt Clod', 'Dirt Ball', 'Ton of Dirt', 'Liquid Dirt',
+    'Dirt Charge', 'Earth Disrupter', 'Plasma Blast', 'Laser',
+];
+const originalAccessories = ['Heat Guidance', 'Ballistic Guidance', 'Horz Guidance', 'Vert Guidance',
+    'Lazy Boy', 'Parachute', 'Battery', 'Mag Deflector', 'Shield', 'Force Shield', 'Heavy Shield',
+    'Super Mag', 'Auto Defense', 'Fuel Tank', 'Contact Trigger'];
+
+test('every original weapon and accessory is uniquely enabled with its native loadout wired', () => {
+    const tanks = [arena.tankTemplate, ...arena.tankPalettes.map(p => p.templateId)].map(record);
+    for (const [kind, names] of [['weapon', originalWeapons], ['utility', originalAccessories]]) {
+        const originals = shop.items.filter(i => i.kind === kind && i.original);
+        assert.deepEqual(originals.map(i => i.original).sort(), [...names].sort());
+        for (const original of names) {
+            const item = originals.find(i => i.original === original);
+            assert.equal(item.enabled, true, original);
+            if (kind !== 'weapon') continue;
+            const gun = record(item.template), mod = record(item.modTemplate);
+            assert.equal(gun.itemData.isWeapon, true, original);
+            assert.ok(gun.itemData.startingMods.some(id => [mod.templateId, mod.templateName].includes(id)), original);
+            for (const [field, value] of Object.entries(item.projectile))
+                if (field !== 'material') assert.deepEqual(mod.itemData.modSpec.projectile[field], value, original + ': ' + field);
+            for (const tank of tanks) assert.ok(tank.startingItems.includes(item.template), tank.templateName + ': ' + original);
+        }
+    }
+});
 
 test('enabled cutting weapons use native casts and are present in every tank inventory', () => {
     const tanks = [arena.tankTemplate, ...arena.tankPalettes.map(p => p.templateId)].map(record);
@@ -39,7 +70,8 @@ test('all native drill roots and payloads remain bounded and protect the complet
         assert.ok(x.radius >= spec.bodySizePx * Math.SQRT2 / 2 + 1);
         assert.equal(x.output, names.get('SMOKE'));
         assert.equal(x.clearance, 'solid');
-        assert.equal(x.cutAhead, 0);
+        assert.ok(x.cutAhead >= spec.speed / 4, 'Cut a usable corridor, not two physics steps at a time');
+        assert.ok(x.lookahead >= x.cutAhead && x.lookahead <= 128);
         assert.equal(x.onBlocked, 'detonate', 'A protected hull ends cutting and receives the native warhead blast');
         assert.ok(x.bounds.x <= arena.bounds.x && x.bounds.x + x.bounds.w >= right);
         assert.ok(x.bounds.y + x.bounds.h <= floor);

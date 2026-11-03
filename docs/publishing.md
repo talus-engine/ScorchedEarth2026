@@ -34,7 +34,7 @@ missing. Do not edit build stamps. The CLI also accepts a complete native
 SQLite backup with `--database`; a raw database file may omit external terrain
 and project files and is not equivalent to a complete backup.
 
-Accept a desktop build only after its real menus reach a playable CPU turn:
+Accept a desktop build only after real CPU combat runs at the target simulation rate:
 
 ```sh
 TALUS_ENGINE_ROOT=/path/to/talus-checkout npm run test:packaged
@@ -42,15 +42,22 @@ TALUS_ENGINE_ROOT=/path/to/talus-checkout npm run test:packaged
 
 The macOS check launches the generated app unchanged, with fresh isolated
 storage, and drives **New game → two CPUs → Start match**. It requires deployed
-tanks, camera arrival and the CPU choosing its shot, and fails immediately on
-a match error. Screenshots, logs
+tanks, camera arrival, a native shot and advancement to another turn. It then
+measures 90 seconds of gameplay, targeting 60 simulation ticks per second.
+The gate requires at least 58 ticks per second on average and refuses a stretch
+of more than five seconds below it. Display FPS is not simulation throughput.
+Missing telemetry, a match error, or a supply-drop presentation lasting more
+than 15 real seconds also fails. Screenshots, native telemetry, logs
 and the result remain under `.build/packaged-smoke/`; the temporary profile is
 removed after the app closes. `--app /path/to/Game.app`, `--recipe bunker-grid`
 and `--seed 1729` can select another package or terrain case. Packaging and
-checksum verification alone do not establish that the game starts.
+checksum verification alone do not establish that the game plays correctly.
 The default startup deadline is 300 seconds; `--startup-timeout 900` allows a
 bounded longer run when measuring full-map generation. The result records the
 chosen deadline and loading progress so a slow startup remains visible.
+`--play-seconds` changes the bounded gameplay observation (minimum 30 seconds).
+See [simulation acceptance](simulation-performance.md) for the ring, terrain and
+camera checks required before publication.
 
 Keep installers, extracted profiles and working output in ignored `dist/` or
 outside the repository. `project/*.talus` is also ignored: commit authored source

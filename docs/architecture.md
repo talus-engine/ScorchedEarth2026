@@ -23,15 +23,15 @@ loaded by Talus once per script sandbox and do not start as independent scripts.
 | `equipment`, `economy` | Drive native controllers, reconcile finite utility consumption, purchase stock and award cash |
 | `attachments` | Reserve native cast accessories, reconcile accepted-launch spending and survey fixed-angle shots |
 | `special-weapons` | Bound cutting-shot aim estimates by native range, material eligibility and the protected foundation |
+| `shot-visuals` | Observe native flights, emit colored gas and batch persistent raster paths |
 | `presentation`, `camera` | Smooth tracking, 1.5-second dialogue, arcade cards and native text labels |
 | `residency`, `supplies` | Restore parked tanks, own bounded emitter regions, focus and award supply drops |
-| `simulation` | Pin the complete battlefield, await native readiness and report memory pressure or emission shortfalls |
 | `generation` | Configure native WFC/maze terrain and find supported deployment positions |
 | `core` | Shared predicates, clamping and deterministic seed hashing |
 
 ## Turn sequence
 
-Deployment waits for the pinned battlefield, finds supported open ground and creates the roster's native entity
+Deployment streams the required ground, finds supported positions and creates the roster's native entity
 templates. A CPU-only opening armory buys automatically. Human players can shop
 before beginning. A turn centers the camera smoothly on its tank, prepares its
 posture and enables only that tank's controller or CPU graph.
@@ -58,12 +58,11 @@ and pauses with the simulation or a shell held for streaming. These observations
 guide presentation only; native physics determines the actual impact.
 
 Death has its own camera/dialogue/effect sequence. Death emitters can continue
-while another tank acts. In-ring effects share the battlefield's existing
-simulation coverage without claiming duplicate anchors. The shooter and other
-tanks remain simulated when the camera follows a distant projectile. Durable
-entity IDs, native residency and actual projectile events remain authoritative.
-At the camera's confined edges, arrival means reaching the closest legal view
-of a ready subject; it does not require centering beyond the arena.
+while another tank acts. Bounded anchors keep active effects resident until
+completion. Tanks outside the camera and anchor regions may park; native
+streaming restores their durable identities when they return. Native shell
+flight regions provide terrain readiness along their route. Camera arrival
+requires the tracked subject and its terrain to be ready.
 
 Special carriers declare `behavior.mode` in `Game/shop.json`; `payloads` loads
 their definitions from `Game/ordnance.json`, `Game/creatures.json` and

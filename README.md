@@ -36,10 +36,10 @@ The battlefield is 50 WFC tiles wide and 5 tall. Tiles are 256×256 pixels with 
 solid stone foundation. Choose painted WFC terrain or one of four native maze
 styles: Bunker Grid, Rat Run, Cavern War and Terrace Siege. Random selection
 uses only these maps. Advanced setup exposes the maze parameters. Each round
-creates its terrain through native chunk streaming. A pinned simulation ring
-keeps the complete battlefield and its sky active independently of the camera;
-empty sky does not consume resident chunk layers. See
-[simulation coverage](docs/terrain.md#simulation-coverage) for memory budgets
+creates its terrain through native chunk streaming. The camera's simulation
+window follows the action; bounded native anchors keep active effects ready.
+Zooming out uses the engine's quantized overview. See
+[simulation coverage](docs/terrain.md#simulation-coverage) for streaming
 and projectile boundaries.
 
 - Two to ten tanks compete. Each gets a timed turn to move, aim and shoot.
@@ -73,6 +73,7 @@ excerpts of game files and the native tank asset. Its source is
 | [world/Scripts/lib](world/Scripts/lib) | Game services, composed by `game.ts` with boundaries in `context.ts` |
 | [world/Game](world/Game) | Rules, shop, personas, dialogue catalogs, terrain parameters and input |
 | [world/Game/Presets](world/Game/Presets) | Project-owned noise, semantic, neural, living, vector and material resources |
+| [docs/arsenal.md](docs/arsenal.md) | Original weapon coverage, native loadouts and terrain-eating projectile motion |
 | [world/Game/Mazes](world/Game/Mazes) and [assets/mazes](assets/mazes) | Authored native maze recipes, foreground/background tile choices and scenery spawn templates; see [maze configuration](docs/mazes.md) for activation |
 | [world/Menus](world/Menus) | Title, setup, shop, HUD, pause, controls and shared arcade styling |
 | [world/Graphs](world/Graphs) and [world/Dialogue](world/Dialogue) | Native CPU action graph and Ink announcer stories |

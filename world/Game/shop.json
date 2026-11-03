@@ -1673,7 +1673,7 @@
       "price": 100,
       "bundle": 5,
       "enabled": true,
-      "description": "A harmless ranging shell leaving a native smoke-particle trail.",
+      "description": "Harmless ranging shell. The shared colored smoke and persistent path make its trajectory easy to read.",
       "projectile": {
         "kind": "rigid-body",
         "bodySizePx": 4,
@@ -1704,8 +1704,7 @@
             ]
           }
         },
-        "trailMaterial": "SMOKE",
-        "trailRate": 36
+        "trailRate": 0
       },
       "template": "815021a5-49a0-4790-91dd-b5b61a3c5050",
       "modTemplate": "6048f636-1c79-4423-8750-a8aa8377065c"
@@ -1993,8 +1992,8 @@
         "trailRate": 0,
         "excavation": {
           "radius": 4,
-          "lookahead": 24,
-          "cutAhead": 0,
+          "lookahead": 96,
+          "cutAhead": 64,
           "output": 5,
           "clearance": "solid",
           "noise": {
@@ -2201,8 +2200,8 @@
         "trailRate": 0,
         "excavation": {
           "radius": 6,
-          "lookahead": 24,
-          "cutAhead": 0,
+          "lookahead": 96,
+          "cutAhead": 64,
           "output": 5,
           "clearance": "solid",
           "noise": {
@@ -2409,8 +2408,8 @@
         "trailRate": 0,
         "excavation": {
           "radius": 8,
-          "lookahead": 24,
-          "cutAhead": 0,
+          "lookahead": 96,
+          "cutAhead": 64,
           "output": 5,
           "clearance": "solid",
           "noise": {
@@ -2618,8 +2617,8 @@
         "trailRate": 0,
         "excavation": {
           "radius": 4,
-          "lookahead": 24,
-          "cutAhead": 0,
+          "lookahead": 96,
+          "cutAhead": 64,
           "output": 5,
           "clearance": "solid",
           "noise": {
@@ -2813,8 +2812,8 @@
             "trailRate": 0,
             "excavation": {
               "radius": 3,
-              "lookahead": 24,
-              "cutAhead": 0,
+              "lookahead": 96,
+              "cutAhead": 64,
               "output": 5,
               "clearance": "solid",
               "noise": {
@@ -3024,8 +3023,8 @@
         "trailRate": 0,
         "excavation": {
           "radius": 4,
-          "lookahead": 24,
-          "cutAhead": 0,
+          "lookahead": 96,
+          "cutAhead": 64,
           "output": 5,
           "clearance": "solid",
           "noise": {
@@ -3219,8 +3218,8 @@
             "trailRate": 0,
             "excavation": {
               "radius": 4,
-              "lookahead": 24,
-              "cutAhead": 0,
+              "lookahead": 96,
+              "cutAhead": 64,
               "output": 5,
               "clearance": "solid",
               "noise": {
@@ -3430,8 +3429,8 @@
         "trailRate": 0,
         "excavation": {
           "radius": 4,
-          "lookahead": 24,
-          "cutAhead": 0,
+          "lookahead": 96,
+          "cutAhead": 64,
           "output": 5,
           "clearance": "solid",
           "noise": {
@@ -3625,8 +3624,8 @@
             "trailRate": 0,
             "excavation": {
               "radius": 5,
-              "lookahead": 24,
-              "cutAhead": 0,
+              "lookahead": 96,
+              "cutAhead": 64,
               "output": 5,
               "clearance": "solid",
               "noise": {
