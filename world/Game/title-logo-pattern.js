@@ -1,4 +1,4 @@
-// Pure script body. Input: logo = {width, height, seed?, previousSeed?}.
+// Pure script body. Input: logo = {width, height, seed?, previousSeed?, ignitionSites?}.
 // Run once per title entry, before importing the particles. A supplied seed
 // reproduces the pattern; otherwise choose a fresh one independent of match RNG.
 // Output is only material assignments. Never read or modify source RGBA.
@@ -49,5 +49,24 @@ for (let y = 0; y < height; y++) {
     indices[y * width + x] = material;
   }
 }
-return {seed, width, height, materials, indices,
+// Small native FIRE brushes light different opaque parts of the lettering on entry.
+// The image alpha still clips every particle; source colors are untouched.
+const sites = logo.ignitionSites || [];
+const ignition = [];
+if (sites.length) {
+  const fire = materials.push('FIRE') - 1;
+  const count = Math.min(sites.length, 5 + Math.floor(random() * 3));
+  const available = sites.slice();
+  for (let n = 0; n < count; n++) {
+    const [x, y] = available.splice(Math.floor(random() * available.length), 1)[0];
+    const radius = between(3, 6) * scale;
+    ignition.push({ x, y, radius });
+    for (let py = Math.max(0, Math.floor(y - radius)); py <= Math.min(height - 1, Math.ceil(y + radius)); py++) {
+      for (let px = Math.max(0, Math.floor(x - radius)); px <= Math.min(width - 1, Math.ceil(x + radius)); px++) {
+        if ((px - x) ** 2 + (py - y) ** 2 <= radius ** 2) indices[py * width + px] = fire;
+      }
+    }
+  }
+}
+return {seed, width, height, materials, indices, ignition,
   stripes: {slope, amplitude, period, phase, intervals: stripes}};

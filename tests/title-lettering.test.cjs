@@ -1,6 +1,22 @@
 const test = require('node:test'), assert = require('node:assert/strict'), fs = require('node:fs');
 const { pattern } = require('../tools/title_logo_pattern.cjs');
 const { PNG } = require('pngjs');
+test('startup flame brushes hit opaque lettering and leave most of the logo to burn', () => {
+    const scene = JSON.parse(fs.readFileSync('world/Menus/Scenes/title.json'));
+    const image = scene.particleImages[0], png = PNG.sync.read(fs.readFileSync('world/' + image.file));
+    const input = { ...image.materialScript.args, width: image.width, height: image.height, seed: 1986 };
+    const a = pattern(input), b = pattern({ ...input, seed: 2026 });
+    assert.equal(JSON.stringify(a.ignition), JSON.stringify(pattern(input).ignition));
+    assert.notEqual(JSON.stringify(a.ignition), JSON.stringify(b.ignition));
+    assert.ok(a.ignition.length >= 5 && a.ignition.length <= 7);
+    for (const { x, y } of a.ignition) assert.equal(png.data[(y * png.width + x) * 4 + 3], 255);
+    let lit = 0, opaque = 0;
+    for (let i = 0; i < a.indices.length; i++) if (png.data[i * 4 + 3]) {
+        opaque++;
+        if (a.materials[a.indices[i]] === 'FIRE') lit++;
+    }
+    assert.ok(lit > 100 && lit < opaque * .08, `${lit}/${opaque} cells lit`);
+});
 test('title materials reroll without changing source colors or the lettering mask', () => {
     const input = { width: 640, height: 128, seed: 1986 }, a = pattern(input), b = pattern(input);
     assert.deepEqual(Buffer.from(a.indices), Buffer.from(b.indices));

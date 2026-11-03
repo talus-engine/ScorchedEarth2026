@@ -79,6 +79,11 @@ and raster layer before syncing their game scripts into an authoring world.
   `Menus/Assets/title-lettering.png` supplies particle RGB;
   `Game/title-logo-pattern.js` changes only the material indices on each entry.
   Regenerate outlines with `node tools/title-lettering.cjs /path/to/VCR_OSD_MONO.ttf`.
+  After recapturing the native stamp, run `node tools/title-assets.cjs` to refresh
+  its opaque ignition sites and `Thumbnail/custom.png`. Five to seven randomly
+  placed FIRE brushes ignite the combustible stripes at startup; the native
+  scene repeats every 25 seconds. Upload the thumbnail through
+  `talus.editor.layout.setThumbnail` and save the root world before export.
 - Native tank parts and weapon art: `assets/native/`, `assets/sprites/` and the
   engine's template/animation editors.
 
