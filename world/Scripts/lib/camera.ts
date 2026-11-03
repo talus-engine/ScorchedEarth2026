@@ -3,8 +3,18 @@ import type { Runtime } from 'context';
 function create(ctx: Runtime) {
     // Canvas pixels per world pixel: one-to-one between turns, double-size close-ups.
     const wideZoom = 1, closeZoom = 2;
+    // Zoom travel per second: wide to close takes a quarter second, so a target that
+    // steps still reads as one deliberate move, never a snap.
+    const zoomRate = 4;
+    // The wall probe starts this far ahead of the shell. Its own body pixels (a stale
+    // stamp coincides with a slow shell near the apex) and the cells it has just left
+    // are never a wall.
+    const probeGuardPx = 8;
+    // A wall counts once this many probes in a row see it, and stays counted this long
+    // after the last probe that did, so a hit that flickers cannot swing the zoom.
+    const probeConfirm = 2, probeHoldSeconds = .25;
     let flight: { id: number; launch: Vec2 & { vy: number }; apexY: number; previous: ProjectileSnapshot;
-        gravity: number; probeAge: number; impact: Vec2 | null } | null = null;
+        gravity: number; probeAge: number; hits: number; impact: Vec2 | null; impactAge: number } | null = null;
     const ease = (value: number): number => {
         const t = Math.max(0, Math.min(1, value));
         return t * t * (3 - 2 * t);
@@ -14,11 +24,13 @@ function create(ctx: Runtime) {
         if (flight?.id !== s.id) {
             const launch = attack?.ids[s.id]?.launch || s;
             flight = { id: s.id, launch, apexY: Math.min(launch.y, s.y), previous: s,
-                gravity: 0, probeAge: -Infinity, impact: null };
+                gravity: 0, probeAge: -Infinity, hits: 0, impact: null, impactAge: -Infinity };
         }
         const f = flight, elapsed = s.age - f.previous.age;
         if (elapsed > 0) {
-            f.gravity = Math.max(0, Math.min(4000, (s.vy - f.previous.vy) / elapsed));
+            // Smoothed: one snapshot's velocity jitter must not bend the probe's path.
+            const g = Math.max(0, Math.min(4000, (s.vy - f.previous.vy) / elapsed));
+            f.gravity = f.gravity > 0 ? f.gravity + (g - f.gravity) * .3 : g;
             f.previous = s;
         }
         f.apexY = Math.min(f.apexY, s.y);
@@ -27,18 +39,25 @@ function create(ctx: Runtime) {
         // Short resident-terrain observations anticipate walls without planning or loading distant terrain.
         if (s.age - f.probeAge >= .1) {
             f.probeAge = s.age;
-            f.impact = null;
             const horizon = Math.min(.75, 512 / Math.max(1, speed));
-            let from: Vec2 = s;
-            for (let step = 1; step <= 3; step++) {
+            // Sample from just ahead of the body, along its heading (down when it hangs still).
+            const dir = speed > 1 ? { x: s.vx / speed, y: s.vy / speed } : { x: 0, y: 1 };
+            let from: Vec2 = { x: s.x + dir.x * probeGuardPx, y: s.y + dir.y * probeGuardPx };
+            let hit: Vec2 | null = null;
+            for (let step = 1; step <= 3 && !hit; step++) {
                 const t = horizon * step / 3;
                 const to = { x: s.x + s.vx * t, y: s.y + s.vy * t + .5 * f.gravity * t * t };
-                const hit = talus.world.raycast(from, to);
-                if (hit) {
-                    f.impact = { x: hit.x, y: hit.y };
-                    break;
-                }
+                const cell = talus.world.raycast(from, to);
+                if (cell && Math.hypot(cell.x - s.x, cell.y - s.y) >= probeGuardPx) hit = { x: cell.x, y: cell.y };
                 from = to;
+            }
+            if (hit) {
+                f.hits++;
+                if (f.hits >= probeConfirm) { f.impact = hit; f.impactAge = s.age; }
+            }
+            else {
+                f.hits = 0;
+                if (f.impact && s.age - f.impactAge > probeHoldSeconds) f.impact = null;
             }
         }
         let close: number;
@@ -78,7 +97,7 @@ function create(ctx: Runtime) {
         if (!m.attack)
             flight = null;
         const current = talus.camera.view.zoom;
-        const step = Math.max(0, Math.min(.1, dt)) * 12;
+        const step = Math.max(0, Math.min(.1, dt)) * zoomRate;
         const zoom = Math.max(wideZoom, Math.min(closeZoom, current + Math.max(-step, Math.min(step, target - current))));
         if (Math.abs(zoom - current) > .0001 || zoom !== current && (zoom === wideZoom || zoom === closeZoom))
             talus.camera.setZoom(zoom);
