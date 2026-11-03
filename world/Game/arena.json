@@ -40,6 +40,10 @@
     "artistTemplate": "WFC/template.json"
   },
   "impactWaitTicks": 60,
+  "simulation": {
+    "loadTimeoutTicks": 18000,
+    "budgetTimeoutSeconds": 10
+  },
   "posture": {
     "controller": {
       "angularSpeed": 2,

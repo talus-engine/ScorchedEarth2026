@@ -17,6 +17,7 @@ function create(ctx: Runtime) {
             ctx.state.soundCatalog = JSON.parse(await talus.files.readText('Game/audio.json') || '{}');
             ctx.state.supplyCatalog = JSON.parse((await talus.files.readText('Game/supply-drops.json'))!);
             await ctx.payloads.load();
+            await ctx.simulation.load();
             talus.ui.damageTextStyle(ctx.state.damageTextStyle);
             ctx.state.market.categories.forEach((name: string, index: number) => talus.on('menu.custom.category-' + index, () => { ctx.state.shopCategory = name; ctx.economy.publishShop(); }));
             for (const item of ctx.state.market.items) {
@@ -44,7 +45,6 @@ function create(ctx: Runtime) {
                 throw new Error('The death-effect catalog has no enabled effects');
             talus.camera.setZoom(1);
             talus.camera.follow('off');
-            talus.camera.frame(null);
             ctx.state.cameraIntent = null;
             talus.ui.set('frameNotice', '');
             for (const p of talus.players.list()) {
@@ -95,6 +95,7 @@ function create(ctx: Runtime) {
                         throw new Error('A saved death shell is missing; engine projectile persistence is required.');
             talus.ui.closeMenu();
             talus.ui.hud('Menus/hud.html');
+            await ctx.simulation.prepare();
             if (ctx.state.match.phase === 'deploying') {
                 const generation = talus.world.generation.status();
                 if (generation.phase === 'failed')

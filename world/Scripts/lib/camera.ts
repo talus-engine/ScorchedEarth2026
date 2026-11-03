@@ -109,7 +109,20 @@ function create(ctx: Runtime) {
     function cameraPoint(point: Vec2, key: string): CameraTracking {
         return trackCamera({ point: { x: point.x, y: point.y } }, key);
     }
-    const cameraArrived = (state: CameraTracking): boolean => state.phase === 'arrived' && state.ready;
+    function cameraArrived(state: CameraTracking): boolean {
+        if (!state.ready || state.phase === 'held' || state.phase === 'unresolved') return false;
+        if (state.phase === 'arrived') return true;
+        const view = talus.camera.view, frame = view.frame?.spec, point = state.targetPoint;
+        if (!point || frame?.mode !== 'confine') return false;
+        // A subject at a room edge cannot be centred without looking outside it.
+        const b = frame.bounds, padding = frame.padding || 0;
+        const axis = (value: number, start: number, span: number, size: number): number => {
+            const low = start - padding + size / 2, high = start + span + padding - size / 2;
+            return low > high ? start + span / 2 : Math.max(low, Math.min(high, value));
+        };
+        const x = axis(point.x, b.x, b.w, view.viewport.w), y = axis(point.y, b.y, b.h, view.viewport.h);
+        return Math.hypot(state.center.x - x, state.center.y - y) <= state.tolerance;
+    }
     function holdCamera(): void {
         if (ctx.state.cameraIntent)
             talus.camera.hold();

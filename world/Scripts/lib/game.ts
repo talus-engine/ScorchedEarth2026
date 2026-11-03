@@ -2,6 +2,7 @@
 import type { Runtime, State } from 'context';
 import core = require('core');
 import residency = require('residency');
+import simulation = require('simulation');
 import presentation = require('presentation');
 import session = require('session');
 import economy = require('economy');
@@ -81,6 +82,7 @@ function create() {
     const ctx = { state } as Runtime;
     ctx.core = core(ctx);
     ctx.residency = residency(ctx);
+    ctx.simulation = simulation(ctx);
     ctx.presentation = presentation(ctx);
     ctx.session = session(ctx);
     ctx.economy = economy(ctx);
@@ -102,6 +104,7 @@ function create() {
     ctx.lifecycle = lifecycle(ctx);
     function start() {
         ctx.camera.bind();
+        ctx.simulation.bind();
         ctx.residency.bind();
         ctx.presentation.bind();
         ctx.session.bind();

@@ -6,6 +6,16 @@
     "map": true
   },
   "cameraFollow": "off",
+  "startRing": { "x": -512, "y": -8704, "w": 13824, "h": 10496 },
+  "startElectrical": { "x": 4864, "y": 0, "w": 3072, "h": 1280 },
+  "startCameraFrame": {
+    "bounds": { "x": -512, "y": -8704, "w": 13824, "h": 10496 },
+    "mode": "confine",
+    "padding": 0,
+    "preferVisible": true
+  },
+  "engineBudgets": { "chunkPoolLayers": 3584, "particleSlots": 12000000 },
+  "weatherOverOpenSky": true,
   "quitSavePolicy": "discard",
   "customCss": "",
   "inputActions": [

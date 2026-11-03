@@ -12,6 +12,8 @@ Choose New game, a seed or random map, and 2–10 human/CPU players, then Start 
 
 [Rules](event:guide:file?path=Game/arena.json) · [CPU graph](event:guide:file?path=Graphs/cpu-turn.json) · [Weapons and cash](event:guide:file?path=Game/shop.json) · [Personas](event:guide:file?path=Game/personas.json)
 
+[Simulation and camera settings](event:guide:file?path=Game/input.json) pin the full battlefield and sky independently of the camera. Empty sky needs no resident layer; the project sets its chunk and particle budgets. [Arena edges](event:guide:file?path=Game/arena-rules.json) remove escaped shots and wreckage. [Simulation service](event:guide:file?path=Scripts/lib/simulation.ts) waits for native readiness before tanks deploy.
+
 [HUD](event:guide:file?path=Menus/hud.html) and [setup](event:guide:file?path=Menus/setup.html) bind reactive UI state. [Title world](event:guide:title) fills the screen behind the title controls. [Tank asset](event:guide:asset) contains the jointed parts and animation bindings.
 
 ## Paint and customize

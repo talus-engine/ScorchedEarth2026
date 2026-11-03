@@ -1,0 +1,48 @@
+[
+  {
+    "id": "scorched-flight-sides",
+    "name": "Battlefield sides and floor",
+    "eventType": "out-of-bounds",
+    "enabled": true,
+    "debounceMs": 0,
+    "filterEntityType": "any",
+    "bidirectional": false,
+    "from": {
+      "kind": "any"
+    },
+    "to": {
+      "kind": "any"
+    },
+    "kill": false,
+    "projectiles": "remove",
+    "looseBodies": "remove",
+    "edges": [
+      "bottom",
+      "left",
+      "right"
+    ],
+    "marginPx": 128
+  },
+  {
+    "id": "scorched-flight-ceiling",
+    "name": "High-flight ceiling",
+    "eventType": "out-of-bounds",
+    "enabled": true,
+    "debounceMs": 0,
+    "filterEntityType": "any",
+    "bidirectional": false,
+    "from": {
+      "kind": "any"
+    },
+    "to": {
+      "kind": "any"
+    },
+    "kill": false,
+    "projectiles": "remove",
+    "looseBodies": "remove",
+    "edges": [
+      "top"
+    ],
+    "marginPx": 8192
+  }
+]

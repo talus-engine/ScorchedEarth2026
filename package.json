@@ -8,6 +8,7 @@
     "audit": "node tools/audit.cjs",
     "menus": "node tools/menus.cjs",
     "test:native": "node tools/native-tests.cjs",
+    "test:packaged": "node tools/packaged-smoke.cjs",
     "template:export": "node tools/template.cjs export",
     "template:publish": "node tools/template.cjs publish"
   },

@@ -39,15 +39,46 @@ selection and landscape tours use this same catalog. The advanced setup panel
 exposes each maze's native parameters, with a solid stone foundation beneath
 all maps and an open central deployment area in each maze.
 
-Only the current round is created. Talus generates its terrain as chunks stream
-into view; the game waits for camera readiness and finds supported tank positions.
-There is no whole-map decoration pass before deployment. Saved terrain damage
-is preserved by the native world lifecycle.
+Only the current round is created. Talus generates its native chunks when the
+game pins the battlefield ring, and deployment waits for `whenRingLoaded()`.
+Empty sky counts as ready without occupying a GPU layer. Saved terrain damage
+is preserved by the native world lifecycle; scripts do not repaint the map.
 
-Tanks start across a 3,072-pixel central area with 128-pixel edge insets. Each
-spawn loads its own local terrain before checking support; distant tanks can
-stream out while the camera follows the next placement or turn. Maze maps
-reserve a matching open deployment corridor.
+Tanks start across a 3,072-pixel central area with 128-pixel edge insets. Maze
+maps reserve a matching open deployment corridor. The full 12,800×1,280 map
+remains playable and simulated as the camera follows each tank or shell.
+
+## Simulation coverage
+
+`Game/input.json` owns the native starting ring, confined camera bounds,
+electrical window and engine budgets. The ring includes the full map, sky up
+to Y −8,704 and a margin beyond the arena edges. `Scripts/lib/simulation.ts`
+reapplies that policy before deploying or restoring a match. Camera travel and
+zoom do not move the ring. Heat, air pressure and liquid run on resident chunk
+tiles throughout it; electricity stays in the authored 3,072×1,280 window over
+the central deployment area. Rendered weather crosses empty sky and becomes
+real rain where it reaches matter.
+
+New rounds wait for the whole ring to become ready before deploying tanks.
+Rich maze strokes can take several minutes to prepare across the full map;
+painted WFC terrain loads faster. The HUD shows ready and total chunk counts.
+
+The project requests 3,584 chunk layers and 12 million particle slots. The
+bootstrap WFC palette occupies about 8.2 million terrain pixels, leaving room
+for weapons and debris. The engine estimates about 3.48 GiB of GPU allocations
+and 549 MiB of particle CPU storage at these settings. These are allocation
+estimates; renderer and effect working buffers need additional memory. They
+are not a guarantee for every painted or maze-generated map. Native
+budget pressure appears in the HUD; persistent exhaustion stops the match with
+an explanation instead of leaving a turn waiting forever. Edit Engine Budgets
+and reopen the project to apply changes.
+
+`Game/arena-rules.json` supplies native projectile and loose-body edge rules.
+Shots and wreckage are removed 128 pixels beyond the sides and bottom, or
+8,192 pixels above the terrain. Those walls sit inside the simulated ring.
+Tank bounds remain the original map rectangle and use the game's death rules.
+Install these policies with `node tools/project.cjs ui` and
+`node tools/project.cjs arena`, then save and export the project.
 
 Project-owned noise, semantic, neural, living and vector presets remain in
 `world/Game/Presets/` for editor painting and weapon effects. Maze recipes bind

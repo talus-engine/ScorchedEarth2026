@@ -64,7 +64,11 @@ archive before installing these records; they use durable native IDs.
   engine's template/animation editors.
 
 After syncing an edited `Game/input.json`, run `node tools/project.cjs ui` to install its
-bindings and UI policy through the native `gameUi` record. The game selects
+bindings, ring, camera, weather and memory policy through the native `gameUi` record.
+Reopen the project after changing its engine budgets. Run
+`node tools/project.cjs arena` to install the authored projectile and loose-body
+edge rules from `Game/arena-rules.json`; unrelated world-event rules are retained.
+The game selects
 `quitSavePolicy: discard` so Quit and app close never wait for a game save.
 The separate Save & title command explicitly requests a required save.
 

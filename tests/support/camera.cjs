@@ -3,7 +3,8 @@
 function cameraMock(resolve, viewport = { x: 5700, y: 100, w: 1600, h: 968 }, requests = []) {
     let serial = 0;
     return {
-        view: { viewport, zoom: 2 }, tracking: null, requests,
+        view: { viewport, zoom: 2, frame: null }, tracking: null, requests,
+        frame(spec) { this.view.frame = spec ? { spec: structuredClone(spec), result: null } : null; },
         setZoom(zoom) { this.view.zoom = zoom; return this.view; },
         track(target, options = {}) {
             const entityId = target.entity && (typeof target.entity === 'string' ? target.entity : target.entity.id);

@@ -49,6 +49,18 @@ async function ui() {
     console.log('Installed input bindings and game UI policy.');
 }
 
+async function arena() {
+    await editor();
+    const rules = readJSON(path.join(ROOT, 'world/Game/arena-rules.json'));
+    const actual = await native(`const rules=${JSON.stringify(rules)};const layout=await talus.editor.layout.describe();const ids=new Set(rules.map(r=>r.id));const saved=await talus.editor.layout.setRules([...layout.rules.filter(r=>!ids.has(r.id)),...rules]);await talus.editor.save();return saved`);
+    for (const expected of rules) {
+        const row = actual.find(rule => rule.id === expected.id);
+        if (!row || Object.entries(expected).some(([key, value]) => !isDeepStrictEqual(row[key], value)))
+            throw Error('Native arena rule readback differs: ' + expected.id);
+    }
+    console.log('Installed projectile and loose-body arena edges.');
+}
+
 async function catalog() {
     await editor();
     const documents = [];
@@ -112,9 +124,9 @@ async function main() {
         output: { type: 'string', default: path.join(ROOT, PROJECT.archive) },
         'publish-snapshot': { type: 'boolean' }, overwrite: { type: 'boolean' },
     } });
-    const usage = 'Usage: node tools/project.cjs <types|ui|catalog|guide|export>\nExport: [--binary path] [--publisher path] [--profile path] [--output path] [--publish-snapshot] [--overwrite]';
+    const usage = 'Usage: node tools/project.cjs <types|ui|arena|catalog|guide|export>\nExport: [--binary path] [--publisher path] [--profile path] [--output path] [--publish-snapshot] [--overwrite]';
     if (values.help) return console.log(usage);
-    const actions = { types, ui, catalog, guide, export: () => exportProject(values) };
+    const actions = { types, ui, arena, catalog, guide, export: () => exportProject(values) };
     if (positionals.length !== 1 || !Object.hasOwn(actions, positionals[0])) throw Error(usage);
     await actions[positionals[0]]();
 }

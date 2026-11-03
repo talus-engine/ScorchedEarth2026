@@ -74,6 +74,7 @@ export interface Runtime {
     state: State;
     core: ReturnType<typeof import('core')>;
     residency: ReturnType<typeof import('residency')>;
+    simulation: ReturnType<typeof import('simulation')>;
     presentation: ReturnType<typeof import('presentation')>;
     session: ReturnType<typeof import('session')>;
     economy: ReturnType<typeof import('economy')>;

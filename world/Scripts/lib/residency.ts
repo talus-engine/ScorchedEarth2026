@@ -1,6 +1,7 @@
 /** Bounded simulation anchors and tank restoration. */
 import type { Runtime } from 'context';
 function create(ctx: Runtime) {
+    let ringClock = NaN, ringStatus: RingStatus | undefined;
     function checkRoster(): void {
         if (!ctx.state.match || ctx.state.match.phase === 'deploying')
             return;
@@ -79,6 +80,26 @@ function create(ctx: Runtime) {
             const reason = region.reason || 'native region did not become ready';
             releaseEmissionRegion(key);
             throw new Error(key + ' residency timed out after 10 simulated seconds: ' + reason);
+        }
+        // Every emitter in a sim tick shares one native residency census.
+        if (ringClock !== clock) {
+            ringClock = clock;
+            ringStatus = talus.sim.ring;
+        }
+        const ring = ringStatus;
+        if (ring?.mode === 'region' && ring.region) {
+            // The whole battlefield is already claimed; do not spend a second anchor reserve.
+            const at = spec.follow ? talus.entities.get(spec.follow)?.position : null;
+            const halfWidth = spec.halfWidth ?? 256, halfHeight = spec.halfHeight ?? 192;
+            const rect = spec.rect || (at ? { x: at.x - halfWidth, y: at.y - halfHeight, w: halfWidth * 2, h: halfHeight * 2 } : null);
+            const b = ring.region;
+            region.anchor?.release();
+            region.anchor = null;
+            region.spec = signature;
+            const contained = rect && rect.x >= b.x && rect.y >= b.y && rect.x + rect.w <= b.x + b.w && rect.y + rect.h <= b.y + b.h;
+            region.ready = !!contained && ring.chunks > 0 && ring.ready === ring.chunks && actorReady;
+            region.reason = !contained ? 'effect-outside-battlefield-ring' : !actorReady ? 'actor-not-simulated' : region.ready ? '' : 'battlefield-loading';
+            return region.ready;
         }
         if (clock >= region.retryAt && (!region.anchor || region.spec !== signature)) {
             try {

@@ -40,12 +40,18 @@ async function auditArchive(problems) {
         if (!title || title.parent_id !== PROJECT.worldId || title.kind !== 'menu-scene' || title.scene_id !== 'menu:title') problems.push('Archive is missing the native Title world binding.');
         if (!connection.prepare('SELECT 1 FROM world_files WHERE world_id=? LIMIT 1').get(PROJECT.titleWorldId)) problems.push('Archive is missing Title world files.');
         if (connection.prepare('SELECT count(*) AS count FROM installed_game_state').get().count) problems.push('Archive contains installed player data.');
-        const row = connection.prepare('SELECT template_name,is_template,description,game_ui_config FROM world_templates WHERE template_id=?').get(PROJECT.worldId);
+        const row = connection.prepare('SELECT template_name,is_template,description,game_ui_config,boundary_crossing_rules FROM world_templates WHERE template_id=?').get(PROJECT.worldId);
         if (row?.template_name !== PROJECT.name || row.is_template !== 1 || !row.description?.trim()) problems.push('Archive must have the configured project title, Template flag and description.');
         if (!['Thumbnail/custom.png', 'Thumbnail/auto.png'].some(name => lookup.get(PROJECT.worldId, name)?.bytes?.length)) problems.push('Archive has no project thumbnail.');
         const actual = JSON.parse(row?.game_ui_config || '{}');
         const expected = readJSON(path.join(ROOT, 'world/Game/input.json'));
         if (Object.entries(expected).some(([key, value]) => !isDeepStrictEqual(actual[key], value))) problems.push('Archive native UI policy differs from Game/input.json.');
+        const rules = JSON.parse(row?.boundary_crossing_rules || '[]');
+        for (const rule of readJSON(path.join(ROOT, 'world/Game/arena-rules.json'))) {
+            const saved = rules.find(item => item.id === rule.id);
+            if (!saved || Object.entries(rule).some(([key, value]) => !isDeepStrictEqual(saved[key], value)))
+                problems.push('Archive native arena rule differs: ' + rule.id);
+        }
     } catch (error) {
         problems.push('Cannot validate project archive: ' + error.message);
     } finally {

@@ -36,7 +36,11 @@ The battlefield is 50 WFC tiles wide and 5 tall. Tiles are 256×256 pixels with 
 solid stone foundation. Choose painted WFC terrain or one of four native maze
 styles: Bunker Grid, Rat Run, Cavern War and Terrace Siege. Random selection
 uses only these maps. Advanced setup exposes the maze parameters. Each round
-creates its terrain on demand through native chunk streaming.
+creates its terrain through native chunk streaming. A pinned simulation ring
+keeps the complete battlefield and its sky active independently of the camera;
+empty sky does not consume resident chunk layers. See
+[simulation coverage](docs/terrain.md#simulation-coverage) for memory budgets
+and projectile boundaries.
 
 - Two to ten tanks compete. Each gets a timed turn to move, aim and shoot.
 - Shooting ends the tank's input period; the projectile and its effects resolve

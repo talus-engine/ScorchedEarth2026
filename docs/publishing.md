@@ -34,6 +34,24 @@ missing. Do not edit build stamps. The CLI also accepts a complete native
 SQLite backup with `--database`; a raw database file may omit external terrain
 and project files and is not equivalent to a complete backup.
 
+Accept a desktop build only after its real menus reach a playable CPU turn:
+
+```sh
+TALUS_ENGINE_ROOT=/path/to/talus-checkout npm run test:packaged
+```
+
+The macOS check launches the generated app unchanged, with fresh isolated
+storage, and drives **New game → two CPUs → Start match**. It requires deployed
+tanks, camera arrival and the CPU choosing its shot, and fails immediately on
+a match error. Screenshots, logs
+and the result remain under `.build/packaged-smoke/`; the temporary profile is
+removed after the app closes. `--app /path/to/Game.app`, `--recipe bunker-grid`
+and `--seed 1729` can select another package or terrain case. Packaging and
+checksum verification alone do not establish that the game starts.
+The default startup deadline is 300 seconds; `--startup-timeout 900` allows a
+bounded longer run when measuring full-map generation. The result records the
+chosen deadline and loading progress so a slow startup remains visible.
+
 Keep installers, extracted profiles and working output in ignored `dist/` or
 outside the repository. `project/*.talus` is also ignored: commit authored source
 on `main`, and publish archives only on the artifact branch. Never commit local
@@ -69,7 +87,8 @@ npm run template:publish -- --artifacts /path/to/artifact-worktree
 # For a separate authoring profile, add --profile /path/to/profile.
 ```
 
-`template:export` verifies matching builds (2766 or later), exports the archive
+`template:export` verifies matching builds at or above `project.json`'s
+`minimumEngineBuild`, exports the archive
 at `project.json`'s `archive` path, runs the complete audit and runs `npm test`.
 `template:publish` performs that export, then uses the engine's registry tool to
 stage a new revision, verify its local files, commit just its revision and

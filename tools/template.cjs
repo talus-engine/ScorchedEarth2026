@@ -17,8 +17,8 @@ function command(binary, args, cwd = ROOT, { capture = false, timeout = 0 } = {}
 function matchingBuild(options) {
     const release = readJSON(path.join(options.publisher, 'release.json'));
     const checkout = fs.readFileSync(path.join(options.engine, 'build_number.txt'), 'utf8').trim();
-    if (!/^\d+$/.test(checkout) || Number(checkout) < 2766 || String(release.engineBuild) !== checkout) {
-        throw Error(`Matching Talus build required: desktop ${release.engineBuild}, checkout ${checkout}; permissions need 2766 or later. Install a matching desktop before exporting.`);
+    if (!/^\d+$/.test(checkout) || Number(checkout) < PROJECT.minimumEngineBuild || String(release.engineBuild) !== checkout) {
+        throw Error(`Matching Talus build required: desktop ${release.engineBuild}, checkout ${checkout}; this template needs ${PROJECT.minimumEngineBuild} or later. Install a matching desktop before exporting.`);
     }
     return checkout;
 }

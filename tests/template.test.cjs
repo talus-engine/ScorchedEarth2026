@@ -6,7 +6,7 @@ const path = require('node:path');
 const { matchingBuild, artifactPaths, validateEntry, verifyHosted } = require('../tools/template.cjs');
 const { PROJECT } = require('../tools/lib/files.cjs');
 
-test('template export refuses unmatched or permission-incompatible builds', t => {
+test('template export refuses unmatched builds or builds missing required game features', t => {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'template-build-'));
     t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
     const options = { engine: dir, publisher: dir };
@@ -14,9 +14,10 @@ test('template export refuses unmatched or permission-incompatible builds', t =>
         fs.writeFileSync(path.join(dir, 'build_number.txt'), engine + '\n');
         fs.writeFileSync(path.join(dir, 'release.json'), JSON.stringify({ engineBuild: desktop }));
     };
-    set('2766', '2766');
-    assert.equal(matchingBuild(options), '2766');
-    for (const pair of [['2767', '2766'], ['2765', '2765'], ['invalid', 'invalid']]) {
+    const minimum = String(PROJECT.minimumEngineBuild);
+    set(minimum, minimum);
+    assert.equal(matchingBuild(options), minimum);
+    for (const pair of [[Number(minimum) + 1, minimum], [Number(minimum) - 1, Number(minimum) - 1], ['invalid', 'invalid']]) {
         set(...pair);
         assert.throws(() => matchingBuild(options), /Matching Talus build required/);
     }
