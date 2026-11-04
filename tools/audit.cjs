@@ -10,6 +10,16 @@ const { ROOT, PROJECT, files, readJSON, run } = require('./lib/files.cjs');
 const { build } = require('./menus.cjs');
 const TEXT = new Set(['.md', '.ts', '.js', '.cjs', '.mjs', '.html', '.css', '.json', '.ink']);
 
+function auditElements(connection, problems) {
+    const columns = connection.prepare('PRAGMA table_info(element_overrides)').all();
+    const key = columns.filter(column => column.pk).sort((a, b) => a.pk - b.pk).map(column => column.name);
+    if (columns.find(column => column.name === 'world_template_id')?.notnull !== 1 ||
+        !isDeepStrictEqual(key, ['world_template_id', 'element_name']))
+        problems.push('Archive element definitions must use the project-owned schema.');
+    const unowned = connection.prepare('SELECT COUNT(*) AS count FROM element_overrides WHERE world_template_id IS NULL OR world_template_id <> ?').get(PROJECT.worldId).count;
+    if (unowned) problems.push(`Archive contains ${unowned} element definitions outside the project root; imports would omit them.`);
+}
+
 async function auditArchive(problems) {
     const archive = path.join(ROOT, PROJECT.archive);
     if (!fs.existsSync(archive)) return;
@@ -29,6 +39,7 @@ async function auditArchive(problems) {
         connection = new DatabaseSync(database, { readOnly: true });
         const integrity = connection.prepare('PRAGMA integrity_check').all();
         if (integrity.length !== 1 || integrity[0].integrity_check !== 'ok') problems.push('Archive integrity: ' + JSON.stringify(integrity.slice(0, 3)));
+        auditElements(connection, problems);
         const lookup = connection.prepare('SELECT bytes FROM world_files WHERE world_id=? AND path=?');
         const world = path.join(ROOT, PROJECT.worldFiles);
         for (const file of files(world)) {
@@ -111,7 +122,7 @@ async function audit(sourceOnly = false) {
     console.log(`Template audit passed: ${maintained.length} maintained files.`);
 }
 
-module.exports = { auditArchive, audit };
+module.exports = { auditElements, auditArchive, audit };
 if (require.main === module) run(async () => {
     const { values } = parseArgs({ options: { 'source-only': { type: 'boolean' }, help: { type: 'boolean' } } });
     if (values.help) return console.log('Usage: node tools/audit.cjs [--source-only]');
