@@ -133,13 +133,17 @@ function create(ctx: Runtime) {
             ctx.cpu.cpuFallback(p, 'Firing position changed during dialogue; fresh native survey refused: ' + plan.reason);
             return;
         }
+        // Same correction as the turn's survey: keep the validated angle, add power for live drag.
+        const aim = ctx.aiming.liveAim(plan.solution, point, point, ctx.economy.itemById(p.weaponId), true);
+        const power = aim?.power ?? plan.solution.power;
         p.fireSolution = { ...previous, origin: { ...tank.position! }, target, point, hullAngle: tank.snapshot()?.angle,
-            angle: plan.solution.angle, power: plan.solution.power, wind: talus.world.wind || 0, predicted: plan.solution.end };
+            angle: plan.solution.angle, power, wind: talus.world.wind || 0, predicted: plan.solution.end,
+            flight: ctx.aiming.flightRecord(plan.solution, aim) };
         tank.blackboard.set('custom.aimPlan', JSON.parse(JSON.stringify(plan)));
         tank.blackboard.set('custom.aimAngle', plan.solution.angle);
-        tank.blackboard.set('custom.aimPower', plan.solution.power);
+        tank.blackboard.set('custom.aimPower', power);
         tank.blackboard.set('custom.angle', -plan.solution.angle * 180 / Math.PI);
-        tank.blackboard.set('custom.power', plan.solution.power * 100);
+        tank.blackboard.set('custom.power', power * 100);
         performAttack(p);
     }
     function attackShell(at: any, spec: any, depth = 1): Projectile {

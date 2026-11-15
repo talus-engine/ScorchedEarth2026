@@ -7,6 +7,35 @@ const { ROOT, readJSON, run } = require('./lib/files.cjs');
 const { launch, until } = require('./lib/packaged-player.cjs');
 const { assessPlayback } = require('./lib/playback-evidence.cjs');
 
+async function saveTrace(session, destination) {
+    let timer, stream, file;
+    const completed = new Promise((resolve, reject) => {
+        session.once('Tracing.tracingComplete', resolve);
+        timer = setTimeout(() => reject(Error('Runtime trace did not finish')), 30000);
+    });
+    completed.catch(() => {});
+    try {
+        await session.send('Tracing.end');
+        ({ stream } = await completed);
+        if (!stream) throw Error('Runtime trace returned no stream');
+        file = fs.openSync(destination, 'w');
+        let total = 0;
+        for (;;) {
+            const chunk = await session.send('IO.read', { handle: stream, size: 1024 * 1024 });
+            const bytes = Buffer.from(chunk.data, chunk.base64Encoded ? 'base64' : 'utf8');
+            total += bytes.length;
+            if (total > 1024 ** 3) throw Error('Runtime trace exceeds 1 GiB');
+            fs.writeSync(file, bytes);
+            if (chunk.eof) break;
+        }
+    } finally {
+        clearTimeout(timer);
+        if (file !== undefined) fs.closeSync(file);
+        if (stream) await session.send('IO.close', { handle: stream }).catch(() => {});
+        await session.detach().catch(() => {});
+    }
+}
+
 async function main() {
     const { values } = parseArgs({ options: {
         app: { type: 'string' }, engine: { type: 'string', default: process.env.TALUS_ENGINE_ROOT },
@@ -14,12 +43,16 @@ async function main() {
         recipe: { type: 'string', default: 'wfc' }, seed: { type: 'string', default: '1729' }, help: { type: 'boolean' },
         'startup-timeout': { type: 'string', default: '300' },
         'play-seconds': { type: 'string', default: '90' },
+        trace: { type: 'boolean' },
+        'trace-seconds': { type: 'string', default: '15' },
     } });
-    if (values.help) return console.log('Usage: node tools/packaged-smoke.cjs [--app path.app] [--engine checkout] [--output directory] [--recipe wfc] [--seed 1729] [--startup-timeout seconds] [--play-seconds seconds>=30]');
+    if (values.help) return console.log('Usage: node tools/packaged-smoke.cjs [--app path.app] [--engine checkout] [--output directory] [--recipe wfc] [--seed 1729] [--startup-timeout seconds] [--play-seconds seconds>=30] [--trace] [--trace-seconds seconds]');
     const startupSeconds = Number(values['startup-timeout']);
     if (!Number.isFinite(startupSeconds) || startupSeconds <= 0) throw Error('Startup timeout must be a positive number of seconds.');
     const playSeconds = Number(values['play-seconds']);
     if (!Number.isFinite(playSeconds) || playSeconds < 30) throw Error('Gameplay observation must last at least 30 seconds.');
+    const traceSeconds = Number(values['trace-seconds']);
+    if (!Number.isFinite(traceSeconds) || traceSeconds <= 0 || traceSeconds > playSeconds) throw Error('Trace duration must be positive and no longer than the gameplay observation.');
     if (process.platform !== 'darwin') throw Error('This acceptance check runs the macOS packaged player.');
     if (!values.engine) throw Error('Set TALUS_ENGINE_ROOT or --engine to a Talus checkout with Playwright installed.');
     const settings = readJSON(path.join(ROOT, 'world/Game/publishing.json'));
@@ -31,7 +64,19 @@ async function main() {
     const output = fs.mkdtempSync(path.join(path.resolve(values.output), 'run-'));
     console.log('Evidence:', output);
     const report = { passed: false, app, criterion: 'native CPU shot and next turn, with sustained simulation targeting 60 ticks/s', recipe: values.recipe, seed: values.seed, startupSeconds, playSeconds, stages: [], playback: null };
-    let player, browser, page;
+    let player, browser, page, traceSession, traceUntil;
+    async function finishTrace() {
+        const session = traceSession;
+        traceSession = null;
+        try {
+            await saveTrace(session, path.join(output, 'runtime-trace.json'));
+            report.trace = 'runtime-trace.json';
+        } catch (error) {
+            report.traceError = error.message;
+            report.passed = false;
+            process.exitCode = 1;
+        }
+    }
     const gamePages = () => browser?.contexts().flatMap(c => c.pages()).filter(p => !p.isClosed() && p.url().startsWith('app://game/')) || [];
     const currentPage = () => gamePages().at(-1);
     const logs = [];
@@ -87,6 +132,15 @@ async function main() {
                 && state.status === 'Computer is choosing its shot') {
                 stage('Both tanks deployed, camera arrived and the CPU is choosing its shot');
                 await page.screenshot({ path: path.join(output, 'first-turn.png') });
+                if (values.trace) {
+                    traceSession = await page.context().newCDPSession(page);
+                    await traceSession.send('Tracing.start', {
+                        categories: 'toplevel,devtools.timeline,v8,gpu,blink.user_timing,disabled-by-default-v8.cpu_profiler',
+                        transferMode: 'ReturnAsStream',
+                    });
+                    traceUntil = Date.now() + traceSeconds * 1000;
+                    stage('Recording runtime trace for the gameplay observation');
+                }
                 await page.evaluate(() => {
                     window.__indigoPlaybackSamples = [];
                     window.addEventListener('talus:raf-frame-stats', e => {
@@ -98,6 +152,7 @@ async function main() {
                 const playingUntil = Date.now() + (playSeconds + 1) * 1000;
                 let sawShot = false, sawNextTurn = false, dropStarted = null;
                 while (Date.now() < playingUntil) {
+                    if (traceSession && Date.now() >= traceUntil) await finishTrace();
                     const observed = await page.evaluate(() => {
                         const hud = document.querySelector('.indigo-hud');
                         const read = key => hud?.querySelector(`[data-talus-bind="${key}"]`)?.textContent?.trim() || '';
@@ -117,7 +172,7 @@ async function main() {
                 report.playback = { ...assessPlayback(telemetry), sawShot, sawNextTurn };
                 if (!report.playback.passed) throw Error(report.playback.problems.join('; '));
                 if (!sawShot || !sawNextTurn) throw Error('CPU combat did not complete a shot and advance to the next turn');
-                report.passed = true;
+                report.passed = !report.traceError;
                 stage(`Gameplay accepted: ${report.playback.meanHz.toFixed(1)} sim ticks/s, shot completed and next turn reached`);
                 await page.screenshot({ path: path.join(output, 'gameplay.png') });
                 return;
@@ -132,6 +187,7 @@ async function main() {
         if (page && !page.isClosed()) await page.screenshot({ path: path.join(output, 'failure.png'), timeout: 10000 }).catch(() => {});
         throw error;
     } finally {
+        if (traceSession) await finishTrace();
         if (telemetry.length && !report.playback) report.playback = assessPlayback(telemetry);
         fs.writeFileSync(path.join(output, 'result.json'), JSON.stringify(report, null, 2) + '\n');
         fs.writeFileSync(path.join(output, 'playback.json'), JSON.stringify({ telemetry, states }, null, 2) + '\n');
@@ -141,4 +197,5 @@ async function main() {
         await player?.close();
     }
 }
+module.exports = { saveTrace };
 if (require.main === module) run(main);

@@ -2,6 +2,10 @@
   "name": "TANK_INK_A574F4",
   "basedOn": "SMOKE",
   "fields": {
+    "synth": {
+      "enabled": false,
+      "keys": {}
+    },
     "color": [
       0.6470588235294118,
       0.4549019607843137,
@@ -14,7 +18,7 @@
       "gas"
     ],
     "falldown": 3,
-    "weight": 1,
+    "weight": 0,
     "hardness": 1,
     "flammable": 0,
     "collision": 0,
@@ -89,11 +93,6 @@
     "trailMode": 11,
     "trailTint": null,
     "rules": [],
-    "spawnSfxId": null,
-    "reactSfxId": null,
-    "ambientSfxId": null,
-    "movementSfxId": null,
-    "despawnSfxId": null,
     "textureAnchor": true,
     "shape": {
       "kind": "puff",

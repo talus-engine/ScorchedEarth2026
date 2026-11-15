@@ -331,9 +331,18 @@ function create(ctx: Runtime) {
         const p = ctx.core.current(), tank = ctx.core.entity(p);
         if (p.aimedTurn === ctx.state.match.turnNumber)
             return;
-        const angle = Number(tank.blackboard.get('custom.aimAngle')), power = Number(tank.blackboard.get('custom.aimPower'));
+        const angle = Number(tank.blackboard.get('custom.aimAngle'));
+        let power = Number(tank.blackboard.get('custom.aimPower'));
         if (!Number.isFinite(angle) || !Number.isFinite(power))
             throw new Error('Ballistic graph returned invalid aim');
+        // The graph's native fallback aims with a drag-free forecast; persona surveys are already corrected.
+        if (tank.blackboard.get('custom.decisionTurn') !== ctx.state.match.turnNumber) {
+            const plan: any = tank.blackboard.get('custom.aimPlan'), target: any = tank.blackboard.get('custom.indigoTarget');
+            const aim = plan?.status === 'clear' && plan.solution && Math.abs(plan.solution.angle - angle) < 1e-6 && Number.isFinite(target?.x)
+                ? ctx.aiming.liveAim(plan.solution, target, target, ctx.economy.itemById(p.weaponId), true) : null;
+            if (aim)
+                power = aim.power;
+        }
         tank.blackboard.set('custom.angle', -angle * 180 / Math.PI);
         tank.blackboard.set('custom.power', ctx.core.clamp(power * 100, 0, 100));
         if (p.autoAimTurn === ctx.state.match.turnNumber) {

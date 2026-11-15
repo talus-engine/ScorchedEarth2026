@@ -94,14 +94,22 @@ async function install() {
 async function elements() {
     const folder = path.join(DIRECTORY, 'elements');
     if (!fs.existsSync(folder)) return;
-    for (const file of recordsIn(folder)) {
-        const spec = readJSON(file);
+    const specs = [...recordsIn(folder).map(readJSON),
+        ...readJSON(path.join(DIRECTORY, 'materials/element-audio.json')).elements];
+    // Validate the complete batch before changing any project-owned element.
+    await native(`const specs=${JSON.stringify(specs)};const problems=[];
+        for(const spec of specs){
+            const base=talus.elements.get(spec.name)||talus.elements.get(spec.basedOn);
+            if(!base){problems.push({name:spec.name,error:'Missing base element: '+spec.basedOn});continue;}
+            const check=await base.validate(spec.fields);
+            if(!check.ok)problems.push({name:spec.name,problems:check.problems});
+        }
+        if(problems.length)throw Error(JSON.stringify(problems));return true;`);
+    for (const spec of specs) {
         const actual = await native(`const spec=${JSON.stringify(spec)};
             let element=talus.elements.get(spec.name);
             const base=element||talus.elements.get(spec.basedOn);
             if(!base)throw Error('Missing base element: '+spec.basedOn);
-            const check=await base.validate(spec.fields);
-            if(!check.ok)throw Error(JSON.stringify(check.problems));
             if(element)await element.update(spec.fields);
             else element=await talus.elements.create({name:spec.name,basedOn:spec.basedOn,fields:spec.fields});
             return {actual:JSON.parse(await element.exportJson()),fields:spec.fields};`);
@@ -114,6 +122,7 @@ async function elements() {
     await native('await talus.editor.save();return true');
 }
 
+module.exports = { elements };
 if (require.main === module) run(async () => {
     const { values, positionals } = parseArgs({ allowPositionals: true, options: { help: { type: 'boolean' } } });
     const usage = 'Usage: node tools/records.cjs <capture|install|elements>';

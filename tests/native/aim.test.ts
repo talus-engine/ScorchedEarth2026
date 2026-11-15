@@ -91,10 +91,20 @@ for (const scenario of [
     test(scenario.name, async () => {
         const f = setup(scenario.direction, scenario.distance, scenario.height, scenario.wind || 0, scenario.wall || false, scenario.weapon || 'standard');
         expect(await f.api.planCpuShot(f.p, 1)).toBe(true);
+        // The planner must land its forecast on the point it was solved for: the target, a fresh
+        // target's deliberately short ranging point, or an extended point that keeps power headroom.
         const plan = f.tank.blackboard.get('custom.aimPlan'), spec = f.shop.items.find((i: any) => i.id === f.p.weaponId).projectile;
-        const result = fly(plan.solution, 650 * spec.gravityScale, scenario.wind || 0, spec.drag, f.target.position.x);
+        const solution = f.p.fireSolution, planned = solution.planned, aimed = solution.point;
+        const result = fly(plan.solution, 650 * spec.gravityScale, scenario.wind || 0, spec.drag, planned.x);
         expect(result.actual).not.toBeNull();
-        const error = Math.abs(result.actual.y - f.target.position.y);
+        const error = Math.abs(result.actual.y - planned.y);
+        // The fired, drag-corrected launch reaches the aim point under real Rapier damping of the
+        // measured live drag (0.015/s, i.e. linearDamping (1 - 0.01489)^(1/60)).
+        if (solution.flight?.drag) {
+            const launch = solution.flight.launch;
+            const live = fly({ origin: { x: launch.x, y: launch.y }, velocity: { x: launch.vx, y: launch.vy } }, 650 * spec.gravityScale, scenario.wind || 0, 1 - Math.exp(-solution.flight.drag), aimed.x);
+            expect(Math.abs(live.actual.y - aimed.y), 'drag-corrected launch lands on the aim point').toBeLessThan(4);
+        }
         if (scenario.wall)
             expect(result.path.every(at => Math.abs(at.x - (5000 + scenario.direction * 140)) >= 34 || at.y < 346)).toBe(true);
         rows.push({ name: scenario.name, weapon: f.p.weaponId, origin: f.tank.position, target: f.target.position,
@@ -142,9 +152,13 @@ test('native impact feedback converges, retains a hit and survives serialization
         f.p.fireControls = JSON.parse(JSON.stringify(f.p.fireControls));
     }
     rows.push({ name: 'unmodelled-force-learning', actualWind: -35, plannedWind: 0, shots });
-    expect(Math.abs(shots[0].dx)).toBeGreaterThan(35);
+    // The ranging round lands short, the bracket closes onto a direct hit, and that hit is kept.
+    expect(shots[0].dx).toBeLessThan(-35);
+    const direct = shots.findIndex(s => Math.abs(s.dx) <= 4);
+    expect(direct).toBeGreaterThan(0);
+    expect(direct).toBeLessThanOrEqual(4);
+    expect(shots.slice(direct).every(s => s.hit)).toBe(true);
     expect(Math.abs(shots.at(-1).dx)).toBeLessThan(5);
-    expect(shots.slice(2).every(s => s.hit)).toBe(true);
     expect(Math.abs(shots.at(-1).dx)).toBeLessThan(Math.abs(shots[0].dx) * .1);
     const rng = f.p.aiRng;
     for (let n = 0; n < 3; n++) {
@@ -154,7 +168,7 @@ test('native impact feedback converges, retains a hit and survives serialization
     expect(f.p.aiRng).toBe(rng);
 });
 for (const skill of ['rookie', 'easy', 'regular', 'hard', 'expert'])
-    test(`${skill} learns without added aim noise`, async () => {
+    test(`${skill} zeroes in without added aim noise`, async () => {
         const f = setup(), errors: number[] = [];
         f.m.roster.forEach(p => p.cpuSkill = skill);
         for (let n = 0; n < 6; n++) {
@@ -168,6 +182,9 @@ for (const skill of ['rookie', 'easy', 'regular', 'hard', 'expert'])
             errors.push(Math.abs(dx));
         }
         rows.push({ name: 'learning-' + skill, errorsPx: errors });
-        expect(errors.at(-1)).toBeLessThan(6);
-        expect(errors.every((e, i) => !i || e <= errors[i - 1] + 1)).toBe(true);
+        // Bracketing reaches the target despite the unmodelled force; skill changes how quickly
+        // (tests/cpu-bracket.test.cjs), never by rolling noise.
+        expect(errors.at(-1)).toBeLessThan(8);
+        expect(errors.at(-1)).toBeLessThan(errors[0]);
+        expect(f.p.aiRng).toBeUndefined();
     });

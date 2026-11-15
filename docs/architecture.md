@@ -23,6 +23,7 @@ loaded by Talus once per script sandbox and do not start as independent scripts.
 | `equipment`, `economy` | Drive native controllers, reconcile finite utility consumption, purchase stock and award cash |
 | `attachments` | Reserve native cast accessories, reconcile accepted-launch spending and survey fixed-angle shots |
 | `special-weapons` | Bound cutting-shot aim estimates by native range, material eligibility and the protected foundation |
+| `ballistics` | Correct native forecast power for live air drag and fit that drag from observed CPU flights |
 | `shot-visuals` | Observe native flights, emit colored gas and batch persistent raster paths |
 | `presentation`, `camera` | Smooth tracking, 1.5-second dialogue, arcade cards and native text labels |
 | `residency`, `supplies` | Restore parked tanks, own bounded emitter regions, focus and award supply drops |

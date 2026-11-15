@@ -2,11 +2,12 @@
   "name": "TANK_INK_VAPOR",
   "basedOn": "SMOKE",
   "fields": {
+    "synth": { "enabled": false, "keys": {} },
     "color": [1, 1, 1],
     "category": ["Gases"],
     "tags": ["gas"],
     "falldown": 3,
-    "weight": 1,
+    "weight": 0,
     "hardness": 1,
     "flammable": 0,
     "collision": 0,
@@ -37,11 +38,6 @@
     "trailDecay": 0.94,
     "trailMode": 11,
     "trailTint": null,
-    "rules": [],
-    "spawnSfxId": null,
-    "reactSfxId": null,
-    "ambientSfxId": null,
-    "movementSfxId": null,
-    "despawnSfxId": null
+    "rules": []
   }
 }

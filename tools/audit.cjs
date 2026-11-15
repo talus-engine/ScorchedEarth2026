@@ -20,8 +20,7 @@ function auditElements(connection, problems) {
     if (unowned) problems.push(`Archive contains ${unowned} element definitions outside the project root; imports would omit them.`);
 }
 
-async function auditArchive(problems) {
-    const archive = path.join(ROOT, PROJECT.archive);
+async function auditArchive(problems, archive = path.join(ROOT, PROJECT.archive)) {
     if (!fs.existsSync(archive)) return;
     let folder, connection;
     try {

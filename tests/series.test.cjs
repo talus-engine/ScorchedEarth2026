@@ -32,7 +32,8 @@ async function main() {
         };
         assert.equal(await f.api.planCpuShot(p, 1), false);
         assert.equal(requests.length, 2, 'Both paid weapon and fallback cannon receive a survey');
-        assert.equal(requests.reduce((sum, r) => sum + r.maxCandidates, 0), 8 + remaining, 'Candidate allocation preserves the total budget');
+        assert.equal(requests.reduce((sum, r) => sum + r.maxCandidates, 0), 8 + remaining - 1,
+            'Candidate allocation spends the budget, holding one candidate for a ranging re-plan');
     }
     {
         const f = setup(), p = f.m.roster[0], e = f.actors.get(p.entityId);
@@ -56,7 +57,7 @@ async function main() {
         p.personaId = 'lucky';
         p.impacts = [{ targetId: t.entityId, weapon: 'standard', origin: e.position, target: f.actors.get(t.entityId).position, dx: -40, dy: 10 }];
         let req;
-        e.weapon.plan = async (r) => (req = r, clear);
+        e.weapon.plan = async (r) => (req ??= r, clear);
         assert.equal(await f.api.planCpuShot(p, 1), true);
         assert.equal(req.target.x, f.actors.get(t.entityId).x, 'Unqualified observations do not bias the target');
         assert.equal(req.angleOffset || 0, 0);

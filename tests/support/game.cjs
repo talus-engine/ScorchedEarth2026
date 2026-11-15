@@ -21,6 +21,7 @@ function fixture(namesText = 'Alpha\nBravo', native = false, computers = 2) {
         players: { list: () => [] }, entities: { get: id => actors.get(id) }, camera: cameraMock(id => actors.get(id)),
         ui: { set: (k, v) => typeof k === 'string' ? ui[k] = v : Object.assign(ui, k), floatText() { }, openMenu() { }, closeMenu() { } } };
     talus.world.raycast = () => null;
+    talus.world.groundY = () => null;
     talus.layers = { get: name => name === 'Shot paths' ? { type: 'raster' } : null };
     const game = loadGame(talus), state = game.context.state, api = game.api;
     state.terrainCatalog = read('world/Game/terrain-recipes.json');

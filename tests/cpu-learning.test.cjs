@@ -35,11 +35,15 @@ async function main() {
         const learned = m.offsetX;
         f.tank.position.x += 55;
         await f.api.planCpuShot(f.p, 8);
-        assert.equal(f.p.fireSolution.offsetX, learned, 'Normal repositioning preserves measured range bias');
+        assert.ok(Math.abs(f.p.fireSolution.offsetX - learned) < 1e-6, 'Normal repositioning preserves measured range bias');
         f.tank.position.y += 100;
         f.requests.length = 0;
         await f.api.planCpuShot(f.p, 8);
-        assert.equal(f.p.fireSolution.offsetX, 0, 'A large changed elevation invalidates that geometric correction');
+        const range = f.enemy.position.x - f.tank.position.x;
+        assert.equal(f.requests[0].target.x, f.enemy.position.x, 'A large changed elevation invalidates that geometric correction');
+        assert.ok(Math.abs(f.p.fireSolution.offsetX + Math.sign(range) * Math.abs(range) * .05 / 2) < 1e-6,
+            'and restarts ranging with an expert-width short opening round');
+        assert.equal(f.p.tactic, 'Ranging shot: opening short');
         assert.equal(m.offsetX, learned, 'Invalidation does not destroy the stored evidence');
     }
     {

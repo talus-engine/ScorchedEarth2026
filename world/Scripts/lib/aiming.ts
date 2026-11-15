@@ -1,7 +1,23 @@
 /** Terrain-aware shot planning and persistent target/weapon learning. */
 import type { Runtime } from 'context';
 import specialWeapons = require('special-weapons');
+import ballistics = require('ballistics');
 function create(ctx: Runtime) {
+    /** Live drag for this match: the measured default, refined by clean CPU flights. */
+    function liveDrag(): number {
+        return ballistics.calibratedDrag(ctx.state.match?.flightCalibration?.samples);
+    }
+    /** Correct a clear native forecast's power for live drag the forecast does not model. */
+    function liveAim(solution: any, planned: Vec2, target: Vec2, item: any, capped = false): ReturnType<typeof ballistics.compensate> {
+        return item?.projectile ? ballistics.compensate(solution, planned, target, item.projectile, talus.world.wind || 0, liveDrag(), capped) : null;
+    }
+    /** Launch and gravity for calibrating against the observed impact; null when the forecast is incomplete. */
+    function flightRecord(solution: any, aim: ReturnType<typeof ballistics.compensate>): { launch: any; gravity: number; drag: number | null } | null {
+        if (aim)
+            return { launch: aim.launch, gravity: aim.gravity, drag: aim.drag };
+        const gravity = ballistics.impliedGravity(solution);
+        return gravity === null ? null : { launch: { x: solution.origin.x, y: solution.origin.y, vx: solution.velocity.x, vy: solution.velocity.y }, gravity, drag: null };
+    }
     function personaFor(p: any): any {
         return ctx.state.personaCatalog?.personas.find((v: any) => v.id === p.personaId) || ctx.state.personaCatalog?.personas[0];
     }
@@ -10,9 +26,9 @@ function create(ctx: Runtime) {
     }
     function doctrine(p: any): any {
         const profile = personaFor(p)?.strategy || { risk: .5, saveFraction: .2, weaponPreferences: ['heavy', 'standard'],
-            utilityPreferences: ['battery'], candidateBudget: 24, learningRate: .55 };
+            utilityPreferences: ['battery'], candidateBudget: 24, learningRate: .55, bracket: .18 };
         const skill = ctx.state.personaCatalog?.personas.find((v: any) => v.skill === skillFor(p))?.strategy;
-        return skill ? { ...profile, ...Object.fromEntries(['candidateBudget', 'learningRate'].map(k => [k, skill[k]])) } : profile;
+        return skill ? { ...profile, ...Object.fromEntries(['candidateBudget', 'learningRate', 'bracket'].map(k => [k, skill[k]]).filter(([, v]) => v !== undefined)) } : profile;
     }
     function aiRandom(p: any): number {
         let x = p.aiRng || ctx.core.chaosSeed(String(ctx.state.match.seed) + ':ai:' + p.index);
@@ -80,6 +96,56 @@ function create(ctx: Runtime) {
         }
         return memory;
     }
+    /**
+     * Zeroing in. A CPU brackets a new target the way a spotter does: the ranging shot lands short by
+     * half its skill's opening width, the next lands long, and every later shot splits the interval
+     * between the closest short and the closest long impact. Misses on the unexpected side widen the
+     * search by doubling steps. Skill sets the opening width as a fraction of the range, so an expert
+     * is on target in two or three shots and a rookie creeps in over several. Offsets are along the
+     * firing direction (positive = beyond the target); nothing here is random.
+     */
+    function bracketWidth(p: any, origin: Vec2, target: Vec2): number {
+        return Math.abs(target.x - origin.x) * ctx.core.clamp(Number(doctrine(p).bracket ?? .18), 0, 1);
+    }
+    function openingOffset(origin: Vec2, target: Vec2, width: number): number {
+        return -(Math.sign(target.x - origin.x) || 1) * width / 2;
+    }
+    function narrowBracket(p: any, memory: any, observation: any, sample: any): number {
+        const direction = Math.sign(observation.targetAtLaunch.x - observation.origin.x) || 1;
+        const offset = (sample.offsetX || 0) * direction, long = observation.dx * direction > 0;
+        const width = Number(observation.solution?.bracket?.width) || bracketWidth(p, observation.origin, observation.targetAtLaunch);
+        const continuing = !!memory.bracket && comparableShot(memory.last, sample.origin, sample.target);
+        const b = continuing ? memory.bracket : { short: null, long: null, step: Math.max(width, 8), shots: 0 };
+        // Only a direct hit locks the bracket; a near hit still narrows it toward a direct one.
+        if (observation.direct)
+            b.short = b.long = offset;
+        else if (long) {
+            b.long = b.long === null ? offset : Math.min(b.long, offset);
+            if (b.short !== null && b.short > b.long)
+                b.short = null;
+        }
+        else {
+            b.short = b.short === null ? offset : Math.max(b.short, offset);
+            if (b.long !== null && b.long < b.short)
+                b.long = null;
+        }
+        let next: number;
+        if (b.short !== null && b.long !== null)
+            next = (b.short + b.long) / 2;
+        else {
+            next = b.long !== null ? b.long - b.step : b.short + b.step;
+            b.step *= 2;
+        }
+        b.shots++;
+        memory.bracket = b;
+        return next * direction;
+    }
+    function bracketTactic(memory: any): string {
+        const b = memory?.bracket;
+        if (!b || b.short === null || b.long === null)
+            return 'Bracketing the target';
+        return b.short === b.long ? 'On target: repeating the direct hit' : 'Halving the bracket';
+    }
     function comparableShot(sample: any, origin: Vec2, target: Vec2, exact = false): boolean {
         if (!sample?.origin || !sample.target)
             return false;
@@ -116,11 +182,15 @@ function create(ctx: Runtime) {
         const moved = Math.hypot(observation.target.x - observation.targetAtLaunch.x, observation.target.y - observation.targetAtLaunch.y);
         const special = shot?.kind === 'special';
         const measured = (special || shot?.guidance) && observation.hit && observation.direct && moved <= 12;
+        // A bracketing shot is deliberately off by up to its opening width (and wider while it
+        // searches), so its miss still teaches the bracket.
+        const bracketing = !!shot?.bracket;
         const useful = (shot?.kind === 'tank' || observation.hit && ['field', 'uncertain-tank'].includes(shot?.kind))
             && !shot?.guidance
             && observation.reason === 'detonated' && !observation.split
             && moved <= 12 && (observation.hit || observation.collision === 'terrain'
-            && Math.abs(observation.dy) <= 40 && Math.abs(observation.dx) <= Math.max(128, Math.abs(observation.target.x - observation.origin.x) * .3));
+            && Math.abs(observation.dy) <= (bracketing ? Math.max(96, Math.abs(observation.target.x - observation.origin.x) * .25) : 40)
+            && Math.abs(observation.dx) <= Math.max(128, Math.abs(observation.target.x - observation.origin.x) * (bracketing ? .8 : .3)));
         observation.learning = measured ? 'measured-direct-hit' : useful ? 'range-feedback' : 'diagnostic-only';
         if (measured) {
             memory.samples++;
@@ -142,18 +212,29 @@ function create(ctx: Runtime) {
             if (observation.hit && (!comparable || observation.direct && !best.direct
                 || observation.direct === best.direct && sample.error < best.error))
                 memory.best = sample;
-            const regressed = comparable && (!observation.hit || best.direct && !observation.direct
-                || observation.direct === best.direct && sample.error > best.error + 2);
-            if (regressed) {
+            // Every useful shot narrows the bracket, near hits included; skipping a bound would make the
+            // search expand forever. Only a proven direct hit is retried after a contrary shot.
+            const next = narrowBracket(p, memory, observation, sample);
+            if (comparable && best.direct && !observation.direct) {
                 memory.gain = Math.max(.125, memory.gain / 2);
                 memory.offsetX = best.offsetX;
+                const offset = (best.offsetX || 0) * (Math.sign(sample.target.x - sample.origin.x) || 1);
+                memory.bracket = { ...memory.bracket, short: offset, long: offset };
             }
-            else {
-                const rate = (doctrine(p).learningRate ?? .65) * memory.gain;
-                const correction = observation.direct ? 0 : ctx.core.clamp(observation.dx * rate, observation.hit ? -12 : -96, observation.hit ? 12 : 96);
-                memory.offsetX = ctx.core.clamp(sample.offsetX - correction, -160, 160);
-            }
+            else
+                memory.offsetX = next;
             memory.last = sample;
+        }
+        // Calibrate live drag from free flights that ended where the shell itself struck.
+        const flight = shot?.flight;
+        if (flight?.launch && flight.gravity && !shot.guidance && !observation.split && observation.reason === 'detonated'
+            && (observation.collision === 'terrain' || observation.hit) && observation.impact) {
+            const drag = ballistics.fitDrag(flight.launch, flight.gravity, observation.wind || 0, observation.impact);
+            if (drag !== null && drag >= -.005 && drag <= .08) {
+                const calibration = ctx.state.match.flightCalibration || (ctx.state.match.flightCalibration = { samples: [] });
+                calibration.samples = [...calibration.samples, drag].slice(-12);
+                observation.fittedDrag = drag;
+            }
         }
         const tank = ctx.core.entity(p);
         if (tank?.can('blackboard.set')) {
@@ -249,7 +330,8 @@ function create(ctx: Runtime) {
         });
         const reserve = corridors.some((c: any) => c.obstruction && c.obstruction.entity?.id !== c.target.entityId)
             ? Math.max(2, Math.floor(budget / 4)) : 0;
-        let attackBudget = budget - reserve;
+        // One candidate stays in reserve for a fresh target's ranging re-plan.
+        let attackBudget = budget - reserve - 1;
         const dragProbes: {
             target: any;
             item: any;
@@ -261,7 +343,8 @@ function create(ctx: Runtime) {
             score: number;
         }[] = [];
         let dragProbeInvalidated = false;
-        const accept = (target: any, item: any, point: Vec2, plan: BallisticPlan, tactic: string, terrain: boolean, memory: number) => {
+        const accept = (target: any, item: any, point: Vec2, plan: BallisticPlan, tactic: string, terrain: boolean, memory: number,
+            aim: ReturnType<typeof ballistics.compensate> = null, bracket: { width: number } | null = null, planned: Vec2 = point) => {
             p.weaponId = item.id;
             ctx.economy.wallet(p).selected = item.id;
             ctx.economy.wallet(p).revision++;
@@ -269,16 +352,18 @@ function create(ctx: Runtime) {
             p.targetId = target.entityId;
             p.plannedTurn = turn;
             p.tactic = tactic;
+            const power = aim?.power ?? plan.solution!.power;
             p.fireSolution = { turn, weapon: item.id, targetId: target.entityId, origin: { ...origin }, target: snapshot(target),
                 point: { ...point }, offsetX: point.x - snapshot(target).x, wind: talus.world.wind || 0,
                 hullAngle: tank.snapshot()?.angle,
-                angle: plan.solution!.angle, power: plan.solution!.power, predicted: plan.solution!.end,
+                angle: plan.solution!.angle, power, predicted: plan.solution!.end, planned: { x: planned.x, y: planned.y }, flight: flightRecord(plan.solution, aim),
+                ...(bracket ? { bracket } : {}),
                 kind: terrain ? 'terrain' : ctx.payloads.handles(item) ? 'payload' : item.behavior?.mode === 'apex' ? 'apex' : 'tank' };
             tank.blackboard.set('custom.indigoTarget', targetReference(target, point, terrain));
             tank.blackboard.set('custom.aimPlan', JSON.parse(JSON.stringify(plan)));
             tank.blackboard.set('custom.aimRefusal', null);
             tank.blackboard.set('custom.aimAngle', plan.solution!.angle);
-            tank.blackboard.set('custom.aimPower', plan.solution!.power);
+            tank.blackboard.set('custom.aimPower', power);
             tank.blackboard.set('custom.decisionTurn', turn);
             tank.blackboard.set('custom.aiDecision', { turn, persona: p.personaId, skill: skillFor(p),
                 tactic, target: p.targetId, item: item.id, budgetRemaining: budget, trials, skipped, risk: d.risk, memory });
@@ -318,6 +403,40 @@ function create(ctx: Runtime) {
                             / Math.max(1, Math.hypot(ownerPose.x - request.target.x, ownerPose.y - request.target.y)) });
             }
             return plan;
+        };
+        // Native forecasts omit live air drag, and a high arc solved at the edge of reach has no power
+        // left to correct for it. Keep the validated angle and correct its power; when that would need
+        // more than full power, search again for a flatter validated arc to the same point. Null means
+        // the turn became invalid.
+        const liveSurvey = async (target: any, item: any, request: BallisticPlanRequest, plan: BallisticPlan, goal: string) => {
+            const planned = request.target;
+            if (request.goal === 'apex' || !ballistics.correctable(item.projectile))
+                return { plan, aim: null, planned };
+            const aim = liveAim(plan.solution, planned, planned, item);
+            if (aim)
+                return { plan, aim, planned };
+            // Null here means the forecast cannot be corrected at all (incomplete); only a shot that is
+            // short even at full power is worth a flatter search.
+            const capped = liveAim(plan.solution, planned, planned, item, true);
+            if (!capped)
+                return { plan, aim: null, planned };
+            // Too steep to correct within full power: ask the native survey for a flatter arc to the same
+            // point, which needs less power and leaves room for the drag correction.
+            const { fixedAngle, ...search } = request;
+            const elevation = Math.atan2(-Math.sin(plan.solution!.angle), Math.abs(Math.cos(plan.solution!.angle))) * 180 / Math.PI;
+            for (const lower of [3, 8]) {
+                const ceiling = elevation - lower, floor = Math.min(request.minElevation ?? 5, ceiling - 1);
+                if (budget < 1 || floor < 1)
+                    break;
+                const again = await survey(target, item, { ...search, maxElevation: ceiling, minElevation: floor, angleOffset: 0,
+                    maxCandidates: Math.max(1, Math.min(budget, 8)) }, goal);
+                if (!again)
+                    return null;
+                const second = again.status === 'clear' && again.solution ? liveAim(again.solution, planned, planned, item) : null;
+                if (second)
+                    return { plan: again, aim: second, planned };
+            }
+            return { plan, aim: capped, planned };
         };
         surveyTargets: for (let targetIndex = 0; targetIndex < candidateTargets.length; targetIndex++) {
             const target = candidateTargets[targetIndex];
@@ -381,6 +500,9 @@ function create(ctx: Runtime) {
                 const memory = fireControl(p, target.entityId, item.id);
                 const last = !memory?.last?.guidance && comparableShot(memory?.last, origin, at) ? memory.last : null;
                 const best = measured;
+                // A fresh target opens with a short ranging shot; later shots follow the bracket.
+                const ranging = !support && !carrier && !best && !last && !ctx.payloads.handles(item);
+                const width = bracketWidth(p, origin, at);
                 if (!support && !carrier && last)
                     point.x += memory.offsetX;
                 const obstruction = corridors[targetIndex].obstruction;
@@ -418,9 +540,41 @@ function create(ctx: Runtime) {
                     return false;
                 if (plan.status !== 'clear' || !plan.solution)
                     continue;
-                return accept(target, item, point, plan, support ? 'Remove observed support' : carrier ? 'Clear carrier to apex'
-                    : cluster(target) && p.personaId === 'domino' ? 'Cluster / chain opportunity' : high ? 'High arc over obstruction'
-                        : best ? 'Refining a proven firing solution' : last ? 'Observed-miss correction' : 'Surveyed firing corridor', support, memory?.samples || 0);
+                // The corridor is clear: a fresh target's first shot is the short ranging round, at the
+                // same validated elevation. If the shorter flight is not clear, fire the validated shot.
+                let aimRequest = request, ranged = false;
+                if (ranging) {
+                    // Short first; if the short point is not a clear shot (a ridge, a steep descent), try
+                    // the long side and then half as far. Any of these is a deliberate, informative miss.
+                    const offset = openingOffset(origin, at, width);
+                    for (const scale of [1, -1, .5, -.5]) {
+                        const x = point.x + offset * scale;
+                        if (Math.abs(x - point.x) < 4 || (scale !== 1 && budget < 1))
+                            break;
+                        // The ranging round aims at the ground near the target, not into a hillside.
+                        const ground = talus.world.groundY(x, at.y - 320, 960);
+                        const opening = { x, y: ground === null ? point.y : ground - 2 };
+                        const short = await survey(target, item, { ...request, target: opening, fixedAngle: plan.solution.angle, angleOffset: 0, maxCandidates: 1 }, 'ranging');
+                        if (!short)
+                            return false;
+                        if (short.status === 'clear' && short.solution) {
+                            plan = short;
+                            point = opening;
+                            aimRequest = { ...request, target: opening };
+                            ranged = true;
+                            break;
+                        }
+                    }
+                }
+                const bracket = !support && !carrier && !ctx.payloads.handles(item) ? { width } : null;
+                const live = await liveSurvey(target, item, aimRequest, plan, support ? 'support' : carrier ? 'apex' : 'tank');
+                if (!live)
+                    return false;
+                return accept(target, item, point, live.plan, support ? 'Remove observed support' : carrier ? 'Clear carrier to apex'
+                    : cluster(target) && p.personaId === 'domino' ? 'Cluster / chain opportunity'
+                        : last && memory?.bracket ? bracketTactic(memory) : best ? 'Refining a proven firing solution'
+                            : last ? 'Observed-miss correction' : ranged ? (point.x - at.x) * (at.x - origin.x) < 0 ? 'Ranging shot: opening short' : 'Ranging shot: opening long'
+                                : high ? 'High arc over obstruction' : 'Surveyed firing corridor', support, memory?.samples || 0, live.aim, bracket, live.planned);
             }
         }
         const demolition = ranked(targets[0]).map((v: any) => v.item).filter((item: any) => item.projectile.carveRadius >= 24 || item.behavior?.operation === 'fracture');
@@ -435,13 +589,18 @@ function create(ctx: Runtime) {
                 if (separation < danger || point.y >= ctx.state.arena.terrain.solidBottomTileRow * ctx.state.arena.tiles.chunksPerTile * 64)
                     continue;
                 const allowance = Math.min(budget, Math.max(2, Math.floor(d.candidateBudget / 4)));
-                const plan = await survey(obstruction.target, item, { target: point, goal: 'impact', preferHighArc: true,
+                const request: BallisticPlanRequest = { target: point, goal: 'impact', preferHighArc: true,
                     minElevation: 5, maxElevation: 89, angleStep: ctx.core.clamp(Math.ceil(84 / allowance), 2, 30), maxCandidates: allowance,
-                    maxSteps: 500000, maxCells: 1000000, terrain: 'materialize', tolerance: 18 }, 'demolition');
+                    maxSteps: 500000, maxCells: 1000000, terrain: 'materialize', tolerance: 18 };
+                const plan = await survey(obstruction.target, item, request, 'demolition');
                 if (!plan)
                     return false;
-                if (plan.status === 'clear' && plan.solution)
-                    return accept(obstruction.target, item, point, plan, 'Open an observed firing lane', true, 0);
+                if (plan.status === 'clear' && plan.solution) {
+                    const live = await liveSurvey(obstruction.target, item, request, plan, 'demolition');
+                    if (!live)
+                        return false;
+                    return accept(obstruction.target, item, point, live.plan, 'Open an observed firing lane', true, 0, live.aim, null, live.planned);
+                }
             }
         if (valid()) {
             ctx.equipment.syncLoadout(p);
@@ -514,6 +673,6 @@ function create(ctx: Runtime) {
         }
         return false;
     }
-    return { personaFor, skillFor, doctrine, aiRandom, targetSnapshot, targetReference, selectTarget, cpuWeaponUnavailable, fireControl, comparableShot, provenShot, observeCpuShot, refreshSpecialShot, planCpuShot };
+    return { personaFor, skillFor, doctrine, aiRandom, targetSnapshot, targetReference, selectTarget, cpuWeaponUnavailable, fireControl, comparableShot, provenShot, observeCpuShot, refreshSpecialShot, planCpuShot, liveDrag, liveAim, flightRecord };
 }
 export = create;

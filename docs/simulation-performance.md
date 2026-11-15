@@ -11,6 +11,13 @@ and a following turn, rejects sustained slowdown and checks the supply-drop
 presentation deadline. Use a fixed seed and a single active test player so
 comparisons do not include competing simulation workloads.
 
+Add `--trace` when invoking `node tools/packaged-smoke.cjs` to capture a Chrome
+runtime trace during the first 15 seconds of gameplay (`--trace-seconds` changes
+that duration). `runtime-trace.json` records
+CPU samples, timeline tasks, GPU events and engine timing marks alongside the
+normal telemetry. Trace capture preserves the same acceptance thresholds;
+use an untraced replay to verify performance after fixing a measured cause.
+
 ## Ring, zoom and quantization
 
 The camera's simulation window and bounded `talus.sim.anchor` claims determine

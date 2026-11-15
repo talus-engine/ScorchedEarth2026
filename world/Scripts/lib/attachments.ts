@@ -86,7 +86,9 @@ function create(ctx: Runtime) {
                 ctx.menus.publish();
                 return false;
             }
-            e.blackboard.set('custom.power', plan.solution.power * 100);
+            // Guidance confirms the corridor; live air drag the forecast omits gets matching extra power.
+            const aim = ctx.aiming.liveAim(plan.solution, target, target, item, true);
+            e.blackboard.set('custom.power', (aim?.power ?? plan.solution.power) * 100);
             p.guidanceSolution = { origin, target, angle, hullAngle: e.snapshot()?.angle ?? 0 };
             ctx.combat.aim();
             return true;

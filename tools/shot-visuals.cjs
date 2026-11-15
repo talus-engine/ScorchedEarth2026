@@ -4,7 +4,7 @@ const { ROOT, readJSON, writeJSON, run } = require('./lib/files.cjs');
 const rgb = hex => [1, 3, 5].map(at => parseInt(hex.slice(at, at + 2), 16) / 255);
 function build() {
     const config = readJSON(path.join(ROOT, 'world/Game/shot-trails.json'));
-    const base = readJSON(path.join(ROOT, 'assets/native/elements/TANK_INK_VAPOR.json'));
+    const base = readJSON(path.join(ROOT, 'assets/native/materials/tank-ink.json'));
     const colors = [...new Set(readJSON(path.join(ROOT, 'world/Game/arena.json')).tankPalettes.map(p => p.color.toUpperCase()))];
     config.palettes = colors.map(color => {
         const key = color.slice(1), gas = 'TANK_INK_' + key;

@@ -49,8 +49,11 @@ saves through native authoring APIs and checks entity readback. Import the full
 archive before installing these records; they use durable native IDs.
 
 Custom element recipes in `assets/native/elements/` use a named base plus explicit
-property overrides. `node tools/records.cjs elements` validates and installs just
-these recipes, then reads each saved definition back. The complete `install`
+property overrides. `assets/native/materials/element-audio.json` supplies the
+project's element sound bindings as current shelf synth keys; custom tank ink
+explicitly disables its synth. `node tools/records.cjs elements` validates the
+entire recipe and audio batch before writing, then reads each saved definition
+back. The complete `install`
 command includes them. Names are portable; numeric element IDs are assigned by
 the receiving project. A `null` override removes an inherited optional property.
 

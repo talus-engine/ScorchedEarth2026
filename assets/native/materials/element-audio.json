@@ -1,0 +1,78 @@
+{
+  "elements": [
+    {
+      "name": "POLYETHYLENE",
+      "basedOn": "POLYETHYLENE",
+      "fields": {
+        "synth": {
+          "enabled": true,
+          "keys": {
+            "impact": {
+              "enabled": true,
+              "synthId": "shelf:impacts.impact-tire-rubber-hit-by-solid-metal-pole-01"
+            },
+            "footstep": {
+              "enabled": true,
+              "synthId": "shelf:impacts.impact-tire-rubber-hit-by-solid-metal-pole-01"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "WATER",
+      "basedOn": "WATER",
+      "fields": {
+        "synth": {
+          "enabled": true,
+          "keys": {
+            "movement": {
+              "enabled": true,
+              "synthId": "shelf:liquid_water.liquid-water-river-flowing-water-02"
+            },
+            "ambient": {
+              "enabled": true,
+              "synthId": "shelf:liquid_water.liquid-water-ambience-lake-shore-01"
+            },
+            "sparse": {
+              "enabled": true,
+              "synthId": "shelf:liquid_water.liquid-water-drips-ambience-01"
+            },
+            "spray": {
+              "enabled": true,
+              "synthId": "shelf:liquid_water.liquid-water-water-spray-burst-of-water-long-01"
+            },
+            "fall": {
+              "enabled": true,
+              "synthId": "shelf:ambience_2.ambience-waterfall-exterior-03"
+            },
+            "disturb": {
+              "enabled": true,
+              "synthId": "shelf:liquid_water.liquid-water-water-rapid-splash-01"
+            },
+            "spawn": {
+              "enabled": true,
+              "synthId": "shelf:liquid_water.liquid-water-water-splash-10"
+            },
+            "heat": {
+              "enabled": true,
+              "synthId": "shelf:liquid_water.liquid-water-bubbling-in-metal-bowl-fast-long-04"
+            },
+            "cold": {
+              "enabled": true,
+              "synthId": "shelf:liquid_water.liquid-water-and-ice-impact-05"
+            },
+            "splash": {
+              "enabled": true,
+              "synthId": "shelf:underwater.underwater-water-splash-dive-movement-01"
+            },
+            "drowning": {
+              "enabled": true,
+              "synthId": "shelf:underwater.underwater-water-ambience-02"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
