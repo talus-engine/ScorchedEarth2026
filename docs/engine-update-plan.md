@@ -508,5 +508,20 @@ half-distance long round instead of an exact shot (`id-remap/play/bracket-final-
   archive audit passes. The previous 2845 archive is kept as
   `.build/engine-update/project-archive-2845-before-2961.talus`.
 
-`minimumEngineBuild` stays at 2799 until the release gates above pass. Nothing
-has been published.
+`minimumEngineBuild` stays at 2799 until the release gates above pass.
+
+### Publication (2026-11-15)
+
+The installed desktop moved to build **2975** (source `ca49070fe`) before
+publication. Builds 2962–2975 change only synth and audio code, with no element,
+script API or archive schema changes. The native suite (27 tests) passes against
+the exact 2975 source. `npm run template:publish`, matched to that source, produced
+the same archive bytes, still stamped build 2961 by its authoring profile. It
+published revision `454a9e95…` to the `templates` branch, and hosted verification
+reports `ok`.
+
+The engine branch `scorched-earth-template-2961` (`3278836ad`, based on the
+local engine `main`) changes only `src/templates/templateRegistry.json`. Its
+live registry lane downloads and installs the revision and opens a copy with no
+script faults. The engine type check and registry unit tests pass. The branch
+skips the commit hook's build bump so it merges cleanly, and it is not pushed.
