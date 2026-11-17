@@ -69,7 +69,9 @@ terrain and custom vertical background bands are preserved.
 `Biomes/biomes.json` lets the engine choose a sky from the world seed. Reusing a
 seed repeats its background; new round seeds can select another. Each biome
 references the same daylight lighting preset, keeping the playfield bright even
-under a moonlit sky. The single fitted background layer stays fixed in the
+under a moonlit sky. The sky layers leave the engine's per-layer `lit` option off
+(the default since build 2994), so scene light never tints them and they keep
+their painted colors. The single fitted background layer stays fixed in the
 viewport as the camera follows high shots. It needs no particle simulation or
 additional terrain generation.
 

@@ -29,6 +29,14 @@ export passes the full archive audit (see
 dependencies below (cast-state restore and maze brush throughput) are still open,
 so release promotion is still on hold.
 
+Status on November 16: the installed desktop and engine checkout match at build
+**3023** (source `6edfce626`). The changes since 2975 add to the API, element
+fields, records and tables without removing or renaming anything. The template
+needs no migration. No export, import or merge code changed, so the published
+revision should remain compatible; its live install lane was not rerun (see
+[Build 3023 review](#build-3023-review-2026-11-16)). Neither engine dependency
+has changed.
+
 ## Recommended next work
 
 | Order | Work and location | Exit condition |
@@ -520,8 +528,34 @@ the same archive bytes, still stamped build 2961 by its authoring profile. It
 published revision `454a9e95…` to the `templates` branch, and hosted verification
 reports `ok`.
 
-The engine branch `scorched-earth-template-2961` (`3278836ad`, based on the
-local engine `main`) changes only `src/templates/templateRegistry.json`. Its
+The registry change touched only `src/templates/templateRegistry.json`. Its
 live registry lane downloads and installs the revision and opens a copy with no
-script faults. The engine type check and registry unit tests pass. The branch
-skips the commit hook's build bump so it merges cleanly, and it is not pushed.
+script faults. The engine type check and registry unit tests pass. It landed on
+engine `main` as `6e980f970` (build 2986), which pins revision `454a9e95…`.
+
+## Build 3023 review (2026-11-16)
+
+The installed desktop, its publisher and the engine checkout report build
+**3023**, source `6edfce6261f7a425bdee5b515fc5348d3cc48dcd`. The 48 commits since
+2975 are mostly editor tools (one Marquee, replace modes on the brush, Art stack,
+knife and brush motion), the Comms agent room, raised lights and an audio
+overlay. Template impact:
+
+| Engine change | Template effect |
+| --- | --- |
+| Script API: body `masking` / `setMasking`, light `modulations`, editor-stroke `brushMode` / `marqueeShape` | Additions only; the 3023 declarations differ from 2961 only by these. The game does not use them. |
+| Element `lightDepth` (2988); new paint relief / hold on built-in art materials | Optional field, no new built-in ids. The project's 55 definitions and ids 234–250 are unaffected. |
+| Parallax layers are unlit unless `lit` (2994); `verticalAlign` survives save | The sixteen retro skies set neither. They now draw in their painted colors instead of under the 0.95 daylight ambient. This matches the intent in [shot-trails](shot-trails.md#retro-skies). |
+| `comms_*` tables (`CREATE TABLE IF NOT EXISTS`) | Registered as `meta` in `ProjectCopyPlan`, so they are never exported. No import, merge or copy code changed. |
+| Bridge MCP sessions and `_inbox` | `tools/bridge.cjs` uses the unchanged `/v1/tools/<name>` route; `_inbox` is added only to object results when the author has written. |
+| EM field solve skips worlds with no field (3023) | Reduces solver work per tick; not measured against the maze throughput gate. |
+
+No commit touches chunk inventory casts, `legacyEntityToSchema` /
+`schemaEntityToLegacy`, `ProjectileManager` or maze brush generation, so both
+engine dependencies above remain open. The chunk snapshot change is only an
+optional body `masking` flag.
+
+Verification on 3023: the type check and all 173 game/tool tests pass, the
+source audit passes, and the native suite (27 tests, real Rapier) plus the
+100-seed WFC solver pass against the 3023 checkout. Template source and the
+published archive are unchanged. `minimumEngineBuild` stays at 2799.
