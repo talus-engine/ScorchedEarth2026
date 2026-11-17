@@ -32,10 +32,10 @@ so release promotion is still on hold.
 Status on November 16: the installed desktop and engine checkout match at build
 **3023** (source `6edfce626`). The changes since 2975 add to the API, element
 fields, records and tables without removing or renaming anything. The template
-needs no migration. No export, import or merge code changed, so the published
-revision should remain compatible; its live install lane was not rerun (see
-[Build 3023 review](#build-3023-review-2026-11-16)). Neither engine dependency
-has changed.
+needed no migration. It was republished as a 3023 export (`e07aa27d…`) and pinned
+on engine `main`, and a 3023 macOS package passed the packaged CPU-match smoke
+(see [Build 3023 review](#build-3023-review-2026-11-16)). Neither engine
+dependency has changed.
 
 ## Recommended next work
 
@@ -557,5 +557,28 @@ optional body `masking` flag.
 
 Verification on 3023: the type check and all 173 game/tool tests pass, the
 source audit passes, and the native suite (27 tests, real Rapier) plus the
-100-seed WFC solver pass against the 3023 checkout. Template source and the
-published archive are unchanged. `minimumEngineBuild` stays at 2799.
+100-seed WFC solver pass against the 3023 checkout. Template source is
+unchanged. `minimumEngineBuild` stays at 2799.
+
+### Publication on 3023 (2026-11-16)
+
+`profile-2961-export` was cloned to `profile-3023-export` and opened once in an
+isolated installed-3023 instance. The template loaded with no script faults and
+its 17 custom elements at 234–250, and the editor's declarations matched those
+above. The instance was then saved and closed. `template:publish`, matched to a
+detached 3023 engine worktree, exported it as build 3023, passed the full audit
+and 173 tests, and published revision `e07aa27d…` (label 2026-11-17, the UTC
+date). Hosted verification reports `ok`. The archive still exports none of the
+new `comms_*` rows.
+
+The registry pin was committed on engine `main` as `aaf2b1c2e`; it changes only
+`src/templates/templateRegistry.json` and is not pushed. Before that, its live
+registry lane (private port 3611) downloaded and installed the revision in 4.5 s
+and opened a copy with two scripts and no faults. The engine type check and
+registry/home unit tests also passed.
+
+A 3023 publish snapshot of the same profile built the unsigned macOS package
+in `dist/macos-2026-11-16/`. The packaged smoke (WFC, seed 1729, two CPUs)
+completed a shot and the next turn and averaged **59.8 sim ticks/s** over 90
+seconds. Maze throughput and resumed-play readiness were not re-measured, so
+those gates stay open.
