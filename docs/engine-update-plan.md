@@ -37,6 +37,15 @@ on engine `main`, and a 3023 macOS package passed the packaged CPU-match smoke
 (see [Build 3023 review](#build-3023-review-2026-11-16)). Neither engine
 dependency has changed.
 
+Status on November 17: the template targets build **3024** (source `68dc4c180`),
+where tile sleeping is on. Its declarations are unchanged, and no data needed
+migration. The packaged CPU match exposed a game fault that 3023 also had: a
+Proximity Mine whose body commit was rolled back stopped the whole match. The
+fix (`2aa56f7`) was republished as revision `b3671a41…` and pinned on engine
+`main`, and the 3024 package plays a full match to a winner (see
+[Build 3024 review](#build-3024-review-2026-11-17)). Both engine dependencies
+are still open.
+
 ## Recommended next work
 
 | Order | Work and location | Exit condition |
@@ -582,3 +591,67 @@ in `dist/macos-2026-11-16/`. The packaged smoke (WFC, seed 1729, two CPUs)
 completed a shot and the next turn and averaged **59.8 sim ticks/s** over 90
 seconds. Maze throughput and resumed-play readiness were not re-measured, so
 those gates stay open.
+
+Correction (2026-11-17): that run's state timeline shows the match stopped on
+turn 6 at 78.8 s with `Generated body lost its committed particle ownership`.
+The smoke criterion requires only one shot and the next turn, so it passed. The
+cause and fix are in the 3024 review below.
+
+## Build 3024 review (2026-11-17)
+
+The installed desktop, its publisher and engine `main`/origin report build
+**3024**, source `68dc4c180ee95e79acf327121583e229c5e3b996`. `aaf2b1c2e`
+(the 3023 pin) is in origin. The one new commit turns on tile sleeping and
+adds a WFC tile memory pool:
+
+| Engine change | Template effect |
+| --- | --- |
+| Tile sleeping (`activeSet` 1): only 8×8 tiles that a mover or writer marked simulate; a 64-tick sweep heals a missed mark | The game's writers all mark: native projectile flights mark their path, and CPU spawns, erases and terrain-work commits mark their cells. `spawnParticles` marks its spawn point, and buoyant ink keeps moving. Settle watches count moved cells, so resting tiles read as still. The template sets no sim tuning. |
+| WFC zone tiles decoded once into a 768 MB pool, preloaded around the camera; background chunk loading takes a share of each frame | Affects only streaming speed. The 100-seed WFC solver check passes unchanged. |
+| Tile decode in the database worker returns a whole tile | Read path only. No table, archive or copy-plan change. |
+| Air wakes sleeping tiles above 0.15 px/tick | Per-turn wind still moves loose matter and gas. |
+
+Declarations regenerated in the isolated 3024 editor are byte-identical to
+3023's. The type check and 173 tests, the source audit and the native suite
+(27 tests plus 100 WFC seeds) pass against the 3024 checkout.
+
+### Mine placement fault
+
+The first 3024 package stalled on turn 2. Molly fired a Proximity Mine, and the
+match stopped with `Generated body lost its committed particle ownership`.
+That message comes from the engine's complete-body output
+(`TerrainBodies.ts`): after the commit, a written cell no longer matched. The
+engine rolls back the body's members and rejects the `terrainWork` promise.
+`placeMine` handled resolved refusals but not a rejection, so the session's
+fault handler stopped the match. The 3023 run hit the same rejection on turn 6.
+
+The template now treats a rejected placement like a refusal. The mine is lost
+with "Mine could not settle: placement-failed", the native message is logged,
+and play continues. `BAD_ARGUMENT` / `NOT_FOUND` still stop the match, so
+malformed requests stay visible (`2aa56f7`, regression test in
+`tests/ordnance.test.cjs`). No engine change is requested.
+
+### Publication and package (2026-11-17)
+
+`profile-3023-export` was cloned to `profile-3024-export` and opened in an
+isolated installed-3024 instance (ports 14701/14702/14049, no mount): two
+scripts, no faults, 17 custom elements at 234–250. Revision `bfc7fdf8…` was
+published before the package exposed the fault. The fixed `ordnance.ts` was
+then written into the profile through the bridge and saved, and the profile
+was published again as **`b3671a41…`** (label 2026-11-18). The full audit and
+174 tests passed, and hosted verification reports `ok`.
+
+Engine `main` pins it in `38384a7e4`, on top of the `bfc7fdf8` pin
+`e296a7a0f`. Both commits change only `src/templates/templateRegistry.json`,
+and neither is pushed. For each pin, the live registry lane (private port
+3611) installed the revision in about 5 s and opened a copy with two scripts
+and no faults. The type check and registry/home unit tests passed.
+
+The 3024 macOS package in `dist/macos-2026-11-17/` was built from the fixed
+profile. The packaged smoke (WFC, seed 1729, two CPUs) played six turns. The
+turn-2 mine was skipped, and the match ended on turn 6 with a winner and the
+series screen. It averaged **58.7 sim ticks/s**, with a 4.6 s slow stretch
+around 52–54 s (about 55 ticks/s), against the 58 ticks/s and 5 s limits. The
+3023 run averaged 59.8 with a 1.5 s stretch but played only until its fault.
+The margin is thin, so watch it on the next run. Maze throughput and
+resumed-play readiness were not re-measured.
