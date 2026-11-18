@@ -7,7 +7,7 @@ const code = ts.transpileModule(fs.readFileSync(path.join(root, 'world/Scripts/l
 }).outputText;
 const plain = value => JSON.parse(JSON.stringify(value));
 function scene() {
-    const handlers = {}, launches = [], terrain = [], labels = [], bodies = new Map(), projectiles = new Map(), promises = [], errors = [];
+    const handlers = {}, launches = [], terrain = [], labels = [], bodies = new Map(), projectiles = new Map(), promises = [], errors = [], logs = [];
     let serial = 0, nativeRefuses = false, pendingTerrain = null;
     const match = { seed: 'ordnance-check', phase: 'turn', bounds: { x: 0, y: 0, w: 4096, h: 1280 }, roster: [{ entityId: 'tank-A', eliminated: false }] };
     const actor = { isLive: true, alive: true, position: { x: 50, y: 700 }, snapshot() { return this.position; } };
@@ -23,7 +23,7 @@ function scene() {
         session: { persist() {}, run: task => { const promise = task().catch(e => errors.push(e)); promises.push(promise); } },
         residency: { emissionRegionReady: () => true, releaseEmissionRegion() {} },
         combat: { materialRecipe: element => ({ material: element }) } };
-    const talus = { on: (kind, fn) => (handlers[kind] ||= []).push(fn), elements: { get: name => ({ id: { IRON: 23, GOLD: 1, SILVER: 94, OBSIDIAN: 15, COPPER: 25 }[name] }) },
+    const talus = { on: (kind, fn) => (handlers[kind] ||= []).push(fn), log: (...parts) => logs.push(parts.join(' ')), elements: { get: name => ({ id: { IRON: 23, GOLD: 1, SILVER: 94, OBSIDIAN: 15, COPPER: 25 }[name] }) },
         ui: { worldText: (id, spec) => labels.push({ id, spec: plain(spec) }) },
         bodies: { get: id => bodies.get(id), create: async spec => makeBody({ x: spec.cells[0].x, y: spec.cells[0].y }, spec.cells.length) },
         world: { terrainWork: async spec => {
@@ -45,7 +45,7 @@ function scene() {
     const sandbox = vm.createContext({ talus, module: { exports: {} } }); vm.runInContext(code, sandbox);
     const api = sandbox.module.exports(ctx), catalog = structuredClone(config); api.configure(catalog); api.bind();
     async function flush() { while (promises.length) await Promise.all(promises.splice(0)); }
-    return { ctx, api, catalog, match, actor, launches, terrain, bodies, projectiles, labels, emit, flush, errors,
+    return { ctx, api, catalog, match, actor, launches, terrain, bodies, projectiles, labels, emit, flush, errors, logs,
         refuse(value = true) { nativeRefuses = value; }, pending(fn) { pendingTerrain = fn; } };
 }
 test('normal shell impact creates one persistent mine, survives parking/save, and detonates once with original credit', async () => {
@@ -83,6 +83,17 @@ test('mine placement refusal does not leave an invisible active hazard; dormant 
     assert.equal(f.match.ordnance.jobs.length, 0); assert.match(f.match.message, /occupancy/); assert.equal(f.api.busy(), false);
     f.pending(null); f.api.impact('mine', 'tank-A', { x: 500, y: 700 }); f.api.tick(.1); await f.flush();
     const body = [...f.bodies.values()][0]; f.api.finish(); assert.equal(body.exists, false); assert.equal(f.match.ordnance.jobs.length, 0);
+});
+test('a native body commit failure loses the mine without stopping the match; malformed requests stay fatal', async () => {
+    const f = scene(); f.pending(async () => { throw new Error('Generated body lost its committed particle ownership'); });
+    f.api.impact('mine', 'tank-A', { x: 500, y: 700 }); f.api.tick(.1); await f.flush(); f.api.tick(.1);
+    assert.deepEqual(f.errors, []); assert.equal(f.match.phase, 'turn');
+    assert.equal(f.match.ordnance.jobs.length, 0); assert.match(f.match.message, /placement-failed/); assert.equal(f.api.busy(), false);
+    assert.match(f.logs.join('\n'), /committed particle ownership/);
+    const malformed = Object.assign(new Error('world.terrainWork: bad shape'), { code: 'BAD_ARGUMENT' });
+    f.pending(async () => { throw malformed; });
+    f.api.impact('mine', 'tank-A', { x: 500, y: 700 }); f.api.tick(.1); await f.flush();
+    assert.deepEqual(f.errors, [malformed]);
 });
 test('cancelled asynchronous placement removes its resulting body without adopting a stale mine', async () => {
     const f = scene(); let release;

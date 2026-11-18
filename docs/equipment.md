@@ -18,7 +18,9 @@ An entry marked `enabled: false` cannot charge a wallet or be selected.
 `Game/ordnance.json` defines persistent proximity mines, bomb/acid/lava/nuclear
 airstrikes, water-bursting ducks and the seeded Meteor Lottery. A landed carrier
 creates the effect once. Mines become durable rigid bodies, arm after a delay,
-and can trigger on their owner; dormant mines do not prolong a turn. Barrages
+and can trigger on their owner; dormant mines do not prolong a turn. If the
+engine refuses a mine's placement, or rolls back its body commit, that mine is
+lost with a status message and play continues. Barrages
 launch finite native projectiles with the original shooter's credit. Material
 payloads commit real particles through bounded terrain work. The Holy Hand
 Grenade is disabled in the armory.

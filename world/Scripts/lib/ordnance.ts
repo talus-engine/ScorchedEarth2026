@@ -93,13 +93,23 @@ function create(ctx: Runtime) {
         // Native placement admission charges every translated job region, not only the body's pixels.
         const cells = (box.w + Math.max(...xs) - Math.min(...xs)) * (box.h + Math.max(...ys) - Math.min(...ys));
         run(async () => {
-            const receipt = await talus.world.terrainWork({ kind: 'vector', shape: box, bounds: match.bounds,
-                replacement: 'empty', layerPolicy: 'active-only', targetLayer: 'world', seed: ctx.core.chaosSeed(match.seed + ':mine:' + job.id),
-                placement: { offsets, maxChecks: 540 },
-                budget: { cells, particles: 135, work: 135 }, vector: {
-                    geometry: { kind: 'line', points: [{ x: x - 4, y }, { x: x + 4, y }], width: 5 },
-                    fill: { kind: 'element', element: 'IRON', color: 0x448844 },
-                    output: { kind: 'body', name: 'Proximity mine ' + job.id, maxBodies: 1, friction: .9, restitution: 0 } } });
+            let receipt: any;
+            try {
+                receipt = await talus.world.terrainWork({ kind: 'vector', shape: box, bounds: match.bounds,
+                    replacement: 'empty', layerPolicy: 'active-only', targetLayer: 'world', seed: ctx.core.chaosSeed(match.seed + ':mine:' + job.id),
+                    placement: { offsets, maxChecks: 540 },
+                    budget: { cells, particles: 135, work: 135 }, vector: {
+                        geometry: { kind: 'line', points: [{ x: x - 4, y }, { x: x + 4, y }], width: 5 },
+                        fill: { kind: 'element', element: 'IRON', color: 0x448844 },
+                        output: { kind: 'body', name: 'Proximity mine ' + job.id, maxBodies: 1, friction: .9, restitution: 0 } } });
+            }
+            catch (error: any) {
+                // A body whose native commit fails is rolled back whole: the mine is lost, not the match.
+                // Malformed requests stay fatal so they surface in development.
+                if (error?.code === 'BAD_ARGUMENT' || error?.code === 'NOT_FOUND') throw error;
+                talus.log('Mine placement failed: ' + String(error?.message ?? error));
+                receipt = { status: 'refused', reason: 'placement-failed' };
+            }
             if (!current(match, token)) {
                 for (const id of receipt.bodies || []) destroyBody(id);
                 return;
